@@ -324,3 +324,27 @@ html[dir="ltr"] .section-heading p { margin-left: 0; margin-right: auto; }
 .factory-pack-section[dir="rtl"] .factory-pack-content { direction: rtl; text-align: right; margin-inline-start: 0; margin-inline-end: auto; }
 .factory-pack-section[dir="rtl"] .factory-pack-content > p:not(.factory-pack-lede) { margin-left: 0; margin-right: auto; }
 @media (max-width: 720px) { .factory-pack-section[dir="rtl"]::after { background: linear-gradient(180deg, rgba(11,11,12,.8) 0%, rgba(11,11,12,.94) 64%, rgba(11,11,12,.98) 100%); } }
+
+
+/* Expanded technical section and branded engine specs */
+.architecture-section { padding: 118px 0 135px; border-top: 1px solid rgba(242,241,235,.12); border-bottom: 1px solid rgba(242,241,235,.08); background: radial-gradient(circle at 78% 38%, rgba(227,197,101,.08), transparent 30%), #0d0d0f; }
+.architecture-section[dir="rtl"] .architecture-copy { direction: rtl; text-align: right; }
+.architecture-section[dir="ltr"] .architecture-copy { direction: ltr; text-align: left; }
+.architecture-brand { margin-bottom: 38px; opacity: .9; }
+.architecture-brand .site-logo { display: inline-flex; }
+.architecture-copy h2 { max-width: 680px; margin: 18px 0 24px; color: var(--paper); font: 600 clamp(46px, 5.7vw, 78px)/.92 var(--display); letter-spacing: -.07em; }
+.architecture-copy > p { max-width: 670px; color: #aaa8a2; font-size: 17px; line-height: 1.85; }
+.architecture-section[dir="rtl"] .architecture-copy > p { margin-left: 0; margin-right: auto; }
+.pipeline { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 34px; color: var(--paper); font: 10px var(--mono); letter-spacing: .06em; }
+.pipeline span { display: inline-flex; align-items: center; gap: 12px; }
+.pipeline i { color: var(--acid); font-style: normal; }
+.engine-specs { max-width: 730px; margin-top: 54px; padding-top: 24px; border-top: 1px solid rgba(227,197,101,.3); }
+.engine-specs-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; margin-bottom: 18px; }
+.engine-specs-heading > span { color: var(--paper); font: 600 18px var(--display); }
+.engine-specs-heading small { color: var(--muted); font-size: 12px; }
+.engine-spec-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: rgba(242,241,235,.12); }
+.engine-spec { min-height: 115px; padding: 18px; background: #111113; }
+.engine-spec > span { color: var(--acid); font: 9px var(--mono); letter-spacing: .09em; }
+.engine-spec p { margin: 12px 0 0; color: #b7b4ad; font-size: 13px; line-height: 1.65; }
+.architecture-core small { margin-top: 10px; color: var(--muted); font: 9px var(--mono); letter-spacing: .08em; }
+@media (max-width: 720px) { .architecture-section { padding: 85px 0 92px; } .architecture-brand { margin-bottom: 28px; } .architecture-copy h2 { font-size: 51px; } .architecture-copy > p { font-size: 15px; } .engine-specs { margin-top: 39px; } .engine-specs-heading { display: block; } .engine-specs-heading small { display: block; margin-top: 7px; } .engine-spec-grid { grid-template-columns: 1fr; } .engine-spec { min-height: 0; } .architecture-art { margin-top: 48px; } }
