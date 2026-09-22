@@ -117,8 +117,6 @@ export default function Home() {
   const features = featureData[language];
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeFeature, setActiveFeature] = useState("sound");
-  const selectedFeature = features.find((feature) => feature.id === activeFeature) ?? features[0];
-  const SelectedIcon = selectedFeature.icon;
   const dir = isRtl ? "rtl" : "ltr";
 
   return (
@@ -208,26 +206,38 @@ export default function Home() {
             <div className="interface-feature-list">
               {features.map((feature, index) => {
                 const Icon = feature.icon;
+                const isActive = activeFeature === feature.id;
                 return (
-                  <button type="button" aria-pressed={activeFeature === feature.id} className={`interface-feature ${activeFeature === feature.id ? "is-active" : ""}`} key={feature.id} onClick={() => setActiveFeature(feature.id)}>
-                    <span className="feature-index">0{index + 1}</span>
-                    <span className="feature-icon"><Icon size={20} /></span>
-                    <span className="feature-label">{feature.label}</span>
-                    <ChevronRight size={16} />
-                  </button>
+                  <div className={`interface-feature-item ${isActive ? "is-active" : ""}`} key={feature.id}>
+                    <button
+                      type="button"
+                      aria-expanded={isActive}
+                      aria-pressed={isActive}
+                      aria-controls={`feature-panel-${feature.id}`}
+                      className="interface-feature"
+                      onClick={() => setActiveFeature(feature.id)}
+                    >
+                      <span className="feature-index">0{index + 1}</span>
+                      <span className="feature-icon"><Icon size={20} /></span>
+                      <span className="feature-label">{feature.label}</span>
+                      <ChevronRight size={16} />
+                    </button>
+                    {isActive && (
+                      <div className="interface-preview" id={`feature-panel-${feature.id}`}>
+                        <div className="preview-image-wrap">
+                          <img src={feature.image} alt={`${feature.label} interface`} />
+                          <div className="preview-overlay"><span>{feature.meta}</span><span><Icon size={17} /> {feature.label}</span></div>
+                        </div>
+                        <div className="preview-copy">
+                          <span className="kicker">{feature.meta}</span>
+                          <h3>{feature.title}</h3>
+                          <p>{feature.description}</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 );
               })}
-            </div>
-            <div className="interface-preview">
-              <div className="preview-image-wrap">
-                <img src={selectedFeature.image} alt={`${selectedFeature.label} interface`} />
-                <div className="preview-overlay"><span>{selectedFeature.meta}</span><span><SelectedIcon size={17} /> {selectedFeature.label}</span></div>
-              </div>
-              <div className="preview-copy">
-                <span className="kicker">{selectedFeature.meta}</span>
-                <h3>{selectedFeature.title}</h3>
-                <p>{selectedFeature.description}</p>
-              </div>
             </div>
           </div>
         </section>
