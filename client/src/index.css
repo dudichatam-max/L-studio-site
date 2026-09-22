@@ -362,15 +362,21 @@ html[dir="ltr"] .section-heading p { margin-left: 0; margin-right: auto; }
 
 /* Story ("the eighth note") and Just-start sections: reuse the site's existing
    typographic system (kicker / h2 / paragraph) rather than introducing new visuals. */
-.story-section, .notscary-section { width: min(100%, 1040px); padding: 130px 0; }
-.notscary-section { border-top: 1px solid rgba(242,241,235,.12); }
+.story-section, .notscary-section { width: min(100%, 1040px); padding: 130px clamp(28px, 6vw, 78px); }
+.story-section { position: relative; }
+.story-section::before, .notscary-section::before { content: ""; position: absolute; top: 0; width: 86px; height: 1px; background: var(--acid); opacity: .72; }
+.story-section::before { inset-inline-start: clamp(28px, 6vw, 78px); }
+.notscary-section { position: relative; border-top: 1px solid rgba(242,241,235,.12); }
+.notscary-section::before { inset-inline-end: clamp(28px, 6vw, 78px); }
+.editorial-copy { max-width: 760px; }
+.notscary-section .editorial-copy { max-width: 720px; margin-inline: auto; }
 .story-section .kicker, .notscary-section .kicker { color: var(--acid); }
 .story-section h2, .notscary-section h2 { max-width: 760px; margin: 20px 0 28px; color: var(--paper); font: 600 clamp(40px, 5vw, 64px)/.98 var(--display); letter-spacing: -.06em; }
 .story-body { display: flex; flex-direction: column; gap: 14px; max-width: 640px; }
 .story-body p { margin: 0; color: #aaa8a2; font-size: 17px; line-height: 1.85; }
 .lead-line { max-width: 640px; margin: 26px 0 0; color: var(--acid); font: 600 21px/1.4 var(--display); letter-spacing: -.02em; }
 @keyframes feature-panel-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
-@media (max-width: 720px) { .interface-section { padding-top: 91px; padding-bottom: 95px; } .interface-section .section-heading { margin-bottom: 34px; } .interface-grid { width: 100%; } .interface-feature { min-height: 68px; grid-template-columns: 25px 29px 1fr 15px; gap: 9px; padding: 0 10px; } .interface-feature:hover, .interface-feature-item.is-active .interface-feature { padding-left: 14px; } .feature-label { font-size: 15px; } .interface-preview { display: flex; flex-direction: column; min-height: 0; } .preview-image-wrap { min-height: 330px; max-height: 430px; } .preview-copy { min-height: 280px; padding: 32px 24px; } .preview-copy h3 { font-size: 35px; } .preview-copy p { font-size: 15px; } .story-section, .notscary-section { padding: 78px 0; } .story-section h2, .notscary-section h2 { font-size: 38px; } .story-body p { font-size: 15px; } .lead-line { font-size: 18px; } }
+@media (max-width: 720px) { .interface-section { padding-top: 91px; padding-bottom: 95px; } .interface-section .section-heading { margin-bottom: 34px; } .interface-grid { width: 100%; } .interface-feature { min-height: 68px; grid-template-columns: 25px 29px 1fr 15px; gap: 9px; padding: 0 10px; } .interface-feature:hover, .interface-feature-item.is-active .interface-feature { padding-left: 14px; } .feature-label { font-size: 15px; } .interface-preview { display: flex; flex-direction: column; min-height: 0; } .preview-image-wrap { min-height: 330px; max-height: 430px; } .preview-copy { min-height: 280px; padding: 32px 24px; } .preview-copy h3 { font-size: 35px; } .preview-copy p { font-size: 15px; } .story-section, .notscary-section { padding: 78px 24px; } .story-section::before, .notscary-section::before { inset-inline-start: 24px; inset-inline-end: auto; } .notscary-section .editorial-copy { margin-inline: 0; } .story-section h2, .notscary-section h2 { font-size: 38px; } .story-body p { font-size: 15px; } .lead-line { font-size: 18px; } }
 
 .footer-tagline { color: var(--acid); font: 9px var(--mono); letter-spacing: .08em; }
 @media (max-width: 720px) { .footer-tagline { order: 2; font-size: 8px; } }
