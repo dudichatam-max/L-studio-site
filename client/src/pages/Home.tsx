@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, X, Instagram } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
@@ -31,6 +31,13 @@ const instagramLabel = {
   ru: "Присоединиться к сообществу в Instagram",
   ar: "انضم إلى المجتمع على Instagram",
 } satisfies Record<Language, string>;
+
+const flowLabels = {
+  he: ["פותחים", "נוגעים", "מקשיבים", "יוצרים"],
+  en: ["OPEN", "TOUCH", "LISTEN", "CREATE"],
+  ru: ["ОТКРЫТЬ", "КОСНУТЬСЯ", "СЛУШАТЬ", "СОЗДАВАТЬ"],
+  ar: ["افتح", "المس", "استمع", "أنشئ"],
+} satisfies Record<Language, string[]>;
 
 const featureData = {
   he: [
@@ -196,6 +203,11 @@ export default function Home() {
             <div className="story-body">{story.body.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}</div>
             <p className="lead-line">{story.closing}</p>
           </div>
+          <div className="story-visualizer" aria-label="Minimal frequency visualizer" aria-hidden="true">
+            <div className="visualizer-readout"><span>AL / 08</span><strong>222.00 <small>Hz</small></strong></div>
+            <div className="visualizer-bars">{[22, 38, 27, 56, 42, 74, 35, 62, 91, 48, 68, 31, 79, 45, 58, 24, 67, 39, 84, 52, 29, 61, 44, 73, 34, 55, 26, 47].map((height, index) => <i key={index} style={{ "--bar-height": `${height}%`, "--bar-delay": `${index * 45}ms` } as CSSProperties} />)}</div>
+            <div className="visualizer-caption"><span>MICROTONAL SIGNAL</span><span>LIVE / 01</span></div>
+          </div>
         </section>
 
         {/* 3. Product capabilities: SOUND / MIC / LOOP / PAD / DRUM */}
@@ -273,6 +285,10 @@ export default function Home() {
             <h2><Headline text={justStart.title} /></h2>
             <div className="story-body">{justStart.body.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}</div>
             <p className="lead-line">{justStart.closing}</p>
+          </div>
+          <div className="start-flow" aria-label={flowLabels[language].join(" → ")}>
+            <div className="start-flow-line"><span className="start-flow-pulse" /></div>
+            <div className="start-flow-steps">{flowLabels[language].map((label, index) => <span key={label}><i>0{index + 1}</i><b>{label}</b></span>)}</div>
           </div>
         </section>
 
