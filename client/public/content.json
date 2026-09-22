@@ -29,6 +29,37 @@
         "description": "A complete sound library for L Studio: eight loadable pages, eight named presets on each page. Every voice is written to the app’s native page format, volume, ADSR, cutoff, resonance, echo, glide, waveform, octave, on the instrument’s home scale.",
         "genres": "Built for trance, techno, rap, trap, and metal. No generic “init” slots. Each page is a single musical job.",
         "cta": "Get early access"
+      },
+      "underHood": {
+        "kicker": "02 / UNDER THE HOOD",
+        "title": "The engine is the instrument.",
+        "body": "L Studio keeps the signal path visible and local. Every gesture travels through the app’s own voice layer, effects bus and stereo mix, so the technical depth stays close to the performer instead of disappearing behind a black box.",
+        "details": [
+          {
+            "label": "VOICE LAYER",
+            "value": "Waveform, octave, glide, ADSR, cutoff and resonance per voice"
+          },
+          {
+            "label": "LIVE BUS",
+            "value": "Keyboard, microphone, looper, pad and drums share one performance flow"
+          },
+          {
+            "label": "EFFECTS + MIX",
+            "value": "Echo, level, pan and stereo output shaped in real time"
+          },
+          {
+            "label": "CAPTURE",
+            "value": "Local WAV recording and export, without a third-party synth layer"
+          }
+        ],
+        "pipeline": [
+          "KEYBOARD",
+          "DSP / VOICES",
+          "FX / MIX",
+          "WAV"
+        ],
+        "specsTitle": "Technical signal map",
+        "specsBody": "A practical view of what happens between touch and sound."
       }
     },
     "he": {
@@ -60,6 +91,37 @@
         "description": "Factory Pack היא ספריית סאונד שנבנתה בתוך ההיגיון של L Studio: שמונה עמודי טעינה, שמונה פריסטים בעלי אופי בכל עמוד. כל פריסט מגיע מוכן לעבודה בפורמט הטבעי של האפליקציה, עם עוצמה, ADSR, cutoff, resonance, echo, glide, waveform ואוקטבה. לא אוסף של צלילים כלליים, אלא 64 נקודות התחלה שנועדו להכניס רעיון לתנועה.",
         "genres": "נבנה לטרנס, טכנו, ראפ, טראפ ומטאל. כל עמוד מחזיק תפקיד מוזיקלי ברור, כדי שתוכל לפתוח, לבחור, לנגן ולהמשיך משם.",
         "cta": "לקבלת גישה מוקדמת"
+      },
+      "underHood": {
+        "kicker": "02 / מתחת למכסה המנוע",
+        "title": "המנוע הוא חלק מהכלי.",
+        "body": "ב-L Studio נתיב האודיו נשאר קרוב ליוצר. כל מחווה עוברת בשכבת הקולות, באוטובוס האפקטים ובמיקס הסטריאו של האפליקציה עצמה. העומק הטכני לא נעלם מאחורי קופסה שחורה, הוא הופך לשליטה שאפשר להרגיש בזמן אמת.",
+        "details": [
+          {
+            "label": "שכבת הקול",
+            "value": "גל קול, אוקטבה, glide, מעטפת ADSR, cutoff ו-resonance לכל קול"
+          },
+          {
+            "label": "אוטובוס ביצוע",
+            "value": "קלידים, מיקרופון, לופר, פאד ותופים עובדים בתוך זרימת הופעה אחת"
+          },
+          {
+            "label": "אפקטים ומיקס",
+            "value": "Echo, עוצמה, פאנינג ויציאת סטריאו מתעצבים בזמן אמת"
+          },
+          {
+            "label": "לכידה",
+            "value": "הקלטה וייצוא ל-WAV באופן מקומי, בלי שכבת סינתיסייזר חיצונית"
+          }
+        ],
+        "pipeline": [
+          "קלידים",
+          "DSP / קולות",
+          "אפקטים / מיקס",
+          "WAV"
+        ],
+        "specsTitle": "מפת נתיב האודיו",
+        "specsBody": "מבט מעשי על הדרך שעוברת בין נגיעה לצליל."
       }
     },
     "ru": {
@@ -91,6 +153,37 @@
         "description": "Полная звуковая библиотека для L Studio: восемь загружаемых страниц и восемь именных пресетов на каждой. Каждый голос записан в родном формате страницы приложения, громкость, ADSR, cutoff, resonance, echo, glide, waveform, octave, на домашних строях инструмента.",
         "genres": "Создано для trance, techno, rap, trap и metal. Никаких безликих init-слотов. Каждая страница, одна музыкальная задача.",
         "cta": "Получить ранний доступ"
+      },
+      "underHood": {
+        "kicker": "02 / UNDER THE HOOD",
+        "title": "Движок тоже является инструментом.",
+        "body": "В L Studio аудиотракт остаётся локальным и понятным. Жест проходит через собственный слой голосов, шину эффектов и стереомикс приложения, поэтому техническая глубина остаётся рядом с исполнителем.",
+        "details": [
+          {
+            "label": "VOICE LAYER",
+            "value": "Волна, октава, glide, ADSR, cutoff и resonance для каждого голоса"
+          },
+          {
+            "label": "LIVE BUS",
+            "value": "Клавиши, микрофон, лупер, пад и ударные в одном потоке"
+          },
+          {
+            "label": "EFFECTS + MIX",
+            "value": "Echo, уровень, панорама и стереовыход в реальном времени"
+          },
+          {
+            "label": "CAPTURE",
+            "value": "Локальная запись и экспорт WAV без внешнего синтезатора"
+          }
+        ],
+        "pipeline": [
+          "KEYBOARD",
+          "DSP / VOICES",
+          "FX / MIX",
+          "WAV"
+        ],
+        "specsTitle": "Карта аудиосигнала",
+        "specsBody": "Практический взгляд на путь от касания до звука."
       }
     },
     "ar": {
@@ -122,6 +215,37 @@
         "description": "مكتبة أصوات كاملة لـ L Studio: ثماني صفحات قابلة للتحميل، وثمانية Presets مسماة في كل صفحة. كل صوت مكتوب بصيغة الصفحة الأصلية للتطبيق, مستوى الصوت وADSR وcutoff وresonance وecho وglide وwaveform وoctave, على سلالم الآلة الأساسية.",
         "genres": "مصممة للترانس والتكنو والراب والتراب والميتال. لا توجد خانات init عامة. كل صفحة لها مهمة موسيقية واحدة.",
         "cta": "احصل على وصول مبكر"
+      },
+      "underHood": {
+        "kicker": "02 / ما وراء الواجهة",
+        "title": "المحرك هو جزء من الآلة.",
+        "body": "في L Studio يبقى مسار الصوت محلياً وواضحاً. تمر كل حركة عبر طبقة الأصوات وحافلة المؤثرات والمزيج الستيريو داخل التطبيق، لتبقى التفاصيل التقنية قريبة من المؤدي.",
+        "details": [
+          {
+            "label": "طبقة الصوت",
+            "value": "الموجة، الأوكتاف، glide، ADSR، cutoff وresonance لكل صوت"
+          },
+          {
+            "label": "مسار الأداء",
+            "value": "المفاتيح والميكروفون واللوب والـPad والإيقاعات في تدفق واحد"
+          },
+          {
+            "label": "المؤثرات والمزيج",
+            "value": "Echo والمستوى والتوزيع وخروج الستيريو في الوقت الحقيقي"
+          },
+          {
+            "label": "التسجيل",
+            "value": "تسجيل وتصدير WAV محلياً من دون مُركب خارجي"
+          }
+        ],
+        "pipeline": [
+          "KEYBOARD",
+          "DSP / VOICES",
+          "FX / MIX",
+          "WAV"
+        ],
+        "specsTitle": "خريطة مسار الصوت",
+        "specsBody": "نظرة عملية على الطريق بين اللمسة والصوت."
       }
     }
   }
