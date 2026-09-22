@@ -48,7 +48,7 @@ const featureData = {
     { id: "drum", label: "DRUM", title: "Your drums. Your rules.", description: "Work with samples, build rhythms, set how they repeat, and trigger them live too.", icon: Drum, meta: "STEP SEQUENCER / BPM", image: images.drum },
   ],
   ru: [
-    { id: "sound", label: "SOUND", title: "Настрой клавиши по-своему.", description: "Вручную задавай частоту каждой клавиши и строй клавиатуру так, как удобно тебе. Также есть контроль над Attack, Release, Decay, Volume, Glide, Cutoff и Resonance. Не нужно понимать всё сразу — можно просто начать играть.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE", image: images.sound },
+    { id: "sound", label: "SOUND", title: "Настрой клавиши по-своему.", description: "Вручную задавай частоту каждой клавиши и строй клавиатуру так, как удобно тебе. Также есть контроль над Attack, Release, Decay, Volume, Glide, Cutoff и Resonance. Не нужно понимать всё сразу, можно просто начать играть.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE", image: images.sound },
     { id: "mic", label: "MIC", title: "Впусти свой голос.", description: "Голос, инструмент или что угодно ещё, что хочешь записать. Микрофон живёт внутри студии, так что не нужно переключаться в другое приложение, чтобы продолжать творить.", icon: Mic2, meta: "MIC INPUT / RECORD", image: images.mic },
     { id: "loop", label: "LOOP", title: "Есть идея? Не дай ей уйти.", description: "Лупер позволяет записывать слои и строить из них трек. Начинаешь с малого, добавляешь ещё, и смотришь, куда это приведёт.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT", image: images.loop },
     { id: "pad", label: "PAD", title: "Играй со звуком в реальном времени.", description: "Pad позволяет управлять звуком прямо во время игры. Не только настроить звук заранее, а играть с ним на ходу.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD", image: images.pad },
@@ -89,8 +89,7 @@ function Headline({ text }: { text: string }) {
   return (
     <>
       {lead}
-      <br />
-      <em>{tail}</em>
+      {" "}<em>{tail}</em>
     </>
   );
 }
@@ -117,7 +116,7 @@ export default function Home() {
 
   const features = featureData[language];
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeFeature, setActiveFeature] = useState("pad");
+  const [activeFeature, setActiveFeature] = useState("sound");
   const selectedFeature = features.find((feature) => feature.id === activeFeature) ?? features[0];
   const SelectedIcon = selectedFeature.icon;
   const dir = isRtl ? "rtl" : "ltr";
@@ -210,7 +209,7 @@ export default function Home() {
               {features.map((feature, index) => {
                 const Icon = feature.icon;
                 return (
-                  <button className={`interface-feature ${activeFeature === feature.id ? "is-active" : ""}`} key={feature.id} onClick={() => setActiveFeature(feature.id)}>
+                  <button type="button" aria-pressed={activeFeature === feature.id} className={`interface-feature ${activeFeature === feature.id ? "is-active" : ""}`} key={feature.id} onClick={() => setActiveFeature(feature.id)}>
                     <span className="feature-index">0{index + 1}</span>
                     <span className="feature-icon"><Icon size={20} /></span>
                     <span className="feature-label">{feature.label}</span>
