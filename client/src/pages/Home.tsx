@@ -190,10 +190,12 @@ export default function Home() {
 
         {/* 2. The story of L-Studio */}
         <section className="story-section container" id="story" dir={dir}>
-          <span className="kicker">{story.kicker}</span>
-          <h2><Headline text={story.title} /></h2>
-          <div className="story-body">{story.body.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}</div>
-          <p className="lead-line">{story.closing}</p>
+          <div className="editorial-copy">
+            <span className="kicker">{story.kicker}</span>
+            <h2><Headline text={story.title} /></h2>
+            <div className="story-body">{story.body.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}</div>
+            <p className="lead-line">{story.closing}</p>
+          </div>
         </section>
 
         {/* 3. Product capabilities: SOUND / MIC / LOOP / PAD / DRUM */}
@@ -215,7 +217,7 @@ export default function Home() {
                       aria-pressed={isActive}
                       aria-controls={`feature-panel-${feature.id}`}
                       className="interface-feature"
-                      onClick={() => setActiveFeature(feature.id)}
+                      onClick={() => setActiveFeature((current) => current === feature.id ? "" : feature.id)}
                     >
                       <span className="feature-index">0{index + 1}</span>
                       <span className="feature-icon"><Icon size={20} /></span>
@@ -266,10 +268,12 @@ export default function Home() {
 
         {/* 5. Why it doesn't feel scary */}
         <section className="notscary-section container" id="just-start" dir={dir}>
-          <span className="kicker">{justStart.kicker}</span>
-          <h2><Headline text={justStart.title} /></h2>
-          <div className="story-body">{justStart.body.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}</div>
-          <p className="lead-line">{justStart.closing}</p>
+          <div className="editorial-copy">
+            <span className="kicker">{justStart.kicker}</span>
+            <h2><Headline text={justStart.title} /></h2>
+            <div className="story-body">{justStart.body.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}</div>
+            <p className="lead-line">{justStart.closing}</p>
+          </div>
         </section>
 
         {/* 6. Factory Pack */}
