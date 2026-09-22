@@ -33,8 +33,12 @@
       "underHood": {
         "kicker": "02 / UNDER THE HOOD",
         "title": "The engine is the instrument.",
-        "body": "L Studio keeps the signal path visible and local. Every gesture travels through the app’s own voice layer, effects bus and stereo mix, so the technical depth stays close to the performer instead of disappearing behind a black box.",
+        "body": "L Studio keeps the signal path visible and local. Every gesture travels through the app’s own voice layer, effects bus and stereo mix, while each keyboard note can be tuned manually to an exact frequency for microtonal playing.",
         "details": [
+          {
+            "label": "MANUAL TUNING",
+            "value": "Set an exact frequency for every keyboard note and build your own microtonal layout"
+          },
           {
             "label": "VOICE LAYER",
             "value": "Waveform, octave, glide, ADSR, cutoff and resonance per voice"
@@ -95,8 +99,12 @@
       "underHood": {
         "kicker": "02 / מתחת למכסה המנוע",
         "title": "המנוע הוא חלק מהכלי.",
-        "body": "ב-L Studio נתיב האודיו נשאר קרוב ליוצר. כל מחווה עוברת בשכבת הקולות, באוטובוס האפקטים ובמיקס הסטריאו של האפליקציה עצמה. העומק הטכני לא נעלם מאחורי קופסה שחורה, הוא הופך לשליטה שאפשר להרגיש בזמן אמת.",
+        "body": "ב-L Studio נתיב האודיו נשאר קרוב ליוצר. כל מחווה עוברת בשכבת הקולות, באוטובוס האפקטים ובמיקס הסטריאו של האפליקציה עצמה. בנוסף, אפשר לכוון ידנית את התדר המדויק של כל תו במקלדת ולבנות פריסה מיקרוטונלית משלך.",
         "details": [
+          {
+            "label": "כיוון ידני",
+            "value": "מכוונים תדר מדויק לכל תו במקלדת ובונים סולם מיקרוטונלי משלכם"
+          },
           {
             "label": "שכבת הקול",
             "value": "גל קול, אוקטבה, glide, מעטפת ADSR, cutoff ו-resonance לכל קול"
@@ -158,8 +166,12 @@
       "underHood": {
         "kicker": "02 / UNDER THE HOOD",
         "title": "Движок тоже является инструментом.",
-        "body": "В L Studio аудиотракт остаётся локальным и понятным. Жест проходит через собственный слой голосов, шину эффектов и стереомикс приложения, поэтому техническая глубина остаётся рядом с исполнителем.",
+        "body": "В L Studio аудиотракт остаётся локальным и понятным. Жест проходит через собственный слой голосов, шину эффектов и стереомикс приложения, а частоту каждой клавиши можно вручную настроить для микротональной игры.",
         "details": [
+          {
+            "label": "MANUAL TUNING",
+            "value": "Точная ручная настройка частоты каждой клавиши и собственная микротональная раскладка"
+          },
           {
             "label": "VOICE LAYER",
             "value": "Волна, октава, glide, ADSR, cutoff и resonance для каждого голоса"
@@ -220,23 +232,27 @@
       "underHood": {
         "kicker": "02 / ما وراء الواجهة",
         "title": "المحرك هو جزء من الآلة.",
-        "body": "في L Studio يبقى مسار الصوت محلياً وواضحاً. تمر كل حركة عبر طبقة الأصوات وحافلة المؤثرات والمزيج الستيريو داخل التطبيق، لتبقى التفاصيل التقنية قريبة من المؤدي.",
+        "body": "في L Studio يبقى مسار الصوت محلياً وواضحاً. تمر كل حركة عبر طبقة الأصوات وحافلة المؤثرات والمزيج الستيريو داخل التطبيق، ويمكن ضبط تردد كل مفتاح يدوياً بدقة للعزف الميكروتونالي.",
         "details": [
+          {
+            "label": "MANUAL TUNING",
+            "value": "اضبط التردد الدقيق لكل مفتاح وابنِ توزيعك الميكروتونالي الخاص"
+          },
           {
             "label": "طبقة الصوت",
             "value": "الموجة، الأوكتاف، glide، ADSR، cutoff وresonance لكل صوت"
           },
           {
             "label": "مسار الأداء",
-            "value": "المفاتيح والميكروفون واللوب والـPad والإيقاعات في تدفق واحد"
+            "value": "المفاتيح والميكروفون والمسجل والـPad والإيقاعات في تدفق واحد"
           },
           {
             "label": "المؤثرات والمزيج",
-            "value": "Echo والمستوى والتوزيع وخروج الستيريو في الوقت الحقيقي"
+            "value": "Echo والمستوى والتوزيع ومخرج الستيريو في الوقت الفعلي"
           },
           {
             "label": "التسجيل",
-            "value": "تسجيل وتصدير WAV محلياً من دون مُركب خارجي"
+            "value": "تسجيل وتصدير WAV محلياً من دون مُركِّب خارجي"
           }
         ],
         "pipeline": [
