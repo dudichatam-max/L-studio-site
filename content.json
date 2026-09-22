@@ -1,0 +1,128 @@
+{
+  "languages": {
+    "en": {
+      "productKicker": "A music workstation for Android",
+      "productLead": "Not just a synthesizer.",
+      "productAccent": "A complete studio.",
+      "productBody": "L Studio gives anyone a place to create — without a computer, a music degree or expensive software. Everything you need to compose, play and record lives in one place.",
+      "discover": "Join early access",
+      "engine": "See how it works",
+      "visionBody": "L Studio is building toward a community of artists and musicians — especially people who have not always had access to a computer, professional software or a creative space of their own.",
+      "visionBody2": "Creativity should not depend on expensive gear or prior knowledge. It should begin with one tap, continue through curiosity, and become a voice that is yours.",
+      "next": "Your next instrument",
+      "waits": "is already waiting.",
+      "ctaText": "L Studio is for anyone who is not satisfied with one sound, one scale, or one way to create.",
+      "tester": {
+        "kicker": "EARLY ACCESS / 44 SPOTS ONLY",
+        "title": "Want to be part of the first release?",
+        "body": "Leave your details for free early access to L Studio. We are looking for creators, musicians and curious people who can help us shape the tool.",
+        "name": "Full name",
+        "email": "Email address",
+        "submit": "Join the tester list",
+        "note": "Free access · Limited to 44 testers"
+      },
+      "factoryPack": {
+        "kicker": "L STUDIO PREMIUM / FACTORY PACK",
+        "title": "L Studio",
+        "accent": "Factory Pack",
+        "lede": "Eight Pages. Sixty-Four Voices.",
+        "description": "A complete sound library for L Studio: eight loadable pages, eight named presets on each page. Every voice is written to the app’s native page format — volume, ADSR, cutoff, resonance, echo, glide, waveform, octave — on the instrument’s home scale.",
+        "genres": "Built for trance, techno, rap, trap, and metal. No generic “init” slots. Each page is a single musical job.",
+        "cta": "Get early access"
+      }
+    },
+    "he": {
+      "productKicker": "תחנת עבודה מוזיקלית לאנדרואיד",
+      "productLead": "לא רק סינתיסייזר.",
+      "productAccent": "סטודיו שלם.",
+      "productBody": "L Studio נותנת לכל אחד מקום ליצור — בלי מחשב, בלי תואר במוזיקה ובלי תוכנה יקרה. כל מה שצריך להלחין, לנגן ולהקליט נמצא במקום אחד.",
+      "discover": "להצטרף לגישה המוקדמת",
+      "engine": "איך זה עובד",
+      "visionBody": "L Studio נבנית סביב קהילה של אמנים ומוזיקאים — במיוחד אנשים שלא תמיד הייתה להם גישה למחשב, לתוכנה מקצועית או למרחב יצירה משלהם.",
+      "visionBody2": "יצירתיות לא אמורה להיות תלויה בציוד יקר או בידע מוקדם. היא צריכה להתחיל בלחיצה אחת, להמשיך בסקרנות ולהפוך לקול שהוא שלך.",
+      "next": "הכלי הבא שלך",
+      "waits": "כבר מחכה.",
+      "ctaText": "L Studio נבנה עבור מי שלא מסתפק בצליל אחד, בסולם אחד או בדרך אחת ליצור.",
+      "tester": {
+        "kicker": "גישה מוקדמת / 44 מקומות בלבד",
+        "title": "רוצה להיות חלק מהגרסה הראשונה?",
+        "body": "השאירו פרטים וקבלו גישה מוקדמת בחינם ל-L Studio. מחפשים יוצרים, מוזיקאים ואנשים סקרנים שיעזרו לנו לדייק את הכלי.",
+        "name": "שם מלא",
+        "email": "כתובת מייל",
+        "submit": "להצטרף לרשימת הטסטרים",
+        "note": "ללא תשלום · מספר המקומות מוגבל ל-44"
+      },
+      "factoryPack": {
+        "kicker": "L STUDIO PREMIUM / FACTORY PACK",
+        "title": "L Studio",
+        "accent": "Factory Pack",
+        "lede": "שמונה עמודים. שישים וארבעה קולות.",
+        "description": "ספריית סאונד מלאה ל-L Studio: שמונה עמודים לטעינה, שמונה פריסטים בשם בכל עמוד. כל קול נכתב בפורמט העמוד המקורי של האפליקציה — עוצמה, ADSR, cutoff, resonance, echo, glide, waveform ואוקטבה — בסולמות הבית של המכשיר.",
+        "genres": "נבנה לטרנס, טכנו, ראפ, טראפ ומטאל. בלי סלוטים גנריים של init. כל עמוד הוא משימה מוזיקלית אחת.",
+        "cta": "לקבלת גישה מוקדמת"
+      }
+    },
+    "ru": {
+      "productKicker": "Музыкальная рабочая станция для Android",
+      "productLead": "Не просто синтезатор.",
+      "productAccent": "Целая студия.",
+      "productBody": "L Studio даёт каждому место для творчества — без компьютера, музыкального образования и дорогих программ. Всё для сочинения, игры и записи собрано в одном месте.",
+      "discover": "Получить ранний доступ",
+      "engine": "Как это работает",
+      "visionBody": "L Studio строит сообщество артистов и музыкантов — особенно для тех, у кого не всегда был компьютер, профессиональный софт или своё творческое пространство.",
+      "visionBody2": "Творчество не должно зависеть от дорогого оборудования или опыта. Оно начинается с одного касания, продолжается любопытством и становится вашим голосом.",
+      "next": "Твой следующий инструмент",
+      "waits": "уже ждёт.",
+      "ctaText": "L Studio создана для тех, кому мало одного звука, одной гаммы или одного способа творить.",
+      "tester": {
+        "kicker": "РАННИЙ ДОСТУП / ТОЛЬКО 44 МЕСТА",
+        "title": "Хочешь быть частью первого релиза?",
+        "body": "Оставь данные и получи бесплатный ранний доступ к L Studio. Мы ищем создателей, музыкантов и любопытных людей, которые помогут улучшить инструмент.",
+        "name": "Полное имя",
+        "email": "Email",
+        "submit": "В список тестеров",
+        "note": "Бесплатный доступ · Только 44 тестера"
+      },
+      "factoryPack": {
+        "kicker": "L STUDIO PREMIUM / FACTORY PACK",
+        "title": "L Studio",
+        "accent": "Factory Pack",
+        "lede": "Восемь страниц. Шестьдесят четыре голоса.",
+        "description": "Полная звуковая библиотека для L Studio: восемь загружаемых страниц и восемь именных пресетов на каждой. Каждый голос записан в родном формате страницы приложения — громкость, ADSR, cutoff, resonance, echo, glide, waveform, octave — на домашних строях инструмента.",
+        "genres": "Создано для trance, techno, rap, trap и metal. Никаких безликих init-слотов. Каждая страница — одна музыкальная задача.",
+        "cta": "Получить ранний доступ"
+      }
+    },
+    "ar": {
+      "productKicker": "محطة عمل موسيقية لنظام Android",
+      "productLead": "ليست مجرد مُركِّب.",
+      "productAccent": "استوديو كامل.",
+      "productBody": "تمنح L Studio الجميع مساحة للإبداع — من دون كمبيوتر أو شهادة موسيقية أو برامج باهظة. كل ما تحتاجه للتأليف والعزف والتسجيل في مكان واحد.",
+      "discover": "احصل على وصول مبكر",
+      "engine": "كيف يعمل",
+      "visionBody": "رؤية L Studio هي بناء مجتمع من الفنانين والموسيقيين — خصوصاً لمن لم تتوفر لهم دائماً إمكانية الوصول إلى كمبيوتر أو برنامج احترافي أو مساحة إبداعية خاصة.",
+      "visionBody2": "الإبداع لا يجب أن يعتمد على معدات باهظة أو معرفة مسبقة. يجب أن يبدأ بلمسة، ويستمر بالفضول، ويصبح صوتاً يخصك.",
+      "next": "أداتك الموسيقية التالية",
+      "waits": "تنتظرك.",
+      "ctaText": "صُممت L Studio لمن لا يكتفي بصوت واحد أو سلم واحد أو طريقة واحدة للإبداع.",
+      "tester": {
+        "kicker": "وصول مبكر / 44 مكاناً فقط",
+        "title": "هل تريد أن تكون جزءاً من الإصدار الأول؟",
+        "body": "اترك بياناتك للحصول على وصول مبكر مجاني إلى L Studio. نبحث عن مبدعين وموسيقيين وأشخاص فضوليين يساعدوننا على تطوير الأداة.",
+        "name": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "submit": "الانضمام إلى قائمة المختبرين",
+        "note": "وصول مجاني · العدد محدود بـ44 مختبراً"
+      },
+      "factoryPack": {
+        "kicker": "L STUDIO PREMIUM / FACTORY PACK",
+        "title": "L Studio",
+        "accent": "Factory Pack",
+        "lede": "ثماني صفحات. أربعة وستون صوتاً.",
+        "description": "مكتبة أصوات كاملة لـ L Studio: ثماني صفحات قابلة للتحميل، وثمانية Presets مسماة في كل صفحة. كل صوت مكتوب بصيغة الصفحة الأصلية للتطبيق — مستوى الصوت وADSR وcutoff وresonance وecho وglide وwaveform وoctave — على سلالم الآلة الأساسية.",
+        "genres": "مصممة للترانس والتكنو والراب والتراب والميتال. لا توجد خانات init عامة. كل صفحة لها مهمة موسيقية واحدة.",
+        "cta": "احصل على وصول مبكر"
+      }
+    }
+  }
+}

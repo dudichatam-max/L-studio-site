@@ -1,0 +1,34 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "https://7f0548f6b28a1758d9bf7be630d36cb4.artifacts.cloudflare.net/git/prod/JU23DbbvgTyrMau3FUAd75.git",
+    "expiration": "2026-09-23T08:19:08.853Z",
+    "token": "art_v2_x_0f7fe80a0ad587d123ae06911ccb5ce062663b07?expires=1790151548",
+    "backend": "GIT_BACKEND_ARTIFACTS"
+  },
+  "name": "l-studio-site",
+  "path": "/home/ubuntu/l-studio-site",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "dgz9P6LMyceH782uB3k7Xq",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "2kwyE2kFmc2pGHpXLV7wcC",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "David.c",
+    "OWNER_OPEN_ID": "4M8tBXPg2HoNXs6dT7qNTb",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "6f537113-8a05-4235-aed0-e6c506afd6ef",
+    "VITE_APP_ID": "JU23DbbvgTyrMau3FUAd75",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "L Studio — Microtonal Music Workstation",
+    "VITE_FRONTEND_FORGE_API_KEY": "BpbRwDoLXMGNKAx8k85xbe",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
