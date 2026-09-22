@@ -316,3 +316,11 @@ html[dir="ltr"] .section-heading p { margin-left: 0; margin-right: auto; }
 .factory-scales span { padding: 7px 10px; border: 1px solid rgba(227,197,101,.35); color: var(--acid); font: 10px var(--mono); letter-spacing: .06em; background: rgba(11,11,12,.38); }
 .factory-pack-content .button { margin-top: 13px; }
 @media (max-width: 720px) { .factory-pack-section { min-height: 0; margin-top: 28px; margin-bottom: 28px; } .factory-pack-section::after { background: linear-gradient(180deg, rgba(11,11,12,.8) 0%, rgba(11,11,12,.94) 64%, rgba(11,11,12,.98) 100%); } .factory-pack-content { width: 100%; padding: 43px 24px 35px; } .factory-pack-content h2 { font-size: 56px; } .factory-pack-lede { font-size: 24px; } .factory-pack-content > p:not(.factory-pack-lede) { font-size: 14px; } }
+
+
+/* Factory Pack follows the reading direction of the selected language. */
+.factory-pack-section[dir="rtl"] { direction: rtl; }
+.factory-pack-section[dir="rtl"]::after { background: linear-gradient(270deg, rgba(11,11,12,.96) 0%, rgba(11,11,12,.86) 38%, rgba(11,11,12,.24) 72%, rgba(11,11,12,.45) 100%); }
+.factory-pack-section[dir="rtl"] .factory-pack-content { direction: rtl; text-align: right; margin-inline-start: 0; margin-inline-end: auto; }
+.factory-pack-section[dir="rtl"] .factory-pack-content > p:not(.factory-pack-lede) { margin-left: 0; margin-right: auto; }
+@media (max-width: 720px) { .factory-pack-section[dir="rtl"]::after { background: linear-gradient(180deg, rgba(11,11,12,.8) 0%, rgba(11,11,12,.94) 64%, rgba(11,11,12,.98) 100%); } }
