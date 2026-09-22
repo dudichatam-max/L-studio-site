@@ -23,8 +23,8 @@
       },
       "factoryPack": {
         "kicker": "L STUDIO PREMIUM / FACTORY PACK",
-        "title": "L Studio",
-        "accent": "Factory Pack",
+        "title": "L-studio",
+        "accent": "Factory Pack 64",
         "lede": "Eight Pages. Sixty-Four Voices.",
         "description": "A complete sound library for L Studio: eight loadable pages, eight named presets on each page. Every voice is written to the app’s native page format, volume, ADSR, cutoff, resonance, echo, glide, waveform, octave, on the instrument’s home scale.",
         "genres": "Built for trance, techno, rap, trap, and metal. No generic “init” slots. Each page is a single musical job.",
@@ -69,8 +69,8 @@
       "productBody": "L Studio נולדה מתוך רעיון פשוט: להפוך יצירה מוזיקלית לדבר שאפשר להתחיל ממנו מיד. בלי מחשב, בלי ידע מוקדם ובלי תוכנה יקרה. לופר, תופים, מיקרופון, פאד וסאונד עובדים יחד בתוך תחנת עבודה אחת, בכיס שלך.",
       "discover": "להצטרף לגישה המוקדמת",
       "engine": "איך זה עובד",
-      "visionBody": "אנחנו בונים סביב L Studio קהילה של יוצרים, אמנים ומוזיקאים, במיוחד עבור מי שלא תמיד הייתה לו גישה למחשב, לתוכנה מקצועית או למרחב יצירה משלו.",
-      "visionBody2": "החזון הוא להוריד את החיכוך מהדרך אל הרעיון. לפתוח את האפליקציה, לגעת בצליל, להקליט שכבה ולגלות שאפשר ליצור משהו אמיתי גם בלי ניסיון מוקדם.",
+      "visionBody": "לפתח סביב האפליקציה שבניתי קהילה של אומנים, מוזיקאים מיועד בעיקר למעמד חלש, אנשים בלי גישה למחשב או תוכנה, יוצרים שמחפשים דרך איכותית ופשוטה לבטא את היצירתיות שלהם.",
+      "visionBody2": "האפליקציה היא לא רק סינתיסייזר. היא תחנת עבודה שלמה. המטרה הייתה לשים את הכל במקום אחד (לופר, תופים, מייק, פאד אפקטים, סאונד) בצורה שגם אדם שלא למד מוזיקה יוכל להנות ממנה.",
       "next": "הכלי הבא שלך",
       "waits": "כבר מחכה.",
       "ctaText": "L Studio מיועדת למי שרוצה יותר מצליל אחד, מסולם אחד או מדרך אחת ליצור.",
@@ -85,8 +85,8 @@
       },
       "factoryPack": {
         "kicker": "L STUDIO PREMIUM / FACTORY PACK",
-        "title": "L Studio",
-        "accent": "Factory Pack",
+        "title": "L-studio",
+        "accent": "Factory Pack 64",
         "lede": "שמונה עמודים. שישים וארבעה קולות שנועדו לזוז.",
         "description": "Factory Pack היא ספריית סאונד שנבנתה בתוך ההיגיון של L Studio: שמונה עמודי טעינה, שמונה פריסטים בעלי אופי בכל עמוד. כל פריסט מגיע מוכן לעבודה בפורמט הטבעי של האפליקציה, עם עוצמה, ADSR, cutoff, resonance, echo, glide, waveform ואוקטבה. לא אוסף של צלילים כלליים, אלא 64 נקודות התחלה שנועדו להכניס רעיון לתנועה.",
         "genres": "נבנה לטרנס, טכנו, ראפ, טראפ ומטאל. כל עמוד מחזיק תפקיד מוזיקלי ברור, כדי שתוכל לפתוח, לבחור, לנגן ולהמשיך משם.",
@@ -122,7 +122,8 @@
         ],
         "specsTitle": "מפת נתיב האודיו",
         "specsBody": "מבט מעשי על הדרך שעוברת בין נגיעה לצליל."
-      }
+      },
+      "visionTitle": "חזון L-Studio"
     },
     "ru": {
       "productKicker": "Музыкальная рабочая станция для Android",
@@ -147,8 +148,8 @@
       },
       "factoryPack": {
         "kicker": "L STUDIO PREMIUM / FACTORY PACK",
-        "title": "L Studio",
-        "accent": "Factory Pack",
+        "title": "L-studio",
+        "accent": "Factory Pack 64",
         "lede": "Восемь страниц. Шестьдесят четыре голоса.",
         "description": "Полная звуковая библиотека для L Studio: восемь загружаемых страниц и восемь именных пресетов на каждой. Каждый голос записан в родном формате страницы приложения, громкость, ADSR, cutoff, resonance, echo, glide, waveform, octave, на домашних строях инструмента.",
         "genres": "Создано для trance, techno, rap, trap и metal. Никаких безликих init-слотов. Каждая страница, одна музыкальная задача.",
@@ -209,8 +210,8 @@
       },
       "factoryPack": {
         "kicker": "L STUDIO PREMIUM / FACTORY PACK",
-        "title": "L Studio",
-        "accent": "Factory Pack",
+        "title": "L-studio",
+        "accent": "Factory Pack 64",
         "lede": "ثماني صفحات. أربعة وستون صوتاً.",
         "description": "مكتبة أصوات كاملة لـ L Studio: ثماني صفحات قابلة للتحميل، وثمانية Presets مسماة في كل صفحة. كل صوت مكتوب بصيغة الصفحة الأصلية للتطبيق, مستوى الصوت وADSR وcutoff وresonance وecho وglide وwaveform وoctave, على سلالم الآلة الأساسية.",
         "genres": "مصممة للترانس والتكنو والراب والتراب والميتال. لا توجد خانات init عامة. كل صفحة لها مهمة موسيقية واحدة.",
