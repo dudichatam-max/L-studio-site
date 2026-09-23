@@ -7,7 +7,8 @@
         "vision": "החזון",
         "privacy": "פרטיות",
         "cta": "להכיר את L-Studio",
-        "faq": "שאלות ותשובות"
+        "faq": "שאלות ותשובות",
+        "guide": "מדריך למשתמש"
       },
       "hero": {
         "kicker": "סטודיו מוזיקה לאנשים שאוהבים לשחק עם צליל",
@@ -245,6 +246,236 @@
       },
       "footer": {
         "tagline": "זה לאנשים אנלוגיים בעולם דיגיטלי."
+      },
+      "guide": {
+        "title": "מדריך למשתמש",
+        "titleEm": "L Studio.",
+        "eyebrow": "LEARN / USER GUIDE / L STUDIO",
+        "intro": "המדריך הזה מתמקד בדברים שבאמת חשוב לדעת כדי לעבוד נכון עם המערכת, כולל פעולות שלא תמיד ברורות מהמסך עצמו.",
+        "onThisPage": "בעמוד הזה",
+        "tipBeginner": "טיפ למתחילים",
+        "tipAdvanced": "טיפ למתקדמים",
+        "back": "חזרה לאתר",
+        "home": "דף הבית",
+        "privacy": "פרטיות",
+        "features": "יכולות",
+        "architecture": "איך זה עובד",
+        "sections": [
+          {
+            "id": "sound",
+            "title": "יצירת צליל",
+            "body": [
+              "זהו אזור העבודה המרכזי ליצירת ועיצוב צליל.",
+              "כדאי להתחיל מצליל אחד ולשנות בכל פעם פרמטר אחד בלבד. כך קל להבין מה באמת השתנה."
+            ],
+            "tipBeginner": "אל תשנה עשרה דברים בבת אחת. שינוי קטן והקשבה חוזרת ילמדו אותך את המערכת מהר יותר.",
+            "tipAdvanced": "אפשר לשנות פרמטרים בזמן נגינה ולהשתמש בשינוי עצמו כחלק מהביצוע.",
+            "tag": "SOUND"
+          },
+          {
+            "id": "value",
+            "title": "שינוי מדויק של ערכים",
+            "body": [
+              "ליד כל כפתור מוצג ערך מספרי.",
+              "במקום לגרור את הכפתור ולנסות להגיע למספר הרצוי, אפשר להקיש על הערך ולהזין אותו ישירות."
+            ],
+            "tipBeginner": "אם קשה להגיע לערך מסוים, הקלד אותו.",
+            "tipAdvanced": "הזנה ידנית מאפשרת לשחזר סאונדים בדיוק ולבצע השוואות בין מצבים שונים."
+          },
+          {
+            "id": "freq",
+            "title": "עבודה עם תדרים",
+            "body": [
+              "אזור זה מאפשר לעבוד ישירות עם תדרים ולבנות מערכות כיוון אישיות.",
+              "התדרים אינם רק תוצאה של בחירת תו. הם חלק מהיצירה עצמה."
+            ],
+            "tipBeginner": "התחל ממערכת מוכנה ושנה רק תדר אחד או שניים.",
+            "tipAdvanced": "האופי של מערכת כיוון נקבע בעיקר על ידי היחסים בין התדרים, לא רק על ידי הערך של כל תדר בנפרד.",
+            "tag": "FREQ"
+          },
+          {
+            "id": "key",
+            "title": "בחירת סולם",
+            "body": [
+              "בחירת סולם מסמנת את הצלילים השייכים לסולם על המקלדת.",
+              "הסולם משמש כמדריך ויזואלי ואינו מחליף את התדרים שהוגדרו באזור התדרים."
+            ],
+            "tipBeginner": "השתמש בסימון כדי להבין במהירות אילו קלידים שייכים לסולם.",
+            "tipAdvanced": "אפשר לעבוד עם מערכת תדרים אחת ולבחור סימון של סולם אחר לצורך נגינה או חקירה מוזיקלית.",
+            "tag": "KEY"
+          },
+          {
+            "id": "oct",
+            "title": "שינוי אוקטבה",
+            "body": [
+              "שינוי אוקטבה מעלה או מוריד את כל מערכת התדרים בלי לשנות את היחסים ביניהם."
+            ],
+            "tipBeginner": "אם הצליל גבוה או נמוך מדי, נסה קודם לשנות אוקטבה.",
+            "tipAdvanced": "אפשר להשתמש באותה מערכת תדרים בכמה תחומים שונים בלי להגדיר אותה מחדש.",
+            "tag": "OCT"
+          },
+          {
+            "id": "pad",
+            "title": "משטח ביצוע",
+            "body": [
+              "המשטח מאפשר שליטה בזמן אמת ומסוגל לעבוד עם כמה חלקים של המערכת במקביל."
+            ],
+            "tipBeginner": "התחל עם מקור אחד בלבד עד שהתגובה של המשטח ברורה לך.",
+            "tipAdvanced": "אפשר להשתמש בתנועה אחת כדי להשפיע על כמה שכבות במקביל.",
+            "tag": "PAD"
+          },
+          {
+            "id": "mic",
+            "title": "הקלטה",
+            "body": [
+              "האזור הזה מיועד להקלטת קול, כלי נגינה או כל מקור חיצוני."
+            ],
+            "tipBeginner": "בצע הקלטת ניסיון קצרה לפני הקלטה ארוכה.",
+            "tipAdvanced": "הקלטות קצרות יכולות להפוך ללופים, לשכבות או לחומר גלם לעיבוד.",
+            "tag": "MIC",
+            "media": "assets/mic-window.jpg"
+          },
+          {
+            "id": "loop",
+            "title": "עבודה עם שכבות",
+            "body": [
+              "מערכת הלופים מאפשרת לעבוד עם מספר שכבות אודיו במקביל.",
+              "לכל ערוץ יש שליטה נפרדת בעוצמה ובמיקום במרחב."
+            ],
+            "tipBeginner": "התחל משכבה אחת. הוסף שכבות רק כאשר ברור מה הן מוסיפות.",
+            "tipAdvanced": "השתמש בעוצמה ובמיקום של כל ערוץ כדי ליצור מרחב עוד לפני הוספת אפקטים.",
+            "tag": "LOOP"
+          },
+          {
+            "id": "drum",
+            "title": "בניית מקצב",
+            "body": [
+              "מערכת התופים מבוססת על תבניות.",
+              "כל תבנית בנויה משישה עשר צעדים, וניתן לשמור כמה תבניות שונות."
+            ],
+            "tipBeginner": "בנה קודם תבנית בסיסית אחת.",
+            "tipAdvanced": "חשוב על תבניות כחלקים בשיר: בית, פזמון, מעבר או סיום.",
+            "tag": "DRUM"
+          },
+          {
+            "id": "pattern",
+            "title": "טעינת תבנית",
+            "body": [
+              "הקשה רגילה טוענת תבנית.",
+              "לחיצה ממושכת פותחת את אפשרויות החזרה."
+            ],
+            "tipBeginner": "זכור: הקשה טוענת, לחיצה ממושכת עורכת.",
+            "tipAdvanced": "אפשר להכין מראש כמה תבניות וליצור רצף אוטומטי.",
+            "tag": "PATTERN"
+          },
+          {
+            "id": "repeat",
+            "title": "חזרות אוטומטיות",
+            "body": [
+              "לכל תבנית אפשר להגדיר כמה פעמים היא תחזור.",
+              "אפשר לבחור מספר חזרות או חזרה ללא הגבלה."
+            ],
+            "tipBeginner": "אם אתה רוצה שתבנית תתנגן ארבע פעמים, הגדר ארבע חזרות.",
+            "tipAdvanced": "אפשר לבנות מבנה שלם של קטע בלי לעבור ידנית בין תבניות.",
+            "tag": "REPEAT"
+          },
+          {
+            "id": "live",
+            "title": "עריכה בזמן נגינה",
+            "body": [
+              "אפשר לשנות צעדים בזמן שהתבנית מתנגנת.",
+              "אין צורך לעצור את המקצב כדי לערוך אותו."
+            ],
+            "tipBeginner": "התחל לנגן ואז תקן תוך כדי.",
+            "tipAdvanced": "כך אפשר להשתמש במערכת התופים ככלי ביצוע חי."
+          },
+          {
+            "id": "swing",
+            "title": "שינוי תחושה קצבית",
+            "body": [
+              "משנה את התחושה של המקצב בלי לשנות את המהירות או את מספר הצעדים."
+            ],
+            "tipBeginner": "גם שינוי קטן יכול להיות מורגש מאוד.",
+            "tipAdvanced": "אפשר לשנות את התחושה של אותו מקצב בלי לבנות אותו מחדש.",
+            "tag": "SWING"
+          },
+          {
+            "id": "random",
+            "title": "יצירת רעיונות חדשים",
+            "body": [
+              "יוצר וריאציה חדשה של תבנית התופים."
+            ],
+            "tipBeginner": "השתמש בו כדי לקבל כיוון חדש.",
+            "tipAdvanced": "שמור את התחושה והמהירות, ושנה רק את הצעדים.",
+            "tag": "RANDOM"
+          },
+          {
+            "id": "preset",
+            "title": "שמירת צלילים",
+            "body": [
+              "שומר את מצב הצליל."
+            ],
+            "tipBeginner": "שמור צלילים טובים מיד.",
+            "tipAdvanced": "ארגן את הצלילים לפי תפקיד ולא לפי מספר.",
+            "tag": "PRESET",
+            "media": "assets/Preset.jpg"
+          },
+          {
+            "id": "session",
+            "title": "שמירת עבודה",
+            "body": [
+              "שומר את מצב העבודה הרחב יותר."
+            ],
+            "tipBeginner": "Preset שומר צליל. Session שומר עבודה.",
+            "tipAdvanced": "הפרד בין ספריית הצלילים לבין הפרויקטים.",
+            "tag": "SESSION"
+          },
+          {
+            "id": "midi",
+            "title": "ייצוא מידע מוזיקלי",
+            "body": [
+              "שומר מידע על הנגינה ולא את האודיו עצמו."
+            ],
+            "tipBeginner": "בחר MIDI אם אתה רוצה לערוך את התווים אחר כך.",
+            "tipAdvanced": "במערכות כיוון מיוחדות נשמר גם מידע של שינוי גובה הצליל.",
+            "tag": "MIDI"
+          },
+          {
+            "id": "wav",
+            "title": "ייצוא אודיו",
+            "body": [
+              "שומר את הצליל כפי שהוא נשמע."
+            ],
+            "tipBeginner": "בחר WAV אם אתה רוצה לשתף או לערוך את האודיו.",
+            "tipAdvanced": "שמור MIDI לגמישות ו־WAV לתוצאה סופית.",
+            "tag": "WAV"
+          },
+          {
+            "id": "hidden",
+            "title": "פעולות נסתרות",
+            "body": [
+              "יש כמה פעולות חשובות שאינן מוצגות ככפתור נפרד."
+            ],
+            "tipBeginner": "כדאי לנסות גם לחיצה ממושכת על אזורים שונים במערכת.",
+            "tipAdvanced": "חלק מהיכולות המתקדמות מוסתרות כדי לשמור על ממשק נקי ופשוט.",
+            "bullets": [
+              "SOUND — לחיצה ממושכת פותחת את כלי הבדיקה.",
+              "PATTERN — לחיצה ממושכת פותחת את אפשרויות החזרה.",
+              "ערך מספרי — הקשה מאפשרת הזנה מדויקת."
+            ]
+          },
+          {
+            "id": "benchmark",
+            "title": "כלי בדיקה",
+            "body": [
+              "כלי לבדיקת ביצועים ואבחון.",
+              "נפתח באמצעות לחיצה ממושכת על SOUND."
+            ],
+            "tipBeginner": "אין צורך להשתמש בו כדי ליצור מוזיקה.",
+            "tipAdvanced": "שימושי לבדיקה והשוואה של ביצועי המערכת.",
+            "tag": "BENCHMARK"
+          }
+        ]
       }
     },
     "en": {
@@ -254,7 +485,8 @@
         "vision": "Vision",
         "privacy": "Privacy",
         "cta": "Meet L-Studio",
-        "faq": "FAQ"
+        "faq": "FAQ",
+        "guide": "User guide"
       },
       "hero": {
         "kicker": "A music studio for people who love playing with sound",
@@ -492,6 +724,236 @@
       },
       "footer": {
         "tagline": "It's for analog people in a digital world."
+      },
+      "guide": {
+        "title": "User guide",
+        "titleEm": "L Studio.",
+        "eyebrow": "LEARN / USER GUIDE / L STUDIO",
+        "intro": "This guide focuses on what you really need to know to work well with the system — including actions that are not always obvious from the screen alone.",
+        "onThisPage": "On this page",
+        "tipBeginner": "Beginner tip",
+        "tipAdvanced": "Advanced tip",
+        "back": "Back to site",
+        "home": "Home",
+        "privacy": "Privacy",
+        "features": "Features",
+        "architecture": "How it works",
+        "sections": [
+          {
+            "id": "sound",
+            "title": "Creating a sound",
+            "body": [
+              "This is the main workspace for creating and shaping sound.",
+              "Start with one sound and change only one parameter at a time. That makes it easy to hear what actually changed."
+            ],
+            "tipBeginner": "Don't change ten things at once. Small changes and repeated listening will teach you the system faster.",
+            "tipAdvanced": "You can change parameters while playing and use the change itself as part of the performance.",
+            "tag": "SOUND"
+          },
+          {
+            "id": "value",
+            "title": "Precise value editing",
+            "body": [
+              "A numeric value is shown next to every control.",
+              "Instead of dragging the control to hit the number you want, tap the value and type it directly."
+            ],
+            "tipBeginner": "If a specific value is hard to reach, type it.",
+            "tipAdvanced": "Manual entry lets you recreate sounds exactly and compare different states."
+          },
+          {
+            "id": "freq",
+            "title": "Working with frequencies",
+            "body": [
+              "This area lets you work directly with frequencies and build your own tuning systems.",
+              "Frequencies are not just the result of choosing a note. They are part of the creation itself."
+            ],
+            "tipBeginner": "Start from a ready-made system and change only one or two frequencies.",
+            "tipAdvanced": "The character of a tuning system is set mainly by the relationships between frequencies — not only by each frequency value on its own.",
+            "tag": "FREQ"
+          },
+          {
+            "id": "key",
+            "title": "Choosing a scale",
+            "body": [
+              "Choosing a scale marks the notes that belong to that scale on the keyboard.",
+              "The scale is a visual guide and does not replace the frequencies defined in the frequency area."
+            ],
+            "tipBeginner": "Use the markings to quickly see which keys belong to the scale.",
+            "tipAdvanced": "You can work with one frequency system and choose markings for a different scale for playing or musical exploration.",
+            "tag": "KEY"
+          },
+          {
+            "id": "oct",
+            "title": "Octave shift",
+            "body": [
+              "Octave shift raises or lowers the entire frequency system without changing the relationships between them."
+            ],
+            "tipBeginner": "If the sound is too high or too low, try changing the octave first.",
+            "tipAdvanced": "You can use the same frequency system in several ranges without defining it again.",
+            "tag": "OCT"
+          },
+          {
+            "id": "pad",
+            "title": "Performance pad",
+            "body": [
+              "The pad gives real-time control and can work with several parts of the system at once."
+            ],
+            "tipBeginner": "Start with a single source until the pad's response is clear to you.",
+            "tipAdvanced": "You can use one gesture to affect several layers at the same time.",
+            "tag": "PAD"
+          },
+          {
+            "id": "mic",
+            "title": "Recording",
+            "body": [
+              "This area is for recording voice, an instrument, or any external source."
+            ],
+            "tipBeginner": "Do a short test recording before a long one.",
+            "tipAdvanced": "Short recordings can become loops, layers, or raw material for processing.",
+            "tag": "MIC",
+            "media": "assets/mic-window.jpg"
+          },
+          {
+            "id": "loop",
+            "title": "Working with layers",
+            "body": [
+              "The loop system lets you work with several audio layers at once.",
+              "Each channel has separate control over level and stereo position."
+            ],
+            "tipBeginner": "Start with one layer. Add more only when it is clear what they contribute.",
+            "tipAdvanced": "Use each channel's level and position to create space before adding effects.",
+            "tag": "LOOP"
+          },
+          {
+            "id": "drum",
+            "title": "Building a rhythm",
+            "body": [
+              "The drum system is pattern-based.",
+              "Each pattern is built from sixteen steps, and you can save several different patterns."
+            ],
+            "tipBeginner": "Build one basic pattern first.",
+            "tipAdvanced": "Think of patterns as song parts: verse, chorus, bridge, or ending.",
+            "tag": "DRUM"
+          },
+          {
+            "id": "pattern",
+            "title": "Loading a pattern",
+            "body": [
+              "A normal tap loads a pattern.",
+              "A long press opens the repeat options."
+            ],
+            "tipBeginner": "Remember: tap loads, long press edits.",
+            "tipAdvanced": "You can prepare several patterns in advance and create an automatic sequence.",
+            "tag": "PATTERN"
+          },
+          {
+            "id": "repeat",
+            "title": "Automatic repeats",
+            "body": [
+              "For each pattern you can set how many times it repeats.",
+              "You can choose a repeat count or unlimited repeat."
+            ],
+            "tipBeginner": "If you want a pattern to play four times, set four repeats.",
+            "tipAdvanced": "You can build a full section structure without switching patterns by hand.",
+            "tag": "REPEAT"
+          },
+          {
+            "id": "live",
+            "title": "Editing while playing",
+            "body": [
+              "You can change steps while the pattern is playing.",
+              "There is no need to stop the rhythm to edit it."
+            ],
+            "tipBeginner": "Start playing, then fix as you go.",
+            "tipAdvanced": "That way the drum system becomes a live performance tool."
+          },
+          {
+            "id": "swing",
+            "title": "Changing rhythmic feel",
+            "body": [
+              "Changes the feel of the rhythm without changing the tempo or the number of steps."
+            ],
+            "tipBeginner": "Even a small change can be very noticeable.",
+            "tipAdvanced": "You can change the feel of the same rhythm without rebuilding it.",
+            "tag": "SWING"
+          },
+          {
+            "id": "random",
+            "title": "Generating new ideas",
+            "body": [
+              "Creates a new variation of the drum pattern."
+            ],
+            "tipBeginner": "Use it to get a fresh direction.",
+            "tipAdvanced": "Keep the feel and tempo, and change only the steps.",
+            "tag": "RANDOM"
+          },
+          {
+            "id": "preset",
+            "title": "Saving sounds",
+            "body": [
+              "Saves the current sound state."
+            ],
+            "tipBeginner": "Save good sounds right away.",
+            "tipAdvanced": "Organize sounds by role, not by number.",
+            "tag": "PRESET",
+            "media": "assets/Preset.jpg"
+          },
+          {
+            "id": "session",
+            "title": "Saving your work",
+            "body": [
+              "Saves the broader work state."
+            ],
+            "tipBeginner": "Preset saves a sound. Session saves a project.",
+            "tipAdvanced": "Keep your sound library separate from your projects.",
+            "tag": "SESSION"
+          },
+          {
+            "id": "midi",
+            "title": "Exporting musical data",
+            "body": [
+              "Saves information about the performance, not the audio itself."
+            ],
+            "tipBeginner": "Choose MIDI if you want to edit the notes later.",
+            "tipAdvanced": "With special tuning systems, pitch-bend information is stored as well.",
+            "tag": "MIDI"
+          },
+          {
+            "id": "wav",
+            "title": "Exporting audio",
+            "body": [
+              "Saves the sound as it is heard."
+            ],
+            "tipBeginner": "Choose WAV if you want to share or edit the audio.",
+            "tipAdvanced": "Save MIDI for flexibility and WAV for the final result.",
+            "tag": "WAV"
+          },
+          {
+            "id": "hidden",
+            "title": "Hidden actions",
+            "body": [
+              "There are a few important actions that are not shown as separate buttons."
+            ],
+            "tipBeginner": "It is worth trying a long press on different areas of the system.",
+            "tipAdvanced": "Some advanced capabilities are hidden to keep the interface clean and simple.",
+            "bullets": [
+              "SOUND — a long press opens the test tool.",
+              "PATTERN — a long press opens the repeat options.",
+              "Numeric value — a tap enables precise entry."
+            ]
+          },
+          {
+            "id": "benchmark",
+            "title": "Test tool",
+            "body": [
+              "A tool for performance testing and diagnostics.",
+              "Opened with a long press on SOUND."
+            ],
+            "tipBeginner": "You do not need it to make music.",
+            "tipAdvanced": "Useful for testing and comparing system performance.",
+            "tag": "BENCHMARK"
+          }
+        ]
       }
     },
     "ru": {
@@ -501,7 +963,8 @@
         "vision": "Видение",
         "privacy": "Приватность",
         "cta": "Познакомиться с L-Studio",
-        "faq": "Вопросы и ответы"
+        "faq": "Вопросы и ответы",
+        "guide": "Руководство"
       },
       "hero": {
         "kicker": "Музыкальная студия для тех, кто любит играть со звуком",
@@ -739,6 +1202,236 @@
       },
       "footer": {
         "tagline": "Это для аналоговых людей в цифровом мире."
+      },
+      "guide": {
+        "title": "Руководство",
+        "titleEm": "L Studio.",
+        "eyebrow": "LEARN / USER GUIDE / L STUDIO",
+        "intro": "Это руководство сосредоточено на том, что действительно важно знать, чтобы уверенно работать с системой — включая действия, которые не всегда очевидны с экрана.",
+        "onThisPage": "На этой странице",
+        "tipBeginner": "Совет новичкам",
+        "tipAdvanced": "Совет продвинутым",
+        "back": "Вернуться на сайт",
+        "home": "Главная",
+        "privacy": "Приватность",
+        "features": "Возможности",
+        "architecture": "Как это работает",
+        "sections": [
+          {
+            "id": "sound",
+            "title": "Создание звука",
+            "body": [
+              "Это основная рабочая область для создания и оформления звука.",
+              "Начните с одного звука и меняйте за раз только один параметр. Так легче понять, что именно изменилось."
+            ],
+            "tipBeginner": "Не меняйте десять вещей сразу. Небольшое изменение и повторное прослушивание научат систему быстрее.",
+            "tipAdvanced": "Можно менять параметры во время игры и использовать само изменение как часть исполнения.",
+            "tag": "SOUND"
+          },
+          {
+            "id": "value",
+            "title": "Точное изменение значений",
+            "body": [
+              "Рядом с каждым регулятором отображается числовое значение.",
+              "Вместо того чтобы тянуть регулятор к нужному числу, можно нажать на значение и ввести его напрямую."
+            ],
+            "tipBeginner": "Если трудно попасть в нужное значение — введите его.",
+            "tipAdvanced": "Ручной ввод позволяет точно воспроизводить звуки и сравнивать разные состояния."
+          },
+          {
+            "id": "freq",
+            "title": "Работа с частотами",
+            "body": [
+              "Эта область позволяет работать напрямую с частотами и строить собственные системы настройки.",
+              "Частоты — не просто результат выбора ноты. Они часть самого творчества."
+            ],
+            "tipBeginner": "Начните с готовой системы и измените только одну или две частоты.",
+            "tipAdvanced": "Характер системы настройки определяется в основном соотношениями между частотами, а не только значением каждой частоты по отдельности.",
+            "tag": "FREQ"
+          },
+          {
+            "id": "key",
+            "title": "Выбор лада",
+            "body": [
+              "Выбор лада отмечает на клавиатуре звуки, принадлежащие этому ладу.",
+              "Лад служит визуальной подсказкой и не заменяет частоты, заданные в области частот."
+            ],
+            "tipBeginner": "Используйте разметку, чтобы быстро понять, какие клавиши относятся к ладу.",
+            "tipAdvanced": "Можно работать с одной системой частот и выбрать разметку другого лада для игры или музыкального исследования.",
+            "tag": "KEY"
+          },
+          {
+            "id": "oct",
+            "title": "Смена октавы",
+            "body": [
+              "Смена октавы поднимает или опускает всю систему частот, не меняя соотношения между ними."
+            ],
+            "tipBeginner": "Если звук слишком высокий или слишком низкий, сначала попробуйте сменить октаву.",
+            "tipAdvanced": "Одну и ту же систему частот можно использовать в разных диапазонах, не задавая её заново.",
+            "tag": "OCT"
+          },
+          {
+            "id": "pad",
+            "title": "Площадка исполнения",
+            "body": [
+              "Площадка даёт управление в реальном времени и может работать сразу с несколькими частями системы."
+            ],
+            "tipBeginner": "Начните с одного источника, пока реакция площадки не станет вам понятна.",
+            "tipAdvanced": "Одним жестом можно влиять сразу на несколько слоёв.",
+            "tag": "PAD"
+          },
+          {
+            "id": "mic",
+            "title": "Запись",
+            "body": [
+              "Эта область предназначена для записи голоса, инструмента или любого внешнего источника."
+            ],
+            "tipBeginner": "Сделайте короткую пробную запись перед длинной.",
+            "tipAdvanced": "Короткие записи могут стать лупами, слоями или сырьём для обработки.",
+            "tag": "MIC",
+            "media": "assets/mic-window.jpg"
+          },
+          {
+            "id": "loop",
+            "title": "Работа со слоями",
+            "body": [
+              "Система лупов позволяет работать с несколькими аудиослоями одновременно.",
+              "У каждого канала отдельное управление громкостью и положением в пространстве."
+            ],
+            "tipBeginner": "Начните с одного слоя. Добавляйте слои только когда ясно, что они дают.",
+            "tipAdvanced": "Используйте громкость и положение каждого канала, чтобы создать пространство ещё до добавления эффектов.",
+            "tag": "LOOP"
+          },
+          {
+            "id": "drum",
+            "title": "Построение ритма",
+            "body": [
+              "Барабанная система основана на паттернах.",
+              "Каждый паттерн состоит из шестнадцати шагов, и можно сохранить несколько разных паттернов."
+            ],
+            "tipBeginner": "Сначала постройте один базовый паттерн.",
+            "tipAdvanced": "Думайте о паттернах как о частях песни: куплет, припев, переход или финал.",
+            "tag": "DRUM"
+          },
+          {
+            "id": "pattern",
+            "title": "Загрузка паттерна",
+            "body": [
+              "Обычное нажатие загружает паттерн.",
+              "Долгое нажатие открывает параметры повтора."
+            ],
+            "tipBeginner": "Запомните: нажатие загружает, долгое нажатие редактирует.",
+            "tipAdvanced": "Можно заранее подготовить несколько паттернов и создать автоматическую последовательность.",
+            "tag": "PATTERN"
+          },
+          {
+            "id": "repeat",
+            "title": "Автоматические повторы",
+            "body": [
+              "Для каждого паттерна можно задать, сколько раз он повторится.",
+              "Можно выбрать число повторов или бесконечный повтор."
+            ],
+            "tipBeginner": "Если хотите, чтобы паттерн сыграл четыре раза, задайте четыре повтора.",
+            "tipAdvanced": "Можно построить целую структуру куска, не переключая паттерны вручную.",
+            "tag": "REPEAT"
+          },
+          {
+            "id": "live",
+            "title": "Редактирование во время игры",
+            "body": [
+              "Шаги можно менять, пока паттерн играет.",
+              "Не нужно останавливать ритм, чтобы его править."
+            ],
+            "tipBeginner": "Начните играть, а потом правьте на ходу.",
+            "tipAdvanced": "Так барабанная система становится инструментом живого исполнения."
+          },
+          {
+            "id": "swing",
+            "title": "Изменение ритмического ощущения",
+            "body": [
+              "Меняет ощущение ритма, не меняя темп и число шагов."
+            ],
+            "tipBeginner": "Даже небольшое изменение может быть очень заметным.",
+            "tipAdvanced": "Можно изменить ощущение того же ритма, не строя его заново.",
+            "tag": "SWING"
+          },
+          {
+            "id": "random",
+            "title": "Новые идеи",
+            "body": [
+              "Создаёт новую вариацию барабанного паттерна."
+            ],
+            "tipBeginner": "Используйте, чтобы получить новое направление.",
+            "tipAdvanced": "Сохраните ощущение и темп, меняйте только шаги.",
+            "tag": "RANDOM"
+          },
+          {
+            "id": "preset",
+            "title": "Сохранение звуков",
+            "body": [
+              "Сохраняет состояние звука."
+            ],
+            "tipBeginner": "Сохраняйте хорошие звуки сразу.",
+            "tipAdvanced": "Организуйте звуки по роли, а не по номеру.",
+            "tag": "PRESET",
+            "media": "assets/Preset.jpg"
+          },
+          {
+            "id": "session",
+            "title": "Сохранение работы",
+            "body": [
+              "Сохраняет более широкое состояние работы."
+            ],
+            "tipBeginner": "Preset сохраняет звук. Session сохраняет работу.",
+            "tipAdvanced": "Разделяйте библиотеку звуков и проекты.",
+            "tag": "SESSION"
+          },
+          {
+            "id": "midi",
+            "title": "Экспорт музыкальных данных",
+            "body": [
+              "Сохраняет информацию об исполнении, а не само аудио."
+            ],
+            "tipBeginner": "Выберите MIDI, если хотите потом править ноты.",
+            "tipAdvanced": "В особых системах настройки также сохраняется информация об изменении высоты звука.",
+            "tag": "MIDI"
+          },
+          {
+            "id": "wav",
+            "title": "Экспорт аудио",
+            "body": [
+              "Сохраняет звук таким, каким он слышен."
+            ],
+            "tipBeginner": "Выберите WAV, если хотите поделиться или править аудио.",
+            "tipAdvanced": "Сохраняйте MIDI для гибкости и WAV для финального результата.",
+            "tag": "WAV"
+          },
+          {
+            "id": "hidden",
+            "title": "Скрытые действия",
+            "body": [
+              "Есть несколько важных действий, которые не показаны отдельной кнопкой."
+            ],
+            "tipBeginner": "Стоит попробовать долгое нажатие на разные области системы.",
+            "tipAdvanced": "Часть продвинутых возможностей скрыта, чтобы интерфейс оставался чистым и простым.",
+            "bullets": [
+              "SOUND — долгое нажатие открывает инструмент проверки.",
+              "PATTERN — долгое нажатие открывает параметры повтора.",
+              "Числовое значение — нажатие позволяет точный ввод."
+            ]
+          },
+          {
+            "id": "benchmark",
+            "title": "Инструмент проверки",
+            "body": [
+              "Инструмент для проверки производительности и диагностики.",
+              "Открывается долгим нажатием на SOUND."
+            ],
+            "tipBeginner": "Он не нужен, чтобы создавать музыку.",
+            "tipAdvanced": "Полезен для проверки и сравнения производительности системы.",
+            "tag": "BENCHMARK"
+          }
+        ]
       }
     },
     "ar": {
@@ -748,7 +1441,8 @@
         "vision": "الرؤية",
         "privacy": "الخصوصية",
         "cta": "تعرّف على L-Studio",
-        "faq": "أسئلة وأجوبة"
+        "faq": "أسئلة وأجوبة",
+        "guide": "دليل المستخدم"
       },
       "hero": {
         "kicker": "استوديو موسيقى لمن يحب اللعب بالصوت",
@@ -986,6 +1680,236 @@
       },
       "footer": {
         "tagline": "هذا لأشخاص تناظريين في عالم رقمي."
+      },
+      "guide": {
+        "title": "دليل المستخدم",
+        "titleEm": "L Studio.",
+        "eyebrow": "LEARN / USER GUIDE / L STUDIO",
+        "intro": "يركّز هذا الدليل على ما تحتاج معرفته فعلاً للعمل بشكل صحيح مع النظام، بما في ذلك إجراءات لا تكون دائماً واضحة من الشاشة نفسها.",
+        "onThisPage": "في هذه الصفحة",
+        "tipBeginner": "نصيحة للمبتدئين",
+        "tipAdvanced": "نصيحة للمتقدمين",
+        "back": "العودة إلى الموقع",
+        "home": "الرئيسية",
+        "privacy": "الخصوصية",
+        "features": "المزايا",
+        "architecture": "كيف يعمل",
+        "sections": [
+          {
+            "id": "sound",
+            "title": "إنشاء صوت",
+            "body": [
+              "هذه منطقة العمل الرئيسية لإنشاء الصوت وتشكيله.",
+              "يفضّل البدء بصوت واحد وتغيير معامل واحد فقط في كل مرة. هكذا يسهل فهم ما تغيّر فعلاً."
+            ],
+            "tipBeginner": "لا تغيّر عشرة أشياء دفعة واحدة. تغيير صغير والاستماع المتكرر سيعلّمانك النظام بسرعة أكبر.",
+            "tipAdvanced": "يمكنك تغيير المعاملات أثناء العزف واستخدام التغيير نفسه كجزء من الأداء.",
+            "tag": "SOUND"
+          },
+          {
+            "id": "value",
+            "title": "تعديل القيم بدقة",
+            "body": [
+              "بجانب كل زر تظهر قيمة رقمية.",
+              "بدلاً من سحب الزر ومحاولة الوصول إلى الرقم المطلوب، يمكنك النقر على القيمة وإدخالها مباشرة."
+            ],
+            "tipBeginner": "إذا صعب الوصول إلى قيمة معيّنة، اكتبها.",
+            "tipAdvanced": "الإدخال اليدوي يتيح إعادة إنشاء الأصوات بدقة ومقارنة حالات مختلفة."
+          },
+          {
+            "id": "freq",
+            "title": "العمل مع الترددات",
+            "body": [
+              "تتيح هذه المنطقة العمل مباشرة مع الترددات وبناء أنظمة ضبط شخصية.",
+              "الترددات ليست مجرد نتيجة لاختيار نغمة. إنها جزء من الإبداع نفسه."
+            ],
+            "tipBeginner": "ابدأ من نظام جاهز وغيّر تردداً واحداً أو اثنين فقط.",
+            "tipAdvanced": "طابع نظام الضبط يتحدد أساساً بالعلاقات بين الترددات، وليس فقط بقيمة كل تردد على حدة.",
+            "tag": "FREQ"
+          },
+          {
+            "id": "key",
+            "title": "اختيار السلم",
+            "body": [
+              "اختيار السلم يعلّم النغمات التابعة للسلم على لوحة المفاتيح.",
+              "السلم دليل بصري ولا يستبدل الترددات المعرّفة في منطقة الترددات."
+            ],
+            "tipBeginner": "استخدم العلامات لفهم أي المفاتيح تنتمي للسلم بسرعة.",
+            "tipAdvanced": "يمكنك العمل بنظام ترددات واحد واختيار علامات لسلم آخر للعزف أو للاستكشاف الموسيقي.",
+            "tag": "KEY"
+          },
+          {
+            "id": "oct",
+            "title": "تغيير الأوكتاف",
+            "body": [
+              "تغيير الأوكتاف يرفع أو يخفض نظام الترددات بالكامل دون تغيير العلاقات بينها."
+            ],
+            "tipBeginner": "إذا كان الصوت مرتفعاً أو منخفضاً جداً، جرّب تغيير الأوكتاف أولاً.",
+            "tipAdvanced": "يمكنك استخدام نظام الترددات نفسه في نطاقات مختلفة دون إعادة تعريفه.",
+            "tag": "OCT"
+          },
+          {
+            "id": "pad",
+            "title": "سطح الأداء",
+            "body": [
+              "يتيح السطح التحكم في الوقت الفعلي ويمكنه العمل مع عدة أجزاء من النظام في آن واحد."
+            ],
+            "tipBeginner": "ابدأ بمصدر واحد فقط حتى تصبح استجابة السطح واضحة لك.",
+            "tipAdvanced": "يمكنك استخدام حركة واحدة للتأثير على عدة طبقات معاً.",
+            "tag": "PAD"
+          },
+          {
+            "id": "mic",
+            "title": "التسجيل",
+            "body": [
+              "هذه المنطقة مخصّصة لتسجيل الصوت أو آلة موسيقية أو أي مصدر خارجي."
+            ],
+            "tipBeginner": "أجرِ تسجيلاً تجريبياً قصيراً قبل تسجيل طويل.",
+            "tipAdvanced": "التسجيلات القصيرة يمكن أن تصبح لوبات أو طبقات أو مادة خاماً للمعالجة.",
+            "tag": "MIC",
+            "media": "assets/mic-window.jpg"
+          },
+          {
+            "id": "loop",
+            "title": "العمل مع الطبقات",
+            "body": [
+              "يتيح نظام اللوبات العمل مع عدة طبقات صوتية في آن واحد.",
+              "لكل قناة تحكم منفصل في المستوى والموضع في الفراغ."
+            ],
+            "tipBeginner": "ابدأ بطبقة واحدة. أضف طبقات فقط عندما يتضح ما تضيفه.",
+            "tipAdvanced": "استخدم مستوى كل قناة وموضعها لخلق فراغ قبل إضافة المؤثرات.",
+            "tag": "LOOP"
+          },
+          {
+            "id": "drum",
+            "title": "بناء إيقاع",
+            "body": [
+              "نظام الطبول مبني على أنماط.",
+              "كل نمط مكوّن من ستة عشر خطوة، ويمكن حفظ عدة أنماط مختلفة."
+            ],
+            "tipBeginner": "ابنِ أولاً نمطاً أساسياً واحداً.",
+            "tipAdvanced": "فكّر في الأنماط كأجزاء في الأغنية: مقطع، لازمة، انتقال أو خاتمة.",
+            "tag": "DRUM"
+          },
+          {
+            "id": "pattern",
+            "title": "تحميل نمط",
+            "body": [
+              "النقرة العادية تحمّل نمطاً.",
+              "الضغطة المطوّلة تفتح خيارات التكرار."
+            ],
+            "tipBeginner": "تذكّر: النقرة تحمّل، والضغطة المطوّلة تعدّل.",
+            "tipAdvanced": "يمكنك تجهيز عدة أنماط مسبقاً وإنشاء تسلسل تلقائي.",
+            "tag": "PATTERN"
+          },
+          {
+            "id": "repeat",
+            "title": "تكرارات تلقائية",
+            "body": [
+              "لكل نمط يمكن تحديد عدد مرات تكراره.",
+              "يمكنك اختيار عدد تكرارات أو تكراراً بلا حدود."
+            ],
+            "tipBeginner": "إذا أردت أن يُعزف النمط أربع مرات، عيّن أربع تكرارات.",
+            "tipAdvanced": "يمكنك بناء بنية كاملة لمقطع دون التنقل يدوياً بين الأنماط.",
+            "tag": "REPEAT"
+          },
+          {
+            "id": "live",
+            "title": "التحرير أثناء العزف",
+            "body": [
+              "يمكنك تغيير الخطوات أثناء تشغيل النمط.",
+              "لا حاجة لإيقاف الإيقاع لتحريره."
+            ],
+            "tipBeginner": "ابدأ بالعزف ثم صحّح أثناء التشغيل.",
+            "tipAdvanced": "هكذا يمكن استخدام نظام الطبول كأداة أداء حي."
+          },
+          {
+            "id": "swing",
+            "title": "تغيير الإحساس الإيقاعي",
+            "body": [
+              "يغيّر إحساس الإيقاع دون تغيير السرعة أو عدد الخطوات."
+            ],
+            "tipBeginner": "حتى التغيير الصغير يمكن أن يكون ملحوظاً جداً.",
+            "tipAdvanced": "يمكنك تغيير إحساس الإيقاع نفسه دون بنائه من جديد.",
+            "tag": "SWING"
+          },
+          {
+            "id": "random",
+            "title": "توليد أفكار جديدة",
+            "body": [
+              "ينشئ تنويعة جديدة لنمط الطبول."
+            ],
+            "tipBeginner": "استخدمه للحصول على اتجاه جديد.",
+            "tipAdvanced": "احتفظ بالإحساس والسرعة، وغيّر الخطوات فقط.",
+            "tag": "RANDOM"
+          },
+          {
+            "id": "preset",
+            "title": "حفظ الأصوات",
+            "body": [
+              "يحفظ حالة الصوت."
+            ],
+            "tipBeginner": "احفظ الأصوات الجيدة فوراً.",
+            "tipAdvanced": "نظّم الأصوات حسب الدور وليس حسب الرقم.",
+            "tag": "PRESET",
+            "media": "assets/Preset.jpg"
+          },
+          {
+            "id": "session",
+            "title": "حفظ العمل",
+            "body": [
+              "يحفظ حالة العمل الأوسع."
+            ],
+            "tipBeginner": "Preset يحفظ صوتاً. Session يحفظ عملاً.",
+            "tipAdvanced": "افصل بين مكتبة الأصوات والمشاريع.",
+            "tag": "SESSION"
+          },
+          {
+            "id": "midi",
+            "title": "تصدير بيانات موسيقية",
+            "body": [
+              "يحفظ معلومات عن العزف وليس الصوت نفسه."
+            ],
+            "tipBeginner": "اختر MIDI إذا أردت تحرير النغمات لاحقاً.",
+            "tipAdvanced": "في أنظمة الضبط الخاصة يُحفظ أيضاً معلومات تغيير ارتفاع النغمة.",
+            "tag": "MIDI"
+          },
+          {
+            "id": "wav",
+            "title": "تصدير صوت",
+            "body": [
+              "يحفظ الصوت كما يُسمع."
+            ],
+            "tipBeginner": "اختر WAV إذا أردت مشاركة الصوت أو تحريره.",
+            "tipAdvanced": "احفظ MIDI للمرونة وWAV للنتيجة النهائية.",
+            "tag": "WAV"
+          },
+          {
+            "id": "hidden",
+            "title": "إجراءات مخفية",
+            "body": [
+              "هناك عدة إجراءات مهمة لا تظهر كزر منفصل."
+            ],
+            "tipBeginner": "يجدر تجربة ضغطة مطوّلة على مناطق مختلفة في النظام.",
+            "tipAdvanced": "بعض القدرات المتقدمة مخفية للحفاظ على واجهة نظيفة وبسيطة.",
+            "bullets": [
+              "SOUND — الضغطة المطوّلة تفتح أداة الاختبار.",
+              "PATTERN — الضغطة المطوّلة تفتح خيارات التكرار.",
+              "قيمة رقمية — النقرة تتيح إدخالاً دقيقاً."
+            ]
+          },
+          {
+            "id": "benchmark",
+            "title": "أداة الاختبار",
+            "body": [
+              "أداة لفحص الأداء والتشخيص.",
+              "تُفتح بضغطة مطوّلة على SOUND."
+            ],
+            "tipBeginner": "لا حاجة لاستخدامها لإنشاء الموسيقى.",
+            "tipAdvanced": "مفيدة لفحص أداء النظام ومقارنته.",
+            "tag": "BENCHMARK"
+          }
+        ]
       }
     }
   }

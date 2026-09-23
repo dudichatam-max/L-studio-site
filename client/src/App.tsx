@@ -6,11 +6,12 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Home from "./pages/Home";
 import Privacy from "./pages/Privacy";
+import Guide from "./pages/Guide";
 import NotFound from "./pages/NotFound";
 
 function Router() {
   const base = window.location.pathname.startsWith("/L-studio-site") ? "/L-studio-site" : "";
-  return <WouterRouter base={base}><Switch><Route path="/" component={Home} /><Route path="/privacy" component={Privacy} /><Route path="/404" component={NotFound} /><Route component={NotFound} /></Switch></WouterRouter>;
+  return <WouterRouter base={base}><Switch><Route path="/" component={Home} /><Route path="/privacy" component={Privacy} /><Route path="/guide" component={Guide} /><Route path="/404" component={NotFound} /><Route component={NotFound} /></Switch></WouterRouter>;
 }
 
 export default function App() {
