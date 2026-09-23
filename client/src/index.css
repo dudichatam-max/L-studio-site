@@ -291,8 +291,7 @@ html[dir="rtl"] .footer-links {
 .architecture-core small { margin-top: 3px; color: var(--muted); font: 9px var(--mono); letter-spacing: .08em; }
 
 .vision-section { position: relative; padding: 152px 0 160px; border-top: 1px solid rgba(242,241,235,.12); background: radial-gradient(circle at 12% 38%, rgba(227,197,101,.09), transparent 31%), #101012; }
-.vision-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 105px; align-items: start; direction: ltr; }
-.vision-copy { direction: rtl; }
+.vision-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 105px; align-items: start; }
 .vision-portrait { width: min(100%, 360px); margin-bottom: 30px; border: 1px solid rgba(227,197,101,.38); background: #111113; box-shadow: 0 22px 70px rgba(0,0,0,.32); overflow: hidden; }
 .vision-portrait { border-radius: 50%; }
 .vision-portrait img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; filter: grayscale(.12) contrast(1.03); }
@@ -300,7 +299,7 @@ html[dir="rtl"] .footer-links {
 .vision-author { display: block; margin: -8px 0 24px; color: var(--acid); font: 11px var(--mono); letter-spacing: .08em; }
 .vision-copy p { max-width: 545px; margin: 0 0 18px; color: #aaa8a2; font-size: 17px; line-height: 1.85; }
 .vision-copy .kicker { color: var(--acid); }
-.vision-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding-top: 20px; direction: rtl; }
+.vision-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding-top: 20px; }
 .vision-card { position: relative; min-height: 300px; padding: 24px 21px; border: 1px solid rgba(242,241,235,.13); background: rgba(242,241,235,.025); transition: transform 220ms var(--ease-out), background 220ms ease, border-color 220ms ease; }
 .vision-card:hover { transform: translateY(-7px); border-color: rgba(227,197,101,.48); background: rgba(227,197,101,.065); }
 .vision-card svg { color: var(--acid); }
@@ -401,6 +400,9 @@ html[dir="ltr"] .hero-copy, html[dir="ltr"] .preview-copy, html[dir="ltr"] .visi
 html[dir="ltr"] .hero-copy .hero-lede, html[dir="ltr"] .preview-copy p, html[dir="ltr"] .vision-copy p, html[dir="ltr"] .tester-copy p { margin-left: 0; margin-right: auto; }
 html[dir="rtl"] .hero-copy, html[dir="rtl"] .preview-copy, html[dir="rtl"] .vision-copy, html[dir="rtl"] .tester-copy { direction: rtl; text-align: right; }
 html[dir="ltr"] .section-heading, html[dir="ltr"] .architecture-grid, html[dir="ltr"] .vision-grid { direction: ltr; }
+html[dir="rtl"] .section-heading, html[dir="rtl"] .architecture-grid, html[dir="rtl"] .vision-grid { direction: rtl; }
+html[dir="ltr"] .vision-cards, html[dir="ltr"] .vision-card { direction: ltr; text-align: left; }
+html[dir="rtl"] .vision-cards, html[dir="rtl"] .vision-card { direction: rtl; text-align: right; }
 html[dir="ltr"] .section-heading p { margin-left: 0; margin-right: auto; }
 .instagram-link { display: inline-flex; align-items: center; gap: 9px; width: fit-content; margin-top: 27px; color: var(--acid); font-size: 14px; font-weight: 700; text-decoration: none; transition: gap 160ms var(--ease-out), color 160ms ease; }
 .instagram-link:hover { gap: 13px; color: var(--paper); }

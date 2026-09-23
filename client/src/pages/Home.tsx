@@ -378,7 +378,7 @@ export default function Home() {
         </section>
 
         {/* 7. The vision */}
-        <section className="vision-section" id="vision">
+        <section className="vision-section" id="vision" dir={dir}>
           <div className="container vision-grid">
             <div className="vision-copy">
               <div className="vision-portrait"><img src={developerImage} alt="L Studio developer" /></div>
