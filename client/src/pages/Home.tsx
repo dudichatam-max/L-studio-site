@@ -1,5 +1,5 @@
-import { useEffect, useState, type CSSProperties } from "react";
-import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, X, Instagram } from "lucide-react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, Volume2, VolumeX, X, Instagram } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -97,25 +97,61 @@ const footerDefault = { tagline: "It's for analog people in a digital world." };
 const visionIcons = [Sparkles, Music2, ArrowDownLeft];
 
 
+const muteLabels = {
+  he: { unmute: "הפעל סאונד", mute: "השתק" },
+  en: { unmute: "Unmute", mute: "Mute" },
+  ru: { unmute: "Включить звук", mute: "Без звука" },
+  ar: { unmute: "تشغيل الصوت", mute: "كتم الصوت" },
+} satisfies Record<Language, { unmute: string; mute: string }>;
+
 function FeatureMedia({ image, video, label }: { image: string; video?: string; label: string }) {
+  const { language } = useLanguage();
   const [failed, setFailed] = useState(false);
+  const [muted, setMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const showVideo = Boolean(video) && !failed;
+  const soundLabel = muted ? muteLabels[language].unmute : muteLabels[language].mute;
+
+  const toggleMute = () => {
+    const el = videoRef.current;
+    if (!el) return;
+    const nextMuted = !muted;
+    el.muted = nextMuted;
+    setMuted(nextMuted);
+    if (!nextMuted) {
+      void el.play().catch(() => undefined);
+    }
+  };
 
   if (showVideo && video) {
     return (
-      <video
-        key={video}
-        className="preview-media"
-        src={video}
-        poster={image}
-        muted
-        loop
-        playsInline
-        autoPlay
-        preload="metadata"
-        aria-label={`${label} interface`}
-        onError={() => setFailed(true)}
-      />
+      <>
+        <video
+          key={video}
+          ref={videoRef}
+          className="preview-media"
+          src={video}
+          poster={image}
+          muted={muted}
+          loop
+          playsInline
+          autoPlay
+          preload="metadata"
+          aria-label={`${label} interface`}
+          onError={() => setFailed(true)}
+        />
+        <button
+          type="button"
+          className={`preview-mute${muted ? " is-muted" : ""}`}
+          onClick={toggleMute}
+          aria-label={soundLabel}
+          aria-pressed={!muted}
+          title={soundLabel}
+        >
+          {muted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+          <span>{soundLabel}</span>
+        </button>
+      </>
     );
   }
 
