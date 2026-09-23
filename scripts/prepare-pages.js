@@ -32,7 +32,7 @@ for (const target of targets) {
 
 // Custom domain for GitHub Pages (Actions artifact must include CNAME)
 const cnamePath = join(publicDir, "CNAME");
-writeFileSync(cnamePath, "l-studio.app\n", "utf8");
+writeFileSync(cnamePath, "l-studio.studio\n", "utf8");
 console.log(`Prepared ${cnamePath}`);
 
 console.log("GitHub Pages SPA fallbacks ready.");
