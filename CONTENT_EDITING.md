@@ -8,7 +8,7 @@ Do not change the JSON punctuation, keys, or braces. Change only the text betwee
 
 ## Images
 
-The root folder `assets/` contains the logo, PAD, LOOP, DRUM, and Factory Pack banner. Replace a file using the same filename and commit it. The GitHub Action copies the files into the website automatically.
+The root folder `assets/` holds shared stills such as the logo, Factory Pack banner, developer photo, and the MIC feature still (`mic-window.jpg` lives under `client/public/assets/`). Replace a file using the same filename and commit it. The GitHub Action copies root `assets/` into the website automatically.
 
 ## Feature videos
 
@@ -19,7 +19,7 @@ Upload these exact filenames into the root `assets/` folder (case-sensitive), th
 - `Pad.mp4`
 - `Drum.mp4`
 
-They play in the Features section when each item is opened. Until a file is present, the matching still image is shown.
+They play in the Features section when each item is opened. MIC keeps its still image only.
 
 ## Publishing
 
