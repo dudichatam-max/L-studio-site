@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const factoryBanner = `${import.meta.env.BASE_URL}assets/Preset.jpg`;
 const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
@@ -71,7 +72,7 @@ const featureData = {
 } satisfies Record<Language, Array<{ id: string; label: string; title: string; description: string; icon: typeof SlidersHorizontal; meta: string; image: string }>>;
 
 // Fallback copy, used only if content.json fails to load.
-const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", privacy: "Privacy", cta: "Meet L-Studio" };
+const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", privacy: "Privacy", cta: "Meet L-Studio" };
 const heroDefault = { kicker: "A music studio for people who love playing with sound", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "Under 7MB", stat2: "Android", stat3: "No ads" };
 const signalDefault = { text: "From key to sound to loop to recording", note: "All inside L-Studio" };
 const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started with a note that wasn't there.", body: ["I wanted to build a keyboard where I could set which frequency belongs to each key myself.", "From there it grew into recording, a looper, drums, a microphone and more."], closing: "What started as a search for the eighth note became L-Studio." };
@@ -80,6 +81,7 @@ const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
 const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 pages. 64 voices.", description: "Factory Pack was built specifically for L-Studio.", cta: "Get early access" };
 const visionDefault = { kicker: "05 / THE VISION", title: "I built the studio I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take the studio with you", body: "Creating shouldn't have to wait for a computer." }] };
+const faqDefault = { kicker: "07 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
 const testerDefault = { kicker: "EARLY ACCESS", title: "Want to try L-Studio?", body: "L-Studio is still evolving.", name: "Name", email: "Email address", consent: "I agree to receive L-Studio updates.", submit: "I want to try it", note: "Free early access · Limited to 44 testers" };
 const finalCtaDefault = { kicker: "06 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea.", cta: "Enter L-Studio" };
 const footerDefault = { tagline: "It's for analog people in a digital world." };
@@ -116,6 +118,7 @@ export default function Home() {
   const justStart = copy.justStart ?? justStartDefault;
   const factory = copy.factoryPack ?? factoryDefault;
   const vision = copy.vision ?? visionDefault;
+  const faq = copy.faq ?? faqDefault;
   const tester = copy.tester ?? testerDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
   const footer = copy.footer ?? footerDefault;
@@ -136,6 +139,7 @@ export default function Home() {
             <a href="#features">{nav.features}</a>
             <a href="#architecture">{nav.architecture}</a>
             <a href="#vision">{nav.vision}</a>
+            <a href="#faq">{nav.faq}</a>
             <Link href="/privacy">{nav.privacy}</Link>
           </nav>
           <div className="header-actions">
@@ -150,6 +154,7 @@ export default function Home() {
             <a href="#features" onClick={() => setMobileOpen(false)}>{nav.features}</a>
             <a href="#architecture" onClick={() => setMobileOpen(false)}>{nav.architecture}</a>
             <a href="#vision" onClick={() => setMobileOpen(false)}>{nav.vision}</a>
+            <a href="#faq" onClick={() => setMobileOpen(false)}>{nav.faq}</a>
             <Link href="/privacy" onClick={() => setMobileOpen(false)}>{nav.privacy}</Link>
           </nav>
         )}
@@ -335,6 +340,27 @@ export default function Home() {
           </div>
         </section>
 
+
+        {/* 7b. FAQ */}
+        <section className="faq-section container" id="faq" dir={dir}>
+          <div className="faq-heading">
+            <span className="kicker">{faq.kicker}</span>
+            <h2><Headline text={faq.title} /></h2>
+          </div>
+          <Accordion type="single" collapsible className="faq-accordion">
+            {(faq.items ?? []).map((item: { question: string; answer: string[] }, index: number) => (
+              <AccordionItem className="faq-item" value={`faq-${index}`} key={`faq-${index}`}>
+                <AccordionTrigger className="faq-trigger">{item.question}</AccordionTrigger>
+                <AccordionContent className="faq-answer">
+                  {(item.answer ?? []).map((paragraph: string, pIndex: number) => (
+                    <p key={pIndex}>{paragraph}</p>
+                  ))}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </section>
+
         {/* 8. Early Access */}
         <section className="tester-section container" id="early-access">
           <div className="tester-grid">
@@ -372,7 +398,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
-          <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><Link href="/privacy">{nav.privacy}</Link></div>
+          <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/privacy">{nav.privacy}</Link></div>
           <span className="footer-tagline">{footer.tagline}</span>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>
         </div>

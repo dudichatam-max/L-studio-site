@@ -1,125 +1,73 @@
 {
   "languages": {
-    "en": {
-      "productKicker": "A music workstation for Android",
-      "productLead": "Not just a synthesizer.",
-      "productAccent": "A complete studio.",
-      "productBody": "L Studio gives anyone a place to create, without a computer, a music degree or expensive software. Everything you need to compose, play and record lives in one place.",
-      "discover": "Join early access",
-      "engine": "See how it works",
-      "visionBody": "L Studio is building toward a community of artists and musicians, especially people who have not always had access to a computer, professional software or a creative space of their own.",
-      "visionBody2": "Creativity should not depend on expensive gear or prior knowledge. It should begin with one tap, continue through curiosity, and become a voice that is yours.",
-      "next": "Your next instrument",
-      "waits": "is already waiting.",
-      "ctaText": "L Studio is for anyone who is not satisfied with one sound, one scale, or one way to create.",
-      "tester": {
-        "kicker": "EARLY ACCESS / 44 SPOTS ONLY",
-        "title": "Want free early access to the Pro version?",
-        "body": "Leave your details for free early access to L Studio. We are looking for creators, musicians and curious people who can help us shape the tool.",
-        "name": "Full name",
-        "email": "Email address",
-        "submit": "Join the tester list",
-        "note": "Free access · Limited to 44 testers"
-      },
-      "factoryPack": {
-        "kicker": "L STUDIO PREMIUM / FACTORY PACK",
-        "title": "L-studio",
-        "accent": "Factory Pack 64",
-        "lede": "Eight Pages. Sixty-Four Voices.",
-        "description": "Meet the eight pages inside L Studio Factory Pack. BLACK WELL brings low-end weight and floor-shaking depth. GOLD HAMMER is built for hits, wood, metal and snap. LIGHT KNIFE cuts through with trance leads, edge and air. GRAY ENGINE keeps techno dry, focused and loop-ready. LOW SNAKE delivers trap and rap character with 808 weight, slide and dark pluck. SAW TEETH is raw blade for metal riffs and dark techno. GOLD FOG opens into pads and atmosphere. SPIKES lands on sharp plucks and stabs.",
-        "genres": "L Studio Factory Pack is 8 pages, 64 voices, named, tuned and voiced for the instrument. Import one page at a time from Preset and start with a sound that already has a direction.",
-        "cta": "Get early access"
-      },
-      "underHood": {
-        "kicker": "02 / UNDER THE HOOD",
-        "title": "The engine is the instrument.",
-        "body": "L Studio keeps the signal path visible and local. Every gesture travels through the app’s own voice layer, effects bus and stereo mix, while each keyboard note can be tuned manually to an exact frequency for microtonal playing.",
-        "details": [
-          {
-            "label": "MANUAL TUNING",
-            "value": "Set an exact frequency for every keyboard note and build your own microtonal layout"
-          },
-          {
-            "label": "VOICE LAYER",
-            "value": "Waveform, octave, glide, ADSR, cutoff and resonance per voice"
-          },
-          {
-            "label": "LIVE BUS",
-            "value": "Keyboard, microphone, looper, pad and drums share one performance flow"
-          },
-          {
-            "label": "EFFECTS + MIX",
-            "value": "Echo, level, pan and stereo output shaped in real time"
-          },
-          {
-            "label": "CAPTURE",
-            "value": "Local WAV recording and export, without a third-party synth layer"
-          }
-        ],
-        "pipeline": [
-          "KEYBOARD",
-          "DSP / VOICES",
-          "FX / MIX",
-          "WAV"
-        ],
-        "specsTitle": "Technical signal map",
-        "specsBody": "A practical view of what happens between touch and sound."
-      }
-    },
     "he": {
-      "productKicker": "תחנת עבודה מוזיקלית לאנדרואיד",
-      "productLead": "לא רק סינתיסייזר.",
-      "productAccent": "סטודיו שלם.",
-      "productBody": "L Studio נולדה מתוך רעיון פשוט: להפוך יצירה מוזיקלית לדבר שאפשר להתחיל ממנו מיד. בלי מחשב, בלי ידע מוקדם ובלי תוכנה יקרה. לופר, תופים, מיקרופון, פאד וסאונד עובדים יחד בתוך תחנת עבודה אחת, בכיס שלך.",
-      "discover": "להצטרף לגישה המוקדמת",
-      "engine": "איך זה עובד",
-      "visionBody": "לפתח סביב האפליקציה שבניתי קהילה של אומנים, מוזיקאים מיועד בעיקר למעמד חלש, אנשים בלי גישה למחשב או תוכנה, יוצרים שמחפשים דרך איכותית ופשוטה לבטא את היצירתיות שלהם.",
-      "visionBody2": "האפליקציה היא לא רק סינתיסייזר. היא תחנת עבודה שלמה. המטרה הייתה לשים את הכל במקום אחד (לופר, תופים, מייק, פאד אפקטים, סאונד) בצורה שגם אדם שלא למד מוזיקה יוכל להנות ממנה.",
-      "next": "הכלי הבא שלך",
-      "waits": "כבר מחכה.",
-      "ctaText": "L Studio מיועדת למי שרוצה יותר מצליל אחד, מסולם אחד או מדרך אחת ליצור.",
-      "tester": {
-        "kicker": "גישה מוקדמת / 44 מקומות בלבד",
-        "title": "רוצה לקבל גישה מוקדמת בחינם לגירסת ה-pro?",
-        "body": "השאירו פרטים וקבלו גישה מוקדמת בחינם ל-L Studio. מחפשים יוצרים, מוזיקאים ואנשים סקרנים שיעזרו לנו לדייק את הכלי.",
-        "name": "שם מלא",
-        "email": "כתובת מייל",
-        "submit": "להצטרף לרשימת הטסטרים",
-        "note": "ללא תשלום · מספר המקומות מוגבל ל-44"
+      "nav": {
+        "features": "מה יש בפנים",
+        "architecture": "איך זה עובד",
+        "vision": "החזון",
+        "privacy": "פרטיות",
+        "cta": "להכיר את L-Studio",
+        "faq": "שאלות ותשובות"
       },
-      "factoryPack": {
-        "kicker": "L STUDIO PREMIUM / FACTORY PACK",
-        "title": "L-studio",
-        "accent": "Factory Pack 64",
-        "lede": "שמונה עמודים. שישים וארבעה קולות שנועדו לזוז.",
-        "description": "הכירו את שמונת העמודים שבתוך L Studio Factory Pack. BLACK WELL מביא עומק נמוך, משקל ובס שמרגישים ברצפה. GOLD HAMMER בנוי להיטים, עץ, מתכת והתקפה חדה. LIGHT KNIFE חותך קדימה עם לידס של טראנס, קצה ואוויר. GRAY ENGINE שומר על טכנו יבש, ממוקד ומוכן ללופים. LOW SNAKE מביא אופי של טראפ וראפ עם משקל 808, גלייד ופלוק אפל. SAW TEETH הוא להב גולמי לריפים של מטאל ולטכנו אפל. GOLD FOG נפתח לפדים ולאווירה. SPIKES נוחת על פלוקים חדים וסטאבים.",
-        "genres": "L Studio Factory Pack כולל 8 עמודים ו־64 קולות, עם שמות, כיוון ואופי שנבנו במיוחד עבור הכלי. מייבאים עמוד אחד בכל פעם מתוך Preset ומתחילים מצליל שכבר יודע לאן הוא רוצה ללכת.",
-        "cta": "לקבלת גישה מוקדמת"
+      "hero": {
+        "kicker": "סטודיו מוזיקה לאנשים שאוהבים לשחק עם צליל",
+        "title": "מוזיקה לא צריכה להרגיש כמו עבודה.",
+        "body": "L-Studio התחילה בכלל ממשהו אחר. רציתי לבנות מקלדת שבה אני יכול לקבוע בעצמי איזה תדר יהיה בכל קליד. משם זה התגלגל להקלטה, לופר, תופים, מיקרופון, פאד ועוד. היום כל הדברים האלה נמצאים בתוך הטלפון.",
+        "ctaPrimary": "להכיר את L-Studio",
+        "ctaSecondary": "איך זה התחיל",
+        "stat1": "פחות מ-7MB",
+        "stat2": "Android",
+        "stat3": "ללא פרסומות"
+      },
+      "signalStrip": {
+        "text": "מהקליד ← לסאונד ← ללופ ← להקלטה",
+        "note": "הכול בתוך L-Studio"
+      },
+      "story": {
+        "kicker": "01 / THE EIGHTH NOTE",
+        "title": "הכול התחיל מתו שלא היה שם.",
+        "body": [
+          "יש דו, רה, מי, פה, סול, לה וסי.",
+          "יום אחד שאלתי את עצמי למה רק שבעה.",
+          "פתאום עלה לי בראש צליל נוסף. \"אל\".",
+          "משם נולד הרעיון הראשון של L-Studio. רציתי לבנות מקלדת שבה אני יכול לקבוע בעצמי איזה תדר שייך לכל קליד.",
+          "בכלל לא תכננתי לבנות סטודיו. רציתי כלי נגינה.",
+          "אחר כך רציתי להקליט את מה שאני מנגן, אז בניתי הקלטת WAV. אחר כך רציתי לופר. ואז תופים. ואז מיקרופון.",
+          "וכל פעם שאלתי את עצמי, למה לא להכניס גם את זה?",
+          "ככה, לאט לאט, הכלי הפך לסטודיו."
+        ],
+        "closing": "מה שהתחיל בחיפוש אחר התו השמיני הפך ל-L-Studio."
+      },
+      "featuresIntro": {
+        "kicker": "02 / PLAY WITH SOUND",
+        "title": "פשוט לפתוח ולשחק.",
+        "body": "לא צריך לדעת מוזיקה כדי להתחיל. פותחים, נוגעים, משנים, מקשיבים ורואים מה קורה."
       },
       "underHood": {
-        "kicker": "02 / מתחת למכסה המנוע",
-        "title": "המנוע הוא חלק מהכלי.",
-        "body": "ב-L Studio נתיב האודיו נשאר קרוב ליוצר. כל מחווה עוברת בשכבת הקולות, באוטובוס האפקטים ובמיקס הסטריאו של האפליקציה עצמה. בנוסף, אפשר לכוון ידנית את התדר המדויק של כל תו במקלדת ולבנות פריסה מיקרוטונלית משלך.",
+        "kicker": "03 / מתחת למכסה המנוע",
+        "title": "יש הרבה מאחורי הקלעים.",
+        "body": "L-Studio נבנתה כדי לתת שליטה על הסאונד בלי לחייב את המשתמש ללמוד מערכת ענקית. הקלידים, הסאונד, האפקטים, המיקרופון, הלופר, הפאד והתופים עובדים בתוך אותה אפליקציה. אפשר גם לכוון ידנית את התדר של כל קליד ולבנות את המקלדת בדרך שלך.",
+        "closing": "המורכבות נמצאת במנוע. לא בדרך שבה אתה צריך להשתמש בו.",
         "details": [
           {
             "label": "כיוון ידני",
-            "value": "מכוונים תדר מדויק לכל תו במקלדת ובונים סולם מיקרוטונלי משלכם"
+            "value": "אפשר לקבוע תדר מדויק לכל תו ולבנות סולם משלך"
           },
           {
             "label": "שכבת הקול",
-            "value": "גל קול, אוקטבה, glide, מעטפת ADSR, cutoff ו-resonance לכל קול"
+            "value": "Wave, Octave, Glide, ADSR, Cutoff ו-Resonance"
           },
           {
-            "label": "אוטובוס ביצוע",
-            "value": "קלידים, מיקרופון, לופר, פאד ותופים עובדים בתוך זרימת הופעה אחת"
+            "label": "זרימת ביצוע",
+            "value": "קלידים, מיקרופון, לופר, פאד ותופים עובדים בתוך אותה זרימת עבודה"
           },
           {
             "label": "אפקטים ומיקס",
-            "value": "Echo, עוצמה, פאנינג ויציאת סטריאו מתעצבים בזמן אמת"
+            "value": "Echo, עוצמה, פאנינג ויציאת סטריאו"
           },
           {
-            "label": "לכידה",
-            "value": "הקלטה וייצוא ל-WAV באופן מקומי, בלי שכבת סינתיסייזר חיצונית"
+            "label": "הקלטה",
+            "value": "הקלטה וייצוא ל-WAV באופן מקומי"
           }
         ],
         "pipeline": [
@@ -131,138 +79,913 @@
         "specsTitle": "מפת נתיב האודיו",
         "specsBody": "מבט מעשי על הדרך שעוברת בין נגיעה לצליל."
       },
-      "visionTitle": "חזון L-Studio"
-    },
-    "ru": {
-      "productKicker": "Музыкальная рабочая станция для Android",
-      "productLead": "Не просто синтезатор.",
-      "productAccent": "Целая студия.",
-      "productBody": "L Studio даёт каждому место для творчества, без компьютера, музыкального образования и дорогих программ. Всё для сочинения, игры и записи собрано в одном месте.",
-      "discover": "Получить ранний доступ",
-      "engine": "Как это работает",
-      "visionBody": "L Studio строит сообщество артистов и музыкантов, особенно для тех, у кого не всегда был компьютер, профессиональный софт или своё творческое пространство.",
-      "visionBody2": "Творчество не должно зависеть от дорогого оборудования или опыта. Оно начинается с одного касания, продолжается любопытством и становится вашим голосом.",
-      "next": "Твой следующий инструмент",
-      "waits": "уже ждёт.",
-      "ctaText": "L Studio создана для тех, кому мало одного звука, одной гаммы или одного способа творить.",
-      "tester": {
-        "kicker": "РАННИЙ ДОСТУП / ТОЛЬКО 44 МЕСТА",
-        "title": "Хочешь получить бесплатный ранний доступ к Pro-версии?",
-        "body": "Оставь данные и получи бесплатный ранний доступ к L Studio. Мы ищем создателей, музыкантов и любопытных людей, которые помогут улучшить инструмент.",
-        "name": "Полное имя",
-        "email": "Email",
-        "submit": "В список тестеров",
-        "note": "Бесплатный доступ · Только 44 тестера"
+      "justStart": {
+        "kicker": "04 / JUST START",
+        "title": "יש הרבה מה לעשות. לא צריך לדעת הכול.",
+        "body": [
+          "כשפותחים תוכנת מוזיקה בפעם הראשונה, לפעמים הדבר הראשון שמרגישים הוא שיש יותר מדי דברים.",
+          "כפתורים, חלונות, תפריטים וכל מיני דברים שאתה לא יודע מה הם עושים.",
+          "L-Studio נבנתה אחרת. יש כאן הרבה אפשרויות, אבל אפשר להתחיל בלי ללמוד קורס.",
+          "פותחים כפתור. נוגעים בו. מקשיבים.",
+          "אחרי כמה דקות כבר מתחילים להבין מה כל דבר עושה."
+        ],
+        "closing": "תתחיל לשחק. השאר כבר יגיע."
       },
       "factoryPack": {
-        "kicker": "L STUDIO PREMIUM / FACTORY PACK",
-        "title": "L-studio",
-        "accent": "Factory Pack 64",
-        "lede": "Восемь страниц. Шестьдесят четыре голоса.",
-        "description": "Восемь страниц внутри L Studio Factory Pack. BLACK WELL даёт низ, вес и глубину. GOLD HAMMER создан для ударов, дерева, металла и резкой атаки. LIGHT KNIFE прорезает микс трансовыми лидами, гранью и воздухом. GRAY ENGINE держит техно сухим, точным и готовым к лупам. LOW SNAKE приносит характер trap и rap: 808, slide и тёмный pluck. SAW TEETH звучит как сырое лезвие для metal и dark techno. GOLD FOG раскрывает pads и атмосферу. SPIKES отвечает за резкие plucks и stabs.",
-        "genres": "L Studio Factory Pack: 8 страниц и 64 голоса, названных, настроенных и созданных для этого инструмента. Импортируйте по одной странице из Preset и начинайте со звука с направлением.",
-        "cta": "Получить ранний доступ"
+        "kicker": "L-STUDIO / FACTORY PACK",
+        "lede": "הסאונד כבר מחכה לך.",
+        "shortText": "8 עמודים. 64 קולות.",
+        "description": "Factory Pack נבנה במיוחד עבור L-Studio. יש בו קולות עם אופי שונה, מבסים כבדים ועד צלילים חדים, פדים, פלוקים ועוד. בוחרים קול, טוענים אותו ומתחילים לנגן.",
+        "cta": "לקבלת גישה מוקדמת"
+      },
+      "vision": {
+        "kicker": "05 / החזון",
+        "title": "בניתי את הסטודיו שהייתי צריך.",
+        "author": "דוד חתם, מפתח L-Studio",
+        "body": [
+          "אני לא מגיע מרקע של לימודי מוזיקה. לא למדתי איך בונים תוכנת מוזיקה מקצועית ולא הייתה לי מערכת גדולה לעבוד איתה.",
+          "אני פשוט אוהב מוזיקה ורציתי לשלוט בסאונד בדרך שהייתה לי טבעית.",
+          "הכול התחיל מהרעיון של לקבוע בעצמי את התדרים של הקלידים. משם הוספתי הקלטה, לופר, תופים, מיקרופון ועוד דברים שהייתי צריך בדרך.",
+          "בסוף מצאתי את עצמי מסיים את המוזיקה שלי בתוך L-Studio.",
+          "אני לא רוצה להפוך אותה ל-FL Studio. אני רוצה שהיא תישאר מקום שאפשר לפתוח ופשוט להתחיל ליצור בו."
+        ],
+        "mainLine": "זה לאנשים אנלוגיים בעולם דיגיטלי.",
+        "cards": [
+          {
+            "no": "01",
+            "title": "פשוט להתחיל",
+            "body": "לפתוח את האפליקציה ולהתחיל ליצור בלי להרגיש שצריך לדעת הכול קודם."
+          },
+          {
+            "no": "02",
+            "title": "לשחק עם הצליל",
+            "body": "לגעת בסאונד, לשנות אותו ולגלות דברים שלא תכננת."
+          },
+          {
+            "no": "03",
+            "title": "לקחת את הסטודיו איתך",
+            "body": "היצירה לא צריכה לחכות למחשב. אם יש לך רעיון, אפשר להתחיל ממנו עכשיו."
+          }
+        ]
+      },
+      "faq": {
+        "kicker": "07 / FAQ",
+        "title": "שאלות ותשובות",
+        "items": [
+          {
+            "question": "מה מיוחד בעבודה עם תדרים במקום רק עם שמות של תווים?",
+            "answer": [
+              "ב־L Studio כל מקש יכול להיות מכוון לתדר משלו. אתה לא חייב להיצמד למרווחים של כיוון שווה־מזג או לתווים קבועים של פסנתר.",
+              "אפשר לערוך את התדרים עצמם, לשנות אוקטבה ולבנות מערכת צלילים שמתאימה בדיוק למה שאתה רוצה לשמוע."
+            ]
+          },
+          {
+            "question": "אם הקלטתי לופ ואז שיניתי את הסאונד, הלופ משתנה גם הוא?",
+            "answer": [
+              "לא.",
+              "כשהלופ מוקלט, L Studio שומר את הצליל שכבר עבר דרך הסינתיסייזר והאפקטים. כלומר, הלופ הוא הקלטת אודיו אמיתית ולא רשימה של תווים שמחכה להתנגן מחדש.",
+              "אם תשנה אחר כך את ה־Cutoff, ה־Wave, ה־Drive או אפקט אחר, ההקלטה שכבר עשית תישאר כמו שהייתה בזמן ההקלטה.",
+              "זה מאפשר לבנות שכבות של סאונד ולהמשיך לנגן מעליהן בלי שהשכבות הישנות ישתנו מתחת לידיים שלך."
+            ]
+          },
+          {
+            "question": "אז ה־PAD הוא אפקט או כלי נגינה?",
+            "answer": [
+              "ה־PAD נועד לנגינה.",
+              "הוא עובד בשני צירים ויכול לשלוט במקורות שונים במערכת. אפשר להפנות אותו לסינתיסייזר, ללופר, למיקרופון או לתופים, ולהשתמש בתנועה שלו גם ל־Wah, שינוי אוקטבה, Chorus ופעולות קצביות כמו Stutter.",
+              "כשמקליטים לופ, גם תנועת ה־PAD יכולה להישמר יחד עם ההקלטה.",
+              "כלומר, אפשר לא רק להקליט מה ניגנת, אלא גם חלק מהדרך שבה ניגנת אותו."
+            ]
+          },
+          {
+            "question": "אפשר להוציא נגינה מיקרוטונאלית ל־MIDI?",
+            "answer": [
+              "כן, אבל חשוב להבין איך זה עובד.",
+              "MIDI רגיל מבוסס על תווים, ולכן L Studio שומר את הכוונון המיקרוטונאלי באמצעות שילוב של תו MIDI ו־Pitch Bend. המערכת מחשבת את התדר וממפה אותו לתו הקרוב ביותר, ואז משתמשת ב־Pitch Bend כדי להחזיר את הסטייה מהתדר הסטנדרטי.",
+              "לכן, כדי לשמוע את הכיוון המיקרוטונאלי גם בתוכנה או בכלי חיצוני, הכלי שמקבל את ה־MIDI צריך לתמוך ב־Pitch Bend ולהיות מוגדר בהתאם."
+            ]
+          },
+          {
+            "question": "אפשר להשתמש במיקרופון כחלק מהנגינה ולא רק להקליט קול?",
+            "answer": [
+              "כן.",
+              "המיקרופון הוא חלק מנתיב האודיו של L Studio. יש לו ערוצים משלו, שליטה בעוצמה ובמיקום בסטריאו, ניטור, Gain, פילטר High-Pass, Gate, Presence ו־Compression.",
+              "כך אפשר לשלב מקור חי בתוך הסטאפ ולשלוט בו לצד הסינתיסייזר, הלופים והתופים.",
+              "אם משתמשים בניטור דרך רמקולים, צריך כמובן לשים לב לפידבק אקוסטי."
+            ]
+          },
+          {
+            "question": "אפשר לבנות ביט בלי לתכנת כל תוף מאפס?",
+            "answer": [
+              "כן.",
+              "מעבר לתכנות ידני של ה־Step Sequencer, L Studio כולל יצירת Pattern אקראי עם כללים מוזיקליים.",
+              "המערכת לא פשוט מדליקה צעדים באקראי: היא מייצרת בסיס לקיק, סנר והיי־האט ומוסיפה וריאציות לפיזור שלהם, כך שאפשר לקבל גרוב ראשוני ולפתח אותו במקום להתחיל מאפס.",
+              "אחרי זה אפשר לשנות את ה־Pattern, ה־BPM, ה־Swing, העוצמות והמיקום בסטריאו."
+            ]
+          },
+          {
+            "question": "מה ההבדל בין Preset לבין Session?",
+            "answer": [
+              "Preset מיועד בעיקר לשמור סאונד.",
+              "Session מיועד לשמור מצב עבודה שלם.",
+              "ב־Session נשמרים בין היתר הכיוון של המקלדת, הסולם, ה־Waveform, מעטפת ה־ADSR, הפילטר, האפקטים, האוקטבה, ניתוב ה־PAD ומידע הקשור ללופר, לתופים ולמיקרופון.",
+              "כלומר, במקום לנסות לזכור איך בנית את הסטאפ, אתה יכול לשמור אותו ולחזור אליו."
+            ]
+          },
+          {
+            "question": "ומה קורה אם אני רוצה להעביר את הפרויקט למכשיר אחר?",
+            "answer": [
+              "L Studio כולל מנגנוני Import ו־Export לפרויקטים ולערכות.",
+              "פרויקטים של לופר יכולים לכלול את האודיו ואת נתוני ה־PAD שלהם, ערכות התופים יכולות לעבור יחד עם הדגימות וה־Patterns שלהן, ו־Sessions ניתנים לייצוא וייבוא כקבצי פרויקט.",
+              "המטרה היא שהעבודה שלך לא תהיה כלואה בתוך מסך אחד של האפליקציה."
+            ]
+          },
+          {
+            "question": "אפשר ממש להקליט שיר שלם מתוך L Studio?",
+            "answer": [
+              "אפשר לבנות ולהקליט ביצוע שלם בתוך המערכת, אבל L Studio לא מנסה להיות DAW מסורתי עם Timeline אינסופי.",
+              "העבודה בנויה יותר סביב נגינה, שכבות, לופים, תופים, מיקרופון וסינתזה בזמן אמת.",
+              "בנוסף, אפשר להקליט את המיקס הסופי ישירות לקובץ WAV, כך שאפשר לקחת את הביצוע החוצה גם בלי להפוך את L Studio לעורך אולפן מלא."
+            ]
+          },
+          {
+            "question": "כמה מהדברים שאני עושה בזמן נגינה באמת נשמרים?",
+            "answer": [
+              "יותר ממה שנדמה.",
+              "בנוסף לתווים עצמם, המערכת יכולה לתעד אירועי MIDI ואת התדרים שלהם, וב־Looper תנועת ה־PAD יכולה להישמר כחלק מהביצוע.",
+              "זה חשוב במיוחד כשאתה עובד בצורה ביצועית: תנועה של הפד, שינויי סאונד ושכבות אודיו יכולים להיות חלק מהתוצאה ולא רק הגדרה זמנית של המערכת."
+            ]
+          },
+          {
+            "question": "אפשר להשתמש ב־L Studio ככלי ביצוע ולא רק ככלי ליצירה?",
+            "answer": [
+              "כן. למעשה, חלק גדול מהארכיטקטורה בנוי סביב הרעיון הזה.",
+              "הסינתיסייזר, ה־PAD, הלופר, התופים והמיקרופון נמצאים באותו נתיב אודיו ומגיעים יחד למיקס הסופי.",
+              "אפשר להתחיל מצליל חי, להקליט אותו ללופ, להוסיף עליו תופים, להשתמש שוב ב־PAD ולשלב מקור מהמיקרופון בלי להחליף סביבת עבודה בכל שלב.",
+              "L Studio בנוי כך שהפעולות האלה יכולות לקרות כחלק מאותו ביצוע."
+            ]
+          }
+        ]
+      },
+      "tester": {
+        "kicker": "EARLY ACCESS",
+        "title": "רוצה לנסות את L-Studio?",
+        "body": "L-Studio עדיין מתפתחת. אני מחפש אנשים שרוצים לפתוח אותה, לשחק איתה ולספר לי מה עובד ומה עדיין צריך להשתפר. אם בא לך להיות חלק מהשלב הזה, השאר פרטים ואחזור אליך.",
+        "name": "שם",
+        "email": "כתובת מייל",
+        "consent": "אני מאשר/ת לקבל עדכונים על L-Studio.",
+        "submit": "אני רוצה לנסות",
+        "note": "גישה מוקדמת ללא תשלום · מספר המקומות מוגבל ל-44"
+      },
+      "finalCta": {
+        "kicker": "06 / YOUR SOUND",
+        "title": "אולי הגיע הזמן למצוא את הצליל שלך.",
+        "body": "אתה יכול להתחיל מסאונד אחד, מקצב, לופ או רעיון קטן. אתה לא באמת יודע מה ייצא עד שאתה מתחיל לשחק.",
+        "cta": "להיכנס ל-L-Studio"
+      },
+      "footer": {
+        "tagline": "זה לאנשים אנלוגיים בעולם דיגיטלי."
+      }
+    },
+    "en": {
+      "nav": {
+        "features": "What's inside",
+        "architecture": "How it works",
+        "vision": "Vision",
+        "privacy": "Privacy",
+        "cta": "Meet L-Studio",
+        "faq": "FAQ"
+      },
+      "hero": {
+        "kicker": "A music studio for people who love playing with sound",
+        "title": "Music shouldn't feel like work.",
+        "body": "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.",
+        "ctaPrimary": "Meet L-Studio",
+        "ctaSecondary": "How it started",
+        "stat1": "Under 7MB",
+        "stat2": "Android",
+        "stat3": "No ads"
+      },
+      "signalStrip": {
+        "text": "From key ← to sound ← to loop ← to recording",
+        "note": "All inside L-Studio"
+      },
+      "story": {
+        "kicker": "01 / THE EIGHTH NOTE",
+        "title": "It all started with a note that wasn't there.",
+        "body": [
+          "There's do, re, mi, fa, sol, la and si.",
+          "One day I asked myself, why only seven?",
+          "Suddenly another sound popped into my head. \"Al.\"",
+          "That's where the first idea for L-Studio was born. I wanted to build a keyboard where I could set which frequency belongs to each key myself.",
+          "I never planned to build a studio. I wanted an instrument.",
+          "Then I wanted to record what I played, so I built a WAV recorder. Then I wanted a looper. Then drums. Then a microphone.",
+          "And every time I asked myself, why not add that too?",
+          "That's how, little by little, the instrument became a studio."
+        ],
+        "closing": "What started as a search for the eighth note became L-Studio."
+      },
+      "featuresIntro": {
+        "kicker": "02 / PLAY WITH SOUND",
+        "title": "Just open it and play.",
+        "body": "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens."
       },
       "underHood": {
-        "kicker": "02 / UNDER THE HOOD",
-        "title": "Движок тоже является инструментом.",
-        "body": "В L Studio аудиотракт остаётся локальным и понятным. Жест проходит через собственный слой голосов, шину эффектов и стереомикс приложения, а частоту каждой клавиши можно вручную настроить для микротональной игры.",
+        "kicker": "03 / UNDER THE HOOD",
+        "title": "There's a lot going on behind the scenes.",
+        "body": "L-Studio was built to give you control over sound without forcing you to learn a giant system. The keys, the sound, the effects, the microphone, the looper, the pad and the drums all work inside the same app. You can also manually tune the frequency of every key and build your keyboard your way.",
+        "closing": "The complexity lives in the engine. Not in the way you have to use it.",
         "details": [
           {
             "label": "MANUAL TUNING",
-            "value": "Точная ручная настройка частоты каждой клавиши и собственная микротональная раскладка"
+            "value": "Set an exact frequency for every key and build your own scale"
           },
           {
             "label": "VOICE LAYER",
-            "value": "Волна, октава, glide, ADSR, cutoff и resonance для каждого голоса"
+            "value": "Wave, Octave, Glide, ADSR, Cutoff and Resonance"
           },
           {
-            "label": "LIVE BUS",
-            "value": "Клавиши, микрофон, лупер, пад и ударные в одном потоке"
+            "label": "PERFORMANCE FLOW",
+            "value": "Keys, microphone, looper, pad and drums work inside the same flow"
           },
           {
             "label": "EFFECTS + MIX",
-            "value": "Echo, уровень, панорама и стереовыход в реальном времени"
+            "value": "Echo, level, panning and stereo output"
           },
           {
             "label": "CAPTURE",
-            "value": "Локальная запись и экспорт WAV без внешнего синтезатора"
+            "value": "Local recording and WAV export"
           }
         ],
         "pipeline": [
           "KEYBOARD",
           "DSP / VOICES",
           "FX / MIX",
+          "WAV"
+        ],
+        "specsTitle": "Technical signal map",
+        "specsBody": "A practical view of what happens between touch and sound."
+      },
+      "justStart": {
+        "kicker": "04 / JUST START",
+        "title": "There's a lot to do. You don't need to know it all.",
+        "body": [
+          "When you open music software for the first time, the first thing you might feel is that there's too much going on.",
+          "Buttons, windows, menus, and all kinds of things you don't know what they do.",
+          "L-Studio was built differently. There's a lot here, but you can start without taking a course.",
+          "Open a button. Touch it. Listen.",
+          "After a few minutes you already start understanding what everything does."
+        ],
+        "closing": "Start playing. The rest will come."
+      },
+      "factoryPack": {
+        "kicker": "L-STUDIO / FACTORY PACK",
+        "lede": "The sound is already waiting for you.",
+        "shortText": "8 pages. 64 voices.",
+        "description": "Factory Pack was built specifically for L-Studio. It has sounds with different character, from heavy basses to sharp tones, pads, plucks and more. Pick a sound, load it, and start playing.",
+        "cta": "Get early access"
+      },
+      "vision": {
+        "kicker": "05 / THE VISION",
+        "title": "I built the studio I needed.",
+        "author": "David Chatam, L-Studio developer",
+        "body": [
+          "I don't come from a background of music studies. I never learned how to build professional music software, and I didn't have a big system to work with.",
+          "I just love music and wanted to control sound in a way that felt natural to me.",
+          "It all started from the idea of setting the frequencies of the keys myself. From there I added recording, a looper, drums, a microphone and other things I needed along the way.",
+          "In the end I found myself finishing my music inside L-Studio.",
+          "I don't want it to become FL Studio. I want it to stay a place you can open and just start creating in."
+        ],
+        "mainLine": "It's for analog people in a digital world.",
+        "cards": [
+          {
+            "no": "01",
+            "title": "Just start",
+            "body": "Open the app and start creating without feeling like you need to know everything first."
+          },
+          {
+            "no": "02",
+            "title": "Play with sound",
+            "body": "Touch the sound, change it, and discover things you didn't plan."
+          },
+          {
+            "no": "03",
+            "title": "Take the studio with you",
+            "body": "Creating shouldn't have to wait for a computer. If you have an idea, you can start from it right now."
+          }
+        ]
+      },
+      "faq": {
+        "kicker": "07 / FAQ",
+        "title": "Questions and answers",
+        "items": [
+          {
+            "question": "What's special about working with frequencies instead of only note names?",
+            "answer": [
+              "In L Studio every key can be tuned to its own frequency. You don't have to stick to equal-temperament intervals or fixed piano notes.",
+              "You can edit the frequencies themselves, change octave, and build a sound system that matches exactly what you want to hear."
+            ]
+          },
+          {
+            "question": "If I recorded a loop and then changed the sound, does the loop change too?",
+            "answer": [
+              "No.",
+              "When a loop is recorded, L Studio keeps the sound that already went through the synthesizer and effects. In other words, the loop is a real audio recording, not a list of notes waiting to play again.",
+              "If you later change Cutoff, Wave, Drive, or another effect, the recording you already made stays as it was at record time.",
+              "That lets you build layers of sound and keep playing over them without the older layers shifting under your hands."
+            ]
+          },
+          {
+            "question": "So is the PAD an effect or an instrument?",
+            "answer": [
+              "The PAD is meant for playing.",
+              "It works on two axes and can control different sources in the system. You can point it at the synthesizer, the looper, the microphone, or the drums, and use its motion for Wah, octave shifts, Chorus, and rhythmic moves like Stutter.",
+              "When you record a loop, PAD motion can be saved with the recording too.",
+              "So you can capture not only what you played, but also part of how you played it."
+            ]
+          },
+          {
+            "question": "Can I send microtonal playing out over MIDI?",
+            "answer": [
+              "Yes, but it's important to understand how it works.",
+              "Regular MIDI is based on notes, so L Studio keeps microtonal tuning with a mix of a MIDI note and Pitch Bend. The system calculates the frequency, maps it to the nearest note, then uses Pitch Bend to restore the offset from the standard frequency.",
+              "So to hear the microtonal tuning in external software or hardware, the MIDI destination needs to support Pitch Bend and be set up for it."
+            ]
+          },
+          {
+            "question": "Can I use the microphone as part of playing, not only to record voice?",
+            "answer": [
+              "Yes.",
+              "The microphone is part of L Studio's audio path. It has its own channels, level and stereo placement, monitoring, Gain, High-Pass filter, Gate, Presence, and Compression.",
+              "That way you can bring a live source into the setup and control it beside the synthesizer, loops, and drums.",
+              "If you monitor through speakers, of course watch out for acoustic feedback."
+            ]
+          },
+          {
+            "question": "Can I build a beat without programming every drum from scratch?",
+            "answer": [
+              "Yes.",
+              "Beyond manual Step Sequencer programming, L Studio includes random Pattern generation with musical rules.",
+              "The system doesn't just light steps at random: it builds a kick, snare, and hi-hat base and adds variations in how they're spread, so you can get an initial groove and develop it instead of starting from zero.",
+              "After that you can change the Pattern, BPM, Swing, levels, and stereo placement."
+            ]
+          },
+          {
+            "question": "What's the difference between a Preset and a Session?",
+            "answer": [
+              "A Preset is mainly for saving a sound.",
+              "A Session is for saving a full working state.",
+              "A Session keeps things like keyboard tuning, scale, Waveform, ADSR envelope, filter, effects, octave, PAD routing, and info related to the looper, drums, and microphone.",
+              "So instead of trying to remember how you built the setup, you can save it and come back to it."
+            ]
+          },
+          {
+            "question": "And what if I want to move the project to another device?",
+            "answer": [
+              "L Studio includes Import and Export for projects and kits.",
+              "Looper projects can include their audio and PAD data, drum kits can travel with their samples and Patterns, and Sessions can be exported and imported as project files.",
+              "The goal is that your work isn't locked inside one screen of the app."
+            ]
+          },
+          {
+            "question": "Can I actually record a full song from inside L Studio?",
+            "answer": [
+              "You can build and record a full performance inside the system, but L Studio doesn't try to be a traditional DAW with an endless Timeline.",
+              "The work is built more around playing, layers, loops, drums, microphone, and real-time synthesis.",
+              "You can also record the final mix straight to a WAV file, so you can take the performance out without turning L Studio into a full studio editor."
+            ]
+          },
+          {
+            "question": "How much of what I do while playing is actually saved?",
+            "answer": [
+              "More than it seems.",
+              "Beyond the notes themselves, the system can capture MIDI events and their frequencies, and in the Looper, PAD motion can be saved as part of the performance.",
+              "That matters especially when you work in a performative way: pad motion, sound changes, and audio layers can be part of the result, not just a temporary system setting."
+            ]
+          },
+          {
+            "question": "Can I use L Studio as a performance tool, not only a creation tool?",
+            "answer": [
+              "Yes. In fact, a large part of the architecture is built around that idea.",
+              "The synthesizer, PAD, looper, drums, and microphone live on the same audio path and arrive together at the final mix.",
+              "You can start from a live sound, record it to a loop, add drums on top, use the PAD again, and bring in a mic source without switching workspaces at every step.",
+              "L Studio is built so these moves can happen as part of the same performance."
+            ]
+          }
+        ]
+      },
+      "tester": {
+        "kicker": "EARLY ACCESS",
+        "title": "Want to try L-Studio?",
+        "body": "L-Studio is still evolving. I'm looking for people who want to open it, play with it, and tell me what works and what still needs improving. If you want to be part of this stage, leave your details and I'll get back to you.",
+        "name": "Name",
+        "email": "Email address",
+        "consent": "I agree to receive L-Studio updates.",
+        "submit": "I want to try it",
+        "note": "Free early access · Limited to 44 testers"
+      },
+      "finalCta": {
+        "kicker": "06 / YOUR SOUND",
+        "title": "Maybe it's time to find your sound.",
+        "body": "You can start from one sound, a beat, a loop, or a small idea. You never really know what will come out until you start playing.",
+        "cta": "Enter L-Studio"
+      },
+      "footer": {
+        "tagline": "It's for analog people in a digital world."
+      }
+    },
+    "ru": {
+      "nav": {
+        "features": "Что внутри",
+        "architecture": "Как это работает",
+        "vision": "Видение",
+        "privacy": "Приватность",
+        "cta": "Познакомиться с L-Studio",
+        "faq": "Вопросы и ответы"
+      },
+      "hero": {
+        "kicker": "Музыкальная студия для тех, кто любит играть со звуком",
+        "title": "Музыка не должна ощущаться как работа.",
+        "body": "L-Studio вообще началась с другого. Я хотел сделать клавиатуру, в которой сам смогу задавать частоту каждой клавиши. Оттуда всё выросло в запись, лупер, барабаны, микрофон, пэд и многое другое. Сегодня всё это живёт внутри телефона.",
+        "ctaPrimary": "Познакомиться с L-Studio",
+        "ctaSecondary": "Как всё началось",
+        "stat1": "Меньше 7 МБ",
+        "stat2": "Android",
+        "stat3": "Без рекламы"
+      },
+      "signalStrip": {
+        "text": "От клавиши ← к звуку ← к лупу ← к записи",
+        "note": "Всё внутри L-Studio"
+      },
+      "story": {
+        "kicker": "01 / THE EIGHTH NOTE",
+        "title": "Всё началось с ноты, которой не было.",
+        "body": [
+          "Есть до, ре, ми, фа, соль, ля и си.",
+          "Однажды я спросил себя, почему их только семь.",
+          "Вдруг в голове появился ещё один звук. «Аль».",
+          "Оттуда родилась первая идея L-Studio. Я хотел сделать клавиатуру, в которой сам смогу задавать, какая частота принадлежит каждой клавише.",
+          "Я вообще не планировал строить студию. Я хотел музыкальный инструмент.",
+          "Потом я захотел записывать то, что играю, и сделал WAV-рекордер. Потом захотел лупер. Потом барабаны. Потом микрофон.",
+          "И каждый раз я спрашивал себя: а почему бы не добавить и это?",
+          "Так, шаг за шагом, инструмент превратился в студию."
+        ],
+        "closing": "То, что началось с поиска восьмой ноты, стало L-Studio."
+      },
+      "featuresIntro": {
+        "kicker": "02 / PLAY WITH SOUND",
+        "title": "Просто открыть и играть.",
+        "body": "Не нужно знать музыку, чтобы начать. Открываешь, трогаешь, меняешь, слушаешь и смотришь, что получится."
+      },
+      "underHood": {
+        "kicker": "03 / ПОД КАПОТОМ",
+        "title": "За кулисами происходит многое.",
+        "body": "L-Studio создана, чтобы дать контроль над звуком, не заставляя изучать огромную систему. Клавиши, звук, эффекты, микрофон, лупер, пэд и барабаны работают внутри одного приложения. Можно также вручную настроить частоту каждой клавиши и построить клавиатуру по-своему.",
+        "closing": "Сложность живёт в движке. Не в том, как им пользоваться.",
+        "details": [
+          {
+            "label": "РУЧНАЯ НАСТРОЙКА",
+            "value": "Задайте точную частоту для каждой клавиши и постройте собственный лад"
+          },
+          {
+            "label": "СЛОЙ ГОЛОСА",
+            "value": "Волна, октава, glide, ADSR, cutoff и resonance"
+          },
+          {
+            "label": "ПОТОК ИСПОЛНЕНИЯ",
+            "value": "Клавиши, микрофон, лупер, пэд и барабаны работают в одном потоке"
+          },
+          {
+            "label": "ЭФФЕКТЫ И МИКС",
+            "value": "Echo, уровень, панорама и стерео выход"
+          },
+          {
+            "label": "ЗАПИСЬ",
+            "value": "Локальная запись и экспорт в WAV"
+          }
+        ],
+        "pipeline": [
+          "КЛАВИШИ",
+          "DSP / ГОЛОСА",
+          "FX / МИКС",
           "WAV"
         ],
         "specsTitle": "Карта аудиосигнала",
         "specsBody": "Практический взгляд на путь от касания до звука."
+      },
+      "justStart": {
+        "kicker": "04 / JUST START",
+        "title": "Здесь есть чем заняться. Не нужно знать всё сразу.",
+        "body": [
+          "Когда впервые открываешь музыкальную программу, первое, что чувствуешь, это слишком много всего.",
+          "Кнопки, окна, меню и всякое, назначение чего непонятно.",
+          "L-Studio сделана иначе. Здесь много возможностей, но начать можно без прохождения курса.",
+          "Открываешь кнопку. Трогаешь её. Слушаешь.",
+          "Через несколько минут уже начинаешь понимать, что каждая вещь делает."
+        ],
+        "closing": "Начни играть. Остальное придёт само."
+      },
+      "factoryPack": {
+        "kicker": "L-STUDIO / FACTORY PACK",
+        "lede": "Звук уже ждёт тебя.",
+        "shortText": "8 страниц. 64 голоса.",
+        "description": "Factory Pack создан специально для L-Studio. В нём звуки с разным характером, от тяжёлых басов до резких тонов, пэды, плаки и многое другое. Выбираешь звук, загружаешь и начинаешь играть.",
+        "cta": "Получить ранний доступ"
+      },
+      "vision": {
+        "kicker": "05 / ВИДЕНИЕ",
+        "title": "Я построил студию, которая была нужна мне самому.",
+        "author": "Давид Хатам, разработчик L-Studio",
+        "body": [
+          "Я не из музыкального образования. Я не учился строить профессиональный музыкальный софт, и у меня не было большой системы для работы.",
+          "Я просто люблю музыку и хотел управлять звуком так, как это было естественно для меня.",
+          "Всё началось с идеи самому задавать частоты клавиш. Оттуда я добавил запись, лупер, барабаны, микрофон и другие вещи, которые были нужны по пути.",
+          "В итоге я обнаружил, что заканчиваю свою музыку внутри L-Studio.",
+          "Я не хочу превращать её в FL Studio. Я хочу, чтобы это оставалось местом, которое можно открыть и просто начать творить."
+        ],
+        "mainLine": "Это для аналоговых людей в цифровом мире.",
+        "cards": [
+          {
+            "no": "01",
+            "title": "Просто начать",
+            "body": "Открыть приложение и начать творить, не чувствуя, что сначала нужно всё знать."
+          },
+          {
+            "no": "02",
+            "title": "Играть со звуком",
+            "body": "Трогать звук, менять его и находить то, что не планировал."
+          },
+          {
+            "no": "03",
+            "title": "Взять студию с собой",
+            "body": "Творчество не должно ждать компьютера. Если есть идея, можно начать с неё прямо сейчас."
+          }
+        ]
+      },
+      "faq": {
+        "kicker": "07 / FAQ",
+        "title": "Вопросы и ответы",
+        "items": [
+          {
+            "question": "Что особенного в работе с частотами вместо только названий нот?",
+            "answer": [
+              "В L Studio каждая клавиша может быть настроена на свою частоту. Тебе не нужно держаться интервалов равномерной темперации или фиксированных нот рояля.",
+              "Можно править сами частоты, менять октаву и собирать звуковую систему, которая точно совпадает с тем, что ты хочешь слышать."
+            ]
+          },
+          {
+            "question": "Если я записал луп, а потом изменил звук — луп тоже меняется?",
+            "answer": [
+              "Нет.",
+              "Когда луп записан, L Studio сохраняет звук, который уже прошёл через синтезатор и эффекты. То есть луп — это настоящая аудиозапись, а не список нот, который ждёт повторного воспроизведения.",
+              "Если потом изменить Cutoff, Wave, Drive или другой эффект, уже сделанная запись останется такой, какой была в момент записи.",
+              "Так можно строить слои звука и продолжать играть поверх них, не меняя старые слои у себя под руками."
+            ]
+          },
+          {
+            "question": "Значит, PAD — это эффект или инструмент?",
+            "answer": [
+              "PAD предназначен для игры.",
+              "Он работает по двум осям и может управлять разными источниками в системе. Его можно направить на синтезатор, лупер, микрофон или барабаны и использовать движение и для Wah, смены октавы, Chorus и ритмических действий вроде Stutter.",
+              "При записи лупа движение PAD тоже может сохраняться вместе с записью.",
+              "То есть можно записать не только что ты сыграл, но и часть того, как ты это сыграл."
+            ]
+          },
+          {
+            "question": "Можно ли вывести микротональную игру по MIDI?",
+            "answer": [
+              "Да, но важно понимать, как это работает.",
+              "Обычный MIDI основан на нотах, поэтому L Studio сохраняет микротональный строй через сочетание MIDI-ноты и Pitch Bend. Система считает частоту, сопоставляет её ближайшей ноте, а затем использует Pitch Bend, чтобы вернуть отклонение от стандартной частоты.",
+              "Поэтому, чтобы слышать микротональный строй и во внешней программе или инструменте, приёмник MIDI должен поддерживать Pitch Bend и быть настроен соответствующим образом."
+            ]
+          },
+          {
+            "question": "Можно ли использовать микрофон как часть игры, а не только для записи голоса?",
+            "answer": [
+              "Да.",
+              "Микрофон — часть аудиопути L Studio. У него свои каналы, управление громкостью и положением в стерео, мониторинг, Gain, фильтр High-Pass, Gate, Presence и Compression.",
+              "Так можно встроить живой источник в сетап и управлять им рядом с синтезатором, лупами и барабанами.",
+              "Если слушать мониторинг через колонки, конечно, нужно следить за акустической обратной связью."
+            ]
+          },
+          {
+            "question": "Можно ли собрать бит, не программируя каждый барабан с нуля?",
+            "answer": [
+              "Да.",
+              "Помимо ручного программирования Step Sequencer, L Studio умеет создавать случайный Pattern с музыкальными правилами.",
+              "Система не просто включает шаги наугад: она строит основу для кика, снейра и хай-хэта и добавляет вариации их раскладки, чтобы сразу получить начальный грув и развивать его, а не начинать с нуля.",
+              "После этого можно менять Pattern, BPM, Swing, уровни и положение в стерео."
+            ]
+          },
+          {
+            "question": "В чём разница между Preset и Session?",
+            "answer": [
+              "Preset в основном нужен, чтобы сохранить звук.",
+              "Session нужен, чтобы сохранить полное рабочее состояние.",
+              "В Session сохраняются, среди прочего, строй клавиатуры, гамма, Waveform, огибающая ADSR, фильтр, эффекты, октава, маршрутизация PAD и данные, связанные с лупером, барабанами и микрофоном.",
+              "То есть вместо того чтобы вспоминать, как ты собрал сетап, можно сохранить его и вернуться к нему."
+            ]
+          },
+          {
+            "question": "А что, если я хочу перенести проект на другое устройство?",
+            "answer": [
+              "В L Studio есть механизмы Import и Export для проектов и наборов.",
+              "Проекты лупера могут включать аудио и данные PAD, барабанные наборы могут переноситься вместе с семплами и Patterns, а Sessions можно экспортировать и импортировать как файлы проекта.",
+              "Цель в том, чтобы твоя работа не была заперта внутри одного экрана приложения."
+            ]
+          },
+          {
+            "question": "Можно ли прямо записать целую песню из L Studio?",
+            "answer": [
+              "Можно собрать и записать целое исполнение внутри системы, но L Studio не пытается быть традиционной DAW с бесконечным Timeline.",
+              "Работа больше построена вокруг игры, слоёв, лупов, барабанов, микрофона и синтеза в реальном времени.",
+              "Кроме того, финальный микс можно записать сразу в файл WAV — так исполнение можно вынести наружу, не превращая L Studio в полноценный студийный редактор."
+            ]
+          },
+          {
+            "question": "Сколько из того, что я делаю во время игры, действительно сохраняется?",
+            "answer": [
+              "Больше, чем кажется.",
+              "Помимо самих нот система может фиксировать MIDI-события и их частоты, а в Looper движение PAD может сохраняться как часть исполнения.",
+              "Это особенно важно, когда ты работаешь перформативно: движение пэда, изменения звука и аудиослои могут быть частью результата, а не только временной настройкой системы."
+            ]
+          },
+          {
+            "question": "Можно ли использовать L Studio как инструмент для выступления, а не только для создания?",
+            "answer": [
+              "Да. На самом деле большая часть архитектуры построена вокруг этой идеи.",
+              "Синтезатор, PAD, лупер, барабаны и микрофон находятся в одном аудиопути и вместе приходят в финальный микс.",
+              "Можно начать с живого звука, записать его в луп, добавить поверх барабаны, снова использовать PAD и подключить источник с микрофона — без смены рабочей среды на каждом шаге.",
+              "L Studio устроен так, чтобы эти действия могли происходить как часть одного исполнения."
+            ]
+          }
+        ]
+      },
+      "tester": {
+        "kicker": "РАННИЙ ДОСТУП",
+        "title": "Хочешь попробовать L-Studio?",
+        "body": "L-Studio всё ещё развивается. Я ищу людей, которые хотят открыть её, поиграть с ней и рассказать, что работает, а что ещё нужно улучшить. Если хочешь быть частью этого этапа, оставь данные, и я свяжусь с тобой.",
+        "name": "Имя",
+        "email": "Email",
+        "consent": "Я согласен получать обновления о L-Studio.",
+        "submit": "Хочу попробовать",
+        "note": "Бесплатный ранний доступ · Только 44 места"
+      },
+      "finalCta": {
+        "kicker": "06 / YOUR SOUND",
+        "title": "Может, пора найти свой звук.",
+        "body": "Можно начать с одного звука, ритма, лупа или маленькой идеи. Ты никогда не узнаешь, что получится, пока не начнёшь играть.",
+        "cta": "Войти в L-Studio"
+      },
+      "footer": {
+        "tagline": "Это для аналоговых людей в цифровом мире."
       }
     },
     "ar": {
-      "productKicker": "محطة عمل موسيقية لنظام Android",
-      "productLead": "ليست مجرد مُركِّب.",
-      "productAccent": "استوديو كامل.",
-      "productBody": "تمنح L Studio الجميع مساحة للإبداع, من دون كمبيوتر أو شهادة موسيقية أو برامج باهظة. كل ما تحتاجه للتأليف والعزف والتسجيل في مكان واحد.",
-      "discover": "احصل على وصول مبكر",
-      "engine": "كيف يعمل",
-      "visionBody": "رؤية L Studio هي بناء مجتمع من الفنانين والموسيقيين, خصوصاً لمن لم تتوفر لهم دائماً إمكانية الوصول إلى كمبيوتر أو برنامج احترافي أو مساحة إبداعية خاصة.",
-      "visionBody2": "الإبداع لا يجب أن يعتمد على معدات باهظة أو معرفة مسبقة. يجب أن يبدأ بلمسة، ويستمر بالفضول، ويصبح صوتاً يخصك.",
-      "next": "أداتك الموسيقية التالية",
-      "waits": "تنتظرك.",
-      "ctaText": "صُممت L Studio لمن لا يكتفي بصوت واحد أو سلم واحد أو طريقة واحدة للإبداع.",
-      "tester": {
-        "kicker": "وصول مبكر / 44 مكاناً فقط",
-        "title": "هل تريد الحصول على وصول مبكر مجاني إلى إصدار Pro؟",
-        "body": "اترك بياناتك للحصول على وصول مبكر مجاني إلى L Studio. نبحث عن مبدعين وموسيقيين وأشخاص فضوليين يساعدوننا على تطوير الأداة.",
-        "name": "الاسم الكامل",
-        "email": "البريد الإلكتروني",
-        "submit": "الانضمام إلى قائمة المختبرين",
-        "note": "وصول مجاني · العدد محدود بـ44 مختبراً"
+      "nav": {
+        "features": "ما بداخلها",
+        "architecture": "كيف يعمل",
+        "vision": "الرؤية",
+        "privacy": "الخصوصية",
+        "cta": "تعرّف على L-Studio",
+        "faq": "أسئلة وأجوبة"
       },
-      "factoryPack": {
-        "kicker": "L STUDIO PREMIUM / FACTORY PACK",
-        "title": "L-studio",
-        "accent": "Factory Pack 64",
-        "lede": "ثماني صفحات. أربعة وستون صوتاً.",
-        "description": "ثماني صفحات داخل L Studio Factory Pack. BLACK WELL يمنح العمق والوزن في الترددات المنخفضة. GOLD HAMMER للضربات والخشب والمعدن والهجوم الحاد. LIGHT KNIFE لقيادات الترانس مع الحافة والهواء. GRAY ENGINE لتكنو جاف ومركّز وجاهز للـLoops. LOW SNAKE لشخصية التراب والراب مع 808 وslide وpluck داكن. SAW TEETH شفرة خام للمعدن والتكنو الداكن. GOLD FOG للـPads والأجواء. SPIKES للـPlucks والـStabs الحادة.",
-        "genres": "L Studio Factory Pack يتضمن 8 صفحات و64 صوتاً، بأسماء وضبط وشخصية صُممت لهذه الآلة. استورد صفحة واحدة في كل مرة من Preset وابدأ بصوت له اتجاه واضح.",
-        "cta": "احصل على وصول مبكر"
+      "hero": {
+        "kicker": "استوديو موسيقى لمن يحب اللعب بالصوت",
+        "title": "الموسيقى لا يجب أن تشعرك أنها عمل.",
+        "body": "بدأت L-Studio من شيء آخر تماماً. أردت بناء لوحة مفاتيح يمكنني فيها تحديد تردد كل مفتاح بنفسي. من هناك تطور الأمر إلى التسجيل، اللوبر، الإيقاعات، الميكروفون، الـPad وغيرها. اليوم كل هذا موجود داخل الهاتف.",
+        "ctaPrimary": "تعرّف على L-Studio",
+        "ctaSecondary": "كيف بدأ الأمر",
+        "stat1": "أقل من 7 ميغابايت",
+        "stat2": "Android",
+        "stat3": "بلا إعلانات"
+      },
+      "signalStrip": {
+        "text": "من المفتاح ← إلى الصوت ← إلى اللوب ← إلى التسجيل",
+        "note": "كل ذلك داخل L-Studio"
+      },
+      "story": {
+        "kicker": "01 / THE EIGHTH NOTE",
+        "title": "كل شيء بدأ من نغمة لم تكن موجودة.",
+        "body": [
+          "هناك دو، ري، مي، فا، صول، لا وسي.",
+          "في يوم من الأيام سألت نفسي، لماذا سبع نغمات فقط؟",
+          "فجأة خطر ببالي صوت إضافي: \"آل\".",
+          "من هناك وُلدت الفكرة الأولى لـL-Studio. أردت بناء لوحة مفاتيح يمكنني فيها تحديد التردد الذي ينتمي لكل مفتاح بنفسي.",
+          "لم أخطط إطلاقاً لبناء استوديو. أردت آلة موسيقية.",
+          "بعدها أردت تسجيل ما أعزفه، فبنيت مسجّل WAV. ثم أردت لوبر. ثم إيقاعات. ثم ميكروفون.",
+          "وفي كل مرة كنت أسأل نفسي، لماذا لا أضيف هذا أيضاً؟",
+          "هكذا، شيئاً فشيئاً، تحولت الأداة إلى استوديو."
+        ],
+        "closing": "ما بدأ كبحث عن النغمة الثامنة أصبح L-Studio."
+      },
+      "featuresIntro": {
+        "kicker": "02 / PLAY WITH SOUND",
+        "title": "فقط افتح والعب.",
+        "body": "لا تحتاج لمعرفة الموسيقى لتبدأ. تفتح، تلمس، تغيّر، تستمع، وترى ما يحدث."
       },
       "underHood": {
-        "kicker": "02 / ما وراء الواجهة",
-        "title": "المحرك هو جزء من الآلة.",
-        "body": "في L Studio يبقى مسار الصوت محلياً وواضحاً. تمر كل حركة عبر طبقة الأصوات وحافلة المؤثرات والمزيج الستيريو داخل التطبيق، ويمكن ضبط تردد كل مفتاح يدوياً بدقة للعزف الميكروتونالي.",
+        "kicker": "03 / تحت الغطاء",
+        "title": "هناك الكثير خلف الكواليس.",
+        "body": "بُنيت L-Studio لتمنحك تحكماً بالصوت من دون إجبارك على تعلم نظام ضخم. المفاتيح والصوت والمؤثرات والميكروفون واللوبر والـPad والإيقاعات تعمل جميعها داخل نفس التطبيق. يمكنك أيضاً ضبط تردد كل مفتاح يدوياً وبناء لوحة المفاتيح بطريقتك.",
+        "closing": "التعقيد موجود في المحرك. وليس في طريقة استخدامك له.",
         "details": [
           {
-            "label": "MANUAL TUNING",
-            "value": "اضبط التردد الدقيق لكل مفتاح وابنِ توزيعك الميكروتونالي الخاص"
+            "label": "الضبط اليدوي",
+            "value": "حدد تردداً دقيقاً لكل مفتاح وابنِ سلّماً خاصاً بك"
           },
           {
             "label": "طبقة الصوت",
-            "value": "الموجة، الأوكتاف، glide، ADSR، cutoff وresonance لكل صوت"
+            "value": "Wave, Octave, Glide, ADSR, Cutoff وResonance"
           },
           {
             "label": "مسار الأداء",
-            "value": "المفاتيح والميكروفون والمسجل والـPad والإيقاعات في تدفق واحد"
+            "value": "المفاتيح والميكروفون واللوبر والـPad والإيقاعات تعمل ضمن نفس التدفق"
           },
           {
             "label": "المؤثرات والمزيج",
-            "value": "Echo والمستوى والتوزيع ومخرج الستيريو في الوقت الفعلي"
+            "value": "Echo، المستوى، التوزيع ومخرج الستيريو"
           },
           {
             "label": "التسجيل",
-            "value": "تسجيل وتصدير WAV محلياً من دون مُركِّب خارجي"
+            "value": "تسجيل وتصدير إلى WAV محلياً"
           }
         ],
         "pipeline": [
-          "KEYBOARD",
-          "DSP / VOICES",
-          "FX / MIX",
+          "المفاتيح",
+          "DSP / الأصوات",
+          "المؤثرات / المزيج",
           "WAV"
         ],
         "specsTitle": "خريطة مسار الصوت",
         "specsBody": "نظرة عملية على الطريق بين اللمسة والصوت."
+      },
+      "justStart": {
+        "kicker": "04 / JUST START",
+        "title": "هناك الكثير لفعله. لا تحتاج لمعرفة كل شيء.",
+        "body": [
+          "عندما تفتح برنامج موسيقى لأول مرة، أول ما قد تشعر به هو أن هناك الكثير جداً.",
+          "أزرار ونوافذ وقوائم وأشياء لا تعرف ماذا تفعل.",
+          "بُنيت L-Studio بشكل مختلف. هناك الكثير من الخيارات هنا، لكن يمكنك البدء من دون تعلم دورة كاملة.",
+          "تفتح زراً. تلمسه. تستمع.",
+          "بعد بضع دقائق تبدأ بالفعل بفهم ماذا يفعل كل شيء."
+        ],
+        "closing": "ابدأ باللعب. الباقي سيأتي."
+      },
+      "factoryPack": {
+        "kicker": "L-STUDIO / FACTORY PACK",
+        "lede": "الصوت ينتظرك بالفعل.",
+        "shortText": "8 صفحات. 64 صوتاً.",
+        "description": "بُني Factory Pack خصيصاً لـL-Studio. يحتوي على أصوات بطابع مختلف، من الباس الثقيل إلى الأصوات الحادة، الـPads، الـPlucks وغيرها. تختار صوتاً، تحمّله، وتبدأ العزف.",
+        "cta": "احصل على وصول مبكر"
+      },
+      "vision": {
+        "kicker": "05 / الرؤية",
+        "title": "بنيت الاستوديو الذي كنت بحاجة إليه.",
+        "author": "دافيد حاتام، مطوّر L-Studio",
+        "body": [
+          "أنا لا آتي من خلفية دراسة موسيقية. لم أتعلم كيف تُبنى برامج الموسيقى الاحترافية، ولم يكن لدي نظام كبير للعمل معه.",
+          "أنا فقط أحب الموسيقى وأردت التحكم بالصوت بطريقة كانت طبيعية بالنسبة لي.",
+          "كل شيء بدأ من فكرة تحديد ترددات المفاتيح بنفسي. من هناك أضفت التسجيل، اللوبر، الإيقاعات، الميكروفون وأشياء أخرى احتجتها في الطريق.",
+          "في النهاية وجدت نفسي أنهي موسيقاي داخل L-Studio.",
+          "لا أريد أن تتحول إلى FL Studio. أريدها أن تبقى مكاناً يمكنك فتحه والبدء بالإبداع فيه فوراً."
+        ],
+        "mainLine": "هذا لأشخاص تناظريين في عالم رقمي.",
+        "cards": [
+          {
+            "no": "01",
+            "title": "فقط ابدأ",
+            "body": "افتح التطبيق وابدأ بالإبداع من دون الشعور بأنك بحاجة لمعرفة كل شيء أولاً."
+          },
+          {
+            "no": "02",
+            "title": "العب بالصوت",
+            "body": "المس الصوت، غيّره، واكتشف أشياء لم تخطط لها."
+          },
+          {
+            "no": "03",
+            "title": "خذ الاستوديو معك",
+            "body": "الإبداع لا يجب أن ينتظر جهاز كمبيوتر. إن كانت لديك فكرة، يمكنك البدء منها الآن."
+          }
+        ]
+      },
+      "faq": {
+        "kicker": "07 / FAQ",
+        "title": "أسئلة وأجوبة",
+        "items": [
+          {
+            "question": "ما المميز في العمل بالترددات بدل أسماء النغمات فقط؟",
+            "answer": [
+              "في L Studio يمكن ضبط كل مفتاح على تردده الخاص. لست مضطراً للالتزام بفواصل الضبط المتساوي أو نغمات البيانو الثابتة.",
+              "يمكنك تحرير الترددات نفسها، وتغيير الأوكتاف، وبناء منظومة أصوات تناسب تماماً ما تريد سماعه."
+            ]
+          },
+          {
+            "question": "إذا سجّلت لوباً ثم غيّرت الصوت، هل يتغيّر اللوب أيضاً؟",
+            "answer": [
+              "لا.",
+              "عندما يُسجَّل اللوب، يحفظ L Studio الصوت الذي مرّ أصلاً عبر السينث والأثرات. أي أن اللوب تسجيل صوتي حقيقي، وليس قائمة نغمات تنتظر إعادة التشغيل.",
+              "إذا غيّرت لاحقاً الـCutoff أو الـWave أو الـDrive أو أثراً آخر، يبقى التسجيل الذي أنجزته كما كان وقت التسجيل.",
+              "هذا يتيح بناء طبقات من الصوت ومتابعة العزف فوقها دون أن تتغيّر الطبقات القديمة تحت يديك."
+            ]
+          },
+          {
+            "question": "إذن، هل الـPAD أثر أم آلة عزف؟",
+            "answer": [
+              "الـPAD مخصّص للعزف.",
+              "يعمل على محورين ويمكنه التحكم بمصادر مختلفة في النظام. يمكنك توجيهه إلى السينث أو اللوبر أو الميكروفون أو الطبول، واستخدام حركته أيضاً لـWah وتغيير الأوكتاف وChorus وعمليات إيقاعية مثل Stutter.",
+              "عند تسجيل لوب، يمكن حفظ حركة الـPAD مع التسجيل أيضاً.",
+              "أي أنه يمكن تسجيل ليس فقط ما عزفته، بل جزءاً من الطريقة التي عزفت بها."
+            ]
+          },
+          {
+            "question": "هل يمكن إخراج عزف مايكروتونال عبر MIDI؟",
+            "answer": [
+              "نعم، لكن من المهم فهم كيف يعمل ذلك.",
+              "MIDI العادي مبني على النغمات، لذلك يحفظ L Studio الضبط المايكروتونالي عبر مزيج من نغمة MIDI وPitch Bend. يحسب النظام التردد ويربطه بأقرب نغمة، ثم يستخدم Pitch Bend لإعادة الانحراف عن التردد القياسي.",
+              "لذلك، لتسمع الضبط المايكروتونالي أيضاً في برنامج أو آلة خارجية، يجب أن يدعم المستقبل Pitch Bend وأن يُضبط وفقاً لذلك."
+            ]
+          },
+          {
+            "question": "هل يمكن استخدام الميكروفون كجزء من العزف وليس فقط لتسجيل الصوت؟",
+            "answer": [
+              "نعم.",
+              "الميكروفون جزء من مسار الصوت في L Studio. له قنواته الخاصة، وتحكم في المستوى والموضع في الستيريو، ومراقبة، وGain، وفلتر High-Pass، وGate، وPresence، وCompression.",
+              "هكذا يمكنك دمج مصدر حي داخل الإعداد والتحكم به إلى جانب السينث واللوبات والطبول.",
+              "إذا كنت تراقب عبر سماعات، فبالطبع انتبه للتغذية الراجعة الصوتية."
+            ]
+          },
+          {
+            "question": "هل يمكن بناء بيت دون برمجة كل طبل من الصفر؟",
+            "answer": [
+              "نعم.",
+              "إلى جانب البرمجة اليدوية لـStep Sequencer، يتضمن L Studio توليد Pattern عشوائي بقواعد موسيقية.",
+              "النظام لا يشغّل الخطوات عشوائياً فحسب: يبني أساساً للكيك والسناير والهاي-هات ويضيف تنويعات في توزيعها، حتى تحصل على غروف أولي وتطوّره بدل البدء من الصفر.",
+              "بعد ذلك يمكنك تغيير الـPattern والـBPM والـSwing والمستويات والموضع في الستيريو."
+            ]
+          },
+          {
+            "question": "ما الفرق بين Preset وSession؟",
+            "answer": [
+              "الـPreset مخصّص أساساً لحفظ صوت.",
+              "الـSession مخصّص لحفظ حالة عمل كاملة.",
+              "في الـSession تُحفظ، من بين أمور أخرى، ضبط لوحة المفاتيح، والسلم، والـWaveform، وغلاف الـADSR، والفلتر، والأثرات، والأوكتاف، وتوجيه الـPAD، ومعلومات مرتبطة باللوبر والطبول والميكروفون.",
+              "أي أنه بدل محاولة تذكّر كيف بنيت الإعداد، يمكنك حفظه والعودة إليه."
+            ]
+          },
+          {
+            "question": "وماذا لو أردت نقل المشروع إلى جهاز آخر؟",
+            "answer": [
+              "يتضمن L Studio آليات Import وExport للمشاريع والمجموعات.",
+              "يمكن لمشاريع اللوبر أن تشمل الصوت وبيانات الـPAD، ويمكن لمجموعات الطبول أن تنتقل مع عيناتها وPatterns، ويمكن تصدير Sessions واستيرادها كملفات مشروع.",
+              "الهدف أن لا يبقى عملك محبوساً داخل شاشة واحدة من التطبيق."
+            ]
+          },
+          {
+            "question": "هل يمكن فعلاً تسجيل أغنية كاملة من داخل L Studio؟",
+            "answer": [
+              "يمكنك بناء وتسجيل أداء كامل داخل النظام، لكن L Studio لا يحاول أن يكون DAW تقليدياً بـTimeline لا نهائي.",
+              "العمل مبني أكثر حول العزف والطبقات واللوبات والطبول والميكروفون والتركيب في الوقت الفعلي.",
+              "إضافة إلى ذلك، يمكن تسجيل المزج النهائي مباشرة إلى ملف WAV، فيمكنك إخراج الأداء دون تحويل L Studio إلى محرر استوديو كامل."
+            ]
+          },
+          {
+            "question": "كم مما أفعله أثناء العزف يُحفظ فعلاً؟",
+            "answer": [
+              "أكثر مما يبدو.",
+              "إلى جانب النغمات نفسها، يمكن للنظام تسجيل أحداث MIDI وتردداتها، وفي الـLooper يمكن حفظ حركة الـPAD كجزء من الأداء.",
+              "هذا مهم خصوصاً عندما تعمل بأسلوب أدائي: حركة الباد وتغيّرات الصوت وطبقات الصوت يمكن أن تكون جزءاً من النتيجة، لا مجرد إعداد مؤقت للنظام."
+            ]
+          },
+          {
+            "question": "هل يمكن استخدام L Studio كأداة أداء وليس فقط كأداة إبداع؟",
+            "answer": [
+              "نعم. في الواقع، جزء كبير من البنية مبني حول هذه الفكرة.",
+              "السينث والـPAD واللوبر والطبول والميكروفون على مسار صوت واحد ويصلون معاً إلى المزج النهائي.",
+              "يمكنك البدء من صوت حي، وتسجيله في لوب، وإضافة طبول فوقه، واستخدام الـPAD مجدداً، ودمج مصدر من الميكروفون دون تبديل بيئة العمل في كل خطوة.",
+              "L Studio مبني بحيث يمكن أن تحدث هذه الأفعال كجزء من الأداء نفسه."
+            ]
+          }
+        ]
+      },
+      "tester": {
+        "kicker": "وصول مبكر",
+        "title": "هل تريد تجربة L-Studio؟",
+        "body": "لا تزال L-Studio في تطور. أبحث عن أشخاص يريدون فتحها، اللعب بها، وإخباري بما يعمل وما يحتاج إلى تحسين. إن كنت تريد أن تكون جزءاً من هذه المرحلة، اترك بياناتك وسأعود إليك.",
+        "name": "الاسم",
+        "email": "البريد الإلكتروني",
+        "consent": "أوافق على تلقي تحديثات L-Studio.",
+        "submit": "أريد أن أجرب",
+        "note": "وصول مبكر مجاني · العدد محدود بـ44 مكاناً"
+      },
+      "finalCta": {
+        "kicker": "06 / YOUR SOUND",
+        "title": "ربما حان الوقت لتجد صوتك.",
+        "body": "يمكنك البدء من صوت واحد، إيقاع، لوب أو فكرة صغيرة. أنت لا تعرف حقاً ماذا سيخرج حتى تبدأ باللعب.",
+        "cta": "ادخل إلى L-Studio"
+      },
+      "footer": {
+        "tagline": "هذا لأشخاص تناظريين في عالم رقمي."
       }
     }
   }
