@@ -4,7 +4,7 @@
  * Copies dist/public/index.html to 404.html and to route folders
  * so /privacy, /terms, /guide return HTTP 200 with the SPA shell.
  */
-import { copyFileSync, mkdirSync, existsSync } from "node:fs";
+import { copyFileSync, mkdirSync, existsSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -29,5 +29,10 @@ for (const target of targets) {
   copyFileSync(indexHtml, target);
   console.log(`Prepared ${target}`);
 }
+
+// Custom domain for GitHub Pages (Actions artifact must include CNAME)
+const cnamePath = join(publicDir, "CNAME");
+writeFileSync(cnamePath, "l-studio.app\n", "utf8");
+console.log(`Prepared ${cnamePath}`);
 
 console.log("GitHub Pages SPA fallbacks ready.");
