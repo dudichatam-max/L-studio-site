@@ -439,7 +439,7 @@ export default function Home() {
               <input type="hidden" name="_subject" value="L Studio, New early access tester" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://dudichatam-max.github.io/" />
+              <input type="hidden" name="_next" value="https://l-studio.studio/#early-access" />
               <label><span>{tester.name}</span><input type="text" name="name" autoComplete="name" placeholder={tester.name} required /></label>
               <label><span>{tester.email}</span><input type="email" name="email" autoComplete="email" placeholder={tester.email} required /></label>
               <label className="tester-consent"><input type="checkbox" required /><span>{tester.consent}</span></label>
