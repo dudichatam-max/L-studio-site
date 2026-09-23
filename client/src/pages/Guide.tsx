@@ -13,6 +13,7 @@ type GuideSection = {
   tipBeginner: string;
   tipAdvanced: string;
   media?: string;
+  mediaSize?: "thumb" | "panel";
   bullets?: string[];
 };
 
@@ -139,44 +140,57 @@ export default function Guide() {
           </aside>
 
           <article className="guide-article" dir={isRtl ? "rtl" : "ltr"}>
-            {text.sections.map((section, index) => (
-              <section className="guide-block" id={`guide-${section.id}`} key={section.id}>
-                <div className="guide-block-head">
-                  <span className="guide-number">{sectionNumber(index)}</span>
-                  {section.tag ? <span className="guide-tag">{section.tag}</span> : null}
-                </div>
-                <div className="guide-block-body">
-                  <h2>{section.title}</h2>
-                  {section.body.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
-                  {section.bullets?.length ? (
-                    <ul className="guide-bullets">
-                      {section.bullets.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  ) : null}
-                  {section.media ? (
-                    <figure className="guide-media">
-                      <img src={mediaUrl(section.media)} alt="" loading="lazy" />
-                    </figure>
-                  ) : null}
-                  <div className="guide-tips">
-                    <div className="guide-tip guide-tip--beginner">
-                      <span className="guide-tip-label">
-                        <Sparkles size={14} /> {text.tipBeginner}
-                      </span>
-                      <p>{section.tipBeginner}</p>
+            {text.sections.map((section, index) => {
+              const mediaClass = [
+                "guide-media",
+                section.mediaSize === "thumb" ? "guide-media--thumb" : section.media ? "guide-media--panel" : "",
+              ]
+                .filter(Boolean)
+                .join(" ");
+
+              return (
+                <section className="guide-block" id={`guide-${section.id}`} key={section.id}>
+                  <div className="guide-block-head">
+                    <span className="guide-number">{sectionNumber(index)}</span>
+                    {section.tag ? <span className="guide-tag">{section.tag}</span> : null}
+                  </div>
+                  <div className="guide-block-body">
+                    <div className={section.media ? "guide-block-main" : "guide-block-main guide-block-main--solo"}>
+                      <div className="guide-copy">
+                        <h2>{section.title}</h2>
+                        {section.body.map((paragraph) => (
+                          <p key={paragraph}>{paragraph}</p>
+                        ))}
+                        {section.bullets?.length ? (
+                          <ul className="guide-bullets">
+                            {section.bullets.map((item) => (
+                              <li key={item}>{item}</li>
+                            ))}
+                          </ul>
+                        ) : null}
+                      </div>
+                      {section.media ? (
+                        <figure className={mediaClass}>
+                          <img src={mediaUrl(section.media)} alt="" loading="lazy" />
+                        </figure>
+                      ) : null}
                     </div>
-                    <div className="guide-tip guide-tip--advanced">
-                      <span className="guide-tip-label">{text.tipAdvanced}</span>
-                      <p>{section.tipAdvanced}</p>
+                    <div className="guide-tips">
+                      <div className="guide-tip guide-tip--beginner">
+                        <span className="guide-tip-label">
+                          <Sparkles size={14} /> {text.tipBeginner}
+                        </span>
+                        <p>{section.tipBeginner}</p>
+                      </div>
+                      <div className="guide-tip guide-tip--advanced">
+                        <span className="guide-tip-label">{text.tipAdvanced}</span>
+                        <p>{section.tipAdvanced}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </section>
-            ))}
+                </section>
+              );
+            })}
           </article>
         </section>
       </main>
