@@ -289,12 +289,12 @@ function titleBlock(language: Language) {
 }
 
 export default function Terms() {
-  const { language } = useLanguage();
+  const { language, isRtl } = useLanguage();
   const text = copy[language];
   const scopeParts = text.scopeTitle.split(" ");
 
   return (
-    <div className="site-shell privacy-page">
+    <div className="site-shell privacy-page" dir={isRtl ? "rtl" : "ltr"}>
       <div className="noise" aria-hidden="true" />
       <header className="site-header">
         <div className="container header-inner">
