@@ -28,16 +28,17 @@ type GuideCopy = {
   back: string;
   home: string;
   privacy: string;
+  terms: string;
   features: string;
   architecture: string;
   sections: GuideSection[];
 };
 
 const chrome: Record<Language, Omit<GuideCopy, "sections" | "intro" | "title" | "titleEm" | "eyebrow">> = {
-  he: { onThisPage: "בעמוד הזה", tipBeginner: "טיפ למתחילים", tipAdvanced: "טיפ למתקדמים", back: "חזרה לאתר", home: "דף הבית", privacy: "פרטיות", features: "יכולות", architecture: "איך זה עובד" },
-  en: { onThisPage: "On this page", tipBeginner: "Beginner tip", tipAdvanced: "Advanced tip", back: "Back to site", home: "Home", privacy: "Privacy", features: "Features", architecture: "How it works" },
-  ru: { onThisPage: "На этой странице", tipBeginner: "Совет новичкам", tipAdvanced: "Совет продвинутым", back: "Вернуться на сайт", home: "Главная", privacy: "Приватность", features: "Возможности", architecture: "Как это работает" },
-  ar: { onThisPage: "في هذه الصفحة", tipBeginner: "نصيحة للمبتدئين", tipAdvanced: "نصيحة للمتقدمين", back: "العودة إلى الموقع", home: "الرئيسية", privacy: "الخصوصية", features: "المزايا", architecture: "كيف يعمل" },
+  he: { onThisPage: "בעמוד הזה", tipBeginner: "טיפ למתחילים", tipAdvanced: "טיפ למתקדמים", back: "חזרה לאתר", home: "דף הבית", privacy: "פרטיות", terms: "תנאי שימוש", features: "יכולות", architecture: "איך זה עובד" },
+  en: { onThisPage: "On this page", tipBeginner: "Beginner tip", tipAdvanced: "Advanced tip", back: "Back to site", home: "Home", privacy: "Privacy", terms: "Terms", features: "Features", architecture: "How it works" },
+  ru: { onThisPage: "На этой странице", tipBeginner: "Совет новичкам", tipAdvanced: "Совет продвинутым", back: "Вернуться на сайт", home: "Главная", privacy: "Приватность", terms: "Условия", features: "Возможности", architecture: "Как это работает" },
+  ar: { onThisPage: "في هذه الصفحة", tipBeginner: "نصيحة للمبتدئين", tipAdvanced: "نصيحة للمتقدمين", back: "العودة إلى الموقع", home: "الرئيسية", privacy: "الخصوصية", terms: "الشروط", features: "المزايا", architecture: "كيف يعمل" },
 };
 
 const emptyCopy = (language: Language): GuideCopy => ({
@@ -95,6 +96,7 @@ export default function Guide() {
             <a href="/#features">{text.features}</a>
             <a href="/#architecture">{text.architecture}</a>
             <Link href="/privacy">{text.privacy}</Link>
+            <Link href="/terms">{text.terms}</Link>
             <span className="nav-current">{guideNavLabel[language]}</span>
           </nav>
           <div className="header-actions">
@@ -202,6 +204,7 @@ export default function Guide() {
             <Link href="/">{text.home}</Link>
             <a href="/#features">{text.features}</a>
             <Link href="/privacy">{text.privacy}</Link>
+            <Link href="/terms">{text.terms}</Link>
             <span>{guideNavLabel[language]}</span>
           </div>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>

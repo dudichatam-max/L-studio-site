@@ -8,7 +8,8 @@
         "privacy": "פרטיות",
         "cta": "להכיר את L-Studio",
         "faq": "שאלות ותשובות",
-        "guide": "מדריך למשתמש"
+        "guide": "מדריך למשתמש",
+        "terms": "תנאי שימוש"
       },
       "hero": {
         "kicker": "סטודיו מוזיקה לאנשים שאוהבים לשחק עם צליל",
@@ -513,7 +514,8 @@
             "media": "assets/guide/guide-benchmark.jpg",
             "mediaSize": "panel"
           }
-        ]
+        ],
+        "terms": "תנאי שימוש"
       }
     },
     "en": {
@@ -524,7 +526,8 @@
         "privacy": "Privacy",
         "cta": "Meet L-Studio",
         "faq": "FAQ",
-        "guide": "User guide"
+        "guide": "User guide",
+        "terms": "Terms"
       },
       "hero": {
         "kicker": "A music studio for people who love playing with sound",
@@ -1029,7 +1032,8 @@
             "media": "assets/guide/guide-benchmark.jpg",
             "mediaSize": "panel"
           }
-        ]
+        ],
+        "terms": "Terms"
       }
     },
     "ru": {
@@ -1040,7 +1044,8 @@
         "privacy": "Приватность",
         "cta": "Познакомиться с L-Studio",
         "faq": "Вопросы и ответы",
-        "guide": "Руководство"
+        "guide": "Руководство",
+        "terms": "Условия"
       },
       "hero": {
         "kicker": "Музыкальная студия для тех, кто любит играть со звуком",
@@ -1545,7 +1550,8 @@
             "media": "assets/guide/guide-benchmark.jpg",
             "mediaSize": "panel"
           }
-        ]
+        ],
+        "terms": "Условия"
       }
     },
     "ar": {
@@ -1556,7 +1562,8 @@
         "privacy": "الخصوصية",
         "cta": "تعرّف على L-Studio",
         "faq": "أسئلة وأجوبة",
-        "guide": "دليل المستخدم"
+        "guide": "دليل المستخدم",
+        "terms": "الشروط"
       },
       "hero": {
         "kicker": "استوديو موسيقى لمن يحب اللعب بالصوت",
@@ -2061,7 +2068,8 @@
             "media": "assets/guide/guide-benchmark.jpg",
             "mediaSize": "panel"
           }
-        ]
+        ],
+        "terms": "الشروط"
       }
     }
   }
