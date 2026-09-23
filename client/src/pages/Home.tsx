@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, Volume2, VolumeX, X, Instagram } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
+import WaveScope from "@/components/WaveScope";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -274,13 +275,7 @@ export default function Home() {
             <div className="story-body">{story.body.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}</div>
             <p className="lead-line">{story.closing}</p>
           </div>
-          <div className="story-visualizer" aria-label="Minimal animated sound wave visualizer">
-            <div className="visualizer-readout"><strong>222.00 <small>Hz</small></strong></div>
-            <svg className="visualizer-wave" viewBox="0 0 900 160" preserveAspectRatio="none" role="img" aria-label="Animated synthesizer waveform">
-              <path className="visualizer-wave-trace" d="M0 80 C18 80 24 26 42 26 S66 134 84 134 S108 80 126 80 S150 26 168 26 S192 134 210 134 S234 80 252 80 S276 26 294 26 S318 134 336 134 S360 80 378 80 S402 26 420 26 S444 134 462 134 S486 80 504 80 S528 26 546 26 S570 134 588 134 S612 80 630 80 S654 26 672 26 S696 134 714 134 S738 80 756 80 S780 26 798 26 S822 134 840 134 S864 80 900 80" />
-              <path className="visualizer-wave-trace visualizer-wave-trace--soft" d="M0 80 C18 80 24 50 42 50 S66 110 84 110 S108 80 126 80 S150 50 168 50 S192 110 210 110 S234 80 252 80 S276 50 294 50 S318 110 336 110 S360 80 378 80 S402 50 420 50 S444 110 462 110 S486 80 504 80 S528 50 546 50 S570 110 588 110 S612 80 630 80 S654 50 672 50 S696 110 714 110 S738 80 756 80 S780 50 798 50 S822 110 840 110 S864 80 900 80" />
-            </svg>
-          </div>
+          <WaveScope />
         </section>
 
         {/* 3. Product capabilities: SOUND / MIC / LOOP / PAD / DRUM */}
