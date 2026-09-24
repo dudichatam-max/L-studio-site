@@ -121,6 +121,13 @@ export default function Factory64() {
   const { language, isRtl } = useLanguage();
   const [text, setText] = useState<Factory64Copy>(() => emptyCopy(language));
 
+  // Always enter Factory 64 at the top (SPA may retain Home scroll).
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, []);
+
   useEffect(() => {
     let cancelled = false;
     setText(emptyCopy(language));

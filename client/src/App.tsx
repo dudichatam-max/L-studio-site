@@ -1,4 +1,5 @@
-import { Route, Router as WouterRouter, Switch } from "wouter";
+import { useEffect } from "react";
+import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -11,10 +12,22 @@ import Guide from "./pages/Guide";
 import Factory64 from "./pages/Factory64";
 import NotFound from "./pages/NotFound";
 
+function ScrollToTop() {
+  const [location] = useLocation();
+  useEffect(() => {
+    // Path-only: keep same-page hash jumps (TOC) intact.
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, [location]);
+  return null;
+}
+
 function Router() {
   const base = window.location.pathname.startsWith("/L-studio-site") ? "/L-studio-site" : "";
   return (
     <WouterRouter base={base}>
+      <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/privacy" component={Privacy} />

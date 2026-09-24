@@ -7,7 +7,10 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const factoryBanner = `${import.meta.env.BASE_URL}assets/factory-64-cover.png`;
+const factoryCoverPng = `${import.meta.env.BASE_URL}assets/factory-64-cover.png`;
+const factoryCoverWebp = `${import.meta.env.BASE_URL}assets/factory-64-cover.webp`;
+const factoryDrumsPng = `${import.meta.env.BASE_URL}assets/factory-64-drum-kits.png`;
+const factoryDrumsWebp = `${import.meta.env.BASE_URL}assets/factory-64-drum-kits.webp`;
 const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
 
 const images = {
@@ -368,7 +371,20 @@ export default function Home() {
         <section className="factory-pack-section container" id="factory-pack" dir={dir}>
           <div className="factory-pack-content">
             <span className="kicker">{factory.kicker}</span>
-            <div className="factory-pack-cover"><img src={factoryBanner} alt="L Studio Factory Pack cover art" /></div>
+            <div className="factory-pack-covers" aria-label="Factory Pack covers">
+              <figure className="factory-pack-cover">
+                <picture>
+                  <source srcSet={factoryCoverWebp} type="image/webp" />
+                  <img src={factoryCoverPng} alt="L Studio Factory Pack presets cover" />
+                </picture>
+              </figure>
+              <figure className="factory-pack-cover">
+                <picture>
+                  <source srcSet={factoryDrumsWebp} type="image/webp" />
+                  <img src={factoryDrumsPng} alt="L Studio Factory Pack drum kits cover" />
+                </picture>
+              </figure>
+            </div>
             <p className="factory-pack-lede">{factory.lede}</p>
             <p>{factory.shortText}</p>
             <p>{factory.description}</p>
