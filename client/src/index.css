@@ -455,7 +455,7 @@ html[dir="ltr"] .section-heading p { margin-left: 0; margin-right: auto; }
 .factory64-hero-sep { color: var(--acid); }
 .factory64-hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
 .factory64-cover { margin: 0; border: 1px solid rgba(227,197,101,.35); background: #101012; box-shadow: 0 25px 80px rgba(0,0,0,.38); overflow: hidden; }
-.factory64-cover img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+.factory64-cover img { display: block; width: 100%; height: auto; object-fit: contain; object-position: center; }
 .factory64-oneline { margin: 36px 0 0; padding: 16px 18px; border: 1px solid rgba(227,197,101,.28); background: rgba(227,197,101,.05); color: #c6c3ba; font-size: 14px; line-height: 1.7; }
 .factory64-content { display: grid; grid-template-columns: 220px 1fr; gap: 64px; padding-bottom: 140px; align-items: start; }
 .factory64-aside { position: sticky; top: 92px; display: flex; flex-direction: column; gap: 12px; max-height: calc(100vh - 120px); overflow: auto; padding-bottom: 20px; }
