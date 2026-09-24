@@ -470,18 +470,26 @@ html[dir="rtl"] .factory64-hero-copy > h1 {
 .factory64-toc a:hover { color: var(--acid); }
 .factory64-toc-num { color: var(--muted-foreground); font: 10px var(--mono); }
 .factory64-toc-title { line-height: 1.35; font: 600 12px var(--mono); letter-spacing: .04em; }
-.factory64-card { padding: 36px 0; border-bottom: 1px solid rgba(242,241,235,.13); scroll-margin-top: 96px; }
+.factory64-card { display: flex; flex-direction: column; min-width: 0; margin: 0 0 28px; padding: 0; border: 1px solid rgba(242,241,235,.12); background: #101012; scroll-margin-top: 96px; overflow: hidden; transition: border-color 160ms ease; }
+.factory64-card:hover { border-color: rgba(227,197,101,.45); }
+.factory64-card-media { margin: 0; direction: ltr; background: #070708; border-bottom: 1px solid rgba(227,197,101,.22); }
+.factory64-card-media picture { display: block; }
+.factory64-card-media img { display: block; width: 100%; height: auto; object-fit: contain; object-position: center; background: #070708; }
+.factory64-card-copy { display: flex; flex-direction: column; padding: 22px 22px 26px; }
 .factory64-card-head { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: start; margin-bottom: 16px; }
 .factory64-number { color: var(--acid); font: 11px var(--mono); padding-top: 8px; }
 .factory64-card-head h2 { margin: 0 0 8px; font: 600 clamp(26px, 3vw, 34px)/1 var(--display); letter-spacing: -.035em; }
+html[dir="rtl"] .factory64-card-head h2 { text-align: right; }
 .factory64-tagline { margin: 0; color: var(--acid); font: 600 15px/1.35 var(--display); letter-spacing: -.02em; }
 .factory64-body { max-width: 720px; margin: 0 0 22px; color: #a8a69f; font-size: 16px; line-height: 1.85; }
+.factory64-card .factory64-body,
+.factory64-card .factory64-presets { max-width: none; }
 .factory64-presets-heading { margin: 0 0 12px; color: var(--muted-foreground); font: 10px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
 .factory64-presets { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; max-width: 820px; }
 .factory64-presets li { display: flex; flex-direction: column; gap: 4px; padding: 14px 15px; border: 1px solid rgba(242,241,235,.12); border-inline-start: 2px solid var(--acid); background: rgba(242,241,235,.03); }
 .factory64-presets strong { color: var(--paper); font: 600 12px var(--mono); letter-spacing: .06em; }
 .factory64-presets span { color: #bcbab1; font-size: 14px; line-height: 1.55; }
-.factory64-blurb { margin-top: 42px; padding: 24px 22px; border: 1px solid rgba(227,197,101,.32); background: rgba(227,197,101,.06); }
+.factory64-blurb { margin-top: 14px; padding: 24px 22px; border: 1px solid rgba(227,197,101,.32); background: rgba(227,197,101,.06); }
 .factory64-blurb p { margin: 0; max-width: 760px; color: #c6c3ba; font-size: 15px; line-height: 1.8; }
 
 /* Factory 64 listening note */
@@ -537,7 +545,8 @@ html[dir="rtl"] .factory-drum-tech { text-align: right; }
   .factory64-hero-copy > p { font-size: 15px; }
   .factory64-presets { grid-template-columns: 1fr; }
   .factory64-card-head { grid-template-columns: 1fr; gap: 8px; }
-  .factory64-card { padding: 28px 0; }
+  .factory64-card { margin-bottom: 22px; }
+  .factory64-card-copy { padding: 16px 16px 20px; }
   .factory64-content { padding-bottom: 90px; }
   .factory-pack-actions { flex-direction: column; align-items: center; }
 }
