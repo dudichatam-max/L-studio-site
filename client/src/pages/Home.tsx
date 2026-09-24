@@ -7,10 +7,8 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const factoryCoverPng = `${import.meta.env.BASE_URL}assets/factory-64-cover.png`;
-const factoryCoverWebp = `${import.meta.env.BASE_URL}assets/factory-64-cover.webp`;
-const factoryDrumsPng = `${import.meta.env.BASE_URL}assets/factory-64-drum-kits.png`;
-const factoryDrumsWebp = `${import.meta.env.BASE_URL}assets/factory-64-drum-kits.webp`;
+const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png`;
+const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp`;
 const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
 
 const images = {
@@ -87,7 +85,7 @@ const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started wi
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
 const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
-const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 ready drum packs across 8 different styles.", detailCta: "Explore Factory 64", cta: "Get early access" };
+const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 ready drum packs across 8 different styles.", detailCta: "Explore Factory 64", cta: "Get early access", coverAlt: "L Studio Factory Pack product box" };
 const visionDefault = { kicker: "05 / THE VISION", title: "I built the studio I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take the studio with you", body: "Creating shouldn't have to wait for a computer." }] };
 const faqDefault = { kicker: "07 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
 const testerDefault = { kicker: "EARLY ACCESS", title: "Want to try L-Studio?", body: "L-Studio is still evolving.", name: "Name", email: "Email address", consent: "I agree to receive L-Studio updates.", submit: "I want to try it", note: "Free early access · Limited to 44 testers" };
@@ -371,19 +369,11 @@ export default function Home() {
         <section className="factory-pack-section container" id="factory-pack" dir={dir}>
           <div className="factory-pack-content">
             <span className="kicker">{factory.kicker}</span>
-            <div className="factory-pack-covers" aria-label="Factory Pack covers">
-              <figure className="factory-pack-cover">
-                <picture>
-                  <source srcSet={factoryCoverWebp} type="image/webp" />
-                  <img src={factoryCoverPng} alt="L Studio Factory Pack presets cover" />
-                </picture>
-              </figure>
-              <figure className="factory-pack-cover">
-                <picture>
-                  <source srcSet={factoryDrumsWebp} type="image/webp" />
-                  <img src={factoryDrumsPng} alt="L Studio Factory Pack drum kits cover" />
-                </picture>
-              </figure>
+            <div className="factory-pack-cover">
+              <picture>
+                <source srcSet={factoryBoxWebp} type="image/webp" />
+                <img src={factoryBoxPng} alt={factory.coverAlt ?? "L Studio Factory Pack product box"} />
+              </picture>
             </div>
             <p className="factory-pack-lede">{factory.lede}</p>
             <p>{factory.shortText}</p>

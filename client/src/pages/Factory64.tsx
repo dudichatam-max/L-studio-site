@@ -79,7 +79,7 @@ const emptyCopy = (language: Language): Factory64Copy => ({
           : "Eight Pages. Sixty-Four Voices.",
   intro: [],
   includes: "",
-  coverAlt: "L Studio Factory Pack cover art",
+  coverAlt: "L Studio Factory Pack eight preset pages grid",
   listenNote: "",
   synthsHeading:
     language === "he"
