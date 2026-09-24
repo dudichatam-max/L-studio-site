@@ -184,7 +184,7 @@ export default function Factory64() {
           </div>
           <div className="factory64-hero-grid">
             <div className="factory64-hero-copy">
-              <h1>
+              <h1 dir="ltr">
                 {text.title}
                 <br />
                 <em>{text.titleEm}</em>

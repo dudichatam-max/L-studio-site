@@ -447,6 +447,12 @@ html[dir="ltr"] .section-heading p { margin-left: 0; margin-right: auto; }
 .factory64-hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(220px, 360px); gap: 48px; align-items: start; margin-top: 28px; }
 .factory64-hero-copy h1 { margin: 0 0 18px; font: 600 clamp(48px, 7vw, 88px)/.9 var(--display); letter-spacing: -.07em; }
 .factory64-hero-copy h1 em { color: var(--acid); font-style: normal; }
+/* Latin branding title stays left even on Hebrew/Arabic pages */
+html[dir="rtl"] .factory64-hero-copy > h1 {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: isolate;
+}
 .factory64-subtitle { margin: 0 0 22px; color: var(--paper); font: 600 clamp(20px, 2.2vw, 28px)/1.15 var(--display); letter-spacing: -.03em; }
 .factory64-hero-copy > p { max-width: 620px; margin: 0 0 14px; color: #aaa8a2; font-size: 17px; line-height: 1.75; }
 .factory64-includes { margin-top: 8px !important; color: var(--acid) !important; font: 12px var(--mono) !important; letter-spacing: .04em; line-height: 1.6 !important; }
