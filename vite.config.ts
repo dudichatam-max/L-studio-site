@@ -206,7 +206,10 @@ function vitePluginStorageProxy(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
-  base: "./",
+  // Root-absolute assets. GitHub Pages redirects /factory-64 and
+  // /factory-64/drums to trailing-slash directories; a relative base would
+  // then look for JS and images inside those folders.
+  base: "/",
   plugins,
   resolve: {
     alias: {

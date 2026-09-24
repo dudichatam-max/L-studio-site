@@ -12,21 +12,26 @@ Long guide copy lives under `languages.*.guide` (title, intro, tip labels, and `
 
 Nav labels for the guide live under `languages.*.nav.guide`.
 
-### Factory 64 (`/factory-64`)
+### Factory 64 presets (`/factory-64`)
 
-Detail copy for the Factory Pack lives under `languages.*.factory64`.
+Detail copy for the synth preset pages lives under `languages.*.factory64`.
 
 - Synth preset pages: `pages[]` (BLACK WELL … SPIKES). Preset **names** stay in English; translate descriptions only.
-- Pro drum kits: `drums` (8 Style pages / 64 kits). Style **names** stay in English (`Rap 90'`, `Hip-Hop 2000s`, `Soft Indie`, `Psy Progressive Rock`, `Berlin 90s Techno`, `Tribal Ambient Trance`, `Goa Trance`, `Experimental`).
 - Listening note: `listenNote` (headphones / suitable speakers for low frequencies).
-- Covers: `assets/factory-64-cover.png` (+ `.webp`) and `assets/factory-64-drum-kits.png` (+ `.webp`). Show full portrait art (`object-fit: contain`), do not square-crop.
+- Cover: `assets/factory-64-cover.png` (+ `.webp`). Show full portrait art (`object-fit: contain`), do not square-crop.
 
-Keep all four languages in sync. Home section CTAs use `languages.*.factoryPack.detailCta` (link to `/factory-64`) and `languages.*.factoryPack.cta` (early access).
+### Factory drums (`/factory-64/drums`)
+
+Drum kit copy lives under `languages.*.factoryDrums` (section title, intro, eight kit bodies, tech lines, closing). Kit **titles** stay branded English (`RAP 90'`, `HIP-HOP 2000s`, `SOFT INDIE`, `PSY PROGRESSIVE ROCK`, `BERLIN 90s TECHNO`, `TRIBAL AMBIENT TRANCE`, `GOA TRANCE`, `EXPERIMENTAL`). Tech lines stay English.
+
+Posters: `assets/drums/01-rap-90.jpg` through `08-experimental.jpg`, each with a `.webp` companion. Show the full poster (`object-fit: contain`). Do not use `factory-64-drum-kits`.
+
+Keep all four languages in sync. Home Factory Pack uses `languages.*.factoryPack.detailCta` (link to `/factory-64`), `languages.*.factoryPack.drumsCta` (link to `/factory-64/drums`), and `languages.*.factoryPack.cta` (early access).
 
 
 ## Images
 
-The root folder `assets/` holds shared stills such as the logo, Factory Pack banner, Factory 64 cover (`factory-64-cover.png`), developer photo, and Preset still. Replace a file using the same filename and commit it. The GitHub Action copies root `assets/` into the website automatically. The MIC feature still (`mic-window.jpg`) lives under `client/public/assets/`.
+The root folder `assets/` holds shared stills such as the logo, Factory Pack banner, Factory 64 cover (`factory-64-cover.png`), drum kit posters (`assets/drums/`), developer photo, and Preset still. Replace a file using the same filename and commit it. The GitHub Action copies root `assets/` into the website automatically. The MIC feature still (`mic-window.jpg`) lives under `client/public/assets/`.
 
 ## Feature videos
 

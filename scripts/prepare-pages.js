@@ -2,7 +2,7 @@
 /**
  * Prepare GitHub Pages SPA deep-link fallbacks.
  * Copies dist/public/index.html to 404.html and to route folders
- * so /privacy, /terms, /guide, /factory-64 return HTTP 200 with the SPA shell.
+ * so /privacy, /terms, /guide, /factory-64, /factory-64/drums return HTTP 200 with the SPA shell.
  */
 import { copyFileSync, mkdirSync, existsSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -23,6 +23,7 @@ const targets = [
   join(publicDir, "terms", "index.html"),
   join(publicDir, "guide", "index.html"),
   join(publicDir, "factory-64", "index.html"),
+  join(publicDir, "factory-64", "drums", "index.html"),
 ];
 
 for (const target of targets) {
