@@ -19,6 +19,7 @@ Detail copy for the synth preset pages lives under `languages.*.factory64`.
 - Synth preset pages: `pages[]` (BLACK WELL … SPIKES). Preset **names** stay in English; translate descriptions only.
 - Listening note: `listenNote` (headphones / suitable speakers for low frequencies).
 - Cover: `assets/factory-64-cover.png` (+ `.webp`). Show full portrait art (`object-fit: contain`), do not square-crop.
+- Pack posters: `assets/factory/01-black-well.jpg` through `08-spikes.jpg`, each with a `.webp` companion. Each poster sits above its preset page. Show the full landscape art (`object-fit: contain`). Do not crop the title or logo.
 
 ### Factory drums (`/factory-64/drums`)
 
@@ -31,7 +32,7 @@ Keep all four languages in sync. Home Factory Pack uses `languages.*.factoryPack
 
 ## Images
 
-The root folder `assets/` holds shared stills such as the logo, Factory Pack banner, Factory 64 cover (`factory-64-cover.png`), drum kit posters (`assets/drums/`), developer photo, and Preset still. Replace a file using the same filename and commit it. The GitHub Action copies root `assets/` into the website automatically. The MIC feature still (`mic-window.jpg`) lives under `client/public/assets/`.
+The root folder `assets/` holds shared stills such as the logo, Factory Pack banner, Factory 64 cover (`factory-64-cover.png`), preset pack posters (`assets/factory/`), drum kit posters (`assets/drums/`), developer photo, and Preset still. Replace a file using the same filename and commit it. The GitHub Action copies root `assets/` into the website automatically. The MIC feature still (`mic-window.jpg`) lives under `client/public/assets/`.
 
 ## Feature videos
 

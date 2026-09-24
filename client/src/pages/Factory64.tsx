@@ -89,6 +89,28 @@ const emptyCopy = (language: Language): Factory64Copy => ({
 const coverPng = `${import.meta.env.BASE_URL}assets/factory-64-cover.png`;
 const coverWebp = `${import.meta.env.BASE_URL}assets/factory-64-cover.webp`;
 
+const PACK_STEM: Record<string, string> = {
+  "black-well": "01-black-well",
+  "gold-hammer": "02-gold-hammer",
+  "light-knife": "03-light-knife",
+  "gray-engine": "04-gray-engine",
+  "low-snake": "05-low-snake",
+  "saw-teeth": "06-saw-teeth",
+  "gold-fog": "07-gold-fog",
+  "spikes": "08-spikes",
+};
+
+const PACK_HEIGHT: Record<string, number> = {
+  "black-well": 720,
+  "gold-hammer": 720,
+  "light-knife": 732,
+  "gray-engine": 732,
+  "low-snake": 714,
+  "saw-teeth": 714,
+  "gold-fog": 708,
+  "spikes": 708,
+};
+
 const drumsNavFallback: Record<Language, string> = {
   he: "ערכות תופים",
   en: "Drum kits",
@@ -98,6 +120,18 @@ const drumsNavFallback: Record<Language, string> = {
 
 function sectionNumber(index: number) {
   return String(index + 1).padStart(2, "0");
+}
+
+function packMedia(id: string) {
+  const stem = PACK_STEM[id];
+  if (!stem) return null;
+  const base = `${import.meta.env.BASE_URL}assets/factory/${stem}`;
+  return {
+    jpg: `${base}.jpg`,
+    webp: `${base}.webp`,
+    width: 1386,
+    height: PACK_HEIGHT[id] ?? 720,
+  };
 }
 
 export default function Factory64() {
@@ -234,27 +268,47 @@ export default function Factory64() {
               </header>
             ) : null}
 
-            {text.pages.map((page, index) => (
-              <section className="factory64-card" id={`factory64-${page.id}`} key={page.id}>
-                <div className="factory64-card-head">
-                  <span className="factory64-number">{sectionNumber(index)}</span>
-                  <div>
-                    <h2>{page.name}</h2>
-                    <p className="factory64-tagline">{page.tagline}</p>
+            {text.pages.map((page, index) => {
+              const media = packMedia(page.id);
+              return (
+                <section className="factory64-card" id={`factory64-${page.id}`} key={page.id}>
+                  {media ? (
+                    <figure className="factory64-card-media" dir="ltr">
+                      <picture>
+                        <source srcSet={media.webp} type="image/webp" />
+                        <img
+                          src={media.jpg}
+                          alt={page.tagline ? `${page.name}. ${page.tagline}` : page.name}
+                          width={media.width}
+                          height={media.height}
+                          loading={index < 2 ? "eager" : "lazy"}
+                          decoding="async"
+                        />
+                      </picture>
+                    </figure>
+                  ) : null}
+                  <div className="factory64-card-copy">
+                    <div className="factory64-card-head">
+                      <span className="factory64-number">{sectionNumber(index)}</span>
+                      <div>
+                        <h2 dir="ltr">{page.name}</h2>
+                        <p className="factory64-tagline">{page.tagline}</p>
+                      </div>
+                    </div>
+                    <p className="factory64-body">{page.body}</p>
+                    <h3 className="factory64-presets-heading">{text.presetsHeading}</h3>
+                    <ul className="factory64-presets">
+                      {page.presets.map((preset) => (
+                        <li key={preset.name}>
+                          <strong>{preset.name}</strong>
+                          <span>{preset.blurb}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                </div>
-                <p className="factory64-body">{page.body}</p>
-                <h3 className="factory64-presets-heading">{text.presetsHeading}</h3>
-                <ul className="factory64-presets">
-                  {page.presets.map((preset) => (
-                    <li key={preset.name}>
-                      <strong>{preset.name}</strong>
-                      <span>{preset.blurb}</span>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ))}
+                </section>
+              );
+            })}
 
             {text.storeBlurb ? (
               <section className="factory64-blurb" id="factory64-blurb">
