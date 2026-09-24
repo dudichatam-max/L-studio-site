@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Guide from "./pages/Guide";
+import Factory64 from "./pages/Factory64";
 import NotFound from "./pages/NotFound";
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
         <Route path="/guide" component={Guide} />
+        <Route path="/factory-64" component={Factory64} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

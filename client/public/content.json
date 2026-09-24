@@ -98,7 +98,8 @@
         "lede": "הסאונד כבר מחכה לך.",
         "shortText": "8 עמודים. 64 קולות.",
         "description": "Factory Pack נבנה במיוחד עבור L-Studio. יש בו קולות עם אופי שונה, מבסים כבדים ועד צלילים חדים, פדים, פלוקים ועוד. בוחרים קול, טוענים אותו ומתחילים לנגן.",
-        "cta": "לקבלת גישה מוקדמת"
+        "cta": "לקבלת גישה מוקדמת",
+        "detailCta": "לגלות את Factory 64"
       },
       "vision": {
         "kicker": "05 / החזון",
@@ -515,6 +516,355 @@
           }
         ],
         "terms": "תנאי שימוש"
+      },
+      "factory64": {
+        "eyebrow": "L-STUDIO / FACTORY PACK / 64 VOICES",
+        "title": "L Studio",
+        "titleEm": "Factory Pack.",
+        "subtitle": "שמונה עמודים. שישים וארבעה קולות.",
+        "intro": [
+          "ספריית סאונד שלמה ל־L Studio: שמונה עמודים שנטענים, שמונה פריסטים עם שם בכל עמוד. כל קול נכתב לפורמט העמוד המקורי של האפליקציה - ווליום, ADSR, קאטאוף, רזוננס, אקו, גלייד, צורת גל, אוקטבה - על סולם הבית של הכלי (222, 299, 333, 355, 396, 444, 463, 477 Hz).",
+          "נבנה לטראנס, טכנו, ראפ, טראפ ומטאל. בלי חריצי \"init\" גנריים. כל עמוד הוא משימה מוזיקלית אחת."
+        ],
+        "includes": "8 עמודי JSON · 64 פריסטים עם שם · מוכנים לייבוא מ־Preset",
+        "coverAlt": "עטיפת L Studio Factory Pack",
+        "back": "חזרה לאתר",
+        "home": "דף הבית",
+        "features": "יכולות",
+        "architecture": "איך זה עובד",
+        "guide": "מדריך למשתמש",
+        "privacy": "פרטיות",
+        "terms": "תנאי שימוש",
+        "navLabel": "Factory 64",
+        "onThisPage": "בעמוד הזה",
+        "pagesMeta": "8 עמודים",
+        "voicesMeta": "64 קולות",
+        "presetsHeading": "פריסטים",
+        "oneLineList": "BLACK WELL - סאבים · GOLD HAMMER - מכות · LIGHT KNIFE - לידים לטראנס · GRAY ENGINE - טכנו · LOW SNAKE - 808 / טראפ · SAW TEETH - מטאל · GOLD FOG - פדים · SPIKES - פלאקים",
+        "storeBlurb": "L Studio Factory Pack - 8 עמודים, 64 קולות. Black Well לסאב ומשקל. Gold Hammer למכות. Light Knife ללידים בטראנס. Gray Engine ללולאות טכנו. Low Snake ל־808 וסלייד. Saw Teeth לריפי מטאל. Gold Fog לפדים. Spikes לפלאקים וסטאבים. מייבאים עמוד אחד בכל פעם מ־Preset. עם שם, מכוונים ומעוצבים לכלי עצמו - לא מומרים מסינתיסייזר אחר.",
+        "earlyAccessCta": "לקבלת גישה מוקדמת",
+        "pages": [
+          {
+            "id": "black-well",
+            "name": "BLACK WELL",
+            "tagline": "לואו-אנד. משקל. רצפה.",
+            "body": "סאבים של סינוס ומשולש באוקטבה -2 (מקש אחד יושב על 55.5 Hz), ועוד באסים מסור עם פילטר סגור. ריליס ארוך, מעט אקו, גלייד רק איפה שהתו צריך לזחול.",
+            "presets": [
+              {
+                "name": "WELL",
+                "blurb": "סאב סינוס נקי"
+              },
+              {
+                "name": "WEIGHT",
+                "blurb": "גוף משולש לראפ"
+              },
+              {
+                "name": "CHAIN",
+                "blurb": "באס מסור עם שיניים"
+              },
+              {
+                "name": "MUD",
+                "blurb": "לואו מלוכלך עם פילטר סגור"
+              },
+              {
+                "name": "CRAWL",
+                "blurb": "באס גלייד של 140 מ״ש"
+              },
+              {
+                "name": "FLOOR",
+                "blurb": "הסאב היבש ביותר, בסיס למיקס"
+              },
+              {
+                "name": "PULSE",
+                "blurb": "באס גייטד לערימות"
+              },
+              {
+                "name": "CAVE",
+                "blurb": "סאב רחב עם מרחב"
+              }
+            ]
+          },
+          {
+            "id": "gold-hammer",
+            "name": "GOLD HAMMER",
+            "tagline": "מכות. עץ. מתכת. סנאפ.",
+            "body": "פרקשן סינתטי. רעש וריבוע, אטאק ב-5-6 מ״ש, סוסטיין כמעט אפס. הקאטאוף הוא החומר: דלת ב-700 Hz, פטיש ב-1400, עץ ב-1900, פח ב-3400, שוט ב-4800, זכוכית ב-7800.",
+            "presets": [
+              {
+                "name": "HAMMER",
+                "blurb": "מכה כבדה במרכז"
+              },
+              {
+                "name": "NAIL",
+                "blurb": "קליק גבוה וקצר"
+              },
+              {
+                "name": "WOOD",
+                "blurb": "נקישה חמימה בגוף"
+              },
+              {
+                "name": "TIN",
+                "blurb": "מתכת דקה"
+              },
+              {
+                "name": "DOOR",
+                "blurb": "טום נמוך / סלאם"
+              },
+              {
+                "name": "GLASS",
+                "blurb": "מכה גבוהה ושבירה"
+              },
+              {
+                "name": "WHIP",
+                "blurb": "סנאפ יבש"
+              },
+              {
+                "name": "CHIME",
+                "blurb": "צלצול קצר עם זנב"
+              }
+            ]
+          },
+          {
+            "id": "light-knife",
+            "name": "LIGHT KNIFE",
+            "tagline": "לידים לטראנס. קצה ואוויר.",
+            "body": "לידים פתוחים של מסור וריבוע. קאטאוף גבוה, סוסטיין גבוה, אקו כמו אולם ולא כמו שטיפה. אוקטבה +1 על הקול העליון. Rise ו-Pull משתמשים באטאק ובגלייד איטיים יותר.",
+            "presets": [
+              {
+                "name": "KNIFE",
+                "blurb": "ליד מסור ראשי"
+              },
+              {
+                "name": "BLADE",
+                "blurb": "ליד ריבוע חתוך"
+              },
+              {
+                "name": "SPARK",
+                "blurb": "נצנוץ באוקטבה עליונה"
+              },
+              {
+                "name": "RISE",
+                "blurb": "כניסה עם אטאק איטי"
+              },
+              {
+                "name": "HORN",
+                "blurb": "ליד פתוח ורחב"
+              },
+              {
+                "name": "DART",
+                "blurb": "סטאב מלודי קצר"
+              },
+              {
+                "name": "PULL",
+                "blurb": "ליד גלייד של 55 מ״ש"
+              },
+              {
+                "name": "HALO",
+                "blurb": "ליד עם פריחת אקו"
+              }
+            ]
+          },
+          {
+            "id": "gray-engine",
+            "name": "GRAY ENGINE",
+            "tagline": "טכנו. יבש. מוכן ללולאה.",
+            "body": "אוסילטורים יציבים לדוגמאות. הקאטאוף נשאר בטווח העבודה 900-2800 Hz כדי שהפילטר עדיין יזוז. הרזוננס הוא האופי, לא קישוט.",
+            "presets": [
+              {
+                "name": "ENGINE",
+                "blurb": "קול מסור יציב ללולאות"
+              },
+              {
+                "name": "PISTON",
+                "blurb": "פולס ריבוע יבש"
+              },
+              {
+                "name": "WHEEL",
+                "blurb": "רזוננס בינוני, ידידותי לפילטר"
+              },
+              {
+                "name": "ASPHALT",
+                "blurb": "מצע נמוך וגס"
+              },
+              {
+                "name": "STRIPE",
+                "blurb": "סטאב גרפי קצר"
+              },
+              {
+                "name": "TUNNEL",
+                "blurb": "מרחב אקו קבוע"
+              },
+              {
+                "name": "LIVE IRON",
+                "blurb": "ברזל ברזוננס גבוה"
+              },
+              {
+                "name": "SHIFT",
+                "blurb": "מצע טכנו ארוך"
+              }
+            ]
+          },
+          {
+            "id": "low-snake",
+            "name": "LOW SNAKE",
+            "tagline": "טראפ וראפ. 808, סלייד, פלאק כהה.",
+            "body": "סינוס 808 ב-55.5 Hz. הזנב הוא ריליס, לא דיקיי. הסלייד הוא גלייד של 160 מ״ש. Concrete הוא החיתוך היבש. Whisper הוא באס המיקס השקט.",
+            "presets": [
+              {
+                "name": "SNAKE",
+                "blurb": "זנב 808 קלאסי"
+              },
+              {
+                "name": "SLIDE",
+                "blurb": "סלייד פitchy ארוך"
+              },
+              {
+                "name": "SMOKE",
+                "blurb": "באס רך לראפ"
+              },
+              {
+                "name": "WEST",
+                "blurb": "פלאק כהה וקצר"
+              },
+              {
+                "name": "GOLD LINK",
+                "blurb": "באס-ליד לטראפ"
+              },
+              {
+                "name": "CONCRETE",
+                "blurb": "יבש, בלי זנב"
+              },
+              {
+                "name": "DROP",
+                "blurb": "נפילה עם ריליס ארוך"
+              },
+              {
+                "name": "WHISPER",
+                "blurb": "סאב מדויק ברמה נמוכה"
+              }
+            ]
+          },
+          {
+            "id": "saw-teeth",
+            "name": "SAW TEETH",
+            "tagline": "מטאל וטכנו כהה. להב גולמי.",
+            "body": "מסור, ריבוע ורעש. קאטאוף בינוני-נמוך, רזוננס 0.36-0.58. וויסינג מוכוון דרייב. ריפים נמוכים ב־-1/-2, ניצוצות למעלה.",
+            "presets": [
+              {
+                "name": "SAW",
+                "blurb": "מסור ריף גולמי"
+              },
+              {
+                "name": "TEETH",
+                "blurb": "ריבוע קשה"
+              },
+              {
+                "name": "GRIND",
+                "blurb": "רעש עם פילטר צר"
+              },
+              {
+                "name": "HUSK",
+                "blurb": "קליפת מתכת קצרה"
+              },
+              {
+                "name": "RAGE",
+                "blurb": "ליד אגרסיבי"
+              },
+              {
+                "name": "ARMOR",
+                "blurb": "באס ריף כבד"
+              },
+              {
+                "name": "STEEL SPARK",
+                "blurb": "אקסנט גבוה"
+              },
+              {
+                "name": "ABYSS",
+                "blurb": "המסור הנמוך והכהה ביותר"
+              }
+            ]
+          },
+          {
+            "id": "gold-fog",
+            "name": "GOLD FOG",
+            "tagline": "פדים ואווירה.",
+            "body": "אטאק איטי (180-420 מ״ש), ריליס ארוך (900-1800 מ״ש), אקו 0.20-0.38. סינוס ומשולש. הווליום נשאר נמוך כי סינוס פוגע חזק יותר במנוע הזה.",
+            "presets": [
+              {
+                "name": "FOG",
+                "blurb": "פד סינוס רחב"
+              },
+              {
+                "name": "CLOUD",
+                "blurb": "פד משולש איטי יותר"
+              },
+              {
+                "name": "GOLD",
+                "blurb": "פד חם ופתוח"
+              },
+              {
+                "name": "STEAM",
+                "blurb": "פד שמוביל באקו"
+              },
+              {
+                "name": "DUSK",
+                "blurb": "הסוול הארוך ביותר"
+              },
+              {
+                "name": "MIRROR",
+                "blurb": "פד בהיר באוקטבה +1"
+              },
+              {
+                "name": "SHADE",
+                "blurb": "פד כהה וסגור"
+              },
+              {
+                "name": "BREATH",
+                "blurb": "ריליס ארוך אחרי האקורד"
+              }
+            ]
+          },
+          {
+            "id": "spikes",
+            "name": "SPIKES",
+            "tagline": "פלאקים וסטאבים. כל ז'אנר.",
+            "body": "אטאק 5-6 מ״ש, סוסטיין 0.06-0.16. תווים קצרים שמדברים על הגריד: בולט לטראנס, סטפ לטכנו, אמר לטראפ, זנב פעמון.",
+            "presets": [
+              {
+                "name": "SPIKE",
+                "blurb": "פלאק מסור בסיסי"
+              },
+              {
+                "name": "PIN",
+                "blurb": "פין ריבוע יבש"
+              },
+              {
+                "name": "SPRING",
+                "blurb": "קפיצה עם רזוננס"
+              },
+              {
+                "name": "DROPLET",
+                "blurb": "טיפת סינוס נקייה"
+              },
+              {
+                "name": "BOLT",
+                "blurb": "סטאב טראנס בהיר"
+              },
+              {
+                "name": "STEP",
+                "blurb": "פלאק טכנו יבש"
+              },
+              {
+                "name": "EMBER",
+                "blurb": "פלאק נמוך וכהה"
+              },
+              {
+                "name": "GOLD BELL",
+                "blurb": "פעמון קצר עם אקו"
+              }
+            ]
+          }
+        ]
       }
     },
     "en": {
@@ -615,7 +965,8 @@
         "lede": "The sound is already waiting for you.",
         "shortText": "8 pages. 64 voices.",
         "description": "Factory Pack was built specifically for L-Studio. It has sounds with different character, from heavy basses to sharp tones, pads, plucks and more. Pick a sound, load it, and start playing.",
-        "cta": "Get early access"
+        "cta": "Get early access",
+        "detailCta": "Explore Factory 64"
       },
       "vision": {
         "kicker": "05 / THE VISION",
@@ -1032,6 +1383,355 @@
           }
         ],
         "terms": "Terms"
+      },
+      "factory64": {
+        "eyebrow": "L-STUDIO / FACTORY PACK / 64 VOICES",
+        "title": "L Studio",
+        "titleEm": "Factory Pack.",
+        "subtitle": "Eight Pages. Sixty-Four Voices.",
+        "intro": [
+          "A complete sound library for L Studio: eight loadable pages, eight named presets on each page. Every voice is written to the app's native page format - volume, ADSR, cutoff, resonance, echo, glide, waveform, octave - on the instrument's home scale (222, 299, 333, 355, 396, 444, 463, 477 Hz).",
+          "Built for trance, techno, rap, trap, and metal. No generic \"init\" slots. Each page is a single musical job."
+        ],
+        "includes": "8 JSON pages · 64 named presets · ready to import from Preset",
+        "coverAlt": "L Studio Factory Pack cover art",
+        "back": "Back to site",
+        "home": "Home",
+        "features": "Features",
+        "architecture": "How it works",
+        "guide": "User guide",
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "navLabel": "Factory 64",
+        "onThisPage": "On this page",
+        "pagesMeta": "8 PAGES",
+        "voicesMeta": "64 VOICES",
+        "presetsHeading": "Presets",
+        "oneLineList": "BLACK WELL - subs · GOLD HAMMER - hits · LIGHT KNIFE - trance leads · GRAY ENGINE - techno · LOW SNAKE - 808 / trap · SAW TEETH - metal · GOLD FOG - pads · SPIKES - plucks",
+        "storeBlurb": "L Studio Factory Pack - 8 pages, 64 voices. Black Well for sub and weight. Gold Hammer for hits. Light Knife for trance leads. Gray Engine for techno loops. Low Snake for 808 and slide. Saw Teeth for metal riffs. Gold Fog for pads. Spikes for plucks and stabs. Import one page at a time from Preset. Named, tuned, and voiced for the instrument - not converted from another synth.",
+        "earlyAccessCta": "Get early access",
+        "pages": [
+          {
+            "id": "black-well",
+            "name": "BLACK WELL",
+            "tagline": "Low-end. Weight. Floor.",
+            "body": "Sine and triangle subs at octave -2 (key one sits at 55.5 Hz), plus saw basses with the filter shut. Long release, little echo, glide only where the note should crawl.",
+            "presets": [
+              {
+                "name": "WELL",
+                "blurb": "clean sine sub"
+              },
+              {
+                "name": "WEIGHT",
+                "blurb": "triangle body for rap"
+              },
+              {
+                "name": "CHAIN",
+                "blurb": "saw bass with teeth"
+              },
+              {
+                "name": "MUD",
+                "blurb": "closed-filter dirty low"
+              },
+              {
+                "name": "CRAWL",
+                "blurb": "140 ms glide bass"
+              },
+              {
+                "name": "FLOOR",
+                "blurb": "driest sub, mix foundation"
+              },
+              {
+                "name": "PULSE",
+                "blurb": "gated bass for stacks"
+              },
+              {
+                "name": "CAVE",
+                "blurb": "wider sub with space"
+              }
+            ]
+          },
+          {
+            "id": "gold-hammer",
+            "name": "GOLD HAMMER",
+            "tagline": "Hits. Wood. Metal. Snap.",
+            "body": "Synthetic percussion. Noise and square, attack at 5-6 ms, sustain near zero. Cutoff is the material: door at 700 Hz, hammer at 1400, wood at 1900, tin at 3400, whip at 4800, glass at 7800.",
+            "presets": [
+              {
+                "name": "HAMMER",
+                "blurb": "heavy center hit"
+              },
+              {
+                "name": "NAIL",
+                "blurb": "short high click"
+              },
+              {
+                "name": "WOOD",
+                "blurb": "warm body tap"
+              },
+              {
+                "name": "TIN",
+                "blurb": "thin metal"
+              },
+              {
+                "name": "DOOR",
+                "blurb": "low tom / slam"
+              },
+              {
+                "name": "GLASS",
+                "blurb": "brittle high strike"
+              },
+              {
+                "name": "WHIP",
+                "blurb": "dry snap"
+              },
+              {
+                "name": "CHIME",
+                "blurb": "short ring with tail"
+              }
+            ]
+          },
+          {
+            "id": "light-knife",
+            "name": "LIGHT KNIFE",
+            "tagline": "Trance leads. Edge and air.",
+            "body": "Open saw and square leads. High cutoff, high sustain, echo as hall not wash. Octave +1 on the top voice. Rise and pull use slower attack and glide.",
+            "presets": [
+              {
+                "name": "KNIFE",
+                "blurb": "main saw lead"
+              },
+              {
+                "name": "BLADE",
+                "blurb": "cut square lead"
+              },
+              {
+                "name": "SPARK",
+                "blurb": "upper-octave glitter"
+              },
+              {
+                "name": "RISE",
+                "blurb": "slow-attack entry"
+              },
+              {
+                "name": "HORN",
+                "blurb": "wide open lead"
+              },
+              {
+                "name": "DART",
+                "blurb": "short melodic stab"
+              },
+              {
+                "name": "PULL",
+                "blurb": "55 ms glide lead"
+              },
+              {
+                "name": "HALO",
+                "blurb": "lead with echo bloom"
+              }
+            ]
+          },
+          {
+            "id": "gray-engine",
+            "name": "GRAY ENGINE",
+            "tagline": "Techno. Dry. Loop-ready.",
+            "body": "Stable oscillators for patterns. Cutoff stays in the 900-2800 Hz working band so the filter still moves. Resonance is the character, not decoration.",
+            "presets": [
+              {
+                "name": "ENGINE",
+                "blurb": "solid saw loop voice"
+              },
+              {
+                "name": "PISTON",
+                "blurb": "dry square pulse"
+              },
+              {
+                "name": "WHEEL",
+                "blurb": "mid resonance, filter-friendly"
+              },
+              {
+                "name": "ASPHALT",
+                "blurb": "low rough bed"
+              },
+              {
+                "name": "STRIPE",
+                "blurb": "short graphic stab"
+              },
+              {
+                "name": "TUNNEL",
+                "blurb": "fixed echo space"
+              },
+              {
+                "name": "LIVE IRON",
+                "blurb": "high-resonance iron"
+              },
+              {
+                "name": "SHIFT",
+                "blurb": "long techno bed"
+              }
+            ]
+          },
+          {
+            "id": "low-snake",
+            "name": "LOW SNAKE",
+            "tagline": "Trap and rap. 808, slide, dark pluck.",
+            "body": "Sine 808s at 55.5 Hz. The tail is release, not decay. Slide is 160 ms glide. Concrete is the dry cut. Whisper is the quiet mix bass.",
+            "presets": [
+              {
+                "name": "SNAKE",
+                "blurb": "classic 808 tail"
+              },
+              {
+                "name": "SLIDE",
+                "blurb": "long pitch slide"
+              },
+              {
+                "name": "SMOKE",
+                "blurb": "soft rap bass"
+              },
+              {
+                "name": "WEST",
+                "blurb": "dark short pluck"
+              },
+              {
+                "name": "GOLD LINK",
+                "blurb": "trap bass-lead"
+              },
+              {
+                "name": "CONCRETE",
+                "blurb": "dry, no tail"
+              },
+              {
+                "name": "DROP",
+                "blurb": "fall with long release"
+              },
+              {
+                "name": "WHISPER",
+                "blurb": "low-level precision sub"
+              }
+            ]
+          },
+          {
+            "id": "saw-teeth",
+            "name": "SAW TEETH",
+            "tagline": "Metal and dark techno. Raw blade.",
+            "body": "Saw, square, and noise. Mid-low cutoff, resonance 0.36-0.58. Drive-oriented voicing. Low riffs at -1/-2, sparks at the top.",
+            "presets": [
+              {
+                "name": "SAW",
+                "blurb": "raw riff saw"
+              },
+              {
+                "name": "TEETH",
+                "blurb": "hard square"
+              },
+              {
+                "name": "GRIND",
+                "blurb": "narrow-filter noise"
+              },
+              {
+                "name": "HUSK",
+                "blurb": "short metal shell"
+              },
+              {
+                "name": "RAGE",
+                "blurb": "aggressive lead"
+              },
+              {
+                "name": "ARMOR",
+                "blurb": "heavy riff bass"
+              },
+              {
+                "name": "STEEL SPARK",
+                "blurb": "high accent"
+              },
+              {
+                "name": "ABYSS",
+                "blurb": "darkest low saw"
+              }
+            ]
+          },
+          {
+            "id": "gold-fog",
+            "name": "GOLD FOG",
+            "tagline": "Pads and atmosphere.",
+            "body": "Slow attack (180-420 ms), long release (900-1800 ms), echo 0.20-0.38. Sine and triangle. Volume kept down because sine hits harder in this engine.",
+            "presets": [
+              {
+                "name": "FOG",
+                "blurb": "wide sine pad"
+              },
+              {
+                "name": "CLOUD",
+                "blurb": "slower triangle pad"
+              },
+              {
+                "name": "GOLD",
+                "blurb": "open warm pad"
+              },
+              {
+                "name": "STEAM",
+                "blurb": "echo-forward pad"
+              },
+              {
+                "name": "DUSK",
+                "blurb": "longest swell"
+              },
+              {
+                "name": "MIRROR",
+                "blurb": "bright +1 pad"
+              },
+              {
+                "name": "SHADE",
+                "blurb": "closed dark pad"
+              },
+              {
+                "name": "BREATH",
+                "blurb": "long release after the chord"
+              }
+            ]
+          },
+          {
+            "id": "spikes",
+            "name": "SPIKES",
+            "tagline": "Plucks and stabs. Every genre.",
+            "body": "Attack 5-6 ms, sustain 0.06-0.16. Short notes that speak on the grid: trance bolt, techno step, trap ember, bell tail.",
+            "presets": [
+              {
+                "name": "SPIKE",
+                "blurb": "basic saw pluck"
+              },
+              {
+                "name": "PIN",
+                "blurb": "dry square pin"
+              },
+              {
+                "name": "SPRING",
+                "blurb": "resonant bounce"
+              },
+              {
+                "name": "DROPLET",
+                "blurb": "clean sine drop"
+              },
+              {
+                "name": "BOLT",
+                "blurb": "bright trance stab"
+              },
+              {
+                "name": "STEP",
+                "blurb": "dry techno pluck"
+              },
+              {
+                "name": "EMBER",
+                "blurb": "dark low pluck"
+              },
+              {
+                "name": "GOLD BELL",
+                "blurb": "short bell with echo"
+              }
+            ]
+          }
+        ]
       }
     },
     "ru": {
@@ -1132,7 +1832,8 @@
         "lede": "Звук уже ждёт тебя.",
         "shortText": "8 страниц. 64 голоса.",
         "description": "Factory Pack создан специально для L-Studio. В нём звуки с разным характером, от тяжёлых басов до резких тонов, пэды, плаки и многое другое. Выбираешь звук, загружаешь и начинаешь играть.",
-        "cta": "Получить ранний доступ"
+        "cta": "Получить ранний доступ",
+        "detailCta": "Открыть Factory 64"
       },
       "vision": {
         "kicker": "05 / ВИДЕНИЕ",
@@ -1549,6 +2250,355 @@
           }
         ],
         "terms": "Условия"
+      },
+      "factory64": {
+        "eyebrow": "L-STUDIO / FACTORY PACK / 64 VOICES",
+        "title": "L Studio",
+        "titleEm": "Factory Pack.",
+        "subtitle": "Восемь страниц. Шестьдесят четыре голоса.",
+        "intro": [
+          "Полная звуковая библиотека для L Studio: восемь загружаемых страниц, восемь именованных пресетов на каждой. Каждый голос записан в родной формат страницы приложения - громкость, ADSR, катофф, резонанс, эхо, глайд, форма волны, октава - на домашней шкале инструмента (222, 299, 333, 355, 396, 444, 463, 477 Hz).",
+          "Собрано для транса, техно, рэпа, трэпа и метала. Без безликих слотов \"init\". Каждая страница это одна музыкальная задача."
+        ],
+        "includes": "8 JSON-страниц · 64 именованных пресета · готовы к импорту из Preset",
+        "coverAlt": "Обложка L Studio Factory Pack",
+        "back": "Вернуться на сайт",
+        "home": "Главная",
+        "features": "Возможности",
+        "architecture": "Как это работает",
+        "guide": "Руководство",
+        "privacy": "Приватность",
+        "terms": "Условия",
+        "navLabel": "Factory 64",
+        "onThisPage": "На этой странице",
+        "pagesMeta": "8 СТРАНИЦ",
+        "voicesMeta": "64 ГОЛОСА",
+        "presetsHeading": "Пресеты",
+        "oneLineList": "BLACK WELL - сабы · GOLD HAMMER - удары · LIGHT KNIFE - транс-лиды · GRAY ENGINE - техно · LOW SNAKE - 808 / трэп · SAW TEETH - метал · GOLD FOG - пэды · SPIKES - плаки",
+        "storeBlurb": "L Studio Factory Pack - 8 страниц, 64 голоса. Black Well для саба и веса. Gold Hammer для ударов. Light Knife для транс-лидов. Gray Engine для техно-лупов. Low Snake для 808 и слайда. Saw Teeth для метал-риффов. Gold Fog для пэдов. Spikes для плаков и стабов. Импортируй по одной странице из Preset. С именами, настроены и озвучены под этот инструмент - не конвертированы с другого синтезатора.",
+        "earlyAccessCta": "Получить ранний доступ",
+        "pages": [
+          {
+            "id": "black-well",
+            "name": "BLACK WELL",
+            "tagline": "Низ. Вес. Пол.",
+            "body": "Синусоидальные и треугольные сабы на октаве -2 (первая клавиша сидит на 55.5 Hz), плюс пилообразные басы с закрытым фильтром. Длинный релиз, мало эха, глайд только там, где нота должна ползти.",
+            "presets": [
+              {
+                "name": "WELL",
+                "blurb": "чистый синусоидальный саб"
+              },
+              {
+                "name": "WEIGHT",
+                "blurb": "треугольное тело для рэпа"
+              },
+              {
+                "name": "CHAIN",
+                "blurb": "пилообразный бас с зубами"
+              },
+              {
+                "name": "MUD",
+                "blurb": "грязный низ с закрытым фильтром"
+              },
+              {
+                "name": "CRAWL",
+                "blurb": "бас с глидом 140 мс"
+              },
+              {
+                "name": "FLOOR",
+                "blurb": "самый сухой саб, основа микса"
+              },
+              {
+                "name": "PULSE",
+                "blurb": "гейтированный бас для стеков"
+              },
+              {
+                "name": "CAVE",
+                "blurb": "более широкий саб с пространством"
+              }
+            ]
+          },
+          {
+            "id": "gold-hammer",
+            "name": "GOLD HAMMER",
+            "tagline": "Удары. Дерево. Металл. Щелчок.",
+            "body": "Синтетическая перкуссия. Шум и квадрат, атака 5-6 мс, сустейн почти ноль. Катофф и есть материал: дверь на 700 Hz, молот на 1400, дерево на 1900, жесть на 3400, хлыст на 4800, стекло на 7800.",
+            "presets": [
+              {
+                "name": "HAMMER",
+                "blurb": "тяжёлый центральный удар"
+              },
+              {
+                "name": "NAIL",
+                "blurb": "короткий высокий клик"
+              },
+              {
+                "name": "WOOD",
+                "blurb": "тёплый удар по телу"
+              },
+              {
+                "name": "TIN",
+                "blurb": "тонкий металл"
+              },
+              {
+                "name": "DOOR",
+                "blurb": "низкий том / слэм"
+              },
+              {
+                "name": "GLASS",
+                "blurb": "хрупкий высокий удар"
+              },
+              {
+                "name": "WHIP",
+                "blurb": "сухой щёлчок"
+              },
+              {
+                "name": "CHIME",
+                "blurb": "короткий звон с хвостом"
+              }
+            ]
+          },
+          {
+            "id": "light-knife",
+            "name": "LIGHT KNIFE",
+            "tagline": "Транс-лиды. Край и воздух.",
+            "body": "Открытые пилообразные и квадратные лиды. Высокий катофф, высокий сустейн, эхо как зал, а не как размытие. Октава +1 на верхнем голосе. Rise и Pull используют более медленную атаку и глайд.",
+            "presets": [
+              {
+                "name": "KNIFE",
+                "blurb": "основной пилообразный лид"
+              },
+              {
+                "name": "BLADE",
+                "blurb": "режущий квадратный лид"
+              },
+              {
+                "name": "SPARK",
+                "blurb": "блеск верхней октавы"
+              },
+              {
+                "name": "RISE",
+                "blurb": "вход с медленной атакой"
+              },
+              {
+                "name": "HORN",
+                "blurb": "широкий открытый лид"
+              },
+              {
+                "name": "DART",
+                "blurb": "короткий мелодический стаб"
+              },
+              {
+                "name": "PULL",
+                "blurb": "лид с глидом 55 мс"
+              },
+              {
+                "name": "HALO",
+                "blurb": "лид с цветением эха"
+              }
+            ]
+          },
+          {
+            "id": "gray-engine",
+            "name": "GRAY ENGINE",
+            "tagline": "Техно. Сухо. Готово к лупу.",
+            "body": "Стабильные осцилляторы для паттернов. Катофф держится в рабочем диапазоне 900-2800 Hz, чтобы фильтр ещё двигался. Резонанс это характер, а не украшение.",
+            "presets": [
+              {
+                "name": "ENGINE",
+                "blurb": "плотный пилообразный голос для лупов"
+              },
+              {
+                "name": "PISTON",
+                "blurb": "сухой квадратный пульс"
+              },
+              {
+                "name": "WHEEL",
+                "blurb": "средняя резонансность, удобно для фильтра"
+              },
+              {
+                "name": "ASPHALT",
+                "blurb": "низкое шероховатое ложе"
+              },
+              {
+                "name": "STRIPE",
+                "blurb": "короткий графичный стаб"
+              },
+              {
+                "name": "TUNNEL",
+                "blurb": "фиксированное эхо-пространство"
+              },
+              {
+                "name": "LIVE IRON",
+                "blurb": "железо с высоким резонансом"
+              },
+              {
+                "name": "SHIFT",
+                "blurb": "длинное техно-ложе"
+              }
+            ]
+          },
+          {
+            "id": "low-snake",
+            "name": "LOW SNAKE",
+            "tagline": "Трэп и рэп. 808, слайд, тёмный плак.",
+            "body": "Синусоидальные 808 на 55.5 Hz. Хвост это релиз, не декей. Слайд это глайд 160 мс. Concrete это сухой срез. Whisper это тихий бас в миксе.",
+            "presets": [
+              {
+                "name": "SNAKE",
+                "blurb": "классический хвост 808"
+              },
+              {
+                "name": "SLIDE",
+                "blurb": "длинный pitch slide"
+              },
+              {
+                "name": "SMOKE",
+                "blurb": "мягкий рэп-бас"
+              },
+              {
+                "name": "WEST",
+                "blurb": "тёмный короткий плак"
+              },
+              {
+                "name": "GOLD LINK",
+                "blurb": "трап бас-лид"
+              },
+              {
+                "name": "CONCRETE",
+                "blurb": "сухо, без хвоста"
+              },
+              {
+                "name": "DROP",
+                "blurb": "падение с длинным релизом"
+              },
+              {
+                "name": "WHISPER",
+                "blurb": "точный саб на низкой громкости"
+              }
+            ]
+          },
+          {
+            "id": "saw-teeth",
+            "name": "SAW TEETH",
+            "tagline": "Метал и тёмное техно. Сырое лезвие.",
+            "body": "Пил, квадрат и шум. Средне-низкий катофф, резонанс 0.36-0.58. Войсинг под драйв. Низкие риффы на -1/-2, искры сверху.",
+            "presets": [
+              {
+                "name": "SAW",
+                "blurb": "сырой рифф-пил"
+              },
+              {
+                "name": "TEETH",
+                "blurb": "жёсткий квадрат"
+              },
+              {
+                "name": "GRIND",
+                "blurb": "шум с узким фильтром"
+              },
+              {
+                "name": "HUSK",
+                "blurb": "короткая металлическая оболочка"
+              },
+              {
+                "name": "RAGE",
+                "blurb": "агрессивный лид"
+              },
+              {
+                "name": "ARMOR",
+                "blurb": "тяжёлый рифф-бас"
+              },
+              {
+                "name": "STEEL SPARK",
+                "blurb": "высокий акцент"
+              },
+              {
+                "name": "ABYSS",
+                "blurb": "самый тёмный низкий пил"
+              }
+            ]
+          },
+          {
+            "id": "gold-fog",
+            "name": "GOLD FOG",
+            "tagline": "Пэды и атмосфера.",
+            "body": "Медленная атака (180-420 мс), длинный релиз (900-1800 мс), эхо 0.20-0.38. Синус и треугольник. Громкость держат ниже, потому что синус бьёт сильнее в этом движке.",
+            "presets": [
+              {
+                "name": "FOG",
+                "blurb": "широкий синусоидальный пэд"
+              },
+              {
+                "name": "CLOUD",
+                "blurb": "более медленный треугольный пэд"
+              },
+              {
+                "name": "GOLD",
+                "blurb": "открытый тёплый пэд"
+              },
+              {
+                "name": "STEAM",
+                "blurb": "пэд с акцентом на эхо"
+              },
+              {
+                "name": "DUSK",
+                "blurb": "самый длинный свилл"
+              },
+              {
+                "name": "MIRROR",
+                "blurb": "яркий пэд на +1"
+              },
+              {
+                "name": "SHADE",
+                "blurb": "закрытый тёмный пэд"
+              },
+              {
+                "name": "BREATH",
+                "blurb": "длинный релиз после аккорда"
+              }
+            ]
+          },
+          {
+            "id": "spikes",
+            "name": "SPIKES",
+            "tagline": "Плаки и стабы. Любой жанр.",
+            "body": "Атака 5-6 мс, сустейн 0.06-0.16. Короткие ноты, которые говорят на сетке: транс-болт, техно-степ, трэп-эмбер, хвост колокола.",
+            "presets": [
+              {
+                "name": "SPIKE",
+                "blurb": "базовый пилообразный плак"
+              },
+              {
+                "name": "PIN",
+                "blurb": "сухой квадратный пин"
+              },
+              {
+                "name": "SPRING",
+                "blurb": "резонансный отскок"
+              },
+              {
+                "name": "DROPLET",
+                "blurb": "чистая синусоидальная капля"
+              },
+              {
+                "name": "BOLT",
+                "blurb": "яркий транс-стаб"
+              },
+              {
+                "name": "STEP",
+                "blurb": "сухой техно-плак"
+              },
+              {
+                "name": "EMBER",
+                "blurb": "тёмный низкий плак"
+              },
+              {
+                "name": "GOLD BELL",
+                "blurb": "короткий колокол с эхом"
+              }
+            ]
+          }
+        ]
       }
     },
     "ar": {
@@ -1649,7 +2699,8 @@
         "lede": "الصوت ينتظرك بالفعل.",
         "shortText": "8 صفحات. 64 صوتاً.",
         "description": "بُني Factory Pack خصيصاً لـL-Studio. يحتوي على أصوات بطابع مختلف، من الباس الثقيل إلى الأصوات الحادة، الـPads، الـPlucks وغيرها. تختار صوتاً، تحمّله، وتبدأ العزف.",
-        "cta": "احصل على وصول مبكر"
+        "cta": "احصل على وصول مبكر",
+        "detailCta": "استكشف Factory 64"
       },
       "vision": {
         "kicker": "05 / الرؤية",
@@ -2066,6 +3117,355 @@
           }
         ],
         "terms": "الشروط"
+      },
+      "factory64": {
+        "eyebrow": "L-STUDIO / FACTORY PACK / 64 VOICES",
+        "title": "L Studio",
+        "titleEm": "Factory Pack.",
+        "subtitle": "ثماني صفحات. أربعة وستون صوتاً.",
+        "intro": [
+          "مكتبة صوت كاملة لـL Studio: ثماني صفحات قابلة للتحميل، وثمانية إعدادات مسبقة مسماة في كل صفحة. كل صوت مكتوب بصيغة الصفحة الأصلية للتطبيق - مستوى الصوت، ADSR، كات أوف، رنين، صدى، غلايد، شكل الموجة، أوكتاف - على سلم الآلة المنزلي (222, 299, 333, 355, 396, 444, 463, 477 Hz).",
+          "مبني للترانس والتكنو والراب والتراب والميتال. بلا خانات \"init\" عامة. كل صفحة مهمة موسيقية واحدة."
+        ],
+        "includes": "8 صفحات JSON · 64 إعداداً مسبقاً مسمى · جاهزة للاستيراد من Preset",
+        "coverAlt": "غلاف L Studio Factory Pack",
+        "back": "العودة إلى الموقع",
+        "home": "الرئيسية",
+        "features": "المزايا",
+        "architecture": "كيف يعمل",
+        "guide": "دليل المستخدم",
+        "privacy": "الخصوصية",
+        "terms": "الشروط",
+        "navLabel": "Factory 64",
+        "onThisPage": "في هذه الصفحة",
+        "pagesMeta": "8 صفحات",
+        "voicesMeta": "64 صوتاً",
+        "presetsHeading": "إعدادات مسبقة",
+        "oneLineList": "BLACK WELL - سابات · GOLD HAMMER - ضربات · LIGHT KNIFE - ليدز ترانس · GRAY ENGINE - تكنو · LOW SNAKE - 808 / تراب · SAW TEETH - ميتال · GOLD FOG - بادات · SPIKES - بلاكس",
+        "storeBlurb": "L Studio Factory Pack - 8 صفحات، 64 صوتاً. Black Well للساب والوزن. Gold Hammer للضربات. Light Knife لليدز الترانس. Gray Engine لحلقات التكنو. Low Snake لـ808 والسلايد. Saw Teeth لريفات الميتال. Gold Fog للبادات. Spikes للبلاكس والطعَنات. استورد صفحة واحدة في كل مرة من Preset. مسماة ومضبوطة ومصوغة للآلة نفسها - لا محوّلة من سنث آخر.",
+        "earlyAccessCta": "احصل على وصول مبكر",
+        "pages": [
+          {
+            "id": "black-well",
+            "name": "BLACK WELL",
+            "tagline": "لو-إند. وزن. أرضية.",
+            "body": "سابات ساين ومثلث على الأوكتاف -2 (المفتاح الأول عند 55.5 Hz)، مع باسات منشار بفلتر مغلق. إطلاق طويل، صدى قليل، غلايد فقط حيث يجب أن تزحف النغمة.",
+            "presets": [
+              {
+                "name": "WELL",
+                "blurb": "ساب ساين نظيف"
+              },
+              {
+                "name": "WEIGHT",
+                "blurb": "جسم مثلثي للراب"
+              },
+              {
+                "name": "CHAIN",
+                "blurb": "باس منشار بأسنان"
+              },
+              {
+                "name": "MUD",
+                "blurb": "لو ملوّث بفلتر مغلق"
+              },
+              {
+                "name": "CRAWL",
+                "blurb": "باس غلايد 140 مللي ثانية"
+              },
+              {
+                "name": "FLOOR",
+                "blurb": "أجف ساب، أساس المكساج"
+              },
+              {
+                "name": "PULSE",
+                "blurb": "باس مبوّب للطبقات"
+              },
+              {
+                "name": "CAVE",
+                "blurb": "ساب أوسع مع مساحة"
+              }
+            ]
+          },
+          {
+            "id": "gold-hammer",
+            "name": "GOLD HAMMER",
+            "tagline": "ضربات. خشب. معدن. طقطقة.",
+            "body": "إيقاع اصطناعي. ضوضاء ومربع، هجوم عند 5-6 مللي ثانية، استدامة قرب الصفر. الكات أوف هو المادة: باب عند 700 Hz، مطرقة عند 1400، خشب عند 1900، قصدير عند 3400، سوط عند 4800، زجاج عند 7800.",
+            "presets": [
+              {
+                "name": "HAMMER",
+                "blurb": "ضربة ثقيلة في المركز"
+              },
+              {
+                "name": "NAIL",
+                "blurb": "نقرة عالية قصيرة"
+              },
+              {
+                "name": "WOOD",
+                "blurb": "طَرق دافئ في الجسم"
+              },
+              {
+                "name": "TIN",
+                "blurb": "معدن رفيع"
+              },
+              {
+                "name": "DOOR",
+                "blurb": "طوم منخفض / صدمة"
+              },
+              {
+                "name": "GLASS",
+                "blurb": "ضربة عالية هشة"
+              },
+              {
+                "name": "WHIP",
+                "blurb": "طقطقة جافة"
+              },
+              {
+                "name": "CHIME",
+                "blurb": "رنين قصير بذيل"
+              }
+            ]
+          },
+          {
+            "id": "light-knife",
+            "name": "LIGHT KNIFE",
+            "tagline": "ليدز للترانس. حافة وهواء.",
+            "body": "ليدز منشار ومربع مفتوحة. كات أوف عالٍ، استدامة عالية، صدى كقاعة لا كغسل. أوكتاف +1 على الصوت الأعلى. Rise وPull يستخدمان هجوماً وغلايداً أبطأ.",
+            "presets": [
+              {
+                "name": "KNIFE",
+                "blurb": "ليد منشار رئيسي"
+              },
+              {
+                "name": "BLADE",
+                "blurb": "ليد مربع قاطع"
+              },
+              {
+                "name": "SPARK",
+                "blurb": "بريق على الأوكتاف الأعلى"
+              },
+              {
+                "name": "RISE",
+                "blurb": "دخول بهجوم بطيء"
+              },
+              {
+                "name": "HORN",
+                "blurb": "ليد مفتوح وواسع"
+              },
+              {
+                "name": "DART",
+                "blurb": "طعنة لحنية قصيرة"
+              },
+              {
+                "name": "PULL",
+                "blurb": "ليد غلايد 55 مللي ثانية"
+              },
+              {
+                "name": "HALO",
+                "blurb": "ليد مع ازدهار صدى"
+              }
+            ]
+          },
+          {
+            "id": "gray-engine",
+            "name": "GRAY ENGINE",
+            "tagline": "تكنو. جاف. جاهز للحلقة.",
+            "body": "مذبذبات مستقرة للأنماط. الكات أوف يبقى في نطاق العمل 900-2800 Hz حتى يتحرك الفلتر. الرنين هو الطابع، لا الزخرفة.",
+            "presets": [
+              {
+                "name": "ENGINE",
+                "blurb": "صوت منشار ثابت للحلقات"
+              },
+              {
+                "name": "PISTON",
+                "blurb": "نبض مربع جاف"
+              },
+              {
+                "name": "WHEEL",
+                "blurb": "رنين متوسط، مناسب للفلتر"
+              },
+              {
+                "name": "ASPHALT",
+                "blurb": "قاع خشن منخفض"
+              },
+              {
+                "name": "STRIPE",
+                "blurb": "طعنة بصرية قصيرة"
+              },
+              {
+                "name": "TUNNEL",
+                "blurb": "مساحة صدى ثابتة"
+              },
+              {
+                "name": "LIVE IRON",
+                "blurb": "حديد برنين عالٍ"
+              },
+              {
+                "name": "SHIFT",
+                "blurb": "قاع تكنو طويل"
+              }
+            ]
+          },
+          {
+            "id": "low-snake",
+            "name": "LOW SNAKE",
+            "tagline": "تراب وراب. 808، سلايد، بلاك داكن.",
+            "body": "ساين 808 عند 55.5 Hz. الذيل إطلاق، لا تضاؤل. السلايد غلايد 160 مللي ثانية. Concrete هو القطع الجاف. Whisper باس المكساج الهادئ.",
+            "presets": [
+              {
+                "name": "SNAKE",
+                "blurb": "ذيل 808 كلاسيكي"
+              },
+              {
+                "name": "SLIDE",
+                "blurb": "انزلاق طبقة طويلة"
+              },
+              {
+                "name": "SMOKE",
+                "blurb": "باس راب ناعم"
+              },
+              {
+                "name": "WEST",
+                "blurb": "بلاك داكن قصير"
+              },
+              {
+                "name": "GOLD LINK",
+                "blurb": "باس-ليد للتراب"
+              },
+              {
+                "name": "CONCRETE",
+                "blurb": "جاف بلا ذيل"
+              },
+              {
+                "name": "DROP",
+                "blurb": "سقوط بإطلاق طويل"
+              },
+              {
+                "name": "WHISPER",
+                "blurb": "ساب دقيق بمستوى منخفض"
+              }
+            ]
+          },
+          {
+            "id": "saw-teeth",
+            "name": "SAW TEETH",
+            "tagline": "ميتال وتكنو داكن. نصل خام.",
+            "body": "منشار ومربع وضوضاء. كات أوف متوسط-منخفض، رنين 0.36-0.58. صياغة موجّهة للدرايف. ريفات منخفضة عند -1/-2، شرارات في الأعلى.",
+            "presets": [
+              {
+                "name": "SAW",
+                "blurb": "منشار ريف خام"
+              },
+              {
+                "name": "TEETH",
+                "blurb": "مربع قاسٍ"
+              },
+              {
+                "name": "GRIND",
+                "blurb": "ضوضاء بفلتر ضيق"
+              },
+              {
+                "name": "HUSK",
+                "blurb": "قشرة معدنية قصيرة"
+              },
+              {
+                "name": "RAGE",
+                "blurb": "ليد عدواني"
+              },
+              {
+                "name": "ARMOR",
+                "blurb": "باس ريف ثقيل"
+              },
+              {
+                "name": "STEEL SPARK",
+                "blurb": "تمييز عالٍ"
+              },
+              {
+                "name": "ABYSS",
+                "blurb": "أظلم منشار منخفض"
+              }
+            ]
+          },
+          {
+            "id": "gold-fog",
+            "name": "GOLD FOG",
+            "tagline": "بادات وأجواء.",
+            "body": "هجوم بطيء (180-420 مللي ثانية)، إطلاق طويل (900-1800 مللي ثانية)، صدى 0.20-0.38. ساين ومثلث. يُبقى مستوى الصوت منخفضاً لأن الساين يضرب أقوى في هذا المحرك.",
+            "presets": [
+              {
+                "name": "FOG",
+                "blurb": "باد ساين واسع"
+              },
+              {
+                "name": "CLOUD",
+                "blurb": "باد مثلثي أبطأ"
+              },
+              {
+                "name": "GOLD",
+                "blurb": "باد دافئ مفتوح"
+              },
+              {
+                "name": "STEAM",
+                "blurb": "باد يقدّم الصدى"
+              },
+              {
+                "name": "DUSK",
+                "blurb": "أطول تصاعد"
+              },
+              {
+                "name": "MIRROR",
+                "blurb": "باد ساطع على +1"
+              },
+              {
+                "name": "SHADE",
+                "blurb": "باد داكن مغلق"
+              },
+              {
+                "name": "BREATH",
+                "blurb": "إطلاق طويل بعد الوتر"
+              }
+            ]
+          },
+          {
+            "id": "spikes",
+            "name": "SPIKES",
+            "tagline": "بلاكس وطعَنات. كل الأنواع.",
+            "body": "هجوم 5-6 مللي ثانية، استدامة 0.06-0.16. نغمات قصيرة تتكلم على الشبكة: بولت للترانس، ستيب للتكنو، إمبر للتراب، ذيل جرس.",
+            "presets": [
+              {
+                "name": "SPIKE",
+                "blurb": "بلاك منشار أساسي"
+              },
+              {
+                "name": "PIN",
+                "blurb": "دبوس مربع جاف"
+              },
+              {
+                "name": "SPRING",
+                "blurb": "ارتداد برنين"
+              },
+              {
+                "name": "DROPLET",
+                "blurb": "قطرة ساين نظيفة"
+              },
+              {
+                "name": "BOLT",
+                "blurb": "طعنة ترانس ساطعة"
+              },
+              {
+                "name": "STEP",
+                "blurb": "بلاك تكنو جاف"
+              },
+              {
+                "name": "EMBER",
+                "blurb": "بلاك منخفض داكن"
+              },
+              {
+                "name": "GOLD BELL",
+                "blurb": "جرس قصير مع صدى"
+              }
+            ]
+          }
+        ]
       }
     }
   }

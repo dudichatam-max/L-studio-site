@@ -12,9 +12,14 @@ Long guide copy lives under `languages.*.guide` (title, intro, tip labels, and `
 
 Nav labels for the guide live under `languages.*.nav.guide`.
 
+### Factory 64 (`/factory-64`)
+
+Detail copy for the Factory Pack lives under `languages.*.factory64` (title, intro, page cards, preset blurbs, store blurb). Keep all four languages in sync. Preset **names** stay in English; translate descriptions only. Cover art is `assets/factory-64-cover.png`. Home section CTAs use `languages.*.factoryPack.detailCta` (link to `/factory-64`) and `languages.*.factoryPack.cta` (early access).
+
+
 ## Images
 
-The root folder `assets/` holds shared stills such as the logo, Factory Pack banner, developer photo, and Preset still. Replace a file using the same filename and commit it. The GitHub Action copies root `assets/` into the website automatically. The MIC feature still (`mic-window.jpg`) lives under `client/public/assets/`.
+The root folder `assets/` holds shared stills such as the logo, Factory Pack banner, Factory 64 cover (`factory-64-cover.png`), developer photo, and Preset still. Replace a file using the same filename and commit it. The GitHub Action copies root `assets/` into the website automatically. The MIC feature still (`mic-window.jpg`) lives under `client/public/assets/`.
 
 ## Feature videos
 
