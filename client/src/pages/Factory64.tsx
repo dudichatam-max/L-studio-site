@@ -14,27 +14,6 @@ type FactoryPage = {
   presets: FactoryPreset[];
 };
 
-type DrumStyle = { name: string; blurb: string };
-type DrumsCopy = {
-  id: string;
-  eyebrow: string;
-  title: string;
-  titleEm: string;
-  subtitle: string;
-  intro: string[];
-  includes: string;
-  coverAlt: string;
-  stylesHeading: string;
-  styles: DrumStyle[];
-  experimentalTitle: string;
-  experimentalBody: string;
-  freeChannelsTitle: string;
-  freeChannelsBody: string;
-  metaStyles: string;
-  metaKits: string;
-  tocLabel: string;
-};
-
 type Factory64Copy = {
   eyebrow: string;
   title: string;
@@ -62,7 +41,6 @@ type Factory64Copy = {
   storeBlurb: string;
   earlyAccessCta: string;
   pages: FactoryPage[];
-  drums?: DrumsCopy;
 };
 
 const emptyCopy = (language: Language): Factory64Copy => ({
@@ -110,8 +88,13 @@ const emptyCopy = (language: Language): Factory64Copy => ({
 
 const coverPng = `${import.meta.env.BASE_URL}assets/factory-64-cover.png`;
 const coverWebp = `${import.meta.env.BASE_URL}assets/factory-64-cover.webp`;
-const drumsPng = `${import.meta.env.BASE_URL}assets/factory-64-drum-kits.png`;
-const drumsWebp = `${import.meta.env.BASE_URL}assets/factory-64-drum-kits.webp`;
+
+const drumsNavFallback: Record<Language, string> = {
+  he: "ערכות תופים",
+  en: "Drum kits",
+  ru: "Барабаны",
+  ar: "الطبول",
+};
 
 function sectionNumber(index: number) {
   return String(index + 1).padStart(2, "0");
@@ -120,6 +103,7 @@ function sectionNumber(index: number) {
 export default function Factory64() {
   const { language, isRtl } = useLanguage();
   const [text, setText] = useState<Factory64Copy>(() => emptyCopy(language));
+  const [drumsLabel, setDrumsLabel] = useState(drumsNavFallback[language]);
 
   // Always enter Factory 64 at the top (SPA may retain Home scroll).
   useEffect(() => {
@@ -131,18 +115,20 @@ export default function Factory64() {
   useEffect(() => {
     let cancelled = false;
     setText(emptyCopy(language));
+    setDrumsLabel(drumsNavFallback[language]);
     fetch(`${import.meta.env.BASE_URL}content.json`)
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         const block = data?.languages?.[language]?.factory64 as Factory64Copy | undefined;
+        const drumsNav = data?.languages?.[language]?.factoryDrums?.navLabel;
         if (cancelled || !block) return;
         setText({
           ...emptyCopy(language),
           ...block,
           intro: block.intro ?? [],
           pages: block.pages ?? [],
-          drums: block.drums,
         });
+        if (typeof drumsNav === "string" && drumsNav) setDrumsLabel(drumsNav);
       })
       .catch(() => undefined);
     return () => {
@@ -150,7 +136,6 @@ export default function Factory64() {
     };
   }, [language]);
 
-  const drums = text.drums;
   const dir = isRtl ? "rtl" : "ltr";
 
   return (
@@ -167,6 +152,7 @@ export default function Factory64() {
             <Link href="/privacy">{text.privacy}</Link>
             <Link href="/terms">{text.terms}</Link>
             <span className="nav-current">{text.navLabel}</span>
+            <Link href="/factory-64/drums">{drumsLabel}</Link>
           </nav>
           <div className="header-actions">
             <LanguageSwitcher />
@@ -205,11 +191,9 @@ export default function Factory64() {
                 <a className="button button--primary" href="/#early-access">
                   {text.earlyAccessCta}
                 </a>
-                {drums ? (
-                  <a className="button button--light" href={`#factory64-${drums.id}`}>
-                    {drums.tocLabel}
-                  </a>
-                ) : null}
+                <Link className="button button--light" href="/factory-64/drums">
+                  {drumsLabel}
+                </Link>
                 <a className="button button--light" href="#factory64-pages">
                   {text.synthsHeading || text.pagesMeta}
                 </a>
@@ -225,71 +209,14 @@ export default function Factory64() {
           {text.oneLineList ? <p className="factory64-oneline">{text.oneLineList}</p> : null}
         </section>
 
-        {drums ? (
-          <section className="factory64-drums container" id={`factory64-${drums.id}`} dir={dir}>
-            <div className="factory64-drums-grid">
-              <div className="factory64-drums-copy">
-                <div className="eyebrow">
-                  <span className="eyebrow-dot" /> {drums.eyebrow}
-                </div>
-                <h2>
-                  {drums.title} <em>{drums.titleEm}</em>
-                </h2>
-                <p className="factory64-subtitle">{drums.subtitle}</p>
-                {drums.intro.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-                {drums.includes ? <p className="factory64-includes">{drums.includes}</p> : null}
-                <div className="factory64-hero-meta">
-                  <Layers size={16} />
-                  <span>{drums.metaStyles}</span>
-                  <span className="factory64-hero-sep">·</span>
-                  <span>{drums.metaKits}</span>
-                </div>
-              </div>
-              <figure className="factory64-cover factory64-drums-cover">
-                <picture>
-                  <source srcSet={drumsWebp} type="image/webp" />
-                  <img src={drumsPng} alt={drums.coverAlt} />
-                </picture>
-              </figure>
-            </div>
-
-            <h3 className="factory64-presets-heading">{drums.stylesHeading}</h3>
-            <ul className="factory64-presets factory64-drum-styles">
-              {drums.styles.map((style, index) => (
-                <li key={style.name}>
-                  <strong>
-                    {sectionNumber(index)} · {style.name}
-                  </strong>
-                  <span>{style.blurb}</span>
-                </li>
-              ))}
-            </ul>
-
-            <div className="factory64-callouts">
-              <div className="factory64-callout">
-                <h3>{drums.experimentalTitle}</h3>
-                <p>{drums.experimentalBody}</p>
-              </div>
-              <div className="factory64-callout">
-                <h3>{drums.freeChannelsTitle}</h3>
-                <p>{drums.freeChannelsBody}</p>
-              </div>
-            </div>
-          </section>
-        ) : null}
-
         <section className="factory64-content container" id="factory64-pages">
           <aside className="factory64-aside" dir={dir}>
             <span className="kicker">{text.onThisPage}</span>
             <div className="factory64-toc">
-              {drums ? (
-                <a href={`#factory64-${drums.id}`}>
-                  <span className="factory64-toc-num">DR</span>
-                  <span className="factory64-toc-title">{drums.tocLabel}</span>
-                </a>
-              ) : null}
+              <Link href="/factory-64/drums">
+                <span className="factory64-toc-num">DR</span>
+                <span className="factory64-toc-title">{drumsLabel}</span>
+              </Link>
               {text.pages.map((page, index) => (
                 <a key={page.id} href={`#factory64-${page.id}`}>
                   <span className="factory64-toc-num">{sectionNumber(index)}</span>
@@ -348,6 +275,7 @@ export default function Factory64() {
             <Link href="/privacy">{text.privacy}</Link>
             <Link href="/terms">{text.terms}</Link>
             <span>{text.navLabel}</span>
+            <Link href="/factory-64/drums">{drumsLabel}</Link>
           </div>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>
         </div>

@@ -100,7 +100,8 @@
         "description": "עם המעבר ל־Pro מקבלים את Factory Pack המלא: 8 עמודי פריסטים לסינתיסייזר (64 קולות), ואחריהם 8 ערכות תופים מוכנות ב־8 סגנונות שונים. בוחרים, טוענים, ומתחילים לנגן.",
         "cta": "לקבלת גישה מוקדמת",
         "detailCta": "לגלות את Factory 64",
-        "coverAlt": "קופסת מוצר L Studio Factory Pack בשחור-לבן"
+        "coverAlt": "קופסת מוצר L Studio Factory Pack בשחור-לבן",
+        "drumsCta": "ערכות התופים"
       },
       "vision": {
         "kicker": "05 / החזון",
@@ -872,62 +873,68 @@
         ],
         "listenNote": "תדרים נמוכים כמעט לא נשמעים ברמקולים של הטלפון. לחוויה מלאה השתמשו באוזניות או ברמקולים מתאימים.",
         "synthsHeading": "עמודי הפריסטים",
-        "synthsIntro": "שמונה עמודי פריסטים לסינתיסייזר. כל עמוד הוא משימה מוזיקלית אחת, שמונה קולות עם שם.",
-        "drums": {
-          "id": "drum-kits",
-          "eyebrow": "L-STUDIO / PRO / DRUM KITS",
-          "title": "שמונה ערכות",
-          "titleEm": "תופים.",
-          "subtitle": "שמונה עמודי סגנון. שישים וארבעה קיטים. מוכנים לנגן.",
-          "intro": [
-            "אחרי Factory Pack של הפריסטים, Pro מייבא אוטומטית שמונה ערכות תופים מוכנות. כל ערכה היא עמוד Style נפרד עם סגנון משלו, ושמונה קיטים בתוכו.",
-            "שבע הערכות הראשונות מגיעות עם סאמפלים בארבעת הערוצים הראשונים. הערוצים הנוספים נשארים פנויים כדי שתוכלו להוסיף סאמפלים שלכם ולבנות מהבסיס הקיים."
-          ],
-          "includes": "8 עמודי Style · 64 קיטי תופים · מוכנים לנגן",
-          "coverAlt": "עטיפת ערכות התופים של L Studio Pro",
-          "stylesHeading": "שמונת הסגנונות",
-          "styles": [
-            {
-              "name": "Rap 90'",
-              "blurb": "אקוסטי לביטים של ראפ משנות התשעים"
-            },
-            {
-              "name": "Hip-Hop 2000s",
-              "blurb": "קיטים ל־Hip-Hop של שנות האלפיים"
-            },
-            {
-              "name": "Soft Indie",
-              "blurb": "רך, פתוח ומוזיקלי"
-            },
-            {
-              "name": "Psy Progressive Rock",
-              "blurb": "פרוגרסיבי עם משקל ומרחב"
-            },
-            {
-              "name": "Berlin 90s Techno",
-              "blurb": "יבש, מדויק, מוכן ללולאה"
-            },
-            {
-              "name": "Tribal Ambient Trance",
-              "blurb": "טקסטורות שבטיות ואמביינט"
-            },
-            {
-              "name": "Goa Trance",
-              "blurb": "אנרגיה גבוהה לגוה טראנס"
-            },
-            {
-              "name": "Experimental",
-              "blurb": "הדגמת יכולות מלאה של המערכת"
-            }
-          ],
-          "experimentalTitle": "Experimental",
-          "experimentalBody": "הערכה השמינית, Experimental, מגיעה עם שמונה ערוצים טעונים ומקצבים מוכנים. היא מדגימה מה המערכת יודעת לעשות כשכל הערוצים עובדים יחד.",
-          "freeChannelsTitle": "ארבעה ערוצים פנויים",
-          "freeChannelsBody": "מעבר לערוצים הטעונים, יש ארבעה ערוצים פנויים להוספת סאמפלים שלכם ולעיצוב מהבסיס הקיים.",
-          "metaStyles": "8 עמודי סגנון",
-          "metaKits": "64 קיטי תופים",
-          "tocLabel": "ערכות תופים"
-        }
+        "synthsIntro": "שמונה עמודי פריסטים לסינתיסייזר. כל עמוד הוא משימה מוזיקלית אחת, שמונה קולות עם שם."
+      },
+      "factoryDrums": {
+        "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
+        "title": "8 ערכות תופים.",
+        "titleEm": "64 סגנונות.",
+        "intro": "8 ערכות שונות, בכל אחת 8 סגנונות תופים. מסאונד אקוסטי ומחוספס ועד מקצבים אלקטרוניים ו-Experimental. כל ערכה מביאה אופי אחר ל-L Studio Pro.",
+        "navLabel": "ערכות תופים",
+        "imageAlt": "כרזת ערכת תופים",
+        "closingTitle": "8 ערכות. 64 סגנונות.",
+        "closingBody": "מ-Boom-Bap אקוסטי, דרך Indie, Techno ו-Goa, ועד Experimental עם 8 ערוצים ומקצבים מובנים.",
+        "closingLine": "L Studio Pro נותנת לך לבחור את הסאונד שמתאים לכיוון שלך ולהתחיל ליצור.",
+        "kits": [
+          {
+            "id": "rap-90",
+            "name": "RAP 90'",
+            "body": "תופים אקוסטיים בסגנון Boom-Bap של שנות ה-90, עם סאונד חם, מחוספס ותחושה אורגנית.",
+            "tech": "8 Styles · 85-95 BPM · 4 Channels"
+          },
+          {
+            "id": "hip-hop-2000s",
+            "name": "HIP-HOP 2000s",
+            "body": "שילוב של תופים אורגניים ו-808, עם אופי אורבני ואנרגיה של היפ-הופ מתחילת שנות ה-2000.",
+            "tech": "8 Styles · 82-96 BPM · 4 Channels"
+          },
+          {
+            "id": "soft-indie",
+            "name": "SOFT INDIE",
+            "body": "תופים רכים ואינטימיים, מברשות וטקסטורות עדינות, עם קיק שנשאר נוכח.",
+            "tech": "8 Styles · 68-84 BPM · 4 Channels"
+          },
+          {
+            "id": "psy-progressive-rock",
+            "name": "PSY PROGRESSIVE ROCK",
+            "body": "שילוב של מקצבים אורגניים, כלי הקשה ואנרגיה פסיכדלית, מהאדמה ועד החלל.",
+            "tech": "8 Styles · 92-120 BPM · 4 Channels"
+          },
+          {
+            "id": "berlin-90s-techno",
+            "name": "BERLIN 90s TECHNO",
+            "body": "תופים יבשים וקשים עם אופי תעשייתי וגרוב היפנוטי בהשראת טכנו של שנות ה-90.",
+            "tech": "8 Styles · 120-138 BPM · 4 Channels"
+          },
+          {
+            "id": "tribal-ambient-trance",
+            "name": "TRIBAL AMBIENT TRANCE",
+            "body": "מקצבים אורגניים שנבנים בהדרגה, מערפל ופעימה ראשונה ועד טקס, שיא ואחריו רגיעה.",
+            "tech": "8 Styles · 96-124 BPM · 4 Channels"
+          },
+          {
+            "id": "goa-trance",
+            "name": "GOA TRANCE",
+            "body": "מקצבים אלקטרוניים עוצמתיים עם התפתחות הדרגתית, מהפעימה הראשונה ועד לשיא האנרגיה.",
+            "tech": "8 Styles · 128-145 BPM · 4 Channels"
+          },
+          {
+            "id": "experimental",
+            "name": "EXPERIMENTAL",
+            "body": "הערכה המורכבת ביותר באוסף. 8 ערוצים הכוללים Kick, Snare, High, Perc, Bass, Texture, FX ו-Vocal, עם מקצבים מובנים ומעברים אוטומטיים.",
+            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns"
+          }
+        ]
       }
     },
     "en": {
@@ -1030,7 +1037,8 @@
         "description": "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 ready drum packs across 8 different styles. Pick a sound or a kit, load it, and start playing.",
         "cta": "Get early access",
         "detailCta": "Explore Factory 64",
-        "coverAlt": "L Studio Factory Pack product box"
+        "coverAlt": "L Studio Factory Pack product box",
+        "drumsCta": "Drum kits"
       },
       "vision": {
         "kicker": "05 / THE VISION",
@@ -1802,62 +1810,68 @@
         ],
         "listenNote": "Low frequencies are barely audible on phone speakers. For the full experience, use headphones or suitable speakers.",
         "synthsHeading": "Preset pages",
-        "synthsIntro": "Eight synth preset pages. Each page is one musical job, eight named voices.",
-        "drums": {
-          "id": "drum-kits",
-          "eyebrow": "L-STUDIO / PRO / DRUM KITS",
-          "title": "Eight ready",
-          "titleEm": "drum kits.",
-          "subtitle": "Eight style pages. Sixty-four kits. Ready to play.",
-          "intro": [
-            "After the Factory Pack presets, Pro automatically imports eight ready drum packs. Each pack is its own Style page with a distinct character and eight kits inside.",
-            "The first seven packs load samples on the first four channels. The extra channels stay free so you can add your own samples and design from the existing base."
-          ],
-          "includes": "8 Style pages · 64 drum kits · ready to play",
-          "coverAlt": "L Studio Pro drum kits cover art",
-          "stylesHeading": "The eight styles",
-          "styles": [
-            {
-              "name": "Rap 90'",
-              "blurb": "Acoustic kits for nineties rap feel"
-            },
-            {
-              "name": "Hip-Hop 2000s",
-              "blurb": "Kits tuned for 2000s hip-hop"
-            },
-            {
-              "name": "Soft Indie",
-              "blurb": "Soft, open, and musical"
-            },
-            {
-              "name": "Psy Progressive Rock",
-              "blurb": "Progressive weight and space"
-            },
-            {
-              "name": "Berlin 90s Techno",
-              "blurb": "Dry, precise, loop-ready"
-            },
-            {
-              "name": "Tribal Ambient Trance",
-              "blurb": "Tribal texture and ambient air"
-            },
-            {
-              "name": "Goa Trance",
-              "blurb": "High-energy Goa drive"
-            },
-            {
-              "name": "Experimental",
-              "blurb": "Full-system demo with ready rhythms"
-            }
-          ],
-          "experimentalTitle": "Experimental",
-          "experimentalBody": "Pack eight, Experimental, ships with eight loaded channels and ready rhythms. It shows what the system can do when every channel works together.",
-          "freeChannelsTitle": "Four free channels",
-          "freeChannelsBody": "Beyond the loaded channels, four free channels stay open for your own samples and for designing from the existing base.",
-          "metaStyles": "8 STYLE PAGES",
-          "metaKits": "64 DRUM KITS",
-          "tocLabel": "Drum kits"
-        }
+        "synthsIntro": "Eight synth preset pages. Each page is one musical job, eight named voices."
+      },
+      "factoryDrums": {
+        "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
+        "title": "8 drum kits.",
+        "titleEm": "64 styles.",
+        "intro": "8 different kits, each with 8 drum styles. From a rough acoustic sound to electronic rhythms and Experimental. Each kit brings a different character to L Studio Pro.",
+        "navLabel": "Drum kits",
+        "imageAlt": "Drum kit poster",
+        "closingTitle": "8 kits. 64 styles.",
+        "closingBody": "From acoustic Boom-Bap, through Indie, Techno, and Goa, to Experimental with 8 channels and built-in rhythms.",
+        "closingLine": "L Studio Pro lets you choose the sound that fits your direction and start creating.",
+        "kits": [
+          {
+            "id": "rap-90",
+            "name": "RAP 90'",
+            "body": "Acoustic Boom-Bap drums from the 1990s, with a warm, rough sound and an organic feel.",
+            "tech": "8 Styles · 85-95 BPM · 4 Channels"
+          },
+          {
+            "id": "hip-hop-2000s",
+            "name": "HIP-HOP 2000s",
+            "body": "A mix of organic drums and 808, with an urban character and the energy of early-2000s hip-hop.",
+            "tech": "8 Styles · 82-96 BPM · 4 Channels"
+          },
+          {
+            "id": "soft-indie",
+            "name": "SOFT INDIE",
+            "body": "Soft, intimate drums, brushes and delicate textures, with a kick that stays present.",
+            "tech": "8 Styles · 68-84 BPM · 4 Channels"
+          },
+          {
+            "id": "psy-progressive-rock",
+            "name": "PSY PROGRESSIVE ROCK",
+            "body": "A mix of organic rhythms, percussion, and psychedelic energy, from the earth to space.",
+            "tech": "8 Styles · 92-120 BPM · 4 Channels"
+          },
+          {
+            "id": "berlin-90s-techno",
+            "name": "BERLIN 90s TECHNO",
+            "body": "Dry, hard drums with an industrial character and a hypnotic groove inspired by 1990s techno.",
+            "tech": "8 Styles · 120-138 BPM · 4 Channels"
+          },
+          {
+            "id": "tribal-ambient-trance",
+            "name": "TRIBAL AMBIENT TRANCE",
+            "body": "Organic rhythms that build gradually, from mist and a first pulse, through a ritual and a peak, then a calm.",
+            "tech": "8 Styles · 96-124 BPM · 4 Channels"
+          },
+          {
+            "id": "goa-trance",
+            "name": "GOA TRANCE",
+            "body": "Powerful electronic rhythms with a gradual build, from the first pulse to the energy peak.",
+            "tech": "8 Styles · 128-145 BPM · 4 Channels"
+          },
+          {
+            "id": "experimental",
+            "name": "EXPERIMENTAL",
+            "body": "The most complex kit in the collection. 8 channels, including Kick, Snare, High, Perc, Bass, Texture, FX, and Vocal, with built-in rhythms and automatic transitions.",
+            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns"
+          }
+        ]
       }
     },
     "ru": {
@@ -1960,7 +1974,8 @@
         "description": "С Pro открывается полный Factory Pack: 8 страниц пресетов синтезатора (64 голоса), затем 8 готовых барабанных наборов в 8 разных стилях. Выберите звук или кит, загрузите и играйте.",
         "cta": "Ранний доступ",
         "detailCta": "Открыть Factory 64",
-        "coverAlt": "Коробка продукта L Studio Factory Pack"
+        "coverAlt": "Коробка продукта L Studio Factory Pack",
+        "drumsCta": "Барабаны"
       },
       "vision": {
         "kicker": "05 / ВИДЕНИЕ",
@@ -2732,62 +2747,68 @@
         ],
         "listenNote": "Низкие частоты почти не слышны в динамиках телефона. Для полного звучания используйте наушники или подходящие колонки.",
         "synthsHeading": "Страницы пресетов",
-        "synthsIntro": "Восемь страниц пресетов синтезатора. Каждая страница - одна музыкальная задача, восемь голосов с именами.",
-        "drums": {
-          "id": "drum-kits",
-          "eyebrow": "L-STUDIO / PRO / DRUM KITS",
-          "title": "Восемь готовых",
-          "titleEm": "барабанных наборов.",
-          "subtitle": "Восемь страниц стиля. Шестьдесят четыре кита. Готово к игре.",
-          "intro": [
-            "После пресетов Factory Pack Pro автоматически импортирует восемь готовых барабанных наборов. Каждый набор - отдельная страница Style со своим характером и восемью китами внутри.",
-            "Первые семь наборов загружают сэмплы в первые четыре канала. Дополнительные каналы остаются свободными, чтобы вы могли добавить свои сэмплы и строить на готовой основе."
-          ],
-          "includes": "8 страниц Style · 64 барабанных кита · готово к игре",
-          "coverAlt": "Обложка барабанных наборов L Studio Pro",
-          "stylesHeading": "Восемь стилей",
-          "styles": [
-            {
-              "name": "Rap 90'",
-              "blurb": "Акустика для рэпа девяностых"
-            },
-            {
-              "name": "Hip-Hop 2000s",
-              "blurb": "Киты под хип-хоп двухтысячных"
-            },
-            {
-              "name": "Soft Indie",
-              "blurb": "Мягко, открыто, музыкально"
-            },
-            {
-              "name": "Psy Progressive Rock",
-              "blurb": "Прогрессивный вес и пространство"
-            },
-            {
-              "name": "Berlin 90s Techno",
-              "blurb": "Сухо, точно, готово к петле"
-            },
-            {
-              "name": "Tribal Ambient Trance",
-              "blurb": "Трайбл-текстура и эмбиент"
-            },
-            {
-              "name": "Goa Trance",
-              "blurb": "Энергия Goa Trance"
-            },
-            {
-              "name": "Experimental",
-              "blurb": "Полная демонстрация системы"
-            }
-          ],
-          "experimentalTitle": "Experimental",
-          "experimentalBody": "Восьмой набор, Experimental, идёт с восемью загруженными каналами и готовыми ритмами. Он показывает, на что способна система, когда работают все каналы.",
-          "freeChannelsTitle": "Четыре свободных канала",
-          "freeChannelsBody": "Помимо загруженных каналов остаются четыре свободных канала для ваших сэмплов и работы от существующей базы.",
-          "metaStyles": "8 СТРАНИЦ СТИЛЯ",
-          "metaKits": "64 БАРАБАННЫХ КИТА",
-          "tocLabel": "Барабанные наборы"
-        }
+        "synthsIntro": "Восемь страниц пресетов синтезатора. Каждая страница - одна музыкальная задача, восемь голосов с именами."
+      },
+      "factoryDrums": {
+        "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
+        "title": "8 ударных наборов.",
+        "titleEm": "64 стиля.",
+        "intro": "8 разных наборов, в каждом по 8 стилей ударных. От грубого акустического звука до электронных ритмов и Experimental. Каждый набор приносит свой характер в L Studio Pro.",
+        "navLabel": "Барабаны",
+        "imageAlt": "Постер ударного набора",
+        "closingTitle": "8 наборов. 64 стиля.",
+        "closingBody": "От акустического Boom-Bap, через Indie, Techno и Goa, до Experimental с 8 каналами и встроенными ритмами.",
+        "closingLine": "L Studio Pro дает вам выбрать звук, который подходит вашему направлению, и начать создавать.",
+        "kits": [
+          {
+            "id": "rap-90",
+            "name": "RAP 90'",
+            "body": "Акустические барабаны в стиле Boom-Bap 90-х, с теплым, шероховатым звуком и органичным ощущением.",
+            "tech": "8 Styles · 85-95 BPM · 4 Channels"
+          },
+          {
+            "id": "hip-hop-2000s",
+            "name": "HIP-HOP 2000s",
+            "body": "Сочетание органических барабанов и 808, с городским характером и энергией хип-хопа начала 2000-х.",
+            "tech": "8 Styles · 82-96 BPM · 4 Channels"
+          },
+          {
+            "id": "soft-indie",
+            "name": "SOFT INDIE",
+            "body": "Мягкие, камерные барабаны, щетки и тонкие текстуры, с киком, который остается заметным.",
+            "tech": "8 Styles · 68-84 BPM · 4 Channels"
+          },
+          {
+            "id": "psy-progressive-rock",
+            "name": "PSY PROGRESSIVE ROCK",
+            "body": "Сочетание органических ритмов, перкуссии и психоделической энергии, от земли до космоса.",
+            "tech": "8 Styles · 92-120 BPM · 4 Channels"
+          },
+          {
+            "id": "berlin-90s-techno",
+            "name": "BERLIN 90s TECHNO",
+            "body": "Сухие и жесткие барабаны с индустриальным характером и гипнотическим грувом по мотивам техно 90-х.",
+            "tech": "8 Styles · 120-138 BPM · 4 Channels"
+          },
+          {
+            "id": "tribal-ambient-trance",
+            "name": "TRIBAL AMBIENT TRANCE",
+            "body": "Органические ритмы, которые нарастают постепенно: от тумана и первой пульсации, через ритуал и пик, затем спокойствие.",
+            "tech": "8 Styles · 96-124 BPM · 4 Channels"
+          },
+          {
+            "id": "goa-trance",
+            "name": "GOA TRANCE",
+            "body": "Мощные электронные ритмы с постепенным развитием, от первой пульсации до пика энергии.",
+            "tech": "8 Styles · 128-145 BPM · 4 Channels"
+          },
+          {
+            "id": "experimental",
+            "name": "EXPERIMENTAL",
+            "body": "Самый сложный набор в коллекции. 8 каналов: Kick, Snare, High, Perc, Bass, Texture, FX и Vocal, со встроенными ритмами и автоматическими переходами.",
+            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns"
+          }
+        ]
       }
     },
     "ar": {
@@ -2890,7 +2911,8 @@
         "description": "مع Pro تحصل على Factory Pack كاملاً: 8 صفحات إعدادات للسينث (64 صوتاً)، ثم 8 حزم طبول جاهزة عبر 8 أساليب مختلفة. اختر صوتاً أو كيتاً، حمّله، وابدأ العزف.",
         "cta": "احصل على وصول مبكر",
         "detailCta": "استكشف Factory 64",
-        "coverAlt": "علبة منتج L Studio Factory Pack بالأبيض والأسود"
+        "coverAlt": "علبة منتج L Studio Factory Pack بالأبيض والأسود",
+        "drumsCta": "حزم الطبول"
       },
       "vision": {
         "kicker": "05 / الرؤية",
@@ -3662,62 +3684,68 @@
         ],
         "listenNote": "الترددات المنخفضة تكاد لا تُسمع عبر سماعات الهاتف. لتجربة كاملة استخدم سماعات رأس أو مكبرات مناسبة.",
         "synthsHeading": "صفحات الإعدادات المسبقة",
-        "synthsIntro": "ثماني صفحات إعدادات للسينث. كل صفحة مهمة موسيقية واحدة، وثمانية أصوات بأسماء.",
-        "drums": {
-          "id": "drum-kits",
-          "eyebrow": "L-STUDIO / PRO / DRUM KITS",
-          "title": "ثماني حزم",
-          "titleEm": "طبول جاهزة.",
-          "subtitle": "ثماني صفحات أسلوب. أربعة وستون كيتاً. جاهزة للعزف.",
-          "intro": [
-            "بعد إعدادات Factory Pack، يستورد Pro تلقائياً ثماني حزم طبول جاهزة. كل حزمة صفحة Style مستقلة بطابعها الخاص وثمانية كيتات داخلها.",
-            "الحزم السبع الأولى تحمّل عيّنات على القنوات الأربع الأولى. القنوات الإضافية تبقى فارغة لتضيف عيّناتك وتصمم انطلاقاً من القاعدة الموجودة."
-          ],
-          "includes": "8 صفحات Style · 64 كيت طبول · جاهزة للعزف",
-          "coverAlt": "غلاف حزم الطبول في L Studio Pro",
-          "stylesHeading": "الأساليب الثمانية",
-          "styles": [
-            {
-              "name": "Rap 90'",
-              "blurb": "كيتات صوتية لإحساس راب التسعينات"
-            },
-            {
-              "name": "Hip-Hop 2000s",
-              "blurb": "مضبوطة لهيب هوب الألفية"
-            },
-            {
-              "name": "Soft Indie",
-              "blurb": "ناعمة ومفتوحة وموسيقية"
-            },
-            {
-              "name": "Psy Progressive Rock",
-              "blurb": "وزن تقدّمي ومساحة"
-            },
-            {
-              "name": "Berlin 90s Techno",
-              "blurb": "جافة ودقيقة وجاهزة للوب"
-            },
-            {
-              "name": "Tribal Ambient Trance",
-              "blurb": "نسيج قبلي وأجواء أمبينت"
-            },
-            {
-              "name": "Goa Trance",
-              "blurb": "طاقة عالية لأسلوب غوا"
-            },
-            {
-              "name": "Experimental",
-              "blurb": "عرض كامل لقدرات النظام"
-            }
-          ],
-          "experimentalTitle": "Experimental",
-          "experimentalBody": "الحزمة الثامنة، Experimental، تأتي بثماني قنوات محمّلة وإيقاعات جاهزة. تُظهر ما يستطيع النظام فعله عندما تعمل كل القنوات معاً.",
-          "freeChannelsTitle": "أربع قنوات فارغة",
-          "freeChannelsBody": "إلى جانب القنوات المحمّلة تبقى أربع قنوات فارغة لعيّناتك وللتصميم انطلاقاً من القاعدة الموجودة.",
-          "metaStyles": "8 صفحات أسلوب",
-          "metaKits": "64 كيت طبول",
-          "tocLabel": "حزم الطبول"
-        }
+        "synthsIntro": "ثماني صفحات إعدادات للسينث. كل صفحة مهمة موسيقية واحدة، وثمانية أصوات بأسماء."
+      },
+      "factoryDrums": {
+        "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
+        "title": "8 حزم طبول.",
+        "titleEm": "64 أسلوباً.",
+        "intro": "8 حزم مختلفة، في كل واحدة 8 أساليب طبول. من صوت أكوستي خشن إلى إيقاعات إلكترونية وExperimental. كل حزمة تجلب طابعاً مختلفاً إلى L Studio Pro.",
+        "navLabel": "الطبول",
+        "imageAlt": "ملصق حزمة الطبول",
+        "closingTitle": "8 حزم. 64 أسلوباً.",
+        "closingBody": "من Boom-Bap أكوستي، مروراً بـ Indie وTechno وGoa، وصولاً إلى Experimental مع 8 قنوات وإيقاعات مدمجة.",
+        "closingLine": "L Studio Pro تتيح لك اختيار الصوت الذي يناسب اتجاهك والبدء في الإنشاء.",
+        "kits": [
+          {
+            "id": "rap-90",
+            "name": "RAP 90'",
+            "body": "طبول أكوستية بأسلوب Boom-Bap من تسعينات القرن الماضي، بصوت دافئ وخشن وإحساس عضوي.",
+            "tech": "8 Styles · 85-95 BPM · 4 Channels"
+          },
+          {
+            "id": "hip-hop-2000s",
+            "name": "HIP-HOP 2000s",
+            "body": "مزيج من طبول عضوية و808، بطابع حضري وطاقة هيب هوب مطلع الألفية.",
+            "tech": "8 Styles · 82-96 BPM · 4 Channels"
+          },
+          {
+            "id": "soft-indie",
+            "name": "SOFT INDIE",
+            "body": "طبول ناعمة وحميمة، فراشي وملامس رقيقة، مع كيك يبقى حاضراً.",
+            "tech": "8 Styles · 68-84 BPM · 4 Channels"
+          },
+          {
+            "id": "psy-progressive-rock",
+            "name": "PSY PROGRESSIVE ROCK",
+            "body": "مزيج من إيقاعات عضوية وآلات إيقاع وطاقة سايكدلية، من الأرض إلى الفضاء.",
+            "tech": "8 Styles · 92-120 BPM · 4 Channels"
+          },
+          {
+            "id": "berlin-90s-techno",
+            "name": "BERLIN 90s TECHNO",
+            "body": "طبول جافة وصلبة بطابع صناعي وغروف منوّم مستوحى من تكنو التسعينات.",
+            "tech": "8 Styles · 120-138 BPM · 4 Channels"
+          },
+          {
+            "id": "tribal-ambient-trance",
+            "name": "TRIBAL AMBIENT TRANCE",
+            "body": "إيقاعات عضوية تُبنى تدريجياً، من الضباب والنبضة الأولى إلى الطقس والذروة ثم الهدوء.",
+            "tech": "8 Styles · 96-124 BPM · 4 Channels"
+          },
+          {
+            "id": "goa-trance",
+            "name": "GOA TRANCE",
+            "body": "إيقاعات إلكترونية قوية بتطوّر تدريجي، من النبضة الأولى إلى ذروة الطاقة.",
+            "tech": "8 Styles · 128-145 BPM · 4 Channels"
+          },
+          {
+            "id": "experimental",
+            "name": "EXPERIMENTAL",
+            "body": "الحزمة الأكثر تعقيداً في المجموعة. 8 قنوات تشمل Kick وSnare وHigh وPerc وBass وTexture وFX وVocal، مع إيقاعات مدمجة وانتقالات تلقائية.",
+            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns"
+          }
+        ]
       }
     }
   }
