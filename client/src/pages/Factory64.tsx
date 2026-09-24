@@ -14,6 +14,27 @@ type FactoryPage = {
   presets: FactoryPreset[];
 };
 
+type DrumStyle = { name: string; blurb: string };
+type DrumsCopy = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  titleEm: string;
+  subtitle: string;
+  intro: string[];
+  includes: string;
+  coverAlt: string;
+  stylesHeading: string;
+  styles: DrumStyle[];
+  experimentalTitle: string;
+  experimentalBody: string;
+  freeChannelsTitle: string;
+  freeChannelsBody: string;
+  metaStyles: string;
+  metaKits: string;
+  tocLabel: string;
+};
+
 type Factory64Copy = {
   eyebrow: string;
   title: string;
@@ -22,6 +43,9 @@ type Factory64Copy = {
   intro: string[];
   includes: string;
   coverAlt: string;
+  listenNote: string;
+  synthsHeading: string;
+  synthsIntro: string;
   back: string;
   home: string;
   features: string;
@@ -38,16 +62,34 @@ type Factory64Copy = {
   storeBlurb: string;
   earlyAccessCta: string;
   pages: FactoryPage[];
+  drums?: DrumsCopy;
 };
 
 const emptyCopy = (language: Language): Factory64Copy => ({
   eyebrow: "L-STUDIO / FACTORY PACK / 64 VOICES",
   title: "L Studio",
   titleEm: "Factory Pack.",
-  subtitle: language === "he" ? "שמונה עמודים. שישים וארבעה קולות." : language === "ru" ? "Восемь страниц. Шестьдесят четыре голоса." : language === "ar" ? "ثماني صفحات. أربعة وستون صوتاً." : "Eight Pages. Sixty-Four Voices.",
+  subtitle:
+    language === "he"
+      ? "שמונה עמודים. שישים וארבעה קולות."
+      : language === "ru"
+        ? "Восемь страниц. Шестьдесят четыре голоса."
+        : language === "ar"
+          ? "ثماني صفحات. أربعة وستون صوتاً."
+          : "Eight Pages. Sixty-Four Voices.",
   intro: [],
   includes: "",
   coverAlt: "L Studio Factory Pack cover art",
+  listenNote: "",
+  synthsHeading:
+    language === "he"
+      ? "עמודי הפריסטים"
+      : language === "ru"
+        ? "Страницы пресетов"
+        : language === "ar"
+          ? "صفحات الإعدادات المسبقة"
+          : "Preset pages",
+  synthsIntro: "",
   back: language === "he" ? "חזרה לאתר" : language === "ru" ? "Вернуться на сайт" : language === "ar" ? "العودة إلى الموقع" : "Back to site",
   home: language === "he" ? "דף הבית" : language === "ru" ? "Главная" : language === "ar" ? "الرئيسية" : "Home",
   features: language === "he" ? "יכולות" : language === "ru" ? "Возможности" : language === "ar" ? "المزايا" : "Features",
@@ -66,7 +108,10 @@ const emptyCopy = (language: Language): Factory64Copy => ({
   pages: [],
 });
 
-const coverUrl = `${import.meta.env.BASE_URL}assets/factory-64-cover.png`;
+const coverPng = `${import.meta.env.BASE_URL}assets/factory-64-cover.png`;
+const coverWebp = `${import.meta.env.BASE_URL}assets/factory-64-cover.webp`;
+const drumsPng = `${import.meta.env.BASE_URL}assets/factory-64-drum-kits.png`;
+const drumsWebp = `${import.meta.env.BASE_URL}assets/factory-64-drum-kits.webp`;
 
 function sectionNumber(index: number) {
   return String(index + 1).padStart(2, "0");
@@ -89,6 +134,7 @@ export default function Factory64() {
           ...block,
           intro: block.intro ?? [],
           pages: block.pages ?? [],
+          drums: block.drums,
         });
       })
       .catch(() => undefined);
@@ -96,6 +142,9 @@ export default function Factory64() {
       cancelled = true;
     };
   }, [language]);
+
+  const drums = text.drums;
+  const dir = isRtl ? "rtl" : "ltr";
 
   return (
     <div className="site-shell factory64-page">
@@ -122,7 +171,7 @@ export default function Factory64() {
       </header>
 
       <main>
-        <section className="factory64-hero container" dir={isRtl ? "rtl" : "ltr"}>
+        <section className="factory64-hero container" dir={dir}>
           <div className="eyebrow">
             <span className="eyebrow-dot" /> {text.eyebrow}
           </div>
@@ -138,6 +187,7 @@ export default function Factory64() {
                 <p key={paragraph}>{paragraph}</p>
               ))}
               {text.includes ? <p className="factory64-includes">{text.includes}</p> : null}
+              {text.listenNote ? <p className="factory64-listen">{text.listenNote}</p> : null}
               <div className="factory64-hero-meta">
                 <Layers size={16} />
                 <span>{text.pagesMeta}</span>
@@ -148,22 +198,91 @@ export default function Factory64() {
                 <a className="button button--primary" href="/#early-access">
                   {text.earlyAccessCta}
                 </a>
+                {drums ? (
+                  <a className="button button--light" href={`#factory64-${drums.id}`}>
+                    {drums.tocLabel}
+                  </a>
+                ) : null}
                 <a className="button button--light" href="#factory64-pages">
-                  {text.pagesMeta}
+                  {text.synthsHeading || text.pagesMeta}
                 </a>
               </div>
             </div>
             <figure className="factory64-cover">
-              <img src={coverUrl} alt={text.coverAlt} />
+              <picture>
+                <source srcSet={coverWebp} type="image/webp" />
+                <img src={coverPng} alt={text.coverAlt} />
+              </picture>
             </figure>
           </div>
           {text.oneLineList ? <p className="factory64-oneline">{text.oneLineList}</p> : null}
         </section>
 
+        {drums ? (
+          <section className="factory64-drums container" id={`factory64-${drums.id}`} dir={dir}>
+            <div className="factory64-drums-grid">
+              <div className="factory64-drums-copy">
+                <div className="eyebrow">
+                  <span className="eyebrow-dot" /> {drums.eyebrow}
+                </div>
+                <h2>
+                  {drums.title} <em>{drums.titleEm}</em>
+                </h2>
+                <p className="factory64-subtitle">{drums.subtitle}</p>
+                {drums.intro.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+                {drums.includes ? <p className="factory64-includes">{drums.includes}</p> : null}
+                <div className="factory64-hero-meta">
+                  <Layers size={16} />
+                  <span>{drums.metaStyles}</span>
+                  <span className="factory64-hero-sep">·</span>
+                  <span>{drums.metaKits}</span>
+                </div>
+              </div>
+              <figure className="factory64-cover factory64-drums-cover">
+                <picture>
+                  <source srcSet={drumsWebp} type="image/webp" />
+                  <img src={drumsPng} alt={drums.coverAlt} />
+                </picture>
+              </figure>
+            </div>
+
+            <h3 className="factory64-presets-heading">{drums.stylesHeading}</h3>
+            <ul className="factory64-presets factory64-drum-styles">
+              {drums.styles.map((style, index) => (
+                <li key={style.name}>
+                  <strong>
+                    {sectionNumber(index)} · {style.name}
+                  </strong>
+                  <span>{style.blurb}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="factory64-callouts">
+              <div className="factory64-callout">
+                <h3>{drums.experimentalTitle}</h3>
+                <p>{drums.experimentalBody}</p>
+              </div>
+              <div className="factory64-callout">
+                <h3>{drums.freeChannelsTitle}</h3>
+                <p>{drums.freeChannelsBody}</p>
+              </div>
+            </div>
+          </section>
+        ) : null}
+
         <section className="factory64-content container" id="factory64-pages">
-          <aside className="factory64-aside" dir={isRtl ? "rtl" : "ltr"}>
+          <aside className="factory64-aside" dir={dir}>
             <span className="kicker">{text.onThisPage}</span>
             <div className="factory64-toc">
+              {drums ? (
+                <a href={`#factory64-${drums.id}`}>
+                  <span className="factory64-toc-num">DR</span>
+                  <span className="factory64-toc-title">{drums.tocLabel}</span>
+                </a>
+              ) : null}
               {text.pages.map((page, index) => (
                 <a key={page.id} href={`#factory64-${page.id}`}>
                   <span className="factory64-toc-num">{sectionNumber(index)}</span>
@@ -173,7 +292,14 @@ export default function Factory64() {
             </div>
           </aside>
 
-          <article className="factory64-article" dir={isRtl ? "rtl" : "ltr"}>
+          <article className="factory64-article" dir={dir}>
+            {text.synthsHeading ? (
+              <header className="factory64-synths-head">
+                <h2>{text.synthsHeading}</h2>
+                {text.synthsIntro ? <p>{text.synthsIntro}</p> : null}
+              </header>
+            ) : null}
+
             {text.pages.map((page, index) => (
               <section className="factory64-card" id={`factory64-${page.id}`} key={page.id}>
                 <div className="factory64-card-head">

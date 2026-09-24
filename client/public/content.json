@@ -96,8 +96,8 @@
       "factoryPack": {
         "kicker": "L-STUDIO / FACTORY PACK",
         "lede": "הסאונד כבר מחכה לך.",
-        "shortText": "8 עמודים. 64 קולות.",
-        "description": "Factory Pack נבנה במיוחד עבור L-Studio. יש בו קולות עם אופי שונה, מבסים כבדים ועד צלילים חדים, פדים, פלוקים ועוד. בוחרים קול, טוענים אותו ומתחילים לנגן.",
+        "shortText": "8 עמודי פריסטים. 8 ערכות תופים. מוכן לנגן.",
+        "description": "עם המעבר ל־Pro מקבלים את Factory Pack המלא: 8 עמודי פריסטים לסינתיסייזר (64 קולות), ואחריהם 8 ערכות תופים מוכנות ב־8 סגנונות שונים. בוחרים, טוענים, ומתחילים לנגן.",
         "cta": "לקבלת גישה מוקדמת",
         "detailCta": "לגלות את Factory 64"
       },
@@ -180,9 +180,10 @@
             "question": "אפשר לבנות ביט בלי לתכנת כל תוף מאפס?",
             "answer": [
               "כן.",
-              "מעבר לתכנות ידני של ה־Step Sequencer, L Studio כולל יצירת Pattern אקראי עם כללים מוזיקליים.",
-              "המערכת לא פשוט מדליקה צעדים באקראי: היא מייצרת בסיס לקיק, סנר והיי־האט ומוסיפה וריאציות לפיזור שלהם, כך שאפשר לקבל גרוב ראשוני ולפתח אותו במקום להתחיל מאפס.",
-              "אחרי זה אפשר לשנות את ה־Pattern, ה־BPM, ה־Swing, העוצמות והמיקום בסטריאו."
+              "מעבר לתכנות ידני של ה־Step Sequencer, L Studio כולל אקראי לפי סגנון (ז׳אנר אקראי).",
+              "לחיצה ארוכה על Style בוחרת רוק, טראנס, ראפ או טכנו. הבחירה משפיעה על אקראי: המערכת בונה בסיס מוזיקלי לפי הסגנון, לא רק צעדים אקראיים.",
+              "בחינם מתמלאים ארבעה ערוצים. ב־Pro שמונה. אחר כך אפשר לערוך Pattern, BPM, Swing, עוצמות ומיקום בסטריאו.",
+              "ב־Pro יש גם שמונה ערכות תופים מוכנות, כולל Experimental עם שמונה ערוצים טעונים ומקצבים מוכנים."
             ]
           },
           {
@@ -366,11 +367,12 @@
             "id": "drum",
             "title": "בניית מקצב",
             "body": [
-              "מערכת התופים מבוססת על תבניות.",
-              "כל תבנית בנויה משישה עשר צעדים, וניתן לשמור כמה תבניות שונות."
+              "מערכת התופים מבוססת על תבניות של שישה עשר צעדים, עם כמה תבניות שאפשר לשמור ולהחליף ביניהן.",
+              "ב־Pro מגיעות שמונה ערכות תופים מוכנות ב־8 סגנונות (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
+              "רוב הערכות טוענות ארבעה ערוצים ומשאירות ארבעה פנויים לסאמפלים שלכם. Experimental טוען שמונה ערוצים עם מקצבים מוכנים כדי להדגים את יכולות המערכת."
             ],
-            "tipBeginner": "בנה קודם תבנית בסיסית אחת.",
-            "tipAdvanced": "חשוב על תבניות כחלקים בשיר: בית, פזמון, מעבר או סיום.",
+            "tipBeginner": "התחילו מקיט מוכן, האזינו באוזניות, ואז שנו צעד אחד בכל פעם.",
+            "tipAdvanced": "ב־Experimental אפשר ללמוד איך שמונה ערוצים עובדים יחד, ואז לבנות תבנית משלכם על בסיס אותו רעיון.",
             "tag": "DRUM",
             "media": "assets/guide/guide-drum.jpg",
             "mediaSize": "panel"
@@ -427,12 +429,14 @@
           },
           {
             "id": "random",
-            "title": "יצירת רעיונות חדשים",
+            "title": "אקראי לפי סגנון",
             "body": [
-              "יוצר וריאציה חדשה של תבנית התופים."
+              "לחיצה ארוכה על Style פותחת בחירת ז׳אנר אקראי: רוק, טראנס, ראפ או טכנו. הבחירה משפיעה על כפתור אקראי.",
+              "האלגוריתם לא מדליק צעדים באקראי גמור. הוא בונה תבנית לפי כללים מוזיקליים של הסגנון שנבחר, על רשת הקצב בלבד (בלי לשנות BPM או Swing בגרסה הנוכחית).",
+              "בגרסת החינם מתמלאים ערוצים 0 עד 3. ב־Pro מתמלאים כל שמונת הערוצים."
             ],
-            "tipBeginner": "השתמש בו כדי לקבל כיוון חדש.",
-            "tipAdvanced": "שמור את התחושה והמהירות, ושנה רק את הצעדים.",
+            "tipBeginner": "בחרו ז׳אנר, לחצו אקראי, ואז ערכו רק את מה שלא מדויק.",
+            "tipAdvanced": "שמרו תבנית שאהבתם לפני סיבוב אקראי נוסף, כדי להשוות כיוונים בלי לאבד גרוב טוב.",
             "tag": "RANDOM",
             "media": "assets/guide/guide-random.jpg",
             "mediaSize": "thumb"
@@ -541,7 +545,7 @@
         "voicesMeta": "64 קולות",
         "presetsHeading": "פריסטים",
         "oneLineList": "BLACK WELL - סאבים · GOLD HAMMER - מכות · LIGHT KNIFE - לידים לטראנס · GRAY ENGINE - טכנו · LOW SNAKE - 808 / טראפ · SAW TEETH - מטאל · GOLD FOG - פדים · SPIKES - פלאקים",
-        "storeBlurb": "L Studio Factory Pack - 8 עמודים, 64 קולות. Black Well לסאב ומשקל. Gold Hammer למכות. Light Knife ללידים בטראנס. Gray Engine ללולאות טכנו. Low Snake ל־808 וסלייד. Saw Teeth לריפי מטאל. Gold Fog לפדים. Spikes לפלאקים וסטאבים. מייבאים עמוד אחד בכל פעם מ־Preset. עם שם, מכוונים ומעוצבים לכלי עצמו - לא מומרים מסינתיסייזר אחר.",
+        "storeBlurb": "L Studio Factory Pack - 8 עמודים, 64 קולות. Black Well לסאב ומשקל. Gold Hammer למכות. Light Knife ללידים בטראנס. Gray Engine ללולאות טכנו. Low Snake ל־808 וסלייד. Saw Teeth לריפי מטאל. Gold Fog לפדים. Spikes לפלאקים וסטאבים. מייבאים עמוד אחד בכל פעם מ־Preset. עם שם, מכוונים ומעוצבים לכלי עצמו - לא מומרים מסינתיסייזר אחר. בנוסף: 8 ערכות תופים ב־Pro, כולל Experimental עם 8 ערוצים טעונים.",
         "earlyAccessCta": "לקבלת גישה מוקדמת",
         "pages": [
           {
@@ -864,7 +868,65 @@
               }
             ]
           }
-        ]
+        ],
+        "listenNote": "תדרים נמוכים כמעט לא נשמעים ברמקולים של הטלפון. לחוויה מלאה השתמשו באוזניות או ברמקולים מתאימים.",
+        "synthsHeading": "עמודי הפריסטים",
+        "synthsIntro": "שמונה עמודי פריסטים לסינתיסייזר. כל עמוד הוא משימה מוזיקלית אחת, שמונה קולות עם שם.",
+        "drums": {
+          "id": "drum-kits",
+          "eyebrow": "L-STUDIO / PRO / DRUM KITS",
+          "title": "שמונה ערכות",
+          "titleEm": "תופים.",
+          "subtitle": "שמונה עמודי סגנון. שישים וארבעה קיטים. מוכנים לנגן.",
+          "intro": [
+            "אחרי Factory Pack של הפריסטים, Pro מייבא אוטומטית שמונה ערכות תופים מוכנות. כל ערכה היא עמוד Style נפרד עם סגנון משלו, ושמונה קיטים בתוכו.",
+            "שבע הערכות הראשונות מגיעות עם סאמפלים בארבעת הערוצים הראשונים. הערוצים הנוספים נשארים פנויים כדי שתוכלו להוסיף סאמפלים שלכם ולבנות מהבסיס הקיים."
+          ],
+          "includes": "8 עמודי Style · 64 קיטי תופים · מוכנים לנגן",
+          "coverAlt": "עטיפת ערכות התופים של L Studio Pro",
+          "stylesHeading": "שמונת הסגנונות",
+          "styles": [
+            {
+              "name": "Rap 90'",
+              "blurb": "אקוסטי לביטים של ראפ משנות התשעים"
+            },
+            {
+              "name": "Hip-Hop 2000s",
+              "blurb": "קיטים ל־Hip-Hop של שנות האלפיים"
+            },
+            {
+              "name": "Soft Indie",
+              "blurb": "רך, פתוח ומוזיקלי"
+            },
+            {
+              "name": "Psy Progressive Rock",
+              "blurb": "פרוגרסיבי עם משקל ומרחב"
+            },
+            {
+              "name": "Berlin 90s Techno",
+              "blurb": "יבש, מדויק, מוכן ללולאה"
+            },
+            {
+              "name": "Tribal Ambient Trance",
+              "blurb": "טקסטורות שבטיות ואמביינט"
+            },
+            {
+              "name": "Goa Trance",
+              "blurb": "אנרגיה גבוהה לגוה טראנס"
+            },
+            {
+              "name": "Experimental",
+              "blurb": "הדגמת יכולות מלאה של המערכת"
+            }
+          ],
+          "experimentalTitle": "Experimental",
+          "experimentalBody": "הערכה השמינית, Experimental, מגיעה עם שמונה ערוצים טעונים ומקצבים מוכנים. היא מדגימה מה המערכת יודעת לעשות כשכל הערוצים עובדים יחד.",
+          "freeChannelsTitle": "ארבעה ערוצים פנויים",
+          "freeChannelsBody": "מעבר לערוצים הטעונים, יש ארבעה ערוצים פנויים להוספת סאמפלים שלכם ולעיצוב מהבסיס הקיים.",
+          "metaStyles": "8 עמודי סגנון",
+          "metaKits": "64 קיטי תופים",
+          "tocLabel": "ערכות תופים"
+        }
       }
     },
     "en": {
@@ -963,8 +1025,8 @@
       "factoryPack": {
         "kicker": "L-STUDIO / FACTORY PACK",
         "lede": "The sound is already waiting for you.",
-        "shortText": "8 pages. 64 voices.",
-        "description": "Factory Pack was built specifically for L-Studio. It has sounds with different character, from heavy basses to sharp tones, pads, plucks and more. Pick a sound, load it, and start playing.",
+        "shortText": "8 preset pages. 8 drum kits. Ready to play.",
+        "description": "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 ready drum packs across 8 different styles. Pick a sound or a kit, load it, and start playing.",
         "cta": "Get early access",
         "detailCta": "Explore Factory 64"
       },
@@ -1047,9 +1109,10 @@
             "question": "Can I build a beat without programming every drum from scratch?",
             "answer": [
               "Yes.",
-              "Beyond manual Step Sequencer programming, L Studio includes random Pattern generation with musical rules.",
-              "The system doesn't just light steps at random: it builds a kick, snare, and hi-hat base and adds variations in how they're spread, so you can get an initial groove and develop it instead of starting from zero.",
-              "After that you can change the Pattern, BPM, Swing, levels, and stereo placement."
+              "Beyond manual Step Sequencer programming, L Studio includes Random by style (Random genre).",
+              "Long-press Style to choose Rock, Trance, Rap, or Techno. That selection affects Random: the system builds a musical base for the style, not only random steps.",
+              "On Free, four channels fill. On Pro, eight. After that you can edit the Pattern, BPM, Swing, levels, and stereo placement.",
+              "Pro also unlocks eight ready drum packs, including Experimental with eight loaded channels and ready rhythms."
             ]
           },
           {
@@ -1233,11 +1296,12 @@
             "id": "drum",
             "title": "Building a rhythm",
             "body": [
-              "The drum system is pattern-based.",
-              "Each pattern is built from sixteen steps, and you can save several different patterns."
+              "The drum system is pattern-based: sixteen steps per pattern, with several patterns you can save and switch between.",
+              "Pro includes eight ready drum packs across eight styles (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
+              "Most packs load four channels and leave four free for your own samples. Experimental loads all eight channels with ready rhythms to demonstrate the system."
             ],
-            "tipBeginner": "Build one basic pattern first.",
-            "tipAdvanced": "Think of patterns as song parts: verse, chorus, bridge, or ending.",
+            "tipBeginner": "Start from a ready kit, listen on headphones, then change one step at a time.",
+            "tipAdvanced": "Use Experimental to hear how eight channels lock together, then rebuild your own pattern from that idea.",
             "tag": "DRUM",
             "media": "assets/guide/guide-drum.jpg",
             "mediaSize": "panel"
@@ -1294,12 +1358,14 @@
           },
           {
             "id": "random",
-            "title": "Generating new ideas",
+            "title": "Random by style",
             "body": [
-              "Creates a new variation of the drum pattern."
+              "Long-press Style to open Random genre: Rock, Trance, Rap, or Techno. The selection affects Random.",
+              "The algorithm does not just light steps at random. It builds a pattern from musical rules for the chosen style, on the rhythm grid only (BPM and Swing stay as they are in the current version).",
+              "On Free, channels 0 to 3 fill. On Pro, all eight channels fill."
             ],
-            "tipBeginner": "Use it to get a fresh direction.",
-            "tipAdvanced": "Keep the feel and tempo, and change only the steps.",
+            "tipBeginner": "Pick a genre, hit Random, then edit only what feels off.",
+            "tipAdvanced": "Save a pattern you like before another Random pass, so you can compare directions without losing a good groove.",
             "tag": "RANDOM",
             "media": "assets/guide/guide-random.jpg",
             "mediaSize": "thumb"
@@ -1408,7 +1474,7 @@
         "voicesMeta": "64 VOICES",
         "presetsHeading": "Presets",
         "oneLineList": "BLACK WELL - subs · GOLD HAMMER - hits · LIGHT KNIFE - trance leads · GRAY ENGINE - techno · LOW SNAKE - 808 / trap · SAW TEETH - metal · GOLD FOG - pads · SPIKES - plucks",
-        "storeBlurb": "L Studio Factory Pack - 8 pages, 64 voices. Black Well for sub and weight. Gold Hammer for hits. Light Knife for trance leads. Gray Engine for techno loops. Low Snake for 808 and slide. Saw Teeth for metal riffs. Gold Fog for pads. Spikes for plucks and stabs. Import one page at a time from Preset. Named, tuned, and voiced for the instrument - not converted from another synth.",
+        "storeBlurb": "L Studio Factory Pack - 8 pages, 64 voices. Black Well for sub and weight. Gold Hammer for hits. Light Knife for trance leads. Gray Engine for techno loops. Low Snake for 808 and slide. Saw Teeth for metal riffs. Gold Fog for pads. Spikes for plucks and stabs. Import one page at a time from Preset. Named, tuned, and voiced for the instrument - not converted from another synth. Plus: 8 Pro drum kits, including Experimental with 8 loaded channels.",
         "earlyAccessCta": "Get early access",
         "pages": [
           {
@@ -1731,7 +1797,65 @@
               }
             ]
           }
-        ]
+        ],
+        "listenNote": "Low frequencies are barely audible on phone speakers. For the full experience, use headphones or suitable speakers.",
+        "synthsHeading": "Preset pages",
+        "synthsIntro": "Eight synth preset pages. Each page is one musical job, eight named voices.",
+        "drums": {
+          "id": "drum-kits",
+          "eyebrow": "L-STUDIO / PRO / DRUM KITS",
+          "title": "Eight ready",
+          "titleEm": "drum kits.",
+          "subtitle": "Eight style pages. Sixty-four kits. Ready to play.",
+          "intro": [
+            "After the Factory Pack presets, Pro automatically imports eight ready drum packs. Each pack is its own Style page with a distinct character and eight kits inside.",
+            "The first seven packs load samples on the first four channels. The extra channels stay free so you can add your own samples and design from the existing base."
+          ],
+          "includes": "8 Style pages · 64 drum kits · ready to play",
+          "coverAlt": "L Studio Pro drum kits cover art",
+          "stylesHeading": "The eight styles",
+          "styles": [
+            {
+              "name": "Rap 90'",
+              "blurb": "Acoustic kits for nineties rap feel"
+            },
+            {
+              "name": "Hip-Hop 2000s",
+              "blurb": "Kits tuned for 2000s hip-hop"
+            },
+            {
+              "name": "Soft Indie",
+              "blurb": "Soft, open, and musical"
+            },
+            {
+              "name": "Psy Progressive Rock",
+              "blurb": "Progressive weight and space"
+            },
+            {
+              "name": "Berlin 90s Techno",
+              "blurb": "Dry, precise, loop-ready"
+            },
+            {
+              "name": "Tribal Ambient Trance",
+              "blurb": "Tribal texture and ambient air"
+            },
+            {
+              "name": "Goa Trance",
+              "blurb": "High-energy Goa drive"
+            },
+            {
+              "name": "Experimental",
+              "blurb": "Full-system demo with ready rhythms"
+            }
+          ],
+          "experimentalTitle": "Experimental",
+          "experimentalBody": "Pack eight, Experimental, ships with eight loaded channels and ready rhythms. It shows what the system can do when every channel works together.",
+          "freeChannelsTitle": "Four free channels",
+          "freeChannelsBody": "Beyond the loaded channels, four free channels stay open for your own samples and for designing from the existing base.",
+          "metaStyles": "8 STYLE PAGES",
+          "metaKits": "64 DRUM KITS",
+          "tocLabel": "Drum kits"
+        }
       }
     },
     "ru": {
@@ -1829,10 +1953,10 @@
       },
       "factoryPack": {
         "kicker": "L-STUDIO / FACTORY PACK",
-        "lede": "Звук уже ждёт тебя.",
-        "shortText": "8 страниц. 64 голоса.",
-        "description": "Factory Pack создан специально для L-Studio. В нём звуки с разным характером, от тяжёлых басов до резких тонов, пэды, плаки и многое другое. Выбираешь звук, загружаешь и начинаешь играть.",
-        "cta": "Получить ранний доступ",
+        "lede": "Звук уже ждёт вас.",
+        "shortText": "8 страниц пресетов. 8 барабанных наборов. Готово к игре.",
+        "description": "С Pro открывается полный Factory Pack: 8 страниц пресетов синтезатора (64 голоса), затем 8 готовых барабанных наборов в 8 разных стилях. Выберите звук или кит, загрузите и играйте.",
+        "cta": "Ранний доступ",
         "detailCta": "Открыть Factory 64"
       },
       "vision": {
@@ -1914,9 +2038,10 @@
             "question": "Можно ли собрать бит, не программируя каждый барабан с нуля?",
             "answer": [
               "Да.",
-              "Помимо ручного программирования Step Sequencer, L Studio умеет создавать случайный Pattern с музыкальными правилами.",
-              "Система не просто включает шаги наугад: она строит основу для кика, снейра и хай-хэта и добавляет вариации их раскладки, чтобы сразу получить начальный грув и развивать его, а не начинать с нуля.",
-              "После этого можно менять Pattern, BPM, Swing, уровни и положение в стерео."
+              "Помимо ручного программирования Step Sequencer в L Studio есть Random по стилю (случайный жанр).",
+              "Долгое нажатие на Style выбирает Rock, Trance, Rap или Techno. Этот выбор влияет на Random: система строит музыкальную основу под стиль, а не только случайные шаги.",
+              "В Free заполняются четыре канала. В Pro - восемь. Затем можно править Pattern, BPM, Swing, уровни и стереопозицию.",
+              "Pro также открывает восемь готовых барабанных наборов, включая Experimental с восемью загруженными каналами и готовыми ритмами."
             ]
           },
           {
@@ -2100,11 +2225,12 @@
             "id": "drum",
             "title": "Построение ритма",
             "body": [
-              "Барабанная система основана на паттернах.",
-              "Каждый паттерн состоит из шестнадцати шагов, и можно сохранить несколько разных паттернов."
+              "Барабанная система построена на паттернах: шестнадцать шагов в каждом, несколько паттернов можно сохранять и переключать.",
+              "В Pro входят восемь готовых барабанных наборов в восьми стилях (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
+              "Большинство наборов загружают четыре канала и оставляют четыре свободными для ваших сэмплов. Experimental загружает все восемь каналов с готовыми ритмами, чтобы показать возможности системы."
             ],
-            "tipBeginner": "Сначала постройте один базовый паттерн.",
-            "tipAdvanced": "Думайте о паттернах как о частях песни: куплет, припев, переход или финал.",
+            "tipBeginner": "Начните с готового кита, слушайте в наушниках, затем меняйте по одному шагу.",
+            "tipAdvanced": "Через Experimental услышьте, как сходятся восемь каналов, и соберите свой паттерн на той же идее.",
             "tag": "DRUM",
             "media": "assets/guide/guide-drum.jpg",
             "mediaSize": "panel"
@@ -2161,12 +2287,14 @@
           },
           {
             "id": "random",
-            "title": "Новые идеи",
+            "title": "Random по стилю",
             "body": [
-              "Создаёт новую вариацию барабанного паттерна."
+              "Долгое нажатие на Style открывает случайный жанр: Rock, Trance, Rap или Techno. Выбор влияет на Random.",
+              "Алгоритм не просто зажигает шаги наугад. Он строит паттерн по музыкальным правилам выбранного стиля, только на сетке ритма (BPM и Swing в текущей версии не меняются).",
+              "В Free заполняются каналы 0 до 3. В Pro заполняются все восемь каналов."
             ],
-            "tipBeginner": "Используйте, чтобы получить новое направление.",
-            "tipAdvanced": "Сохраните ощущение и темп, меняйте только шаги.",
+            "tipBeginner": "Выберите жанр, нажмите Random, затем правьте только то, что режет слух.",
+            "tipAdvanced": "Сохраните удачный паттерн перед новым Random, чтобы сравнить направления и не потерять хороший грув.",
             "tag": "RANDOM",
             "media": "assets/guide/guide-random.jpg",
             "mediaSize": "thumb"
@@ -2275,7 +2403,7 @@
         "voicesMeta": "64 ГОЛОСА",
         "presetsHeading": "Пресеты",
         "oneLineList": "BLACK WELL - сабы · GOLD HAMMER - удары · LIGHT KNIFE - транс-лиды · GRAY ENGINE - техно · LOW SNAKE - 808 / трэп · SAW TEETH - метал · GOLD FOG - пэды · SPIKES - плаки",
-        "storeBlurb": "L Studio Factory Pack - 8 страниц, 64 голоса. Black Well для саба и веса. Gold Hammer для ударов. Light Knife для транс-лидов. Gray Engine для техно-лупов. Low Snake для 808 и слайда. Saw Teeth для метал-риффов. Gold Fog для пэдов. Spikes для плаков и стабов. Импортируй по одной странице из Preset. С именами, настроены и озвучены под этот инструмент - не конвертированы с другого синтезатора.",
+        "storeBlurb": "L Studio Factory Pack - 8 страниц, 64 голоса. Black Well для саба и веса. Gold Hammer для ударов. Light Knife для транс-лидов. Gray Engine для техно-лупов. Low Snake для 808 и слайда. Saw Teeth для метал-риффов. Gold Fog для пэдов. Spikes для плаков и стабов. Импортируй по одной странице из Preset. С именами, настроены и озвучены под этот инструмент - не конвертированы с другого синтезатора. Плюс: 8 барабанных наборов Pro, включая Experimental с 8 загруженными каналами.",
         "earlyAccessCta": "Получить ранний доступ",
         "pages": [
           {
@@ -2598,7 +2726,65 @@
               }
             ]
           }
-        ]
+        ],
+        "listenNote": "Низкие частоты почти не слышны в динамиках телефона. Для полного звучания используйте наушники или подходящие колонки.",
+        "synthsHeading": "Страницы пресетов",
+        "synthsIntro": "Восемь страниц пресетов синтезатора. Каждая страница - одна музыкальная задача, восемь голосов с именами.",
+        "drums": {
+          "id": "drum-kits",
+          "eyebrow": "L-STUDIO / PRO / DRUM KITS",
+          "title": "Восемь готовых",
+          "titleEm": "барабанных наборов.",
+          "subtitle": "Восемь страниц стиля. Шестьдесят четыре кита. Готово к игре.",
+          "intro": [
+            "После пресетов Factory Pack Pro автоматически импортирует восемь готовых барабанных наборов. Каждый набор - отдельная страница Style со своим характером и восемью китами внутри.",
+            "Первые семь наборов загружают сэмплы в первые четыре канала. Дополнительные каналы остаются свободными, чтобы вы могли добавить свои сэмплы и строить на готовой основе."
+          ],
+          "includes": "8 страниц Style · 64 барабанных кита · готово к игре",
+          "coverAlt": "Обложка барабанных наборов L Studio Pro",
+          "stylesHeading": "Восемь стилей",
+          "styles": [
+            {
+              "name": "Rap 90'",
+              "blurb": "Акустика для рэпа девяностых"
+            },
+            {
+              "name": "Hip-Hop 2000s",
+              "blurb": "Киты под хип-хоп двухтысячных"
+            },
+            {
+              "name": "Soft Indie",
+              "blurb": "Мягко, открыто, музыкально"
+            },
+            {
+              "name": "Psy Progressive Rock",
+              "blurb": "Прогрессивный вес и пространство"
+            },
+            {
+              "name": "Berlin 90s Techno",
+              "blurb": "Сухо, точно, готово к петле"
+            },
+            {
+              "name": "Tribal Ambient Trance",
+              "blurb": "Трайбл-текстура и эмбиент"
+            },
+            {
+              "name": "Goa Trance",
+              "blurb": "Энергия Goa Trance"
+            },
+            {
+              "name": "Experimental",
+              "blurb": "Полная демонстрация системы"
+            }
+          ],
+          "experimentalTitle": "Experimental",
+          "experimentalBody": "Восьмой набор, Experimental, идёт с восемью загруженными каналами и готовыми ритмами. Он показывает, на что способна система, когда работают все каналы.",
+          "freeChannelsTitle": "Четыре свободных канала",
+          "freeChannelsBody": "Помимо загруженных каналов остаются четыре свободных канала для ваших сэмплов и работы от существующей базы.",
+          "metaStyles": "8 СТРАНИЦ СТИЛЯ",
+          "metaKits": "64 БАРАБАННЫХ КИТА",
+          "tocLabel": "Барабанные наборы"
+        }
       }
     },
     "ar": {
@@ -2696,9 +2882,9 @@
       },
       "factoryPack": {
         "kicker": "L-STUDIO / FACTORY PACK",
-        "lede": "الصوت ينتظرك بالفعل.",
-        "shortText": "8 صفحات. 64 صوتاً.",
-        "description": "بُني Factory Pack خصيصاً لـL-Studio. يحتوي على أصوات بطابع مختلف، من الباس الثقيل إلى الأصوات الحادة، الـPads، الـPlucks وغيرها. تختار صوتاً، تحمّله، وتبدأ العزف.",
+        "lede": "الصوت بانتظارك مسبقاً.",
+        "shortText": "8 صفحات إعدادات. 8 حزم طبول. جاهزة للعزف.",
+        "description": "مع Pro تحصل على Factory Pack كاملاً: 8 صفحات إعدادات للسينث (64 صوتاً)، ثم 8 حزم طبول جاهزة عبر 8 أساليب مختلفة. اختر صوتاً أو كيتاً، حمّله، وابدأ العزف.",
         "cta": "احصل على وصول مبكر",
         "detailCta": "استكشف Factory 64"
       },
@@ -2781,9 +2967,10 @@
             "question": "هل يمكن بناء بيت دون برمجة كل طبل من الصفر؟",
             "answer": [
               "نعم.",
-              "إلى جانب البرمجة اليدوية لـStep Sequencer، يتضمن L Studio توليد Pattern عشوائي بقواعد موسيقية.",
-              "النظام لا يشغّل الخطوات عشوائياً فحسب: يبني أساساً للكيك والسناير والهاي-هات ويضيف تنويعات في توزيعها، حتى تحصل على غروف أولي وتطوّره بدل البدء من الصفر.",
-              "بعد ذلك يمكنك تغيير الـPattern والـBPM والـSwing والمستويات والموضع في الستيريو."
+              "إلى جانب برمجة Step Sequencer يدوياً، يتضمن L Studio عشوائياً حسب الأسلوب (نوع عشوائي).",
+              "الضغط الطويل على Style يختار روك أو ترانس أو راب أو تكنو. هذا الاختيار يؤثر على عشوائي: يبني النظام أساساً موسيقياً للأسلوب، لا خطواتاً عشوائية فقط.",
+              "في المجاني تُملأ أربع قنوات. في Pro ثمانٍ. بعد ذلك يمكن تعديل Pattern وBPM وSwing والمستويات وموضع الستيريو.",
+              "Pro يفتح أيضاً ثماني حزم طبول جاهزة، بما فيها Experimental بثماني قنوات محمّلة وإيقاعات جاهزة."
             ]
           },
           {
@@ -2967,11 +3154,12 @@
             "id": "drum",
             "title": "بناء إيقاع",
             "body": [
-              "نظام الطبول مبني على أنماط.",
-              "كل نمط مكوّن من ستة عشر خطوة، ويمكن حفظ عدة أنماط مختلفة."
+              "نظام الطبول مبني على أنماط من ستة عشر خطوة، مع عدة أنماط يمكن حفظها والتبديل بينها.",
+              "في Pro توجد ثماني حزم طبول جاهزة عبر ثمانية أساليب (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
+              "معظم الحزم تحمّل أربع قنوات وتترك أربعاً فارغة لعيّناتك. Experimental تحمّل القنوات الثماني بإيقاعات جاهزة لإظهار قدرات النظام."
             ],
-            "tipBeginner": "ابنِ أولاً نمطاً أساسياً واحداً.",
-            "tipAdvanced": "فكّر في الأنماط كأجزاء في الأغنية: مقطع، لازمة، انتقال أو خاتمة.",
+            "tipBeginner": "ابدأ بكيت جاهز، استمع بسماعات رأس، ثم غيّر خطوة واحدة في كل مرة.",
+            "tipAdvanced": "استخدم Experimental لتسمع كيف تتشابك ثماني قنوات، ثم ابنِ نمطك على الفكرة نفسها.",
             "tag": "DRUM",
             "media": "assets/guide/guide-drum.jpg",
             "mediaSize": "panel"
@@ -3028,12 +3216,14 @@
           },
           {
             "id": "random",
-            "title": "توليد أفكار جديدة",
+            "title": "عشوائي حسب الأسلوب",
             "body": [
-              "ينشئ تنويعة جديدة لنمط الطبول."
+              "الضغط الطويل على Style يفتح اختيار النوع العشوائي: روك، ترانس، راب أو تكنو. الاختيار يؤثر على عشوائي.",
+              "الخوارزمية لا تضيء الخطوات عشوائياً فقط. تبني نمطاً وفق قواعد موسيقية للأسلوب المختار، على شبكة الإيقاع فقط (دون تغيير BPM أو Swing في الإصدار الحالي).",
+              "في النسخة المجانية تُملأ القنوات 0 إلى 3. في Pro تُملأ القنوات الثماني."
             ],
-            "tipBeginner": "استخدمه للحصول على اتجاه جديد.",
-            "tipAdvanced": "احتفظ بالإحساس والسرعة، وغيّر الخطوات فقط.",
+            "tipBeginner": "اختر نوعاً، اضغط عشوائي، ثم عدّل فقط ما يبدو غير دقيق.",
+            "tipAdvanced": "احفظ نمطاً أعجبك قبل دورة عشوائي جديدة، لتقارن الاتجاهات دون فقدان غروف جيد.",
             "tag": "RANDOM",
             "media": "assets/guide/guide-random.jpg",
             "mediaSize": "thumb"
@@ -3142,7 +3332,7 @@
         "voicesMeta": "64 صوتاً",
         "presetsHeading": "إعدادات مسبقة",
         "oneLineList": "BLACK WELL - سابات · GOLD HAMMER - ضربات · LIGHT KNIFE - ليدز ترانس · GRAY ENGINE - تكنو · LOW SNAKE - 808 / تراب · SAW TEETH - ميتال · GOLD FOG - بادات · SPIKES - بلاكس",
-        "storeBlurb": "L Studio Factory Pack - 8 صفحات، 64 صوتاً. Black Well للساب والوزن. Gold Hammer للضربات. Light Knife لليدز الترانس. Gray Engine لحلقات التكنو. Low Snake لـ808 والسلايد. Saw Teeth لريفات الميتال. Gold Fog للبادات. Spikes للبلاكس والطعَنات. استورد صفحة واحدة في كل مرة من Preset. مسماة ومضبوطة ومصوغة للآلة نفسها - لا محوّلة من سنث آخر.",
+        "storeBlurb": "L Studio Factory Pack - 8 صفحات، 64 صوتاً. Black Well للساب والوزن. Gold Hammer للضربات. Light Knife لليدز الترانس. Gray Engine لحلقات التكنو. Low Snake لـ808 والسلايد. Saw Teeth لريفات الميتال. Gold Fog للبادات. Spikes للبلاكس والطعَنات. استورد صفحة واحدة في كل مرة من Preset. مسماة ومضبوطة ومصوغة للآلة نفسها - لا محوّلة من سنث آخر. إضافةً: 8 حزم طبول في Pro، بما فيها Experimental بثماني قنوات محمّلة.",
         "earlyAccessCta": "احصل على وصول مبكر",
         "pages": [
           {
@@ -3465,7 +3655,65 @@
               }
             ]
           }
-        ]
+        ],
+        "listenNote": "الترددات المنخفضة تكاد لا تُسمع عبر سماعات الهاتف. لتجربة كاملة استخدم سماعات رأس أو مكبرات مناسبة.",
+        "synthsHeading": "صفحات الإعدادات المسبقة",
+        "synthsIntro": "ثماني صفحات إعدادات للسينث. كل صفحة مهمة موسيقية واحدة، وثمانية أصوات بأسماء.",
+        "drums": {
+          "id": "drum-kits",
+          "eyebrow": "L-STUDIO / PRO / DRUM KITS",
+          "title": "ثماني حزم",
+          "titleEm": "طبول جاهزة.",
+          "subtitle": "ثماني صفحات أسلوب. أربعة وستون كيتاً. جاهزة للعزف.",
+          "intro": [
+            "بعد إعدادات Factory Pack، يستورد Pro تلقائياً ثماني حزم طبول جاهزة. كل حزمة صفحة Style مستقلة بطابعها الخاص وثمانية كيتات داخلها.",
+            "الحزم السبع الأولى تحمّل عيّنات على القنوات الأربع الأولى. القنوات الإضافية تبقى فارغة لتضيف عيّناتك وتصمم انطلاقاً من القاعدة الموجودة."
+          ],
+          "includes": "8 صفحات Style · 64 كيت طبول · جاهزة للعزف",
+          "coverAlt": "غلاف حزم الطبول في L Studio Pro",
+          "stylesHeading": "الأساليب الثمانية",
+          "styles": [
+            {
+              "name": "Rap 90'",
+              "blurb": "كيتات صوتية لإحساس راب التسعينات"
+            },
+            {
+              "name": "Hip-Hop 2000s",
+              "blurb": "مضبوطة لهيب هوب الألفية"
+            },
+            {
+              "name": "Soft Indie",
+              "blurb": "ناعمة ومفتوحة وموسيقية"
+            },
+            {
+              "name": "Psy Progressive Rock",
+              "blurb": "وزن تقدّمي ومساحة"
+            },
+            {
+              "name": "Berlin 90s Techno",
+              "blurb": "جافة ودقيقة وجاهزة للوب"
+            },
+            {
+              "name": "Tribal Ambient Trance",
+              "blurb": "نسيج قبلي وأجواء أمبينت"
+            },
+            {
+              "name": "Goa Trance",
+              "blurb": "طاقة عالية لأسلوب غوا"
+            },
+            {
+              "name": "Experimental",
+              "blurb": "عرض كامل لقدرات النظام"
+            }
+          ],
+          "experimentalTitle": "Experimental",
+          "experimentalBody": "الحزمة الثامنة، Experimental، تأتي بثماني قنوات محمّلة وإيقاعات جاهزة. تُظهر ما يستطيع النظام فعله عندما تعمل كل القنوات معاً.",
+          "freeChannelsTitle": "أربع قنوات فارغة",
+          "freeChannelsBody": "إلى جانب القنوات المحمّلة تبقى أربع قنوات فارغة لعيّناتك وللتصميم انطلاقاً من القاعدة الموجودة.",
+          "metaStyles": "8 صفحات أسلوب",
+          "metaKits": "64 كيت طبول",
+          "tocLabel": "حزم الطبول"
+        }
       }
     }
   }

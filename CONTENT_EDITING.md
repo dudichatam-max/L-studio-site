@@ -14,7 +14,14 @@ Nav labels for the guide live under `languages.*.nav.guide`.
 
 ### Factory 64 (`/factory-64`)
 
-Detail copy for the Factory Pack lives under `languages.*.factory64` (title, intro, page cards, preset blurbs, store blurb). Keep all four languages in sync. Preset **names** stay in English; translate descriptions only. Cover art is `assets/factory-64-cover.png`. Home section CTAs use `languages.*.factoryPack.detailCta` (link to `/factory-64`) and `languages.*.factoryPack.cta` (early access).
+Detail copy for the Factory Pack lives under `languages.*.factory64`.
+
+- Synth preset pages: `pages[]` (BLACK WELL … SPIKES). Preset **names** stay in English; translate descriptions only.
+- Pro drum kits: `drums` (8 Style pages / 64 kits). Style **names** stay in English (`Rap 90'`, `Hip-Hop 2000s`, `Soft Indie`, `Psy Progressive Rock`, `Berlin 90s Techno`, `Tribal Ambient Trance`, `Goa Trance`, `Experimental`).
+- Listening note: `listenNote` (headphones / suitable speakers for low frequencies).
+- Covers: `assets/factory-64-cover.png` (+ `.webp`) and `assets/factory-64-drum-kits.png` (+ `.webp`). Show full portrait art (`object-fit: contain`), do not square-crop.
+
+Keep all four languages in sync. Home section CTAs use `languages.*.factoryPack.detailCta` (link to `/factory-64`) and `languages.*.factoryPack.cta` (early access).
 
 
 ## Images
