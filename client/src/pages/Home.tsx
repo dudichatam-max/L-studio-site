@@ -32,6 +32,13 @@ const chromeUi = {
   ar: { close: "إغلاق القائمة", open: "فتح القائمة" },
 } satisfies Record<Language, { close: string; open: string }>;
 
+const proHomeLink = {
+  he: "או לרכוש את L Studio Pro",
+  en: "Or buy L Studio Pro",
+  ru: "Или купить L Studio Pro",
+  ar: "أو شراء L Studio Pro",
+} satisfies Record<Language, string>;
+
 const instagramLabel = {
   he: "הצטרפו לקהילה באינסטגרם",
   en: "Join the community on Instagram",
@@ -78,7 +85,7 @@ const featureData = {
 } satisfies Record<Language, Array<{ id: string; label: string; title: string; description: string; icon: typeof SlidersHorizontal; meta: string; image?: string; video?: string }>>;
 
 // Fallback copy, used only if content.json fails to load.
-const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", cta: "Meet L-Studio" };
+const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio" };
 const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "Under 7MB", stat2: "Android", stat3: "No ads" };
 const signalDefault = { text: "From key to sound to loop to recording", note: "All inside L-Studio" };
 const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started with a note that wasn't there.", body: ["I wanted to build a keyboard where I could set which frequency belongs to each key myself.", "From there it grew into recording, a looper, drums, a microphone and more."], closing: "What started as a search for the eighth note became L-Studio." };
@@ -190,6 +197,7 @@ export default function Home() {
   const tester = copy.tester ?? testerDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
   const footer = copy.footer ?? footerDefault;
+  const proLink = copy.pro?.homeLink ?? proHomeLink[language];
   const chrome = chromeUi[language];
 
   const features = featureData[language];
@@ -211,6 +219,7 @@ export default function Home() {
             <Link href="/guide">{nav.guide ?? "User guide"}</Link>
             <Link href="/privacy">{nav.privacy}</Link>
             <Link href="/terms">{nav.terms ?? "Terms"}</Link>
+            <Link href="/buy">{nav.pro ?? "Pro"}</Link>
           </nav>
           <div className="header-actions">
             <LanguageSwitcher />
@@ -228,6 +237,7 @@ export default function Home() {
             <Link href="/guide" onClick={() => setMobileOpen(false)}>{nav.guide ?? "User guide"}</Link>
             <Link href="/privacy" onClick={() => setMobileOpen(false)}>{nav.privacy}</Link>
             <Link href="/terms" onClick={() => setMobileOpen(false)}>{nav.terms ?? "Terms"}</Link>
+            <Link href="/buy" onClick={() => setMobileOpen(false)}>{nav.pro ?? "Pro"}</Link>
           </nav>
         )}
       </header>
@@ -443,6 +453,7 @@ export default function Home() {
               <span className="kicker">{tester.kicker}</span>
               <h2>{tester.title}</h2>
               <p>{tester.body}</p>
+              <Link className="text-link pro-home-link" href="/buy">{proLink}</Link>
               <div className="tester-proof"><span>01</span><span>FREE ACCESS</span><span>LOCAL AUDIO</span></div>
             </div>
             <form className="tester-form" action="https://formsubmit.co/dudichatam@gmail.com" method="POST">
@@ -473,7 +484,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
-          <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/guide">{nav.guide ?? "User guide"}</Link><Link href="/privacy">{nav.privacy}</Link><Link href="/terms">{nav.terms ?? "Terms"}</Link></div>
+          <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/guide">{nav.guide ?? "User guide"}</Link><Link href="/buy">{nav.pro ?? "Pro"}</Link><Link href="/privacy">{nav.privacy}</Link><Link href="/terms">{nav.terms ?? "Terms"}</Link></div>
           <span className="footer-tagline">{footer.tagline}</span>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>
         </div>

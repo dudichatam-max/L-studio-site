@@ -100,10 +100,13 @@ jspm_packages/
 tmp/
 temp/
 
-# Database
+# Database and private commerce files. Never commit the Pro APK.
 *.db
 *.sqlite
 *.sqlite3
+*.sqlite-journal
+*.apk
+data/
 
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/

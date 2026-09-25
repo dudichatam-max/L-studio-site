@@ -203,7 +203,31 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+function vitePluginCommerceApi(): Plugin {
+  return {
+    name: "l-studio-commerce-api",
+    apply: "serve",
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        const url = req.url || "";
+        if (!url.startsWith("/api")) {
+          next();
+          return;
+        }
+        import("./server/commerce.ts")
+          .then(({ handleCommerceDevRequest }) => {
+            handleCommerceDevRequest(req as never, res as never, next);
+          })
+          .catch((error: unknown) => {
+            res.statusCode = 500;
+            res.end(error instanceof Error ? error.message : "commerce api failed");
+          });
+      });
+    },
+  };
+}
+
+const plugins = [vitePluginCommerceApi(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
   // Root-absolute assets. GitHub Pages redirects /factory-64 and

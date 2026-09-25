@@ -646,3 +646,20 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
   .faq-trigger { font-size: 16px; padding-block: 18px; }
   .faq-answer { font-size: 15px; }
 }
+
+.pro-home-link { margin-top: 18px; }
+.pro-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 22px; padding-bottom: 90px; }
+.pro-card { padding: 28px; border: 1px solid rgba(227,197,101,.28); background: rgba(227,197,101,.06); }
+.pro-card p { margin: 16px 0 0; color: #b8b6ae; line-height: 1.7; }
+.pro-price { margin: 0; color: var(--acid); font: 600 clamp(36px, 4vw, 52px)/1 var(--display); letter-spacing: -.05em; }
+.pro-includes { list-style: none; margin: 22px 0 0; padding: 0; }
+.pro-includes li { display: flex; align-items: flex-start; gap: 10px; padding: 12px 0; border-bottom: 1px solid rgba(242,241,235,.12); color: var(--paper); }
+.pro-includes svg { flex: 0 0 auto; margin-top: 3px; color: var(--acid); }
+.pro-paypal { min-height: 48px; margin-top: 18px; }
+.pro-status { color: #aaa8a2; }
+.pro-status--error { color: #f0b4a2; }
+.pro-disclaimer { color: #8d8b84; font-size: 14px; line-height: 1.65; }
+.pro-disclaimer a { color: var(--acid); }
+.pro-order { font: 12px var(--mono); letter-spacing: .04em; color: var(--muted); }
+.legal-draft { max-width: 720px; margin: 28px 0 0; padding: 14px 16px; border: 1px solid rgba(227,197,101,.35); color: #cfcabe; font-size: 14px; line-height: 1.65; }
+@media (max-width: 800px) { .pro-layout { grid-template-columns: 1fr; } }

@@ -15,6 +15,28 @@ pnpm install
 pnpm dev
 ```
 
+## רכישת L Studio Pro (Railway)
+
+עמוד `/buy` מוכר את קובץ ה-APK של L Studio Pro בתשלום חד-פעמי (ברירת מחדל 4.00 דולר) דרך PayPal Sandbox או Live. האימות מתבצע רק בשרת. אחרי תשלום מאומת נוצר קישור הורדה חד-פעמי לשעה. קובץ ה-APK לא נכנס ל-git ולא נחשף בנתיב ציבורי קבוע.
+
+GitHub Pages נשאר אתר התדמית. הקופה וההורדה רצות על שירות Railway (`pnpm start`). מדריך מלא, כולל משתני סביבה, בדיקת Sandbox והנחת ה-APK הפרטי: [docs/PAYPAL_RAILWAY.md](docs/PAYPAL_RAILWAY.md).
+
+בדיקת שרת מקומית בלי סודות PayPal:
+
+```bash
+pnpm check:commerce
+```
+
+### Railway Variables
+
+הגדירו ב-Railway, בלי לשים סודות במאגר:
+
+`PAYPAL_CLIENT_ID`, `PAYPAL_CLIENT_SECRET`, `PAYPAL_MODE` (`sandbox` או `live`, ברירת מחדל `sandbox`), `PUBLIC_BASE_URL`, `DOWNLOAD_TOKEN_SECRET`, `PRODUCT_PRICE_USD` (ברירת מחדל `4.00`), `PRODUCT_NAME`, `SUPPORT_EMAIL` (ברירת מחדל `dudichatam@gmail.com`).
+
+APK פרטי, אחת מהאפשרויות: `APK_PATH` (קובץ על דיסק, למשל volume ב-`/data`) או `APK_SOURCE_URL` (https שהשרת מוריד ל-`DATA_DIR` בעלייה). `DATA_DIR` מומלץ `/data` עם Railway Volume. אופציונלי: `PAYPAL_WEBHOOK_ID`, `APK_SHA256`, `RESEND_API_KEY` + `RESEND_FROM`, או `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`. בלי ספק מייל, עמוד ההצלחה עדיין מציג את הקישור והלוג מציין שדילגנו על שליחת המייל.
+
+בריאות: `GET /api/health`. פורט: `PORT`. Node 22. דוגמה ריקה: `.env.example`.
+
 ## בדיקות לפני העלאה
 
 ```bash

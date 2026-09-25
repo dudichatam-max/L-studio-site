@@ -29,6 +29,10 @@ Posters: `assets/drums/01-rap-90.jpg` through `08-experimental.jpg`, each with a
 
 Keep all four languages in sync. Home Factory Pack uses `languages.*.factoryPack.detailCta` (link to `/factory-64`), `languages.*.factoryPack.drumsCta` (link to `/factory-64/drums`), and `languages.*.factoryPack.cta` (early access).
 
+### L Studio Pro (`/buy`)
+
+Purchase copy lives under `languages.*.pro` (same keys in Hebrew, English, Russian, and Arabic). The short nav label is `languages.*.nav.pro`. Do not put a download URL or PayPal secret in this file. Optional `commerce.apiBaseUrl` is the Railway origin (no trailing slash) so the GitHub Pages buy page can call checkout. Leave it empty when the page is served by Railway itself.
+
 
 ## Images
 
