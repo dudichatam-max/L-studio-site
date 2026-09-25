@@ -12,6 +12,7 @@ import Guide from "./pages/Guide";
 import Factory64 from "./pages/Factory64";
 import FactoryDrums from "./pages/FactoryDrums";
 import NotFound from "./pages/NotFound";
+import Buy from "./pages/Buy";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -34,6 +35,8 @@ function Router() {
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
         <Route path="/guide" component={Guide} />
+        <Route path="/buy/success">{() => <Buy mode="success" />}</Route>
+        <Route path="/buy">{() => <Buy mode="checkout" />}</Route>
         <Route path="/factory-64/drums" component={FactoryDrums} />
         <Route path="/factory-64" component={Factory64} />
         <Route path="/404" component={NotFound} />

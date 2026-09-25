@@ -18,6 +18,7 @@ type TermsCopy = {
   termsLabel: string;
   hero: string;
   date: string;
+  draftNote: string;
   principle: string;
   principleBody: string;
   scope: string;
@@ -40,12 +41,13 @@ const copy: Record<Language, TermsCopy> = {
     privacy: "פרטיות",
     termsLabel: "תנאי שימוש",
     hero: "תנאי השימוש האלה מסבירים את הכללים לשימוש באפליקציית L Studio — סטודיו מוזיקה מקומי לאנדרואיד.",
-    date: "עודכן לאחרונה: 23 בספטמבר 2026",
+    date: "עודכן לאחרונה: 25 בספטמבר 2026",
+    draftNote: "טיוטה לביקורת. הטקסט בעמוד הזה אינו ייעוץ משפטי. עורך דין צריך לעבור עליו לפני שמסתמכים עליו בישראל או בשווקים אחרים.",
     principle: "שימוש הוגן באפליקציה מקומית.",
     principleBody: "L Studio מיועדת ליצירת מוזיקה במכשיר שלך. התנאים האלה מגדירים מה מותר, מה נשאר אצלך, ומה האחריות של כל צד.",
     scope: "היקף התנאים",
     scopeTitle: "תנאים ברורים.",
-    scopeBody: "תנאים אלה חלים על השימוש באפליקציית L Studio לאנדרואיד ועל האתר הנלווה שלה. השימוש באפליקציה מהווה הסכמה לתנאים אלה.",
+    scopeBody: "תנאים אלה חלים על השימוש באפליקציית L Studio לאנדרואיד, על האתר הנלווה שלה, ועל רכישה חד-פעמית של L Studio Pro באתר. שימוש באפליקציה או השלמת רכישה מהווים הסכמה לתנאים אלה.",
     page: "ON THIS PAGE",
     checks: ["עיבוד מקומי", "רישיון שימוש אישי", "ללא אחריות מוחלטת"],
     sections: [
@@ -89,6 +91,14 @@ const copy: Record<Language, TermsCopy> = {
         title: "דין חל ויישוב מחלוקות",
         body: "מחלוקות הנוגעות לתנאים אלה או לשימוש ב־L Studio יטופלו בהתאם לדין החל במקום מגוריו של מוציא לאור האפליקציה, מבלי לקבוע כאן חברה או תחום שיפוט פיקטיביים. אין באמור כדי לגרוע מזכויות צרכניות שאינן ניתנות לוויתור על פי דין.",
       },
+      {
+        title: "רכישת L Studio Pro",
+        body: "L Studio Pro נמכרת כהורדה דיגיטלית חד-פעמית של קובץ APK לאנדרואיד (כ-4.00 דולר, לפי המחיר שמוצג בקופה). את התשלום מעבד PayPal. אחרי שהשרת שלנו מאשר את התשלום מול PayPal, ניתן קישור הורדה אישי. הקישור עובד פעם אחת ופג אחרי כשעה מרגע שנוצר. אם שליחת מייל מוגדרת בשרת, הקישור עשוי להישלח גם לכתובת של המשלם ב-PayPal. הרכישה מעניקה רישיון אישי שאינו ניתן להעברה להתקין ולהשתמש בגרסה הזו. אין להפיץ את קובץ ה-APK, למכור אותו מחדש או לפרסם את קישור ההורדה.",
+      },
+      {
+        title: "החזרים (טיוטה)",
+        body: "הקובץ נמסר מיד אחרי אישור התשלום, ולכן רכישה שהושלמה היא בדרך כלל סופית מרגע שנוצר קישור ההורדה. פנו אלינו אם הקישור נכשל לפני שהצלחתם להוריד, אם קובץ ה-APK לא מותקן, או אם חויבתם יותר מפעם אחת. צרפו את מזהה ההזמנה ב-PayPal. נבדוק את הפנייה ונעזור ככל שניתן. אין בטיוטה הזו כדי לגרוע מזכויות צרכן שהדין במדינה שלכם אינו מאפשר לוותר עליהן, לרבות זכות ביטול מחייבת אם היא עדיין חלה על תוכן דיגיטלי.",
+      },
     ],
     contact: "יצירת קשר",
     contactBody: "לשאלות על תנאי השימוש של L Studio, פנו אל",
@@ -102,12 +112,13 @@ const copy: Record<Language, TermsCopy> = {
     privacy: "Privacy",
     termsLabel: "Terms",
     hero: "These Terms of Service explain the rules for using L Studio — a local-first Android music creation app.",
-    date: "Last updated: September 23, 2026",
+    date: "Last updated: September 25, 2026",
+    draftNote: "Draft for review. This page is not legal advice. A lawyer should review it before you rely on it in Israel or in any other market.",
     principle: "Fair use of a local app.",
     principleBody: "L Studio is built for making music on your device. These terms describe what you may do, what stays yours, and each party's responsibilities.",
     scope: "Scope of terms",
     scopeTitle: "Clear terms.",
-    scopeBody: "These terms apply to the L Studio Android app and its companion website. Using the app means you agree to these terms.",
+    scopeBody: "These terms apply to the L Studio Android app, its companion website, and a one-time L Studio Pro purchase made on that website. Using the app or completing a purchase means you agree to these terms.",
     page: "ON THIS PAGE",
     checks: ["Local processing", "Personal use license", "No absolute warranties"],
     sections: [
@@ -151,6 +162,14 @@ const copy: Record<Language, TermsCopy> = {
         title: "Governing note and disputes",
         body: "Disputes about these terms or your use of L Studio will be handled under the applicable law of the app publisher's place of residence, without inventing a fictional company name or jurisdiction here. Nothing in these terms limits consumer rights that cannot be waived by law.",
       },
+      {
+        title: "L Studio Pro purchase",
+        body: "L Studio Pro is sold as a one-time digital download of an Android APK (about USD 4.00, the price shown at checkout). PayPal processes the payment. After our server confirms the payment with PayPal, we give you a personal download link. The link works once and expires about one hour after it is created. When email delivery is configured, the link may also be sent to the PayPal payer address. The purchase grants a personal, non-transferable license to install and use that build. You may not redistribute the APK, resell it, or publish the download link.",
+      },
+      {
+        title: "Refunds (draft)",
+        body: "The file is delivered as soon as payment is confirmed, so a completed purchase is generally final once the download link has been created. Contact us if the link fails before you can download, the APK will not install, or you were charged more than once. Include your PayPal order id. We will review the request and help where we can. Nothing in this draft removes consumer rights that the law in your country does not let us waive, including a mandatory withdrawal right if it still applies to digital content.",
+      },
     ],
     contact: "Contact",
     contactBody: "For questions about L Studio Terms of Service, contact",
@@ -164,12 +183,13 @@ const copy: Record<Language, TermsCopy> = {
     privacy: "Приватность",
     termsLabel: "Условия",
     hero: "Эти Условия использования объясняют правила работы с L Studio — локальным Android-приложением для создания музыки.",
-    date: "Обновлено: 23 сентября 2026",
+    date: "Обновлено: 25 сентября 2026",
+    draftNote: "Черновик для проверки. Этот текст не является юридической консультацией. Юрист должен проверить его, прежде чем опираться на него в Израиле или на других рынках.",
     principle: "Честное использование локального приложения.",
     principleBody: "L Studio создана для музыки на вашем устройстве. Эти условия описывают, что можно делать, что остаётся вашим и каковы обязанности сторон.",
     scope: "Область условий",
     scopeTitle: "Понятные условия.",
-    scopeBody: "Эти условия применяются к Android-приложению L Studio и сопутствующему сайту. Использование приложения означает согласие с условиями.",
+    scopeBody: "Эти условия применяются к Android-приложению L Studio, сопутствующему сайту и к разовой покупке L Studio Pro на этом сайте. Использование приложения или завершение покупки означает согласие с условиями.",
     page: "НА ЭТОЙ СТРАНИЦЕ",
     checks: ["Локальная обработка", "Личная лицензия", "Без абсолютных гарантий"],
     sections: [
@@ -213,6 +233,14 @@ const copy: Record<Language, TermsCopy> = {
         title: "Применимое право и споры",
         body: "Споры по этим условиям или использованию L Studio рассматриваются по применимому праву места проживания издателя приложения, без указания вымышленного названия компании или юрисдикции. Ничто в условиях не ограничивает права потребителей, от которых нельзя отказаться по закону.",
       },
+      {
+        title: "Покупка L Studio Pro",
+        body: "L Studio Pro продаётся как разовая цифровая загрузка APK для Android (около 4.00 USD, цена указана на странице оплаты). Платёж обрабатывает PayPal. После того как наш сервер подтвердит платёж у PayPal, вы получаете личную ссылку на скачивание. Ссылка срабатывает один раз и истекает примерно через час после создания. Если на сервере настроена почта, ссылка может также уйти на адрес плательщика в PayPal. Покупка даёт личную непередаваемую лицензию установить и использовать эту сборку. Нельзя распространять APK, перепродавать его или публиковать ссылку.",
+      },
+      {
+        title: "Возвраты (черновик)",
+        body: "Файл выдаётся сразу после подтверждения оплаты, поэтому завершённая покупка обычно окончательна с момента создания ссылки. Напишите нам, если ссылка не сработала до скачивания, APK не устанавливается или списание прошло больше одного раза. Укажите номер заказа PayPal. Мы разберём обращение и поможем, где это возможно. Этот черновик не отменяет прав потребителя, от которых закон вашей страны не позволяет отказаться, включая обязательное право отказа, если оно всё ещё относится к цифровому контенту.",
+      },
     ],
     contact: "Контакты",
     contactBody: "По вопросам Условий использования L Studio пишите на",
@@ -226,12 +254,13 @@ const copy: Record<Language, TermsCopy> = {
     privacy: "الخصوصية",
     termsLabel: "الشروط",
     hero: "توضح شروط الخدمة هذه قواعد استخدام L Studio — تطبيق أندرويد محلي لإنشاء الموسيقى.",
-    date: "آخر تحديث: 23 سبتمبر 2026",
+    date: "آخر تحديث: 25 سبتمبر 2026",
+    draftNote: "مسودة للمراجعة. هذا النص ليس استشارة قانونية. يجب أن يراجعه محامٍ قبل الاعتماد عليه في إسرائيل أو في أي سوق آخر.",
     principle: "استخدام عادل لتطبيق محلي.",
     principleBody: "صُممت L Studio لصنع الموسيقى على جهازك. توضّح هذه الشروط ما يمكنك فعله، وما يبقى ملكك، ومسؤوليات كل طرف.",
     scope: "نطاق الشروط",
     scopeTitle: "شروط واضحة.",
-    scopeBody: "تنطبق هذه الشروط على تطبيق L Studio لنظام Android وموقعه المصاحب. يعني استخدام التطبيق موافقتك على هذه الشروط.",
+    scopeBody: "تنطبق هذه الشروط على تطبيق L Studio لنظام Android وموقعه المصاحب وعلى شراء L Studio Pro لمرة واحدة من هذا الموقع. يعني استخدام التطبيق أو إتمام الشراء موافقتك على هذه الشروط.",
     page: "في هذه الصفحة",
     checks: ["معالجة محلية", "ترخيص استخدام شخصي", "بدون ضمانات مطلقة"],
     sections: [
@@ -274,6 +303,14 @@ const copy: Record<Language, TermsCopy> = {
       {
         title: "ملاحظة قانونية والنزاعات",
         body: "تُعالَج النزاعات المتعلقة بهذه الشروط أو باستخدام L Studio وفق القانون المعمول به في محل إقامة ناشر التطبيق، دون اختراع اسم شركة أو اختصاص قضائي وهمي هنا. لا شيء في هذه الشروط يحدّ من حقوق المستهلك التي لا يجوز التنازل عنها قانوناً.",
+      },
+      {
+        title: "شراء L Studio Pro",
+        body: "يُباع L Studio Pro كتنزيل رقمي لمرة واحدة لملف APK على أندرويد (حوالي 4.00 دولار، وهو السعر المعروض عند الدفع). يعالج PayPal عملية الدفع. بعد أن يؤكد خادمنا الدفع لدى PayPal، نعطيك رابط تنزيل شخصياً. يعمل الرابط مرة واحدة وينتهي بعد نحو ساعة من إنشائه. إذا كان إرسال البريد مُعداً على الخادم، قد يُرسل الرابط أيضاً إلى عنوان الدافع في PayPal. يمنح الشراء ترخيصاً شخصياً غير قابل للتحويل لتثبيت هذه النسخة واستخدامها. لا يجوز إعادة توزيع ملف APK أو إعادة بيعه أو نشر رابط التنزيل.",
+      },
+      {
+        title: "الاسترداد (مسودة)",
+        body: "يُسلَّم الملف فور تأكيد الدفع، لذا فإن الشراء المكتمل نهائي بوجه عام منذ إنشاء رابط التنزيل. تواصل معنا إذا فشل الرابط قبل أن تتمكن من التنزيل، أو إذا لم يُثبَّت ملف APK، أو إذا تم الخصم أكثر من مرة. أرفق معرّف طلب PayPal. سنراجع الطلب ونساعد حيث يمكننا. لا تلغي هذه المسودة حقوق المستهلك التي لا يسمح قانون بلدك بالتنازل عنها، بما في ذلك حق الرجوع الإلزامي إذا كان ما زال ينطبق على المحتوى الرقمي.",
       },
     ],
     contact: "تواصل",
@@ -325,6 +362,7 @@ export default function Terms() {
           <div className="privacy-date">
             {text.date} <span>·</span> L Studio 1.02
           </div>
+          <p className="legal-draft">{text.draftNote}</p>
         </section>
         <section className="privacy-intro container">
           <div className="privacy-intro-card">
