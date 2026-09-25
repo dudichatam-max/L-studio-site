@@ -5,6 +5,8 @@ import { Readable } from "node:stream";
 import { APPROVED_APK_SHA256, type CommerceConfig } from "./config";
 
 const MAX_APK_BYTES = 80 * 1024 * 1024;
+const MAX_REDIRECTS = 5;
+const GITHUB_AUTH_HOSTS = new Set(["github.com", "www.github.com", "api.github.com"]);
 
 export type ApkStatus = "loading" | "ready" | "missing" | "checksum_mismatch" | "unreadable";
 
@@ -43,18 +45,83 @@ function isBlockedPublicPath(filePath: string): boolean {
   return blocked.some((dir) => resolved === dir || resolved.startsWith(dir + path.sep));
 }
 
+function readApkGithubToken(): string {
+  let token = (process.env.APK_GITHUB_TOKEN || "").trim();
+  if (!token) token = (process.env.GITHUB_TOKEN || "").trim();
+  if (/^bearer\s+/i.test(token)) token = token.replace(/^bearer\s+/i, "").trim();
+  if (!/^[A-Za-z0-9_]+$/.test(token)) return "";
+  return token;
+}
+
+function apkRequestHeaders(url: URL, token: string): Headers {
+  const headers = new Headers();
+  if (!token || !GITHUB_AUTH_HOSTS.has(url.hostname.toLowerCase())) return headers;
+  headers.set("Authorization", `Bearer ${token}`);
+  headers.set("Accept", "application/octet-stream");
+  headers.set("User-Agent", "l-studio-site");
+  if (url.hostname.toLowerCase() === "api.github.com") {
+    headers.set("X-GitHub-Api-Version", "2022-11-28");
+  }
+  return headers;
+}
+
+function safeApkError(error: unknown): string {
+  const token = readApkGithubToken();
+  let raw = error instanceof Error ? error.message : "error";
+  if (token) raw = raw.split(token).join("[redacted]");
+  raw = raw.replace(/bearer\s+\S+/gi, "Bearer [redacted]");
+  raw = raw.replace(/https?:\/\/\S+/g, "[url]");
+  return raw.slice(0, 300);
+}
+
+async function fetchApkResponse(sourceUrl: string): Promise<Response> {
+  const rawToken = (process.env.APK_GITHUB_TOKEN || process.env.GITHUB_TOKEN || "").trim();
+  const token = readApkGithubToken();
+  if (rawToken && !token) {
+    console.error("commerce apk fetch: github token ignored because it was not a single token value");
+  }
+  const signal = AbortSignal.timeout(120000);
+  let current = sourceUrl;
+  for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
+    let parsed: URL;
+    try {
+      parsed = new URL(current);
+    } catch {
+      throw new Error(hop === 0 ? "invalid_apk_source_url" : "apk_fetch_failed");
+    }
+    if (parsed.protocol !== "https:") {
+      throw new Error(hop === 0 ? "apk_source_url_must_be_https" : "apk_fetch_failed");
+    }
+    let response: Response;
+    try {
+      response = await fetch(parsed, {
+        method: "GET",
+        redirect: "manual",
+        headers: apkRequestHeaders(parsed, token),
+        signal,
+      });
+    } catch {
+      throw new Error("apk_fetch_failed");
+    }
+    if (response.status >= 300 && response.status < 400) {
+      const location = response.headers.get("location");
+      await response.body?.cancel().catch(() => undefined);
+      if (!location || hop === MAX_REDIRECTS) throw new Error("apk_fetch_failed");
+      current = new URL(location, parsed).href;
+      continue;
+    }
+    if (!response.ok || !response.body) {
+      await response.body?.cancel().catch(() => undefined);
+      throw new Error(response.status ? `apk_fetch_failed_${response.status}` : "apk_fetch_failed");
+    }
+    return response;
+  }
+  throw new Error("apk_fetch_failed");
+}
+
 async function fetchToPrivateFile(sourceUrl: string, dest: string): Promise<void> {
-  let parsed: URL;
-  try {
-    parsed = new URL(sourceUrl);
-  } catch {
-    throw new Error("invalid_apk_source_url");
-  }
-  if (parsed.protocol !== "https:") {
-    throw new Error("apk_source_url_must_be_https");
-  }
-  const response = await fetch(parsed, { redirect: "follow", signal: AbortSignal.timeout(120000) });
-  if (!response.ok || !response.body) {
+  const response = await fetchApkResponse(sourceUrl);
+  if (!response.body) {
     throw new Error("apk_fetch_failed");
   }
   const temp = `${dest}.partial`;
@@ -151,7 +218,7 @@ async function prepare(config: CommerceConfig): Promise<void> {
     console.error("commerce apk missing: set APK_PATH or APK_SOURCE_URL");
   } catch (error) {
     state = { status: "unreadable" };
-    console.error(`commerce apk prepare failed: ${error instanceof Error ? error.message : "error"}`);
+    console.error(`commerce apk prepare failed: ${safeApkError(error)}`);
   }
 }
 
