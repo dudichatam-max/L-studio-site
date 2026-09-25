@@ -187,6 +187,140 @@ async function main() {
     process.chdir(previousCwd);
   }
 
+  const githubToken = "github_pat_selfcheckonly";
+  const fallbackToken = "ghs_selfcheckfallback";
+  const redirectUrl = "https://release-assets.githubusercontent.com/private/apk.bin?jwt=temp-credential";
+  type Hop = { url: string; authorization: string | null; accept: string | null; apiVersion: string | null };
+  const hops: Hop[] = [];
+  const originalFetch = globalThis.fetch;
+  const log = console.log;
+  const err = console.error;
+  const lines: string[] = [];
+  console.log = (...args: unknown[]) => {
+    lines.push(args.map((item) => String(item)).join(" "));
+  };
+  console.error = (...args: unknown[]) => {
+    lines.push(args.map((item) => String(item)).join(" "));
+  };
+  const record = (input: RequestInfo | URL, init?: RequestInit): Hop => {
+    const url = input instanceof URL ? input.href : String(input);
+    const headers = new Headers(init?.headers);
+    const hop = {
+      url,
+      authorization: headers.get("authorization"),
+      accept: headers.get("accept"),
+      apiVersion: headers.get("x-github-api-version"),
+    };
+    hops.push(hop);
+    return hop;
+  };
+  try {
+    delete process.env.APK_PATH;
+    process.env.APK_SHA256 = apkSha;
+    process.env.APK_GITHUB_TOKEN = `Bearer ${githubToken}`;
+    process.env.GITHUB_TOKEN = fallbackToken;
+    process.env.APK_SOURCE_URL = "https://api.github.com/repos/dudichatam-max/L-studio/releases/assets/588219111";
+    process.env.DATA_DIR = path.join(root, "gh-api");
+    globalThis.fetch = async (input, init) => {
+      const hop = record(input, init);
+      if (hop.url.startsWith("https://api.github.com/")) {
+        return new Response(null, { status: 302, headers: { location: redirectUrl } });
+      }
+      if (hop.url.startsWith("https://release-assets.githubusercontent.com/")) return new Response(apkBytes);
+      return new Response("missing", { status: 404 });
+    };
+    resetCommerceForTests();
+    await ensureApk(getConfig());
+    assert(apkStatus() === "ready", `private api asset fetch, got ${apkStatus()}`);
+    assert(hops[0]?.authorization === `Bearer ${githubToken}`, "api asset request missing bearer");
+    assert(hops[0]?.accept === "application/octet-stream", "api asset request missing octet-stream accept");
+    assert(hops[0]?.apiVersion === "2022-11-28", "api asset request missing github api version");
+    assert(hops[1]?.url === redirectUrl, "api asset redirect was not followed");
+    assert(hops[1]?.authorization === null, "github token was sent to the release cdn");
+    const stored = path.join(process.env.DATA_DIR, "l-studio-pro.apk");
+    assert(fs.existsSync(stored), "fetched apk stored in data dir");
+    assert((fs.statSync(stored).mode & 0o077) === 0, "fetched apk is group/world readable");
+
+    hops.length = 0;
+    delete process.env.APK_GITHUB_TOKEN;
+    process.env.GITHUB_TOKEN = fallbackToken;
+    process.env.APK_SOURCE_URL =
+      "https://github.com/dudichatam-max/L-studio/releases/download/website-pro-qa-welcomes-20260925/L-Studio-website-release.apk";
+    process.env.DATA_DIR = path.join(root, "gh-browser");
+    globalThis.fetch = async (input, init) => {
+      const hop = record(input, init);
+      if (hop.url.startsWith("https://github.com/")) {
+        return new Response(null, { status: 302, headers: { location: redirectUrl } });
+      }
+      if (hop.url.startsWith("https://release-assets.githubusercontent.com/")) return new Response(apkBytes);
+      return new Response("missing", { status: 404 });
+    };
+    resetCommerceForTests();
+    await ensureApk(getConfig());
+    assert(apkStatus() === "ready", `browser download url fetch, got ${apkStatus()}`);
+    assert(hops[0]?.authorization === `Bearer ${fallbackToken}`, "GITHUB_TOKEN fallback missing");
+    assert(hops[0]?.accept === "application/octet-stream", "browser download url missing octet-stream accept");
+    assert(hops[1]?.authorization === null, "fallback token was sent to the release cdn");
+
+    hops.length = 0;
+    process.env.APK_GITHUB_TOKEN = githubToken;
+    process.env.APK_SOURCE_URL = "https://example.com/private/L-Studio-Pro.apk";
+    process.env.DATA_DIR = path.join(root, "gh-other");
+    globalThis.fetch = async (input, init) => {
+      record(input, init);
+      return new Response(apkBytes);
+    };
+    resetCommerceForTests();
+    await ensureApk(getConfig());
+    assert(apkStatus() === "ready", `non-github url fetch, got ${apkStatus()}`);
+    assert(hops.length === 1 && hops[0]?.authorization === null, "github token sent to a non-github host");
+
+    hops.length = 0;
+    process.env.APK_SOURCE_URL = "https://api.github.com/repos/dudichatam-max/L-studio/releases/assets/588219111";
+    process.env.DATA_DIR = path.join(root, "gh-404");
+    globalThis.fetch = async (input, init) => {
+      record(input, init);
+      return new Response("nope", { status: 404 });
+    };
+    resetCommerceForTests();
+    await ensureApk(getConfig());
+    assert(apkStatus() === "unreadable", `github 404, got ${apkStatus()}`);
+
+    process.env.DATA_DIR = path.join(root, "gh-throw");
+    globalThis.fetch = async () => {
+      throw new Error(`connect ECONNRESET Bearer ${githubToken} ${githubToken} ${redirectUrl}`);
+    };
+    resetCommerceForTests();
+    await ensureApk(getConfig());
+    assert(apkStatus() === "unreadable", `github fetch throw, got ${apkStatus()}`);
+
+    process.env.APK_SHA256 = apkSha;
+    process.env.DATA_DIR = path.join(root, "gh-bad-bytes");
+    globalThis.fetch = async (input, init) => {
+      const hop = record(input, init);
+      if (hop.url.startsWith("https://api.github.com/")) {
+        return new Response(null, { status: 302, headers: { location: redirectUrl } });
+      }
+      return new Response(Buffer.from("not-the-approved-apk"));
+    };
+    resetCommerceForTests();
+    await ensureApk(getConfig());
+    assert(apkStatus() === "checksum_mismatch", `fetched checksum gate, got ${apkStatus()}`);
+
+    const logged = lines.join("\n");
+    assert(!logged.includes(githubToken), "github token was written to logs");
+    assert(!logged.includes(fallbackToken), "fallback github token was written to logs");
+    assert(!logged.includes("temp-credential"), "redirect credential was written to logs");
+    assert(!logged.toLowerCase().includes("authorization:"), "authorization header was written to logs");
+    assert(logged.includes("apk_fetch_failed"), "fetch failure was reported without the token");
+  } finally {
+    globalThis.fetch = originalFetch;
+    console.log = log;
+    console.error = err;
+    delete process.env.APK_GITHUB_TOKEN;
+    delete process.env.GITHUB_TOKEN;
+  }
+
   fs.rmSync(root, { recursive: true, force: true });
   console.log("commerce selfcheck ok");
 }
