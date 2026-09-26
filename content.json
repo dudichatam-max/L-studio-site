@@ -99,7 +99,7 @@
         "lede": "הסאונד כבר מחכה לך.",
         "shortText": "8 עמודי פריסטים. 8 ערכות תופים. מוכן לנגן.",
         "description": "עם המעבר ל־Pro מקבלים את Factory Pack המלא: 8 עמודי פריסטים לסינתיסייזר (64 קולות), ואחריהם 8 ערכות תופים, 8 סגנונות בכל ערכה (64 סגנונות בסך הכול, לא 64 ערכות). בוחרים, טוענים, ומתחילים לנגן.",
-        "cta": "לרכישת L Studio Pro",
+        "cta": "לקבלת גישה מוקדמת",
         "detailCta": "לגלות את Factory 64",
         "coverAlt": "קופסת מוצר L Studio Factory Pack בשחור-לבן",
         "drumsCta": "ערכות התופים"
@@ -237,7 +237,23 @@
         "kicker": "06 / YOUR SOUND",
         "title": "אולי הגיע הזמן למצוא את הצליל שלך.",
         "body": "אתה יכול להתחיל מסאונד אחד, מקצב, לופ או רעיון קטן. אתה לא באמת יודע מה ייצא עד שאתה מתחיל לשחק.",
-        "cta": "לרכישת L Studio Pro"
+        "cta": "להיכנס ל-L-Studio"
+      },
+      "tester": {
+        "kicker": "EARLY ACCESS",
+        "title": "רוצה לנסות את L-Studio?",
+        "body": "L-Studio עדיין לפני ההשקה הרשמית. אני מחפש 44 אנשים שרוצים לפתוח אותה בחינם, לנגן, ולשלוח משוב אמיתי על מה שעובד ומה עוד צריך להשתפר. השאירו שם ומייל, וקישור הורדה חד-פעמי יגיע למייל.",
+        "name": "שם",
+        "email": "כתובת מייל",
+        "consent": "אני מאשר/ת לקבל עדכונים על L-Studio.",
+        "submit": "אני רוצה לנסות",
+        "note": "גישה חינמית · מספר המקומות מוגבל ל-44",
+        "sending": "שולחים...",
+        "success": "נרשמת. בדקו את המייל לקישור ההורדה ולמדריך, ואחרי שתנסו שלחו משוב אמיתי.",
+        "already": "המייל הזה כבר רשום לגישה המוקדמת. בדקו את תיבת הדואר, כולל ספאם.",
+        "full": "44 המקומות נתפסו. תודה שרציתם לנסות.",
+        "error": "לא הצלחנו לשלוח את המייל עכשיו. נסו שוב בעוד כמה דקות.",
+        "invalid": "כתובת המייל לא תקינה."
       },
       "footer": {
         "tagline": "זה לאנשים אנלוגיים בעולם דיגיטלי."
@@ -864,7 +880,7 @@
         "listenNote": "תדרים נמוכים כמעט לא נשמעים ברמקולים של הטלפון. לחוויה מלאה השתמשו באוזניות או ברמקולים מתאימים.",
         "synthsHeading": "עמודי הפריסטים",
         "synthsIntro": "שמונה עמודי פריסטים לסינתיסייזר. כל עמוד הוא משימה מוזיקלית אחת, שמונה קולות עם שם.",
-        "buyCta": "לרכישת L Studio Pro"
+        "earlyAccessCta": "לקבלת גישה מוקדמת"
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -1071,7 +1087,7 @@
         "lede": "The sound is already waiting for you.",
         "shortText": "8 preset pages. 8 drum kits. Ready to play.",
         "description": "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits). Pick a sound or a kit, load it, and start playing.",
-        "cta": "Get L Studio Pro",
+        "cta": "Get early access",
         "detailCta": "Explore Factory 64",
         "coverAlt": "L Studio Factory Pack product box",
         "drumsCta": "Drum kits"
@@ -1209,7 +1225,23 @@
         "kicker": "06 / YOUR SOUND",
         "title": "Maybe it's time to find your sound.",
         "body": "You can start from one sound, a beat, a loop, or a small idea. You never really know what will come out until you start playing.",
-        "cta": "Get L Studio Pro"
+        "cta": "Enter L-Studio"
+      },
+      "tester": {
+        "kicker": "EARLY ACCESS",
+        "title": "Want to try L-Studio?",
+        "body": "L-Studio is not officially launched yet. I am looking for 44 people who want to open it free, play, and send real feedback about what works and what still needs work. Leave your name and email, and a one-time download link will arrive by email.",
+        "name": "Name",
+        "email": "Email address",
+        "consent": "I agree to receive L-Studio updates.",
+        "submit": "I want to try it",
+        "note": "Free access · Limited to 44 testers",
+        "sending": "Sending...",
+        "success": "You are in. Check your email for the download link and the user guide.",
+        "already": "This email is already registered for Early Access. Check your inbox, including spam.",
+        "full": "All 44 spots are taken. Thank you for wanting to try it.",
+        "error": "We could not send the email right now. Try again in a few minutes.",
+        "invalid": "That email address is not valid."
       },
       "footer": {
         "tagline": "It's for analog people in a digital world."
@@ -1836,7 +1868,7 @@
         "listenNote": "Low frequencies are barely audible on phone speakers. For the full experience, use headphones or suitable speakers.",
         "synthsHeading": "Preset pages",
         "synthsIntro": "Eight synth preset pages. Each page is one musical job, eight named voices.",
-        "buyCta": "Get L Studio Pro"
+        "earlyAccessCta": "Get early access"
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -2043,7 +2075,7 @@
         "lede": "Звук уже ждёт вас.",
         "shortText": "8 страниц пресетов. 8 барабанных наборов. Готово к игре.",
         "description": "С Pro открывается полный Factory Pack: 8 страниц пресетов синтезатора (64 голоса), затем 8 барабанных наборов, по 8 стилей в каждом (всего 64 стиля, не 64 наборов). Выберите звук или кит, загрузите и играйте.",
-        "cta": "Купить L Studio Pro",
+        "cta": "Ранний доступ",
         "detailCta": "Открыть Factory 64",
         "coverAlt": "Коробка продукта L Studio Factory Pack",
         "drumsCta": "Барабаны"
@@ -2181,7 +2213,23 @@
         "kicker": "06 / YOUR SOUND",
         "title": "Может, пора найти свой звук.",
         "body": "Можно начать с одного звука, ритма, лупа или маленькой идеи. Ты никогда не узнаешь, что получится, пока не начнёшь играть.",
-        "cta": "Купить L Studio Pro"
+        "cta": "Войти в L-Studio"
+      },
+      "tester": {
+        "kicker": "РАННИЙ ДОСТУП",
+        "title": "Хочешь попробовать L-Studio?",
+        "body": "L-Studio ещё не вышла официально. Я ищу 44 человека, которые хотят открыть её бесплатно, поиграть и прислать честный отзыв: что работает и что ещё нужно улучшить. Оставьте имя и почту, и одноразовая ссылка на скачивание придёт на email.",
+        "name": "Имя",
+        "email": "Email",
+        "consent": "Я согласен получать обновления о L-Studio.",
+        "submit": "Хочу попробовать",
+        "note": "Бесплатный доступ · Только 44 места",
+        "sending": "Отправляем...",
+        "success": "Вы в списке. Проверьте почту: там ссылка на скачивание и руководство.",
+        "already": "Эта почта уже зарегистрирована на ранний доступ. Проверьте входящие, включая спам.",
+        "full": "Все 44 места заняты. Спасибо, что хотели попробовать.",
+        "error": "Не удалось отправить письмо сейчас. Попробуйте снова через несколько минут.",
+        "invalid": "Этот адрес почты недействителен."
       },
       "footer": {
         "tagline": "Это для аналоговых людей в цифровом мире."
@@ -2808,7 +2856,7 @@
         "listenNote": "Низкие частоты почти не слышны в динамиках телефона. Для полного звучания используйте наушники или подходящие колонки.",
         "synthsHeading": "Страницы пресетов",
         "synthsIntro": "Восемь страниц пресетов синтезатора. Каждая страница - одна музыкальная задача, восемь голосов с именами.",
-        "buyCta": "Купить L Studio Pro"
+        "earlyAccessCta": "Получить ранний доступ"
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -3015,7 +3063,7 @@
         "lede": "الصوت بانتظارك مسبقاً.",
         "shortText": "8 صفحات إعدادات. 8 حزم طبول. جاهزة للعزف.",
         "description": "مع Pro تحصل على Factory Pack كاملاً: 8 صفحات إعدادات للسينث (64 صوتاً)، ثم 8 حزم طبول، 8 أساليب في كل حزمة (64 أسلوباً في المجموع، وليس 64 حزمة). اختر صوتاً أو كيتاً، حمّله، وابدأ العزف.",
-        "cta": "اشترِ L Studio Pro",
+        "cta": "احصل على وصول مبكر",
         "detailCta": "استكشف Factory 64",
         "coverAlt": "علبة منتج L Studio Factory Pack بالأبيض والأسود",
         "drumsCta": "حزم الطبول"
@@ -3153,7 +3201,23 @@
         "kicker": "06 / YOUR SOUND",
         "title": "ربما حان الوقت لتجد صوتك.",
         "body": "يمكنك البدء من صوت واحد، إيقاع، لوب أو فكرة صغيرة. أنت لا تعرف حقاً ماذا سيخرج حتى تبدأ باللعب.",
-        "cta": "اشترِ L Studio Pro"
+        "cta": "ادخل إلى L-Studio"
+      },
+      "tester": {
+        "kicker": "وصول مبكر",
+        "title": "هل تريد تجربة L-Studio؟",
+        "body": "لم تُطلق L-Studio رسمياً بعد. أبحث عن 44 شخصاً يريدون فتحها مجاناً، العزف عليها، وإرسال ملاحظات حقيقية عما يعمل وعما ما زال يحتاج إلى تحسين. اترك اسمك وبريدك، وسيصلك رابط تنزيل لمرة واحدة عبر البريد.",
+        "name": "الاسم",
+        "email": "البريد الإلكتروني",
+        "consent": "أوافق على تلقي تحديثات L-Studio.",
+        "submit": "أريد أن أجرب",
+        "note": "وصول مجاني · العدد محدود بـ44 مكاناً",
+        "sending": "جارٍ الإرسال...",
+        "success": "تم تسجيلك. تحقق من بريدك لرابط التنزيل ودليل المستخدم.",
+        "already": "هذا البريد مسجل مسبقاً في الوصول المبكر. تحقق من صندوق الوارد، بما فيه البريد غير المرغوب.",
+        "full": "المقاعد الـ44 ممتلئة. شكراً لرغبتك في التجربة.",
+        "error": "تعذر إرسال البريد الآن. حاول مرة أخرى بعد بضع دقائق.",
+        "invalid": "عنوان البريد هذا غير صالح."
       },
       "footer": {
         "tagline": "هذا لأشخاص تناظريين في عالم رقمي."
@@ -3780,7 +3844,7 @@
         "listenNote": "الترددات المنخفضة تكاد لا تُسمع عبر سماعات الهاتف. لتجربة كاملة استخدم سماعات رأس أو مكبرات مناسبة.",
         "synthsHeading": "صفحات الإعدادات المسبقة",
         "synthsIntro": "ثماني صفحات إعدادات للسينث. كل صفحة مهمة موسيقية واحدة، وثمانية أصوات بأسماء.",
-        "buyCta": "اشترِ L Studio Pro"
+        "earlyAccessCta": "احصل على وصول مبكر"
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",

@@ -35,6 +35,7 @@ export type CommerceConfig = {
   emailConfigured: boolean;
   sitePublicUrl: string;
   guideUrl: string;
+  earlyAccessLimit: number;
   configError: string;
 };
 
@@ -103,6 +104,14 @@ function resolveGuideUrl(sitePublicUrl: string, raw: string | undefined): string
   }
 }
 
+export function readEarlyAccessLimit(raw: string | undefined): number {
+  const trimmed = (raw ?? "44").trim();
+  if (!/^\d+$/.test(trimmed)) return 44;
+  const value = Number(trimmed);
+  if (!Number.isSafeInteger(value) || value < 1 || value > 100_000) return 44;
+  return value;
+}
+
 function readPrice(): { priceUsd: string; priceCents: number; error: string } {
   const raw = (process.env.PRODUCT_PRICE_USD || "4.00").trim();
   const cents = toCents(raw);
@@ -159,6 +168,7 @@ export function getConfig(): CommerceConfig {
     emailConfigured,
     sitePublicUrl,
     guideUrl,
+    earlyAccessLimit: readEarlyAccessLimit(process.env.EARLY_ACCESS_LIMIT),
     configError,
   };
   return cached;

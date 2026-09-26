@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, Volume2, VolumeX, X, Instagram } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
@@ -85,10 +85,26 @@ const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started wi
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
 const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
-const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get L Studio Pro", coverAlt: "L Studio Factory Pack product box" };
+const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get early access", coverAlt: "L Studio Factory Pack product box" };
 const visionDefault = { kicker: "05 / THE VISION", title: "I built the studio I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take the studio with you", body: "Creating shouldn't have to wait for a computer." }] };
 const faqDefault = { kicker: "07 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
-const finalCtaDefault = { kicker: "06 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea.", cta: "Get L Studio Pro" };
+const finalCtaDefault = { kicker: "06 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea.", cta: "Enter L-Studio" };
+const testerDefault = {
+  kicker: "EARLY ACCESS",
+  title: "Want to try L-Studio?",
+  body: "L-Studio is not officially launched yet. I am looking for 44 people who want to open it free, play, and send real feedback about what works and what still needs work. Leave your name and email, and a one-time download link will arrive by email.",
+  name: "Name",
+  email: "Email address",
+  consent: "I agree to receive L-Studio updates.",
+  submit: "I want to try it",
+  note: "Free access · Limited to 44 testers",
+  sending: "Sending...",
+  success: "You are in. Check your email for the download link and the user guide.",
+  already: "This email is already registered for Early Access. Check your inbox, including spam.",
+  full: "All 44 spots are taken. Thank you for wanting to try it.",
+  error: "We could not send the email right now. Try again in a few minutes.",
+  invalid: "That email address is not valid.",
+};
 const footerDefault = { tagline: "It's for analog people in a digital world." };
 
 const visionIcons = [Sparkles, Music2, ArrowDownLeft];
@@ -157,6 +173,109 @@ function FeatureMedia({ image, video, label }: { image?: string; video?: string;
 
 // Renders a headline as "lead words" + a line break + the last word in the accent color,
 // matching the site's existing typographic style (see h1 em / h2 em in index.css).
+type TesterCopy = typeof testerDefault;
+
+function commerceUrl(apiBase: string, path: string) {
+  const configured = (apiBase || import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
+  return `${configured}${path}`;
+}
+
+function EarlyAccessForm({ tester, apiBase, ready }: { tester: TesterCopy; apiBase: string; ready: boolean }) {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [consent, setConsent] = useState(false);
+  const [phase, setPhase] = useState<"idle" | "sending" | "success" | "already" | "full" | "error" | "invalid">("idle");
+
+  useEffect(() => {
+    if (!ready) return;
+    let cancelled = false;
+    fetch(commerceUrl(apiBase, "/api/early-access/status"))
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data: { remaining?: number } | null) => {
+        if (!cancelled && data && typeof data.remaining === "number" && data.remaining <= 0) setPhase("full");
+      })
+      .catch(() => undefined);
+    return () => {
+      cancelled = true;
+    };
+  }, [apiBase, ready]);
+
+  const message =
+    phase === "success"
+      ? tester.success
+      : phase === "already"
+        ? tester.already
+        : phase === "full"
+          ? tester.full
+          : phase === "error"
+            ? tester.error
+            : phase === "invalid"
+              ? tester.invalid
+              : "";
+  const locked = !ready || phase === "sending" || phase === "success" || phase === "full";
+
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (locked || !consent) return;
+    setPhase("sending");
+    try {
+      const response = await fetch(commerceUrl(apiBase, "/api/early-access"), {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email }),
+      });
+      const payload = (await response.json().catch(() => null)) as { error?: string; status?: string } | null;
+      if (response.status === 410 || payload?.error === "full") {
+        setPhase("full");
+        return;
+      }
+      if (response.status === 400 && payload?.error === "invalid_email") {
+        setPhase("invalid");
+        return;
+      }
+      if (response.ok && payload?.status === "already_registered") {
+        setPhase("already");
+        return;
+      }
+      if (response.ok && payload?.status === "registered") {
+        setPhase("success");
+        return;
+      }
+      setPhase("error");
+    } catch {
+      setPhase("error");
+    }
+  };
+
+  return (
+    <form className="tester-form" onSubmit={onSubmit}>
+      <label>
+        <span>{tester.name}</span>
+        <input type="text" name="name" autoComplete="name" placeholder={tester.name} maxLength={80} value={name} disabled={locked} onChange={(event) => setName(event.target.value)} />
+      </label>
+      <label>
+        <span>{tester.email}</span>
+        <input type="email" name="email" autoComplete="email" placeholder={tester.email} maxLength={254} required value={email} disabled={locked} onChange={(event) => setEmail(event.target.value)} />
+      </label>
+      <label className="tester-consent">
+        <input type="checkbox" required checked={consent} disabled={locked} onChange={(event) => setConsent(event.target.checked)} />
+        <span>{tester.consent}</span>
+      </label>
+      {message ? (
+        <p className={`tester-status${phase === "error" || phase === "invalid" ? " is-error" : ""}`} role="status">
+          {message}
+        </p>
+      ) : null}
+      {phase !== "success" && phase !== "full" ? (
+        <button className="button button--primary" type="submit" disabled={locked}>
+          {phase === "sending" ? tester.sending : tester.submit} <ArrowUpRight size={16} />
+        </button>
+      ) : null}
+      <small>{tester.note}</small>
+    </form>
+  );
+}
+
 function Headline({ text }: { text: string }) {
   const words = text.trim().split(" ").filter(Boolean);
   if (words.length < 2) return <em>{text}</em>;
@@ -173,7 +292,18 @@ function Headline({ text }: { text: string }) {
 export default function Home() {
   const { language, isRtl } = useLanguage();
   const [editableContent, setEditableContent] = useState<any>(null);
-  useEffect(() => { fetch(`${import.meta.env.BASE_URL}content.json`).then((response) => response.ok ? response.json() : null).then(setEditableContent).catch(() => undefined); }, []);
+  const [apiBase, setApiBase] = useState("");
+  const [contentReady, setContentReady] = useState(false);
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}content.json`)
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => {
+        setEditableContent(data);
+        setApiBase(typeof data?.commerce?.apiBaseUrl === "string" ? data.commerce.apiBaseUrl : "");
+        setContentReady(true);
+      })
+      .catch(() => setContentReady(true));
+  }, []);
 
   const copy = editableContent?.languages?.[language] ?? {};
   const nav = copy.nav ?? navDefault;
@@ -187,6 +317,7 @@ export default function Home() {
   const vision = copy.vision ?? visionDefault;
   const faq = copy.faq ?? faqDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
+  const tester = { ...testerDefault, ...(copy.tester ?? {}) };
   const footer = copy.footer ?? footerDefault;
   const chrome = chromeUi[language];
 
@@ -213,13 +344,14 @@ export default function Home() {
           </nav>
           <div className="header-actions">
             <LanguageSwitcher />
-            <a className="button button--small button--light" href="#features"><span>{nav.cta}</span><ArrowUpRight size={15} /></a>
+            <a className="button button--small button--light" href="#early-access"><span>{nav.cta}</span><ArrowUpRight size={15} /></a>
             <button className="menu-toggle" type="button" aria-label={mobileOpen ? chrome.close : chrome.open} onClick={() => setMobileOpen((value) => !value)}>{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
           </div>
         </div>
         {mobileOpen && (
           <nav className="mobile-nav" aria-label={nav.features}>
             <LanguageSwitcher />
+            <a href="#early-access" onClick={() => setMobileOpen(false)}>{nav.cta}</a>
             <a href="#features" onClick={() => setMobileOpen(false)}>{nav.features}</a>
             <a href="#architecture" onClick={() => setMobileOpen(false)}>{nav.architecture}</a>
             <a href="#vision" onClick={() => setMobileOpen(false)}>{nav.vision}</a>
@@ -382,7 +514,7 @@ export default function Home() {
             <div className="factory-pack-actions">
               <Link className="button button--primary" href="/factory-64">{factory.detailCta ?? "Explore Factory 64"} <ArrowUpRight size={17} /></Link>
               <Link className="button button--light" href="/factory-64/drums">{factory.drumsCta ?? "Drum kits"} <ArrowUpRight size={17} /></Link>
-              <Link className="button button--light" href="/buy">{factory.cta} <ArrowUpRight size={17} /></Link>
+              <a className="button button--light" href="#early-access">{factory.cta} <ArrowUpRight size={17} /></a>
             </div>
           </div>
         </section>
@@ -436,13 +568,26 @@ export default function Home() {
           </Accordion>
         </section>
 
+        {/* 8. Early Access */}
+        <section className="tester-section container" id="early-access">
+          <div className="tester-grid">
+            <div className="tester-copy">
+              <span className="kicker">{tester.kicker}</span>
+              <h2>{tester.title}</h2>
+              <p>{tester.body}</p>
+              <div className="tester-proof"><span>01</span><span>FREE ACCESS</span><span>LOCAL AUDIO</span></div>
+            </div>
+            <EarlyAccessForm tester={tester} apiBase={apiBase} ready={contentReady} />
+          </div>
+        </section>
+
         {/* 9. Final CTA */}
         <section className="final-cta container">
           <span className="kicker">{finalCta.kicker}</span>
           <h2><Headline text={finalCta.title} /></h2>
           <p>{finalCta.body}</p>
           <div className="teaser-video"><video controls playsInline preload="metadata" src={`${import.meta.env.BASE_URL}assets/teaser.mp4`} aria-label="L Studio Factory Pack teaser" /></div>
-          <Link className="button button--primary" href="/buy">{finalCta.cta} <ArrowUpRight size={17} /></Link>
+          <a className="button button--primary" href="#early-access">{finalCta.cta} <ArrowUpRight size={17} /></a>
         </section>
       </main>
 

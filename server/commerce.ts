@@ -1,7 +1,8 @@
+import { randomBytes } from "node:crypto";
 import express, { type NextFunction, type Request, type Response } from "express";
 import { apkStatus, ensureApk, openApk, resetApkForTests } from "./apk";
 import { getConfig, resetConfigForTests, TOKEN_TTL_MS, type CommerceConfig } from "./config";
-import { sendDownloadEmail, type EmailResult } from "./email";
+import { normalizeSignupEmail, sendDownloadEmail, sendEarlyAccessEmail, type EmailResult } from "./email";
 import {
   acceptCreatedOrder,
   createOrderAmountWasUnexpected,
@@ -69,6 +70,55 @@ function requestBase(req: Request, config: CommerceConfig): string {
   const host = req.get("host");
   if (!host) return "";
   return `${req.protocol}://${host}`;
+}
+
+function normalizePersonName(value: unknown): string {
+  if (typeof value !== "string") return "";
+  return value.replace(/[\u0000-\u001f\u007f]/g, " ").replace(/\s+/g, " ").trim().slice(0, 80);
+}
+
+function earlyAccessOrderId(): string {
+  return `ea${randomBytes(16).toString("hex")}`;
+}
+
+function earlyAccessCounts(config: CommerceConfig): { limit: number; taken: number; remaining: number } {
+  const limit = config.earlyAccessLimit;
+  const taken = getStore(config.dataDir).countEarlyAccess();
+  return { limit, taken, remaining: Math.max(0, limit - taken) };
+}
+
+async function deliverEarlyAccess(
+  config: CommerceConfig,
+  req: Request,
+  orderId: string,
+  email: string,
+): Promise<{ ok: true; downloadUrl: string } | { ok: false; error: "used" | "server_error" }> {
+  const store = getStore(config.dataDir);
+  const rawToken = mintDownloadToken();
+  const issued = store.issueToken({
+    orderId,
+    captureId: "early-access",
+    payerEmail: email,
+    amount: "0.00",
+    currency: "EARLY",
+    tokenHash: hashDownloadToken(rawToken, config.downloadTokenSecret),
+    sealedToken: sealDownloadToken(rawToken, config.downloadTokenSecret),
+    ttlMs: TOKEN_TTL_MS,
+  });
+  if (issued.result === "used") return { ok: false, error: "used" };
+  const token =
+    issued.result === "issued"
+      ? rawToken
+      : issued.sealedToken
+        ? unsealDownloadToken(issued.sealedToken, config.downloadTokenSecret)
+        : null;
+  if (!token) {
+    console.error(`early access token missing for order ${orderId}`);
+    return { ok: false, error: "server_error" };
+  }
+  const base = requestBase(req, config);
+  if (!base) return { ok: false, error: "server_error" };
+  return { ok: true, downloadUrl: `${base}/api/download/${token}` };
 }
 
 async function fulfillOrder(config: CommerceConfig, req: Request, orderId: string): Promise<Fulfillment> {
@@ -178,8 +228,108 @@ export function attachCommerceApi(app: express.Express) {
       apkStatus: apkStatus(),
       emailConfigured: config.emailConfigured,
       storage: "sqlite",
+      earlyAccessLimit: config.earlyAccessLimit,
+      earlyAccessRemaining: earlyAccessCounts(config).remaining,
     });
   });
+
+  app.get("/api/early-access/status", (req, res) => {
+    if (!allowRate(`early-status:${clientIp(req)}`, 120, 10 * 60 * 1000)) {
+      res.status(429).json({ error: "rate_limited" });
+      return;
+    }
+    res.json(earlyAccessCounts(getConfig()));
+  });
+
+  app.post(
+    "/api/early-access",
+    asyncRoute(async (req, res) => {
+      const config = getConfig();
+      const email = normalizeSignupEmail(req.body?.email);
+      const name = normalizePersonName(req.body?.name);
+      if (!email) {
+        res.status(400).json({ error: "invalid_email", message: "Enter a valid email address." });
+        return;
+      }
+      if (!allowRate(`early:${clientIp(req)}`, 30, 10 * 60 * 1000)) {
+        res.status(429).json({ error: "rate_limited", message: "Too many attempts. Try again in a few minutes." });
+        return;
+      }
+      if (!config.downloadTokenSecret || !config.emailConfigured) {
+        res.status(503).json({ error: "not_configured", message: "Early Access email is not available right now." });
+        return;
+      }
+      const store = getStore(config.dataDir);
+      const reserved = store.reserveEarlyAccess({
+        email,
+        name,
+        orderId: earlyAccessOrderId(),
+        limit: config.earlyAccessLimit,
+      });
+      if (reserved.result === "full") {
+        res.status(410).json({
+          error: "full",
+          message: `Early Access is full. All ${config.earlyAccessLimit} tester spots are taken.`,
+        });
+        return;
+      }
+      if (reserved.result === "exists" && reserved.emailStatus === "sent") {
+        res.status(200).json({
+          ok: true,
+          status: "already_registered",
+          message: "This email is already registered for Early Access. Check your inbox, including spam.",
+        });
+        return;
+      }
+      if (reserved.result === "exists" && !allowRate(`early-retry:${email}`, 3, 10 * 60 * 1000)) {
+        res.status(429).json({
+          error: "rate_limited",
+          status: "already_registered",
+          message: "This email is already registered. Wait a few minutes before asking for the download email again.",
+        });
+        return;
+      }
+      const delivered = await deliverEarlyAccess(config, req, reserved.orderId, email);
+      if (!delivered.ok) {
+        if (delivered.error === "used") {
+          store.setEarlyAccessEmailStatus(email, "sent");
+          res.status(200).json({
+            ok: true,
+            status: "already_registered",
+            message: "This email is already registered for Early Access.",
+          });
+          return;
+        }
+        res.status(500).json({ error: "server_error", message: "Early Access could not prepare a download link." });
+        return;
+      }
+      const emailResult = await sendEarlyAccessEmail(config, {
+        to: email,
+        downloadUrl: delivered.downloadUrl,
+        orderId: reserved.orderId,
+      });
+      store.setEarlyAccessEmailStatus(email, emailResult);
+      if (emailResult !== "sent") {
+        res.status(502).json({
+          ok: false,
+          error: "email_failed",
+          status: reserved.result === "created" ? "registered" : "already_registered",
+          message: "The download email could not be sent. Submit the same email again in a few minutes.",
+        });
+        return;
+      }
+      if (reserved.result === "exists") {
+        res.status(200).json({
+          ok: true,
+          status: "already_registered",
+          email: "sent",
+          message: "This email is already registered for Early Access. Check your inbox, including spam.",
+        });
+        return;
+      }
+      res.status(200).json({ ok: true, status: "registered", email: "sent" });
+    }),
+  );
 
   app.get("/api/paypal/config", (_req, res) => {
     const config = getConfig();
