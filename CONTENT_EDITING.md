@@ -35,7 +35,7 @@ Keep all four languages in sync. Home Factory Pack uses `languages.*.factoryPack
 
 ### L Studio Pro (`/buy`)
 
-Purchase copy lives under `languages.*.pro` (same keys in Hebrew, English, Russian, and Arabic). The short label is `languages.*.nav.pro`. The homepage does not show that link while Early Access is the only signup path. Online checkout is paused: `checkoutNote` tells visitors, in all four languages, that online payment is temporarily unavailable while a new payment provider is being connected. The buy page does not load PayPal. Do not put a download URL or PayPal secret in this file. Optional `commerce.apiBaseUrl` is the Railway origin (no trailing slash) so the GitHub Pages buy page can call checkout when payments return. Leave it empty when the page is served by Railway itself.
+Purchase copy lives under `languages.*.pro` (same keys in Hebrew, English, Russian, and Arabic). The short label is `languages.*.nav.pro`. The homepage does not show that link while Early Access is the only signup path. Online checkout is paused: `checkoutNote` tells visitors, in all four languages, that purchases are not available on this website right now. Do not name a payment provider in this file, and do not put a download URL or a payment secret here. Optional `commerce.apiBaseUrl` is the Railway origin (no trailing slash) so the GitHub Pages buy page can call checkout when payments return. Leave it empty when the page is served by Railway itself.
 
 
 ## Images
