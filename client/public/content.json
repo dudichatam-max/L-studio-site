@@ -431,10 +431,23 @@
             "mediaSize": "thumb"
           },
           {
+            "id": "style",
+            "title": "חלון סגנונות",
+            "body": [
+              "לחיצה ארוכה על Style פותחת חלון סגנונות מעל מסך התופים. הכותרת בחלון היא Random genre.",
+              "בוחרים ז׳אנר: רוק, טראנס, ראפ או טכנו. הבחירה משפיעה על אלגוריתם ה־Random במקצבי התופים."
+            ],
+            "tipBeginner": "לחצו לחיצה ארוכה על Style, בחרו ז׳אנר, ואז הקישו Random והאזינו.",
+            "tipAdvanced": "נסו את אותו קיט בשני ז׳אנרים. ההבדל נשמע במקצב, בלי לשנות BPM או Swing.",
+            "tag": "STYLE",
+            "media": "assets/guide/guide-style.jpg",
+            "mediaSize": "panel"
+          },
+          {
             "id": "random",
             "title": "אקראי לפי סגנון",
             "body": [
-              "לחיצה ארוכה על Style פותחת בחירת ז׳אנר אקראי: רוק, טראנס, ראפ או טכנו. הבחירה משפיעה על כפתור אקראי.",
+              "הז׳אנר שנבחר בחלון הסגנונות קובע את כיוון ה־Random: רוק, טראנס, ראפ או טכנו.",
               "האלגוריתם לא מדליק צעדים באקראי גמור. הוא בונה תבנית לפי כללים מוזיקליים של הסגנון שנבחר, על רשת הקצב בלבד (בלי לשנות BPM או Swing בגרסה הנוכחית).",
               "בגרסת החינם מתמלאים ערוצים 0 עד 3. ב־Pro מתמלאים כל שמונת הערוצים."
             ],
@@ -1412,10 +1425,23 @@
             "mediaSize": "thumb"
           },
           {
+            "id": "style",
+            "title": "Styles window",
+            "body": [
+              "A long press on Style opens a styles window over the drums screen. The window title is Random genre.",
+              "Pick a genre: Rock, Trance, Rap, or Techno. That choice affects the Random algorithm for drum rhythms."
+            ],
+            "tipBeginner": "Long-press Style, choose a genre, then tap Random and listen.",
+            "tipAdvanced": "Try the same kit in two genres. You hear the difference in the rhythm, without changing BPM or Swing.",
+            "tag": "STYLE",
+            "media": "assets/guide/guide-style.jpg",
+            "mediaSize": "panel"
+          },
+          {
             "id": "random",
             "title": "Random by style",
             "body": [
-              "Long-press Style to open Random genre: Rock, Trance, Rap, or Techno. The selection affects Random.",
+              "The genre chosen in the styles window sets the direction of Random: Rock, Trance, Rap, or Techno.",
               "The algorithm does not just light steps at random. It builds a pattern from musical rules for the chosen style, on the rhythm grid only (BPM and Swing stay as they are in the current version).",
               "On Free, channels 0 to 3 fill. On Pro, all eight channels fill."
             ],
@@ -2393,10 +2419,23 @@
             "mediaSize": "thumb"
           },
           {
+            "id": "style",
+            "title": "Окно стилей",
+            "body": [
+              "Долгое нажатие на Style открывает окно стилей поверх экрана барабанов. Заголовок окна: Random genre.",
+              "Выберите жанр: Rock, Trance, Rap или Techno. Выбор влияет на алгоритм Random в барабанных ритмах."
+            ],
+            "tipBeginner": "Зажмите Style, выберите жанр, затем нажмите Random и послушайте.",
+            "tipAdvanced": "Попробуйте один и тот же кит в двух жанрах. Разница слышна в ритме, без изменения BPM или Swing.",
+            "tag": "STYLE",
+            "media": "assets/guide/guide-style.jpg",
+            "mediaSize": "panel"
+          },
+          {
             "id": "random",
             "title": "Random по стилю",
             "body": [
-              "Долгое нажатие на Style открывает случайный жанр: Rock, Trance, Rap или Techno. Выбор влияет на Random.",
+              "Жанр из окна стилей задаёт направление Random: Rock, Trance, Rap или Techno.",
               "Алгоритм не просто зажигает шаги наугад. Он строит паттерн по музыкальным правилам выбранного стиля, только на сетке ритма (BPM и Swing в текущей версии не меняются).",
               "В Free заполняются каналы 0 до 3. В Pro заполняются все восемь каналов."
             ],
@@ -3374,10 +3413,23 @@
             "mediaSize": "thumb"
           },
           {
+            "id": "style",
+            "title": "نافذة الأساليب",
+            "body": [
+              "الضغط الطويل على Style يفتح نافذة أساليب فوق شاشة الطبول. عنوان النافذة هو Random genre.",
+              "اختر نوعاً: روك، ترانس، راب أو تكنو. الاختيار يؤثر على خوارزمية Random في إيقاعات الطبول."
+            ],
+            "tipBeginner": "اضغط مطوّلاً على Style، اختر نوعاً، ثم اضغط Random واستمع.",
+            "tipAdvanced": "جرّب الكيت نفسه في نوعين. يظهر الفرق في الإيقاع، من دون تغيير BPM أو Swing.",
+            "tag": "STYLE",
+            "media": "assets/guide/guide-style.jpg",
+            "mediaSize": "panel"
+          },
+          {
             "id": "random",
             "title": "عشوائي حسب الأسلوب",
             "body": [
-              "الضغط الطويل على Style يفتح اختيار النوع العشوائي: روك، ترانس، راب أو تكنو. الاختيار يؤثر على عشوائي.",
+              "النوع المختار في نافذة الأساليب يحدد اتجاه Random: روك، ترانس، راب أو تكنو.",
               "الخوارزمية لا تضيء الخطوات عشوائياً فقط. تبني نمطاً وفق قواعد موسيقية للأسلوب المختار، على شبكة الإيقاع فقط (دون تغيير BPM أو Swing في الإصدار الحالي).",
               "في النسخة المجانية تُملأ القنوات 0 إلى 3. في Pro تُملأ القنوات الثماني."
             ],
