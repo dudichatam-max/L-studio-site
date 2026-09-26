@@ -10,10 +10,10 @@ Place this build on the server yourself:
 
 | Field | Value |
 | --- | --- |
-| Tag | `website-pro-qa-welcomes-20260925` |
-| Commit | `7efbe7d` |
-| Size | 24223751 bytes (about 24 MB) |
-| SHA256 | `28f976838cd6bed8daa77ebe6a84dd534028bca368cf551c62d49e3af1bd4436` |
+| Tag | `website-pro-qa-tutorial-20260926e` |
+| Commit | `b129650` |
+| Size | 24468395 bytes (about 24 MB) |
+| SHA256 | `fa851fcefe0ad71a5abce86ed298b5a61f39d1bc8dcfe0b733fab5694edb6004` |
 
 The server refuses to serve a file whose SHA256 does not match. The default is the digest above. Set `APK_SHA256` only when you intentionally ship a newer approved file.
 
@@ -55,11 +55,11 @@ Unauthenticated `GET` of the private release returns 404, so Railway marks the A
 5. Generate the token and copy it once. It starts with `github_pat_`. GitHub will not show it again.
 6. Open Railway → this service → **Variables**. Leave `APK_PATH` empty so the URL is used. Add:
    - `APK_SOURCE_URL` — either form works:
-     - Browser download URL: `https://github.com/dudichatam-max/L-studio/releases/download/website-pro-qa-welcomes-20260925/L-Studio-website-release.apk`
-     - API asset URL (asset id `588219111`): `https://api.github.com/repos/dudichatam-max/L-studio/releases/assets/588219111`
+     - Browser download URL: `https://github.com/dudichatam-max/L-studio/releases/download/website-pro-qa-tutorial-20260926e/L-Studio-website-pro-qa-tutorial-20260926e.apk`
+     - API asset URL for this same release: `https://api.github.com/repos/dudichatam-max/L-studio/releases/assets/<asset-id>`
    - `APK_GITHUB_TOKEN` — paste the token value only. Do not prefix it with `Bearer` (the server adds that). Do not put the token in git, in the URL, or in a start command.
 7. Save. Railway redeploys. If it does not, trigger a redeploy from the service menu.
-8. Open `https://<railway-host>/api/health`. Expect `"apkStatus": "ready"`. The file the server stored must be SHA256 `28f976838cd6bed8daa77ebe6a84dd534028bca368cf551c62d49e3af1bd4436`. Leave `APK_SHA256` unset unless you intentionally replace that approved build.
+8. Open `https://<railway-host>/api/health`. Expect `"apkStatus": "ready"`. The file the server stored must be SHA256 `fa851fcefe0ad71a5abce86ed298b5a61f39d1bc8dcfe0b733fab5694edb6004`. Leave `APK_SHA256` unset unless you intentionally replace that approved build.
 
 When `APK_GITHUB_TOKEN` or, only if that is empty, `GITHUB_TOKEN` is set, the server sends `Authorization: Bearer <token>` and `Accept: application/octet-stream` to `github.com` and `api.github.com` only, then follows redirects. The API asset URL also sends `Accept: application/octet-stream`, which is what makes GitHub return the binary instead of JSON. The token is not sent to the release CDN, and neither the token nor the `Authorization` header is written to logs.
 
@@ -86,7 +86,7 @@ Set these in Railway → Variables. Names only; values stay in the dashboard. Se
 | `APK_SOURCE_URL` | one of path/url | https URL fetched at startup into `DATA_DIR`. Private GitHub browser download URL or `api.github.com` asset URL |
 | `APK_GITHUB_TOKEN` | with a private GitHub URL | Fine-grained PAT. Contents read-only on `dudichatam-max/L-studio` only. Never commit it |
 | `GITHUB_TOKEN` | fallback | Used for the APK fetch only when `APK_GITHUB_TOKEN` is empty. Prefer `APK_GITHUB_TOKEN` |
-| `APK_SHA256` | no | Override the approved digest `28f976838cd6bed8daa77ebe6a84dd534028bca368cf551c62d49e3af1bd4436` |
+| `APK_SHA256` | no | Override the approved digest `fa851fcefe0ad71a5abce86ed298b5a61f39d1bc8dcfe0b733fab5694edb6004` |
 | `DATA_DIR` | recommended | Default `./data`. Use `/data` with a volume |
 | `RESEND_API_KEY` | no | Resend email |
 | `RESEND_FROM` | with Resend | Verified from address |
