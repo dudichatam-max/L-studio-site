@@ -624,7 +624,7 @@ async function main() {
     delete process.env.APK_GITHUB_TOKEN;
     process.env.GITHUB_TOKEN = fallbackToken;
     process.env.APK_SOURCE_URL =
-      "https://github.com/dudichatam-max/L-studio/releases/download/website-pro-qa-welcomes-20260925/L-Studio-website-release.apk";
+      "https://github.com/dudichatam-max/L-studio/releases/download/website-pro-qa-tutorial-20260926e/L-Studio-website-pro-qa-tutorial-20260926e.apk";
     process.env.DATA_DIR = path.join(root, "gh-browser");
     globalThis.fetch = async (input, init) => {
       const hop = record(input, init);
