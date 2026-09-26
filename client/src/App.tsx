@@ -11,6 +11,7 @@ import Terms from "./pages/Terms";
 import Guide from "./pages/Guide";
 import Factory64 from "./pages/Factory64";
 import FactoryDrums from "./pages/FactoryDrums";
+import Exclusive from "./pages/Exclusive";
 import NotFound from "./pages/NotFound";
 import Buy from "./pages/Buy";
 
@@ -39,6 +40,7 @@ function Router() {
         <Route path="/buy">{() => <Buy mode="checkout" />}</Route>
         <Route path="/factory-64/drums" component={FactoryDrums} />
         <Route path="/factory-64" component={Factory64} />
+        <Route path="/exclusive" component={Exclusive} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

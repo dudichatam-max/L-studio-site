@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 
 const SUPPORT_EMAIL = "dudichatam@gmail.com";
 
@@ -326,6 +327,7 @@ export default function Terms() {
             <a href="/#architecture">{text.architecture}</a>
             <Link href="/guide">{text.guide}</Link>
             <Link href="/privacy">{text.privacy}</Link>
+            <Link className="nav-exclusive" href="/exclusive">{exclusiveNavLabel[language]}</Link>
             <span className="nav-current">{text.termsLabel}</span>
           </nav>
           <div className="header-actions">
@@ -426,6 +428,7 @@ export default function Terms() {
             <a href="/#features">{text.features}</a>
             <Link href="/guide">{text.guide}</Link>
             <Link href="/privacy">{text.privacy}</Link>
+            <Link className="nav-exclusive" href="/exclusive">{exclusiveNavLabel[language]}</Link>
             <span>{text.termsLabel}</span>
           </div>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>

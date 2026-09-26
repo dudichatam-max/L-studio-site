@@ -5,6 +5,7 @@ import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
+import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import proCopyJson from "@shared/pro-copy.json";
 
 const SUPPORT_EMAIL = "dudichatam@gmail.com";
@@ -120,6 +121,7 @@ export default function Buy({ mode }: { mode: "checkout" | "success" }) {
             <Link href="/guide">{copy.guide}</Link>
             <Link href="/privacy">{copy.privacy}</Link>
             <Link href="/terms">{copy.terms}</Link>
+            <Link className="nav-exclusive" href="/exclusive">{exclusiveNavLabel[language]}</Link>
             <span className="nav-current">{copy.nav}</span>
           </nav>
           <div className="header-actions">
@@ -204,6 +206,7 @@ export default function Buy({ mode }: { mode: "checkout" | "success" }) {
             <Link href="/guide">{copy.guide}</Link>
             <Link href="/privacy">{copy.privacy}</Link>
             <Link href="/terms">{copy.terms}</Link>
+            <Link className="nav-exclusive" href="/exclusive">{exclusiveNavLabel[language]}</Link>
             <span>{copy.nav}</span>
           </div>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>
