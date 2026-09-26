@@ -52,7 +52,7 @@ const KIT_STEM: Record<string, string> = {
 const emptyDrums = (language: Language): DrumsCopy => ({
   eyebrow: "L-STUDIO / FACTORY PACK / DRUMS",
   title: language === "he" ? "8 ערכות תופים." : language === "ru" ? "8 ударных наборов." : language === "ar" ? "8 حزم طبول." : "8 drum kits.",
-  titleEm: language === "he" ? "64 סגנונות." : language === "ru" ? "64 стиля." : language === "ar" ? "64 أسلوباً." : "64 styles.",
+  titleEm: language === "he" ? "8 סגנונות בכל ערכה." : language === "ru" ? "8 стилей в каждом." : language === "ar" ? "8 أساليب في كل حزمة." : "8 styles each.",
   intro: "",
   navLabel: language === "he" ? "ערכות תופים" : language === "ru" ? "Барабаны" : language === "ar" ? "الطبول" : "Drum kits",
   imageAlt: language === "he" ? "כרזת ערכת תופים" : language === "ru" ? "Постер ударного набора" : language === "ar" ? "ملصق حزمة الطبول" : "Drum kit poster",
@@ -71,7 +71,7 @@ const emptyChrome = (language: Language): ChromeCopy => ({
   privacy: language === "he" ? "פרטיות" : language === "ru" ? "Приватность" : language === "ar" ? "الخصوصية" : "Privacy",
   terms: language === "he" ? "תנאי שימוש" : language === "ru" ? "Условия" : language === "ar" ? "الشروط" : "Terms",
   presetsLabel: "Factory 64",
-  earlyAccessCta: language === "he" ? "לקבלת גישה מוקדמת" : language === "ru" ? "Получить ранний доступ" : language === "ar" ? "احصل على وصول مبكر" : "Get early access",
+  earlyAccessCta: language === "he" ? "לרכישת L Studio Pro" : language === "ru" ? "Купить L Studio Pro" : language === "ar" ? "اشترِ L Studio Pro" : "Get L Studio Pro",
   onThisPage: language === "he" ? "בעמוד הזה" : language === "ru" ? "На этой странице" : language === "ar" ? "في هذه الصفحة" : "On this page",
 });
 
@@ -172,9 +172,9 @@ export default function FactoryDrums() {
           </h1>
           {text.intro ? <p>{text.intro}</p> : null}
           <div className="factory64-hero-actions">
-            <a className="button button--primary" href="/#early-access">
+            <Link className="button button--primary" href="/buy">
               {chrome.earlyAccessCta}
-            </a>
+            </Link>
             <Link className="button button--light" href="/factory-64">
               {chrome.presetsLabel}
             </Link>
