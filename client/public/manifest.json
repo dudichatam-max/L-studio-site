@@ -1,7 +1,7 @@
 {
   "name": "L Studio",
   "short_name": "L Studio",
-  "description": "Microtonal music workstation for Android — real-time creation, local audio.",
+  "description": "Microtonal music workstation for Android: real-time creation, local audio.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
