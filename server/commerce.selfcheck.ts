@@ -156,15 +156,18 @@ async function main() {
     guideUrl: "https://l-studio.studio/guide",
     supportEmail: "dudichatam@gmail.com",
   });
-  assert(earlyMessage.subject === "L Studio Early Access: your free download", "early subject");
+  assert(earlyMessage.subject === "L Studio Early Access: your free tester download", "early subject");
   assert(!/paypal/i.test(earlyMessage.subject + earlyMessage.text + earlyMessage.html), "early email has no paypal");
+  assert(!/purchas|הרכישה/i.test(earlyMessage.subject + earlyMessage.text + earlyMessage.html), "early email is not a purchase receipt");
   assert(!earlyMessage.subject.includes("\u2014") && !earlyMessage.text.includes("\u2014") && !earlyMessage.html.includes("\u2014"), "early email has no em dash");
-  assert(earlyMessage.text.startsWith("תודה שנרשמת"), "early hebrew first");
-  assert(earlyMessage.text.includes("Thank you for joining L Studio Early Access"), "early english");
+  assert(earlyMessage.text.startsWith("זו הגישה המוקדמת הרשמית"), "early hebrew first");
+  assert(earlyMessage.text.includes("before the official launch"), "early launch framing");
+  assert(earlyMessage.text.includes("לפני ההשקה הרשמית"), "early hebrew launch framing");
   assert(earlyMessage.text.includes("https://buy.example/api/download/token"), "early text download url");
   assert(earlyMessage.text.includes("https://l-studio.studio/guide"), "early text guide url");
   assert(earlyMessage.text.includes("dudichatam@gmail.com"), "early feedback address");
-  assert(earlyMessage.text.includes("משוב אמיתי") && earlyMessage.text.includes("real feedback"), "early feedback ask");
+  assert(earlyMessage.text.includes("משוב אמיתי") && earlyMessage.text.includes("ביקורות"), "early hebrew feedback and reviews");
+  assert(earlyMessage.text.includes("real feedback and reviews"), "early english feedback and reviews");
   assert(earlyMessage.html.includes('lang="he"') && earlyMessage.html.includes('dir="rtl"'), "early hebrew direction");
   assert(earlyMessage.html.includes('lang="en"') && earlyMessage.html.includes('dir="ltr"'), "early english direction");
   assert(earlyMessage.html.includes("הורדת ה-APK החינמית"), "early hebrew download cta");
@@ -670,10 +673,11 @@ async function main() {
     assert(!retried.text.includes("/api/download/"), "retry does not return the apk url");
     assert(sentBodies.length === 2, "retry sends the download email");
     const mailed = JSON.parse(sentBodies[1]?.body || "{}") as { subject?: string; text?: string; html?: string; reply_to?: string };
-    assert(mailed.subject === "L Studio Early Access: your free download", "mailed subject");
+    assert(mailed.subject === "L Studio Early Access: your free tester download", "mailed subject");
     assert(mailed.reply_to === "dudichatam@gmail.com", "mailed reply-to");
     assert(mailed.text?.includes("https://l-studio.studio/guide"), "mailed guide");
-    assert(mailed.text?.includes("real feedback") && mailed.html?.includes("dudichatam@gmail.com"), "mailed feedback");
+    assert(mailed.text?.includes("real feedback and reviews") && mailed.text?.includes("before the official launch"), "mailed feedback");
+    assert(mailed.html?.includes("dudichatam@gmail.com") && !/paypal|purchas|הרכישה/i.test(sentBodies[1]?.body || ""), "mailed body is early access");
     assert(!/paypal/i.test(sentBodies[1]?.body || ""), "mailed body has no paypal");
     const token = mailed.text?.match(/\/api\/download\/([A-Za-z0-9_-]+)/)?.[1] || "";
     assert(token.length > 20, "mailed one-time token");

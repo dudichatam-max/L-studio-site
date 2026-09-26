@@ -195,14 +195,15 @@ export function buildEarlyAccessEmail(input: {
   const downloadHref = httpUrl(input.downloadUrl);
   const guideHref = httpUrl(input.guideUrl);
   const support = safeEmail(input.supportEmail);
-  const subject = "L Studio Early Access: your free download";
+  const subject = "L Studio Early Access: your free tester download";
   const downloadText = downloadHref || input.downloadUrl.trim();
   const guideText = guideHref || input.guideUrl.trim();
   const supportText = support || input.supportEmail.trim();
 
   const text = [
-    "תודה שנרשמת לגישה המוקדמת של L Studio.",
-    "ההורדה החינמית מוכנה.",
+    "זו הגישה המוקדמת הרשמית של L Studio.",
+    "הורדת בודקים חינמית, לפני ההשקה הרשמית.",
+    "ההורדה מוכנה.",
     "",
     "הקישור עובד פעם אחת ופג אחרי כשעה:",
     downloadText,
@@ -210,13 +211,14 @@ export function buildEarlyAccessEmail(input: {
     "מדריך למשתמש:",
     guideText,
     "",
-    `אחרי שתנסו את האפליקציה, שלחו משוב אמיתי וביקורת על האפליקציה אל ${supportText}.`,
+    `אחרי שתנסו את האפליקציה, שלחו משוב אמיתי וביקורות על האפליקציה אל ${supportText}.`,
     "הקובץ לשימוש אישי. אין לפרסם את הקישור.",
     "",
     "English",
     "",
-    "Thank you for joining L Studio Early Access.",
-    "Your free download is ready.",
+    "This is official L Studio Early Access.",
+    "A free tester download before the official launch.",
+    "Your download is ready.",
     "",
     "This link works once and expires in about one hour:",
     downloadText,
@@ -224,7 +226,7 @@ export function buildEarlyAccessEmail(input: {
     "User guide:",
     guideText,
     "",
-    `After you try the app, send real feedback and a review of the app to ${supportText}.`,
+    `After you try the app, send real feedback and reviews about the app to ${supportText}.`,
     "The file is for your personal use. Do not publish the link.",
   ].join("\n");
 
@@ -251,7 +253,7 @@ export function buildEarlyAccessEmail(input: {
 <table role="presentation" lang="he" dir="rtl" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0b0b0c" style="background-color:#0b0b0c;margin:0;padding:0;">
 <tr>
 <td style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#0b0b0c;">
-הקישור עובד פעם אחת ופג אחרי כשעה. אחרי הניסיון, שלחו משוב אמיתי.
+הורדת בודקים חינמית לפני ההשקה הרשמית. שלחו משוב אמיתי וביקורות.
 </td>
 </tr>
 <tr>
@@ -263,28 +265,28 @@ export function buildEarlyAccessEmail(input: {
 <tr>
 <td style="padding:28px 28px 8px;font-family:Heebo,Arial,Helvetica,sans-serif;color:#f2f1eb;">
 <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;letter-spacing:0.16em;color:#e3c565;">L STUDIO EARLY ACCESS</p>
-<h1 style="margin:16px 0 0;font-size:28px;line-height:1.25;font-weight:700;color:#f2f1eb;">הגישה המוקדמת החינמית מוכנה</h1>
-<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">תודה שנרשמת. ההורדה מוכנה. הקישור עובד פעם אחת ופג אחרי כשעה.</p>
+<h1 style="margin:16px 0 0;font-size:28px;line-height:1.25;font-weight:700;color:#f2f1eb;">גישה מוקדמת רשמית: הורדת בודקים חינמית</h1>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">זו הגישה המוקדמת של L Studio, לפני ההשקה הרשמית. ההורדה מוכנה. הקישור עובד פעם אחת ופג אחרי כשעה.</p>
 ${downloadButton}
 ${downloadPlain}
 <h2 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">מדריך למשתמש</h2>
 <p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#c8c6bf;">${guideLink}</p>
-<h2 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">נשמח למשוב אמיתי</h2>
-<p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">אחרי שתנסו את האפליקציה, שלחו משוב אמיתי וביקורת על האפליקציה אל ${supportHtml}.</p>
+<h2 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">נשמח למשוב אמיתי וביקורות</h2>
+<p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">אחרי שתנסו את האפליקציה, שלחו משוב אמיתי וביקורות על האפליקציה אל ${supportHtml}.</p>
 <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">הקובץ לשימוש אישי. אין לפרסם את הקישור.</p>
 </td>
 </tr>
 <tr>
 <td lang="en" dir="ltr" style="padding:8px 28px 28px;font-family:Arial,Helvetica,sans-serif;color:#f2f1eb;border-top:1px solid #2c2c30;">
 <p style="margin:20px 0 0;font-size:12px;line-height:1.4;letter-spacing:0.14em;color:#e3c565;">ENGLISH</p>
-<h2 style="margin:12px 0 0;font-size:22px;line-height:1.3;font-weight:700;color:#f2f1eb;">Your free Early Access download is ready</h2>
-<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">Thank you for joining L Studio Early Access. This link works once and expires in about one hour.</p>
+<h2 style="margin:12px 0 0;font-size:22px;line-height:1.3;font-weight:700;color:#f2f1eb;">Official Early Access: your free tester download</h2>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">This is a free tester download before the official launch. This link works once and expires in about one hour.</p>
 ${downloadButtonEn}
 ${downloadPlain}
 <h3 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">User guide</h3>
 <p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#c8c6bf;">${guideLinkEn}</p>
-<h3 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">Please send real feedback</h3>
-<p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">After you try the app, send real feedback and a review of the app to ${supportHtml}.</p>
+<h3 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">Please send real feedback and reviews</h3>
+<p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">After you try the app, send real feedback and reviews about the app to ${supportHtml}.</p>
 <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">The file is for your personal use. Do not publish the link.</p>
 </td>
 </tr>
