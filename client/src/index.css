@@ -662,7 +662,7 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
 .pro-includes { list-style: none; margin: 22px 0 0; padding: 0; }
 .pro-includes li { display: flex; align-items: flex-start; gap: 10px; padding: 12px 0; border-bottom: 1px solid rgba(242,241,235,.12); color: var(--paper); }
 .pro-includes svg { flex: 0 0 auto; margin-top: 3px; color: var(--acid); }
-.pro-paypal { min-height: 48px; margin-top: 18px; }
+.pro-card p.pro-paused { margin: 0; color: var(--paper); font-size: 18px; line-height: 1.65; }
 .pro-status { color: #aaa8a2; }
 .pro-status--error { color: #f0b4a2; }
 .pro-disclaimer { color: #8d8b84; font-size: 14px; line-height: 1.65; }

@@ -956,7 +956,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "רכישה חד-פעמית של אפליקציית L Studio Pro לאנדרואיד. כ-4.00 דולר.",
-        "body": "התשלום מתבצע ב-PayPal. אחרי שהשרת מאשר את התשלום מול PayPal, מקבלים קישור הורדה אישי לקובץ ה-APK. הקישור עובד פעם אחת ופג אחרי כשעה.",
+        "body": "L Studio Pro הוא קובץ APK לאנדרואיד ברכישה חד-פעמית. אחרי אישור התשלום מתקבל קישור הורדה אישי. הקישור עובד פעם אחת ופג אחרי כשעה.",
         "priceNote": "4.00 דולר · חד-פעמי",
         "includes": [
           "קובץ APK של L Studio Pro לאנדרואיד, כ־24MB",
@@ -965,7 +965,7 @@
           "Factory Pack נשאר בעמודים שלו",
           "Android 7.0 ומעלה (API 24), יעד API 36. התקנת APK ישירה, לא מחנות Play."
         ],
-        "checkoutNote": "התשלום רץ על שרת L Studio. אנחנו מאשרים את התשלום מול PayPal לפני יצירת הקישור.",
+        "checkoutNote": "התשלום המקוון אינו זמין זמנית, בזמן שאנחנו מחברים ספק תשלום חדש.",
         "loadingPayPal": "טוען את PayPal...",
         "paypalMissing": "תשלום PayPal עדיין לא מוגדר בשרת הזה.",
         "payError": "לא הצלחנו לאשר את התשלום. לא נוצר קישור הורדה. אם PayPal מציג חיוב, פנו לתמיכה עם מזהה ההזמנה.",
@@ -983,7 +983,7 @@
         "emailFailed": "לא הצלחנו לשלוח מייל. השתמשו בקישור ההורדה בעמוד הזה.",
         "missingSession": "אין הורדה טרייה בדפדפן הזה. אם כבר שילמתם, השתמשו בקישור מהמייל או פנו לתמיכה עם מזהה ההזמנה ב-PayPal.",
         "supportLabel": "תמיכה",
-        "disclaimer": "מוצר דיגיטלי נמסר מיד אחרי התשלום. אם ההורדה נכשלת, כתבו לתמיכה לפני שהקישור פג. טיוטת ההחזר נמצאת בתנאי השימוש.",
+        "disclaimer": "הקופה המקוונת מושהית. לשאלות על רכישה קודמת או על ההשהיה הזו, כתבו לתמיכה. טיוטת ההחזר נמצאת בתנאי השימוש.",
         "homeLink": "או לרכוש את L Studio Pro",
         "orderLabel": "הזמנת PayPal"
       }
@@ -1944,7 +1944,7 @@
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
         "lede": "A one-time purchase of the L Studio Pro Android app. About USD 4.00.",
-        "body": "Pay with PayPal. After the payment is confirmed on our server, you get a personal download link for the APK. The link works once and expires after one hour.",
+        "body": "L Studio Pro is a one-time Android APK. After payment is confirmed, you get a personal download link. The link works once and expires after one hour.",
         "priceNote": "USD 4.00 · one time",
         "includes": [
           "L Studio Pro APK for Android, about 24 MB",
@@ -1953,7 +1953,7 @@
           "Factory Pack stays on its own pages",
           "Android 7.0 or newer (API 24), target API 36. Direct APK install, not the Play Store."
         ],
-        "checkoutNote": "Checkout runs on the L Studio server. We confirm the payment with PayPal before we create your link.",
+        "checkoutNote": "Online payment is temporarily unavailable while a new payment provider is being connected.",
         "loadingPayPal": "Loading PayPal...",
         "paypalMissing": "PayPal checkout is not configured on this server yet.",
         "payError": "Payment could not be confirmed. You were not given a download link. If PayPal shows a charge, contact support with your order id.",
@@ -1971,7 +1971,7 @@
         "emailFailed": "We could not send email. Use the download link on this page.",
         "missingSession": "We do not see a fresh download on this browser. If you already paid, use the link in your email or contact support with your PayPal order id.",
         "supportLabel": "Support",
-        "disclaimer": "Digital goods are delivered right after payment. If the download fails, write to support before the link expires. See Terms for the refund draft.",
+        "disclaimer": "Online checkout is paused. For a past purchase or a question about this pause, write to support. The refund draft is in the Terms.",
         "homeLink": "Or buy L Studio Pro",
         "orderLabel": "PayPal order"
       }
@@ -2932,7 +2932,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "Разовая покупка приложения L Studio Pro для Android. Около 4.00 USD.",
-        "body": "Оплата через PayPal. После того как сервер подтвердит платёж у PayPal, вы получаете личную ссылку на APK. Ссылка срабатывает один раз и истекает примерно через час.",
+        "body": "L Studio Pro: разовая покупка APK для Android. После подтверждения оплаты вы получаете личную ссылку на скачивание. Ссылка срабатывает один раз и истекает примерно через час.",
         "priceNote": "4.00 USD · один раз",
         "includes": [
           "APK-файл L Studio Pro для Android, около 24 МБ",
@@ -2941,7 +2941,7 @@
           "Factory Pack остаётся на своих страницах",
           "Android 7.0 или новее (API 24), целевой API 36. Прямая установка APK, не из Play Store."
         ],
-        "checkoutNote": "Оплата идёт на сервере L Studio. Мы подтверждаем платёж у PayPal до создания ссылки.",
+        "checkoutNote": "Онлайн-оплата временно недоступна, пока мы подключаем нового поставщика платежей.",
         "loadingPayPal": "Загрузка PayPal...",
         "paypalMissing": "Оплата PayPal на этом сервере ещё не настроена.",
         "payError": "Платёж не подтверждён. Ссылка на скачивание не создана. Если PayPal показывает списание, напишите в поддержку и укажите номер заказа.",
@@ -2959,7 +2959,7 @@
         "emailFailed": "Не удалось отправить письмо. Используйте ссылку на этой странице.",
         "missingSession": "В этом браузере нет свежей загрузки. Если вы уже оплатили, откройте ссылку из письма или напишите в поддержку с номером заказа PayPal.",
         "supportLabel": "Поддержка",
-        "disclaimer": "Цифровой файл выдаётся сразу после оплаты. Если загрузка не удалась, напишите в поддержку до истечения ссылки. Черновик возврата есть в Условиях.",
+        "disclaimer": "Онлайн-оплата приостановлена. По вопросам о прошлой покупке или об этой паузе напишите в поддержку. Черновик возврата есть в Условиях.",
         "homeLink": "Или купить L Studio Pro",
         "orderLabel": "Заказ PayPal"
       }
@@ -3920,7 +3920,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "شراء لمرة واحدة لتطبيق L Studio Pro على أندرويد. حوالي 4.00 دولار.",
-        "body": "الدفع عبر PayPal. بعد أن يؤكد الخادم الدفع لدى PayPal، تحصل على رابط تنزيل شخصي لملف APK. يعمل الرابط مرة واحدة وينتهي بعد نحو ساعة.",
+        "body": "L Studio Pro ملف APK لأندرويد يُشترى لمرة واحدة. بعد تأكيد الدفع تحصل على رابط تنزيل شخصي. يعمل الرابط مرة واحدة وينتهي بعد نحو ساعة.",
         "priceNote": "4.00 دولار · مرة واحدة",
         "includes": [
           "ملف APK لتطبيق L Studio Pro على أندرويد، حوالي 24 ميغابايت",
@@ -3929,7 +3929,7 @@
           "يبقى Factory Pack في صفحاته",
           "أندرويد 7.0 أو أحدث (API 24)، الهدف API 36. تثبيت APK مباشر، وليس من متجر Play."
         ],
-        "checkoutNote": "يتم الدفع على خادم L Studio. نؤكد الدفع لدى PayPal قبل إنشاء الرابط.",
+        "checkoutNote": "الدفع عبر الإنترنت غير متاح مؤقتاً بينما نربط مزود دفع جديداً.",
         "loadingPayPal": "جارٍ تحميل PayPal...",
         "paypalMissing": "دفع PayPal غير مُعد على هذا الخادم بعد.",
         "payError": "تعذر تأكيد الدفع. لم يُنشأ رابط تنزيل. إذا أظهر PayPal خصماً، تواصل مع الدعم ومعرّف الطلب.",
@@ -3947,7 +3947,7 @@
         "emailFailed": "تعذر إرسال البريد. استخدم رابط التنزيل في هذه الصفحة.",
         "missingSession": "لا نرى تنزيلاً جديداً في هذا المتصفح. إذا دفعت بالفعل، استخدم الرابط في البريد أو تواصل مع الدعم ومعرّف طلب PayPal.",
         "supportLabel": "الدعم",
-        "disclaimer": "يُسلَّم الملف الرقمي فور الدفع. إذا فشل التنزيل، اكتب إلى الدعم قبل انتهاء الرابط. مسودة الاسترداد موجودة في الشروط.",
+        "disclaimer": "الدفع عبر الإنترنت متوقف مؤقتاً. للأسئلة عن شراء سابق أو عن هذا التوقف، اكتب إلى الدعم. مسودة الاسترداد موجودة في الشروط.",
         "homeLink": "أو شراء L Studio Pro",
         "orderLabel": "طلب PayPal"
       }
