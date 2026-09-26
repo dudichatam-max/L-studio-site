@@ -16,10 +16,12 @@
         "kicker": "זה לאנשים אנלוגיים בעולם דיגיטלי",
         "title": "מוזיקה לא צריכה להרגיש כמו עבודה.",
         "body": "L-Studio התחילה בכלל ממשהו אחר. רציתי לבנות מקלדת שבה אני יכול לקבוע בעצמי איזה תדר יהיה בכל קליד. משם זה התגלגל להקלטה, לופר, תופים, מיקרופון, פאד ועוד. היום כל הדברים האלה נמצאים בתוך הטלפון.",
+        "offer": "44 הראשונים מקבלים את גרסת ה־Pro בחינם, בלי הגבלה.",
+        "offerDetail": "גרסת Pro מלאה, בלי מגבלות דמו, לפני ההשקה הרשמית בתשלום.",
         "ctaPrimary": "להכיר את L-Studio",
         "ctaSecondary": "איך זה התחיל",
-        "stat1": "פחות מ-7MB",
-        "stat2": "Android",
+        "stat1": "כ־24MB",
+        "stat2": "Android 7.0+",
         "stat3": "ללא פרסומות"
       },
       "signalStrip": {
@@ -98,7 +100,7 @@
         "kicker": "L-STUDIO / FACTORY PACK",
         "lede": "הסאונד כבר מחכה לך.",
         "shortText": "8 עמודי פריסטים. 8 ערכות תופים. מוכן לנגן.",
-        "description": "עם המעבר ל־Pro מקבלים את Factory Pack המלא: 8 עמודי פריסטים לסינתיסייזר (64 קולות), ואחריהם 8 ערכות תופים מוכנות ב־8 סגנונות שונים. בוחרים, טוענים, ומתחילים לנגן.",
+        "description": "עם המעבר ל־Pro מקבלים את Factory Pack המלא: 8 עמודי פריסטים לסינתיסייזר (64 קולות), ואחריהם 8 ערכות תופים, 8 סגנונות בכל ערכה (64 סגנונות בסך הכול, לא 64 ערכות). בוחרים, טוענים, ומתחילים לנגן.",
         "cta": "לקבלת גישה מוקדמת",
         "detailCta": "לגלות את Factory 64",
         "coverAlt": "קופסת מוצר L Studio Factory Pack בשחור-לבן",
@@ -185,7 +187,7 @@
               "כן.",
               "מעבר לתכנות ידני של ה־Step Sequencer, L Studio כולל אקראי לפי סגנון (ז׳אנר אקראי).",
               "לחיצה ארוכה על Style בוחרת רוק, טראנס, ראפ או טכנו. הבחירה משפיעה על אקראי: המערכת בונה בסיס מוזיקלי לפי הסגנון, לא רק צעדים אקראיים.",
-              "בחינם מתמלאים ארבעה ערוצים. ב־Pro שמונה. אחר כך אפשר לערוך Pattern, BPM, Swing, עוצמות ומיקום בסטריאו.",
+              "בגרסת Pro הזו מתמלאים כל שמונת הערוצים. אחר כך אפשר לערוך Pattern, BPM, Swing, עוצמות ומיקום בסטריאו.",
               "ב־Pro יש גם שמונה ערכות תופים מוכנות, כולל Experimental עם שמונה ערוצים טעונים ומקצבים מוכנים."
             ]
           },
@@ -233,21 +235,29 @@
           }
         ]
       },
-      "tester": {
-        "kicker": "EARLY ACCESS",
-        "title": "רוצה לנסות את L-Studio?",
-        "body": "L-Studio עדיין מתפתחת. אני מחפש אנשים שרוצים לפתוח אותה, לשחק איתה ולספר לי מה עובד ומה עדיין צריך להשתפר. אם בא לך להיות חלק מהשלב הזה, השאר פרטים ואחזור אליך.",
-        "name": "שם",
-        "email": "כתובת מייל",
-        "consent": "אני מאשר/ת לקבל עדכונים על L-Studio.",
-        "submit": "אני רוצה לנסות",
-        "note": "גישה מוקדמת ללא תשלום · מספר המקומות מוגבל ל-44"
-      },
       "finalCta": {
         "kicker": "06 / YOUR SOUND",
         "title": "אולי הגיע הזמן למצוא את הצליל שלך.",
         "body": "אתה יכול להתחיל מסאונד אחד, מקצב, לופ או רעיון קטן. אתה לא באמת יודע מה ייצא עד שאתה מתחיל לשחק.",
         "cta": "להיכנס ל-L-Studio"
+      },
+      "tester": {
+        "kicker": "EARLY ACCESS",
+        "title": "רוצה לנסות את L-Studio?",
+        "body": "L-Studio עדיין לפני ההשקה הרשמית. אני מחפש 44 אנשים שרוצים לפתוח אותה בחינם, לנגן, ולשלוח משוב אמיתי על מה שעובד ומה עוד צריך להשתפר. השאירו שם ומייל, וקישור הורדה יגיע למייל. אפשר לפתוח אותו כמה פעמים במשך כ-24 שעות.",
+        "offer": "44 הראשונים מקבלים את גרסת ה־Pro בחינם, בלי הגבלה.",
+        "offerDetail": "גרסת Pro מלאה, בלי מגבלות דמו, לפני ההשקה הרשמית בתשלום.",
+        "name": "שם",
+        "email": "כתובת מייל",
+        "consent": "אני מאשר/ת לקבל עדכונים על L-Studio.",
+        "submit": "אני רוצה לנסות",
+        "note": "גישה חינמית · מספר המקומות מוגבל ל-44",
+        "sending": "שולחים...",
+        "success": "נרשמת. בדקו את המייל לקישור ההורדה ולמדריך, ואחרי שתנסו שלחו משוב אמיתי.",
+        "already": "המייל הזה כבר רשום לגישה המוקדמת. בדקו את תיבת הדואר, כולל ספאם.",
+        "full": "44 המקומות נתפסו. תודה שרציתם לנסות.",
+        "error": "לא הצלחנו לשלוח את המייל עכשיו. נסו שוב בעוד כמה דקות.",
+        "invalid": "כתובת המייל לא תקינה."
       },
       "footer": {
         "tagline": "זה לאנשים אנלוגיים בעולם דיגיטלי."
@@ -371,7 +381,7 @@
             "title": "בניית מקצב",
             "body": [
               "מערכת התופים מבוססת על תבניות של שישה עשר צעדים, עם כמה תבניות שאפשר לשמור ולהחליף ביניהן.",
-              "ב־Pro מגיעות שמונה ערכות תופים מוכנות ב־8 סגנונות (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
+              "ב־Pro מגיעות שמונה ערכות תופים. בכל ערכה 8 סגנונות, 64 סגנונות בסך הכול ולא 64 ערכות (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
               "רוב הערכות טוענות ארבעה ערוצים ומשאירות ארבעה פנויים לסאמפלים שלכם. Experimental טוען שמונה ערוצים עם מקצבים מוכנים כדי להדגים את יכולות המערכת."
             ],
             "tipBeginner": "התחילו מקיט מוכן, האזינו באוזניות, ואז שנו צעד אחד בכל פעם.",
@@ -449,7 +459,7 @@
             "body": [
               "הז׳אנר שנבחר בחלון הסגנונות קובע את כיוון ה־Random: רוק, טראנס, ראפ או טכנו.",
               "האלגוריתם לא מדליק צעדים באקראי גמור. הוא בונה תבנית לפי כללים מוזיקליים של הסגנון שנבחר, על רשת הקצב בלבד (בלי לשנות BPM או Swing בגרסה הנוכחית).",
-              "בגרסת החינם מתמלאים ערוצים 0 עד 3. ב־Pro מתמלאים כל שמונת הערוצים."
+              "בגרסת Pro הזו מתמלאים כל שמונת הערוצים."
             ],
             "tipBeginner": "בחרו ז׳אנר, לחצו אקראי, ואז ערכו רק את מה שלא מדויק.",
             "tipAdvanced": "שמרו תבנית שאהבתם לפני סיבוב אקראי נוסף, כדי להשוות כיוונים בלי לאבד גרוב טוב.",
@@ -562,7 +572,6 @@
         "presetsHeading": "פריסטים",
         "oneLineList": "BLACK WELL - סאבים · GOLD HAMMER - מכות · LIGHT KNIFE - לידים לטראנס · GRAY ENGINE - טכנו · LOW SNAKE - 808 / טראפ · SAW TEETH - מטאל · GOLD FOG - פדים · SPIKES - פלאקים",
         "storeBlurb": "L Studio Factory Pack - 8 עמודים, 64 קולות. Black Well לסאב ומשקל. Gold Hammer למכות. Light Knife ללידים בטראנס. Gray Engine ללולאות טכנו. Low Snake ל־808 וסלייד. Saw Teeth לריפי מטאל. Gold Fog לפדים. Spikes לפלאקים וסטאבים. מייבאים עמוד אחד בכל פעם מ־Preset. עם שם, מכוונים ומעוצבים לכלי עצמו - לא מומרים מסינתיסייזר אחר. בנוסף: 8 ערכות תופים ב־Pro, כולל Experimental עם 8 ערוצים טעונים.",
-        "earlyAccessCta": "לקבלת גישה מוקדמת",
         "pages": [
           {
             "id": "black-well",
@@ -887,16 +896,17 @@
         ],
         "listenNote": "תדרים נמוכים כמעט לא נשמעים ברמקולים של הטלפון. לחוויה מלאה השתמשו באוזניות או ברמקולים מתאימים.",
         "synthsHeading": "עמודי הפריסטים",
-        "synthsIntro": "שמונה עמודי פריסטים לסינתיסייזר. כל עמוד הוא משימה מוזיקלית אחת, שמונה קולות עם שם."
+        "synthsIntro": "שמונה עמודי פריסטים לסינתיסייזר. כל עמוד הוא משימה מוזיקלית אחת, שמונה קולות עם שם.",
+        "earlyAccessCta": "לקבלת גישה מוקדמת"
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
         "title": "8 ערכות תופים.",
-        "titleEm": "64 סגנונות.",
-        "intro": "8 ערכות שונות, בכל אחת 8 סגנונות תופים. מסאונד אקוסטי ומחוספס ועד מקצבים אלקטרוניים ו-Experimental. כל ערכה מביאה אופי אחר ל-L Studio Pro.",
+        "titleEm": "8 סגנונות בכל ערכה.",
+        "intro": "8 ערכות שונות, בכל אחת 8 סגנונות תופים. זה 64 סגנונות בסך הכול, לא 64 ערכות נפרדות. מסאונד אקוסטי ומחוספס ועד מקצבים אלקטרוניים ו-Experimental. כל ערכה מביאה אופי אחר ל-L Studio Pro.",
         "navLabel": "ערכות תופים",
         "imageAlt": "כרזת ערכת תופים",
-        "closingTitle": "8 ערכות. 64 סגנונות.",
+        "closingTitle": "8 ערכות. 8 סגנונות בכל אחת.",
         "closingBody": "מ-Boom-Bap אקוסטי, דרך Indie, Techno ו-Goa, ועד Experimental עם 8 ערוצים ומקצבים מובנים.",
         "closingLine": "L Studio Pro נותנת לך לבחור את הסאונד שמתאים לכיוון שלך ולהתחיל ליצור.",
         "kits": [
@@ -963,15 +973,16 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "רכישה חד-פעמית של אפליקציית L Studio Pro לאנדרואיד. כ-4.00 דולר.",
-        "body": "התשלום מתבצע ב-PayPal. אחרי שהשרת מאשר את התשלום מול PayPal, מקבלים קישור הורדה אישי לקובץ ה-APK. הקישור עובד פעם אחת ופג אחרי כשעה.",
+        "body": "L Studio Pro הוא קובץ APK לאנדרואיד ברכישה חד-פעמית. אחרי אישור התשלום מתקבל קישור הורדה אישי. הקישור עובד פעם אחת ופג אחרי כשעה.",
         "priceNote": "4.00 דולר · חד-פעמי",
         "includes": [
-          "קובץ APK של L Studio Pro לאנדרואיד, כ-24MB",
+          "קובץ APK של L Studio Pro לאנדרואיד, כ־24MB",
           "תשלום חד-פעמי, כ-4.00 דולר",
           "קישור הורדה אישי, לשימוש יחיד, לכשעה",
-          "Factory Pack נשאר בעמודים שלו"
+          "Factory Pack נשאר בעמודים שלו",
+          "Android 7.0 ומעלה (API 24), יעד API 36. התקנת APK ישירה, לא מחנות Play."
         ],
-        "checkoutNote": "התשלום רץ על שרת L Studio. אנחנו מאשרים את התשלום מול PayPal לפני יצירת הקישור.",
+        "checkoutNote": "התשלום המקוון אינו זמין זמנית, בזמן שאנחנו מחברים ספק תשלום חדש.",
         "loadingPayPal": "טוען את PayPal...",
         "paypalMissing": "תשלום PayPal עדיין לא מוגדר בשרת הזה.",
         "payError": "לא הצלחנו לאשר את התשלום. לא נוצר קישור הורדה. אם PayPal מציג חיוב, פנו לתמיכה עם מזהה ההזמנה.",
@@ -983,13 +994,13 @@
         "missingTitleEm": "בעמוד הזה.",
         "successBody": "הקישור הזה מוריד את L Studio Pro פעם אחת. הוא פג אחרי כשעה מהרכישה.",
         "downloadCta": "הורדת APK של L Studio Pro",
-        "installNote": "במכשיר אנדרואיד פותחים את הקובץ ומאשרים התקנה מהדפדפן אם המכשיר מבקש. זו התקנה ישירה של APK, לא דרך חנות האפליקציות.",
+        "installNote": "נדרש Android 7.0 ומעלה (API 24, יעד API 36). במכשיר פותחים את הקובץ ומאשרים התקנה מהדפדפן אם המכשיר מבקש. זו התקנה ישירה של APK, לא דרך חנות Play.",
         "emailSent": "עותק של הקישור נשלח אל {email}.",
         "emailSkipped": "שליחת מייל לא מוגדרת בשרת הזה, אז השאירו את העמוד פתוח עד שהקובץ יסיים לרדת.",
         "emailFailed": "לא הצלחנו לשלוח מייל. השתמשו בקישור ההורדה בעמוד הזה.",
         "missingSession": "אין הורדה טרייה בדפדפן הזה. אם כבר שילמתם, השתמשו בקישור מהמייל או פנו לתמיכה עם מזהה ההזמנה ב-PayPal.",
         "supportLabel": "תמיכה",
-        "disclaimer": "מוצר דיגיטלי נמסר מיד אחרי התשלום. אם ההורדה נכשלת, כתבו לתמיכה לפני שהקישור פג. טיוטת ההחזר נמצאת בתנאי השימוש.",
+        "disclaimer": "הקופה המקוונת מושהית. לשאלות על רכישה קודמת או על ההשהיה הזו, כתבו לתמיכה. טיוטת ההחזר נמצאת בתנאי השימוש.",
         "homeLink": "או לרכוש את L Studio Pro",
         "orderLabel": "הזמנת PayPal"
       }
@@ -1010,10 +1021,12 @@
         "kicker": "It's for analog people in a digital world",
         "title": "Music shouldn't feel like work.",
         "body": "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.",
+        "offer": "The first 44 get L Studio Pro free, with no limits.",
+        "offerDetail": "Full Pro, with no demo limits, before the official paid launch.",
         "ctaPrimary": "Meet L-Studio",
         "ctaSecondary": "How it started",
-        "stat1": "Under 7MB",
-        "stat2": "Android",
+        "stat1": "about 24 MB",
+        "stat2": "Android 7.0+",
         "stat3": "No ads"
       },
       "signalStrip": {
@@ -1092,7 +1105,7 @@
         "kicker": "L-STUDIO / FACTORY PACK",
         "lede": "The sound is already waiting for you.",
         "shortText": "8 preset pages. 8 drum kits. Ready to play.",
-        "description": "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 ready drum packs across 8 different styles. Pick a sound or a kit, load it, and start playing.",
+        "description": "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits). Pick a sound or a kit, load it, and start playing.",
         "cta": "Get early access",
         "detailCta": "Explore Factory 64",
         "coverAlt": "L Studio Factory Pack product box",
@@ -1179,7 +1192,7 @@
               "Yes.",
               "Beyond manual Step Sequencer programming, L Studio includes Random by style (Random genre).",
               "Long-press Style to choose Rock, Trance, Rap, or Techno. That selection affects Random: the system builds a musical base for the style, not only random steps.",
-              "On Free, four channels fill. On Pro, eight. After that you can edit the Pattern, BPM, Swing, levels, and stereo placement.",
+              "On this Pro build, all eight channels fill. After that you can edit the Pattern, BPM, Swing, levels, and stereo placement.",
               "Pro also unlocks eight ready drum packs, including Experimental with eight loaded channels and ready rhythms."
             ]
           },
@@ -1227,21 +1240,29 @@
           }
         ]
       },
-      "tester": {
-        "kicker": "EARLY ACCESS",
-        "title": "Want to try L-Studio?",
-        "body": "L-Studio is still evolving. I'm looking for people who want to open it, play with it, and tell me what works and what still needs improving. If you want to be part of this stage, leave your details and I'll get back to you.",
-        "name": "Name",
-        "email": "Email address",
-        "consent": "I agree to receive L-Studio updates.",
-        "submit": "I want to try it",
-        "note": "Free early access · Limited to 44 testers"
-      },
       "finalCta": {
         "kicker": "06 / YOUR SOUND",
         "title": "Maybe it's time to find your sound.",
         "body": "You can start from one sound, a beat, a loop, or a small idea. You never really know what will come out until you start playing.",
         "cta": "Enter L-Studio"
+      },
+      "tester": {
+        "kicker": "EARLY ACCESS",
+        "title": "Want to try L-Studio?",
+        "body": "L-Studio is not officially launched yet. I am looking for 44 people who want to open it free, play, and send real feedback about what works and what still needs work. Leave your name and email, and a download link will arrive by email. You can open it more than once for about 24 hours.",
+        "offer": "The first 44 get L Studio Pro free, with no limits.",
+        "offerDetail": "Full Pro, with no demo limits, before the official paid launch.",
+        "name": "Name",
+        "email": "Email address",
+        "consent": "I agree to receive L-Studio updates.",
+        "submit": "I want to try it",
+        "note": "Free access · Limited to 44 testers",
+        "sending": "Sending...",
+        "success": "You are in. Check your email for the download link and the user guide.",
+        "already": "This email is already registered for Early Access. Check your inbox, including spam.",
+        "full": "All 44 spots are taken. Thank you for wanting to try it.",
+        "error": "We could not send the email right now. Try again in a few minutes.",
+        "invalid": "That email address is not valid."
       },
       "footer": {
         "tagline": "It's for analog people in a digital world."
@@ -1365,7 +1386,7 @@
             "title": "Building a rhythm",
             "body": [
               "The drum system is pattern-based: sixteen steps per pattern, with several patterns you can save and switch between.",
-              "Pro includes eight ready drum packs across eight styles (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
+              "Pro includes eight drum kits. Each kit has eight styles, 64 styles in all, not 64 kits (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
               "Most packs load four channels and leave four free for your own samples. Experimental loads all eight channels with ready rhythms to demonstrate the system."
             ],
             "tipBeginner": "Start from a ready kit, listen on headphones, then change one step at a time.",
@@ -1443,7 +1464,7 @@
             "body": [
               "The genre chosen in the styles window sets the direction of Random: Rock, Trance, Rap, or Techno.",
               "The algorithm does not just light steps at random. It builds a pattern from musical rules for the chosen style, on the rhythm grid only (BPM and Swing stay as they are in the current version).",
-              "On Free, channels 0 to 3 fill. On Pro, all eight channels fill."
+              "On this Pro build, all eight channels fill."
             ],
             "tipBeginner": "Pick a genre, hit Random, then edit only what feels off.",
             "tipAdvanced": "Save a pattern you like before another Random pass, so you can compare directions without losing a good groove.",
@@ -1556,7 +1577,6 @@
         "presetsHeading": "Presets",
         "oneLineList": "BLACK WELL - subs · GOLD HAMMER - hits · LIGHT KNIFE - trance leads · GRAY ENGINE - techno · LOW SNAKE - 808 / trap · SAW TEETH - metal · GOLD FOG - pads · SPIKES - plucks",
         "storeBlurb": "L Studio Factory Pack - 8 pages, 64 voices. Black Well for sub and weight. Gold Hammer for hits. Light Knife for trance leads. Gray Engine for techno loops. Low Snake for 808 and slide. Saw Teeth for metal riffs. Gold Fog for pads. Spikes for plucks and stabs. Import one page at a time from Preset. Named, tuned, and voiced for the instrument - not converted from another synth. Plus: 8 Pro drum kits, including Experimental with 8 loaded channels.",
-        "earlyAccessCta": "Get early access",
         "pages": [
           {
             "id": "black-well",
@@ -1881,16 +1901,17 @@
         ],
         "listenNote": "Low frequencies are barely audible on phone speakers. For the full experience, use headphones or suitable speakers.",
         "synthsHeading": "Preset pages",
-        "synthsIntro": "Eight synth preset pages. Each page is one musical job, eight named voices."
+        "synthsIntro": "Eight synth preset pages. Each page is one musical job, eight named voices.",
+        "earlyAccessCta": "Get early access"
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
         "title": "8 drum kits.",
-        "titleEm": "64 styles.",
-        "intro": "8 different kits, each with 8 drum styles. From a rough acoustic sound to electronic rhythms and Experimental. Each kit brings a different character to L Studio Pro.",
+        "titleEm": "8 styles each.",
+        "intro": "8 different kits, each with 8 drum styles. That is 64 styles in all, not 64 separate kits. From a rough acoustic sound to electronic rhythms and Experimental. Each kit brings a different character to L Studio Pro.",
         "navLabel": "Drum kits",
         "imageAlt": "Drum kit poster",
-        "closingTitle": "8 kits. 64 styles.",
+        "closingTitle": "8 kits. 8 styles each.",
         "closingBody": "From acoustic Boom-Bap, through Indie, Techno, and Goa, to Experimental with 8 channels and built-in rhythms.",
         "closingLine": "L Studio Pro lets you choose the sound that fits your direction and start creating.",
         "kits": [
@@ -1957,15 +1978,16 @@
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
         "lede": "A one-time purchase of the L Studio Pro Android app. About USD 4.00.",
-        "body": "Pay with PayPal. After the payment is confirmed on our server, you get a personal download link for the APK. The link works once and expires after one hour.",
+        "body": "L Studio Pro is a one-time Android APK. After payment is confirmed, you get a personal download link. The link works once and expires after one hour.",
         "priceNote": "USD 4.00 · one time",
         "includes": [
           "L Studio Pro APK for Android, about 24 MB",
           "One-time payment, about USD 4.00",
           "Personal download link, single use, about 1 hour",
-          "Factory Pack stays on its own pages"
+          "Factory Pack stays on its own pages",
+          "Android 7.0 or newer (API 24), target API 36. Direct APK install, not the Play Store."
         ],
-        "checkoutNote": "Checkout runs on the L Studio server. We confirm the payment with PayPal before we create your link.",
+        "checkoutNote": "Online payment is temporarily unavailable while a new payment provider is being connected.",
         "loadingPayPal": "Loading PayPal...",
         "paypalMissing": "PayPal checkout is not configured on this server yet.",
         "payError": "Payment could not be confirmed. You were not given a download link. If PayPal shows a charge, contact support with your order id.",
@@ -1977,13 +1999,13 @@
         "missingTitleEm": "link here.",
         "successBody": "This link downloads L Studio Pro once. It expires about one hour after purchase.",
         "downloadCta": "Download L Studio Pro APK",
-        "installNote": "On Android, open the file and allow install from your browser if the device asks. This is a direct APK install, not a Play Store install.",
+        "installNote": "Requires Android 7.0 or newer (API 24, target API 36). On the device, open the file and allow install from your browser if it asks. This is a direct APK install, not a Play Store install.",
         "emailSent": "A copy of the link was sent to {email}.",
         "emailSkipped": "Email delivery is not set up on this server, so keep this page open until the file finishes downloading.",
         "emailFailed": "We could not send email. Use the download link on this page.",
         "missingSession": "We do not see a fresh download on this browser. If you already paid, use the link in your email or contact support with your PayPal order id.",
         "supportLabel": "Support",
-        "disclaimer": "Digital goods are delivered right after payment. If the download fails, write to support before the link expires. See Terms for the refund draft.",
+        "disclaimer": "Online checkout is paused. For a past purchase or a question about this pause, write to support. The refund draft is in the Terms.",
         "homeLink": "Or buy L Studio Pro",
         "orderLabel": "PayPal order"
       }
@@ -2004,10 +2026,12 @@
         "kicker": "Это для аналоговых людей в цифровом мире",
         "title": "Музыка не должна ощущаться как работа.",
         "body": "L-Studio вообще началась с другого. Я хотел сделать клавиатуру, в которой сам смогу задавать частоту каждой клавиши. Оттуда всё выросло в запись, лупер, барабаны, микрофон, пэд и многое другое. Сегодня всё это живёт внутри телефона.",
+        "offer": "Первые 44 получают L Studio Pro бесплатно, без ограничений.",
+        "offerDetail": "Полная версия Pro, без демо-ограничений, до официального платного запуска.",
         "ctaPrimary": "Познакомиться с L-Studio",
         "ctaSecondary": "Как всё началось",
-        "stat1": "Меньше 7 МБ",
-        "stat2": "Android",
+        "stat1": "около 24 МБ",
+        "stat2": "Android 7.0+",
         "stat3": "Без рекламы"
       },
       "signalStrip": {
@@ -2086,7 +2110,7 @@
         "kicker": "L-STUDIO / FACTORY PACK",
         "lede": "Звук уже ждёт вас.",
         "shortText": "8 страниц пресетов. 8 барабанных наборов. Готово к игре.",
-        "description": "С Pro открывается полный Factory Pack: 8 страниц пресетов синтезатора (64 голоса), затем 8 готовых барабанных наборов в 8 разных стилях. Выберите звук или кит, загрузите и играйте.",
+        "description": "С Pro открывается полный Factory Pack: 8 страниц пресетов синтезатора (64 голоса), затем 8 барабанных наборов, по 8 стилей в каждом (всего 64 стиля, не 64 наборов). Выберите звук или кит, загрузите и играйте.",
         "cta": "Ранний доступ",
         "detailCta": "Открыть Factory 64",
         "coverAlt": "Коробка продукта L Studio Factory Pack",
@@ -2173,7 +2197,7 @@
               "Да.",
               "Помимо ручного программирования Step Sequencer в L Studio есть Random по стилю (случайный жанр).",
               "Долгое нажатие на Style выбирает Rock, Trance, Rap или Techno. Этот выбор влияет на Random: система строит музыкальную основу под стиль, а не только случайные шаги.",
-              "В Free заполняются четыре канала. В Pro - восемь. Затем можно править Pattern, BPM, Swing, уровни и стереопозицию.",
+              "В этой сборке Pro заполняются все восемь каналов. Затем можно править Pattern, BPM, Swing, уровни и стереопозицию.",
               "Pro также открывает восемь готовых барабанных наборов, включая Experimental с восемью загруженными каналами и готовыми ритмами."
             ]
           },
@@ -2221,21 +2245,29 @@
           }
         ]
       },
-      "tester": {
-        "kicker": "РАННИЙ ДОСТУП",
-        "title": "Хочешь попробовать L-Studio?",
-        "body": "L-Studio всё ещё развивается. Я ищу людей, которые хотят открыть её, поиграть с ней и рассказать, что работает, а что ещё нужно улучшить. Если хочешь быть частью этого этапа, оставь данные, и я свяжусь с тобой.",
-        "name": "Имя",
-        "email": "Email",
-        "consent": "Я согласен получать обновления о L-Studio.",
-        "submit": "Хочу попробовать",
-        "note": "Бесплатный ранний доступ · Только 44 места"
-      },
       "finalCta": {
         "kicker": "06 / YOUR SOUND",
         "title": "Может, пора найти свой звук.",
         "body": "Можно начать с одного звука, ритма, лупа или маленькой идеи. Ты никогда не узнаешь, что получится, пока не начнёшь играть.",
         "cta": "Войти в L-Studio"
+      },
+      "tester": {
+        "kicker": "РАННИЙ ДОСТУП",
+        "title": "Хочешь попробовать L-Studio?",
+        "body": "L-Studio ещё не вышла официально. Я ищу 44 человека, которые хотят открыть её бесплатно, поиграть и прислать честный отзыв: что работает и что ещё нужно улучшить. Оставьте имя и почту, и ссылка на скачивание придёт на email. Её можно открыть несколько раз в течение примерно 24 часов.",
+        "offer": "Первые 44 получают L Studio Pro бесплатно, без ограничений.",
+        "offerDetail": "Полная версия Pro, без демо-ограничений, до официального платного запуска.",
+        "name": "Имя",
+        "email": "Email",
+        "consent": "Я согласен получать обновления о L-Studio.",
+        "submit": "Хочу попробовать",
+        "note": "Бесплатный доступ · Только 44 места",
+        "sending": "Отправляем...",
+        "success": "Вы в списке. Проверьте почту: там ссылка на скачивание и руководство.",
+        "already": "Эта почта уже зарегистрирована на ранний доступ. Проверьте входящие, включая спам.",
+        "full": "Все 44 места заняты. Спасибо, что хотели попробовать.",
+        "error": "Не удалось отправить письмо сейчас. Попробуйте снова через несколько минут.",
+        "invalid": "Этот адрес почты недействителен."
       },
       "footer": {
         "tagline": "Это для аналоговых людей в цифровом мире."
@@ -2359,7 +2391,7 @@
             "title": "Построение ритма",
             "body": [
               "Барабанная система построена на паттернах: шестнадцать шагов в каждом, несколько паттернов можно сохранять и переключать.",
-              "В Pro входят восемь готовых барабанных наборов в восьми стилях (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
+              "В Pro восемь барабанных наборов. В каждом наборе 8 стилей, всего 64 стиля, а не 64 наборов (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
               "Большинство наборов загружают четыре канала и оставляют четыре свободными для ваших сэмплов. Experimental загружает все восемь каналов с готовыми ритмами, чтобы показать возможности системы."
             ],
             "tipBeginner": "Начните с готового кита, слушайте в наушниках, затем меняйте по одному шагу.",
@@ -2437,7 +2469,7 @@
             "body": [
               "Жанр из окна стилей задаёт направление Random: Rock, Trance, Rap или Techno.",
               "Алгоритм не просто зажигает шаги наугад. Он строит паттерн по музыкальным правилам выбранного стиля, только на сетке ритма (BPM и Swing в текущей версии не меняются).",
-              "В Free заполняются каналы 0 до 3. В Pro заполняются все восемь каналов."
+              "В этой сборке Pro заполняются все восемь каналов."
             ],
             "tipBeginner": "Выберите жанр, нажмите Random, затем правьте только то, что режет слух.",
             "tipAdvanced": "Сохраните удачный паттерн перед новым Random, чтобы сравнить направления и не потерять хороший грув.",
@@ -2550,7 +2582,6 @@
         "presetsHeading": "Пресеты",
         "oneLineList": "BLACK WELL - сабы · GOLD HAMMER - удары · LIGHT KNIFE - транс-лиды · GRAY ENGINE - техно · LOW SNAKE - 808 / трэп · SAW TEETH - метал · GOLD FOG - пэды · SPIKES - плаки",
         "storeBlurb": "L Studio Factory Pack - 8 страниц, 64 голоса. Black Well для саба и веса. Gold Hammer для ударов. Light Knife для транс-лидов. Gray Engine для техно-лупов. Low Snake для 808 и слайда. Saw Teeth для метал-риффов. Gold Fog для пэдов. Spikes для плаков и стабов. Импортируй по одной странице из Preset. С именами, настроены и озвучены под этот инструмент - не конвертированы с другого синтезатора. Плюс: 8 барабанных наборов Pro, включая Experimental с 8 загруженными каналами.",
-        "earlyAccessCta": "Получить ранний доступ",
         "pages": [
           {
             "id": "black-well",
@@ -2875,16 +2906,17 @@
         ],
         "listenNote": "Низкие частоты почти не слышны в динамиках телефона. Для полного звучания используйте наушники или подходящие колонки.",
         "synthsHeading": "Страницы пресетов",
-        "synthsIntro": "Восемь страниц пресетов синтезатора. Каждая страница - одна музыкальная задача, восемь голосов с именами."
+        "synthsIntro": "Восемь страниц пресетов синтезатора. Каждая страница - одна музыкальная задача, восемь голосов с именами.",
+        "earlyAccessCta": "Получить ранний доступ"
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
         "title": "8 ударных наборов.",
-        "titleEm": "64 стиля.",
-        "intro": "8 разных наборов, в каждом по 8 стилей ударных. От грубого акустического звука до электронных ритмов и Experimental. Каждый набор приносит свой характер в L Studio Pro.",
+        "titleEm": "8 стилей в каждом.",
+        "intro": "8 разных наборов, в каждом по 8 стилей ударных. Это 64 стиля всего, а не 64 отдельных наборов. От грубого акустического звука до электронных ритмов и Experimental. Каждый набор приносит свой характер в L Studio Pro.",
         "navLabel": "Барабаны",
         "imageAlt": "Постер ударного набора",
-        "closingTitle": "8 наборов. 64 стиля.",
+        "closingTitle": "8 наборов. 8 стилей в каждом.",
         "closingBody": "От акустического Boom-Bap, через Indie, Techno и Goa, до Experimental с 8 каналами и встроенными ритмами.",
         "closingLine": "L Studio Pro дает вам выбрать звук, который подходит вашему направлению, и начать создавать.",
         "kits": [
@@ -2951,15 +2983,16 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "Разовая покупка приложения L Studio Pro для Android. Около 4.00 USD.",
-        "body": "Оплата через PayPal. После того как сервер подтвердит платёж у PayPal, вы получаете личную ссылку на APK. Ссылка срабатывает один раз и истекает примерно через час.",
+        "body": "L Studio Pro: разовая покупка APK для Android. После подтверждения оплаты вы получаете личную ссылку на скачивание. Ссылка срабатывает один раз и истекает примерно через час.",
         "priceNote": "4.00 USD · один раз",
         "includes": [
           "APK-файл L Studio Pro для Android, около 24 МБ",
           "Разовый платёж, около 4.00 USD",
           "Личная ссылка, одно использование, около 1 часа",
-          "Factory Pack остаётся на своих страницах"
+          "Factory Pack остаётся на своих страницах",
+          "Android 7.0 или новее (API 24), целевой API 36. Прямая установка APK, не из Play Store."
         ],
-        "checkoutNote": "Оплата идёт на сервере L Studio. Мы подтверждаем платёж у PayPal до создания ссылки.",
+        "checkoutNote": "Онлайн-оплата временно недоступна, пока мы подключаем нового поставщика платежей.",
         "loadingPayPal": "Загрузка PayPal...",
         "paypalMissing": "Оплата PayPal на этом сервере ещё не настроена.",
         "payError": "Платёж не подтверждён. Ссылка на скачивание не создана. Если PayPal показывает списание, напишите в поддержку и укажите номер заказа.",
@@ -2971,13 +3004,13 @@
         "missingTitleEm": "на странице.",
         "successBody": "Эта ссылка скачивает L Studio Pro один раз. Она истекает примерно через час после покупки.",
         "downloadCta": "Скачать APK L Studio Pro",
-        "installNote": "На Android откройте файл и разрешите установку из браузера, если устройство спросит. Это прямая установка APK, не через магазин приложений.",
+        "installNote": "Нужен Android 7.0 или новее (API 24, целевой API 36). На устройстве откройте файл и разрешите установку из браузера, если оно спросит. Это прямая установка APK, не через Play Store.",
         "emailSent": "Копия ссылки отправлена на {email}.",
         "emailSkipped": "Почта на этом сервере не настроена, поэтому не закрывайте страницу, пока файл не скачается.",
         "emailFailed": "Не удалось отправить письмо. Используйте ссылку на этой странице.",
         "missingSession": "В этом браузере нет свежей загрузки. Если вы уже оплатили, откройте ссылку из письма или напишите в поддержку с номером заказа PayPal.",
         "supportLabel": "Поддержка",
-        "disclaimer": "Цифровой файл выдаётся сразу после оплаты. Если загрузка не удалась, напишите в поддержку до истечения ссылки. Черновик возврата есть в Условиях.",
+        "disclaimer": "Онлайн-оплата приостановлена. По вопросам о прошлой покупке или об этой паузе напишите в поддержку. Черновик возврата есть в Условиях.",
         "homeLink": "Или купить L Studio Pro",
         "orderLabel": "Заказ PayPal"
       }
@@ -2998,10 +3031,12 @@
         "kicker": "هذا للأشخاص التناظريين في عالم رقمي",
         "title": "الموسيقى لا يجب أن تشعرك أنها عمل.",
         "body": "بدأت L-Studio من شيء آخر تماماً. أردت بناء لوحة مفاتيح يمكنني فيها تحديد تردد كل مفتاح بنفسي. من هناك تطور الأمر إلى التسجيل، اللوبر، الإيقاعات، الميكروفون، الـPad وغيرها. اليوم كل هذا موجود داخل الهاتف.",
+        "offer": "أول 44 شخصاً يحصلون على L Studio Pro مجاناً، بلا حدود.",
+        "offerDetail": "نسخة Pro كاملة، بلا قيود تجريبية، قبل الإطلاق الرسمي المدفوع.",
         "ctaPrimary": "تعرّف على L-Studio",
         "ctaSecondary": "كيف بدأ الأمر",
-        "stat1": "أقل من 7 ميغابايت",
-        "stat2": "Android",
+        "stat1": "حوالي 24 ميغابايت",
+        "stat2": "Android 7.0+",
         "stat3": "بلا إعلانات"
       },
       "signalStrip": {
@@ -3080,7 +3115,7 @@
         "kicker": "L-STUDIO / FACTORY PACK",
         "lede": "الصوت بانتظارك مسبقاً.",
         "shortText": "8 صفحات إعدادات. 8 حزم طبول. جاهزة للعزف.",
-        "description": "مع Pro تحصل على Factory Pack كاملاً: 8 صفحات إعدادات للسينث (64 صوتاً)، ثم 8 حزم طبول جاهزة عبر 8 أساليب مختلفة. اختر صوتاً أو كيتاً، حمّله، وابدأ العزف.",
+        "description": "مع Pro تحصل على Factory Pack كاملاً: 8 صفحات إعدادات للسينث (64 صوتاً)، ثم 8 حزم طبول، 8 أساليب في كل حزمة (64 أسلوباً في المجموع، وليس 64 حزمة). اختر صوتاً أو كيتاً، حمّله، وابدأ العزف.",
         "cta": "احصل على وصول مبكر",
         "detailCta": "استكشف Factory 64",
         "coverAlt": "علبة منتج L Studio Factory Pack بالأبيض والأسود",
@@ -3167,7 +3202,7 @@
               "نعم.",
               "إلى جانب برمجة Step Sequencer يدوياً، يتضمن L Studio عشوائياً حسب الأسلوب (نوع عشوائي).",
               "الضغط الطويل على Style يختار روك أو ترانس أو راب أو تكنو. هذا الاختيار يؤثر على عشوائي: يبني النظام أساساً موسيقياً للأسلوب، لا خطواتاً عشوائية فقط.",
-              "في المجاني تُملأ أربع قنوات. في Pro ثمانٍ. بعد ذلك يمكن تعديل Pattern وBPM وSwing والمستويات وموضع الستيريو.",
+              "في نسخة Pro هذه تُملأ القنوات الثماني. بعد ذلك يمكن تعديل Pattern وBPM وSwing والمستويات وموضع الستيريو.",
               "Pro يفتح أيضاً ثماني حزم طبول جاهزة، بما فيها Experimental بثماني قنوات محمّلة وإيقاعات جاهزة."
             ]
           },
@@ -3215,21 +3250,29 @@
           }
         ]
       },
-      "tester": {
-        "kicker": "وصول مبكر",
-        "title": "هل تريد تجربة L-Studio؟",
-        "body": "لا تزال L-Studio في تطور. أبحث عن أشخاص يريدون فتحها، اللعب بها، وإخباري بما يعمل وما يحتاج إلى تحسين. إن كنت تريد أن تكون جزءاً من هذه المرحلة، اترك بياناتك وسأعود إليك.",
-        "name": "الاسم",
-        "email": "البريد الإلكتروني",
-        "consent": "أوافق على تلقي تحديثات L-Studio.",
-        "submit": "أريد أن أجرب",
-        "note": "وصول مبكر مجاني · العدد محدود بـ44 مكاناً"
-      },
       "finalCta": {
         "kicker": "06 / YOUR SOUND",
         "title": "ربما حان الوقت لتجد صوتك.",
         "body": "يمكنك البدء من صوت واحد، إيقاع، لوب أو فكرة صغيرة. أنت لا تعرف حقاً ماذا سيخرج حتى تبدأ باللعب.",
         "cta": "ادخل إلى L-Studio"
+      },
+      "tester": {
+        "kicker": "وصول مبكر",
+        "title": "هل تريد تجربة L-Studio؟",
+        "body": "لم تُطلق L-Studio رسمياً بعد. أبحث عن 44 شخصاً يريدون فتحها مجاناً، العزف عليها، وإرسال ملاحظات حقيقية عما يعمل وعما ما زال يحتاج إلى تحسين. اترك اسمك وبريدك، وسيصلك رابط تنزيل عبر البريد. يمكن فتحه أكثر من مرة لمدة 24 ساعة تقريباً.",
+        "offer": "أول 44 شخصاً يحصلون على L Studio Pro مجاناً، بلا حدود.",
+        "offerDetail": "نسخة Pro كاملة، بلا قيود تجريبية، قبل الإطلاق الرسمي المدفوع.",
+        "name": "الاسم",
+        "email": "البريد الإلكتروني",
+        "consent": "أوافق على تلقي تحديثات L-Studio.",
+        "submit": "أريد أن أجرب",
+        "note": "وصول مجاني · العدد محدود بـ44 مكاناً",
+        "sending": "جارٍ الإرسال...",
+        "success": "تم تسجيلك. تحقق من بريدك لرابط التنزيل ودليل المستخدم.",
+        "already": "هذا البريد مسجل مسبقاً في الوصول المبكر. تحقق من صندوق الوارد، بما فيه البريد غير المرغوب.",
+        "full": "المقاعد الـ44 ممتلئة. شكراً لرغبتك في التجربة.",
+        "error": "تعذر إرسال البريد الآن. حاول مرة أخرى بعد بضع دقائق.",
+        "invalid": "عنوان البريد هذا غير صالح."
       },
       "footer": {
         "tagline": "هذا لأشخاص تناظريين في عالم رقمي."
@@ -3353,7 +3396,7 @@
             "title": "بناء إيقاع",
             "body": [
               "نظام الطبول مبني على أنماط من ستة عشر خطوة، مع عدة أنماط يمكن حفظها والتبديل بينها.",
-              "في Pro توجد ثماني حزم طبول جاهزة عبر ثمانية أساليب (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
+              "في Pro ثماني حزم طبول. في كل حزمة 8 أساليب، 64 أسلوباً في المجموع وليس 64 حزمة (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
               "معظم الحزم تحمّل أربع قنوات وتترك أربعاً فارغة لعيّناتك. Experimental تحمّل القنوات الثماني بإيقاعات جاهزة لإظهار قدرات النظام."
             ],
             "tipBeginner": "ابدأ بكيت جاهز، استمع بسماعات رأس، ثم غيّر خطوة واحدة في كل مرة.",
@@ -3431,7 +3474,7 @@
             "body": [
               "النوع المختار في نافذة الأساليب يحدد اتجاه Random: روك، ترانس، راب أو تكنو.",
               "الخوارزمية لا تضيء الخطوات عشوائياً فقط. تبني نمطاً وفق قواعد موسيقية للأسلوب المختار، على شبكة الإيقاع فقط (دون تغيير BPM أو Swing في الإصدار الحالي).",
-              "في النسخة المجانية تُملأ القنوات 0 إلى 3. في Pro تُملأ القنوات الثماني."
+              "في نسخة Pro هذه تُملأ القنوات الثماني."
             ],
             "tipBeginner": "اختر نوعاً، اضغط عشوائي، ثم عدّل فقط ما يبدو غير دقيق.",
             "tipAdvanced": "احفظ نمطاً أعجبك قبل دورة عشوائي جديدة، لتقارن الاتجاهات دون فقدان غروف جيد.",
@@ -3544,7 +3587,6 @@
         "presetsHeading": "إعدادات مسبقة",
         "oneLineList": "BLACK WELL - سابات · GOLD HAMMER - ضربات · LIGHT KNIFE - ليدز ترانس · GRAY ENGINE - تكنو · LOW SNAKE - 808 / تراب · SAW TEETH - ميتال · GOLD FOG - بادات · SPIKES - بلاكس",
         "storeBlurb": "L Studio Factory Pack - 8 صفحات، 64 صوتاً. Black Well للساب والوزن. Gold Hammer للضربات. Light Knife لليدز الترانس. Gray Engine لحلقات التكنو. Low Snake لـ808 والسلايد. Saw Teeth لريفات الميتال. Gold Fog للبادات. Spikes للبلاكس والطعَنات. استورد صفحة واحدة في كل مرة من Preset. مسماة ومضبوطة ومصوغة للآلة نفسها - لا محوّلة من سنث آخر. إضافةً: 8 حزم طبول في Pro، بما فيها Experimental بثماني قنوات محمّلة.",
-        "earlyAccessCta": "احصل على وصول مبكر",
         "pages": [
           {
             "id": "black-well",
@@ -3869,16 +3911,17 @@
         ],
         "listenNote": "الترددات المنخفضة تكاد لا تُسمع عبر سماعات الهاتف. لتجربة كاملة استخدم سماعات رأس أو مكبرات مناسبة.",
         "synthsHeading": "صفحات الإعدادات المسبقة",
-        "synthsIntro": "ثماني صفحات إعدادات للسينث. كل صفحة مهمة موسيقية واحدة، وثمانية أصوات بأسماء."
+        "synthsIntro": "ثماني صفحات إعدادات للسينث. كل صفحة مهمة موسيقية واحدة، وثمانية أصوات بأسماء.",
+        "earlyAccessCta": "احصل على وصول مبكر"
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
         "title": "8 حزم طبول.",
-        "titleEm": "64 أسلوباً.",
-        "intro": "8 حزم مختلفة، في كل واحدة 8 أساليب طبول. من صوت أكوستي خشن إلى إيقاعات إلكترونية وExperimental. كل حزمة تجلب طابعاً مختلفاً إلى L Studio Pro.",
+        "titleEm": "8 أساليب في كل حزمة.",
+        "intro": "8 حزم مختلفة، في كل واحدة 8 أساليب طبول. هذا 64 أسلوباً في المجموع، وليس 64 حزمة منفصلة. من صوت أكوستي خشن إلى إيقاعات إلكترونية وExperimental. كل حزمة تجلب طابعاً مختلفاً إلى L Studio Pro.",
         "navLabel": "الطبول",
         "imageAlt": "ملصق حزمة الطبول",
-        "closingTitle": "8 حزم. 64 أسلوباً.",
+        "closingTitle": "8 حزم. 8 أساليب في كل واحدة.",
         "closingBody": "من Boom-Bap أكوستي، مروراً بـ Indie وTechno وGoa، وصولاً إلى Experimental مع 8 قنوات وإيقاعات مدمجة.",
         "closingLine": "L Studio Pro تتيح لك اختيار الصوت الذي يناسب اتجاهك والبدء في الإنشاء.",
         "kits": [
@@ -3945,15 +3988,16 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "شراء لمرة واحدة لتطبيق L Studio Pro على أندرويد. حوالي 4.00 دولار.",
-        "body": "الدفع عبر PayPal. بعد أن يؤكد الخادم الدفع لدى PayPal، تحصل على رابط تنزيل شخصي لملف APK. يعمل الرابط مرة واحدة وينتهي بعد نحو ساعة.",
+        "body": "L Studio Pro ملف APK لأندرويد يُشترى لمرة واحدة. بعد تأكيد الدفع تحصل على رابط تنزيل شخصي. يعمل الرابط مرة واحدة وينتهي بعد نحو ساعة.",
         "priceNote": "4.00 دولار · مرة واحدة",
         "includes": [
           "ملف APK لتطبيق L Studio Pro على أندرويد، حوالي 24 ميغابايت",
           "دفع لمرة واحدة، حوالي 4.00 دولار",
           "رابط تنزيل شخصي، استخدام واحد، نحو ساعة",
-          "يبقى Factory Pack في صفحاته"
+          "يبقى Factory Pack في صفحاته",
+          "أندرويد 7.0 أو أحدث (API 24)، الهدف API 36. تثبيت APK مباشر، وليس من متجر Play."
         ],
-        "checkoutNote": "يتم الدفع على خادم L Studio. نؤكد الدفع لدى PayPal قبل إنشاء الرابط.",
+        "checkoutNote": "الدفع عبر الإنترنت غير متاح مؤقتاً بينما نربط مزود دفع جديداً.",
         "loadingPayPal": "جارٍ تحميل PayPal...",
         "paypalMissing": "دفع PayPal غير مُعد على هذا الخادم بعد.",
         "payError": "تعذر تأكيد الدفع. لم يُنشأ رابط تنزيل. إذا أظهر PayPal خصماً، تواصل مع الدعم ومعرّف الطلب.",
@@ -3965,13 +4009,13 @@
         "missingTitleEm": "في هذه الصفحة.",
         "successBody": "ينزّل هذا الرابط L Studio Pro مرة واحدة. ينتهي بعد نحو ساعة من الشراء.",
         "downloadCta": "تنزيل APK لـ L Studio Pro",
-        "installNote": "على أندرويد، افتح الملف واسمح بالتثبيت من المتصفح إذا طلب الجهاز ذلك. هذا تثبيت مباشر لملف APK، وليس من متجر التطبيقات.",
+        "installNote": "يتطلب أندرويد 7.0 أو أحدث (API 24، الهدف API 36). على الجهاز، افتح الملف واسمح بالتثبيت من المتصفح إذا طلب ذلك. هذا تثبيت مباشر لملف APK، وليس من متجر Play.",
         "emailSent": "أُرسلت نسخة من الرابط إلى {email}.",
         "emailSkipped": "إرسال البريد غير مُعد على هذا الخادم، فاترك الصفحة مفتوحة حتى يكتمل تنزيل الملف.",
         "emailFailed": "تعذر إرسال البريد. استخدم رابط التنزيل في هذه الصفحة.",
         "missingSession": "لا نرى تنزيلاً جديداً في هذا المتصفح. إذا دفعت بالفعل، استخدم الرابط في البريد أو تواصل مع الدعم ومعرّف طلب PayPal.",
         "supportLabel": "الدعم",
-        "disclaimer": "يُسلَّم الملف الرقمي فور الدفع. إذا فشل التنزيل، اكتب إلى الدعم قبل انتهاء الرابط. مسودة الاسترداد موجودة في الشروط.",
+        "disclaimer": "الدفع عبر الإنترنت متوقف مؤقتاً. للأسئلة عن شراء سابق أو عن هذا التوقف، اكتب إلى الدعم. مسودة الاسترداد موجودة في الشروط.",
         "homeLink": "أو شراء L Studio Pro",
         "orderLabel": "طلب PayPal"
       }

@@ -80,6 +80,8 @@ Set these in Railway → Variables. Names only; values stay in the dashboard. Se
 | `PRODUCT_PRICE_USD` | no | Default `4.00`. Server-side price. The browser cannot change it |
 | `PRODUCT_NAME` | no | Default `L Studio Pro` |
 | `SUPPORT_EMAIL` | no | Default `dudichatam@gmail.com` |
+| `SITE_PUBLIC_URL` | no | Marketing site linked from the download email. Default `https://l-studio.studio`. Leave unset in production |
+| `GUIDE_URL` | no | User guide in the download email. Default `https://l-studio.studio/guide`. A path such as `/guide` is joined to `SITE_PUBLIC_URL` |
 | `APK_PATH` | one of path/url | Absolute path of the private APK. Leave empty when using `APK_SOURCE_URL` |
 | `APK_SOURCE_URL` | one of path/url | https URL fetched at startup into `DATA_DIR`. Private GitHub browser download URL or `api.github.com` asset URL |
 | `APK_GITHUB_TOKEN` | with a private GitHub URL | Fine-grained PAT. Contents read-only on `dudichatam-max/L-studio` only. Never commit it |
@@ -96,6 +98,8 @@ Set these in Railway → Variables. Names only; values stay in the dashboard. Se
 | `VITE_API_BASE_URL` | Pages only | Baked into the GitHub Pages build if the buy page there should call Railway |
 
 If neither Resend nor SMTP is set, capture still returns the download URL on the success page and the log says email was skipped.
+
+The download email is HTML plus a plain-text fallback. It includes the one-time APK link and the user guide. `SITE_PUBLIC_URL` and `GUIDE_URL` already default to the live site, so Railway does not need them.
 
 `GET /api/paypal/config` returns the client id to the browser so the PayPal JS SDK can load. The secret never leaves the server.
 

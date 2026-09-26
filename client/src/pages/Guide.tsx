@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { fetchSiteContent } from "@/lib/siteContent";
 
 type GuideSection = {
   id: string;
@@ -72,7 +73,7 @@ export default function Guide() {
   useEffect(() => {
     let cancelled = false;
     setText(emptyCopy(language));
-    fetch(`${import.meta.env.BASE_URL}content.json`)
+    fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         const guide = data?.languages?.[language]?.guide as GuideCopy | undefined;

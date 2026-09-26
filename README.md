@@ -17,7 +17,7 @@ pnpm dev
 
 ## רכישת L Studio Pro (Railway)
 
-עמוד `/buy` מוכר את קובץ ה-APK של L Studio Pro בתשלום חד-פעמי (ברירת מחדל 4.00 דולר) דרך PayPal Sandbox או Live. האימות מתבצע רק בשרת. אחרי תשלום מאומת נוצר קישור הורדה חד-פעמי לשעה. קובץ ה-APK לא נכנס ל-git ולא נחשף בנתיב ציבורי קבוע.
+עמוד `/buy` מציג את L Studio Pro (ברירת מחדל 4.00 דולר, קובץ APK). התשלום המקוון מושהה: העמוד הציבורי לא טוען את PayPal ולא קורא ל-create-order או capture. נתיבי PayPal בשרת נשארים לניקוי מאוחר יותר. אחרי תשלום מאומת (כשהקופה תחזור) נוצר קישור הורדה חד-פעמי לשעה. קובץ ה-APK לא נכנס ל-git ולא נחשף בנתיב ציבורי קבוע.
 
 GitHub Pages נשאר אתר התדמית. הקופה וההורדה רצות על שירות Railway (`pnpm start`). מדריך מלא, כולל משתני סביבה, בדיקת Sandbox והנחת ה-APK הפרטי: [docs/PAYPAL_RAILWAY.md](docs/PAYPAL_RAILWAY.md).
 
@@ -33,7 +33,7 @@ pnpm check:commerce
 
 `PAYPAL_CLIENT_ID`, `PAYPAL_CLIENT_SECRET`, `PAYPAL_MODE` (`sandbox` או `live`, ברירת מחדל `sandbox`), `PUBLIC_BASE_URL`, `DOWNLOAD_TOKEN_SECRET`, `PRODUCT_PRICE_USD` (ברירת מחדל `4.00`), `PRODUCT_NAME`, `SUPPORT_EMAIL` (ברירת מחדל `dudichatam@gmail.com`).
 
-APK פרטי, אחת מהאפשרויות: `APK_PATH` (קובץ על דיסק, למשל volume ב-`/data`) או `APK_SOURCE_URL` (https שהשרת מוריד ל-`DATA_DIR` בעלייה). למאגר GitHub פרטי השאירו את הריפו פרטי והוסיפו `APK_GITHUB_TOKEN` (fine-grained PAT עם Contents לקריאה בלבד על `dudichatam-max/L-studio`). הצעדים מהטלפון והכתובות המדויקות: [docs/PAYPAL_RAILWAY.md](docs/PAYPAL_RAILWAY.md). `DATA_DIR` מומלץ `/data` עם Railway Volume. אופציונלי: `PAYPAL_WEBHOOK_ID`, `APK_SHA256`, `RESEND_API_KEY` + `RESEND_FROM`, או `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`. בלי ספק מייל, עמוד ההצלחה עדיין מציג את הקישור והלוג מציין שדילגנו על שליחת המייל.
+APK פרטי, אחת מהאפשרויות: `APK_PATH` (קובץ על דיסק, למשל volume ב-`/data`) או `APK_SOURCE_URL` (https שהשרת מוריד ל-`DATA_DIR` בעלייה). למאגר GitHub פרטי השאירו את הריפו פרטי והוסיפו `APK_GITHUB_TOKEN` (fine-grained PAT עם Contents לקריאה בלבד על `dudichatam-max/L-studio`). הצעדים מהטלפון והכתובות המדויקות: [docs/PAYPAL_RAILWAY.md](docs/PAYPAL_RAILWAY.md). `DATA_DIR` מומלץ `/data` עם Railway Volume. אופציונלי: `PAYPAL_WEBHOOK_ID`, `APK_SHA256`, `RESEND_API_KEY` + `RESEND_FROM`, או `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`. בלי ספק מייל, עמוד ההצלחה עדיין מציג את הקישור והלוג מציין שדילגנו על שליחת המייל. מייל ההורדה כולל גם קישור למדריך. `SITE_PUBLIC_URL` (ברירת מחדל `https://l-studio.studio`) ו-`GUIDE_URL` (ברירת מחדל `https://l-studio.studio/guide`) לא חייבים להיות מוגדרים ב-Railway.
 
 בריאות: `GET /api/health`. פורט: `PORT`. Node 22. דוגמה ריקה: `.env.example`.
 
@@ -60,6 +60,7 @@ pnpm build
 
 ## Early access tester form
 
-עמוד הבית כולל טופס הרשמה באנגלית כברירת מחדל לקבלת גישה מוקדמת חינמית ל־L Studio. הטופס אוסף שם, כתובת מייל ואישור לקבלת עדכונים, ושולח את הפרטים ל־`dudichatam@gmail.com` באמצעות FormSubmit. בשליחת הטופס הראשונה FormSubmit עשוי לשלוח הודעת אימות לכתובת היעד; יש לאשר אותה כדי להפעיל את קבלת הפניות.
+עמוד הבית כולל טופס גישה מוקדמת חינמית (שם ומייל) ב־`#early-access`. השליחה היא JSON אל `POST /api/early-access` בשרת Railway (`commerce.apiBaseUrl`), לא FormSubmit.
 
-הטופס מציג 44 מקומות בלבד, אך מגבלה גלובלית קשיחה של 44 נרשמים דורשת backend או מערכת רשומות כמו Google Sheets. בשלב זה ניתן לסגור את הטופס ידנית לאחר קבלת 44 פניות.
+השרת שומר עד 44 כתובות ייחודיות ב־SQLite תחת `DATA_DIR` (ברירת מחדל `EARLY_ACCESS_LIMIT=44`). נרשם חדש מקבל במייל קישור APK חד-פעמי וקישור למדריך, עם בקשה לשלוח משוב אמיתי אל dudichatam@gmail.com. מייל שכבר רשום לא תופס מקום נוסף. הנרשם ה־45 נדחה.
+

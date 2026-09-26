@@ -231,7 +231,7 @@ export function ensureApk(config: CommerceConfig): Promise<void> {
   return pending;
 }
 
-export async function openApk(config: CommerceConfig): Promise<{ stream: fs.ReadStream; size: number } | null> {
+async function currentApk(config: CommerceConfig): Promise<{ filePath: string; size: number } | null> {
   await ensureApk(config);
   if (state.status !== "ready" || !state.filePath || state.size == null) return null;
   let stat: fs.Stats;
@@ -246,5 +246,26 @@ export async function openApk(config: CommerceConfig): Promise<{ stream: fs.Read
     await ensureApk(config);
     if (state.status !== "ready" || !state.filePath || state.size == null) return null;
   }
-  return { stream: fs.createReadStream(state.filePath), size: state.size };
+  return { filePath: state.filePath, size: state.size };
+}
+
+export async function apkByteLength(config: CommerceConfig): Promise<number | null> {
+  const file = await currentApk(config);
+  return file?.size ?? null;
+}
+
+export async function openApk(
+  config: CommerceConfig,
+  range?: { start: number; end: number },
+): Promise<{ stream: fs.ReadStream; size: number; total: number } | null> {
+  const file = await currentApk(config);
+  if (!file || file.size <= 0) return null;
+  const start = range?.start ?? 0;
+  const end = range?.end ?? file.size - 1;
+  if (start < 0 || end < start || end >= file.size) return null;
+  return {
+    stream: fs.createReadStream(file.filePath, { start, end }),
+    size: end - start + 1,
+    total: file.size,
+  };
 }

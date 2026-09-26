@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { fetchSiteContent } from "@/lib/siteContent";
 
 type FactoryPreset = { name: string; blurb: string };
 type FactoryPage = {
@@ -150,7 +151,7 @@ export default function Factory64() {
     let cancelled = false;
     setText(emptyCopy(language));
     setDrumsLabel(drumsNavFallback[language]);
-    fetch(`${import.meta.env.BASE_URL}content.json`)
+    fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         const block = data?.languages?.[language]?.factory64 as Factory64Copy | undefined;

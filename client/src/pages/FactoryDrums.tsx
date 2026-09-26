@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { fetchSiteContent } from "@/lib/siteContent";
 
 type DrumKit = {
   id: string;
@@ -52,7 +53,7 @@ const KIT_STEM: Record<string, string> = {
 const emptyDrums = (language: Language): DrumsCopy => ({
   eyebrow: "L-STUDIO / FACTORY PACK / DRUMS",
   title: language === "he" ? "8 ערכות תופים." : language === "ru" ? "8 ударных наборов." : language === "ar" ? "8 حزم طبول." : "8 drum kits.",
-  titleEm: language === "he" ? "64 סגנונות." : language === "ru" ? "64 стиля." : language === "ar" ? "64 أسلوباً." : "64 styles.",
+  titleEm: language === "he" ? "8 סגנונות בכל ערכה." : language === "ru" ? "8 стилей в каждом." : language === "ar" ? "8 أساليب في كل حزمة." : "8 styles each.",
   intro: "",
   navLabel: language === "he" ? "ערכות תופים" : language === "ru" ? "Барабаны" : language === "ar" ? "الطبول" : "Drum kits",
   imageAlt: language === "he" ? "כרזת ערכת תופים" : language === "ru" ? "Постер ударного набора" : language === "ar" ? "ملصق حزمة الطبول" : "Drum kit poster",
@@ -97,7 +98,7 @@ export default function FactoryDrums() {
     let cancelled = false;
     setText(emptyDrums(language));
     setChrome(emptyChrome(language));
-    fetch(`${import.meta.env.BASE_URL}content.json`)
+    fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         if (cancelled || !data) return;

@@ -6,6 +6,9 @@ export const APPROVED_APK_SHA256 = "28f976838cd6bed8daa77ebe6a84dd534028bca368cf
 export const APPROVED_APK_BYTES = 24223751;
 export const PRODUCT_CODE = "l-studio-pro";
 export const TOKEN_TTL_MS = 60 * 60 * 1000;
+/** Early Access links survive Chrome's failed first save and a few retries. */
+export const EARLY_ACCESS_TOKEN_TTL_MS = 24 * 60 * 60 * 1000;
+export const EARLY_ACCESS_DOWNLOAD_LIMIT = 10;
 
 export type PaypalMode = "sandbox" | "live";
 
@@ -33,6 +36,9 @@ export type CommerceConfig = {
   smtpPass: string;
   smtpFrom: string;
   emailConfigured: boolean;
+  sitePublicUrl: string;
+  guideUrl: string;
+  earlyAccessLimit: number;
   configError: string;
 };
 
@@ -72,6 +78,43 @@ export function centsToUsd(cents: number): string {
   return `${Math.floor(cents / 100)}.${String(cents % 100).padStart(2, "0")}`;
 }
 
+const DEFAULT_SITE_PUBLIC_URL = "https://l-studio.studio";
+
+function resolveSitePublicUrl(raw: string | undefined): string {
+  const trimmed = (raw || "").trim();
+  if (!trimmed) return DEFAULT_SITE_PUBLIC_URL;
+  try {
+    const url = new URL(trimmed);
+    if (url.protocol !== "http:" && url.protocol !== "https:") return DEFAULT_SITE_PUBLIC_URL;
+    const path = url.pathname === "/" ? "" : url.pathname.replace(/\/+$/, "");
+    return `${url.origin}${path}`;
+  } catch {
+    return DEFAULT_SITE_PUBLIC_URL;
+  }
+}
+
+function resolveGuideUrl(sitePublicUrl: string, raw: string | undefined): string {
+  const fallback = `${sitePublicUrl}/guide`;
+  const trimmed = (raw || "").trim();
+  if (!trimmed) return fallback;
+  if (trimmed.startsWith("/")) return `${sitePublicUrl}${trimmed}`.replace(/\/+$/, "");
+  try {
+    const url = new URL(trimmed);
+    if (url.protocol !== "http:" && url.protocol !== "https:") return fallback;
+    return url.href.replace(/\/+$/, "");
+  } catch {
+    return fallback;
+  }
+}
+
+export function readEarlyAccessLimit(raw: string | undefined): number {
+  const trimmed = (raw ?? "44").trim();
+  if (!/^\d+$/.test(trimmed)) return 44;
+  const value = Number(trimmed);
+  if (!Number.isSafeInteger(value) || value < 1 || value > 100_000) return 44;
+  return value;
+}
+
 function readPrice(): { priceUsd: string; priceCents: number; error: string } {
   const raw = (process.env.PRODUCT_PRICE_USD || "4.00").trim();
   const cents = toCents(raw);
@@ -96,6 +139,8 @@ export function getConfig(): CommerceConfig {
   const smtpUser = (process.env.SMTP_USER || "").trim();
   const smtpPass = process.env.SMTP_PASS || "";
   const emailConfigured = Boolean((resendApiKey && resendFrom) || (smtpHost && smtpFrom));
+  const sitePublicUrl = resolveSitePublicUrl(process.env.SITE_PUBLIC_URL);
+  const guideUrl = resolveGuideUrl(sitePublicUrl, process.env.GUIDE_URL);
   let configError = price.error;
   if (modeRaw !== "sandbox" && modeRaw !== "live") {
     configError = configError || "PAYPAL_MODE must be sandbox or live";
@@ -124,6 +169,9 @@ export function getConfig(): CommerceConfig {
     smtpPass,
     smtpFrom,
     emailConfigured,
+    sitePublicUrl,
+    guideUrl,
+    earlyAccessLimit: readEarlyAccessLimit(process.env.EARLY_ACCESS_LIMIT),
     configError,
   };
   return cached;
