@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ChevronDown } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -24,6 +24,7 @@ type ExclusiveCopy = {
   imageAlt: string;
   comingSoon: string;
   stylesHeading: string;
+  demoLabel: string;
   packs: ExclusivePack[];
 };
 
@@ -45,6 +46,20 @@ const PACK_STEM: Record<string, string> = {
   "victory-peak": "10-victory-peak",
   "healing-journey": "11-healing-journey",
 };
+
+/** YouTube Shorts for a single style. Style names stay English in every language. */
+const STYLE_DEMOS: Record<string, string> = {
+  "victory-peak::Bone March": "XvFuS4FA6ho",
+  "healing-journey::Deep Roots": "CS5ortNiA3o",
+};
+
+function styleDemoVideoId(packId: string, style: string) {
+  return STYLE_DEMOS[`${packId}::${style}`];
+}
+
+function youtubeEmbedUrl(videoId: string) {
+  return `https://www.youtube.com/embed/${videoId}`;
+}
 
 const FALLBACK_PACKS: ExclusivePack[] = [
   {
@@ -93,6 +108,7 @@ const emptyExclusive = (language: Language): ExclusiveCopy => ({
           : "Exclusive drum pack poster",
   comingSoon: language === "he" ? "בקרוב" : language === "ru" ? "Скоро" : language === "ar" ? "قريباً" : "Coming soon",
   stylesHeading: language === "he" ? "סגנונות" : language === "ru" ? "Стили" : language === "ar" ? "الأساليب" : "Styles",
+  demoLabel: language === "he" ? "סרטון הדגמה" : language === "ru" ? "Демо-видео" : language === "ar" ? "فيديو العرض" : "Demo video",
   packs: FALLBACK_PACKS,
 });
 
@@ -108,6 +124,67 @@ const emptyChrome = (language: Language): ChromeCopy => ({
   drumsLabel: language === "he" ? "ערכות תופים" : language === "ru" ? "Барабаны" : language === "ar" ? "الطبول" : "Drum kits",
   onThisPage: language === "he" ? "בעמוד הזה" : language === "ru" ? "На этой странице" : language === "ar" ? "في هذه الصفحة" : "On this page",
 });
+
+function PackStyles({ packId, styles, demoLabel }: { packId: string; styles: string[]; demoLabel: string }) {
+  const [openStyle, setOpenStyle] = useState<string | null>(null);
+  const openVideoId = openStyle ? styleDemoVideoId(packId, openStyle) : undefined;
+  const panelId = `exclusive-demo-${packId}`;
+
+  return (
+    <>
+      <ul className="exclusive-styles">
+        {styles.map((style) => {
+          const videoId = styleDemoVideoId(packId, style);
+          if (!videoId) {
+            return (
+              <li key={style} dir="ltr">
+                {style}
+              </li>
+            );
+          }
+          const open = openStyle === style;
+          return (
+            <li key={style} dir="ltr" className={open ? "is-open" : undefined}>
+              <button
+                type="button"
+                className="exclusive-style-toggle"
+                aria-expanded={open}
+                aria-controls={panelId}
+                onClick={() => setOpenStyle(open ? null : style)}
+              >
+                <span className="exclusive-style-toggle-name">
+                  <span>{style}</span>
+                  <ChevronDown className="exclusive-demo-chevron" size={14} aria-hidden="true" />
+                </span>
+                <span className="exclusive-demo-kicker" dir="auto">
+                  {demoLabel}
+                </span>
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+      {openStyle && openVideoId ? (
+        <div className="exclusive-demo" id={panelId} role="region" aria-label={`${openStyle} — ${demoLabel}`}>
+          <div className="exclusive-demo-head">
+            <strong dir="ltr">{openStyle}</strong>
+            <span dir="auto">{demoLabel}</span>
+          </div>
+          <div className="exclusive-short">
+            <iframe
+              src={youtubeEmbedUrl(openVideoId)}
+              title={`${openStyle} — ${demoLabel}`}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
+        </div>
+      ) : null}
+    </>
+  );
+}
 
 function packMedia(id: string) {
   const stem = PACK_STEM[id];
@@ -245,13 +322,7 @@ export default function Exclusive() {
                     {pack.meta}
                   </p>
                   <h3>{text.stylesHeading}</h3>
-                  <ul className="exclusive-styles">
-                    {pack.styles.map((style) => (
-                      <li key={style} dir="ltr">
-                        {style}
-                      </li>
-                    ))}
-                  </ul>
+                  <PackStyles packId={pack.id} styles={pack.styles} demoLabel={text.demoLabel} />
                   <span className="exclusive-status" role="status">
                     {text.comingSoon}
                   </span>

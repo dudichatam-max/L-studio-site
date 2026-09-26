@@ -29,7 +29,7 @@ Posters: `assets/drums/01-rap-90.jpg` through `08-experimental.jpg`, each with a
 
 ### Exclusive (`/exclusive`)
 
-Upcoming drum packs live under `languages.*.exclusive`. This page is not Factory Drums: it shows only the three Exclusive packs. Pack **names**, English taglines, style names, and the BPM / channels / styles line stay in English. Translate the nav label (`languages.*.nav.exclusive` and `exclusive.navLabel`, keep them the same), the page title, intro, styles heading, Coming soon, and the homepage CTA (`homeTitle`, `homeBody`, `homeCta`). Do not add prices or a buy button.
+Upcoming drum packs live under `languages.*.exclusive`. This page is not Factory Drums: it shows only the three Exclusive packs. Pack **names**, English taglines, style names, and the BPM / channels / styles line stay in English. Translate the nav label (`languages.*.nav.exclusive` and `exclusive.navLabel`, keep them the same), the page title, intro, styles heading, Coming soon, the demo label (`demoLabel`), and the homepage CTA (`homeTitle`, `homeBody`, `homeCta`). Bone March (Victory Peak) and Deep Roots (Healing Journey) each have a collapsed YouTube Short on the page. Style names stay English. Do not commit video files, and do not add prices or a buy button.
 
 Posters: `assets/exclusive/09-afro-techno.jpg`, `10-victory-peak.jpg`, and `11-healing-journey.jpg`, each with a `.webp` companion. Show the full landscape art (`object-fit: contain`). Do not crop the title or logo.
 
