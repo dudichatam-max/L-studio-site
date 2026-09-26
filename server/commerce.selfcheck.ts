@@ -5,9 +5,15 @@ import os from "node:os";
 import path from "node:path";
 import express from "express";
 import { apkStatus, ensureApk } from "./apk";
-import { getConfig } from "./config";
+import { getConfig, resetConfigForTests } from "./config";
 import { attachCommerceApi, isAllowedOrigin, prepareCommerce, resetCommerceForTests } from "./commerce";
-import { verifyPaidOrder } from "./paypal";
+import {
+  acceptCreatedOrder,
+  createOrderAmountWasUnexpected,
+  formatCreateOrderAmountDiagnostic,
+  resetPaypalCacheForTests,
+  verifyPaidOrder,
+} from "./paypal";
 import { getStore } from "./store";
 import { hashDownloadToken, mintDownloadToken, sealDownloadToken, unsealDownloadToken } from "./tokens";
 
@@ -90,6 +96,43 @@ async function main() {
   assert(verified.ok && verified.payment.captureId === "CAP123456789", "verified sandbox-shaped order");
   assert(!verifyPaidOrder(paidOrder("5.00"), 400).ok, "amount mismatch rejected");
   assert(!verifyPaidOrder({ ...paidOrder(), status: "APPROVED" }, 400).ok, "unpaid order rejected");
+  assert(!verifyPaidOrder({ id: "5O190127TN364715T", status: "COMPLETED" }, 400).ok, "capture still rejects missing amount");
+
+  const createdId = "5O190127TN364715T";
+  const minimalCreate = { id: createdId, status: "CREATED" };
+  assert(acceptCreatedOrder(minimalCreate).ok, "create accepts CREATED without amount");
+  assert(
+    acceptCreatedOrder({
+      id: createdId,
+      status: "PAYER_ACTION_REQUIRED",
+      purchase_units: [{ amount: { currency_code: "EUR", value: "1.00" } }],
+    }).ok,
+    "create accepts payer action without amount match",
+  );
+  assert(acceptCreatedOrder({ id: createdId }).ok, "create accepts missing status when order id shape is valid");
+  assert(acceptCreatedOrder({ id: "ABC", status: "CREATED" }).ok, "create accepts a present id with CREATED");
+  assert(!acceptCreatedOrder({ status: "CREATED" }).ok, "create rejects missing id");
+  assert(!acceptCreatedOrder({ id: "ABC" }).ok, "create rejects missing status with a short id");
+  assert(!acceptCreatedOrder({ id: "not a paypal id", status: "CREATED" }).ok, "create rejects an unsafe id");
+  assert(!acceptCreatedOrder({ id: createdId, status: "VOIDED" }).ok, "create rejects unexpected status");
+  assert(!acceptCreatedOrder({ id: createdId, status: "COMPLETED" }).ok, "create does not treat COMPLETED as create success");
+  assert(createOrderAmountWasUnexpected(minimalCreate, 400), "missing create amount is the old failure");
+  assert(
+    !createOrderAmountWasUnexpected({ ...minimalCreate, purchase_units: [{ amount: { currency_code: "USD", value: "4.00" } }] }, 400),
+    "matching create amount is not flagged",
+  );
+  const missingAmountDiag = formatCreateOrderAmountDiagnostic(minimalCreate);
+  assert(missingAmountDiag.includes(`id=${createdId}`), "diagnostic includes order id");
+  assert(missingAmountDiag.includes("status=CREATED"), "diagnostic includes status");
+  assert(missingAmountDiag.includes("currency=missing") && missingAmountDiag.includes("value=missing"), "diagnostic marks missing amount");
+  assert(!missingAmountDiag.includes("purchase_units"), "diagnostic is not an order dump");
+  const oddAmountDiag = formatCreateOrderAmountDiagnostic({
+    id: createdId,
+    status: "PAYER_ACTION_REQUIRED",
+    purchase_units: [{ amount: { currency_code: "EUR", value: "9.99" } }],
+  });
+  assert(oddAmountDiag.includes("currency=EUR") && oddAmountDiag.includes("value=9.99"), "diagnostic includes amount fields");
+  assert(!oddAmountDiag.includes("client_secret") && !oddAmountDiag.includes("access_token"), "diagnostic has no secret fields");
 
   assert(isAllowedOrigin("https://l-studio.studio", "example.up.railway.app", ""), "pages origin");
   assert(isAllowedOrigin("http://localhost:5173", "localhost", ""), "localhost origin");
@@ -112,6 +155,75 @@ async function main() {
 
     const created = await request(server.port, "POST", "/api/paypal/create-order", "{}", { "Content-Type": "application/json" });
     assert(created.status === 503, "create-order refuses without credentials");
+
+    process.env.PAYPAL_CLIENT_ID = "selfcheck-client";
+    process.env.PAYPAL_CLIENT_SECRET = "selfcheck-paypal-secret";
+    resetConfigForTests();
+    resetPaypalCacheForTests();
+    const paypalBodies = [
+      { id: "5O190127TN364715T", status: "CREATED" },
+      {
+        id: "5O190127TN364715T",
+        status: "PAYER_ACTION_REQUIRED",
+        purchase_units: [{ amount: { currency_code: "EUR", value: "9.99" } }],
+      },
+      { id: "5O190127TN364715T" },
+      { status: "CREATED", purchase_units: [{ amount: { currency_code: "USD", value: "4.00" } }] },
+      { id: "5O190127TN364715T", status: "VOIDED" },
+    ];
+    const originalFetch = globalThis.fetch;
+    const warnings: string[] = [];
+    const originalWarn = console.warn;
+    console.warn = (...args: unknown[]) => {
+      warnings.push(args.map((item) => String(item)).join(" "));
+    };
+    globalThis.fetch = async (input, init) => {
+      const url = String(input);
+      if (url.endsWith("/v1/oauth2/token")) {
+        return new Response(JSON.stringify({ access_token: "selfcheck-access-token", expires_in: 300 }), {
+          headers: { "Content-Type": "application/json" },
+        });
+      }
+      if (url.endsWith("/v2/checkout/orders") && (init?.method || "GET") === "POST") {
+        const body = paypalBodies.shift();
+        if (!body) return new Response("missing", { status: 500 });
+        return new Response(JSON.stringify(body), { headers: { "Content-Type": "application/json" } });
+      }
+      return originalFetch(input, init);
+    };
+    try {
+      const minimal = await request(server.port, "POST", "/api/paypal/create-order", "{}", { "Content-Type": "application/json" });
+      assert(minimal.status === 200, "create accepts omitted amount");
+      assert((minimal.json as { id?: string }).id === "5O190127TN364715T", "create returns order id");
+      assert(warnings.some((line) => line.includes("currency=missing") && line.includes("value=missing")), "missing amount is logged");
+
+      warnings.length = 0;
+      const odd = await request(server.port, "POST", "/api/paypal/create-order", "{}", { "Content-Type": "application/json" });
+      assert(odd.status === 200, "create accepts odd amount");
+      assert(warnings.some((line) => line.includes("currency=EUR") && line.includes("value=9.99")), "odd amount is logged");
+
+      warnings.length = 0;
+      const noStatus = await request(server.port, "POST", "/api/paypal/create-order", "{}", { "Content-Type": "application/json" });
+      assert(noStatus.status === 200, "create accepts missing status with order id");
+      assert(warnings.some((line) => line.includes("status=missing")), "missing status is logged");
+
+      const noId = await request(server.port, "POST", "/api/paypal/create-order", "{}", { "Content-Type": "application/json" });
+      assert(noId.status === 502, "create rejects missing id");
+
+      const voided = await request(server.port, "POST", "/api/paypal/create-order", "{}", { "Content-Type": "application/json" });
+      assert(voided.status === 502, "create rejects unexpected status");
+
+      const logged = warnings.join("\n");
+      assert(!logged.includes("selfcheck-paypal-secret"), "paypal secret was written to logs");
+      assert(!logged.includes("selfcheck-access-token"), "paypal access token was written to logs");
+    } finally {
+      globalThis.fetch = originalFetch;
+      console.warn = originalWarn;
+      process.env.PAYPAL_CLIENT_ID = "";
+      process.env.PAYPAL_CLIENT_SECRET = "";
+      resetConfigForTests();
+      resetPaypalCacheForTests();
+    }
 
     const badOrigin = await request(server.port, "GET", "/api/health", undefined, { Origin: "https://evil.example" });
     assert(badOrigin.status === 403, "cors reject");

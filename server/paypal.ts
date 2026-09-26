@@ -147,6 +147,53 @@ export function isAlreadyCaptured(error: unknown): boolean {
   return error instanceof PaypalApiError && error.issue === "ORDER_ALREADY_CAPTURED";
 }
 
+const PAYPAL_ORDER_ID = /^[A-Z0-9]{8,40}$/;
+const PRESENT_ORDER_ID = /^[A-Z0-9]{1,40}$/;
+const CREATE_ORDER_STATUSES = new Set(["CREATED", "PAYER_ACTION_REQUIRED"]);
+
+/**
+ * Create-order success does not check amount. Sandbox CREATE responses often
+ * omit purchase_units[0].amount unless Prefer: return=representation is set.
+ * Capture still verifies the amount in verifyPaidOrder.
+ */
+export function acceptCreatedOrder(order: PayPalOrder): { ok: true; id: string } | { ok: false; reason: string } {
+  const id = typeof order.id === "string" ? order.id.trim() : "";
+  const status = typeof order.status === "string" ? order.status.trim() : "";
+  if (status) {
+    if (!CREATE_ORDER_STATUSES.has(status)) return { ok: false, reason: "unexpected_status" };
+    if (!PRESENT_ORDER_ID.test(id)) return { ok: false, reason: "order_id" };
+    return { ok: true, id };
+  }
+  if (!PAYPAL_ORDER_ID.test(id)) return { ok: false, reason: "order_id" };
+  return { ok: true, id };
+}
+
+export function createOrderAmountWasUnexpected(order: PayPalOrder, expectedCents: number): boolean {
+  const amount = order.purchase_units?.[0]?.amount;
+  const value = typeof amount?.value === "string" ? amount.value : undefined;
+  return amount?.currency_code !== "USD" || toCents(value) !== expectedCents;
+}
+
+function diagnosticField(value: unknown): string {
+  if (typeof value === "number" && Number.isFinite(value)) {
+    const text = String(value);
+    return /^[\w.-]{1,40}$/.test(text) ? text : "missing";
+  }
+  if (typeof value !== "string") return "missing";
+  const trimmed = value.trim();
+  if (!trimmed || !/^[\w.-]{1,40}$/.test(trimmed)) return "missing";
+  return trimmed;
+}
+
+export function formatCreateOrderAmountDiagnostic(order: PayPalOrder): string {
+  const amount = order.purchase_units?.[0]?.amount;
+  const id = diagnosticField(order.id);
+  const status = diagnosticField(order.status);
+  const currency = diagnosticField(amount?.currency_code);
+  const value = diagnosticField(amount?.value);
+  return `commerce create-order amount diagnostic id=${id} status=${status} currency=${currency} value=${value}`;
+}
+
 export type VerifiedPayment = {
   orderId: string;
   captureId: string;

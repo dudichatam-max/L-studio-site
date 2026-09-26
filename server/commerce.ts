@@ -1,15 +1,18 @@
 import express, { type NextFunction, type Request, type Response } from "express";
 import { apkStatus, ensureApk, openApk, resetApkForTests } from "./apk";
-import { getConfig, resetConfigForTests, toCents, TOKEN_TTL_MS, type CommerceConfig } from "./config";
+import { getConfig, resetConfigForTests, TOKEN_TTL_MS, type CommerceConfig } from "./config";
 import { sendDownloadEmail, type EmailResult } from "./email";
 import {
+  acceptCreatedOrder,
+  createOrderAmountWasUnexpected,
+  createPaypalOrder,
   ensureCapturedOrder,
+  formatCreateOrderAmountDiagnostic,
   orderIdFromWebhook,
   PaypalApiError,
   resetPaypalCacheForTests,
   verifyPaidOrder,
   verifyWebhookSignature,
-  createPaypalOrder,
   type WebhookHeaders,
 } from "./paypal";
 import { getStore, resetStoreForTests } from "./store";
@@ -208,13 +211,17 @@ export function attachCommerceApi(app: express.Express) {
       }
       try {
         const order = await createPaypalOrder(config);
-        const verifiedAmount = order.purchase_units?.[0]?.amount;
-        if (!order.id || verifiedAmount?.currency_code !== "USD" || toCents(verifiedAmount.value) !== config.priceCents) {
-          console.error("commerce create-order returned an unexpected amount");
+        const accepted = acceptCreatedOrder(order);
+        const diagnostic = formatCreateOrderAmountDiagnostic(order);
+        if (!accepted.ok) {
+          console.error(`commerce create-order rejected: ${accepted.reason}; ${diagnostic}`);
           res.status(502).json({ error: "paypal_unavailable" });
           return;
         }
-        res.json({ id: order.id });
+        if (createOrderAmountWasUnexpected(order, config.priceCents)) {
+          console.warn(diagnostic);
+        }
+        res.json({ id: accepted.id });
       } catch (error) {
         const issue = error instanceof PaypalApiError ? error.issue || error.message : "error";
         console.error(`commerce create-order failed: ${issue}`);
