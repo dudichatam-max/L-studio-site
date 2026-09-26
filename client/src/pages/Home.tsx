@@ -342,7 +342,6 @@ export default function Home() {
             <Link href="/guide">{nav.guide ?? "User guide"}</Link>
             <Link href="/privacy">{nav.privacy}</Link>
             <Link href="/terms">{nav.terms ?? "Terms"}</Link>
-            <Link href="/buy">{nav.pro ?? "Pro"}</Link>
           </nav>
           <div className="header-actions">
             <LanguageSwitcher />
@@ -361,7 +360,6 @@ export default function Home() {
             <Link href="/guide" onClick={() => setMobileOpen(false)}>{nav.guide ?? "User guide"}</Link>
             <Link href="/privacy" onClick={() => setMobileOpen(false)}>{nav.privacy}</Link>
             <Link href="/terms" onClick={() => setMobileOpen(false)}>{nav.terms ?? "Terms"}</Link>
-            <Link href="/buy" onClick={() => setMobileOpen(false)}>{nav.pro ?? "Pro"}</Link>
           </nav>
         )}
       </header>
@@ -378,7 +376,7 @@ export default function Home() {
             </a>
             <p className="hero-lede">{hero.body}</p>
             <div className="hero-actions">
-              <a className="button button--primary" href="#features">{hero.ctaPrimary} <ArrowUpRight size={17} /></a>
+              <a className="button button--primary" href="#early-access">{hero.ctaPrimary} <ArrowUpRight size={17} /></a>
               <a className="text-link" href="#story">{hero.ctaSecondary} <ChevronRight size={16} /></a>
             </div>
             <div className="hero-proof">
@@ -605,7 +603,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
-          <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/guide">{nav.guide ?? "User guide"}</Link><Link href="/buy">{nav.pro ?? "Pro"}</Link><Link href="/privacy">{nav.privacy}</Link><Link href="/terms">{nav.terms ?? "Terms"}</Link></div>
+          <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/guide">{nav.guide ?? "User guide"}</Link><Link href="/privacy">{nav.privacy}</Link><Link href="/terms">{nav.terms ?? "Terms"}</Link></div>
           <span className="footer-tagline">{footer.tagline}</span>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>
         </div>
