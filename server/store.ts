@@ -15,6 +15,20 @@ type TokenRow = {
   sealed_token: string | null;
 };
 
+type EarlyAccessRow = {
+  email: string;
+  name: string;
+  order_id: string;
+  email_status: string | null;
+  created_at: number;
+  updated_at: number;
+};
+
+export type EarlyAccessReserve =
+  | { result: "created"; orderId: string; emailStatus: null }
+  | { result: "exists"; orderId: string; emailStatus: string | null }
+  | { result: "full" };
+
 type OrderRow = {
   order_id: string;
   capture_id: string | null;
@@ -35,6 +49,16 @@ function asToken(row: unknown): TokenRow | null {
 function asOrder(row: unknown): OrderRow | null {
   if (!row || typeof row !== "object") return null;
   return row as OrderRow;
+}
+
+function asEarlyAccess(row: unknown): EarlyAccessRow | null {
+  if (!row || typeof row !== "object") return null;
+  return row as EarlyAccessRow;
+}
+
+function isUniqueConstraint(error: unknown): boolean {
+  const message = error instanceof Error ? error.message : String(error);
+  return /unique/i.test(message);
 }
 
 export class CommerceStore {
@@ -154,6 +178,47 @@ export class CommerceStore {
     this.db.prepare("UPDATE download_tokens SET lock_until = NULL WHERE token_hash = ? AND used_at IS NULL").run(tokenHash);
   }
 
+  countEarlyAccess(): number {
+    const row = this.db.prepare("SELECT COUNT(*) AS n FROM early_access_signups").get() as { n?: number } | undefined;
+    return Number(row?.n ?? 0);
+  }
+
+  reserveEarlyAccess(input: { email: string; name: string; orderId: string; limit: number; now?: number }): EarlyAccessReserve {
+    const now = input.now ?? Date.now();
+    const email = input.email.trim().toLowerCase();
+    this.db.exec("BEGIN IMMEDIATE");
+    try {
+      const existing = asEarlyAccess(this.db.prepare("SELECT * FROM early_access_signups WHERE email = ?").get(email));
+      if (existing) {
+        this.db.exec("COMMIT");
+        return { result: "exists", orderId: existing.order_id, emailStatus: existing.email_status };
+      }
+      if (this.countEarlyAccess() >= input.limit) {
+        this.db.exec("COMMIT");
+        return { result: "full" };
+      }
+      this.db
+        .prepare(
+          `INSERT INTO early_access_signups (email, name, order_id, email_status, created_at, updated_at)
+           VALUES (?, ?, ?, NULL, ?, ?)`,
+        )
+        .run(email, input.name, input.orderId, now, now);
+      this.db.exec("COMMIT");
+      return { result: "created", orderId: input.orderId, emailStatus: null };
+    } catch (error) {
+      this.rollback();
+      if (isUniqueConstraint(error)) {
+        const existing = asEarlyAccess(this.db.prepare("SELECT * FROM early_access_signups WHERE email = ?").get(email));
+        if (existing) return { result: "exists", orderId: existing.order_id, emailStatus: existing.email_status };
+      }
+      throw error;
+    }
+  }
+
+  setEarlyAccessEmailStatus(email: string, status: string) {
+    this.db.prepare("UPDATE early_access_signups SET email_status = ?, updated_at = ? WHERE email = ?").run(status, Date.now(), email.trim().toLowerCase());
+  }
+
   private rollback() {
     try {
       this.db.exec("ROLLBACK");
@@ -192,6 +257,14 @@ export function getStore(dataDir: string): CommerceStore {
       sealed_token TEXT
     );
     CREATE INDEX IF NOT EXISTS idx_download_tokens_order ON download_tokens(order_id);
+    CREATE TABLE IF NOT EXISTS early_access_signups (
+      email TEXT PRIMARY KEY,
+      name TEXT NOT NULL DEFAULT '',
+      order_id TEXT NOT NULL UNIQUE,
+      email_status TEXT,
+      created_at INTEGER NOT NULL,
+      updated_at INTEGER NOT NULL
+    );
   `);
   singleton = new CommerceStore(db);
   return singleton;

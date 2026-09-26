@@ -57,3 +57,10 @@ pnpm build
 
 החבילה מתאימה גם לפריסה מחוץ ל-Manus. נכס הלוגו נטען מכתובת CDN ציבורית יציבה. עבור GitHub Pages או Cloudflare Pages, השתמשו בפקודת הבנייה `pnpm build` והגדירו את תיקיית הפלט ל-`dist/public`.
 
+
+## Early access tester form
+
+עמוד הבית כולל טופס גישה מוקדמת חינמית (שם ומייל) ב־`#early-access`. השליחה היא JSON אל `POST /api/early-access` בשרת Railway (`commerce.apiBaseUrl`), לא FormSubmit.
+
+השרת שומר עד 44 כתובות ייחודיות ב־SQLite תחת `DATA_DIR` (ברירת מחדל `EARLY_ACCESS_LIMIT=44`). נרשם חדש מקבל במייל קישור APK חד-פעמי וקישור למדריך, עם בקשה לשלוח משוב אמיתי אל dudichatam@gmail.com. מייל שכבר רשום לא תופס מקום נוסף. הנרשם ה־45 נדחה.
+
