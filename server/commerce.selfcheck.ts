@@ -1,11 +1,11 @@
-import { createServer } from "node:http";
+import http, { createServer } from "node:http";
 import { createHash } from "node:crypto";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import express from "express";
-import { apkStatus, ensureApk } from "./apk";
-import { getConfig, readEarlyAccessLimit, resetConfigForTests } from "./config";
+import { apkStatus, ensureApk, resetApkForTests } from "./apk";
+import { EARLY_ACCESS_DOWNLOAD_LIMIT, EARLY_ACCESS_TOKEN_TTL_MS, getConfig, readEarlyAccessLimit, resetConfigForTests } from "./config";
 import { buildDownloadEmail, buildEarlyAccessEmail, sendDownloadEmail } from "./email";
 import { attachCommerceApi, isAllowedOrigin, prepareCommerce, resetCommerceForTests } from "./commerce";
 import {
@@ -163,6 +163,13 @@ async function main() {
   assert(earlyMessage.text.startsWith("זו הגישה המוקדמת הרשמית"), "early hebrew first");
   assert(earlyMessage.text.includes("before the official launch"), "early launch framing");
   assert(earlyMessage.text.includes("לפני ההשקה הרשמית"), "early hebrew launch framing");
+  assert(earlyMessage.text.includes("24 שעות") && earlyMessage.text.includes("כמה פעמים"), "early hebrew retry window");
+  assert(earlyMessage.text.includes("about 24 hours") && earlyMessage.text.includes("more than once"), "early english retry window");
+  assert(earlyMessage.html.includes("24 שעות") && earlyMessage.html.includes("about 24 hours"), "early html retry window");
+  assert(!earlyMessage.text.includes("פעם אחת") && !earlyMessage.text.includes("works once"), "early email is not single use");
+  assert(!earlyMessage.html.includes("פעם אחת") && !earlyMessage.html.includes("works once"), "early html is not single use");
+  assert(EARLY_ACCESS_TOKEN_TTL_MS === 24 * 60 * 60 * 1000, "early access links last 24h");
+  assert(EARLY_ACCESS_DOWNLOAD_LIMIT === 10, "early access allows ten saves");
   assert(earlyMessage.text.includes("https://buy.example/api/download/token"), "early text download url");
   assert(earlyMessage.text.includes("https://l-studio.studio/guide"), "early text guide url");
   assert(earlyMessage.text.includes("dudichatam@gmail.com"), "early feedback address");
@@ -170,8 +177,12 @@ async function main() {
   assert(earlyMessage.text.includes("real feedback and reviews"), "early english feedback and reviews");
   assert(earlyMessage.html.includes('lang="he"') && earlyMessage.html.includes('dir="rtl"'), "early hebrew direction");
   assert(earlyMessage.html.includes('lang="en"') && earlyMessage.html.includes('dir="ltr"'), "early english direction");
-  assert(earlyMessage.html.includes("הורדת ה-APK החינמית"), "early hebrew download cta");
-  assert(earlyMessage.html.includes("Download the free APK"), "early english download cta");
+  assert(earlyMessage.text.includes("הכפתור פותח עמוד") && earlyMessage.text.includes("לחצו על הורדת APK"), "early hebrew page then download");
+  assert(earlyMessage.text.includes("The button opens a page") && earlyMessage.text.includes("tap Download"), "early english page then download");
+  assert(earlyMessage.html.includes("הכפתור פותח עמוד") && earlyMessage.html.includes("tap Download"), "early html explains the page");
+  assert(earlyMessage.html.includes("פתיחת עמוד ההורדה"), "early hebrew download cta");
+  assert(earlyMessage.html.includes("Open the download page"), "early english download cta");
+  assert(!earlyMessage.html.includes("?download=1"), "email button does not prefetch the file");
   assert(earlyMessage.html.includes('href="https://l-studio.studio/guide"'), "early html guide href");
   assert(earlyMessage.replyTo === "dudichatam@gmail.com", "early reply to support");
   assert(readEarlyAccessLimit(undefined) === 44, "default early access limit");
@@ -378,14 +389,35 @@ async function main() {
     });
     assert(issued.result === "issued", "token issued");
 
-    const download = await fetch(`http://127.0.0.1:${server.port}/api/download/${token}`);
+    const browserAccept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";
+    const paidLanding = await request(server.port, "GET", `/api/download/${token}`, undefined, { Accept: browserAccept });
+    assert(paidLanding.status === 200, "paid browser navigation is a landing page");
+    assert(paidLanding.headers.get("content-type")?.includes("text/html"), "paid landing content type");
+    assert(paidLanding.text.includes('href="?download=1"'), "paid landing button opens the file step");
+    assert(paidLanding.text.includes(">Download APK<"), "paid landing download button");
+    assert(paidLanding.text.includes(">הורדת APK<"), "paid landing hebrew button");
+    assert(paidLanding.text.includes("saves the file once"), "paid landing stays one-time");
+    assert(!paidLanding.text.includes(apkBytes.toString("utf8")), "paid landing is not the apk");
+
+    const scannedPaid = await fetch(`http://127.0.0.1:${server.port}/api/download/${token}`, { headers: { Accept: "*/*" } });
+    const scannedPaidText = await scannedPaid.text();
+    assert(scannedPaid.status === 200 && scannedPaid.headers.get("content-type")?.includes("text/html"), "scanner accept star gets html");
+    assert(!scannedPaidText.includes(apkBytes.toString("utf8")), "scanner does not receive the apk");
+
+    const download = await fetch(`http://127.0.0.1:${server.port}/api/download/${token}?download=1`);
     const bytes = Buffer.from(await download.arrayBuffer());
     assert(download.status === 200, "download status");
+    assert(download.headers.get("content-type") === "application/vnd.android.package-archive", "apk content type");
     assert(download.headers.get("content-disposition")?.includes("L-Studio-Pro.apk"), "attachment name");
+    assert(download.headers.get("content-length") === String(apkBytes.length), "apk content length");
+    assert(download.headers.get("accept-ranges") === "bytes", "apk accepts ranges");
     assert(bytes.equals(apkBytes), "apk bytes");
 
-    const again = await request(server.port, "GET", `/api/download/${token}`);
+    const again = await request(server.port, "GET", `/api/download/${token}?download=1`);
     assert(again.status === 410, "single use");
+    const bareAfterPaid = await request(server.port, "GET", `/api/download/${token}`, undefined, { Accept: "*/*" });
+    assert(bareAfterPaid.status === 410 && bareAfterPaid.headers.get("content-type")?.includes("text/html"), "used bare link stays html");
+    assert(!bareAfterPaid.text.includes(apkBytes.toString("utf8")), "used bare link is not the apk");
 
     const reused = store.issueToken({
       orderId: "5O190127TN364715T",
@@ -413,6 +445,8 @@ async function main() {
       ttlMs: 60 * 60 * 1000,
     });
     assert(earlyIssued.result === "issued" && earlyIssued.tokenHash === earlyHash, "early access token issued");
+    assert(store.claim(earlyHash, 60_000) === "ok", "early access claim");
+    assert(store.claim(earlyHash, 60_000) === "ok", "early access retry is not locked");
     store.complete(earlyHash);
     const earlyReplacement = mintDownloadToken();
     const earlyReplacementHash = hashDownloadToken(earlyReplacement, secret);
@@ -828,14 +862,104 @@ async function main() {
     assert(getStore(getConfig().dataDir).countEarlyAccess() === 2, "resend does not consume another spot");
     const freshToken = JSON.parse(sentBodies.at(-1)?.body || "{}").text?.match(/\/api\/download\/([A-Za-z0-9_-]+)/)?.[1] || "";
     assert(freshToken.length > 20 && freshToken !== resentToken, "resend while full mints another token");
+    const freshHash = hashDownloadToken(freshToken, secret);
+    const freshState = getStore(getConfig().dataDir).downloadState(freshHash);
+    if (!freshState) throw new Error("mailed token state");
+    assert(freshState.expiresAt - Date.now() > 23 * 60 * 60 * 1000, "mailed early access token lasts about 24h");
+    assert(freshState.downloadCount === 0 && freshState.usedAt == null, "mailed token starts unused");
 
-    const download = await fetch(`http://127.0.0.1:${earlyServer.port}/api/download/${freshToken}`);
-    const bytes = Buffer.from(await download.arrayBuffer());
-    assert(download.status === 200, "early access apk download");
-    assert(download.headers.get("content-disposition")?.includes("L-Studio-Pro.apk"), "early access apk name");
-    assert(bytes.equals(apkBytes), "early access apk bytes");
-    const secondDownload = await request(earlyServer.port, "GET", `/api/download/${freshToken}`);
-    assert(secondDownload.status === 410 && (secondDownload.json as { error?: string }).error === "used", "early access token is single use");
+    const browserAccept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";
+    const landing = await request(earlyServer.port, "GET", `/api/download/${freshToken}`, undefined, { Accept: browserAccept });
+    assert(landing.status === 200, "early access browser navigation is a landing page");
+    assert(landing.headers.get("content-type")?.includes("text/html"), "early landing content type");
+    assert(landing.headers.get("content-disposition")?.includes("inline"), "early landing is inline");
+    assert(landing.text.includes('href="?download=1"'), "early landing button opens the file step");
+    assert(landing.text.includes(">Download APK<"), "early landing download button");
+    assert(landing.text.includes(">הורדת APK<"), "early landing hebrew button");
+    assert(landing.text.includes("Tap Download APK"), "early landing english");
+    assert(landing.text.includes("לחצו על הורדת APK"), "early landing hebrew");
+    assert(landing.text.includes("24 hours") && landing.text.includes("24 שעות"), "early landing explains the window");
+    assert(!landing.text.includes(freshToken), "landing does not echo the token");
+    assert(!landing.text.includes(apkBytes.toString("utf8")), "landing is not the apk");
+    assert(getStore(getConfig().dataDir).downloadState(freshHash)?.downloadCount === 0, "landing does not use a download");
+    const againLanding = await request(earlyServer.port, "GET", `/api/download/${freshToken}`, undefined, { Accept: browserAccept });
+    assert(againLanding.status === 200 && againLanding.text.includes("Download the APK"), "landing can be opened twice");
+
+    const scanned = await fetch(`http://127.0.0.1:${earlyServer.port}/api/download/${freshToken}`, { headers: { Accept: "*/*" } });
+    const scannedText = await scanned.text();
+    assert(scanned.status === 200 && scanned.headers.get("content-type")?.includes("text/html"), "star accept gets the landing page");
+    assert(!scannedText.includes(apkBytes.toString("utf8")), "star accept does not receive the apk");
+    assert(getStore(getConfig().dataDir).downloadState(freshHash)?.downloadCount === 0, "star accept does not consume the token");
+
+    const octet = await request(earlyServer.port, "GET", `/api/download/${freshToken}`, undefined, {
+      Accept: "application/octet-stream",
+    });
+    assert(octet.status === 200 && octet.headers.get("content-type")?.includes("text/html"), "octet-stream on the bare url gets html");
+    assert(octet.text.includes(">Download APK<") && !octet.text.includes(apkBytes.toString("utf8")), "octet-stream bare url is not the apk");
+    assert(getStore(getConfig().dataDir).downloadState(freshHash)?.downloadCount === 0, "octet-stream bare url does not consume the token");
+
+    const posted = await fetch(`http://127.0.0.1:${earlyServer.port}/api/download/${freshToken}?download=1`, {
+      method: "POST",
+      headers: { Accept: "text/html,application/xhtml+xml" },
+    });
+    const postedBytes = Buffer.from(await posted.arrayBuffer());
+    assert(posted.status === 200 && postedBytes.equals(apkBytes), "download button posts the apk");
+    assert(posted.headers.get("content-type") === "application/vnd.android.package-archive", "posted apk type");
+    assert(posted.headers.get("content-disposition")?.includes('filename="L-Studio-Pro.apk"'), "posted apk filename");
+    assert(posted.headers.get("content-length") === String(apkBytes.length), "posted apk length");
+    assert(posted.headers.get("accept-ranges") === "bytes", "posted apk ranges");
+
+    const button = await request(earlyServer.port, "GET", `/api/download/${freshToken}?download=1`, undefined, {
+      Accept: browserAccept,
+    });
+    assert(button.status === 200 && button.text === apkBytes.toString("utf8"), "download=1 returns the apk to a browser");
+    assert(button.headers.get("content-type") === "application/vnd.android.package-archive", "download=1 content type");
+    assert(button.headers.get("content-disposition")?.includes("attachment"), "download=1 is an attachment");
+
+    const rawQuery = await request(earlyServer.port, "GET", `/api/download/${freshToken}?raw=1`, undefined, {
+      Accept: browserAccept,
+    });
+    assert(rawQuery.status === 200 && rawQuery.text === apkBytes.toString("utf8"), "raw=1 returns the apk to a browser");
+
+    const ranged = await request(earlyServer.port, "GET", `/api/download/${freshToken}?download=1`, undefined, {
+      Accept: "application/octet-stream",
+      Range: "bytes=0-3",
+    });
+    assert(ranged.status === 206, "partial range status");
+    assert(ranged.headers.get("content-range") === `bytes 0-3/${apkBytes.length}`, "partial content range");
+    assert(ranged.headers.get("content-length") === "4", "partial content length");
+    assert(ranged.text === apkBytes.subarray(0, 4).toString("utf8"), "partial bytes");
+    assert(getStore(getConfig().dataDir).downloadState(freshHash)?.downloadCount === 3, "partial range does not count as a full save");
+
+    const openRange = await request(earlyServer.port, "GET", `/api/download/${freshToken}?download=1`, undefined, {
+      Accept: "application/octet-stream",
+      Range: "bytes=0-",
+    });
+    assert(openRange.status === 206, "open range status");
+    assert(openRange.headers.get("content-range") === `bytes 0-${apkBytes.length - 1}/${apkBytes.length}`, "open range covers the file");
+    assert(openRange.text === apkBytes.toString("utf8"), "open range bytes");
+
+    const badRange = await request(earlyServer.port, "GET", `/api/download/${freshToken}?download=1`, undefined, {
+      Accept: "application/octet-stream",
+      Range: `bytes=${apkBytes.length + 5}-${apkBytes.length + 10}`,
+    });
+    assert(badRange.status === 416, "unsatisfiable range");
+    assert(getStore(getConfig().dataDir).downloadState(freshHash)?.downloadCount === 4, "bad range does not count");
+
+    for (let i = 4; i < EARLY_ACCESS_DOWNLOAD_LIMIT; i += 1) {
+      const next = await request(earlyServer.port, "GET", `/api/download/${freshToken}?download=1`, undefined, {
+        Accept: "application/octet-stream",
+      });
+      assert(next.status === 200 && next.text === apkBytes.toString("utf8"), `early access save ${i + 1}`);
+    }
+    assert(getStore(getConfig().dataDir).downloadState(freshHash)?.usedAt != null, "tenth save closes the early access token");
+    const exhausted = await request(earlyServer.port, "GET", `/api/download/${freshToken}?download=1`, undefined, {
+      Accept: "application/octet-stream",
+    });
+    assert(exhausted.status === 410 && (exhausted.json as { error?: string }).error === "used", "eleventh save is refused");
+    const exhaustedBare = await request(earlyServer.port, "GET", `/api/download/${freshToken}`, undefined, { Accept: "*/*" });
+    assert(exhaustedBare.status === 410 && exhaustedBare.headers.get("content-type")?.includes("text/html"), "used bare url is still html");
+    assert(!exhaustedBare.text.includes(apkBytes.toString("utf8")), "used bare url is not the apk");
 
     const htmlDenied = await request(earlyServer.port, "GET", `/api/download/${freshToken}`, undefined, {
       Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -848,10 +972,61 @@ async function main() {
     assert(!htmlDenied.text.includes(freshToken), "used link page does not echo the token");
     assert(htmlDenied.json === null, "html response is not json");
 
-    const jsonDenied = await request(earlyServer.port, "GET", `/api/download/${freshToken}`, undefined, {
+    const jsonDenied = await request(earlyServer.port, "GET", `/api/download/${freshToken}?download=1`, undefined, {
       Accept: "application/json",
     });
     assert(jsonDenied.status === 410 && (jsonDenied.json as { error?: string }).error === "used", "api clients still get json");
+
+    const big = Buffer.alloc(256 * 1024, 0x61);
+    const bigPath = path.join(root, "big-apk.bin");
+    fs.writeFileSync(bigPath, big);
+    process.env.APK_PATH = bigPath;
+    process.env.APK_SHA256 = createHash("sha256").update(big).digest("hex");
+    resetConfigForTests();
+    resetApkForTests();
+    const abortToken = mintDownloadToken();
+    const abortHash = hashDownloadToken(abortToken, secret);
+    const abortIssued = getStore(getConfig().dataDir).issueToken({
+      orderId: "ea-abort-selfcheck",
+      captureId: "early-access",
+      payerEmail: "ada@example.com",
+      amount: "0.00",
+      currency: "EARLY",
+      tokenHash: abortHash,
+      sealedToken: sealDownloadToken(abortToken, secret),
+      ttlMs: EARLY_ACCESS_TOKEN_TTL_MS,
+    });
+    assert(abortIssued.result === "issued", "abort token issued");
+    await new Promise<void>((resolve, reject) => {
+      const req = http.get(
+        {
+          hostname: "127.0.0.1",
+          port: earlyServer.port,
+          path: `/api/download/${abortToken}?download=1`,
+          headers: { Accept: "application/octet-stream" },
+        },
+        (res) => {
+          res.once("data", () => {
+            req.destroy();
+            resolve();
+          });
+          res.on("error", () => resolve());
+          res.on("end", () => resolve());
+        },
+      );
+      req.on("error", (error: NodeJS.ErrnoException) => {
+        if (error.code === "ECONNRESET" || error.code === "EPIPE") resolve();
+        else reject(error);
+      });
+    });
+    const afterAbort = getStore(getConfig().dataDir).downloadState(abortHash);
+    assert(afterAbort?.usedAt == null && afterAbort?.downloadCount === 0, "aborted early access download is not counted");
+    const resumed = await fetch(`http://127.0.0.1:${earlyServer.port}/api/download/${abortToken}?raw=1`, {
+      headers: { Accept: "text/html" },
+    });
+    const resumedBytes = Buffer.from(await resumed.arrayBuffer());
+    assert(resumed.status === 200 && resumedBytes.equals(big), "download works after an aborted attempt");
+    assert(getStore(getConfig().dataDir).downloadState(abortHash)?.downloadCount === 1, "only the finished save counts");
 
     const expiredRaw = mintDownloadToken();
     getStore(getConfig().dataDir).issueToken({
