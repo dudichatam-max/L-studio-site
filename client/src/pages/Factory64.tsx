@@ -39,7 +39,7 @@ type Factory64Copy = {
   presetsHeading: string;
   oneLineList: string;
   storeBlurb: string;
-  earlyAccessCta: string;
+  buyCta: string;
   pages: FactoryPage[];
 };
 
@@ -82,7 +82,7 @@ const emptyCopy = (language: Language): Factory64Copy => ({
   presetsHeading: language === "he" ? "פריסטים" : language === "ru" ? "Пресеты" : language === "ar" ? "إعدادات مسبقة" : "Presets",
   oneLineList: "",
   storeBlurb: "",
-  earlyAccessCta: language === "he" ? "לרכישת L Studio Pro" : language === "ru" ? "Купить L Studio Pro" : language === "ar" ? "اشترِ L Studio Pro" : "Get L Studio Pro",
+  buyCta: language === "he" ? "לרכישת L Studio Pro" : language === "ru" ? "Купить L Studio Pro" : language === "ar" ? "اشترِ L Studio Pro" : "Get L Studio Pro",
   pages: [],
 });
 
@@ -223,7 +223,7 @@ export default function Factory64() {
               </div>
               <div className="factory64-hero-actions">
                 <Link className="button button--primary" href="/buy">
-                  {text.earlyAccessCta}
+                  {text.buyCta}
                 </Link>
                 <Link className="button button--light" href="/factory-64/drums">
                   {drumsLabel}

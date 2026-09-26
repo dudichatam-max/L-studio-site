@@ -34,7 +34,7 @@ type ChromeCopy = {
   privacy: string;
   terms: string;
   presetsLabel: string;
-  earlyAccessCta: string;
+  buyCta: string;
   onThisPage: string;
 };
 
@@ -71,7 +71,7 @@ const emptyChrome = (language: Language): ChromeCopy => ({
   privacy: language === "he" ? "פרטיות" : language === "ru" ? "Приватность" : language === "ar" ? "الخصوصية" : "Privacy",
   terms: language === "he" ? "תנאי שימוש" : language === "ru" ? "Условия" : language === "ar" ? "الشروط" : "Terms",
   presetsLabel: "Factory 64",
-  earlyAccessCta: language === "he" ? "לרכישת L Studio Pro" : language === "ru" ? "Купить L Studio Pro" : language === "ar" ? "اشترِ L Studio Pro" : "Get L Studio Pro",
+  buyCta: language === "he" ? "לרכישת L Studio Pro" : language === "ru" ? "Купить L Studio Pro" : language === "ar" ? "اشترِ L Studio Pro" : "Get L Studio Pro",
   onThisPage: language === "he" ? "בעמוד הזה" : language === "ru" ? "На этой странице" : language === "ar" ? "في هذه الصفحة" : "On this page",
 });
 
@@ -103,7 +103,7 @@ export default function FactoryDrums() {
         if (cancelled || !data) return;
         const lang = data.languages?.[language];
         const block = lang?.factoryDrums as DrumsCopy | undefined;
-        const presets = lang?.factory64 as { navLabel?: string; earlyAccessCta?: string; back?: string; home?: string; features?: string; architecture?: string; guide?: string; privacy?: string; terms?: string; onThisPage?: string } | undefined;
+        const presets = lang?.factory64 as { navLabel?: string; buyCta?: string; back?: string; home?: string; features?: string; architecture?: string; guide?: string; privacy?: string; terms?: string; onThisPage?: string } | undefined;
         if (block) {
           setText({
             ...emptyDrums(language),
@@ -123,7 +123,7 @@ export default function FactoryDrums() {
               privacy: presets.privacy || emptyChrome(language).privacy,
               terms: presets.terms || emptyChrome(language).terms,
               presetsLabel: presets.navLabel || "Factory 64",
-              earlyAccessCta: presets.earlyAccessCta || emptyChrome(language).earlyAccessCta,
+              buyCta: presets.buyCta || emptyChrome(language).buyCta,
               onThisPage: presets.onThisPage || emptyChrome(language).onThisPage,
             },
           });
@@ -173,7 +173,7 @@ export default function FactoryDrums() {
           {text.intro ? <p>{text.intro}</p> : null}
           <div className="factory64-hero-actions">
             <Link className="button button--primary" href="/buy">
-              {chrome.earlyAccessCta}
+              {chrome.buyCta}
             </Link>
             <Link className="button button--light" href="/factory-64">
               {chrome.presetsLabel}
