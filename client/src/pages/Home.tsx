@@ -79,7 +79,7 @@ const featureData = {
 
 // Fallback copy, used only if content.json fails to load.
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio" };
-const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "about 24 MB", stat2: "Android 7.0+", stat3: "No ads" };
+const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", offer: "The first 44 get L Studio Pro free, with no limits.", offerDetail: "Full Pro, with no demo limits, before the official paid launch.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "about 24 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const signalDefault = { text: "From key to sound to loop to recording", note: "All inside L-Studio" };
 const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started with a note that wasn't there.", body: ["I wanted to build a keyboard where I could set which frequency belongs to each key myself.", "From there it grew into recording, a looper, drums, a microphone and more."], closing: "What started as a search for the eighth note became L-Studio." };
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
@@ -93,6 +93,8 @@ const testerDefault = {
   kicker: "EARLY ACCESS",
   title: "Want to try L-Studio?",
   body: "L-Studio is not officially launched yet. I am looking for 44 people who want to open it free, play, and send real feedback about what works and what still needs work. Leave your name and email, and a one-time download link will arrive by email.",
+  offer: "The first 44 get L Studio Pro free, with no limits.",
+  offerDetail: "Full Pro, with no demo limits, before the official paid launch.",
   name: "Name",
   email: "Email address",
   consent: "I agree to receive L-Studio updates.",
@@ -307,7 +309,7 @@ export default function Home() {
 
   const copy = editableContent?.languages?.[language] ?? {};
   const nav = copy.nav ?? navDefault;
-  const hero = copy.hero ?? heroDefault;
+  const hero = { ...heroDefault, ...(copy.hero ?? {}) };
   const signal = copy.signalStrip ?? signalDefault;
   const story = copy.story ?? storyDefault;
   const featuresIntro = copy.featuresIntro ?? featuresIntroDefault;
@@ -370,6 +372,10 @@ export default function Home() {
           <div className="hero-copy">
             <div className="eyebrow"><span className="eyebrow-dot" /> {hero.kicker}</div>
             <h1 id="hero-title"><Headline text={hero.title} /></h1>
+            <a className="hero-offer" href="#early-access">
+              <strong>{hero.offer}</strong>
+              <span>{hero.offerDetail}</span>
+            </a>
             <p className="hero-lede">{hero.body}</p>
             <div className="hero-actions">
               <a className="button button--primary" href="#features">{hero.ctaPrimary} <ArrowUpRight size={17} /></a>
@@ -574,6 +580,10 @@ export default function Home() {
             <div className="tester-copy">
               <span className="kicker">{tester.kicker}</span>
               <h2>{tester.title}</h2>
+              <p className="tester-offer">
+                <strong>{tester.offer}</strong>
+                <span>{tester.offerDetail}</span>
+              </p>
               <p>{tester.body}</p>
               <div className="tester-proof"><span>01</span><span>FREE ACCESS</span><span>LOCAL AUDIO</span></div>
             </div>

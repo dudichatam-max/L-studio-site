@@ -27,7 +27,7 @@ Drum kit copy lives under `languages.*.factoryDrums` (section title, intro, eigh
 
 Posters: `assets/drums/01-rap-90.jpg` through `08-experimental.jpg`, each with a `.webp` companion. Show the full poster (`object-fit: contain`). Do not use `factory-64-drum-kits`.
 
-Home Early Access copy lives under `languages.*.tester` (kicker, title, body, fields, and the success, already, full, and error lines). The homepage form posts JSON to Railway `POST /api/early-access`. Do not point it at FormSubmit.
+Home Early Access copy lives under `languages.*.tester` (kicker, title, body, fields, and the success, already, full, and error lines). The homepage form posts JSON to Railway `POST /api/early-access`. Do not point it at FormSubmit. The first-44 full Pro offer is `languages.*.hero.offer` plus `hero.offerDetail`, repeated as `languages.*.tester.offer` plus `tester.offerDetail`: the first 44 people get full L Studio Pro free, with no demo limits, before the official paid launch.
 
 Keep all four languages in sync. Home Factory Pack uses `languages.*.factoryPack.detailCta` (link to `/factory-64`), `languages.*.factoryPack.drumsCta` (link to `/factory-64/drums`), and `languages.*.factoryPack.cta` (link to `/#early-access`). The closing home button uses `languages.*.finalCta.cta` and also links to `/#early-access`. Factory 64 and the drum page use `languages.*.factory64.earlyAccessCta` for that same free Early Access link. Drum headlines count 8 kits with 8 styles in each kit, not 64 kits.
 
