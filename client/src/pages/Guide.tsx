@@ -5,6 +5,7 @@ import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
+import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 
 type GuideSection = {
   id: string;
@@ -138,6 +139,7 @@ export default function Guide() {
             <a href="/#architecture">{text.architecture}</a>
             <Link href="/privacy">{text.privacy}</Link>
             <Link href="/terms">{text.terms}</Link>
+            <Link className="nav-exclusive" href="/exclusive">{exclusiveNavLabel[language]}</Link>
             <span className="nav-current">{guideNavLabel[language]}</span>
           </nav>
           <div className="header-actions">
@@ -251,6 +253,7 @@ export default function Guide() {
             <a href="/#features">{text.features}</a>
             <Link href="/privacy">{text.privacy}</Link>
             <Link href="/terms">{text.terms}</Link>
+            <Link className="nav-exclusive" href="/exclusive">{exclusiveNavLabel[language]}</Link>
             <span>{guideNavLabel[language]}</span>
           </div>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>

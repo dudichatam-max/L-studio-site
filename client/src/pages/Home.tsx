@@ -6,6 +6,7 @@ import WaveScope from "@/components/WaveScope";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
+import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png`;
@@ -79,7 +80,7 @@ const featureData = {
 } satisfies Record<Language, Array<{ id: string; label: string; title: string; description: string; icon: typeof SlidersHorizontal; meta: string; image?: string; video?: string }>>;
 
 // Fallback copy, used only if content.json fails to load.
-const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio" };
+const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive" };
 const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", offer: "The first 44 get L Studio Pro free, with no limits.", offerDetail: "Full Pro, with no demo limits, before the official paid launch.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "about 24 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const heroOfferDefaults = {
   he: {
@@ -105,6 +106,21 @@ const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open
 const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
 const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get early access", coverAlt: "L Studio Factory Pack product box" };
+const exclusivePoster = (stem: string) => ({
+  jpg: `${import.meta.env.BASE_URL}assets/exclusive/${stem}.jpg`,
+  webp: `${import.meta.env.BASE_URL}assets/exclusive/${stem}.webp`,
+});
+const exclusivePackMedia: Record<string, { jpg: string; webp: string }> = {
+  "afro-techno": exclusivePoster("09-afro-techno"),
+  "victory-peak": exclusivePoster("10-victory-peak"),
+  "healing-journey": exclusivePoster("11-healing-journey"),
+};
+const exclusiveDefaults: Record<Language, { navLabel: string; comingSoon: string; homeKicker: string; homeTitle: string; homeBody: string; homeCta: string; imageAlt: string; packs: Array<{ id: string; name: string }> }> = {
+  he: { navLabel: "בלעדי", comingSoon: "בקרוב", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "שלוש חבילות מיוחדות. בקרוב.", homeBody: "Afro Techno, Victory Peak ו־Healing Journey יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה — היכנסו לבלעדי וראו מה בדרך.", homeCta: "לעמוד הבלעדי", imageAlt: "כרזת חבילת תופים בלעדית", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
+  en: { navLabel: "Exclusive", comingSoon: "Coming soon", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Three special packs. Coming soon.", homeBody: "Afro Techno, Victory Peak, and Healing Journey sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet — open Exclusive and see what is on the way.", homeCta: "See Exclusive", imageAlt: "Exclusive drum pack poster", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
+  ru: { navLabel: "Эксклюзив", comingSoon: "Скоро", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Три особых пака. Скоро.", homeBody: "Afro Techno, Victory Peak и Healing Journey стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет — откройте эксклюзив и посмотрите, что на подходе.", homeCta: "Смотреть эксклюзив", imageAlt: "Постер эксклюзивного ударного пака", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
+  ar: { navLabel: "حصري", comingSoon: "قريباً", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "ثلاث حزم خاصة. قريباً.", homeBody: "Afro Techno وVictory Peak وHealing Journey خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد — افتحوا الحصري وشاهدوا ما هو في الطريق.", homeCta: "شاهد الحصري", imageAlt: "ملصق حزمة طبول حصرية", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
+};
 const visionDefault = { kicker: "05 / THE VISION", title: "I built the studio I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take the studio with you", body: "Creating shouldn't have to wait for a computer." }] };
 const faqDefault = { kicker: "07 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
 const finalCtaDefault = { kicker: "06 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea.", cta: "Enter L-Studio" };
@@ -466,6 +482,7 @@ export default function Home() {
   const hood = copy.underHood ?? hoodDefault;
   const justStart = copy.justStart ?? justStartDefault;
   const factory = copy.factoryPack ?? factoryDefault;
+  const exclusive = { ...exclusiveDefaults[language], ...(copy.exclusive ?? {}), packs: copy.exclusive?.packs?.length ? copy.exclusive.packs : exclusiveDefaults[language].packs };
   const vision = copy.vision ?? visionDefault;
   const faq = copy.faq ?? faqDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
@@ -493,6 +510,7 @@ export default function Home() {
             <Link href="/guide">{nav.guide ?? "User guide"}</Link>
             <Link href="/privacy">{nav.privacy}</Link>
             <Link href="/terms">{nav.terms ?? "Terms"}</Link>
+            <Link className="nav-exclusive" href="/exclusive">{nav.exclusive ?? exclusiveNavLabel[language]}</Link>
           </nav>
           <div className="header-actions">
             <LanguageSwitcher />
@@ -511,6 +529,7 @@ export default function Home() {
             <Link href="/guide" onClick={() => setMobileOpen(false)}>{nav.guide ?? "User guide"}</Link>
             <Link href="/privacy" onClick={() => setMobileOpen(false)}>{nav.privacy}</Link>
             <Link href="/terms" onClick={() => setMobileOpen(false)}>{nav.terms ?? "Terms"}</Link>
+            <Link className="nav-exclusive" href="/exclusive" onClick={() => setMobileOpen(false)}>{nav.exclusive ?? exclusiveNavLabel[language]}</Link>
           </nav>
         )}
       </header>
@@ -674,6 +693,38 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="exclusive-home container" id="exclusive" dir={dir} aria-labelledby="exclusive-title">
+          <div className="exclusive-home-head">
+            <div className="exclusive-home-copy">
+              <span className="kicker">{exclusive.homeKicker}</span>
+              <h2 id="exclusive-title"><Headline text={exclusive.homeTitle} /></h2>
+              <p>{exclusive.homeBody}</p>
+            </div>
+            <div className="exclusive-home-actions">
+              <span className="exclusive-status" role="status">{exclusive.comingSoon}</span>
+              <Link className="button button--primary" href="/exclusive">{exclusive.homeCta} <ArrowUpRight size={17} /></Link>
+            </div>
+          </div>
+          <div className="exclusive-home-grid">
+            {exclusive.packs.map((pack: { id: string; name: string }) => {
+              const media = exclusivePackMedia[pack.id];
+              return (
+                <Link className="exclusive-home-card" href="/exclusive" key={pack.id}>
+                  {media ? (
+                    <figure>
+                      <picture>
+                        <source srcSet={media.webp} type="image/webp" />
+                        <img src={media.jpg} alt={`${pack.name}. ${exclusive.imageAlt ?? exclusiveDefaults[language].imageAlt}`} width={1600} height={900} loading="lazy" decoding="async" />
+                      </picture>
+                    </figure>
+                  ) : null}
+                  <span dir="ltr">{pack.name}</span>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+
         {/* 7. The vision */}
         <section className="vision-section" id="vision" dir={dir}>
           <div className="container vision-grid">
@@ -754,7 +805,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
-          <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/guide">{nav.guide ?? "User guide"}</Link><Link href="/privacy">{nav.privacy}</Link><Link href="/terms">{nav.terms ?? "Terms"}</Link></div>
+          <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/guide">{nav.guide ?? "User guide"}</Link><Link className="nav-exclusive" href="/exclusive">{nav.exclusive ?? exclusiveNavLabel[language]}</Link><Link href="/privacy">{nav.privacy}</Link><Link href="/terms">{nav.terms ?? "Terms"}</Link></div>
           <span className="footer-tagline">{footer.tagline}</span>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>
         </div>

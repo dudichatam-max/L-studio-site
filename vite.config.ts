@@ -243,9 +243,9 @@ export default defineConfig({
   define: {
     __LSTUDIO_CONTENT_REV__: JSON.stringify(contentRevision()),
   },
-  // Root-absolute assets. GitHub Pages redirects /factory-64 and
-  // /factory-64/drums to trailing-slash directories; a relative base would
-  // then look for JS and images inside those folders.
+  // Root-absolute assets. GitHub Pages redirects /factory-64,
+  // /factory-64/drums, and /exclusive to trailing-slash directories; a relative
+  // base would then look for JS and images inside those folders.
   base: "/",
   plugins,
   resolve: {
