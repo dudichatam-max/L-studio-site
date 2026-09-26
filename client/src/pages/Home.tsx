@@ -9,7 +9,7 @@ import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero.png`;
+const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero-v2.png`;
 const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp`;
 const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
