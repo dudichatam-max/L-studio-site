@@ -210,15 +210,6 @@ function queryForcesDownload(req: Request): boolean {
   return queryFlag(req.query.download) || queryFlag(req.query.raw);
 }
 
-function wantsDownloadLanding(req: Request): boolean {
-  if (queryForcesDownload(req)) return false;
-  const scores = acceptScores(req.get("accept"));
-  if (scores.html <= 0) return false;
-  if (scores.octet >= scores.html) return false;
-  if (scores.json > scores.html) return false;
-  return true;
-}
-
 function prefersHtml(req: Request): boolean {
   const scores = acceptScores(req.get("accept"));
   return scores.html > 0 && scores.html > scores.json;
@@ -319,7 +310,7 @@ function downloadLandingHtml(earlyAccess: boolean): string {
   section + section { margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(244,241,234,.16); }
   h1 { margin: 0 0 12px; font-size: 1.7rem; line-height: 1.25; }
   p { margin: 0 0 14px; font-size: 1.05rem; line-height: 1.55; }
-  a.save { color: #0b0b0c; background: #e3c565; text-decoration: none; font-weight: 700; border-radius: 999px; display: inline-block; padding: 14px 22px; font-size: 1.05rem; }
+  button.save { color: #0b0b0c; background: #e3c565; font: inherit; font-weight: 700; border: 0; border-radius: 999px; display: inline-block; padding: 14px 22px; font-size: 1.05rem; cursor: pointer; }
   .he { direction: rtl; text-align: right; }
   .en { direction: ltr; text-align: left; }
 </style>
@@ -328,16 +319,20 @@ function downloadLandingHtml(earlyAccess: boolean): string {
 <main>
   <p class="mark">L STUDIO</p>
   <section class="he" lang="he" dir="rtl">
-    <h1>שמירת האפליקציה</h1>
-    <p>לחצו על הכפתור כדי לשמור את קובץ ה-APK. השם בקובץ ההורדות: L-Studio-Pro.apk.</p>
+    <h1>הורדת האפליקציה</h1>
+    <p>לחצו על הורדה כדי לשמור את קובץ ה-APK. השם בהורדות: L-Studio-Pro.apk.</p>
     ${retryHe}
-    <p><a class="save" href="?download=1" download="L-Studio-Pro.apk">שמירת L-Studio-Pro.apk</a></p>
+    <form method="post" action="?download=1">
+      <button class="save" type="submit">הורדה</button>
+    </form>
   </section>
   <section class="en" lang="en" dir="ltr">
-    <h1>Save the APK</h1>
-    <p>Tap the button to save the APK. The file in Downloads is named L-Studio-Pro.apk.</p>
+    <h1>Download the APK</h1>
+    <p>Tap Download to save the APK. The file in Downloads is named L-Studio-Pro.apk.</p>
     ${retryEn}
-    <p><a class="save" href="?download=1" download="L-Studio-Pro.apk">Save L-Studio-Pro.apk</a></p>
+    <form method="post" action="?download=1">
+      <button class="save" type="submit">Download</button>
+    </form>
   </section>
 </main>
 </body>
@@ -355,10 +350,10 @@ function sendDownloadLanding(res: Response, earlyAccess: boolean) {
   res.send(downloadLandingHtml(earlyAccess));
 }
 
-function sendDownloadDenied(req: Request, res: Response, claim: Exclude<ClaimResult, "ok">) {
+function sendDownloadDenied(req: Request, res: Response, claim: Exclude<ClaimResult, "ok">, forceHtml = false) {
   const status = claim === "busy" ? 409 : claim === "missing" ? 404 : 410;
   const error = claim === "missing" ? "not_found" : claim;
-  if ((claim === "used" || claim === "expired") && prefersHtml(req)) {
+  if ((claim === "used" || claim === "expired") && (forceHtml || prefersHtml(req))) {
     res.status(status);
     res.setHeader("Content-Type", "text/html; charset=utf-8");
     res.setHeader("Content-Disposition", "inline");
@@ -625,9 +620,7 @@ export function attachCommerceApi(app: express.Express) {
     }),
   );
 
-  app.get(
-    "/api/download/:token",
-    asyncRoute(async (req, res) => {
+  const downloadHandler = asyncRoute(async (req, res) => {
       const config = getConfig();
       const token = req.params.token || "";
       if (!isTokenShape(token) || !config.downloadTokenSecret) {
@@ -641,12 +634,20 @@ export function attachCommerceApi(app: express.Express) {
       const store = getStore(config.dataDir);
       const tokenHash = hashDownloadToken(token, config.downloadTokenSecret);
       const inspected = store.inspect(tokenHash);
-      if (inspected.status !== "ok") {
-        sendDownloadDenied(req, res, inspected.status);
+      // The email link is fetched by Gmail and other scanners before a person taps it.
+      // A bare GET always returns HTML and does not touch the token. The APK starts
+      // only from the Download button (POST) or an explicit ?download=1 / ?raw=1.
+      const explicit = req.method === "POST" || queryForcesDownload(req);
+      if (!explicit) {
+        if (inspected.status === "ok") {
+          sendDownloadLanding(res, inspected.earlyAccess);
+          return;
+        }
+        sendDownloadDenied(req, res, inspected.status, true);
         return;
       }
-      if (wantsDownloadLanding(req)) {
-        sendDownloadLanding(res, inspected.earlyAccess);
+      if (inspected.status !== "ok") {
+        sendDownloadDenied(req, res, inspected.status);
         return;
       }
       const claim = store.claim(tokenHash, DOWNLOAD_LOCK_MS);
@@ -727,8 +728,9 @@ export function attachCommerceApi(app: express.Express) {
         }
       });
       apk.stream.pipe(res);
-    }),
-  );
+  });
+  app.get("/api/download/:token", downloadHandler);
+  app.post("/api/download/:token", downloadHandler);
 
   app.use("/api", (_req, res) => {
     res.status(404).json({ error: "not_found" });
