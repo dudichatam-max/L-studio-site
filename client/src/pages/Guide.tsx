@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { ArrowLeft, BookOpen, Sparkles } from "lucide-react";
+import { Fragment, useEffect, useState } from "react";
+import { ArrowLeft, BookOpen, ChevronDown, Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -33,14 +33,18 @@ type GuideCopy = {
   terms: string;
   features: string;
   architecture: string;
+  demoVideo: string;
+  demoVideoTitle: string;
   sections: GuideSection[];
 };
 
+const DEMO_VIDEO_EMBED = "https://www.youtube.com/embed/CS5ortNiA3o";
+
 const chrome: Record<Language, Omit<GuideCopy, "sections" | "intro" | "title" | "titleEm" | "eyebrow">> = {
-  he: { onThisPage: "בעמוד הזה", tipBeginner: "טיפ למתחילים", tipAdvanced: "טיפ למתקדמים", back: "חזרה לאתר", home: "דף הבית", privacy: "פרטיות", terms: "תנאי שימוש", features: "יכולות", architecture: "איך זה עובד" },
-  en: { onThisPage: "On this page", tipBeginner: "Beginner tip", tipAdvanced: "Advanced tip", back: "Back to site", home: "Home", privacy: "Privacy", terms: "Terms", features: "Features", architecture: "How it works" },
-  ru: { onThisPage: "На этой странице", tipBeginner: "Совет новичкам", tipAdvanced: "Совет продвинутым", back: "Вернуться на сайт", home: "Главная", privacy: "Приватность", terms: "Условия", features: "Возможности", architecture: "Как это работает" },
-  ar: { onThisPage: "في هذه الصفحة", tipBeginner: "نصيحة للمبتدئين", tipAdvanced: "نصيحة للمتقدمين", back: "العودة إلى الموقع", home: "الرئيسية", privacy: "الخصوصية", terms: "الشروط", features: "المزايا", architecture: "كيف يعمل" },
+  he: { onThisPage: "בעמוד הזה", tipBeginner: "טיפ למתחילים", tipAdvanced: "טיפ למתקדמים", back: "חזרה לאתר", home: "דף הבית", privacy: "פרטיות", terms: "תנאי שימוש", features: "יכולות", architecture: "איך זה עובד", demoVideo: "סרטון להמחשה (לחיצה)", demoVideoTitle: "סרטון להמחשה" },
+  en: { onThisPage: "On this page", tipBeginner: "Beginner tip", tipAdvanced: "Advanced tip", back: "Back to site", home: "Home", privacy: "Privacy", terms: "Terms", features: "Features", architecture: "How it works", demoVideo: "Demo video (tap to play)", demoVideoTitle: "Demo video" },
+  ru: { onThisPage: "На этой странице", tipBeginner: "Совет новичкам", tipAdvanced: "Совет продвинутым", back: "Вернуться на сайт", home: "Главная", privacy: "Приватность", terms: "Условия", features: "Возможности", architecture: "Как это работает", demoVideo: "Демо-видео (нажмите для воспроизведения)", demoVideoTitle: "Демо-видео" },
+  ar: { onThisPage: "في هذه الصفحة", tipBeginner: "نصيحة للمبتدئين", tipAdvanced: "نصيحة للمتقدمين", back: "العودة إلى الموقع", home: "الرئيسية", privacy: "الخصوصية", terms: "الشروط", features: "المزايا", architecture: "كيف يعمل", demoVideo: "فيديو توضيحي (اضغط للتشغيل)", demoVideoTitle: "فيديو توضيحي" },
 };
 
 const emptyCopy = (language: Language): GuideCopy => ({
@@ -67,6 +71,39 @@ function sectionNumber(index: number) {
   return String(index + 1).padStart(2, "0");
 }
 
+function GuideDemoVideo({ label, playerTitle }: { label: string; playerTitle: string }) {
+  const [open, setOpen] = useState(false);
+  const panelId = "guide-demo-video-panel";
+
+  return (
+    <div className="guide-demo" id="guide-demo-video" data-open={open ? "true" : "false"}>
+      <h2>
+        <button
+          type="button"
+          className="guide-demo-summary"
+          aria-expanded={open}
+          aria-controls={panelId}
+          onClick={() => setOpen((value) => !value)}
+        >
+          <span>{label}</span>
+          <ChevronDown className="guide-demo-chevron" size={18} aria-hidden="true" />
+        </button>
+      </h2>
+      {open ? (
+        <div className="guide-demo-player" id={panelId}>
+          <iframe
+            src={DEMO_VIDEO_EMBED}
+            title={playerTitle}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
 export default function Guide() {
   const { language, isRtl } = useLanguage();
   const [text, setText] = useState<GuideCopy>(() => emptyCopy(language));
@@ -86,6 +123,9 @@ export default function Guide() {
       cancelled = true;
     };
   }, [language]);
+
+  const padIndex = text.sections.findIndex((item) => item.id === "pad");
+  const demoIndex = text.sections.length === 0 ? -1 : padIndex >= 0 ? padIndex : Math.min(5, text.sections.length - 1);
 
   return (
     <div className="site-shell guide-page">
@@ -154,46 +194,51 @@ export default function Guide() {
                 .join(" ");
 
               return (
-                <section className="guide-block" id={`guide-${section.id}`} key={section.id}>
-                  <div className="guide-block-head">
-                    <span className="guide-number">{sectionNumber(index)}</span>
-                    {section.tag ? <span className="guide-tag">{section.tag}</span> : null}
-                  </div>
-                  <div className="guide-block-body">
-                    <div className={section.media ? "guide-block-main" : "guide-block-main guide-block-main--solo"}>
-                      <div className="guide-copy">
-                        <h2>{section.title}</h2>
-                        {section.body.map((paragraph) => (
-                          <p key={paragraph}>{paragraph}</p>
-                        ))}
-                        {section.bullets?.length ? (
-                          <ul className="guide-bullets">
-                            {section.bullets.map((item) => (
-                              <li key={item}>{item}</li>
-                            ))}
-                          </ul>
+                <Fragment key={section.id}>
+                  <section className="guide-block" id={`guide-${section.id}`}>
+                    <div className="guide-block-head">
+                      <span className="guide-number">{sectionNumber(index)}</span>
+                      {section.tag ? <span className="guide-tag">{section.tag}</span> : null}
+                    </div>
+                    <div className="guide-block-body">
+                      <div className={section.media ? "guide-block-main" : "guide-block-main guide-block-main--solo"}>
+                        <div className="guide-copy">
+                          <h2>{section.title}</h2>
+                          {section.body.map((paragraph) => (
+                            <p key={paragraph}>{paragraph}</p>
+                          ))}
+                          {section.bullets?.length ? (
+                            <ul className="guide-bullets">
+                              {section.bullets.map((item) => (
+                                <li key={item}>{item}</li>
+                              ))}
+                            </ul>
+                          ) : null}
+                        </div>
+                        {section.media ? (
+                          <figure className={mediaClass}>
+                            <img src={mediaUrl(section.media)} alt="" loading="lazy" />
+                          </figure>
                         ) : null}
                       </div>
-                      {section.media ? (
-                        <figure className={mediaClass}>
-                          <img src={mediaUrl(section.media)} alt="" loading="lazy" />
-                        </figure>
-                      ) : null}
-                    </div>
-                    <div className="guide-tips">
-                      <div className="guide-tip guide-tip--beginner">
-                        <span className="guide-tip-label">
-                          <Sparkles size={14} /> {text.tipBeginner}
-                        </span>
-                        <p>{section.tipBeginner}</p>
-                      </div>
-                      <div className="guide-tip guide-tip--advanced">
-                        <span className="guide-tip-label">{text.tipAdvanced}</span>
-                        <p>{section.tipAdvanced}</p>
+                      <div className="guide-tips">
+                        <div className="guide-tip guide-tip--beginner">
+                          <span className="guide-tip-label">
+                            <Sparkles size={14} /> {text.tipBeginner}
+                          </span>
+                          <p>{section.tipBeginner}</p>
+                        </div>
+                        <div className="guide-tip guide-tip--advanced">
+                          <span className="guide-tip-label">{text.tipAdvanced}</span>
+                          <p>{section.tipAdvanced}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </section>
+                  </section>
+                  {index === demoIndex ? (
+                    <GuideDemoVideo key={language} label={text.demoVideo} playerTitle={text.demoVideoTitle} />
+                  ) : null}
+                </Fragment>
               );
             })}
           </article>
