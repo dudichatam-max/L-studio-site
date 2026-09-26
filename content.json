@@ -3926,6 +3926,6 @@
     }
   },
   "commerce": {
-    "apiBaseUrl": ""
+    "apiBaseUrl": "https://l-studio-site-production.up.railway.app"
   }
 }
