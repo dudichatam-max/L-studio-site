@@ -259,7 +259,8 @@
         "full": "44 המקומות נתפסו. תודה שרציתם לנסות.",
         "error": "לא הצלחנו לשלוח את המייל עכשיו. נסו שוב בעוד כמה דקות.",
         "invalid": "כתובת המייל לא תקינה.",
-        "spotsLabel": "פנויים"
+        "spotsLabel": "פנויים",
+        "imageAlt": "כרזת L Studio Factory Pack עם קופסת המוצר, שמונה עמודים ושישים וארבעה קולות"
       },
       "footer": {
         "tagline": "זה לאנשים אנלוגיים בעולם דיגיטלי."
@@ -526,9 +527,9 @@
             "tipBeginner": "כדאי לנסות גם לחיצה ממושכת על אזורים שונים במערכת.",
             "tipAdvanced": "חלק מהיכולות המתקדמות מוסתרות כדי לשמור על ממשק נקי ופשוט.",
             "bullets": [
-              "SOUND — לחיצה ממושכת פותחת את כלי הבדיקה.",
-              "PATTERN — לחיצה ממושכת פותחת את אפשרויות החזרה.",
-              "ערך מספרי — הקשה מאפשרת הזנה מדויקת."
+              "SOUND: לחיצה ממושכת פותחת את כלי הבדיקה.",
+              "PATTERN: לחיצה ממושכת פותחת את אפשרויות החזרה.",
+              "ערך מספרי: הקשה מאפשרת הזנה מדויקת."
             ],
             "media": "assets/guide/guide-hidden.jpg",
             "mediaSize": "panel"
@@ -559,7 +560,7 @@
           "נבנה לטראנס, טכנו, ראפ, טראפ ומטאל. בלי חריצי \"init\" גנריים. כל עמוד הוא משימה מוזיקלית אחת."
         ],
         "includes": "8 עמודי JSON · 64 פריסטים עם שם · מוכנים לייבוא מ־Preset",
-        "coverAlt": "רשת שמונת עמודי הפריסטים של L Studio Factory Pack — Black Well, Gold Hammer, Light Knife, Gray Engine, Low Snake, Saw Teeth, Gold Fog, Spikes",
+        "coverAlt": "רשת שמונת עמודי הפריסטים של L Studio Factory Pack: Black Well, Gold Hammer, Light Knife, Gray Engine, Low Snake, Saw Teeth, Gold Fog, Spikes",
         "back": "חזרה לאתר",
         "home": "דף הבית",
         "features": "יכולות",
@@ -974,7 +975,7 @@
         "demoLabel": "סרטון הדגמה",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
         "homeTitle": "שלוש חבילות מיוחדות. בקרוב.",
-        "homeBody": "Afro Techno, Victory Peak ו־Healing Journey יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה — היכנסו לבלעדי וראו מה בדרך.",
+        "homeBody": "Afro Techno, Victory Peak ו־Healing Journey יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.",
         "homeCta": "לעמוד הבלעדי",
         "packs": [
           {
@@ -1186,7 +1187,7 @@
           "I don't come from a background of music studies. I never learned how to build professional music software, and I didn't have a big system to work with.",
           "I just love music and wanted to control sound in a way that felt natural to me.",
           "It all started from the idea of setting the frequencies of the keys myself. From there I added recording, a looper, drums, a microphone and other things I needed along the way.",
-          "The vision is to grow around the app I built a community of artists and musicians, aimed especially at people with fewer resources — people without access to a computer or software, creators looking for a quality, simple way to express their creativity."
+          "The vision is to grow around the app I built a community of artists and musicians, aimed especially at people with fewer resources: people without access to a computer or software, creators looking for a quality, simple way to express their creativity."
         ],
         "mainLine": "It's for analog people in a digital world.",
         "cards": [
@@ -1330,7 +1331,8 @@
         "full": "All 44 spots are taken. Thank you for wanting to try it.",
         "error": "We could not send the email right now. Try again in a few minutes.",
         "invalid": "That email address is not valid.",
-        "spotsLabel": "available"
+        "spotsLabel": "available",
+        "imageAlt": "L Studio Factory Pack poster with the product box, eight pages and sixty-four voices"
       },
       "footer": {
         "tagline": "It's for analog people in a digital world."
@@ -1339,7 +1341,7 @@
         "title": "User guide",
         "titleEm": "L Studio.",
         "eyebrow": "LEARN / USER GUIDE / L STUDIO",
-        "intro": "This guide focuses on what you really need to know to work well with the system — including actions that are not always obvious from the screen alone.",
+        "intro": "This guide focuses on what you really need to know to work well with the system, including actions that are not always obvious from the screen alone.",
         "onThisPage": "On this page",
         "tipBeginner": "Beginner tip",
         "tipAdvanced": "Advanced tip",
@@ -1382,7 +1384,7 @@
               "Frequencies are not just the result of choosing a note. They are part of the creation itself."
             ],
             "tipBeginner": "Start from a ready-made system and change only one or two frequencies.",
-            "tipAdvanced": "The character of a tuning system is set mainly by the relationships between frequencies — not only by each frequency value on its own.",
+            "tipAdvanced": "The character of a tuning system is set mainly by the relationships between frequencies, not only by each frequency value on its own.",
             "tag": "FREQ",
             "media": "assets/guide/guide-freq.jpg",
             "mediaSize": "panel"
@@ -1597,9 +1599,9 @@
             "tipBeginner": "It is worth trying a long press on different areas of the system.",
             "tipAdvanced": "Some advanced capabilities are hidden to keep the interface clean and simple.",
             "bullets": [
-              "SOUND — a long press opens the test tool.",
-              "PATTERN — a long press opens the repeat options.",
-              "Numeric value — a tap enables precise entry."
+              "SOUND: a long press opens the test tool.",
+              "PATTERN: a long press opens the repeat options.",
+              "Numeric value: a tap enables precise entry."
             ],
             "media": "assets/guide/guide-hidden.jpg",
             "mediaSize": "panel"
@@ -1630,7 +1632,7 @@
           "Built for trance, techno, rap, trap, and metal. No generic \"init\" slots. Each page is a single musical job."
         ],
         "includes": "8 JSON pages · 64 named presets · ready to import from Preset",
-        "coverAlt": "L Studio Factory Pack eight preset pages grid — Black Well, Gold Hammer, Light Knife, Gray Engine, Low Snake, Saw Teeth, Gold Fog, Spikes",
+        "coverAlt": "L Studio Factory Pack eight preset pages grid: Black Well, Gold Hammer, Light Knife, Gray Engine, Low Snake, Saw Teeth, Gold Fog, Spikes",
         "back": "Back to site",
         "home": "Home",
         "features": "Features",
@@ -2045,7 +2047,7 @@
         "demoLabel": "Demo video",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
         "homeTitle": "Three special packs. Coming soon.",
-        "homeBody": "Afro Techno, Victory Peak, and Healing Journey sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet — open Exclusive and see what is on the way.",
+        "homeBody": "Afro Techno, Victory Peak, and Healing Journey sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.",
         "homeCta": "See Exclusive",
         "packs": [
           {
@@ -2257,7 +2259,7 @@
           "Я не из музыкального образования. Я не учился строить профессиональный музыкальный софт, и у меня не было большой системы для работы.",
           "Я просто люблю музыку и хотел управлять звуком так, как это было естественно для меня.",
           "Всё началось с идеи самому задавать частоты клавиш. Оттуда я добавил запись, лупер, барабаны, микрофон и другие вещи, которые были нужны по пути.",
-          "Видение — развить вокруг приложения, которое я создал, сообщество художников и музыкантов, рассчитанное в первую очередь на менее обеспеченных людей — тех, у кого нет доступа к компьютеру или программам, на творцов, ищущих качественный и простой способ выразить свою креативность."
+          "Видение: развить вокруг приложения, которое я создал, сообщество художников и музыкантов, рассчитанное в первую очередь на менее обеспеченных людей, тех, у кого нет доступа к компьютеру или программам, творцов, ищущих качественный и простой способ выразить свою креативность."
         ],
         "mainLine": "Это для аналоговых людей в цифровом мире.",
         "cards": [
@@ -2290,16 +2292,16 @@
             ]
           },
           {
-            "question": "Если я записал луп, а потом изменил звук — луп тоже меняется?",
+            "question": "Если я записал луп, а потом изменил звук, луп тоже меняется?",
             "answer": [
               "Нет.",
-              "Когда луп записан, L Studio сохраняет звук, который уже прошёл через синтезатор и эффекты. То есть луп — это настоящая аудиозапись, а не список нот, который ждёт повторного воспроизведения.",
+              "Когда луп записан, L Studio сохраняет звук, который уже прошёл через синтезатор и эффекты. То есть луп: это настоящая аудиозапись, а не список нот, который ждёт повторного воспроизведения.",
               "Если потом изменить Cutoff, Wave, Drive или другой эффект, уже сделанная запись останется такой, какой была в момент записи.",
               "Так можно строить слои звука и продолжать играть поверх них, не меняя старые слои у себя под руками."
             ]
           },
           {
-            "question": "Значит, PAD — это эффект или инструмент?",
+            "question": "Значит, PAD: это эффект или инструмент?",
             "answer": [
               "PAD предназначен для игры.",
               "Он работает по двум осям и может управлять разными источниками в системе. Его можно направить на синтезатор, лупер, микрофон или барабаны и использовать движение и для Wah, смены октавы, Chorus и ритмических действий вроде Stutter.",
@@ -2319,7 +2321,7 @@
             "question": "Можно ли использовать микрофон как часть игры, а не только для записи голоса?",
             "answer": [
               "Да.",
-              "Микрофон — часть аудиопути L Studio. У него свои каналы, управление громкостью и положением в стерео, мониторинг, Gain, фильтр High-Pass, Gate, Presence и Compression.",
+              "Микрофон: часть аудиопути L Studio. У него свои каналы, управление громкостью и положением в стерео, мониторинг, Gain, фильтр High-Pass, Gate, Presence и Compression.",
               "Так можно встроить живой источник в сетап и управлять им рядом с синтезатором, лупами и барабанами.",
               "Если слушать мониторинг через колонки, конечно, нужно следить за акустической обратной связью."
             ]
@@ -2356,7 +2358,7 @@
             "answer": [
               "Можно собрать и записать целое исполнение внутри системы, но L Studio не пытается быть традиционной DAW с бесконечным Timeline.",
               "Работа больше построена вокруг игры, слоёв, лупов, барабанов, микрофона и синтеза в реальном времени.",
-              "Кроме того, финальный микс можно записать сразу в файл WAV — так исполнение можно вынести наружу, не превращая L Studio в полноценный студийный редактор."
+              "Кроме того, финальный микс можно записать сразу в файл WAV, и тогда исполнение можно вынести наружу, не превращая L Studio в полноценный студийный редактор."
             ]
           },
           {
@@ -2372,7 +2374,7 @@
             "answer": [
               "Да. На самом деле большая часть архитектуры построена вокруг этой идеи.",
               "Синтезатор, PAD, лупер, барабаны и микрофон находятся в одном аудиопути и вместе приходят в финальный микс.",
-              "Можно начать с живого звука, записать его в луп, добавить поверх барабаны, снова использовать PAD и подключить источник с микрофона — без смены рабочей среды на каждом шаге.",
+              "Можно начать с живого звука, записать его в луп, добавить поверх барабаны, снова использовать PAD и подключить источник с микрофона, без смены рабочей среды на каждом шаге.",
               "L Studio устроен так, чтобы эти действия могли происходить как часть одного исполнения."
             ]
           }
@@ -2401,7 +2403,8 @@
         "full": "Все 44 места заняты. Спасибо, что хотели попробовать.",
         "error": "Не удалось отправить письмо сейчас. Попробуйте снова через несколько минут.",
         "invalid": "Этот адрес почты недействителен.",
-        "spotsLabel": "свободно"
+        "spotsLabel": "свободно",
+        "imageAlt": "Постер L Studio Factory Pack с коробкой продукта, восемью страницами и шестьюдесятью четырьмя голосами"
       },
       "footer": {
         "tagline": "Это для аналоговых людей в цифровом мире."
@@ -2410,7 +2413,7 @@
         "title": "Руководство",
         "titleEm": "L Studio.",
         "eyebrow": "LEARN / USER GUIDE / L STUDIO",
-        "intro": "Это руководство сосредоточено на том, что действительно важно знать, чтобы уверенно работать с системой — включая действия, которые не всегда очевидны с экрана.",
+        "intro": "Это руководство сосредоточено на том, что действительно важно знать, чтобы уверенно работать с системой, включая действия, которые не всегда очевидны с экрана.",
         "onThisPage": "На этой странице",
         "tipBeginner": "Совет новичкам",
         "tipAdvanced": "Совет продвинутым",
@@ -2440,7 +2443,7 @@
               "Рядом с каждым регулятором отображается числовое значение.",
               "Вместо того чтобы тянуть регулятор к нужному числу, можно нажать на значение и ввести его напрямую."
             ],
-            "tipBeginner": "Если трудно попасть в нужное значение — введите его.",
+            "tipBeginner": "Если трудно попасть в нужное значение, введите его.",
             "tipAdvanced": "Ручной ввод позволяет точно воспроизводить звуки и сравнивать разные состояния.",
             "media": "assets/guide/guide-value.jpg",
             "mediaSize": "thumb"
@@ -2450,7 +2453,7 @@
             "title": "Работа с частотами",
             "body": [
               "Эта область позволяет работать напрямую с частотами и строить собственные системы настройки.",
-              "Частоты — не просто результат выбора ноты. Они часть самого творчества."
+              "Частоты: не просто результат выбора ноты. Они часть самого творчества."
             ],
             "tipBeginner": "Начните с готовой системы и измените только одну или две частоты.",
             "tipAdvanced": "Характер системы настройки определяется в основном соотношениями между частотами, а не только значением каждой частоты по отдельности.",
@@ -2668,9 +2671,9 @@
             "tipBeginner": "Стоит попробовать долгое нажатие на разные области системы.",
             "tipAdvanced": "Часть продвинутых возможностей скрыта, чтобы интерфейс оставался чистым и простым.",
             "bullets": [
-              "SOUND — долгое нажатие открывает инструмент проверки.",
-              "PATTERN — долгое нажатие открывает параметры повтора.",
-              "Числовое значение — нажатие позволяет точный ввод."
+              "SOUND: долгое нажатие открывает инструмент проверки.",
+              "PATTERN: долгое нажатие открывает параметры повтора.",
+              "Числовое значение: нажатие позволяет точный ввод."
             ],
             "media": "assets/guide/guide-hidden.jpg",
             "mediaSize": "panel"
@@ -2701,7 +2704,7 @@
           "Собрано для транса, техно, рэпа, трэпа и метала. Без безликих слотов \"init\". Каждая страница это одна музыкальная задача."
         ],
         "includes": "8 JSON-страниц · 64 именованных пресета · готовы к импорту из Preset",
-        "coverAlt": "Сетка восьми страниц пресетов L Studio Factory Pack — Black Well, Gold Hammer, Light Knife, Gray Engine, Low Snake, Saw Teeth, Gold Fog, Spikes",
+        "coverAlt": "Сетка восьми страниц пресетов L Studio Factory Pack: Black Well, Gold Hammer, Light Knife, Gray Engine, Low Snake, Saw Teeth, Gold Fog, Spikes",
         "back": "Вернуться на сайт",
         "home": "Главная",
         "features": "Возможности",
@@ -3116,7 +3119,7 @@
         "demoLabel": "Демо-видео",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
         "homeTitle": "Три особых пака. Скоро.",
-        "homeBody": "Afro Techno, Victory Peak и Healing Journey стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет — откройте эксклюзив и посмотрите, что на подходе.",
+        "homeBody": "Afro Techno, Victory Peak и Healing Journey стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.",
         "homeCta": "Смотреть эксклюзив",
         "packs": [
           {
@@ -3182,7 +3185,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro для Android. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro — это APK для Android, около 24 МБ. Этот сайт сейчас не принимает за него оплату. Заявка Early Access остаётся на главной странице.",
+        "body": "L Studio Pro: это APK для Android, около 24 МБ. Этот сайт сейчас не принимает за него оплату. Заявка Early Access остаётся на главной странице.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
           "APK-файл L Studio Pro для Android, около 24 МБ",
@@ -3328,7 +3331,7 @@
           "أنا لا آتي من خلفية دراسة موسيقية. لم أتعلم كيف تُبنى برامج الموسيقى الاحترافية، ولم يكن لدي نظام كبير للعمل معه.",
           "أنا فقط أحب الموسيقى وأردت التحكم بالصوت بطريقة كانت طبيعية بالنسبة لي.",
           "كل شيء بدأ من فكرة تحديد ترددات المفاتيح بنفسي. من هناك أضفت التسجيل، اللوبر، الإيقاعات، الميكروفون وأشياء أخرى احتجتها في الطريق.",
-          "الرؤية هي بناء مجتمع من الفنّانين والموسيقيّين حول التطبيق الذي بنيتُه، موجّه بشكل أساسي لمن هم أضعف اقتصادياً — أشخاص بلا وصول إلى حاسوب أو برنامج، ومبدعون يبحثون عن طريق نوعيّة وبسيطة للتعبير عن إبداعهم."
+          "الرؤية هي بناء مجتمع من الفنّانين والموسيقيّين حول التطبيق الذي بنيتُه، موجّه بشكل أساسي لمن هم أضعف اقتصادياً: أشخاص بلا وصول إلى حاسوب أو برنامج، ومبدعون يبحثون عن طريق نوعيّة وبسيطة للتعبير عن إبداعهم."
         ],
         "mainLine": "هذا لأشخاص تناظريين في عالم رقمي.",
         "cards": [
@@ -3472,7 +3475,8 @@
         "full": "المقاعد الـ44 ممتلئة. شكراً لرغبتك في التجربة.",
         "error": "تعذر إرسال البريد الآن. حاول مرة أخرى بعد بضع دقائق.",
         "invalid": "عنوان البريد هذا غير صالح.",
-        "spotsLabel": "متاح"
+        "spotsLabel": "متاح",
+        "imageAlt": "ملصق L Studio Factory Pack مع صندوق المنتج، ثماني صفحات وأربعة وستون صوتاً"
       },
       "footer": {
         "tagline": "هذا لأشخاص تناظريين في عالم رقمي."
@@ -3739,9 +3743,9 @@
             "tipBeginner": "يجدر تجربة ضغطة مطوّلة على مناطق مختلفة في النظام.",
             "tipAdvanced": "بعض القدرات المتقدمة مخفية للحفاظ على واجهة نظيفة وبسيطة.",
             "bullets": [
-              "SOUND — الضغطة المطوّلة تفتح أداة الاختبار.",
-              "PATTERN — الضغطة المطوّلة تفتح خيارات التكرار.",
-              "قيمة رقمية — النقرة تتيح إدخالاً دقيقاً."
+              "SOUND: الضغطة المطوّلة تفتح أداة الاختبار.",
+              "PATTERN: الضغطة المطوّلة تفتح خيارات التكرار.",
+              "قيمة رقمية: النقرة تتيح إدخالاً دقيقاً."
             ],
             "media": "assets/guide/guide-hidden.jpg",
             "mediaSize": "panel"
@@ -3772,7 +3776,7 @@
           "مبني للترانس والتكنو والراب والتراب والميتال. بلا خانات \"init\" عامة. كل صفحة مهمة موسيقية واحدة."
         ],
         "includes": "8 صفحات JSON · 64 إعداداً مسبقاً مسمى · جاهزة للاستيراد من Preset",
-        "coverAlt": "شبكة صفحات الإعدادات الثماني لـ L Studio Factory Pack — Black Well, Gold Hammer, Light Knife, Gray Engine, Low Snake, Saw Teeth, Gold Fog, Spikes",
+        "coverAlt": "شبكة صفحات الإعدادات الثماني لـ L Studio Factory Pack: Black Well, Gold Hammer, Light Knife, Gray Engine, Low Snake, Saw Teeth, Gold Fog, Spikes",
         "back": "العودة إلى الموقع",
         "home": "الرئيسية",
         "features": "المزايا",
@@ -4187,7 +4191,7 @@
         "demoLabel": "فيديو العرض",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
         "homeTitle": "ثلاث حزم خاصة. قريباً.",
-        "homeBody": "Afro Techno وVictory Peak وHealing Journey خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد — افتحوا الحصري وشاهدوا ما هو في الطريق.",
+        "homeBody": "Afro Techno وVictory Peak وHealing Journey خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.",
         "homeCta": "شاهد الحصري",
         "packs": [
           {

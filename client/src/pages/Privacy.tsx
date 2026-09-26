@@ -19,7 +19,6 @@ type PrivacyCopy = {
   hero: string;
   intro: string;
   date: string;
-  draftNote: string;
   principle: string;
   principleBody: string;
   scope: string;
@@ -44,7 +43,6 @@ const copy: Record<Language, PrivacyCopy> = {
     hero: "העמוד הזה מסביר בפשטות איך L Studio מתייחסת להרשאות, לאודיו ולמידע שנוצר בזמן היצירה.",
     intro: "L Studio בנויה כתחנת עבודה מקומית. האודיו שלך, הפריסטים שלך והסשנים שלך לא צריכים לעבור דרך שרת כדי להפוך לרגע מוזיקלי.",
     date: "עודכן לאחרונה: 26 בספטמבר 2026",
-    draftNote: "טיוטה לביקורת. הטקסט בעמוד הזה אינו ייעוץ משפטי. עורך דין צריך לעבור עליו לפני שמסתמכים עליו בישראל או בשווקים אחרים.",
     principle: "עיקרון ראשון: הכל נשאר אצלך.",
     principleBody: "L Studio בנויה כתחנת עבודה מקומית. האודיו שלך, הפריסטים שלך והסשנים שלך לא צריכים לעבור דרך שרת כדי להפוך לרגע מוזיקלי.",
     scope: "היקף המדיניות",
@@ -77,7 +75,6 @@ const copy: Record<Language, PrivacyCopy> = {
     hero: "This page explains, in plain language, how L Studio handles permissions, audio and the information created while you work.",
     intro: "L Studio is designed as a local workstation. Your audio, presets and sessions do not need to pass through a server to become a musical moment.",
     date: "Last updated: September 26, 2026",
-    draftNote: "Draft for review. This page is not legal advice. A lawyer should review it before you rely on it in Israel or in any other market.",
     principle: "First principle: it stays with you.",
     principleBody: "L Studio is designed as a local workstation. Your audio, presets and sessions do not need to pass through a server to become a musical moment.",
     scope: "Policy scope",
@@ -110,7 +107,6 @@ const copy: Record<Language, PrivacyCopy> = {
     hero: "Здесь простыми словами объясняется, как L Studio работает с разрешениями, аудио и данными, которые создаются во время работы.",
     intro: "L Studio создана как локальная рабочая станция. Вашему аудио, пресетам и сессиям не нужно проходить через сервер.",
     date: "Обновлено: 26 сентября 2026",
-    draftNote: "Черновик для проверки. Этот текст не является юридической консультацией. Юрист должен проверить его, прежде чем опираться на него в Израиле или на других рынках.",
     principle: "Главный принцип: всё остаётся у вас.",
     principleBody: "L Studio создана как локальная рабочая станция. Вашему аудио, пресетам и сессиям не нужно проходить через сервер.",
     scope: "Область политики",
@@ -143,7 +139,6 @@ const copy: Record<Language, PrivacyCopy> = {
     hero: "تشرح هذه الصفحة ببساطة كيف تتعامل L Studio مع الأذونات والصوت والمعلومات التي يتم إنشاؤها أثناء العمل.",
     intro: "صُممت L Studio كمحطة عمل محلية. لا يحتاج صوتك وإعداداتك وجلساتك إلى المرور عبر خادم.",
     date: "آخر تحديث: 26 سبتمبر 2026",
-    draftNote: "مسودة للمراجعة. هذا النص ليس استشارة قانونية. يجب أن يراجعه محامٍ قبل الاعتماد عليه في إسرائيل أو في أي سوق آخر.",
     principle: "المبدأ الأول: كل شيء يبقى لديك.",
     principleBody: "صُممت L Studio كمحطة عمل محلية. لا يحتاج صوتك وإعداداتك وجلساتك إلى المرور عبر خادم.",
     scope: "نطاق السياسة",
@@ -213,7 +208,6 @@ export default function Privacy() {
           <div className="privacy-date">
             {text.date} <span>·</span> L Studio 1.02
           </div>
-          <p className="legal-draft">{text.draftNote}</p>
         </section>
         <section className="privacy-intro container">
           <div className="privacy-intro-card">

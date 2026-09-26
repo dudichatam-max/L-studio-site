@@ -9,6 +9,7 @@ import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
+const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero.png`;
 const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp`;
 const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
@@ -116,10 +117,10 @@ const exclusivePackMedia: Record<string, { jpg: string; webp: string }> = {
   "healing-journey": exclusivePoster("11-healing-journey"),
 };
 const exclusiveDefaults: Record<Language, { navLabel: string; comingSoon: string; homeKicker: string; homeTitle: string; homeBody: string; homeCta: string; imageAlt: string; packs: Array<{ id: string; name: string }> }> = {
-  he: { navLabel: "בלעדי", comingSoon: "בקרוב", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "שלוש חבילות מיוחדות. בקרוב.", homeBody: "Afro Techno, Victory Peak ו־Healing Journey יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה — היכנסו לבלעדי וראו מה בדרך.", homeCta: "לעמוד הבלעדי", imageAlt: "כרזת חבילת תופים בלעדית", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
-  en: { navLabel: "Exclusive", comingSoon: "Coming soon", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Three special packs. Coming soon.", homeBody: "Afro Techno, Victory Peak, and Healing Journey sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet — open Exclusive and see what is on the way.", homeCta: "See Exclusive", imageAlt: "Exclusive drum pack poster", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
-  ru: { navLabel: "Эксклюзив", comingSoon: "Скоро", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Три особых пака. Скоро.", homeBody: "Afro Techno, Victory Peak и Healing Journey стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет — откройте эксклюзив и посмотрите, что на подходе.", homeCta: "Смотреть эксклюзив", imageAlt: "Постер эксклюзивного ударного пака", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
-  ar: { navLabel: "حصري", comingSoon: "قريباً", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "ثلاث حزم خاصة. قريباً.", homeBody: "Afro Techno وVictory Peak وHealing Journey خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد — افتحوا الحصري وشاهدوا ما هو في الطريق.", homeCta: "شاهد الحصري", imageAlt: "ملصق حزمة طبول حصرية", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
+  he: { navLabel: "בלעדי", comingSoon: "בקרוב", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "שלוש חבילות מיוחדות. בקרוב.", homeBody: "Afro Techno, Victory Peak ו־Healing Journey יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.", homeCta: "לעמוד הבלעדי", imageAlt: "כרזת חבילת תופים בלעדית", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
+  en: { navLabel: "Exclusive", comingSoon: "Coming soon", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Three special packs. Coming soon.", homeBody: "Afro Techno, Victory Peak, and Healing Journey sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.", homeCta: "See Exclusive", imageAlt: "Exclusive drum pack poster", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
+  ru: { navLabel: "Эксклюзив", comingSoon: "Скоро", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Три особых пака. Скоро.", homeBody: "Afro Techno, Victory Peak и Healing Journey стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.", homeCta: "Смотреть эксклюзив", imageAlt: "Постер эксклюзивного ударного пака", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
+  ar: { navLabel: "حصري", comingSoon: "قريباً", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "ثلاث حزم خاصة. قريباً.", homeBody: "Afro Techno وVictory Peak وHealing Journey خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.", homeCta: "شاهد الحصري", imageAlt: "ملصق حزمة طبول حصرية", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }] },
 };
 const visionDefault = { kicker: "05 / THE VISION", title: "I built the studio I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take the studio with you", body: "Creating shouldn't have to wait for a computer." }] };
 const faqDefault = { kicker: "07 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
@@ -142,6 +143,7 @@ type TesterCopy = {
   error: string;
   invalid: string;
   spotsLabel: string;
+  imageAlt: string;
   freeAccess: string;
   localAudio: string;
 };
@@ -165,6 +167,7 @@ const testerDefaults = {
     error: "לא הצלחנו לשלוח את המייל עכשיו. נסו שוב בעוד כמה דקות.",
     invalid: "כתובת המייל לא תקינה.",
     spotsLabel: "פנויים",
+    imageAlt: "כרזת L Studio Factory Pack עם קופסת המוצר, שמונה עמודים ושישים וארבעה קולות",
     freeAccess: "גישה חינמית",
     localAudio: "אודיו מקומי",
   },
@@ -186,6 +189,7 @@ const testerDefaults = {
     error: "We could not send the email right now. Try again in a few minutes.",
     invalid: "That email address is not valid.",
     spotsLabel: "available",
+    imageAlt: "L Studio Factory Pack poster with the product box, eight pages and sixty-four voices",
     freeAccess: "FREE ACCESS",
     localAudio: "LOCAL AUDIO",
   },
@@ -207,6 +211,7 @@ const testerDefaults = {
     error: "Не удалось отправить письмо сейчас. Попробуйте снова через несколько минут.",
     invalid: "Этот адрес почты недействителен.",
     spotsLabel: "свободно",
+    imageAlt: "Постер L Studio Factory Pack с коробкой продукта, восемью страницами и шестьюдесятью четырьмя голосами",
     freeAccess: "БЕСПЛАТНЫЙ ДОСТУП",
     localAudio: "ЛОКАЛЬНЫЙ ЗВУК",
   },
@@ -228,6 +233,7 @@ const testerDefaults = {
     error: "تعذر إرسال البريد الآن. حاول مرة أخرى بعد بضع دقائق.",
     invalid: "عنوان البريد هذا غير صالح.",
     spotsLabel: "متاح",
+    imageAlt: "ملصق L Studio Factory Pack مع صندوق المنتج، ثماني صفحات وأربعة وستون صوتاً",
     freeAccess: "وصول مجاني",
     localAudio: "صوت محلي",
   },
@@ -776,7 +782,11 @@ export default function Home() {
 
         {/* 8. Early Access */}
         <section className="tester-section container" id="early-access">
-          <div className="tester-grid">
+          <div className="tester-panel">
+            <figure className="tester-hero">
+              <img src={factoryHero} alt={tester.imageAlt} width={1600} height={1600} />
+            </figure>
+            <div className="tester-grid">
             <div className="tester-copy">
               <span className="kicker">{tester.kicker}</span>
               <h2>{tester.title}</h2>
@@ -788,6 +798,7 @@ export default function Home() {
               <div className="tester-proof"><span>01</span><span>{tester.freeAccess}</span><span>{tester.localAudio}</span></div>
             </div>
             <EarlyAccessForm tester={tester} spots={spots} apiBase={apiBase} ready={contentReady} />
+            </div>
           </div>
         </section>
 

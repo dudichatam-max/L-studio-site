@@ -165,7 +165,7 @@ function PackStyles({ packId, styles, demoLabel }: { packId: string; styles: str
         })}
       </ul>
       {openStyle && openVideoId ? (
-        <div className="exclusive-demo" id={panelId} role="region" aria-label={`${openStyle} — ${demoLabel}`}>
+        <div className="exclusive-demo" id={panelId} role="region" aria-label={`${openStyle}: ${demoLabel}`}>
           <div className="exclusive-demo-head">
             <strong dir="ltr">{openStyle}</strong>
             <span dir="auto">{demoLabel}</span>
@@ -173,7 +173,7 @@ function PackStyles({ packId, styles, demoLabel }: { packId: string; styles: str
           <div className="exclusive-short">
             <iframe
               src={youtubeEmbedUrl(openVideoId)}
-              title={`${openStyle} — ${demoLabel}`}
+              title={`${openStyle}: ${demoLabel}`}
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen

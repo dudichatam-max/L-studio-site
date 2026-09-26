@@ -19,7 +19,6 @@ type TermsCopy = {
   termsLabel: string;
   hero: string;
   date: string;
-  draftNote: string;
   principle: string;
   principleBody: string;
   scope: string;
@@ -41,9 +40,8 @@ const copy: Record<Language, TermsCopy> = {
     guide: "מדריך למשתמש",
     privacy: "פרטיות",
     termsLabel: "תנאי שימוש",
-    hero: "תנאי השימוש האלה מסבירים את הכללים לשימוש באפליקציית L Studio — סטודיו מוזיקה מקומי לאנדרואיד.",
+    hero: "תנאי השימוש האלה מסבירים את הכללים לשימוש באפליקציית L Studio, סטודיו מוזיקה מקומי לאנדרואיד.",
     date: "עודכן לאחרונה: 26 בספטמבר 2026",
-    draftNote: "טיוטה לביקורת. הטקסט בעמוד הזה אינו ייעוץ משפטי. עורך דין צריך לעבור עליו לפני שמסתמכים עליו בישראל או בשווקים אחרים.",
     principle: "שימוש הוגן באפליקציה מקומית.",
     principleBody: "L Studio מיועדת ליצירת מוזיקה במכשיר שלך. התנאים האלה מגדירים מה מותר, מה נשאר אצלך, ומה האחריות של כל צד.",
     scope: "היקף התנאים",
@@ -58,7 +56,7 @@ const copy: Record<Language, TermsCopy> = {
       },
       {
         title: "תיאור השירות",
-        body: "L Studio היא אפליקציית אנדרואיד ליצירת מוזיקה מקומית. היא מאפשרת עבודה עם מקלדת, אפקטים, לופר, תופים, מיקרופון וייצוא אודיו — בעיקר על המכשיר שלך, ללא צורך בחשבון משתמש לשם שימוש בסיסי.",
+        body: "L Studio היא אפליקציית אנדרואיד ליצירת מוזיקה מקומית. היא מאפשרת עבודה עם מקלדת, אפקטים, לופר, תופים, מיקרופון וייצוא אודיו, בעיקר על המכשיר שלך, ללא צורך בחשבון משתמש לשם שימוש בסיסי.",
       },
       {
         title: "רישיון שימוש",
@@ -82,7 +80,7 @@ const copy: Record<Language, TermsCopy> = {
       },
       {
         title: "היעדר אחריות והגבלת אחריות",
-        body: "האפליקציה מסופקת \"כמות שהיא\" (AS IS) וללא אחריות מכל סוג, במידה המותרת בחוק — לרבות התאמה למטרה מסוימת או היעדר תקלות. המוציא לאור של L Studio אינו אחראי לנזקים עקיפים, תוצאתיים, אובדן נתונים, אובדן רווחים או נזקים הנובעים משימוש או מאי־יכולת להשתמש באפליקציה, במידה המרבית שהחוק החל מתיר.",
+        body: "האפליקציה מסופקת \"כמות שהיא\" (AS IS) וללא אחריות מכל סוג, במידה המותרת בחוק, לרבות התאמה למטרה מסוימת או היעדר תקלות. המוציא לאור של L Studio אינו אחראי לנזקים עקיפים, תוצאתיים, אובדן נתונים, אובדן רווחים או נזקים הנובעים משימוש או מאי־יכולת להשתמש באפליקציה, במידה המרבית שהחוק החל מתיר.",
       },
       {
         title: "שינויים בתנאים",
@@ -108,9 +106,8 @@ const copy: Record<Language, TermsCopy> = {
     guide: "User guide",
     privacy: "Privacy",
     termsLabel: "Terms",
-    hero: "These Terms of Service explain the rules for using L Studio — a local-first Android music creation app.",
+    hero: "These Terms of Service explain the rules for using L Studio, a local-first Android music creation app.",
     date: "Last updated: September 26, 2026",
-    draftNote: "Draft for review. This page is not legal advice. A lawyer should review it before you rely on it in Israel or in any other market.",
     principle: "Fair use of a local app.",
     principleBody: "L Studio is built for making music on your device. These terms describe what you may do, what stays yours, and each party's responsibilities.",
     scope: "Scope of terms",
@@ -125,7 +122,7 @@ const copy: Record<Language, TermsCopy> = {
       },
       {
         title: "Description of the service",
-        body: "L Studio is a local-first Android music creation app. It lets you work with a keyboard, effects, a looper, drums, a microphone and audio export — primarily on your device, without requiring an account for basic use.",
+        body: "L Studio is a local-first Android music creation app. It lets you work with a keyboard, effects, a looper, drums, a microphone and audio export, primarily on your device, without requiring an account for basic use.",
       },
       {
         title: "License to use the app",
@@ -175,9 +172,8 @@ const copy: Record<Language, TermsCopy> = {
     guide: "Руководство",
     privacy: "Приватность",
     termsLabel: "Условия",
-    hero: "Эти Условия использования объясняют правила работы с L Studio — локальным Android-приложением для создания музыки.",
+    hero: "Эти Условия использования объясняют правила работы с L Studio, локальным Android-приложением для создания музыки.",
     date: "Обновлено: 26 сентября 2026",
-    draftNote: "Черновик для проверки. Этот текст не является юридической консультацией. Юрист должен проверить его, прежде чем опираться на него в Израиле или на других рынках.",
     principle: "Честное использование локального приложения.",
     principleBody: "L Studio создана для музыки на вашем устройстве. Эти условия описывают, что можно делать, что остаётся вашим и каковы обязанности сторон.",
     scope: "Область условий",
@@ -192,7 +188,7 @@ const copy: Record<Language, TermsCopy> = {
       },
       {
         title: "Описание сервиса",
-        body: "L Studio — локальное Android-приложение для создания музыки. Оно позволяет работать с клавиатурой, эффектами, лупером, ударными, микрофоном и экспортом аудио — в основном на устройстве, без обязательного аккаунта для базового использования.",
+        body: "L Studio: локальное Android-приложение для создания музыки. Оно позволяет работать с клавиатурой, эффектами, лупером, ударными, микрофоном и экспортом аудио, в основном на устройстве, без обязательного аккаунта для базового использования.",
       },
       {
         title: "Лицензия на использование",
@@ -208,7 +204,7 @@ const copy: Record<Language, TermsCopy> = {
       },
       {
         title: "Локальная обработка и ваш контент",
-        body: "L Studio построена на принципе локальной обработки. Аудио, пресеты, сессии и проекты остаются на устройстве или там, куда вы их экспортировали. Приложение не отправляет ваш контент автоматически на серверы издателя. Подробности — в Политике конфиденциальности.",
+        body: "L Studio построена на принципе локальной обработки. Аудио, пресеты, сессии и проекты остаются на устройстве или там, куда вы их экспортировали. Приложение не отправляет ваш контент автоматически на серверы издателя. Подробности в Политике конфиденциальности.",
       },
       {
         title: "Доступ к микрофону",
@@ -216,7 +212,7 @@ const copy: Record<Language, TermsCopy> = {
       },
       {
         title: "Отказ от гарантий и ограничение ответственности",
-        body: "Приложение предоставляется «КАК ЕСТЬ» (AS IS) без каких-либо гарантий в максимальной степени, допускаемой законом, включая пригодность для конкретной цели или бесперебойную работу. Издатель L Studio не несёт ответственности за косвенные, последующие убытки, потерю данных, упущенную выгоду или иные убытки от использования или невозможности использовать приложение — в пределах, разрешённых применимым правом.",
+        body: "Приложение предоставляется «КАК ЕСТЬ» (AS IS) без каких-либо гарантий в максимальной степени, допускаемой законом, включая пригодность для конкретной цели или бесперебойную работу. Издатель L Studio не несёт ответственности за косвенные, последующие убытки, потерю данных, упущенную выгоду или иные убытки от использования или невозможности использовать приложение, в пределах, разрешённых применимым правом.",
       },
       {
         title: "Изменения условий",
@@ -242,9 +238,8 @@ const copy: Record<Language, TermsCopy> = {
     guide: "دليل المستخدم",
     privacy: "الخصوصية",
     termsLabel: "الشروط",
-    hero: "توضح شروط الخدمة هذه قواعد استخدام L Studio — تطبيق أندرويد محلي لإنشاء الموسيقى.",
+    hero: "توضح شروط الخدمة هذه قواعد استخدام L Studio، تطبيق أندرويد محلي لإنشاء الموسيقى.",
     date: "آخر تحديث: 26 سبتمبر 2026",
-    draftNote: "مسودة للمراجعة. هذا النص ليس استشارة قانونية. يجب أن يراجعه محامٍ قبل الاعتماد عليه في إسرائيل أو في أي سوق آخر.",
     principle: "استخدام عادل لتطبيق محلي.",
     principleBody: "صُممت L Studio لصنع الموسيقى على جهازك. توضّح هذه الشروط ما يمكنك فعله، وما يبقى ملكك، ومسؤوليات كل طرف.",
     scope: "نطاق الشروط",
@@ -259,7 +254,7 @@ const copy: Record<Language, TermsCopy> = {
       },
       {
         title: "وصف الخدمة",
-        body: "L Studio تطبيق أندرويد محلي لإنشاء الموسيقى. يتيح العمل مع لوحة مفاتيح وتأثيرات ولوبر وطبول وميكروفون وتصدير الصوت — بشكل أساسي على جهازك، دون الحاجة إلى حساب للاستخدام الأساسي.",
+        body: "L Studio تطبيق أندرويد محلي لإنشاء الموسيقى. يتيح العمل مع لوحة مفاتيح وتأثيرات ولوبر وطبول وميكروفون وتصدير الصوت، بشكل أساسي على جهازك، دون الحاجة إلى حساب للاستخدام الأساسي.",
       },
       {
         title: "ترخيص الاستخدام",
@@ -348,7 +343,6 @@ export default function Terms() {
           <div className="privacy-date">
             {text.date} <span>·</span> L Studio 1.02
           </div>
-          <p className="legal-draft">{text.draftNote}</p>
         </section>
         <section className="privacy-intro container">
           <div className="privacy-intro-card">
