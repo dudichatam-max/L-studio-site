@@ -35,6 +35,27 @@ type EarlyAccessRow = {
   email_status: string | null;
   created_at: number;
   updated_at: number;
+  apk_download_count?: number | null;
+  first_download_at?: number | null;
+  details_json?: string | null;
+};
+
+export type EarlyAccessSignup = {
+  email: string;
+  name: string;
+  orderId: string;
+  emailStatus: string | null;
+  createdAt: number;
+  updatedAt: number;
+  downloadCount: number;
+  firstDownloadAt: number | null;
+  details: Record<string, string>;
+};
+
+export type NotedDownload = {
+  earlyAccess: boolean;
+  firstApkDownload: boolean;
+  signup: EarlyAccessSignup | null;
 };
 
 export type EarlyAccessReserve =
@@ -72,6 +93,62 @@ function asEarlyAccess(row: unknown): EarlyAccessRow | null {
 function isUniqueConstraint(error: unknown): boolean {
   const message = error instanceof Error ? error.message : String(error);
   return /unique/i.test(message);
+}
+
+const DETAIL_KEY = /^[A-Za-z][A-Za-z0-9_-]{0,40}$/;
+const NO_DOWNLOAD: NotedDownload = { earlyAccess: false, firstApkDownload: false, signup: null };
+
+function cleanDetailValue(value: string): string {
+  return value.replace(/[\u0000-\u001f\u007f]/g, " ").replace(/\s+/g, " ").trim().slice(0, 200);
+}
+
+function sanitizeDetails(details: Record<string, string> | undefined): string | null {
+  if (!details) return null;
+  const clean: Record<string, string> = {};
+  for (const [key, value] of Object.entries(details)) {
+    if (Object.keys(clean).length >= 12) break;
+    if (typeof value !== "string" || !DETAIL_KEY.test(key)) continue;
+    const lower = key.toLowerCase();
+    if (lower === "email" || lower === "name") continue;
+    const trimmed = cleanDetailValue(value);
+    if (!trimmed) continue;
+    clean[key] = trimmed;
+  }
+  return Object.keys(clean).length ? JSON.stringify(clean) : null;
+}
+
+function parseDetails(raw: string | null | undefined): Record<string, string> {
+  if (!raw) return {};
+  try {
+    const parsed = JSON.parse(raw) as unknown;
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
+    const details: Record<string, string> = {};
+    for (const [key, value] of Object.entries(parsed)) {
+      if (typeof value !== "string" || !DETAIL_KEY.test(key)) continue;
+      const trimmed = cleanDetailValue(value);
+      if (!trimmed) continue;
+      details[key] = trimmed;
+    }
+    return details;
+  } catch {
+    return {};
+  }
+}
+
+function toEarlyAccessSignup(row: EarlyAccessRow): EarlyAccessSignup {
+  const downloadCount = Number(row.apk_download_count ?? 0);
+  const firstDownloadAt = row.first_download_at == null ? null : Number(row.first_download_at);
+  return {
+    email: row.email,
+    name: row.name,
+    orderId: row.order_id,
+    emailStatus: row.email_status,
+    createdAt: row.created_at,
+    updatedAt: row.updated_at,
+    downloadCount: Number.isFinite(downloadCount) ? downloadCount : 0,
+    firstDownloadAt: firstDownloadAt != null && Number.isFinite(firstDownloadAt) ? firstDownloadAt : null,
+    details: parseDetails(row.details_json),
+  };
 }
 
 export class CommerceStore {
@@ -228,13 +305,13 @@ export class CommerceStore {
       .run(Date.now(), tokenHash);
   }
 
-  noteSuccessfulDownload(tokenHash: string, now = Date.now()) {
+  noteSuccessfulDownload(tokenHash: string, now = Date.now()): NotedDownload {
     this.db.exec("BEGIN IMMEDIATE");
     try {
       const row = asToken(this.db.prepare("SELECT * FROM download_tokens WHERE token_hash = ?").get(tokenHash));
       if (!row || row.used_at != null) {
         this.db.exec("COMMIT");
-        return;
+        return NO_DOWNLOAD;
       }
       if (this.isEarlyAccessOrder(row.order_id)) {
         const count = Number(row.download_count ?? 0) + 1;
@@ -255,14 +332,17 @@ export class CommerceStore {
             )
             .run(count, tokenHash);
         }
-      } else {
-        this.db
-          .prepare(
-            "UPDATE download_tokens SET used_at = ?, lock_until = NULL, sealed_token = NULL WHERE token_hash = ? AND used_at IS NULL",
-          )
-          .run(now, tokenHash);
+        const noted = this.bumpEarlyAccessDownload(row.order_id, now);
+        this.db.exec("COMMIT");
+        return noted;
       }
+      this.db
+        .prepare(
+          "UPDATE download_tokens SET used_at = ?, lock_until = NULL, sealed_token = NULL WHERE token_hash = ? AND used_at IS NULL",
+        )
+        .run(now, tokenHash);
       this.db.exec("COMMIT");
+      return NO_DOWNLOAD;
     } catch (error) {
       this.rollback();
       throw error;
@@ -278,7 +358,40 @@ export class CommerceStore {
     return Number(row?.n ?? 0);
   }
 
-  reserveEarlyAccess(input: { email: string; name: string; orderId: string; limit: number; now?: number }): EarlyAccessReserve {
+  countEarlyAccessDownloaded(): number {
+    const row = this.db
+      .prepare(
+        `SELECT COUNT(*) AS n FROM early_access_signups
+         WHERE COALESCE(apk_download_count, 0) > 0 OR first_download_at IS NOT NULL`,
+      )
+      .get() as { n?: number } | undefined;
+    return Number(row?.n ?? 0);
+  }
+
+  getEarlyAccessSignup(email: string): EarlyAccessSignup | null {
+    const row = asEarlyAccess(this.db.prepare("SELECT * FROM early_access_signups WHERE email = ?").get(email.trim().toLowerCase()));
+    return row ? toEarlyAccessSignup(row) : null;
+  }
+
+  listEarlyAccessSignups(limit = 50): EarlyAccessSignup[] {
+    const cap = Math.min(200, Math.max(1, Math.floor(limit)));
+    const rows = this.db.prepare("SELECT * FROM early_access_signups ORDER BY created_at DESC, email ASC LIMIT ?").all(cap);
+    const signups: EarlyAccessSignup[] = [];
+    for (const row of rows) {
+      const parsed = asEarlyAccess(row);
+      if (parsed) signups.push(toEarlyAccessSignup(parsed));
+    }
+    return signups;
+  }
+
+  reserveEarlyAccess(input: {
+    email: string;
+    name: string;
+    orderId: string;
+    limit: number;
+    now?: number;
+    details?: Record<string, string>;
+  }): EarlyAccessReserve {
     const now = input.now ?? Date.now();
     const email = input.email.trim().toLowerCase();
     this.db.exec("BEGIN IMMEDIATE");
@@ -294,10 +407,11 @@ export class CommerceStore {
       }
       this.db
         .prepare(
-          `INSERT INTO early_access_signups (email, name, order_id, email_status, created_at, updated_at)
-           VALUES (?, ?, ?, NULL, ?, ?)`,
+          `INSERT INTO early_access_signups
+             (email, name, order_id, email_status, created_at, updated_at, apk_download_count, first_download_at, details_json)
+           VALUES (?, ?, ?, NULL, ?, ?, 0, NULL, ?)`,
         )
-        .run(email, input.name, input.orderId, now, now);
+        .run(email, input.name, input.orderId, now, now, sanitizeDetails(input.details));
       this.db.exec("COMMIT");
       return { result: "created", orderId: input.orderId, emailStatus: null };
     } catch (error) {
@@ -312,6 +426,32 @@ export class CommerceStore {
 
   setEarlyAccessEmailStatus(email: string, status: string) {
     this.db.prepare("UPDATE early_access_signups SET email_status = ?, updated_at = ? WHERE email = ?").run(status, Date.now(), email.trim().toLowerCase());
+  }
+
+  private bumpEarlyAccessDownload(orderId: string, now: number): NotedDownload {
+    const existing = asEarlyAccess(this.db.prepare("SELECT * FROM early_access_signups WHERE order_id = ?").get(orderId));
+    if (!existing) return { earlyAccess: true, firstApkDownload: false, signup: null };
+    const previousCount = Number(existing.apk_download_count ?? 0);
+    const firstApkDownload = existing.first_download_at == null && previousCount === 0;
+    const downloadCount = previousCount + 1;
+    const firstDownloadAt = existing.first_download_at ?? now;
+    this.db
+      .prepare(
+        `UPDATE early_access_signups
+         SET apk_download_count = ?, first_download_at = ?, updated_at = ?
+         WHERE order_id = ?`,
+      )
+      .run(downloadCount, firstDownloadAt, now, orderId);
+    return {
+      earlyAccess: true,
+      firstApkDownload,
+      signup: toEarlyAccessSignup({
+        ...existing,
+        apk_download_count: downloadCount,
+        first_download_at: firstDownloadAt,
+        updated_at: now,
+      }),
+    };
   }
 
   private isEarlyAccessOrder(orderId: string): boolean {
@@ -371,13 +511,51 @@ export function getStore(dataDir: string): CommerceStore {
       order_id TEXT NOT NULL UNIQUE,
       email_status TEXT,
       created_at INTEGER NOT NULL,
-      updated_at INTEGER NOT NULL
+      updated_at INTEGER NOT NULL,
+      apk_download_count INTEGER NOT NULL DEFAULT 0,
+      first_download_at INTEGER,
+      details_json TEXT
     );
   `);
   const tokenColumns = db.prepare("PRAGMA table_info(download_tokens)").all() as Array<{ name?: string }>;
   if (!tokenColumns.some((column) => column.name === "download_count")) {
     db.exec("ALTER TABLE download_tokens ADD COLUMN download_count INTEGER NOT NULL DEFAULT 0");
   }
+  const signupColumns = db.prepare("PRAGMA table_info(early_access_signups)").all() as Array<{ name?: string }>;
+  const signupNames = new Set(signupColumns.map((column) => column.name));
+  if (!signupNames.has("apk_download_count")) {
+    db.exec("ALTER TABLE early_access_signups ADD COLUMN apk_download_count INTEGER NOT NULL DEFAULT 0");
+  }
+  if (!signupNames.has("first_download_at")) {
+    db.exec("ALTER TABLE early_access_signups ADD COLUMN first_download_at INTEGER");
+  }
+  if (!signupNames.has("details_json")) {
+    db.exec("ALTER TABLE early_access_signups ADD COLUMN details_json TEXT");
+  }
+  db.exec(`
+    UPDATE early_access_signups
+    SET
+      apk_download_count = (
+        SELECT COALESCE(SUM(download_count), 0)
+        FROM download_tokens
+        WHERE download_tokens.order_id = early_access_signups.order_id
+      ),
+      first_download_at = COALESCE(
+        first_download_at,
+        (
+          SELECT MIN(COALESCE(used_at, created_at))
+          FROM download_tokens
+          WHERE download_tokens.order_id = early_access_signups.order_id
+            AND COALESCE(download_count, 0) > 0
+        )
+      )
+    WHERE COALESCE(apk_download_count, 0) = 0
+      AND EXISTS (
+        SELECT 1 FROM download_tokens
+        WHERE download_tokens.order_id = early_access_signups.order_id
+          AND COALESCE(download_count, 0) > 0
+      );
+  `);
   singleton = new CommerceStore(db);
   return singleton;
 }

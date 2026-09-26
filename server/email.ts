@@ -310,6 +310,105 @@ ${downloadPlain}
   };
 }
 
+export type OwnerNoticeEvent = "signup" | "download";
+
+export type OwnerNoticeInput = {
+  event: OwnerNoticeEvent;
+  orderId: string;
+  name: string;
+  email: string;
+  details: Record<string, string>;
+  atIso: string;
+  signups: number;
+  limit: number;
+  remaining: number;
+  downloadedTesters: number;
+  testerDownloadCount: number;
+};
+
+function detailLines(details: Record<string, string>): string {
+  const entries = Object.entries(details);
+  if (!entries.length) return "—";
+  return entries.map(([key, value]) => `${key}: ${value}`).join("\n");
+}
+
+function noticeParts(input: OwnerNoticeInput): { subject: string; hebrew: string; english: string } {
+  const displayName = input.name.trim() || "—";
+  const other = detailLines(input.details);
+  const spotsHe = `${input.signups} בשימוש, ${input.remaining} נותרו (מתוך ${input.limit})`;
+  const spotsEn = `${input.signups} used, ${input.remaining} remaining (limit ${input.limit})`;
+  if (input.event === "signup") {
+    return {
+      subject: "נרשם בודק חדש / New Early Access signup",
+      hebrew: [
+        "נרשם בודק חדש לגישה המוקדמת של L Studio.",
+        "",
+        `שם: ${displayName}`,
+        `אימייל: ${input.email}`,
+        "שדות נוספים:",
+        other,
+        `זמן: ${input.atIso}`,
+        `מקומות: ${spotsHe}`,
+        `סה״כ נרשמים: ${input.signups}`,
+      ].join("\n"),
+      english: [
+        "A new Early Access tester signed up.",
+        "",
+        `Name: ${displayName}`,
+        `Email: ${input.email}`,
+        "Other fields:",
+        other,
+        `Time: ${input.atIso}`,
+        `Spots: ${spotsEn}`,
+        `Total signups: ${input.signups}`,
+      ].join("\n"),
+    };
+  }
+  return {
+    subject: "הורדת APK ראשונה / First Early Access download",
+    hebrew: [
+      "בודק הוריד את קובץ ה-APK בפעם הראשונה.",
+      "",
+      `שם: ${displayName}`,
+      `אימייל: ${input.email}`,
+      `זמן: ${input.atIso}`,
+      `הורדות של הבודק: ${input.testerDownloadCount}`,
+      `בודקים שהורידו: ${input.downloadedTesters} מתוך ${input.signups}`,
+      `מקומות: ${spotsHe}`,
+      `סה״כ נרשמים: ${input.signups}`,
+    ].join("\n"),
+    english: [
+      "A tester downloaded the APK for the first time.",
+      "",
+      `Name: ${displayName}`,
+      `Email: ${input.email}`,
+      `Time: ${input.atIso}`,
+      `This tester's downloads: ${input.testerDownloadCount}`,
+      `Testers who downloaded: ${input.downloadedTesters} of ${input.signups}`,
+      `Spots: ${spotsEn}`,
+      `Total signups: ${input.signups}`,
+    ].join("\n"),
+  };
+}
+
+export function buildOwnerEarlyAccessNotice(input: OwnerNoticeInput): DownloadEmailContent {
+  const parts = noticeParts(input);
+  const text = [parts.hebrew, "", "English", "", parts.english].join("\n");
+  const html = `<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escapeHtml(parts.subject)}</title>
+</head>
+<body style="margin:0;padding:24px;background-color:#0b0b0c;color:#f2f1eb;font-family:Arial,Helvetica,sans-serif;">
+<pre dir="rtl" style="white-space:pre-wrap;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;">${escapeHtml(parts.hebrew)}</pre>
+<pre dir="ltr" style="white-space:pre-wrap;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;border-top:1px solid #2c2c30;padding-top:16px;">${escapeHtml(parts.english)}</pre>
+</body>
+</html>`;
+  return { subject: parts.subject, text, html };
+}
+
 async function sendResend(
   config: CommerceConfig,
   to: string,
@@ -436,6 +535,34 @@ export async function sendEarlyAccessEmail(
   } catch (error) {
     console.error(
       `early access email failed for order ${input.orderId}: ${error instanceof Error ? error.message : "error"}`
+    );
+    return "failed";
+  }
+}
+
+export async function sendOwnerEarlyAccessNotice(config: CommerceConfig, input: OwnerNoticeInput): Promise<EmailResult> {
+  const to = safeEmail(config.ownerNotifyEmail);
+  if (!to) {
+    console.error(`owner early access notify skipped (${input.event}) for order ${input.orderId}: invalid OWNER_NOTIFY_EMAIL`);
+    return "skipped";
+  }
+  if (!config.emailConfigured) {
+    console.error(`owner early access notify skipped (${input.event}) for order ${input.orderId}: email provider is not configured`);
+    return "skipped";
+  }
+  const content = buildOwnerEarlyAccessNotice(input);
+  const idempotencyKey = `owner-notify/early-access/${input.event}/${input.orderId.replace(/[\r\n]/g, "")}`.slice(0, 256);
+  try {
+    if (config.resendApiKey && config.resendFrom) {
+      await sendResend(config, to, content, idempotencyKey);
+    } else {
+      await sendSmtp(config, to, content);
+    }
+    console.log(`owner early access notify sent (${input.event}) for order ${input.orderId}`);
+    return "sent";
+  } catch (error) {
+    console.error(
+      `owner early access notify failed (${input.event}) for order ${input.orderId}: ${error instanceof Error ? error.message : "error"}`,
     );
     return "failed";
   }

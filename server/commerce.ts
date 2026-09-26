@@ -1,8 +1,8 @@
-import { randomBytes } from "node:crypto";
+import { createHash, randomBytes, timingSafeEqual } from "node:crypto";
 import express, { type NextFunction, type Request, type Response } from "express";
 import { apkByteLength, apkStatus, ensureApk, openApk, resetApkForTests } from "./apk";
 import { EARLY_ACCESS_TOKEN_TTL_MS, getConfig, resetConfigForTests, TOKEN_TTL_MS, type CommerceConfig } from "./config";
-import { normalizeSignupEmail, sendDownloadEmail, sendEarlyAccessEmail, type EmailResult } from "./email";
+import { normalizeSignupEmail, sendDownloadEmail, sendEarlyAccessEmail, sendOwnerEarlyAccessNotice, type EmailResult } from "./email";
 import {
   acceptCreatedOrder,
   createOrderAmountWasUnexpected,
@@ -16,7 +16,7 @@ import {
   verifyWebhookSignature,
   type WebhookHeaders,
 } from "./paypal";
-import { getStore, resetStoreForTests, type ClaimResult } from "./store";
+import { getStore, resetStoreForTests, type ClaimResult, type EarlyAccessSignup } from "./store";
 import { hashDownloadToken, isTokenShape, mintDownloadToken, sealDownloadToken, unsealDownloadToken } from "./tokens";
 
 const DOWNLOAD_LOCK_MS = 2 * 60 * 1000;
@@ -88,6 +88,84 @@ function earlyAccessCounts(config: CommerceConfig): { limit: number; taken: numb
   const limit = config.earlyAccessLimit;
   const taken = getStore(config.dataDir).countEarlyAccess();
   return { limit, taken, remaining: Math.max(0, limit - taken) };
+}
+
+function extraSignupDetails(body: unknown): Record<string, string> {
+  if (!body || typeof body !== "object" || Array.isArray(body)) return {};
+  const details: Record<string, string> = {};
+  for (const [key, value] of Object.entries(body as Record<string, unknown>)) {
+    if (typeof value === "string") details[key] = value;
+  }
+  return details;
+}
+
+function adminSecretMatches(provided: string, expected: string): boolean {
+  if (!provided || provided.length > 512 || expected.length > 512) return false;
+  const left = createHash("sha256").update(provided).digest();
+  const right = createHash("sha256").update(expected).digest();
+  return timingSafeEqual(left, right);
+}
+
+function providedAdminSecret(req: Request): string {
+  const header = req.get("x-admin-secret")?.trim() || "";
+  if (header) return header;
+  const auth = req.get("authorization")?.trim() || "";
+  if (/^bearer\s+/i.test(auth)) return auth.replace(/^bearer\s+/i, "").trim();
+  const query = req.query.secret;
+  if (typeof query === "string") return query.trim();
+  return "";
+}
+
+async function notifyOwnerOfNewSignup(config: CommerceConfig, email: string) {
+  try {
+    const store = getStore(config.dataDir);
+    const signup = store.getEarlyAccessSignup(email);
+    if (!signup) return;
+    const counts = earlyAccessCounts(config);
+    await sendOwnerEarlyAccessNotice(config, {
+      event: "signup",
+      orderId: signup.orderId,
+      name: signup.name,
+      email: signup.email,
+      details: signup.details,
+      atIso: new Date(signup.createdAt).toISOString(),
+      signups: counts.taken,
+      limit: counts.limit,
+      remaining: counts.remaining,
+      downloadedTesters: store.countEarlyAccessDownloaded(),
+      testerDownloadCount: signup.downloadCount,
+    });
+  } catch (error) {
+    console.error(`owner early access notify failed (signup): ${error instanceof Error ? error.message : "error"}`);
+  }
+}
+
+function notifyOwnerOfFirstDownload(config: CommerceConfig, signup: EarlyAccessSignup) {
+  try {
+    const store = getStore(config.dataDir);
+    const counts = earlyAccessCounts(config);
+    void sendOwnerEarlyAccessNotice(config, {
+      event: "download",
+      orderId: signup.orderId,
+      name: signup.name,
+      email: signup.email,
+      details: signup.details,
+      atIso: new Date().toISOString(),
+      signups: counts.taken,
+      limit: counts.limit,
+      remaining: counts.remaining,
+      downloadedTesters: store.countEarlyAccessDownloaded(),
+      testerDownloadCount: signup.downloadCount,
+    }).catch((error) => {
+      console.error(
+        `owner early access notify failed (download) for order ${signup.orderId}: ${error instanceof Error ? error.message : "error"}`,
+      );
+    });
+  } catch (error) {
+    console.error(
+      `owner early access notify failed (download) for order ${signup.orderId}: ${error instanceof Error ? error.message : "error"}`,
+    );
+  }
 }
 
 async function deliverEarlyAccess(
@@ -452,6 +530,7 @@ export function attachCommerceApi(app: express.Express) {
         name,
         orderId: earlyAccessOrderId(),
         limit: config.earlyAccessLimit,
+        details: extraSignupDetails(req.body),
       });
       if (reserved.result === "full") {
         res.status(410).json({
@@ -476,6 +555,7 @@ export function attachCommerceApi(app: express.Express) {
         });
         return;
       }
+      const priorEmailStatus = reserved.result === "exists" ? reserved.emailStatus : null;
       const emailResult = await sendEarlyAccessEmail(config, {
         to: email,
         downloadUrl: delivered.downloadUrl,
@@ -491,6 +571,7 @@ export function attachCommerceApi(app: express.Express) {
         });
         return;
       }
+      if (priorEmailStatus !== "sent") await notifyOwnerOfNewSignup(config, email);
       if (reserved.result === "exists") {
         res.status(200).json({
           ok: true,
@@ -698,8 +779,10 @@ export function attachCommerceApi(app: express.Express) {
         apk.stream.off("data", countBytes);
         // A finished stream that the phone did not keep must not burn an Early
         // Access link. Paid links still close after one full file.
-        if (complete && fullDelivery()) store.noteSuccessfulDownload(tokenHash);
-        else store.release(tokenHash);
+        if (complete && fullDelivery()) {
+          const noted = store.noteSuccessfulDownload(tokenHash);
+          if (noted.firstApkDownload && noted.signup) notifyOwnerOfFirstDownload(config, noted.signup);
+        } else store.release(tokenHash);
       };
       apk.stream.on("data", countBytes);
       apk.stream.on("error", () => {
@@ -727,6 +810,42 @@ export function attachCommerceApi(app: express.Express) {
   });
   app.get("/api/download/:token", downloadHandler);
   app.post("/api/download/:token", downloadHandler);
+
+  app.get("/api/admin/early-access-stats", (req, res) => {
+    if (!allowRate(`admin-stats:${clientIp(req)}`, 60, 10 * 60 * 1000)) {
+      res.status(429).json({ error: "rate_limited" });
+      return;
+    }
+    const config = getConfig();
+    if (!config.adminStatsSecret) {
+      res.status(503).json({ error: "not_configured" });
+      return;
+    }
+    if (!adminSecretMatches(providedAdminSecret(req), config.adminStatsSecret)) {
+      res.status(401).json({ error: "unauthorized" });
+      return;
+    }
+    const store = getStore(config.dataDir);
+    const counts = earlyAccessCounts(config);
+    const recent = store.listEarlyAccessSignups(50).map((signup) => ({
+      email: signup.email,
+      name: signup.name,
+      createdAt: new Date(signup.createdAt).toISOString(),
+      downloadCount: signup.downloadCount,
+      hasDownloaded: signup.downloadCount > 0 || signup.firstDownloadAt != null,
+      downloadedAt: signup.firstDownloadAt == null ? null : new Date(signup.firstDownloadAt).toISOString(),
+      emailStatus: signup.emailStatus,
+      details: signup.details,
+    }));
+    res.json({
+      limit: counts.limit,
+      signups: counts.taken,
+      spotsUsed: counts.taken,
+      spotsRemaining: counts.remaining,
+      downloaded: store.countEarlyAccessDownloaded(),
+      recent,
+    });
+  });
 
   app.use("/api", (_req, res) => {
     res.status(404).json({ error: "not_found" });
