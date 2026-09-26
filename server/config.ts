@@ -33,6 +33,8 @@ export type CommerceConfig = {
   smtpPass: string;
   smtpFrom: string;
   emailConfigured: boolean;
+  sitePublicUrl: string;
+  guideUrl: string;
   configError: string;
 };
 
@@ -72,6 +74,35 @@ export function centsToUsd(cents: number): string {
   return `${Math.floor(cents / 100)}.${String(cents % 100).padStart(2, "0")}`;
 }
 
+const DEFAULT_SITE_PUBLIC_URL = "https://l-studio.studio";
+
+function resolveSitePublicUrl(raw: string | undefined): string {
+  const trimmed = (raw || "").trim();
+  if (!trimmed) return DEFAULT_SITE_PUBLIC_URL;
+  try {
+    const url = new URL(trimmed);
+    if (url.protocol !== "http:" && url.protocol !== "https:") return DEFAULT_SITE_PUBLIC_URL;
+    const path = url.pathname === "/" ? "" : url.pathname.replace(/\/+$/, "");
+    return `${url.origin}${path}`;
+  } catch {
+    return DEFAULT_SITE_PUBLIC_URL;
+  }
+}
+
+function resolveGuideUrl(sitePublicUrl: string, raw: string | undefined): string {
+  const fallback = `${sitePublicUrl}/guide`;
+  const trimmed = (raw || "").trim();
+  if (!trimmed) return fallback;
+  if (trimmed.startsWith("/")) return `${sitePublicUrl}${trimmed}`.replace(/\/+$/, "");
+  try {
+    const url = new URL(trimmed);
+    if (url.protocol !== "http:" && url.protocol !== "https:") return fallback;
+    return url.href.replace(/\/+$/, "");
+  } catch {
+    return fallback;
+  }
+}
+
 function readPrice(): { priceUsd: string; priceCents: number; error: string } {
   const raw = (process.env.PRODUCT_PRICE_USD || "4.00").trim();
   const cents = toCents(raw);
@@ -96,6 +127,8 @@ export function getConfig(): CommerceConfig {
   const smtpUser = (process.env.SMTP_USER || "").trim();
   const smtpPass = process.env.SMTP_PASS || "";
   const emailConfigured = Boolean((resendApiKey && resendFrom) || (smtpHost && smtpFrom));
+  const sitePublicUrl = resolveSitePublicUrl(process.env.SITE_PUBLIC_URL);
+  const guideUrl = resolveGuideUrl(sitePublicUrl, process.env.GUIDE_URL);
   let configError = price.error;
   if (modeRaw !== "sandbox" && modeRaw !== "live") {
     configError = configError || "PAYPAL_MODE must be sandbox or live";
@@ -124,6 +157,8 @@ export function getConfig(): CommerceConfig {
     smtpPass,
     smtpFrom,
     emailConfigured,
+    sitePublicUrl,
+    guideUrl,
     configError,
   };
   return cached;

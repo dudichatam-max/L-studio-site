@@ -6,6 +6,7 @@ import path from "node:path";
 import express from "express";
 import { apkStatus, ensureApk } from "./apk";
 import { getConfig, resetConfigForTests } from "./config";
+import { buildDownloadEmail, sendDownloadEmail } from "./email";
 import { attachCommerceApi, isAllowedOrigin, prepareCommerce, resetCommerceForTests } from "./commerce";
 import {
   acceptCreatedOrder,
@@ -87,7 +88,110 @@ async function main() {
   };
   for (const [key, value] of Object.entries(baseEnv)) process.env[key] = value;
   delete process.env.APK_SOURCE_URL;
+  delete process.env.SITE_PUBLIC_URL;
+  delete process.env.GUIDE_URL;
+  delete process.env.RESEND_API_KEY;
+  delete process.env.RESEND_FROM;
   resetCommerceForTests();
+  resetConfigForTests();
+
+  const defaultConfig = getConfig();
+  assert(defaultConfig.sitePublicUrl === "https://l-studio.studio", "default site public url");
+  assert(defaultConfig.guideUrl === "https://l-studio.studio/guide", "default guide url");
+
+  process.env.SITE_PUBLIC_URL = "https://preview.example/";
+  process.env.GUIDE_URL = "/guide/";
+  resetConfigForTests();
+  const joinedGuide = getConfig();
+  assert(joinedGuide.sitePublicUrl === "https://preview.example", "site url trims slash");
+  assert(joinedGuide.guideUrl === "https://preview.example/guide", "guide path joins site");
+
+  process.env.GUIDE_URL = "https://docs.example/help/";
+  resetConfigForTests();
+  assert(getConfig().guideUrl === "https://docs.example/help", "absolute guide url");
+
+  const message = buildDownloadEmail({
+    productName: "L Studio Pro",
+    downloadUrl: "https://buy.example/api/download/token",
+    guideUrl: "https://l-studio.studio/guide",
+    orderId: "5O190127TN364715T",
+    supportEmail: "dudichatam@gmail.com",
+  });
+  assert(message.subject === "Your L Studio Pro download", "download subject");
+  assert(!message.subject.includes("\u2014") && !message.text.includes("\u2014") && !message.html.includes("\u2014"), "no em dash");
+  assert(message.text.startsWith("תודה על הרכישה"), "hebrew text first");
+  assert(message.text.includes("Thank you for purchasing L Studio Pro"), "english text");
+  assert(message.text.includes("https://buy.example/api/download/token"), "text download url");
+  assert(message.text.includes("https://l-studio.studio/guide"), "text guide url");
+  assert(message.text.includes("5O190127TN364715T"), "text order id");
+  assert(message.text.includes("dudichatam@gmail.com"), "text support");
+  assert(message.text.includes("פעם אחת") && message.text.includes("works once"), "expiry note");
+  assert(message.html.includes('lang="he"') && message.html.includes('dir="rtl"'), "hebrew direction");
+  assert(message.html.includes('lang="en"') && message.html.includes('dir="ltr"'), "english direction");
+  assert(message.html.includes('role="presentation"'), "layout table");
+  assert(message.html.includes("הורדת APK של L Studio Pro"), "hebrew download cta");
+  assert(message.html.includes("Download L Studio Pro APK"), "english download cta");
+  assert(message.html.includes('href="https://buy.example/api/download/token"'), "html download href");
+  assert(message.html.includes('href="https://l-studio.studio/guide"'), "html guide href");
+  assert(message.html.includes("<title>Your L Studio Pro download</title>"), "html title");
+  assert(message.replyTo === "dudichatam@gmail.com", "reply to support");
+
+  const hostile = buildDownloadEmail({
+    productName: "L <Studio>",
+    downloadUrl: 'https://buy.example/api/download/a<b>&c"',
+    guideUrl: "https://l-studio.studio/guide?x=1&y=2",
+    orderId: "ORD<1>",
+    supportEmail: "not-an-email",
+  });
+  assert(!hostile.html.includes("<Studio>") && hostile.html.includes("L &lt;Studio&gt;"), "escaped product name");
+  assert(!hostile.html.includes("ORD<1>") && hostile.html.includes("ORD&lt;1&gt;"), "escaped order id");
+  assert(!hostile.html.includes('href="javascript:'), "no javascript href");
+  assert(hostile.html.includes("a%3Cb%3E"), "download href encoded");
+  assert(hostile.html.includes("y=2"), "guide query kept");
+  assert(hostile.html.includes("&amp;"), "html ampersand escaped");
+  assert(hostile.replyTo === undefined, "invalid support has no reply-to");
+
+  process.env.RESEND_API_KEY = "re_selfcheck";
+  process.env.RESEND_FROM = "L Studio <downloads@l-studio.studio>";
+  delete process.env.SITE_PUBLIC_URL;
+  delete process.env.GUIDE_URL;
+  resetConfigForTests();
+  const emailConfig = getConfig();
+  const previousFetch = globalThis.fetch;
+  const captured = { url: "", authorization: "", idempotencyKey: "", body: "" };
+  globalThis.fetch = async (input, init) => {
+    const headers = new Headers(init?.headers);
+    captured.url = String(input);
+    captured.authorization = headers.get("authorization") ?? "";
+    captured.idempotencyKey = headers.get("idempotency-key") ?? "";
+    captured.body = String(init?.body ?? "");
+    return new Response("{}", { status: 200 });
+  };
+  try {
+    const sent = await sendDownloadEmail(emailConfig, {
+      to: "buyer@example.com",
+      downloadUrl: "https://buy.example/api/download/token",
+      orderId: "5O190127TN364715T",
+    });
+    assert(sent === "sent", "resend send result");
+  } finally {
+    globalThis.fetch = previousFetch;
+  }
+  assert(captured.url === "https://api.resend.com/emails", "resend endpoint");
+  assert(captured.authorization === "Bearer re_selfcheck", "resend auth");
+  assert(captured.idempotencyKey === "download-email/5O190127TN364715T", "idempotency key");
+  const payload = JSON.parse(captured.body) as { subject?: string; text?: string; html?: string; reply_to?: string };
+  assert(Boolean(payload.html) && Boolean(payload.text), "resend html and text");
+  assert(payload.subject === "Your L Studio Pro download", "resend subject");
+  assert(payload.reply_to === emailConfig.supportEmail, "resend reply-to");
+  assert(payload.html?.includes("https://l-studio.studio/guide"), "resend default guide");
+  assert(!captured.body.includes("re_selfcheck"), "resend body has no api key");
+
+  delete process.env.RESEND_API_KEY;
+  delete process.env.RESEND_FROM;
+  delete process.env.SITE_PUBLIC_URL;
+  delete process.env.GUIDE_URL;
+  resetConfigForTests();
 
   const round = unsealDownloadToken(sealDownloadToken("abc", secret), secret);
   assert(round === "abc", "token seal roundtrip");
