@@ -6,6 +6,9 @@ export const APPROVED_APK_SHA256 = "28f976838cd6bed8daa77ebe6a84dd534028bca368cf
 export const APPROVED_APK_BYTES = 24223751;
 export const PRODUCT_CODE = "l-studio-pro";
 export const TOKEN_TTL_MS = 60 * 60 * 1000;
+/** Early Access links survive Chrome's failed first save and a few retries. */
+export const EARLY_ACCESS_TOKEN_TTL_MS = 24 * 60 * 60 * 1000;
+export const EARLY_ACCESS_DOWNLOAD_LIMIT = 10;
 
 export type PaypalMode = "sandbox" | "live";
 

@@ -1,7 +1,7 @@
 import { randomBytes } from "node:crypto";
 import express, { type NextFunction, type Request, type Response } from "express";
-import { apkStatus, ensureApk, openApk, resetApkForTests } from "./apk";
-import { getConfig, resetConfigForTests, TOKEN_TTL_MS, type CommerceConfig } from "./config";
+import { apkByteLength, apkStatus, ensureApk, openApk, resetApkForTests } from "./apk";
+import { EARLY_ACCESS_TOKEN_TTL_MS, getConfig, resetConfigForTests, TOKEN_TTL_MS, type CommerceConfig } from "./config";
 import { normalizeSignupEmail, sendDownloadEmail, sendEarlyAccessEmail, type EmailResult } from "./email";
 import {
   acceptCreatedOrder,
@@ -106,7 +106,7 @@ async function deliverEarlyAccess(
     currency: "EARLY",
     tokenHash: hashDownloadToken(rawToken, config.downloadTokenSecret),
     sealedToken: sealDownloadToken(rawToken, config.downloadTokenSecret),
-    ttlMs: TOKEN_TTL_MS,
+    ttlMs: EARLY_ACCESS_TOKEN_TTL_MS,
   });
   if (issued.result === "used") return { ok: false, error: "used" };
   const token =
@@ -176,26 +176,83 @@ async function fulfillOrder(config: CommerceConfig, req: Request, orderId: strin
   return { ok: true, orderId: payment.orderId, downloadUrl, payerEmail: payment.payerEmail, email };
 }
 
-function prefersHtml(req: Request): boolean {
-  const header = req.get("accept");
-  if (!header) return false;
-  let htmlQ = -1;
-  let jsonQ = -1;
+type AcceptScores = { html: number; octet: number; json: number };
+
+function acceptScores(header: string | undefined): AcceptScores {
+  const scores: AcceptScores = { html: -1, octet: -1, json: -1 };
+  if (!header) return scores;
   for (const part of header.split(",")) {
     const [rawType, ...params] = part.trim().split(";");
     const type = rawType.trim().toLowerCase();
+    if (!type) continue;
     let q = 1;
     for (const param of params) {
       const [key, value] = param.trim().split("=");
-      if (key?.trim() === "q") {
+      if (key?.trim().toLowerCase() === "q") {
         const parsed = Number(value);
         if (Number.isFinite(parsed)) q = parsed;
       }
     }
-    if (type === "text/html" || type === "application/xhtml+xml") htmlQ = Math.max(htmlQ, q);
-    if (type === "application/json") jsonQ = Math.max(jsonQ, q);
+    if (q <= 0) continue;
+    if (type === "text/html" || type === "application/xhtml+xml") scores.html = Math.max(scores.html, q);
+    else if (type === "application/octet-stream" || type === "application/vnd.android.package-archive") scores.octet = Math.max(scores.octet, q);
+    else if (type === "application/json") scores.json = Math.max(scores.json, q);
   }
-  return htmlQ > 0 && htmlQ > jsonQ;
+  return scores;
+}
+
+function queryFlag(value: unknown): boolean {
+  if (Array.isArray(value)) return value.some((item) => queryFlag(item));
+  return value === "1" || value === "true";
+}
+
+function queryForcesDownload(req: Request): boolean {
+  return queryFlag(req.query.download) || queryFlag(req.query.raw);
+}
+
+function wantsDownloadLanding(req: Request): boolean {
+  if (queryForcesDownload(req)) return false;
+  const scores = acceptScores(req.get("accept"));
+  if (scores.html <= 0) return false;
+  if (scores.octet >= scores.html) return false;
+  if (scores.json > scores.html) return false;
+  return true;
+}
+
+function prefersHtml(req: Request): boolean {
+  const scores = acceptScores(req.get("accept"));
+  return scores.html > 0 && scores.html > scores.json;
+}
+
+function parseByteRange(header: string | undefined, size: number): { start: number; end: number } | "unsatisfiable" | null {
+  if (!header) return null;
+  const trimmed = header.trim();
+  if (!/^bytes=/i.test(trimmed)) return null;
+  const spec = trimmed.slice(trimmed.indexOf("=") + 1).trim();
+  if (!spec || spec.includes(",")) return null;
+  const match = /^(\d*)-(\d*)$/.exec(spec);
+  if (!match || (match[1] === "" && match[2] === "")) return null;
+  if (size <= 0) return "unsatisfiable";
+  if (match[1] === "") {
+    const suffix = Number(match[2]);
+    if (!Number.isInteger(suffix) || suffix <= 0) return "unsatisfiable";
+    return { start: Math.max(0, size - suffix), end: size - 1 };
+  }
+  const start = Number(match[1]);
+  const end = match[2] === "" ? size - 1 : Number(match[2]);
+  if (!Number.isInteger(start) || !Number.isInteger(end)) return "unsatisfiable";
+  if (start < 0 || start >= size || end < start) return "unsatisfiable";
+  return { start, end: Math.min(end, size - 1) };
+}
+
+const APK_CONTENT_TYPE = "application/vnd.android.package-archive";
+const APK_DISPOSITION = "attachment; filename=\"L-Studio-Pro.apk\"; filename*=UTF-8''L-Studio-Pro.apk";
+
+function varyAccept(res: Response) {
+  const current = res.getHeader("Vary");
+  const existing = Array.isArray(current) ? current.join(", ") : String(current ?? "");
+  if (existing.toLowerCase().split(",").some((part) => part.trim() === "accept")) return;
+  res.setHeader("Vary", existing ? `${existing}, Accept` : "Accept");
 }
 
 function downloadUnavailableHtml(): string {
@@ -237,6 +294,65 @@ function downloadUnavailableHtml(): string {
 </main>
 </body>
 </html>`;
+}
+
+function downloadLandingHtml(earlyAccess: boolean): string {
+  const retryHe = earlyAccess
+    ? "<p>אם הקובץ לא מופיע בהורדות, לחצו שוב. הקישור נשאר פעיל כ-24 שעות.</p>"
+    : "<p>הקישור הזה שומר את הקובץ פעם אחת. אם ההורדה נעצרת לפני הסוף, אפשר לנסות שוב.</p>";
+  const retryEn = earlyAccess
+    ? "<p>If it does not appear in Downloads, tap again. This link stays active for about 24 hours.</p>"
+    : "<p>This link saves the file once. If the download stops before it finishes, you can try again.</p>";
+  return `<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Save L-Studio-Pro.apk</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0b0b0c; color: #f4f1ea; font-family: Heebo, Arial, Helvetica, sans-serif; }
+  main { max-width: 38rem; margin: 0 auto; padding: 48px 20px 64px; }
+  .mark { margin: 0 0 28px; letter-spacing: .18em; font-size: 13px; color: #e3c565; }
+  section + section { margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(244,241,234,.16); }
+  h1 { margin: 0 0 12px; font-size: 1.7rem; line-height: 1.25; }
+  p { margin: 0 0 14px; font-size: 1.05rem; line-height: 1.55; }
+  a.save { color: #0b0b0c; background: #e3c565; text-decoration: none; font-weight: 700; border-radius: 999px; display: inline-block; padding: 14px 22px; font-size: 1.05rem; }
+  .he { direction: rtl; text-align: right; }
+  .en { direction: ltr; text-align: left; }
+</style>
+</head>
+<body>
+<main>
+  <p class="mark">L STUDIO</p>
+  <section class="he" lang="he" dir="rtl">
+    <h1>שמירת האפליקציה</h1>
+    <p>לחצו על הכפתור כדי לשמור את קובץ ה-APK. השם בקובץ ההורדות: L-Studio-Pro.apk.</p>
+    ${retryHe}
+    <p><a class="save" href="?download=1" download="L-Studio-Pro.apk">שמירת L-Studio-Pro.apk</a></p>
+  </section>
+  <section class="en" lang="en" dir="ltr">
+    <h1>Save the APK</h1>
+    <p>Tap the button to save the APK. The file in Downloads is named L-Studio-Pro.apk.</p>
+    ${retryEn}
+    <p><a class="save" href="?download=1" download="L-Studio-Pro.apk">Save L-Studio-Pro.apk</a></p>
+  </section>
+</main>
+</body>
+</html>`;
+}
+
+function sendDownloadLanding(res: Response, earlyAccess: boolean) {
+  res.status(200);
+  varyAccept(res);
+  res.setHeader("Content-Type", "text/html; charset=utf-8");
+  res.setHeader("Content-Disposition", "inline");
+  res.setHeader("X-Robots-Tag", "noindex");
+  res.setHeader("Referrer-Policy", "no-referrer");
+  res.setHeader("Cache-Control", "no-store, private");
+  res.send(downloadLandingHtml(earlyAccess));
 }
 
 function sendDownloadDenied(req: Request, res: Response, claim: Exclude<ClaimResult, "ok">) {
@@ -524,22 +640,52 @@ export function attachCommerceApi(app: express.Express) {
       }
       const store = getStore(config.dataDir);
       const tokenHash = hashDownloadToken(token, config.downloadTokenSecret);
+      const inspected = store.inspect(tokenHash);
+      if (inspected.status !== "ok") {
+        sendDownloadDenied(req, res, inspected.status);
+        return;
+      }
+      if (wantsDownloadLanding(req)) {
+        sendDownloadLanding(res, inspected.earlyAccess);
+        return;
+      }
       const claim = store.claim(tokenHash, DOWNLOAD_LOCK_MS);
       if (claim !== "ok") {
         sendDownloadDenied(req, res, claim);
         return;
       }
-      const apk = await openApk(config);
+      const total = await apkByteLength(config);
+      if (total == null) {
+        store.release(tokenHash);
+        res.status(503).json({ error: "apk_unavailable" });
+        return;
+      }
+      const range = parseByteRange(req.get("range"), total);
+      if (range === "unsatisfiable") {
+        store.release(tokenHash);
+        varyAccept(res);
+        res.status(416);
+        res.setHeader("Content-Range", `bytes */${total}`);
+        res.setHeader("Accept-Ranges", "bytes");
+        res.setHeader("Content-Length", "0");
+        res.end();
+        return;
+      }
+      const apk = await openApk(config, range ?? undefined);
       if (!apk) {
         store.release(tokenHash);
         res.status(503).json({ error: "apk_unavailable" });
         return;
       }
-      res.status(200);
-      res.setHeader("Content-Type", "application/vnd.android.package-archive");
-      res.setHeader("Content-Disposition", 'attachment; filename="L-Studio-Pro.apk"');
+      const coversAll = !range || (range.start === 0 && range.end === total - 1);
+      res.status(range ? 206 : 200);
+      varyAccept(res);
+      res.setHeader("Content-Type", APK_CONTENT_TYPE);
+      res.setHeader("Content-Disposition", APK_DISPOSITION);
       res.setHeader("Content-Length", String(apk.size));
-      res.setHeader("Cache-Control", "no-store, private");
+      res.setHeader("Accept-Ranges", "bytes");
+      if (range) res.setHeader("Content-Range", `bytes ${range.start}-${range.end}/${total}`);
+      res.setHeader("Cache-Control", "private, no-transform");
       res.setHeader("X-Content-Type-Options", "nosniff");
       res.setHeader("Referrer-Policy", "no-referrer");
 
@@ -548,28 +694,34 @@ export function attachCommerceApi(app: express.Express) {
       const countBytes = (chunk: Buffer | string) => {
         bytesSent += Buffer.byteLength(chunk);
       };
+      const fullDelivery = () => coversAll && bytesSent >= total;
       const settle = (complete: boolean) => {
         if (settled) return;
         settled = true;
         apk.stream.off("data", countBytes);
-        if (complete && bytesSent >= apk.size) store.complete(tokenHash);
+        // A finished stream that the phone did not keep must not burn an Early
+        // Access link. Paid links still close after one full file.
+        if (complete && fullDelivery()) store.noteSuccessfulDownload(tokenHash);
         else store.release(tokenHash);
       };
       apk.stream.on("data", countBytes);
       apk.stream.on("error", () => {
         settle(false);
-        res.destroy();
+        if (!res.destroyed) res.destroy();
       });
       res.on("error", () => {
+        apk.stream.destroy();
         settle(false);
       });
-      // finish means the server handed the body off. A client abort before that
-      // closes the response first and must release the one-time lock.
+      req.on("aborted", () => {
+        apk.stream.destroy();
+        settle(false);
+      });
       res.on("finish", () => {
-        settle(true);
+        settle(fullDelivery());
       });
       res.on("close", () => {
-        if (!res.writableFinished || bytesSent < apk.size) {
+        if (!fullDelivery()) {
           apk.stream.destroy();
           settle(false);
         }

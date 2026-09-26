@@ -206,7 +206,8 @@ export function buildEarlyAccessEmail(input: {
     "הורדת בודקים חינמית, לפני ההשקה הרשמית.",
     "ההורדה מוכנה.",
     "",
-    "הקישור עובד פעם אחת ופג אחרי כשעה:",
+    "הקישור נשאר פעיל כ-24 שעות ואפשר להוריד איתו כמה פעמים.",
+    "אם הקובץ לא נשמר, פתחו את הקישור שוב ולחצו על כפתור השמירה:",
     downloadText,
     "",
     "מדריך למשתמש:",
@@ -221,7 +222,8 @@ export function buildEarlyAccessEmail(input: {
     "A free tester download before the official launch.",
     "Your download is ready.",
     "",
-    "This link works once and expires in about one hour:",
+    "This link stays active for about 24 hours and can be used more than once.",
+    "If the file is not saved, open the link again and tap the save button:",
     downloadText,
     "",
     "User guide:",
@@ -267,7 +269,7 @@ export function buildEarlyAccessEmail(input: {
 <td style="padding:28px 28px 8px;font-family:Heebo,Arial,Helvetica,sans-serif;color:#f2f1eb;">
 <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;letter-spacing:0.16em;color:#e3c565;">L STUDIO EARLY ACCESS</p>
 <h1 style="margin:16px 0 0;font-size:28px;line-height:1.25;font-weight:700;color:#f2f1eb;">גישה מוקדמת רשמית: הורדת בודקים חינמית</h1>
-<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">זו הגישה המוקדמת של L Studio, לפני ההשקה הרשמית. ההורדה מוכנה. הקישור עובד פעם אחת ופג אחרי כשעה.</p>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">זו הגישה המוקדמת של L Studio, לפני ההשקה הרשמית. ההורדה מוכנה. הקישור נשאר פעיל כ-24 שעות ואפשר להוריד איתו כמה פעמים. אם הקובץ לא נשמר, פתחו את הקישור שוב ולחצו על כפתור השמירה.</p>
 ${downloadButton}
 ${downloadPlain}
 <h2 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">מדריך למשתמש</h2>
@@ -281,7 +283,7 @@ ${downloadPlain}
 <td lang="en" dir="ltr" style="padding:8px 28px 28px;font-family:Arial,Helvetica,sans-serif;color:#f2f1eb;border-top:1px solid #2c2c30;">
 <p style="margin:20px 0 0;font-size:12px;line-height:1.4;letter-spacing:0.14em;color:#e3c565;">ENGLISH</p>
 <h2 style="margin:12px 0 0;font-size:22px;line-height:1.3;font-weight:700;color:#f2f1eb;">Official Early Access: your free tester download</h2>
-<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">This is a free tester download before the official launch. This link works once and expires in about one hour.</p>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">This is a free tester download before the official launch. This link stays active for about 24 hours and can be used more than once. If the file is not saved, open the link again and tap the save button.</p>
 ${downloadButtonEn}
 ${downloadPlain}
 <h3 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">User guide</h3>

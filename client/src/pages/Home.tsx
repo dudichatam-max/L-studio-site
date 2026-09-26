@@ -133,7 +133,7 @@ const testerDefaults = {
   he: {
     kicker: "EARLY ACCESS",
     title: "רוצה לנסות את L-Studio?",
-    body: "L-Studio עדיין לפני ההשקה הרשמית. אני מחפש 44 אנשים שרוצים לפתוח אותה בחינם, לנגן, ולשלוח משוב אמיתי על מה שעובד ומה עוד צריך להשתפר. השאירו שם ומייל, וקישור הורדה חד-פעמי יגיע למייל.",
+    body: "L-Studio עדיין לפני ההשקה הרשמית. אני מחפש 44 אנשים שרוצים לפתוח אותה בחינם, לנגן, ולשלוח משוב אמיתי על מה שעובד ומה עוד צריך להשתפר. השאירו שם ומייל, וקישור הורדה יגיע למייל. אפשר לפתוח אותו כמה פעמים במשך כ-24 שעות.",
     offer: "44 הראשונים מקבלים את גרסת ה־Pro בחינם, בלי הגבלה.",
     offerDetail: "גרסת Pro מלאה, בלי מגבלות דמו, לפני ההשקה הרשמית בתשלום.",
     name: "שם",
@@ -153,7 +153,7 @@ const testerDefaults = {
   en: {
     kicker: "EARLY ACCESS",
     title: "Want to try L-Studio?",
-    body: "L-Studio is not officially launched yet. I am looking for 44 people who want to open it free, play, and send real feedback about what works and what still needs work. Leave your name and email, and a one-time download link will arrive by email.",
+    body: "L-Studio is not officially launched yet. I am looking for 44 people who want to open it free, play, and send real feedback about what works and what still needs work. Leave your name and email, and a download link will arrive by email. You can open it more than once for about 24 hours.",
     offer: "The first 44 get L Studio Pro free, with no limits.",
     offerDetail: "Full Pro, with no demo limits, before the official paid launch.",
     name: "Name",
@@ -173,7 +173,7 @@ const testerDefaults = {
   ru: {
     kicker: "РАННИЙ ДОСТУП",
     title: "Хочешь попробовать L-Studio?",
-    body: "L-Studio ещё не вышла официально. Я ищу 44 человека, которые хотят открыть её бесплатно, поиграть и прислать честный отзыв: что работает и что ещё нужно улучшить. Оставьте имя и почту, и одноразовая ссылка на скачивание придёт на email.",
+    body: "L-Studio ещё не вышла официально. Я ищу 44 человека, которые хотят открыть её бесплатно, поиграть и прислать честный отзыв: что работает и что ещё нужно улучшить. Оставьте имя и почту, и ссылка на скачивание придёт на email. Её можно открыть несколько раз в течение примерно 24 часов.",
     offer: "Первые 44 получают L Studio Pro бесплатно, без ограничений.",
     offerDetail: "Полная версия Pro, без демо-ограничений, до официального платного запуска.",
     name: "Имя",
@@ -193,7 +193,7 @@ const testerDefaults = {
   ar: {
     kicker: "وصول مبكر",
     title: "هل تريد تجربة L-Studio؟",
-    body: "لم تُطلق L-Studio رسمياً بعد. أبحث عن 44 شخصاً يريدون فتحها مجاناً، العزف عليها، وإرسال ملاحظات حقيقية عما يعمل وعما ما زال يحتاج إلى تحسين. اترك اسمك وبريدك، وسيصلك رابط تنزيل لمرة واحدة عبر البريد.",
+    body: "لم تُطلق L-Studio رسمياً بعد. أبحث عن 44 شخصاً يريدون فتحها مجاناً، العزف عليها، وإرسال ملاحظات حقيقية عما يعمل وعما ما زال يحتاج إلى تحسين. اترك اسمك وبريدك، وسيصلك رابط تنزيل عبر البريد. يمكن فتحه أكثر من مرة لمدة 24 ساعة تقريباً.",
     offer: "أول 44 شخصاً يحصلون على L Studio Pro مجاناً، بلا حدود.",
     offerDetail: "نسخة Pro كاملة، بلا قيود تجريبية، قبل الإطلاق الرسمي المدفوع.",
     name: "الاسم",
