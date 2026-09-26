@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowLeft, BookOpen, ChevronDown, Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
@@ -124,9 +124,6 @@ export default function Guide() {
     };
   }, [language]);
 
-  const padIndex = text.sections.findIndex((item) => item.id === "pad");
-  const demoIndex = text.sections.length === 0 ? -1 : padIndex >= 0 ? padIndex : Math.min(5, text.sections.length - 1);
-
   return (
     <div className="site-shell guide-page">
       <div className="noise" aria-hidden="true" />
@@ -170,6 +167,10 @@ export default function Guide() {
           </div>
         </section>
 
+        <div className="container" dir={isRtl ? "rtl" : "ltr"}>
+          <GuideDemoVideo key={language} label={text.demoVideo} playerTitle={text.demoVideoTitle} />
+        </div>
+
         <section className="guide-content container">
           <aside className="guide-aside" dir={isRtl ? "rtl" : "ltr"}>
             <span className="kicker">{text.onThisPage}</span>
@@ -194,8 +195,7 @@ export default function Guide() {
                 .join(" ");
 
               return (
-                <Fragment key={section.id}>
-                  <section className="guide-block" id={`guide-${section.id}`}>
+                <section className="guide-block" id={`guide-${section.id}`} key={section.id}>
                     <div className="guide-block-head">
                       <span className="guide-number">{sectionNumber(index)}</span>
                       {section.tag ? <span className="guide-tag">{section.tag}</span> : null}
@@ -234,11 +234,7 @@ export default function Guide() {
                         </div>
                       </div>
                     </div>
-                  </section>
-                  {index === demoIndex ? (
-                    <GuideDemoVideo key={language} label={text.demoVideo} playerTitle={text.demoVideoTitle} />
-                  ) : null}
-                </Fragment>
+                </section>
               );
             })}
           </article>
