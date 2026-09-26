@@ -584,7 +584,7 @@ export default function Home() {
             </div>
             <div className="architecture-art">
               <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-              <div className="architecture-core"><AudioWaveform size={42} /><span>REAL-TIME</span><b>LOCAL AUDIO</b><small>ANDROID 7.0+</small></div>
+              <div className="architecture-core"><AudioWaveform size={42} /><span>REAL-TIME</span><b>{tester.localAudio}</b><small>ANDROID 7.0+</small></div>
             </div>
           </div>
         </section>

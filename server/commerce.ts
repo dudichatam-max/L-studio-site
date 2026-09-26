@@ -363,16 +363,10 @@ export function attachCommerceApi(app: express.Express) {
       }
       const delivered = await deliverEarlyAccess(config, req, reserved.orderId, email);
       if (!delivered.ok) {
-        if (delivered.error === "used") {
-          store.setEarlyAccessEmailStatus(email, "sent");
-          res.status(200).json({
-            ok: true,
-            status: "already_registered",
-            message: "This email is already registered for Early Access.",
-          });
-          return;
-        }
-        res.status(500).json({ error: "server_error", message: "Early Access could not prepare a download link." });
+        res.status(delivered.error === "used" ? 409 : 500).json({
+          error: delivered.error === "used" ? "already_downloaded" : "server_error",
+          message: "Early Access could not prepare a new download link. Submit the same email again in a few minutes.",
+        });
         return;
       }
       const emailResult = await sendEarlyAccessEmail(config, {

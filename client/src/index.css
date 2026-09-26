@@ -291,7 +291,7 @@ html[dir="rtl"] .footer-links {
 .architecture-core svg { color: var(--acid); }
 .architecture-core span, .architecture-core b, .architecture-core small { display: block; }
 .architecture-core span { color: var(--paper); font: 10px var(--mono); letter-spacing: .16em; }
-.architecture-core b { color: var(--acid); font: 600 15px var(--display); letter-spacing: .08em; }
+.architecture-core b { color: var(--acid); font: 600 15px var(--display); letter-spacing: .08em; max-width: 12rem; line-height: 1.15; }
 .architecture-core small { margin-top: 3px; color: var(--muted); font: 9px var(--mono); letter-spacing: .08em; }
 
 .vision-section { position: relative; padding: 152px 0 160px; border-top: 1px solid rgba(242,241,235,.12); background: radial-gradient(circle at 12% 38%, rgba(227,197,101,.09), transparent 31%), #101012; }
