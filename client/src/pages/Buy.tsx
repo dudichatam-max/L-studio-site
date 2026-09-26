@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
-import { Link, useLocation } from "wouter";
+import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
@@ -57,40 +57,6 @@ type CheckoutResult = {
   email?: "sent" | "skipped" | "failed";
 };
 
-type PayPalButtonsApi = {
-  Buttons: (options: {
-    style?: { layout?: "vertical"; color?: "gold"; shape?: "rect"; label?: "pay" };
-    createOrder: () => Promise<string>;
-    onApprove: (data: { orderID: string }) => Promise<void>;
-    onCancel?: () => void;
-    onError?: () => void;
-  }) => { render: (element: HTMLElement) => Promise<void> };
-};
-
-declare global {
-  interface Window {
-    paypal?: PayPalButtonsApi;
-  }
-}
-
-function apiUrl(apiBase: string, path: string) {
-  const configured = (apiBase || import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
-  return `${configured}${path}`;
-}
-
-function loadPayPal(clientId: string, currency: string) {
-  if (window.paypal) return Promise.resolve();
-  return new Promise<void>((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = `https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(clientId)}&currency=${encodeURIComponent(currency)}&intent=capture&components=buttons`;
-    script.async = true;
-    script.dataset.lStudioPaypal = "1";
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error("paypal_sdk"));
-    document.body.appendChild(script);
-  });
-}
-
 function mergeCopy(language: Language, raw: Partial<ProCopy> | undefined): ProCopy {
   const base = fallback[language];
   if (!raw) return base;
@@ -103,16 +69,8 @@ function mergeCopy(language: Language, raw: Partial<ProCopy> | undefined): ProCo
 
 export default function Buy({ mode }: { mode: "checkout" | "success" }) {
   const { language, isRtl } = useLanguage();
-  const [, setLocation] = useLocation();
   const [copy, setCopy] = useState<ProCopy>(fallback[language]);
-  const [apiBase, setApiBase] = useState("");
-  const [contentReady, setContentReady] = useState(false);
-  const [phase, setPhase] = useState<"loading" | "ready" | "missing" | "error" | "cancelled">("loading");
   const [result, setResult] = useState<CheckoutResult | null>(null);
-  const [priceLabel, setPriceLabel] = useState(fallback[language].priceNote);
-  const buttonHost = useRef<HTMLDivElement>(null);
-  const setLocationRef = useRef(setLocation);
-  setLocationRef.current = setLocation;
 
   useEffect(() => {
     let cancelled = false;
@@ -123,12 +81,8 @@ export default function Buy({ mode }: { mode: "checkout" | "success" }) {
         if (cancelled) return;
         const pro = data?.languages?.[language]?.pro as Partial<ProCopy> | undefined;
         setCopy(mergeCopy(language, pro));
-        setApiBase(typeof data?.commerce?.apiBaseUrl === "string" ? data.commerce.apiBaseUrl : "");
-        setContentReady(true);
       })
-      .catch(() => {
-        if (!cancelled) setContentReady(true);
-      });
+      .catch(() => {});
     return () => {
       cancelled = true;
     };
@@ -143,79 +97,6 @@ export default function Buy({ mode }: { mode: "checkout" | "success" }) {
       setResult(null);
     }
   }, [mode]);
-
-  useEffect(() => {
-    if (mode !== "checkout" || !contentReady) return;
-    const host = buttonHost.current;
-    let cancelled = false;
-    setPhase("loading");
-
-    const run = async () => {
-      const response = await fetch(apiUrl(apiBase, "/api/paypal/config"));
-      const config = (await response.json().catch(() => null)) as {
-        configured?: boolean;
-        clientId?: string;
-        currency?: string;
-        price?: string;
-      } | null;
-      if (cancelled) return;
-      if (!response.ok || !config?.configured || !config.clientId) {
-        setPhase("missing");
-        return;
-      }
-      if (config.price) setPriceLabel(`USD ${config.price}`);
-      await loadPayPal(config.clientId, config.currency || "USD");
-      if (cancelled || !host || !window.paypal) return;
-      host.replaceChildren();
-      await window.paypal
-        .Buttons({
-          style: { layout: "vertical", color: "gold", shape: "rect", label: "pay" },
-          createOrder: async () => {
-            const created = await fetch(apiUrl(apiBase, "/api/paypal/create-order"), {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: "{}",
-            });
-            const payload = (await created.json().catch(() => null)) as { id?: string } | null;
-            if (!created.ok || !payload?.id) throw new Error("create_failed");
-            return payload.id;
-          },
-          onApprove: async (data) => {
-            const captured = await fetch(apiUrl(apiBase, "/api/paypal/capture-order"), {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ orderId: data.orderID }),
-            });
-            const payload = (await captured.json().catch(() => null)) as CheckoutResult & { error?: string } | null;
-            if (!captured.ok || !payload?.downloadUrl) {
-              setPhase("error");
-              return;
-            }
-            const next: CheckoutResult = {
-              orderId: payload.orderId,
-              downloadUrl: payload.downloadUrl,
-              payerEmail: payload.payerEmail,
-              email: payload.email,
-            };
-            window.sessionStorage.setItem(SESSION_KEY, JSON.stringify(next));
-            setLocationRef.current("/buy/success");
-          },
-          onCancel: () => setPhase("cancelled"),
-          onError: () => setPhase("error"),
-        })
-        .render(host);
-      if (!cancelled) setPhase("ready");
-    };
-
-    run().catch(() => {
-      if (!cancelled) setPhase("missing");
-    });
-
-    return () => {
-      cancelled = true;
-      host?.replaceChildren();
-    };
-  }, [apiBase, contentReady, mode]);
 
   const dir = isRtl ? "rtl" : "ltr";
   const hasDownload = Boolean(result?.downloadUrl);
@@ -263,7 +144,7 @@ export default function Buy({ mode }: { mode: "checkout" | "success" }) {
         {mode === "checkout" ? (
           <section className="container pro-layout">
             <div className="pro-card">
-              <p className="pro-price">{priceLabel}</p>
+              <p className="pro-price">{copy.priceNote}</p>
               <p>{copy.body}</p>
               <ul className="pro-includes">
                 {copy.includes.map((item) => (
@@ -275,18 +156,14 @@ export default function Buy({ mode }: { mode: "checkout" | "success" }) {
               <p className="pro-disclaimer">{copy.disclaimer}</p>
             </div>
             <div className="pro-card pro-pay">
-              <p>{copy.checkoutNote}</p>
-              <div className="pro-paypal" dir="ltr" ref={buttonHost} />
-              {phase === "loading" && <p className="pro-status">{copy.loadingPayPal}</p>}
-              {phase === "missing" && <p className="pro-status">{copy.paypalMissing}</p>}
-              {phase === "error" && <p className="pro-status pro-status--error">{copy.payError}</p>}
-              {phase === "cancelled" && <p className="pro-status">{copy.payCancelled}</p>}
+              <p className="pro-paused" role="status">{copy.checkoutNote}</p>
+              <p className="pro-disclaimer">
+                {copy.supportLabel}: <a href={`mailto:${SUPPORT_EMAIL}`} dir="ltr">{SUPPORT_EMAIL}</a>
+              </p>
               <p className="pro-disclaimer">
                 <Link href="/terms">{copy.terms}</Link>
                 {" · "}
                 <Link href="/privacy">{copy.privacy}</Link>
-                {" · "}
-                <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
               </p>
             </div>
           </section>
