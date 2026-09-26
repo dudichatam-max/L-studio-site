@@ -16,10 +16,13 @@ import {
   verifyWebhookSignature,
   type WebhookHeaders,
 } from "./paypal";
-import { getStore, resetStoreForTests } from "./store";
+import { getStore, resetStoreForTests, type ClaimResult } from "./store";
 import { hashDownloadToken, isTokenShape, mintDownloadToken, sealDownloadToken, unsealDownloadToken } from "./tokens";
 
 const DOWNLOAD_LOCK_MS = 2 * 60 * 1000;
+const EARLY_ACCESS_RESEND_LIMIT = 3;
+const EARLY_ACCESS_RESEND_WINDOW_MS = 10 * 60 * 1000;
+const EARLY_ACCESS_URL = "https://l-studio.studio/#early-access";
 const hits = new Map<string, number[]>();
 
 export type Fulfillment =
@@ -173,6 +176,83 @@ async function fulfillOrder(config: CommerceConfig, req: Request, orderId: strin
   return { ok: true, orderId: payment.orderId, downloadUrl, payerEmail: payment.payerEmail, email };
 }
 
+function prefersHtml(req: Request): boolean {
+  const header = req.get("accept");
+  if (!header) return false;
+  let htmlQ = -1;
+  let jsonQ = -1;
+  for (const part of header.split(",")) {
+    const [rawType, ...params] = part.trim().split(";");
+    const type = rawType.trim().toLowerCase();
+    let q = 1;
+    for (const param of params) {
+      const [key, value] = param.trim().split("=");
+      if (key?.trim() === "q") {
+        const parsed = Number(value);
+        if (Number.isFinite(parsed)) q = parsed;
+      }
+    }
+    if (type === "text/html" || type === "application/xhtml+xml") htmlQ = Math.max(htmlQ, q);
+    if (type === "application/json") jsonQ = Math.max(jsonQ, q);
+  }
+  return htmlQ > 0 && htmlQ > jsonQ;
+}
+
+function downloadUnavailableHtml(): string {
+  return `<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>L Studio download unavailable</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0b0b0c; color: #f4f1ea; font-family: Heebo, Arial, Helvetica, sans-serif; }
+  main { max-width: 38rem; margin: 0 auto; padding: 48px 20px 64px; }
+  .mark { margin: 0 0 28px; letter-spacing: .18em; font-size: 13px; color: #e3c565; }
+  section + section { margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(244,241,234,.16); }
+  h1 { margin: 0 0 12px; font-size: 1.7rem; line-height: 1.25; }
+  p { margin: 0 0 14px; font-size: 1.05rem; line-height: 1.55; }
+  a { color: #0b0b0c; background: #e3c565; text-decoration: none; font-weight: 700; border-radius: 999px; display: inline-block; padding: 12px 18px; }
+  .he { direction: rtl; text-align: right; }
+  .en { direction: ltr; text-align: left; }
+</style>
+</head>
+<body>
+<main>
+  <p class="mark">L STUDIO</p>
+  <section class="he" lang="he" dir="rtl">
+    <h1>ההורדה לא זמינה</h1>
+    <p>קישור ההורדה הזה כבר נוצל, או שפג תוקפו.</p>
+    <p>חזרו לעמוד הגישה המוקדמת ושלחו שוב את אותו מייל. יישלח קישור חדש.</p>
+    <p><a href="${EARLY_ACCESS_URL}">לקבלת קישור חדש</a></p>
+  </section>
+  <section class="en" lang="en" dir="ltr">
+    <h1>Download unavailable</h1>
+    <p>This download link was already used or has expired.</p>
+    <p>Go back to Early Access and submit the same email. A new link will be sent.</p>
+    <p><a href="${EARLY_ACCESS_URL}">Get a new link</a></p>
+  </section>
+</main>
+</body>
+</html>`;
+}
+
+function sendDownloadDenied(req: Request, res: Response, claim: Exclude<ClaimResult, "ok">) {
+  const status = claim === "busy" ? 409 : claim === "missing" ? 404 : 410;
+  const error = claim === "missing" ? "not_found" : claim;
+  if ((claim === "used" || claim === "expired") && prefersHtml(req)) {
+    res.status(status);
+    res.setHeader("Content-Type", "text/html; charset=utf-8");
+    res.setHeader("Content-Disposition", "inline");
+    res.setHeader("X-Robots-Tag", "noindex");
+    res.send(downloadUnavailableHtml());
+    return;
+  }
+  res.status(status).json({ error });
+}
+
 function asyncRoute(handler: (req: Request, res: Response) => Promise<void>) {
   return (req: Request, res: Response, next: NextFunction) => {
     handler(req, res).catch((error) => {
@@ -273,19 +353,11 @@ export function attachCommerceApi(app: express.Express) {
         });
         return;
       }
-      if (reserved.result === "exists" && reserved.emailStatus === "sent") {
-        res.status(200).json({
-          ok: true,
-          status: "already_registered",
-          message: "This email is already registered for Early Access. Check your inbox, including spam.",
-        });
-        return;
-      }
-      if (reserved.result === "exists" && !allowRate(`early-retry:${email}`, 3, 10 * 60 * 1000)) {
+      if (reserved.result === "exists" && !allowRate(`early-resend:${email}`, EARLY_ACCESS_RESEND_LIMIT, EARLY_ACCESS_RESEND_WINDOW_MS)) {
         res.status(429).json({
           error: "rate_limited",
           status: "already_registered",
-          message: "This email is already registered. Wait a few minutes before asking for the download email again.",
+          message: "This email is already registered. Wait a few minutes before asking for another download link.",
         });
         return;
       }
@@ -323,7 +395,7 @@ export function attachCommerceApi(app: express.Express) {
           ok: true,
           status: "already_registered",
           email: "sent",
-          message: "This email is already registered for Early Access. Check your inbox, including spam.",
+          message: "A new download link was sent. Check your inbox, including spam.",
         });
         return;
       }
@@ -460,8 +532,7 @@ export function attachCommerceApi(app: express.Express) {
       const tokenHash = hashDownloadToken(token, config.downloadTokenSecret);
       const claim = store.claim(tokenHash, DOWNLOAD_LOCK_MS);
       if (claim !== "ok") {
-        const status = claim === "busy" ? 409 : claim === "missing" ? 404 : 410;
-        res.status(status).json({ error: claim === "missing" ? "not_found" : claim });
+        sendDownloadDenied(req, res, claim);
         return;
       }
       const apk = await openApk(config);
@@ -479,23 +550,35 @@ export function attachCommerceApi(app: express.Express) {
       res.setHeader("Referrer-Policy", "no-referrer");
 
       let settled = false;
-      const finishOk = () => {
+      let bytesSent = 0;
+      const countBytes = (chunk: Buffer | string) => {
+        bytesSent += Buffer.byteLength(chunk);
+      };
+      const settle = (complete: boolean) => {
         if (settled) return;
         settled = true;
-        store.complete(tokenHash);
+        apk.stream.off("data", countBytes);
+        if (complete && bytesSent >= apk.size) store.complete(tokenHash);
+        else store.release(tokenHash);
       };
-      const finishFail = () => {
-        if (settled) return;
-        settled = true;
-        store.release(tokenHash);
-      };
+      apk.stream.on("data", countBytes);
       apk.stream.on("error", () => {
-        finishFail();
+        settle(false);
         res.destroy();
       });
-      res.on("finish", finishOk);
+      res.on("error", () => {
+        settle(false);
+      });
+      // finish means the server handed the body off. A client abort before that
+      // closes the response first and must release the one-time lock.
+      res.on("finish", () => {
+        settle(true);
+      });
       res.on("close", () => {
-        if (!res.writableFinished) finishFail();
+        if (!res.writableFinished || bytesSent < apk.size) {
+          apk.stream.destroy();
+          settle(false);
+        }
       });
       apk.stream.pipe(res);
     }),

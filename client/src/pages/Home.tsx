@@ -5,6 +5,7 @@ import SiteLogo from "@/components/SiteLogo";
 import WaveScope from "@/components/WaveScope";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { fetchSiteContent } from "@/lib/siteContent";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png`;
@@ -80,6 +81,24 @@ const featureData = {
 // Fallback copy, used only if content.json fails to load.
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio" };
 const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", offer: "The first 44 get L Studio Pro free, with no limits.", offerDetail: "Full Pro, with no demo limits, before the official paid launch.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "about 24 MB", stat2: "Android 7.0+", stat3: "No ads" };
+const heroOfferDefaults = {
+  he: {
+    offer: "44 הראשונים מקבלים את גרסת ה־Pro בחינם, בלי הגבלה.",
+    offerDetail: "גרסת Pro מלאה, בלי מגבלות דמו, לפני ההשקה הרשמית בתשלום.",
+  },
+  en: {
+    offer: "The first 44 get L Studio Pro free, with no limits.",
+    offerDetail: "Full Pro, with no demo limits, before the official paid launch.",
+  },
+  ru: {
+    offer: "Первые 44 получают L Studio Pro бесплатно, без ограничений.",
+    offerDetail: "Полная версия Pro, без демо-ограничений, до официального платного запуска.",
+  },
+  ar: {
+    offer: "أول 44 شخصاً يحصلون على L Studio Pro مجاناً، بلا حدود.",
+    offerDetail: "نسخة Pro كاملة، بلا قيود تجريبية، قبل الإطلاق الرسمي المدفوع.",
+  },
+} satisfies Record<Language, { offer: string; offerDetail: string }>;
 const signalDefault = { text: "From key to sound to loop to recording", note: "All inside L-Studio" };
 const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started with a note that wasn't there.", body: ["I wanted to build a keyboard where I could set which frequency belongs to each key myself.", "From there it grew into recording, a looper, drums, a microphone and more."], closing: "What started as a search for the eighth note became L-Studio." };
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
@@ -89,24 +108,109 @@ const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is 
 const visionDefault = { kicker: "05 / THE VISION", title: "I built the studio I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take the studio with you", body: "Creating shouldn't have to wait for a computer." }] };
 const faqDefault = { kicker: "07 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
 const finalCtaDefault = { kicker: "06 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea.", cta: "Enter L-Studio" };
-const testerDefault = {
-  kicker: "EARLY ACCESS",
-  title: "Want to try L-Studio?",
-  body: "L-Studio is not officially launched yet. I am looking for 44 people who want to open it free, play, and send real feedback about what works and what still needs work. Leave your name and email, and a one-time download link will arrive by email.",
-  offer: "The first 44 get L Studio Pro free, with no limits.",
-  offerDetail: "Full Pro, with no demo limits, before the official paid launch.",
-  name: "Name",
-  email: "Email address",
-  consent: "I agree to receive L-Studio updates.",
-  submit: "I want to try it",
-  note: "Free access · Limited to 44 testers",
-  sending: "Sending...",
-  success: "You are in. Check your email for the download link and the user guide.",
-  already: "This email is already registered for Early Access. Check your inbox, including spam.",
-  full: "All 44 spots are taken. Thank you for wanting to try it.",
-  error: "We could not send the email right now. Try again in a few minutes.",
-  invalid: "That email address is not valid.",
+type TesterCopy = {
+  kicker: string;
+  title: string;
+  body: string;
+  offer: string;
+  offerDetail: string;
+  name: string;
+  email: string;
+  consent: string;
+  submit: string;
+  note: string;
+  sending: string;
+  success: string;
+  already: string;
+  full: string;
+  error: string;
+  invalid: string;
+  freeAccess: string;
+  localAudio: string;
 };
+
+const testerDefaults = {
+  he: {
+    kicker: "EARLY ACCESS",
+    title: "רוצה לנסות את L-Studio?",
+    body: "L-Studio עדיין לפני ההשקה הרשמית. אני מחפש 44 אנשים שרוצים לפתוח אותה בחינם, לנגן, ולשלוח משוב אמיתי על מה שעובד ומה עוד צריך להשתפר. השאירו שם ומייל, וקישור הורדה חד-פעמי יגיע למייל.",
+    offer: "44 הראשונים מקבלים את גרסת ה־Pro בחינם, בלי הגבלה.",
+    offerDetail: "גרסת Pro מלאה, בלי מגבלות דמו, לפני ההשקה הרשמית בתשלום.",
+    name: "שם",
+    email: "כתובת מייל",
+    consent: "אני מאשר/ת לקבל עדכונים על L-Studio.",
+    submit: "אני רוצה לנסות",
+    note: "גישה חינמית · מספר המקומות מוגבל ל-44",
+    sending: "שולחים...",
+    success: "נרשמת. בדקו את המייל לקישור ההורדה ולמדריך, ואחרי שתנסו שלחו משוב אמיתי.",
+    already: "נשלח קישור הורדה חדש למייל הזה. בדקו את תיבת הדואר, כולל ספאם.",
+    full: "44 המקומות נתפסו. תודה שרציתם לנסות.",
+    error: "לא הצלחנו לשלוח את המייל עכשיו. נסו שוב בעוד כמה דקות.",
+    invalid: "כתובת המייל לא תקינה.",
+    freeAccess: "גישה חינמית",
+    localAudio: "אודיו מקומי",
+  },
+  en: {
+    kicker: "EARLY ACCESS",
+    title: "Want to try L-Studio?",
+    body: "L-Studio is not officially launched yet. I am looking for 44 people who want to open it free, play, and send real feedback about what works and what still needs work. Leave your name and email, and a one-time download link will arrive by email.",
+    offer: "The first 44 get L Studio Pro free, with no limits.",
+    offerDetail: "Full Pro, with no demo limits, before the official paid launch.",
+    name: "Name",
+    email: "Email address",
+    consent: "I agree to receive L-Studio updates.",
+    submit: "I want to try it",
+    note: "Free access · Limited to 44 testers",
+    sending: "Sending...",
+    success: "You are in. Check your email for the download link and the user guide.",
+    already: "A new download link was sent to this email. Check your inbox, including spam.",
+    full: "All 44 spots are taken. Thank you for wanting to try it.",
+    error: "We could not send the email right now. Try again in a few minutes.",
+    invalid: "That email address is not valid.",
+    freeAccess: "FREE ACCESS",
+    localAudio: "LOCAL AUDIO",
+  },
+  ru: {
+    kicker: "РАННИЙ ДОСТУП",
+    title: "Хочешь попробовать L-Studio?",
+    body: "L-Studio ещё не вышла официально. Я ищу 44 человека, которые хотят открыть её бесплатно, поиграть и прислать честный отзыв: что работает и что ещё нужно улучшить. Оставьте имя и почту, и одноразовая ссылка на скачивание придёт на email.",
+    offer: "Первые 44 получают L Studio Pro бесплатно, без ограничений.",
+    offerDetail: "Полная версия Pro, без демо-ограничений, до официального платного запуска.",
+    name: "Имя",
+    email: "Email",
+    consent: "Я согласен получать обновления о L-Studio.",
+    submit: "Хочу попробовать",
+    note: "Бесплатный доступ · Только 44 места",
+    sending: "Отправляем...",
+    success: "Вы в списке. Проверьте почту: там ссылка на скачивание и руководство.",
+    already: "На эту почту отправлена новая ссылка для скачивания. Проверьте входящие, включая спам.",
+    full: "Все 44 места заняты. Спасибо, что хотели попробовать.",
+    error: "Не удалось отправить письмо сейчас. Попробуйте снова через несколько минут.",
+    invalid: "Этот адрес почты недействителен.",
+    freeAccess: "БЕСПЛАТНЫЙ ДОСТУП",
+    localAudio: "ЛОКАЛЬНЫЙ ЗВУК",
+  },
+  ar: {
+    kicker: "وصول مبكر",
+    title: "هل تريد تجربة L-Studio؟",
+    body: "لم تُطلق L-Studio رسمياً بعد. أبحث عن 44 شخصاً يريدون فتحها مجاناً، العزف عليها، وإرسال ملاحظات حقيقية عما يعمل وعما ما زال يحتاج إلى تحسين. اترك اسمك وبريدك، وسيصلك رابط تنزيل لمرة واحدة عبر البريد.",
+    offer: "أول 44 شخصاً يحصلون على L Studio Pro مجاناً، بلا حدود.",
+    offerDetail: "نسخة Pro كاملة، بلا قيود تجريبية، قبل الإطلاق الرسمي المدفوع.",
+    name: "الاسم",
+    email: "البريد الإلكتروني",
+    consent: "أوافق على تلقي تحديثات L-Studio.",
+    submit: "أريد أن أجرب",
+    note: "وصول مجاني · العدد محدود بـ44 مكاناً",
+    sending: "جارٍ الإرسال...",
+    success: "تم تسجيلك. تحقق من بريدك لرابط التنزيل ودليل المستخدم.",
+    already: "أُرسل رابط تنزيل جديد إلى هذا البريد. تحقق من صندوق الوارد، بما فيه البريد غير المرغوب.",
+    full: "المقاعد الـ44 ممتلئة. شكراً لرغبتك في التجربة.",
+    error: "تعذر إرسال البريد الآن. حاول مرة أخرى بعد بضع دقائق.",
+    invalid: "عنوان البريد هذا غير صالح.",
+    freeAccess: "وصول مجاني",
+    localAudio: "صوت محلي",
+  },
+} satisfies Record<Language, TesterCopy>;
 const footerDefault = { tagline: "It's for analog people in a digital world." };
 
 const visionIcons = [Sparkles, Music2, ArrowDownLeft];
@@ -175,8 +279,6 @@ function FeatureMedia({ image, video, label }: { image?: string; video?: string;
 
 // Renders a headline as "lead words" + a line break + the last word in the accent color,
 // matching the site's existing typographic style (see h1 em / h2 em in index.css).
-type TesterCopy = typeof testerDefault;
-
 function commerceUrl(apiBase: string, path: string) {
   const configured = (apiBase || import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
   return `${configured}${path}`;
@@ -297,7 +399,7 @@ export default function Home() {
   const [apiBase, setApiBase] = useState("");
   const [contentReady, setContentReady] = useState(false);
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}content.json`)
+    fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         setEditableContent(data);
@@ -309,7 +411,7 @@ export default function Home() {
 
   const copy = editableContent?.languages?.[language] ?? {};
   const nav = copy.nav ?? navDefault;
-  const hero = { ...heroDefault, ...(copy.hero ?? {}) };
+  const hero = { ...heroDefault, ...heroOfferDefaults[language], ...(copy.hero ?? {}) };
   const signal = copy.signalStrip ?? signalDefault;
   const story = copy.story ?? storyDefault;
   const featuresIntro = copy.featuresIntro ?? featuresIntroDefault;
@@ -319,7 +421,7 @@ export default function Home() {
   const vision = copy.vision ?? visionDefault;
   const faq = copy.faq ?? faqDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
-  const tester = { ...testerDefault, ...(copy.tester ?? {}) };
+  const tester = { ...testerDefaults[language], ...(copy.tester ?? {}) };
   const footer = copy.footer ?? footerDefault;
   const chrome = chromeUi[language];
 
@@ -583,7 +685,7 @@ export default function Home() {
                 <span>{tester.offerDetail}</span>
               </p>
               <p>{tester.body}</p>
-              <div className="tester-proof"><span>01</span><span>FREE ACCESS</span><span>LOCAL AUDIO</span></div>
+              <div className="tester-proof"><span>01</span><span>{tester.freeAccess}</span><span>{tester.localAudio}</span></div>
             </div>
             <EarlyAccessForm tester={tester} apiBase={apiBase} ready={contentReady} />
           </div>
