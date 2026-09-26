@@ -27,8 +27,8 @@ export type ProCopy = {
   priceNote: string;
   includes: string[];
   checkoutNote: string;
-  loadingPayPal: string;
-  paypalMissing: string;
+  loadingCheckout: string;
+  checkoutUnavailable: string;
   payError: string;
   payCancelled: string;
   successKicker: string;

@@ -83,7 +83,7 @@ export function buildDownloadEmail(input: {
     "מדריך למשתמש:",
     guideText,
     "",
-    `הזמנת PayPal: ${input.orderId}`,
+    `מספר הזמנה: ${input.orderId}`,
     `אם ההורדה נכשלת, כתבו אל ${supportText} וצרפו את מזהה ההזמנה.`,
     "הקובץ לשימוש אישי. אין לפרסם את הקישור.",
     "",
@@ -98,7 +98,7 @@ export function buildDownloadEmail(input: {
     "User guide:",
     guideText,
     "",
-    `PayPal order: ${input.orderId}`,
+    `Order: ${input.orderId}`,
     `If the download fails, contact ${supportText} and include the order id.`,
     "The file is for your personal use. Do not publish the link.",
   ].join("\n");
@@ -154,7 +154,7 @@ ${downloadButton}
 ${downloadPlain}
 <h2 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">מדריך למשתמש</h2>
 <p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#c8c6bf;">${guideLink}</p>
-<p style="margin:28px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">הזמנת PayPal: ${order}</p>
+<p style="margin:28px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">מספר הזמנה: ${order}</p>
 <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">אם ההורדה נכשלת, כתבו אל ${supportHtml} וצרפו את מזהה ההזמנה.</p>
 <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">הקובץ לשימוש אישי. אין לפרסם את הקישור.</p>
 </td>
@@ -168,7 +168,7 @@ ${downloadButtonEn}
 ${downloadPlain}
 <h3 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">User guide</h3>
 <p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#c8c6bf;">${guideLinkEn}</p>
-<p style="margin:28px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">PayPal order: ${order}</p>
+<p style="margin:28px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">Order: ${order}</p>
 <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">If the download fails, contact ${supportHtml} and include the order id.</p>
 <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">The file is for your personal use. Do not publish the link.</p>
 </td>
