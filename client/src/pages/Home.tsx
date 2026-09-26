@@ -784,7 +784,7 @@ export default function Home() {
         <section className="tester-section container" id="early-access">
           <div className="tester-panel">
             <figure className="tester-hero">
-              <img src={factoryHero} alt={tester.imageAlt} width={1600} height={1600} />
+              <img src={factoryHero} alt={tester.imageAlt} width={1254} height={1254} />
             </figure>
             <div className="tester-grid">
             <div className="tester-copy">

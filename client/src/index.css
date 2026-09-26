@@ -389,8 +389,8 @@ html[dir="rtl"] .footer-links {
 /* Early access tester signup */
 .tester-section { padding-top: 54px; padding-bottom: 92px; }
 .tester-panel { padding: 22px; border: 1px solid rgba(227,197,101,.34); background: linear-gradient(110deg, rgba(227,197,101,.09), rgba(242,241,235,.025) 58%, rgba(11,11,12,.2)); }
-.tester-hero { margin: 0 auto 26px; width: min(100%, 760px); background: #050506; border: 1px solid rgba(227,197,101,.28); overflow: hidden; }
-.tester-hero img { display: block; width: 100%; height: auto; object-fit: contain; object-position: center; }
+.tester-hero { margin: 0 auto 26px; width: min(100%, 760px); }
+.tester-hero img { display: block; width: 100%; height: auto; max-width: 100%; object-fit: contain; object-position: center; }
 .tester-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: center; padding: 8px 8px 8px; direction: ltr; }
 .tester-copy { direction: rtl; max-width: 560px; }
 .tester-copy .kicker { color: var(--acid); }
