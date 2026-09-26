@@ -177,7 +177,7 @@ async function main() {
   assert(earlyMessage.text.includes("real feedback and reviews"), "early english feedback and reviews");
   assert(earlyMessage.html.includes('lang="he"') && earlyMessage.html.includes('dir="rtl"'), "early hebrew direction");
   assert(earlyMessage.html.includes('lang="en"') && earlyMessage.html.includes('dir="ltr"'), "early english direction");
-  assert(earlyMessage.text.includes("הכפתור פותח עמוד") && earlyMessage.text.includes("לחצו על הורדה"), "early hebrew page then download");
+  assert(earlyMessage.text.includes("הכפתור פותח עמוד") && earlyMessage.text.includes("לחצו על הורדת APK"), "early hebrew page then download");
   assert(earlyMessage.text.includes("The button opens a page") && earlyMessage.text.includes("tap Download"), "early english page then download");
   assert(earlyMessage.html.includes("הכפתור פותח עמוד") && earlyMessage.html.includes("tap Download"), "early html explains the page");
   assert(earlyMessage.html.includes("פתיחת עמוד ההורדה"), "early hebrew download cta");
@@ -393,9 +393,9 @@ async function main() {
     const paidLanding = await request(server.port, "GET", `/api/download/${token}`, undefined, { Accept: browserAccept });
     assert(paidLanding.status === 200, "paid browser navigation is a landing page");
     assert(paidLanding.headers.get("content-type")?.includes("text/html"), "paid landing content type");
-    assert(paidLanding.text.includes('action="?download=1"'), "paid landing posts to the file step");
-    assert(paidLanding.text.includes(">Download<"), "paid landing download button");
-    assert(paidLanding.text.includes(">הורדה<"), "paid landing hebrew button");
+    assert(paidLanding.text.includes('href="?download=1"'), "paid landing button opens the file step");
+    assert(paidLanding.text.includes(">Download APK<"), "paid landing download button");
+    assert(paidLanding.text.includes(">הורדת APK<"), "paid landing hebrew button");
     assert(paidLanding.text.includes("saves the file once"), "paid landing stays one-time");
     assert(!paidLanding.text.includes(apkBytes.toString("utf8")), "paid landing is not the apk");
 
@@ -873,11 +873,11 @@ async function main() {
     assert(landing.status === 200, "early access browser navigation is a landing page");
     assert(landing.headers.get("content-type")?.includes("text/html"), "early landing content type");
     assert(landing.headers.get("content-disposition")?.includes("inline"), "early landing is inline");
-    assert(landing.text.includes('method="post"') && landing.text.includes('action="?download=1"'), "early landing download form");
-    assert(landing.text.includes(">Download<"), "early landing download button");
-    assert(landing.text.includes(">הורדה<"), "early landing hebrew button");
-    assert(landing.text.includes("Tap Download to save the APK"), "early landing english");
-    assert(landing.text.includes("לחצו על הורדה כדי לשמור"), "early landing hebrew");
+    assert(landing.text.includes('href="?download=1"'), "early landing button opens the file step");
+    assert(landing.text.includes(">Download APK<"), "early landing download button");
+    assert(landing.text.includes(">הורדת APK<"), "early landing hebrew button");
+    assert(landing.text.includes("Tap Download APK"), "early landing english");
+    assert(landing.text.includes("לחצו על הורדת APK"), "early landing hebrew");
     assert(landing.text.includes("24 hours") && landing.text.includes("24 שעות"), "early landing explains the window");
     assert(!landing.text.includes(freshToken), "landing does not echo the token");
     assert(!landing.text.includes(apkBytes.toString("utf8")), "landing is not the apk");
@@ -895,7 +895,7 @@ async function main() {
       Accept: "application/octet-stream",
     });
     assert(octet.status === 200 && octet.headers.get("content-type")?.includes("text/html"), "octet-stream on the bare url gets html");
-    assert(octet.text.includes(">Download<") && !octet.text.includes(apkBytes.toString("utf8")), "octet-stream bare url is not the apk");
+    assert(octet.text.includes(">Download APK<") && !octet.text.includes(apkBytes.toString("utf8")), "octet-stream bare url is not the apk");
     assert(getStore(getConfig().dataDir).downloadState(freshHash)?.downloadCount === 0, "octet-stream bare url does not consume the token");
 
     const posted = await fetch(`http://127.0.0.1:${earlyServer.port}/api/download/${freshToken}?download=1`, {

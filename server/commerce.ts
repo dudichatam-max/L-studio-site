@@ -301,7 +301,7 @@ function downloadLandingHtml(earlyAccess: boolean): string {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <meta name="referrer" content="no-referrer">
-<title>Save L-Studio-Pro.apk</title>
+<title>Download APK</title>
 <style>
   :root { color-scheme: dark; }
   body { margin: 0; background: #0b0b0c; color: #f4f1ea; font-family: Heebo, Arial, Helvetica, sans-serif; }
@@ -310,7 +310,7 @@ function downloadLandingHtml(earlyAccess: boolean): string {
   section + section { margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(244,241,234,.16); }
   h1 { margin: 0 0 12px; font-size: 1.7rem; line-height: 1.25; }
   p { margin: 0 0 14px; font-size: 1.05rem; line-height: 1.55; }
-  button.save { color: #0b0b0c; background: #e3c565; font: inherit; font-weight: 700; border: 0; border-radius: 999px; display: inline-block; padding: 14px 22px; font-size: 1.05rem; cursor: pointer; }
+  a.save { color: #0b0b0c; background: #e3c565; text-decoration: none; font-weight: 700; border-radius: 999px; display: block; text-align: center; padding: 18px 24px; font-size: 1.25rem; }
   .he { direction: rtl; text-align: right; }
   .en { direction: ltr; text-align: left; }
 </style>
@@ -320,19 +320,15 @@ function downloadLandingHtml(earlyAccess: boolean): string {
   <p class="mark">L STUDIO</p>
   <section class="he" lang="he" dir="rtl">
     <h1>הורדת האפליקציה</h1>
-    <p>לחצו על הורדה כדי לשמור את קובץ ה-APK. השם בהורדות: L-Studio-Pro.apk.</p>
+    <p>לחצו על הורדת APK כדי לשמור את הקובץ. השם בהורדות: L-Studio-Pro.apk.</p>
     ${retryHe}
-    <form method="post" action="?download=1">
-      <button class="save" type="submit">הורדה</button>
-    </form>
+    <p><a class="save" href="?download=1">הורדת APK</a></p>
   </section>
   <section class="en" lang="en" dir="ltr">
     <h1>Download the APK</h1>
-    <p>Tap Download to save the APK. The file in Downloads is named L-Studio-Pro.apk.</p>
+    <p>Tap Download APK to save the file. It is saved as L-Studio-Pro.apk.</p>
     ${retryEn}
-    <form method="post" action="?download=1">
-      <button class="save" type="submit">Download</button>
-    </form>
+    <p><a class="save" href="?download=1">Download APK</a></p>
   </section>
 </main>
 </body>
