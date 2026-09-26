@@ -24,20 +24,13 @@ const videos = {
 };
 
 // Small chrome-only labels that are not part of the editable site copy in content.json
-// (menu open/close, the tiny early-access confirmation line under the tester form).
+// (menu open/close).
 const chromeUi = {
   he: { close: "סגירת תפריט", open: "פתיחת תפריט" },
   en: { close: "Close menu", open: "Open menu" },
   ru: { close: "Закрыть меню", open: "Открыть меню" },
   ar: { close: "إغلاق القائمة", open: "فتح القائمة" },
 } satisfies Record<Language, { close: string; open: string }>;
-
-const proHomeLink = {
-  he: "או לרכוש את L Studio Pro",
-  en: "Or buy L Studio Pro",
-  ru: "Или купить L Studio Pro",
-  ar: "أو شراء L Studio Pro",
-} satisfies Record<Language, string>;
 
 const instagramLabel = {
   he: "הצטרפו לקהילה באינסטגרם",
@@ -86,17 +79,16 @@ const featureData = {
 
 // Fallback copy, used only if content.json fails to load.
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio" };
-const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "Under 7MB", stat2: "Android", stat3: "No ads" };
+const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "about 24 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const signalDefault = { text: "From key to sound to loop to recording", note: "All inside L-Studio" };
 const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started with a note that wasn't there.", body: ["I wanted to build a keyboard where I could set which frequency belongs to each key myself.", "From there it grew into recording, a looper, drums, a microphone and more."], closing: "What started as a search for the eighth note became L-Studio." };
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
 const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
-const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 ready drum packs across 8 different styles.", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get early access", coverAlt: "L Studio Factory Pack product box" };
+const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get L Studio Pro", coverAlt: "L Studio Factory Pack product box" };
 const visionDefault = { kicker: "05 / THE VISION", title: "I built the studio I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take the studio with you", body: "Creating shouldn't have to wait for a computer." }] };
 const faqDefault = { kicker: "07 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
-const testerDefault = { kicker: "EARLY ACCESS", title: "Want to try L-Studio?", body: "L-Studio is still evolving.", name: "Name", email: "Email address", consent: "I agree to receive L-Studio updates.", submit: "I want to try it", note: "Free early access · Limited to 44 testers" };
-const finalCtaDefault = { kicker: "06 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea.", cta: "Enter L-Studio" };
+const finalCtaDefault = { kicker: "06 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea.", cta: "Get L Studio Pro" };
 const footerDefault = { tagline: "It's for analog people in a digital world." };
 
 const visionIcons = [Sparkles, Music2, ArrowDownLeft];
@@ -194,10 +186,8 @@ export default function Home() {
   const factory = copy.factoryPack ?? factoryDefault;
   const vision = copy.vision ?? visionDefault;
   const faq = copy.faq ?? faqDefault;
-  const tester = copy.tester ?? testerDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
   const footer = copy.footer ?? footerDefault;
-  const proLink = copy.pro?.homeLink ?? proHomeLink[language];
   const chrome = chromeUi[language];
 
   const features = featureData[language];
@@ -223,7 +213,7 @@ export default function Home() {
           </nav>
           <div className="header-actions">
             <LanguageSwitcher />
-            <a className="button button--small button--light" href="#early-access"><span>{nav.cta}</span><ArrowUpRight size={15} /></a>
+            <a className="button button--small button--light" href="#features"><span>{nav.cta}</span><ArrowUpRight size={15} /></a>
             <button className="menu-toggle" type="button" aria-label={mobileOpen ? chrome.close : chrome.open} onClick={() => setMobileOpen((value) => !value)}>{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
           </div>
         </div>
@@ -356,7 +346,7 @@ export default function Home() {
             </div>
             <div className="architecture-art">
               <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-              <div className="architecture-core"><AudioWaveform size={42} /><span>REAL-TIME</span><b>LOCAL AUDIO</b><small>API 24+ / ANDROID</small></div>
+              <div className="architecture-core"><AudioWaveform size={42} /><span>REAL-TIME</span><b>LOCAL AUDIO</b><small>ANDROID 7.0+</small></div>
             </div>
           </div>
         </section>
@@ -392,7 +382,7 @@ export default function Home() {
             <div className="factory-pack-actions">
               <Link className="button button--primary" href="/factory-64">{factory.detailCta ?? "Explore Factory 64"} <ArrowUpRight size={17} /></Link>
               <Link className="button button--light" href="/factory-64/drums">{factory.drumsCta ?? "Drum kits"} <ArrowUpRight size={17} /></Link>
-              <a className="button button--light" href="#early-access">{factory.cta} <ArrowUpRight size={17} /></a>
+              <Link className="button button--light" href="/buy">{factory.cta} <ArrowUpRight size={17} /></Link>
             </div>
           </div>
         </section>
@@ -446,37 +436,13 @@ export default function Home() {
           </Accordion>
         </section>
 
-        {/* 8. Early Access */}
-        <section className="tester-section container" id="early-access">
-          <div className="tester-grid">
-            <div className="tester-copy">
-              <span className="kicker">{tester.kicker}</span>
-              <h2>{tester.title}</h2>
-              <p>{tester.body}</p>
-              <Link className="text-link pro-home-link" href="/buy">{proLink}</Link>
-              <div className="tester-proof"><span>01</span><span>FREE ACCESS</span><span>LOCAL AUDIO</span></div>
-            </div>
-            <form className="tester-form" action="https://formsubmit.co/dudichatam@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="L Studio, New early access tester" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://l-studio.studio/#early-access" />
-              <label><span>{tester.name}</span><input type="text" name="name" autoComplete="name" placeholder={tester.name} required /></label>
-              <label><span>{tester.email}</span><input type="email" name="email" autoComplete="email" placeholder={tester.email} required /></label>
-              <label className="tester-consent"><input type="checkbox" required /><span>{tester.consent}</span></label>
-              <button className="button button--primary" type="submit">{tester.submit} <ArrowUpRight size={16} /></button>
-              <small>{tester.note}</small>
-            </form>
-          </div>
-        </section>
-
         {/* 9. Final CTA */}
         <section className="final-cta container">
           <span className="kicker">{finalCta.kicker}</span>
           <h2><Headline text={finalCta.title} /></h2>
           <p>{finalCta.body}</p>
           <div className="teaser-video"><video controls playsInline preload="metadata" src={`${import.meta.env.BASE_URL}assets/teaser.mp4`} aria-label="L Studio Factory Pack teaser" /></div>
-          <a className="button button--primary" href="#early-access">{finalCta.cta} <ArrowUpRight size={17} /></a>
+          <Link className="button button--primary" href="/buy">{finalCta.cta} <ArrowUpRight size={17} /></Link>
         </section>
       </main>
 

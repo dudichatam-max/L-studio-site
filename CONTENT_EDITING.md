@@ -27,7 +27,7 @@ Drum kit copy lives under `languages.*.factoryDrums` (section title, intro, eigh
 
 Posters: `assets/drums/01-rap-90.jpg` through `08-experimental.jpg`, each with a `.webp` companion. Show the full poster (`object-fit: contain`). Do not use `factory-64-drum-kits`.
 
-Keep all four languages in sync. Home Factory Pack uses `languages.*.factoryPack.detailCta` (link to `/factory-64`), `languages.*.factoryPack.drumsCta` (link to `/factory-64/drums`), and `languages.*.factoryPack.cta` (early access).
+Keep all four languages in sync. Home Factory Pack uses `languages.*.factoryPack.detailCta` (link to `/factory-64`), `languages.*.factoryPack.drumsCta` (link to `/factory-64/drums`), and `languages.*.factoryPack.cta` (link to `/buy`). Factory 64 and the drum page use `languages.*.factory64.buyCta` for the same Pro purchase link. Drum headlines count 8 kits with 8 styles in each kit, not 64 kits. There is no early-access section.
 
 ### L Studio Pro (`/buy`)
 
