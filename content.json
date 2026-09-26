@@ -18,7 +18,7 @@
         "body": "L-Studio התחילה בכלל ממשהו אחר. רציתי לבנות מקלדת שבה אני יכול לקבוע בעצמי איזה תדר יהיה בכל קליד. משם זה התגלגל להקלטה, לופר, תופים, מיקרופון, פאד ועוד. היום כל הדברים האלה נמצאים בתוך הטלפון.",
         "ctaPrimary": "להכיר את L-Studio",
         "ctaSecondary": "איך זה התחיל",
-        "stat1": "פחות מ-7MB",
+        "stat1": "כ-24 MB",
         "stat2": "Android",
         "stat3": "ללא פרסומות"
       },
@@ -953,7 +953,7 @@
         "body": "התשלום מתבצע ב-PayPal. אחרי שהשרת מאשר את התשלום מול PayPal, מקבלים קישור הורדה אישי לקובץ ה-APK. הקישור עובד פעם אחת ופג אחרי כשעה.",
         "priceNote": "4.00 דולר · חד-פעמי",
         "includes": [
-          "קובץ APK של L Studio Pro לאנדרואיד, כ-24MB",
+          "קובץ APK של L Studio Pro לאנדרואיד, כ-24 MB",
           "תשלום חד-פעמי, כ-4.00 דולר",
           "קישור הורדה אישי, לשימוש יחיד, לכשעה",
           "Factory Pack נשאר בעמודים שלו"
@@ -999,7 +999,7 @@
         "body": "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.",
         "ctaPrimary": "Meet L-Studio",
         "ctaSecondary": "How it started",
-        "stat1": "Under 7MB",
+        "stat1": "About 24 MB",
         "stat2": "Android",
         "stat3": "No ads"
       },
@@ -1980,7 +1980,7 @@
         "body": "L-Studio вообще началась с другого. Я хотел сделать клавиатуру, в которой сам смогу задавать частоту каждой клавиши. Оттуда всё выросло в запись, лупер, барабаны, микрофон, пэд и многое другое. Сегодня всё это живёт внутри телефона.",
         "ctaPrimary": "Познакомиться с L-Studio",
         "ctaSecondary": "Как всё началось",
-        "stat1": "Меньше 7 МБ",
+        "stat1": "Около 24 МБ",
         "stat2": "Android",
         "stat3": "Без рекламы"
       },
@@ -2961,7 +2961,7 @@
         "body": "بدأت L-Studio من شيء آخر تماماً. أردت بناء لوحة مفاتيح يمكنني فيها تحديد تردد كل مفتاح بنفسي. من هناك تطور الأمر إلى التسجيل، اللوبر، الإيقاعات، الميكروفون، الـPad وغيرها. اليوم كل هذا موجود داخل الهاتف.",
         "ctaPrimary": "تعرّف على L-Studio",
         "ctaSecondary": "كيف بدأ الأمر",
-        "stat1": "أقل من 7 ميغابايت",
+        "stat1": "حوالي 24 ميغابايت",
         "stat2": "Android",
         "stat3": "بلا إعلانات"
       },
