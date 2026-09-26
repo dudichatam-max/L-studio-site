@@ -10,7 +10,8 @@
         "faq": "שאלות ותשובות",
         "guide": "מדריך למשתמש",
         "terms": "תנאי שימוש",
-        "pro": "Pro"
+        "pro": "Pro",
+        "exclusive": "בלעדי"
       },
       "hero": {
         "kicker": "זה לאנשים אנלוגיים בעולם דיגיטלי",
@@ -961,6 +962,70 @@
           }
         ]
       },
+      "exclusive": {
+        "navLabel": "בלעדי",
+        "eyebrow": "L-STUDIO / EXCLUSIVE",
+        "title": "שלוש חבילות.",
+        "titleEm": "בקרוב.",
+        "intro": "קו נפרד משמונה ערכות התופים של Factory. שלוש חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות.",
+        "imageAlt": "כרזת חבילת תופים בלעדית",
+        "comingSoon": "בקרוב",
+        "stylesHeading": "סגנונות",
+        "homeKicker": "L-STUDIO / EXCLUSIVE",
+        "homeTitle": "שלוש חבילות מיוחדות. בקרוב.",
+        "homeBody": "Afro Techno, Victory Peak ו־Healing Journey יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה — היכנסו לבלעדי וראו מה בדרך.",
+        "homeCta": "לעמוד הבלעדי",
+        "packs": [
+          {
+            "id": "afro-techno",
+            "name": "Afro Techno",
+            "tagline": "DESERT. GROOVE. DROP.",
+            "meta": "118–134 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Sahara Pulse",
+              "Gnawa Step",
+              "Djembe Wire",
+              "Maghreb Roll",
+              "Kasbah Build",
+              "Atlas Drop",
+              "Desert Peak",
+              "Night Medina"
+            ]
+          },
+          {
+            "id": "victory-peak",
+            "name": "Victory Peak",
+            "tagline": "UNITY. FIRE. PEAK.",
+            "meta": "138–148 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "War Horn",
+              "Bone March",
+              "Om Charge",
+              "Shield Wall",
+              "Avalanche",
+              "Ragnar Fire",
+              "Summit Choir",
+              "Eternal Peak"
+            ]
+          },
+          {
+            "id": "healing-journey",
+            "name": "Healing Journey",
+            "tagline": "BREATH. LIGHT. RETURN.",
+            "meta": "58–74 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Safe Room",
+              "Soft Breath",
+              "Warm Light",
+              "Still Water",
+              "Deep Roots",
+              "Open Heart",
+              "Clear Sky",
+              "Soft Return"
+            ]
+          }
+        ]
+      },
       "pro": {
         "nav": "Pro",
         "back": "חזרה לאתר",
@@ -1015,7 +1080,8 @@
         "faq": "FAQ",
         "guide": "User guide",
         "terms": "Terms",
-        "pro": "Pro"
+        "pro": "Pro",
+        "exclusive": "Exclusive"
       },
       "hero": {
         "kicker": "It's for analog people in a digital world",
@@ -1966,6 +2032,70 @@
           }
         ]
       },
+      "exclusive": {
+        "navLabel": "Exclusive",
+        "eyebrow": "L-STUDIO / EXCLUSIVE",
+        "title": "Three packs.",
+        "titleEm": "Coming soon.",
+        "intro": "A separate line from the eight Factory Drums kits. Three upcoming drum packs, each with 8 channels and 8 styles.",
+        "imageAlt": "Exclusive drum pack poster",
+        "comingSoon": "Coming soon",
+        "stylesHeading": "Styles",
+        "homeKicker": "L-STUDIO / EXCLUSIVE",
+        "homeTitle": "Three special packs. Coming soon.",
+        "homeBody": "Afro Techno, Victory Peak, and Healing Journey sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet — open Exclusive and see what is on the way.",
+        "homeCta": "See Exclusive",
+        "packs": [
+          {
+            "id": "afro-techno",
+            "name": "Afro Techno",
+            "tagline": "DESERT. GROOVE. DROP.",
+            "meta": "118–134 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Sahara Pulse",
+              "Gnawa Step",
+              "Djembe Wire",
+              "Maghreb Roll",
+              "Kasbah Build",
+              "Atlas Drop",
+              "Desert Peak",
+              "Night Medina"
+            ]
+          },
+          {
+            "id": "victory-peak",
+            "name": "Victory Peak",
+            "tagline": "UNITY. FIRE. PEAK.",
+            "meta": "138–148 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "War Horn",
+              "Bone March",
+              "Om Charge",
+              "Shield Wall",
+              "Avalanche",
+              "Ragnar Fire",
+              "Summit Choir",
+              "Eternal Peak"
+            ]
+          },
+          {
+            "id": "healing-journey",
+            "name": "Healing Journey",
+            "tagline": "BREATH. LIGHT. RETURN.",
+            "meta": "58–74 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Safe Room",
+              "Soft Breath",
+              "Warm Light",
+              "Still Water",
+              "Deep Roots",
+              "Open Heart",
+              "Clear Sky",
+              "Soft Return"
+            ]
+          }
+        ]
+      },
       "pro": {
         "nav": "Pro",
         "back": "Back to site",
@@ -2020,7 +2150,8 @@
         "faq": "Вопросы и ответы",
         "guide": "Руководство",
         "terms": "Условия",
-        "pro": "Pro"
+        "pro": "Pro",
+        "exclusive": "Эксклюзив"
       },
       "hero": {
         "kicker": "Это для аналоговых людей в цифровом мире",
@@ -2971,6 +3102,70 @@
           }
         ]
       },
+      "exclusive": {
+        "navLabel": "Эксклюзив",
+        "eyebrow": "L-STUDIO / EXCLUSIVE",
+        "title": "Три пака.",
+        "titleEm": "Скоро.",
+        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Три ударных пака на подходе: в каждом 8 каналов и 8 стилей.",
+        "imageAlt": "Постер эксклюзивного ударного пака",
+        "comingSoon": "Скоро",
+        "stylesHeading": "Стили",
+        "homeKicker": "L-STUDIO / EXCLUSIVE",
+        "homeTitle": "Три особых пака. Скоро.",
+        "homeBody": "Afro Techno, Victory Peak и Healing Journey стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет — откройте эксклюзив и посмотрите, что на подходе.",
+        "homeCta": "Смотреть эксклюзив",
+        "packs": [
+          {
+            "id": "afro-techno",
+            "name": "Afro Techno",
+            "tagline": "DESERT. GROOVE. DROP.",
+            "meta": "118–134 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Sahara Pulse",
+              "Gnawa Step",
+              "Djembe Wire",
+              "Maghreb Roll",
+              "Kasbah Build",
+              "Atlas Drop",
+              "Desert Peak",
+              "Night Medina"
+            ]
+          },
+          {
+            "id": "victory-peak",
+            "name": "Victory Peak",
+            "tagline": "UNITY. FIRE. PEAK.",
+            "meta": "138–148 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "War Horn",
+              "Bone March",
+              "Om Charge",
+              "Shield Wall",
+              "Avalanche",
+              "Ragnar Fire",
+              "Summit Choir",
+              "Eternal Peak"
+            ]
+          },
+          {
+            "id": "healing-journey",
+            "name": "Healing Journey",
+            "tagline": "BREATH. LIGHT. RETURN.",
+            "meta": "58–74 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Safe Room",
+              "Soft Breath",
+              "Warm Light",
+              "Still Water",
+              "Deep Roots",
+              "Open Heart",
+              "Clear Sky",
+              "Soft Return"
+            ]
+          }
+        ]
+      },
       "pro": {
         "nav": "Pro",
         "back": "Вернуться на сайт",
@@ -3025,7 +3220,8 @@
         "faq": "أسئلة وأجوبة",
         "guide": "دليل المستخدم",
         "terms": "الشروط",
-        "pro": "Pro"
+        "pro": "Pro",
+        "exclusive": "حصري"
       },
       "hero": {
         "kicker": "هذا للأشخاص التناظريين في عالم رقمي",
@@ -3973,6 +4169,70 @@
             "name": "EXPERIMENTAL",
             "body": "الحزمة الأكثر تعقيداً في المجموعة. 8 قنوات تشمل Kick وSnare وHigh وPerc وBass وTexture وFX وVocal، مع إيقاعات مدمجة وانتقالات تلقائية.",
             "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns"
+          }
+        ]
+      },
+      "exclusive": {
+        "navLabel": "حصري",
+        "eyebrow": "L-STUDIO / EXCLUSIVE",
+        "title": "ثلاث حزم.",
+        "titleEm": "قريباً.",
+        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. ثلاث حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب.",
+        "imageAlt": "ملصق حزمة طبول حصرية",
+        "comingSoon": "قريباً",
+        "stylesHeading": "الأساليب",
+        "homeKicker": "L-STUDIO / EXCLUSIVE",
+        "homeTitle": "ثلاث حزم خاصة. قريباً.",
+        "homeBody": "Afro Techno وVictory Peak وHealing Journey خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد — افتحوا الحصري وشاهدوا ما هو في الطريق.",
+        "homeCta": "شاهد الحصري",
+        "packs": [
+          {
+            "id": "afro-techno",
+            "name": "Afro Techno",
+            "tagline": "DESERT. GROOVE. DROP.",
+            "meta": "118–134 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Sahara Pulse",
+              "Gnawa Step",
+              "Djembe Wire",
+              "Maghreb Roll",
+              "Kasbah Build",
+              "Atlas Drop",
+              "Desert Peak",
+              "Night Medina"
+            ]
+          },
+          {
+            "id": "victory-peak",
+            "name": "Victory Peak",
+            "tagline": "UNITY. FIRE. PEAK.",
+            "meta": "138–148 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "War Horn",
+              "Bone March",
+              "Om Charge",
+              "Shield Wall",
+              "Avalanche",
+              "Ragnar Fire",
+              "Summit Choir",
+              "Eternal Peak"
+            ]
+          },
+          {
+            "id": "healing-journey",
+            "name": "Healing Journey",
+            "tagline": "BREATH. LIGHT. RETURN.",
+            "meta": "58–74 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Safe Room",
+              "Soft Breath",
+              "Warm Light",
+              "Still Water",
+              "Deep Roots",
+              "Open Heart",
+              "Clear Sky",
+              "Soft Return"
+            ]
           }
         ]
       },

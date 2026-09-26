@@ -5,6 +5,7 @@ import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
+import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 
 type FactoryPreset = { name: string; blurb: string };
 type FactoryPage = {
@@ -139,6 +140,7 @@ export default function Factory64() {
   const { language, isRtl } = useLanguage();
   const [text, setText] = useState<Factory64Copy>(() => emptyCopy(language));
   const [drumsLabel, setDrumsLabel] = useState(drumsNavFallback[language]);
+  const [exclusiveLabel, setExclusiveLabel] = useState(exclusiveNavLabel[language]);
 
   // Always enter Factory 64 at the top (SPA may retain Home scroll).
   useEffect(() => {
@@ -151,11 +153,13 @@ export default function Factory64() {
     let cancelled = false;
     setText(emptyCopy(language));
     setDrumsLabel(drumsNavFallback[language]);
+    setExclusiveLabel(exclusiveNavLabel[language]);
     fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         const block = data?.languages?.[language]?.factory64 as Factory64Copy | undefined;
         const drumsNav = data?.languages?.[language]?.factoryDrums?.navLabel;
+        const exclusiveNav = data?.languages?.[language]?.exclusive?.navLabel ?? data?.languages?.[language]?.nav?.exclusive;
         if (cancelled || !block) return;
         setText({
           ...emptyCopy(language),
@@ -164,6 +168,7 @@ export default function Factory64() {
           pages: block.pages ?? [],
         });
         if (typeof drumsNav === "string" && drumsNav) setDrumsLabel(drumsNav);
+        if (typeof exclusiveNav === "string" && exclusiveNav) setExclusiveLabel(exclusiveNav);
       })
       .catch(() => undefined);
     return () => {
@@ -188,6 +193,7 @@ export default function Factory64() {
             <Link href="/terms">{text.terms}</Link>
             <span className="nav-current">{text.navLabel}</span>
             <Link href="/factory-64/drums">{drumsLabel}</Link>
+            <Link className="nav-exclusive" href="/exclusive">{exclusiveLabel}</Link>
           </nav>
           <div className="header-actions">
             <LanguageSwitcher />
@@ -251,6 +257,10 @@ export default function Factory64() {
               <Link href="/factory-64/drums">
                 <span className="factory64-toc-num">DR</span>
                 <span className="factory64-toc-title">{drumsLabel}</span>
+              </Link>
+              <Link href="/exclusive">
+                <span className="factory64-toc-num">EX</span>
+                <span className="factory64-toc-title">{exclusiveLabel}</span>
               </Link>
               {text.pages.map((page, index) => (
                 <a key={page.id} href={`#factory64-${page.id}`}>
@@ -331,6 +341,7 @@ export default function Factory64() {
             <Link href="/terms">{text.terms}</Link>
             <span>{text.navLabel}</span>
             <Link href="/factory-64/drums">{drumsLabel}</Link>
+            <Link className="nav-exclusive" href="/exclusive">{exclusiveLabel}</Link>
           </div>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>
         </div>
