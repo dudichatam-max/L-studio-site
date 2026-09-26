@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { fetchSiteContent } from "@/lib/siteContent";
 
 type DrumKit = {
   id: string;
@@ -97,7 +98,7 @@ export default function FactoryDrums() {
     let cancelled = false;
     setText(emptyDrums(language));
     setChrome(emptyChrome(language));
-    fetch(`${import.meta.env.BASE_URL}content.json`)
+    fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         if (cancelled || !data) return;

@@ -1,6 +1,7 @@
 import { jsxLocPlugin } from "@builder.io/vite-plugin-jsx-loc";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { defineConfig, type Plugin, type ViteDevServer } from "vite";
@@ -229,7 +230,19 @@ function vitePluginCommerceApi(): Plugin {
 
 const plugins = [vitePluginCommerceApi(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
+function contentRevision(): string {
+  try {
+    const file = path.resolve(import.meta.dirname, "content.json");
+    return createHash("sha256").update(fs.readFileSync(file)).digest("hex").slice(0, 12);
+  } catch {
+    return "dev";
+  }
+}
+
 export default defineConfig({
+  define: {
+    __LSTUDIO_CONTENT_REV__: JSON.stringify(contentRevision()),
+  },
   // Root-absolute assets. GitHub Pages redirects /factory-64 and
   // /factory-64/drums to trailing-slash directories; a relative base would
   // then look for JS and images inside those folders.

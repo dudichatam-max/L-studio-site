@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import type { CommerceConfig } from "./config";
 
 export type EmailResult = "sent" | "skipped" | "failed";
@@ -418,7 +419,8 @@ export async function sendEarlyAccessEmail(
     guideUrl: config.guideUrl,
     supportEmail: config.supportEmail,
   });
-  const idempotencyKey = `early-access-email/${input.orderId.replace(/[\r\n]/g, "")}`.slice(0, 256);
+  const linkId = createHash("sha256").update(input.downloadUrl).digest("hex").slice(0, 20);
+  const idempotencyKey = `early-access-email/${input.orderId.replace(/[\r\n]/g, "")}/${linkId}`.slice(0, 256);
   try {
     if (config.resendApiKey && config.resendFrom) {
       await sendResend(config, to, content, idempotencyKey);

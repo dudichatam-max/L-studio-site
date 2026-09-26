@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { fetchSiteContent } from "@/lib/siteContent";
 import proCopyJson from "@shared/pro-copy.json";
 
 const SUPPORT_EMAIL = "dudichatam@gmail.com";
@@ -75,7 +76,7 @@ export default function Buy({ mode }: { mode: "checkout" | "success" }) {
   useEffect(() => {
     let cancelled = false;
     setCopy(fallback[language]);
-    fetch(`${import.meta.env.BASE_URL}content.json`)
+    fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         if (cancelled) return;

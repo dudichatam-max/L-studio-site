@@ -291,7 +291,7 @@ html[dir="rtl"] .footer-links {
 .architecture-core svg { color: var(--acid); }
 .architecture-core span, .architecture-core b, .architecture-core small { display: block; }
 .architecture-core span { color: var(--paper); font: 10px var(--mono); letter-spacing: .16em; }
-.architecture-core b { color: var(--acid); font: 600 15px var(--display); letter-spacing: .08em; }
+.architecture-core b { color: var(--acid); font: 600 15px var(--display); letter-spacing: .08em; max-width: 12rem; line-height: 1.15; }
 .architecture-core small { margin-top: 3px; color: var(--muted); font: 9px var(--mono); letter-spacing: .08em; }
 
 .vision-section { position: relative; padding: 152px 0 160px; border-top: 1px solid rgba(242,241,235,.12); background: radial-gradient(circle at 12% 38%, rgba(227,197,101,.09), transparent 31%), #101012; }
@@ -385,7 +385,7 @@ html[dir="rtl"] .footer-links {
 .tester-copy .tester-offer { max-width: 520px; margin: 0 0 16px; }
 .tester-copy .tester-offer strong { display: block; color: var(--paper); font: 600 clamp(22px, 2.4vw, 30px)/1.25 var(--display); letter-spacing: -.03em; }
 .tester-copy .tester-offer span { display: block; margin-top: 8px; color: var(--acid); font-size: 16px; line-height: 1.5; }
-.tester-proof { display: flex; align-items: center; gap: 12px; margin-top: 28px; color: var(--muted); font: 9px var(--mono); letter-spacing: .1em; direction: ltr; }
+.tester-proof { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 28px; color: var(--muted); font: 9px var(--mono); letter-spacing: .1em; }
 .tester-proof span:first-child { display: grid; place-items: center; width: 31px; height: 31px; border: 1px solid var(--acid); border-radius: 50%; color: var(--acid); }
 .tester-form { display: flex; flex-direction: column; gap: 14px; padding: 25px; border: 1px solid rgba(242,241,235,.13); background: rgba(11,11,12,.45); direction: rtl; }
 .tester-form label:not(.tester-consent) { display: flex; flex-direction: column; gap: 7px; color: var(--muted); font: 10px var(--mono); letter-spacing: .08em; text-align: right; }

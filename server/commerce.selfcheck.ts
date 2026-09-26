@@ -399,6 +399,99 @@ async function main() {
     });
     assert(reused.result === "used", "no second token after download");
 
+    const earlyOrder = "ea-reissue-selfcheck";
+    const earlyToken = mintDownloadToken();
+    const earlyHash = hashDownloadToken(earlyToken, secret);
+    const earlyIssued = store.issueToken({
+      orderId: earlyOrder,
+      captureId: "early-access",
+      payerEmail: "ada@example.com",
+      amount: "0.00",
+      currency: "EARLY",
+      tokenHash: earlyHash,
+      sealedToken: sealDownloadToken(earlyToken, secret),
+      ttlMs: 60 * 60 * 1000,
+    });
+    assert(earlyIssued.result === "issued" && earlyIssued.tokenHash === earlyHash, "early access token issued");
+    store.complete(earlyHash);
+    const earlyReplacement = mintDownloadToken();
+    const earlyReplacementHash = hashDownloadToken(earlyReplacement, secret);
+    const earlyAgain = store.issueToken({
+      orderId: earlyOrder,
+      captureId: "early-access",
+      payerEmail: "ada@example.com",
+      amount: "0.00",
+      currency: "EARLY",
+      tokenHash: earlyReplacementHash,
+      sealedToken: sealDownloadToken(earlyReplacement, secret),
+      ttlMs: 60 * 60 * 1000,
+    });
+    assert(earlyAgain.result === "issued" && earlyAgain.tokenHash === earlyReplacementHash, "early access reissues after a used token");
+    assert(earlyReplacementHash !== earlyHash, "early access replacement is a new token");
+    assert(store.claim(earlyHash, 1000) === "used", "replaced early access token stays used");
+    assert(store.claim(earlyReplacementHash, 1000) === "ok", "replacement early access token is claimable");
+    store.release(earlyReplacementHash);
+
+    const captureOnly = mintDownloadToken();
+    const captureHash = hashDownloadToken(captureOnly, secret);
+    const captureIssued = store.issueToken({
+      orderId: "ea-capture-reissue",
+      captureId: "early-access",
+      payerEmail: "ada@example.com",
+      amount: "0.00",
+      currency: "USD",
+      tokenHash: captureHash,
+      sealedToken: sealDownloadToken(captureOnly, secret),
+      ttlMs: 60 * 60 * 1000,
+    });
+    assert(captureIssued.result === "issued" && captureIssued.tokenHash === captureHash, "capture id early-access issues");
+    store.complete(captureHash);
+    const captureReplacement = store.issueToken({
+      orderId: "ea-capture-reissue",
+      captureId: "early-access",
+      payerEmail: "ada@example.com",
+      amount: "0.00",
+      currency: "USD",
+      tokenHash: hashDownloadToken(mintDownloadToken(), secret),
+      sealedToken: "sealed",
+      ttlMs: 60 * 60 * 1000,
+    });
+    assert(captureReplacement.result === "issued", "capture id early-access reissues after use");
+
+    const reservedSignup = store.reserveEarlyAccess({
+      email: "signup-reissue@example.com",
+      name: "Sam",
+      orderId: "ea-signup-reissue",
+      limit: 44,
+    });
+    assert(reservedSignup.result === "created", "signup row for reissue");
+    const signupToken = mintDownloadToken();
+    const signupHash = hashDownloadToken(signupToken, secret);
+    const signupIssued = store.issueToken({
+      orderId: "ea-signup-reissue",
+      captureId: "other",
+      payerEmail: "signup-reissue@example.com",
+      amount: "0.00",
+      currency: "USD",
+      tokenHash: signupHash,
+      sealedToken: sealDownloadToken(signupToken, secret),
+      ttlMs: 60 * 60 * 1000,
+    });
+    assert(signupIssued.result === "issued" && signupIssued.tokenHash === signupHash, "signup table issues a token");
+    store.complete(signupHash);
+    const signupReplacement = store.issueToken({
+      orderId: "ea-signup-reissue",
+      captureId: "other",
+      payerEmail: "signup-reissue@example.com",
+      amount: "0.00",
+      currency: "USD",
+      tokenHash: hashDownloadToken(mintDownloadToken(), secret),
+      sealedToken: "sealed",
+      ttlMs: 60 * 60 * 1000,
+    });
+    assert(signupReplacement.result === "issued", "signup table reissues after a used token");
+    assert(store.countEarlyAccess() === 1, "reissue test does not add a second signup");
+
     const invalid = await request(server.port, "POST", "/api/paypal/capture-order", JSON.stringify({ orderId: "nope" }), {
       "Content-Type": "application/json",
     });
@@ -690,8 +783,12 @@ async function main() {
       JSON.stringify({ email: "ada@example.com" }),
       { "Content-Type": "application/json" },
     );
-    assert(again.status === 200 && (again.json as { status?: string }).status === "already_registered", "already registered");
-    assert(sentBodies.length === 2, "already registered does not send another email");
+    assert(again.status === 200 && (again.json as { status?: string; email?: string }).status === "already_registered", "already registered resends");
+    assert((again.json as { email?: string }).email === "sent", "resend reports the email was sent");
+    assert(sentBodies.length === 3, "already registered sends a fresh download email");
+    const resentToken = JSON.parse(sentBodies[2]?.body || "{}").text?.match(/\/api\/download\/([A-Za-z0-9_-]+)/)?.[1] || "";
+    assert(resentToken.length > 20 && resentToken !== token, "resend mints a new download token");
+    assert(sentBodies[2]?.idempotencyKey !== sentBodies[1]?.idempotencyKey, "resend uses a new idempotency key");
     assert(getStore(getConfig().dataDir).countEarlyAccess() === 1, "duplicate did not increment");
 
     const second = await request(
@@ -717,13 +814,74 @@ async function main() {
     assert(closedBody.remaining === 0 && closedBody.taken === 2, "remaining spots hit zero");
     assert(!closed.text.includes("@"), "closed status leaks no email");
 
-    const download = await fetch(`http://127.0.0.1:${earlyServer.port}/api/download/${token}`);
+    const staleDownload = await request(earlyServer.port, "GET", `/api/download/${token}`);
+    assert(staleDownload.status === 410, "replaced early access token no longer works");
+
+    const replacedWhileFull = await request(
+      earlyServer.port,
+      "POST",
+      "/api/early-access",
+      JSON.stringify({ email: "ada@example.com" }),
+      { "Content-Type": "application/json" },
+    );
+    assert(replacedWhileFull.status === 200 && (replacedWhileFull.json as { email?: string }).email === "sent", "full cohort can still resend");
+    assert(getStore(getConfig().dataDir).countEarlyAccess() === 2, "resend does not consume another spot");
+    const freshToken = JSON.parse(sentBodies.at(-1)?.body || "{}").text?.match(/\/api\/download\/([A-Za-z0-9_-]+)/)?.[1] || "";
+    assert(freshToken.length > 20 && freshToken !== resentToken, "resend while full mints another token");
+
+    const download = await fetch(`http://127.0.0.1:${earlyServer.port}/api/download/${freshToken}`);
     const bytes = Buffer.from(await download.arrayBuffer());
     assert(download.status === 200, "early access apk download");
     assert(download.headers.get("content-disposition")?.includes("L-Studio-Pro.apk"), "early access apk name");
     assert(bytes.equals(apkBytes), "early access apk bytes");
-    const secondDownload = await request(earlyServer.port, "GET", `/api/download/${token}`);
-    assert(secondDownload.status === 410, "early access token is single use");
+    const secondDownload = await request(earlyServer.port, "GET", `/api/download/${freshToken}`);
+    assert(secondDownload.status === 410 && (secondDownload.json as { error?: string }).error === "used", "early access token is single use");
+
+    const htmlDenied = await request(earlyServer.port, "GET", `/api/download/${freshToken}`, undefined, {
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    });
+    assert(htmlDenied.status === 410, "used link html status");
+    assert(htmlDenied.headers.get("content-type")?.includes("text/html"), "used link html content type");
+    assert(htmlDenied.text.includes("ההורדה לא זמינה"), "used link hebrew");
+    assert(htmlDenied.text.includes("Download unavailable"), "used link english");
+    assert(htmlDenied.text.includes("https://l-studio.studio/#early-access"), "used link points back to early access");
+    assert(!htmlDenied.text.includes(freshToken), "used link page does not echo the token");
+    assert(htmlDenied.json === null, "html response is not json");
+
+    const jsonDenied = await request(earlyServer.port, "GET", `/api/download/${freshToken}`, undefined, {
+      Accept: "application/json",
+    });
+    assert(jsonDenied.status === 410 && (jsonDenied.json as { error?: string }).error === "used", "api clients still get json");
+
+    const expiredRaw = mintDownloadToken();
+    getStore(getConfig().dataDir).issueToken({
+      orderId: "paid-expired-selfcheck",
+      captureId: "CAP-EXPIRED",
+      payerEmail: "buyer@example.com",
+      amount: "4.00",
+      currency: "USD",
+      tokenHash: hashDownloadToken(expiredRaw, secret),
+      sealedToken: sealDownloadToken(expiredRaw, secret),
+      ttlMs: -1,
+    });
+    const expiredHtml = await request(earlyServer.port, "GET", `/api/download/${expiredRaw}`, undefined, {
+      Accept: "text/html",
+    });
+    assert(expiredHtml.status === 410, "expired link html status");
+    assert(expiredHtml.text.includes("has expired") && expiredHtml.text.includes("פג תוקפו"), "expired link explains both languages");
+    assert(expiredHtml.text.includes("https://l-studio.studio/#early-access"), "expired link points back to early access");
+
+    const sentBeforeLimit = sentBodies.length;
+    const limited = await request(
+      earlyServer.port,
+      "POST",
+      "/api/early-access",
+      JSON.stringify({ email: "ada@example.com" }),
+      { "Content-Type": "application/json" },
+    );
+    assert(limited.status === 429 && (limited.json as { error?: string }).error === "rate_limited", "early access resend is rate limited");
+    assert(getStore(getConfig().dataDir).countEarlyAccess() === 2, "rate limited resend does not consume a spot");
+    assert(sentBodies.length === sentBeforeLimit, "rate limited resend does not send");
   } finally {
     globalThis.fetch = earlyFetch;
     await earlyServer.close();

@@ -96,24 +96,37 @@ export class CommerceStore {
           .run(input.orderId, input.captureId, input.payerEmail, input.amount, input.currency, now, now);
       }
 
-      const active = asToken(
+      const reissue = this.allowsEarlyAccessReissue(input.orderId, input.currency, input.captureId);
+      if (!reissue) {
+        const active = asToken(
+          this.db
+            .prepare(
+              `SELECT * FROM download_tokens
+               WHERE order_id = ? AND used_at IS NULL AND expires_at > ?
+               ORDER BY created_at DESC LIMIT 1`,
+            )
+            .get(input.orderId, now),
+        );
+        if (active) {
+          this.db.exec("COMMIT");
+          return { result: "existing", sealedToken: active.sealed_token, tokenHash: active.token_hash };
+        }
+
+        const used = this.db.prepare("SELECT token_hash FROM download_tokens WHERE order_id = ? AND used_at IS NOT NULL LIMIT 1").get(input.orderId);
+        if (used) {
+          this.db.exec("COMMIT");
+          return { result: "used", sealedToken: null, tokenHash: null };
+        }
+      } else {
+        // A failed phone download can mark the link used before the APK is saved.
+        // Replace earlier Early Access tokens so the same signup can receive a new link.
         this.db
           .prepare(
-            `SELECT * FROM download_tokens
-             WHERE order_id = ? AND used_at IS NULL AND expires_at > ?
-             ORDER BY created_at DESC LIMIT 1`,
+            `UPDATE download_tokens
+             SET used_at = ?, lock_until = NULL, sealed_token = NULL
+             WHERE order_id = ? AND used_at IS NULL`,
           )
-          .get(input.orderId, now),
-      );
-      if (active) {
-        this.db.exec("COMMIT");
-        return { result: "existing", sealedToken: active.sealed_token, tokenHash: active.token_hash };
-      }
-
-      const used = this.db.prepare("SELECT token_hash FROM download_tokens WHERE order_id = ? AND used_at IS NOT NULL LIMIT 1").get(input.orderId);
-      if (used) {
-        this.db.exec("COMMIT");
-        return { result: "used", sealedToken: null, tokenHash: null };
+          .run(now, input.orderId);
       }
 
       this.db
@@ -217,6 +230,12 @@ export class CommerceStore {
 
   setEarlyAccessEmailStatus(email: string, status: string) {
     this.db.prepare("UPDATE early_access_signups SET email_status = ?, updated_at = ? WHERE email = ?").run(status, Date.now(), email.trim().toLowerCase());
+  }
+
+  private allowsEarlyAccessReissue(orderId: string, currency: string, captureId: string): boolean {
+    if (currency === "EARLY" || captureId === "early-access") return true;
+    const signup = this.db.prepare("SELECT 1 AS present FROM early_access_signups WHERE order_id = ?").get(orderId);
+    return Boolean(signup);
   }
 
   private rollback() {
