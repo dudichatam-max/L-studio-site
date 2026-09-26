@@ -257,7 +257,8 @@
         "already": "המייל הזה כבר רשום לגישה המוקדמת. בדקו את תיבת הדואר, כולל ספאם.",
         "full": "44 המקומות נתפסו. תודה שרציתם לנסות.",
         "error": "לא הצלחנו לשלוח את המייל עכשיו. נסו שוב בעוד כמה דקות.",
-        "invalid": "כתובת המייל לא תקינה."
+        "invalid": "כתובת המייל לא תקינה.",
+        "spotsLabel": "פנויים"
       },
       "footer": {
         "tagline": "זה לאנשים אנלוגיים בעולם דיגיטלי."
@@ -1262,7 +1263,8 @@
         "already": "This email is already registered for Early Access. Check your inbox, including spam.",
         "full": "All 44 spots are taken. Thank you for wanting to try it.",
         "error": "We could not send the email right now. Try again in a few minutes.",
-        "invalid": "That email address is not valid."
+        "invalid": "That email address is not valid.",
+        "spotsLabel": "available"
       },
       "footer": {
         "tagline": "It's for analog people in a digital world."
@@ -2267,7 +2269,8 @@
         "already": "Эта почта уже зарегистрирована на ранний доступ. Проверьте входящие, включая спам.",
         "full": "Все 44 места заняты. Спасибо, что хотели попробовать.",
         "error": "Не удалось отправить письмо сейчас. Попробуйте снова через несколько минут.",
-        "invalid": "Этот адрес почты недействителен."
+        "invalid": "Этот адрес почты недействителен.",
+        "spotsLabel": "свободно"
       },
       "footer": {
         "tagline": "Это для аналоговых людей в цифровом мире."
@@ -3272,7 +3275,8 @@
         "already": "هذا البريد مسجل مسبقاً في الوصول المبكر. تحقق من صندوق الوارد، بما فيه البريد غير المرغوب.",
         "full": "المقاعد الـ44 ممتلئة. شكراً لرغبتك في التجربة.",
         "error": "تعذر إرسال البريد الآن. حاول مرة أخرى بعد بضع دقائق.",
-        "invalid": "عنوان البريد هذا غير صالح."
+        "invalid": "عنوان البريد هذا غير صالح.",
+        "spotsLabel": "متاح"
       },
       "footer": {
         "tagline": "هذا لأشخاص تناظريين في عالم رقمي."
@@ -4020,6 +4024,10 @@
         "orderLabel": "طلب PayPal"
       }
     }
+  },
+  "earlyAccess": {
+    "spotsAvailable": 42,
+    "spotsTotal": 44
   },
   "commerce": {
     "apiBaseUrl": "https://l-studio-site-production.up.railway.app"
