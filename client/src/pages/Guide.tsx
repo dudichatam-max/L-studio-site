@@ -122,7 +122,7 @@ export default function Guide() {
           {text.intro ? <p>{text.intro}</p> : null}
           <div className="guide-hero-meta">
             <BookOpen size={16} />
-            <span>{sectionNumber(text.sections.length || 20)} SECTIONS</span>
+            <span>{String(text.sections.length).padStart(2, "0")} SECTIONS</span>
             <span className="guide-hero-sep">·</span>
             <span>BEGINNER + ADVANCED</span>
           </div>
