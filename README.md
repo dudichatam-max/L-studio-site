@@ -33,7 +33,7 @@ pnpm check:commerce
 
 `PAYPAL_CLIENT_ID`, `PAYPAL_CLIENT_SECRET`, `PAYPAL_MODE` (`sandbox` או `live`, ברירת מחדל `sandbox`), `PUBLIC_BASE_URL`, `DOWNLOAD_TOKEN_SECRET`, `PRODUCT_PRICE_USD` (ברירת מחדל `4.00`), `PRODUCT_NAME`, `SUPPORT_EMAIL` (ברירת מחדל `dudichatam@gmail.com`).
 
-APK פרטי, אחת מהאפשרויות: `APK_PATH` (קובץ על דיסק, למשל volume ב-`/data`) או `APK_SOURCE_URL` (https שהשרת מוריד ל-`DATA_DIR` בעלייה). למאגר GitHub פרטי השאירו את הריפו פרטי והוסיפו `APK_GITHUB_TOKEN` (fine-grained PAT עם Contents לקריאה בלבד על `dudichatam-max/L-studio`). הצעדים מהטלפון והכתובות המדויקות: [docs/PAYPAL_RAILWAY.md](docs/PAYPAL_RAILWAY.md). `DATA_DIR` מומלץ `/data` עם Railway Volume. אופציונלי: `PAYPAL_WEBHOOK_ID`, `APK_SHA256`, `RESEND_API_KEY` + `RESEND_FROM`, או `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`. בלי ספק מייל, עמוד ההצלחה עדיין מציג את הקישור והלוג מציין שדילגנו על שליחת המייל. מייל ההורדה כולל גם קישור למדריך. `SITE_PUBLIC_URL` (ברירת מחדל `https://l-studio.studio`) ו-`GUIDE_URL` (ברירת מחדל `https://l-studio.studio/guide`) לא חייבים להיות מוגדרים ב-Railway.
+APK פרטי, אחת מהאפשרויות: `APK_PATH` (קובץ על דיסק, למשל volume ב-`/data`) או `APK_SOURCE_URL` (https שהשרת מוריד ל-`DATA_DIR` בעלייה). למאגר GitHub פרטי השאירו את הריפו פרטי והוסיפו `APK_GITHUB_TOKEN` (fine-grained PAT עם Contents לקריאה בלבד על `dudichatam-max/L-studio`). הצעדים מהטלפון והכתובות המדויקות: [docs/PAYPAL_RAILWAY.md](docs/PAYPAL_RAILWAY.md). `DATA_DIR` מומלץ `/data` עם Railway Volume. אופציונלי: `PAYPAL_WEBHOOK_ID`, `APK_SHA256`, `RESEND_API_KEY` + `RESEND_FROM`, או `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`. `OWNER_NOTIFY_EMAIL` (ברירת מחדל `dudichatam@gmail.com`) ו־`ADMIN_STATS_SECRET` לספירת גישה מוקדמת. בלי ספק מייל, עמוד ההצלחה עדיין מציג את הקישור והלוג מציין שדילגנו על שליחת המייל. מייל ההורדה כולל גם קישור למדריך. `SITE_PUBLIC_URL` (ברירת מחדל `https://l-studio.studio`) ו-`GUIDE_URL` (ברירת מחדל `https://l-studio.studio/guide`) לא חייבים להיות מוגדרים ב-Railway.
 
 בריאות: `GET /api/health`. פורט: `PORT`. Node 22. דוגמה ריקה: `.env.example`.
 
@@ -62,5 +62,7 @@ pnpm build
 
 עמוד הבית כולל טופס גישה מוקדמת חינמית (שם ומייל) ב־`#early-access`. השליחה היא JSON אל `POST /api/early-access` בשרת Railway (`commerce.apiBaseUrl`), לא FormSubmit.
 
-השרת שומר עד 44 כתובות ייחודיות ב־SQLite תחת `DATA_DIR` (ברירת מחדל `EARLY_ACCESS_LIMIT=44`). נרשם חדש מקבל במייל קישור APK חד-פעמי וקישור למדריך, עם בקשה לשלוח משוב אמיתי אל dudichatam@gmail.com. מייל שכבר רשום לא תופס מקום נוסף. הנרשם ה־45 נדחה.
+השרת שומר עד 44 כתובות ייחודיות ב־SQLite תחת `DATA_DIR` (ברירת מחדל `EARLY_ACCESS_LIMIT=44`). נרשם חדש מקבל במייל קישור לעמוד ההורדה (ואז APK, פעיל כ־24 שעות) וקישור למדריך, עם בקשה לשלוח משוב אמיתי אל dudichatam@gmail.com. מייל שכבר רשום לא תופס מקום נוסף. הנרשם ה־45 נדחה.
+
+כשמייל ההורדה נשלח בפעם הראשונה, נשלחת גם הודעה קצרה אל `OWNER_NOTIFY_EMAIL` (ברירת מחדל `dudichatam@gmail.com`): שם, אימייל, שדות נוספים, זמן, ומקומות שנותרו. הורדת APK מלאה ראשונה של אותו בודק שולחת הודעה נוספת, פעם אחת. כשל בשליחה לבעלים נרשם בלוג ולא מבטל את ההרשמה. ספירה (כולל מיילים) רק עם סוד: `GET /api/admin/early-access-stats` וכותרת `x-admin-secret` (או `?secret=`). בלי `ADMIN_STATS_SECRET` הנתיב כבוי. `GET /api/early-access/status` נשאר ציבורי ובלי כתובות.
 

@@ -90,6 +90,8 @@ Set these in Railway → Variables. Names only; values stay in the dashboard. Se
 | `DATA_DIR` | recommended | Default `./data`. Use `/data` with a volume |
 | `RESEND_API_KEY` | no | Resend email |
 | `RESEND_FROM` | with Resend | Verified from address |
+| `OWNER_NOTIFY_EMAIL` | no | Early Access signup and first-download notices. Default `dudichatam@gmail.com`. A failed notice does not fail the tester signup |
+| `ADMIN_STATS_SECRET` | no | Protects `GET /api/admin/early-access-stats` (header `x-admin-secret` or `?secret=`). Unset disables the endpoint |
 | `SMTP_HOST` | no | SMTP host if Resend is not set |
 | `SMTP_PORT` | no | Default `587`. `465` uses TLS |
 | `SMTP_USER` | no | SMTP username |

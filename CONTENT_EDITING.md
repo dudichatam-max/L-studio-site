@@ -29,6 +29,8 @@ Posters: `assets/drums/01-rap-90.jpg` through `08-experimental.jpg`, each with a
 
 Home Early Access copy lives under `languages.*.tester` (kicker, title, body, fields, and the success, already, full, and error lines). The homepage form posts JSON to Railway `POST /api/early-access`. Do not point it at FormSubmit. The first-44 full Pro offer is `languages.*.hero.offer` plus `hero.offerDetail`, repeated as `languages.*.tester.offer` plus `tester.offerDetail`: the first 44 people get full L Studio Pro free, with no demo limits, before the official paid launch.
 
+The public spot meter (`42/44 available`) is manual. It does not change when someone signs up or downloads. Change it only in content: set `earlyAccess.spotsAvailable` and `earlyAccess.spotsTotal` (currently 42 and 44), and the word after the numbers in `languages.*.tester.spotsLabel` (`available`, `פנויים`, `свободно`, `متاح`). Example: David says “update to 41/44” — set `spotsAvailable` to `41`. Do not read the Railway signup count for this meter. Keep root `content.json` and `client/public/content.json` in sync; the Pages build also copies the root file into the site.
+
 Keep all four languages in sync. Home Factory Pack uses `languages.*.factoryPack.detailCta` (link to `/factory-64`), `languages.*.factoryPack.drumsCta` (link to `/factory-64/drums`), and `languages.*.factoryPack.cta` (link to `/#early-access`). The hero primary button, the header button, and the closing home button use their existing labels and link to `/#early-access`. The homepage does not link to `/buy`. Factory 64 and the drum page use `languages.*.factory64.earlyAccessCta` for that same free Early Access link. Drum headlines count 8 kits with 8 styles in each kit, not 64 kits.
 
 ### L Studio Pro (`/buy`)

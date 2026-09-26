@@ -125,6 +125,7 @@ type TesterCopy = {
   full: string;
   error: string;
   invalid: string;
+  spotsLabel: string;
   freeAccess: string;
   localAudio: string;
 };
@@ -147,6 +148,7 @@ const testerDefaults = {
     full: "44 המקומות נתפסו. תודה שרציתם לנסות.",
     error: "לא הצלחנו לשלוח את המייל עכשיו. נסו שוב בעוד כמה דקות.",
     invalid: "כתובת המייל לא תקינה.",
+    spotsLabel: "פנויים",
     freeAccess: "גישה חינמית",
     localAudio: "אודיו מקומי",
   },
@@ -167,6 +169,7 @@ const testerDefaults = {
     full: "All 44 spots are taken. Thank you for wanting to try it.",
     error: "We could not send the email right now. Try again in a few minutes.",
     invalid: "That email address is not valid.",
+    spotsLabel: "available",
     freeAccess: "FREE ACCESS",
     localAudio: "LOCAL AUDIO",
   },
@@ -187,6 +190,7 @@ const testerDefaults = {
     full: "Все 44 места заняты. Спасибо, что хотели попробовать.",
     error: "Не удалось отправить письмо сейчас. Попробуйте снова через несколько минут.",
     invalid: "Этот адрес почты недействителен.",
+    spotsLabel: "свободно",
     freeAccess: "БЕСПЛАТНЫЙ ДОСТУП",
     localAudio: "ЛОКАЛЬНЫЙ ЗВУК",
   },
@@ -207,6 +211,7 @@ const testerDefaults = {
     full: "المقاعد الـ44 ممتلئة. شكراً لرغبتك في التجربة.",
     error: "تعذر إرسال البريد الآن. حاول مرة أخرى بعد بضع دقائق.",
     invalid: "عنوان البريد هذا غير صالح.",
+    spotsLabel: "متاح",
     freeAccess: "وصول مجاني",
     localAudio: "صوت محلي",
   },
@@ -284,7 +289,49 @@ function commerceUrl(apiBase: string, path: string) {
   return `${configured}${path}`;
 }
 
-function EarlyAccessForm({ tester, apiBase, ready }: { tester: TesterCopy; apiBase: string; ready: boolean }) {
+/** Published Early Access meter. Edit content.json; do not use the signup API. */
+const MANUAL_SPOTS = { available: 42, total: 44 };
+
+function readSpotCount(value: unknown, fallback: number): number {
+  const parsed = typeof value === "number" ? value : typeof value === "string" && /^\d+$/.test(value.trim()) ? Number(value.trim()) : Number.NaN;
+  if (!Number.isSafeInteger(parsed) || parsed < 0 || parsed > 100_000) return fallback;
+  return parsed;
+}
+
+function manualEarlyAccessSpots(raw: unknown): { available: number; total: number } {
+  const source = raw && typeof raw === "object" ? (raw as { spotsAvailable?: unknown; spotsTotal?: unknown }) : {};
+  return {
+    available: readSpotCount(source.spotsAvailable, MANUAL_SPOTS.available),
+    total: readSpotCount(source.spotsTotal, MANUAL_SPOTS.total),
+  };
+}
+
+function EarlyAccessMeter({ available, total, label }: { available: number; total: number; label: string }) {
+  const width = total > 0 ? Math.max(0, Math.min(100, (available / total) * 100)) : 0;
+  return (
+    <div className="tester-meter" dir="ltr">
+      <p className="tester-spots">
+        <span className="tester-spots__count">{available}/{total}</span>{" "}
+        <span className="tester-spots__label">{label}</span>
+      </p>
+      <div className="tester-spots__track" aria-hidden="true">
+        <span style={{ width: `${width}%` }} />
+      </div>
+    </div>
+  );
+}
+
+function EarlyAccessForm({
+  tester,
+  spots,
+  apiBase,
+  ready,
+}: {
+  tester: TesterCopy;
+  spots: { available: number; total: number };
+  apiBase: string;
+  ready: boolean;
+}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
@@ -353,6 +400,7 @@ function EarlyAccessForm({ tester, apiBase, ready }: { tester: TesterCopy; apiBa
 
   return (
     <form className="tester-form" onSubmit={onSubmit}>
+      <EarlyAccessMeter available={spots.available} total={spots.total} label={tester.spotsLabel} />
       <label>
         <span>{tester.name}</span>
         <input type="text" name="name" autoComplete="name" placeholder={tester.name} maxLength={80} value={name} disabled={locked} onChange={(event) => setName(event.target.value)} />
@@ -422,6 +470,7 @@ export default function Home() {
   const faq = copy.faq ?? faqDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
   const tester = { ...testerDefaults[language], ...(copy.tester ?? {}) };
+  const spots = manualEarlyAccessSpots(editableContent?.earlyAccess);
   const footer = copy.footer ?? footerDefault;
   const chrome = chromeUi[language];
 
@@ -687,7 +736,7 @@ export default function Home() {
               <p>{tester.body}</p>
               <div className="tester-proof"><span>01</span><span>{tester.freeAccess}</span><span>{tester.localAudio}</span></div>
             </div>
-            <EarlyAccessForm tester={tester} apiBase={apiBase} ready={contentReady} />
+            <EarlyAccessForm tester={tester} spots={spots} apiBase={apiBase} ready={contentReady} />
           </div>
         </section>
 

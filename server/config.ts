@@ -24,6 +24,8 @@ export type CommerceConfig = {
   priceCents: number;
   productName: string;
   supportEmail: string;
+  ownerNotifyEmail: string;
+  adminStatsSecret: string;
   apkPath: string;
   apkSourceUrl: string;
   apkSha256: string;
@@ -107,6 +109,18 @@ function resolveGuideUrl(sitePublicUrl: string, raw: string | undefined): string
   }
 }
 
+const DEFAULT_OWNER_NOTIFY_EMAIL = "dudichatam@gmail.com";
+
+export function readOwnerNotifyEmail(raw: string | undefined): string {
+  const trimmed = (raw ?? "").trim();
+  if (!trimmed) return DEFAULT_OWNER_NOTIFY_EMAIL;
+  if (trimmed.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) {
+    console.error("commerce config: OWNER_NOTIFY_EMAIL is invalid, using dudichatam@gmail.com");
+    return DEFAULT_OWNER_NOTIFY_EMAIL;
+  }
+  return trimmed;
+}
+
 export function readEarlyAccessLimit(raw: string | undefined): number {
   const trimmed = (raw ?? "44").trim();
   if (!/^\d+$/.test(trimmed)) return 44;
@@ -157,6 +171,8 @@ export function getConfig(): CommerceConfig {
     priceCents: price.priceCents,
     productName: (process.env.PRODUCT_NAME || "L Studio Pro").trim() || "L Studio Pro",
     supportEmail: (process.env.SUPPORT_EMAIL || "dudichatam@gmail.com").trim() || "dudichatam@gmail.com",
+    ownerNotifyEmail: readOwnerNotifyEmail(process.env.OWNER_NOTIFY_EMAIL),
+    adminStatsSecret: (process.env.ADMIN_STATS_SECRET || "").trim(),
     apkPath: (process.env.APK_PATH || "").trim(),
     apkSourceUrl: (process.env.APK_SOURCE_URL || "").trim(),
     apkSha256: (process.env.APK_SHA256 || APPROVED_APK_SHA256).trim().toLowerCase(),

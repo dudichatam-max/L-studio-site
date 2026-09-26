@@ -1,5 +1,6 @@
 import http, { createServer } from "node:http";
 import { createHash } from "node:crypto";
+import { DatabaseSync } from "node:sqlite";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -47,6 +48,14 @@ async function request(port: number, method: string, urlPath: string, body?: str
     json = null;
   }
   return { status: response.status, text, json, headers: response.headers };
+}
+
+async function waitFor(predicate: () => boolean, message: string) {
+  const start = Date.now();
+  while (!predicate()) {
+    if (Date.now() - start > 3000) throw new Error(message);
+    await new Promise((resolve) => setTimeout(resolve, 15));
+  }
 }
 
 function paidOrder(amount = "4.00") {
@@ -734,7 +743,47 @@ async function main() {
   assert(duplicate.result === "exists" && duplicate.orderId === "ea-cap-0", "duplicate email does not take another slot");
   assert(capStore.countEarlyAccess() === 44, "cap stays at 44");
 
+  const backfillDir = path.join(root, "early-backfill");
+  fs.mkdirSync(backfillDir, { recursive: true });
+  const rawBackfill = new DatabaseSync(path.join(backfillDir, "commerce.sqlite"));
+  rawBackfill.exec(`
+    CREATE TABLE early_access_signups (
+      email TEXT PRIMARY KEY,
+      name TEXT NOT NULL DEFAULT '',
+      order_id TEXT NOT NULL UNIQUE,
+      email_status TEXT,
+      created_at INTEGER NOT NULL,
+      updated_at INTEGER NOT NULL
+    );
+    CREATE TABLE download_tokens (
+      token_hash TEXT PRIMARY KEY,
+      order_id TEXT NOT NULL,
+      expires_at INTEGER NOT NULL,
+      used_at INTEGER,
+      created_at INTEGER NOT NULL,
+      lock_until INTEGER,
+      sealed_token TEXT,
+      download_count INTEGER NOT NULL DEFAULT 0
+    );
+    INSERT INTO early_access_signups (email, name, order_id, email_status, created_at, updated_at)
+    VALUES ('old@example.com', 'Old', 'ea-old', 'sent', 1700000000000, 1700000000000);
+    INSERT INTO download_tokens (token_hash, order_id, expires_at, used_at, created_at, lock_until, sealed_token, download_count)
+    VALUES ('hash-old', 'ea-old', 1800000000000, NULL, 1700000001000, NULL, NULL, 2);
+    INSERT INTO download_tokens (token_hash, order_id, expires_at, used_at, created_at, lock_until, sealed_token, download_count)
+    VALUES ('hash-old-2', 'ea-old', 1800000000000, 1700000005000, 1700000002000, NULL, NULL, 1);
+  `);
+  rawBackfill.close();
+  process.env.DATA_DIR = backfillDir;
+  resetCommerceForTests();
+  const migrated = getStore(getConfig().dataDir);
+  const oldSignup = migrated.getEarlyAccessSignup("old@example.com");
+  assert(oldSignup?.downloadCount === 3, "backfill sums earlier apk downloads");
+  assert(oldSignup?.firstDownloadAt === 1700000001000, "backfill keeps the earliest download timestamp");
+  assert(migrated.countEarlyAccessDownloaded() === 1, "backfill counts the tester as downloaded");
+
   process.env.EARLY_ACCESS_LIMIT = "2";
+  process.env.OWNER_NOTIFY_EMAIL = "dudichatam@gmail.com";
+  process.env.ADMIN_STATS_SECRET = "stats-selfcheck-secret";
   process.env.DATA_DIR = path.join(root, "early-http");
   resetCommerceForTests();
   const earlyApp = express();
@@ -745,15 +794,45 @@ async function main() {
   const earlyServer = await listen(earlyApp);
   const sentBodies: { body: string; idempotencyKey: string }[] = [];
   let failNextEarlyEmail = true;
+  let failNextOwnerEmail = true;
+  const ownerAddress = "dudichatam@gmail.com";
+  const statsSecret = "stats-selfcheck-secret";
+  type SentMail = { to?: string[]; subject?: string; text?: string; html?: string; reply_to?: string };
+  function mailAt(index: number): SentMail {
+    return JSON.parse(sentBodies[index]?.body || "{}") as SentMail;
+  }
+  function isOwnerMail(index: number): boolean {
+    return mailAt(index).to?.[0] === ownerAddress;
+  }
+  function userMailIndexes(): number[] {
+    return sentBodies.map((_, index) => index).filter((index) => !isOwnerMail(index));
+  }
+  function ownerMailIndexes(): number[] {
+    return sentBodies.map((_, index) => index).filter((index) => isOwnerMail(index));
+  }
   const earlyFetch = globalThis.fetch;
   globalThis.fetch = async (input, init) => {
     const url = String(input);
     if (url === "https://api.resend.com/emails") {
       const headers = new Headers(init?.headers);
+      const raw = String(init?.body ?? "");
       sentBodies.push({
-        body: String(init?.body ?? ""),
+        body: raw,
         idempotencyKey: headers.get("idempotency-key") ?? "",
       });
+      let to = "";
+      try {
+        to = (JSON.parse(raw) as SentMail).to?.[0] ?? "";
+      } catch {
+        to = "";
+      }
+      if (to === ownerAddress) {
+        if (failNextOwnerEmail) {
+          failNextOwnerEmail = false;
+          return new Response("nope", { status: 500 });
+        }
+        return new Response("{}", { status: 200, headers: { "Content-Type": "application/json" } });
+      }
       if (failNextEarlyEmail) {
         failNextEarlyEmail = false;
         return new Response("nope", { status: 500 });
@@ -788,6 +867,7 @@ async function main() {
     assert(failedSend.status === 502 && (failedSend.json as { error?: string }).error === "email_failed", "email failure keeps the spot");
     assert(!failedSend.text.includes("/api/download/"), "failed signup does not return the apk url");
     assert(getStore(getConfig().dataDir).countEarlyAccess() === 1, "failed email still reserves one spot");
+    assert(ownerMailIndexes().length === 0, "failed user email does not notify the owner");
 
     const retried = await request(
       earlyServer.port,
@@ -797,18 +877,29 @@ async function main() {
       { "Content-Type": "application/json" },
     );
     assert(retried.status === 200 && (retried.json as { status?: string }).status === "already_registered", "retry does not take a second slot");
+    assert(retried.status === 200, "owner notify failure still registers the tester");
     assert(!retried.text.includes("/api/download/"), "retry does not return the apk url");
-    assert(sentBodies.length === 2, "retry sends the download email");
-    const mailed = JSON.parse(sentBodies[1]?.body || "{}") as { subject?: string; text?: string; html?: string; reply_to?: string };
+    assert(userMailIndexes().length === 2, "retry sends the download email");
+    const mailedIndex = userMailIndexes()[1] ?? -1;
+    const mailed = mailAt(mailedIndex);
     assert(mailed.subject === "L Studio Early Access: your free tester download", "mailed subject");
     assert(mailed.reply_to === "dudichatam@gmail.com", "mailed reply-to");
     assert(mailed.text?.includes("https://l-studio.studio/guide"), "mailed guide");
     assert(mailed.text?.includes("real feedback and reviews") && mailed.text?.includes("before the official launch"), "mailed feedback");
-    assert(mailed.html?.includes("dudichatam@gmail.com") && !/paypal|purchas|הרכישה/i.test(sentBodies[1]?.body || ""), "mailed body is early access");
-    assert(!/paypal/i.test(sentBodies[1]?.body || ""), "mailed body has no paypal");
+    assert(mailed.html?.includes("dudichatam@gmail.com") && !/paypal|purchas|הרכישה/i.test(sentBodies[mailedIndex]?.body || ""), "mailed body is early access");
+    assert(!/paypal/i.test(sentBodies[mailedIndex]?.body || ""), "mailed body has no paypal");
     const token = mailed.text?.match(/\/api\/download\/([A-Za-z0-9_-]+)/)?.[1] || "";
     assert(token.length > 20, "mailed one-time token");
-    assert(sentBodies[1]?.idempotencyKey.startsWith("early-access-email/ea"), "early access idempotency key");
+    assert(sentBodies[mailedIndex]?.idempotencyKey.startsWith("early-access-email/ea"), "early access idempotency key");
+    assert(ownerMailIndexes().length === 1, "first successful signup notifies the owner once");
+    const ownerSignup = mailAt(ownerMailIndexes()[0] ?? -1);
+    assert(ownerSignup.subject === "נרשם בודק חדש / New Early Access signup", "owner signup subject");
+    assert(ownerSignup.text?.includes("Ada Lovelace") && ownerSignup.text?.includes("ada@example.com"), "owner signup includes the stored tester");
+    assert(ownerSignup.text?.includes("נרשם בודק חדש") && ownerSignup.text?.includes("A new Early Access tester signed up."), "owner signup is hebrew and english");
+    assert(ownerSignup.text?.includes("1 used, 1 remaining") && ownerSignup.text?.includes("Total signups: 1"), "owner signup includes spots");
+    assert(/זמן: \d{4}-\d{2}-\d{2}T/.test(ownerSignup.text || ""), "owner signup includes an ISO timestamp");
+    assert(!ownerSignup.text?.includes("/api/download/"), "owner signup email has no download token");
+    assert(sentBodies[ownerMailIndexes()[0] ?? -1]?.idempotencyKey.startsWith("owner-notify/early-access/signup/"), "owner signup idempotency key");
 
     const again = await request(
       earlyServer.port,
@@ -819,20 +910,29 @@ async function main() {
     );
     assert(again.status === 200 && (again.json as { status?: string; email?: string }).status === "already_registered", "already registered resends");
     assert((again.json as { email?: string }).email === "sent", "resend reports the email was sent");
-    assert(sentBodies.length === 3, "already registered sends a fresh download email");
-    const resentToken = JSON.parse(sentBodies[2]?.body || "{}").text?.match(/\/api\/download\/([A-Za-z0-9_-]+)/)?.[1] || "";
+    assert(userMailIndexes().length === 3, "already registered sends a fresh download email");
+    const resentIndex = userMailIndexes()[2] ?? -1;
+    const resentToken = mailAt(resentIndex).text?.match(/\/api\/download\/([A-Za-z0-9_-]+)/)?.[1] || "";
     assert(resentToken.length > 20 && resentToken !== token, "resend mints a new download token");
-    assert(sentBodies[2]?.idempotencyKey !== sentBodies[1]?.idempotencyKey, "resend uses a new idempotency key");
+    assert(sentBodies[resentIndex]?.idempotencyKey !== sentBodies[mailedIndex]?.idempotencyKey, "resend uses a new idempotency key");
+    assert(ownerMailIndexes().length === 1, "resend does not notify the owner again");
     assert(getStore(getConfig().dataDir).countEarlyAccess() === 1, "duplicate did not increment");
 
     const second = await request(
       earlyServer.port,
       "POST",
       "/api/early-access",
-      JSON.stringify({ name: "Bea", email: "bea@example.com" }),
+      JSON.stringify({ name: "Bea", email: "bea@example.com", phone: "0501234567" }),
       { "Content-Type": "application/json" },
     );
     assert(second.status === 200 && (second.json as { status?: string }).status === "registered", "second signup");
+    assert(ownerMailIndexes().length === 2, "second signup notifies the owner");
+    const beaOwner = mailAt(ownerMailIndexes()[1] ?? -1);
+    assert(
+      beaOwner.text?.includes("Bea") && beaOwner.text?.includes("bea@example.com") && beaOwner.text?.includes("0501234567"),
+      "owner email includes extra submitted fields",
+    );
+    assert(beaOwner.text?.includes("2 used, 0 remaining") && beaOwner.text?.includes("Total signups: 2"), "owner email counts the full cohort");
 
     const third = await request(
       earlyServer.port,
@@ -868,6 +968,32 @@ async function main() {
     assert(freshState.expiresAt - Date.now() > 23 * 60 * 60 * 1000, "mailed early access token lasts about 24h");
     assert(freshState.downloadCount === 0 && freshState.usedAt == null, "mailed token starts unused");
 
+    const statsDenied = await request(earlyServer.port, "GET", "/api/admin/early-access-stats");
+    assert(statsDenied.status === 401 && (statsDenied.json as { error?: string }).error === "unauthorized", "stats require a secret");
+    assert(!statsDenied.text.includes("@"), "unauthorized stats leak no email");
+    const statsWrong = await request(earlyServer.port, "GET", "/api/admin/early-access-stats?secret=nope");
+    assert(statsWrong.status === 401, "wrong stats secret is rejected");
+    const stats = await request(earlyServer.port, "GET", `/api/admin/early-access-stats?secret=${statsSecret}`);
+    assert(stats.status === 200, "stats secret in the query");
+    const statsBody = stats.json as {
+      limit?: number;
+      signups?: number;
+      spotsUsed?: number;
+      spotsRemaining?: number;
+      downloaded?: number;
+      recent?: Array<{ email?: string; name?: string; createdAt?: string; downloadCount?: number; hasDownloaded?: boolean; details?: { phone?: string } }>;
+    };
+    assert(statsBody.limit === 2 && statsBody.signups === 2 && statsBody.spotsUsed === 2 && statsBody.spotsRemaining === 0, "stats spots");
+    assert(statsBody.downloaded === 0, "stats downloaded before any apk");
+    assert(statsBody.recent?.length === 2, "stats lists recent signups");
+    assert(statsBody.recent?.some((row) => row.email === "ada@example.com" && row.name === "Ada Lovelace" && row.hasDownloaded === false), "stats include ada");
+    assert(statsBody.recent?.some((row) => row.email === "bea@example.com" && row.details?.phone === "0501234567"), "stats include extra fields");
+    assert(statsBody.recent?.every((row) => typeof row.createdAt === "string" && row.createdAt.includes("T")), "stats timestamps are ISO");
+    assert(!stats.text.includes("/api/download/"), "stats do not include download tokens");
+    const statsHeader = await request(earlyServer.port, "GET", "/api/admin/early-access-stats", undefined, { "x-admin-secret": statsSecret });
+    assert(statsHeader.status === 200 && (statsHeader.json as { signups?: number }).signups === 2, "stats secret header");
+    assert(!closed.text.includes("ada@example.com"), "public status stays anonymous");
+
     const browserAccept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";
     const landing = await request(earlyServer.port, "GET", `/api/download/${freshToken}`, undefined, { Accept: browserAccept });
     assert(landing.status === 200, "early access browser navigation is a landing page");
@@ -898,6 +1024,10 @@ async function main() {
     assert(octet.text.includes(">Download APK<") && !octet.text.includes(apkBytes.toString("utf8")), "octet-stream bare url is not the apk");
     assert(getStore(getConfig().dataDir).downloadState(freshHash)?.downloadCount === 0, "octet-stream bare url does not consume the token");
 
+    assert(
+      !ownerMailIndexes().some((index) => mailAt(index).subject === "הורדת APK ראשונה / First Early Access download"),
+      "opening the landing page does not notify the owner",
+    );
     const posted = await fetch(`http://127.0.0.1:${earlyServer.port}/api/download/${freshToken}?download=1`, {
       method: "POST",
       headers: { Accept: "text/html,application/xhtml+xml" },
@@ -908,6 +1038,18 @@ async function main() {
     assert(posted.headers.get("content-disposition")?.includes('filename="L-Studio-Pro.apk"'), "posted apk filename");
     assert(posted.headers.get("content-length") === String(apkBytes.length), "posted apk length");
     assert(posted.headers.get("accept-ranges") === "bytes", "posted apk ranges");
+    await waitFor(
+      () => ownerMailIndexes().some((index) => mailAt(index).subject === "הורדת APK ראשונה / First Early Access download"),
+      "owner first-download email",
+    );
+    const downloadNotices = () => ownerMailIndexes().filter((index) => mailAt(index).subject === "הורדת APK ראשונה / First Early Access download");
+    assert(downloadNotices().length === 1, "first apk download notifies the owner once");
+    const downloadNotice = mailAt(downloadNotices()[0] ?? -1);
+    assert(downloadNotice.text?.includes("ada@example.com") && downloadNotice.text?.includes("Ada Lovelace"), "download notice names the tester");
+    assert(downloadNotice.text?.includes("הוריד את קובץ ה-APK") && downloadNotice.text?.includes("downloaded the APK for the first time"), "download notice is hebrew and english");
+    assert(downloadNotice.text?.includes("This tester's downloads: 1") && downloadNotice.text?.includes("Testers who downloaded: 1 of 2"), "download notice counts");
+    assert(!downloadNotice.text?.includes("/api/download/"), "download notice has no token");
+    assert(sentBodies[downloadNotices()[0] ?? -1]?.idempotencyKey.startsWith("owner-notify/early-access/download/"), "download notice idempotency key");
 
     const button = await request(earlyServer.port, "GET", `/api/download/${freshToken}?download=1`, undefined, {
       Accept: browserAccept,
@@ -957,6 +1099,18 @@ async function main() {
       Accept: "application/octet-stream",
     });
     assert(exhausted.status === 410 && (exhausted.json as { error?: string }).error === "used", "eleventh save is refused");
+    assert(downloadNotices().length === 1, "later apk downloads do not notify the owner again");
+    const afterDownloads = await request(earlyServer.port, "GET", `/api/admin/early-access-stats?secret=${statsSecret}`);
+    const afterBody = afterDownloads.json as {
+      downloaded?: number;
+      recent?: Array<{ email?: string; downloadCount?: number; hasDownloaded?: boolean; downloadedAt?: string | null }>;
+    };
+    assert(afterBody.downloaded === 1, "stats count testers with a finished apk");
+    const adaStats = afterBody.recent?.find((row) => row.email === "ada@example.com");
+    const beaStats = afterBody.recent?.find((row) => row.email === "bea@example.com");
+    assert(adaStats?.hasDownloaded === true && adaStats.downloadCount === EARLY_ACCESS_DOWNLOAD_LIMIT, "ada download count is persisted");
+    assert(typeof adaStats?.downloadedAt === "string" && adaStats.downloadedAt.includes("T"), "ada download time is ISO");
+    assert(beaStats?.hasDownloaded === false && beaStats.downloadCount === 0, "bea has not downloaded");
     const exhaustedBare = await request(earlyServer.port, "GET", `/api/download/${freshToken}`, undefined, { Accept: "*/*" });
     assert(exhaustedBare.status === 410 && exhaustedBare.headers.get("content-type")?.includes("text/html"), "used bare url is still html");
     assert(!exhaustedBare.text.includes(apkBytes.toString("utf8")), "used bare url is not the apk");
@@ -1057,6 +1211,12 @@ async function main() {
     assert(limited.status === 429 && (limited.json as { error?: string }).error === "rate_limited", "early access resend is rate limited");
     assert(getStore(getConfig().dataDir).countEarlyAccess() === 2, "rate limited resend does not consume a spot");
     assert(sentBodies.length === sentBeforeLimit, "rate limited resend does not send");
+
+    delete process.env.ADMIN_STATS_SECRET;
+    resetConfigForTests();
+    const statsClosed = await request(earlyServer.port, "GET", `/api/admin/early-access-stats?secret=${statsSecret}`);
+    assert(statsClosed.status === 503 && (statsClosed.json as { error?: string }).error === "not_configured", "stats stay closed without a secret");
+    assert(!statsClosed.text.includes("@"), "disabled stats leak no email");
   } finally {
     globalThis.fetch = earlyFetch;
     await earlyServer.close();
