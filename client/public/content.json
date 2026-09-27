@@ -255,11 +255,12 @@
         "note": "גישה חינמית · מספר המקומות מוגבל ל-44",
         "sending": "שולחים...",
         "success": "נרשמת. בדקו את המייל לקישור ההורדה ולמדריך, ואחרי שתנסו שלחו משוב אמיתי.",
-        "already": "המייל הזה כבר רשום לגישה המוקדמת. בדקו את תיבת הדואר, כולל ספאם.",
+        "already": "נשלח קישור הורדה חדש למייל הזה. בדקו את תיבת הדואר, כולל ספאם.",
         "full": "44 המקומות נתפסו. תודה שרציתם לנסות.",
         "error": "לא הצלחנו לשלוח את המייל עכשיו. נסו שוב בעוד כמה דקות.",
         "invalid": "כתובת המייל לא תקינה.",
         "spotsLabel": "פנויים",
+        "spotsCta": "לקבלת גישה מוקדמת",
         "imageAlt": "כרזת L Studio Factory Pack עם קופסת המוצר, שמונה עמודים ושישים וארבעה קולות"
       },
       "footer": {
@@ -1409,11 +1410,12 @@
         "note": "Free access · Limited to 44 testers",
         "sending": "Sending...",
         "success": "You are in. Check your email for the download link and the user guide.",
-        "already": "This email is already registered for Early Access. Check your inbox, including spam.",
+        "already": "A new download link was sent to this email. Check your inbox, including spam.",
         "full": "All 44 spots are taken. Thank you for wanting to try it.",
         "error": "We could not send the email right now. Try again in a few minutes.",
         "invalid": "That email address is not valid.",
         "spotsLabel": "available",
+        "spotsCta": "Get early access",
         "imageAlt": "L Studio Factory Pack poster with the product box, eight pages and sixty-four voices"
       },
       "footer": {
@@ -2563,11 +2565,12 @@
         "note": "Бесплатный доступ · Только 44 места",
         "sending": "Отправляем...",
         "success": "Вы в списке. Проверьте почту: там ссылка на скачивание и руководство.",
-        "already": "Эта почта уже зарегистрирована на ранний доступ. Проверьте входящие, включая спам.",
+        "already": "На эту почту отправлена новая ссылка для скачивания. Проверьте входящие, включая спам.",
         "full": "Все 44 места заняты. Спасибо, что хотели попробовать.",
         "error": "Не удалось отправить письмо сейчас. Попробуйте снова через несколько минут.",
         "invalid": "Этот адрес почты недействителен.",
         "spotsLabel": "свободно",
+        "spotsCta": "Ранний доступ",
         "imageAlt": "Постер L Studio Factory Pack с коробкой продукта, восемью страницами и шестьюдесятью четырьмя голосами"
       },
       "footer": {
@@ -3717,11 +3720,12 @@
         "note": "وصول مجاني · العدد محدود بـ44 مكاناً",
         "sending": "جارٍ الإرسال...",
         "success": "تم تسجيلك. تحقق من بريدك لرابط التنزيل ودليل المستخدم.",
-        "already": "هذا البريد مسجل مسبقاً في الوصول المبكر. تحقق من صندوق الوارد، بما فيه البريد غير المرغوب.",
+        "already": "أُرسل رابط تنزيل جديد إلى هذا البريد. تحقق من صندوق الوارد، بما فيه البريد غير المرغوب.",
         "full": "المقاعد الـ44 ممتلئة. شكراً لرغبتك في التجربة.",
         "error": "تعذر إرسال البريد الآن. حاول مرة أخرى بعد بضع دقائق.",
         "invalid": "عنوان البريد هذا غير صالح.",
         "spotsLabel": "متاح",
+        "spotsCta": "احصل على وصول مبكر",
         "imageAlt": "ملصق L Studio Factory Pack مع صندوق المنتج، ثماني صفحات وأربعة وستون صوتاً"
       },
       "footer": {
@@ -4618,7 +4622,7 @@
     }
   },
   "earlyAccess": {
-    "spotsAvailable": 42,
+    "spotsAvailable": 40,
     "spotsTotal": 44
   },
   "commerce": {

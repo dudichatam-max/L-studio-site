@@ -260,6 +260,7 @@
         "error": "לא הצלחנו לשלוח את המייל עכשיו. נסו שוב בעוד כמה דקות.",
         "invalid": "כתובת המייל לא תקינה.",
         "spotsLabel": "פנויים",
+        "spotsCta": "לקבלת גישה מוקדמת",
         "imageAlt": "כרזת L Studio Factory Pack עם קופסת המוצר, שמונה עמודים ושישים וארבעה קולות"
       },
       "footer": {
@@ -1414,6 +1415,7 @@
         "error": "We could not send the email right now. Try again in a few minutes.",
         "invalid": "That email address is not valid.",
         "spotsLabel": "available",
+        "spotsCta": "Get early access",
         "imageAlt": "L Studio Factory Pack poster with the product box, eight pages and sixty-four voices"
       },
       "footer": {
@@ -2568,6 +2570,7 @@
         "error": "Не удалось отправить письмо сейчас. Попробуйте снова через несколько минут.",
         "invalid": "Этот адрес почты недействителен.",
         "spotsLabel": "свободно",
+        "spotsCta": "Ранний доступ",
         "imageAlt": "Постер L Studio Factory Pack с коробкой продукта, восемью страницами и шестьюдесятью четырьмя голосами"
       },
       "footer": {
@@ -3722,6 +3725,7 @@
         "error": "تعذر إرسال البريد الآن. حاول مرة أخرى بعد بضع دقائق.",
         "invalid": "عنوان البريد هذا غير صالح.",
         "spotsLabel": "متاح",
+        "spotsCta": "احصل على وصول مبكر",
         "imageAlt": "ملصق L Studio Factory Pack مع صندوق المنتج، ثماني صفحات وأربعة وستون صوتاً"
       },
       "footer": {
@@ -4618,7 +4622,7 @@
     }
   },
   "earlyAccess": {
-    "spotsAvailable": 42,
+    "spotsAvailable": 40,
     "spotsTotal": 44
   },
   "commerce": {

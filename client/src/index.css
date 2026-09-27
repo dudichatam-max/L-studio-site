@@ -407,6 +407,26 @@ html[dir="rtl"] .footer-links {
 .tester-spots__label { color: var(--acid); font-size: 16px; font-weight: 600; letter-spacing: 0; }
 .tester-spots__track { height: 3px; border-radius: 999px; background: rgba(242,241,235,.14); overflow: hidden; }
 .tester-spots__track span { display: block; height: 100%; background: var(--acid); }
+
+/* Slim Early Access counter under the header. Distinct from .tester-meter. */
+.spots-ribbon { position: relative; z-index: 28; border-bottom: 1px solid rgba(227,197,101,.28); background: radial-gradient(180px 48px at 8% 50%, rgba(227,197,101,.14), transparent 72%), #0e0e10; }
+.spots-ribbon__link { min-height: 48px; display: flex; align-items: center; gap: 12px 18px; padding-block: 8px; color: var(--paper); text-decoration: none; }
+.spots-ribbon__kicker { flex: 0 0 auto; color: var(--acid); font: 10px var(--mono); letter-spacing: .16em; }
+.spots-ribbon__meter { display: inline-flex; align-items: center; gap: 10px; min-width: 0; }
+.spots-ribbon__ring { width: 22px; height: 22px; flex: 0 0 auto; }
+.spots-ribbon__ring circle { fill: none; stroke-width: 2; }
+.spots-ribbon__ring-track { stroke: rgba(242,241,235,.16); }
+.spots-ribbon__ring-value { stroke: var(--acid); stroke-linecap: round; transform: rotate(-90deg); transform-origin: 11px 11px; }
+.spots-ribbon__count { direction: ltr; color: var(--muted); font: 600 15px/1 var(--mono); letter-spacing: -.03em; }
+.spots-ribbon__count b { color: var(--paper); font-weight: 600; }
+.spots-ribbon__label { color: #c8c6be; font-size: 13px; font-weight: 600; }
+.spots-ribbon__cta { display: inline-flex; align-items: center; gap: 6px; margin-inline-start: auto; padding: 6px 12px; border: 1px solid rgba(227,197,101,.5); border-radius: 999px; color: var(--acid); font-size: 12px; font-weight: 700; white-space: nowrap; transition: background-color 160ms ease, color 160ms ease; }
+.spots-ribbon__link:hover .spots-ribbon__cta { color: var(--ink); background: var(--acid); }
+@media (max-width: 720px) {
+  .spots-ribbon__link { flex-wrap: wrap; gap: 8px 12px; min-height: 0; padding-block: 10px; }
+  .spots-ribbon__kicker { letter-spacing: .1em; }
+  .spots-ribbon__cta { margin-inline-start: 0; }
+}
 .tester-form label:not(.tester-consent) { display: flex; flex-direction: column; gap: 7px; color: var(--muted); font: 10px var(--mono); letter-spacing: .08em; text-align: right; }
 .tester-form input[type="text"], .tester-form input[type="email"] { width: 100%; height: 47px; padding: 0 14px; border: 1px solid rgba(242,241,235,.18); outline: none; color: var(--paper); background: rgba(242,241,235,.045); font: 14px var(--body); transition: border-color 160ms ease, background-color 160ms ease; }
 .tester-form input:focus { border-color: var(--acid); background: rgba(227,197,101,.06); }
