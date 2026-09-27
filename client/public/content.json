@@ -912,54 +912,136 @@
         "closingTitle": "8 ערכות. 8 סגנונות בכל אחת.",
         "closingBody": "מ-Boom-Bap אקוסטי, דרך Indie, Techno ו-Goa, ועד Experimental עם 8 ערוצים ומקצבים מובנים.",
         "closingLine": "L Studio Pro נותנת לך לבחור את הסאונד שמתאים לכיוון שלך ולהתחיל ליצור.",
+        "stylesHeading": "סגנונות",
+        "demoLabel": "סרטון הדגמה",
         "kits": [
           {
             "id": "rap-90",
             "name": "RAP 90'",
             "body": "תופים אקוסטיים בסגנון Boom-Bap של שנות ה-90, עם סאונד חם, מחוספס ותחושה אורגנית.",
-            "tech": "8 Styles · 85-95 BPM · 4 Channels"
+            "tech": "8 Styles · 85-95 BPM · 4 Channels",
+            "styles": [
+              "Dusty Boom-Bap",
+              "Hard NYC Crack",
+              "Soft Jazz-Rap",
+              "Vinyl Dust",
+              "Perc Forward",
+              "Soulful Tight",
+              "Organic Found",
+              "Street Acoustic Hard"
+            ]
           },
           {
             "id": "hip-hop-2000s",
             "name": "HIP-HOP 2000s",
             "body": "שילוב של תופים אורגניים ו-808, עם אופי אורבני ואנרגיה של היפ-הופ מתחילת שנות ה-2000.",
-            "tech": "8 Styles · 82-96 BPM · 4 Channels"
+            "tech": "8 Styles · 82-96 BPM · 4 Channels",
+            "styles": [
+              "Dusty 808 Thump",
+              "Street Knock",
+              "Grimy Basement",
+              "Southern Bounce",
+              "Chopped Organic",
+              "Hard Knock Life",
+              "Underground Live",
+              "Night Bus 808"
+            ]
           },
           {
             "id": "soft-indie",
             "name": "SOFT INDIE",
             "body": "תופים רכים ואינטימיים, מברשות וטקסטורות עדינות, עם קיק שנשאר נוכח.",
-            "tech": "8 Styles · 68-84 BPM · 4 Channels"
+            "tech": "8 Styles · 68-84 BPM · 4 Channels",
+            "styles": [
+              "Bedroom Whisper",
+              "Soft Indie Brush",
+              "Rainy Window",
+              "Tape Hiss Room",
+              "Felt Mallets",
+              "Slow Bloom",
+              "Coffee Shop Kit",
+              "Night Drive Soft"
+            ]
           },
           {
             "id": "psy-progressive-rock",
             "name": "PSY PROGRESSIVE ROCK",
             "body": "שילוב של מקצבים אורגניים, כלי הקשה ואנרגיה פסיכדלית, מהאדמה ועד החלל.",
-            "tech": "8 Styles · 92-120 BPM · 4 Channels"
+            "tech": "8 Styles · 92-120 BPM · 4 Channels",
+            "styles": [
+              "Earth Pulse",
+              "Tribal Trail",
+              "Cosmic Floor",
+              "Broken Circuit",
+              "Canyon Echo",
+              "Ritual March",
+              "Soft Nebula",
+              "Peak Lift"
+            ]
           },
           {
             "id": "berlin-90s-techno",
             "name": "BERLIN 90s TECHNO",
             "body": "תופים יבשים וקשים עם אופי תעשייתי וגרוב היפנוטי בהשראת טכנו של שנות ה-90.",
-            "tech": "8 Styles · 120-138 BPM · 4 Channels"
+            "tech": "8 Styles · 120-138 BPM · 4 Channels",
+            "styles": [
+              "Basement Four",
+              "Warehouse Boom",
+              "Acid Room",
+              "Steel Stairs",
+              "Soft Afterhour",
+              "Hardfloor Knock",
+              "Dusty Tape Deck",
+              "Panic Light"
+            ]
           },
           {
             "id": "tribal-ambient-trance",
             "name": "TRIBAL AMBIENT TRANCE",
             "body": "מקצבים אורגניים שנבנים בהדרגה, מערפל ופעימה ראשונה ועד טקס, שיא ואחריו רגיעה.",
-            "tech": "8 Styles · 96-124 BPM · 4 Channels"
+            "tech": "8 Styles · 96-124 BPM · 4 Channels",
+            "styles": [
+              "Dawn Mist",
+              "Soft Pulse",
+              "Earth Walk",
+              "Fire Circle",
+              "Deep Current",
+              "Rising Path",
+              "Peak Ritual",
+              "Afterglow Sky"
+            ]
           },
           {
             "id": "goa-trance",
             "name": "GOA TRANCE",
             "body": "מקצבים אלקטרוניים עוצמתיים עם התפתחות הדרגתית, מהפעימה הראשונה ועד לשיא האנרגיה.",
-            "tech": "8 Styles · 128-145 BPM · 4 Channels"
+            "tech": "8 Styles · 128-145 BPM · 4 Channels",
+            "styles": [
+              "Before the Gate",
+              "Armor Pulse",
+              "Warpath",
+              "First Clash",
+              "Mid Storm",
+              "Peak Fury",
+              "Last Stand",
+              "Homeward Dust"
+            ]
           },
           {
             "id": "experimental",
             "name": "EXPERIMENTAL",
             "body": "הערכה המורכבת ביותר באוסף. 8 ערוצים הכוללים Kick, Snare, High, Perc, Bass, Texture, FX ו-Vocal, עם מקצבים מובנים ומעברים אוטומטיים.",
-            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns"
+            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns",
+            "styles": [
+              "Seed Lab",
+              "Clay Hands",
+              "False Path",
+              "Ancestral Glitch",
+              "Bass Fracture",
+              "Xenon Grove",
+              "Error Cascade",
+              "Last Equation"
+            ]
           }
         ]
       },
@@ -1984,54 +2066,136 @@
         "closingTitle": "8 kits. 8 styles each.",
         "closingBody": "From acoustic Boom-Bap, through Indie, Techno, and Goa, to Experimental with 8 channels and built-in rhythms.",
         "closingLine": "L Studio Pro lets you choose the sound that fits your direction and start creating.",
+        "stylesHeading": "Styles",
+        "demoLabel": "Demo video",
         "kits": [
           {
             "id": "rap-90",
             "name": "RAP 90'",
             "body": "Acoustic Boom-Bap drums from the 1990s, with a warm, rough sound and an organic feel.",
-            "tech": "8 Styles · 85-95 BPM · 4 Channels"
+            "tech": "8 Styles · 85-95 BPM · 4 Channels",
+            "styles": [
+              "Dusty Boom-Bap",
+              "Hard NYC Crack",
+              "Soft Jazz-Rap",
+              "Vinyl Dust",
+              "Perc Forward",
+              "Soulful Tight",
+              "Organic Found",
+              "Street Acoustic Hard"
+            ]
           },
           {
             "id": "hip-hop-2000s",
             "name": "HIP-HOP 2000s",
             "body": "A mix of organic drums and 808, with an urban character and the energy of early-2000s hip-hop.",
-            "tech": "8 Styles · 82-96 BPM · 4 Channels"
+            "tech": "8 Styles · 82-96 BPM · 4 Channels",
+            "styles": [
+              "Dusty 808 Thump",
+              "Street Knock",
+              "Grimy Basement",
+              "Southern Bounce",
+              "Chopped Organic",
+              "Hard Knock Life",
+              "Underground Live",
+              "Night Bus 808"
+            ]
           },
           {
             "id": "soft-indie",
             "name": "SOFT INDIE",
             "body": "Soft, intimate drums, brushes and delicate textures, with a kick that stays present.",
-            "tech": "8 Styles · 68-84 BPM · 4 Channels"
+            "tech": "8 Styles · 68-84 BPM · 4 Channels",
+            "styles": [
+              "Bedroom Whisper",
+              "Soft Indie Brush",
+              "Rainy Window",
+              "Tape Hiss Room",
+              "Felt Mallets",
+              "Slow Bloom",
+              "Coffee Shop Kit",
+              "Night Drive Soft"
+            ]
           },
           {
             "id": "psy-progressive-rock",
             "name": "PSY PROGRESSIVE ROCK",
             "body": "A mix of organic rhythms, percussion, and psychedelic energy, from the earth to space.",
-            "tech": "8 Styles · 92-120 BPM · 4 Channels"
+            "tech": "8 Styles · 92-120 BPM · 4 Channels",
+            "styles": [
+              "Earth Pulse",
+              "Tribal Trail",
+              "Cosmic Floor",
+              "Broken Circuit",
+              "Canyon Echo",
+              "Ritual March",
+              "Soft Nebula",
+              "Peak Lift"
+            ]
           },
           {
             "id": "berlin-90s-techno",
             "name": "BERLIN 90s TECHNO",
             "body": "Dry, hard drums with an industrial character and a hypnotic groove inspired by 1990s techno.",
-            "tech": "8 Styles · 120-138 BPM · 4 Channels"
+            "tech": "8 Styles · 120-138 BPM · 4 Channels",
+            "styles": [
+              "Basement Four",
+              "Warehouse Boom",
+              "Acid Room",
+              "Steel Stairs",
+              "Soft Afterhour",
+              "Hardfloor Knock",
+              "Dusty Tape Deck",
+              "Panic Light"
+            ]
           },
           {
             "id": "tribal-ambient-trance",
             "name": "TRIBAL AMBIENT TRANCE",
             "body": "Organic rhythms that build gradually, from mist and a first pulse, through a ritual and a peak, then a calm.",
-            "tech": "8 Styles · 96-124 BPM · 4 Channels"
+            "tech": "8 Styles · 96-124 BPM · 4 Channels",
+            "styles": [
+              "Dawn Mist",
+              "Soft Pulse",
+              "Earth Walk",
+              "Fire Circle",
+              "Deep Current",
+              "Rising Path",
+              "Peak Ritual",
+              "Afterglow Sky"
+            ]
           },
           {
             "id": "goa-trance",
             "name": "GOA TRANCE",
             "body": "Powerful electronic rhythms with a gradual build, from the first pulse to the energy peak.",
-            "tech": "8 Styles · 128-145 BPM · 4 Channels"
+            "tech": "8 Styles · 128-145 BPM · 4 Channels",
+            "styles": [
+              "Before the Gate",
+              "Armor Pulse",
+              "Warpath",
+              "First Clash",
+              "Mid Storm",
+              "Peak Fury",
+              "Last Stand",
+              "Homeward Dust"
+            ]
           },
           {
             "id": "experimental",
             "name": "EXPERIMENTAL",
             "body": "The most complex kit in the collection. 8 channels, including Kick, Snare, High, Perc, Bass, Texture, FX, and Vocal, with built-in rhythms and automatic transitions.",
-            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns"
+            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns",
+            "styles": [
+              "Seed Lab",
+              "Clay Hands",
+              "False Path",
+              "Ancestral Glitch",
+              "Bass Fracture",
+              "Xenon Grove",
+              "Error Cascade",
+              "Last Equation"
+            ]
           }
         ]
       },
@@ -3056,54 +3220,136 @@
         "closingTitle": "8 наборов. 8 стилей в каждом.",
         "closingBody": "От акустического Boom-Bap, через Indie, Techno и Goa, до Experimental с 8 каналами и встроенными ритмами.",
         "closingLine": "L Studio Pro дает вам выбрать звук, который подходит вашему направлению, и начать создавать.",
+        "stylesHeading": "Стили",
+        "demoLabel": "Демо-видео",
         "kits": [
           {
             "id": "rap-90",
             "name": "RAP 90'",
             "body": "Акустические барабаны в стиле Boom-Bap 90-х, с теплым, шероховатым звуком и органичным ощущением.",
-            "tech": "8 Styles · 85-95 BPM · 4 Channels"
+            "tech": "8 Styles · 85-95 BPM · 4 Channels",
+            "styles": [
+              "Dusty Boom-Bap",
+              "Hard NYC Crack",
+              "Soft Jazz-Rap",
+              "Vinyl Dust",
+              "Perc Forward",
+              "Soulful Tight",
+              "Organic Found",
+              "Street Acoustic Hard"
+            ]
           },
           {
             "id": "hip-hop-2000s",
             "name": "HIP-HOP 2000s",
             "body": "Сочетание органических барабанов и 808, с городским характером и энергией хип-хопа начала 2000-х.",
-            "tech": "8 Styles · 82-96 BPM · 4 Channels"
+            "tech": "8 Styles · 82-96 BPM · 4 Channels",
+            "styles": [
+              "Dusty 808 Thump",
+              "Street Knock",
+              "Grimy Basement",
+              "Southern Bounce",
+              "Chopped Organic",
+              "Hard Knock Life",
+              "Underground Live",
+              "Night Bus 808"
+            ]
           },
           {
             "id": "soft-indie",
             "name": "SOFT INDIE",
             "body": "Мягкие, камерные барабаны, щетки и тонкие текстуры, с киком, который остается заметным.",
-            "tech": "8 Styles · 68-84 BPM · 4 Channels"
+            "tech": "8 Styles · 68-84 BPM · 4 Channels",
+            "styles": [
+              "Bedroom Whisper",
+              "Soft Indie Brush",
+              "Rainy Window",
+              "Tape Hiss Room",
+              "Felt Mallets",
+              "Slow Bloom",
+              "Coffee Shop Kit",
+              "Night Drive Soft"
+            ]
           },
           {
             "id": "psy-progressive-rock",
             "name": "PSY PROGRESSIVE ROCK",
             "body": "Сочетание органических ритмов, перкуссии и психоделической энергии, от земли до космоса.",
-            "tech": "8 Styles · 92-120 BPM · 4 Channels"
+            "tech": "8 Styles · 92-120 BPM · 4 Channels",
+            "styles": [
+              "Earth Pulse",
+              "Tribal Trail",
+              "Cosmic Floor",
+              "Broken Circuit",
+              "Canyon Echo",
+              "Ritual March",
+              "Soft Nebula",
+              "Peak Lift"
+            ]
           },
           {
             "id": "berlin-90s-techno",
             "name": "BERLIN 90s TECHNO",
             "body": "Сухие и жесткие барабаны с индустриальным характером и гипнотическим грувом по мотивам техно 90-х.",
-            "tech": "8 Styles · 120-138 BPM · 4 Channels"
+            "tech": "8 Styles · 120-138 BPM · 4 Channels",
+            "styles": [
+              "Basement Four",
+              "Warehouse Boom",
+              "Acid Room",
+              "Steel Stairs",
+              "Soft Afterhour",
+              "Hardfloor Knock",
+              "Dusty Tape Deck",
+              "Panic Light"
+            ]
           },
           {
             "id": "tribal-ambient-trance",
             "name": "TRIBAL AMBIENT TRANCE",
             "body": "Органические ритмы, которые нарастают постепенно: от тумана и первой пульсации, через ритуал и пик, затем спокойствие.",
-            "tech": "8 Styles · 96-124 BPM · 4 Channels"
+            "tech": "8 Styles · 96-124 BPM · 4 Channels",
+            "styles": [
+              "Dawn Mist",
+              "Soft Pulse",
+              "Earth Walk",
+              "Fire Circle",
+              "Deep Current",
+              "Rising Path",
+              "Peak Ritual",
+              "Afterglow Sky"
+            ]
           },
           {
             "id": "goa-trance",
             "name": "GOA TRANCE",
             "body": "Мощные электронные ритмы с постепенным развитием, от первой пульсации до пика энергии.",
-            "tech": "8 Styles · 128-145 BPM · 4 Channels"
+            "tech": "8 Styles · 128-145 BPM · 4 Channels",
+            "styles": [
+              "Before the Gate",
+              "Armor Pulse",
+              "Warpath",
+              "First Clash",
+              "Mid Storm",
+              "Peak Fury",
+              "Last Stand",
+              "Homeward Dust"
+            ]
           },
           {
             "id": "experimental",
             "name": "EXPERIMENTAL",
             "body": "Самый сложный набор в коллекции. 8 каналов: Kick, Snare, High, Perc, Bass, Texture, FX и Vocal, со встроенными ритмами и автоматическими переходами.",
-            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns"
+            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns",
+            "styles": [
+              "Seed Lab",
+              "Clay Hands",
+              "False Path",
+              "Ancestral Glitch",
+              "Bass Fracture",
+              "Xenon Grove",
+              "Error Cascade",
+              "Last Equation"
+            ]
           }
         ]
       },
@@ -4128,54 +4374,136 @@
         "closingTitle": "8 حزم. 8 أساليب في كل واحدة.",
         "closingBody": "من Boom-Bap أكوستي، مروراً بـ Indie وTechno وGoa، وصولاً إلى Experimental مع 8 قنوات وإيقاعات مدمجة.",
         "closingLine": "L Studio Pro تتيح لك اختيار الصوت الذي يناسب اتجاهك والبدء في الإنشاء.",
+        "stylesHeading": "الأساليب",
+        "demoLabel": "فيديو العرض",
         "kits": [
           {
             "id": "rap-90",
             "name": "RAP 90'",
             "body": "طبول أكوستية بأسلوب Boom-Bap من تسعينات القرن الماضي، بصوت دافئ وخشن وإحساس عضوي.",
-            "tech": "8 Styles · 85-95 BPM · 4 Channels"
+            "tech": "8 Styles · 85-95 BPM · 4 Channels",
+            "styles": [
+              "Dusty Boom-Bap",
+              "Hard NYC Crack",
+              "Soft Jazz-Rap",
+              "Vinyl Dust",
+              "Perc Forward",
+              "Soulful Tight",
+              "Organic Found",
+              "Street Acoustic Hard"
+            ]
           },
           {
             "id": "hip-hop-2000s",
             "name": "HIP-HOP 2000s",
             "body": "مزيج من طبول عضوية و808، بطابع حضري وطاقة هيب هوب مطلع الألفية.",
-            "tech": "8 Styles · 82-96 BPM · 4 Channels"
+            "tech": "8 Styles · 82-96 BPM · 4 Channels",
+            "styles": [
+              "Dusty 808 Thump",
+              "Street Knock",
+              "Grimy Basement",
+              "Southern Bounce",
+              "Chopped Organic",
+              "Hard Knock Life",
+              "Underground Live",
+              "Night Bus 808"
+            ]
           },
           {
             "id": "soft-indie",
             "name": "SOFT INDIE",
             "body": "طبول ناعمة وحميمة، فراشي وملامس رقيقة، مع كيك يبقى حاضراً.",
-            "tech": "8 Styles · 68-84 BPM · 4 Channels"
+            "tech": "8 Styles · 68-84 BPM · 4 Channels",
+            "styles": [
+              "Bedroom Whisper",
+              "Soft Indie Brush",
+              "Rainy Window",
+              "Tape Hiss Room",
+              "Felt Mallets",
+              "Slow Bloom",
+              "Coffee Shop Kit",
+              "Night Drive Soft"
+            ]
           },
           {
             "id": "psy-progressive-rock",
             "name": "PSY PROGRESSIVE ROCK",
             "body": "مزيج من إيقاعات عضوية وآلات إيقاع وطاقة سايكدلية، من الأرض إلى الفضاء.",
-            "tech": "8 Styles · 92-120 BPM · 4 Channels"
+            "tech": "8 Styles · 92-120 BPM · 4 Channels",
+            "styles": [
+              "Earth Pulse",
+              "Tribal Trail",
+              "Cosmic Floor",
+              "Broken Circuit",
+              "Canyon Echo",
+              "Ritual March",
+              "Soft Nebula",
+              "Peak Lift"
+            ]
           },
           {
             "id": "berlin-90s-techno",
             "name": "BERLIN 90s TECHNO",
             "body": "طبول جافة وصلبة بطابع صناعي وغروف منوّم مستوحى من تكنو التسعينات.",
-            "tech": "8 Styles · 120-138 BPM · 4 Channels"
+            "tech": "8 Styles · 120-138 BPM · 4 Channels",
+            "styles": [
+              "Basement Four",
+              "Warehouse Boom",
+              "Acid Room",
+              "Steel Stairs",
+              "Soft Afterhour",
+              "Hardfloor Knock",
+              "Dusty Tape Deck",
+              "Panic Light"
+            ]
           },
           {
             "id": "tribal-ambient-trance",
             "name": "TRIBAL AMBIENT TRANCE",
             "body": "إيقاعات عضوية تُبنى تدريجياً، من الضباب والنبضة الأولى إلى الطقس والذروة ثم الهدوء.",
-            "tech": "8 Styles · 96-124 BPM · 4 Channels"
+            "tech": "8 Styles · 96-124 BPM · 4 Channels",
+            "styles": [
+              "Dawn Mist",
+              "Soft Pulse",
+              "Earth Walk",
+              "Fire Circle",
+              "Deep Current",
+              "Rising Path",
+              "Peak Ritual",
+              "Afterglow Sky"
+            ]
           },
           {
             "id": "goa-trance",
             "name": "GOA TRANCE",
             "body": "إيقاعات إلكترونية قوية بتطوّر تدريجي، من النبضة الأولى إلى ذروة الطاقة.",
-            "tech": "8 Styles · 128-145 BPM · 4 Channels"
+            "tech": "8 Styles · 128-145 BPM · 4 Channels",
+            "styles": [
+              "Before the Gate",
+              "Armor Pulse",
+              "Warpath",
+              "First Clash",
+              "Mid Storm",
+              "Peak Fury",
+              "Last Stand",
+              "Homeward Dust"
+            ]
           },
           {
             "id": "experimental",
             "name": "EXPERIMENTAL",
             "body": "الحزمة الأكثر تعقيداً في المجموعة. 8 قنوات تشمل Kick وSnare وHigh وPerc وBass وTexture وFX وVocal، مع إيقاعات مدمجة وانتقالات تلقائية.",
-            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns"
+            "tech": "8 Styles · 77-144 BPM · 8 Channels · Built-in Patterns",
+            "styles": [
+              "Seed Lab",
+              "Clay Hands",
+              "False Path",
+              "Ancestral Glitch",
+              "Bass Fracture",
+              "Xenon Grove",
+              "Error Cascade",
+              "Last Equation"
+            ]
           }
         ]
       },

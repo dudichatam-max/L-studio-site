@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ChevronDown } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -12,6 +12,7 @@ type DrumKit = {
   name: string;
   body: string;
   tech: string;
+  styles: string[];
 };
 
 type DrumsCopy = {
@@ -24,6 +25,8 @@ type DrumsCopy = {
   closingTitle: string;
   closingBody: string;
   closingLine: string;
+  stylesHeading: string;
+  demoLabel: string;
   kits: DrumKit[];
 };
 
@@ -51,6 +54,33 @@ const KIT_STEM: Record<string, string> = {
   "experimental": "08-experimental",
 };
 
+/** English style names. Same eight names in every language. Do not invent names. */
+const KIT_STYLES: Record<string, string[]> = {
+  "rap-90": ["Dusty Boom-Bap", "Hard NYC Crack", "Soft Jazz-Rap", "Vinyl Dust", "Perc Forward", "Soulful Tight", "Organic Found", "Street Acoustic Hard"],
+  "hip-hop-2000s": ["Dusty 808 Thump", "Street Knock", "Grimy Basement", "Southern Bounce", "Chopped Organic", "Hard Knock Life", "Underground Live", "Night Bus 808"],
+  "soft-indie": ["Bedroom Whisper", "Soft Indie Brush", "Rainy Window", "Tape Hiss Room", "Felt Mallets", "Slow Bloom", "Coffee Shop Kit", "Night Drive Soft"],
+  "psy-progressive-rock": ["Earth Pulse", "Tribal Trail", "Cosmic Floor", "Broken Circuit", "Canyon Echo", "Ritual March", "Soft Nebula", "Peak Lift"],
+  "berlin-90s-techno": ["Basement Four", "Warehouse Boom", "Acid Room", "Steel Stairs", "Soft Afterhour", "Hardfloor Knock", "Dusty Tape Deck", "Panic Light"],
+  "tribal-ambient-trance": ["Dawn Mist", "Soft Pulse", "Earth Walk", "Fire Circle", "Deep Current", "Rising Path", "Peak Ritual", "Afterglow Sky"],
+  "goa-trance": ["Before the Gate", "Armor Pulse", "Warpath", "First Clash", "Mid Storm", "Peak Fury", "Last Stand", "Homeward Dust"],
+  experimental: ["Seed Lab", "Clay Hands", "False Path", "Ancestral Glitch", "Bass Fracture", "Xenon Grove", "Error Cascade", "Last Equation"],
+};
+
+/** YouTube Shorts for a single style. Key is `${kitId}::${styleName}`. Empty until a Short is attached. */
+const STYLE_DEMOS: Record<string, string> = {};
+
+function styleDemoVideoId(kitId: string, style: string) {
+  return STYLE_DEMOS[`${kitId}::${style}`];
+}
+
+function youtubeEmbedUrl(videoId: string) {
+  return `https://www.youtube.com/embed/${videoId}`;
+}
+
+function kitStyles(kit: DrumKit) {
+  return kit.styles?.length ? kit.styles : KIT_STYLES[kit.id] ?? [];
+}
+
 const emptyDrums = (language: Language): DrumsCopy => ({
   eyebrow: "L-STUDIO / FACTORY PACK / DRUMS",
   title: language === "he" ? "8 ערכות תופים." : language === "ru" ? "8 ударных наборов." : language === "ar" ? "8 حزم طبول." : "8 drum kits.",
@@ -61,6 +91,8 @@ const emptyDrums = (language: Language): DrumsCopy => ({
   closingTitle: "",
   closingBody: "",
   closingLine: "",
+  stylesHeading: language === "he" ? "סגנונות" : language === "ru" ? "Стили" : language === "ar" ? "الأساليب" : "Styles",
+  demoLabel: language === "he" ? "סרטון הדגמה" : language === "ru" ? "Демо-видео" : language === "ar" ? "فيديو العرض" : "Demo video",
   kits: [],
 });
 
@@ -76,6 +108,67 @@ const emptyChrome = (language: Language): ChromeCopy => ({
   earlyAccessCta: language === "he" ? "לקבלת גישה מוקדמת" : language === "ru" ? "Получить ранний доступ" : language === "ar" ? "احصل على وصول مبكر" : "Get early access",
   onThisPage: language === "he" ? "בעמוד הזה" : language === "ru" ? "На этой странице" : language === "ar" ? "في هذه الصفحة" : "On this page",
 });
+
+function KitStyles({ kitId, styles, demoLabel }: { kitId: string; styles: string[]; demoLabel: string }) {
+  const [openStyle, setOpenStyle] = useState<string | null>(null);
+  const openVideoId = openStyle ? styleDemoVideoId(kitId, openStyle) : undefined;
+  const panelId = `factory-drum-demo-${kitId}`;
+
+  return (
+    <>
+      <ul className="exclusive-styles">
+        {styles.map((style) => {
+          const videoId = styleDemoVideoId(kitId, style);
+          if (!videoId) {
+            return (
+              <li key={style} dir="ltr">
+                {style}
+              </li>
+            );
+          }
+          const open = openStyle === style;
+          return (
+            <li key={style} dir="ltr" className={open ? "is-open" : undefined}>
+              <button
+                type="button"
+                className="exclusive-style-toggle"
+                aria-expanded={open}
+                aria-controls={panelId}
+                onClick={() => setOpenStyle(open ? null : style)}
+              >
+                <span className="exclusive-style-toggle-name">
+                  <span>{style}</span>
+                  <ChevronDown className="exclusive-demo-chevron" size={14} aria-hidden="true" />
+                </span>
+                <span className="exclusive-demo-kicker" dir="auto">
+                  {demoLabel}
+                </span>
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+      {openStyle && openVideoId ? (
+        <div className="exclusive-demo" id={panelId} role="region" aria-label={`${openStyle}: ${demoLabel}`}>
+          <div className="exclusive-demo-head">
+            <strong dir="ltr">{openStyle}</strong>
+            <span dir="auto">{demoLabel}</span>
+          </div>
+          <div className="exclusive-short">
+            <iframe
+              src={youtubeEmbedUrl(openVideoId)}
+              title={`${openStyle}: ${demoLabel}`}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
+        </div>
+      ) : null}
+    </>
+  );
+}
 
 function kitMedia(id: string) {
   const stem = KIT_STEM[id];
@@ -114,7 +207,10 @@ export default function FactoryDrums() {
           setText({
             ...emptyDrums(language),
             ...block,
-            kits: block.kits ?? [],
+            kits: (block.kits ?? []).map((kit) => ({
+              ...kit,
+              styles: kitStyles(kit),
+            })),
           });
         }
         if (presets) {
@@ -214,6 +310,8 @@ export default function FactoryDrums() {
                   <p className="factory-drum-tech" dir="ltr">
                     {kit.tech}
                   </p>
+                  <h3>{text.stylesHeading}</h3>
+                  <KitStyles kitId={kit.id} styles={kitStyles(kit)} demoLabel={text.demoLabel} />
                 </div>
               </article>
             );
