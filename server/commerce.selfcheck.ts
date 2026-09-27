@@ -7,7 +7,7 @@ import path from "node:path";
 import express from "express";
 import { apkStatus, ensureApk, resetApkForTests } from "./apk";
 import { EARLY_ACCESS_DOWNLOAD_LIMIT, EARLY_ACCESS_TOKEN_TTL_MS, getConfig, readEarlyAccessLimit, resetConfigForTests } from "./config";
-import { buildDownloadEmail, buildEarlyAccessEmail, sendDownloadEmail } from "./email";
+import { buildDownloadEmail, buildOwnerEarlyAccessNotice, sendDownloadEmail } from "./email";
 import { attachCommerceApi, isAllowedOrigin, prepareCommerce, resetCommerceForTests } from "./commerce";
 import {
   acceptCreatedOrder,
@@ -160,40 +160,28 @@ async function main() {
   assert(hostile.html.includes("&amp;"), "html ampersand escaped");
   assert(hostile.replyTo === undefined, "invalid support has no reply-to");
 
-  const earlyMessage = buildEarlyAccessEmail({
-    downloadUrl: "https://buy.example/api/download/token",
-    guideUrl: "https://l-studio.studio/guide",
-    supportEmail: "dudichatam@gmail.com",
+  const ownerNotice = buildOwnerEarlyAccessNotice({
+    event: "signup",
+    orderId: "ea-selfcheck",
+    name: "Ada Lovelace",
+    email: "ada@example.com",
+    details: { phone: "0501234567" },
+    atIso: "2026-09-27T12:00:00.000Z",
+    signups: 1,
+    limit: 44,
+    remaining: 43,
+    downloadedTesters: 0,
+    testerDownloadCount: 0,
   });
-  assert(earlyMessage.subject === "L Studio Early Access: your free tester download", "early subject");
-  assert(!/paypal/i.test(earlyMessage.subject + earlyMessage.text + earlyMessage.html), "early email has no paypal");
-  assert(!/purchas|הרכישה/i.test(earlyMessage.subject + earlyMessage.text + earlyMessage.html), "early email is not a purchase receipt");
-  assert(!earlyMessage.subject.includes("\u2014") && !earlyMessage.text.includes("\u2014") && !earlyMessage.html.includes("\u2014"), "early email has no em dash");
-  assert(earlyMessage.text.startsWith("זו הגישה המוקדמת הרשמית"), "early hebrew first");
-  assert(earlyMessage.text.includes("before the official launch"), "early launch framing");
-  assert(earlyMessage.text.includes("לפני ההשקה הרשמית"), "early hebrew launch framing");
-  assert(earlyMessage.text.includes("24 שעות") && earlyMessage.text.includes("כמה פעמים"), "early hebrew retry window");
-  assert(earlyMessage.text.includes("about 24 hours") && earlyMessage.text.includes("more than once"), "early english retry window");
-  assert(earlyMessage.html.includes("24 שעות") && earlyMessage.html.includes("about 24 hours"), "early html retry window");
-  assert(!earlyMessage.text.includes("פעם אחת") && !earlyMessage.text.includes("works once"), "early email is not single use");
-  assert(!earlyMessage.html.includes("פעם אחת") && !earlyMessage.html.includes("works once"), "early html is not single use");
-  assert(EARLY_ACCESS_TOKEN_TTL_MS === 24 * 60 * 60 * 1000, "early access links last 24h");
-  assert(EARLY_ACCESS_DOWNLOAD_LIMIT === 10, "early access allows ten saves");
-  assert(earlyMessage.text.includes("https://buy.example/api/download/token"), "early text download url");
-  assert(earlyMessage.text.includes("https://l-studio.studio/guide"), "early text guide url");
-  assert(earlyMessage.text.includes("dudichatam@gmail.com"), "early feedback address");
-  assert(earlyMessage.text.includes("משוב אמיתי") && earlyMessage.text.includes("ביקורות"), "early hebrew feedback and reviews");
-  assert(earlyMessage.text.includes("real feedback and reviews"), "early english feedback and reviews");
-  assert(earlyMessage.html.includes('lang="he"') && earlyMessage.html.includes('dir="rtl"'), "early hebrew direction");
-  assert(earlyMessage.html.includes('lang="en"') && earlyMessage.html.includes('dir="ltr"'), "early english direction");
-  assert(earlyMessage.text.includes("הכפתור פותח עמוד") && earlyMessage.text.includes("לחצו על הורדת APK"), "early hebrew page then download");
-  assert(earlyMessage.text.includes("The button opens a page") && earlyMessage.text.includes("tap Download"), "early english page then download");
-  assert(earlyMessage.html.includes("הכפתור פותח עמוד") && earlyMessage.html.includes("tap Download"), "early html explains the page");
-  assert(earlyMessage.html.includes("פתיחת עמוד ההורדה"), "early hebrew download cta");
-  assert(earlyMessage.html.includes("Open the download page"), "early english download cta");
-  assert(!earlyMessage.html.includes("?download=1"), "email button does not prefetch the file");
-  assert(earlyMessage.html.includes('href="https://l-studio.studio/guide"'), "early html guide href");
-  assert(earlyMessage.replyTo === "dudichatam@gmail.com", "early reply to support");
+  assert(ownerNotice.subject.includes("ada@example.com") && ownerNotice.subject.includes("Google Play internal testing"), "owner subject names the tester and Play");
+  assert(ownerNotice.text.startsWith("אימייל הבודק: ada@example.com"), "owner notice leads with the tester email");
+  assert(ownerNotice.text.includes("Tester email: ada@example.com"), "owner notice repeats the tester email in English");
+  assert(ownerNotice.text.includes("Google Play") && ownerNotice.text.includes("14"), "owner notice asks for a 14-day Play internal test");
+  assert(ownerNotice.text.includes("הוסף את ada@example.com") && ownerNotice.text.includes("Add ada@example.com"), "owner notice tells David to add this email");
+  assert(!ownerNotice.text.includes("/api/download/"), "owner notice has no download link");
+  assert(!ownerNotice.subject.includes("\u2014") && !ownerNotice.text.includes("\u2014") && !ownerNotice.html.includes("\u2014"), "owner notice has no em dash");
+  assert(EARLY_ACCESS_TOKEN_TTL_MS === 24 * 60 * 60 * 1000, "legacy early access links last 24h");
+  assert(EARLY_ACCESS_DOWNLOAD_LIMIT === 10, "legacy early access allows ten saves");
   assert(readEarlyAccessLimit(undefined) === 44, "default early access limit");
   assert(readEarlyAccessLimit("44") === 44, "explicit early access limit");
   assert(readEarlyAccessLimit("0") === 44 && readEarlyAccessLimit("nope") === 44, "invalid early access limit falls back");
@@ -793,7 +781,6 @@ async function main() {
   attachCommerceApi(earlyApp);
   const earlyServer = await listen(earlyApp);
   const sentBodies: { body: string; idempotencyKey: string }[] = [];
-  let failNextEarlyEmail = true;
   let failNextOwnerEmail = true;
   const ownerAddress = "dudichatam@gmail.com";
   const statsSecret = "stats-selfcheck-secret";
@@ -833,10 +820,6 @@ async function main() {
         }
         return new Response("{}", { status: 200, headers: { "Content-Type": "application/json" } });
       }
-      if (failNextEarlyEmail) {
-        failNextEarlyEmail = false;
-        return new Response("nope", { status: 500 });
-      }
       return new Response("{}", { status: 200, headers: { "Content-Type": "application/json" } });
     }
     return earlyFetch(input, init);
@@ -864,10 +847,11 @@ async function main() {
       JSON.stringify({ name: "Ada Lovelace", email: "Ada@Example.com" }),
       { "Content-Type": "application/json" },
     );
-    assert(failedSend.status === 502 && (failedSend.json as { error?: string }).error === "email_failed", "email failure keeps the spot");
-    assert(!failedSend.text.includes("/api/download/"), "failed signup does not return the apk url");
-    assert(getStore(getConfig().dataDir).countEarlyAccess() === 1, "failed email still reserves one spot");
-    assert(ownerMailIndexes().length === 0, "failed user email does not notify the owner");
+    assert(failedSend.status === 502 && (failedSend.json as { error?: string }).error === "email_failed", "owner notice failure keeps the spot");
+    assert(!failedSend.text.includes("/api/download/"), "failed signup does not return an apk url");
+    assert(getStore(getConfig().dataDir).countEarlyAccess() === 1, "failed notice still reserves one spot");
+    assert(userMailIndexes().length === 0, "failed signup does not email the tester");
+    assert(ownerMailIndexes().length === 1, "failed owner notice was attempted");
 
     const retried = await request(
       earlyServer.port,
@@ -877,29 +861,21 @@ async function main() {
       { "Content-Type": "application/json" },
     );
     assert(retried.status === 200 && (retried.json as { status?: string }).status === "already_registered", "retry does not take a second slot");
-    assert(retried.status === 200, "owner notify failure still registers the tester");
-    assert(!retried.text.includes("/api/download/"), "retry does not return the apk url");
-    assert(userMailIndexes().length === 2, "retry sends the download email");
-    const mailedIndex = userMailIndexes()[1] ?? -1;
-    const mailed = mailAt(mailedIndex);
-    assert(mailed.subject === "L Studio Early Access: your free tester download", "mailed subject");
-    assert(mailed.reply_to === "dudichatam@gmail.com", "mailed reply-to");
-    assert(mailed.text?.includes("https://l-studio.studio/guide"), "mailed guide");
-    assert(mailed.text?.includes("real feedback and reviews") && mailed.text?.includes("before the official launch"), "mailed feedback");
-    assert(mailed.html?.includes("dudichatam@gmail.com") && !/paypal|purchas|הרכישה/i.test(sentBodies[mailedIndex]?.body || ""), "mailed body is early access");
-    assert(!/paypal/i.test(sentBodies[mailedIndex]?.body || ""), "mailed body has no paypal");
-    const token = mailed.text?.match(/\/api\/download\/([A-Za-z0-9_-]+)/)?.[1] || "";
-    assert(token.length > 20, "mailed one-time token");
-    assert(sentBodies[mailedIndex]?.idempotencyKey.startsWith("early-access-email/ea"), "early access idempotency key");
-    assert(ownerMailIndexes().length === 1, "first successful signup notifies the owner once");
-    const ownerSignup = mailAt(ownerMailIndexes()[0] ?? -1);
-    assert(ownerSignup.subject === "נרשם בודק חדש / New Early Access signup", "owner signup subject");
-    assert(ownerSignup.text?.includes("Ada Lovelace") && ownerSignup.text?.includes("ada@example.com"), "owner signup includes the stored tester");
+    assert((retried.json as { email?: string }).email === "skipped", "retry does not send a tester email");
+    assert(!retried.text.includes("/api/download/"), "retry does not return an apk url");
+    assert(userMailIndexes().length === 0, "retry does not email an apk");
+    assert(ownerMailIndexes().length === 2, "retry notifies the owner");
+    const ownerIndex = ownerMailIndexes()[1] ?? -1;
+    const ownerSignup = mailAt(ownerIndex);
+    assert(ownerSignup.subject?.includes("ada@example.com") && ownerSignup.subject?.includes("Google Play internal testing"), "owner signup subject");
+    assert(ownerSignup.text?.startsWith("אימייל הבודק: ada@example.com"), "owner signup leads with the tester email");
+    assert(ownerSignup.text?.includes("Ada Lovelace") && ownerSignup.text?.includes("Tester email: ada@example.com"), "owner signup includes the stored tester");
     assert(ownerSignup.text?.includes("נרשם בודק חדש") && ownerSignup.text?.includes("A new Early Access tester signed up."), "owner signup is hebrew and english");
+    assert(ownerSignup.text?.includes("Google Play") && ownerSignup.text?.includes("14"), "owner signup asks for Play internal testing");
     assert(ownerSignup.text?.includes("1 used, 1 remaining") && ownerSignup.text?.includes("Total signups: 1"), "owner signup includes spots");
     assert(/זמן: \d{4}-\d{2}-\d{2}T/.test(ownerSignup.text || ""), "owner signup includes an ISO timestamp");
     assert(!ownerSignup.text?.includes("/api/download/"), "owner signup email has no download token");
-    assert(sentBodies[ownerMailIndexes()[0] ?? -1]?.idempotencyKey.startsWith("owner-notify/early-access/signup/"), "owner signup idempotency key");
+    assert(sentBodies[ownerIndex]?.idempotencyKey.startsWith("owner-notify/early-access/signup/"), "owner signup idempotency key");
 
     const again = await request(
       earlyServer.port,
@@ -908,14 +884,11 @@ async function main() {
       JSON.stringify({ email: "ada@example.com" }),
       { "Content-Type": "application/json" },
     );
-    assert(again.status === 200 && (again.json as { status?: string; email?: string }).status === "already_registered", "already registered resends");
-    assert((again.json as { email?: string }).email === "sent", "resend reports the email was sent");
-    assert(userMailIndexes().length === 3, "already registered sends a fresh download email");
-    const resentIndex = userMailIndexes()[2] ?? -1;
-    const resentToken = mailAt(resentIndex).text?.match(/\/api\/download\/([A-Za-z0-9_-]+)/)?.[1] || "";
-    assert(resentToken.length > 20 && resentToken !== token, "resend mints a new download token");
-    assert(sentBodies[resentIndex]?.idempotencyKey !== sentBodies[mailedIndex]?.idempotencyKey, "resend uses a new idempotency key");
-    assert(ownerMailIndexes().length === 1, "resend does not notify the owner again");
+    assert(again.status === 200 && (again.json as { status?: string; email?: string }).status === "already_registered", "already registered stays registered");
+    assert((again.json as { email?: string }).email === "skipped", "repeat does not send a tester email");
+    assert(!again.text.includes("/api/download/"), "repeat does not return an apk url");
+    assert(userMailIndexes().length === 0, "repeat does not email an apk");
+    assert(ownerMailIndexes().length === 2, "repeat does not notify the owner again");
     assert(getStore(getConfig().dataDir).countEarlyAccess() === 1, "duplicate did not increment");
 
     const second = await request(
@@ -926,8 +899,11 @@ async function main() {
       { "Content-Type": "application/json" },
     );
     assert(second.status === 200 && (second.json as { status?: string }).status === "registered", "second signup");
-    assert(ownerMailIndexes().length === 2, "second signup notifies the owner");
-    const beaOwner = mailAt(ownerMailIndexes()[1] ?? -1);
+    assert((second.json as { email?: string }).email === "skipped", "second signup does not email an apk");
+    assert(!second.text.includes("/api/download/"), "second signup does not return an apk url");
+    assert(userMailIndexes().length === 0, "signups never email the tester");
+    assert(ownerMailIndexes().length === 3, "second signup notifies the owner");
+    const beaOwner = mailAt(ownerMailIndexes()[2] ?? -1);
     assert(
       beaOwner.text?.includes("Bea") && beaOwner.text?.includes("bea@example.com") && beaOwner.text?.includes("0501234567"),
       "owner email includes extra submitted fields",
@@ -948,8 +924,10 @@ async function main() {
     assert(closedBody.remaining === 0 && closedBody.taken === 2, "remaining spots hit zero");
     assert(!closed.text.includes("@"), "closed status leaks no email");
 
-    const staleDownload = await request(earlyServer.port, "GET", `/api/download/${token}`);
-    assert(staleDownload.status === 410, "replaced early access token no longer works");
+    const tokenDb = new DatabaseSync(path.join(getConfig().dataDir, "commerce.sqlite"));
+    const tokenCount = tokenDb.prepare("SELECT COUNT(*) AS n FROM download_tokens").get() as { n?: number };
+    tokenDb.close();
+    assert(Number(tokenCount.n ?? 0) === 0, "signup does not mint a download token");
 
     const replacedWhileFull = await request(
       earlyServer.port,
@@ -958,15 +936,29 @@ async function main() {
       JSON.stringify({ email: "ada@example.com" }),
       { "Content-Type": "application/json" },
     );
-    assert(replacedWhileFull.status === 200 && (replacedWhileFull.json as { email?: string }).email === "sent", "full cohort can still resend");
-    assert(getStore(getConfig().dataDir).countEarlyAccess() === 2, "resend does not consume another spot");
-    const freshToken = JSON.parse(sentBodies.at(-1)?.body || "{}").text?.match(/\/api\/download\/([A-Za-z0-9_-]+)/)?.[1] || "";
-    assert(freshToken.length > 20 && freshToken !== resentToken, "resend while full mints another token");
+    assert(replacedWhileFull.status === 200 && (replacedWhileFull.json as { email?: string }).email === "skipped", "full cohort can confirm an existing signup");
+    assert(!replacedWhileFull.text.includes("/api/download/"), "full cohort confirmation has no apk url");
+    assert(getStore(getConfig().dataDir).countEarlyAccess() === 2, "repeat does not consume another spot");
+    assert(userMailIndexes().length === 0, "full cohort confirmation does not email an apk");
+    const adaSignup = getStore(getConfig().dataDir).getEarlyAccessSignup("ada@example.com");
+    if (!adaSignup) throw new Error("ada signup missing");
+    const freshToken = mintDownloadToken();
     const freshHash = hashDownloadToken(freshToken, secret);
+    const freshIssued = getStore(getConfig().dataDir).issueToken({
+      orderId: adaSignup.orderId,
+      captureId: "early-access",
+      payerEmail: adaSignup.email,
+      amount: "0.00",
+      currency: "EARLY",
+      tokenHash: freshHash,
+      sealedToken: sealDownloadToken(freshToken, secret),
+      ttlMs: EARLY_ACCESS_TOKEN_TTL_MS,
+    });
+    assert(freshIssued.result === "issued", "an older early access token can still be issued outside signup");
     const freshState = getStore(getConfig().dataDir).downloadState(freshHash);
-    if (!freshState) throw new Error("mailed token state");
-    assert(freshState.expiresAt - Date.now() > 23 * 60 * 60 * 1000, "mailed early access token lasts about 24h");
-    assert(freshState.downloadCount === 0 && freshState.usedAt == null, "mailed token starts unused");
+    if (!freshState) throw new Error("issued token state");
+    assert(freshState.expiresAt - Date.now() > 23 * 60 * 60 * 1000, "legacy early access token lasts about 24h");
+    assert(freshState.downloadCount === 0 && freshState.usedAt == null, "legacy token starts unused");
 
     const statsDenied = await request(earlyServer.port, "GET", "/api/admin/early-access-stats");
     assert(statsDenied.status === 401 && (statsDenied.json as { error?: string }).error === "unauthorized", "stats require a secret");

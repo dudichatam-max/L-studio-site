@@ -1,8 +1,8 @@
 import { createHash, randomBytes, timingSafeEqual } from "node:crypto";
 import express, { type NextFunction, type Request, type Response } from "express";
 import { apkByteLength, apkStatus, ensureApk, openApk, resetApkForTests } from "./apk";
-import { EARLY_ACCESS_TOKEN_TTL_MS, getConfig, resetConfigForTests, TOKEN_TTL_MS, type CommerceConfig } from "./config";
-import { normalizeSignupEmail, sendDownloadEmail, sendEarlyAccessEmail, sendOwnerEarlyAccessNotice, type EmailResult } from "./email";
+import { getConfig, resetConfigForTests, TOKEN_TTL_MS, type CommerceConfig } from "./config";
+import { normalizeSignupEmail, sendDownloadEmail, sendOwnerEarlyAccessNotice, type EmailResult } from "./email";
 import {
   acceptCreatedOrder,
   createOrderAmountWasUnexpected,
@@ -116,13 +116,13 @@ function providedAdminSecret(req: Request): string {
   return "";
 }
 
-async function notifyOwnerOfNewSignup(config: CommerceConfig, email: string) {
+async function notifyOwnerOfNewSignup(config: CommerceConfig, email: string): Promise<EmailResult> {
   try {
     const store = getStore(config.dataDir);
     const signup = store.getEarlyAccessSignup(email);
-    if (!signup) return;
+    if (!signup) return "failed";
     const counts = earlyAccessCounts(config);
-    await sendOwnerEarlyAccessNotice(config, {
+    return await sendOwnerEarlyAccessNotice(config, {
       event: "signup",
       orderId: signup.orderId,
       name: signup.name,
@@ -137,6 +137,7 @@ async function notifyOwnerOfNewSignup(config: CommerceConfig, email: string) {
     });
   } catch (error) {
     console.error(`owner early access notify failed (signup): ${error instanceof Error ? error.message : "error"}`);
+    return "failed";
   }
 }
 
@@ -166,40 +167,6 @@ function notifyOwnerOfFirstDownload(config: CommerceConfig, signup: EarlyAccessS
       `owner early access notify failed (download) for order ${signup.orderId}: ${error instanceof Error ? error.message : "error"}`,
     );
   }
-}
-
-async function deliverEarlyAccess(
-  config: CommerceConfig,
-  req: Request,
-  orderId: string,
-  email: string,
-): Promise<{ ok: true; downloadUrl: string } | { ok: false; error: "used" | "server_error" }> {
-  const store = getStore(config.dataDir);
-  const rawToken = mintDownloadToken();
-  const issued = store.issueToken({
-    orderId,
-    captureId: "early-access",
-    payerEmail: email,
-    amount: "0.00",
-    currency: "EARLY",
-    tokenHash: hashDownloadToken(rawToken, config.downloadTokenSecret),
-    sealedToken: sealDownloadToken(rawToken, config.downloadTokenSecret),
-    ttlMs: EARLY_ACCESS_TOKEN_TTL_MS,
-  });
-  if (issued.result === "used") return { ok: false, error: "used" };
-  const token =
-    issued.result === "issued"
-      ? rawToken
-      : issued.sealedToken
-        ? unsealDownloadToken(issued.sealedToken, config.downloadTokenSecret)
-        : null;
-  if (!token) {
-    console.error(`early access token missing for order ${orderId}`);
-    return { ok: false, error: "server_error" };
-  }
-  const base = requestBase(req, config);
-  if (!base) return { ok: false, error: "server_error" };
-  return { ok: true, downloadUrl: `${base}/api/download/${token}` };
 }
 
 async function fulfillOrder(config: CommerceConfig, req: Request, orderId: string): Promise<Fulfillment> {
@@ -351,14 +318,14 @@ function downloadUnavailableHtml(): string {
   <section class="he" lang="he" dir="rtl">
     <h1>ההורדה לא זמינה</h1>
     <p>קישור ההורדה הזה כבר נוצל, או שפג תוקפו.</p>
-    <p>חזרו לעמוד הגישה המוקדמת ושלחו שוב את אותו מייל. יישלח קישור חדש.</p>
-    <p><a href="${EARLY_ACCESS_URL}">לקבלת קישור חדש</a></p>
+    <p>הרשמה לגישה מוקדמת לא שולחת קובץ APK. הבדיקה היא פנימית ב-Google Play ל-14 יום.</p>
+    <p><a href="${EARLY_ACCESS_URL}">לעמוד הגישה המוקדמת</a></p>
   </section>
   <section class="en" lang="en" dir="ltr">
     <h1>Download unavailable</h1>
     <p>This download link was already used or has expired.</p>
-    <p>Go back to Early Access and submit the same email. A new link will be sent.</p>
-    <p><a href="${EARLY_ACCESS_URL}">Get a new link</a></p>
+    <p>Early Access signup does not email an APK. Testing is a 14-day Google Play internal test.</p>
+    <p><a href="${EARLY_ACCESS_URL}">Early Access</a></p>
   </section>
 </main>
 </body>
@@ -520,8 +487,8 @@ export function attachCommerceApi(app: express.Express) {
         res.status(429).json({ error: "rate_limited", message: "Too many attempts. Try again in a few minutes." });
         return;
       }
-      if (!config.downloadTokenSecret || !config.emailConfigured) {
-        res.status(503).json({ error: "not_configured", message: "Early Access email is not available right now." });
+      if (!config.emailConfigured) {
+        res.status(503).json({ error: "not_configured", message: "Early Access signup is not available right now." });
         return;
       }
       const store = getStore(config.dataDir);
@@ -543,45 +510,46 @@ export function attachCommerceApi(app: express.Express) {
         res.status(429).json({
           error: "rate_limited",
           status: "already_registered",
-          message: "This email is already registered. Wait a few minutes before asking for another download link.",
+          message: "This email is already registered. Wait a few minutes before submitting again.",
         });
         return;
       }
-      const delivered = await deliverEarlyAccess(config, req, reserved.orderId, email);
-      if (!delivered.ok) {
-        res.status(delivered.error === "used" ? 409 : 500).json({
-          error: delivered.error === "used" ? "already_downloaded" : "server_error",
-          message: "Early Access could not prepare a new download link. Submit the same email again in a few minutes.",
+      if (reserved.result === "exists" && reserved.emailStatus === "sent") {
+        res.status(200).json({
+          ok: true,
+          status: "already_registered",
+          email: "skipped",
+          message: "This email is already registered. You will get a Google Play internal-test invite by email. This site does not send an APK.",
         });
         return;
       }
-      const priorEmailStatus = reserved.result === "exists" ? reserved.emailStatus : null;
-      const emailResult = await sendEarlyAccessEmail(config, {
-        to: email,
-        downloadUrl: delivered.downloadUrl,
-        orderId: reserved.orderId,
-      });
-      store.setEarlyAccessEmailStatus(email, emailResult);
-      if (emailResult !== "sent") {
+      const notice = await notifyOwnerOfNewSignup(config, email);
+      if (notice !== "sent") {
+        store.setEarlyAccessEmailStatus(email, notice);
         res.status(502).json({
           ok: false,
           error: "email_failed",
           status: reserved.result === "created" ? "registered" : "already_registered",
-          message: "The download email could not be sent. Submit the same email again in a few minutes.",
+          message: "Signup could not be finished right now. Try again in a few minutes. This site does not send an APK.",
         });
         return;
       }
-      if (priorEmailStatus !== "sent") await notifyOwnerOfNewSignup(config, email);
+      store.setEarlyAccessEmailStatus(email, "sent");
       if (reserved.result === "exists") {
         res.status(200).json({
           ok: true,
           status: "already_registered",
-          email: "sent",
-          message: "A new download link was sent. Check your inbox, including spam.",
+          email: "skipped",
+          message: "This email is already registered. You will get a Google Play internal-test invite by email. This site does not send an APK.",
         });
         return;
       }
-      res.status(200).json({ ok: true, status: "registered", email: "sent" });
+      res.status(200).json({
+        ok: true,
+        status: "registered",
+        email: "skipped",
+        message: "Thank you. You will get a Google Play internal-test invite by email. This site does not send an APK.",
+      });
     }),
   );
 
