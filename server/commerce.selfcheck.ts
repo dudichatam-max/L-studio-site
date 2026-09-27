@@ -598,7 +598,7 @@ async function main() {
     process.env.APK_SHA256 = apkSha;
     process.env.APK_GITHUB_TOKEN = `Bearer ${githubToken}`;
     process.env.GITHUB_TOKEN = fallbackToken;
-    process.env.APK_SOURCE_URL = "https://api.github.com/repos/dudichatam-max/L-studio/releases/assets/588219111";
+    process.env.APK_SOURCE_URL = "https://api.github.com/repos/dudichatam-max/L-studio/releases/assets/592871234";
     process.env.DATA_DIR = path.join(root, "gh-api");
     globalThis.fetch = async (input, init) => {
       const hop = record(input, init);
@@ -624,7 +624,7 @@ async function main() {
     delete process.env.APK_GITHUB_TOKEN;
     process.env.GITHUB_TOKEN = fallbackToken;
     process.env.APK_SOURCE_URL =
-      "https://github.com/dudichatam-max/L-studio/releases/download/website-pro-qa-welcomes-20260925/L-Studio-website-release.apk";
+      "https://github.com/dudichatam-max/L-studio/releases/download/website-pro-qa-20260927a/L-Studio-website-pro-qa-20260927a.apk";
     process.env.DATA_DIR = path.join(root, "gh-browser");
     globalThis.fetch = async (input, init) => {
       const hop = record(input, init);
@@ -655,7 +655,7 @@ async function main() {
     assert(hops.length === 1 && hops[0]?.authorization === null, "github token sent to a non-github host");
 
     hops.length = 0;
-    process.env.APK_SOURCE_URL = "https://api.github.com/repos/dudichatam-max/L-studio/releases/assets/588219111";
+    process.env.APK_SOURCE_URL = "https://api.github.com/repos/dudichatam-max/L-studio/releases/assets/592871234";
     process.env.DATA_DIR = path.join(root, "gh-404");
     globalThis.fetch = async (input, init) => {
       record(input, init);

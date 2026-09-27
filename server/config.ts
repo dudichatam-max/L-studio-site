@@ -1,9 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 
-/** Approved L Studio Pro APK: tag website-pro-qa-welcomes-20260925 @ 7efbe7d. */
-export const APPROVED_APK_SHA256 = "28f976838cd6bed8daa77ebe6a84dd534028bca368cf551c62d49e3af1bd4436";
-export const APPROVED_APK_BYTES = 24223751;
+/** Approved L Studio Pro APK: tag website-pro-qa-20260927a @ 8c154e7 (version 1.03, versionCode 3). */
+export const APPROVED_APK_SHA256 = "6c0f374a32990e65949b96d9a8871ac6e07028da1b339d265d3dc848a20e2c89";
+export const APPROVED_APK_BYTES = 24513042;
 export const PRODUCT_CODE = "l-studio-pro";
 export const TOKEN_TTL_MS = 60 * 60 * 1000;
 /** Early Access links survive Chrome's failed first save and a few retries. */
