@@ -1,4 +1,3 @@
-import { createHash } from "node:crypto";
 import type { CommerceConfig } from "./config";
 
 export type EmailResult = "sent" | "skipped" | "failed";
@@ -188,128 +187,6 @@ ${downloadPlain}
   };
 }
 
-export function buildEarlyAccessEmail(input: {
-  downloadUrl: string;
-  guideUrl: string;
-  supportEmail: string;
-}): DownloadEmailContent {
-  const downloadHref = httpUrl(input.downloadUrl);
-  const guideHref = httpUrl(input.guideUrl);
-  const support = safeEmail(input.supportEmail);
-  const subject = "L Studio Early Access: your free tester download";
-  const downloadText = downloadHref || input.downloadUrl.trim();
-  const guideText = guideHref || input.guideUrl.trim();
-  const supportText = support || input.supportEmail.trim();
-
-  const text = [
-    "זו הגישה המוקדמת הרשמית של L Studio.",
-    "הורדת בודקים חינמית, לפני ההשקה הרשמית.",
-    "ההורדה מוכנה.",
-    "",
-    "הכפתור פותח עמוד. בעמוד הזה לחצו על הורדת APK.",
-    "הקישור נשאר פעיל כ-24 שעות ואפשר להוריד כמה פעמים.",
-    "אם הקובץ לא נשמר, פתחו את העמוד שוב ולחצו על הורדת APK:",
-    downloadText,
-    "",
-    "מדריך למשתמש:",
-    guideText,
-    "",
-    `אחרי שתנסו את האפליקציה, שלחו משוב אמיתי וביקורות על האפליקציה אל ${supportText}.`,
-    "הקובץ לשימוש אישי. אין לפרסם את הקישור.",
-    "",
-    "English",
-    "",
-    "This is official L Studio Early Access.",
-    "A free tester download before the official launch.",
-    "Your download is ready.",
-    "",
-    "The button opens a page. On that page, tap Download APK.",
-    "This link stays active for about 24 hours and can be used more than once.",
-    "If the file is not saved, open the page again and tap Download APK:",
-    downloadText,
-    "",
-    "User guide:",
-    guideText,
-    "",
-    `After you try the app, send real feedback and reviews about the app to ${supportText}.`,
-    "The file is for your personal use. Do not publish the link.",
-  ].join("\n");
-
-  const supportHtml = support
-    ? `<a href="mailto:${escapeHtml(support)}" style="color:#e3c565;text-decoration:underline;">${escapeHtml(support)}</a>`
-    : escapeHtml(supportText);
-  const downloadButton = downloadHref ? button(downloadHref, "פתיחת עמוד ההורדה") : "";
-  const downloadButtonEn = downloadHref ? button(downloadHref, "Open the download page") : "";
-  const guideLink = guideHref ? linkLine(guideHref, "מדריך למשתמש") : escapeHtml(guideText);
-  const guideLinkEn = guideHref ? linkLine(guideHref, "User guide") : escapeHtml(guideText);
-  const downloadPlain = `<p style="margin:12px 0 0;font-size:13px;line-height:1.5;color:#c8c6bf;word-break:break-all;">${escapeHtml(downloadText)}</p>`;
-
-  const html = `<!DOCTYPE html>
-<html lang="he" dir="rtl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="color-scheme" content="dark">
-<meta name="supported-color-schemes" content="dark">
-<title>${escapeHtml(subject)}</title>
-</head>
-<body style="margin:0;padding:0;background-color:#0b0b0c;">
-<table role="presentation" lang="he" dir="rtl" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0b0b0c" style="background-color:#0b0b0c;margin:0;padding:0;">
-<tr>
-<td style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#0b0b0c;">
-הורדת בודקים חינמית לפני ההשקה הרשמית. שלחו משוב אמיתי וביקורות.
-</td>
-</tr>
-<tr>
-<td align="center" style="padding:28px 16px;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#141416" style="max-width:560px;background-color:#141416;border:1px solid #2c2c30;border-radius:16px;">
-<tr>
-<td style="height:4px;background-color:#e3c565;border-radius:16px 16px 0 0;font-size:0;line-height:0;">&nbsp;</td>
-</tr>
-<tr>
-<td style="padding:28px 28px 8px;font-family:Heebo,Arial,Helvetica,sans-serif;color:#f2f1eb;">
-<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;letter-spacing:0.16em;color:#e3c565;">L STUDIO EARLY ACCESS</p>
-<h1 style="margin:16px 0 0;font-size:28px;line-height:1.25;font-weight:700;color:#f2f1eb;">גישה מוקדמת רשמית: הורדת בודקים חינמית</h1>
-<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">זו הגישה המוקדמת של L Studio, לפני ההשקה הרשמית. ההורדה מוכנה. הכפתור פותח עמוד. בעמוד הזה לחצו על הורדת APK. הקישור נשאר פעיל כ-24 שעות ואפשר להוריד כמה פעמים.</p>
-${downloadButton}
-${downloadPlain}
-<h2 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">מדריך למשתמש</h2>
-<p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#c8c6bf;">${guideLink}</p>
-<h2 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">נשמח למשוב אמיתי וביקורות</h2>
-<p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">אחרי שתנסו את האפליקציה, שלחו משוב אמיתי וביקורות על האפליקציה אל ${supportHtml}.</p>
-<p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">הקובץ לשימוש אישי. אין לפרסם את הקישור.</p>
-</td>
-</tr>
-<tr>
-<td lang="en" dir="ltr" style="padding:8px 28px 28px;font-family:Arial,Helvetica,sans-serif;color:#f2f1eb;border-top:1px solid #2c2c30;">
-<p style="margin:20px 0 0;font-size:12px;line-height:1.4;letter-spacing:0.14em;color:#e3c565;">ENGLISH</p>
-<h2 style="margin:12px 0 0;font-size:22px;line-height:1.3;font-weight:700;color:#f2f1eb;">Official Early Access: your free tester download</h2>
-<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">This is a free tester download before the official launch. The button opens a page. On that page, tap Download APK. This link stays active for about 24 hours and can be used more than once.</p>
-${downloadButtonEn}
-${downloadPlain}
-<h3 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">User guide</h3>
-<p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#c8c6bf;">${guideLinkEn}</p>
-<h3 style="margin:28px 0 0;font-size:18px;line-height:1.4;font-weight:700;color:#f2f1eb;">Please send real feedback and reviews</h3>
-<p style="margin:8px 0 0;font-size:16px;line-height:1.6;color:#f2f1eb;">After you try the app, send real feedback and reviews about the app to ${supportHtml}.</p>
-<p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:#c8c6bf;">The file is for your personal use. Do not publish the link.</p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</body>
-</html>`;
-
-  return {
-    subject,
-    text,
-    html,
-    ...(support ? { replyTo: support } : {}),
-  };
-}
-
 export type OwnerNoticeEvent = "signup" | "download";
 
 export type OwnerNoticeInput = {
@@ -328,23 +205,26 @@ export type OwnerNoticeInput = {
 
 function detailLines(details: Record<string, string>): string {
   const entries = Object.entries(details);
-  if (!entries.length) return "—";
+  if (!entries.length) return "(none)";
   return entries.map(([key, value]) => `${key}: ${value}`).join("\n");
 }
 
 function noticeParts(input: OwnerNoticeInput): { subject: string; hebrew: string; english: string } {
-  const displayName = input.name.trim() || "—";
+  const displayName = input.name.trim() || "(none)";
   const other = detailLines(input.details);
   const spotsHe = `${input.signups} בשימוש, ${input.remaining} נותרו (מתוך ${input.limit})`;
   const spotsEn = `${input.signups} used, ${input.remaining} remaining (limit ${input.limit})`;
   if (input.event === "signup") {
     return {
-      subject: "נרשם בודק חדש / New Early Access signup",
+      subject: `נרשם בודק חדש: ${input.email} / Add to Google Play internal testing`,
       hebrew: [
+        `אימייל הבודק: ${input.email}`,
+        "",
         "נרשם בודק חדש לגישה המוקדמת של L Studio.",
+        `הוסף את ${input.email} לבדיקה פנימית ב-Google Play (14 יום) ושלח לו בעצמך את הזמנת Play.`,
+        "האתר לא שולח APK ולא קישור הורדה.",
         "",
         `שם: ${displayName}`,
-        `אימייל: ${input.email}`,
         "שדות נוספים:",
         other,
         `זמן: ${input.atIso}`,
@@ -352,10 +232,13 @@ function noticeParts(input: OwnerNoticeInput): { subject: string; hebrew: string
         `סה״כ נרשמים: ${input.signups}`,
       ].join("\n"),
       english: [
+        `Tester email: ${input.email}`,
+        "",
         "A new Early Access tester signed up.",
+        `Add ${input.email} to Google Play internal testing (14 days) and email them the Play invite yourself.`,
+        "The website does not send an APK or a download link.",
         "",
         `Name: ${displayName}`,
-        `Email: ${input.email}`,
         "Other fields:",
         other,
         `Time: ${input.atIso}`,
@@ -497,44 +380,6 @@ export async function sendDownloadEmail(
   } catch (error) {
     console.error(
       `commerce email failed for order ${input.orderId}: ${error instanceof Error ? error.message : "error"}`
-    );
-    return "failed";
-  }
-}
-
-export async function sendEarlyAccessEmail(
-  config: CommerceConfig,
-  input: { to: string; downloadUrl: string; orderId: string }
-): Promise<EmailResult> {
-  const to = normalizeSignupEmail(input.to);
-  if (!to) {
-    console.log(`early access email skipped for order ${input.orderId}: invalid email`);
-    return "skipped";
-  }
-  if (!config.emailConfigured) {
-    console.log(
-      `early access email skipped for order ${input.orderId}: no RESEND_API_KEY/RESEND_FROM or SMTP_* provider`
-    );
-    return "skipped";
-  }
-  const content = buildEarlyAccessEmail({
-    downloadUrl: input.downloadUrl,
-    guideUrl: config.guideUrl,
-    supportEmail: config.supportEmail,
-  });
-  const linkId = createHash("sha256").update(input.downloadUrl).digest("hex").slice(0, 20);
-  const idempotencyKey = `early-access-email/${input.orderId.replace(/[\r\n]/g, "")}/${linkId}`.slice(0, 256);
-  try {
-    if (config.resendApiKey && config.resendFrom) {
-      await sendResend(config, to, content, idempotencyKey);
-    } else {
-      await sendSmtp(config, to, content);
-    }
-    console.log(`early access email sent for order ${input.orderId}`);
-    return "sent";
-  } catch (error) {
-    console.error(
-      `early access email failed for order ${input.orderId}: ${error instanceof Error ? error.message : "error"}`
     );
     return "failed";
   }
