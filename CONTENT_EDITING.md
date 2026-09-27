@@ -23,7 +23,7 @@ Detail copy for the synth preset pages lives under `languages.*.factory64`.
 
 ### Factory drums (`/factory-64/drums`)
 
-Drum kit copy lives under `languages.*.factoryDrums` (section title, intro, eight kit bodies, tech lines, closing). Kit **titles** stay branded English (`RAP 90'`, `HIP-HOP 2000s`, `SOFT INDIE`, `PSY PROGRESSIVE ROCK`, `BERLIN 90s TECHNO`, `TRIBAL AMBIENT TRANCE`, `GOA TRANCE`, `EXPERIMENTAL`). Tech lines stay English.
+Drum kit copy lives under `languages.*.factoryDrums` (section title, intro, eight kit bodies, tech lines, closing, styles heading, demo label). Kit **titles** stay branded English (`RAP 90'`, `HIP-HOP 2000s`, `SOFT INDIE`, `PSY PROGRESSIVE ROCK`, `BERLIN 90s TECHNO`, `TRIBAL AMBIENT TRANCE`, `GOA TRANCE`, `EXPERIMENTAL`). Tech lines stay English. Each kit lists exactly 8 English style names in `kits[].styles`. Keep those names identical in Hebrew, English, Russian, and Arabic. Do not invent style names. `stylesHeading` and `demoLabel` use the same translations as Exclusive (Styles / סגנונות / Стили / الأساليب and Demo video / סרטון הדגמה / Демо-видео / فيديو العرض). YouTube Short demos are not wired yet. To attach one later, add a YouTube Short id in `STYLE_DEMOS` in `client/src/pages/FactoryDrums.tsx`, keyed as `kitId::Style Name`, the same click-to-expand pattern as Exclusive. Style names stay English.
 
 Posters: `assets/drums/01-rap-90.jpg` through `08-experimental.jpg`, each with a `.webp` companion. Show the full poster (`object-fit: contain`). Do not use `factory-64-drum-kits`.
 
