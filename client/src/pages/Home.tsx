@@ -143,6 +143,7 @@ type TesterCopy = {
   error: string;
   invalid: string;
   spotsLabel: string;
+  spotsCta: string;
   imageAlt: string;
   freeAccess: string;
   localAudio: string;
@@ -167,6 +168,7 @@ const testerDefaults = {
     error: "לא הצלחנו לשלוח את המייל עכשיו. נסו שוב בעוד כמה דקות.",
     invalid: "כתובת המייל לא תקינה.",
     spotsLabel: "פנויים",
+    spotsCta: "לקבלת גישה מוקדמת",
     imageAlt: "כרזת L Studio Factory Pack עם קופסת המוצר, שמונה עמודים ושישים וארבעה קולות",
     freeAccess: "גישה חינמית",
     localAudio: "אודיו מקומי",
@@ -189,6 +191,7 @@ const testerDefaults = {
     error: "We could not send the email right now. Try again in a few minutes.",
     invalid: "That email address is not valid.",
     spotsLabel: "available",
+    spotsCta: "Get early access",
     imageAlt: "L Studio Factory Pack poster with the product box, eight pages and sixty-four voices",
     freeAccess: "FREE ACCESS",
     localAudio: "LOCAL AUDIO",
@@ -211,6 +214,7 @@ const testerDefaults = {
     error: "Не удалось отправить письмо сейчас. Попробуйте снова через несколько минут.",
     invalid: "Этот адрес почты недействителен.",
     spotsLabel: "свободно",
+    spotsCta: "Ранний доступ",
     imageAlt: "Постер L Studio Factory Pack с коробкой продукта, восемью страницами и шестьюдесятью четырьмя голосами",
     freeAccess: "БЕСПЛАТНЫЙ ДОСТУП",
     localAudio: "ЛОКАЛЬНЫЙ ЗВУК",
@@ -233,6 +237,7 @@ const testerDefaults = {
     error: "تعذر إرسال البريد الآن. حاول مرة أخرى بعد بضع دقائق.",
     invalid: "عنوان البريد هذا غير صالح.",
     spotsLabel: "متاح",
+    spotsCta: "احصل على وصول مبكر",
     imageAlt: "ملصق L Studio Factory Pack مع صندوق المنتج، ثماني صفحات وأربعة وستون صوتاً",
     freeAccess: "وصول مجاني",
     localAudio: "صوت محلي",
@@ -311,8 +316,8 @@ function commerceUrl(apiBase: string, path: string) {
   return `${configured}${path}`;
 }
 
-/** Published Early Access meter. Edit content.json; do not use the signup API. */
-const MANUAL_SPOTS = { available: 42, total: 44 };
+/** Published Early Access meters (hero ribbon and form). Edit content.json; do not use the signup API. */
+const MANUAL_SPOTS = { available: 40, total: 44 };
 
 function readSpotCount(value: unknown, fallback: number): number {
   const parsed = typeof value === "number" ? value : typeof value === "string" && /^\d+$/.test(value.trim()) ? Number(value.trim()) : Number.NaN;
@@ -339,6 +344,53 @@ function EarlyAccessMeter({ available, total, label }: { available: number; tota
       <div className="tester-spots__track" aria-hidden="true">
         <span style={{ width: `${width}%` }} />
       </div>
+    </div>
+  );
+}
+
+function HeroSpotsRibbon({
+  available,
+  total,
+  label,
+  cta,
+  kicker,
+}: {
+  available: number;
+  total: number;
+  label: string;
+  cta: string;
+  kicker: string;
+}) {
+  const ratio = total > 0 ? Math.max(0, Math.min(1, available / total)) : 0;
+  const radius = 8;
+  const circumference = 2 * Math.PI * radius;
+  const dash = circumference * ratio;
+  return (
+    <div className="spots-ribbon">
+      <a className="spots-ribbon__link container" href="#early-access">
+        <span className="spots-ribbon__kicker">{kicker}</span>
+        <span
+          className="spots-ribbon__meter"
+          role="meter"
+          aria-valuenow={available}
+          aria-valuemin={0}
+          aria-valuemax={total}
+          aria-valuetext={`${available}/${total} ${label}`}
+        >
+          <svg className="spots-ribbon__ring" viewBox="0 0 22 22" aria-hidden="true">
+            <circle className="spots-ribbon__ring-track" cx="11" cy="11" r={radius} />
+            <circle className="spots-ribbon__ring-value" cx="11" cy="11" r={radius} strokeDasharray={`${dash} ${circumference}`} />
+          </svg>
+          <span className="spots-ribbon__count" dir="ltr">
+            <b>{available}</b>
+            <span>/{total}</span>
+          </span>
+          <span className="spots-ribbon__label">{label}</span>
+        </span>
+        <span className="spots-ribbon__cta">
+          {cta} <ArrowUpRight size={14} />
+        </span>
+      </a>
     </div>
   );
 }
@@ -539,6 +591,14 @@ export default function Home() {
           </nav>
         )}
       </header>
+
+      <HeroSpotsRibbon
+        available={spots.available}
+        total={spots.total}
+        label={tester.spotsLabel}
+        cta={tester.spotsCta}
+        kicker={tester.kicker}
+      />
 
       <main>
         {/* 1. Hero */}
