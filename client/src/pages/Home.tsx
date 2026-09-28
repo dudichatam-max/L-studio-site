@@ -346,7 +346,7 @@ function commerceUrl(apiBase: string, path: string) {
 }
 
 /** Published Early Access meters (hero ribbon and form). Edit content.json; do not use the signup API. */
-const MANUAL_SPOTS = { available: 40, total: 44 };
+const MANUAL_SPOTS = { available: 13, total: 44 };
 
 function readSpotCount(value: unknown, fallback: number): number {
   const parsed = typeof value === "number" ? value : typeof value === "string" && /^\d+$/.test(value.trim()) ? Number(value.trim()) : Number.NaN;
