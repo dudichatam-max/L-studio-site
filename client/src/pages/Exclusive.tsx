@@ -53,6 +53,7 @@ const PACK_STEM: Record<string, string> = {
 const STYLE_DEMOS: Record<string, string> = {
   "victory-peak::Bone March": "XvFuS4FA6ho",
   "healing-journey::Deep Roots": "CS5ortNiA3o",
+  "kreepy-bastard::Twisted Spores": "3ABW3u_IR0A",
 };
 
 function styleDemoVideoId(packId: string, style: string) {
