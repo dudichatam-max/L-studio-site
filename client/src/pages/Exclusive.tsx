@@ -46,6 +46,7 @@ const PACK_STEM: Record<string, string> = {
   "victory-peak": "10-victory-peak",
   "healing-journey": "11-healing-journey",
   "deep-ocean": "12-deep-ocean",
+  "kreepy-bastard": "13-kreepy-bastard",
 };
 
 /** YouTube Shorts for a single style. Style names stay English in every language. */
@@ -91,20 +92,27 @@ const FALLBACK_PACKS: ExclusivePack[] = [
     meta: "118–132 BPM · 8 CHANNELS · 8 STYLES",
     styles: ["Pressure Drop", "Blue Abyss", "Coral Pulse", "Drift Current", "Shark Shadow", "Tidal March", "Predator Circle", "Surface Break"],
   },
+  {
+    id: "kreepy-bastard",
+    name: "Kreepy Bastard",
+    tagline: "MOLD. DROP. FULL KREEP.",
+    meta: "138–148 BPM · 8 CHANNELS · 8 STYLES",
+    styles: ["Mold Room", "Twisted Spores", "Bad Trip Wire", "Crooked Pulse", "Bastard Drop", "Acid Grin", "Night Crawl", "Full Kreep"],
+  },
 ];
 
 const emptyExclusive = (language: Language): ExclusiveCopy => ({
   eyebrow: "L-STUDIO / EXCLUSIVE",
-  title: language === "he" ? "ארבע חבילות." : language === "ru" ? "Четыре пака." : language === "ar" ? "أربع حزم." : "Four packs.",
+  title: language === "he" ? "חמש חבילות." : language === "ru" ? "Пять паков." : language === "ar" ? "خمس حزم." : "Five packs.",
   titleEm: language === "he" ? "בקרוב." : language === "ru" ? "Скоро." : language === "ar" ? "قريباً." : "Coming soon.",
   intro:
     language === "he"
-      ? "קו נפרד משמונה ערכות התופים של Factory. ארבע חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות."
+      ? "קו נפרד משמונה ערכות התופים של Factory. חמש חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות."
       : language === "ru"
-        ? "Отдельная линейка, не восемь наборов Factory Drums. Четыре ударных пака на подходе: в каждом 8 каналов и 8 стилей."
+        ? "Отдельная линейка, не восемь наборов Factory Drums. Пять ударных паков на подходе: в каждом 8 каналов и 8 стилей."
         : language === "ar"
-          ? "خط منفصل عن حزم الطبول الثماني في Factory. أربع حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب."
-          : "A separate line from the eight Factory Drums kits. Four upcoming drum packs, each with 8 channels and 8 styles.",
+          ? "خط منفصل عن حزم الطبول الثماني في Factory. خمس حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب."
+          : "A separate line from the eight Factory Drums kits. Five upcoming drum packs, each with 8 channels and 8 styles.",
   navLabel: exclusiveNavLabel[language],
   imageAlt:
     language === "he"
