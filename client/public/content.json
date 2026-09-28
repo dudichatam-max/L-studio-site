@@ -1049,16 +1049,16 @@
       "exclusive": {
         "navLabel": "בלעדי",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "שלוש חבילות.",
+        "title": "ארבע חבילות.",
         "titleEm": "בקרוב.",
-        "intro": "קו נפרד משמונה ערכות התופים של Factory. שלוש חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות.",
+        "intro": "קו נפרד משמונה ערכות התופים של Factory. ארבע חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות.",
         "imageAlt": "כרזת חבילת תופים בלעדית",
         "comingSoon": "בקרוב",
         "stylesHeading": "סגנונות",
         "demoLabel": "סרטון הדגמה",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "שלוש חבילות מיוחדות. בקרוב.",
-        "homeBody": "Afro Techno, Victory Peak ו־Healing Journey יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.",
+        "homeTitle": "ארבע חבילות מיוחדות. בקרוב.",
+        "homeBody": "Afro Techno, Victory Peak, Healing Journey ו־Deep Ocean יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.",
         "homeCta": "לעמוד הבלעדי",
         "packs": [
           {
@@ -1107,6 +1107,22 @@
               "Open Heart",
               "Clear Sky",
               "Soft Return"
+            ]
+          },
+          {
+            "id": "deep-ocean",
+            "name": "Deep Ocean",
+            "tagline": "PRESSURE. HUNT. SURFACE.",
+            "meta": "118–132 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Pressure Drop",
+              "Blue Abyss",
+              "Coral Pulse",
+              "Drift Current",
+              "Shark Shadow",
+              "Tidal March",
+              "Predator Circle",
+              "Surface Break"
             ]
           }
         ]
@@ -2204,16 +2220,16 @@
       "exclusive": {
         "navLabel": "Exclusive",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "Three packs.",
+        "title": "Four packs.",
         "titleEm": "Coming soon.",
-        "intro": "A separate line from the eight Factory Drums kits. Three upcoming drum packs, each with 8 channels and 8 styles.",
+        "intro": "A separate line from the eight Factory Drums kits. Four upcoming drum packs, each with 8 channels and 8 styles.",
         "imageAlt": "Exclusive drum pack poster",
         "comingSoon": "Coming soon",
         "stylesHeading": "Styles",
         "demoLabel": "Demo video",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "Three special packs. Coming soon.",
-        "homeBody": "Afro Techno, Victory Peak, and Healing Journey sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.",
+        "homeTitle": "Four special packs. Coming soon.",
+        "homeBody": "Afro Techno, Victory Peak, Healing Journey, and Deep Ocean sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.",
         "homeCta": "See Exclusive",
         "packs": [
           {
@@ -2262,6 +2278,22 @@
               "Open Heart",
               "Clear Sky",
               "Soft Return"
+            ]
+          },
+          {
+            "id": "deep-ocean",
+            "name": "Deep Ocean",
+            "tagline": "PRESSURE. HUNT. SURFACE.",
+            "meta": "118–132 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Pressure Drop",
+              "Blue Abyss",
+              "Coral Pulse",
+              "Drift Current",
+              "Shark Shadow",
+              "Tidal March",
+              "Predator Circle",
+              "Surface Break"
             ]
           }
         ]
@@ -3359,16 +3391,16 @@
       "exclusive": {
         "navLabel": "Эксклюзив",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "Три пака.",
+        "title": "Четыре пака.",
         "titleEm": "Скоро.",
-        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Три ударных пака на подходе: в каждом 8 каналов и 8 стилей.",
+        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Четыре ударных пака на подходе: в каждом 8 каналов и 8 стилей.",
         "imageAlt": "Постер эксклюзивного ударного пака",
         "comingSoon": "Скоро",
         "stylesHeading": "Стили",
         "demoLabel": "Демо-видео",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "Три особых пака. Скоро.",
-        "homeBody": "Afro Techno, Victory Peak и Healing Journey стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.",
+        "homeTitle": "Четыре особых пака. Скоро.",
+        "homeBody": "Afro Techno, Victory Peak, Healing Journey и Deep Ocean стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.",
         "homeCta": "Смотреть эксклюзив",
         "packs": [
           {
@@ -3417,6 +3449,22 @@
               "Open Heart",
               "Clear Sky",
               "Soft Return"
+            ]
+          },
+          {
+            "id": "deep-ocean",
+            "name": "Deep Ocean",
+            "tagline": "PRESSURE. HUNT. SURFACE.",
+            "meta": "118–132 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Pressure Drop",
+              "Blue Abyss",
+              "Coral Pulse",
+              "Drift Current",
+              "Shark Shadow",
+              "Tidal March",
+              "Predator Circle",
+              "Surface Break"
             ]
           }
         ]
@@ -4514,16 +4562,16 @@
       "exclusive": {
         "navLabel": "حصري",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "ثلاث حزم.",
+        "title": "أربع حزم.",
         "titleEm": "قريباً.",
-        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. ثلاث حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب.",
+        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. أربع حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب.",
         "imageAlt": "ملصق حزمة طبول حصرية",
         "comingSoon": "قريباً",
         "stylesHeading": "الأساليب",
         "demoLabel": "فيديو العرض",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "ثلاث حزم خاصة. قريباً.",
-        "homeBody": "Afro Techno وVictory Peak وHealing Journey خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.",
+        "homeTitle": "أربع حزم خاصة. قريباً.",
+        "homeBody": "Afro Techno وVictory Peak وHealing Journey وDeep Ocean خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.",
         "homeCta": "شاهد الحصري",
         "packs": [
           {
@@ -4572,6 +4620,22 @@
               "Open Heart",
               "Clear Sky",
               "Soft Return"
+            ]
+          },
+          {
+            "id": "deep-ocean",
+            "name": "Deep Ocean",
+            "tagline": "PRESSURE. HUNT. SURFACE.",
+            "meta": "118–132 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Pressure Drop",
+              "Blue Abyss",
+              "Coral Pulse",
+              "Drift Current",
+              "Shark Shadow",
+              "Tidal March",
+              "Predator Circle",
+              "Surface Break"
             ]
           }
         ]
