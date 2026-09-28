@@ -102,6 +102,33 @@ const heroOfferDefaults = {
   },
 } satisfies Record<Language, { offer: string; offerDetail: string }>;
 const signalDefault = { text: "From key to sound to loop to recording", note: "All inside L-Studio" };
+const INTRO_SHORT_EMBED = "https://www.youtube.com/embed/a2CGFDQkZ80";
+const meetDefaults = {
+  he: {
+    kicker: "L-STUDIO / היכרות",
+    title: "הכירו את L-studio",
+    body: "פתחו את הסרטון הקצר והכירו את הסטודיו.",
+    videoTitle: "היכרות עם L-studio",
+  },
+  en: {
+    kicker: "L-STUDIO / INTRO",
+    title: "Meet L-studio",
+    body: "Open the short and meet the studio.",
+    videoTitle: "Meet L-studio intro",
+  },
+  ru: {
+    kicker: "L-STUDIO / ЗНАКОМСТВО",
+    title: "Знакомьтесь: L-studio",
+    body: "Откройте короткое видео и познакомьтесь со студией.",
+    videoTitle: "Знакомство с L-studio",
+  },
+  ar: {
+    kicker: "L-STUDIO / مقدمة",
+    title: "تعرّف على L-studio",
+    body: "افتحوا الفيديو القصير وتعرّفوا على الاستوديو.",
+    videoTitle: "تعرّف على L-studio",
+  },
+} satisfies Record<Language, { kicker: string; title: string; body: string; videoTitle: string }>;
 const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started with a note that wasn't there.", body: ["I wanted to build a keyboard where I could set which frequency belongs to each key myself.", "From there it grew into recording, a looper, drums, a microphone and more."], closing: "What started as a search for the eighth note became L-Studio." };
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
 const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
@@ -535,6 +562,7 @@ export default function Home() {
   const copy = editableContent?.languages?.[language] ?? {};
   const nav = copy.nav ?? navDefault;
   const hero = { ...heroDefault, ...heroOfferDefaults[language], ...(copy.hero ?? {}) };
+  const meet = { ...meetDefaults[language], ...(copy.meet ?? {}) };
   const signal = copy.signalStrip ?? signalDefault;
   const story = copy.story ?? storyDefault;
   const featuresIntro = copy.featuresIntro ?? featuresIntroDefault;
@@ -613,7 +641,7 @@ export default function Home() {
             </a>
             <p className="hero-lede">{hero.body}</p>
             <div className="hero-actions">
-              <a className="button button--primary" href="#early-access">{hero.ctaPrimary} <ArrowUpRight size={17} /></a>
+              <a className="button button--primary" href="#meet">{hero.ctaPrimary} <ArrowUpRight size={17} /></a>
               <a className="text-link" href="#story">{hero.ctaSecondary} <ChevronRight size={16} /></a>
             </div>
             <div className="hero-proof">
@@ -639,6 +667,24 @@ export default function Home() {
             </div>
             <div className="console-tabs"><span className="is-active">SOUND</span><span>MIC</span><span>LOOP</span><span>PAD</span><span>DRUM</span></div>
             <div className="console-corner">L / 01 <span>▰▰▰</span></div>
+          </div>
+        </section>
+
+        <section className="meet-section container" id="meet" dir={dir} aria-labelledby="meet-title">
+          <div className="meet-copy">
+            <span className="kicker">{meet.kicker}</span>
+            <h2 id="meet-title"><Headline text={meet.title} /></h2>
+            <p>{meet.body}</p>
+          </div>
+          <div className="meet-short">
+            <iframe
+              src={INTRO_SHORT_EMBED}
+              title={meet.videoTitle}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
           </div>
         </section>
 

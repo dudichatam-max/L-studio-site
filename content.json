@@ -25,6 +25,12 @@
         "stat2": "Android 7.0+",
         "stat3": "ללא פרסומות"
       },
+      "meet": {
+        "kicker": "L-STUDIO / היכרות",
+        "title": "הכירו את L-studio",
+        "body": "פתחו את הסרטון הקצר והכירו את הסטודיו.",
+        "videoTitle": "היכרות עם L-studio"
+      },
       "signalStrip": {
         "text": "מהקליד ← לסאונד ← ללופ ← להקלטה",
         "note": "הכול בתוך L-Studio"
@@ -1195,6 +1201,12 @@
         "stat1": "about 24 MB",
         "stat2": "Android 7.0+",
         "stat3": "No ads"
+      },
+      "meet": {
+        "kicker": "L-STUDIO / INTRO",
+        "title": "Meet L-studio",
+        "body": "Open the short and meet the studio.",
+        "videoTitle": "Meet L-studio intro"
       },
       "signalStrip": {
         "text": "From key ← to sound ← to loop ← to recording",
@@ -2367,6 +2379,12 @@
         "stat2": "Android 7.0+",
         "stat3": "Без рекламы"
       },
+      "meet": {
+        "kicker": "L-STUDIO / ЗНАКОМСТВО",
+        "title": "Знакомьтесь: L-studio",
+        "body": "Откройте короткое видео и познакомьтесь со студией.",
+        "videoTitle": "Знакомство с L-studio"
+      },
       "signalStrip": {
         "text": "От клавиши ← к звуку ← к лупу ← к записи",
         "note": "Всё внутри L-Studio"
@@ -3537,6 +3555,12 @@
         "stat1": "حوالي 24 ميغابايت",
         "stat2": "Android 7.0+",
         "stat3": "بلا إعلانات"
+      },
+      "meet": {
+        "kicker": "L-STUDIO / مقدمة",
+        "title": "تعرّف على L-studio",
+        "body": "افتحوا الفيديو القصير وتعرّفوا على الاستوديو.",
+        "videoTitle": "تعرّف على L-studio"
       },
       "signalStrip": {
         "text": "من المفتاح ← إلى الصوت ← إلى اللوب ← إلى التسجيل",
