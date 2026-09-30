@@ -10,8 +10,8 @@ import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero-v3.png`;
-const factoryBoxJpg = `${import.meta.env.BASE_URL}assets/factory-pack-what-you-get.jpg`;
-const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-what-you-get.webp`;
+const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png?v=20260930`;
+const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=20260930`;
 const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
 
 const images = {
@@ -792,7 +792,7 @@ export default function Home() {
             <div className="factory-pack-cover">
               <picture>
                 <source srcSet={factoryBoxWebp} type="image/webp" />
-                <img src={factoryBoxJpg} alt={factory.coverAlt ?? "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles"} width={1196} height={1170} />
+                <img src={factoryBoxPng} alt={factory.coverAlt ?? "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles"} width={1600} height={1565} />
               </picture>
             </div>
             <p className="factory-pack-lede">{factory.lede}</p>
