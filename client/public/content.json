@@ -267,7 +267,7 @@
         "invalid": "כתובת המייל לא תקינה.",
         "spotsLabel": "פנויים",
         "spotsCta": "לקבלת גישה מוקדמת",
-        "imageAlt": "כרזת L Studio Factory Pack עם קופסת המוצר, שמונה עמודים ושישים וארבעה קולות"
+        "imageAlt": "כרזת L Studio עם נוף קווי, פסגות אקולייזר, והמילים Small instrument. A lot of sound. Coming soon."
       },
       "footer": {
         "tagline": "זה לאנשים אנלוגיים בעולם דיגיטלי."
@@ -1063,9 +1063,10 @@
         "stylesHeading": "סגנונות",
         "demoLabel": "סרטון הדגמה",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "חמש חבילות מיוחדות. בקרוב.",
-        "homeBody": "Afro Techno, Victory Peak, Healing Journey, Deep Ocean ו־Kreepy Bastard יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.",
+        "homeTitle": "שמונה חבילות מיוחדות. בקרוב.",
+        "homeBody": "שמונה חבילות תופים בלעדיות יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.",
         "homeCta": "לעמוד הבלעדי",
+        "homeImageAlt": "מניפה של שמונה כרזות לחבילות תופים בלעדיות של L Studio",
         "packs": [
           {
             "id": "afro-techno",
@@ -1460,7 +1461,7 @@
         "invalid": "That email address is not valid.",
         "spotsLabel": "available",
         "spotsCta": "Get early access",
-        "imageAlt": "L Studio Factory Pack poster with the product box, eight pages and sixty-four voices"
+        "imageAlt": "L Studio poster with a wireframe landscape, equalizer peaks, and the words Small instrument. A lot of sound. Coming soon."
       },
       "footer": {
         "tagline": "It's for analog people in a digital world."
@@ -2256,9 +2257,10 @@
         "stylesHeading": "Styles",
         "demoLabel": "Demo video",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "Five special packs. Coming soon.",
-        "homeBody": "Afro Techno, Victory Peak, Healing Journey, Deep Ocean, and Kreepy Bastard sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.",
+        "homeTitle": "Eight special packs. Coming soon.",
+        "homeBody": "Eight Exclusive drum packs sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.",
         "homeCta": "See Exclusive",
+        "homeImageAlt": "Fan of eight L Studio Exclusive drum pack posters",
         "packs": [
           {
             "id": "afro-techno",
@@ -2653,7 +2655,7 @@
         "invalid": "Этот адрес почты недействителен.",
         "spotsLabel": "свободно",
         "spotsCta": "Ранний доступ",
-        "imageAlt": "Постер L Studio Factory Pack с коробкой продукта, восемью страницами и шестьюдесятью четырьмя голосами"
+        "imageAlt": "Постер L Studio с каркасным ландшафтом, пиками эквалайзера и словами Small instrument. A lot of sound. Coming soon."
       },
       "footer": {
         "tagline": "Это для аналоговых людей в цифровом мире."
@@ -3449,9 +3451,10 @@
         "stylesHeading": "Стили",
         "demoLabel": "Демо-видео",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "Пять особых паков. Скоро.",
-        "homeBody": "Afro Techno, Victory Peak, Healing Journey, Deep Ocean и Kreepy Bastard стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.",
+        "homeTitle": "Восемь особых паков. Скоро.",
+        "homeBody": "Восемь эксклюзивных ударных паков стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.",
         "homeCta": "Смотреть эксклюзив",
+        "homeImageAlt": "Веер из восьми постеров эксклюзивных ударных паков L Studio",
         "packs": [
           {
             "id": "afro-techno",
@@ -3846,7 +3849,7 @@
         "invalid": "عنوان البريد هذا غير صالح.",
         "spotsLabel": "متاح",
         "spotsCta": "احصل على وصول مبكر",
-        "imageAlt": "ملصق L Studio Factory Pack مع صندوق المنتج، ثماني صفحات وأربعة وستون صوتاً"
+        "imageAlt": "ملصق L Studio مع مشهد شبكي وقمم معادل والكلمات Small instrument. A lot of sound. Coming soon."
       },
       "footer": {
         "tagline": "هذا لأشخاص تناظريين في عالم رقمي."
@@ -4642,9 +4645,10 @@
         "stylesHeading": "الأساليب",
         "demoLabel": "فيديو العرض",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "خمس حزم خاصة. قريباً.",
-        "homeBody": "Afro Techno وVictory Peak وHealing Journey وDeep Ocean وKreepy Bastard خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.",
+        "homeTitle": "ثماني حزم خاصة. قريباً.",
+        "homeBody": "ثماني حزم طبول حصرية خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.",
         "homeCta": "شاهد الحصري",
+        "homeImageAlt": "مروحة من ثمانية ملصقات لحزم طبول حصرية من L Studio",
         "packs": [
           {
             "id": "afro-techno",

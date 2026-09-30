@@ -9,7 +9,7 @@ import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero-v2.png`;
+const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero-v3.png`;
 const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp`;
 const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
@@ -134,22 +134,15 @@ const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open
 const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
 const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get early access", coverAlt: "L Studio Factory Pack product box" };
-const exclusivePoster = (stem: string) => ({
-  jpg: `${import.meta.env.BASE_URL}assets/exclusive/${stem}.jpg`,
-  webp: `${import.meta.env.BASE_URL}assets/exclusive/${stem}.webp`,
-});
-const exclusivePackMedia: Record<string, { jpg: string; webp: string }> = {
-  "afro-techno": exclusivePoster("09-afro-techno"),
-  "victory-peak": exclusivePoster("10-victory-peak"),
-  "healing-journey": exclusivePoster("11-healing-journey"),
-  "deep-ocean": exclusivePoster("12-deep-ocean"),
-  "kreepy-bastard": exclusivePoster("13-kreepy-bastard"),
+const exclusiveFan = {
+  jpg: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.jpg`,
+  webp: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.webp`,
 };
-const exclusiveDefaults: Record<Language, { navLabel: string; comingSoon: string; homeKicker: string; homeTitle: string; homeBody: string; homeCta: string; imageAlt: string; packs: Array<{ id: string; name: string }> }> = {
-  he: { navLabel: "בלעדי", comingSoon: "בקרוב", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "חמש חבילות מיוחדות. בקרוב.", homeBody: "Afro Techno, Victory Peak, Healing Journey, Deep Ocean ו־Kreepy Bastard יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.", homeCta: "לעמוד הבלעדי", imageAlt: "כרזת חבילת תופים בלעדית", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }, { id: "deep-ocean", name: "Deep Ocean" }, { id: "kreepy-bastard", name: "Kreepy Bastard" }] },
-  en: { navLabel: "Exclusive", comingSoon: "Coming soon", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Five special packs. Coming soon.", homeBody: "Afro Techno, Victory Peak, Healing Journey, Deep Ocean, and Kreepy Bastard sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.", homeCta: "See Exclusive", imageAlt: "Exclusive drum pack poster", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }, { id: "deep-ocean", name: "Deep Ocean" }, { id: "kreepy-bastard", name: "Kreepy Bastard" }] },
-  ru: { navLabel: "Эксклюзив", comingSoon: "Скоро", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Пять особых паков. Скоро.", homeBody: "Afro Techno, Victory Peak, Healing Journey, Deep Ocean и Kreepy Bastard стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.", homeCta: "Смотреть эксклюзив", imageAlt: "Постер эксклюзивного ударного пака", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }, { id: "deep-ocean", name: "Deep Ocean" }, { id: "kreepy-bastard", name: "Kreepy Bastard" }] },
-  ar: { navLabel: "حصري", comingSoon: "قريباً", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "خمس حزم خاصة. قريباً.", homeBody: "Afro Techno وVictory Peak وHealing Journey وDeep Ocean وKreepy Bastard خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.", homeCta: "شاهد الحصري", imageAlt: "ملصق حزمة طبول حصرية", packs: [{ id: "afro-techno", name: "Afro Techno" }, { id: "victory-peak", name: "Victory Peak" }, { id: "healing-journey", name: "Healing Journey" }, { id: "deep-ocean", name: "Deep Ocean" }, { id: "kreepy-bastard", name: "Kreepy Bastard" }] },
+const exclusiveDefaults: Record<Language, { navLabel: string; comingSoon: string; homeKicker: string; homeTitle: string; homeBody: string; homeCta: string; homeImageAlt: string }> = {
+  he: { navLabel: "בלעדי", comingSoon: "בקרוב", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "שמונה חבילות מיוחדות. בקרוב.", homeBody: "שמונה חבילות תופים בלעדיות יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.", homeCta: "לעמוד הבלעדי", homeImageAlt: "מניפה של שמונה כרזות לחבילות תופים בלעדיות של L Studio" },
+  en: { navLabel: "Exclusive", comingSoon: "Coming soon", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Eight special packs. Coming soon.", homeBody: "Eight Exclusive drum packs sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.", homeCta: "See Exclusive", homeImageAlt: "Fan of eight L Studio Exclusive drum pack posters" },
+  ru: { navLabel: "Эксклюзив", comingSoon: "Скоро", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Восемь особых паков. Скоро.", homeBody: "Восемь эксклюзивных ударных паков стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.", homeCta: "Смотреть эксклюзив", homeImageAlt: "Веер из восьми постеров эксклюзивных ударных паков L Studio" },
+  ar: { navLabel: "حصري", comingSoon: "قريباً", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "ثماني حزم خاصة. قريباً.", homeBody: "ثماني حزم طبول حصرية خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.", homeCta: "شاهد الحصري", homeImageAlt: "مروحة من ثمانية ملصقات لحزم طبول حصرية من L Studio" },
 };
 const visionDefault = { kicker: "05 / THE VISION", title: "I built the studio I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take the studio with you", body: "Creating shouldn't have to wait for a computer." }] };
 const faqDefault = { kicker: "07 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
@@ -198,7 +191,7 @@ const testerDefaults = {
     invalid: "כתובת המייל לא תקינה.",
     spotsLabel: "פנויים",
     spotsCta: "לקבלת גישה מוקדמת",
-    imageAlt: "כרזת L Studio Factory Pack עם קופסת המוצר, שמונה עמודים ושישים וארבעה קולות",
+    imageAlt: "כרזת L Studio עם נוף קווי, פסגות אקולייזר, והמילים Small instrument. A lot of sound. Coming soon.",
     freeAccess: "גישה חינמית",
     localAudio: "אודיו מקומי",
   },
@@ -221,7 +214,7 @@ const testerDefaults = {
     invalid: "That email address is not valid.",
     spotsLabel: "available",
     spotsCta: "Get early access",
-    imageAlt: "L Studio Factory Pack poster with the product box, eight pages and sixty-four voices",
+    imageAlt: "L Studio poster with a wireframe landscape, equalizer peaks, and the words Small instrument. A lot of sound. Coming soon.",
     freeAccess: "FREE ACCESS",
     localAudio: "LOCAL AUDIO",
   },
@@ -244,7 +237,7 @@ const testerDefaults = {
     invalid: "Этот адрес почты недействителен.",
     spotsLabel: "свободно",
     spotsCta: "Ранний доступ",
-    imageAlt: "Постер L Studio Factory Pack с коробкой продукта, восемью страницами и шестьюдесятью четырьмя голосами",
+    imageAlt: "Постер L Studio с каркасным ландшафтом, пиками эквалайзера и словами Small instrument. A lot of sound. Coming soon.",
     freeAccess: "БЕСПЛАТНЫЙ ДОСТУП",
     localAudio: "ЛОКАЛЬНЫЙ ЗВУК",
   },
@@ -267,7 +260,7 @@ const testerDefaults = {
     invalid: "عنوان البريد هذا غير صالح.",
     spotsLabel: "متاح",
     spotsCta: "احصل على وصول مبكر",
-    imageAlt: "ملصق L Studio Factory Pack مع صندوق المنتج، ثماني صفحات وأربعة وستون صوتاً",
+    imageAlt: "ملصق L Studio مع مشهد شبكي وقمم معادل والكلمات Small instrument. A lot of sound. Coming soon.",
     freeAccess: "وصول مجاني",
     localAudio: "صوت محلي",
   },
@@ -570,7 +563,7 @@ export default function Home() {
   const hood = copy.underHood ?? hoodDefault;
   const justStart = copy.justStart ?? justStartDefault;
   const factory = copy.factoryPack ?? factoryDefault;
-  const exclusive = { ...exclusiveDefaults[language], ...(copy.exclusive ?? {}), packs: copy.exclusive?.packs?.length ? copy.exclusive.packs : exclusiveDefaults[language].packs };
+  const exclusive = { ...exclusiveDefaults[language], ...(copy.exclusive ?? {}) };
   const vision = copy.vision ?? visionDefault;
   const faq = copy.faq ?? faqDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
@@ -819,24 +812,12 @@ export default function Home() {
               <Link className="button button--primary" href="/exclusive">{exclusive.homeCta} <ArrowUpRight size={17} /></Link>
             </div>
           </div>
-          <div className="exclusive-home-grid">
-            {exclusive.packs.map((pack: { id: string; name: string }) => {
-              const media = exclusivePackMedia[pack.id];
-              return (
-                <Link className="exclusive-home-card" href="/exclusive" key={pack.id}>
-                  {media ? (
-                    <figure>
-                      <picture>
-                        <source srcSet={media.webp} type="image/webp" />
-                        <img src={media.jpg} alt={`${pack.name}. ${exclusive.imageAlt ?? exclusiveDefaults[language].imageAlt}`} width={1600} height={900} loading="lazy" decoding="async" />
-                      </picture>
-                    </figure>
-                  ) : null}
-                  <span dir="ltr">{pack.name}</span>
-                </Link>
-              );
-            })}
-          </div>
+          <Link className="exclusive-home-fan" href="/exclusive">
+            <picture>
+              <source srcSet={exclusiveFan.webp} type="image/webp" />
+              <img src={exclusiveFan.jpg} alt={exclusive.homeImageAlt ?? exclusiveDefaults[language].homeImageAlt} width={1920} height={1080} loading="lazy" decoding="async" />
+            </picture>
+          </Link>
         </section>
 
         {/* 7. The vision */}

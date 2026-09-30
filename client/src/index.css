@@ -636,16 +636,12 @@ html[dir="rtl"] .factory-drum-tech { text-align: right; }
 .exclusive-home-copy h2 { margin: 12px 0; font: 600 clamp(32px, 4.2vw, 52px)/.95 var(--display); letter-spacing: -.045em; }
 .exclusive-home-copy p { margin: 0; color: #b4b1a9; font-size: 16px; line-height: 1.7; }
 .exclusive-home-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
-.exclusive-home-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-.exclusive-home-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid rgba(242,241,235,.12); background: #000; color: inherit; text-decoration: none; transition: border-color 160ms ease, transform 160ms var(--ease-out); }
-.exclusive-home-card:hover { border-color: rgba(227,197,101,.55); transform: translateY(-2px); }
-.exclusive-home-card figure { margin: 0; background: #000; aspect-ratio: 16 / 9; }
-.exclusive-home-card picture { display: block; width: 100%; height: 100%; }
-.exclusive-home-card img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; background: #000; }
-.exclusive-home-card span { display: block; padding: 12px 12px 14px; color: var(--paper); font: 600 15px/1.2 var(--display); letter-spacing: -.02em; }
+.exclusive-home-fan { display: block; background: #000; border: 1px solid rgba(227,197,101,.28); color: inherit; text-decoration: none; transition: border-color 160ms ease; }
+.exclusive-home-fan:hover { border-color: rgba(227,197,101,.55); }
+.exclusive-home-fan picture { display: block; width: 100%; }
+.exclusive-home-fan img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; object-position: center; background: #000; }
 @media (max-width: 900px) {
   .exclusive-styles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .exclusive-home-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
   .exclusive-hero { padding-top: 70px; padding-bottom: 22px; }
