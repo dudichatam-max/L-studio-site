@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, Volume2, VolumeX, X, Instagram } from "lucide-react";
+import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Facebook, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, Volume2, VolumeX, X, Instagram } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import WaveScope from "@/components/WaveScope";
@@ -40,6 +40,13 @@ const instagramLabel = {
   en: "Join the community on Instagram",
   ru: "Присоединиться к сообществу в Instagram",
   ar: "انضم إلى المجتمع على Instagram",
+} satisfies Record<Language, string>;
+
+const facebookLabel = {
+  he: "הצטרפו לקהילה בפייסבוק",
+  en: "Join the community on Facebook",
+  ru: "Присоединиться к сообществу в Facebook",
+  ar: "انضم إلى المجتمع على Facebook",
 } satisfies Record<Language, string>;
 
 const flowLabels = {
@@ -830,7 +837,10 @@ export default function Home() {
               <span className="vision-author">{vision.author}</span>
               {vision.body.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}
               <p className="lead-line">{vision.mainLine}</p>
-              <a className="instagram-link" href="https://www.instagram.com/lstudio.app?stkn=MTJ2Ym1vdHBpMTA5Nw==" target="_blank" rel="noreferrer"><Instagram size={17} /> {instagramLabel[language]} <ArrowUpRight size={15} /></a>
+              <div className="social-links">
+                <a className="instagram-link" href="https://www.instagram.com/lstudio.app?stkn=MTJ2Ym1vdHBpMTA5Nw==" target="_blank" rel="noreferrer"><Instagram size={17} /> {instagramLabel[language]} <ArrowUpRight size={15} /></a>
+                <a className="instagram-link" href="https://www.facebook.com/share/1C6rrsvgem/" target="_blank" rel="noreferrer"><Facebook size={17} /> {facebookLabel[language]} <ArrowUpRight size={15} /></a>
+              </div>
             </div>
             <div className="vision-cards">
               {vision.cards.map((card: { no: string; title: string; body: string }, index: number) => {

@@ -482,7 +482,8 @@ html[dir="rtl"] .section-heading, html[dir="rtl"] .architecture-grid, html[dir="
 html[dir="ltr"] .vision-cards, html[dir="ltr"] .vision-card { direction: ltr; text-align: left; }
 html[dir="rtl"] .vision-cards, html[dir="rtl"] .vision-card { direction: rtl; text-align: right; }
 html[dir="ltr"] .section-heading p { margin-left: 0; margin-right: auto; }
-.instagram-link { display: inline-flex; align-items: center; gap: 9px; width: fit-content; margin-top: 27px; color: var(--acid); font-size: 14px; font-weight: 700; text-decoration: none; transition: gap 160ms var(--ease-out), color 160ms ease; }
+.social-links { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; margin-top: 27px; }
+.instagram-link { display: inline-flex; align-items: center; gap: 9px; width: fit-content; margin-top: 0; color: var(--acid); font-size: 14px; font-weight: 700; text-decoration: none; transition: gap 160ms var(--ease-out), color 160ms ease; }
 .instagram-link:hover { gap: 13px; color: var(--paper); }
 
 
