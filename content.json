@@ -1055,18 +1055,18 @@
       "exclusive": {
         "navLabel": "בלעדי",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "שמונה חבילות.",
+        "title": "תשע חבילות.",
         "titleEm": "בקרוב.",
-        "intro": "קו נפרד משמונה ערכות התופים של Factory. שמונה חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות.",
+        "intro": "קו נפרד משמונה ערכות התופים של Factory. תשע חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות.",
         "imageAlt": "כרזת חבילת תופים בלעדית",
         "comingSoon": "בקרוב",
         "stylesHeading": "סגנונות",
         "demoLabel": "סרטון הדגמה",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "שמונה חבילות מיוחדות. בקרוב.",
-        "homeBody": "שמונה חבילות תופים בלעדיות יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.",
+        "homeTitle": "תשע חבילות מיוחדות. בקרוב.",
+        "homeBody": "תשע חבילות תופים בלעדיות יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.",
         "homeCta": "לעמוד הבלעדי",
-        "homeImageAlt": "מניפה של שמונה כרזות לחבילות תופים בלעדיות של L Studio",
+        "homeImageAlt": "מניפה של תשע כרזות לחבילות תופים בלעדיות של L Studio",
         "packs": [
           {
             "id": "afro-techno",
@@ -1194,6 +1194,22 @@
               "Daf of Djinn",
               "Chrome Simurgh",
               "Seal of Solomon"
+            ]
+          },
+          {
+            "id": "organic-steps",
+            "name": "Organic Steps",
+            "tagline": "ROOT. GROWL. STEP.",
+            "meta": "140–148 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Arena Wobble",
+              "Garage Riddim",
+              "Club Laser",
+              "Warehouse Smash",
+              "Organic Tear",
+              "Hollow Barrel",
+              "Riddim Wood",
+              "Scrap Metal"
             ]
           }
         ]
@@ -2297,18 +2313,18 @@
       "exclusive": {
         "navLabel": "Exclusive",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "Eight packs.",
+        "title": "Nine packs.",
         "titleEm": "Coming soon.",
-        "intro": "A separate line from the eight Factory Drums kits. Eight upcoming drum packs, each with 8 channels and 8 styles.",
+        "intro": "A separate line from the eight Factory Drums kits. Nine upcoming drum packs, each with 8 channels and 8 styles.",
         "imageAlt": "Exclusive drum pack poster",
         "comingSoon": "Coming soon",
         "stylesHeading": "Styles",
         "demoLabel": "Demo video",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "Eight special packs. Coming soon.",
-        "homeBody": "Eight Exclusive drum packs sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.",
+        "homeTitle": "Nine special packs. Coming soon.",
+        "homeBody": "Nine Exclusive drum packs sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.",
         "homeCta": "See Exclusive",
-        "homeImageAlt": "Fan of eight L Studio Exclusive drum pack posters",
+        "homeImageAlt": "Fan of nine L Studio Exclusive drum pack posters",
         "packs": [
           {
             "id": "afro-techno",
@@ -2436,6 +2452,22 @@
               "Daf of Djinn",
               "Chrome Simurgh",
               "Seal of Solomon"
+            ]
+          },
+          {
+            "id": "organic-steps",
+            "name": "Organic Steps",
+            "tagline": "ROOT. GROWL. STEP.",
+            "meta": "140–148 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Arena Wobble",
+              "Garage Riddim",
+              "Club Laser",
+              "Warehouse Smash",
+              "Organic Tear",
+              "Hollow Barrel",
+              "Riddim Wood",
+              "Scrap Metal"
             ]
           }
         ]
@@ -3539,18 +3571,18 @@
       "exclusive": {
         "navLabel": "Эксклюзив",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "Восемь паков.",
+        "title": "Девять паков.",
         "titleEm": "Скоро.",
-        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Восемь ударных паков на подходе: в каждом 8 каналов и 8 стилей.",
+        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Девять ударных паков на подходе: в каждом 8 каналов и 8 стилей.",
         "imageAlt": "Постер эксклюзивного ударного пака",
         "comingSoon": "Скоро",
         "stylesHeading": "Стили",
         "demoLabel": "Демо-видео",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "Восемь особых паков. Скоро.",
-        "homeBody": "Восемь эксклюзивных ударных паков стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.",
+        "homeTitle": "Девять особых паков. Скоро.",
+        "homeBody": "Девять эксклюзивных ударных паков стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.",
         "homeCta": "Смотреть эксклюзив",
-        "homeImageAlt": "Веер из восьми постеров эксклюзивных ударных паков L Studio",
+        "homeImageAlt": "Веер из девяти постеров эксклюзивных ударных паков L Studio",
         "packs": [
           {
             "id": "afro-techno",
@@ -3678,6 +3710,22 @@
               "Daf of Djinn",
               "Chrome Simurgh",
               "Seal of Solomon"
+            ]
+          },
+          {
+            "id": "organic-steps",
+            "name": "Organic Steps",
+            "tagline": "ROOT. GROWL. STEP.",
+            "meta": "140–148 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Arena Wobble",
+              "Garage Riddim",
+              "Club Laser",
+              "Warehouse Smash",
+              "Organic Tear",
+              "Hollow Barrel",
+              "Riddim Wood",
+              "Scrap Metal"
             ]
           }
         ]
@@ -4781,18 +4829,18 @@
       "exclusive": {
         "navLabel": "حصري",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "ثماني حزم.",
+        "title": "تسع حزم.",
         "titleEm": "قريباً.",
-        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. ثماني حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب.",
+        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. تسع حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب.",
         "imageAlt": "ملصق حزمة طبول حصرية",
         "comingSoon": "قريباً",
         "stylesHeading": "الأساليب",
         "demoLabel": "فيديو العرض",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "ثماني حزم خاصة. قريباً.",
-        "homeBody": "ثماني حزم طبول حصرية خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.",
+        "homeTitle": "تسع حزم خاصة. قريباً.",
+        "homeBody": "تسع حزم طبول حصرية خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.",
         "homeCta": "شاهد الحصري",
-        "homeImageAlt": "مروحة من ثمانية ملصقات لحزم طبول حصرية من L Studio",
+        "homeImageAlt": "مروحة من تسعة ملصقات لحزم طبول حصرية من L Studio",
         "packs": [
           {
             "id": "afro-techno",
@@ -4920,6 +4968,22 @@
               "Daf of Djinn",
               "Chrome Simurgh",
               "Seal of Solomon"
+            ]
+          },
+          {
+            "id": "organic-steps",
+            "name": "Organic Steps",
+            "tagline": "ROOT. GROWL. STEP.",
+            "meta": "140–148 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Arena Wobble",
+              "Garage Riddim",
+              "Club Laser",
+              "Warehouse Smash",
+              "Organic Tear",
+              "Hollow Barrel",
+              "Riddim Wood",
+              "Scrap Metal"
             ]
           }
         ]
