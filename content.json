@@ -1055,9 +1055,9 @@
       "exclusive": {
         "navLabel": "בלעדי",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "חמש חבילות.",
+        "title": "שמונה חבילות.",
         "titleEm": "בקרוב.",
-        "intro": "קו נפרד משמונה ערכות התופים של Factory. חמש חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות.",
+        "intro": "קו נפרד משמונה ערכות התופים של Factory. שמונה חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות.",
         "imageAlt": "כרזת חבילת תופים בלעדית",
         "comingSoon": "בקרוב",
         "stylesHeading": "סגנונות",
@@ -1146,6 +1146,54 @@
               "Acid Grin",
               "Night Crawl",
               "Full Kreep"
+            ]
+          },
+          {
+            "id": "brazilian-trap",
+            "name": "Brazilian Trap",
+            "tagline": "ORISHA. BATIDA. DROP.",
+            "meta": "120–144 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Iemanjá Drift",
+              "Exu Crossroads",
+              "Oxóssi Hunt",
+              "Xangô Spark",
+              "Ogum Drop",
+              "Oxum Gold",
+              "Yansã Storm",
+              "Zumbi Ember"
+            ]
+          },
+          {
+            "id": "lofi-desert",
+            "name": "Lofi Desert",
+            "tagline": "DUST. VEIL. HORIZON.",
+            "meta": "66–99 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Sphinx Dust",
+              "Isis Veil",
+              "Anubis Trail",
+              "Oasis of Ra",
+              "Tent Glow",
+              "Scarab Vinyl",
+              "Nut of Stars",
+              "Horizon of Horus"
+            ]
+          },
+          {
+            "id": "middle-tech",
+            "name": "Middle Tech",
+            "tagline": "JINN. LASER. SEAL.",
+            "meta": "77–188 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Jinn Signal",
+              "Ifrit Drive",
+              "Marid Circuit",
+              "Lamp Laser",
+              "Thunder Peri",
+              "Daf of Djinn",
+              "Chrome Simurgh",
+              "Seal of Solomon"
             ]
           }
         ]
@@ -2249,9 +2297,9 @@
       "exclusive": {
         "navLabel": "Exclusive",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "Five packs.",
+        "title": "Eight packs.",
         "titleEm": "Coming soon.",
-        "intro": "A separate line from the eight Factory Drums kits. Five upcoming drum packs, each with 8 channels and 8 styles.",
+        "intro": "A separate line from the eight Factory Drums kits. Eight upcoming drum packs, each with 8 channels and 8 styles.",
         "imageAlt": "Exclusive drum pack poster",
         "comingSoon": "Coming soon",
         "stylesHeading": "Styles",
@@ -2340,6 +2388,54 @@
               "Acid Grin",
               "Night Crawl",
               "Full Kreep"
+            ]
+          },
+          {
+            "id": "brazilian-trap",
+            "name": "Brazilian Trap",
+            "tagline": "ORISHA. BATIDA. DROP.",
+            "meta": "120–144 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Iemanjá Drift",
+              "Exu Crossroads",
+              "Oxóssi Hunt",
+              "Xangô Spark",
+              "Ogum Drop",
+              "Oxum Gold",
+              "Yansã Storm",
+              "Zumbi Ember"
+            ]
+          },
+          {
+            "id": "lofi-desert",
+            "name": "Lofi Desert",
+            "tagline": "DUST. VEIL. HORIZON.",
+            "meta": "66–99 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Sphinx Dust",
+              "Isis Veil",
+              "Anubis Trail",
+              "Oasis of Ra",
+              "Tent Glow",
+              "Scarab Vinyl",
+              "Nut of Stars",
+              "Horizon of Horus"
+            ]
+          },
+          {
+            "id": "middle-tech",
+            "name": "Middle Tech",
+            "tagline": "JINN. LASER. SEAL.",
+            "meta": "77–188 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Jinn Signal",
+              "Ifrit Drive",
+              "Marid Circuit",
+              "Lamp Laser",
+              "Thunder Peri",
+              "Daf of Djinn",
+              "Chrome Simurgh",
+              "Seal of Solomon"
             ]
           }
         ]
@@ -3443,9 +3539,9 @@
       "exclusive": {
         "navLabel": "Эксклюзив",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "Пять паков.",
+        "title": "Восемь паков.",
         "titleEm": "Скоро.",
-        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Пять ударных паков на подходе: в каждом 8 каналов и 8 стилей.",
+        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Восемь ударных паков на подходе: в каждом 8 каналов и 8 стилей.",
         "imageAlt": "Постер эксклюзивного ударного пака",
         "comingSoon": "Скоро",
         "stylesHeading": "Стили",
@@ -3534,6 +3630,54 @@
               "Acid Grin",
               "Night Crawl",
               "Full Kreep"
+            ]
+          },
+          {
+            "id": "brazilian-trap",
+            "name": "Brazilian Trap",
+            "tagline": "ORISHA. BATIDA. DROP.",
+            "meta": "120–144 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Iemanjá Drift",
+              "Exu Crossroads",
+              "Oxóssi Hunt",
+              "Xangô Spark",
+              "Ogum Drop",
+              "Oxum Gold",
+              "Yansã Storm",
+              "Zumbi Ember"
+            ]
+          },
+          {
+            "id": "lofi-desert",
+            "name": "Lofi Desert",
+            "tagline": "DUST. VEIL. HORIZON.",
+            "meta": "66–99 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Sphinx Dust",
+              "Isis Veil",
+              "Anubis Trail",
+              "Oasis of Ra",
+              "Tent Glow",
+              "Scarab Vinyl",
+              "Nut of Stars",
+              "Horizon of Horus"
+            ]
+          },
+          {
+            "id": "middle-tech",
+            "name": "Middle Tech",
+            "tagline": "JINN. LASER. SEAL.",
+            "meta": "77–188 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Jinn Signal",
+              "Ifrit Drive",
+              "Marid Circuit",
+              "Lamp Laser",
+              "Thunder Peri",
+              "Daf of Djinn",
+              "Chrome Simurgh",
+              "Seal of Solomon"
             ]
           }
         ]
@@ -4637,9 +4781,9 @@
       "exclusive": {
         "navLabel": "حصري",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "خمس حزم.",
+        "title": "ثماني حزم.",
         "titleEm": "قريباً.",
-        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. خمس حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب.",
+        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. ثماني حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب.",
         "imageAlt": "ملصق حزمة طبول حصرية",
         "comingSoon": "قريباً",
         "stylesHeading": "الأساليب",
@@ -4728,6 +4872,54 @@
               "Acid Grin",
               "Night Crawl",
               "Full Kreep"
+            ]
+          },
+          {
+            "id": "brazilian-trap",
+            "name": "Brazilian Trap",
+            "tagline": "ORISHA. BATIDA. DROP.",
+            "meta": "120–144 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Iemanjá Drift",
+              "Exu Crossroads",
+              "Oxóssi Hunt",
+              "Xangô Spark",
+              "Ogum Drop",
+              "Oxum Gold",
+              "Yansã Storm",
+              "Zumbi Ember"
+            ]
+          },
+          {
+            "id": "lofi-desert",
+            "name": "Lofi Desert",
+            "tagline": "DUST. VEIL. HORIZON.",
+            "meta": "66–99 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Sphinx Dust",
+              "Isis Veil",
+              "Anubis Trail",
+              "Oasis of Ra",
+              "Tent Glow",
+              "Scarab Vinyl",
+              "Nut of Stars",
+              "Horizon of Horus"
+            ]
+          },
+          {
+            "id": "middle-tech",
+            "name": "Middle Tech",
+            "tagline": "JINN. LASER. SEAL.",
+            "meta": "77–188 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Jinn Signal",
+              "Ifrit Drive",
+              "Marid Circuit",
+              "Lamp Laser",
+              "Thunder Peri",
+              "Daf of Djinn",
+              "Chrome Simurgh",
+              "Seal of Solomon"
             ]
           }
         ]

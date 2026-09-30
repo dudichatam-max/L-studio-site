@@ -47,6 +47,9 @@ const PACK_STEM: Record<string, string> = {
   "healing-journey": "11-healing-journey",
   "deep-ocean": "12-deep-ocean",
   "kreepy-bastard": "13-kreepy-bastard",
+  "brazilian-trap": "14-brazilian-trap",
+  "lofi-desert": "15-lofi-desert",
+  "middle-tech": "16-middle-tech",
 };
 
 /** YouTube Shorts for a single style. Style names stay English in every language. */
@@ -100,20 +103,41 @@ const FALLBACK_PACKS: ExclusivePack[] = [
     meta: "138–148 BPM · 8 CHANNELS · 8 STYLES",
     styles: ["Mold Room", "Twisted Spores", "Bad Trip Wire", "Crooked Pulse", "Bastard Drop", "Acid Grin", "Night Crawl", "Full Kreep"],
   },
+  {
+    id: "brazilian-trap",
+    name: "Brazilian Trap",
+    tagline: "ORISHA. BATIDA. DROP.",
+    meta: "120–144 BPM · 8 CHANNELS · 8 STYLES",
+    styles: ["Iemanjá Drift", "Exu Crossroads", "Oxóssi Hunt", "Xangô Spark", "Ogum Drop", "Oxum Gold", "Yansã Storm", "Zumbi Ember"],
+  },
+  {
+    id: "lofi-desert",
+    name: "Lofi Desert",
+    tagline: "DUST. VEIL. HORIZON.",
+    meta: "66–99 BPM · 8 CHANNELS · 8 STYLES",
+    styles: ["Sphinx Dust", "Isis Veil", "Anubis Trail", "Oasis of Ra", "Tent Glow", "Scarab Vinyl", "Nut of Stars", "Horizon of Horus"],
+  },
+  {
+    id: "middle-tech",
+    name: "Middle Tech",
+    tagline: "JINN. LASER. SEAL.",
+    meta: "77–188 BPM · 8 CHANNELS · 8 STYLES",
+    styles: ["Jinn Signal", "Ifrit Drive", "Marid Circuit", "Lamp Laser", "Thunder Peri", "Daf of Djinn", "Chrome Simurgh", "Seal of Solomon"],
+  },
 ];
 
 const emptyExclusive = (language: Language): ExclusiveCopy => ({
   eyebrow: "L-STUDIO / EXCLUSIVE",
-  title: language === "he" ? "חמש חבילות." : language === "ru" ? "Пять паков." : language === "ar" ? "خمس حزم." : "Five packs.",
+  title: language === "he" ? "שמונה חבילות." : language === "ru" ? "Восемь паков." : language === "ar" ? "ثماني حزم." : "Eight packs.",
   titleEm: language === "he" ? "בקרוב." : language === "ru" ? "Скоро." : language === "ar" ? "قريباً." : "Coming soon.",
   intro:
     language === "he"
-      ? "קו נפרד משמונה ערכות התופים של Factory. חמש חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות."
+      ? "קו נפרד משמונה ערכות התופים של Factory. שמונה חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות."
       : language === "ru"
-        ? "Отдельная линейка, не восемь наборов Factory Drums. Пять ударных паков на подходе: в каждом 8 каналов и 8 стилей."
+        ? "Отдельная линейка, не восемь наборов Factory Drums. Восемь ударных паков на подходе: в каждом 8 каналов и 8 стилей."
         : language === "ar"
-          ? "خط منفصل عن حزم الطبول الثماني في Factory. خمس حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب."
-          : "A separate line from the eight Factory Drums kits. Five upcoming drum packs, each with 8 channels and 8 styles.",
+          ? "خط منفصل عن حزم الطبول الثماني في Factory. ثماني حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب."
+          : "A separate line from the eight Factory Drums kits. Eight upcoming drum packs, each with 8 channels and 8 styles.",
   navLabel: exclusiveNavLabel[language],
   imageAlt:
     language === "he"
