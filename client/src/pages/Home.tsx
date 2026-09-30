@@ -133,7 +133,7 @@ const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started wi
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
 const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
-const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get early access", coverAlt: "L Studio Factory Pack product box" };
+const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get early access", coverAlt: "L Studio Factory Pack digital packs: Presets and Drums" };
 const exclusivePoster = (stem: string) => ({
   jpg: `${import.meta.env.BASE_URL}assets/exclusive/${stem}.jpg`,
   webp: `${import.meta.env.BASE_URL}assets/exclusive/${stem}.webp`,
@@ -792,7 +792,7 @@ export default function Home() {
             <div className="factory-pack-cover">
               <picture>
                 <source srcSet={factoryBoxWebp} type="image/webp" />
-                <img src={factoryBoxPng} alt={factory.coverAlt ?? "L Studio Factory Pack product box"} />
+                <img src={factoryBoxPng} alt={factory.coverAlt ?? "L Studio Factory Pack digital packs: Presets and Drums"} />
               </picture>
             </div>
             <p className="factory-pack-lede">{factory.lede}</p>
