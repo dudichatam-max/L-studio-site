@@ -42,7 +42,7 @@ jobs:
         run: pnpm build
 
       - name: Prepare GitHub Pages SPA deep links
-        run: node scripts/prepare-pages.js
+        run: pnpm exec tsx scripts/prepare-pages.ts
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

@@ -9,6 +9,7 @@
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
+    "check:seo": "tsx shared/seo.selfcheck.ts",
     "check:commerce": "tsx server/commerce.selfcheck.ts",
     "format": "prettier --write ."
   },

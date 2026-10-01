@@ -15,6 +15,7 @@ import Exclusive from "./pages/Exclusive";
 import Updates from "./pages/Updates";
 import NotFound from "./pages/NotFound";
 import Buy from "./pages/Buy";
+import DocumentSeo from "./components/DocumentSeo";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -42,10 +43,13 @@ function ScrollToTop() {
 }
 
 function Router() {
-  const base = window.location.pathname.startsWith("/L-studio-site") ? "/L-studio-site" : "";
+  const base = window.location.pathname.startsWith("/L-studio-site")
+    ? "/L-studio-site"
+    : "";
   return (
     <WouterRouter base={base}>
       <ScrollToTop />
+      <DocumentSeo />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/privacy" component={Privacy} />
