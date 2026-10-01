@@ -491,7 +491,10 @@ html[dir="ltr"] .section-heading p { margin-left: 0; margin-right: auto; }
 .factory-pack-section { position: relative; margin-top: 44px; margin-bottom: 44px; padding: 54px 34px 62px; border: 1px solid rgba(227,197,101,.42); background: #111113; direction: ltr; }
 .factory-pack-content { position: relative; z-index: 1; width: min(780px, 100%); margin: 0 auto; direction: ltr; text-align: center; }
 .factory-pack-content .kicker { display: block; color: var(--acid); }
-.factory-pack-cover { width: min(100%, 560px); margin: 27px auto 32px; border: 1px solid rgba(227,197,101,.3); background: #101012; box-shadow: 0 25px 80px rgba(0,0,0,.38); overflow: hidden; }
+.factory-pack-covers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; width: min(100%, 720px); margin: 27px auto 32px; direction: ltr; }
+.factory-pack-cover { display: block; min-width: 0; border: 1px solid rgba(227,197,101,.3); background: #101012; box-shadow: 0 25px 80px rgba(0,0,0,.38); overflow: hidden; text-decoration: none; color: inherit; }
+.factory-pack-cover:hover, .factory-pack-cover:focus-visible { border-color: rgba(227,197,101,.75); }
+.factory-pack-cover:focus-visible { outline: 2px solid var(--acid); outline-offset: 3px; }
 .factory-pack-cover img { display: block; width: 100%; height: auto; object-fit: contain; object-position: center; }
 .factory-pack-lede { margin: 0 auto 21px; color: var(--paper); font: 600 clamp(23px, 2.4vw, 31px)/1.1 var(--display); letter-spacing: -.035em; }
 .factory-pack-content > p:not(.factory-pack-lede) { max-width: 650px; margin: 0 auto 16px; color: #b4b1a9; font-size: 15px; line-height: 1.72; }
@@ -501,7 +504,7 @@ html[dir="ltr"] .section-heading p { margin-left: 0; margin-right: auto; }
 .factory-pack-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 18px; }
 .factory-pack-actions .button { margin-top: 0; }
 .factory-pack-section[dir="rtl"] .factory-pack-content { direction: rtl; text-align: center; }
-@media (max-width: 720px) { .factory-pack-section { margin-top: 28px; margin-bottom: 28px; padding: 34px 20px 42px; } .factory-pack-cover { margin-top: 22px; margin-bottom: 27px; } .factory-pack-lede { font-size: 24px; } .factory-pack-content > p:not(.factory-pack-lede) { font-size: 14px; } }
+@media (max-width: 720px) { .factory-pack-section { margin-top: 28px; margin-bottom: 28px; padding: 34px 20px 42px; } .factory-pack-covers { grid-template-columns: 1fr; width: min(100%, 420px); margin-top: 22px; margin-bottom: 27px; } .factory-pack-lede { font-size: 24px; } .factory-pack-content > p:not(.factory-pack-lede) { font-size: 14px; } }
 
 
 

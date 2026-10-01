@@ -112,6 +112,8 @@
         "cta": "לקבלת גישה מוקדמת",
         "detailCta": "לגלות את Factory 64",
         "coverAlt": "כרזת L Studio Factory Pack: פריסטים עם 8 עמודים ו־64 קולות, ועוד תופים עם 8 ערכות ו־8 סגנונות",
+        "presetsAlt": "כרזת הפריסטים של L Studio Factory Pack: 8 עמודים ו־64 קולות",
+        "drumsAlt": "כרזת התופים של L Studio Factory Pack: 8 ערכות ו־8 סגנונות",
         "drumsCta": "ערכות התופים"
       },
       "vision": {
@@ -1432,6 +1434,8 @@
         "cta": "Get early access",
         "detailCta": "Explore Factory 64",
         "coverAlt": "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles",
+        "presetsAlt": "L Studio Factory Pack presets cover: 8 pages, 64 voices",
+        "drumsAlt": "L Studio Factory Pack drums cover: 8 kits, 8 styles",
         "drumsCta": "Drum kits"
       },
       "vision": {
@@ -2752,6 +2756,8 @@
         "cta": "Ранний доступ",
         "detailCta": "Открыть Factory 64",
         "coverAlt": "Постер L Studio Factory Pack: пресеты, 8 страниц и 64 голоса, плюс барабаны, 8 наборов и 8 стилей",
+        "presetsAlt": "Обложка пресетов L Studio Factory Pack: 8 страниц и 64 голоса",
+        "drumsAlt": "Обложка барабанов L Studio Factory Pack: 8 наборов и 8 стилей",
         "drumsCta": "Барабаны"
       },
       "vision": {
@@ -4072,6 +4078,8 @@
         "cta": "احصل على وصول مبكر",
         "detailCta": "استكشف Factory 64",
         "coverAlt": "ملصق L Studio Factory Pack: إعدادات، 8 صفحات و64 صوتاً، بالإضافة إلى الطبول، 8 حزم و8 أساليب",
+        "presetsAlt": "غلاف إعدادات L Studio Factory Pack: 8 صفحات و64 صوتاً",
+        "drumsAlt": "غلاف طبول L Studio Factory Pack: 8 حزم و8 أساليب",
         "drumsCta": "حزم الطبول"
       },
       "vision": {
