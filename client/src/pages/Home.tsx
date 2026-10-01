@@ -12,10 +12,8 @@ import { mergeUpdates, updatesNavLabel } from "@/lib/updatesCopy";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero-v3.png`;
-const factoryPresetsPng = `${import.meta.env.BASE_URL}assets/factory-pack-presets.png?v=20261001`;
-const factoryPresetsWebp = `${import.meta.env.BASE_URL}assets/factory-pack-presets.webp?v=20261001`;
-const factoryDrumsPng = `${import.meta.env.BASE_URL}assets/factory-pack-drums.png?v=20261001`;
-const factoryDrumsWebp = `${import.meta.env.BASE_URL}assets/factory-pack-drums.webp?v=20261001`;
+const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png?v=20260930`;
+const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=20260930`;
 const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
 
 const images = {
@@ -144,7 +142,7 @@ const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started wi
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
 const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
-const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get early access", coverAlt: "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles", presetsAlt: "L Studio Factory Pack presets cover: 8 pages, 64 voices", drumsAlt: "L Studio Factory Pack drums cover: 8 kits, 8 styles" };
+const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "Going Pro unlocks the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get early access", coverAlt: "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles" };
 const exclusiveFan = {
   jpg: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.jpg`,
   webp: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.webp`,
@@ -798,19 +796,11 @@ export default function Home() {
         <section className="factory-pack-section container" id="factory-pack" dir={dir}>
           <div className="factory-pack-content">
             <span className="kicker">{factory.kicker}</span>
-            <div className="factory-pack-covers">
-              <Link className="factory-pack-cover" href="/factory-64">
-                <picture>
-                  <source srcSet={factoryPresetsWebp} type="image/webp" />
-                  <img src={factoryPresetsPng} alt={factory.presetsAlt ?? "L Studio Factory Pack presets cover: 8 pages, 64 voices"} width={677} height={1239} />
-                </picture>
-              </Link>
-              <Link className="factory-pack-cover" href="/factory-64/drums">
-                <picture>
-                  <source srcSet={factoryDrumsWebp} type="image/webp" />
-                  <img src={factoryDrumsPng} alt={factory.drumsAlt ?? "L Studio Factory Pack drums cover: 8 kits, 8 styles"} width={677} height={1239} />
-                </picture>
-              </Link>
+            <div className="factory-pack-cover">
+              <picture>
+                <source srcSet={factoryBoxWebp} type="image/webp" />
+                <img src={factoryBoxPng} alt={factory.coverAlt ?? "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles"} width={1600} height={1565} />
+              </picture>
             </div>
             <p className="factory-pack-lede">{factory.lede}</p>
             <p>{factory.shortText}</p>
