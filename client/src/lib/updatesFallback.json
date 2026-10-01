@@ -1,0 +1,246 @@
+{
+  "he": {
+    "navLabel": "עדכונים",
+    "pageTitle": "על מה אנחנו עובדים.",
+    "pageKicker": "L-STUDIO / עדכונים",
+    "pageIntro": "מבט קצר על עבודה שמתקדמת, על מה שבדרך, ועל מה שכבר זמין. בלי תאריכי השקה.",
+    "tickerLabel": "עדכונים",
+    "statusLabels": {
+      "in_progress": "בעבודה",
+      "upcoming": "בקרוב",
+      "shipped": "זמין"
+    },
+    "sections": {
+      "in_progress": "בעבודה",
+      "upcoming": "בדרך",
+      "shipped": "עלה לאחרונה"
+    },
+    "items": [
+      {
+        "id": "mic-fx-and-back",
+        "status": "in_progress",
+        "title": "Mic FX + כפתור Back",
+        "ticker": "Mic FX ו-Back",
+        "summary": "שיפור אפקטי המיקרופון (אופי חזק יותר בפריסטים, טרנספוז ±12, שם Mic FX) וכפתור Back נפרד בראש דפי הלופר והמיק במקום Undo לכל ערוץ."
+      },
+      {
+        "id": "drum-fx",
+        "status": "upcoming",
+        "title": "Drum FX",
+        "ticker": "Drum FX",
+        "summary": "שמונה אפקטים לתופים בסגנון Mic FX (שמות נעולים, אייקונים בעיצוב). כולל הסרת מצב Default/Manual לטובת ערכות הסטייל."
+      },
+      {
+        "id": "exclusive-packs-gallery",
+        "status": "in_progress",
+        "title": "חבילות Exclusive באתר",
+        "ticker": "חבילות Exclusive באתר",
+        "summary": "תצוגת חבילות Exclusive באתר מתרחבת. הורדות ייפתחו בהדרגה לפי מוכנות."
+      },
+      {
+        "id": "early-access-play",
+        "status": "in_progress",
+        "title": "Early Access ב-Google Play",
+        "ticker": "Early Access ב-Play",
+        "summary": "גישה מוקדמת דרך Internal testing ב-Google Play (במקום הפצה ישירה מהאתר בלבד)."
+      },
+      {
+        "id": "user-guide-style-random",
+        "status": "shipped",
+        "title": "מדריך Style ו-Random",
+        "ticker": "מדריך Style ו-Random",
+        "summary": "מדריך משתמש על לחיצה ארוכה ב-Style ועל Random. זמין."
+      },
+      {
+        "id": "studio-workflow-refresh",
+        "status": "upcoming",
+        "title": "רענון זרימת העבודה בסטודיו",
+        "ticker": "רענון זרימת העבודה",
+        "summary": "שיפורים בנעילת Pro/Live, ביטול פעולות בערוצים, טלפרומפטר למילים, והסרת Comp/Gate מהמיק. בבדיקות לפני פרסום רחב."
+      }
+    ]
+  },
+  "en": {
+    "navLabel": "Updates",
+    "pageTitle": "What we are working on.",
+    "pageKicker": "L-STUDIO / UPDATES",
+    "pageIntro": "A short look at work in progress, what is coming next, and what is already available. No release dates.",
+    "tickerLabel": "Updates",
+    "statusLabels": {
+      "in_progress": "In progress",
+      "upcoming": "Coming up",
+      "shipped": "Available"
+    },
+    "sections": {
+      "in_progress": "In progress",
+      "upcoming": "Coming up",
+      "shipped": "Recently shipped"
+    },
+    "items": [
+      {
+        "id": "mic-fx-and-back",
+        "status": "in_progress",
+        "title": "Mic FX + Back button",
+        "ticker": "Mic FX and Back",
+        "summary": "Stronger mic effect presets, ±12 transpose, Mic FX naming, and a single Back control at the top of Looper and Mic pages instead of per-channel Undo."
+      },
+      {
+        "id": "drum-fx",
+        "status": "upcoming",
+        "title": "Drum FX",
+        "ticker": "Drum FX",
+        "summary": "Eight drum effects in the Mic FX style (names locked, icons in design). Replaces Default/Manual with the Style kit packs."
+      },
+      {
+        "id": "exclusive-packs-gallery",
+        "status": "in_progress",
+        "title": "Exclusive packs on the site",
+        "ticker": "Exclusive packs on the site",
+        "summary": "The Exclusive packs gallery on the site is expanding. Downloads unlock gradually as packs are ready."
+      },
+      {
+        "id": "early-access-play",
+        "status": "in_progress",
+        "title": "Early Access on Google Play",
+        "ticker": "Early Access on Play",
+        "summary": "Early Access continues via Google Play Internal testing."
+      },
+      {
+        "id": "user-guide-style-random",
+        "status": "shipped",
+        "title": "Style & Random guide",
+        "ticker": "Style and Random guide",
+        "summary": "User guide for Style long-press and Random is available."
+      },
+      {
+        "id": "studio-workflow-refresh",
+        "status": "upcoming",
+        "title": "Studio workflow refresh",
+        "ticker": "Studio workflow refresh",
+        "summary": "Pro/Live edit locking, channel undo/redo, lyrics teleprompter, and Comp/Gate removal from mic. In testing before a wider release."
+      }
+    ]
+  },
+  "ru": {
+    "navLabel": "Обновления",
+    "pageTitle": "Над чем мы работаем.",
+    "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
+    "pageIntro": "Короткий обзор того, что сейчас в работе, что на подходе и что уже доступно. Без дат выпуска.",
+    "tickerLabel": "Обновления",
+    "statusLabels": {
+      "in_progress": "В работе",
+      "upcoming": "Скоро",
+      "shipped": "Доступно"
+    },
+    "sections": {
+      "in_progress": "В работе",
+      "upcoming": "На подходе",
+      "shipped": "Недавно вышло"
+    },
+    "items": [
+      {
+        "id": "mic-fx-and-back",
+        "status": "in_progress",
+        "title": "Mic FX и кнопка Back",
+        "ticker": "Mic FX и Back",
+        "summary": "Более выразительные пресеты эффектов микрофона, транспонирование ±12, название Mic FX и одна кнопка Back вверху страниц лупера и микрофона вместо Undo на каждом канале."
+      },
+      {
+        "id": "drum-fx",
+        "status": "upcoming",
+        "title": "Drum FX",
+        "ticker": "Drum FX",
+        "summary": "Восемь эффектов ударных в стиле Mic FX (названия зафиксированы, иконки в дизайне). Режим Default/Manual заменяется наборами Style."
+      },
+      {
+        "id": "exclusive-packs-gallery",
+        "status": "in_progress",
+        "title": "Эксклюзивные паки на сайте",
+        "ticker": "Эксклюзивные паки на сайте",
+        "summary": "Галерея эксклюзивных паков на сайте расширяется. Скачивание открывается постепенно, по мере готовности паков."
+      },
+      {
+        "id": "early-access-play",
+        "status": "in_progress",
+        "title": "Early Access в Google Play",
+        "ticker": "Early Access в Play",
+        "summary": "Ранний доступ продолжается через внутреннее тестирование Google Play, а не только через прямую раздачу с сайта."
+      },
+      {
+        "id": "user-guide-style-random",
+        "status": "shipped",
+        "title": "Гид по Style и Random",
+        "ticker": "Гид Style и Random",
+        "summary": "Руководство по долгому нажатию Style и по Random уже доступно."
+      },
+      {
+        "id": "studio-workflow-refresh",
+        "status": "upcoming",
+        "title": "Обновление рабочего процесса студии",
+        "ticker": "Обновление рабочего процесса",
+        "summary": "Блокировка правок Pro/Live, отмена и повтор на каналах, телесуфлёр для текста и удаление Comp/Gate с микрофона. На проверке перед более широким выпуском."
+      }
+    ]
+  },
+  "ar": {
+    "navLabel": "التحديثات",
+    "pageTitle": "ما نعمل عليه.",
+    "pageKicker": "L-STUDIO / التحديثات",
+    "pageIntro": "نظرة قصيرة على العمل الجاري، وما هو قادم، وما هو متاح بالفعل. بلا تواريخ إصدار.",
+    "tickerLabel": "التحديثات",
+    "statusLabels": {
+      "in_progress": "قيد العمل",
+      "upcoming": "قريباً",
+      "shipped": "متاح"
+    },
+    "sections": {
+      "in_progress": "قيد العمل",
+      "upcoming": "قادم",
+      "shipped": "صدر مؤخراً"
+    },
+    "items": [
+      {
+        "id": "mic-fx-and-back",
+        "status": "in_progress",
+        "title": "Mic FX وزر Back",
+        "ticker": "Mic FX وBack",
+        "summary": "إعدادات مسبقة أقوى لمؤثرات الميكروفون، ونقل نغمي ±12، وتسمية Mic FX، وزر Back واحد في أعلى صفحتي اللوبر والميكروفون بدل Undo لكل قناة."
+      },
+      {
+        "id": "drum-fx",
+        "status": "upcoming",
+        "title": "Drum FX",
+        "ticker": "Drum FX",
+        "summary": "ثمانية مؤثرات للطبول بأسلوب Mic FX (الأسماء ثابتة، والأيقونات قيد التصميم). يحل ذلك محل وضع Default/Manual لصالح حزم Style."
+      },
+      {
+        "id": "exclusive-packs-gallery",
+        "status": "in_progress",
+        "title": "حزم Exclusive على الموقع",
+        "ticker": "حزم Exclusive على الموقع",
+        "summary": "معرض حزم Exclusive على الموقع يتوسع. تُفتح التنزيلات تدريجياً كلما أصبحت الحزم جاهزة."
+      },
+      {
+        "id": "early-access-play",
+        "status": "in_progress",
+        "title": "Early Access على Google Play",
+        "ticker": "Early Access على Play",
+        "summary": "يستمر الوصول المبكر عبر الاختبار الداخلي في Google Play، وليس عبر التوزيع المباشر من الموقع فقط."
+      },
+      {
+        "id": "user-guide-style-random",
+        "status": "shipped",
+        "title": "دليل Style وRandom",
+        "ticker": "دليل Style وRandom",
+        "summary": "دليل المستخدم للضغط المطوّل على Style ولـ Random متاح."
+      },
+      {
+        "id": "studio-workflow-refresh",
+        "status": "upcoming",
+        "title": "تحديث مسار العمل في الاستوديو",
+        "ticker": "تحديث مسار العمل",
+        "summary": "قفل تعديل Pro/Live، والتراجع والإعادة في القنوات، وتلبرومبتر للكلمات، وإزالة Comp/Gate من الميكروفون. قيد الاختبار قبل إصدار أوسع."
+      }
+    ]
+  }
+}

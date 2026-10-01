@@ -12,12 +12,27 @@ import Guide from "./pages/Guide";
 import Factory64 from "./pages/Factory64";
 import FactoryDrums from "./pages/FactoryDrums";
 import Exclusive from "./pages/Exclusive";
+import Updates from "./pages/Updates";
 import NotFound from "./pages/NotFound";
 import Buy from "./pages/Buy";
 
 function ScrollToTop() {
   const [location] = useLocation();
   useEffect(() => {
+    const raw = window.location.hash.replace(/^#/, "");
+    if (raw) {
+      let id = raw;
+      try {
+        id = decodeURIComponent(raw);
+      } catch {
+        id = raw;
+      }
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView();
+        return;
+      }
+    }
     // Path-only: keep same-page hash jumps (TOC) intact.
     window.scrollTo(0, 0);
     document.documentElement.scrollTop = 0;
@@ -41,6 +56,7 @@ function Router() {
         <Route path="/factory-64/drums" component={FactoryDrums} />
         <Route path="/factory-64" component={Factory64} />
         <Route path="/exclusive" component={Exclusive} />
+        <Route path="/updates" component={Updates} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

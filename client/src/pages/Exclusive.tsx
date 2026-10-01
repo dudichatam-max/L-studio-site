@@ -6,6 +6,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
+import { updatesNavLabel, updatesNavLabelFrom } from "@/lib/updatesCopy";
 
 type ExclusivePack = {
   id: string;
@@ -246,6 +247,7 @@ export default function Exclusive() {
   const { language, isRtl } = useLanguage();
   const [text, setText] = useState<ExclusiveCopy>(() => emptyExclusive(language));
   const [chrome, setChrome] = useState<ChromeCopy>(() => emptyChrome(language));
+  const [updatesLabel, setUpdatesLabel] = useState(updatesNavLabel[language]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -257,11 +259,13 @@ export default function Exclusive() {
     let cancelled = false;
     setText(emptyExclusive(language));
     setChrome(emptyChrome(language));
+    setUpdatesLabel(updatesNavLabel[language]);
     fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         if (cancelled || !data) return;
         const lang = data.languages?.[language];
+        setUpdatesLabel(updatesNavLabelFrom(language, lang));
         const block = lang?.exclusive as ExclusiveCopy | undefined;
         const presets = lang?.factory64 as { navLabel?: string; back?: string; home?: string; features?: string; architecture?: string; guide?: string; privacy?: string; terms?: string; onThisPage?: string } | undefined;
         const drumsNav = lang?.factoryDrums?.navLabel;
@@ -309,6 +313,7 @@ export default function Exclusive() {
             <Link href="/terms">{chrome.terms}</Link>
             <Link href="/factory-64">{chrome.presetsLabel}</Link>
             <Link href="/factory-64/drums">{chrome.drumsLabel}</Link>
+            <Link href="/updates">{updatesLabel}</Link>
             <span className="nav-current">{text.navLabel}</span>
           </nav>
           <div className="header-actions">
@@ -393,6 +398,7 @@ export default function Exclusive() {
             <Link href="/terms">{chrome.terms}</Link>
             <Link href="/factory-64">{chrome.presetsLabel}</Link>
             <Link href="/factory-64/drums">{chrome.drumsLabel}</Link>
+            <Link href="/updates">{updatesLabel}</Link>
             <span>{text.navLabel}</span>
           </div>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>

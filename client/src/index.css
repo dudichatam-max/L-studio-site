@@ -786,3 +786,53 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
 .pro-disclaimer a { color: var(--acid); }
 .pro-order { font: 12px var(--mono); letter-spacing: .04em; color: var(--muted); }
 @media (max-width: 800px) { .pro-layout { grid-template-columns: 1fr; } }
+
+.updates-ticker { position: relative; z-index: 27; display: flex; align-items: stretch; min-height: 42px; overflow: hidden; border-bottom: 1px solid rgba(242,241,235,.12); background: #0c0c0e; }
+.updates-ticker__label { flex: 0 0 auto; display: flex; align-items: center; padding-inline: 18px; border-inline-end: 1px solid rgba(227,197,101,.35); color: var(--acid); background: #0e0e10; font: 10px var(--mono); letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; }
+.updates-ticker__viewport { flex: 1 1 auto; min-width: 0; overflow: hidden; }
+.updates-ticker__track { display: flex; width: max-content; direction: ltr; animation: updates-marquee 52s linear infinite; }
+.updates-ticker[dir="rtl"] .updates-ticker__track { animation-direction: reverse; }
+.updates-ticker__group { display: flex; align-items: center; }
+.updates-ticker__slot { display: inline-flex; align-items: center; }
+.updates-ticker__item { display: inline-flex; align-items: center; gap: 10px; padding: 8px 2px; color: #c8c6be; font-size: 13px; font-weight: 600; line-height: 1.3; text-decoration: none; white-space: nowrap; }
+.updates-ticker[dir="rtl"] .updates-ticker__item { direction: rtl; }
+.updates-ticker__item:hover { color: var(--paper); text-decoration: underline; text-underline-offset: 3px; }
+.updates-ticker__item:focus-visible { outline: 2px solid var(--acid); outline-offset: 2px; }
+.updates-ticker__status { color: var(--acid); font: 10px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.updates-ticker__sep { padding-inline: 16px; color: rgba(242,241,235,.28); }
+.updates-ticker:hover .updates-ticker__track,
+.updates-ticker:focus-within .updates-ticker__track { animation-play-state: paused; }
+@keyframes updates-marquee { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+@media (prefers-reduced-motion: reduce) {
+  .updates-ticker__track { animation: none; direction: inherit; flex-wrap: wrap; width: auto; }
+  .updates-ticker__group--clone { display: none; }
+  .updates-ticker__viewport { overflow: visible; }
+  .updates-ticker { flex-wrap: wrap; }
+  .updates-ticker__item { white-space: normal; }
+}
+
+.updates-page .nav-current { color: var(--acid); font-size: 13px; }
+.updates-hero h1 { max-width: 18ch; }
+.updates-jump { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 22px; }
+.updates-jump a { color: var(--acid); font: 12px var(--mono); letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+.updates-jump a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.updates-groups { display: flex; flex-direction: column; gap: 48px; padding-bottom: 96px; }
+.updates-group { scroll-margin-top: 28px; }
+.updates-group-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid rgba(242,241,235,.12); }
+.updates-index { color: var(--acid); font: 11px var(--mono); letter-spacing: .12em; }
+.updates-group-head h2 { margin: 0; color: var(--paper); font: 600 clamp(28px, 3vw, 42px)/1 var(--display); letter-spacing: -.04em; }
+.updates-list { display: flex; flex-direction: column; gap: 14px; }
+.updates-card { scroll-margin-top: 28px; padding: 22px 24px; border: 1px solid rgba(242,241,235,.12); background: #101012; }
+.updates-card:target { border-color: rgba(227,197,101,.55); background: rgba(227,197,101,.06); }
+.updates-card-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; }
+.updates-card h3 { margin: 0; color: var(--paper); font: 600 clamp(22px, 2.4vw, 28px)/1.25 var(--display); letter-spacing: -.03em; }
+.updates-card p { margin: 12px 0 0; max-width: 760px; color: #aaa8a2; font-size: 16px; line-height: 1.75; }
+.updates-detail { color: #b4b1a9; }
+.updates-date { color: var(--muted); font: 12px var(--mono); letter-spacing: .04em; }
+@media (max-width: 720px) {
+  .updates-ticker__label { letter-spacing: .08em; }
+  .updates-hero { padding-top: 70px; }
+  .updates-groups { gap: 36px; padding-bottom: 72px; }
+  .updates-card { padding: 16px; }
+  .updates-card p { font-size: 15px; }
+}
