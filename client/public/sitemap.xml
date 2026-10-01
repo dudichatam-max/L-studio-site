@@ -1,43 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://l-studio.studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://l-studio.studio/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://l-studio.studio/?lang=he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://l-studio.studio/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://l-studio.studio/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://l-studio.studio/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://l-studio.studio/privacy</loc>
+    <loc>https://l-studio.studio/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://l-studio.studio/privacy/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://l-studio.studio/privacy/?lang=he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://l-studio.studio/privacy/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://l-studio.studio/privacy/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://l-studio.studio/privacy/" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://l-studio.studio/terms</loc>
+    <loc>https://l-studio.studio/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://l-studio.studio/terms/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://l-studio.studio/terms/?lang=he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://l-studio.studio/terms/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://l-studio.studio/terms/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://l-studio.studio/terms/" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://l-studio.studio/updates</loc>
+    <loc>https://l-studio.studio/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://l-studio.studio/updates/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://l-studio.studio/updates/?lang=he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://l-studio.studio/updates/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://l-studio.studio/updates/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://l-studio.studio/updates/" />
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://l-studio.studio/guide</loc>
+    <loc>https://l-studio.studio/guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://l-studio.studio/guide/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://l-studio.studio/guide/?lang=he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://l-studio.studio/guide/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://l-studio.studio/guide/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://l-studio.studio/guide/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://l-studio.studio/factory-64</loc>
+    <loc>https://l-studio.studio/factory-64/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://l-studio.studio/factory-64/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://l-studio.studio/factory-64/?lang=he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://l-studio.studio/factory-64/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://l-studio.studio/factory-64/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://l-studio.studio/factory-64/" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://l-studio.studio/buy</loc>
+    <loc>https://l-studio.studio/buy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://l-studio.studio/buy/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://l-studio.studio/buy/?lang=he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://l-studio.studio/buy/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://l-studio.studio/buy/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://l-studio.studio/buy/" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://l-studio.studio/factory-64/drums</loc>
+    <loc>https://l-studio.studio/factory-64/drums/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://l-studio.studio/factory-64/drums/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://l-studio.studio/factory-64/drums/?lang=he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://l-studio.studio/factory-64/drums/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://l-studio.studio/factory-64/drums/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://l-studio.studio/factory-64/drums/" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://l-studio.studio/exclusive/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://l-studio.studio/exclusive/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://l-studio.studio/exclusive/?lang=he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://l-studio.studio/exclusive/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://l-studio.studio/exclusive/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://l-studio.studio/exclusive/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

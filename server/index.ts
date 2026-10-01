@@ -1,7 +1,9 @@
 import express from "express";
 import { createServer } from "http";
+import fs from "node:fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { applySeoToHtml, languageFromSearch, seoDocument } from "../shared/seo";
 import { attachCommerceApi, prepareCommerce } from "./commerce";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -30,6 +32,24 @@ async function startServer() {
     next();
   });
 
+  const indexTemplatePath = path.join(staticPath, "index.html");
+  let indexTemplate = "";
+  const sendSpa = (
+    res: express.Response,
+    pathname: string,
+    originalUrl: string
+  ) => {
+    if (!indexTemplate)
+      indexTemplate = fs.readFileSync(indexTemplatePath, "utf8");
+    const language = languageFromSearch(originalUrl) ?? "en";
+    const html = applySeoToHtml(indexTemplate, seoDocument(pathname, language));
+    res.status(200).type("html").send(html);
+  };
+
+  app.get(["/", "/index.html"], (req, res) => {
+    sendSpa(res, "/", req.originalUrl);
+  });
+
   app.use(express.static(staticPath));
 
   // Client routes stay on the SPA. API misses already returned JSON above.
@@ -38,7 +58,7 @@ async function startServer() {
       res.status(404).json({ error: "not_found" });
       return;
     }
-    res.sendFile(path.join(staticPath, "index.html"));
+    sendSpa(res, req.path, req.originalUrl);
   });
 
   const port = Number(process.env.PORT) || 3000;
@@ -47,7 +67,7 @@ async function startServer() {
   });
 }
 
-startServer().catch((error) => {
+startServer().catch(error => {
   console.error(error);
   process.exit(1);
 });
