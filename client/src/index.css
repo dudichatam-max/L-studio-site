@@ -789,10 +789,12 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
 
 .updates-ticker { position: relative; z-index: 27; display: flex; align-items: stretch; min-height: 44px; overflow: hidden; border-bottom: 1px solid rgba(242,241,235,.12); background: #0c0c0e; }
 .updates-ticker__label { flex: 0 0 auto; display: flex; align-items: center; padding-inline: 18px; border-inline-end: 1px solid rgba(227,197,101,.35); color: var(--acid); background: #0e0e10; font: 10px var(--mono); letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; }
-.updates-ticker__viewport { flex: 1 1 auto; min-width: 0; overflow: hidden; }
-.updates-ticker__track { display: flex; width: max-content; direction: ltr; }
-.updates-ticker__group { display: flex; flex: 0 0 auto; align-items: center; animation: updates-marquee-left var(--updates-ticker-duration, 20s) linear infinite; will-change: transform; }
-.updates-ticker[dir="ltr"] .updates-ticker__group { animation-name: updates-marquee-right; }
+/* Physical LTR on the scroller. An RTL viewport pins the overflowing track to the right, so a leftward loop walks the copies out of view and the strip goes blank. */
+.updates-ticker__viewport { flex: 1 1 auto; min-width: 0; overflow: hidden; direction: ltr; }
+.updates-ticker__track { display: flex; flex-wrap: nowrap; width: max-content; min-width: max-content; direction: ltr; }
+.updates-ticker--ready .updates-ticker__track { animation: updates-marquee-to-left var(--updates-ticker-duration, 20s) linear infinite; will-change: transform; }
+.updates-ticker--ready[dir="ltr"] .updates-ticker__track { animation-name: updates-marquee-to-right; }
+.updates-ticker__group { display: flex; flex: 0 0 auto; align-items: center; min-width: max-content; }
 .updates-ticker__slot { display: inline-flex; align-items: center; }
 .updates-ticker__item { display: inline-flex; align-items: center; gap: 10px; padding: 10px 2px; color: #c8c6be; font-size: 13px; font-weight: 600; line-height: 1.3; text-decoration: none; white-space: nowrap; }
 .updates-ticker[dir="rtl"] .updates-ticker__item { direction: rtl; }
@@ -800,12 +802,13 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
 .updates-ticker__item:focus-visible { outline: 2px solid var(--acid); outline-offset: 2px; }
 .updates-ticker__status { color: var(--acid); font: 10px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .updates-ticker__sep { padding-inline: 16px; color: rgba(242,241,235,.28); }
-.updates-ticker:focus-within .updates-ticker__group { animation-play-state: paused; }
-@keyframes updates-marquee-left { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-100%, 0, 0); } }
-@keyframes updates-marquee-right { from { transform: translate3d(-100%, 0, 0); } to { transform: translate3d(0, 0, 0); } }
+.updates-ticker:focus-within .updates-ticker__track { animation-play-state: paused; }
+@keyframes updates-marquee-to-left { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(calc(-1 * var(--updates-ticker-shift, 0px)), 0, 0); } }
+@keyframes updates-marquee-to-right { from { transform: translate3d(calc(-1 * var(--updates-ticker-shift, 0px)), 0, 0); } to { transform: translate3d(0, 0, 0); } }
 @media (prefers-reduced-motion: reduce) {
-  .updates-ticker__group { animation: none !important; transform: none !important; will-change: auto; }
-  .updates-ticker__track { direction: inherit; flex-wrap: wrap; width: auto; }
+  .updates-ticker__viewport { direction: inherit; }
+  .updates-ticker__track { animation: none !important; transform: none !important; will-change: auto; direction: inherit; flex-wrap: wrap; width: auto; min-width: 0; }
+  .updates-ticker__group { min-width: 0; }
   .updates-ticker__group--clone { display: none !important; }
   .updates-ticker,
   .updates-ticker__viewport { overflow: visible; height: auto; }
