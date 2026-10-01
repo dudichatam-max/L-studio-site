@@ -1056,16 +1056,16 @@
       "exclusive": {
         "navLabel": "בלעדי",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "תשע חבילות.",
+        "title": "אחת עשרה חבילות.",
         "titleEm": "בקרוב.",
-        "intro": "קו נפרד משמונה ערכות התופים של Factory. תשע חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות.",
+        "intro": "קו נפרד משמונה ערכות התופים של Factory. אחת עשרה חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות.",
         "imageAlt": "כרזת חבילת תופים בלעדית",
         "comingSoon": "בקרוב",
         "stylesHeading": "סגנונות",
         "demoLabel": "סרטון הדגמה",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "תשע חבילות מיוחדות. בקרוב.",
-        "homeBody": "תשע חבילות תופים בלעדיות יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.",
+        "homeTitle": "אחת עשרה חבילות מיוחדות. בקרוב.",
+        "homeBody": "אחת עשרה חבילות תופים בלעדיות יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.",
         "homeCta": "לעמוד הבלעדי",
         "homeImageAlt": "מניפה של תשע כרזות לחבילות תופים בלעדיות של L Studio",
         "packs": [
@@ -1212,8 +1212,41 @@
               "Riddim Wood",
               "Scrap Metal"
             ]
+          },
+          {
+            "id": "ithaca-road",
+            "name": "Ithaca Road",
+            "tagline": "HARBOR. SIEGE. RETURN.",
+            "meta": "68–112 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Harbor Longing 82",
+              "Fleet Rising 96",
+              "Bronze Siege 112",
+              "Cave Thunder 74",
+              "Giant Shore 80",
+              "Under River 68",
+              "Lure Thread 88",
+              "Threshold Return 92"
+            ]
+          },
+          {
+            "id": "ithaca-remains",
+            "name": "Ithaca Remains",
+            "tagline": "REMAINS. HOLLOW. PEAK.",
+            "meta": "140–143 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Harbor Deep 140",
+              "Cedar Oar 141",
+              "Bronze Coil 142",
+              "Cave Hollow 140",
+              "Giant Smash 143",
+              "River Acid 141",
+              "Glass Siren 142",
+              "Threshold Peak 143"
+            ]
           }
-        ]
+        ],
+        "downloadLabel": "הורדה"
       },
       "pro": {
         "nav": "Pro",
@@ -2376,16 +2409,16 @@
       "exclusive": {
         "navLabel": "Exclusive",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "Nine packs.",
+        "title": "Eleven packs.",
         "titleEm": "Coming soon.",
-        "intro": "A separate line from the eight Factory Drums kits. Nine upcoming drum packs, each with 8 channels and 8 styles.",
+        "intro": "A separate line from the eight Factory Drums kits. Eleven upcoming drum packs, each with 8 channels and 8 styles.",
         "imageAlt": "Exclusive drum pack poster",
         "comingSoon": "Coming soon",
         "stylesHeading": "Styles",
         "demoLabel": "Demo video",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "Nine special packs. Coming soon.",
-        "homeBody": "Nine Exclusive drum packs sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.",
+        "homeTitle": "Eleven special packs. Coming soon.",
+        "homeBody": "Eleven Exclusive drum packs sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.",
         "homeCta": "See Exclusive",
         "homeImageAlt": "Fan of nine L Studio Exclusive drum pack posters",
         "packs": [
@@ -2532,8 +2565,41 @@
               "Riddim Wood",
               "Scrap Metal"
             ]
+          },
+          {
+            "id": "ithaca-road",
+            "name": "Ithaca Road",
+            "tagline": "HARBOR. SIEGE. RETURN.",
+            "meta": "68–112 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Harbor Longing 82",
+              "Fleet Rising 96",
+              "Bronze Siege 112",
+              "Cave Thunder 74",
+              "Giant Shore 80",
+              "Under River 68",
+              "Lure Thread 88",
+              "Threshold Return 92"
+            ]
+          },
+          {
+            "id": "ithaca-remains",
+            "name": "Ithaca Remains",
+            "tagline": "REMAINS. HOLLOW. PEAK.",
+            "meta": "140–143 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Harbor Deep 140",
+              "Cedar Oar 141",
+              "Bronze Coil 142",
+              "Cave Hollow 140",
+              "Giant Smash 143",
+              "River Acid 141",
+              "Glass Siren 142",
+              "Threshold Peak 143"
+            ]
           }
-        ]
+        ],
+        "downloadLabel": "Download"
       },
       "pro": {
         "nav": "Pro",
@@ -3696,16 +3762,16 @@
       "exclusive": {
         "navLabel": "Эксклюзив",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "Девять паков.",
+        "title": "Одиннадцать паков.",
         "titleEm": "Скоро.",
-        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Девять ударных паков на подходе: в каждом 8 каналов и 8 стилей.",
+        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Одиннадцать ударных паков на подходе: в каждом 8 каналов и 8 стилей.",
         "imageAlt": "Постер эксклюзивного ударного пака",
         "comingSoon": "Скоро",
         "stylesHeading": "Стили",
         "demoLabel": "Демо-видео",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "Девять особых паков. Скоро.",
-        "homeBody": "Девять эксклюзивных ударных паков стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.",
+        "homeTitle": "Одиннадцать особых паков. Скоро.",
+        "homeBody": "Одиннадцать эксклюзивных ударных паков стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.",
         "homeCta": "Смотреть эксклюзив",
         "homeImageAlt": "Веер из девяти постеров эксклюзивных ударных паков L Studio",
         "packs": [
@@ -3852,8 +3918,41 @@
               "Riddim Wood",
               "Scrap Metal"
             ]
+          },
+          {
+            "id": "ithaca-road",
+            "name": "Ithaca Road",
+            "tagline": "HARBOR. SIEGE. RETURN.",
+            "meta": "68–112 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Harbor Longing 82",
+              "Fleet Rising 96",
+              "Bronze Siege 112",
+              "Cave Thunder 74",
+              "Giant Shore 80",
+              "Under River 68",
+              "Lure Thread 88",
+              "Threshold Return 92"
+            ]
+          },
+          {
+            "id": "ithaca-remains",
+            "name": "Ithaca Remains",
+            "tagline": "REMAINS. HOLLOW. PEAK.",
+            "meta": "140–143 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Harbor Deep 140",
+              "Cedar Oar 141",
+              "Bronze Coil 142",
+              "Cave Hollow 140",
+              "Giant Smash 143",
+              "River Acid 141",
+              "Glass Siren 142",
+              "Threshold Peak 143"
+            ]
           }
-        ]
+        ],
+        "downloadLabel": "Скачать"
       },
       "pro": {
         "nav": "Pro",
@@ -5016,16 +5115,16 @@
       "exclusive": {
         "navLabel": "حصري",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
-        "title": "تسع حزم.",
+        "title": "إحدى عشرة حزمة.",
         "titleEm": "قريباً.",
-        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. تسع حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب.",
+        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. إحدى عشرة حزمة طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب.",
         "imageAlt": "ملصق حزمة طبول حصرية",
         "comingSoon": "قريباً",
         "stylesHeading": "الأساليب",
         "demoLabel": "فيديو العرض",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "تسع حزم خاصة. قريباً.",
-        "homeBody": "تسع حزم طبول حصرية خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.",
+        "homeTitle": "إحدى عشرة حزمة خاصة. قريباً.",
+        "homeBody": "إحدى عشرة حزمة طبول حصرية خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.",
         "homeCta": "شاهد الحصري",
         "homeImageAlt": "مروحة من تسعة ملصقات لحزم طبول حصرية من L Studio",
         "packs": [
@@ -5172,8 +5271,41 @@
               "Riddim Wood",
               "Scrap Metal"
             ]
+          },
+          {
+            "id": "ithaca-road",
+            "name": "Ithaca Road",
+            "tagline": "HARBOR. SIEGE. RETURN.",
+            "meta": "68–112 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Harbor Longing 82",
+              "Fleet Rising 96",
+              "Bronze Siege 112",
+              "Cave Thunder 74",
+              "Giant Shore 80",
+              "Under River 68",
+              "Lure Thread 88",
+              "Threshold Return 92"
+            ]
+          },
+          {
+            "id": "ithaca-remains",
+            "name": "Ithaca Remains",
+            "tagline": "REMAINS. HOLLOW. PEAK.",
+            "meta": "140–143 BPM · 8 CHANNELS · 8 STYLES",
+            "styles": [
+              "Harbor Deep 140",
+              "Cedar Oar 141",
+              "Bronze Coil 142",
+              "Cave Hollow 140",
+              "Giant Smash 143",
+              "River Acid 141",
+              "Glass Siren 142",
+              "Threshold Peak 143"
+            ]
           }
-        ]
+        ],
+        "downloadLabel": "تحميل"
       },
       "pro": {
         "nav": "Pro",
