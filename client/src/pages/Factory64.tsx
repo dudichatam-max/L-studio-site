@@ -6,6 +6,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
+import { updatesNavLabel, updatesNavLabelFrom } from "@/lib/updatesCopy";
 
 type FactoryPreset = { name: string; blurb: string };
 type FactoryPage = {
@@ -141,6 +142,7 @@ export default function Factory64() {
   const [text, setText] = useState<Factory64Copy>(() => emptyCopy(language));
   const [drumsLabel, setDrumsLabel] = useState(drumsNavFallback[language]);
   const [exclusiveLabel, setExclusiveLabel] = useState(exclusiveNavLabel[language]);
+  const [updatesLabel, setUpdatesLabel] = useState(updatesNavLabel[language]);
 
   // Always enter Factory 64 at the top (SPA may retain Home scroll).
   useEffect(() => {
@@ -154,13 +156,16 @@ export default function Factory64() {
     setText(emptyCopy(language));
     setDrumsLabel(drumsNavFallback[language]);
     setExclusiveLabel(exclusiveNavLabel[language]);
+    setUpdatesLabel(updatesNavLabel[language]);
     fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         const block = data?.languages?.[language]?.factory64 as Factory64Copy | undefined;
         const drumsNav = data?.languages?.[language]?.factoryDrums?.navLabel;
         const exclusiveNav = data?.languages?.[language]?.exclusive?.navLabel ?? data?.languages?.[language]?.nav?.exclusive;
-        if (cancelled || !block) return;
+        if (cancelled) return;
+        setUpdatesLabel(updatesNavLabelFrom(language, data?.languages?.[language]));
+        if (!block) return;
         setText({
           ...emptyCopy(language),
           ...block,
@@ -193,6 +198,7 @@ export default function Factory64() {
             <Link href="/terms">{text.terms}</Link>
             <span className="nav-current">{text.navLabel}</span>
             <Link href="/factory-64/drums">{drumsLabel}</Link>
+            <Link href="/updates">{updatesLabel}</Link>
             <Link className="nav-exclusive" href="/exclusive">{exclusiveLabel}</Link>
           </nav>
           <div className="header-actions">
@@ -341,6 +347,7 @@ export default function Factory64() {
             <Link href="/terms">{text.terms}</Link>
             <span>{text.navLabel}</span>
             <Link href="/factory-64/drums">{drumsLabel}</Link>
+            <Link href="/updates">{updatesLabel}</Link>
             <Link className="nav-exclusive" href="/exclusive">{exclusiveLabel}</Link>
           </div>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>

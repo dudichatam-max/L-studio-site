@@ -7,6 +7,8 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
+import UpdatesTicker from "@/components/UpdatesTicker";
+import { mergeUpdates, updatesNavLabel } from "@/lib/updatesCopy";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero-v3.png`;
@@ -88,7 +90,7 @@ const featureData = {
 } satisfies Record<Language, Array<{ id: string; label: string; title: string; description: string; icon: typeof SlidersHorizontal; meta: string; image?: string; video?: string }>>;
 
 // Fallback copy, used only if content.json fails to load.
-const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive" };
+const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive", updates: "Updates" };
 const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", offer: "The first 44 get L Studio Pro free, with no limits.", offerDetail: "Full Pro, with no demo limits, before the official paid launch.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "about 24 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const heroOfferDefaults = {
   he: {
@@ -571,6 +573,7 @@ export default function Home() {
   const justStart = copy.justStart ?? justStartDefault;
   const factory = copy.factoryPack ?? factoryDefault;
   const exclusive = { ...exclusiveDefaults[language], ...(copy.exclusive ?? {}) };
+  const updates = mergeUpdates(language, copy.updates);
   const vision = copy.vision ?? visionDefault;
   const faq = copy.faq ?? faqDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
@@ -598,6 +601,7 @@ export default function Home() {
             <Link href="/guide">{nav.guide ?? "User guide"}</Link>
             <Link href="/privacy">{nav.privacy}</Link>
             <Link href="/terms">{nav.terms ?? "Terms"}</Link>
+            <Link href="/updates">{nav.updates ?? updates.navLabel ?? updatesNavLabel[language]}</Link>
             <Link className="nav-exclusive" href="/exclusive">{nav.exclusive ?? exclusiveNavLabel[language]}</Link>
           </nav>
           <div className="header-actions">
@@ -617,6 +621,7 @@ export default function Home() {
             <Link href="/guide" onClick={() => setMobileOpen(false)}>{nav.guide ?? "User guide"}</Link>
             <Link href="/privacy" onClick={() => setMobileOpen(false)}>{nav.privacy}</Link>
             <Link href="/terms" onClick={() => setMobileOpen(false)}>{nav.terms ?? "Terms"}</Link>
+            <Link href="/updates" onClick={() => setMobileOpen(false)}>{nav.updates ?? updates.navLabel ?? updatesNavLabel[language]}</Link>
             <Link className="nav-exclusive" href="/exclusive" onClick={() => setMobileOpen(false)}>{nav.exclusive ?? exclusiveNavLabel[language]}</Link>
           </nav>
         )}
@@ -629,6 +634,8 @@ export default function Home() {
         cta={tester.spotsCta}
         kicker={tester.kicker}
       />
+
+      <UpdatesTicker copy={updates} isRtl={isRtl} />
 
       <main>
         {/* 1. Hero */}
@@ -915,7 +922,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
-          <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/guide">{nav.guide ?? "User guide"}</Link><Link className="nav-exclusive" href="/exclusive">{nav.exclusive ?? exclusiveNavLabel[language]}</Link><Link href="/privacy">{nav.privacy}</Link><Link href="/terms">{nav.terms ?? "Terms"}</Link></div>
+          <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/guide">{nav.guide ?? "User guide"}</Link><Link href="/updates">{nav.updates ?? updates.navLabel ?? updatesNavLabel[language]}</Link><Link className="nav-exclusive" href="/exclusive">{nav.exclusive ?? exclusiveNavLabel[language]}</Link><Link href="/privacy">{nav.privacy}</Link><Link href="/terms">{nav.terms ?? "Terms"}</Link></div>
           <span className="footer-tagline">{footer.tagline}</span>
           <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>
         </div>
