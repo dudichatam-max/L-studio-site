@@ -26,6 +26,7 @@ type ExclusiveCopy = {
   comingSoon: string;
   stylesHeading: string;
   demoLabel: string;
+  downloadLabel: string;
   packs: ExclusivePack[];
 };
 
@@ -52,6 +53,14 @@ const PACK_STEM: Record<string, string> = {
   "lofi-desert": "15-lofi-desert",
   "middle-tech": "16-middle-tech",
   "organic-steps": "17-organic-steps",
+  "ithaca-road": "18-ithaca-road",
+  "ithaca-remains": "19-ithaca-remains",
+};
+
+/** GitHub Releases ZIPs. Packs absent from this map stay Coming soon, with no download. */
+const PACK_DOWNLOADS: Record<string, string> = {
+  "ithaca-road": "https://github.com/dudichatam-max/L-studio-drum-kits/releases/download/drum-kit-ithaca-road-v1/Ithaca-Road.zip",
+  "ithaca-remains": "https://github.com/dudichatam-max/L-studio-drum-kits/releases/download/drum-kit-ithaca-remains-v4-empty-grids/Ithaca-Remains.zip",
 };
 
 /** YouTube Shorts for a single style. Style names stay English in every language. */
@@ -133,20 +142,34 @@ const FALLBACK_PACKS: ExclusivePack[] = [
     meta: "140–148 BPM · 8 CHANNELS · 8 STYLES",
     styles: ["Arena Wobble", "Garage Riddim", "Club Laser", "Warehouse Smash", "Organic Tear", "Hollow Barrel", "Riddim Wood", "Scrap Metal"],
   },
+  {
+    id: "ithaca-road",
+    name: "Ithaca Road",
+    tagline: "HARBOR. BRONZE. RETURN.",
+    meta: "68–112 BPM · 8 CHANNELS · 8 STYLES",
+    styles: ["Harbor Longing 82", "Fleet Rising 96", "Bronze Siege 112", "Cave Thunder 74", "Giant Shore 80", "Under River 68", "Lure Thread 88", "Threshold Return 92"],
+  },
+  {
+    id: "ithaca-remains",
+    name: "Ithaca Remains",
+    tagline: "ROOT. GLASS. REMAIN.",
+    meta: "140–143 BPM · 8 CHANNELS · 8 STYLES",
+    styles: ["Harbor Deep 140", "Cedar Oar 141", "Bronze Coil 142", "Cave Hollow 140", "Giant Smash 143", "River Acid 141", "Glass Siren 142", "Threshold Peak 143"],
+  },
 ];
 
 const emptyExclusive = (language: Language): ExclusiveCopy => ({
   eyebrow: "L-STUDIO / EXCLUSIVE",
-  title: language === "he" ? "תשע חבילות." : language === "ru" ? "Девять паков." : language === "ar" ? "تسع حزم." : "Nine packs.",
+  title: language === "he" ? "אחת עשרה חבילות." : language === "ru" ? "Одиннадцать паков." : language === "ar" ? "إحدى عشرة حزمة." : "Eleven packs.",
   titleEm: language === "he" ? "בקרוב." : language === "ru" ? "Скоро." : language === "ar" ? "قريباً." : "Coming soon.",
   intro:
     language === "he"
-      ? "קו נפרד משמונה ערכות התופים של Factory. תשע חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות."
+      ? "קו נפרד משמונה ערכות התופים של Factory. אחת עשרה חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות."
       : language === "ru"
-        ? "Отдельная линейка, не восемь наборов Factory Drums. Девять ударных паков на подходе: в каждом 8 каналов и 8 стилей."
+        ? "Отдельная линейка, не восемь наборов Factory Drums. Одиннадцать ударных паков на подходе: в каждом 8 каналов и 8 стилей."
         : language === "ar"
-          ? "خط منفصل عن حزم الطبول الثماني في Factory. تسع حزم طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب."
-          : "A separate line from the eight Factory Drums kits. Nine upcoming drum packs, each with 8 channels and 8 styles.",
+          ? "خط منفصل عن حزم الطبول الثماني في Factory. إحدى عشرة حزمة طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب."
+          : "A separate line from the eight Factory Drums kits. Eleven upcoming drum packs, each with 8 channels and 8 styles.",
   navLabel: exclusiveNavLabel[language],
   imageAlt:
     language === "he"
@@ -159,6 +182,7 @@ const emptyExclusive = (language: Language): ExclusiveCopy => ({
   comingSoon: language === "he" ? "בקרוב" : language === "ru" ? "Скоро" : language === "ar" ? "قريباً" : "Coming soon",
   stylesHeading: language === "he" ? "סגנונות" : language === "ru" ? "Стили" : language === "ar" ? "الأساليب" : "Styles",
   demoLabel: language === "he" ? "סרטון הדגמה" : language === "ru" ? "Демо-видео" : language === "ar" ? "فيديو العرض" : "Demo video",
+  downloadLabel: language === "he" ? "הורדה" : language === "ru" ? "Скачать" : language === "ar" ? "تحميل" : "Download",
   packs: FALLBACK_PACKS,
 });
 
@@ -347,6 +371,7 @@ export default function Exclusive() {
         <section className="container exclusive-grid" dir={dir} aria-label={text.navLabel}>
           {text.packs.map((pack, index) => {
             const media = packMedia(pack.id);
+            const downloadUrl = PACK_DOWNLOADS[pack.id];
             return (
               <article className="exclusive-card" id={pack.id} key={pack.id}>
                 {media ? (
@@ -367,7 +392,7 @@ export default function Exclusive() {
                 <div className="exclusive-card-body">
                   <div className="exclusive-card-head">
                     <h2 dir="ltr">{pack.name}</h2>
-                    <span className="exclusive-badge">{text.comingSoon}</span>
+                    {downloadUrl ? null : <span className="exclusive-badge">{text.comingSoon}</span>}
                   </div>
                   <p className="exclusive-tagline" dir="ltr">
                     {pack.tagline}
@@ -377,9 +402,15 @@ export default function Exclusive() {
                   </p>
                   <h3>{text.stylesHeading}</h3>
                   <PackStyles packId={pack.id} styles={pack.styles} demoLabel={text.demoLabel} />
-                  <span className="exclusive-status" role="status">
-                    {text.comingSoon}
-                  </span>
+                  {downloadUrl ? (
+                    <a className="button button--primary exclusive-download" href={downloadUrl}>
+                      {text.downloadLabel}
+                    </a>
+                  ) : (
+                    <span className="exclusive-status" role="status">
+                      {text.comingSoon}
+                    </span>
+                  )}
                 </div>
               </article>
             );

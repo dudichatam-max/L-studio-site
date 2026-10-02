@@ -185,22 +185,22 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Exclusive | L Studio",
       description:
-        "Nine Exclusive drum packs for L Studio, outside the Factory Drums set. Not released yet.",
+        "Eleven Exclusive drum packs for L Studio, outside the Factory Drums set. Not released yet.",
     },
     he: {
       title: "בלעדי | L Studio",
       description:
-        "תשע חבילות תופים בלעדיות ל-L Studio, מחוץ לערכות Factory Drums. עוד לא הושקו.",
+        "אחת עשרה חבילות תופים בלעדיות ל-L Studio, מחוץ לערכות Factory Drums. עוד לא הושקו.",
     },
     ru: {
       title: "Эксклюзив | L Studio",
       description:
-        "Девять эксклюзивных ударных паков L Studio вне набора Factory Drums. Релиза ещё нет.",
+        "Одиннадцать эксклюзивных ударных паков L Studio вне набора Factory Drums. Релиза ещё нет.",
     },
     ar: {
       title: "حصري | L Studio",
       description:
-        "تسع حزم طبول حصرية لـ L Studio خارج مجموعة Factory Drums. لم تُطرح بعد.",
+        "إحدى عشرة حزمة طبول حصرية لـ L Studio خارج مجموعة Factory Drums. لم تُطرح بعد.",
     },
   },
   updates: {
