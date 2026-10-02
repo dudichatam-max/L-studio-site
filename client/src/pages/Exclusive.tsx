@@ -26,7 +26,6 @@ type ExclusiveCopy = {
   comingSoon: string;
   stylesHeading: string;
   demoLabel: string;
-  downloadLabel: string;
   packs: ExclusivePack[];
 };
 
@@ -55,12 +54,6 @@ const PACK_STEM: Record<string, string> = {
   "organic-steps": "17-organic-steps",
   "ithaca-road": "18-ithaca-road",
   "ithaca-remains": "19-ithaca-remains",
-};
-
-/** GitHub Releases ZIPs. Packs absent from this map stay Coming soon, with no download. */
-const PACK_DOWNLOADS: Record<string, string> = {
-  "ithaca-road": "https://github.com/dudichatam-max/L-studio-drum-kits/releases/download/drum-kit-ithaca-road-v1/Ithaca-Road.zip",
-  "ithaca-remains": "https://github.com/dudichatam-max/L-studio-drum-kits/releases/download/drum-kit-ithaca-remains-v4-empty-grids/Ithaca-Remains.zip",
 };
 
 /** YouTube Shorts for a single style. Style names stay English in every language. */
@@ -182,7 +175,6 @@ const emptyExclusive = (language: Language): ExclusiveCopy => ({
   comingSoon: language === "he" ? "בקרוב" : language === "ru" ? "Скоро" : language === "ar" ? "قريباً" : "Coming soon",
   stylesHeading: language === "he" ? "סגנונות" : language === "ru" ? "Стили" : language === "ar" ? "الأساليب" : "Styles",
   demoLabel: language === "he" ? "סרטון הדגמה" : language === "ru" ? "Демо-видео" : language === "ar" ? "فيديو العرض" : "Demo video",
-  downloadLabel: language === "he" ? "הורדה" : language === "ru" ? "Скачать" : language === "ar" ? "تحميل" : "Download",
   packs: FALLBACK_PACKS,
 });
 
@@ -371,7 +363,6 @@ export default function Exclusive() {
         <section className="container exclusive-grid" dir={dir} aria-label={text.navLabel}>
           {text.packs.map((pack, index) => {
             const media = packMedia(pack.id);
-            const downloadUrl = PACK_DOWNLOADS[pack.id];
             return (
               <article className="exclusive-card" id={pack.id} key={pack.id}>
                 {media ? (
@@ -392,7 +383,7 @@ export default function Exclusive() {
                 <div className="exclusive-card-body">
                   <div className="exclusive-card-head">
                     <h2 dir="ltr">{pack.name}</h2>
-                    {downloadUrl ? null : <span className="exclusive-badge">{text.comingSoon}</span>}
+                    <span className="exclusive-badge">{text.comingSoon}</span>
                   </div>
                   <p className="exclusive-tagline" dir="ltr">
                     {pack.tagline}
@@ -402,15 +393,9 @@ export default function Exclusive() {
                   </p>
                   <h3>{text.stylesHeading}</h3>
                   <PackStyles packId={pack.id} styles={pack.styles} demoLabel={text.demoLabel} />
-                  {downloadUrl ? (
-                    <a className="button button--primary exclusive-download" href={downloadUrl}>
-                      {text.downloadLabel}
-                    </a>
-                  ) : (
-                    <span className="exclusive-status" role="status">
-                      {text.comingSoon}
-                    </span>
-                  )}
+                  <span className="exclusive-status" role="status">
+                    {text.comingSoon}
+                  </span>
                 </div>
               </article>
             );

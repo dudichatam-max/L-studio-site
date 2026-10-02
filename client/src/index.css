@@ -614,7 +614,6 @@ html[dir="rtl"] .factory-drum-tech { text-align: right; }
 .exclusive-meta { margin: 0; color: var(--acid); font: 12px/1.45 var(--mono); letter-spacing: .05em; }
 .exclusive-badge { display: inline-flex; align-items: center; min-height: 28px; padding: 0 10px; border: 1px solid rgba(227,197,101,.5); border-radius: 999px; color: var(--acid); background: rgba(227,197,101,.08); font: 700 11px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .exclusive-status { display: inline-flex; align-items: center; justify-content: center; width: fit-content; min-height: 46px; padding: 0 19px; border: 1px solid rgba(227,197,101,.5); border-radius: 999px; color: var(--acid); background: rgba(227,197,101,.08); font-size: 14px; font-weight: 700; letter-spacing: .02em; cursor: default; }
-.exclusive-download { width: fit-content; align-self: start; }
 .exclusive-styles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
 .exclusive-styles li { padding: 12px 12px; border: 1px solid rgba(242,241,235,.12); border-inline-start: 2px solid var(--acid); background: rgba(242,241,235,.03); color: var(--paper); font: 600 12px/1.35 var(--mono); letter-spacing: .04em; }
 .exclusive-styles li:has(.exclusive-style-toggle) { padding: 0; }
