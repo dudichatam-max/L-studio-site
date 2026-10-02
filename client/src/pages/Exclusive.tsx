@@ -145,14 +145,14 @@ const FALLBACK_PACKS: ExclusivePack[] = [
   {
     id: "ithaca-road",
     name: "Ithaca Road",
-    tagline: "HARBOR. SIEGE. RETURN.",
+    tagline: "HARBOR. BRONZE. RETURN.",
     meta: "68–112 BPM · 8 CHANNELS · 8 STYLES",
     styles: ["Harbor Longing 82", "Fleet Rising 96", "Bronze Siege 112", "Cave Thunder 74", "Giant Shore 80", "Under River 68", "Lure Thread 88", "Threshold Return 92"],
   },
   {
     id: "ithaca-remains",
     name: "Ithaca Remains",
-    tagline: "REMAINS. HOLLOW. PEAK.",
+    tagline: "ROOT. GLASS. REMAIN.",
     meta: "140–143 BPM · 8 CHANNELS · 8 STYLES",
     styles: ["Harbor Deep 140", "Cedar Oar 141", "Bronze Coil 142", "Cave Hollow 140", "Giant Smash 143", "River Acid 141", "Glass Siren 142", "Threshold Peak 143"],
   },
