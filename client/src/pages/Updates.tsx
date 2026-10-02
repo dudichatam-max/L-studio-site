@@ -6,7 +6,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
-import { groupUpdates, mergeUpdates, type UpdatesCopy } from "@/lib/updatesCopy";
+import { groupUpdates, mergeUpdates, updateScreenshots, type UpdatesCopy } from "@/lib/updatesCopy";
 
 type ChromeCopy = {
   back: string;
@@ -20,6 +20,14 @@ type ChromeCopy = {
 };
 
 type GuideChrome = Partial<ChromeCopy>;
+
+function assetUrl(path: string) {
+  return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+}
+
+function webpUrl(path: string) {
+  return assetUrl(path.replace(/\.jpe?g$/i, ".webp"));
+}
 
 const emptyChrome = (language: Language): ChromeCopy => ({
   back: language === "he" ? "חזרה לאתר" : language === "ru" ? "Вернуться на сайт" : language === "ar" ? "العودة إلى الموقع" : "Back to site",
@@ -120,17 +128,34 @@ export default function Updates() {
                 <h2 id={`updates-heading-${group.status}`}>{group.title}</h2>
               </header>
               <div className="updates-list">
-                {group.items.map((item) => (
-                  <article className="updates-card" id={item.id} key={item.id}>
-                    <div className="updates-card-head">
-                      <h3>{item.title}</h3>
-                      <span className="exclusive-badge">{copy.statusLabels?.[item.status] ?? group.title}</span>
-                    </div>
-                    <p>{item.summary}</p>
-                    {item.detail ? <p className="updates-detail">{item.detail}</p> : null}
-                    {item.dateLabel ? <p className="updates-date">{item.dateLabel}</p> : null}
-                  </article>
-                ))}
+                {group.items.map((item) => {
+                  const shots = updateScreenshots(item);
+                  return (
+                    <article className={shots.length ? "updates-card updates-card--media" : "updates-card"} id={item.id} key={item.id}>
+                      <div className="updates-card-copy">
+                        <div className="updates-card-head">
+                          <h3>{item.title}</h3>
+                          <span className="exclusive-badge">{copy.statusLabels?.[item.status] ?? group.title}</span>
+                        </div>
+                        <p>{item.summary}</p>
+                        {item.detail ? <p className="updates-detail">{item.detail}</p> : null}
+                        {item.dateLabel ? <p className="updates-date">{item.dateLabel}</p> : null}
+                      </div>
+                      {shots.length ? (
+                        <div className="updates-card-shots">
+                          {shots.map((shot) => (
+                            <figure className="updates-shot" key={shot.src}>
+                              <picture>
+                                {/\.jpe?g$/i.test(shot.src) ? <source srcSet={webpUrl(shot.src)} type="image/webp" /> : null}
+                                <img src={assetUrl(shot.src)} alt={shot.alt} width={720} height={1530} loading="lazy" decoding="async" />
+                              </picture>
+                            </figure>
+                          ))}
+                        </div>
+                      ) : null}
+                    </article>
+                  );
+                })}
               </div>
             </section>
           ))}
