@@ -1327,24 +1327,34 @@
           },
           {
             "id": "exclusive-packs-gallery",
-            "status": "in_progress",
-            "title": "חבילות Exclusive באתר",
-            "ticker": "חבילות Exclusive באתר",
-            "summary": "תצוגת חבילות Exclusive באתר מתרחבת. הורדות ייפתחו בהדרגה לפי מוכנות."
+            "status": "upcoming",
+            "title": "חבילות Exclusive ב-Pro",
+            "ticker": "Exclusive ב-Pro",
+            "summary": "בקרוב, מי שירכוש את L Studio Pro בגוגל יקבל מתוך האפליקציה גישה ל־11 ערכות תופים מלאות, בנוסף ל־Factory 64. האתר רק מציג מידע על הערכות. אין הורדה מהאתר.",
+            "href": "/exclusive",
+            "cta": "לעמוד Exclusive",
+            "images": ["/assets/updates/exclusive-packs-poster.jpg"],
+            "imageAlts": ["פוסטר Exclusive ל-Pro: 11 ערכות תופים, פתיחה מתוך האפליקציה."]
           },
           {
             "id": "early-access-play",
             "status": "in_progress",
             "title": "Early Access ב-Google Play",
             "ticker": "Early Access ב-Play",
-            "summary": "גישה מוקדמת דרך Internal testing ב-Google Play (במקום הפצה ישירה מהאתר בלבד)."
+            "summary": "גישה מוקדמת דרך Internal testing ב-Google Play. מלאו את טופס Early Access בדף הבית כדי לבקש מקום בבדיקה.",
+            "href": "/#early-access",
+            "cta": "לטופס Early Access"
           },
           {
             "id": "user-guide-style-random",
             "status": "shipped",
             "title": "מדריך Style ו-Random",
             "ticker": "מדריך Style ו-Random",
-            "summary": "מדריך משתמש על לחיצה ארוכה ב-Style ועל Random. זמין."
+            "summary": "מדריך משתמש על לחיצה ארוכה ב-Style ועל Random. זמין בעמוד המדריך.",
+            "href": "/guide",
+            "cta": "למדריך",
+            "images": ["/assets/updates/user-guide-style-random.jpg"],
+            "imageAlts": ["כפתורי Style ו-Random מהמדריך. לחיצה ארוכה על Style פותחת את חלון הסגנונות."]
           },
           {
             "id": "studio-workflow-refresh",
@@ -2685,24 +2695,34 @@
           },
           {
             "id": "exclusive-packs-gallery",
-            "status": "in_progress",
-            "title": "Exclusive packs on the site",
-            "ticker": "Exclusive packs on the site",
-            "summary": "The Exclusive packs gallery on the site is expanding. Downloads unlock gradually as packs are ready."
+            "status": "upcoming",
+            "title": "Exclusive packs in Pro",
+            "ticker": "Exclusive in Pro",
+            "summary": "Soon, anyone who buys L Studio Pro on Google Play unlocks 11 full Exclusive drum kits in the app, on top of Factory 64. This site only describes the packs. There is no website download.",
+            "href": "/exclusive",
+            "cta": "View Exclusive",
+            "images": ["/assets/updates/exclusive-packs-poster.jpg"],
+            "imageAlts": ["Exclusive Pro poster: 11 drum kits, unlocked in the app with Pro."]
           },
           {
             "id": "early-access-play",
             "status": "in_progress",
             "title": "Early Access on Google Play",
             "ticker": "Early Access on Play",
-            "summary": "Early Access continues via Google Play Internal testing."
+            "summary": "Early Access runs through Google Play Internal testing. Fill in the Early Access form on the home page to request a testing spot.",
+            "href": "/#early-access",
+            "cta": "Go to Early Access form"
           },
           {
             "id": "user-guide-style-random",
             "status": "shipped",
             "title": "Style & Random guide",
             "ticker": "Style and Random guide",
-            "summary": "User guide for Style long-press and Random is available."
+            "summary": "The user guide for Style long-press and Random is on the guide page.",
+            "href": "/guide",
+            "cta": "Open guide",
+            "images": ["/assets/updates/user-guide-style-random.jpg"],
+            "imageAlts": ["Style and Random controls from the user guide. A long press on Style opens the style window."]
           },
           {
             "id": "studio-workflow-refresh",
@@ -4043,24 +4063,34 @@
           },
           {
             "id": "exclusive-packs-gallery",
-            "status": "in_progress",
-            "title": "Эксклюзивные паки на сайте",
-            "ticker": "Эксклюзивные паки на сайте",
-            "summary": "Галерея эксклюзивных паков на сайте расширяется. Скачивание открывается постепенно, по мере готовности паков."
+            "status": "upcoming",
+            "title": "Эксклюзивные паки в Pro",
+            "ticker": "Exclusive в Pro",
+            "summary": "Скоро тот, кто купит L Studio Pro в Google Play, откроет в приложении 11 полных эксклюзивных наборов ударных, в дополнение к Factory 64. Сайт только описывает паки. Скачивания с сайта нет.",
+            "href": "/exclusive",
+            "cta": "Открыть Exclusive",
+            "images": ["/assets/updates/exclusive-packs-poster.jpg"],
+            "imageAlts": ["Постер Exclusive для Pro: 11 наборов ударных, открытие внутри приложения."]
           },
           {
             "id": "early-access-play",
             "status": "in_progress",
             "title": "Early Access в Google Play",
             "ticker": "Early Access в Play",
-            "summary": "Ранний доступ продолжается через внутреннее тестирование Google Play, а не только через прямую раздачу с сайта."
+            "summary": "Ранний доступ идет через внутреннее тестирование Google Play. Заполните форму Early Access на главной, чтобы запросить место в тесте.",
+            "href": "/#early-access",
+            "cta": "К форме Early Access"
           },
           {
             "id": "user-guide-style-random",
             "status": "shipped",
             "title": "Гид по Style и Random",
             "ticker": "Гид Style и Random",
-            "summary": "Руководство по долгому нажатию Style и по Random уже доступно."
+            "summary": "Руководство по долгому нажатию Style и по Random уже на странице гида.",
+            "href": "/guide",
+            "cta": "Открыть гид",
+            "images": ["/assets/updates/user-guide-style-random.jpg"],
+            "imageAlts": ["Кнопки Style и Random из руководства. Долгое нажатие на Style открывает окно стилей."]
           },
           {
             "id": "studio-workflow-refresh",
@@ -5401,24 +5431,34 @@
           },
           {
             "id": "exclusive-packs-gallery",
-            "status": "in_progress",
-            "title": "حزم Exclusive على الموقع",
-            "ticker": "حزم Exclusive على الموقع",
-            "summary": "معرض حزم Exclusive على الموقع يتوسع. تُفتح التنزيلات تدريجياً كلما أصبحت الحزم جاهزة."
+            "status": "upcoming",
+            "title": "حزم Exclusive في Pro",
+            "ticker": "Exclusive في Pro",
+            "summary": "قريباً، من يشتري L Studio Pro على Google Play يفتح داخل التطبيق 11 حزمة طبول Exclusive كاملة، إضافة إلى Factory 64. الموقع يصف الحزم فقط. لا يوجد تنزيل من الموقع.",
+            "href": "/exclusive",
+            "cta": "عرض Exclusive",
+            "images": ["/assets/updates/exclusive-packs-poster.jpg"],
+            "imageAlts": ["ملصق Exclusive لـ Pro: 11 حزمة طبول، والفتح داخل التطبيق."]
           },
           {
             "id": "early-access-play",
             "status": "in_progress",
             "title": "Early Access على Google Play",
             "ticker": "Early Access على Play",
-            "summary": "يستمر الوصول المبكر عبر الاختبار الداخلي في Google Play، وليس عبر التوزيع المباشر من الموقع فقط."
+            "summary": "الوصول المبكر يجري عبر الاختبار الداخلي في Google Play. املأ نموذج Early Access في الصفحة الرئيسية لطلب مكان في الاختبار.",
+            "href": "/#early-access",
+            "cta": "إلى نموذج Early Access"
           },
           {
             "id": "user-guide-style-random",
             "status": "shipped",
             "title": "دليل Style وRandom",
             "ticker": "دليل Style وRandom",
-            "summary": "دليل المستخدم للضغط المطوّل على Style ولـ Random متاح."
+            "summary": "دليل المستخدم للضغط المطوّل على Style ولـ Random متاح في صفحة الدليل.",
+            "href": "/guide",
+            "cta": "فتح الدليل",
+            "images": ["/assets/updates/user-guide-style-random.jpg"],
+            "imageAlts": ["زرا Style وRandom من دليل المستخدم. الضغط المطوّل على Style يفتح نافذة الأساليب."]
           },
           {
             "id": "studio-workflow-refresh",

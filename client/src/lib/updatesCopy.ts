@@ -19,6 +19,10 @@ export type UpdateItem = {
   imageAlt?: string;
   /** Alts in the same order the card shows `image` (first) and then `images`. */
   imageAlts?: string[];
+  /** Optional site path. Shown only together with `cta`. */
+  href?: string;
+  /** Optional link label, in the same language as the card. */
+  cta?: string;
 };
 
 export type UpdateScreenshot = {
