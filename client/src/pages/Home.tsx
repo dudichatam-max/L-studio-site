@@ -11,7 +11,7 @@ import UpdatesTicker from "@/components/UpdatesTicker";
 import { mergeUpdates, updatesNavLabel } from "@/lib/updatesCopy";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero-v3.png`;
+const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero-v4.png`;
 const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png?v=20260930`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=20260930`;
 const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
@@ -200,7 +200,7 @@ const testerDefaults = {
     invalid: "כתובת המייל לא תקינה.",
     spotsLabel: "פנויים",
     spotsCta: "לקבלת גישה מוקדמת",
-    imageAlt: "כרזת L Studio עם נוף קווי, פסגות אקולייזר, והמילים Small instrument. A lot of sound. Coming soon.",
+    imageAlt: "קופסת L Studio Factory Pack שחורה עם הכיתוב GET THE PACK והמילים Small instrument. A lot of sound.",
     freeAccess: "גישה חינמית",
     localAudio: "אודיו מקומי",
   },
@@ -223,7 +223,7 @@ const testerDefaults = {
     invalid: "That email address is not valid.",
     spotsLabel: "available",
     spotsCta: "Get early access",
-    imageAlt: "L Studio poster with a wireframe landscape, equalizer peaks, and the words Small instrument. A lot of sound. Coming soon.",
+    imageAlt: "Black L Studio Factory Pack box with the words GET THE PACK and Small instrument. A lot of sound.",
     freeAccess: "FREE ACCESS",
     localAudio: "LOCAL AUDIO",
   },
@@ -246,7 +246,7 @@ const testerDefaults = {
     invalid: "Этот адрес почты недействителен.",
     spotsLabel: "свободно",
     spotsCta: "Ранний доступ",
-    imageAlt: "Постер L Studio с каркасным ландшафтом, пиками эквалайзера и словами Small instrument. A lot of sound. Coming soon.",
+    imageAlt: "Чёрная коробка L Studio Factory Pack с надписью GET THE PACK и словами Small instrument. A lot of sound.",
     freeAccess: "БЕСПЛАТНЫЙ ДОСТУП",
     localAudio: "ЛОКАЛЬНЫЙ ЗВУК",
   },
@@ -269,7 +269,7 @@ const testerDefaults = {
     invalid: "عنوان البريد هذا غير صالح.",
     spotsLabel: "متاح",
     spotsCta: "احصل على وصول مبكر",
-    imageAlt: "ملصق L Studio مع مشهد شبكي وقمم معادل والكلمات Small instrument. A lot of sound. Coming soon.",
+    imageAlt: "صندوق L Studio Factory Pack أسود مع عبارة GET THE PACK والكلمات Small instrument. A lot of sound.",
     freeAccess: "وصول مجاني",
     localAudio: "صوت محلي",
   },
