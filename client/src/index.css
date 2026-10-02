@@ -829,15 +829,25 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
 .updates-list { display: flex; flex-direction: column; gap: 14px; }
 .updates-card { scroll-margin-top: 28px; padding: 22px 24px; border: 1px solid rgba(242,241,235,.12); background: #101012; }
 .updates-card:target { border-color: rgba(227,197,101,.55); background: rgba(227,197,101,.06); }
+.updates-card--media { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 18px 28px; }
+.updates-card-copy { min-width: 0; }
 .updates-card-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; }
 .updates-card h3 { margin: 0; color: var(--paper); font: 600 clamp(22px, 2.4vw, 28px)/1.25 var(--display); letter-spacing: -.03em; }
 .updates-card p { margin: 12px 0 0; max-width: 760px; color: #aaa8a2; font-size: 16px; line-height: 1.75; }
+.updates-card--media .updates-card-copy p { max-width: none; }
 .updates-detail { color: #b4b1a9; }
 .updates-date { color: var(--muted); font: 12px var(--mono); letter-spacing: .04em; }
+.updates-card-shots { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; align-items: flex-start; }
+.updates-shot { margin: 0; flex: 0 1 200px; width: 200px; max-width: 100%; border: 1px solid rgba(227,197,101,.35); border-radius: 10px; background: #0c0c0e; overflow: hidden; }
+.updates-card-shots:has(.updates-shot + .updates-shot) .updates-shot { flex-basis: 168px; width: 168px; }
+.updates-shot img { display: block; width: 100%; height: auto; object-fit: contain; object-position: center; background: #0c0c0e; }
 @media (max-width: 720px) {
   .updates-ticker__label { letter-spacing: .08em; }
   .updates-hero { padding-top: 70px; }
   .updates-groups { gap: 36px; padding-bottom: 72px; }
   .updates-card { padding: 16px; }
   .updates-card p { font-size: 15px; }
+  .updates-card--media { grid-template-columns: 1fr; }
+  .updates-card-shots { justify-content: flex-start; }
+  .updates-card-shots:has(.updates-shot + .updates-shot) .updates-shot { flex: 1 1 0; width: auto; min-width: 0; max-width: 200px; }
 }

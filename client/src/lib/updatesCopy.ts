@@ -11,7 +11,35 @@ export type UpdateItem = {
   ticker?: string;
   detail?: string;
   dateLabel?: string;
+  /** One screenshot. Site-root path such as `/assets/updates/drum-fx.jpg`. */
+  image?: string;
+  /** Screenshots for the card. Preferred when a card shows one or more stills. */
+  images?: string[];
+  /** Alt for `image`, or a fallback when `imageAlts` has no matching entry. */
+  imageAlt?: string;
+  /** Alts in the same order the card shows `image` (first) and then `images`. */
+  imageAlts?: string[];
 };
+
+export type UpdateScreenshot = {
+  src: string;
+  alt: string;
+};
+
+/** Still paths for a card. `image` is first, then any extra `images` not already listed. */
+export function updateScreenshots(item: UpdateItem): UpdateScreenshot[] {
+  const srcs: string[] = [];
+  const push = (src?: string) => {
+    if (typeof src === "string" && src && !srcs.includes(src)) srcs.push(src);
+  };
+  push(item.image);
+  for (const src of item.images ?? []) push(src);
+  const alts = item.imageAlts ?? [];
+  return srcs.map((src, index) => ({
+    src,
+    alt: alts[index] || item.imageAlt || item.title,
+  }));
+}
 
 export type UpdatesCopy = {
   navLabel: string;
