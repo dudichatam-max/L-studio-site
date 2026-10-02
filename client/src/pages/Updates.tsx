@@ -29,6 +29,25 @@ function webpUrl(path: string) {
   return assetUrl(path.replace(/\.jpe?g$/i, ".webp"));
 }
 
+/** Natural size of each still, so the reserved box matches the file after cropping. */
+const STILL_SIZE: Record<string, { width: number; height: number }> = {
+  "/assets/updates/drum-fx.jpg": { width: 720, height: 1348 },
+  "/assets/updates/mic-fx.jpg": { width: 720, height: 1348 },
+  "/assets/updates/looper-back.jpg": { width: 720, height: 1268 },
+  "/assets/updates/looper-fx.jpg": { width: 720, height: 1268 },
+  "/assets/updates/lyrics.jpg": { width: 720, height: 1344 },
+  "/assets/updates/user-guide-style-random.jpg": { width: 640, height: 857 },
+  "/assets/updates/exclusive-packs-poster.jpg": { width: 1024, height: 1536 },
+};
+
+function stillSize(src: string) {
+  return STILL_SIZE[src] ?? { width: 720, height: 1348 };
+}
+
+function hashHref(href: string) {
+  return href.startsWith("#") || href.startsWith("/#");
+}
+
 const emptyChrome = (language: Language): ChromeCopy => ({
   back: language === "he" ? "חזרה לאתר" : language === "ru" ? "Вернуться на сайт" : language === "ar" ? "العودة إلى الموقع" : "Back to site",
   home: language === "he" ? "דף הבית" : language === "ru" ? "Главная" : language === "ar" ? "الرئيسية" : "Home",
@@ -139,6 +158,13 @@ export default function Updates() {
                         </div>
                         <p>{item.summary}</p>
                         {item.detail ? <p className="updates-detail">{item.detail}</p> : null}
+                        {item.href && item.cta ? (
+                          hashHref(item.href) ? (
+                            <a className="button button--small button--light updates-cta" href={item.href}>{item.cta}</a>
+                          ) : (
+                            <Link className="button button--small button--light updates-cta" href={item.href}>{item.cta}</Link>
+                          )
+                        ) : null}
                         {item.dateLabel ? <p className="updates-date">{item.dateLabel}</p> : null}
                       </div>
                       {shots.length ? (
@@ -147,7 +173,7 @@ export default function Updates() {
                             <figure className="updates-shot" key={shot.src}>
                               <picture>
                                 {/\.jpe?g$/i.test(shot.src) ? <source srcSet={webpUrl(shot.src)} type="image/webp" /> : null}
-                                <img src={assetUrl(shot.src)} alt={shot.alt} width={720} height={1530} loading="lazy" decoding="async" />
+                                <img src={assetUrl(shot.src)} alt={shot.alt} width={stillSize(shot.src).width} height={stillSize(shot.src).height} loading="lazy" decoding="async" />
                               </picture>
                             </figure>
                           ))}

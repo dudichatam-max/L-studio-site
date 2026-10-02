@@ -836,6 +836,7 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
 .updates-card p { margin: 12px 0 0; max-width: 760px; color: #aaa8a2; font-size: 16px; line-height: 1.75; }
 .updates-card--media .updates-card-copy p { max-width: none; }
 .updates-detail { color: #b4b1a9; }
+.updates-cta { margin-top: 16px; }
 .updates-date { color: var(--muted); font: 12px var(--mono); letter-spacing: .04em; }
 .updates-card-shots { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; align-items: flex-start; }
 .updates-shot { margin: 0; flex: 0 1 200px; width: 200px; max-width: 100%; border: 1px solid rgba(227,197,101,.35); border-radius: 10px; background: #0c0c0e; overflow: hidden; }

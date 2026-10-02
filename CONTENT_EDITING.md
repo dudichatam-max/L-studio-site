@@ -8,7 +8,7 @@ Do not change the JSON punctuation, keys, or braces. Change only the text betwee
 
 ### User guide (`/guide`)
 
-Long guide copy lives under `languages.*.guide` (title, intro, tip labels, and `sections[]`). Keep all four languages in sync when you edit a section. Optional `media` paths are relative to the site root (for example `assets/mic-window.jpg` or `assets/Preset.jpg`). Leave `media` out when there is no real screenshot yet — do not invent images.
+Long guide copy lives under `languages.*.guide` (title, intro, tip labels, and `sections[]`). Keep all four languages in sync when you edit a section. Optional `media` paths are relative to the site root (for example `assets/mic-window.jpg` or `assets/Preset.jpg`). Leave `media` out when there is no real screenshot yet. Do not invent images.
 
 Nav labels for the guide live under `languages.*.nav.guide`.
 
@@ -43,21 +43,26 @@ Keep all four languages in sync. Home Factory Pack uses `languages.*.factoryPack
 
 Purchase copy lives under `languages.*.pro` (same keys in Hebrew, English, Russian, and Arabic). The short label is `languages.*.nav.pro`. The homepage does not show that link while Early Access is the only signup path. Online checkout is paused: `checkoutNote` tells visitors, in all four languages, that purchases are not available on this website right now. Do not name a payment provider in this file, and do not put a download URL or a payment secret here. Optional `commerce.apiBaseUrl` is the Railway origin (no trailing slash) so the GitHub Pages buy page can call checkout when payments return. Leave it empty when the page is served by Railway itself.
 
-
 ### Updates (`/updates`)
 
-Update copy lives under `languages.*.updates`. The same items are the fallback in `client/src/lib/updatesFallback.json`. Keep Hebrew, English, Russian, and Arabic in sync, including alts.
+Update copy lives under `languages.*.updates`. The same items are the fallback in `client/src/lib/updatesFallback.json`. Keep Hebrew, English, Russian, and Arabic in sync, including alts. Keep root `content.json`, `client/public/content.json`, and `client/src/lib/updatesFallback.json` aligned.
 
-A card can show phone screenshots beside the text. Prefer `images`, an array of site-root paths such as `/assets/updates/drum-fx.jpg`. You can also set one `image`, then add more paths in `images`. The card shows `image` first, then any extra `images` that are not already listed. Alts are per language: `imageAlts` is one string per screenshot, in that same order, or use a single `imageAlt`.
+A card can show stills beside the text. Prefer `images`, an array of site-root paths such as `/assets/updates/drum-fx.jpg`. You can also set one `image`, then add more paths in `images`. The card shows `image` first, then any extra `images` that are not already listed. Alts are per language: `imageAlts` is one string per screenshot, in that same order, or use a single `imageAlt`.
 
-Put each still in `assets/updates/` as a `.jpg` and a matching `.webp`, and copy both into `client/public/assets/updates/` so local preview matches the site. The Pages build copies root `assets/` into the site. Show the full screenshot (`object-fit: contain`). Do not crop labels. When the Android system navigation bar is easy to remove, crop it off before export and keep the app UI. Leave `images` off a card that has no screenshot. Do not invent stills.
+Optional `href` and `cta` add a text link under the summary. Set both, in that language, or the card shows neither. `href` is a site path such as `/exclusive` or `/guide`. A home-page hash such as `/#early-access` is a normal link. `cta` is the short label.
+
+Put each still in `assets/updates/` as a `.jpg` and a matching `.webp`, and copy both into `client/public/assets/updates/` so local preview matches the site. The Pages build copies root `assets/` into the site. Show the full still (`object-fit: contain`). Do not crop app titles or control labels. Crop the Android status bar (clock, battery, icons) off phone screenshots, and crop the system navigation bar at the bottom when that does not cut app UI. Leave promotional art intact. Leave `images` off a card that has no still. Do not invent stills.
+
+The site never offers Exclusive kit downloads or ZIP links. Buying L Studio Pro on Google Play unlocks those kits later inside the Android app. This website only describes them.
 
 Current pairings:
 
-- `drum-fx` — `drum-fx.jpg` only (Drum FX, Goa Gate selected).
-- `mic-fx-and-back` — `mic-fx.jpg` (Phone Line) and `looper-back.jpg` (Back on the looper).
-- `studio-workflow-refresh` — `lyrics.jpg` (lyrics teleprompter) and `looper-fx.jpg` (Trance Stack). The summary says the looper now has eight channels. Do not call L Studio a DAW.
-- `exclusive-packs-gallery`, `early-access-play`, and `user-guide-style-random` have no screenshots.
+- `drum-fx`: `drum-fx.jpg` only (Drum FX, Goa Gate selected). Status bar and system navigation are cropped.
+- `mic-fx-and-back`: `mic-fx.jpg` (Phone Line) and `looper-back.jpg` (Back on the looper). Status bar and system navigation are cropped.
+- `studio-workflow-refresh`: `lyrics.jpg` (lyrics teleprompter) and `looper-fx.jpg` (Trance Stack). The summary says the looper now has eight channels. Do not call L Studio a DAW. Status bar and system navigation are cropped.
+- `exclusive-packs-gallery`: status `upcoming`. Still is `exclusive-packs-poster.jpg`, the Exclusive Pro poster (11 kits, Pro unlock). It is promotional art, not a phone shot, so it is not cropped like a status bar. `href` is `/exclusive`. The copy says the site is information only and there is no website download.
+- `early-access-play`: no screenshot. `href` is `/#early-access`. The summary asks visitors to fill the Early Access form on the home page for a Google Play Internal testing spot. It does not promise an APK email or a public APK download.
+- `user-guide-style-random`: `user-guide-style-random.jpg`, the guide Style and Random still with the status bar cropped off. `href` is `/guide`.
 
 ## Images
 
