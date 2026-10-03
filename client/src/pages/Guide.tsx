@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowLeft, BookOpen, ChevronDown, Sparkles } from "lucide-react";
+import { ArrowLeft, BookOpen, Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -38,25 +38,21 @@ type GuideCopy = {
   terms: string;
   features: string;
   architecture: string;
-  demoVideo: string;
-  demoVideoTitle: string;
   sections: GuideSection[];
 };
 
-const DEMO_VIDEO_EMBED = "https://www.youtube.com/embed/CS5ortNiA3o";
-
 const chrome: Record<Language, Omit<GuideCopy, "sections" | "intro" | "title" | "titleEm" | "eyebrow">> = {
-  he: { onThisPage: "בעמוד הזה", tipBeginner: "טיפ למתחילים", tipAdvanced: "טיפ למתקדמים", back: "חזרה לאתר", home: "דף הבית", privacy: "פרטיות", terms: "תנאי שימוש", features: "יכולות", architecture: "איך זה עובד", demoVideo: "סרטון להמחשה (לחיצה)", demoVideoTitle: "סרטון להמחשה" },
-  en: { onThisPage: "On this page", tipBeginner: "Beginner tip", tipAdvanced: "Advanced tip", back: "Back to site", home: "Home", privacy: "Privacy", terms: "Terms", features: "Features", architecture: "How it works", demoVideo: "Demo video (tap to play)", demoVideoTitle: "Demo video" },
-  ru: { onThisPage: "На этой странице", tipBeginner: "Совет новичкам", tipAdvanced: "Совет продвинутым", back: "Вернуться на сайт", home: "Главная", privacy: "Приватность", terms: "Условия", features: "Возможности", architecture: "Как это работает", demoVideo: "Демо-видео (нажмите для воспроизведения)", demoVideoTitle: "Демо-видео" },
-  ar: { onThisPage: "في هذه الصفحة", tipBeginner: "نصيحة للمبتدئين", tipAdvanced: "نصيحة للمتقدمين", back: "العودة إلى الموقع", home: "الرئيسية", privacy: "الخصوصية", terms: "الشروط", features: "المزايا", architecture: "كيف يعمل", demoVideo: "فيديو توضيحي (اضغط للتشغيل)", demoVideoTitle: "فيديو توضيحي" },
+  he: { onThisPage: "בעמוד הזה", tipBeginner: "טיפ למתחילים", tipAdvanced: "טיפ למתקדמים", back: "חזרה לאתר", home: "דף הבית", privacy: "פרטיות", terms: "תנאי שימוש", features: "יכולות", architecture: "איך זה עובד" },
+  en: { onThisPage: "On this page", tipBeginner: "Beginner tip", tipAdvanced: "Advanced tip", back: "Back to site", home: "Home", privacy: "Privacy", terms: "Terms", features: "Features", architecture: "How it works" },
+  ru: { onThisPage: "На этой странице", tipBeginner: "Совет новичкам", tipAdvanced: "Совет продвинутым", back: "Вернуться на сайт", home: "Главная", privacy: "Приватность", terms: "Условия", features: "Возможности", architecture: "Как это работает" },
+  ar: { onThisPage: "في هذه الصفحة", tipBeginner: "نصيحة للمبتدئين", tipAdvanced: "نصيحة للمتقدمين", back: "العودة إلى الموقع", home: "الرئيسية", privacy: "الخصوصية", terms: "الشروط", features: "المزايا", architecture: "كيف يعمل" },
 };
 
 const emptyCopy = (language: Language): GuideCopy => ({
   title: language === "he" ? "מדריך למשתמש" : language === "ru" ? "Руководство" : language === "ar" ? "دليل المستخدم" : "User guide",
   titleEm: "L Studio.",
   eyebrow: "LEARN / USER GUIDE / L STUDIO",
-  intro: "",
+  intro: language === "he" ? "הכותרת היא שם הכפתור על המסך." : language === "ru" ? "Заголовок это имя кнопки на экране." : language === "ar" ? "العنوان هو اسم الزر على الشاشة." : "The title is the button name on the screen.",
   ...chrome[language],
   sections: [],
 });
@@ -83,39 +79,6 @@ function sectionShots(section: GuideSection) {
     if (extra && !shots.includes(extra)) shots.push(extra);
   }
   return shots;
-}
-
-function GuideDemoVideo({ label, playerTitle }: { label: string; playerTitle: string }) {
-  const [open, setOpen] = useState(false);
-  const panelId = "guide-demo-video-panel";
-
-  return (
-    <div className="guide-demo" id="guide-demo-video" data-open={open ? "true" : "false"}>
-      <h2>
-        <button
-          type="button"
-          className="guide-demo-summary"
-          aria-expanded={open}
-          aria-controls={panelId}
-          onClick={() => setOpen((value) => !value)}
-        >
-          <span>{label}</span>
-          <ChevronDown className="guide-demo-chevron" size={18} aria-hidden="true" />
-        </button>
-      </h2>
-      {open ? (
-        <div className="guide-demo-player" id={panelId}>
-          <iframe
-            src={DEMO_VIDEO_EMBED}
-            title={playerTitle}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          />
-        </div>
-      ) : null}
-    </div>
-  );
 }
 
 export default function Guide() {
@@ -181,10 +144,6 @@ export default function Guide() {
             <span>BEGINNER + ADVANCED</span>
           </div>
         </section>
-
-        <div className="container" dir={isRtl ? "rtl" : "ltr"}>
-          <GuideDemoVideo key={language} label={text.demoVideo} playerTitle={text.demoVideoTitle} />
-        </div>
 
         <section className="guide-content container">
           <aside className="guide-aside" dir={isRtl ? "rtl" : "ltr"}>

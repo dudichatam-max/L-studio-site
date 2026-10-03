@@ -154,15 +154,15 @@ const FALLBACK_PACKS: ExclusivePack[] = [
 const emptyExclusive = (language: Language): ExclusiveCopy => ({
   eyebrow: "L-STUDIO / EXCLUSIVE",
   title: language === "he" ? "אחת עשרה חבילות." : language === "ru" ? "Одиннадцать паков." : language === "ar" ? "إحدى عشرة حزمة." : "Eleven packs.",
-  titleEm: language === "he" ? "בקרוב." : language === "ru" ? "Скоро." : language === "ar" ? "قريباً." : "Coming soon.",
+  titleEm: language === "he" ? "כלול ב-Pro." : language === "ru" ? "Входит в Pro." : language === "ar" ? "مع Pro." : "Included with Pro.",
   intro:
     language === "he"
-      ? "קו נפרד משמונה ערכות התופים של Factory. אחת עשרה חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות."
+      ? "קו נפרד משמונה ערכות התופים של Factory. אחת עשרה חבילות תופים, ובכל אחת 8 ערוצים ו-8 סגנונות. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה."
       : language === "ru"
-        ? "Отдельная линейка, не восемь наборов Factory Drums. Одиннадцать ударных паков на подходе: в каждом 8 каналов и 8 стилей."
+        ? "Отдельная линейка, не восемь наборов Factory Drums. Одиннадцать ударных паков, в каждом 8 каналов и 8 стилей. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет."
         : language === "ar"
-          ? "خط منفصل عن حزم الطبول الثماني في Factory. إحدى عشرة حزمة طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب."
-          : "A separate line from the eight Factory Drums kits. Eleven upcoming drum packs, each with 8 channels and 8 styles.",
+          ? "خط منفصل عن حزم الطبول الثماني في Factory. إحدى عشرة حزمة طبول، وفي كل واحدة 8 قنوات و8 أساليب. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل."
+          : "A separate line from the eight Factory Drums kits. Eleven drum packs, each with 8 channels and 8 styles. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button.",
   navLabel: exclusiveNavLabel[language],
   imageAlt:
     language === "he"
@@ -172,7 +172,7 @@ const emptyExclusive = (language: Language): ExclusiveCopy => ({
         : language === "ar"
           ? "ملصق حزمة طبول حصرية"
           : "Exclusive drum pack poster",
-  comingSoon: language === "he" ? "בקרוב" : language === "ru" ? "Скоро" : language === "ar" ? "قريباً" : "Coming soon",
+  comingSoon: language === "he" ? "כלול ב-Pro" : language === "ru" ? "Входит в Pro" : language === "ar" ? "مع Pro" : "Included with Pro",
   stylesHeading: language === "he" ? "סגנונות" : language === "ru" ? "Стили" : language === "ar" ? "الأساليب" : "Styles",
   demoLabel: language === "he" ? "סרטון הדגמה" : language === "ru" ? "Демо-видео" : language === "ar" ? "فيديو العرض" : "Demo video",
   packs: FALLBACK_PACKS,
