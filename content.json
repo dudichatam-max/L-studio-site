@@ -293,7 +293,7 @@
             "body": [
               "8 עמודים. בכל עמוד 4 ערוצים. ביחד 32 ערוצים, לא 8.",
               "הקלטה בעמוד אחד נשארת כשעוברים לעמוד אחר.",
-              "Back בראש הלופר, ו-Back בראש המיקרופון, מחזירים למסך הקודם.",
+              "Back בראש הלופר מחזיר למסך הקודם.",
               "REC מקליט לערוץ. DUB מוסיף הקלטה נוספת על אותו ערוץ. Play מנגן. STOP עוצר.",
               "Vol קובע את העוצמה של הערוץ. Pan מזיז אותו ימינה או שמאלה."
             ],
@@ -327,8 +327,10 @@
             "id": "mic-fx",
             "title": "Mic FX",
             "body": [
-              "מקישים על אחד מ-8 צלילים כדי להשתמש בו.",
-              "לחיצה ארוכה פותחת את Amount (כמה חזק האפקט), EQ, Mid-sweep, Transpose ממינוס 12 עד פלוס 12 (0 משאיר את הגובה כמו שהוא), ו-Reverb."
+              "הקשה על פריסט בוחרת אותו: Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap, או Wire Grit.",
+              "לחיצה ארוכה פותחת את Amount (כמה חזק האפקט), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb.",
+              "Transpose מוצג בחצאי טונים, ממינוס 12 עד פלוס 12. 0 משאיר את הגובה כמו שהוא.",
+              "Close סוגר את הלוח."
             ],
             "layout": "steps",
             "tag": "MIC FX",
@@ -353,8 +355,9 @@
             "id": "drum",
             "title": "תופים",
             "body": [
-              "Play Drums מפעיל את הערכה. STOP עוצר אותה.",
-              "כפתור ה-FX מציג את האפקט הנוכחי, למשל FX 1. הקשה בוחרת אחד מ-8 אפקטים לכל הערכה. לחיצה ארוכה פותחת את הכוונון.",
+              "יש 8 שורות תופים.",
+              "Play מפעיל את הערכה. בזמן שהערכה מנגנת הכפתור מציג Stop Drums. STOP מימין עוצר אותה.",
+              "FX מציג את האפקט הנוכחי, כאן FX 5. הקשה בוחרת אחד מ-8 אפקטים לכל הערכה. לחיצה ארוכה פותחת את הכוונון.",
               "הערכה שומרת את האפקט ואת הערכים שלו בשמירה במסך התופים ובשמירת Session.",
               "Style פותח את חלון Drum Style.",
               "החצים בצד עוברים לערכה הקודמת או לערכה הבאה.",
@@ -365,11 +368,8 @@
             ],
             "layout": "steps",
             "tag": "DRUM",
-            "media": "assets/guide/drum-screen.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-machine.jpg"
-            ]
+            "media": "assets/guide/drums.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-fx",
@@ -388,9 +388,9 @@
             "id": "style",
             "title": "Drum Style",
             "body": [
-              "עמודים 1 עד 8 הם עמודי סגנון. המספר המודגש הוא העמוד הפתוח.",
+              "עמודי הסגנון ממוספרים. ב-Exclusive העמודים ממשיכים אחרי 8. המסך הזה מראה 4 עד 11, ועמוד 8 פתוח בשם Middle Tech.",
               "Edit page name משנה את שם העמוד.",
-              "Switch to exclusive, בתוך החלון הזה, פותח את חבילות Exclusive. בלי הורדה.",
+              "Switch to exclusive פעיל. בלי הורדה.",
               "באתר Exclusive נשאר בקרוב.",
               "Load בשורה טוען את הערכה בהקשה אחת, גם כשהתופים כבר מנגנים.",
               "Save בשורה שומר את הערכה. Edit פותח אותה לעריכה.",
@@ -401,11 +401,8 @@
             ],
             "layout": "steps",
             "tag": "STYLE",
-            "media": "assets/guide/switch-exclusive.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-styles-load.jpg"
-            ]
+            "media": "assets/guide/exclusive-pages.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "random",
@@ -421,39 +418,43 @@
             "id": "sound-plus",
             "title": "Sound +",
             "body": [
-              "הקשה על + פותחת מקלדת שנייה, אוקטבה אחת למעלה. זה אותו תו, כפול ב-Hz.",
-              "הנובים נסגרים והערכים שלהם נשארים.",
-              "הקשה נוספת על + מחזירה את הנובים."
+              "הקשה על + פותחת מקלדת שנייה. העליונה גבוהה באוקטבה: אותו תו, כפול ב-Hz.",
+              "Sine, Square, Triangle, Saw ו-Noise בוחרים את צורת הגל.",
+              "Oct קובע את האוקטבה: ‎-1, 0, או ‎+1.",
+              "freq קובע את התדר. Key מסמן את הסולם על המקלדת.",
+              "Presets פותח את הצלילים השמורים. שורת ערכת התופים מציגה את הערכה שטעונה.",
+              "Drive קובע את הדרייב. RIP, FUZZ, PHAZ ו-PIANO מפעילים את האפקט הזה."
             ],
             "layout": "steps",
             "tag": "SOUND +",
-            "media": "assets/guide/sound-plus.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/sound-double-keys.jpg"
-            ]
+            "media": "assets/guide/sound-keyboards.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pro-live",
             "title": "Pro ו-Live",
             "body": [
-              "Live מיועד לנגינה מול אנשים.",
-              "ב-Live אי אפשר להקליד ערכים של כפתורים ביד, ואי אפשר למחוק ערוץ, כדי שהסט לא יישבר באמצע שיר.",
-              "Pro מחזיר את העריכה."
+              "תג הכותרת עובר בין PRO ל-LIVE.",
+              "Live מיועד לנגינה מול אנשים. ב-Live אי אפשר להקליד ערכים של כפתורים ביד, ואי אפשר למחוק ערוץ, כדי שהסט לא יישבר באמצע שיר.",
+              "Pro מחזיר את העריכה.",
+              "Language קובע את השפה: EN, HE, RU, או AR. Save as נותן שם לסשן הזה ושומר אותו. Load משחזר סשן שמור.",
+              "Show tutorial מציג את ההדרכה. Factory 64 מחזיר את תופי הבסיס, את Exclusive, ו-64 פריסטים רק אחרי אישור. Close משאיר הכל כמו שהוא."
             ],
             "layout": "steps",
-            "tag": "PRO"
+            "tag": "PRO",
+            "media": "assets/guide/settings-live.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "במסך השמירה בהגדרות, השורה Factory 64 מחזירה את תופי הבסיס, את Exclusive, ו-64 פריסטים, רק אחרי אישור.",
+              "Language קובע את השפה: EN, HE, RU, או AR. Save as נותן שם לסשן הזה ושומר אותו. Load משחזר סשן שמור. Show tutorial מציג את ההדרכה. השורה Factory 64 מחזירה את תופי הבסיס, את Exclusive, ו-64 פריסטים רק אחרי אישור.",
               "Close משאיר הכל כמו שהוא."
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
-            "media": "assets/guide/factory-64.jpg",
+            "media": "assets/guide/settings-live.jpg",
             "mediaSize": "panel"
           },
           {
@@ -518,12 +519,17 @@
             "id": "mic",
             "title": "מיקרופון",
             "body": [
+              "Back מחזיר למסך הקודם.",
+              "עמודים 1 ו-2 הם עמודי מיקרופון.",
+              "הקשה על Lyrics פותחת את המילים.",
               "מקליטים קול, כלי, או מקור אחר.",
               "עושים הקלטת בדיקה קצרה לפני הקלטה ארוכה.",
               "הקלטה קצרה יכולה להפוך ללופ."
             ],
             "layout": "steps",
-            "tag": "MIC"
+            "tag": "MIC",
+            "media": "assets/guide/mic-back.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop",
@@ -1740,7 +1746,7 @@
             "body": [
               "Eight pages. Four channels on each page. 32 channels in all, not 8.",
               "A recording on one page stays when you move to another page.",
-              "Back at the top of the looper, and Back at the top of the microphone, returns to the previous screen.",
+              "Back at the top of the looper returns to the previous screen.",
               "REC records on that channel. DUB adds another pass on the same channel. Play starts it. STOP stops it.",
               "Vol sets how loud the channel is. Pan moves it left or right."
             ],
@@ -1774,8 +1780,10 @@
             "id": "mic-fx",
             "title": "Mic FX",
             "body": [
-              "Tap one of 8 sounds to use it.",
-              "Long-press opens Amount (how strong it is), EQ, Mid-sweep, Transpose from minus 12 to plus 12 (0 leaves the pitch as it is), and Reverb."
+              "Tap a preset to select it: Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap, or Wire Grit.",
+              "Long-press opens Amount (how strong it is), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb.",
+              "Transpose is shown in semitones, from minus 12 to plus 12. 0 leaves the pitch as it is.",
+              "Close closes the panel."
             ],
             "layout": "steps",
             "tag": "MIC FX",
@@ -1800,8 +1808,9 @@
             "id": "drum",
             "title": "Drums",
             "body": [
-              "Play Drums starts the kit. STOP stops it.",
-              "The FX button shows the current effect, for example FX 1. Tap it to choose one of 8 effects for the whole kit. Long-press opens the adjustment.",
+              "There are 8 drum rows.",
+              "Play starts the kit. While the kit is playing the button reads Stop Drums. STOP on the right stops it.",
+              "FX shows the current effect, here FX 5. Tap it to choose one of 8 effects for the whole kit. Long-press opens the adjustment.",
               "The kit keeps that effect and its values when you Save on the drum screen and when you save a session.",
               "Style opens the Drum Style window.",
               "The side arrows move to the previous or next kit.",
@@ -1812,11 +1821,8 @@
             ],
             "layout": "steps",
             "tag": "DRUM",
-            "media": "assets/guide/drum-screen.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-machine.jpg"
-            ]
+            "media": "assets/guide/drums.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-fx",
@@ -1835,9 +1841,9 @@
             "id": "style",
             "title": "Drum Style",
             "body": [
-              "Pages 1 to 8 are style pages. The highlighted number is the open page.",
+              "Style pages are numbered. On Exclusive the pages continue past 8. This screen shows 4 to 11, and page 8 is open, named Middle Tech.",
               "Edit page name renames that page.",
-              "Switch to exclusive, inside this window, opens the Exclusive packs. No download.",
+              "Switch to exclusive is active. No download.",
               "On this website Exclusive stays Coming soon.",
               "Load on a row loads that kit with one tap, including while the drums are already playing.",
               "Save on a row stores that kit. Edit opens it for editing.",
@@ -1848,11 +1854,8 @@
             ],
             "layout": "steps",
             "tag": "STYLE",
-            "media": "assets/guide/switch-exclusive.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-styles-load.jpg"
-            ]
+            "media": "assets/guide/exclusive-pages.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "random",
@@ -1868,39 +1871,43 @@
             "id": "sound-plus",
             "title": "Sound +",
             "body": [
-              "Tap + to open a second keyboard one octave higher. It is the same note, at double the Hz.",
-              "The knobs close and their values stay.",
-              "Tap + again to bring the knobs back."
+              "Tap + to open a second keyboard. The upper one is an octave higher: the same note, at double the Hz.",
+              "Sine, Square, Triangle, Saw, and Noise choose the waveform.",
+              "Oct sets the octave to -1, 0, or +1.",
+              "freq sets the frequency. Key marks the scale on the keyboard.",
+              "Presets opens the saved sounds. The drum kit row shows the loaded kit.",
+              "Drive sets the drive. RIP, FUZZ, PHAZ, and PIANO turn that effect on."
             ],
             "layout": "steps",
             "tag": "SOUND +",
-            "media": "assets/guide/sound-plus.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/sound-double-keys.jpg"
-            ]
+            "media": "assets/guide/sound-keyboards.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pro-live",
             "title": "Pro and Live",
             "body": [
-              "Live is for playing in front of people.",
-              "In Live you cannot type button values by hand and you cannot delete a channel, so the set is not broken mid-song.",
-              "Pro brings editing back."
+              "The header badge switches between PRO and LIVE.",
+              "Live is for playing in front of people. In Live you cannot type button values by hand and you cannot delete a channel, so the set is not broken mid-song.",
+              "Pro brings editing back.",
+              "Language sets the language to EN, HE, RU, or AR. Save as names this session and saves it. Load restores a saved session.",
+              "Show tutorial shows the tutorial. Factory 64 restores the base drums, Exclusive, and 64 presets only after confirm. Close leaves things as they are."
             ],
             "layout": "steps",
-            "tag": "PRO"
+            "tag": "PRO",
+            "media": "assets/guide/settings-live.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "In the settings save screen, the Factory 64 row restores the base drums, Exclusive, and 64 presets, only after you confirm.",
+              "Language sets the language to EN, HE, RU, or AR. Save as names this session and saves it. Load restores a saved session. Show tutorial shows the tutorial. The Factory 64 row restores the base drums, Exclusive, and 64 presets only after confirm.",
               "Close leaves everything as it is."
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
-            "media": "assets/guide/factory-64.jpg",
+            "media": "assets/guide/settings-live.jpg",
             "mediaSize": "panel"
           },
           {
@@ -1965,12 +1972,17 @@
             "id": "mic",
             "title": "Microphone",
             "body": [
+              "Back returns to the previous screen.",
+              "Pages 1 and 2 are mic pages.",
+              "Tap Lyrics to open the words.",
               "Record a voice, an instrument, or another source.",
               "Make a short test take before a long one.",
               "A short recording can become a loop."
             ],
             "layout": "steps",
-            "tag": "MIC"
+            "tag": "MIC",
+            "media": "assets/guide/mic-back.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop",
@@ -3187,7 +3199,7 @@
             "body": [
               "8 страниц. На каждой странице 4 канала. Всего 32 канала, не 8.",
               "Запись на одной странице остается, когда вы переходите на другую.",
-              "Back вверху лупера и Back вверху микрофона возвращают на предыдущий экран.",
+              "Back вверху лупера возвращает на предыдущий экран.",
               "REC пишет на этот канал. DUB добавляет еще одну запись на тот же канал. Play запускает. STOP останавливает.",
               "Vol задает громкость канала. Pan сдвигает его влево или вправо."
             ],
@@ -3221,8 +3233,10 @@
             "id": "mic-fx",
             "title": "Mic FX",
             "body": [
-              "Нажмите один из 8 звуков, чтобы использовать его.",
-              "Долгое нажатие открывает Amount (насколько сильно эффект), EQ, Mid-sweep, Transpose от минус 12 до плюс 12 (0 оставляет высоту как есть) и Reverb."
+              "Нажатие на пресет выбирает его: Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap или Wire Grit.",
+              "Долгое нажатие открывает Amount (насколько сильно эффект), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb.",
+              "Transpose показан в полутонах, от минус 12 до плюс 12. 0 оставляет высоту как есть.",
+              "Close закрывает панель."
             ],
             "layout": "steps",
             "tag": "MIC FX",
@@ -3247,8 +3261,9 @@
             "id": "drum",
             "title": "Ударные",
             "body": [
-              "Play Drums запускает набор. STOP останавливает его.",
-              "Кнопка FX показывает текущий эффект, например FX 1. Нажатие выбирает один из 8 эффектов для всего набора. Долгое нажатие открывает настройку.",
+              "Здесь 8 рядов ударных.",
+              "Play запускает набор. Пока набор играет, кнопка показывает Stop Drums. STOP справа останавливает его.",
+              "FX показывает текущий эффект, здесь FX 5. Нажатие выбирает один из 8 эффектов для всего набора. Долгое нажатие открывает настройку.",
               "Набор хранит этот эффект и его значения, когда вы нажимаете Save на экране ударных и когда сохраняете сессию.",
               "Style открывает окно Drum Style.",
               "Боковые стрелки переходят к предыдущему или следующему набору.",
@@ -3259,11 +3274,8 @@
             ],
             "layout": "steps",
             "tag": "DRUM",
-            "media": "assets/guide/drum-screen.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-machine.jpg"
-            ]
+            "media": "assets/guide/drums.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-fx",
@@ -3282,9 +3294,9 @@
             "id": "style",
             "title": "Drum Style",
             "body": [
-              "Страницы с 1 по 8 это страницы стилей. Подсвеченный номер это открытая страница.",
+              "Страницы стилей пронумерованы. В Exclusive страницы продолжаются после 8. На этом экране видны страницы с 4 по 11, и открыта страница 8 с именем Middle Tech.",
               "Edit page name переименовывает эту страницу.",
-              "Switch to exclusive внутри этого окна открывает паки Exclusive. Без скачивания.",
+              "Switch to exclusive включен. Без скачивания.",
               "На сайте Exclusive остается Скоро.",
               "Load в строке загружает набор одним нажатием, в том числе пока ударные уже играют.",
               "Save в строке сохраняет этот набор. Edit открывает его для правки.",
@@ -3295,11 +3307,8 @@
             ],
             "layout": "steps",
             "tag": "STYLE",
-            "media": "assets/guide/switch-exclusive.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-styles-load.jpg"
-            ]
+            "media": "assets/guide/exclusive-pages.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "random",
@@ -3315,39 +3324,43 @@
             "id": "sound-plus",
             "title": "Sound +",
             "body": [
-              "Нажатие + открывает вторую клавиатуру на октаву выше. Та же нота, удвоенная частота в Гц.",
-              "Ручки закрываются, их значения остаются.",
-              "Еще одно нажатие + возвращает ручки."
+              "Нажатие + открывает вторую клавиатуру. Верхняя на октаву выше: та же нота, удвоенная частота в Гц.",
+              "Sine, Square, Triangle, Saw и Noise выбирают форму волны.",
+              "Oct ставит октаву на -1, 0 или +1.",
+              "freq задает частоту. Key отмечает лад на клавиатуре.",
+              "Presets открывает сохраненные звуки. Строка набора ударных показывает загруженный набор.",
+              "Drive задает драйв. RIP, FUZZ, PHAZ и PIANO включают этот эффект."
             ],
             "layout": "steps",
             "tag": "SOUND +",
-            "media": "assets/guide/sound-plus.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/sound-double-keys.jpg"
-            ]
+            "media": "assets/guide/sound-keyboards.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pro-live",
             "title": "Pro и Live",
             "body": [
-              "Live для игры перед людьми.",
-              "В Live нельзя вводить значения кнопок вручную и нельзя удалить канал, чтобы сет не сломался посреди песни.",
-              "Pro возвращает редактирование."
+              "Значок в шапке переключается между PRO и LIVE.",
+              "Live для игры перед людьми. В Live нельзя вводить значения кнопок вручную и нельзя удалить канал, чтобы сет не сломался посреди песни.",
+              "Pro возвращает редактирование.",
+              "Language ставит язык: EN, HE, RU или AR. Save as дает имя этой сессии и сохраняет ее. Load восстанавливает сохраненную сессию.",
+              "Show tutorial показывает обучение. Factory 64 возвращает базовые ударные, Exclusive и 64 пресета только после подтверждения. Close оставляет все как есть."
             ],
             "layout": "steps",
-            "tag": "PRO"
+            "tag": "PRO",
+            "media": "assets/guide/settings-live.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "На экране сохранения в настройках строка Factory 64 возвращает базовые ударные, Exclusive и 64 пресета, только после подтверждения.",
+              "Language ставит язык: EN, HE, RU или AR. Save as дает имя этой сессии и сохраняет ее. Load восстанавливает сохраненную сессию. Show tutorial показывает обучение. Строка Factory 64 возвращает базовые ударные, Exclusive и 64 пресета только после подтверждения.",
               "Close оставляет все как есть."
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
-            "media": "assets/guide/factory-64.jpg",
+            "media": "assets/guide/settings-live.jpg",
             "mediaSize": "panel"
           },
           {
@@ -3412,12 +3425,17 @@
             "id": "mic",
             "title": "Микрофон",
             "body": [
+              "Back возвращает на предыдущий экран.",
+              "Страницы 1 и 2 это страницы микрофона.",
+              "Нажатие Lyrics открывает слова.",
               "Записывайте голос, инструмент или другой источник.",
               "Сделайте короткую пробу перед длинной записью.",
               "Короткая запись может стать лупом."
             ],
             "layout": "steps",
-            "tag": "MIC"
+            "tag": "MIC",
+            "media": "assets/guide/mic-back.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop",
@@ -4634,7 +4652,7 @@
             "body": [
               "8 صفحات. في كل صفحة 4 قنوات. المجموع 32 قناة، وليس 8.",
               "التسجيل في صفحة يبقى عندما تنتقل إلى صفحة أخرى.",
-              "Back في أعلى اللوبر، وBack في أعلى الميكروفون، يعيدان إلى الشاشة السابقة.",
+              "Back في أعلى اللوبر يعيد إلى الشاشة السابقة.",
               "REC يسجل على القناة. DUB يضيف تسجيلاً آخر على القناة نفسها. Play يشغل. STOP يوقف.",
               "Vol يحدد ارتفاع صوت القناة. Pan ينقلها يميناً أو يساراً."
             ],
@@ -4668,8 +4686,10 @@
             "id": "mic-fx",
             "title": "Mic FX",
             "body": [
-              "اضغط أحد 8 أصوات لتستخدمه.",
-              "الضغط المطوّل يفتح Amount (قوة المؤثر)، وEQ، وMid-sweep، وTranspose من ناقص 12 إلى زائد 12 (0 يترك الطبقة كما هي)، وReverb."
+              "الضغط على إعداد يختاره: Street Punch أو Phone Line أو Talk Clarity أو Neon Throw أو Pulse Delay أو Twin Voice أو Garage Slap أو Wire Grit.",
+              "الضغط المطوّل يفتح Amount (قوة المؤثر) وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb.",
+              "Transpose يظهر بأنصاف الأصوات، من ناقص 12 إلى زائد 12. 0 يترك الطبقة كما هي.",
+              "Close يغلق اللوحة."
             ],
             "layout": "steps",
             "tag": "MIC FX",
@@ -4694,8 +4714,9 @@
             "id": "drum",
             "title": "الطبول",
             "body": [
-              "Play Drums يشغل المجموعة. STOP يوقفها.",
-              "زر FX يعرض المؤثر الحالي، مثلاً FX 1. الضغطة تختار واحداً من 8 مؤثرات للمجموعة كلها. الضغط المطوّل يفتح الضبط.",
+              "هناك 8 صفوف طبول.",
+              "Play يشغل المجموعة. بينما المجموعة تعزف يظهر على الزر Stop Drums. STOP على اليمين يوقفها.",
+              "FX يعرض المؤثر الحالي، هنا FX 5. الضغطة تختار واحداً من 8 مؤثرات للمجموعة كلها. الضغط المطوّل يفتح الضبط.",
               "المجموعة تحتفظ بهذا المؤثر وقيمه عندما تضغط Save في شاشة الطبول وعندما تحفظ الجلسة.",
               "Style يفتح نافذة Drum Style.",
               "الأسهم على الجانب تنتقل إلى المجموعة السابقة أو التالية.",
@@ -4706,11 +4727,8 @@
             ],
             "layout": "steps",
             "tag": "DRUM",
-            "media": "assets/guide/drum-screen.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-machine.jpg"
-            ]
+            "media": "assets/guide/drums.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-fx",
@@ -4729,9 +4747,9 @@
             "id": "style",
             "title": "Drum Style",
             "body": [
-              "الصفحات من 1 إلى 8 صفحات أساليب. الرقم المميّز هو الصفحة المفتوحة.",
+              "صفحات الأسلوب مرقمة. في Exclusive تستمر الصفحات بعد 8. هذه الشاشة تعرض من 4 إلى 11، والصفحة 8 مفتوحة باسم Middle Tech.",
               "Edit page name يغيّر اسم هذه الصفحة.",
-              "Switch to exclusive، داخل هذه النافذة، يفتح حزم Exclusive. بلا تنزيل.",
+              "Switch to exclusive نشط. بلا تنزيل.",
               "على الموقع يبقى Exclusive قريباً.",
               "Load في الصف يحمّل المجموعة بضغطة واحدة، حتى والطبول تعمل.",
               "Save في الصف يخزن هذه المجموعة. Edit يفتحها للتحرير.",
@@ -4742,11 +4760,8 @@
             ],
             "layout": "steps",
             "tag": "STYLE",
-            "media": "assets/guide/switch-exclusive.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-styles-load.jpg"
-            ]
+            "media": "assets/guide/exclusive-pages.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "random",
@@ -4762,39 +4777,43 @@
             "id": "sound-plus",
             "title": "Sound +",
             "body": [
-              "اضغط + لفتح لوحة مفاتيح ثانية أعلى بأوكتاف. النغمة نفسها، بضعف التردد بالهرتز.",
-              "المقابض تغلق وقيمها تبقى.",
-              "اضغط + مرة أخرى لتعيد المقابض."
+              "اضغط + لفتح لوحة مفاتيح ثانية. العليا أعلى بأوكتاف: النغمة نفسها، بضعف التردد بالهرتز.",
+              "Sine وSquare وTriangle وSaw وNoise تختار شكل الموجة.",
+              "Oct يضبط الأوكتاف على -1 أو 0 أو +1.",
+              "freq يضبط التردد. Key يعلّم السلم على لوحة المفاتيح.",
+              "Presets يفتح الأصوات المحفوظة. صف طقم الطبول يعرض الطقم المحمّل.",
+              "Drive يضبط الدرايف. RIP وFUZZ وPHAZ وPIANO تشغّل ذلك المؤثر."
             ],
             "layout": "steps",
             "tag": "SOUND +",
-            "media": "assets/guide/sound-plus.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/sound-double-keys.jpg"
-            ]
+            "media": "assets/guide/sound-keyboards.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pro-live",
             "title": "Pro وLive",
             "body": [
-              "Live للعزف أمام الناس.",
-              "في Live لا يمكنك كتابة قيم الأزرار يدوياً ولا حذف قناة، حتى لا ينكسر السيت في وسط الأغنية.",
-              "Pro يعيد التحرير."
+              "شارة الرأس تتبدل بين PRO وLIVE.",
+              "Live للعزف أمام الناس. في Live لا يمكنك كتابة قيم الأزرار يدوياً ولا حذف قناة، حتى لا ينكسر السيت في وسط الأغنية.",
+              "Pro يعيد التحرير.",
+              "Language يضبط اللغة على EN أو HE أو RU أو AR. Save as يسمّي هذه الجلسة ويحفظها. Load يستعيد جلسة محفوظة.",
+              "Show tutorial يعرض الشرح. Factory 64 يعيد طبول الأساس وExclusive و64 إعداداً مسبقاً فقط بعد التأكيد. Close يترك الأمور كما هي."
             ],
             "layout": "steps",
-            "tag": "PRO"
+            "tag": "PRO",
+            "media": "assets/guide/settings-live.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "في شاشة الحفظ داخل الإعدادات، صف Factory 64 يعيد طبول الأساس وExclusive و64 إعداداً مسبقاً، بعد التأكيد فقط.",
+              "Language يضبط اللغة على EN أو HE أو RU أو AR. Save as يسمّي هذه الجلسة ويحفظها. Load يستعيد جلسة محفوظة. Show tutorial يعرض الشرح. صف Factory 64 يعيد طبول الأساس وExclusive و64 إعداداً مسبقاً فقط بعد التأكيد.",
               "Close يترك كل شيء كما هو."
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
-            "media": "assets/guide/factory-64.jpg",
+            "media": "assets/guide/settings-live.jpg",
             "mediaSize": "panel"
           },
           {
@@ -4859,12 +4878,17 @@
             "id": "mic",
             "title": "الميكروفون",
             "body": [
+              "Back يعيد إلى الشاشة السابقة.",
+              "الصفحتان 1 و2 صفحتا الميكروفون.",
+              "الضغط على Lyrics يفتح الكلمات.",
               "سجّل صوتاً أو آلة أو مصدراً آخر.",
               "اعمل تسجيلاً قصيراً للتجربة قبل تسجيل طويل.",
               "التسجيل القصير يمكن أن يصبح لوباً."
             ],
             "layout": "steps",
-            "tag": "MIC"
+            "tag": "MIC",
+            "media": "assets/guide/mic-back.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop",
