@@ -24,12 +24,23 @@ type GuideSection = {
   bullets?: string[];
 };
 
+type GuideGroup = {
+  id: string;
+  title: string;
+  body: string[];
+  media?: string;
+  images?: string[];
+  mediaSize?: "thumb" | "panel";
+  sections?: GuideSection[];
+};
+
 type GuideCopy = {
   title: string;
   titleEm: string;
   eyebrow: string;
   intro: string;
   onThisPage: string;
+  screens: string;
   tipBeginner: string;
   tipAdvanced: string;
   back: string;
@@ -38,23 +49,29 @@ type GuideCopy = {
   terms: string;
   features: string;
   architecture: string;
-  sections: GuideSection[];
+  groups: GuideGroup[];
 };
 
-const chrome: Record<Language, Omit<GuideCopy, "sections" | "intro" | "title" | "titleEm" | "eyebrow">> = {
-  he: { onThisPage: "בעמוד הזה", tipBeginner: "טיפ למתחילים", tipAdvanced: "טיפ למתקדמים", back: "חזרה לאתר", home: "דף הבית", privacy: "פרטיות", terms: "תנאי שימוש", features: "יכולות", architecture: "איך זה עובד" },
-  en: { onThisPage: "On this page", tipBeginner: "Beginner tip", tipAdvanced: "Advanced tip", back: "Back to site", home: "Home", privacy: "Privacy", terms: "Terms", features: "Features", architecture: "How it works" },
-  ru: { onThisPage: "На этой странице", tipBeginner: "Совет новичкам", tipAdvanced: "Совет продвинутым", back: "Вернуться на сайт", home: "Главная", privacy: "Приватность", terms: "Условия", features: "Возможности", architecture: "Как это работает" },
-  ar: { onThisPage: "في هذه الصفحة", tipBeginner: "نصيحة للمبتدئين", tipAdvanced: "نصيحة للمتقدمين", back: "العودة إلى الموقع", home: "الرئيسية", privacy: "الخصوصية", terms: "الشروط", features: "المزايا", architecture: "كيف يعمل" },
+const chrome: Record<Language, Omit<GuideCopy, "groups" | "intro" | "title" | "titleEm" | "eyebrow">> = {
+  he: { onThisPage: "בעמוד הזה", screens: "מסכים", tipBeginner: "טיפ למתחילים", tipAdvanced: "טיפ למתקדמים", back: "חזרה לאתר", home: "דף הבית", privacy: "פרטיות", terms: "תנאי שימוש", features: "יכולות", architecture: "איך זה עובד" },
+  en: { onThisPage: "On this page", screens: "Screens", tipBeginner: "Beginner tip", tipAdvanced: "Advanced tip", back: "Back to site", home: "Home", privacy: "Privacy", terms: "Terms", features: "Features", architecture: "How it works" },
+  ru: { onThisPage: "На этой странице", screens: "Экраны", tipBeginner: "Совет новичкам", tipAdvanced: "Совет продвинутым", back: "Вернуться на сайт", home: "Главная", privacy: "Приватность", terms: "Условия", features: "Возможности", architecture: "Как это работает" },
+  ar: { onThisPage: "في هذه الصفحة", screens: "الشاشات", tipBeginner: "نصيحة للمبتدئين", tipAdvanced: "نصيحة للمتقدمين", back: "العودة إلى الموقع", home: "الرئيسية", privacy: "الخصوصية", terms: "الشروط", features: "المزايا", architecture: "كيف يعمل" },
 };
 
 const emptyCopy = (language: Language): GuideCopy => ({
   title: language === "he" ? "מדריך למשתמש" : language === "ru" ? "Руководство" : language === "ar" ? "دليل المستخدم" : "User guide",
   titleEm: "L Studio.",
   eyebrow: "LEARN / USER GUIDE / L STUDIO",
-  intro: language === "he" ? "הכותרת היא שם הכפתור על המסך." : language === "ru" ? "Заголовок это имя кнопки на экране." : language === "ar" ? "العنوان هو اسم الزر على الشاشة." : "The title is the button name on the screen.",
+  intro: language === "he"
+    ? "חמישה מסכים: Sound, Pad, Drum, Loop, ו-Mic. הקשה על שם המסך פותחת אותו. הטקסט אומר מה עושה הקשה, גרירה, או לחיצה ארוכה."
+    : language === "ru"
+      ? "Пять экранов: Sound, Pad, Drum, Loop и Mic. Нажатие на имя экрана открывает его. Текст говорит, что делает нажатие, перетаскивание или долгое нажатие."
+      : language === "ar"
+        ? "خمس شاشات: Sound وPad وDrum وLoop وMic. الضغط على اسم الشاشة يفتحها. النص يقول ماذا يفعل الضغط أو السحب أو الضغط المطوّل."
+        : "Five screens: Sound, Pad, Drum, Loop, and Mic. A tap on a screen name opens it. The text says what a tap, a drag, or a long-press does.",
   ...chrome[language],
-  sections: [],
+  groups: [],
 });
 
 const guideNavLabel: Record<Language, string> = {
@@ -72,13 +89,24 @@ function sectionNumber(index: number) {
   return String(index + 1).padStart(2, "0");
 }
 
-function sectionShots(section: GuideSection) {
+function sectionShots(section: { media?: string; images?: string[] }) {
   const shots: string[] = [];
   if (section.media) shots.push(section.media);
   for (const extra of section.images ?? []) {
     if (extra && !shots.includes(extra)) shots.push(extra);
   }
   return shots;
+}
+
+function guideEntries(groups: GuideGroup[]) {
+  const entries: Array<{ id: string; title: string; body: string[]; media?: string; images?: string[]; mediaSize?: "thumb" | "panel"; layout?: "steps"; bullets?: string[]; tipBeginner?: string; tipAdvanced?: string; tag?: string; nested: boolean }> = [];
+  for (const group of groups) {
+    entries.push({ ...group, nested: false });
+    for (const section of group.sections ?? []) {
+      entries.push({ ...section, nested: true });
+    }
+  }
+  return entries;
 }
 
 export default function Guide() {
@@ -93,7 +121,7 @@ export default function Guide() {
       .then((data) => {
         const guide = data?.languages?.[language]?.guide as GuideCopy | undefined;
         if (cancelled || !guide) return;
-        setText({ ...emptyCopy(language), ...guide, sections: guide.sections ?? [] });
+        setText({ ...emptyCopy(language), ...guide, groups: guide.groups ?? [] });
       })
       .catch(() => undefined);
     return () => {
@@ -139,7 +167,7 @@ export default function Guide() {
           {text.intro ? <p>{text.intro}</p> : null}
           <div className="guide-hero-meta">
             <BookOpen size={16} />
-            <span>{String(text.sections.length).padStart(2, "0")} SECTIONS</span>
+            <span>{String(guideEntries(text.groups).length).padStart(2, "0")} SECTIONS</span>
             <span className="guide-hero-sep">·</span>
             <span>BEGINNER + ADVANCED</span>
           </div>
@@ -147,20 +175,25 @@ export default function Guide() {
 
         <section className="guide-content container">
           <aside className="guide-aside" dir={isRtl ? "rtl" : "ltr"}>
-            <span className="kicker">{text.onThisPage}</span>
+            <span className="kicker">{text.screens}</span>
             <div className="guide-toc">
-              {text.sections.map((section, index) => (
-                <a key={section.id} href={`#guide-${section.id}`}>
-                  <span className="guide-toc-num">{sectionNumber(index)}</span>
-                  <span className="guide-toc-title">{section.title}</span>
-                  {section.tag ? <span className="guide-toc-tag">{section.tag}</span> : null}
-                </a>
+              {text.groups.map((group) => (
+                <div className="guide-toc-group" key={group.id}>
+                  <a className="guide-toc-screen" href={`#guide-${group.id}`}>{group.title}</a>
+                  <div className="guide-toc-sub">
+                    {(group.sections ?? []).map((section) => (
+                      <a key={section.id} href={`#guide-${section.id}`}>
+                        <span className="guide-toc-title">{section.title}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </aside>
 
           <article className="guide-article" dir={isRtl ? "rtl" : "ltr"}>
-            {text.sections.map((section, index) => {
+            {guideEntries(text.groups).map((section, index) => {
               const shots = sectionShots(section);
               const mediaClass = [
                 "guide-media",
@@ -172,7 +205,7 @@ export default function Guide() {
               const showTips = Boolean(section.tipBeginner || section.tipAdvanced);
 
               return (
-                <section className="guide-block" id={`guide-${section.id}`} key={section.id}>
+                <section className={section.nested ? "guide-block guide-block--sub" : "guide-block"} id={`guide-${section.id}`} key={section.id}>
                     <div className="guide-block-head">
                       <span className="guide-number">{sectionNumber(index)}</span>
                       {section.tag ? <span className="guide-tag">{section.tag}</span> : null}

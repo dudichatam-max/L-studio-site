@@ -202,7 +202,15 @@ html[dir="rtl"] .footer-links {
 .guide-content { display: grid; grid-template-columns: 250px 1fr; gap: 72px; padding-bottom: 140px; align-items: start; }
 .guide-aside { position: sticky; top: 92px; display: flex; flex-direction: column; gap: 12px; max-height: calc(100vh - 120px); overflow: auto; padding-bottom: 20px; }
 .guide-aside .kicker { margin-bottom: 8px; }
-.guide-toc { display: flex; flex-direction: column; gap: 4px; }
+.guide-toc { display: flex; flex-direction: column; gap: 16px; }
+.guide-page .guide-toc { display: flex; flex-direction: column; flex-wrap: nowrap; overflow: visible; gap: 16px; }
+.guide-toc-group { display: flex; flex-direction: column; gap: 2px; }
+.guide-toc-screen { display: block; padding: 8px 0 6px; color: var(--paper); font-size: 14px; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(242,241,235,.16); }
+.guide-toc-screen:hover { color: var(--acid); }
+.guide-toc-sub a { display: block; padding: 6px 0 6px 14px; color: var(--muted); font-size: 13px; text-decoration: none; border-bottom: 1px solid rgba(242,241,235,.06); }
+html[dir="rtl"] .guide-toc-sub a { padding: 6px 14px 6px 0; }
+.guide-toc-sub a:hover { color: var(--acid); }
+.guide-block--sub { padding-top: 28px; }
 .guide-toc a { display: grid; grid-template-columns: 28px 1fr auto; gap: 8px; align-items: baseline; padding: 8px 0; color: var(--muted); font-size: 13px; text-decoration: none; border-bottom: 1px solid rgba(242,241,235,.08); transition: color 160ms ease; }
 .guide-toc a:hover { color: var(--acid); }
 .guide-toc-num { color: var(--muted-foreground); font: 10px var(--mono); }
@@ -844,3 +852,9 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
   .updates-card-shots { justify-content: flex-start; }
   .updates-card-shots:has(.updates-shot + .updates-shot) .updates-shot { flex: 1 1 0; width: auto; min-width: 0; max-width: 200px; }
 }
+
+/* Guide menu stays five screens with nested controls, including on a phone. */
+.guide-page .guide-toc { display: flex; flex-direction: column; flex-wrap: nowrap; gap: 16px; overflow: visible; }
+.guide-page .guide-toc-screen { display: block; min-width: 0; padding: 8px 0 6px; border: 0; border-bottom: 1px solid rgba(242,241,235,.16); background: transparent; color: var(--paper); font-size: 14px; font-weight: 600; }
+.guide-page .guide-toc-sub a { display: block; min-width: 0; padding: 6px 0 6px 14px; border: 0; border-bottom: 1px solid rgba(242,241,235,.06); background: transparent; }
+html[dir="rtl"] .guide-page .guide-toc-sub a { padding: 6px 14px 6px 0; }
