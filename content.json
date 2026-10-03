@@ -397,7 +397,9 @@
               "הקשה פותחת את מסך הפד. הכותרת אומרת LIVE PERFORMANCE PAD. הכותרת הזאת אינה כפתור."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/18-pad.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum",
@@ -471,7 +473,9 @@
               "הקשה פותחת את Scales. OFF מנקה את הסולם. Major מציג מ-C maj עד B maj. Minor מציג מ-C min עד B min. Close סוגר את החלון."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/16-scales.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "sine",
@@ -2493,7 +2497,9 @@
               "A tap opens the pad screen. The header says LIVE PERFORMANCE PAD. That header is not a button."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/18-pad.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum",
@@ -2567,7 +2573,9 @@
               "A tap opens Scales. OFF clears the scale. Major lists C maj through B maj. Minor lists C min through B min. Close shuts the window."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/16-scales.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "sine",
@@ -4589,7 +4597,9 @@
               "Нажатие открывает экран пэда. Заголовок говорит LIVE PERFORMANCE PAD. Этот заголовок не кнопка."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/18-pad.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum",
@@ -4663,7 +4673,9 @@
               "Нажатие открывает Scales. OFF снимает лад. Major показывает от C maj до B maj. Minor показывает от C min до B min. Close закрывает окно."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/16-scales.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "sine",
@@ -6685,7 +6697,9 @@
               "الضغط يفتح شاشة الـ Pad. العنوان يقول LIVE PERFORMANCE PAD. هذا العنوان ليس زراً."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/18-pad.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum",
@@ -6759,7 +6773,9 @@
               "الضغط يفتح Scales. OFF يمسح السلم. Major يعرض من C maj إلى B maj. Minor يعرض من C min إلى B min. Close يغلق النافذة."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/16-scales.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "sine",
