@@ -288,6 +288,187 @@
         "architecture": "איך זה עובד",
         "sections": [
           {
+            "id": "looper",
+            "title": "לופר",
+            "body": [
+              "פותחים את הלופר.",
+              "יש 8 עמודים.",
+              "בכל עמוד יש 4 ערוצים.",
+              "זה 32 ערוצים, לא 8.",
+              "עוברים לעמוד הבא כדי להקליט לופ נוסף."
+            ],
+            "layout": "steps",
+            "tag": "LOOPER",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "looper-back",
+            "title": "חזרה",
+            "body": [
+              "במסך הלופר יש כפתור Back למעלה.",
+              "במסך המיקרופון יש כפתור Back למעלה.",
+              "הקשה אחת מחזירה למסך הקודם."
+            ],
+            "layout": "steps",
+            "tag": "BACK",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "mic-fx",
+            "title": "Mic FX",
+            "body": [
+              "פותחים את מסך המיקרופון.",
+              "בוחרים אחד מ־8 צלילי Mic FX.",
+              "לחיצה ארוכה.",
+              "מקבלים Amount, EQ, Mid-sweep, Transpose ממינוס 12 עד פלוס 12, ו־Reverb."
+            ],
+            "layout": "steps",
+            "tag": "MIC FX",
+            "media": "assets/updates/mic-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum-fx",
+            "title": "Drum FX",
+            "body": [
+              "במסך התופים פותחים את Drum FX. הכפתור יכול להציג את האפקט הנוכחי, למשל FX 1.",
+              "בוחרים אחד מ־8 אפקטים.",
+              "לחיצה ארוכה כדי לכוון.",
+              "כל ערכת תופים שומרת את האפקט שלה, כולל הערכים.",
+              "זה נשמר עם השמירה של מסך התופים ועם שמירת Session."
+            ],
+            "layout": "steps",
+            "tag": "DRUM FX",
+            "media": "assets/updates/drum-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "lyrics",
+            "title": "טלפרומפטר למילים",
+            "body": [
+              "פותחים את מסך המיקרופון.",
+              "כותבים את המילים.",
+              "המילים נשארות על המסך בזמן ההקלטה."
+            ],
+            "layout": "steps",
+            "tag": "LYRICS",
+            "media": "assets/updates/lyrics.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "pro-live",
+            "title": "Pro ו־Live",
+            "body": [
+              "עוברים בין Pro ל־Live.",
+              "ב־Live אי אפשר להקליד ערכים של כפתורים ביד.",
+              "ב־Live אי אפשר למחוק ערוץ.",
+              "חזרה ל־Pro מחזירה את שניהם."
+            ],
+            "layout": "steps",
+            "tag": "PRO"
+          },
+          {
+            "id": "redo",
+            "title": "Redo",
+            "body": [
+              "בוחרים ערוץ.",
+              "יש Redo לערוץ.",
+              "זה לא Clear וזה לא Undo."
+            ],
+            "layout": "steps",
+            "tag": "REDO"
+          },
+          {
+            "id": "looper-fx",
+            "title": "Looper FX",
+            "body": [
+              "בלופר פותחים את האפקטים.",
+              "יש 8 אפקטים.",
+              "לחיצה ארוכה.",
+              "הסליידרים הם אותם סליידרים כמו בתופים ובמיקרופון."
+            ],
+            "layout": "steps",
+            "tag": "LOOPER FX",
+            "media": "assets/updates/looper-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "sound-plus",
+            "title": "Sound +",
+            "body": [
+              "בחלון הסאונד מקישים על +.",
+              "נפתחת מקלדת שנייה. העליונה גבוהה באוקטבה.",
+              "הנובים נסגרים והערכים שלהם נשמרים.",
+              "מקישים שוב על + כדי להחזיר את הנובים."
+            ],
+            "layout": "steps",
+            "tag": "SOUND +",
+            "media": "assets/guide/sound-plus.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/sound-double-keys.jpg"
+            ]
+          },
+          {
+            "id": "factory-64-restore",
+            "title": "Factory 64",
+            "body": [
+              "פותחים את השמירה בהגדרות.",
+              "בוחרים Factory 64 restore.",
+              "מאשרים.",
+              "זה מחזיר את תופי הבסיס, את Exclusive, ו־64 פריסטים."
+            ],
+            "layout": "steps",
+            "tag": "FACTORY 64",
+            "media": "assets/guide/factory-64.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "load-kit",
+            "title": "טעינת ערכה תוך כדי נגינה",
+            "body": [
+              "מפעילים את התופים.",
+              "בוחרים ערכה אחרת.",
+              "הקשה אחת על Load טוענת אותה בזמן שהערכה הקודמת עדיין מתנגנת."
+            ],
+            "layout": "steps",
+            "tag": "LOAD",
+            "media": "assets/guide/drum-styles-load.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum-frames",
+            "title": "מסגרת לכפתורי התופים",
+            "body": [
+              "פותחים את חלון התופים.",
+              "ל־Style, לכפתור ה־FX ול־Play Drums יש מסגרת.",
+              "גם ל־1/4, ל־1/8, ל־1/16, ל־1/32 ולכפתורי החלוקה האחרים יש מסגרת.",
+              "המסגרת מראה שאלה כפתורים."
+            ],
+            "layout": "steps",
+            "tag": "FRAME",
+            "media": "assets/guide/drum-machine.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-screen.jpg"
+            ]
+          },
+          {
+            "id": "exclusive-switch",
+            "title": "Exclusive",
+            "body": [
+              "באתר החבילות נשארות בקרוב, בלי כפתור הורדה.",
+              "באפליקציה פותחים את חלון Drum Style.",
+              "Switch to exclusive נמצא בתוך החלון."
+            ],
+            "layout": "steps",
+            "tag": "EXCLUSIVE",
+            "media": "assets/guide/switch-exclusive.jpg",
+            "mediaSize": "panel"
+          },
+          {
             "id": "sound",
             "title": "יצירת צליל",
             "body": [
@@ -1655,6 +1836,187 @@
         "features": "Features",
         "architecture": "How it works",
         "sections": [
+          {
+            "id": "looper",
+            "title": "Looper",
+            "body": [
+              "Open the looper.",
+              "There are 8 pages.",
+              "Each page has 4 channels.",
+              "That is 32 channels, not 8.",
+              "Go to the next page to record another loop."
+            ],
+            "layout": "steps",
+            "tag": "LOOPER",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "looper-back",
+            "title": "Back",
+            "body": [
+              "The looper screen has a Back button at the top.",
+              "The microphone screen has a Back button at the top.",
+              "One tap returns to the previous screen."
+            ],
+            "layout": "steps",
+            "tag": "BACK",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "mic-fx",
+            "title": "Mic FX",
+            "body": [
+              "Open the microphone screen.",
+              "Pick one of the 8 Mic FX sounds.",
+              "Long-press.",
+              "You get Amount, EQ, Mid-sweep, Transpose from minus 12 to plus 12, and Reverb."
+            ],
+            "layout": "steps",
+            "tag": "MIC FX",
+            "media": "assets/updates/mic-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum-fx",
+            "title": "Drum FX",
+            "body": [
+              "On the drum screen open Drum FX. The button may show the current effect, such as FX 1.",
+              "Pick one of 8 effects.",
+              "Long-press to adjust.",
+              "Each drum kit keeps its effect, including the values.",
+              "That is saved with the drum-screen save and with session save."
+            ],
+            "layout": "steps",
+            "tag": "DRUM FX",
+            "media": "assets/updates/drum-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "lyrics",
+            "title": "Lyrics teleprompter",
+            "body": [
+              "Open the microphone screen.",
+              "Write the words.",
+              "The words stay on screen while you record."
+            ],
+            "layout": "steps",
+            "tag": "LYRICS",
+            "media": "assets/updates/lyrics.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "pro-live",
+            "title": "Pro and Live",
+            "body": [
+              "Switch between Pro and Live.",
+              "In Live you cannot type button values by hand.",
+              "In Live you cannot delete a channel.",
+              "Going back to Pro restores both."
+            ],
+            "layout": "steps",
+            "tag": "PRO"
+          },
+          {
+            "id": "redo",
+            "title": "Redo",
+            "body": [
+              "Select a channel.",
+              "There is Redo for the channel.",
+              "It is not clear and it is not undo."
+            ],
+            "layout": "steps",
+            "tag": "REDO"
+          },
+          {
+            "id": "looper-fx",
+            "title": "Looper FX",
+            "body": [
+              "In the looper open the effects.",
+              "There are 8 effects.",
+              "Long-press.",
+              "The sliders are the same as on drums and the microphone."
+            ],
+            "layout": "steps",
+            "tag": "LOOPER FX",
+            "media": "assets/updates/looper-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "sound-plus",
+            "title": "Sound +",
+            "body": [
+              "In the sound window tap +.",
+              "A second keyboard opens. The upper one is an octave higher.",
+              "The knobs close and their values are kept.",
+              "Tap + again to bring the knobs back."
+            ],
+            "layout": "steps",
+            "tag": "SOUND +",
+            "media": "assets/guide/sound-plus.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/sound-double-keys.jpg"
+            ]
+          },
+          {
+            "id": "factory-64-restore",
+            "title": "Factory 64",
+            "body": [
+              "Open settings save.",
+              "Choose Factory 64 restore.",
+              "Confirm.",
+              "It restores the base drums, Exclusive, and 64 presets."
+            ],
+            "layout": "steps",
+            "tag": "FACTORY 64",
+            "media": "assets/guide/factory-64.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "load-kit",
+            "title": "Load a kit while playing",
+            "body": [
+              "Start the drums.",
+              "Pick another kit.",
+              "One tap on Load loads it while the previous kit is still playing."
+            ],
+            "layout": "steps",
+            "tag": "LOAD",
+            "media": "assets/guide/drum-styles-load.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum-frames",
+            "title": "Framed drum buttons",
+            "body": [
+              "Open the drum window.",
+              "Style, the FX button, and Play Drums have a frame.",
+              "1/4, 1/8, 1/16, 1/32 and the other division buttons have a frame too.",
+              "The frame shows they are buttons."
+            ],
+            "layout": "steps",
+            "tag": "FRAME",
+            "media": "assets/guide/drum-machine.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-screen.jpg"
+            ]
+          },
+          {
+            "id": "exclusive-switch",
+            "title": "Exclusive",
+            "body": [
+              "On the website the packs stay Coming soon, with no download button.",
+              "In the app open the Drum Style window.",
+              "Switch to exclusive is inside that window."
+            ],
+            "layout": "steps",
+            "tag": "EXCLUSIVE",
+            "media": "assets/guide/switch-exclusive.jpg",
+            "mediaSize": "panel"
+          },
           {
             "id": "sound",
             "title": "Creating a sound",
@@ -3024,6 +3386,187 @@
         "architecture": "Как это работает",
         "sections": [
           {
+            "id": "looper",
+            "title": "Лупер",
+            "body": [
+              "Откройте лупер.",
+              "В нём 8 страниц.",
+              "На каждой странице 4 канала.",
+              "Это 32 канала, а не 8.",
+              "Перейдите на следующую страницу, чтобы записать ещё один луп."
+            ],
+            "layout": "steps",
+            "tag": "LOOPER",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "looper-back",
+            "title": "Назад",
+            "body": [
+              "На экране лупера вверху есть кнопка Back.",
+              "На экране микрофона вверху есть кнопка Back.",
+              "Одно нажатие возвращает на предыдущий экран."
+            ],
+            "layout": "steps",
+            "tag": "BACK",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "mic-fx",
+            "title": "Mic FX",
+            "body": [
+              "Откройте экран микрофона.",
+              "Выберите один из 8 звуков Mic FX.",
+              "Удерживайте палец.",
+              "Появятся Amount, EQ, Mid-sweep, Transpose от минус 12 до плюс 12 и Reverb."
+            ],
+            "layout": "steps",
+            "tag": "MIC FX",
+            "media": "assets/updates/mic-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum-fx",
+            "title": "Drum FX",
+            "body": [
+              "На экране ударных откройте Drum FX. На кнопке может быть текущий эффект, например FX 1.",
+              "Выберите один из 8 эффектов.",
+              "Удерживайте, чтобы настроить.",
+              "Каждый набор ударных хранит свой эффект, включая значения.",
+              "Это сохраняется вместе с сохранением экрана ударных и с сохранением сессии."
+            ],
+            "layout": "steps",
+            "tag": "DRUM FX",
+            "media": "assets/updates/drum-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "lyrics",
+            "title": "Телесуфлёр текста",
+            "body": [
+              "Откройте экран микрофона.",
+              "Напишите слова.",
+              "Слова остаются на экране, пока идёт запись."
+            ],
+            "layout": "steps",
+            "tag": "LYRICS",
+            "media": "assets/updates/lyrics.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "pro-live",
+            "title": "Pro и Live",
+            "body": [
+              "Переключайтесь между Pro и Live.",
+              "В Live нельзя вводить значения кнопок вручную.",
+              "В Live нельзя удалить канал.",
+              "Возврат в Pro возвращает и то и другое."
+            ],
+            "layout": "steps",
+            "tag": "PRO"
+          },
+          {
+            "id": "redo",
+            "title": "Redo",
+            "body": [
+              "Выберите канал.",
+              "У канала есть Redo.",
+              "Это не Clear и не Undo."
+            ],
+            "layout": "steps",
+            "tag": "REDO"
+          },
+          {
+            "id": "looper-fx",
+            "title": "Looper FX",
+            "body": [
+              "В лупере откройте эффекты.",
+              "Там 8 эффектов.",
+              "Удерживайте палец.",
+              "Ползунки те же, что у ударных и у микрофона."
+            ],
+            "layout": "steps",
+            "tag": "LOOPER FX",
+            "media": "assets/updates/looper-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "sound-plus",
+            "title": "Sound +",
+            "body": [
+              "В окне звука нажмите +.",
+              "Откроется вторая клавиатура. Верхняя на октаву выше.",
+              "Регуляторы закрываются, а их значения сохраняются.",
+              "Нажмите + ещё раз, чтобы вернуть регуляторы."
+            ],
+            "layout": "steps",
+            "tag": "SOUND +",
+            "media": "assets/guide/sound-plus.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/sound-double-keys.jpg"
+            ]
+          },
+          {
+            "id": "factory-64-restore",
+            "title": "Factory 64",
+            "body": [
+              "Откройте сохранение в настройках.",
+              "Выберите Factory 64 restore.",
+              "Подтвердите.",
+              "Восстанавливаются базовые ударные, Exclusive и 64 пресета."
+            ],
+            "layout": "steps",
+            "tag": "FACTORY 64",
+            "media": "assets/guide/factory-64.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "load-kit",
+            "title": "Загрузка набора во время игры",
+            "body": [
+              "Запустите ударные.",
+              "Выберите другой набор.",
+              "Одно нажатие на Load загружает его, пока предыдущий набор ещё играет."
+            ],
+            "layout": "steps",
+            "tag": "LOAD",
+            "media": "assets/guide/drum-styles-load.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum-frames",
+            "title": "Рамки кнопок ударных",
+            "body": [
+              "Откройте окно ударных.",
+              "У Style, кнопки FX и Play Drums есть рамка.",
+              "У 1/4, 1/8, 1/16, 1/32 и остальных кнопок деления тоже есть рамка.",
+              "Рамка показывает, что это кнопки."
+            ],
+            "layout": "steps",
+            "tag": "FRAME",
+            "media": "assets/guide/drum-machine.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-screen.jpg"
+            ]
+          },
+          {
+            "id": "exclusive-switch",
+            "title": "Exclusive",
+            "body": [
+              "На сайте наборы остаются со статусом Скоро, без кнопки загрузки.",
+              "В приложении откройте окно Drum Style.",
+              "Switch to exclusive находится внутри этого окна."
+            ],
+            "layout": "steps",
+            "tag": "EXCLUSIVE",
+            "media": "assets/guide/switch-exclusive.jpg",
+            "mediaSize": "panel"
+          },
+          {
             "id": "sound",
             "title": "Создание звука",
             "body": [
@@ -4391,6 +4934,187 @@
         "features": "المزايا",
         "architecture": "كيف يعمل",
         "sections": [
+          {
+            "id": "looper",
+            "title": "اللوبر",
+            "body": [
+              "افتح اللوبر.",
+              "فيه 8 صفحات.",
+              "في كل صفحة 4 قنوات.",
+              "هذا 32 قناة، وليس 8.",
+              "انتقل إلى الصفحة التالية لتسجيل لوپ آخر."
+            ],
+            "layout": "steps",
+            "tag": "LOOPER",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "looper-back",
+            "title": "رجوع",
+            "body": [
+              "في شاشة اللوبر زر Back في الأعلى.",
+              "في شاشة الميكروفون زر Back في الأعلى.",
+              "ضغطة واحدة تعيد إلى الشاشة السابقة."
+            ],
+            "layout": "steps",
+            "tag": "BACK",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "mic-fx",
+            "title": "Mic FX",
+            "body": [
+              "افتح شاشة الميكروفون.",
+              "اختر واحداً من أصوات Mic FX الثمانية.",
+              "اضغط مطولاً.",
+              "تظهر Amount وEQ وMid-sweep وTranspose من ناقص 12 إلى زائد 12 وReverb."
+            ],
+            "layout": "steps",
+            "tag": "MIC FX",
+            "media": "assets/updates/mic-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum-fx",
+            "title": "Drum FX",
+            "body": [
+              "في شاشة الطبول افتح Drum FX. قد يظهر على الزر المؤثر الحالي، مثل FX 1.",
+              "اختر واحداً من 8 مؤثرات.",
+              "اضغط مطولاً للضبط.",
+              "كل طقم طبول يحتفظ بمؤثره، بما في ذلك القيم.",
+              "يُحفظ ذلك مع حفظ شاشة الطبول ومع حفظ الجلسة."
+            ],
+            "layout": "steps",
+            "tag": "DRUM FX",
+            "media": "assets/updates/drum-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "lyrics",
+            "title": "تلبرومبتر الكلمات",
+            "body": [
+              "افتح شاشة الميكروفون.",
+              "اكتب الكلمات.",
+              "تبقى الكلمات على الشاشة أثناء التسجيل."
+            ],
+            "layout": "steps",
+            "tag": "LYRICS",
+            "media": "assets/updates/lyrics.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "pro-live",
+            "title": "Pro وLive",
+            "body": [
+              "بدّل بين Pro وLive.",
+              "في Live لا يمكنك كتابة قيم الأزرار يدوياً.",
+              "في Live لا يمكنك حذف قناة.",
+              "العودة إلى Pro تعيد الاثنين."
+            ],
+            "layout": "steps",
+            "tag": "PRO"
+          },
+          {
+            "id": "redo",
+            "title": "Redo",
+            "body": [
+              "اختر قناة.",
+              "للقناة Redo.",
+              "هذا ليس Clear وليس Undo."
+            ],
+            "layout": "steps",
+            "tag": "REDO"
+          },
+          {
+            "id": "looper-fx",
+            "title": "Looper FX",
+            "body": [
+              "في اللوبر افتح المؤثرات.",
+              "هناك 8 مؤثرات.",
+              "اضغط مطولاً.",
+              "المنزلقات هي نفسها في الطبول والميكروفون."
+            ],
+            "layout": "steps",
+            "tag": "LOOPER FX",
+            "media": "assets/updates/looper-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "sound-plus",
+            "title": "Sound +",
+            "body": [
+              "في نافذة الصوت اضغط +.",
+              "تفتح لوحة مفاتيح ثانية. العليا أعلى بأوكتاف.",
+              "تُغلق المقابض وتبقى قيمها.",
+              "اضغط + مرة أخرى لإعادة المقابض."
+            ],
+            "layout": "steps",
+            "tag": "SOUND +",
+            "media": "assets/guide/sound-plus.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/sound-double-keys.jpg"
+            ]
+          },
+          {
+            "id": "factory-64-restore",
+            "title": "Factory 64",
+            "body": [
+              "افتح الحفظ في الإعدادات.",
+              "اختر Factory 64 restore.",
+              "أكّد.",
+              "يعيد طبول الأساس وExclusive و64 إعداداً مسبقاً."
+            ],
+            "layout": "steps",
+            "tag": "FACTORY 64",
+            "media": "assets/guide/factory-64.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "load-kit",
+            "title": "تحميل طقم أثناء العزف",
+            "body": [
+              "شغّل الطبول.",
+              "اختر طقماً آخر.",
+              "ضغطة واحدة على Load تحمّله بينما الطقم السابق ما زال يعزف."
+            ],
+            "layout": "steps",
+            "tag": "LOAD",
+            "media": "assets/guide/drum-styles-load.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum-frames",
+            "title": "إطارات أزرار الطبول",
+            "body": [
+              "افتح نافذة الطبول.",
+              "Style وزر FX وPlay Drums لها إطار.",
+              "1/4 و1/8 و1/16 و1/32 وأزرار التقسيم الأخرى لها إطار أيضاً.",
+              "الإطار يبيّن أنها أزرار."
+            ],
+            "layout": "steps",
+            "tag": "FRAME",
+            "media": "assets/guide/drum-machine.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-screen.jpg"
+            ]
+          },
+          {
+            "id": "exclusive-switch",
+            "title": "Exclusive",
+            "body": [
+              "في الموقع تبقى الحزم قريباً، بلا زر تنزيل.",
+              "في التطبيق افتح نافذة Drum Style.",
+              "Switch to exclusive موجود داخل هذه النافذة."
+            ],
+            "layout": "steps",
+            "tag": "EXCLUSIVE",
+            "media": "assets/guide/switch-exclusive.jpg",
+            "mediaSize": "panel"
+          },
           {
             "id": "sound",
             "title": "إنشاء صوت",

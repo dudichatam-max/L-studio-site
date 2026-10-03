@@ -13,9 +13,13 @@ type GuideSection = {
   tag?: string;
   title: string;
   body: string[];
-  tipBeginner: string;
-  tipAdvanced: string;
+  /** Render `body` as numbered steps. Older sections stay as paragraphs. */
+  layout?: "steps";
+  tipBeginner?: string;
+  tipAdvanced?: string;
   media?: string;
+  /** Extra screenshots after `media`, each in its own frame. */
+  images?: string[];
   mediaSize?: "thumb" | "panel";
   bullets?: string[];
 };
@@ -70,6 +74,15 @@ function mediaUrl(path: string) {
 
 function sectionNumber(index: number) {
   return String(index + 1).padStart(2, "0");
+}
+
+function sectionShots(section: GuideSection) {
+  const shots: string[] = [];
+  if (section.media) shots.push(section.media);
+  for (const extra of section.images ?? []) {
+    if (extra && !shots.includes(extra)) shots.push(extra);
+  }
+  return shots;
 }
 
 function GuideDemoVideo({ label, playerTitle }: { label: string; playerTitle: string }) {
@@ -189,12 +202,15 @@ export default function Guide() {
 
           <article className="guide-article" dir={isRtl ? "rtl" : "ltr"}>
             {text.sections.map((section, index) => {
+              const shots = sectionShots(section);
               const mediaClass = [
                 "guide-media",
-                section.mediaSize === "thumb" ? "guide-media--thumb" : section.media ? "guide-media--panel" : "",
+                section.mediaSize === "thumb" ? "guide-media--thumb" : shots.length ? "guide-media--panel" : "",
               ]
                 .filter(Boolean)
                 .join(" ");
+              const paragraphs = section.body ?? [];
+              const showTips = Boolean(section.tipBeginner || section.tipAdvanced);
 
               return (
                 <section className="guide-block" id={`guide-${section.id}`} key={section.id}>
@@ -203,12 +219,20 @@ export default function Guide() {
                       {section.tag ? <span className="guide-tag">{section.tag}</span> : null}
                     </div>
                     <div className="guide-block-body">
-                      <div className={section.media ? "guide-block-main" : "guide-block-main guide-block-main--solo"}>
+                      <div className={shots.length ? "guide-block-main" : "guide-block-main guide-block-main--solo"}>
                         <div className="guide-copy">
                           <h2>{section.title}</h2>
-                          {section.body.map((paragraph) => (
-                            <p key={paragraph}>{paragraph}</p>
-                          ))}
+                          {section.layout === "steps" ? (
+                            <ol className="guide-steps">
+                              {paragraphs.map((step, stepIndex) => (
+                                <li key={`${section.id}-${stepIndex}`}>{step}</li>
+                              ))}
+                            </ol>
+                          ) : (
+                            paragraphs.map((paragraph) => (
+                              <p key={paragraph}>{paragraph}</p>
+                            ))
+                          )}
                           {section.bullets?.length ? (
                             <ul className="guide-bullets">
                               {section.bullets.map((item) => (
@@ -217,24 +241,34 @@ export default function Guide() {
                             </ul>
                           ) : null}
                         </div>
-                        {section.media ? (
-                          <figure className={mediaClass}>
-                            <img src={mediaUrl(section.media)} alt="" loading="lazy" />
-                          </figure>
+                        {shots.length ? (
+                          <div className="guide-shots">
+                            {shots.map((src) => (
+                              <figure className={mediaClass} key={src}>
+                                <img src={mediaUrl(src)} alt={section.title} loading="lazy" />
+                              </figure>
+                            ))}
+                          </div>
                         ) : null}
                       </div>
-                      <div className="guide-tips">
-                        <div className="guide-tip guide-tip--beginner">
-                          <span className="guide-tip-label">
-                            <Sparkles size={14} /> {text.tipBeginner}
-                          </span>
-                          <p>{section.tipBeginner}</p>
+                      {showTips ? (
+                        <div className="guide-tips">
+                          {section.tipBeginner ? (
+                            <div className="guide-tip guide-tip--beginner">
+                              <span className="guide-tip-label">
+                                <Sparkles size={14} /> {text.tipBeginner}
+                              </span>
+                              <p>{section.tipBeginner}</p>
+                            </div>
+                          ) : null}
+                          {section.tipAdvanced ? (
+                            <div className="guide-tip guide-tip--advanced">
+                              <span className="guide-tip-label">{text.tipAdvanced}</span>
+                              <p>{section.tipAdvanced}</p>
+                            </div>
+                          ) : null}
                         </div>
-                        <div className="guide-tip guide-tip--advanced">
-                          <span className="guide-tip-label">{text.tipAdvanced}</span>
-                          <p>{section.tipAdvanced}</p>
-                        </div>
-                      </div>
+                      ) : null}
                     </div>
                 </section>
               );
