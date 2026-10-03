@@ -184,7 +184,7 @@
             "question": "אפשר להשתמש במיקרופון כחלק מהנגינה ולא רק להקליט קול?",
             "answer": [
               "כן.",
-              "המיקרופון הוא חלק מנתיב האודיו של L Studio. יש לו ערוצים משלו, שליטה בעוצמה ובמיקום בסטריאו, ניטור, Gain, פילטר High-Pass, Gate, Presence ו־Compression.",
+              "המיקרופון הוא חלק מנתיב האודיו של L Studio. יש לו ערוצים משלו, שליטה בעוצמה ובמיקום בסטריאו, ניטור, Gain ופילטר High-Pass.",
               "כך אפשר לשלב מקור חי בתוך הסטאפ ולשלוט בו לצד הסינתיסייזר, הלופים והתופים.",
               "אם משתמשים בניטור דרך רמקולים, צריך כמובן לשים לב לפידבק אקוסטי."
             ]
@@ -193,9 +193,9 @@
             "question": "אפשר לבנות ביט בלי לתכנת כל תוף מאפס?",
             "answer": [
               "כן.",
-              "מעבר לתכנות ידני של ה־Step Sequencer, L Studio כולל אקראי לפי סגנון (ז׳אנר אקראי).",
-              "לחיצה ארוכה על Style בוחרת רוק, טראנס, ראפ או טכנו. הבחירה משפיעה על אקראי: המערכת בונה בסיס מוזיקלי לפי הסגנון, לא רק צעדים אקראיים.",
-              "בגרסת Pro הזו מתמלאים כל שמונת הערוצים. אחר כך אפשר לערוך Pattern, BPM, Swing, עוצמות ומיקום בסטריאו.",
+              "Style פותח את חלון Drum Style. שם בוחרים ערכה.",
+              "Random בונה תבנית אחרת בסגנון הנוכחי. זה לא הטלת מטבע.",
+              "אחר כך אפשר לערוך את התבנית, את ה-BPM ואת ה-Swing.",
               "ב־Pro יש גם שמונה ערכות תופים מוכנות, כולל Experimental עם שמונה ערוצים טעונים ומקצבים מוכנים."
             ]
           },
@@ -219,7 +219,7 @@
           {
             "question": "אפשר ממש להקליט שיר שלם מתוך L Studio?",
             "answer": [
-              "אפשר לבנות ולהקליט ביצוע שלם בתוך המערכת, אבל L Studio לא מנסה להיות DAW מסורתי עם Timeline אינסופי.",
+              "אפשר לבנות ולהקליט ביצוע שלם בתוך המערכת.",
               "העבודה בנויה יותר סביב נגינה, שכבות, לופים, תופים, מיקרופון וסינתזה בזמן אמת.",
               "בנוסף, אפשר להקליט את המיקס הסופי ישירות לקובץ WAV, כך שאפשר לקחת את הביצוע החוצה גם בלי להפוך את L Studio לעורך אולפן מלא."
             ]
@@ -277,7 +277,7 @@
         "title": "מדריך למשתמש",
         "titleEm": "L Studio.",
         "eyebrow": "LEARN / USER GUIDE / L STUDIO",
-        "intro": "המדריך הזה מתמקד בדברים שבאמת חשוב לדעת כדי לעבוד נכון עם המערכת, כולל פעולות שלא תמיד ברורות מהמסך עצמו.",
+        "intro": "כל שורה אומרת מה הפקד עושה כשמשתמשים בו.",
         "onThisPage": "בעמוד הזה",
         "tipBeginner": "טיפ למתחילים",
         "tipAdvanced": "טיפ למתקדמים",
@@ -291,11 +291,11 @@
             "id": "looper",
             "title": "לופר",
             "body": [
-              "פותחים את הלופר.",
-              "יש 8 עמודים.",
-              "בכל עמוד יש 4 ערוצים.",
-              "זה 32 ערוצים, לא 8.",
-              "עוברים לעמוד הבא כדי להקליט לופ נוסף."
+              "8 עמודים. בכל עמוד 4 ערוצים. ביחד 32 ערוצים, לא 8.",
+              "הקלטה בעמוד אחד נשארת כשעוברים לעמוד אחר.",
+              "Back בראש הלופר, ו-Back בראש המיקרופון, מחזירים למסך הקודם.",
+              "REC מקליט לערוץ. DUB מוסיף הקלטה נוספת על אותו ערוץ. Play מנגן. STOP עוצר.",
+              "Vol קובע את העוצמה של הערוץ. Pan מזיז אותו ימינה או שמאלה."
             ],
             "layout": "steps",
             "tag": "LOOPER",
@@ -303,79 +303,10 @@
             "mediaSize": "panel"
           },
           {
-            "id": "looper-back",
-            "title": "חזרה",
-            "body": [
-              "במסך הלופר יש כפתור Back למעלה.",
-              "במסך המיקרופון יש כפתור Back למעלה.",
-              "הקשה אחת מחזירה למסך הקודם."
-            ],
-            "layout": "steps",
-            "tag": "BACK",
-            "media": "assets/updates/looper-back.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "mic-fx",
-            "title": "Mic FX",
-            "body": [
-              "פותחים את מסך המיקרופון.",
-              "בוחרים אחד מ־8 צלילי Mic FX.",
-              "לחיצה ארוכה.",
-              "מקבלים Amount, EQ, Mid-sweep, Transpose ממינוס 12 עד פלוס 12, ו־Reverb."
-            ],
-            "layout": "steps",
-            "tag": "MIC FX",
-            "media": "assets/updates/mic-fx.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum-fx",
-            "title": "Drum FX",
-            "body": [
-              "במסך התופים פותחים את Drum FX. הכפתור יכול להציג את האפקט הנוכחי, למשל FX 1.",
-              "בוחרים אחד מ־8 אפקטים.",
-              "לחיצה ארוכה כדי לכוון.",
-              "כל ערכת תופים שומרת את האפקט שלה, כולל הערכים.",
-              "זה נשמר עם השמירה של מסך התופים ועם שמירת Session."
-            ],
-            "layout": "steps",
-            "tag": "DRUM FX",
-            "media": "assets/updates/drum-fx.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "lyrics",
-            "title": "טלפרומפטר למילים",
-            "body": [
-              "פותחים את מסך המיקרופון.",
-              "כותבים את המילים.",
-              "המילים נשארות על המסך בזמן ההקלטה."
-            ],
-            "layout": "steps",
-            "tag": "LYRICS",
-            "media": "assets/updates/lyrics.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "pro-live",
-            "title": "Pro ו־Live",
-            "body": [
-              "עוברים בין Pro ל־Live.",
-              "ב־Live אי אפשר להקליד ערכים של כפתורים ביד.",
-              "ב־Live אי אפשר למחוק ערוץ.",
-              "חזרה ל־Pro מחזירה את שניהם."
-            ],
-            "layout": "steps",
-            "tag": "PRO"
-          },
-          {
             "id": "redo",
             "title": "Redo",
             "body": [
-              "בוחרים ערוץ.",
-              "יש Redo לערוץ.",
-              "זה לא Clear וזה לא Undo."
+              "Redo נמצא על הערוץ, והוא לא Clear ולא Undo."
             ],
             "layout": "steps",
             "tag": "REDO"
@@ -384,10 +315,8 @@
             "id": "looper-fx",
             "title": "Looper FX",
             "body": [
-              "בלופר פותחים את האפקטים.",
-              "יש 8 אפקטים.",
-              "לחיצה ארוכה.",
-              "הסליידרים הם אותם סליידרים כמו בתופים ובמיקרופון."
+              "מקישים על אחד מ-8 אפקטים כדי לשים אותו על הלופ.",
+              "לחיצה ארוכה פותחת סליידרים מאותו סוג כמו ב-Drum FX וב-Mic FX."
             ],
             "layout": "steps",
             "tag": "LOOPER FX",
@@ -395,13 +324,106 @@
             "mediaSize": "panel"
           },
           {
+            "id": "mic-fx",
+            "title": "Mic FX",
+            "body": [
+              "מקישים על אחד מ-8 צלילים כדי להשתמש בו.",
+              "לחיצה ארוכה פותחת את Amount (כמה חזק האפקט), EQ, Mid-sweep, Transpose ממינוס 12 עד פלוס 12 (0 משאיר את הגובה כמו שהוא), ו-Reverb."
+            ],
+            "layout": "steps",
+            "tag": "MIC FX",
+            "media": "assets/updates/mic-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "lyrics",
+            "title": "מילים",
+            "body": [
+              "כותבים את המילים, והן נשארות על המסך בזמן ההקלטה.",
+              "Play מתחיל להזיז את המילים.",
+              "A- ו-A+ משנים את גודל הטקסט.",
+              "Speed משנה את המהירות שבה המילים זזות."
+            ],
+            "layout": "steps",
+            "tag": "LYRICS",
+            "media": "assets/updates/lyrics.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum",
+            "title": "תופים",
+            "body": [
+              "Play Drums מפעיל את הערכה. STOP עוצר אותה.",
+              "כפתור ה-FX מציג את האפקט הנוכחי, למשל FX 1. הקשה בוחרת אחד מ-8 אפקטים לכל הערכה. לחיצה ארוכה פותחת את הכוונון.",
+              "הערכה שומרת את האפקט ואת הערכים שלו בשמירה במסך התופים ובשמירת Session.",
+              "Style פותח את חלון Drum Style.",
+              "החצים בצד עוברים לערכה הקודמת או לערכה הבאה.",
+              "Drum Vol הוא עוצמת הערכה. Swing משנה את התחושה בלי לשנות את ה-BPM. BPM הוא הטמפו.",
+              "1/4, 1/8, 1/16 ו-1/32 קובעים את גודל הצעד בתבנית. 1/4 הוא הצעד הרחב ביותר. 1/32 הוא הצעד העדין ביותר, ולכן אותה תיבה יכולה להכיל יותר מכות.",
+              "Save שומר את הערכה, כולל האפקט.",
+              "Random בונה תבנית אחרת בסגנון הנוכחי. זה לא הטלת מטבע."
+            ],
+            "layout": "steps",
+            "tag": "DRUM",
+            "media": "assets/guide/drum-screen.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-machine.jpg"
+            ]
+          },
+          {
+            "id": "drum-fx",
+            "title": "Drum FX",
+            "body": [
+              "הקשה בוחרת אחד מ-8 אפקטים לכל הערכה. כפתור ה-FX מציג את האפקט שנבחר, למשל FX 1.",
+              "לחיצה ארוכה פותחת את הכוונון.",
+              "הערכה שומרת את האפקט ואת הערכים שלו בשמירה במסך התופים ובשמירת Session."
+            ],
+            "layout": "steps",
+            "tag": "DRUM FX",
+            "media": "assets/updates/drum-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "style",
+            "title": "Drum Style",
+            "body": [
+              "עמודים 1 עד 8 הם עמודי סגנון. המספר המודגש הוא העמוד הפתוח.",
+              "Edit page name משנה את שם העמוד.",
+              "Switch to exclusive, בתוך החלון הזה, פותח את חבילות Exclusive. בלי הורדה.",
+              "באתר Exclusive נשאר בקרוב.",
+              "Load בשורה טוען את הערכה בהקשה אחת, גם כשהתופים כבר מנגנים.",
+              "Save בשורה שומר את הערכה. Edit פותח אותה לעריכה.",
+              "Import מכניס ערכה. Export מוציא ערכה.",
+              "Close סוגר את החלון בלי לטעון.",
+              "רוב הערכות טוענות ארבעה ערוצים ומשאירות ארבעה פנויים לסאמפלים שלכם. Experimental טוען שמונה ערוצים עם תבניות מוכנות.",
+              "ב-Pro שמונה ערכות. בכל ערכה שמונה סגנונות, 64 סגנונות בסך הכל, לא 64 ערכות."
+            ],
+            "layout": "steps",
+            "tag": "STYLE",
+            "media": "assets/guide/switch-exclusive.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-styles-load.jpg"
+            ]
+          },
+          {
+            "id": "random",
+            "title": "Random",
+            "body": [
+              "Random בונה תבנית אחרת בסגנון הנוכחי.",
+              "זה לא הטלת מטבע."
+            ],
+            "layout": "steps",
+            "tag": "RANDOM"
+          },
+          {
             "id": "sound-plus",
             "title": "Sound +",
             "body": [
-              "בחלון הסאונד מקישים על +.",
-              "נפתחת מקלדת שנייה. העליונה גבוהה באוקטבה.",
-              "הנובים נסגרים והערכים שלהם נשמרים.",
-              "מקישים שוב על + כדי להחזיר את הנובים."
+              "הקשה על + פותחת מקלדת שנייה, אוקטבה אחת למעלה. זה אותו תו, כפול ב-Hz.",
+              "הנובים נסגרים והערכים שלהם נשארים.",
+              "הקשה נוספת על + מחזירה את הנובים."
             ],
             "layout": "steps",
             "tag": "SOUND +",
@@ -412,13 +434,22 @@
             ]
           },
           {
+            "id": "pro-live",
+            "title": "Pro ו-Live",
+            "body": [
+              "Live מיועד לנגינה מול אנשים.",
+              "ב-Live אי אפשר להקליד ערכים של כפתורים ביד, ואי אפשר למחוק ערוץ, כדי שהסט לא יישבר באמצע שיר.",
+              "Pro מחזיר את העריכה."
+            ],
+            "layout": "steps",
+            "tag": "PRO"
+          },
+          {
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "פותחים את השמירה בהגדרות.",
-              "בוחרים Factory 64 restore.",
-              "מאשרים.",
-              "זה מחזיר את תופי הבסיס, את Exclusive, ו־64 פריסטים."
+              "במסך השמירה בהגדרות, השורה Factory 64 מחזירה את תופי הבסיס, את Exclusive, ו-64 פריסטים, רק אחרי אישור.",
+              "Close משאיר הכל כמו שהוא."
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
@@ -426,315 +457,182 @@
             "mediaSize": "panel"
           },
           {
-            "id": "load-kit",
-            "title": "טעינת ערכה תוך כדי נגינה",
-            "body": [
-              "מפעילים את התופים.",
-              "בוחרים ערכה אחרת.",
-              "הקשה אחת על Load טוענת אותה בזמן שהערכה הקודמת עדיין מתנגנת."
-            ],
-            "layout": "steps",
-            "tag": "LOAD",
-            "media": "assets/guide/drum-styles-load.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum-frames",
-            "title": "מסגרת לכפתורי התופים",
-            "body": [
-              "פותחים את חלון התופים.",
-              "ל־Style, לכפתור ה־FX ול־Play Drums יש מסגרת.",
-              "גם ל־1/4, ל־1/8, ל־1/16, ל־1/32 ולכפתורי החלוקה האחרים יש מסגרת.",
-              "המסגרת מראה שאלה כפתורים."
-            ],
-            "layout": "steps",
-            "tag": "FRAME",
-            "media": "assets/guide/drum-machine.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-screen.jpg"
-            ]
-          },
-          {
-            "id": "exclusive-switch",
-            "title": "Exclusive",
-            "body": [
-              "באתר החבילות נשארות בקרוב, בלי כפתור הורדה.",
-              "באפליקציה פותחים את חלון Drum Style.",
-              "Switch to exclusive נמצא בתוך החלון."
-            ],
-            "layout": "steps",
-            "tag": "EXCLUSIVE",
-            "media": "assets/guide/switch-exclusive.jpg",
-            "mediaSize": "panel"
-          },
-          {
             "id": "sound",
-            "title": "יצירת צליל",
+            "title": "סאונד",
             "body": [
-              "זהו אזור העבודה המרכזי ליצירת ועיצוב צליל.",
-              "כדאי להתחיל מצליל אחד ולשנות בכל פעם פרמטר אחד בלבד. כך קל להבין מה באמת השתנה."
+              "משנים פרמטר אחד, מקשיבים, ורק אז משנים את הבא.",
+              "אפשר לשנות פרמטר תוך כדי נגינה ולהשתמש בשינוי עצמו בביצוע."
             ],
-            "tipBeginner": "אל תשנה עשרה דברים בבת אחת. שינוי קטן והקשבה חוזרת ילמדו אותך את המערכת מהר יותר.",
-            "tipAdvanced": "אפשר לשנות פרמטרים בזמן נגינה ולהשתמש בשינוי עצמו כחלק מהביצוע.",
-            "tag": "SOUND",
-            "media": "assets/guide/guide-sound.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "SOUND"
           },
           {
             "id": "value",
-            "title": "שינוי מדויק של ערכים",
+            "title": "ערך מדויק",
             "body": [
-              "ליד כל כפתור מוצג ערך מספרי.",
-              "במקום לגרור את הכפתור ולנסות להגיע למספר הרצוי, אפשר להקיש על הערך ולהזין אותו ישירות."
+              "מקישים על המספר ליד פקד ומקלידים את הערך.",
+              "ב-Live אי אפשר להקליד ערכים ביד."
             ],
-            "tipBeginner": "אם קשה להגיע לערך מסוים, הקלד אותו.",
-            "tipAdvanced": "הזנה ידנית מאפשרת לשחזר סאונדים בדיוק ולבצע השוואות בין מצבים שונים.",
-            "media": "assets/guide/guide-value.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps"
           },
           {
             "id": "freq",
-            "title": "עבודה עם תדרים",
+            "title": "תדרים",
             "body": [
-              "אזור זה מאפשר לעבוד ישירות עם תדרים ולבנות מערכות כיוון אישיות.",
-              "התדרים אינם רק תוצאה של בחירת תו. הם חלק מהיצירה עצמה."
+              "עורכים את התדרים ובונים כיוון משלכם.",
+              "מתחילים מכיוון מוכן ומשנים תדר אחד או שניים."
             ],
-            "tipBeginner": "התחל ממערכת מוכנה ושנה רק תדר אחד או שניים.",
-            "tipAdvanced": "האופי של מערכת כיוון נקבע בעיקר על ידי היחסים בין התדרים, לא רק על ידי הערך של כל תדר בנפרד.",
-            "tag": "FREQ",
-            "media": "assets/guide/guide-freq.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "FREQ"
           },
           {
             "id": "key",
-            "title": "בחירת סולם",
+            "title": "סולם",
             "body": [
-              "בחירת סולם מסמנת את הצלילים השייכים לסולם על המקלדת.",
-              "הסולם משמש כמדריך ויזואלי ואינו מחליף את התדרים שהוגדרו באזור התדרים."
+              "בוחרים סולם, והמקלדת מסמנת את התווים ששייכים לו.",
+              "הסימון לא מחליף את התדרים שקבעתם."
             ],
-            "tipBeginner": "השתמש בסימון כדי להבין במהירות אילו קלידים שייכים לסולם.",
-            "tipAdvanced": "אפשר לעבוד עם מערכת תדרים אחת ולבחור סימון של סולם אחר לצורך נגינה או חקירה מוזיקלית.",
-            "tag": "KEY",
-            "media": "assets/guide/guide-key.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "KEY"
           },
           {
             "id": "oct",
-            "title": "שינוי אוקטבה",
+            "title": "אוקטבה",
             "body": [
-              "שינוי אוקטבה מעלה או מוריד את כל מערכת התדרים בלי לשנות את היחסים ביניהם."
+              "מזיזים את האוקטבה למעלה או למטה. כל הכיוון זז, והיחסים בין התדרים נשארים."
             ],
-            "tipBeginner": "אם הצליל גבוה או נמוך מדי, נסה קודם לשנות אוקטבה.",
-            "tipAdvanced": "אפשר להשתמש באותה מערכת תדרים בכמה תחומים שונים בלי להגדיר אותה מחדש.",
-            "tag": "OCT",
-            "media": "assets/guide/guide-oct.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "OCT"
           },
           {
             "id": "pad",
-            "title": "משטח ביצוע",
+            "title": "פד",
             "body": [
-              "המשטח מאפשר שליטה בזמן אמת ומסוגל לעבוד עם כמה חלקים של המערכת במקביל."
+              "תנועה על הפד מזיזה יותר מחלק אחד באותו זמן.",
+              "מתחילים ממקור אחד עד ששומעים איך הפד מגיב."
             ],
-            "tipBeginner": "התחל עם מקור אחד בלבד עד שהתגובה של המשטח ברורה לך.",
-            "tipAdvanced": "אפשר להשתמש בתנועה אחת כדי להשפיע על כמה שכבות במקביל.",
-            "tag": "PAD",
-            "media": "assets/guide/guide-pad.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "PAD"
           },
           {
             "id": "mic",
-            "title": "הקלטה",
+            "title": "מיקרופון",
             "body": [
-              "האזור הזה מיועד להקלטת קול, כלי נגינה או כל מקור חיצוני."
+              "מקליטים קול, כלי, או מקור אחר.",
+              "עושים הקלטת בדיקה קצרה לפני הקלטה ארוכה.",
+              "הקלטה קצרה יכולה להפוך ללופ."
             ],
-            "tipBeginner": "בצע הקלטת ניסיון קצרה לפני הקלטה ארוכה.",
-            "tipAdvanced": "הקלטות קצרות יכולות להפוך ללופים, לשכבות או לחומר גלם לעיבוד.",
-            "tag": "MIC",
-            "media": "assets/mic-window.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "MIC"
           },
           {
             "id": "loop",
-            "title": "עבודה עם שכבות",
+            "title": "שכבות",
             "body": [
-              "מערכת הלופים מאפשרת לעבוד עם מספר שכבות אודיו במקביל.",
-              "לכל ערוץ יש שליטה נפרדת בעוצמה ובמיקום במרחב."
+              "קובעים עוצמה ומיקום במרחב לכל ערוץ לפני שמוסיפים אפקט.",
+              "מוסיפים שכבה נוספת רק כששומעים מה היא מוסיפה."
             ],
-            "tipBeginner": "התחל משכבה אחת. הוסף שכבות רק כאשר ברור מה הן מוסיפות.",
-            "tipAdvanced": "השתמש בעוצמה ובמיקום של כל ערוץ כדי ליצור מרחב עוד לפני הוספת אפקטים.",
-            "tag": "LOOP",
-            "media": "assets/guide/guide-loop.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum",
-            "title": "בניית מקצב",
-            "body": [
-              "מערכת התופים מבוססת על תבניות של שישה עשר צעדים, עם כמה תבניות שאפשר לשמור ולהחליף ביניהן.",
-              "ב־Pro מגיעות שמונה ערכות תופים. בכל ערכה 8 סגנונות, 64 סגנונות בסך הכול ולא 64 ערכות (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
-              "רוב הערכות טוענות ארבעה ערוצים ומשאירות ארבעה פנויים לסאמפלים שלכם. Experimental טוען שמונה ערוצים עם מקצבים מוכנים כדי להדגים את יכולות המערכת."
-            ],
-            "tipBeginner": "התחילו מקיט מוכן, האזינו באוזניות, ואז שנו צעד אחד בכל פעם.",
-            "tipAdvanced": "ב־Experimental אפשר ללמוד איך שמונה ערוצים עובדים יחד, ואז לבנות תבנית משלכם על בסיס אותו רעיון.",
-            "tag": "DRUM",
-            "media": "assets/guide/guide-drum.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "LOOP"
           },
           {
             "id": "pattern",
-            "title": "טעינת תבנית",
+            "title": "תבנית",
             "body": [
-              "הקשה רגילה טוענת תבנית.",
-              "לחיצה ממושכת פותחת את אפשרויות החזרה."
+              "הקשה על תבנית טוענת אותה.",
+              "לחיצה ארוכה קובעת כמה פעמים היא חוזרת."
             ],
-            "tipBeginner": "זכור: הקשה טוענת, לחיצה ממושכת עורכת.",
-            "tipAdvanced": "אפשר להכין מראש כמה תבניות וליצור רצף אוטומטי.",
-            "tag": "PATTERN",
-            "media": "assets/guide/guide-pattern.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "PATTERN"
           },
           {
             "id": "repeat",
-            "title": "חזרות אוטומטיות",
+            "title": "חזרות",
             "body": [
-              "לכל תבנית אפשר להגדיר כמה פעמים היא תחזור.",
-              "אפשר לבחור מספר חזרות או חזרה ללא הגבלה."
+              "קובעים מספר חזרות לתבנית, או משאירים חזרה בלי הגבלה.",
+              "ארבע חזרות: התבנית מתנגנת ארבע פעמים ואז עוברת הלאה."
             ],
-            "tipBeginner": "אם אתה רוצה שתבנית תתנגן ארבע פעמים, הגדר ארבע חזרות.",
-            "tipAdvanced": "אפשר לבנות מבנה שלם של קטע בלי לעבור ידנית בין תבניות.",
-            "tag": "REPEAT",
-            "media": "assets/guide/guide-repeat.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "REPEAT"
           },
           {
             "id": "live",
             "title": "עריכה בזמן נגינה",
             "body": [
-              "אפשר לשנות צעדים בזמן שהתבנית מתנגנת.",
-              "אין צורך לעצור את המקצב כדי לערוך אותו."
+              "משנים צעדים בזמן שהתבנית מתנגנת.",
+              "לא חייבים לעצור את הערכה כדי לערוך."
             ],
-            "tipBeginner": "התחל לנגן ואז תקן תוך כדי.",
-            "tipAdvanced": "כך אפשר להשתמש במערכת התופים ככלי ביצוע חי.",
-            "media": "assets/guide/guide-live.jpg",
-            "mediaSize": "panel"
+            "layout": "steps"
           },
           {
             "id": "swing",
-            "title": "שינוי תחושה קצבית",
+            "title": "Swing",
             "body": [
-              "משנה את התחושה של המקצב בלי לשנות את המהירות או את מספר הצעדים."
+              "Swing משנה את התחושה בלי לשנות את ה-BPM."
             ],
-            "tipBeginner": "גם שינוי קטן יכול להיות מורגש מאוד.",
-            "tipAdvanced": "אפשר לשנות את התחושה של אותו מקצב בלי לבנות אותו מחדש.",
-            "tag": "SWING",
-            "media": "assets/guide/guide-swing.jpg",
-            "mediaSize": "thumb"
-          },
-          {
-            "id": "style",
-            "title": "חלון סגנונות",
-            "body": [
-              "לחיצה ארוכה על Style פותחת חלון סגנונות מעל מסך התופים. הכותרת בחלון היא Random genre.",
-              "בוחרים ז׳אנר: רוק, טראנס, ראפ או טכנו. הבחירה משפיעה על אלגוריתם ה־Random במקצבי התופים."
-            ],
-            "tipBeginner": "לחצו לחיצה ארוכה על Style, בחרו ז׳אנר, ואז הקישו Random והאזינו.",
-            "tipAdvanced": "נסו את אותו קיט בשני ז׳אנרים. ההבדל נשמע במקצב, בלי לשנות BPM או Swing.",
-            "tag": "STYLE",
-            "media": "assets/guide/guide-style.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "random",
-            "title": "אקראי לפי סגנון",
-            "body": [
-              "הז׳אנר שנבחר בחלון הסגנונות קובע את כיוון ה־Random: רוק, טראנס, ראפ או טכנו.",
-              "האלגוריתם לא מדליק צעדים באקראי גמור. הוא בונה תבנית לפי כללים מוזיקליים של הסגנון שנבחר, על רשת הקצב בלבד (בלי לשנות BPM או Swing בגרסה הנוכחית).",
-              "בגרסת Pro הזו מתמלאים כל שמונת הערוצים."
-            ],
-            "tipBeginner": "בחרו ז׳אנר, לחצו אקראי, ואז ערכו רק את מה שלא מדויק.",
-            "tipAdvanced": "שמרו תבנית שאהבתם לפני סיבוב אקראי נוסף, כדי להשוות כיוונים בלי לאבד גרוב טוב.",
-            "tag": "RANDOM",
-            "media": "assets/guide/guide-random.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "SWING"
           },
           {
             "id": "preset",
-            "title": "שמירת צלילים",
+            "title": "פריסט",
             "body": [
-              "שומר את מצב הצליל."
+              "Save שומר את הצליל הנוכחי.",
+              "שומרים צליל שאהבתם לפני שמשנים אותו."
             ],
-            "tipBeginner": "שמור צלילים טובים מיד.",
-            "tipAdvanced": "ארגן את הצלילים לפי תפקיד ולא לפי מספר.",
-            "tag": "PRESET",
-            "media": "assets/guide/guide-preset.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "PRESET"
           },
           {
             "id": "session",
-            "title": "שמירת עבודה",
+            "title": "Session",
             "body": [
-              "שומר את מצב העבודה הרחב יותר."
+              "Session שומר את מערך העבודה הרחב, כולל אפקט התופים והערכים שלו.",
+              "פריסט שומר צליל. Session שומר את העבודה."
             ],
-            "tipBeginner": "Preset שומר צליל. Session שומר עבודה.",
-            "tipAdvanced": "הפרד בין ספריית הצלילים לבין הפרויקטים.",
-            "tag": "SESSION",
-            "media": "assets/guide/guide-session.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "SESSION"
           },
           {
             "id": "midi",
-            "title": "ייצוא מידע מוזיקלי",
+            "title": "MIDI",
             "body": [
-              "שומר מידע על הנגינה ולא את האודיו עצמו."
+              "MIDI שומר את הנגינה, לא את האודיו.",
+              "מייצאים MIDI כשרוצים לערוך את התווים אחר כך."
             ],
-            "tipBeginner": "בחר MIDI אם אתה רוצה לערוך את התווים אחר כך.",
-            "tipAdvanced": "במערכות כיוון מיוחדות נשמר גם מידע של שינוי גובה הצליל.",
-            "tag": "MIDI",
-            "media": "assets/guide/guide-midi.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "MIDI"
           },
           {
             "id": "wav",
-            "title": "ייצוא אודיו",
+            "title": "WAV",
             "body": [
-              "שומר את הצליל כפי שהוא נשמע."
+              "WAV שומר את הצליל כמו שהוא נשמע.",
+              "מייצאים WAV כשרוצים לשתף את האודיו או לערוך אותו במקום אחר."
             ],
-            "tipBeginner": "בחר WAV אם אתה רוצה לשתף או לערוך את האודיו.",
-            "tipAdvanced": "שמור MIDI לגמישות ו־WAV לתוצאה סופית.",
-            "tag": "WAV",
-            "media": "assets/guide/guide-wav.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "WAV"
           },
           {
             "id": "hidden",
-            "title": "פעולות נסתרות",
+            "title": "לחיצה ארוכה",
             "body": [
-              "יש כמה פעולות חשובות שאינן מוצגות ככפתור נפרד."
+              "לחיצה ארוכה על SOUND פותחת את כלי הבדיקה.",
+              "לחיצה ארוכה על תבנית קובעת את החזרות שלה.",
+              "הקשה על מספר מאפשרת להקליד ערך."
             ],
-            "tipBeginner": "כדאי לנסות גם לחיצה ממושכת על אזורים שונים במערכת.",
-            "tipAdvanced": "חלק מהיכולות המתקדמות מוסתרות כדי לשמור על ממשק נקי ופשוט.",
-            "bullets": [
-              "SOUND: לחיצה ממושכת פותחת את כלי הבדיקה.",
-              "PATTERN: לחיצה ממושכת פותחת את אפשרויות החזרה.",
-              "ערך מספרי: הקשה מאפשרת הזנה מדויקת."
-            ],
-            "media": "assets/guide/guide-hidden.jpg",
-            "mediaSize": "panel"
+            "layout": "steps"
           },
           {
             "id": "benchmark",
             "title": "כלי בדיקה",
             "body": [
-              "כלי לבדיקת ביצועים ואבחון.",
-              "נפתח באמצעות לחיצה ממושכת על SOUND."
+              "לחיצה ארוכה על SOUND פותחת אותו.",
+              "לא צריך אותו כדי לעשות מוזיקה.",
+              "משתמשים בו כשרוצים לבדוק ביצועים."
             ],
-            "tipBeginner": "אין צורך להשתמש בו כדי ליצור מוזיקה.",
-            "tipAdvanced": "שימושי לבדיקה והשוואה של ביצועי המערכת.",
-            "tag": "BENCHMARK",
-            "media": "assets/guide/guide-benchmark.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "BENCHMARK"
           }
         ],
         "terms": "תנאי שימוש"
@@ -1504,7 +1402,7 @@
             "ticker": "Drum FX",
             "summary": "שמונה אפקטים לתופים בסגנון Mic FX (שמות נעולים, אייקונים בעיצוב). כולל הסרת מצב Default/Manual לטובת ערכות הסטייל.",
             "images": ["/assets/updates/drum-fx.jpg"],
-            "imageAlts": ["לוח Drum FX עם שמונה פריסטים. Goa Gate נבחר."]
+            "imageAlts": ["לוח Drum FX עם שמונה אפקטים. אפקט אחד נבחר."]
           },
           {
             "id": "exclusive-packs-gallery",
@@ -1531,18 +1429,18 @@
             "status": "shipped",
             "title": "מדריך Style ו-Random",
             "ticker": "מדריך Style ו-Random",
-            "summary": "מדריך משתמש על לחיצה ארוכה ב-Style ועל Random. זמין בעמוד המדריך.",
+            "summary": "Style פותח את חלון Drum Style. Random בונה תבנית אחרת בסגנון הנוכחי. הצעדים בעמוד המדריך.",
             "href": "/guide",
             "cta": "למדריך",
             "images": ["/assets/updates/user-guide-style-random.jpg"],
-            "imageAlts": ["כפתורי Style ו-Random מהמדריך. לחיצה ארוכה על Style פותחת את חלון הסגנונות."]
+            "imageAlts": ["Style ו-Random במסך התופים. Style פותח את חלון Drum Style."]
           },
           {
             "id": "studio-workflow-refresh",
             "status": "upcoming",
             "title": "רענון זרימת העבודה בסטודיו",
-            "ticker": "רענון זרימת העבודה, שמונה ערוצי לופר",
-            "summary": "שיפורים בנעילת Pro/Live, ביטול פעולות בערוצים, טלפרומפטר למילים, והסרת Comp/Gate מהמיק. ללופר יש עכשיו שמונה ערוצים. בבדיקות לפני פרסום רחב.",
+            "ticker": "רענון זרימת העבודה, 32 ערוצי לופר",
+            "summary": "Pro ו-Live לנגינה מול אנשים, מילים שנשארות על המסך בזמן הקלטה, ואפקטים על הלופר. בלופר 8 עמודים ו-4 ערוצים בכל עמוד, 32 ערוצים בסך הכל. בבדיקות לפני פרסום רחב.",
             "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
             "imageAlts": ["טלפרומפטר למילים פתוח מעל הסטודיו.", "לוח Looper FX. Trance Stack נבחר."]
           }
@@ -1733,7 +1631,7 @@
             "question": "Can I use the microphone as part of playing, not only to record voice?",
             "answer": [
               "Yes.",
-              "The microphone is part of L Studio's audio path. It has its own channels, level and stereo placement, monitoring, Gain, High-Pass filter, Gate, Presence, and Compression.",
+              "The microphone is part of L Studio's audio path. It has its own channels, level and stereo placement, monitoring, Gain, and a High-Pass filter.",
               "That way you can bring a live source into the setup and control it beside the synthesizer, loops, and drums.",
               "If you monitor through speakers, of course watch out for acoustic feedback."
             ]
@@ -1742,9 +1640,9 @@
             "question": "Can I build a beat without programming every drum from scratch?",
             "answer": [
               "Yes.",
-              "Beyond manual Step Sequencer programming, L Studio includes Random by style (Random genre).",
-              "Long-press Style to choose Rock, Trance, Rap, or Techno. That selection affects Random: the system builds a musical base for the style, not only random steps.",
-              "On this Pro build, all eight channels fill. After that you can edit the Pattern, BPM, Swing, levels, and stereo placement.",
+              "Style opens the Drum Style window. That is where you pick a kit.",
+              "Random builds another pattern in the current style. It is not a pure coin-flip.",
+              "After that you can edit the pattern, BPM, and Swing.",
               "Pro also unlocks eight ready drum packs, including Experimental with eight loaded channels and ready rhythms."
             ]
           },
@@ -1768,7 +1666,7 @@
           {
             "question": "Can I actually record a full song from inside L Studio?",
             "answer": [
-              "You can build and record a full performance inside the system, but L Studio doesn't try to be a traditional DAW with an endless Timeline.",
+              "You can build and record a full performance inside the system.",
               "The work is built more around playing, layers, loops, drums, microphone, and real-time synthesis.",
               "You can also record the final mix straight to a WAV file, so you can take the performance out without turning L Studio into a full studio editor."
             ]
@@ -1826,7 +1724,7 @@
         "title": "User guide",
         "titleEm": "L Studio.",
         "eyebrow": "LEARN / USER GUIDE / L STUDIO",
-        "intro": "This guide focuses on what you really need to know to work well with the system, including actions that are not always obvious from the screen alone.",
+        "intro": "Each line says what the control does when you use it.",
         "onThisPage": "On this page",
         "tipBeginner": "Beginner tip",
         "tipAdvanced": "Advanced tip",
@@ -1840,11 +1738,11 @@
             "id": "looper",
             "title": "Looper",
             "body": [
-              "Open the looper.",
-              "There are 8 pages.",
-              "Each page has 4 channels.",
-              "That is 32 channels, not 8.",
-              "Go to the next page to record another loop."
+              "Eight pages. Four channels on each page. 32 channels in all, not 8.",
+              "A recording on one page stays when you move to another page.",
+              "Back at the top of the looper, and Back at the top of the microphone, returns to the previous screen.",
+              "REC records on that channel. DUB adds another pass on the same channel. Play starts it. STOP stops it.",
+              "Vol sets how loud the channel is. Pan moves it left or right."
             ],
             "layout": "steps",
             "tag": "LOOPER",
@@ -1852,79 +1750,10 @@
             "mediaSize": "panel"
           },
           {
-            "id": "looper-back",
-            "title": "Back",
-            "body": [
-              "The looper screen has a Back button at the top.",
-              "The microphone screen has a Back button at the top.",
-              "One tap returns to the previous screen."
-            ],
-            "layout": "steps",
-            "tag": "BACK",
-            "media": "assets/updates/looper-back.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "mic-fx",
-            "title": "Mic FX",
-            "body": [
-              "Open the microphone screen.",
-              "Pick one of the 8 Mic FX sounds.",
-              "Long-press.",
-              "You get Amount, EQ, Mid-sweep, Transpose from minus 12 to plus 12, and Reverb."
-            ],
-            "layout": "steps",
-            "tag": "MIC FX",
-            "media": "assets/updates/mic-fx.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum-fx",
-            "title": "Drum FX",
-            "body": [
-              "On the drum screen open Drum FX. The button may show the current effect, such as FX 1.",
-              "Pick one of 8 effects.",
-              "Long-press to adjust.",
-              "Each drum kit keeps its effect, including the values.",
-              "That is saved with the drum-screen save and with session save."
-            ],
-            "layout": "steps",
-            "tag": "DRUM FX",
-            "media": "assets/updates/drum-fx.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "lyrics",
-            "title": "Lyrics teleprompter",
-            "body": [
-              "Open the microphone screen.",
-              "Write the words.",
-              "The words stay on screen while you record."
-            ],
-            "layout": "steps",
-            "tag": "LYRICS",
-            "media": "assets/updates/lyrics.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "pro-live",
-            "title": "Pro and Live",
-            "body": [
-              "Switch between Pro and Live.",
-              "In Live you cannot type button values by hand.",
-              "In Live you cannot delete a channel.",
-              "Going back to Pro restores both."
-            ],
-            "layout": "steps",
-            "tag": "PRO"
-          },
-          {
             "id": "redo",
             "title": "Redo",
             "body": [
-              "Select a channel.",
-              "There is Redo for the channel.",
-              "It is not clear and it is not undo."
+              "Redo is on the channel and is not Clear and not Undo."
             ],
             "layout": "steps",
             "tag": "REDO"
@@ -1933,10 +1762,8 @@
             "id": "looper-fx",
             "title": "Looper FX",
             "body": [
-              "In the looper open the effects.",
-              "There are 8 effects.",
-              "Long-press.",
-              "The sliders are the same as on drums and the microphone."
+              "Tap one of 8 effects to put it on the loop.",
+              "Long-press opens the same kind of sliders as Drum FX and Mic FX."
             ],
             "layout": "steps",
             "tag": "LOOPER FX",
@@ -1944,12 +1771,105 @@
             "mediaSize": "panel"
           },
           {
+            "id": "mic-fx",
+            "title": "Mic FX",
+            "body": [
+              "Tap one of 8 sounds to use it.",
+              "Long-press opens Amount (how strong it is), EQ, Mid-sweep, Transpose from minus 12 to plus 12 (0 leaves the pitch as it is), and Reverb."
+            ],
+            "layout": "steps",
+            "tag": "MIC FX",
+            "media": "assets/updates/mic-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "lyrics",
+            "title": "Lyrics",
+            "body": [
+              "Write the words. They stay on screen while you record.",
+              "Play starts the words moving.",
+              "A- and A+ change the text size.",
+              "Speed changes how fast the words move."
+            ],
+            "layout": "steps",
+            "tag": "LYRICS",
+            "media": "assets/updates/lyrics.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum",
+            "title": "Drums",
+            "body": [
+              "Play Drums starts the kit. STOP stops it.",
+              "The FX button shows the current effect, for example FX 1. Tap it to choose one of 8 effects for the whole kit. Long-press opens the adjustment.",
+              "The kit keeps that effect and its values when you Save on the drum screen and when you save a session.",
+              "Style opens the Drum Style window.",
+              "The side arrows move to the previous or next kit.",
+              "Drum Vol is the kit volume. Swing changes the feel without changing BPM. BPM is the tempo.",
+              "1/4, 1/8, 1/16, and 1/32 set the step size of the pattern. 1/4 is the widest step. 1/32 is the finest, so the same bar can hold more hits.",
+              "Save stores the kit, including the effect.",
+              "Random builds another pattern in the current style. It is not a pure coin-flip."
+            ],
+            "layout": "steps",
+            "tag": "DRUM",
+            "media": "assets/guide/drum-screen.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-machine.jpg"
+            ]
+          },
+          {
+            "id": "drum-fx",
+            "title": "Drum FX",
+            "body": [
+              "Tap to choose one of 8 effects for the whole kit. The FX button shows the one you chose, for example FX 1.",
+              "Long-press opens the adjustment.",
+              "The kit keeps that effect and its values when you Save on the drum screen and when you save a session."
+            ],
+            "layout": "steps",
+            "tag": "DRUM FX",
+            "media": "assets/updates/drum-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "style",
+            "title": "Drum Style",
+            "body": [
+              "Pages 1 to 8 are style pages. The highlighted number is the open page.",
+              "Edit page name renames that page.",
+              "Switch to exclusive, inside this window, opens the Exclusive packs. No download.",
+              "On this website Exclusive stays Coming soon.",
+              "Load on a row loads that kit with one tap, including while the drums are already playing.",
+              "Save on a row stores that kit. Edit opens it for editing.",
+              "Import brings a kit in. Export sends a kit out.",
+              "Close closes the window without loading.",
+              "Most kits load four channels and leave four free for your samples. Experimental loads eight channels with ready patterns.",
+              "Pro has eight kits. Each kit has eight styles, 64 styles in all, not 64 kits."
+            ],
+            "layout": "steps",
+            "tag": "STYLE",
+            "media": "assets/guide/switch-exclusive.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-styles-load.jpg"
+            ]
+          },
+          {
+            "id": "random",
+            "title": "Random",
+            "body": [
+              "Random builds another pattern in the current style.",
+              "It is not a pure coin-flip."
+            ],
+            "layout": "steps",
+            "tag": "RANDOM"
+          },
+          {
             "id": "sound-plus",
             "title": "Sound +",
             "body": [
-              "In the sound window tap +.",
-              "A second keyboard opens. The upper one is an octave higher.",
-              "The knobs close and their values are kept.",
+              "Tap + to open a second keyboard one octave higher. It is the same note, at double the Hz.",
+              "The knobs close and their values stay.",
               "Tap + again to bring the knobs back."
             ],
             "layout": "steps",
@@ -1961,13 +1881,22 @@
             ]
           },
           {
+            "id": "pro-live",
+            "title": "Pro and Live",
+            "body": [
+              "Live is for playing in front of people.",
+              "In Live you cannot type button values by hand and you cannot delete a channel, so the set is not broken mid-song.",
+              "Pro brings editing back."
+            ],
+            "layout": "steps",
+            "tag": "PRO"
+          },
+          {
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "Open settings save.",
-              "Choose Factory 64 restore.",
-              "Confirm.",
-              "It restores the base drums, Exclusive, and 64 presets."
+              "In the settings save screen, the Factory 64 row restores the base drums, Exclusive, and 64 presets, only after you confirm.",
+              "Close leaves everything as it is."
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
@@ -1975,315 +1904,182 @@
             "mediaSize": "panel"
           },
           {
-            "id": "load-kit",
-            "title": "Load a kit while playing",
-            "body": [
-              "Start the drums.",
-              "Pick another kit.",
-              "One tap on Load loads it while the previous kit is still playing."
-            ],
-            "layout": "steps",
-            "tag": "LOAD",
-            "media": "assets/guide/drum-styles-load.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum-frames",
-            "title": "Framed drum buttons",
-            "body": [
-              "Open the drum window.",
-              "Style, the FX button, and Play Drums have a frame.",
-              "1/4, 1/8, 1/16, 1/32 and the other division buttons have a frame too.",
-              "The frame shows they are buttons."
-            ],
-            "layout": "steps",
-            "tag": "FRAME",
-            "media": "assets/guide/drum-machine.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-screen.jpg"
-            ]
-          },
-          {
-            "id": "exclusive-switch",
-            "title": "Exclusive",
-            "body": [
-              "On the website the packs stay Coming soon, with no download button.",
-              "In the app open the Drum Style window.",
-              "Switch to exclusive is inside that window."
-            ],
-            "layout": "steps",
-            "tag": "EXCLUSIVE",
-            "media": "assets/guide/switch-exclusive.jpg",
-            "mediaSize": "panel"
-          },
-          {
             "id": "sound",
-            "title": "Creating a sound",
+            "title": "Sound",
             "body": [
-              "This is the main workspace for creating and shaping sound.",
-              "Start with one sound and change only one parameter at a time. That makes it easy to hear what actually changed."
+              "Change one parameter, listen, then change the next.",
+              "You can change a parameter while you play and use that change in the performance."
             ],
-            "tipBeginner": "Don't change ten things at once. Small changes and repeated listening will teach you the system faster.",
-            "tipAdvanced": "You can change parameters while playing and use the change itself as part of the performance.",
-            "tag": "SOUND",
-            "media": "assets/guide/guide-sound.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "SOUND"
           },
           {
             "id": "value",
-            "title": "Precise value editing",
+            "title": "Typed values",
             "body": [
-              "A numeric value is shown next to every control.",
-              "Instead of dragging the control to hit the number you want, tap the value and type it directly."
+              "Tap the number beside a control and type the value.",
+              "In Live you cannot type values by hand."
             ],
-            "tipBeginner": "If a specific value is hard to reach, type it.",
-            "tipAdvanced": "Manual entry lets you recreate sounds exactly and compare different states.",
-            "media": "assets/guide/guide-value.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps"
           },
           {
             "id": "freq",
-            "title": "Working with frequencies",
+            "title": "Frequencies",
             "body": [
-              "This area lets you work directly with frequencies and build your own tuning systems.",
-              "Frequencies are not just the result of choosing a note. They are part of the creation itself."
+              "Edit the frequencies and build your own tuning.",
+              "Start from a ready tuning and change one or two frequencies."
             ],
-            "tipBeginner": "Start from a ready-made system and change only one or two frequencies.",
-            "tipAdvanced": "The character of a tuning system is set mainly by the relationships between frequencies, not only by each frequency value on its own.",
-            "tag": "FREQ",
-            "media": "assets/guide/guide-freq.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "FREQ"
           },
           {
             "id": "key",
-            "title": "Choosing a scale",
+            "title": "Scale",
             "body": [
-              "Choosing a scale marks the notes that belong to that scale on the keyboard.",
-              "The scale is a visual guide and does not replace the frequencies defined in the frequency area."
+              "Choose a scale and the keyboard marks the notes that belong to it.",
+              "Those marks do not replace the frequencies you set."
             ],
-            "tipBeginner": "Use the markings to quickly see which keys belong to the scale.",
-            "tipAdvanced": "You can work with one frequency system and choose markings for a different scale for playing or musical exploration.",
-            "tag": "KEY",
-            "media": "assets/guide/guide-key.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "KEY"
           },
           {
             "id": "oct",
-            "title": "Octave shift",
+            "title": "Octave",
             "body": [
-              "Octave shift raises or lowers the entire frequency system without changing the relationships between them."
+              "Shift the octave up or down. The whole tuning moves, and the relationships stay the same."
             ],
-            "tipBeginner": "If the sound is too high or too low, try changing the octave first.",
-            "tipAdvanced": "You can use the same frequency system in several ranges without defining it again.",
-            "tag": "OCT",
-            "media": "assets/guide/guide-oct.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "OCT"
           },
           {
             "id": "pad",
-            "title": "Performance pad",
+            "title": "Pad",
             "body": [
-              "The pad gives real-time control and can work with several parts of the system at once."
+              "Move on the pad to steer more than one part at the same time.",
+              "Start with one source until you hear how the pad responds."
             ],
-            "tipBeginner": "Start with a single source until the pad's response is clear to you.",
-            "tipAdvanced": "You can use one gesture to affect several layers at the same time.",
-            "tag": "PAD",
-            "media": "assets/guide/guide-pad.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "PAD"
           },
           {
             "id": "mic",
-            "title": "Recording",
+            "title": "Microphone",
             "body": [
-              "This area is for recording voice, an instrument, or any external source."
+              "Record a voice, an instrument, or another source.",
+              "Make a short test take before a long one.",
+              "A short recording can become a loop."
             ],
-            "tipBeginner": "Do a short test recording before a long one.",
-            "tipAdvanced": "Short recordings can become loops, layers, or raw material for processing.",
-            "tag": "MIC",
-            "media": "assets/mic-window.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "MIC"
           },
           {
             "id": "loop",
-            "title": "Working with layers",
+            "title": "Layers",
             "body": [
-              "The loop system lets you work with several audio layers at once.",
-              "Each channel has separate control over level and stereo position."
+              "Set each channel's volume and its place in the stereo field before you add an effect.",
+              "Add another layer only when you can hear what it adds."
             ],
-            "tipBeginner": "Start with one layer. Add more only when it is clear what they contribute.",
-            "tipAdvanced": "Use each channel's level and position to create space before adding effects.",
-            "tag": "LOOP",
-            "media": "assets/guide/guide-loop.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum",
-            "title": "Building a rhythm",
-            "body": [
-              "The drum system is pattern-based: sixteen steps per pattern, with several patterns you can save and switch between.",
-              "Pro includes eight drum kits. Each kit has eight styles, 64 styles in all, not 64 kits (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
-              "Most packs load four channels and leave four free for your own samples. Experimental loads all eight channels with ready rhythms to demonstrate the system."
-            ],
-            "tipBeginner": "Start from a ready kit, listen on headphones, then change one step at a time.",
-            "tipAdvanced": "Use Experimental to hear how eight channels lock together, then rebuild your own pattern from that idea.",
-            "tag": "DRUM",
-            "media": "assets/guide/guide-drum.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "LOOP"
           },
           {
             "id": "pattern",
-            "title": "Loading a pattern",
+            "title": "Patterns",
             "body": [
-              "A normal tap loads a pattern.",
-              "A long press opens the repeat options."
+              "Tap a pattern to load it.",
+              "Long-press to set how many times it repeats."
             ],
-            "tipBeginner": "Remember: tap loads, long press edits.",
-            "tipAdvanced": "You can prepare several patterns in advance and create an automatic sequence.",
-            "tag": "PATTERN",
-            "media": "assets/guide/guide-pattern.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "PATTERN"
           },
           {
             "id": "repeat",
-            "title": "Automatic repeats",
+            "title": "Repeats",
             "body": [
-              "For each pattern you can set how many times it repeats.",
-              "You can choose a repeat count or unlimited repeat."
+              "Set a repeat count for a pattern, or let it repeat without a limit.",
+              "Four repeats means the pattern plays four times, then moves on."
             ],
-            "tipBeginner": "If you want a pattern to play four times, set four repeats.",
-            "tipAdvanced": "You can build a full section structure without switching patterns by hand.",
-            "tag": "REPEAT",
-            "media": "assets/guide/guide-repeat.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "REPEAT"
           },
           {
             "id": "live",
-            "title": "Editing while playing",
+            "title": "Edit while playing",
             "body": [
-              "You can change steps while the pattern is playing.",
-              "There is no need to stop the rhythm to edit it."
+              "Change steps while the pattern is playing.",
+              "You do not have to stop the kit to edit it."
             ],
-            "tipBeginner": "Start playing, then fix as you go.",
-            "tipAdvanced": "That way the drum system becomes a live performance tool.",
-            "media": "assets/guide/guide-live.jpg",
-            "mediaSize": "panel"
+            "layout": "steps"
           },
           {
             "id": "swing",
-            "title": "Changing rhythmic feel",
+            "title": "Swing",
             "body": [
-              "Changes the feel of the rhythm without changing the tempo or the number of steps."
+              "Swing changes the feel without changing BPM."
             ],
-            "tipBeginner": "Even a small change can be very noticeable.",
-            "tipAdvanced": "You can change the feel of the same rhythm without rebuilding it.",
-            "tag": "SWING",
-            "media": "assets/guide/guide-swing.jpg",
-            "mediaSize": "thumb"
-          },
-          {
-            "id": "style",
-            "title": "Styles window",
-            "body": [
-              "A long press on Style opens a styles window over the drums screen. The window title is Random genre.",
-              "Pick a genre: Rock, Trance, Rap, or Techno. That choice affects the Random algorithm for drum rhythms."
-            ],
-            "tipBeginner": "Long-press Style, choose a genre, then tap Random and listen.",
-            "tipAdvanced": "Try the same kit in two genres. You hear the difference in the rhythm, without changing BPM or Swing.",
-            "tag": "STYLE",
-            "media": "assets/guide/guide-style.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "random",
-            "title": "Random by style",
-            "body": [
-              "The genre chosen in the styles window sets the direction of Random: Rock, Trance, Rap, or Techno.",
-              "The algorithm does not just light steps at random. It builds a pattern from musical rules for the chosen style, on the rhythm grid only (BPM and Swing stay as they are in the current version).",
-              "On this Pro build, all eight channels fill."
-            ],
-            "tipBeginner": "Pick a genre, hit Random, then edit only what feels off.",
-            "tipAdvanced": "Save a pattern you like before another Random pass, so you can compare directions without losing a good groove.",
-            "tag": "RANDOM",
-            "media": "assets/guide/guide-random.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "SWING"
           },
           {
             "id": "preset",
-            "title": "Saving sounds",
+            "title": "Presets",
             "body": [
-              "Saves the current sound state."
+              "Save stores the current sound.",
+              "Save a sound you like before you change it."
             ],
-            "tipBeginner": "Save good sounds right away.",
-            "tipAdvanced": "Organize sounds by role, not by number.",
-            "tag": "PRESET",
-            "media": "assets/guide/guide-preset.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "PRESET"
           },
           {
             "id": "session",
-            "title": "Saving your work",
+            "title": "Session",
             "body": [
-              "Saves the broader work state."
+              "Session stores the wider setup, including the drum effect and its values.",
+              "A preset stores a sound. A session stores the work."
             ],
-            "tipBeginner": "Preset saves a sound. Session saves a project.",
-            "tipAdvanced": "Keep your sound library separate from your projects.",
-            "tag": "SESSION",
-            "media": "assets/guide/guide-session.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "SESSION"
           },
           {
             "id": "midi",
-            "title": "Exporting musical data",
+            "title": "MIDI",
             "body": [
-              "Saves information about the performance, not the audio itself."
+              "MIDI stores the notes you played, not the audio.",
+              "Export MIDI when you want to edit those notes later."
             ],
-            "tipBeginner": "Choose MIDI if you want to edit the notes later.",
-            "tipAdvanced": "With special tuning systems, pitch-bend information is stored as well.",
-            "tag": "MIDI",
-            "media": "assets/guide/guide-midi.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "MIDI"
           },
           {
             "id": "wav",
-            "title": "Exporting audio",
+            "title": "WAV",
             "body": [
-              "Saves the sound as it is heard."
+              "WAV stores the sound as you hear it.",
+              "Export WAV when you want to share the audio or edit it elsewhere."
             ],
-            "tipBeginner": "Choose WAV if you want to share or edit the audio.",
-            "tipAdvanced": "Save MIDI for flexibility and WAV for the final result.",
-            "tag": "WAV",
-            "media": "assets/guide/guide-wav.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "WAV"
           },
           {
             "id": "hidden",
-            "title": "Hidden actions",
+            "title": "Long-press",
             "body": [
-              "There are a few important actions that are not shown as separate buttons."
+              "Long-press SOUND to open the test tool.",
+              "Long-press a pattern to set its repeats.",
+              "Tap a number to type a value."
             ],
-            "tipBeginner": "It is worth trying a long press on different areas of the system.",
-            "tipAdvanced": "Some advanced capabilities are hidden to keep the interface clean and simple.",
-            "bullets": [
-              "SOUND: a long press opens the test tool.",
-              "PATTERN: a long press opens the repeat options.",
-              "Numeric value: a tap enables precise entry."
-            ],
-            "media": "assets/guide/guide-hidden.jpg",
-            "mediaSize": "panel"
+            "layout": "steps"
           },
           {
             "id": "benchmark",
             "title": "Test tool",
             "body": [
-              "A tool for performance testing and diagnostics.",
-              "Opened with a long press on SOUND."
+              "Long-press SOUND to open it.",
+              "You do not need it to make music.",
+              "Use it when you want to check performance."
             ],
-            "tipBeginner": "You do not need it to make music.",
-            "tipAdvanced": "Useful for testing and comparing system performance.",
-            "tag": "BENCHMARK",
-            "media": "assets/guide/guide-benchmark.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "BENCHMARK"
           }
         ],
         "terms": "Terms"
@@ -3053,7 +2849,7 @@
             "ticker": "Drum FX",
             "summary": "Eight drum effects in the Mic FX style (names locked, icons in design). Replaces Default/Manual with the Style kit packs.",
             "images": ["/assets/updates/drum-fx.jpg"],
-            "imageAlts": ["Drum FX panel with eight presets. Goa Gate is selected."]
+            "imageAlts": ["Drum FX panel with eight effects. One effect is selected."]
           },
           {
             "id": "exclusive-packs-gallery",
@@ -3080,18 +2876,18 @@
             "status": "shipped",
             "title": "Style & Random guide",
             "ticker": "Style and Random guide",
-            "summary": "The user guide for Style long-press and Random is on the guide page.",
+            "summary": "Style opens the Drum Style window. Random builds another pattern in the current style. The steps are on the guide page.",
             "href": "/guide",
             "cta": "Open guide",
             "images": ["/assets/updates/user-guide-style-random.jpg"],
-            "imageAlts": ["Style and Random controls from the user guide. A long press on Style opens the style window."]
+            "imageAlts": ["Style and Random on the drum screen. Style opens the Drum Style window."]
           },
           {
             "id": "studio-workflow-refresh",
             "status": "upcoming",
             "title": "Studio workflow refresh",
-            "ticker": "Studio workflow refresh, eight looper channels",
-            "summary": "Pro/Live edit locking, channel undo/redo, lyrics teleprompter, and Comp/Gate removal from mic. The looper now has eight channels. In testing before a wider release.",
+            "ticker": "Studio workflow refresh, 32 looper channels",
+            "summary": "Pro and Live for playing in front of people, lyrics that stay on screen while you record, and effects on the loop. The looper has 8 pages and 4 channels on each page, 32 channels in all. In testing before a wider release.",
             "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
             "imageAlts": ["Lyrics teleprompter open over the studio.", "Looper FX panel with Trance Stack selected."]
           }
@@ -3282,7 +3078,7 @@
             "question": "Можно ли использовать микрофон как часть игры, а не только для записи голоса?",
             "answer": [
               "Да.",
-              "Микрофон: часть аудиопути L Studio. У него свои каналы, управление громкостью и положением в стерео, мониторинг, Gain, фильтр High-Pass, Gate, Presence и Compression.",
+              "Микрофон: часть аудиопути L Studio. У него свои каналы, управление громкостью и положением в стерео, мониторинг, Gain и фильтр High-Pass.",
               "Так можно встроить живой источник в сетап и управлять им рядом с синтезатором, лупами и барабанами.",
               "Если слушать мониторинг через колонки, конечно, нужно следить за акустической обратной связью."
             ]
@@ -3291,9 +3087,9 @@
             "question": "Можно ли собрать бит, не программируя каждый барабан с нуля?",
             "answer": [
               "Да.",
-              "Помимо ручного программирования Step Sequencer в L Studio есть Random по стилю (случайный жанр).",
-              "Долгое нажатие на Style выбирает Rock, Trance, Rap или Techno. Этот выбор влияет на Random: система строит музыкальную основу под стиль, а не только случайные шаги.",
-              "В этой сборке Pro заполняются все восемь каналов. Затем можно править Pattern, BPM, Swing, уровни и стереопозицию.",
+              "Style открывает окно Drum Style. Там выбирают набор.",
+              "Random строит другой паттерн в текущем стиле. Это не подбрасывание монеты.",
+              "После этого можно править паттерн, BPM и Swing.",
               "Pro также открывает восемь готовых барабанных наборов, включая Experimental с восемью загруженными каналами и готовыми ритмами."
             ]
           },
@@ -3317,7 +3113,7 @@
           {
             "question": "Можно ли прямо записать целую песню из L Studio?",
             "answer": [
-              "Можно собрать и записать целое исполнение внутри системы, но L Studio не пытается быть традиционной DAW с бесконечным Timeline.",
+              "Можно собрать и записать целое исполнение внутри системы.",
               "Работа больше построена вокруг игры, слоёв, лупов, барабанов, микрофона и синтеза в реальном времени.",
               "Кроме того, финальный микс можно записать сразу в файл WAV, и тогда исполнение можно вынести наружу, не превращая L Studio в полноценный студийный редактор."
             ]
@@ -3375,7 +3171,7 @@
         "title": "Руководство",
         "titleEm": "L Studio.",
         "eyebrow": "LEARN / USER GUIDE / L STUDIO",
-        "intro": "Это руководство сосредоточено на том, что действительно важно знать, чтобы уверенно работать с системой, включая действия, которые не всегда очевидны с экрана.",
+        "intro": "Каждая строка говорит, что делает элемент, когда вы им пользуетесь.",
         "onThisPage": "На этой странице",
         "tipBeginner": "Совет новичкам",
         "tipAdvanced": "Совет продвинутым",
@@ -3389,11 +3185,11 @@
             "id": "looper",
             "title": "Лупер",
             "body": [
-              "Откройте лупер.",
-              "В нём 8 страниц.",
-              "На каждой странице 4 канала.",
-              "Это 32 канала, а не 8.",
-              "Перейдите на следующую страницу, чтобы записать ещё один луп."
+              "8 страниц. На каждой странице 4 канала. Всего 32 канала, не 8.",
+              "Запись на одной странице остается, когда вы переходите на другую.",
+              "Back вверху лупера и Back вверху микрофона возвращают на предыдущий экран.",
+              "REC пишет на этот канал. DUB добавляет еще одну запись на тот же канал. Play запускает. STOP останавливает.",
+              "Vol задает громкость канала. Pan сдвигает его влево или вправо."
             ],
             "layout": "steps",
             "tag": "LOOPER",
@@ -3401,79 +3197,10 @@
             "mediaSize": "panel"
           },
           {
-            "id": "looper-back",
-            "title": "Назад",
-            "body": [
-              "На экране лупера вверху есть кнопка Back.",
-              "На экране микрофона вверху есть кнопка Back.",
-              "Одно нажатие возвращает на предыдущий экран."
-            ],
-            "layout": "steps",
-            "tag": "BACK",
-            "media": "assets/updates/looper-back.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "mic-fx",
-            "title": "Mic FX",
-            "body": [
-              "Откройте экран микрофона.",
-              "Выберите один из 8 звуков Mic FX.",
-              "Удерживайте палец.",
-              "Появятся Amount, EQ, Mid-sweep, Transpose от минус 12 до плюс 12 и Reverb."
-            ],
-            "layout": "steps",
-            "tag": "MIC FX",
-            "media": "assets/updates/mic-fx.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum-fx",
-            "title": "Drum FX",
-            "body": [
-              "На экране ударных откройте Drum FX. На кнопке может быть текущий эффект, например FX 1.",
-              "Выберите один из 8 эффектов.",
-              "Удерживайте, чтобы настроить.",
-              "Каждый набор ударных хранит свой эффект, включая значения.",
-              "Это сохраняется вместе с сохранением экрана ударных и с сохранением сессии."
-            ],
-            "layout": "steps",
-            "tag": "DRUM FX",
-            "media": "assets/updates/drum-fx.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "lyrics",
-            "title": "Телесуфлёр текста",
-            "body": [
-              "Откройте экран микрофона.",
-              "Напишите слова.",
-              "Слова остаются на экране, пока идёт запись."
-            ],
-            "layout": "steps",
-            "tag": "LYRICS",
-            "media": "assets/updates/lyrics.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "pro-live",
-            "title": "Pro и Live",
-            "body": [
-              "Переключайтесь между Pro и Live.",
-              "В Live нельзя вводить значения кнопок вручную.",
-              "В Live нельзя удалить канал.",
-              "Возврат в Pro возвращает и то и другое."
-            ],
-            "layout": "steps",
-            "tag": "PRO"
-          },
-          {
             "id": "redo",
             "title": "Redo",
             "body": [
-              "Выберите канал.",
-              "У канала есть Redo.",
-              "Это не Clear и не Undo."
+              "Redo находится на канале, и это не Clear и не Undo."
             ],
             "layout": "steps",
             "tag": "REDO"
@@ -3482,10 +3209,8 @@
             "id": "looper-fx",
             "title": "Looper FX",
             "body": [
-              "В лупере откройте эффекты.",
-              "Там 8 эффектов.",
-              "Удерживайте палец.",
-              "Ползунки те же, что у ударных и у микрофона."
+              "Нажмите один из 8 эффектов, чтобы поставить его на луп.",
+              "Долгое нажатие открывает такие же ползунки, как у Drum FX и Mic FX."
             ],
             "layout": "steps",
             "tag": "LOOPER FX",
@@ -3493,13 +3218,106 @@
             "mediaSize": "panel"
           },
           {
+            "id": "mic-fx",
+            "title": "Mic FX",
+            "body": [
+              "Нажмите один из 8 звуков, чтобы использовать его.",
+              "Долгое нажатие открывает Amount (насколько сильно эффект), EQ, Mid-sweep, Transpose от минус 12 до плюс 12 (0 оставляет высоту как есть) и Reverb."
+            ],
+            "layout": "steps",
+            "tag": "MIC FX",
+            "media": "assets/updates/mic-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "lyrics",
+            "title": "Текст",
+            "body": [
+              "Пишете слова, и они остаются на экране, пока вы записываете.",
+              "Play запускает движение слов.",
+              "A- и A+ меняют размер текста.",
+              "Speed меняет, как быстро движутся слова."
+            ],
+            "layout": "steps",
+            "tag": "LYRICS",
+            "media": "assets/updates/lyrics.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum",
+            "title": "Ударные",
+            "body": [
+              "Play Drums запускает набор. STOP останавливает его.",
+              "Кнопка FX показывает текущий эффект, например FX 1. Нажатие выбирает один из 8 эффектов для всего набора. Долгое нажатие открывает настройку.",
+              "Набор хранит этот эффект и его значения, когда вы нажимаете Save на экране ударных и когда сохраняете сессию.",
+              "Style открывает окно Drum Style.",
+              "Боковые стрелки переходят к предыдущему или следующему набору.",
+              "Drum Vol это громкость набора. Swing меняет ощущение, не меняя BPM. BPM это темп.",
+              "1/4, 1/8, 1/16 и 1/32 задают размер шага паттерна. 1/4 самый широкий шаг. 1/32 самый мелкий, поэтому в том же такте помещается больше ударов.",
+              "Save сохраняет набор, включая эффект.",
+              "Random строит другой паттерн в текущем стиле. Это не подбрасывание монеты."
+            ],
+            "layout": "steps",
+            "tag": "DRUM",
+            "media": "assets/guide/drum-screen.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-machine.jpg"
+            ]
+          },
+          {
+            "id": "drum-fx",
+            "title": "Drum FX",
+            "body": [
+              "Нажатие выбирает один из 8 эффектов для всего набора. Кнопка FX показывает выбранный, например FX 1.",
+              "Долгое нажатие открывает настройку.",
+              "Набор хранит эффект и его значения при Save на экране ударных и при сохранении сессии."
+            ],
+            "layout": "steps",
+            "tag": "DRUM FX",
+            "media": "assets/updates/drum-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "style",
+            "title": "Drum Style",
+            "body": [
+              "Страницы с 1 по 8 это страницы стилей. Подсвеченный номер это открытая страница.",
+              "Edit page name переименовывает эту страницу.",
+              "Switch to exclusive внутри этого окна открывает паки Exclusive. Без скачивания.",
+              "На сайте Exclusive остается Скоро.",
+              "Load в строке загружает набор одним нажатием, в том числе пока ударные уже играют.",
+              "Save в строке сохраняет этот набор. Edit открывает его для правки.",
+              "Import приносит набор внутрь. Export отправляет набор наружу.",
+              "Close закрывает окно и ничего не загружает.",
+              "У большинства наборов загружаются четыре канала, четыре остаются свободными для ваших сэмплов. Experimental загружает восемь каналов с готовыми паттернами.",
+              "В Pro восемь наборов. В каждом восемь стилей, всего 64 стиля, а не 64 набора."
+            ],
+            "layout": "steps",
+            "tag": "STYLE",
+            "media": "assets/guide/switch-exclusive.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-styles-load.jpg"
+            ]
+          },
+          {
+            "id": "random",
+            "title": "Random",
+            "body": [
+              "Random строит другой паттерн в текущем стиле.",
+              "Это не подбрасывание монеты."
+            ],
+            "layout": "steps",
+            "tag": "RANDOM"
+          },
+          {
             "id": "sound-plus",
             "title": "Sound +",
             "body": [
-              "В окне звука нажмите +.",
-              "Откроется вторая клавиатура. Верхняя на октаву выше.",
-              "Регуляторы закрываются, а их значения сохраняются.",
-              "Нажмите + ещё раз, чтобы вернуть регуляторы."
+              "Нажатие + открывает вторую клавиатуру на октаву выше. Та же нота, удвоенная частота в Гц.",
+              "Ручки закрываются, их значения остаются.",
+              "Еще одно нажатие + возвращает ручки."
             ],
             "layout": "steps",
             "tag": "SOUND +",
@@ -3510,13 +3328,22 @@
             ]
           },
           {
+            "id": "pro-live",
+            "title": "Pro и Live",
+            "body": [
+              "Live для игры перед людьми.",
+              "В Live нельзя вводить значения кнопок вручную и нельзя удалить канал, чтобы сет не сломался посреди песни.",
+              "Pro возвращает редактирование."
+            ],
+            "layout": "steps",
+            "tag": "PRO"
+          },
+          {
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "Откройте сохранение в настройках.",
-              "Выберите Factory 64 restore.",
-              "Подтвердите.",
-              "Восстанавливаются базовые ударные, Exclusive и 64 пресета."
+              "На экране сохранения в настройках строка Factory 64 возвращает базовые ударные, Exclusive и 64 пресета, только после подтверждения.",
+              "Close оставляет все как есть."
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
@@ -3524,315 +3351,182 @@
             "mediaSize": "panel"
           },
           {
-            "id": "load-kit",
-            "title": "Загрузка набора во время игры",
-            "body": [
-              "Запустите ударные.",
-              "Выберите другой набор.",
-              "Одно нажатие на Load загружает его, пока предыдущий набор ещё играет."
-            ],
-            "layout": "steps",
-            "tag": "LOAD",
-            "media": "assets/guide/drum-styles-load.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum-frames",
-            "title": "Рамки кнопок ударных",
-            "body": [
-              "Откройте окно ударных.",
-              "У Style, кнопки FX и Play Drums есть рамка.",
-              "У 1/4, 1/8, 1/16, 1/32 и остальных кнопок деления тоже есть рамка.",
-              "Рамка показывает, что это кнопки."
-            ],
-            "layout": "steps",
-            "tag": "FRAME",
-            "media": "assets/guide/drum-machine.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-screen.jpg"
-            ]
-          },
-          {
-            "id": "exclusive-switch",
-            "title": "Exclusive",
-            "body": [
-              "На сайте наборы остаются со статусом Скоро, без кнопки загрузки.",
-              "В приложении откройте окно Drum Style.",
-              "Switch to exclusive находится внутри этого окна."
-            ],
-            "layout": "steps",
-            "tag": "EXCLUSIVE",
-            "media": "assets/guide/switch-exclusive.jpg",
-            "mediaSize": "panel"
-          },
-          {
             "id": "sound",
-            "title": "Создание звука",
+            "title": "Звук",
             "body": [
-              "Это основная рабочая область для создания и оформления звука.",
-              "Начните с одного звука и меняйте за раз только один параметр. Так легче понять, что именно изменилось."
+              "Меняйте один параметр, послушайте, и только потом меняйте следующий.",
+              "Параметр можно менять во время игры и использовать само изменение в исполнении."
             ],
-            "tipBeginner": "Не меняйте десять вещей сразу. Небольшое изменение и повторное прослушивание научат систему быстрее.",
-            "tipAdvanced": "Можно менять параметры во время игры и использовать само изменение как часть исполнения.",
-            "tag": "SOUND",
-            "media": "assets/guide/guide-sound.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "SOUND"
           },
           {
             "id": "value",
-            "title": "Точное изменение значений",
+            "title": "Точное значение",
             "body": [
-              "Рядом с каждым регулятором отображается числовое значение.",
-              "Вместо того чтобы тянуть регулятор к нужному числу, можно нажать на значение и ввести его напрямую."
+              "Нажмите число рядом с элементом и введите значение.",
+              "В Live ввод значений вручную закрыт."
             ],
-            "tipBeginner": "Если трудно попасть в нужное значение, введите его.",
-            "tipAdvanced": "Ручной ввод позволяет точно воспроизводить звуки и сравнивать разные состояния.",
-            "media": "assets/guide/guide-value.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps"
           },
           {
             "id": "freq",
-            "title": "Работа с частотами",
+            "title": "Частоты",
             "body": [
-              "Эта область позволяет работать напрямую с частотами и строить собственные системы настройки.",
-              "Частоты: не просто результат выбора ноты. Они часть самого творчества."
+              "Правьте частоты и стройте свой строй.",
+              "Начните с готового строя и измените одну или две частоты."
             ],
-            "tipBeginner": "Начните с готовой системы и измените только одну или две частоты.",
-            "tipAdvanced": "Характер системы настройки определяется в основном соотношениями между частотами, а не только значением каждой частоты по отдельности.",
-            "tag": "FREQ",
-            "media": "assets/guide/guide-freq.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "FREQ"
           },
           {
             "id": "key",
-            "title": "Выбор лада",
+            "title": "Лад",
             "body": [
-              "Выбор лада отмечает на клавиатуре звуки, принадлежащие этому ладу.",
-              "Лад служит визуальной подсказкой и не заменяет частоты, заданные в области частот."
+              "Выберите лад, и клавиатура отметит ноты, которые в него входят.",
+              "Эти отметки не заменяют частоты, которые вы задали."
             ],
-            "tipBeginner": "Используйте разметку, чтобы быстро понять, какие клавиши относятся к ладу.",
-            "tipAdvanced": "Можно работать с одной системой частот и выбрать разметку другого лада для игры или музыкального исследования.",
-            "tag": "KEY",
-            "media": "assets/guide/guide-key.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "KEY"
           },
           {
             "id": "oct",
-            "title": "Смена октавы",
+            "title": "Октава",
             "body": [
-              "Смена октавы поднимает или опускает всю систему частот, не меняя соотношения между ними."
+              "Сдвиньте октаву вверх или вниз. Весь строй сдвигается, отношения между частотами остаются."
             ],
-            "tipBeginner": "Если звук слишком высокий или слишком низкий, сначала попробуйте сменить октаву.",
-            "tipAdvanced": "Одну и ту же систему частот можно использовать в разных диапазонах, не задавая её заново.",
-            "tag": "OCT",
-            "media": "assets/guide/guide-oct.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "OCT"
           },
           {
             "id": "pad",
-            "title": "Площадка исполнения",
+            "title": "Пэд",
             "body": [
-              "Площадка даёт управление в реальном времени и может работать сразу с несколькими частями системы."
+              "Движение по пэду ведет сразу несколько частей.",
+              "Начните с одного источника, пока не услышите, как пэд отвечает."
             ],
-            "tipBeginner": "Начните с одного источника, пока реакция площадки не станет вам понятна.",
-            "tipAdvanced": "Одним жестом можно влиять сразу на несколько слоёв.",
-            "tag": "PAD",
-            "media": "assets/guide/guide-pad.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "PAD"
           },
           {
             "id": "mic",
-            "title": "Запись",
+            "title": "Микрофон",
             "body": [
-              "Эта область предназначена для записи голоса, инструмента или любого внешнего источника."
+              "Записывайте голос, инструмент или другой источник.",
+              "Сделайте короткую пробу перед длинной записью.",
+              "Короткая запись может стать лупом."
             ],
-            "tipBeginner": "Сделайте короткую пробную запись перед длинной.",
-            "tipAdvanced": "Короткие записи могут стать лупами, слоями или сырьём для обработки.",
-            "tag": "MIC",
-            "media": "assets/mic-window.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "MIC"
           },
           {
             "id": "loop",
-            "title": "Работа со слоями",
+            "title": "Слои",
             "body": [
-              "Система лупов позволяет работать с несколькими аудиослоями одновременно.",
-              "У каждого канала отдельное управление громкостью и положением в пространстве."
+              "Задайте громкость канала и его место в стерео до того, как добавлять эффект.",
+              "Добавляйте следующий слой, только когда слышно, что он дает."
             ],
-            "tipBeginner": "Начните с одного слоя. Добавляйте слои только когда ясно, что они дают.",
-            "tipAdvanced": "Используйте громкость и положение каждого канала, чтобы создать пространство ещё до добавления эффектов.",
-            "tag": "LOOP",
-            "media": "assets/guide/guide-loop.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum",
-            "title": "Построение ритма",
-            "body": [
-              "Барабанная система построена на паттернах: шестнадцать шагов в каждом, несколько паттернов можно сохранять и переключать.",
-              "В Pro восемь барабанных наборов. В каждом наборе 8 стилей, всего 64 стиля, а не 64 наборов (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
-              "Большинство наборов загружают четыре канала и оставляют четыре свободными для ваших сэмплов. Experimental загружает все восемь каналов с готовыми ритмами, чтобы показать возможности системы."
-            ],
-            "tipBeginner": "Начните с готового кита, слушайте в наушниках, затем меняйте по одному шагу.",
-            "tipAdvanced": "Через Experimental услышьте, как сходятся восемь каналов, и соберите свой паттерн на той же идее.",
-            "tag": "DRUM",
-            "media": "assets/guide/guide-drum.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "LOOP"
           },
           {
             "id": "pattern",
-            "title": "Загрузка паттерна",
+            "title": "Паттерн",
             "body": [
-              "Обычное нажатие загружает паттерн.",
-              "Долгое нажатие открывает параметры повтора."
+              "Нажатие на паттерн загружает его.",
+              "Долгое нажатие задает, сколько раз он повторится."
             ],
-            "tipBeginner": "Запомните: нажатие загружает, долгое нажатие редактирует.",
-            "tipAdvanced": "Можно заранее подготовить несколько паттернов и создать автоматическую последовательность.",
-            "tag": "PATTERN",
-            "media": "assets/guide/guide-pattern.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "PATTERN"
           },
           {
             "id": "repeat",
-            "title": "Автоматические повторы",
+            "title": "Повторы",
             "body": [
-              "Для каждого паттерна можно задать, сколько раз он повторится.",
-              "Можно выбрать число повторов или бесконечный повтор."
+              "Задайте число повторов паттерна или оставьте повтор без ограничения.",
+              "Четыре повтора значат, что паттерн играет четыре раза и идет дальше."
             ],
-            "tipBeginner": "Если хотите, чтобы паттерн сыграл четыре раза, задайте четыре повтора.",
-            "tipAdvanced": "Можно построить целую структуру куска, не переключая паттерны вручную.",
-            "tag": "REPEAT",
-            "media": "assets/guide/guide-repeat.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "REPEAT"
           },
           {
             "id": "live",
-            "title": "Редактирование во время игры",
+            "title": "Правка во время игры",
             "body": [
-              "Шаги можно менять, пока паттерн играет.",
-              "Не нужно останавливать ритм, чтобы его править."
+              "Меняйте шаги, пока паттерн играет.",
+              "Набор не нужно останавливать, чтобы править его."
             ],
-            "tipBeginner": "Начните играть, а потом правьте на ходу.",
-            "tipAdvanced": "Так барабанная система становится инструментом живого исполнения.",
-            "media": "assets/guide/guide-live.jpg",
-            "mediaSize": "panel"
+            "layout": "steps"
           },
           {
             "id": "swing",
-            "title": "Изменение ритмического ощущения",
+            "title": "Swing",
             "body": [
-              "Меняет ощущение ритма, не меняя темп и число шагов."
+              "Swing меняет ощущение и не меняет BPM."
             ],
-            "tipBeginner": "Даже небольшое изменение может быть очень заметным.",
-            "tipAdvanced": "Можно изменить ощущение того же ритма, не строя его заново.",
-            "tag": "SWING",
-            "media": "assets/guide/guide-swing.jpg",
-            "mediaSize": "thumb"
-          },
-          {
-            "id": "style",
-            "title": "Окно стилей",
-            "body": [
-              "Долгое нажатие на Style открывает окно стилей поверх экрана барабанов. Заголовок окна: Random genre.",
-              "Выберите жанр: Rock, Trance, Rap или Techno. Выбор влияет на алгоритм Random в барабанных ритмах."
-            ],
-            "tipBeginner": "Зажмите Style, выберите жанр, затем нажмите Random и послушайте.",
-            "tipAdvanced": "Попробуйте один и тот же кит в двух жанрах. Разница слышна в ритме, без изменения BPM или Swing.",
-            "tag": "STYLE",
-            "media": "assets/guide/guide-style.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "random",
-            "title": "Random по стилю",
-            "body": [
-              "Жанр из окна стилей задаёт направление Random: Rock, Trance, Rap или Techno.",
-              "Алгоритм не просто зажигает шаги наугад. Он строит паттерн по музыкальным правилам выбранного стиля, только на сетке ритма (BPM и Swing в текущей версии не меняются).",
-              "В этой сборке Pro заполняются все восемь каналов."
-            ],
-            "tipBeginner": "Выберите жанр, нажмите Random, затем правьте только то, что режет слух.",
-            "tipAdvanced": "Сохраните удачный паттерн перед новым Random, чтобы сравнить направления и не потерять хороший грув.",
-            "tag": "RANDOM",
-            "media": "assets/guide/guide-random.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "SWING"
           },
           {
             "id": "preset",
-            "title": "Сохранение звуков",
+            "title": "Пресет",
             "body": [
-              "Сохраняет состояние звука."
+              "Save сохраняет текущий звук.",
+              "Сохраните звук, который вам нравится, до того как менять его."
             ],
-            "tipBeginner": "Сохраняйте хорошие звуки сразу.",
-            "tipAdvanced": "Организуйте звуки по роли, а не по номеру.",
-            "tag": "PRESET",
-            "media": "assets/guide/guide-preset.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "PRESET"
           },
           {
             "id": "session",
-            "title": "Сохранение работы",
+            "title": "Session",
             "body": [
-              "Сохраняет более широкое состояние работы."
+              "Session сохраняет более широкую настройку, включая эффект ударных и его значения.",
+              "Пресет хранит звук. Session хранит работу."
             ],
-            "tipBeginner": "Preset сохраняет звук. Session сохраняет работу.",
-            "tipAdvanced": "Разделяйте библиотеку звуков и проекты.",
-            "tag": "SESSION",
-            "media": "assets/guide/guide-session.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "SESSION"
           },
           {
             "id": "midi",
-            "title": "Экспорт музыкальных данных",
+            "title": "MIDI",
             "body": [
-              "Сохраняет информацию об исполнении, а не само аудио."
+              "MIDI хранит сыгранные ноты, не аудио.",
+              "Экспортируйте MIDI, если хотите править эти ноты позже."
             ],
-            "tipBeginner": "Выберите MIDI, если хотите потом править ноты.",
-            "tipAdvanced": "В особых системах настройки также сохраняется информация об изменении высоты звука.",
-            "tag": "MIDI",
-            "media": "assets/guide/guide-midi.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "MIDI"
           },
           {
             "id": "wav",
-            "title": "Экспорт аудио",
+            "title": "WAV",
             "body": [
-              "Сохраняет звук таким, каким он слышен."
+              "WAV хранит звук так, как вы его слышите.",
+              "Экспортируйте WAV, если хотите поделиться аудио или править его в другом месте."
             ],
-            "tipBeginner": "Выберите WAV, если хотите поделиться или править аудио.",
-            "tipAdvanced": "Сохраняйте MIDI для гибкости и WAV для финального результата.",
-            "tag": "WAV",
-            "media": "assets/guide/guide-wav.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "WAV"
           },
           {
             "id": "hidden",
-            "title": "Скрытые действия",
+            "title": "Долгое нажатие",
             "body": [
-              "Есть несколько важных действий, которые не показаны отдельной кнопкой."
+              "Долгое нажатие на SOUND открывает инструмент проверки.",
+              "Долгое нажатие на паттерн задает его повторы.",
+              "Нажатие на число дает ввести значение."
             ],
-            "tipBeginner": "Стоит попробовать долгое нажатие на разные области системы.",
-            "tipAdvanced": "Часть продвинутых возможностей скрыта, чтобы интерфейс оставался чистым и простым.",
-            "bullets": [
-              "SOUND: долгое нажатие открывает инструмент проверки.",
-              "PATTERN: долгое нажатие открывает параметры повтора.",
-              "Числовое значение: нажатие позволяет точный ввод."
-            ],
-            "media": "assets/guide/guide-hidden.jpg",
-            "mediaSize": "panel"
+            "layout": "steps"
           },
           {
             "id": "benchmark",
             "title": "Инструмент проверки",
             "body": [
-              "Инструмент для проверки производительности и диагностики.",
-              "Открывается долгим нажатием на SOUND."
+              "Долгое нажатие на SOUND открывает его.",
+              "Для музыки он не нужен.",
+              "Открывайте его, когда нужно проверить производительность."
             ],
-            "tipBeginner": "Он не нужен, чтобы создавать музыку.",
-            "tipAdvanced": "Полезен для проверки и сравнения производительности системы.",
-            "tag": "BENCHMARK",
-            "media": "assets/guide/guide-benchmark.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "BENCHMARK"
           }
         ],
         "terms": "Условия"
@@ -4602,7 +4296,7 @@
             "ticker": "Drum FX",
             "summary": "Восемь эффектов ударных в стиле Mic FX (названия зафиксированы, иконки в дизайне). Режим Default/Manual заменяется наборами Style.",
             "images": ["/assets/updates/drum-fx.jpg"],
-            "imageAlts": ["Панель Drum FX с восемью пресетами. Выбран Goa Gate."]
+            "imageAlts": ["Панель Drum FX с восемью эффектами. Выбран один эффект."]
           },
           {
             "id": "exclusive-packs-gallery",
@@ -4629,18 +4323,18 @@
             "status": "shipped",
             "title": "Гид по Style и Random",
             "ticker": "Гид Style и Random",
-            "summary": "Руководство по долгому нажатию Style и по Random уже на странице гида.",
+            "summary": "Style открывает окно Drum Style. Random строит другой паттерн в текущем стиле. Шаги на странице гида.",
             "href": "/guide",
             "cta": "Открыть гид",
             "images": ["/assets/updates/user-guide-style-random.jpg"],
-            "imageAlts": ["Кнопки Style и Random из руководства. Долгое нажатие на Style открывает окно стилей."]
+            "imageAlts": ["Style и Random на экране ударных. Style открывает окно Drum Style."]
           },
           {
             "id": "studio-workflow-refresh",
             "status": "upcoming",
             "title": "Обновление рабочего процесса студии",
-            "ticker": "Обновление рабочего процесса, восемь каналов лупера",
-            "summary": "Блокировка правок Pro/Live, отмена и повтор на каналах, телесуфлёр для текста и удаление Comp/Gate с микрофона. У лупера теперь восемь каналов. На проверке перед более широким выпуском.",
+            "ticker": "Обновление рабочего процесса, 32 канала лупера",
+            "summary": "Pro и Live для игры перед людьми, слова остаются на экране во время записи, и эффекты на лупе. У лупера 8 страниц и 4 канала на каждой, всего 32 канала. На проверке перед более широким выпуском.",
             "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
             "imageAlts": ["Телесуфлёр текста открыт поверх студии.", "Панель Looper FX. Выбран Trance Stack."]
           }
@@ -4831,7 +4525,7 @@
             "question": "هل يمكن استخدام الميكروفون كجزء من العزف وليس فقط لتسجيل الصوت؟",
             "answer": [
               "نعم.",
-              "الميكروفون جزء من مسار الصوت في L Studio. له قنواته الخاصة، وتحكم في المستوى والموضع في الستيريو، ومراقبة، وGain، وفلتر High-Pass، وGate، وPresence، وCompression.",
+              "الميكروفون جزء من مسار الصوت في L Studio. له قنواته الخاصة، وتحكم في المستوى والموضع في الستيريو، ومراقبة، وGain، وفلتر High-Pass.",
               "هكذا يمكنك دمج مصدر حي داخل الإعداد والتحكم به إلى جانب السينث واللوبات والطبول.",
               "إذا كنت تراقب عبر سماعات، فبالطبع انتبه للتغذية الراجعة الصوتية."
             ]
@@ -4840,9 +4534,9 @@
             "question": "هل يمكن بناء بيت دون برمجة كل طبل من الصفر؟",
             "answer": [
               "نعم.",
-              "إلى جانب برمجة Step Sequencer يدوياً، يتضمن L Studio عشوائياً حسب الأسلوب (نوع عشوائي).",
-              "الضغط الطويل على Style يختار روك أو ترانس أو راب أو تكنو. هذا الاختيار يؤثر على عشوائي: يبني النظام أساساً موسيقياً للأسلوب، لا خطواتاً عشوائية فقط.",
-              "في نسخة Pro هذه تُملأ القنوات الثماني. بعد ذلك يمكن تعديل Pattern وBPM وSwing والمستويات وموضع الستيريو.",
+              "Style يفتح نافذة Drum Style. هناك تختار المجموعة.",
+              "Random يبني نمطاً آخر في الأسلوب الحالي. هذا ليس رمية عملة.",
+              "بعد ذلك يمكن تعديل النمط وBPM وSwing.",
               "Pro يفتح أيضاً ثماني حزم طبول جاهزة، بما فيها Experimental بثماني قنوات محمّلة وإيقاعات جاهزة."
             ]
           },
@@ -4866,7 +4560,7 @@
           {
             "question": "هل يمكن فعلاً تسجيل أغنية كاملة من داخل L Studio؟",
             "answer": [
-              "يمكنك بناء وتسجيل أداء كامل داخل النظام، لكن L Studio لا يحاول أن يكون DAW تقليدياً بـTimeline لا نهائي.",
+              "يمكنك بناء وتسجيل أداء كامل داخل النظام.",
               "العمل مبني أكثر حول العزف والطبقات واللوبات والطبول والميكروفون والتركيب في الوقت الفعلي.",
               "إضافة إلى ذلك، يمكن تسجيل المزج النهائي مباشرة إلى ملف WAV، فيمكنك إخراج الأداء دون تحويل L Studio إلى محرر استوديو كامل."
             ]
@@ -4924,7 +4618,7 @@
         "title": "دليل المستخدم",
         "titleEm": "L Studio.",
         "eyebrow": "LEARN / USER GUIDE / L STUDIO",
-        "intro": "يركّز هذا الدليل على ما تحتاج معرفته فعلاً للعمل بشكل صحيح مع النظام، بما في ذلك إجراءات لا تكون دائماً واضحة من الشاشة نفسها.",
+        "intro": "كل سطر يقول ماذا يفعل عنصر التحكم عندما تستخدمه.",
         "onThisPage": "في هذه الصفحة",
         "tipBeginner": "نصيحة للمبتدئين",
         "tipAdvanced": "نصيحة للمتقدمين",
@@ -4938,11 +4632,11 @@
             "id": "looper",
             "title": "اللوبر",
             "body": [
-              "افتح اللوبر.",
-              "فيه 8 صفحات.",
-              "في كل صفحة 4 قنوات.",
-              "هذا 32 قناة، وليس 8.",
-              "انتقل إلى الصفحة التالية لتسجيل لوپ آخر."
+              "8 صفحات. في كل صفحة 4 قنوات. المجموع 32 قناة، وليس 8.",
+              "التسجيل في صفحة يبقى عندما تنتقل إلى صفحة أخرى.",
+              "Back في أعلى اللوبر، وBack في أعلى الميكروفون، يعيدان إلى الشاشة السابقة.",
+              "REC يسجل على القناة. DUB يضيف تسجيلاً آخر على القناة نفسها. Play يشغل. STOP يوقف.",
+              "Vol يحدد ارتفاع صوت القناة. Pan ينقلها يميناً أو يساراً."
             ],
             "layout": "steps",
             "tag": "LOOPER",
@@ -4950,79 +4644,10 @@
             "mediaSize": "panel"
           },
           {
-            "id": "looper-back",
-            "title": "رجوع",
-            "body": [
-              "في شاشة اللوبر زر Back في الأعلى.",
-              "في شاشة الميكروفون زر Back في الأعلى.",
-              "ضغطة واحدة تعيد إلى الشاشة السابقة."
-            ],
-            "layout": "steps",
-            "tag": "BACK",
-            "media": "assets/updates/looper-back.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "mic-fx",
-            "title": "Mic FX",
-            "body": [
-              "افتح شاشة الميكروفون.",
-              "اختر واحداً من أصوات Mic FX الثمانية.",
-              "اضغط مطولاً.",
-              "تظهر Amount وEQ وMid-sweep وTranspose من ناقص 12 إلى زائد 12 وReverb."
-            ],
-            "layout": "steps",
-            "tag": "MIC FX",
-            "media": "assets/updates/mic-fx.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum-fx",
-            "title": "Drum FX",
-            "body": [
-              "في شاشة الطبول افتح Drum FX. قد يظهر على الزر المؤثر الحالي، مثل FX 1.",
-              "اختر واحداً من 8 مؤثرات.",
-              "اضغط مطولاً للضبط.",
-              "كل طقم طبول يحتفظ بمؤثره، بما في ذلك القيم.",
-              "يُحفظ ذلك مع حفظ شاشة الطبول ومع حفظ الجلسة."
-            ],
-            "layout": "steps",
-            "tag": "DRUM FX",
-            "media": "assets/updates/drum-fx.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "lyrics",
-            "title": "تلبرومبتر الكلمات",
-            "body": [
-              "افتح شاشة الميكروفون.",
-              "اكتب الكلمات.",
-              "تبقى الكلمات على الشاشة أثناء التسجيل."
-            ],
-            "layout": "steps",
-            "tag": "LYRICS",
-            "media": "assets/updates/lyrics.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "pro-live",
-            "title": "Pro وLive",
-            "body": [
-              "بدّل بين Pro وLive.",
-              "في Live لا يمكنك كتابة قيم الأزرار يدوياً.",
-              "في Live لا يمكنك حذف قناة.",
-              "العودة إلى Pro تعيد الاثنين."
-            ],
-            "layout": "steps",
-            "tag": "PRO"
-          },
-          {
             "id": "redo",
             "title": "Redo",
             "body": [
-              "اختر قناة.",
-              "للقناة Redo.",
-              "هذا ليس Clear وليس Undo."
+              "Redo موجود على القناة، وهو ليس Clear وليس Undo."
             ],
             "layout": "steps",
             "tag": "REDO"
@@ -5031,10 +4656,8 @@
             "id": "looper-fx",
             "title": "Looper FX",
             "body": [
-              "في اللوبر افتح المؤثرات.",
-              "هناك 8 مؤثرات.",
-              "اضغط مطولاً.",
-              "المنزلقات هي نفسها في الطبول والميكروفون."
+              "اضغط أحد 8 مؤثرات لتضعه على اللوب.",
+              "الضغط المطوّل يفتح منزلقات من النوع نفسه كما في Drum FX وMic FX."
             ],
             "layout": "steps",
             "tag": "LOOPER FX",
@@ -5042,13 +4665,106 @@
             "mediaSize": "panel"
           },
           {
+            "id": "mic-fx",
+            "title": "Mic FX",
+            "body": [
+              "اضغط أحد 8 أصوات لتستخدمه.",
+              "الضغط المطوّل يفتح Amount (قوة المؤثر)، وEQ، وMid-sweep، وTranspose من ناقص 12 إلى زائد 12 (0 يترك الطبقة كما هي)، وReverb."
+            ],
+            "layout": "steps",
+            "tag": "MIC FX",
+            "media": "assets/updates/mic-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "lyrics",
+            "title": "الكلمات",
+            "body": [
+              "تكتب الكلمات وتبقى على الشاشة أثناء التسجيل.",
+              "Play يبدأ تحريك الكلمات.",
+              "A- وA+ يغيران حجم النص.",
+              "Speed يغير سرعة حركة الكلمات."
+            ],
+            "layout": "steps",
+            "tag": "LYRICS",
+            "media": "assets/updates/lyrics.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "drum",
+            "title": "الطبول",
+            "body": [
+              "Play Drums يشغل المجموعة. STOP يوقفها.",
+              "زر FX يعرض المؤثر الحالي، مثلاً FX 1. الضغطة تختار واحداً من 8 مؤثرات للمجموعة كلها. الضغط المطوّل يفتح الضبط.",
+              "المجموعة تحتفظ بهذا المؤثر وقيمه عندما تضغط Save في شاشة الطبول وعندما تحفظ الجلسة.",
+              "Style يفتح نافذة Drum Style.",
+              "الأسهم على الجانب تنتقل إلى المجموعة السابقة أو التالية.",
+              "Drum Vol هو مستوى صوت المجموعة. Swing يغير الإحساس من غير أن يغير BPM. BPM هو السرعة.",
+              "1/4 و1/8 و1/16 و1/32 تحدد حجم الخطوة في النمط. 1/4 أوسع خطوة. 1/32 أدق خطوة، لذلك المازورة نفسها تتسع لضربات أكثر.",
+              "Save يحفظ المجموعة، بما فيه المؤثر.",
+              "Random يبني نمطاً آخر في الأسلوب الحالي. هذا ليس رمية عملة."
+            ],
+            "layout": "steps",
+            "tag": "DRUM",
+            "media": "assets/guide/drum-screen.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-machine.jpg"
+            ]
+          },
+          {
+            "id": "drum-fx",
+            "title": "Drum FX",
+            "body": [
+              "الضغطة تختار واحداً من 8 مؤثرات للمجموعة كلها. زر FX يعرض ما اخترته، مثلاً FX 1.",
+              "الضغط المطوّل يفتح الضبط.",
+              "المجموعة تحتفظ بالمؤثر وقيمه عند Save في شاشة الطبول وعند حفظ الجلسة."
+            ],
+            "layout": "steps",
+            "tag": "DRUM FX",
+            "media": "assets/updates/drum-fx.jpg",
+            "mediaSize": "panel"
+          },
+          {
+            "id": "style",
+            "title": "Drum Style",
+            "body": [
+              "الصفحات من 1 إلى 8 صفحات أساليب. الرقم المميّز هو الصفحة المفتوحة.",
+              "Edit page name يغيّر اسم هذه الصفحة.",
+              "Switch to exclusive، داخل هذه النافذة، يفتح حزم Exclusive. بلا تنزيل.",
+              "على الموقع يبقى Exclusive قريباً.",
+              "Load في الصف يحمّل المجموعة بضغطة واحدة، حتى والطبول تعمل.",
+              "Save في الصف يخزن هذه المجموعة. Edit يفتحها للتحرير.",
+              "Import يدخل مجموعة. Export يخرج مجموعة.",
+              "Close يغلق النافذة من غير تحميل.",
+              "معظم المجموعات تحمّل أربع قنوات وتترك أربعاً لعيناتك. Experimental يحمّل ثماني قنوات بأنماط جاهزة.",
+              "في Pro ثماني مجموعات. في كل مجموعة ثمانية أساليب، 64 أسلوباً في المجموع، وليس 64 مجموعة."
+            ],
+            "layout": "steps",
+            "tag": "STYLE",
+            "media": "assets/guide/switch-exclusive.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/drum-styles-load.jpg"
+            ]
+          },
+          {
+            "id": "random",
+            "title": "Random",
+            "body": [
+              "Random يبني نمطاً آخر في الأسلوب الحالي.",
+              "هذا ليس رمية عملة."
+            ],
+            "layout": "steps",
+            "tag": "RANDOM"
+          },
+          {
             "id": "sound-plus",
             "title": "Sound +",
             "body": [
-              "في نافذة الصوت اضغط +.",
-              "تفتح لوحة مفاتيح ثانية. العليا أعلى بأوكتاف.",
-              "تُغلق المقابض وتبقى قيمها.",
-              "اضغط + مرة أخرى لإعادة المقابض."
+              "اضغط + لفتح لوحة مفاتيح ثانية أعلى بأوكتاف. النغمة نفسها، بضعف التردد بالهرتز.",
+              "المقابض تغلق وقيمها تبقى.",
+              "اضغط + مرة أخرى لتعيد المقابض."
             ],
             "layout": "steps",
             "tag": "SOUND +",
@@ -5059,13 +4775,22 @@
             ]
           },
           {
+            "id": "pro-live",
+            "title": "Pro وLive",
+            "body": [
+              "Live للعزف أمام الناس.",
+              "في Live لا يمكنك كتابة قيم الأزرار يدوياً ولا حذف قناة، حتى لا ينكسر السيت في وسط الأغنية.",
+              "Pro يعيد التحرير."
+            ],
+            "layout": "steps",
+            "tag": "PRO"
+          },
+          {
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "افتح الحفظ في الإعدادات.",
-              "اختر Factory 64 restore.",
-              "أكّد.",
-              "يعيد طبول الأساس وExclusive و64 إعداداً مسبقاً."
+              "في شاشة الحفظ داخل الإعدادات، صف Factory 64 يعيد طبول الأساس وExclusive و64 إعداداً مسبقاً، بعد التأكيد فقط.",
+              "Close يترك كل شيء كما هو."
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
@@ -5073,315 +4798,182 @@
             "mediaSize": "panel"
           },
           {
-            "id": "load-kit",
-            "title": "تحميل طقم أثناء العزف",
-            "body": [
-              "شغّل الطبول.",
-              "اختر طقماً آخر.",
-              "ضغطة واحدة على Load تحمّله بينما الطقم السابق ما زال يعزف."
-            ],
-            "layout": "steps",
-            "tag": "LOAD",
-            "media": "assets/guide/drum-styles-load.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum-frames",
-            "title": "إطارات أزرار الطبول",
-            "body": [
-              "افتح نافذة الطبول.",
-              "Style وزر FX وPlay Drums لها إطار.",
-              "1/4 و1/8 و1/16 و1/32 وأزرار التقسيم الأخرى لها إطار أيضاً.",
-              "الإطار يبيّن أنها أزرار."
-            ],
-            "layout": "steps",
-            "tag": "FRAME",
-            "media": "assets/guide/drum-machine.jpg",
-            "mediaSize": "panel",
-            "images": [
-              "assets/guide/drum-screen.jpg"
-            ]
-          },
-          {
-            "id": "exclusive-switch",
-            "title": "Exclusive",
-            "body": [
-              "في الموقع تبقى الحزم قريباً، بلا زر تنزيل.",
-              "في التطبيق افتح نافذة Drum Style.",
-              "Switch to exclusive موجود داخل هذه النافذة."
-            ],
-            "layout": "steps",
-            "tag": "EXCLUSIVE",
-            "media": "assets/guide/switch-exclusive.jpg",
-            "mediaSize": "panel"
-          },
-          {
             "id": "sound",
-            "title": "إنشاء صوت",
+            "title": "الصوت",
             "body": [
-              "هذه منطقة العمل الرئيسية لإنشاء الصوت وتشكيله.",
-              "يفضّل البدء بصوت واحد وتغيير معامل واحد فقط في كل مرة. هكذا يسهل فهم ما تغيّر فعلاً."
+              "غيّر معاملاً واحداً، استمع، ثم غيّر الذي يليه.",
+              "يمكنك تغيير معامل أثناء العزف واستخدام التغيير نفسه في الأداء."
             ],
-            "tipBeginner": "لا تغيّر عشرة أشياء دفعة واحدة. تغيير صغير والاستماع المتكرر سيعلّمانك النظام بسرعة أكبر.",
-            "tipAdvanced": "يمكنك تغيير المعاملات أثناء العزف واستخدام التغيير نفسه كجزء من الأداء.",
-            "tag": "SOUND",
-            "media": "assets/guide/guide-sound.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "SOUND"
           },
           {
             "id": "value",
-            "title": "تعديل القيم بدقة",
+            "title": "قيمة مكتوبة",
             "body": [
-              "بجانب كل زر تظهر قيمة رقمية.",
-              "بدلاً من سحب الزر ومحاولة الوصول إلى الرقم المطلوب، يمكنك النقر على القيمة وإدخالها مباشرة."
+              "اضغط الرقم بجانب عنصر التحكم واكتب القيمة.",
+              "في Live لا يمكن كتابة القيم يدوياً."
             ],
-            "tipBeginner": "إذا صعب الوصول إلى قيمة معيّنة، اكتبها.",
-            "tipAdvanced": "الإدخال اليدوي يتيح إعادة إنشاء الأصوات بدقة ومقارنة حالات مختلفة.",
-            "media": "assets/guide/guide-value.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps"
           },
           {
             "id": "freq",
-            "title": "العمل مع الترددات",
+            "title": "الترددات",
             "body": [
-              "تتيح هذه المنطقة العمل مباشرة مع الترددات وبناء أنظمة ضبط شخصية.",
-              "الترددات ليست مجرد نتيجة لاختيار نغمة. إنها جزء من الإبداع نفسه."
+              "عدّل الترددات وابن نظام ضبط خاصاً بك.",
+              "ابدأ من ضبط جاهز وغيّر تردداً واحداً أو اثنين."
             ],
-            "tipBeginner": "ابدأ من نظام جاهز وغيّر تردداً واحداً أو اثنين فقط.",
-            "tipAdvanced": "طابع نظام الضبط يتحدد أساساً بالعلاقات بين الترددات، وليس فقط بقيمة كل تردد على حدة.",
-            "tag": "FREQ",
-            "media": "assets/guide/guide-freq.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "FREQ"
           },
           {
             "id": "key",
-            "title": "اختيار السلم",
+            "title": "السلم",
             "body": [
-              "اختيار السلم يعلّم النغمات التابعة للسلم على لوحة المفاتيح.",
-              "السلم دليل بصري ولا يستبدل الترددات المعرّفة في منطقة الترددات."
+              "اختر سلماً، ولوحة المفاتيح تعلّم النغمات التي تنتمي إليه.",
+              "هذه العلامات لا تستبدل الترددات التي حددتها."
             ],
-            "tipBeginner": "استخدم العلامات لفهم أي المفاتيح تنتمي للسلم بسرعة.",
-            "tipAdvanced": "يمكنك العمل بنظام ترددات واحد واختيار علامات لسلم آخر للعزف أو للاستكشاف الموسيقي.",
-            "tag": "KEY",
-            "media": "assets/guide/guide-key.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "KEY"
           },
           {
             "id": "oct",
-            "title": "تغيير الأوكتاف",
+            "title": "الأوكتاف",
             "body": [
-              "تغيير الأوكتاف يرفع أو يخفض نظام الترددات بالكامل دون تغيير العلاقات بينها."
+              "انقل الأوكتاف للأعلى أو للأسفل. نظام الضبط كله يتحرك، والعلاقات بين الترددات تبقى."
             ],
-            "tipBeginner": "إذا كان الصوت مرتفعاً أو منخفضاً جداً، جرّب تغيير الأوكتاف أولاً.",
-            "tipAdvanced": "يمكنك استخدام نظام الترددات نفسه في نطاقات مختلفة دون إعادة تعريفه.",
-            "tag": "OCT",
-            "media": "assets/guide/guide-oct.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "OCT"
           },
           {
             "id": "pad",
-            "title": "سطح الأداء",
+            "title": "الـ Pad",
             "body": [
-              "يتيح السطح التحكم في الوقت الفعلي ويمكنه العمل مع عدة أجزاء من النظام في آن واحد."
+              "الحركة على الـ Pad تقود أكثر من جزء في الوقت نفسه.",
+              "ابدأ بمصدر واحد حتى تسمع كيف يستجيب الـ Pad."
             ],
-            "tipBeginner": "ابدأ بمصدر واحد فقط حتى تصبح استجابة السطح واضحة لك.",
-            "tipAdvanced": "يمكنك استخدام حركة واحدة للتأثير على عدة طبقات معاً.",
-            "tag": "PAD",
-            "media": "assets/guide/guide-pad.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "PAD"
           },
           {
             "id": "mic",
-            "title": "التسجيل",
+            "title": "الميكروفون",
             "body": [
-              "هذه المنطقة مخصّصة لتسجيل الصوت أو آلة موسيقية أو أي مصدر خارجي."
+              "سجّل صوتاً أو آلة أو مصدراً آخر.",
+              "اعمل تسجيلاً قصيراً للتجربة قبل تسجيل طويل.",
+              "التسجيل القصير يمكن أن يصبح لوباً."
             ],
-            "tipBeginner": "أجرِ تسجيلاً تجريبياً قصيراً قبل تسجيل طويل.",
-            "tipAdvanced": "التسجيلات القصيرة يمكن أن تصبح لوبات أو طبقات أو مادة خاماً للمعالجة.",
-            "tag": "MIC",
-            "media": "assets/mic-window.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "MIC"
           },
           {
             "id": "loop",
-            "title": "العمل مع الطبقات",
+            "title": "الطبقات",
             "body": [
-              "يتيح نظام اللوبات العمل مع عدة طبقات صوتية في آن واحد.",
-              "لكل قناة تحكم منفصل في المستوى والموضع في الفراغ."
+              "اضبط ارتفاع صوت القناة ومكانها في الاستريو قبل أن تضيف مؤثراً.",
+              "أضف طبقة أخرى فقط عندما تسمع ماذا تضيف."
             ],
-            "tipBeginner": "ابدأ بطبقة واحدة. أضف طبقات فقط عندما يتضح ما تضيفه.",
-            "tipAdvanced": "استخدم مستوى كل قناة وموضعها لخلق فراغ قبل إضافة المؤثرات.",
-            "tag": "LOOP",
-            "media": "assets/guide/guide-loop.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "drum",
-            "title": "بناء إيقاع",
-            "body": [
-              "نظام الطبول مبني على أنماط من ستة عشر خطوة، مع عدة أنماط يمكن حفظها والتبديل بينها.",
-              "في Pro ثماني حزم طبول. في كل حزمة 8 أساليب، 64 أسلوباً في المجموع وليس 64 حزمة (Rap 90', Hip-Hop 2000s, Soft Indie, Psy Progressive Rock, Berlin 90s Techno, Tribal Ambient Trance, Goa Trance, Experimental).",
-              "معظم الحزم تحمّل أربع قنوات وتترك أربعاً فارغة لعيّناتك. Experimental تحمّل القنوات الثماني بإيقاعات جاهزة لإظهار قدرات النظام."
-            ],
-            "tipBeginner": "ابدأ بكيت جاهز، استمع بسماعات رأس، ثم غيّر خطوة واحدة في كل مرة.",
-            "tipAdvanced": "استخدم Experimental لتسمع كيف تتشابك ثماني قنوات، ثم ابنِ نمطك على الفكرة نفسها.",
-            "tag": "DRUM",
-            "media": "assets/guide/guide-drum.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "LOOP"
           },
           {
             "id": "pattern",
-            "title": "تحميل نمط",
+            "title": "النمط",
             "body": [
-              "النقرة العادية تحمّل نمطاً.",
-              "الضغطة المطوّلة تفتح خيارات التكرار."
+              "الضغطة على نمط تحمّله.",
+              "الضغط المطوّل يحدد كم مرة يتكرر."
             ],
-            "tipBeginner": "تذكّر: النقرة تحمّل، والضغطة المطوّلة تعدّل.",
-            "tipAdvanced": "يمكنك تجهيز عدة أنماط مسبقاً وإنشاء تسلسل تلقائي.",
-            "tag": "PATTERN",
-            "media": "assets/guide/guide-pattern.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "PATTERN"
           },
           {
             "id": "repeat",
-            "title": "تكرارات تلقائية",
+            "title": "التكرار",
             "body": [
-              "لكل نمط يمكن تحديد عدد مرات تكراره.",
-              "يمكنك اختيار عدد تكرارات أو تكراراً بلا حدود."
+              "حدد عدد التكرار لنمط، أو اتركه يتكرر بلا حد.",
+              "أربعة تكرارات تعني أن النمط يعزف أربع مرات ثم يتابع."
             ],
-            "tipBeginner": "إذا أردت أن يُعزف النمط أربع مرات، عيّن أربع تكرارات.",
-            "tipAdvanced": "يمكنك بناء بنية كاملة لمقطع دون التنقل يدوياً بين الأنماط.",
-            "tag": "REPEAT",
-            "media": "assets/guide/guide-repeat.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "REPEAT"
           },
           {
             "id": "live",
-            "title": "التحرير أثناء العزف",
+            "title": "تحرير أثناء العزف",
             "body": [
-              "يمكنك تغيير الخطوات أثناء تشغيل النمط.",
-              "لا حاجة لإيقاف الإيقاع لتحريره."
+              "غيّر الخطوات والنمط يعمل.",
+              "لا تحتاج إلى إيقاف المجموعة لكي تعدّل."
             ],
-            "tipBeginner": "ابدأ بالعزف ثم صحّح أثناء التشغيل.",
-            "tipAdvanced": "هكذا يمكن استخدام نظام الطبول كأداة أداء حي.",
-            "media": "assets/guide/guide-live.jpg",
-            "mediaSize": "panel"
+            "layout": "steps"
           },
           {
             "id": "swing",
-            "title": "تغيير الإحساس الإيقاعي",
+            "title": "Swing",
             "body": [
-              "يغيّر إحساس الإيقاع دون تغيير السرعة أو عدد الخطوات."
+              "Swing يغير الإحساس من غير أن يغير BPM."
             ],
-            "tipBeginner": "حتى التغيير الصغير يمكن أن يكون ملحوظاً جداً.",
-            "tipAdvanced": "يمكنك تغيير إحساس الإيقاع نفسه دون بنائه من جديد.",
-            "tag": "SWING",
-            "media": "assets/guide/guide-swing.jpg",
-            "mediaSize": "thumb"
-          },
-          {
-            "id": "style",
-            "title": "نافذة الأساليب",
-            "body": [
-              "الضغط الطويل على Style يفتح نافذة أساليب فوق شاشة الطبول. عنوان النافذة هو Random genre.",
-              "اختر نوعاً: روك، ترانس، راب أو تكنو. الاختيار يؤثر على خوارزمية Random في إيقاعات الطبول."
-            ],
-            "tipBeginner": "اضغط مطوّلاً على Style، اختر نوعاً، ثم اضغط Random واستمع.",
-            "tipAdvanced": "جرّب الكيت نفسه في نوعين. يظهر الفرق في الإيقاع، من دون تغيير BPM أو Swing.",
-            "tag": "STYLE",
-            "media": "assets/guide/guide-style.jpg",
-            "mediaSize": "panel"
-          },
-          {
-            "id": "random",
-            "title": "عشوائي حسب الأسلوب",
-            "body": [
-              "النوع المختار في نافذة الأساليب يحدد اتجاه Random: روك، ترانس، راب أو تكنو.",
-              "الخوارزمية لا تضيء الخطوات عشوائياً فقط. تبني نمطاً وفق قواعد موسيقية للأسلوب المختار، على شبكة الإيقاع فقط (دون تغيير BPM أو Swing في الإصدار الحالي).",
-              "في نسخة Pro هذه تُملأ القنوات الثماني."
-            ],
-            "tipBeginner": "اختر نوعاً، اضغط عشوائي، ثم عدّل فقط ما يبدو غير دقيق.",
-            "tipAdvanced": "احفظ نمطاً أعجبك قبل دورة عشوائي جديدة، لتقارن الاتجاهات دون فقدان غروف جيد.",
-            "tag": "RANDOM",
-            "media": "assets/guide/guide-random.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "SWING"
           },
           {
             "id": "preset",
-            "title": "حفظ الأصوات",
+            "title": "الإعداد المسبق",
             "body": [
-              "يحفظ حالة الصوت."
+              "Save يحفظ الصوت الحالي.",
+              "احفظ صوتاً أعجبك قبل أن تغيّره."
             ],
-            "tipBeginner": "احفظ الأصوات الجيدة فوراً.",
-            "tipAdvanced": "نظّم الأصوات حسب الدور وليس حسب الرقم.",
-            "tag": "PRESET",
-            "media": "assets/guide/guide-preset.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "PRESET"
           },
           {
             "id": "session",
-            "title": "حفظ العمل",
+            "title": "Session",
             "body": [
-              "يحفظ حالة العمل الأوسع."
+              "Session يحفظ الإعداد الأوسع، بما فيه مؤثر الطبول وقيمه.",
+              "الإعداد المسبق يحفظ صوتاً. Session يحفظ العمل."
             ],
-            "tipBeginner": "Preset يحفظ صوتاً. Session يحفظ عملاً.",
-            "tipAdvanced": "افصل بين مكتبة الأصوات والمشاريع.",
-            "tag": "SESSION",
-            "media": "assets/guide/guide-session.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "SESSION"
           },
           {
             "id": "midi",
-            "title": "تصدير بيانات موسيقية",
+            "title": "MIDI",
             "body": [
-              "يحفظ معلومات عن العزف وليس الصوت نفسه."
+              "MIDI يحفظ النغمات التي عزفتها، وليس الصوت.",
+              "صدّر MIDI عندما تريد تعديل هذه النغمات لاحقاً."
             ],
-            "tipBeginner": "اختر MIDI إذا أردت تحرير النغمات لاحقاً.",
-            "tipAdvanced": "في أنظمة الضبط الخاصة يُحفظ أيضاً معلومات تغيير ارتفاع النغمة.",
-            "tag": "MIDI",
-            "media": "assets/guide/guide-midi.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "MIDI"
           },
           {
             "id": "wav",
-            "title": "تصدير صوت",
+            "title": "WAV",
             "body": [
-              "يحفظ الصوت كما يُسمع."
+              "WAV يحفظ الصوت كما تسمعه.",
+              "صدّر WAV عندما تريد مشاركة الصوت أو تعديله في مكان آخر."
             ],
-            "tipBeginner": "اختر WAV إذا أردت مشاركة الصوت أو تحريره.",
-            "tipAdvanced": "احفظ MIDI للمرونة وWAV للنتيجة النهائية.",
-            "tag": "WAV",
-            "media": "assets/guide/guide-wav.jpg",
-            "mediaSize": "thumb"
+            "layout": "steps",
+            "tag": "WAV"
           },
           {
             "id": "hidden",
-            "title": "إجراءات مخفية",
+            "title": "ضغط مطوّل",
             "body": [
-              "هناك عدة إجراءات مهمة لا تظهر كزر منفصل."
+              "الضغط المطوّل على SOUND يفتح أداة الفحص.",
+              "الضغط المطوّل على نمط يحدد تكراره.",
+              "الضغط على رقم يتيح كتابة قيمة."
             ],
-            "tipBeginner": "يجدر تجربة ضغطة مطوّلة على مناطق مختلفة في النظام.",
-            "tipAdvanced": "بعض القدرات المتقدمة مخفية للحفاظ على واجهة نظيفة وبسيطة.",
-            "bullets": [
-              "SOUND: الضغطة المطوّلة تفتح أداة الاختبار.",
-              "PATTERN: الضغطة المطوّلة تفتح خيارات التكرار.",
-              "قيمة رقمية: النقرة تتيح إدخالاً دقيقاً."
-            ],
-            "media": "assets/guide/guide-hidden.jpg",
-            "mediaSize": "panel"
+            "layout": "steps"
           },
           {
             "id": "benchmark",
-            "title": "أداة الاختبار",
+            "title": "أداة الفحص",
             "body": [
-              "أداة لفحص الأداء والتشخيص.",
-              "تُفتح بضغطة مطوّلة على SOUND."
+              "الضغط المطوّل على SOUND يفتحها.",
+              "لا تحتاج إليها لصناعة الموسيقى.",
+              "استخدمها عندما تريد فحص الأداء."
             ],
-            "tipBeginner": "لا حاجة لاستخدامها لإنشاء الموسيقى.",
-            "tipAdvanced": "مفيدة لفحص أداء النظام ومقارنته.",
-            "tag": "BENCHMARK",
-            "media": "assets/guide/guide-benchmark.jpg",
-            "mediaSize": "panel"
+            "layout": "steps",
+            "tag": "BENCHMARK"
           }
         ],
         "terms": "الشروط"
@@ -6151,7 +5743,7 @@
             "ticker": "Drum FX",
             "summary": "ثمانية مؤثرات للطبول بأسلوب Mic FX (الأسماء ثابتة، والأيقونات قيد التصميم). يحل ذلك محل وضع Default/Manual لصالح حزم Style.",
             "images": ["/assets/updates/drum-fx.jpg"],
-            "imageAlts": ["لوحة Drum FX بثمانية إعدادات مسبقة. Goa Gate محدد."]
+            "imageAlts": ["لوحة Drum FX بثمانية مؤثرات. مؤثر واحد محدد."]
           },
           {
             "id": "exclusive-packs-gallery",
@@ -6178,18 +5770,18 @@
             "status": "shipped",
             "title": "دليل Style وRandom",
             "ticker": "دليل Style وRandom",
-            "summary": "دليل المستخدم للضغط المطوّل على Style ولـ Random متاح في صفحة الدليل.",
+            "summary": "Style يفتح نافذة Drum Style. Random يبني نمطاً آخر في الأسلوب الحالي. الخطوات في صفحة الدليل.",
             "href": "/guide",
             "cta": "فتح الدليل",
             "images": ["/assets/updates/user-guide-style-random.jpg"],
-            "imageAlts": ["زرا Style وRandom من دليل المستخدم. الضغط المطوّل على Style يفتح نافذة الأساليب."]
+            "imageAlts": ["Style وRandom في شاشة الطبول. Style يفتح نافذة Drum Style."]
           },
           {
             "id": "studio-workflow-refresh",
             "status": "upcoming",
             "title": "تحديث مسار العمل في الاستوديو",
-            "ticker": "تحديث مسار العمل، ثماني قنوات للوبر",
-            "summary": "قفل تعديل Pro/Live، والتراجع والإعادة في القنوات، وتلبرومبتر للكلمات، وإزالة Comp/Gate من الميكروفون. أصبح للوبر الآن ثماني قنوات. قيد الاختبار قبل إصدار أوسع.",
+            "ticker": "تحديث مسار العمل، 32 قناة للوبر",
+            "summary": "Pro وLive للعزف أمام الناس، والكلمات تبقى على الشاشة أثناء التسجيل، ومؤثرات على اللوب. للوبر 8 صفحات و4 قنوات في كل صفحة، 32 قناة في المجموع. قيد الاختبار قبل إصدار أوسع.",
             "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
             "imageAlts": ["تلبرومبتر الكلمات مفتوح فوق الاستوديو.", "لوحة Looper FX. Trance Stack محدد."]
           }
