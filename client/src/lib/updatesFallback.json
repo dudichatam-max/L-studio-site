@@ -32,7 +32,7 @@
         "ticker": "Drum FX",
         "summary": "שמונה אפקטים לתופים בסגנון Mic FX (שמות נעולים, אייקונים בעיצוב). כולל הסרת מצב Default/Manual לטובת ערכות הסטייל.",
         "images": ["/assets/updates/drum-fx.jpg"],
-        "imageAlts": ["לוח Drum FX עם שמונה פריסטים. Goa Gate נבחר."]
+        "imageAlts": ["לוח Drum FX עם שמונה אפקטים. אפקט אחד נבחר."]
       },
       {
         "id": "exclusive-packs-gallery",
@@ -59,18 +59,18 @@
         "status": "shipped",
         "title": "מדריך Style ו-Random",
         "ticker": "מדריך Style ו-Random",
-        "summary": "מדריך משתמש על לחיצה ארוכה ב-Style ועל Random. זמין בעמוד המדריך.",
+        "summary": "Style פותח את חלון Drum Style. Random בונה תבנית אחרת בסגנון הנוכחי. הצעדים בעמוד המדריך.",
         "href": "/guide",
         "cta": "למדריך",
         "images": ["/assets/updates/user-guide-style-random.jpg"],
-        "imageAlts": ["כפתורי Style ו-Random מהמדריך. לחיצה ארוכה על Style פותחת את חלון הסגנונות."]
+        "imageAlts": ["Style ו-Random במסך התופים. Style פותח את חלון Drum Style."]
       },
       {
         "id": "studio-workflow-refresh",
         "status": "upcoming",
         "title": "רענון זרימת העבודה בסטודיו",
-        "ticker": "רענון זרימת העבודה, שמונה ערוצי לופר",
-        "summary": "שיפורים בנעילת Pro/Live, ביטול פעולות בערוצים, טלפרומפטר למילים, והסרת Comp/Gate מהמיק. ללופר יש עכשיו שמונה ערוצים. בבדיקות לפני פרסום רחב.",
+        "ticker": "רענון זרימת העבודה, 32 ערוצי לופר",
+        "summary": "Pro ו-Live לנגינה מול אנשים, מילים שנשארות על המסך בזמן הקלטה, ואפקטים על הלופר. בלופר 8 עמודים ו-4 ערוצים בכל עמוד, 32 ערוצים בסך הכל. בבדיקות לפני פרסום רחב.",
         "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
         "imageAlts": ["טלפרומפטר למילים פתוח מעל הסטודיו.", "לוח Looper FX. Trance Stack נבחר."]
       }
@@ -109,7 +109,7 @@
         "ticker": "Drum FX",
         "summary": "Eight drum effects in the Mic FX style (names locked, icons in design). Replaces Default/Manual with the Style kit packs.",
         "images": ["/assets/updates/drum-fx.jpg"],
-        "imageAlts": ["Drum FX panel with eight presets. Goa Gate is selected."]
+        "imageAlts": ["Drum FX panel with eight effects. One effect is selected."]
       },
       {
         "id": "exclusive-packs-gallery",
@@ -136,18 +136,18 @@
         "status": "shipped",
         "title": "Style & Random guide",
         "ticker": "Style and Random guide",
-        "summary": "The user guide for Style long-press and Random is on the guide page.",
+        "summary": "Style opens the Drum Style window. Random builds another pattern in the current style. The steps are on the guide page.",
         "href": "/guide",
         "cta": "Open guide",
         "images": ["/assets/updates/user-guide-style-random.jpg"],
-        "imageAlts": ["Style and Random controls from the user guide. A long press on Style opens the style window."]
+        "imageAlts": ["Style and Random on the drum screen. Style opens the Drum Style window."]
       },
       {
         "id": "studio-workflow-refresh",
         "status": "upcoming",
         "title": "Studio workflow refresh",
-        "ticker": "Studio workflow refresh, eight looper channels",
-        "summary": "Pro/Live edit locking, channel undo/redo, lyrics teleprompter, and Comp/Gate removal from mic. The looper now has eight channels. In testing before a wider release.",
+        "ticker": "Studio workflow refresh, 32 looper channels",
+        "summary": "Pro and Live for playing in front of people, lyrics that stay on screen while you record, and effects on the loop. The looper has 8 pages and 4 channels on each page, 32 channels in all. In testing before a wider release.",
         "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
         "imageAlts": ["Lyrics teleprompter open over the studio.", "Looper FX panel with Trance Stack selected."]
       }
@@ -186,7 +186,7 @@
         "ticker": "Drum FX",
         "summary": "Восемь эффектов ударных в стиле Mic FX (названия зафиксированы, иконки в дизайне). Режим Default/Manual заменяется наборами Style.",
         "images": ["/assets/updates/drum-fx.jpg"],
-        "imageAlts": ["Панель Drum FX с восемью пресетами. Выбран Goa Gate."]
+        "imageAlts": ["Панель Drum FX с восемью эффектами. Выбран один эффект."]
       },
       {
         "id": "exclusive-packs-gallery",
@@ -213,18 +213,18 @@
         "status": "shipped",
         "title": "Гид по Style и Random",
         "ticker": "Гид Style и Random",
-        "summary": "Руководство по долгому нажатию Style и по Random уже на странице гида.",
+        "summary": "Style открывает окно Drum Style. Random строит другой паттерн в текущем стиле. Шаги на странице гида.",
         "href": "/guide",
         "cta": "Открыть гид",
         "images": ["/assets/updates/user-guide-style-random.jpg"],
-        "imageAlts": ["Кнопки Style и Random из руководства. Долгое нажатие на Style открывает окно стилей."]
+        "imageAlts": ["Style и Random на экране ударных. Style открывает окно Drum Style."]
       },
       {
         "id": "studio-workflow-refresh",
         "status": "upcoming",
         "title": "Обновление рабочего процесса студии",
-        "ticker": "Обновление рабочего процесса, восемь каналов лупера",
-        "summary": "Блокировка правок Pro/Live, отмена и повтор на каналах, телесуфлёр для текста и удаление Comp/Gate с микрофона. У лупера теперь восемь каналов. На проверке перед более широким выпуском.",
+        "ticker": "Обновление рабочего процесса, 32 канала лупера",
+        "summary": "Pro и Live для игры перед людьми, слова остаются на экране во время записи, и эффекты на лупе. У лупера 8 страниц и 4 канала на каждой, всего 32 канала. На проверке перед более широким выпуском.",
         "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
         "imageAlts": ["Телесуфлёр текста открыт поверх студии.", "Панель Looper FX. Выбран Trance Stack."]
       }
@@ -263,7 +263,7 @@
         "ticker": "Drum FX",
         "summary": "ثمانية مؤثرات للطبول بأسلوب Mic FX (الأسماء ثابتة، والأيقونات قيد التصميم). يحل ذلك محل وضع Default/Manual لصالح حزم Style.",
         "images": ["/assets/updates/drum-fx.jpg"],
-        "imageAlts": ["لوحة Drum FX بثمانية إعدادات مسبقة. Goa Gate محدد."]
+        "imageAlts": ["لوحة Drum FX بثمانية مؤثرات. مؤثر واحد محدد."]
       },
       {
         "id": "exclusive-packs-gallery",
@@ -290,18 +290,18 @@
         "status": "shipped",
         "title": "دليل Style وRandom",
         "ticker": "دليل Style وRandom",
-        "summary": "دليل المستخدم للضغط المطوّل على Style ولـ Random متاح في صفحة الدليل.",
+        "summary": "Style يفتح نافذة Drum Style. Random يبني نمطاً آخر في الأسلوب الحالي. الخطوات في صفحة الدليل.",
         "href": "/guide",
         "cta": "فتح الدليل",
         "images": ["/assets/updates/user-guide-style-random.jpg"],
-        "imageAlts": ["زرا Style وRandom من دليل المستخدم. الضغط المطوّل على Style يفتح نافذة الأساليب."]
+        "imageAlts": ["Style وRandom في شاشة الطبول. Style يفتح نافذة Drum Style."]
       },
       {
         "id": "studio-workflow-refresh",
         "status": "upcoming",
         "title": "تحديث مسار العمل في الاستوديو",
-        "ticker": "تحديث مسار العمل، ثماني قنوات للوبر",
-        "summary": "قفل تعديل Pro/Live، والتراجع والإعادة في القنوات، وتلبرومبتر للكلمات، وإزالة Comp/Gate من الميكروفون. أصبح للوبر الآن ثماني قنوات. قيد الاختبار قبل إصدار أوسع.",
+        "ticker": "تحديث مسار العمل، 32 قناة للوبر",
+        "summary": "Pro وLive للعزف أمام الناس، والكلمات تبقى على الشاشة أثناء التسجيل، ومؤثرات على اللوب. للوبر 8 صفحات و4 قنوات في كل صفحة، 32 قناة في المجموع. قيد الاختبار قبل إصدار أوسع.",
         "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
         "imageAlts": ["تلبرومبتر الكلمات مفتوح فوق الاستوديو.", "لوحة Looper FX. Trance Stack محدد."]
       }
