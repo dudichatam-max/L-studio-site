@@ -306,7 +306,9 @@
               "LIVE נועל שמות. הוא מכבה את Clear, ומכבה Load ו-Import של קבצים. אי אפשר להקליד מספר על נוב. Back ב-MIC וב-LOOP עדיין עובד כשיש הקלטה שנמחקה ומחכה."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/11-pro-live.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "midi",
@@ -316,7 +318,9 @@
               "הקשה מתחילה הקלטת MIDI. בזמן ההקלטה הכפתור אומר Save MIDI. הקשה נוספת עוצרת ומבקשת מהטלפון איפה לשמור את הקובץ."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/27-midi.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "wav",
@@ -326,7 +330,9 @@
               "הקשה מתחילה להקליט את מה ששומעים. בזמן ההקלטה הכפתור אומר Save WAV. הקשה נוספת עוצרת ומבקשת מהטלפון איפה לשמור את הקובץ."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/28-wav.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "settings",
@@ -351,8 +357,12 @@
             ],
             "layout": "steps",
             "tag": "TAB",
-            "media": "assets/guide/sound-keyboards.jpg",
-            "mediaSize": "panel"
+            "media": "assets/guide/13-sound.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/29-long-press.jpg",
+              "assets/guide/30-test-tool.jpg"
+            ]
           },
           {
             "id": "mic",
@@ -362,7 +372,9 @@
               "הקשה פותחת את מסך המיקרופון. יש בו שני עמודים, ושלושה ערוצים בכל עמוד."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/19-mic.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "looper",
@@ -373,7 +385,9 @@
               "כשיוצאים מ-LOOP, האפליקציה שומרת את סשן הלופ אחרי 2 שניות, אלא אם ערוץ עדיין מקליט."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/01-looper.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pad",
@@ -383,9 +397,7 @@
               "הקשה פותחת את מסך הפד. הכותרת אומרת LIVE PERFORMANCE PAD. הכותרת הזאת אינה כפתור."
             ],
             "layout": "steps",
-            "tag": "TAB",
-            "media": "assets/guide/guide-pad.jpg",
-            "mediaSize": "panel"
+            "tag": "TAB"
           },
           {
             "id": "drum",
@@ -397,7 +409,7 @@
             ],
             "layout": "steps",
             "tag": "TAB",
-            "media": "assets/guide/drums.jpg",
+            "media": "assets/guide/06-drums.jpg",
             "mediaSize": "panel"
           },
           {
@@ -421,7 +433,9 @@
               "Oct מראה את האוקטבה הנוכחית. זה לא כפתור."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/17-octave.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "freq",
@@ -431,7 +445,9 @@
               "הקשה פותחת את Tune frequencies (Hz). בחלון הזה Reset, Major, Minor, Default, ו-Close הם כפתורים."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/15-frequencies.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "presets",
@@ -443,7 +459,9 @@
               "שמונת העמודים הם GRAY ENGINE, GOLD HAMMER, LIGHT KNIFE, BLACK WELL, LOW SNAKE, SAW TEETH, GOLD FOG, ו-SPIKES."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/25-preset.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "key",
@@ -514,7 +532,9 @@
               "הנובים האלה מוסתרים כשהמקלדת השנייה פתוחה, או כשהמקלדת גבוהה. עדיין אפשר לגלול אליהם."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/14-exact-value.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "rip",
@@ -534,7 +554,9 @@
               "הקשה פותחת מקלדת שנייה מעל הראשונה, אוקטבה אחת גבוה יותר. הקשה נוספת סוגרת אותה."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/10-sound-plus.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "keys",
@@ -684,7 +706,7 @@
             ],
             "layout": "steps",
             "tag": "MIC FX",
-            "media": "assets/updates/mic-fx.jpg",
+            "media": "assets/guide/04-mic-fx.jpg",
             "mediaSize": "panel"
           },
           {
@@ -740,7 +762,9 @@
               "ה-X ו-Close סוגרים את החלון ושומרים את המילים."
             ],
             "layout": "steps",
-            "tag": "MIC"
+            "tag": "MIC",
+            "media": "assets/guide/05-lyrics.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop-name",
@@ -834,7 +858,9 @@
               "גרירה קובעת ווליום מ-0% עד 100%. הקשה על המספר נותנת להקליד ערך. LIVE לא פותח את התיבה הזאת."
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/20-layers.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop-fx",
@@ -887,7 +913,9 @@
               "לחיצה ארוכה פותחת את Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לפריסט הזה. Transpose רץ ממינוס 12 עד 12. הסליידרים נראים רק כל עוד הפריסט דולק."
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/03-looper-fx.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pad-targets",
@@ -1008,7 +1036,9 @@
               "לחיצה ארוכה פותחת את Random genre."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/08-drum-style.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-vol",
@@ -1028,7 +1058,9 @@
               "גרירה קובעת swing מ-0% עד 100%."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/24-swing.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "bpm",
@@ -1069,7 +1101,9 @@
               "לחיצה ארוכה פותחת את Pattern repeats. נקודה על הכפתור אומרת שלפטרן יש חזרה."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/21-template.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "pattern-save",
@@ -1090,7 +1124,9 @@
               "זה לא פותח חלון. הז'אנר מגיע מלחיצה ארוכה על Style."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/09-random.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "sample-load",
@@ -1130,7 +1166,9 @@
               "הקשה מדליקה או מכבה את הצעד."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/23-edit-while-playing.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-fx",
@@ -1143,7 +1181,7 @@
             ],
             "layout": "steps",
             "tag": "DRUM FX",
-            "media": "assets/updates/drum-fx.jpg",
+            "media": "assets/guide/07-drum-fx.jpg",
             "mediaSize": "panel"
           },
           {
@@ -1204,7 +1242,9 @@
               "הקשה פותחת את Save Console. Save מאשר. Cancel סוגר את החלון."
             ],
             "layout": "steps",
-            "tag": "SETTINGS"
+            "tag": "SETTINGS",
+            "media": "assets/guide/26-session.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "session-load",
@@ -1236,7 +1276,9 @@
               "Restore מחליף את פריסטי Factory 64, את כל 8 חבילות התופים של Style, ואת כל 11 חבילות Exclusive, ואז טוען את פריסט 1 בעמוד 1. Cancel סוגר את השאלה."
             ],
             "layout": "steps",
-            "tag": "SETTINGS"
+            "tag": "SETTINGS",
+            "media": "assets/guide/12-factory-64.jpg",
+            "mediaSize": "thumb"
           }
         ],
         "terms": "תנאי שימוש"
@@ -2358,7 +2400,9 @@
               "LIVE locks names. It turns off Clear, and it turns off Load and Import for files. You cannot type a number on a knob. Back on MIC and LOOP still works when a cleared take is waiting."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/11-pro-live.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "midi",
@@ -2368,7 +2412,9 @@
               "A tap starts a MIDI recording. While it records, the button says Save MIDI. Another tap stops and asks the phone where to save the file."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/27-midi.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "wav",
@@ -2378,7 +2424,9 @@
               "A tap starts recording what you hear. While it records, the button says Save WAV. Another tap stops and asks the phone where to save the file."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/28-wav.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "settings",
@@ -2403,8 +2451,12 @@
             ],
             "layout": "steps",
             "tag": "TAB",
-            "media": "assets/guide/sound-keyboards.jpg",
-            "mediaSize": "panel"
+            "media": "assets/guide/13-sound.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/29-long-press.jpg",
+              "assets/guide/30-test-tool.jpg"
+            ]
           },
           {
             "id": "mic",
@@ -2414,7 +2466,9 @@
               "A tap opens the mic screen. It has two pages, with three channels on each page."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/19-mic.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "looper",
@@ -2425,7 +2479,9 @@
               "When you leave LOOP, the app saves the loop session after 2 seconds, unless a channel is still recording."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/01-looper.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pad",
@@ -2435,9 +2491,7 @@
               "A tap opens the pad screen. The header says LIVE PERFORMANCE PAD. That header is not a button."
             ],
             "layout": "steps",
-            "tag": "TAB",
-            "media": "assets/guide/guide-pad.jpg",
-            "mediaSize": "panel"
+            "tag": "TAB"
           },
           {
             "id": "drum",
@@ -2449,7 +2503,7 @@
             ],
             "layout": "steps",
             "tag": "TAB",
-            "media": "assets/guide/drums.jpg",
+            "media": "assets/guide/06-drums.jpg",
             "mediaSize": "panel"
           },
           {
@@ -2473,7 +2527,9 @@
               "Oct shows the current octave. It is not a button."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/17-octave.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "freq",
@@ -2483,7 +2539,9 @@
               "A tap opens Tune frequencies (Hz). In that window, Reset, Major, Minor, Default, and Close are buttons."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/15-frequencies.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "presets",
@@ -2495,7 +2553,9 @@
               "The eight pages are GRAY ENGINE, GOLD HAMMER, LIGHT KNIFE, BLACK WELL, LOW SNAKE, SAW TEETH, GOLD FOG, and SPIKES."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/25-preset.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "key",
@@ -2566,7 +2626,9 @@
               "These knobs hide when the second keyboard is open, or when the keyboard is tall. You can still scroll to them."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/14-exact-value.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "rip",
@@ -2586,7 +2648,9 @@
               "A tap opens a second keyboard above the first, one octave higher. Another tap closes it."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/10-sound-plus.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "keys",
@@ -2736,7 +2800,7 @@
             ],
             "layout": "steps",
             "tag": "MIC FX",
-            "media": "assets/updates/mic-fx.jpg",
+            "media": "assets/guide/04-mic-fx.jpg",
             "mediaSize": "panel"
           },
           {
@@ -2792,7 +2856,9 @@
               "The X and Close shut the window and keep the words."
             ],
             "layout": "steps",
-            "tag": "MIC"
+            "tag": "MIC",
+            "media": "assets/guide/05-lyrics.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop-name",
@@ -2886,7 +2952,9 @@
               "A drag sets the volume from 0% to 100%. A tap on the number lets you type a value. LIVE does not open that box."
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/20-layers.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop-fx",
@@ -2939,7 +3007,9 @@
               "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that preset. Transpose runs from -12 to 12. The sliders show only while that preset stays on."
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/03-looper-fx.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pad-targets",
@@ -3060,7 +3130,9 @@
               "A long-press opens Random genre."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/08-drum-style.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-vol",
@@ -3080,7 +3152,9 @@
               "A drag sets swing from 0% to 100%."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/24-swing.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "bpm",
@@ -3121,7 +3195,9 @@
               "A long-press opens Pattern repeats. A dot on the button means that pattern has a repeat set."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/21-template.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "pattern-save",
@@ -3142,7 +3218,9 @@
               "It does not open a window. The genre comes from a long-press on Style."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/09-random.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "sample-load",
@@ -3182,7 +3260,9 @@
               "A tap turns that step on or off."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/23-edit-while-playing.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-fx",
@@ -3195,7 +3275,7 @@
             ],
             "layout": "steps",
             "tag": "DRUM FX",
-            "media": "assets/updates/drum-fx.jpg",
+            "media": "assets/guide/07-drum-fx.jpg",
             "mediaSize": "panel"
           },
           {
@@ -3256,7 +3336,9 @@
               "A tap opens Save Console. Save confirms. Cancel closes the window."
             ],
             "layout": "steps",
-            "tag": "SETTINGS"
+            "tag": "SETTINGS",
+            "media": "assets/guide/26-session.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "session-load",
@@ -3288,7 +3370,9 @@
               "Restore replaces the Factory 64 presets, all 8 Style drum packs, and all 11 Exclusive packs, then loads preset 1 on page 1. Cancel closes the question."
             ],
             "layout": "steps",
-            "tag": "SETTINGS"
+            "tag": "SETTINGS",
+            "media": "assets/guide/12-factory-64.jpg",
+            "mediaSize": "thumb"
           }
         ],
         "terms": "Terms"
@@ -4410,7 +4494,9 @@
               "LIVE блокирует имена. Он выключает Clear, и выключает Load и Import файлов. Нельзя вписать число на регуляторе. Back на MIC и LOOP всё ещё работает, когда удалённая запись ждёт."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/11-pro-live.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "midi",
@@ -4420,7 +4506,9 @@
               "Нажатие начинает запись MIDI. Пока идёт запись, кнопка говорит Save MIDI. Ещё одно нажатие останавливает и спрашивает телефон, куда сохранить файл."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/27-midi.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "wav",
@@ -4430,7 +4518,9 @@
               "Нажатие начинает запись того, что вы слышите. Пока идёт запись, кнопка говорит Save WAV. Ещё одно нажатие останавливает и спрашивает телефон, куда сохранить файл."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/28-wav.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "settings",
@@ -4455,8 +4545,12 @@
             ],
             "layout": "steps",
             "tag": "TAB",
-            "media": "assets/guide/sound-keyboards.jpg",
-            "mediaSize": "panel"
+            "media": "assets/guide/13-sound.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/29-long-press.jpg",
+              "assets/guide/30-test-tool.jpg"
+            ]
           },
           {
             "id": "mic",
@@ -4466,7 +4560,9 @@
               "Нажатие открывает экран микрофона. На нём две страницы, по три канала на каждой."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/19-mic.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "looper",
@@ -4477,7 +4573,9 @@
               "Когда вы уходите с LOOP, приложение сохраняет сессию лупа через 2 секунды, кроме случая, когда канал всё ещё записывает."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/01-looper.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pad",
@@ -4487,9 +4585,7 @@
               "Нажатие открывает экран пэда. Заголовок говорит LIVE PERFORMANCE PAD. Этот заголовок не кнопка."
             ],
             "layout": "steps",
-            "tag": "TAB",
-            "media": "assets/guide/guide-pad.jpg",
-            "mediaSize": "panel"
+            "tag": "TAB"
           },
           {
             "id": "drum",
@@ -4501,7 +4597,7 @@
             ],
             "layout": "steps",
             "tag": "TAB",
-            "media": "assets/guide/drums.jpg",
+            "media": "assets/guide/06-drums.jpg",
             "mediaSize": "panel"
           },
           {
@@ -4525,7 +4621,9 @@
               "Oct показывает текущую октаву. Это не кнопка."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/17-octave.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "freq",
@@ -4535,7 +4633,9 @@
               "Нажатие открывает Tune frequencies (Hz). В этом окне Reset, Major, Minor, Default и Close это кнопки."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/15-frequencies.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "presets",
@@ -4547,7 +4647,9 @@
               "Восемь страниц: GRAY ENGINE, GOLD HAMMER, LIGHT KNIFE, BLACK WELL, LOW SNAKE, SAW TEETH, GOLD FOG и SPIKES."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/25-preset.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "key",
@@ -4618,7 +4720,9 @@
               "Эти регуляторы прячутся, когда открыта вторая клавиатура или когда клавиатура высокая. До них всё ещё можно доскроллить."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/14-exact-value.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "rip",
@@ -4638,7 +4742,9 @@
               "Нажатие открывает вторую клавиатуру над первой, на октаву выше. Ещё одно нажатие её закрывает."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/10-sound-plus.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "keys",
@@ -4788,7 +4894,7 @@
             ],
             "layout": "steps",
             "tag": "MIC FX",
-            "media": "assets/updates/mic-fx.jpg",
+            "media": "assets/guide/04-mic-fx.jpg",
             "mediaSize": "panel"
           },
           {
@@ -4844,7 +4950,9 @@
               "X и Close закрывают окно и сохраняют слова."
             ],
             "layout": "steps",
-            "tag": "MIC"
+            "tag": "MIC",
+            "media": "assets/guide/05-lyrics.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop-name",
@@ -4938,7 +5046,9 @@
               "Перетаскивание задаёт громкость от 0% до 100%. Нажатие на число даёт вписать значение. LIVE не открывает это поле."
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/20-layers.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop-fx",
@@ -4991,7 +5101,9 @@
               "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого пресета. Transpose идёт от -12 до 12. Ползунки видны, только пока этот пресет включён."
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/03-looper-fx.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pad-targets",
@@ -5112,7 +5224,9 @@
               "Долгое нажатие открывает Random genre."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/08-drum-style.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-vol",
@@ -5132,7 +5246,9 @@
               "Перетаскивание задаёт swing от 0% до 100%."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/24-swing.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "bpm",
@@ -5173,7 +5289,9 @@
               "Долгое нажатие открывает Pattern repeats. Точка на кнопке значит, что у паттерна задан повтор."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/21-template.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "pattern-save",
@@ -5194,7 +5312,9 @@
               "Оно не открывает окно. Жанр берётся из долгого нажатия на Style."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/09-random.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "sample-load",
@@ -5234,7 +5354,9 @@
               "Нажатие включает или выключает этот шаг."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/23-edit-while-playing.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-fx",
@@ -5247,7 +5369,7 @@
             ],
             "layout": "steps",
             "tag": "DRUM FX",
-            "media": "assets/updates/drum-fx.jpg",
+            "media": "assets/guide/07-drum-fx.jpg",
             "mediaSize": "panel"
           },
           {
@@ -5308,7 +5430,9 @@
               "Нажатие открывает Save Console. Save подтверждает. Cancel закрывает окно."
             ],
             "layout": "steps",
-            "tag": "SETTINGS"
+            "tag": "SETTINGS",
+            "media": "assets/guide/26-session.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "session-load",
@@ -5340,7 +5464,9 @@
               "Restore заменяет пресеты Factory 64, все 8 ударных паков Style и все 11 паков Exclusive, затем загружает пресет 1 на странице 1. Cancel закрывает вопрос."
             ],
             "layout": "steps",
-            "tag": "SETTINGS"
+            "tag": "SETTINGS",
+            "media": "assets/guide/12-factory-64.jpg",
+            "mediaSize": "thumb"
           }
         ],
         "terms": "Условия"
@@ -6462,7 +6588,9 @@
               "LIVE يقفل الأسماء. يوقف Clear، ويوقف Load وImport للملفات. لا يمكن كتابة رقم على مقبض. Back في MIC وLOOP يبقى يعمل عندما يكون تسجيل ممسوح بانتظار العودة."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/11-pro-live.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "midi",
@@ -6472,7 +6600,9 @@
               "الضغط يبدأ تسجيل MIDI. أثناء التسجيل يقول الزر Save MIDI. ضغطة أخرى توقف وتسأل الهاتف أين يحفظ الملف."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/27-midi.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "wav",
@@ -6482,7 +6612,9 @@
               "الضغط يبدأ تسجيل ما تسمعه. أثناء التسجيل يقول الزر Save WAV. ضغطة أخرى توقف وتسأل الهاتف أين يحفظ الملف."
             ],
             "layout": "steps",
-            "tag": "TOP"
+            "tag": "TOP",
+            "media": "assets/guide/28-wav.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "settings",
@@ -6507,8 +6639,12 @@
             ],
             "layout": "steps",
             "tag": "TAB",
-            "media": "assets/guide/sound-keyboards.jpg",
-            "mediaSize": "panel"
+            "media": "assets/guide/13-sound.jpg",
+            "mediaSize": "panel",
+            "images": [
+              "assets/guide/29-long-press.jpg",
+              "assets/guide/30-test-tool.jpg"
+            ]
           },
           {
             "id": "mic",
@@ -6518,7 +6654,9 @@
               "الضغط يفتح شاشة الميكروفون. فيها صفحتان، وثلاث قنوات في كل صفحة."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/19-mic.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "looper",
@@ -6529,7 +6667,9 @@
               "عند مغادرة LOOP يحفظ التطبيق جلسة اللوب بعد ثانيتين، إلا إذا كانت قناة لا تزال تسجّل."
             ],
             "layout": "steps",
-            "tag": "TAB"
+            "tag": "TAB",
+            "media": "assets/guide/01-looper.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pad",
@@ -6539,9 +6679,7 @@
               "الضغط يفتح شاشة الـ Pad. العنوان يقول LIVE PERFORMANCE PAD. هذا العنوان ليس زراً."
             ],
             "layout": "steps",
-            "tag": "TAB",
-            "media": "assets/guide/guide-pad.jpg",
-            "mediaSize": "panel"
+            "tag": "TAB"
           },
           {
             "id": "drum",
@@ -6553,7 +6691,7 @@
             ],
             "layout": "steps",
             "tag": "TAB",
-            "media": "assets/guide/drums.jpg",
+            "media": "assets/guide/06-drums.jpg",
             "mediaSize": "panel"
           },
           {
@@ -6577,7 +6715,9 @@
               "Oct يعرض الأوكتاف الحالي. هو ليس زراً."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/17-octave.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "freq",
@@ -6587,7 +6727,9 @@
               "الضغط يفتح Tune frequencies (Hz). في هذه النافذة Reset وMajor وMinor وDefault وClose أزرار."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/15-frequencies.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "presets",
@@ -6599,7 +6741,9 @@
               "الصفحات الثماني هي GRAY ENGINE وGOLD HAMMER وLIGHT KNIFE وBLACK WELL وLOW SNAKE وSAW TEETH وGOLD FOG وSPIKES."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/25-preset.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "key",
@@ -6670,7 +6814,9 @@
               "هذه المقابض تختفي عندما تكون لوحة المفاتيح الثانية مفتوحة، أو عندما تكون لوحة المفاتيح طويلة. ما زال يمكن التمرير إليها."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/14-exact-value.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "rip",
@@ -6690,7 +6836,9 @@
               "الضغط يفتح لوحة مفاتيح ثانية فوق الأولى، أوكتافاً أعلى. ضغطة أخرى تغلقها."
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/10-sound-plus.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "keys",
@@ -6840,7 +6988,7 @@
             ],
             "layout": "steps",
             "tag": "MIC FX",
-            "media": "assets/updates/mic-fx.jpg",
+            "media": "assets/guide/04-mic-fx.jpg",
             "mediaSize": "panel"
           },
           {
@@ -6896,7 +7044,9 @@
               "X وClose يغلقان النافذة ويبقيان الكلمات."
             ],
             "layout": "steps",
-            "tag": "MIC"
+            "tag": "MIC",
+            "media": "assets/guide/05-lyrics.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop-name",
@@ -6990,7 +7140,9 @@
               "السحب يحدد المستوى من 0% إلى 100%. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح هذا المربع."
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/20-layers.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "loop-fx",
@@ -7043,7 +7195,9 @@
               "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لهذا الإعداد. يجري Transpose من -12 إلى 12. تظهر الأشرطة فقط بينما يبقى هذا الإعداد يعمل."
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/03-looper-fx.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pad-targets",
@@ -7164,7 +7318,9 @@
               "الضغط المطوّل يفتح Random genre."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/08-drum-style.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-vol",
@@ -7184,7 +7340,9 @@
               "السحب يحدد swing من 0% إلى 100%."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/24-swing.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "bpm",
@@ -7225,7 +7383,9 @@
               "الضغط المطوّل يفتح Pattern repeats. نقطة على الزر تعني أن لهذا النمط تكراراً."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/21-template.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "pattern-save",
@@ -7246,7 +7406,9 @@
               "هو لا يفتح نافذة. يأتي النوع من ضغط مطوّل على Style."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/09-random.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "sample-load",
@@ -7286,7 +7448,9 @@
               "الضغط يشغّل هذه الخطوة أو يوقفها."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/23-edit-while-playing.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "drum-fx",
@@ -7299,7 +7463,7 @@
             ],
             "layout": "steps",
             "tag": "DRUM FX",
-            "media": "assets/updates/drum-fx.jpg",
+            "media": "assets/guide/07-drum-fx.jpg",
             "mediaSize": "panel"
           },
           {
@@ -7360,7 +7524,9 @@
               "الضغط يفتح Save Console. Save يؤكّد. Cancel يغلق النافذة."
             ],
             "layout": "steps",
-            "tag": "SETTINGS"
+            "tag": "SETTINGS",
+            "media": "assets/guide/26-session.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "session-load",
@@ -7392,7 +7558,9 @@
               "Restore يستبدل إعدادات Factory 64، وكل حزم الطبول الثماني في Style، وكل حزم Exclusive الإحدى عشرة، ثم يحمّل الإعداد 1 في الصفحة 1. Cancel يغلق السؤال."
             ],
             "layout": "steps",
-            "tag": "SETTINGS"
+            "tag": "SETTINGS",
+            "media": "assets/guide/12-factory-64.jpg",
+            "mediaSize": "thumb"
           }
         ],
         "terms": "الشروط"
