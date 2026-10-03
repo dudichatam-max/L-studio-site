@@ -52,7 +52,7 @@ const emptyCopy = (language: Language): GuideCopy => ({
   title: language === "he" ? "מדריך למשתמש" : language === "ru" ? "Руководство" : language === "ar" ? "دليل المستخدم" : "User guide",
   titleEm: "L Studio.",
   eyebrow: "LEARN / USER GUIDE / L STUDIO",
-  intro: language === "he" ? "הכותרת היא שם הכפתור על המסך. שורה שמסומנת draft לא אומתה בקוד." : language === "ru" ? "Заголовок это имя кнопки на экране. Строка с пометкой draft не проверена в коде приложения." : language === "ar" ? "العنوان هو اسم الزر على الشاشة. السطر المكتوب عليه draft لم يُراجع في كود التطبيق." : "The title is the button name on the screen. A line marked draft was not checked in the app code.",
+  intro: language === "he" ? "הכותרת היא שם הכפתור על המסך." : language === "ru" ? "Заголовок это имя кнопки на экране." : language === "ar" ? "العنوان هو اسم الزر على الشاشة." : "The title is the button name on the screen.",
   ...chrome[language],
   sections: [],
 });
