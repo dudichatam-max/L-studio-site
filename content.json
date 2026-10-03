@@ -22,7 +22,7 @@
         "offerDetail": "גרסת Pro מלאה, בלי מגבלות דמו, לפני ההשקה הרשמית בתשלום.",
         "ctaPrimary": "להכיר את L-Studio",
         "ctaSecondary": "איך זה התחיל",
-        "stat1": "כ־24MB",
+        "stat1": "56.5MB",
         "stat2": "Android 7.0+",
         "stat3": "ללא פרסומות"
       },
@@ -277,7 +277,7 @@
         "title": "מדריך למשתמש",
         "titleEm": "L Studio.",
         "eyebrow": "LEARN / USER GUIDE / L STUDIO",
-        "intro": "כל שורה אומרת מה הפקד עושה כשמשתמשים בו.",
+        "intro": "הכותרת היא שם הכפתור על המסך. שורה שמסומנת draft לא אומתה בקוד.",
         "onThisPage": "בעמוד הזה",
         "tipBeginner": "טיפ למתחילים",
         "tipAdvanced": "טיפ למתקדמים",
@@ -289,13 +289,10 @@
         "sections": [
           {
             "id": "looper",
-            "title": "לופר",
+            "title": "LOOP",
             "body": [
-              "8 עמודים. בכל עמוד 4 ערוצים. ביחד 32 ערוצים, לא 8.",
-              "הקלטה בעמוד אחד נשארת כשעוברים לעמוד אחר.",
-              "Back בראש הלופר מחזיר למסך הקודם.",
-              "REC מקליט לערוץ. DUB מוסיף הקלטה נוספת על אותו ערוץ. Play מנגן. STOP עוצר.",
-              "Vol קובע את העוצמה של הערוץ. Pan מזיז אותו ימינה או שמאלה."
+              "מסך הלופר נמצא בלשונית LOOP.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LOOPER",
@@ -303,20 +300,23 @@
             "mediaSize": "panel"
           },
           {
-            "id": "redo",
-            "title": "Redo",
+            "id": "back",
+            "title": "Back",
             "body": [
-              "Redo נמצא על הערוץ, והוא לא Clear ולא Undo."
+              "Back נמצא בראש מסך הלופר ובראש מסך המיקרופון.",
+              "הקשה על Back מבטלת מחיקה. זה לא חוזר למסך הקודם."
             ],
             "layout": "steps",
-            "tag": "REDO"
+            "tag": "BACK",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "looper-fx",
             "title": "Looper FX",
             "body": [
-              "מקישים על אחד מ-8 אפקטים כדי לשים אותו על הלופ.",
-              "לחיצה ארוכה פותחת סליידרים מאותו סוג כמו ב-Drum FX וב-Mic FX."
+              "לוח Looper FX מופיע על מסך הלופר.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LOOPER FX",
@@ -327,10 +327,8 @@
             "id": "mic-fx",
             "title": "Mic FX",
             "body": [
-              "הקשה על פריסט בוחרת אותו: Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap, או Wire Grit.",
-              "לחיצה ארוכה פותחת את Amount (כמה חזק האפקט), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb.",
-              "Transpose מוצג בחצאי טונים, ממינוס 12 עד פלוס 12. 0 משאיר את הגובה כמו שהוא.",
-              "Close סוגר את הלוח."
+              "Mic FX נמצא בכל ערוץ ווקאל.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "MIC FX",
@@ -339,12 +337,10 @@
           },
           {
             "id": "lyrics",
-            "title": "מילים",
+            "title": "Lyrics",
             "body": [
-              "כותבים את המילים, והן נשארות על המסך בזמן ההקלטה.",
-              "Play מתחיל להזיז את המילים.",
-              "A- ו-A+ משנים את גודל הטקסט.",
-              "Speed משנה את המהירות שבה המילים זזות."
+              "חלון Lyrics מראה Play, A-, A+, Speed, Done ו-Close.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LYRICS",
@@ -353,18 +349,10 @@
           },
           {
             "id": "drum",
-            "title": "תופים",
+            "title": "DRUM",
             "body": [
-              "יש 8 שורות תופים.",
-              "Play מפעיל את הערכה. בזמן שהערכה מנגנת הכפתור מציג Stop Drums. STOP מימין עוצר אותה.",
-              "FX מציג את האפקט הנוכחי, כאן FX 5. הקשה בוחרת אחד מ-8 אפקטים לכל הערכה. לחיצה ארוכה פותחת את הכוונון.",
-              "הערכה שומרת את האפקט ואת הערכים שלו בשמירה במסך התופים ובשמירת Session.",
-              "Style פותח את חלון Drum Style.",
-              "החצים בצד עוברים לערכה הקודמת או לערכה הבאה.",
-              "Drum Vol הוא עוצמת הערכה. Swing משנה את התחושה בלי לשנות את ה-BPM. BPM הוא הטמפו.",
-              "1/4, 1/8, 1/16 ו-1/32 קובעים את גודל הצעד בתבנית. 1/4 הוא הצעד הרחב ביותר. 1/32 הוא הצעד העדין ביותר, ולכן אותה תיבה יכולה להכיל יותר מכות.",
-              "Save שומר את הערכה, כולל האפקט.",
-              "Random בונה תבנית אחרת בסגנון הנוכחי. זה לא הטלת מטבע."
+              "מסך התופים נמצא בלשונית DRUM.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "DRUM",
@@ -373,11 +361,10 @@
           },
           {
             "id": "drum-fx",
-            "title": "Drum FX",
+            "title": "FX",
             "body": [
-              "הקשה בוחרת אחד מ-8 אפקטים לכל הערכה. כפתור ה-FX מציג את האפקט שנבחר, למשל FX 1.",
-              "לחיצה ארוכה פותחת את הכוונון.",
-              "הערכה שומרת את האפקט ואת הערכים שלו בשמירה במסך התופים ובשמירת Session."
+              "כפתור FX נמצא במסך התופים.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "DRUM FX",
@@ -386,18 +373,11 @@
           },
           {
             "id": "style",
-            "title": "Drum Style",
+            "title": "Style",
             "body": [
-              "עמודי הסגנון ממוספרים. ב-Exclusive העמודים ממשיכים אחרי 8. המסך הזה מראה 4 עד 11, ועמוד 8 פתוח בשם Middle Tech.",
-              "Edit page name משנה את שם העמוד.",
-              "Switch to exclusive פעיל. בלי הורדה.",
-              "באתר Exclusive נשאר בקרוב.",
-              "Load בשורה טוען את הערכה בהקשה אחת, גם כשהתופים כבר מנגנים.",
-              "Save בשורה שומר את הערכה. Edit פותח אותה לעריכה.",
-              "Import מכניס ערכה. Export מוציא ערכה.",
-              "Close סוגר את החלון בלי לטעון.",
-              "רוב הערכות טוענות ארבעה ערוצים ומשאירות ארבעה פנויים לסאמפלים שלכם. Experimental טוען שמונה ערוצים עם תבניות מוכנות.",
-              "ב-Pro שמונה ערכות. בכל ערכה שמונה סגנונות, 64 סגנונות בסך הכל, לא 64 ערכות."
+              "כפתור Style נמצא במסך התופים.",
+              "מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "STYLE",
@@ -408,22 +388,20 @@
             "id": "random",
             "title": "Random",
             "body": [
-              "Random בונה תבנית אחרת בסגנון הנוכחי.",
-              "זה לא הטלת מטבע."
+              "כפתור Random נמצא במסך התופים.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "RANDOM"
+            "tag": "RANDOM",
+            "media": "assets/guide/guide-random.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "sound-plus",
-            "title": "Sound +",
+            "title": "+",
             "body": [
-              "הקשה על + פותחת מקלדת שנייה. העליונה גבוהה באוקטבה: אותו תו, כפול ב-Hz.",
-              "Sine, Square, Triangle, Saw ו-Noise בוחרים את צורת הגל.",
-              "Oct קובע את האוקטבה: ‎-1, 0, או ‎+1.",
-              "freq קובע את התדר. Key מסמן את הסולם על המקלדת.",
-              "Presets פותח את הצלילים השמורים. שורת ערכת התופים מציגה את הערכה שטעונה.",
-              "Drive קובע את הדרייב. RIP, FUZZ, PHAZ ו-PIANO מפעילים את האפקט הזה."
+              "כפתור + נמצא במסך הסאונד.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "SOUND +",
@@ -432,13 +410,10 @@
           },
           {
             "id": "pro-live",
-            "title": "Pro ו-Live",
+            "title": "PRO / LIVE",
             "body": [
-              "תג הכותרת עובר בין PRO ל-LIVE.",
-              "Live מיועד לנגינה מול אנשים. ב-Live אי אפשר להקליד ערכים של כפתורים ביד, ואי אפשר למחוק ערוץ, כדי שהסט לא יישבר באמצע שיר.",
-              "Pro מחזיר את העריכה.",
-              "Language קובע את השפה: EN, HE, RU, או AR. Save as נותן שם לסשן הזה ושומר אותו. Load משחזר סשן שמור.",
-              "Show tutorial מציג את ההדרכה. Factory 64 מחזיר את תופי הבסיס, את Exclusive, ו-64 פריסטים רק אחרי אישור. Close משאיר הכל כמו שהוא."
+              "התג PRO / LIVE נמצא בראש המסך.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "PRO",
@@ -449,8 +424,8 @@
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "Language קובע את השפה: EN, HE, RU, או AR. Save as נותן שם לסשן הזה ושומר אותו. Load משחזר סשן שמור. Show tutorial מציג את ההדרכה. השורה Factory 64 מחזירה את תופי הבסיס, את Exclusive, ו-64 פריסטים רק אחרי אישור.",
-              "Close משאיר הכל כמו שהוא."
+              "השורה Factory 64 נמצאת בחלון ההגדרות.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
@@ -459,72 +434,81 @@
           },
           {
             "id": "sound",
-            "title": "סאונד",
+            "title": "SOUND",
             "body": [
-              "משנים פרמטר אחד, מקשיבים, ורק אז משנים את הבא.",
-              "אפשר לשנות פרמטר תוך כדי נגינה ולהשתמש בשינוי עצמו בביצוע."
+              "מסך הסאונד נמצא בלשונית SOUND.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/sound-keyboards.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "value",
-            "title": "ערך מדויק",
+            "title": "Value",
             "body": [
-              "מקישים על המספר ליד פקד ומקלידים את הערך.",
-              "ב-Live אי אפשר להקליד ערכים ביד."
+              "מספר מופיע מתחת לנוב במסך הסאונד.",
+              "draft: not verified in code"
             ],
-            "layout": "steps"
+            "layout": "steps",
+            "media": "assets/guide/guide-value.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "freq",
-            "title": "תדרים",
+            "title": "freq",
             "body": [
-              "עורכים את התדרים ובונים כיוון משלכם.",
-              "מתחילים מכיוון מוכן ומשנים תדר אחד או שניים."
+              "כפתור freq נמצא במסך הסאונד.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "FREQ"
+            "tag": "FREQ",
+            "media": "assets/guide/guide-freq.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "key",
-            "title": "סולם",
+            "title": "Key",
             "body": [
-              "בוחרים סולם, והמקלדת מסמנת את התווים ששייכים לו.",
-              "הסימון לא מחליף את התדרים שקבעתם."
+              "כפתור Key נמצא במסך הסאונד.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "KEY"
+            "tag": "KEY",
+            "media": "assets/guide/guide-key.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "oct",
-            "title": "אוקטבה",
+            "title": "Oct",
             "body": [
-              "מזיזים את האוקטבה למעלה או למטה. כל הכיוון זז, והיחסים בין התדרים נשארים."
+              "Oct נמצא במסך הסאונד.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "OCT"
+            "tag": "OCT",
+            "media": "assets/guide/guide-oct.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "pad",
-            "title": "פד",
+            "title": "PAD",
             "body": [
-              "תנועה על הפד מזיזה יותר מחלק אחד באותו זמן.",
-              "מתחילים ממקור אחד עד ששומעים איך הפד מגיב."
+              "הפד נמצא בלשונית PAD.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PAD"
+            "tag": "PAD",
+            "media": "assets/guide/guide-pad.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "mic",
-            "title": "מיקרופון",
+            "title": "MIC",
             "body": [
-              "Back מחזיר למסך הקודם.",
-              "עמודים 1 ו-2 הם עמודי מיקרופון.",
-              "הקשה על Lyrics פותחת את המילים.",
-              "מקליטים קול, כלי, או מקור אחר.",
-              "עושים הקלטת בדיקה קצרה לפני הקלטה ארוכה.",
-              "הקלטה קצרה יכולה להפוך ללופ."
+              "מסך המיקרופון נמצא בלשונית MIC.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "MIC",
@@ -533,40 +517,43 @@
           },
           {
             "id": "loop",
-            "title": "שכבות",
+            "title": "Vol",
             "body": [
-              "קובעים עוצמה ומיקום במרחב לכל ערוץ לפני שמוסיפים אפקט.",
-              "מוסיפים שכבה נוספת רק כששומעים מה היא מוסיפה."
+              "Vol ו-L/R נמצאים בכל ערוץ במסך הלופר.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/guide-loop.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pattern",
-            "title": "תבנית",
+            "title": "Pattern",
             "body": [
-              "הקשה על תבנית טוענת אותה.",
-              "לחיצה ארוכה קובעת כמה פעמים היא חוזרת."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PATTERN"
+            "tag": "PATTERN",
+            "media": "assets/guide/guide-pattern.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "repeat",
-            "title": "חזרות",
+            "title": "Repeat",
             "body": [
-              "קובעים מספר חזרות לתבנית, או משאירים חזרה בלי הגבלה.",
-              "ארבע חזרות: התבנית מתנגנת ארבע פעמים ואז עוברת הלאה."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "REPEAT"
+            "tag": "REPEAT",
+            "media": "assets/guide/guide-repeat.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "live",
-            "title": "עריכה בזמן נגינה",
+            "title": "Live",
             "body": [
-              "משנים צעדים בזמן שהתבנית מתנגנת.",
-              "לא חייבים לעצור את הערכה כדי לערוך."
+              "draft: not verified in code"
             ],
             "layout": "steps"
           },
@@ -574,71 +561,82 @@
             "id": "swing",
             "title": "Swing",
             "body": [
-              "Swing משנה את התחושה בלי לשנות את ה-BPM."
+              "Swing נמצא במסך התופים.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SWING"
+            "tag": "SWING",
+            "media": "assets/guide/guide-swing.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "preset",
-            "title": "פריסט",
+            "title": "Presets",
             "body": [
-              "Save שומר את הצליל הנוכחי.",
-              "שומרים צליל שאהבתם לפני שמשנים אותו."
+              "Presets נמצא במסך הסאונד.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PRESET"
+            "tag": "PRESET",
+            "media": "assets/guide/guide-preset.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "session",
-            "title": "Session",
+            "title": "Save as",
             "body": [
-              "Session שומר את מערך העבודה הרחב, כולל אפקט התופים והערכים שלו.",
-              "פריסט שומר צליל. Session שומר את העבודה."
+              "Save as ו-Load נמצאים בחלון ההגדרות.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SESSION"
+            "tag": "SESSION",
+            "media": "assets/guide/settings-live.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "midi",
             "title": "MIDI",
             "body": [
-              "MIDI שומר את הנגינה, לא את האודיו.",
-              "מייצאים MIDI כשרוצים לערוך את התווים אחר כך."
+              "MIDI נמצא בראש המסך.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "MIDI"
+            "tag": "MIDI",
+            "media": "assets/guide/guide-midi.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "wav",
             "title": "WAV",
             "body": [
-              "WAV שומר את הצליל כמו שהוא נשמע.",
-              "מייצאים WAV כשרוצים לשתף את האודיו או לערוך אותו במקום אחר."
+              "WAV נמצא בראש המסך.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "WAV"
+            "tag": "WAV",
+            "media": "assets/guide/guide-wav.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "hidden",
-            "title": "לחיצה ארוכה",
+            "title": "Hidden",
             "body": [
-              "לחיצה ארוכה על SOUND פותחת את כלי הבדיקה.",
-              "לחיצה ארוכה על תבנית קובעת את החזרות שלה.",
-              "הקשה על מספר מאפשרת להקליד ערך."
+              "draft: not verified in code"
             ],
-            "layout": "steps"
+            "layout": "steps",
+            "media": "assets/guide/guide-hidden.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "benchmark",
-            "title": "כלי בדיקה",
+            "title": "Benchmark",
             "body": [
-              "לחיצה ארוכה על SOUND פותחת אותו.",
-              "לא צריך אותו כדי לעשות מוזיקה.",
-              "משתמשים בו כשרוצים לבדוק ביצועים."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "BENCHMARK"
+            "tag": "BENCHMARK",
+            "media": "assets/guide/guide-benchmark.jpg",
+            "mediaSize": "panel"
           }
         ],
         "terms": "תנאי שימוש"
@@ -1142,15 +1140,15 @@
         "navLabel": "בלעדי",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
         "title": "אחת עשרה חבילות.",
-        "titleEm": "בקרוב.",
-        "intro": "קו נפרד משמונה ערכות התופים של Factory. אחת עשרה חבילות תופים בדרך, ובכל אחת 8 ערוצים ו־8 סגנונות.",
+        "titleEm": "כלול ב-Pro.",
+        "intro": "קו נפרד משמונה ערכות התופים של Factory. אחת עשרה חבילות תופים, ובכל אחת 8 ערוצים ו-8 סגנונות. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה.",
         "imageAlt": "כרזת חבילת תופים בלעדית",
-        "comingSoon": "בקרוב",
+        "comingSoon": "כלול ב-Pro",
         "stylesHeading": "סגנונות",
         "demoLabel": "סרטון הדגמה",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "אחת עשרה חבילות מיוחדות. בקרוב.",
-        "homeBody": "אחת עשרה חבילות תופים בלעדיות יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. עוד אין השקה. היכנסו לבלעדי וראו מה בדרך.",
+        "homeTitle": "אחת עשרה חבילות מיוחדות. כלול ב-Pro.",
+        "homeBody": "אחת עשרה חבילות תופים בלעדיות יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה.",
         "homeCta": "לעמוד הבלעדי",
         "homeImageAlt": "מניפה של תשע כרזות לחבילות תופים בלעדיות של L Studio",
         "packs": [
@@ -1345,10 +1343,11 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "אפליקציית L Studio Pro לאנדרואיד. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro הוא קובץ APK לאנדרואיד, כ־24MB. האתר הזה אינו גובה תשלום עבורו כרגע. הרשמה לגישה מוקדמת נשארת בדף הבית.",
+        "body": "L Studio Pro הוא קובץ APK לאנדרואיד, 56.5MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע. הרשמה לגישה מוקדמת נשארת בדף הבית.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
-          "קובץ APK של L Studio Pro לאנדרואיד, כ־24MB",
+          "קובץ APK של L Studio Pro לאנדרואיד, 56.5MB",
+      "מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה.",
           "רכישה בתשלום אינה מוצעת באתר הזה כרגע",
           "Factory Pack נשאר בעמודים שלו",
           "Android 7.0 ומעלה (API 24), יעד API 36. התקנת APK ישירה, לא מחנות Play."
@@ -1412,10 +1411,10 @@
           },
           {
             "id": "exclusive-packs-gallery",
-            "status": "upcoming",
+            "status": "shipped",
             "title": "חבילות Exclusive ב-Pro",
             "ticker": "Exclusive ב-Pro",
-            "summary": "בקרוב, מי שירכוש את L Studio Pro בגוגל יקבל מתוך האפליקציה גישה ל־11 ערכות תופים מלאות, בנוסף ל־Factory 64. האתר רק מציג מידע על הערכות. אין הורדה מהאתר.",
+            "summary": "מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. זו גישה מתוך האפליקציה ל-11 ערכות תופים מלאות, בנוסף ל-Factory 64. האתר רק מציג מידע על הערכות.",
             "href": "/exclusive",
             "cta": "לעמוד Exclusive",
             "images": ["/assets/updates/exclusive-packs-poster.jpg"],
@@ -1475,7 +1474,7 @@
         "offerDetail": "Full Pro, with no demo limits, before the official paid launch.",
         "ctaPrimary": "Meet L-Studio",
         "ctaSecondary": "How it started",
-        "stat1": "about 24 MB",
+        "stat1": "56.5 MB",
         "stat2": "Android 7.0+",
         "stat3": "No ads"
       },
@@ -1730,7 +1729,7 @@
         "title": "User guide",
         "titleEm": "L Studio.",
         "eyebrow": "LEARN / USER GUIDE / L STUDIO",
-        "intro": "Each line says what the control does when you use it.",
+        "intro": "The title is the button name on the screen. A line marked draft was not checked in the app code.",
         "onThisPage": "On this page",
         "tipBeginner": "Beginner tip",
         "tipAdvanced": "Advanced tip",
@@ -1742,13 +1741,10 @@
         "sections": [
           {
             "id": "looper",
-            "title": "Looper",
+            "title": "LOOP",
             "body": [
-              "Eight pages. Four channels on each page. 32 channels in all, not 8.",
-              "A recording on one page stays when you move to another page.",
-              "Back at the top of the looper returns to the previous screen.",
-              "REC records on that channel. DUB adds another pass on the same channel. Play starts it. STOP stops it.",
-              "Vol sets how loud the channel is. Pan moves it left or right."
+              "The looper screen is on the LOOP tab.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LOOPER",
@@ -1756,20 +1752,23 @@
             "mediaSize": "panel"
           },
           {
-            "id": "redo",
-            "title": "Redo",
+            "id": "back",
+            "title": "Back",
             "body": [
-              "Redo is on the channel and is not Clear and not Undo."
+              "Back is at the top of the looper screen and at the top of the mic screen.",
+              "A tap on Back undoes a delete. It does not return to the previous screen."
             ],
             "layout": "steps",
-            "tag": "REDO"
+            "tag": "BACK",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "looper-fx",
             "title": "Looper FX",
             "body": [
-              "Tap one of 8 effects to put it on the loop.",
-              "Long-press opens the same kind of sliders as Drum FX and Mic FX."
+              "The Looper FX panel is on the looper screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LOOPER FX",
@@ -1780,10 +1779,8 @@
             "id": "mic-fx",
             "title": "Mic FX",
             "body": [
-              "Tap a preset to select it: Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap, or Wire Grit.",
-              "Long-press opens Amount (how strong it is), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb.",
-              "Transpose is shown in semitones, from minus 12 to plus 12. 0 leaves the pitch as it is.",
-              "Close closes the panel."
+              "Mic FX is on each vocal channel.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "MIC FX",
@@ -1794,10 +1791,8 @@
             "id": "lyrics",
             "title": "Lyrics",
             "body": [
-              "Write the words. They stay on screen while you record.",
-              "Play starts the words moving.",
-              "A- and A+ change the text size.",
-              "Speed changes how fast the words move."
+              "The Lyrics window shows Play, A-, A+, Speed, Done, and Close.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LYRICS",
@@ -1806,18 +1801,10 @@
           },
           {
             "id": "drum",
-            "title": "Drums",
+            "title": "DRUM",
             "body": [
-              "There are 8 drum rows.",
-              "Play starts the kit. While the kit is playing the button reads Stop Drums. STOP on the right stops it.",
-              "FX shows the current effect, here FX 5. Tap it to choose one of 8 effects for the whole kit. Long-press opens the adjustment.",
-              "The kit keeps that effect and its values when you Save on the drum screen and when you save a session.",
-              "Style opens the Drum Style window.",
-              "The side arrows move to the previous or next kit.",
-              "Drum Vol is the kit volume. Swing changes the feel without changing BPM. BPM is the tempo.",
-              "1/4, 1/8, 1/16, and 1/32 set the step size of the pattern. 1/4 is the widest step. 1/32 is the finest, so the same bar can hold more hits.",
-              "Save stores the kit, including the effect.",
-              "Random builds another pattern in the current style. It is not a pure coin-flip."
+              "The drum screen is on the DRUM tab.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "DRUM",
@@ -1826,11 +1813,10 @@
           },
           {
             "id": "drum-fx",
-            "title": "Drum FX",
+            "title": "FX",
             "body": [
-              "Tap to choose one of 8 effects for the whole kit. The FX button shows the one you chose, for example FX 1.",
-              "Long-press opens the adjustment.",
-              "The kit keeps that effect and its values when you Save on the drum screen and when you save a session."
+              "The FX button is on the drum screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "DRUM FX",
@@ -1839,18 +1825,11 @@
           },
           {
             "id": "style",
-            "title": "Drum Style",
+            "title": "Style",
             "body": [
-              "Style pages are numbered. On Exclusive the pages continue past 8. This screen shows 4 to 11, and page 8 is open, named Middle Tech.",
-              "Edit page name renames that page.",
-              "Switch to exclusive is active. No download.",
-              "On this website Exclusive stays Coming soon.",
-              "Load on a row loads that kit with one tap, including while the drums are already playing.",
-              "Save on a row stores that kit. Edit opens it for editing.",
-              "Import brings a kit in. Export sends a kit out.",
-              "Close closes the window without loading.",
-              "Most kits load four channels and leave four free for your samples. Experimental loads eight channels with ready patterns.",
-              "Pro has eight kits. Each kit has eight styles, 64 styles in all, not 64 kits."
+              "The Style button is on the drum screen.",
+              "Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "STYLE",
@@ -1861,22 +1840,20 @@
             "id": "random",
             "title": "Random",
             "body": [
-              "Random builds another pattern in the current style.",
-              "It is not a pure coin-flip."
+              "The Random button is on the drum screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "RANDOM"
+            "tag": "RANDOM",
+            "media": "assets/guide/guide-random.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "sound-plus",
-            "title": "Sound +",
+            "title": "+",
             "body": [
-              "Tap + to open a second keyboard. The upper one is an octave higher: the same note, at double the Hz.",
-              "Sine, Square, Triangle, Saw, and Noise choose the waveform.",
-              "Oct sets the octave to -1, 0, or +1.",
-              "freq sets the frequency. Key marks the scale on the keyboard.",
-              "Presets opens the saved sounds. The drum kit row shows the loaded kit.",
-              "Drive sets the drive. RIP, FUZZ, PHAZ, and PIANO turn that effect on."
+              "The + button is on the sound screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "SOUND +",
@@ -1885,13 +1862,10 @@
           },
           {
             "id": "pro-live",
-            "title": "Pro and Live",
+            "title": "PRO / LIVE",
             "body": [
-              "The header badge switches between PRO and LIVE.",
-              "Live is for playing in front of people. In Live you cannot type button values by hand and you cannot delete a channel, so the set is not broken mid-song.",
-              "Pro brings editing back.",
-              "Language sets the language to EN, HE, RU, or AR. Save as names this session and saves it. Load restores a saved session.",
-              "Show tutorial shows the tutorial. Factory 64 restores the base drums, Exclusive, and 64 presets only after confirm. Close leaves things as they are."
+              "The PRO / LIVE badge is at the top of the screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "PRO",
@@ -1902,8 +1876,8 @@
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "Language sets the language to EN, HE, RU, or AR. Save as names this session and saves it. Load restores a saved session. Show tutorial shows the tutorial. The Factory 64 row restores the base drums, Exclusive, and 64 presets only after confirm.",
-              "Close leaves everything as it is."
+              "The Factory 64 row is in the settings window.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
@@ -1912,72 +1886,81 @@
           },
           {
             "id": "sound",
-            "title": "Sound",
+            "title": "SOUND",
             "body": [
-              "Change one parameter, listen, then change the next.",
-              "You can change a parameter while you play and use that change in the performance."
+              "The sound screen is on the SOUND tab.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/sound-keyboards.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "value",
-            "title": "Typed values",
+            "title": "Value",
             "body": [
-              "Tap the number beside a control and type the value.",
-              "In Live you cannot type values by hand."
+              "A number sits under a knob on the sound screen.",
+              "draft: not verified in code"
             ],
-            "layout": "steps"
+            "layout": "steps",
+            "media": "assets/guide/guide-value.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "freq",
-            "title": "Frequencies",
+            "title": "freq",
             "body": [
-              "Edit the frequencies and build your own tuning.",
-              "Start from a ready tuning and change one or two frequencies."
+              "The freq button is on the sound screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "FREQ"
+            "tag": "FREQ",
+            "media": "assets/guide/guide-freq.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "key",
-            "title": "Scale",
+            "title": "Key",
             "body": [
-              "Choose a scale and the keyboard marks the notes that belong to it.",
-              "Those marks do not replace the frequencies you set."
+              "The Key button is on the sound screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "KEY"
+            "tag": "KEY",
+            "media": "assets/guide/guide-key.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "oct",
-            "title": "Octave",
+            "title": "Oct",
             "body": [
-              "Shift the octave up or down. The whole tuning moves, and the relationships stay the same."
+              "Oct is on the sound screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "OCT"
+            "tag": "OCT",
+            "media": "assets/guide/guide-oct.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "pad",
-            "title": "Pad",
+            "title": "PAD",
             "body": [
-              "Move on the pad to steer more than one part at the same time.",
-              "Start with one source until you hear how the pad responds."
+              "The pad is on the PAD tab.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PAD"
+            "tag": "PAD",
+            "media": "assets/guide/guide-pad.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "mic",
-            "title": "Microphone",
+            "title": "MIC",
             "body": [
-              "Back returns to the previous screen.",
-              "Pages 1 and 2 are mic pages.",
-              "Tap Lyrics to open the words.",
-              "Record a voice, an instrument, or another source.",
-              "Make a short test take before a long one.",
-              "A short recording can become a loop."
+              "The mic screen is on the MIC tab.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "MIC",
@@ -1986,40 +1969,43 @@
           },
           {
             "id": "loop",
-            "title": "Layers",
+            "title": "Vol",
             "body": [
-              "Set each channel's volume and its place in the stereo field before you add an effect.",
-              "Add another layer only when you can hear what it adds."
+              "Vol and L/R are on each channel of the looper screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/guide-loop.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pattern",
-            "title": "Patterns",
+            "title": "Pattern",
             "body": [
-              "Tap a pattern to load it.",
-              "Long-press to set how many times it repeats."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PATTERN"
+            "tag": "PATTERN",
+            "media": "assets/guide/guide-pattern.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "repeat",
-            "title": "Repeats",
+            "title": "Repeat",
             "body": [
-              "Set a repeat count for a pattern, or let it repeat without a limit.",
-              "Four repeats means the pattern plays four times, then moves on."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "REPEAT"
+            "tag": "REPEAT",
+            "media": "assets/guide/guide-repeat.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "live",
-            "title": "Edit while playing",
+            "title": "Live",
             "body": [
-              "Change steps while the pattern is playing.",
-              "You do not have to stop the kit to edit it."
+              "draft: not verified in code"
             ],
             "layout": "steps"
           },
@@ -2027,71 +2013,82 @@
             "id": "swing",
             "title": "Swing",
             "body": [
-              "Swing changes the feel without changing BPM."
+              "Swing is on the drum screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SWING"
+            "tag": "SWING",
+            "media": "assets/guide/guide-swing.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "preset",
             "title": "Presets",
             "body": [
-              "Save stores the current sound.",
-              "Save a sound you like before you change it."
+              "Presets is on the sound screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PRESET"
+            "tag": "PRESET",
+            "media": "assets/guide/guide-preset.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "session",
-            "title": "Session",
+            "title": "Save as",
             "body": [
-              "Session stores the wider setup, including the drum effect and its values.",
-              "A preset stores a sound. A session stores the work."
+              "Save as and Load are in the settings window.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SESSION"
+            "tag": "SESSION",
+            "media": "assets/guide/settings-live.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "midi",
             "title": "MIDI",
             "body": [
-              "MIDI stores the notes you played, not the audio.",
-              "Export MIDI when you want to edit those notes later."
+              "MIDI is at the top of the screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "MIDI"
+            "tag": "MIDI",
+            "media": "assets/guide/guide-midi.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "wav",
             "title": "WAV",
             "body": [
-              "WAV stores the sound as you hear it.",
-              "Export WAV when you want to share the audio or edit it elsewhere."
+              "WAV is at the top of the screen.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "WAV"
+            "tag": "WAV",
+            "media": "assets/guide/guide-wav.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "hidden",
-            "title": "Long-press",
+            "title": "Hidden",
             "body": [
-              "Long-press SOUND to open the test tool.",
-              "Long-press a pattern to set its repeats.",
-              "Tap a number to type a value."
+              "draft: not verified in code"
             ],
-            "layout": "steps"
+            "layout": "steps",
+            "media": "assets/guide/guide-hidden.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "benchmark",
-            "title": "Test tool",
+            "title": "Benchmark",
             "body": [
-              "Long-press SOUND to open it.",
-              "You do not need it to make music.",
-              "Use it when you want to check performance."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "BENCHMARK"
+            "tag": "BENCHMARK",
+            "media": "assets/guide/guide-benchmark.jpg",
+            "mediaSize": "panel"
           }
         ],
         "terms": "Terms"
@@ -2595,15 +2592,15 @@
         "navLabel": "Exclusive",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
         "title": "Eleven packs.",
-        "titleEm": "Coming soon.",
-        "intro": "A separate line from the eight Factory Drums kits. Eleven upcoming drum packs, each with 8 channels and 8 styles.",
+        "titleEm": "Included with Pro.",
+        "intro": "A separate line from the eight Factory Drums kits. Eleven drum packs, each with 8 channels and 8 styles. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button.",
         "imageAlt": "Exclusive drum pack poster",
-        "comingSoon": "Coming soon",
+        "comingSoon": "Included with Pro",
         "stylesHeading": "Styles",
         "demoLabel": "Demo video",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "Eleven special packs. Coming soon.",
-        "homeBody": "Eleven Exclusive drum packs sit outside the Factory Drums set. Eight channels and eight styles in each pack. No release yet. Open Exclusive and see what is on the way.",
+        "homeTitle": "Eleven special packs. Included with Pro.",
+        "homeBody": "Eleven Exclusive drum packs sit outside the Factory Drums set. Eight channels and eight styles in each pack. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button.",
         "homeCta": "See Exclusive",
         "homeImageAlt": "Fan of nine L Studio Exclusive drum pack posters",
         "packs": [
@@ -2798,10 +2795,11 @@
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro for Android. Purchases are not available on this website right now.",
-        "body": "L Studio Pro is an Android APK, about 24 MB. This website is not taking payment for it right now. Early Access signup stays on the home page.",
+        "body": "L Studio Pro is an Android APK, 56.5 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now. Early Access signup stays on the home page.",
         "priceNote": "Not for sale on this site",
         "includes": [
-          "L Studio Pro APK for Android, about 24 MB",
+          "L Studio Pro APK for Android, 56.5 MB",
+      "Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button.",
           "Paid purchase is not offered on this website right now",
           "Factory Pack stays on its own pages",
           "Android 7.0 or newer (API 24), target API 36. Direct APK install, not the Play Store."
@@ -2865,10 +2863,10 @@
           },
           {
             "id": "exclusive-packs-gallery",
-            "status": "upcoming",
+            "status": "shipped",
             "title": "Exclusive packs in Pro",
             "ticker": "Exclusive in Pro",
-            "summary": "Soon, anyone who buys L Studio Pro on Google Play unlocks 11 full Exclusive drum kits in the app, on top of Factory 64. This site only describes the packs. There is no website download.",
+            "summary": "Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. That is 11 full Exclusive drum kits in the app, on top of Factory 64. This site only describes the packs.",
             "href": "/exclusive",
             "cta": "View Exclusive",
             "images": ["/assets/updates/exclusive-packs-poster.jpg"],
@@ -2928,7 +2926,7 @@
         "offerDetail": "Полная версия Pro, без демо-ограничений, до официального платного запуска.",
         "ctaPrimary": "Познакомиться с L-Studio",
         "ctaSecondary": "Как всё началось",
-        "stat1": "около 24 МБ",
+        "stat1": "56.5 МБ",
         "stat2": "Android 7.0+",
         "stat3": "Без рекламы"
       },
@@ -3183,7 +3181,7 @@
         "title": "Руководство",
         "titleEm": "L Studio.",
         "eyebrow": "LEARN / USER GUIDE / L STUDIO",
-        "intro": "Каждая строка говорит, что делает элемент, когда вы им пользуетесь.",
+        "intro": "Заголовок это имя кнопки на экране. Строка с пометкой draft не проверена в коде приложения.",
         "onThisPage": "На этой странице",
         "tipBeginner": "Совет новичкам",
         "tipAdvanced": "Совет продвинутым",
@@ -3195,13 +3193,10 @@
         "sections": [
           {
             "id": "looper",
-            "title": "Лупер",
+            "title": "LOOP",
             "body": [
-              "8 страниц. На каждой странице 4 канала. Всего 32 канала, не 8.",
-              "Запись на одной странице остается, когда вы переходите на другую.",
-              "Back вверху лупера возвращает на предыдущий экран.",
-              "REC пишет на этот канал. DUB добавляет еще одну запись на тот же канал. Play запускает. STOP останавливает.",
-              "Vol задает громкость канала. Pan сдвигает его влево или вправо."
+              "Экран лупера находится на вкладке LOOP.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LOOPER",
@@ -3209,20 +3204,23 @@
             "mediaSize": "panel"
           },
           {
-            "id": "redo",
-            "title": "Redo",
+            "id": "back",
+            "title": "Back",
             "body": [
-              "Redo находится на канале, и это не Clear и не Undo."
+              "Back находится вверху экрана лупера и вверху экрана микрофона.",
+              "Нажатие Back отменяет удаление. Оно не возвращает на предыдущий экран."
             ],
             "layout": "steps",
-            "tag": "REDO"
+            "tag": "BACK",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "looper-fx",
             "title": "Looper FX",
             "body": [
-              "Нажмите один из 8 эффектов, чтобы поставить его на луп.",
-              "Долгое нажатие открывает такие же ползунки, как у Drum FX и Mic FX."
+              "Панель Looper FX находится на экране лупера.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LOOPER FX",
@@ -3233,10 +3231,8 @@
             "id": "mic-fx",
             "title": "Mic FX",
             "body": [
-              "Нажатие на пресет выбирает его: Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap или Wire Grit.",
-              "Долгое нажатие открывает Amount (насколько сильно эффект), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb.",
-              "Transpose показан в полутонах, от минус 12 до плюс 12. 0 оставляет высоту как есть.",
-              "Close закрывает панель."
+              "Mic FX находится на каждом вокальном канале.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "MIC FX",
@@ -3245,12 +3241,10 @@
           },
           {
             "id": "lyrics",
-            "title": "Текст",
+            "title": "Lyrics",
             "body": [
-              "Пишете слова, и они остаются на экране, пока вы записываете.",
-              "Play запускает движение слов.",
-              "A- и A+ меняют размер текста.",
-              "Speed меняет, как быстро движутся слова."
+              "Окно Lyrics показывает Play, A-, A+, Speed, Done и Close.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LYRICS",
@@ -3259,18 +3253,10 @@
           },
           {
             "id": "drum",
-            "title": "Ударные",
+            "title": "DRUM",
             "body": [
-              "Здесь 8 рядов ударных.",
-              "Play запускает набор. Пока набор играет, кнопка показывает Stop Drums. STOP справа останавливает его.",
-              "FX показывает текущий эффект, здесь FX 5. Нажатие выбирает один из 8 эффектов для всего набора. Долгое нажатие открывает настройку.",
-              "Набор хранит этот эффект и его значения, когда вы нажимаете Save на экране ударных и когда сохраняете сессию.",
-              "Style открывает окно Drum Style.",
-              "Боковые стрелки переходят к предыдущему или следующему набору.",
-              "Drum Vol это громкость набора. Swing меняет ощущение, не меняя BPM. BPM это темп.",
-              "1/4, 1/8, 1/16 и 1/32 задают размер шага паттерна. 1/4 самый широкий шаг. 1/32 самый мелкий, поэтому в том же такте помещается больше ударов.",
-              "Save сохраняет набор, включая эффект.",
-              "Random строит другой паттерн в текущем стиле. Это не подбрасывание монеты."
+              "Экран ударных находится на вкладке DRUM.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "DRUM",
@@ -3279,11 +3265,10 @@
           },
           {
             "id": "drum-fx",
-            "title": "Drum FX",
+            "title": "FX",
             "body": [
-              "Нажатие выбирает один из 8 эффектов для всего набора. Кнопка FX показывает выбранный, например FX 1.",
-              "Долгое нажатие открывает настройку.",
-              "Набор хранит эффект и его значения при Save на экране ударных и при сохранении сессии."
+              "Кнопка FX находится на экране ударных.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "DRUM FX",
@@ -3292,18 +3277,11 @@
           },
           {
             "id": "style",
-            "title": "Drum Style",
+            "title": "Style",
             "body": [
-              "Страницы стилей пронумерованы. В Exclusive страницы продолжаются после 8. На этом экране видны страницы с 4 по 11, и открыта страница 8 с именем Middle Tech.",
-              "Edit page name переименовывает эту страницу.",
-              "Switch to exclusive включен. Без скачивания.",
-              "На сайте Exclusive остается Скоро.",
-              "Load в строке загружает набор одним нажатием, в том числе пока ударные уже играют.",
-              "Save в строке сохраняет этот набор. Edit открывает его для правки.",
-              "Import приносит набор внутрь. Export отправляет набор наружу.",
-              "Close закрывает окно и ничего не загружает.",
-              "У большинства наборов загружаются четыре канала, четыре остаются свободными для ваших сэмплов. Experimental загружает восемь каналов с готовыми паттернами.",
-              "В Pro восемь наборов. В каждом восемь стилей, всего 64 стиля, а не 64 набора."
+              "Кнопка Style находится на экране ударных.",
+              "Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "STYLE",
@@ -3314,22 +3292,20 @@
             "id": "random",
             "title": "Random",
             "body": [
-              "Random строит другой паттерн в текущем стиле.",
-              "Это не подбрасывание монеты."
+              "Кнопка Random находится на экране ударных.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "RANDOM"
+            "tag": "RANDOM",
+            "media": "assets/guide/guide-random.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "sound-plus",
-            "title": "Sound +",
+            "title": "+",
             "body": [
-              "Нажатие + открывает вторую клавиатуру. Верхняя на октаву выше: та же нота, удвоенная частота в Гц.",
-              "Sine, Square, Triangle, Saw и Noise выбирают форму волны.",
-              "Oct ставит октаву на -1, 0 или +1.",
-              "freq задает частоту. Key отмечает лад на клавиатуре.",
-              "Presets открывает сохраненные звуки. Строка набора ударных показывает загруженный набор.",
-              "Drive задает драйв. RIP, FUZZ, PHAZ и PIANO включают этот эффект."
+              "Кнопка + находится на экране звука.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "SOUND +",
@@ -3338,13 +3314,10 @@
           },
           {
             "id": "pro-live",
-            "title": "Pro и Live",
+            "title": "PRO / LIVE",
             "body": [
-              "Значок в шапке переключается между PRO и LIVE.",
-              "Live для игры перед людьми. В Live нельзя вводить значения кнопок вручную и нельзя удалить канал, чтобы сет не сломался посреди песни.",
-              "Pro возвращает редактирование.",
-              "Language ставит язык: EN, HE, RU или AR. Save as дает имя этой сессии и сохраняет ее. Load восстанавливает сохраненную сессию.",
-              "Show tutorial показывает обучение. Factory 64 возвращает базовые ударные, Exclusive и 64 пресета только после подтверждения. Close оставляет все как есть."
+              "Значок PRO / LIVE находится вверху экрана.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "PRO",
@@ -3355,8 +3328,8 @@
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "Language ставит язык: EN, HE, RU или AR. Save as дает имя этой сессии и сохраняет ее. Load восстанавливает сохраненную сессию. Show tutorial показывает обучение. Строка Factory 64 возвращает базовые ударные, Exclusive и 64 пресета только после подтверждения.",
-              "Close оставляет все как есть."
+              "Строка Factory 64 находится в окне настроек.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
@@ -3365,72 +3338,81 @@
           },
           {
             "id": "sound",
-            "title": "Звук",
+            "title": "SOUND",
             "body": [
-              "Меняйте один параметр, послушайте, и только потом меняйте следующий.",
-              "Параметр можно менять во время игры и использовать само изменение в исполнении."
+              "Экран звука находится на вкладке SOUND.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/sound-keyboards.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "value",
-            "title": "Точное значение",
+            "title": "Value",
             "body": [
-              "Нажмите число рядом с элементом и введите значение.",
-              "В Live ввод значений вручную закрыт."
+              "Число стоит под регулятором на экране звука.",
+              "draft: not verified in code"
             ],
-            "layout": "steps"
+            "layout": "steps",
+            "media": "assets/guide/guide-value.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "freq",
-            "title": "Частоты",
+            "title": "freq",
             "body": [
-              "Правьте частоты и стройте свой строй.",
-              "Начните с готового строя и измените одну или две частоты."
+              "Кнопка freq находится на экране звука.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "FREQ"
+            "tag": "FREQ",
+            "media": "assets/guide/guide-freq.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "key",
-            "title": "Лад",
+            "title": "Key",
             "body": [
-              "Выберите лад, и клавиатура отметит ноты, которые в него входят.",
-              "Эти отметки не заменяют частоты, которые вы задали."
+              "Кнопка Key находится на экране звука.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "KEY"
+            "tag": "KEY",
+            "media": "assets/guide/guide-key.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "oct",
-            "title": "Октава",
+            "title": "Oct",
             "body": [
-              "Сдвиньте октаву вверх или вниз. Весь строй сдвигается, отношения между частотами остаются."
+              "Oct находится на экране звука.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "OCT"
+            "tag": "OCT",
+            "media": "assets/guide/guide-oct.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "pad",
-            "title": "Пэд",
+            "title": "PAD",
             "body": [
-              "Движение по пэду ведет сразу несколько частей.",
-              "Начните с одного источника, пока не услышите, как пэд отвечает."
+              "Пэд находится на вкладке PAD.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PAD"
+            "tag": "PAD",
+            "media": "assets/guide/guide-pad.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "mic",
-            "title": "Микрофон",
+            "title": "MIC",
             "body": [
-              "Back возвращает на предыдущий экран.",
-              "Страницы 1 и 2 это страницы микрофона.",
-              "Нажатие Lyrics открывает слова.",
-              "Записывайте голос, инструмент или другой источник.",
-              "Сделайте короткую пробу перед длинной записью.",
-              "Короткая запись может стать лупом."
+              "Экран микрофона находится на вкладке MIC.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "MIC",
@@ -3439,40 +3421,43 @@
           },
           {
             "id": "loop",
-            "title": "Слои",
+            "title": "Vol",
             "body": [
-              "Задайте громкость канала и его место в стерео до того, как добавлять эффект.",
-              "Добавляйте следующий слой, только когда слышно, что он дает."
+              "Vol и L/R находятся на каждом канале экрана лупера.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/guide-loop.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pattern",
-            "title": "Паттерн",
+            "title": "Pattern",
             "body": [
-              "Нажатие на паттерн загружает его.",
-              "Долгое нажатие задает, сколько раз он повторится."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PATTERN"
+            "tag": "PATTERN",
+            "media": "assets/guide/guide-pattern.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "repeat",
-            "title": "Повторы",
+            "title": "Repeat",
             "body": [
-              "Задайте число повторов паттерна или оставьте повтор без ограничения.",
-              "Четыре повтора значат, что паттерн играет четыре раза и идет дальше."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "REPEAT"
+            "tag": "REPEAT",
+            "media": "assets/guide/guide-repeat.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "live",
-            "title": "Правка во время игры",
+            "title": "Live",
             "body": [
-              "Меняйте шаги, пока паттерн играет.",
-              "Набор не нужно останавливать, чтобы править его."
+              "draft: not verified in code"
             ],
             "layout": "steps"
           },
@@ -3480,71 +3465,82 @@
             "id": "swing",
             "title": "Swing",
             "body": [
-              "Swing меняет ощущение и не меняет BPM."
+              "Swing находится на экране ударных.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SWING"
+            "tag": "SWING",
+            "media": "assets/guide/guide-swing.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "preset",
-            "title": "Пресет",
+            "title": "Presets",
             "body": [
-              "Save сохраняет текущий звук.",
-              "Сохраните звук, который вам нравится, до того как менять его."
+              "Presets находится на экране звука.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PRESET"
+            "tag": "PRESET",
+            "media": "assets/guide/guide-preset.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "session",
-            "title": "Session",
+            "title": "Save as",
             "body": [
-              "Session сохраняет более широкую настройку, включая эффект ударных и его значения.",
-              "Пресет хранит звук. Session хранит работу."
+              "Save as и Load находятся в окне настроек.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SESSION"
+            "tag": "SESSION",
+            "media": "assets/guide/settings-live.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "midi",
             "title": "MIDI",
             "body": [
-              "MIDI хранит сыгранные ноты, не аудио.",
-              "Экспортируйте MIDI, если хотите править эти ноты позже."
+              "MIDI находится вверху экрана.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "MIDI"
+            "tag": "MIDI",
+            "media": "assets/guide/guide-midi.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "wav",
             "title": "WAV",
             "body": [
-              "WAV хранит звук так, как вы его слышите.",
-              "Экспортируйте WAV, если хотите поделиться аудио или править его в другом месте."
+              "WAV находится вверху экрана.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "WAV"
+            "tag": "WAV",
+            "media": "assets/guide/guide-wav.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "hidden",
-            "title": "Долгое нажатие",
+            "title": "Hidden",
             "body": [
-              "Долгое нажатие на SOUND открывает инструмент проверки.",
-              "Долгое нажатие на паттерн задает его повторы.",
-              "Нажатие на число дает ввести значение."
+              "draft: not verified in code"
             ],
-            "layout": "steps"
+            "layout": "steps",
+            "media": "assets/guide/guide-hidden.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "benchmark",
-            "title": "Инструмент проверки",
+            "title": "Benchmark",
             "body": [
-              "Долгое нажатие на SOUND открывает его.",
-              "Для музыки он не нужен.",
-              "Открывайте его, когда нужно проверить производительность."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "BENCHMARK"
+            "tag": "BENCHMARK",
+            "media": "assets/guide/guide-benchmark.jpg",
+            "mediaSize": "panel"
           }
         ],
         "terms": "Условия"
@@ -4048,15 +4044,15 @@
         "navLabel": "Эксклюзив",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
         "title": "Одиннадцать паков.",
-        "titleEm": "Скоро.",
-        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Одиннадцать ударных паков на подходе: в каждом 8 каналов и 8 стилей.",
+        "titleEm": "Входит в Pro.",
+        "intro": "Отдельная линейка, не восемь наборов Factory Drums. Одиннадцать ударных паков, в каждом 8 каналов и 8 стилей. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет.",
         "imageAlt": "Постер эксклюзивного ударного пака",
-        "comingSoon": "Скоро",
+        "comingSoon": "Входит в Pro",
         "stylesHeading": "Стили",
         "demoLabel": "Демо-видео",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "Одиннадцать особых паков. Скоро.",
-        "homeBody": "Одиннадцать эксклюзивных ударных паков стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Релиза ещё нет. Откройте эксклюзив и посмотрите, что на подходе.",
+        "homeTitle": "Одиннадцать особых паков. Входит в Pro.",
+        "homeBody": "Одиннадцать эксклюзивных ударных паков стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет.",
         "homeCta": "Смотреть эксклюзив",
         "homeImageAlt": "Веер из девяти постеров эксклюзивных ударных паков L Studio",
         "packs": [
@@ -4251,10 +4247,11 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro для Android. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro: это APK для Android, около 24 МБ. Этот сайт сейчас не принимает за него оплату. Заявка Early Access остаётся на главной странице.",
+        "body": "L Studio Pro: это APK для Android, 56.5 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату. Заявка Early Access остаётся на главной странице.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
-          "APK-файл L Studio Pro для Android, около 24 МБ",
+          "APK-файл L Studio Pro для Android, 56.5 МБ",
+      "Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет.",
           "Платная покупка на этом сайте сейчас не предлагается",
           "Factory Pack остаётся на своих страницах",
           "Android 7.0 или новее (API 24), целевой API 36. Прямая установка APK, не из Play Store."
@@ -4318,10 +4315,10 @@
           },
           {
             "id": "exclusive-packs-gallery",
-            "status": "upcoming",
+            "status": "shipped",
             "title": "Эксклюзивные паки в Pro",
             "ticker": "Exclusive в Pro",
-            "summary": "Скоро тот, кто купит L Studio Pro в Google Play, откроет в приложении 11 полных эксклюзивных наборов ударных, в дополнение к Factory 64. Сайт только описывает паки. Скачивания с сайта нет.",
+            "summary": "Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Это 11 полных эксклюзивных наборов ударных в приложении, в дополнение к Factory 64. Сайт только описывает паки.",
             "href": "/exclusive",
             "cta": "Открыть Exclusive",
             "images": ["/assets/updates/exclusive-packs-poster.jpg"],
@@ -4381,7 +4378,7 @@
         "offerDetail": "نسخة Pro كاملة، بلا قيود تجريبية، قبل الإطلاق الرسمي المدفوع.",
         "ctaPrimary": "تعرّف على L-Studio",
         "ctaSecondary": "كيف بدأ الأمر",
-        "stat1": "حوالي 24 ميغابايت",
+        "stat1": "56.5 ميغابايت",
         "stat2": "Android 7.0+",
         "stat3": "بلا إعلانات"
       },
@@ -4636,7 +4633,7 @@
         "title": "دليل المستخدم",
         "titleEm": "L Studio.",
         "eyebrow": "LEARN / USER GUIDE / L STUDIO",
-        "intro": "كل سطر يقول ماذا يفعل عنصر التحكم عندما تستخدمه.",
+        "intro": "العنوان هو اسم الزر على الشاشة. السطر المكتوب عليه draft لم يُراجع في كود التطبيق.",
         "onThisPage": "في هذه الصفحة",
         "tipBeginner": "نصيحة للمبتدئين",
         "tipAdvanced": "نصيحة للمتقدمين",
@@ -4648,13 +4645,10 @@
         "sections": [
           {
             "id": "looper",
-            "title": "اللوبر",
+            "title": "LOOP",
             "body": [
-              "8 صفحات. في كل صفحة 4 قنوات. المجموع 32 قناة، وليس 8.",
-              "التسجيل في صفحة يبقى عندما تنتقل إلى صفحة أخرى.",
-              "Back في أعلى اللوبر يعيد إلى الشاشة السابقة.",
-              "REC يسجل على القناة. DUB يضيف تسجيلاً آخر على القناة نفسها. Play يشغل. STOP يوقف.",
-              "Vol يحدد ارتفاع صوت القناة. Pan ينقلها يميناً أو يساراً."
+              "شاشة اللوبر في لسان LOOP.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LOOPER",
@@ -4662,20 +4656,23 @@
             "mediaSize": "panel"
           },
           {
-            "id": "redo",
-            "title": "Redo",
+            "id": "back",
+            "title": "Back",
             "body": [
-              "Redo موجود على القناة، وهو ليس Clear وليس Undo."
+              "Back في أعلى شاشة اللوبر وفي أعلى شاشة الميكروفون.",
+              "الضغط على Back يلغي الحذف. هو لا يعيد إلى الشاشة السابقة."
             ],
             "layout": "steps",
-            "tag": "REDO"
+            "tag": "BACK",
+            "media": "assets/updates/looper-back.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "looper-fx",
             "title": "Looper FX",
             "body": [
-              "اضغط أحد 8 مؤثرات لتضعه على اللوب.",
-              "الضغط المطوّل يفتح منزلقات من النوع نفسه كما في Drum FX وMic FX."
+              "لوحة Looper FX على شاشة اللوبر.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LOOPER FX",
@@ -4686,10 +4683,8 @@
             "id": "mic-fx",
             "title": "Mic FX",
             "body": [
-              "الضغط على إعداد يختاره: Street Punch أو Phone Line أو Talk Clarity أو Neon Throw أو Pulse Delay أو Twin Voice أو Garage Slap أو Wire Grit.",
-              "الضغط المطوّل يفتح Amount (قوة المؤثر) وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb.",
-              "Transpose يظهر بأنصاف الأصوات، من ناقص 12 إلى زائد 12. 0 يترك الطبقة كما هي.",
-              "Close يغلق اللوحة."
+              "Mic FX موجود في كل قناة صوت.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "MIC FX",
@@ -4698,12 +4693,10 @@
           },
           {
             "id": "lyrics",
-            "title": "الكلمات",
+            "title": "Lyrics",
             "body": [
-              "تكتب الكلمات وتبقى على الشاشة أثناء التسجيل.",
-              "Play يبدأ تحريك الكلمات.",
-              "A- وA+ يغيران حجم النص.",
-              "Speed يغير سرعة حركة الكلمات."
+              "نافذة Lyrics تعرض Play وA- وA+ وSpeed وDone وClose.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "LYRICS",
@@ -4712,18 +4705,10 @@
           },
           {
             "id": "drum",
-            "title": "الطبول",
+            "title": "DRUM",
             "body": [
-              "هناك 8 صفوف طبول.",
-              "Play يشغل المجموعة. بينما المجموعة تعزف يظهر على الزر Stop Drums. STOP على اليمين يوقفها.",
-              "FX يعرض المؤثر الحالي، هنا FX 5. الضغطة تختار واحداً من 8 مؤثرات للمجموعة كلها. الضغط المطوّل يفتح الضبط.",
-              "المجموعة تحتفظ بهذا المؤثر وقيمه عندما تضغط Save في شاشة الطبول وعندما تحفظ الجلسة.",
-              "Style يفتح نافذة Drum Style.",
-              "الأسهم على الجانب تنتقل إلى المجموعة السابقة أو التالية.",
-              "Drum Vol هو مستوى صوت المجموعة. Swing يغير الإحساس من غير أن يغير BPM. BPM هو السرعة.",
-              "1/4 و1/8 و1/16 و1/32 تحدد حجم الخطوة في النمط. 1/4 أوسع خطوة. 1/32 أدق خطوة، لذلك المازورة نفسها تتسع لضربات أكثر.",
-              "Save يحفظ المجموعة، بما فيه المؤثر.",
-              "Random يبني نمطاً آخر في الأسلوب الحالي. هذا ليس رمية عملة."
+              "شاشة الطبول في لسان DRUM.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "DRUM",
@@ -4732,11 +4717,10 @@
           },
           {
             "id": "drum-fx",
-            "title": "Drum FX",
+            "title": "FX",
             "body": [
-              "الضغطة تختار واحداً من 8 مؤثرات للمجموعة كلها. زر FX يعرض ما اخترته، مثلاً FX 1.",
-              "الضغط المطوّل يفتح الضبط.",
-              "المجموعة تحتفظ بالمؤثر وقيمه عند Save في شاشة الطبول وعند حفظ الجلسة."
+              "زر FX على شاشة الطبول.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "DRUM FX",
@@ -4745,18 +4729,11 @@
           },
           {
             "id": "style",
-            "title": "Drum Style",
+            "title": "Style",
             "body": [
-              "صفحات الأسلوب مرقمة. في Exclusive تستمر الصفحات بعد 8. هذه الشاشة تعرض من 4 إلى 11، والصفحة 8 مفتوحة باسم Middle Tech.",
-              "Edit page name يغيّر اسم هذه الصفحة.",
-              "Switch to exclusive نشط. بلا تنزيل.",
-              "على الموقع يبقى Exclusive قريباً.",
-              "Load في الصف يحمّل المجموعة بضغطة واحدة، حتى والطبول تعمل.",
-              "Save في الصف يخزن هذه المجموعة. Edit يفتحها للتحرير.",
-              "Import يدخل مجموعة. Export يخرج مجموعة.",
-              "Close يغلق النافذة من غير تحميل.",
-              "معظم المجموعات تحمّل أربع قنوات وتترك أربعاً لعيناتك. Experimental يحمّل ثماني قنوات بأنماط جاهزة.",
-              "في Pro ثماني مجموعات. في كل مجموعة ثمانية أساليب، 64 أسلوباً في المجموع، وليس 64 مجموعة."
+              "زر Style على شاشة الطبول.",
+              "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "STYLE",
@@ -4767,22 +4744,20 @@
             "id": "random",
             "title": "Random",
             "body": [
-              "Random يبني نمطاً آخر في الأسلوب الحالي.",
-              "هذا ليس رمية عملة."
+              "زر Random على شاشة الطبول.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "RANDOM"
+            "tag": "RANDOM",
+            "media": "assets/guide/guide-random.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "sound-plus",
-            "title": "Sound +",
+            "title": "+",
             "body": [
-              "اضغط + لفتح لوحة مفاتيح ثانية. العليا أعلى بأوكتاف: النغمة نفسها، بضعف التردد بالهرتز.",
-              "Sine وSquare وTriangle وSaw وNoise تختار شكل الموجة.",
-              "Oct يضبط الأوكتاف على -1 أو 0 أو +1.",
-              "freq يضبط التردد. Key يعلّم السلم على لوحة المفاتيح.",
-              "Presets يفتح الأصوات المحفوظة. صف طقم الطبول يعرض الطقم المحمّل.",
-              "Drive يضبط الدرايف. RIP وFUZZ وPHAZ وPIANO تشغّل ذلك المؤثر."
+              "زر + على شاشة الصوت.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "SOUND +",
@@ -4791,13 +4766,10 @@
           },
           {
             "id": "pro-live",
-            "title": "Pro وLive",
+            "title": "PRO / LIVE",
             "body": [
-              "شارة الرأس تتبدل بين PRO وLIVE.",
-              "Live للعزف أمام الناس. في Live لا يمكنك كتابة قيم الأزرار يدوياً ولا حذف قناة، حتى لا ينكسر السيت في وسط الأغنية.",
-              "Pro يعيد التحرير.",
-              "Language يضبط اللغة على EN أو HE أو RU أو AR. Save as يسمّي هذه الجلسة ويحفظها. Load يستعيد جلسة محفوظة.",
-              "Show tutorial يعرض الشرح. Factory 64 يعيد طبول الأساس وExclusive و64 إعداداً مسبقاً فقط بعد التأكيد. Close يترك الأمور كما هي."
+              "شارة PRO / LIVE في أعلى الشاشة.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "PRO",
@@ -4808,8 +4780,8 @@
             "id": "factory-64-restore",
             "title": "Factory 64",
             "body": [
-              "Language يضبط اللغة على EN أو HE أو RU أو AR. Save as يسمّي هذه الجلسة ويحفظها. Load يستعيد جلسة محفوظة. Show tutorial يعرض الشرح. صف Factory 64 يعيد طبول الأساس وExclusive و64 إعداداً مسبقاً فقط بعد التأكيد.",
-              "Close يترك كل شيء كما هو."
+              "صف Factory 64 في نافذة الإعدادات.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "FACTORY 64",
@@ -4818,72 +4790,81 @@
           },
           {
             "id": "sound",
-            "title": "الصوت",
+            "title": "SOUND",
             "body": [
-              "غيّر معاملاً واحداً، استمع، ثم غيّر الذي يليه.",
-              "يمكنك تغيير معامل أثناء العزف واستخدام التغيير نفسه في الأداء."
+              "شاشة الصوت في لسان SOUND.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SOUND"
+            "tag": "SOUND",
+            "media": "assets/guide/sound-keyboards.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "value",
-            "title": "قيمة مكتوبة",
+            "title": "Value",
             "body": [
-              "اضغط الرقم بجانب عنصر التحكم واكتب القيمة.",
-              "في Live لا يمكن كتابة القيم يدوياً."
+              "رقم يظهر تحت مقبض في شاشة الصوت.",
+              "draft: not verified in code"
             ],
-            "layout": "steps"
+            "layout": "steps",
+            "media": "assets/guide/guide-value.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "freq",
-            "title": "الترددات",
+            "title": "freq",
             "body": [
-              "عدّل الترددات وابن نظام ضبط خاصاً بك.",
-              "ابدأ من ضبط جاهز وغيّر تردداً واحداً أو اثنين."
+              "زر freq على شاشة الصوت.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "FREQ"
+            "tag": "FREQ",
+            "media": "assets/guide/guide-freq.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "key",
-            "title": "السلم",
+            "title": "Key",
             "body": [
-              "اختر سلماً، ولوحة المفاتيح تعلّم النغمات التي تنتمي إليه.",
-              "هذه العلامات لا تستبدل الترددات التي حددتها."
+              "زر Key على شاشة الصوت.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "KEY"
+            "tag": "KEY",
+            "media": "assets/guide/guide-key.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "oct",
-            "title": "الأوكتاف",
+            "title": "Oct",
             "body": [
-              "انقل الأوكتاف للأعلى أو للأسفل. نظام الضبط كله يتحرك، والعلاقات بين الترددات تبقى."
+              "Oct على شاشة الصوت.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "OCT"
+            "tag": "OCT",
+            "media": "assets/guide/guide-oct.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "pad",
-            "title": "الـ Pad",
+            "title": "PAD",
             "body": [
-              "الحركة على الـ Pad تقود أكثر من جزء في الوقت نفسه.",
-              "ابدأ بمصدر واحد حتى تسمع كيف يستجيب الـ Pad."
+              "الـ Pad في لسان PAD.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PAD"
+            "tag": "PAD",
+            "media": "assets/guide/guide-pad.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "mic",
-            "title": "الميكروفون",
+            "title": "MIC",
             "body": [
-              "Back يعيد إلى الشاشة السابقة.",
-              "الصفحتان 1 و2 صفحتا الميكروفون.",
-              "الضغط على Lyrics يفتح الكلمات.",
-              "سجّل صوتاً أو آلة أو مصدراً آخر.",
-              "اعمل تسجيلاً قصيراً للتجربة قبل تسجيل طويل.",
-              "التسجيل القصير يمكن أن يصبح لوباً."
+              "شاشة الميكروفون في لسان MIC.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
             "tag": "MIC",
@@ -4892,40 +4873,43 @@
           },
           {
             "id": "loop",
-            "title": "الطبقات",
+            "title": "Vol",
             "body": [
-              "اضبط ارتفاع صوت القناة ومكانها في الاستريو قبل أن تضيف مؤثراً.",
-              "أضف طبقة أخرى فقط عندما تسمع ماذا تضيف."
+              "Vol وL/R في كل قناة على شاشة اللوبر.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "LOOP"
+            "tag": "LOOP",
+            "media": "assets/guide/guide-loop.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "pattern",
-            "title": "النمط",
+            "title": "Pattern",
             "body": [
-              "الضغطة على نمط تحمّله.",
-              "الضغط المطوّل يحدد كم مرة يتكرر."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PATTERN"
+            "tag": "PATTERN",
+            "media": "assets/guide/guide-pattern.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "repeat",
-            "title": "التكرار",
+            "title": "Repeat",
             "body": [
-              "حدد عدد التكرار لنمط، أو اتركه يتكرر بلا حد.",
-              "أربعة تكرارات تعني أن النمط يعزف أربع مرات ثم يتابع."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "REPEAT"
+            "tag": "REPEAT",
+            "media": "assets/guide/guide-repeat.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "live",
-            "title": "تحرير أثناء العزف",
+            "title": "Live",
             "body": [
-              "غيّر الخطوات والنمط يعمل.",
-              "لا تحتاج إلى إيقاف المجموعة لكي تعدّل."
+              "draft: not verified in code"
             ],
             "layout": "steps"
           },
@@ -4933,71 +4917,82 @@
             "id": "swing",
             "title": "Swing",
             "body": [
-              "Swing يغير الإحساس من غير أن يغير BPM."
+              "Swing على شاشة الطبول.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SWING"
+            "tag": "SWING",
+            "media": "assets/guide/guide-swing.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "preset",
-            "title": "الإعداد المسبق",
+            "title": "Presets",
             "body": [
-              "Save يحفظ الصوت الحالي.",
-              "احفظ صوتاً أعجبك قبل أن تغيّره."
+              "Presets على شاشة الصوت.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "PRESET"
+            "tag": "PRESET",
+            "media": "assets/guide/guide-preset.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "session",
-            "title": "Session",
+            "title": "Save as",
             "body": [
-              "Session يحفظ الإعداد الأوسع، بما فيه مؤثر الطبول وقيمه.",
-              "الإعداد المسبق يحفظ صوتاً. Session يحفظ العمل."
+              "Save as وLoad في نافذة الإعدادات.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "SESSION"
+            "tag": "SESSION",
+            "media": "assets/guide/settings-live.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "midi",
             "title": "MIDI",
             "body": [
-              "MIDI يحفظ النغمات التي عزفتها، وليس الصوت.",
-              "صدّر MIDI عندما تريد تعديل هذه النغمات لاحقاً."
+              "MIDI في أعلى الشاشة.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "MIDI"
+            "tag": "MIDI",
+            "media": "assets/guide/guide-midi.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "wav",
             "title": "WAV",
             "body": [
-              "WAV يحفظ الصوت كما تسمعه.",
-              "صدّر WAV عندما تريد مشاركة الصوت أو تعديله في مكان آخر."
+              "WAV في أعلى الشاشة.",
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "WAV"
+            "tag": "WAV",
+            "media": "assets/guide/guide-wav.jpg",
+            "mediaSize": "thumb"
           },
           {
             "id": "hidden",
-            "title": "ضغط مطوّل",
+            "title": "Hidden",
             "body": [
-              "الضغط المطوّل على SOUND يفتح أداة الفحص.",
-              "الضغط المطوّل على نمط يحدد تكراره.",
-              "الضغط على رقم يتيح كتابة قيمة."
+              "draft: not verified in code"
             ],
-            "layout": "steps"
+            "layout": "steps",
+            "media": "assets/guide/guide-hidden.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "benchmark",
-            "title": "أداة الفحص",
+            "title": "Benchmark",
             "body": [
-              "الضغط المطوّل على SOUND يفتحها.",
-              "لا تحتاج إليها لصناعة الموسيقى.",
-              "استخدمها عندما تريد فحص الأداء."
+              "draft: not verified in code"
             ],
             "layout": "steps",
-            "tag": "BENCHMARK"
+            "tag": "BENCHMARK",
+            "media": "assets/guide/guide-benchmark.jpg",
+            "mediaSize": "panel"
           }
         ],
         "terms": "الشروط"
@@ -5501,15 +5496,15 @@
         "navLabel": "حصري",
         "eyebrow": "L-STUDIO / EXCLUSIVE",
         "title": "إحدى عشرة حزمة.",
-        "titleEm": "قريباً.",
-        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. إحدى عشرة حزمة طبول في الطريق، وفي كل واحدة 8 قنوات و8 أساليب.",
+        "titleEm": "مع Pro.",
+        "intro": "خط منفصل عن حزم الطبول الثماني في Factory. إحدى عشرة حزمة طبول، وفي كل واحدة 8 قنوات و8 أساليب. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل.",
         "imageAlt": "ملصق حزمة طبول حصرية",
-        "comingSoon": "قريباً",
+        "comingSoon": "مع Pro",
         "stylesHeading": "الأساليب",
         "demoLabel": "فيديو العرض",
         "homeKicker": "L-STUDIO / EXCLUSIVE",
-        "homeTitle": "إحدى عشرة حزمة خاصة. قريباً.",
-        "homeBody": "إحدى عشرة حزمة طبول حصرية خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. لا إصدار بعد. افتحوا الحصري وشاهدوا ما هو في الطريق.",
+        "homeTitle": "إحدى عشرة حزمة خاصة. مع Pro.",
+        "homeBody": "إحدى عشرة حزمة طبول حصرية خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل.",
         "homeCta": "شاهد الحصري",
         "homeImageAlt": "مروحة من تسعة ملصقات لحزم طبول حصرية من L Studio",
         "packs": [
@@ -5704,10 +5699,11 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro لأندرويد. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro ملف APK لأندرويد، حوالي 24 ميغابايت. هذا الموقع لا يقبض مقابله حالياً. يبقى تسجيل الوصول المبكر في الصفحة الرئيسية.",
+        "body": "L Studio Pro ملف APK لأندرويد، 56.5 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً. يبقى تسجيل الوصول المبكر في الصفحة الرئيسية.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
-          "ملف APK لتطبيق L Studio Pro على أندرويد، حوالي 24 ميغابايت",
+          "ملف APK لتطبيق L Studio Pro على أندرويد، 56.5 ميغابايت",
+      "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل.",
           "الشراء المدفوع غير معروض على هذا الموقع حالياً",
           "يبقى Factory Pack في صفحاته",
           "أندرويد 7.0 أو أحدث (API 24)، الهدف API 36. تثبيت APK مباشر، وليس من متجر Play."
@@ -5771,10 +5767,10 @@
           },
           {
             "id": "exclusive-packs-gallery",
-            "status": "upcoming",
+            "status": "shipped",
             "title": "حزم Exclusive في Pro",
             "ticker": "Exclusive في Pro",
-            "summary": "قريباً، من يشتري L Studio Pro على Google Play يفتح داخل التطبيق 11 حزمة طبول Exclusive كاملة، إضافة إلى Factory 64. الموقع يصف الحزم فقط. لا يوجد تنزيل من الموقع.",
+            "summary": "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. ذلك 11 حزمة طبول Exclusive كاملة داخل التطبيق، إضافة إلى Factory 64. الموقع يصف الحزم فقط.",
             "href": "/exclusive",
             "cta": "عرض Exclusive",
             "images": ["/assets/updates/exclusive-packs-poster.jpg"],
