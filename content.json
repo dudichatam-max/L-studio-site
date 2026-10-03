@@ -323,7 +323,7 @@
                   "freq נמצא במסך הסאונד. הקשה פותחת את Tune frequencies (Hz).",
                   "לכל קליד יש תדר ב-Hz. אפשר לכוון את המקלדת לתדרים שרוצים, או לנגן מתבנית.",
                   "Ready scales (D = 261 Hz) הן התבניות: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, ו-Pentatonic. הקשה על שם מפעילה את התבנית הזאת, עם D על 261 Hz.",
-                  "Reset בשורת הכותרת. Default מעל Close. המדריך לא כותב אילו תדרים הם שמים. הקשה על Close סוגרת את החלון."
+                  "Reset בשורת הכותרת. Default מעל Close. הקשה על Close סוגרת את החלון."
                 ],
                 "media": "assets/guide/freq-window.jpg"
               },
@@ -1700,7 +1700,7 @@
                   "freq is on the sound screen. A tap opens Tune frequencies (Hz).",
                   "Each key shows its frequency in Hz. Set the keyboard to the frequencies you want, or play from a template.",
                   "Ready scales (D = 261 Hz) are the templates: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, and Pentatonic. A tap on a name applies that template, with D at 261 Hz.",
-                  "Reset is on the title row. Default is above Close. This guide does not state which frequencies they write. A tap on Close closes the window."
+                  "Reset is on the title row. Default is above Close. A tap on Close closes the window."
                 ],
                 "media": "assets/guide/freq-window.jpg"
               },
@@ -3077,7 +3077,7 @@
                   "freq находится на экране звука. Нажатие открывает Tune frequencies (Hz).",
                   "У каждой клавиши есть частота в Hz. Можно настроить клавиатуру на нужные частоты или играть по шаблону.",
                   "Ready scales (D = 261 Hz) это шаблоны: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd и Pentatonic. Нажатие на имя применяет этот шаблон, с D на 261 Hz.",
-                  "Reset в строке заголовка. Default над Close. Здесь не сказано, какие частоты они записывают. Нажатие на Close закрывает окно."
+                  "Reset в строке заголовка. Default над Close. Нажатие на Close закрывает окно."
                 ],
                 "media": "assets/guide/freq-window.jpg"
               },
@@ -4454,7 +4454,7 @@
                   "freq على شاشة الصوت. الضغط يفتح Tune frequencies (Hz).",
                   "لكل مفتاح تردد بالـ Hz. اضبط لوحة المفاتيح على الترددات التي تريد، أو اعزف من قالب.",
                   "Ready scales (D = 261 Hz) هي القوالب: Major وMinor وHarmonic وDorian وMixolydian وHijaz وKurd وPentatonic. الضغط على اسم يطبّق ذلك القالب، مع D على 261 Hz.",
-                  "Reset في سطر العنوان. Default فوق Close. لا يذكر الدليل أي ترددات يكتبان. الضغط على Close يغلق النافذة."
+                  "Reset في سطر العنوان. Default فوق Close. الضغط على Close يغلق النافذة."
                 ],
                 "media": "assets/guide/freq-window.jpg"
               },
