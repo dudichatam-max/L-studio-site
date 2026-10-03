@@ -1210,7 +1210,9 @@
               "הקשה על 1 עד 10 קובעת את המספר. כפתור האינסוף משאיר את החזרה. Default מנקה את החזרה. Close סוגר את החלון."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/22-repeats.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "random-genre",
@@ -3304,7 +3306,9 @@
               "A tap on 1 through 10 sets that count. The infinity button keeps it repeating. Default clears the repeat. Close shuts the window."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/22-repeats.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "random-genre",
@@ -5398,7 +5402,9 @@
               "Нажатие от 1 до 10 задаёт это число. Кнопка бесконечности оставляет повтор. Default снимает повтор. Close закрывает окно."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/22-repeats.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "random-genre",
@@ -7492,7 +7498,9 @@
               "الضغط من 1 إلى 10 يحدد هذا العدد. زر اللانهاية يبقي التكرار. Default يمسح التكرار. Close يغلق النافذة."
             ],
             "layout": "steps",
-            "tag": "DRUM"
+            "tag": "DRUM",
+            "media": "assets/guide/22-repeats.jpg",
+            "mediaSize": "panel"
           },
           {
             "id": "random-genre",
