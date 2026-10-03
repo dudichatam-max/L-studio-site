@@ -32,7 +32,7 @@ function webpUrl(path: string) {
 /** Natural size of each still, so the reserved box matches the file after cropping. */
 const STILL_SIZE: Record<string, { width: number; height: number }> = {
   "/assets/updates/drum-fx.jpg": { width: 720, height: 1348 },
-  "/assets/updates/mic-fx.jpg": { width: 720, height: 1348 },
+  "/assets/updates/mic-fx.jpg": { width: 720, height: 1472 },
   "/assets/updates/looper-back.jpg": { width: 720, height: 1268 },
   "/assets/updates/looper-fx.jpg": { width: 720, height: 1268 },
   "/assets/updates/lyrics.jpg": { width: 720, height: 1344 },
