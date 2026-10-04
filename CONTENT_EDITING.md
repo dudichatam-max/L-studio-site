@@ -68,18 +68,11 @@ Current pairings:
 
 ## Images
 
-The root folder `assets/` holds shared stills such as the logo, Factory Pack banner, Factory 64 cover (`factory-64-cover.png`), preset pack posters (`assets/factory/`), drum kit posters (`assets/drums/`), Exclusive posters (`assets/exclusive/`), developer photo, and Preset still. Replace a file using the same filename and commit it. The GitHub Action copies root `assets/` into the website automatically. The MIC feature still (`mic-window.jpg`) lives under `client/public/assets/`.
+The root folder `assets/` holds shared stills such as the logo, Factory Pack banner, Factory 64 cover (`factory-64-cover.png`), preset pack posters (`assets/factory/`), drum kit posters (`assets/drums/`), Exclusive posters (`assets/exclusive/`), developer photo, and Preset still. Replace a file using the same filename and commit it. The GitHub Action copies root `assets/` into the website automatically.
 
-## Feature videos
+## Play with sound
 
-Upload these exact filenames into the root `assets/` folder (case-sensitive), then commit:
-
-- `Sound.mp4`
-- `Loop.mp4`
-- `Pad.mp4`
-- `Drum.mp4`
-
-They play in the Features section when each item is opened. MIC keeps its still image only.
+The homepage block `02 / PLAY WITH SOUND` ("Just open it and play.") shows one full app screen under each category, in this order: Sound, Mic, Loop, Pad, Drum. The stills are `assets/guide/sound-screen.jpg`, `mic-screen.jpg`, `loop-screen.jpg`, `pad-screen.jpg`, and `drum-screen.jpg`. Show the whole screen (`object-fit: contain`). Do not put the old feature videos (`Sound.mp4`, `Loop.mp4`, `Pad.mp4`, `Drum.mp4`) or `mic-window.jpg` back in this block. Leave Shorts, Exclusive, and Factory Drums videos as they are. Keep the eyebrow, the headline, and the paragraph. Keep Hebrew, English, Russian, and Arabic on the same screens.
 
 ## Publishing
 

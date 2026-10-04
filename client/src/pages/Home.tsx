@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState, type FormEvent } from "react";
-import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Facebook, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, Volume2, VolumeX, X, Instagram } from "lucide-react";
+import { useEffect, useState, type FormEvent } from "react";
+import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Facebook, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, X, Instagram } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import WaveScope from "@/components/WaveScope";
@@ -16,17 +16,46 @@ const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png?v=
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=20260930`;
 const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
 
-const images = {
-  mic: `${import.meta.env.BASE_URL}assets/mic-window.jpg`,
+type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
+
+const playShots: Record<PlayId, string> = {
+  sound: `${import.meta.env.BASE_URL}assets/guide/sound-screen.jpg`,
+  mic: `${import.meta.env.BASE_URL}assets/guide/mic-screen.jpg`,
+  loop: `${import.meta.env.BASE_URL}assets/guide/loop-screen.jpg`,
+  pad: `${import.meta.env.BASE_URL}assets/guide/pad-screen.jpg`,
+  drum: `${import.meta.env.BASE_URL}assets/guide/drum-screen.jpg`,
 };
 
-// Feature demos: upload these exact filenames into the repo root assets/ folder.
-const videos = {
-  sound: `${import.meta.env.BASE_URL}assets/Sound.mp4`,
-  loop: `${import.meta.env.BASE_URL}assets/Loop.mp4`,
-  pad: `${import.meta.env.BASE_URL}assets/Pad.mp4`,
-  drum: `${import.meta.env.BASE_URL}assets/Drum.mp4`,
-};
+const playShotAlt = {
+  he: {
+    sound: "מסך Sound ב-L Studio",
+    mic: "מסך Mic ב-L Studio",
+    loop: "מסך Loop ב-L Studio",
+    pad: "מסך Pad ב-L Studio",
+    drum: "מסך Drum ב-L Studio",
+  },
+  en: {
+    sound: "L Studio Sound screen",
+    mic: "L Studio Mic screen",
+    loop: "L Studio Loop screen",
+    pad: "L Studio Pad screen",
+    drum: "L Studio Drum screen",
+  },
+  ru: {
+    sound: "Экран Sound в L Studio",
+    mic: "Экран Mic в L Studio",
+    loop: "Экран Loop в L Studio",
+    pad: "Экран Pad в L Studio",
+    drum: "Экран Drum в L Studio",
+  },
+  ar: {
+    sound: "شاشة Sound في L Studio",
+    mic: "شاشة Mic في L Studio",
+    loop: "شاشة Loop في L Studio",
+    pad: "شاشة Pad في L Studio",
+    drum: "شاشة Drum في L Studio",
+  },
+} satisfies Record<Language, Record<PlayId, string>>;
 
 // Small chrome-only labels that are not part of the editable site copy in content.json
 // (menu open/close).
@@ -60,34 +89,34 @@ const flowLabels = {
 
 const featureData = {
   he: [
-    { id: "sound", label: "SOUND", title: "תכנת את הקלידים בדרך שלך.", description: "אפשר לקבוע ידנית את התדר של כל קליד ולבנות את המקלדת בדרך שמתאימה לך. בנוסף יש לך שליטה על דברים כמו Attack, Release, Decay, Volume, Glide, Cutoff ו-Resonance. לא צריך להבין הכול לפני שמתחילים. אפשר פשוט להתחיל לשחק.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE", video: videos.sound },
-    { id: "mic", label: "MIC", title: "תכניס את הקול שלך פנימה.", description: "קול, כלי נגינה או כל דבר אחר שאתה רוצה להקליט. המיקרופון נמצא בתוך הסטודיו, כך שלא צריך לעבור לאפליקציה אחרת בשביל להמשיך ליצור.", icon: Mic2, meta: "MIC INPUT / RECORD", image: images.mic },
-    { id: "loop", label: "LOOP", title: "יש רעיון? אל תיתן לו לברוח.", description: "הלופר מאפשר להקליט שכבות ולבנות מהן קטע. מתחילים ממשהו קטן, מוסיפים עוד משהו ורואים לאן זה הולך.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT", video: videos.loop },
-    { id: "pad", label: "PAD", title: "לשחק עם הסאונד בזמן אמת.", description: "ה-Pad מאפשר לשלוט בסאונד בזמן שאתה מנגן. לא רק לכוון את הסאונד לפני הנגינה, אלא לשחק איתו תוך כדי.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD", video: videos.pad },
-    { id: "drum", label: "DRUM", title: "התופים שלך. החוקים שלך.", description: "אפשר לעבוד עם סאמפלים, לבנות מקצבים, לקבוע איך הם יחזרו ולהפעיל אותם גם בזמן אמת.", icon: Drum, meta: "STEP SEQUENCER / BPM", video: videos.drum },
+    { id: "sound", label: "SOUND", title: "תכנת את הקלידים בדרך שלך.", description: "אפשר לקבוע ידנית את התדר של כל קליד ולבנות את המקלדת בדרך שמתאימה לך. בנוסף יש לך שליטה על דברים כמו Attack, Release, Decay, Volume, Glide, Cutoff ו-Resonance. לא צריך להבין הכול לפני שמתחילים. אפשר פשוט להתחיל לשחק.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE" },
+    { id: "mic", label: "MIC", title: "תכניס את הקול שלך פנימה.", description: "קול, כלי נגינה או כל דבר אחר שאתה רוצה להקליט. המיקרופון נמצא בתוך הסטודיו, כך שלא צריך לעבור לאפליקציה אחרת בשביל להמשיך ליצור.", icon: Mic2, meta: "MIC INPUT / RECORD" },
+    { id: "loop", label: "LOOP", title: "יש רעיון? אל תיתן לו לברוח.", description: "הלופר מאפשר להקליט שכבות ולבנות מהן קטע. מתחילים ממשהו קטן, מוסיפים עוד משהו ורואים לאן זה הולך.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT" },
+    { id: "pad", label: "PAD", title: "לשחק עם הסאונד בזמן אמת.", description: "ה-Pad מאפשר לשלוט בסאונד בזמן שאתה מנגן. לא רק לכוון את הסאונד לפני הנגינה, אלא לשחק איתו תוך כדי.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD" },
+    { id: "drum", label: "DRUM", title: "התופים שלך. החוקים שלך.", description: "אפשר לעבוד עם סאמפלים, לבנות מקצבים, לקבוע איך הם יחזרו ולהפעיל אותם גם בזמן אמת.", icon: Drum, meta: "STEP SEQUENCER / BPM" },
   ],
   en: [
-    { id: "sound", label: "SOUND", title: "Program the keys your way.", description: "Manually set the frequency of every key and build your keyboard the way that suits you. You also get control over things like Attack, Release, Decay, Volume, Glide, Cutoff and Resonance. You don't need to understand it all before you start. You can just start playing.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE", video: videos.sound },
-    { id: "mic", label: "MIC", title: "Bring your voice in.", description: "Your voice, an instrument, or anything else you want to record. The microphone lives inside the studio, so you never have to switch apps to keep creating.", icon: Mic2, meta: "MIC INPUT / RECORD", image: images.mic },
-    { id: "loop", label: "LOOP", title: "Got an idea? Don't let it get away.", description: "The looper lets you record layers and build a piece from them. Start with something small, add another layer, and see where it goes.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT", video: videos.loop },
-    { id: "pad", label: "PAD", title: "Play with the sound in real time.", description: "The Pad lets you control the sound while you're playing. Not just shape it before you play, but play with it as you go.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD", video: videos.pad },
-    { id: "drum", label: "DRUM", title: "Your drums. Your rules.", description: "Work with samples, build rhythms, set how they repeat, and trigger them live too.", icon: Drum, meta: "STEP SEQUENCER / BPM", video: videos.drum },
+    { id: "sound", label: "SOUND", title: "Program the keys your way.", description: "Manually set the frequency of every key and build your keyboard the way that suits you. You also get control over things like Attack, Release, Decay, Volume, Glide, Cutoff and Resonance. You don't need to understand it all before you start. You can just start playing.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE" },
+    { id: "mic", label: "MIC", title: "Bring your voice in.", description: "Your voice, an instrument, or anything else you want to record. The microphone lives inside the studio, so you never have to switch apps to keep creating.", icon: Mic2, meta: "MIC INPUT / RECORD" },
+    { id: "loop", label: "LOOP", title: "Got an idea? Don't let it get away.", description: "The looper lets you record layers and build a piece from them. Start with something small, add another layer, and see where it goes.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT" },
+    { id: "pad", label: "PAD", title: "Play with the sound in real time.", description: "The Pad lets you control the sound while you're playing. Not just shape it before you play, but play with it as you go.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD" },
+    { id: "drum", label: "DRUM", title: "Your drums. Your rules.", description: "Work with samples, build rhythms, set how they repeat, and trigger them live too.", icon: Drum, meta: "STEP SEQUENCER / BPM" },
   ],
   ru: [
-    { id: "sound", label: "SOUND", title: "Настрой клавиши по-своему.", description: "Вручную задавай частоту каждой клавиши и строй клавиатуру так, как удобно тебе. Также есть контроль над Attack, Release, Decay, Volume, Glide, Cutoff и Resonance. Не нужно понимать всё сразу, можно просто начать играть.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE", video: videos.sound },
-    { id: "mic", label: "MIC", title: "Впусти свой голос.", description: "Голос, инструмент или что угодно ещё, что хочешь записать. Микрофон живёт внутри студии, так что не нужно переключаться в другое приложение, чтобы продолжать творить.", icon: Mic2, meta: "MIC INPUT / RECORD", image: images.mic },
-    { id: "loop", label: "LOOP", title: "Есть идея? Не дай ей уйти.", description: "Лупер позволяет записывать слои и строить из них трек. Начинаешь с малого, добавляешь ещё, и смотришь, куда это приведёт.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT", video: videos.loop },
-    { id: "pad", label: "PAD", title: "Играй со звуком в реальном времени.", description: "Pad позволяет управлять звуком прямо во время игры. Не только настроить звук заранее, а играть с ним на ходу.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD", video: videos.pad },
-    { id: "drum", label: "DRUM", title: "Твои барабаны. Твои правила.", description: "Работай с семплами, строй ритмы, задавай, как они повторяются, и запускай их вживую.", icon: Drum, meta: "STEP SEQUENCER / BPM", video: videos.drum },
+    { id: "sound", label: "SOUND", title: "Настрой клавиши по-своему.", description: "Вручную задавай частоту каждой клавиши и строй клавиатуру так, как удобно тебе. Также есть контроль над Attack, Release, Decay, Volume, Glide, Cutoff и Resonance. Не нужно понимать всё сразу, можно просто начать играть.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE" },
+    { id: "mic", label: "MIC", title: "Впусти свой голос.", description: "Голос, инструмент или что угодно ещё, что хочешь записать. Микрофон живёт внутри студии, так что не нужно переключаться в другое приложение, чтобы продолжать творить.", icon: Mic2, meta: "MIC INPUT / RECORD" },
+    { id: "loop", label: "LOOP", title: "Есть идея? Не дай ей уйти.", description: "Лупер позволяет записывать слои и строить из них трек. Начинаешь с малого, добавляешь ещё, и смотришь, куда это приведёт.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT" },
+    { id: "pad", label: "PAD", title: "Играй со звуком в реальном времени.", description: "Pad позволяет управлять звуком прямо во время игры. Не только настроить звук заранее, а играть с ним на ходу.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD" },
+    { id: "drum", label: "DRUM", title: "Твои барабаны. Твои правила.", description: "Работай с семплами, строй ритмы, задавай, как они повторяются, и запускай их вживую.", icon: Drum, meta: "STEP SEQUENCER / BPM" },
   ],
   ar: [
-    { id: "sound", label: "SOUND", title: "برمج المفاتيح بطريقتك.", description: "اضبط تردد كل مفتاح يدوياً وابنِ لوحة المفاتيح بالطريقة التي تناسبك. لديك أيضاً تحكم في أشياء مثل Attack وRelease وDecay وVolume وGlide وCutoff وResonance. لا تحتاج لفهم كل شيء قبل أن تبدأ. يمكنك فقط البدء باللعب.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE", video: videos.sound },
-    { id: "mic", label: "MIC", title: "أدخل صوتك إلى الداخل.", description: "صوتك، آلة موسيقية، أو أي شيء آخر تريد تسجيله. الميكروفون موجود داخل الاستوديو، لذا لا تحتاج للانتقال إلى تطبيق آخر لمواصلة الإبداع.", icon: Mic2, meta: "MIC INPUT / RECORD", image: images.mic },
-    { id: "loop", label: "LOOP", title: "لديك فكرة؟ لا تدعها تفلت.", description: "يتيح لك اللوبر تسجيل طبقات وبناء مقطع منها. تبدأ بشيء صغير، تضيف شيئاً آخر، وترى إلى أين يأخذك ذلك.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT", video: videos.loop },
-    { id: "pad", label: "PAD", title: "العب بالصوت في الوقت الفعلي.", description: "يتيح لك الـPad التحكم بالصوت أثناء العزف. ليس فقط ضبط الصوت قبل العزف، بل اللعب به أثناء العزف.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD", video: videos.pad },
-    { id: "drum", label: "DRUM", title: "إيقاعاتك. قواعدك.", description: "اعمل مع العينات، ابنِ إيقاعات، حدد كيفية تكرارها، وشغّلها أيضاً في الوقت الفعلي.", icon: Drum, meta: "STEP SEQUENCER / BPM", video: videos.drum },
+    { id: "sound", label: "SOUND", title: "برمج المفاتيح بطريقتك.", description: "اضبط تردد كل مفتاح يدوياً وابنِ لوحة المفاتيح بالطريقة التي تناسبك. لديك أيضاً تحكم في أشياء مثل Attack وRelease وDecay وVolume وGlide وCutoff وResonance. لا تحتاج لفهم كل شيء قبل أن تبدأ. يمكنك فقط البدء باللعب.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE" },
+    { id: "mic", label: "MIC", title: "أدخل صوتك إلى الداخل.", description: "صوتك، آلة موسيقية، أو أي شيء آخر تريد تسجيله. الميكروفون موجود داخل الاستوديو، لذا لا تحتاج للانتقال إلى تطبيق آخر لمواصلة الإبداع.", icon: Mic2, meta: "MIC INPUT / RECORD" },
+    { id: "loop", label: "LOOP", title: "لديك فكرة؟ لا تدعها تفلت.", description: "يتيح لك اللوبر تسجيل طبقات وبناء مقطع منها. تبدأ بشيء صغير، تضيف شيئاً آخر، وترى إلى أين يأخذك ذلك.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT" },
+    { id: "pad", label: "PAD", title: "العب بالصوت في الوقت الفعلي.", description: "يتيح لك الـPad التحكم بالصوت أثناء العزف. ليس فقط ضبط الصوت قبل العزف، بل اللعب به أثناء العزف.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD" },
+    { id: "drum", label: "DRUM", title: "إيقاعاتك. قواعدك.", description: "اعمل مع العينات، ابنِ إيقاعات، حدد كيفية تكرارها، وشغّلها أيضاً في الوقت الفعلي.", icon: Drum, meta: "STEP SEQUENCER / BPM" },
   ],
-} satisfies Record<Language, Array<{ id: string; label: string; title: string; description: string; icon: typeof SlidersHorizontal; meta: string; image?: string; video?: string }>>;
+} satisfies Record<Language, Array<{ id: PlayId; label: string; title: string; description: string; icon: typeof SlidersHorizontal; meta: string }>>;
 
 // Fallback copy, used only if content.json fails to load.
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive", updates: "Updates" };
@@ -279,65 +308,8 @@ const footerDefault = { tagline: "It's for analog people in a digital world." };
 const visionIcons = [Sparkles, Music2, ArrowDownLeft];
 
 
-const muteLabels = {
-  he: { unmute: "הפעל סאונד", mute: "השתק" },
-  en: { unmute: "Unmute", mute: "Mute" },
-  ru: { unmute: "Включить звук", mute: "Без звука" },
-  ar: { unmute: "تشغيل الصوت", mute: "كتم الصوت" },
-} satisfies Record<Language, { unmute: string; mute: string }>;
-
-function FeatureMedia({ image, video, label }: { image?: string; video?: string; label: string }) {
-  const { language } = useLanguage();
-  const [muted, setMuted] = useState(true);
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const soundLabel = muted ? muteLabels[language].unmute : muteLabels[language].mute;
-
-  const toggleMute = () => {
-    const el = videoRef.current;
-    if (!el) return;
-    const nextMuted = !muted;
-    el.muted = nextMuted;
-    setMuted(nextMuted);
-    if (!nextMuted) {
-      void el.play().catch(() => undefined);
-    }
-  };
-
-  if (video) {
-    return (
-      <>
-        <video
-          key={video}
-          ref={videoRef}
-          className="preview-media"
-          src={video}
-          muted={muted}
-          loop
-          playsInline
-          autoPlay
-          preload="auto"
-          aria-label={`${label} interface`}
-        />
-        <button
-          type="button"
-          className={`preview-mute${muted ? " is-muted" : ""}`}
-          onClick={toggleMute}
-          aria-label={soundLabel}
-          aria-pressed={!muted}
-          title={soundLabel}
-        >
-          {muted ? <VolumeX size={18} /> : <Volume2 size={18} />}
-          <span>{soundLabel}</span>
-        </button>
-      </>
-    );
-  }
-
-  if (image) {
-    return <img className="preview-media" src={image} alt={`${label} interface`} />;
-  }
-
-  return <div className="preview-media preview-media--empty" aria-hidden="true" />;
+function FeatureMedia({ image, alt }: { image: string; alt: string }) {
+  return <img className="preview-media" src={image} alt={alt} />;
 }
 
 // Renders a headline as "lead words" + a line break + the last word in the accent color,
@@ -739,8 +711,7 @@ export default function Home() {
                     {isActive && (
                       <div className="interface-preview" id={`feature-panel-${feature.id}`}>
                         <div className="preview-image-wrap">
-                          <FeatureMedia image={feature.image} video={feature.video} label={feature.label} />
-                          <div className="preview-overlay"><span>{feature.meta}</span><span><Icon size={17} /> {feature.label}</span></div>
+                          <FeatureMedia image={playShots[feature.id]} alt={playShotAlt[language][feature.id]} />
                         </div>
                         <div className="preview-copy">
                           <span className="kicker">{feature.meta}</span>
