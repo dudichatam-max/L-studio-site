@@ -18,42 +18,46 @@ const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
 
 type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 
-const playShots: Record<PlayId, string> = {
-  sound: `${import.meta.env.BASE_URL}assets/guide/sound-screen.jpg?v=108`,
-  mic: `${import.meta.env.BASE_URL}assets/guide/mic-screen.jpg?v=108`,
-  loop: `${import.meta.env.BASE_URL}assets/guide/loop-screen.jpg?v=108`,
-  pad: `${import.meta.env.BASE_URL}assets/guide/pad-screen.jpg?v=108`,
-  drum: `${import.meta.env.BASE_URL}assets/guide/drum-screen.jpg?v=108`,
+const PLAY_SHOT_VER = "108-play";
+const playShotFiles: Record<PlayId, string> = {
+  sound: "01-sound-fx",
+  loop: "12-looper-8-colours",
+  drum: "04-drum-machine",
+  pad: "05-live-pad",
+  mic: "07-mic-fx",
 };
+function playShotUrl(id: PlayId, ext: "jpg" | "webp") {
+  return `${import.meta.env.BASE_URL}assets/play/${playShotFiles[id]}.${ext}?v=${PLAY_SHOT_VER}`;
+}
 
 const playShotAlt = {
   he: {
-    sound: "מסך Sound ב-L Studio",
-    mic: "מסך Mic ב-L Studio",
-    loop: "מסך Loop ב-L Studio",
-    pad: "מסך Pad ב-L Studio",
-    drum: "מסך Drum ב-L Studio",
+    sound: "תמונת Google Play: 8 אפקטי Sound FX מסונכרנים לביט.",
+    mic: "תמונת Google Play: ערוצי מיקרופון ואפקטי Mic FX.",
+    loop: "תמונת Google Play: לופר עם 8 עמודים צבעוניים עם שם.",
+    pad: "תמונת Google Play: ה-Pad עם Wah, Octave ו-Vibrato.",
+    drum: "תמונת Google Play: מכונת תופים ב-16 צעדים עם ערכות ו-BPM.",
   },
   en: {
-    sound: "L Studio Sound screen",
-    mic: "L Studio Mic screen",
-    loop: "L Studio Loop screen",
-    pad: "L Studio Pad screen",
-    drum: "L Studio Drum screen",
+    sound: "Google Play shot: 8 Sound FX synced to the beat.",
+    mic: "Google Play shot: mic channels and Mic FX.",
+    loop: "Google Play shot: looper with 8 colour-coded named pages.",
+    pad: "Google Play shot: the Pad with Wah, Octave and Vibrato.",
+    drum: "Google Play shot: 16-step drum machine with kits and BPM.",
   },
   ru: {
-    sound: "Экран Sound в L Studio",
-    mic: "Экран Mic в L Studio",
-    loop: "Экран Loop в L Studio",
-    pad: "Экран Pad в L Studio",
-    drum: "Экран Drum в L Studio",
+    sound: "Скриншот Google Play: 8 Sound FX, синхронизированных с битом.",
+    mic: "Скриншот Google Play: каналы микрофона и Mic FX.",
+    loop: "Скриншот Google Play: лупер с 8 цветными именованными страницами.",
+    pad: "Скриншот Google Play: Pad с Wah, Octave и Vibrato.",
+    drum: "Скриншот Google Play: барабанная машина на 16 шагов с наборами и BPM.",
   },
   ar: {
-    sound: "شاشة Sound في L Studio",
-    mic: "شاشة Mic في L Studio",
-    loop: "شاشة Loop في L Studio",
-    pad: "شاشة Pad في L Studio",
-    drum: "شاشة Drum في L Studio",
+    sound: "لقطة Google Play: 8 مؤثرات Sound FX متزامنة مع الإيقاع.",
+    mic: "لقطة Google Play: قنوات الميكروفون ومؤثرات Mic FX.",
+    loop: "لقطة Google Play: لوبر بـ 8 صفحات ملونة بأسماء.",
+    pad: "لقطة Google Play: الـ Pad مع Wah وOctave وVibrato.",
+    drum: "لقطة Google Play: آلة طبول بـ 16 خطوة مع أطقم وBPM.",
   },
 } satisfies Record<Language, Record<PlayId, string>>;
 
@@ -236,8 +240,13 @@ const footerDefault = { tagline: "It's for analog people in a digital world." };
 const visionIcons = [Sparkles, Music2, ArrowDownLeft];
 
 
-function FeatureMedia({ image, alt }: { image: string; alt: string }) {
-  return <img className="preview-media" src={image} alt={alt} />;
+function FeatureMedia({ id, alt }: { id: PlayId; alt: string }) {
+  return (
+    <picture>
+      <source srcSet={playShotUrl(id, "webp")} type="image/webp" />
+      <img className="preview-media" src={playShotUrl(id, "jpg")} alt={alt} width={720} height={1280} loading="lazy" decoding="async" />
+    </picture>
+  );
 }
 
 // Renders a headline as "lead words" + a line break + the last word in the accent color,
@@ -543,7 +552,7 @@ export default function Home() {
                     {isActive && (
                       <div className="interface-preview" id={`feature-panel-${feature.id}`}>
                         <div className="preview-image-wrap">
-                          <FeatureMedia image={playShots[feature.id]} alt={playShotAlt[language][feature.id]} />
+                          <FeatureMedia id={feature.id as PlayId} alt={playShotAlt[language][feature.id as PlayId]} />
                         </div>
                         <div className="preview-copy">
                           <span className="kicker">{feature.meta}</span>
