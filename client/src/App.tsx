@@ -1,20 +1,20 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
-import { Toaster } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Home from "./pages/Home";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import Guide from "./pages/Guide";
-import Factory64 from "./pages/Factory64";
-import FactoryDrums from "./pages/FactoryDrums";
-import Exclusive from "./pages/Exclusive";
-import Updates from "./pages/Updates";
 import NotFound from "./pages/NotFound";
-import Buy from "./pages/Buy";
+
+// Inner pages load on demand so the homepage ships less JavaScript.
+const Privacy = lazy(() => import("./pages/Privacy"));
+const Terms = lazy(() => import("./pages/Terms"));
+const Guide = lazy(() => import("./pages/Guide"));
+const Factory64 = lazy(() => import("./pages/Factory64"));
+const FactoryDrums = lazy(() => import("./pages/FactoryDrums"));
+const Exclusive = lazy(() => import("./pages/Exclusive"));
+const Updates = lazy(() => import("./pages/Updates"));
+const Buy = lazy(() => import("./pages/Buy"));
 import DocumentSeo from "./components/DocumentSeo";
 
 function ScrollToTop() {
@@ -50,6 +50,7 @@ function Router() {
     <WouterRouter base={base}>
       <ScrollToTop />
       <DocumentSeo />
+      <Suspense fallback={null}>
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/privacy" component={Privacy} />
@@ -64,6 +65,7 @@ function Router() {
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
+      </Suspense>
     </WouterRouter>
   );
 }
@@ -73,10 +75,7 @@ export default function App() {
     <ErrorBoundary>
       <LanguageProvider>
         <ThemeProvider defaultTheme="dark">
-          <TooltipProvider>
-            <Toaster />
-            <Router />
-          </TooltipProvider>
+          <Router />
         </ThemeProvider>
       </LanguageProvider>
     </ErrorBoundary>
