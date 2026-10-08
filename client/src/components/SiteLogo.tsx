@@ -8,7 +8,7 @@ export default function SiteLogo({ compact = false }: SiteLogoProps) {
   return (
     <Link href="/" className={`site-logo${compact ? " site-logo--compact" : ""}`} aria-label="L Studio, דף הבית">
       <span className="site-logo__mark">
-        <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="" />
+        <img src={`${import.meta.env.BASE_URL}assets/logo-160.png`} alt="" width={30} height={30} />
       </span>
       <span className="site-logo__type">
         <strong>L Studio</strong>
