@@ -12,7 +12,7 @@ export default function SiteLogo({ compact = false }: SiteLogoProps) {
       </span>
       <span className="site-logo__type">
         <strong>L Studio</strong>
-        {!compact && <small>MICROTONAL WORKSTATION</small>}
+        {!compact && <small>ANDROID MUSIC APP</small>}
       </span>
     </Link>
   );

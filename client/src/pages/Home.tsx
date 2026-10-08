@@ -24,7 +24,18 @@ const developerImage = {
   webp: `${import.meta.env.BASE_URL}assets/Developer-720.webp`,
   jpg: `${import.meta.env.BASE_URL}assets/Developer-720.jpg`,
 };
-const logoSmall = `${import.meta.env.BASE_URL}assets/logo-160.png`;
+const heroShot = {
+  webp420: `${import.meta.env.BASE_URL}assets/hero/app-looper-420.webp`,
+  webp720: `${import.meta.env.BASE_URL}assets/hero/app-looper-720.webp`,
+  jpg720: `${import.meta.env.BASE_URL}assets/hero/app-looper-720.jpg`,
+};
+// Real 1.08 screenshot (LOOP tab), status bar and nav bar cropped off.
+const heroShotAlt = {
+  he: "מסך הלופר ב-L Studio: עמודים 1 עד 8 עם צבעים, 4 ערוצים בעמוד, ומתחת הקלידים עם התדר של כל קליד.",
+  en: "The L Studio looper: pages 1 to 8 with colors, 4 channels per page, and the keys below with each key's frequency.",
+  ru: "Лупер в L Studio: страницы с 1 по 8 с цветами, 4 канала на странице, а внизу клавиши с частотой каждой клавиши.",
+  ar: "اللوبر في L Studio: الصفحات من 1 إلى 8 بألوان، 4 قنوات في كل صفحة، وتحتها المفاتيح مع تردد كل مفتاح.",
+} satisfies Record<Language, string>;
 const meetPoster = {
   webp: `${import.meta.env.BASE_URL}assets/meet-short-poster.webp`,
   jpg: `${import.meta.env.BASE_URL}assets/meet-short-poster.jpg`,
@@ -114,38 +125,38 @@ const flowLabels = {
 
 const featureData = {
   he: [
-    { id: "sound", label: "SOUND", title: "תכנת את הקלידים בדרך שלך.", description: "אפשר לקבוע ידנית את התדר של כל קליד ולבנות את המקלדת בדרך שמתאימה לך. בנוסף יש לך שליטה על דברים כמו Attack, Release, Decay, Volume, Glide, Cutoff ו-Resonance. לא צריך להבין הכול לפני שמתחילים. אפשר פשוט להתחיל לשחק.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE" },
-    { id: "mic", label: "MIC", title: "תכניס את הקול שלך פנימה.", description: "קול, כלי נגינה או כל דבר אחר שאתה רוצה להקליט. המיקרופון נמצא בתוך הסטודיו, כך שלא צריך לעבור לאפליקציה אחרת בשביל להמשיך ליצור.", icon: Mic2, meta: "MIC INPUT / RECORD" },
-    { id: "loop", label: "LOOP", title: "יש רעיון? אל תיתן לו לברוח.", description: "הלופר מאפשר להקליט שכבות ולבנות מהן קטע. מתחילים ממשהו קטן, מוסיפים עוד משהו ורואים לאן זה הולך.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT" },
-    { id: "pad", label: "PAD", title: "לשחק עם הסאונד בזמן אמת.", description: "ה-Pad מאפשר לשלוט בסאונד בזמן שאתה מנגן. לא רק לכוון את הסאונד לפני הנגינה, אלא לשחק איתו תוך כדי.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD" },
-    { id: "drum", label: "DRUM", title: "התופים שלך. החוקים שלך.", description: "אפשר לעבוד עם סאמפלים, לבנות מקצבים, לקבוע איך הם יחזרו ולהפעיל אותם גם בזמן אמת.", icon: Drum, meta: "STEP SEQUENCER / BPM" },
+    { id: "sound", label: "SOUND", title: "תכנת את הקלידים בדרך שלך.", description: "אפשר לקבוע ידנית את התדר של כל קליד ולבנות את המקלדת בדרך שמתאימה לך. בנוסף יש לך שליטה על דברים כמו Attack, Release, Decay, Volume, Glide, Cutoff ו-Resonance. לא צריך להבין הכול לפני שמתחילים. אפשר פשוט להתחיל לשחק.", icon: SlidersHorizontal, meta: "SOUND / KEYS" },
+    { id: "mic", label: "MIC", title: "תכניס את הקול שלך פנימה.", description: "קול, כלי נגינה או כל דבר אחר שאתה רוצה להקליט. המיקרופון נמצא בתוך האפליקציה, כך שלא צריך לעבור לאפליקציה אחרת בשביל להמשיך ליצור.", icon: Mic2, meta: "MIC / RECORD" },
+    { id: "loop", label: "LOOP", title: "יש רעיון? אל תיתן לו לברוח.", description: "הלופר מאפשר להקליט שכבות ולבנות מהן קטע. מתחילים ממשהו קטן, מוסיפים עוד משהו ורואים לאן זה הולך.", icon: Disc3, meta: "LOOP / LAYERS / WAV" },
+    { id: "pad", label: "PAD", title: "לשחק עם הסאונד בזמן אמת.", description: "ה-Pad מאפשר לשלוט בסאונד בזמן שאתה מנגן. לא רק לכוון את הסאונד לפני הנגינה, אלא לשחק איתו תוך כדי.", icon: SlidersHorizontal, meta: "PAD / PLAY LIVE" },
+    { id: "drum", label: "DRUM", title: "התופים שלך. החוקים שלך.", description: "אפשר לעבוד עם סאמפלים, לבנות מקצבים, לקבוע איך הם יחזרו ולהפעיל אותם גם בזמן אמת.", icon: Drum, meta: "DRUM / BEATS / BPM" },
   ],
   en: [
-    { id: "sound", label: "SOUND", title: "Program the keys your way.", description: "Manually set the frequency of every key and build your keyboard the way that suits you. You also get control over things like Attack, Release, Decay, Volume, Glide, Cutoff and Resonance. You don't need to understand it all before you start. You can just start playing.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE" },
-    { id: "mic", label: "MIC", title: "Bring your voice in.", description: "Your voice, an instrument, or anything else you want to record. The microphone lives inside the studio, so you never have to switch apps to keep creating.", icon: Mic2, meta: "MIC INPUT / RECORD" },
-    { id: "loop", label: "LOOP", title: "Got an idea? Don't let it get away.", description: "The looper lets you record layers and build a piece from them. Start with something small, add another layer, and see where it goes.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT" },
-    { id: "pad", label: "PAD", title: "Play with the sound in real time.", description: "The Pad lets you control the sound while you're playing. Not just shape it before you play, but play with it as you go.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD" },
-    { id: "drum", label: "DRUM", title: "Your drums. Your rules.", description: "Work with samples, build rhythms, set how they repeat, and trigger them live too.", icon: Drum, meta: "STEP SEQUENCER / BPM" },
+    { id: "sound", label: "SOUND", title: "Program the keys your way.", description: "Manually set the frequency of every key and build your keyboard the way that suits you. You also get control over things like Attack, Release, Decay, Volume, Glide, Cutoff and Resonance. You don't need to understand it all before you start. You can just start playing.", icon: SlidersHorizontal, meta: "SOUND / KEYS" },
+    { id: "mic", label: "MIC", title: "Bring your voice in.", description: "Your voice, an instrument, or anything else you want to record. The microphone lives inside the app, so you never have to switch apps to keep creating.", icon: Mic2, meta: "MIC / RECORD" },
+    { id: "loop", label: "LOOP", title: "Got an idea? Don't let it get away.", description: "The looper lets you record layers and build a piece from them. Start with something small, add another layer, and see where it goes.", icon: Disc3, meta: "LOOP / LAYERS / WAV" },
+    { id: "pad", label: "PAD", title: "Play with the sound in real time.", description: "The Pad lets you control the sound while you're playing. Not just shape it before you play, but play with it as you go.", icon: SlidersHorizontal, meta: "PAD / PLAY LIVE" },
+    { id: "drum", label: "DRUM", title: "Your drums. Your rules.", description: "Work with samples, build rhythms, set how they repeat, and trigger them live too.", icon: Drum, meta: "DRUM / BEATS / BPM" },
   ],
   ru: [
-    { id: "sound", label: "SOUND", title: "Настрой клавиши по-своему.", description: "Вручную задавай частоту каждой клавиши и строй клавиатуру так, как удобно тебе. Также есть контроль над Attack, Release, Decay, Volume, Glide, Cutoff и Resonance. Не нужно понимать всё сразу, можно просто начать играть.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE" },
-    { id: "mic", label: "MIC", title: "Впусти свой голос.", description: "Голос, инструмент или что угодно ещё, что хочешь записать. Микрофон живёт внутри студии, так что не нужно переключаться в другое приложение, чтобы продолжать творить.", icon: Mic2, meta: "MIC INPUT / RECORD" },
-    { id: "loop", label: "LOOP", title: "Есть идея? Не дай ей уйти.", description: "Лупер позволяет записывать слои и строить из них трек. Начинаешь с малого, добавляешь ещё, и смотришь, куда это приведёт.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT" },
-    { id: "pad", label: "PAD", title: "Играй со звуком в реальном времени.", description: "Pad позволяет управлять звуком прямо во время игры. Не только настроить звук заранее, а играть с ним на ходу.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD" },
-    { id: "drum", label: "DRUM", title: "Твои барабаны. Твои правила.", description: "Работай с семплами, строй ритмы, задавай, как они повторяются, и запускай их вживую.", icon: Drum, meta: "STEP SEQUENCER / BPM" },
+    { id: "sound", label: "SOUND", title: "Настрой клавиши по-своему.", description: "Вручную задавай частоту каждой клавиши и строй клавиатуру так, как удобно тебе. Также есть контроль над Attack, Release, Decay, Volume, Glide, Cutoff и Resonance. Не нужно понимать всё сразу, можно просто начать играть.", icon: SlidersHorizontal, meta: "SOUND / KEYS" },
+    { id: "mic", label: "MIC", title: "Впусти свой голос.", description: "Голос, инструмент или что угодно ещё, что хочешь записать. Микрофон живёт внутри приложения, так что не нужно переключаться в другое приложение, чтобы продолжать творить.", icon: Mic2, meta: "MIC / RECORD" },
+    { id: "loop", label: "LOOP", title: "Есть идея? Не дай ей уйти.", description: "Лупер позволяет записывать слои и строить из них трек. Начинаешь с малого, добавляешь ещё, и смотришь, куда это приведёт.", icon: Disc3, meta: "LOOP / LAYERS / WAV" },
+    { id: "pad", label: "PAD", title: "Играй со звуком в реальном времени.", description: "Pad позволяет управлять звуком прямо во время игры. Не только настроить звук заранее, а играть с ним на ходу.", icon: SlidersHorizontal, meta: "PAD / PLAY LIVE" },
+    { id: "drum", label: "DRUM", title: "Твои барабаны. Твои правила.", description: "Работай с семплами, строй ритмы, задавай, как они повторяются, и запускай их вживую.", icon: Drum, meta: "DRUM / BEATS / BPM" },
   ],
   ar: [
-    { id: "sound", label: "SOUND", title: "برمج المفاتيح بطريقتك.", description: "اضبط تردد كل مفتاح يدوياً وابنِ لوحة المفاتيح بالطريقة التي تناسبك. لديك أيضاً تحكم في أشياء مثل Attack وRelease وDecay وVolume وGlide وCutoff وResonance. لا تحتاج لفهم كل شيء قبل أن تبدأ. يمكنك فقط البدء باللعب.", icon: SlidersHorizontal, meta: "SOUND ENGINE / VOICE" },
-    { id: "mic", label: "MIC", title: "أدخل صوتك إلى الداخل.", description: "صوتك، آلة موسيقية، أو أي شيء آخر تريد تسجيله. الميكروفون موجود داخل الاستوديو، لذا لا تحتاج للانتقال إلى تطبيق آخر لمواصلة الإبداع.", icon: Mic2, meta: "MIC INPUT / RECORD" },
-    { id: "loop", label: "LOOP", title: "لديك فكرة؟ لا تدعها تفلت.", description: "يتيح لك اللوبر تسجيل طبقات وبناء مقطع منها. تبدأ بشيء صغير، تضيف شيئاً آخر، وترى إلى أين يأخذك ذلك.", icon: Disc3, meta: "MULTI-TRACK / WAV EXPORT" },
-    { id: "pad", label: "PAD", title: "العب بالصوت في الوقت الفعلي.", description: "يتيح لك الـPad التحكم بالصوت أثناء العزف. ليس فقط ضبط الصوت قبل العزف، بل اللعب به أثناء العزف.", icon: SlidersHorizontal, meta: "LIVE PERFORMANCE PAD" },
-    { id: "drum", label: "DRUM", title: "إيقاعاتك. قواعدك.", description: "اعمل مع العينات، ابنِ إيقاعات، حدد كيفية تكرارها، وشغّلها أيضاً في الوقت الفعلي.", icon: Drum, meta: "STEP SEQUENCER / BPM" },
+    { id: "sound", label: "SOUND", title: "برمج المفاتيح بطريقتك.", description: "اضبط تردد كل مفتاح يدوياً وابنِ لوحة المفاتيح بالطريقة التي تناسبك. لديك أيضاً تحكم في أشياء مثل Attack وRelease وDecay وVolume وGlide وCutoff وResonance. لا تحتاج لفهم كل شيء قبل أن تبدأ. يمكنك فقط البدء باللعب.", icon: SlidersHorizontal, meta: "SOUND / KEYS" },
+    { id: "mic", label: "MIC", title: "أدخل صوتك إلى الداخل.", description: "صوتك، آلة موسيقية، أو أي شيء آخر تريد تسجيله. الميكروفون موجود داخل التطبيق، لذا لا تحتاج للانتقال إلى تطبيق آخر لمواصلة الإبداع.", icon: Mic2, meta: "MIC / RECORD" },
+    { id: "loop", label: "LOOP", title: "لديك فكرة؟ لا تدعها تفلت.", description: "يتيح لك اللوبر تسجيل طبقات وبناء مقطع منها. تبدأ بشيء صغير، تضيف شيئاً آخر، وترى إلى أين يأخذك ذلك.", icon: Disc3, meta: "LOOP / LAYERS / WAV" },
+    { id: "pad", label: "PAD", title: "العب بالصوت في الوقت الفعلي.", description: "يتيح لك الـPad التحكم بالصوت أثناء العزف. ليس فقط ضبط الصوت قبل العزف، بل اللعب به أثناء العزف.", icon: SlidersHorizontal, meta: "PAD / PLAY LIVE" },
+    { id: "drum", label: "DRUM", title: "إيقاعاتك. قواعدك.", description: "اعمل مع العينات، ابنِ إيقاعات، حدد كيفية تكرارها، وشغّلها أيضاً في الوقت الفعلي.", icon: Drum, meta: "DRUM / BEATS / BPM" },
   ],
 } satisfies Record<Language, Array<{ id: PlayId; label: string; title: string; description: string; icon: typeof SlidersHorizontal; meta: string }>>;
 
 // Fallback copy, used only if content.json fails to load.
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive", updates: "Updates" };
-const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "60.6 MB", stat2: "Android 7.0+", stat3: "No ads" };
+const heroDefault = { kicker: "Android music app · Version 1.08", title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "60.6 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const launchDefaults: Record<Language, { headline: string; price: string; note: string }> = {
   he: {headline: "מגיע ל-Google Play באוקטובר 2026.", price: "L Studio Pro, 8$.", note: "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$."},
   en: {headline: "Coming to Google Play in October 2026.", price: "L Studio Pro, $8.", note: "Coming to Google Play in October 2026. L Studio Pro, $8."},
@@ -158,31 +169,31 @@ const meetDefaults = {
   he: {
     kicker: "L-STUDIO / היכרות",
     title: "הכירו את L-studio",
-    body: "פתחו את הסרטון הקצר והכירו את הסטודיו.",
+    body: "פתחו את הסרטון הקצר והכירו את האפליקציה.",
     videoTitle: "היכרות עם L-studio",
   },
   en: {
     kicker: "L-STUDIO / INTRO",
     title: "Meet L-studio",
-    body: "Open the short and meet the studio.",
+    body: "Open the short and meet the app.",
     videoTitle: "Meet L-studio intro",
   },
   ru: {
     kicker: "L-STUDIO / ЗНАКОМСТВО",
     title: "Знакомьтесь: L-studio",
-    body: "Откройте короткое видео и познакомьтесь со студией.",
+    body: "Откройте короткое видео и познакомьтесь с приложением.",
     videoTitle: "Знакомство с L-studio",
   },
   ar: {
     kicker: "L-STUDIO / مقدمة",
     title: "تعرّف على L-studio",
-    body: "افتحوا الفيديو القصير وتعرّفوا على الاستوديو.",
+    body: "افتحوا الفيديو القصير وتعرّفوا على التطبيق.",
     videoTitle: "تعرّف على L-studio",
   },
 } satisfies Record<Language, { kicker: string; title: string; body: string; videoTitle: string }>;
 const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started with a note that wasn't there.", body: ["I wanted to build a keyboard where I could set which frequency belongs to each key myself.", "From there it grew into recording, a looper, drums, a microphone and more."], closing: "What started as a search for the eighth note became L-Studio." };
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
-const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
+const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYS", "SOUND", "FX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
 const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "L Studio Pro comes with the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", coverAlt: "L Studio Pro pack covers side by side: Factory 64 with 64 presets on 8 pages, Drum Kits with 8 kits and 8 styles, and Exclusive with 11 drum packs" };
 const exclusiveFan = {
@@ -196,9 +207,9 @@ const exclusiveDefaults: Record<Language, { navLabel: string; comingSoon: string
   ru: { navLabel: "Эксклюзив", comingSoon: "Входит в Pro", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Одиннадцать особых паков. Входит в Pro.", homeBody: "Одиннадцать эксклюзивных ударных паков стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет.", homeCta: "Смотреть эксклюзив", homeImageAlt: "Веер из девяти постеров эксклюзивных ударных паков L Studio" },
   ar: { navLabel: "حصري", comingSoon: "مع Pro", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "إحدى عشرة حزمة خاصة. مع Pro.", homeBody: "إحدى عشرة حزمة طبول حصرية خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل.", homeCta: "شاهد الحصري", homeImageAlt: "مروحة من تسعة ملصقات لحزم طبول حصرية من L Studio" },
 };
-const visionDefault = { kicker: "05 / THE VISION", title: "I built the studio I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take the studio with you", body: "Creating shouldn't have to wait for a computer." }] };
-const faqDefault = { kicker: "07 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
-const finalCtaDefault = { kicker: "06 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea." };
+const visionDefault = { kicker: "05 / THE VISION", title: "I built the app I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take your music with you", body: "Creating shouldn't have to wait for a computer." }] };
+const faqDefault = { kicker: "06 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
+const finalCtaDefault = { kicker: "07 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea." };
 type TesterCopy = {
   kicker: string;
   title: string;
@@ -419,7 +430,8 @@ export default function Home() {
 
   const features = featureData[language];
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeFeature, setActiveFeature] = useState("");
+  // First feature open so a real screenshot shows without a click.
+  const [activeFeature, setActiveFeature] = useState("sound");
   const dir = isRtl ? "rtl" : "ltr";
 
   return (
@@ -493,24 +505,12 @@ export default function Home() {
               <span><b>{hero.stat3}</b></span>
             </div>
           </div>
-          <div className="hero-console" aria-label="L Studio console">
-            <div className="console-topline"><span>LIVE SESSION / 01</span><span className="live-status"><i /> AUDIO ENGINE ACTIVE</span></div>
-            <div className="console-display">
-              <div className="display-mark"><img src={logoSmall} alt="L Studio" width={50} height={50} /></div>
-              <div className="display-title">L STUDIO</div>
-              <div className="display-subtitle">MICROTONAL WORKSTATION</div>
-              <div className="waveform" aria-hidden="true">{[26,42,74,48,31,57,88,42,69,36,62,93,52,33,72,45,25,60,38,79,46,30,66,40,82,55,33,70,45,27,64,39].map((height, index) => <span key={index} style={{ height: `${height}%` }} />)}</div>
-              <div className="display-reading"><span>DO</span><strong>222.00 <small>Hz</small></strong><span>OCT +01</span></div>
-            </div>
-            <div className="console-controls">
-              <div className="control-group"><span className="control-label">WAVE</span><span className="knob knob--gold" /><b>SAW</b></div>
-              <div className="control-group"><span className="control-label">CUTOFF</span><span className="knob" /><b>68%</b></div>
-              <div className="control-group"><span className="control-label">RESONANCE</span><span className="knob knob--gold" /><b>42%</b></div>
-              <div className="control-group"><span className="control-label">DRIVE</span><span className="knob knob--gold" /><b>WARM</b></div>
-            </div>
-            <div className="console-tabs"><span className="is-active">SOUND</span><span>MIC</span><span>LOOP</span><span>PAD</span><span>DRUM</span></div>
-            <div className="console-corner">L / 01 <span>▰▰▰</span></div>
-          </div>
+          <figure className="hero-shot">
+            <picture>
+              <source srcSet={`${heroShot.webp420} 420w, ${heroShot.webp720} 720w`} sizes="(max-width: 1000px) min(78vw, 340px), 360px" type="image/webp" />
+              <img src={heroShot.jpg720} alt={heroShotAlt[language]} width={720} height={1478} fetchPriority="high" decoding="async" />
+            </picture>
+          </figure>
         </section>
 
         <section className="meet-section container" id="meet" dir={dir} aria-labelledby="meet-title">
@@ -749,7 +749,7 @@ export default function Home() {
           <SiteLogo compact />
           <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/guide">{nav.guide ?? "User guide"}</Link><Link href="/updates">{nav.updates ?? updates.navLabel ?? updatesNavLabel[language]}</Link><Link className="nav-exclusive" href="/exclusive">{nav.exclusive ?? exclusiveNavLabel[language]}</Link><Link href="/privacy">{nav.privacy}</Link><Link href="/terms">{nav.terms ?? "Terms"}</Link></div>
           <span className="footer-tagline">{footer.tagline}</span>
-          <span className="footer-copy">© 2026 L Studio / BUILT FOR SOUND</span>
+          <span className="footer-copy">© 2026 L Studio</span>
         </div>
       </footer>
     </div>

@@ -85,6 +85,10 @@ for (const page of pages) {
       !/daw/i.test(doc.title) && !/daw/i.test(doc.description),
       `${page}/${language} calls the product a DAW`
     );
+    assert(
+      !/workstation|תחנת עבודה|рабочая станция|محطة عمل|studio(?! *L)|סטודיו/i.test(`${doc.title} ${doc.description}`.replace(/L Studio/g, "")),
+      `${page}/${language} uses workstation or studio wording`
+    );
     const app = doc.jsonLd["@graph"][1];
     assert(app["@type"] === "MobileApplication", "MobileApplication node");
     assert(
@@ -233,7 +237,7 @@ assert(
   "Hebrew hreflang injection"
 );
 assert(
-  hebrewHome.includes("תחנת עבודה מוזיקלית מיקרוטונלית"),
+  hebrewHome.includes("אפליקציה ליצירת מוזיקה באנדרואיד"),
   "Hebrew title injection"
 );
 
