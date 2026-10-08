@@ -509,7 +509,8 @@
               }
             ],
             "images": [
-              "assets/guide/loop-pages.jpg"
+              "assets/guide/loop-pages.jpg",
+              "assets/guide/loop-page-name.jpg"
             ]
           },
           {
@@ -1404,10 +1405,12 @@
             "ticker": "רענון זרימת העבודה, 32 ערוצי לופר",
             "summary": "Pro ו-Live לנגינה מול אנשים, מילים שנשארות על המסך בזמן הקלטה, ואפקטים על הלופר. בלופר 8 עמודים ו-4 ערוצים בכל עמוד, 32 ערוצים בסך הכל. בבדיקות לפני פרסום רחב.",
             "images": [
-              "/assets/updates/lyrics.jpg"
+              "/assets/updates/lyrics.jpg",
+              "/assets/updates/looper-fx.jpg"
             ],
             "imageAlts": [
-              "טלפרומפטר למילים פתוח מעל הסטודיו."
+              "טלפרומפטר למילים פתוח מעל הסטודיו.",
+              "חלון Looper FX. Double Lane נבחר."
             ]
           }
         ]
@@ -1922,7 +1925,8 @@
               }
             ],
             "images": [
-              "assets/guide/loop-pages.jpg"
+              "assets/guide/loop-pages.jpg",
+              "assets/guide/loop-page-name.jpg"
             ]
           },
           {
@@ -2817,10 +2821,12 @@
             "ticker": "Studio workflow refresh, 32 looper channels",
             "summary": "Pro and Live for playing in front of people, lyrics that stay on screen while you record, and effects on the loop. The looper has 8 pages and 4 channels on each page, 32 channels in all. In testing before a wider release.",
             "images": [
-              "/assets/updates/lyrics.jpg"
+              "/assets/updates/lyrics.jpg",
+              "/assets/updates/looper-fx.jpg"
             ],
             "imageAlts": [
-              "Lyrics teleprompter open over the studio."
+              "Lyrics teleprompter open over the studio.",
+              "Looper FX window with Double Lane selected."
             ]
           }
         ]
@@ -3335,7 +3341,8 @@
               }
             ],
             "images": [
-              "assets/guide/loop-pages.jpg"
+              "assets/guide/loop-pages.jpg",
+              "assets/guide/loop-page-name.jpg"
             ]
           },
           {
@@ -4230,10 +4237,12 @@
             "ticker": "Обновление рабочего процесса, 32 канала лупера",
             "summary": "Pro и Live для игры перед людьми, слова остаются на экране во время записи, и эффекты на лупе. У лупера 8 страниц и 4 канала на каждой, всего 32 канала. На проверке перед более широким выпуском.",
             "images": [
-              "/assets/updates/lyrics.jpg"
+              "/assets/updates/lyrics.jpg",
+              "/assets/updates/looper-fx.jpg"
             ],
             "imageAlts": [
-              "Телесуфлёр текста открыт поверх студии."
+              "Телесуфлёр текста открыт поверх студии.",
+              "Окно Looper FX. Выбран Double Lane."
             ]
           }
         ]
@@ -4748,7 +4757,8 @@
               }
             ],
             "images": [
-              "assets/guide/loop-pages.jpg"
+              "assets/guide/loop-pages.jpg",
+              "assets/guide/loop-page-name.jpg"
             ]
           },
           {
@@ -5643,10 +5653,12 @@
             "ticker": "تحديث مسار العمل، 32 قناة للوبر",
             "summary": "Pro وLive للعزف أمام الناس، والكلمات تبقى على الشاشة أثناء التسجيل، ومؤثرات على اللوب. للوبر 8 صفحات و4 قنوات في كل صفحة، 32 قناة في المجموع. قيد الاختبار قبل إصدار أوسع.",
             "images": [
-              "/assets/updates/lyrics.jpg"
+              "/assets/updates/lyrics.jpg",
+              "/assets/updates/looper-fx.jpg"
             ],
             "imageAlts": [
-              "تلبرومبتر الكلمات مفتوح فوق الاستوديو."
+              "تلبرومبتر الكلمات مفتوح فوق الاستوديو.",
+              "نافذة Looper FX. Double Lane محدد."
             ]
           }
         ]

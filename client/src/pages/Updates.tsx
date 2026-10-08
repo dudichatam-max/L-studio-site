@@ -33,8 +33,10 @@ function webpUrl(path: string) {
 const STILL_SIZE: Record<string, { width: number; height: number }> = {
   "/assets/updates/drum-fx.jpg": { width: 720, height: 1348 },
   "/assets/updates/mic-fx.jpg": { width: 720, height: 1472 },
-  "/assets/updates/looper-back.jpg": { width: 720, height: 1268 },
-  "/assets/updates/looper-fx.jpg": { width: 720, height: 1268 },
+  "/assets/updates/looper-back.jpg": { width: 720, height: 1468 },
+  "/assets/updates/looper-fx.jpg": { width: 688, height: 1092 },
+  "/assets/updates/sound-fx.jpg": { width: 720, height: 1468 },
+  "/assets/updates/looper-pages.jpg": { width: 720, height: 1468 },
   "/assets/updates/lyrics.jpg": { width: 720, height: 1344 },
   "/assets/updates/user-guide-style-random.jpg": { width: 640, height: 857 },
   "/assets/updates/exclusive-packs-poster.jpg": { width: 1024, height: 1536 },
