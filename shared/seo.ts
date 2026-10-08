@@ -185,22 +185,22 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Exclusive | L Studio",
       description:
-        "Eleven Exclusive drum packs for L Studio, outside the Factory Drums set. Not released yet.",
+        "Eleven Exclusive drum packs for L Studio, outside the Factory Drums set. Included with Pro at no extra cost.",
     },
     he: {
       title: "בלעדי | L Studio",
       description:
-        "אחת עשרה חבילות תופים בלעדיות ל-L Studio, מחוץ לערכות Factory Drums. עוד לא הושקו.",
+        "אחת עשרה חבילות תופים בלעדיות ל-L Studio, מחוץ לערכות Factory Drums. כלולות ב-Pro בלי עלות נוספת.",
     },
     ru: {
       title: "Эксклюзив | L Studio",
       description:
-        "Одиннадцать эксклюзивных ударных паков L Studio вне набора Factory Drums. Релиза ещё нет.",
+        "Одиннадцать эксклюзивных ударных паков L Studio вне набора Factory Drums. Входят в Pro без доплаты.",
     },
     ar: {
       title: "حصري | L Studio",
       description:
-        "إحدى عشرة حزمة طبول حصرية لـ L Studio خارج مجموعة Factory Drums. لم تُطرح بعد.",
+        "إحدى عشرة حزمة طبول حصرية لـ L Studio خارج مجموعة Factory Drums. مضمّنة مع Pro بلا تكلفة إضافية.",
     },
   },
   updates: {
@@ -227,21 +227,21 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro for Android. Purchases are not available on this website right now.",
+        "L Studio Pro for Android is on Google Play. Purchases are not available on this website right now.",
     },
     he: {
       title: "L Studio Pro",
-      description: "L Studio Pro לאנדרואיד. רכישה באתר אינה זמינה כרגע.",
+      description: "L Studio Pro לאנדרואיד נמצא ב-Google Play. רכישה באתר אינה זמינה כרגע.",
     },
     ru: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro для Android. Покупка на этом сайте сейчас недоступна.",
+        "L Studio Pro для Android есть в Google Play. Покупка на этом сайте сейчас недоступна.",
     },
     ar: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro لأندرويد. الشراء غير متاح على هذا الموقع حالياً.",
+        "L Studio Pro لأندرويد متاح على Google Play. الشراء غير متاح على هذا الموقع حالياً.",
     },
   },
   "buy-success": {
