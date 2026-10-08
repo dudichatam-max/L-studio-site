@@ -18,70 +18,43 @@
     "items": [
       {
         "id": "sound-fx-looper-pages",
-        "status": "in_progress",
+        "status": "shipped",
         "title": "Sound FX + צבעים לעמודי הלופר",
         "ticker": "Sound FX וצבעים לעמודי הלופר",
-        "summary": "מגיע בעדכון הבא ב-Google Play: ל-Sound FX יש 8 אפקטים חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים וסשנים שומרים את ההגדרות של כל 8 ה-Sound FX. לכל עמוד בלופר אפשר לתת שם ואחד מ-8 צבעים. לנובים יש טבעת זהב חדשה שמראה את הערך, והמדריך באפליקציה מלמד עכשיו את כל זה.",
+        "summary": "עכשיו ב-Google Play, גרסה 1.08: 8 אפקטי Sound FX חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים שומרים את ההגדרות של כל ה-8. לכל עמוד בלופר יש שם ואחד מ-8 צבעים. הנובים מראים את הערך בטבעת זהב, והמדריך באפליקציה מלמד את כל זה.",
         "href": "/guide",
         "cta": "למדריך",
         "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
         "imageAlts": ["חלון Sound FX עם Psy Orbit נבחר.", "מסך Loop עם מספרי עמודים צבעוניים ושם עמוד."]
       },
       {
-        "id": "user-guide-1-08",
-        "status": "shipped",
-        "title": "המדריך למשתמש עודכן ל-1.08",
-        "ticker": "המדריך למשתמש עודכן ל-1.08",
-        "summary": "המדריך למשתמש באתר מכסה עכשיו את Sound FX, שמות וצבעים לעמודי הלופר, Presets ו-Custom Frequency ב-Settings, עם צילומי מסך חדשים מהאפליקציה.",
-        "href": "/guide",
-        "cta": "למדריך"
-      },
-      {
-        "id": "mic-fx-and-back",
-        "status": "in_progress",
-        "title": "Mic FX + כפתור Back",
-        "ticker": "Mic FX ו-Back",
-        "summary": "מגיע בעדכון הבא ב-Google Play: Mic FX עם 8 פריסטים. לחיצה ארוכה פותחת Amount, EQ, Mid-sweep, Transpose (מ-12- עד 12) ו-Reverb. כפתור Back אחד בראש Loop ו-Mic מחזיר את הטייק האחרון שנמחק.",
-        "images": ["/assets/updates/mic-fx.jpg", "/assets/updates/looper-back.jpg"],
-        "imageAlts": ["לוח Mic FX. Phone Line נבחר.", "דף הלופר עם כפתור Back וערוצים."]
-      },
-      {
-        "id": "drum-fx",
-        "status": "in_progress",
-        "title": "Drum FX",
-        "ticker": "Drum FX",
-        "summary": "מגיע בעדכון הבא ב-Google Play: Drum FX עם 8 אפקטים לתופים, מ-Street Boom ועד Wire Glitch. לחיצה ארוכה פותחת Amount, EQ, Mid-sweep, Transpose ו-Reverb לאותו אפקט.",
-        "images": ["/assets/updates/drum-fx.jpg"],
-        "imageAlts": ["לוח Drum FX עם שמונה אפקטים. אפקט אחד נבחר."]
-      },
-      {
-        "id": "studio-workflow-refresh",
-        "status": "in_progress",
-        "title": "מצב Live, מילים ו-Looper FX",
-        "ticker": "מצב Live, מילים ו-32 ערוצי לופר",
-        "summary": "מגיע בעדכון הבא ב-Google Play: מצבי PRO ו-LIVE (ב-LIVE השמות, Clear וטעינת קבצים נעולים בזמן נגינה), מילים שנשארות על המסך בזמן הקלטה, ו-Looper FX בכל ערוץ לופ. בלופר 8 עמודים ו-4 ערוצים בכל עמוד, 32 ערוצים בסך הכל.",
-        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
-        "imageAlts": ["טלפרומפטר למילים פתוח מעל הסטודיו.", "חלון Looper FX. Double Lane נבחר."]
-      },
-      {
         "id": "exclusive-packs-gallery",
         "status": "shipped",
         "title": "חבילות Exclusive ב-Pro",
         "ticker": "Exclusive ב-Pro",
-        "summary": "מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת. אלה 11 ערכות תופים Exclusive באפליקציה, בנוסף ל-Factory 64. אין כפתור הורדה. האתר רק מציג מידע על הערכות.",
+        "summary": "עכשיו ב-Google Play, גרסה 1.08: מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת. אלה 11 ערכות תופים Exclusive באפליקציה, בנוסף ל-Factory 64. אין כפתור הורדה. האתר רק מציג מידע על הערכות.",
         "href": "/exclusive",
         "cta": "לעמוד Exclusive",
         "images": ["/assets/updates/exclusive-packs-poster.jpg"],
         "imageAlts": ["פוסטר Exclusive ל-Pro: 11 ערכות תופים, פתיחה מתוך האפליקציה."]
       },
       {
-        "id": "early-access-play",
-        "status": "in_progress",
-        "title": "Early Access ב-Google Play",
-        "ticker": "Early Access ב-Play",
-        "summary": "גישה מוקדמת דרך Internal testing ב-Google Play. מלאו את טופס Early Access בדף הבית כדי לבקש מקום בבדיקה.",
-        "href": "/#early-access",
-        "cta": "לטופס Early Access"
+        "id": "mic-fx-and-back",
+        "status": "shipped",
+        "title": "Mic FX, Drum FX + כפתור Back",
+        "ticker": "Mic FX, Drum FX ו-Back",
+        "summary": "עכשיו ב-Google Play, גרסה 1.08: 8 אפקטים למיקרופון ו-8 לתופים. לחיצה ארוכה על אפקט פותחת Amount, EQ, Mid-sweep, Transpose ו-Reverb. כפתור Back אחד ב-Loop וב-Mic מחזיר את הטייק האחרון שנמחק.",
+        "images": ["/assets/updates/mic-fx.jpg", "/assets/updates/drum-fx.jpg"],
+        "imageAlts": ["לוח Mic FX. Phone Line נבחר.", "לוח Drum FX עם שמונה אפקטים. אפקט אחד נבחר."]
+      },
+      {
+        "id": "studio-workflow-refresh",
+        "status": "shipped",
+        "title": "מצב Live, מילים ו-Looper FX",
+        "ticker": "מצב Live, מילים ו-32 ערוצי לופר",
+        "summary": "עכשיו ב-Google Play, גרסה 1.08: מצב LIVE נועל שמות, Clear וטעינת קבצים בזמן נגינה. חלון המילים גולל את הטקסט בזמן שאתם שרים. לכל ערוץ לופ יש Looper FX, ובלופר 8 עמודים עם 4 ערוצים בכל עמוד, 32 בסך הכל.",
+        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
+        "imageAlts": ["חלון המילים פתוח מעל האפליקציה.", "חלון Looper FX. Double Lane נבחר."]
       }
     ]
   },
@@ -104,70 +77,43 @@
     "items": [
       {
         "id": "sound-fx-looper-pages",
-        "status": "in_progress",
+        "status": "shipped",
         "title": "Sound FX + looper page colors",
         "ticker": "Sound FX and looper page colors",
-        "summary": "Coming in the next Google Play update: Sound FX has 8 new effects that follow the drum beat, and you can switch between them while you play. Presets and sessions keep the settings of all 8 Sound FX. Each looper page can get a name and one of 8 colors. Knobs have a new gold ring that shows the value, and the in-app tutorial now covers all of this.",
+        "summary": "Now on Google Play, version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Each looper page gets a name and one of 8 colors. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
         "href": "/guide",
         "cta": "Open guide",
         "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
         "imageAlts": ["Sound FX window with Psy Orbit selected.", "Loop screen with colored page numbers and a page name."]
       },
       {
-        "id": "user-guide-1-08",
-        "status": "shipped",
-        "title": "User guide updated for 1.08",
-        "ticker": "User guide updated for 1.08",
-        "summary": "The user guide on this site now covers Sound FX, looper page names and colors, Presets, and Custom Frequency in Settings, with new screenshots from the app.",
-        "href": "/guide",
-        "cta": "Open guide"
-      },
-      {
-        "id": "mic-fx-and-back",
-        "status": "in_progress",
-        "title": "Mic FX + Back button",
-        "ticker": "Mic FX and Back",
-        "summary": "Coming in the next Google Play update: Mic FX with 8 presets. A long-press opens Amount, EQ, Mid-sweep, Transpose (-12 to 12), and Reverb. One Back button at the top of Loop and Mic brings back the last cleared take.",
-        "images": ["/assets/updates/mic-fx.jpg", "/assets/updates/looper-back.jpg"],
-        "imageAlts": ["Mic FX panel with Phone Line selected.", "Looper page with a Back button and tracks."]
-      },
-      {
-        "id": "drum-fx",
-        "status": "in_progress",
-        "title": "Drum FX",
-        "ticker": "Drum FX",
-        "summary": "Coming in the next Google Play update: Drum FX with 8 drum effects, from Street Boom to Wire Glitch. A long-press opens Amount, EQ, Mid-sweep, Transpose, and Reverb for that effect.",
-        "images": ["/assets/updates/drum-fx.jpg"],
-        "imageAlts": ["Drum FX panel with eight effects. One effect is selected."]
-      },
-      {
-        "id": "studio-workflow-refresh",
-        "status": "in_progress",
-        "title": "Live mode, lyrics, Looper FX",
-        "ticker": "Live mode, lyrics and 32 looper channels",
-        "summary": "Coming in the next Google Play update: PRO and LIVE modes (in LIVE, names, Clear, and file loading are locked while you play), lyrics that stay on screen while you record, and Looper FX on every loop channel. The looper has 8 pages and 4 channels on each page, 32 channels in all.",
-        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
-        "imageAlts": ["Lyrics teleprompter open over the studio.", "Looper FX window with Double Lane selected."]
-      },
-      {
         "id": "exclusive-packs-gallery",
         "status": "shipped",
         "title": "Exclusive packs in Pro",
         "ticker": "Exclusive in Pro",
-        "summary": "Whoever buys Pro also gets the Exclusive pack free, at no extra cost. That is 11 Exclusive drum packs in the app, on top of Factory 64. There is no download button. This site only describes the packs.",
+        "summary": "Now on Google Play, version 1.08: whoever buys Pro also gets the Exclusive pack free, at no extra cost. That is 11 Exclusive drum packs in the app, on top of Factory 64. There is no download button. This site only describes the packs.",
         "href": "/exclusive",
         "cta": "View Exclusive",
         "images": ["/assets/updates/exclusive-packs-poster.jpg"],
         "imageAlts": ["Exclusive Pro poster: 11 drum kits, unlocked in the app with Pro."]
       },
       {
-        "id": "early-access-play",
-        "status": "in_progress",
-        "title": "Early Access on Google Play",
-        "ticker": "Early Access on Play",
-        "summary": "Early Access runs through Google Play Internal testing. Fill in the Early Access form on the home page to request a testing spot.",
-        "href": "/#early-access",
-        "cta": "Go to Early Access form"
+        "id": "mic-fx-and-back",
+        "status": "shipped",
+        "title": "Mic FX, Drum FX + Back",
+        "ticker": "Mic FX, Drum FX and Back",
+        "summary": "Now on Google Play, version 1.08: 8 effects for the mic and 8 for the drums. A long-press on an effect opens Amount, EQ, Mid-sweep, Transpose, and Reverb. One Back button on Loop and Mic brings back the last cleared take.",
+        "images": ["/assets/updates/mic-fx.jpg", "/assets/updates/drum-fx.jpg"],
+        "imageAlts": ["Mic FX panel with Phone Line selected.", "Drum FX panel with eight effects. One effect is selected."]
+      },
+      {
+        "id": "studio-workflow-refresh",
+        "status": "shipped",
+        "title": "Live mode, lyrics, Looper FX",
+        "ticker": "Live mode, lyrics and 32 looper channels",
+        "summary": "Now on Google Play, version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. Every loop channel has Looper FX, and the looper has 8 pages with 4 channels each, 32 in all.",
+        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
+        "imageAlts": ["Lyrics window open over the app.", "Looper FX window with Double Lane selected."]
       }
     ]
   },
@@ -190,70 +136,43 @@
     "items": [
       {
         "id": "sound-fx-looper-pages",
-        "status": "in_progress",
+        "status": "shipped",
         "title": "Sound FX + цвета страниц лупера",
         "ticker": "Sound FX и цвета страниц лупера",
-        "summary": "В следующем обновлении в Google Play: у Sound FX 8 новых эффектов, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты и сессии сохраняют настройки всех 8 Sound FX. Каждой странице лупера можно дать имя и один из 8 цветов. У регуляторов новое золотое кольцо, которое показывает значение, и тур в приложении теперь показывает всё это.",
+        "summary": "Теперь в Google Play, версия 1.08: 8 новых Sound FX, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты сохраняют настройки всех 8. Каждой странице лупера можно дать имя и один из 8 цветов. Регуляторы показывают значение золотым кольцом, а тур в приложении показывает всё это.",
         "href": "/guide",
         "cta": "Открыть гид",
         "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
         "imageAlts": ["Окно Sound FX, выбран Psy Orbit.", "Экран Loop с цветными номерами страниц и именем страницы."]
       },
       {
-        "id": "user-guide-1-08",
-        "status": "shipped",
-        "title": "Руководство обновлено для 1.08",
-        "ticker": "Руководство обновлено для 1.08",
-        "summary": "Руководство на сайте теперь описывает Sound FX, имена и цвета страниц лупера, Presets и Custom Frequency в Settings, с новыми снимками экрана из приложения.",
-        "href": "/guide",
-        "cta": "Открыть гид"
-      },
-      {
-        "id": "mic-fx-and-back",
-        "status": "in_progress",
-        "title": "Mic FX и кнопка Back",
-        "ticker": "Mic FX и Back",
-        "summary": "В следующем обновлении в Google Play: Mic FX с 8 пресетами. Долгое нажатие открывает Amount, EQ, Mid-sweep, Transpose (от -12 до 12) и Reverb. Одна кнопка Back вверху Loop и Mic возвращает последний очищенный дубль.",
-        "images": ["/assets/updates/mic-fx.jpg", "/assets/updates/looper-back.jpg"],
-        "imageAlts": ["Панель Mic FX. Выбран Phone Line.", "Страница лупера с кнопкой Back и дорожками."]
-      },
-      {
-        "id": "drum-fx",
-        "status": "in_progress",
-        "title": "Drum FX",
-        "ticker": "Drum FX",
-        "summary": "В следующем обновлении в Google Play: Drum FX с 8 эффектами для ударных, от Street Boom до Wire Glitch. Долгое нажатие открывает Amount, EQ, Mid-sweep, Transpose и Reverb для этого эффекта.",
-        "images": ["/assets/updates/drum-fx.jpg"],
-        "imageAlts": ["Панель Drum FX с восемью эффектами. Выбран один эффект."]
-      },
-      {
-        "id": "studio-workflow-refresh",
-        "status": "in_progress",
-        "title": "Режим Live, текст и Looper FX",
-        "ticker": "Режим Live, текст и 32 канала лупера",
-        "summary": "В следующем обновлении в Google Play: режимы PRO и LIVE (в LIVE имена, Clear и загрузка файлов заблокированы во время игры), текст песни остается на экране во время записи, и Looper FX на каждом канале лупера. У лупера 8 страниц и 4 канала на каждой, всего 32 канала.",
-        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
-        "imageAlts": ["Телесуфлёр текста открыт поверх студии.", "Окно Looper FX. Выбран Double Lane."]
-      },
-      {
         "id": "exclusive-packs-gallery",
         "status": "shipped",
         "title": "Эксклюзивные паки в Pro",
         "ticker": "Exclusive в Pro",
-        "summary": "Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты. Это 11 эксклюзивных наборов ударных в приложении, в дополнение к Factory 64. Кнопки скачивания нет. Сайт только описывает паки.",
+        "summary": "Теперь в Google Play, версия 1.08: кто покупает Pro, получает пак Exclusive бесплатно, без доплаты. Это 11 эксклюзивных наборов ударных в приложении, в дополнение к Factory 64. Кнопки скачивания нет. Сайт только описывает паки.",
         "href": "/exclusive",
         "cta": "Открыть Exclusive",
         "images": ["/assets/updates/exclusive-packs-poster.jpg"],
         "imageAlts": ["Постер Exclusive для Pro: 11 наборов ударных, открытие внутри приложения."]
       },
       {
-        "id": "early-access-play",
-        "status": "in_progress",
-        "title": "Early Access в Google Play",
-        "ticker": "Early Access в Play",
-        "summary": "Ранний доступ идет через внутреннее тестирование Google Play. Заполните форму Early Access на главной, чтобы запросить место в тесте.",
-        "href": "/#early-access",
-        "cta": "К форме Early Access"
+        "id": "mic-fx-and-back",
+        "status": "shipped",
+        "title": "Mic FX, Drum FX и кнопка Back",
+        "ticker": "Mic FX, Drum FX и Back",
+        "summary": "Теперь в Google Play, версия 1.08: 8 эффектов для микрофона и 8 для ударных. Долгое нажатие на эффект открывает Amount, EQ, Mid-sweep, Transpose и Reverb. Одна кнопка Back в Loop и Mic возвращает последний очищенный дубль.",
+        "images": ["/assets/updates/mic-fx.jpg", "/assets/updates/drum-fx.jpg"],
+        "imageAlts": ["Панель Mic FX. Выбран Phone Line.", "Панель Drum FX с восемью эффектами. Выбран один эффект."]
+      },
+      {
+        "id": "studio-workflow-refresh",
+        "status": "shipped",
+        "title": "Режим Live, текст и Looper FX",
+        "ticker": "Режим Live, текст и 32 канала лупера",
+        "summary": "Теперь в Google Play, версия 1.08: режим LIVE блокирует имена, Clear и загрузку файлов во время игры. Окно текста прокручивает слова, пока вы поете. На каждом канале лупера есть Looper FX, а у лупера 8 страниц по 4 канала, всего 32.",
+        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
+        "imageAlts": ["Окно текста открыто поверх приложения.", "Окно Looper FX. Выбран Double Lane."]
       }
     ]
   },
@@ -276,70 +195,43 @@
     "items": [
       {
         "id": "sound-fx-looper-pages",
-        "status": "in_progress",
+        "status": "shipped",
         "title": "Sound FX + ألوان صفحات اللوبر",
         "ticker": "Sound FX وألوان صفحات اللوبر",
-        "summary": "في تحديث Google Play القادم: في Sound FX ثمانية مؤثرات جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة والجلسات تحفظ إعدادات مؤثرات Sound FX الثمانية كلها. يمكن إعطاء كل صفحة في اللوبر اسماً وواحداً من 8 ألوان. للمقابض حلقة ذهبية جديدة تعرض القيمة، والجولة داخل التطبيق تشرح الآن كل ذلك.",
+        "summary": "الآن على Google Play، الإصدار 1.08: ثمانية مؤثرات Sound FX جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة تحفظ إعدادات المؤثرات الثمانية كلها. لكل صفحة في اللوبر اسم وواحد من 8 ألوان. المقابض تعرض القيمة بحلقة ذهبية، والجولة داخل التطبيق تشرح كل ذلك.",
         "href": "/guide",
         "cta": "فتح الدليل",
         "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
         "imageAlts": ["نافذة Sound FX مع اختيار Psy Orbit.", "شاشة Loop بأرقام صفحات ملوّنة واسم صفحة."]
       },
       {
-        "id": "user-guide-1-08",
-        "status": "shipped",
-        "title": "تحديث دليل المستخدم للإصدار 1.08",
-        "ticker": "تحديث دليل المستخدم للإصدار 1.08",
-        "summary": "دليل المستخدم على هذا الموقع يشرح الآن Sound FX، وأسماء صفحات اللوبر وألوانها، وPresets، وCustom Frequency في Settings، مع لقطات شاشة جديدة من التطبيق.",
-        "href": "/guide",
-        "cta": "فتح الدليل"
-      },
-      {
-        "id": "mic-fx-and-back",
-        "status": "in_progress",
-        "title": "Mic FX وزر Back",
-        "ticker": "Mic FX وBack",
-        "summary": "في تحديث Google Play القادم: Mic FX مع 8 إعدادات مسبقة. الضغط المطوّل يفتح Amount وEQ وMid-sweep وTranspose (من -12 إلى 12) وReverb. زر Back واحد في أعلى Loop وMic يعيد آخر تسجيل تم مسحه.",
-        "images": ["/assets/updates/mic-fx.jpg", "/assets/updates/looper-back.jpg"],
-        "imageAlts": ["لوحة Mic FX. Phone Line محدد.", "صفحة اللوبر مع زر Back والمسارات."]
-      },
-      {
-        "id": "drum-fx",
-        "status": "in_progress",
-        "title": "Drum FX",
-        "ticker": "Drum FX",
-        "summary": "في تحديث Google Play القادم: Drum FX مع 8 مؤثرات للطبول، من Street Boom إلى Wire Glitch. الضغط المطوّل يفتح Amount وEQ وMid-sweep وTranspose وReverb لذلك المؤثر.",
-        "images": ["/assets/updates/drum-fx.jpg"],
-        "imageAlts": ["لوحة Drum FX بثمانية مؤثرات. مؤثر واحد محدد."]
-      },
-      {
-        "id": "studio-workflow-refresh",
-        "status": "in_progress",
-        "title": "وضع Live والكلمات وLooper FX",
-        "ticker": "وضع Live والكلمات و32 قناة للوبر",
-        "summary": "في تحديث Google Play القادم: وضعا PRO وLIVE (في LIVE تُقفل الأسماء وClear وتحميل الملفات أثناء العزف)، والكلمات تبقى على الشاشة أثناء التسجيل، وLooper FX في كل قناة لوب. للوبر 8 صفحات و4 قنوات في كل صفحة، 32 قناة في المجموع.",
-        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
-        "imageAlts": ["تلبرومبتر الكلمات مفتوح فوق الاستوديو.", "نافذة Looper FX. Double Lane محدد."]
-      },
-      {
         "id": "exclusive-packs-gallery",
         "status": "shipped",
         "title": "حزم Exclusive في Pro",
         "ticker": "Exclusive في Pro",
-        "summary": "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية. ذلك 11 حزمة طبول Exclusive داخل التطبيق، إضافة إلى Factory 64. لا يوجد زر تنزيل. الموقع يصف الحزم فقط.",
+        "summary": "الآن على Google Play، الإصدار 1.08: من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية. ذلك 11 حزمة طبول Exclusive داخل التطبيق، إضافة إلى Factory 64. لا يوجد زر تنزيل. الموقع يصف الحزم فقط.",
         "href": "/exclusive",
         "cta": "عرض Exclusive",
         "images": ["/assets/updates/exclusive-packs-poster.jpg"],
         "imageAlts": ["ملصق Exclusive لـ Pro: 11 حزمة طبول، والفتح داخل التطبيق."]
       },
       {
-        "id": "early-access-play",
-        "status": "in_progress",
-        "title": "Early Access على Google Play",
-        "ticker": "Early Access على Play",
-        "summary": "الوصول المبكر يجري عبر الاختبار الداخلي في Google Play. املأ نموذج Early Access في الصفحة الرئيسية لطلب مكان في الاختبار.",
-        "href": "/#early-access",
-        "cta": "إلى نموذج Early Access"
+        "id": "mic-fx-and-back",
+        "status": "shipped",
+        "title": "Mic FX وDrum FX وزر Back",
+        "ticker": "Mic FX وDrum FX وBack",
+        "summary": "الآن على Google Play، الإصدار 1.08: ثمانية مؤثرات للميكروفون وثمانية للطبول. الضغط المطوّل على مؤثر يفتح Amount وEQ وMid-sweep وTranspose وReverb. زر Back واحد في Loop وMic يعيد آخر تسجيل تم مسحه.",
+        "images": ["/assets/updates/mic-fx.jpg", "/assets/updates/drum-fx.jpg"],
+        "imageAlts": ["لوحة Mic FX. Phone Line محدد.", "لوحة Drum FX بثمانية مؤثرات. مؤثر واحد محدد."]
+      },
+      {
+        "id": "studio-workflow-refresh",
+        "status": "shipped",
+        "title": "وضع Live والكلمات وLooper FX",
+        "ticker": "وضع Live والكلمات و32 قناة للوبر",
+        "summary": "الآن على Google Play، الإصدار 1.08: وضع LIVE يقفل الأسماء وClear وتحميل الملفات أثناء العزف. نافذة الكلمات تمرّر النص وأنت تغني. في كل قناة لوب يوجد Looper FX، وللوبر 8 صفحات بـ4 قنوات في كل صفحة، 32 في المجموع.",
+        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
+        "imageAlts": ["نافذة الكلمات مفتوحة فوق التطبيق.", "نافذة Looper FX. Double Lane محدد."]
       }
     ]
   }

@@ -120,7 +120,7 @@ const featureData = {
 
 // Fallback copy, used only if content.json fails to load.
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive", updates: "Updates" };
-const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", offer: "The first 44 get L Studio Pro free, with no limits.", offerDetail: "Full Pro, with no demo limits, before the official paid launch.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "56.5 MB", stat2: "Android 7.0+", stat3: "No ads" };
+const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", offer: "The first 44 get L Studio Pro free, with no limits.", offerDetail: "Full Pro, with no demo limits, before the official paid launch.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "60.6 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const heroOfferDefaults = {
   he: {
     offer: "44 הראשונים מקבלים את גרסת ה־Pro בחינם, בלי הגבלה.",
