@@ -18,8 +18,6 @@
         "kicker": "זה לאנשים אנלוגיים בעולם דיגיטלי",
         "title": "מוזיקה לא צריכה להרגיש כמו עבודה.",
         "body": "L-Studio התחילה בכלל ממשהו אחר. רציתי לבנות מקלדת שבה אני יכול לקבוע בעצמי איזה תדר יהיה בכל קליד. משם זה התגלגל להקלטה, לופר, תופים, מיקרופון, פאד ועוד. היום כל הדברים האלה נמצאים בתוך הטלפון.",
-        "offer": "44 הראשונים מקבלים את גרסת ה־Pro בחינם, בלי הגבלה.",
-        "offerDetail": "גרסת Pro מלאה, בלי מגבלות דמו, לפני ההשקה הרשמית בתשלום.",
         "ctaPrimary": "להכיר את L-Studio",
         "ctaSecondary": "איך זה התחיל",
         "stat1": "60.6MB",
@@ -109,7 +107,6 @@
         "lede": "הסאונד כבר מחכה לך.",
         "shortText": "8 עמודי פריסטים. 8 ערכות תופים. מוכן לנגן.",
         "description": "ב-L Studio Pro מקבלים את Factory Pack המלא: 8 עמודי פריסטים לסינתיסייזר (64 קולות), ואחריהם 8 ערכות תופים, 8 סגנונות בכל ערכה (64 סגנונות בסך הכול, לא 64 ערכות). בוחרים, טוענים, ומתחילים לנגן.",
-        "cta": "לקבלת גישה מוקדמת",
         "detailCta": "לגלות את Factory 64",
         "coverAlt": "כרזת L Studio Factory Pack: פריסטים עם 8 עמודים ו־64 קולות, ועוד תופים עם 8 ערכות ו־8 סגנונות",
         "drumsCta": "ערכות התופים"
@@ -246,29 +243,17 @@
       "finalCta": {
         "kicker": "06 / YOUR SOUND",
         "title": "אולי הגיע הזמן למצוא את הצליל שלך.",
-        "body": "אתה יכול להתחיל מסאונד אחד, מקצב, לופ או רעיון קטן. אתה לא באמת יודע מה ייצא עד שאתה מתחיל לשחק.",
-        "cta": "להיכנס ל-L-Studio"
+        "body": "אתה יכול להתחיל מסאונד אחד, מקצב, לופ או רעיון קטן. אתה לא באמת יודע מה ייצא עד שאתה מתחיל לשחק."
       },
       "tester": {
         "kicker": "EARLY ACCESS",
-        "title": "רוצה לנסות את L-Studio?",
-        "body": "L-Studio עדיין לפני ההשקה הרשמית. אני מחפש 44 אנשים שרוצים לפתוח אותה בחינם, לנגן, ולשלוח משוב אמיתי על מה שעובד ומה עוד צריך להשתפר. השאירו שם ומייל. זו בדיקה פנימית ב-Google Play ל-14 יום. אוסיף אתכם ידנית ואשלח למייל הזמנה מ-Google Play. האתר לא שולח קובץ APK.",
-        "offer": "44 הראשונים מקבלים את גרסת ה־Pro בחינם, בלי הגבלה.",
-        "offerDetail": "גרסת Pro מלאה, בלי מגבלות דמו, לפני ההשקה הרשמית בתשלום.",
-        "name": "שם",
-        "email": "כתובת מייל",
-        "consent": "אני מאשר/ת לקבל עדכונים על L-Studio.",
-        "submit": "אני רוצה לנסות",
-        "note": "גישה חינמית · בדיקה פנימית ב-Google Play ל-14 יום · 44 מקומות",
-        "sending": "שולחים...",
-        "success": "תודה. נרשמת. תקבלו במייל הזמנה לבדיקה פנימית ב-Google Play, מ-David או מהחנות. הבדיקה נמשכת 14 יום.",
-        "already": "המייל הזה כבר רשום. תקבלו הזמנה לבדיקה פנימית ב-Google Play ל-14 יום, מ-David או מהחנות. האתר לא שולח קישור APK.",
-        "full": "44 המקומות נתפסו. תודה שרציתם לנסות.",
-        "error": "לא הצלחנו לסיים את ההרשמה עכשיו. נסו שוב בעוד כמה דקות. זו בדיקה פנימית ב-Google Play ל-14 יום, בלי הורדת APK מהאתר.",
-        "invalid": "כתובת המייל לא תקינה.",
-        "spotsLabel": "פנויים",
-        "spotsCta": "לקבלת גישה מוקדמת",
-        "imageAlt": "קופסת L Studio Factory Pack שחורה עם הכיתוב GET THE PACK והמילים Small instrument. A lot of sound."
+        "title": "ההרשמה לבודקים נסגרה.",
+        "body": "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. אחרי הבדיקה, L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
+        "status": "ההרשמה לבודקים נסגרה. כל 44 המקומות נתפסו.",
+        "spotsLabel": "נתפסו",
+        "spotsStatus": "ההרשמה נסגרה",
+        "imageAlt": "קופסת L Studio Factory Pack שחורה עם הכיתוב GET THE PACK והמילים Small instrument. A lot of sound.",
+        "freeAccess": "ההרשמה נסגרה"
       },
       "footer": {
         "tagline": "זה לאנשים אנלוגיים בעולם דיגיטלי."
@@ -915,7 +900,7 @@
         "listenNote": "תדרים נמוכים כמעט לא נשמעים ברמקולים של הטלפון. לחוויה מלאה השתמשו באוזניות או ברמקולים מתאימים.",
         "synthsHeading": "עמודי הפריסטים",
         "synthsIntro": "שמונה עמודי פריסטים לסינתיסייזר. כל עמוד הוא משימה מוזיקלית אחת, שמונה קולות עם שם.",
-        "earlyAccessCta": "לקבלת גישה מוקדמת"
+        "launchNote": "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -1266,11 +1251,11 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro לאנדרואיד נמצא ב-Google Play. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד נמצא ב-Google Play, גרסה 1.08, 60.6MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע. הרשמה לגישה מוקדמת נשארת בדף הבית.",
+        "lede": "L Studio Pro לאנדרואיד מגיע ל-Google Play באוקטובר 2026, ב-8$. רכישה באתר אינה זמינה כרגע.",
+        "body": "L Studio Pro לאנדרואיד מגיע ל-Google Play באוקטובר 2026, ב-8$. גרסה 1.08, 60.6MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
-          "L Studio Pro לאנדרואיד ב-Google Play, 60.6MB",
+          "L Studio Pro לאנדרואיד ב-Google Play, 8$ בהשקה, 60.6MB",
           "מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה.",
           "רכישה בתשלום אינה מוצעת באתר הזה כרגע",
           "Factory Pack נשאר בעמודים שלו",
@@ -1302,12 +1287,12 @@
         "navLabel": "עדכונים",
         "pageTitle": "מה חדש ב-L Studio.",
         "pageKicker": "L-STUDIO / עדכונים",
-        "pageIntro": "עכשיו ב-Google Play, גרסה 1.08.",
+        "pageIntro": "גרסה 1.08 בבדיקה ב-Google Play עכשיו. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
         "tickerLabel": "עדכונים",
         "statusLabels": {
           "in_progress": "בעבודה",
           "upcoming": "בקרוב",
-          "shipped": "זמין"
+          "shipped": "מוכן"
         },
         "sections": {
           "in_progress": "בעבודה",
@@ -1320,7 +1305,7 @@
             "status": "shipped",
             "title": "Sound FX + צבעים לעמודי הלופר",
             "ticker": "Sound FX וצבעים לעמודי הלופר",
-            "summary": "עכשיו ב-Google Play, גרסה 1.08: 8 אפקטי Sound FX חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים שומרים את ההגדרות של כל ה-8. לכל עמוד בלופר יש שם ואחד מ-8 צבעים. הנובים מראים את הערך בטבעת זהב, והמדריך באפליקציה מלמד את כל זה.",
+            "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.08: 8 אפקטי Sound FX חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים שומרים את ההגדרות של כל ה-8. לכל עמוד בלופר יש שם ואחד מ-8 צבעים. הנובים מראים את הערך בטבעת זהב, והמדריך באפליקציה מלמד את כל זה.",
             "href": "/guide",
             "cta": "למדריך",
             "images": [
@@ -1337,7 +1322,7 @@
             "status": "shipped",
             "title": "חבילות Exclusive ב-Pro",
             "ticker": "Exclusive ב-Pro",
-            "summary": "עכשיו ב-Google Play, גרסה 1.08: מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת. אלה 11 ערכות תופים Exclusive באפליקציה, בנוסף ל-Factory 64. אין כפתור הורדה. האתר רק מציג מידע על הערכות.",
+            "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.08: מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת. אלה 11 ערכות תופים Exclusive באפליקציה, בנוסף ל-Factory 64. אין כפתור הורדה. האתר רק מציג מידע על הערכות.",
             "href": "/exclusive",
             "cta": "לעמוד Exclusive",
             "images": [
@@ -1352,7 +1337,7 @@
             "status": "shipped",
             "title": "Mic FX, Drum FX + כפתור Back",
             "ticker": "Mic FX, Drum FX ו-Back",
-            "summary": "עכשיו ב-Google Play, גרסה 1.08: 8 אפקטים למיקרופון ו-8 לתופים. לחיצה ארוכה על אפקט פותחת Amount, EQ, Mid-sweep, Transpose ו-Reverb. כפתור Back אחד ב-Loop וב-Mic מחזיר את הטייק האחרון שנמחק.",
+            "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.08: 8 אפקטים למיקרופון ו-8 לתופים. לחיצה ארוכה על אפקט פותחת Amount, EQ, Mid-sweep, Transpose ו-Reverb. כפתור Back אחד ב-Loop וב-Mic מחזיר את הטייק האחרון שנמחק.",
             "images": [
               "/assets/updates/mic-fx.jpg",
               "/assets/updates/drum-fx.jpg"
@@ -1367,7 +1352,7 @@
             "status": "shipped",
             "title": "מצב Live, מילים ו-Looper FX",
             "ticker": "מצב Live, מילים ו-32 ערוצי לופר",
-            "summary": "עכשיו ב-Google Play, גרסה 1.08: מצב LIVE נועל שמות, Clear וטעינת קבצים בזמן נגינה. חלון המילים גולל את הטקסט בזמן שאתם שרים. לכל ערוץ לופ יש Looper FX, ובלופר 8 עמודים עם 4 ערוצים בכל עמוד, 32 בסך הכל.",
+            "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.08: מצב LIVE נועל שמות, Clear וטעינת קבצים בזמן נגינה. חלון המילים גולל את הטקסט בזמן שאתם שרים. לכל ערוץ לופ יש Looper FX, ובלופר 8 עמודים עם 4 ערוצים בכל עמוד, 32 בסך הכל.",
             "images": [
               "/assets/updates/lyrics.jpg",
               "/assets/updates/looper-fx.jpg"
@@ -1378,6 +1363,11 @@
             ]
           }
         ]
+      },
+      "launch": {
+        "headline": "מגיע ל-Google Play באוקטובר 2026.",
+        "price": "L Studio Pro, 8$.",
+        "note": "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$."
       }
     },
     "en": {
@@ -1398,8 +1388,6 @@
         "kicker": "It's for analog people in a digital world",
         "title": "Music shouldn't feel like work.",
         "body": "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.",
-        "offer": "The first 44 get L Studio Pro free, with no limits.",
-        "offerDetail": "Full Pro, with no demo limits, before the official paid launch.",
         "ctaPrimary": "Meet L-Studio",
         "ctaSecondary": "How it started",
         "stat1": "60.6 MB",
@@ -1489,7 +1477,6 @@
         "lede": "The sound is already waiting for you.",
         "shortText": "8 preset pages. 8 drum kits. Ready to play.",
         "description": "L Studio Pro comes with the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits). Pick a sound or a kit, load it, and start playing.",
-        "cta": "Get early access",
         "detailCta": "Explore Factory 64",
         "coverAlt": "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles",
         "drumsCta": "Drum kits"
@@ -1626,29 +1613,17 @@
       "finalCta": {
         "kicker": "06 / YOUR SOUND",
         "title": "Maybe it's time to find your sound.",
-        "body": "You can start from one sound, a beat, a loop, or a small idea. You never really know what will come out until you start playing.",
-        "cta": "Enter L-Studio"
+        "body": "You can start from one sound, a beat, a loop, or a small idea. You never really know what will come out until you start playing."
       },
       "tester": {
         "kicker": "EARLY ACCESS",
-        "title": "Want to try L-Studio?",
-        "body": "L-Studio is not officially launched yet. I am looking for 44 people who want to open it free, play, and send real feedback about what works and what still needs work. Leave your name and email. This is a 14-day Google Play internal test. I will add you by hand and email you the Play invite. This site does not send an APK.",
-        "offer": "The first 44 get L Studio Pro free, with no limits.",
-        "offerDetail": "Full Pro, with no demo limits, before the official paid launch.",
-        "name": "Name",
-        "email": "Email address",
-        "consent": "I agree to receive L-Studio updates.",
-        "submit": "I want to try it",
-        "note": "Free access · 14-day Google Play internal test · 44 spots",
-        "sending": "Sending...",
-        "success": "Thank you. You are in. You will get a Google Play internal-test invite by email from David or from the store. The test runs for 14 days.",
-        "already": "This email is already signed up. You will get a Google Play internal-test invite by email from David or from the store. The test runs for 14 days. This site does not send an APK link.",
-        "full": "All 44 spots are taken. Thank you for wanting to try it.",
-        "error": "We could not finish your signup right now. Try again in a few minutes. This is a 14-day Google Play internal test, with no APK from this site.",
-        "invalid": "That email address is not valid.",
-        "spotsLabel": "available",
-        "spotsCta": "Get early access",
-        "imageAlt": "Black L Studio Factory Pack box with the words GET THE PACK and Small instrument. A lot of sound."
+        "title": "Tester signup is closed.",
+        "body": "All 44 spots are taken. Thank you to everyone who joined the Google Play test. After the test, L Studio Pro comes to Google Play in October 2026, for $8.",
+        "status": "Tester signup is closed. All 44 spots are taken.",
+        "spotsLabel": "taken",
+        "spotsStatus": "Signup closed",
+        "imageAlt": "Black L Studio Factory Pack box with the words GET THE PACK and Small instrument. A lot of sound.",
+        "freeAccess": "SIGNUP CLOSED"
       },
       "footer": {
         "tagline": "It's for analog people in a digital world."
@@ -2295,7 +2270,7 @@
         "listenNote": "Low frequencies are barely audible on phone speakers. For the full experience, use headphones or suitable speakers.",
         "synthsHeading": "Preset pages",
         "synthsIntro": "Eight synth preset pages. Each page is one musical job, eight named voices.",
-        "earlyAccessCta": "Get early access"
+        "launchNote": "Coming to Google Play in October 2026. L Studio Pro, $8."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -2646,11 +2621,11 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro for Android is on Google Play. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android is on Google Play, version 1.08, 60.6 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now. Early Access signup stays on the home page.",
+        "lede": "L Studio Pro for Android comes to Google Play in October 2026, for $8. Purchases are not available on this website right now.",
+        "body": "L Studio Pro for Android comes to Google Play in October 2026, for $8. Version 1.08, 60.6 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
-          "L Studio Pro for Android on Google Play, 60.6 MB",
+          "L Studio Pro for Android on Google Play, $8 at launch, 60.6 MB",
           "Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button.",
           "Paid purchase is not offered on this website right now",
           "Factory Pack stays on its own pages",
@@ -2682,12 +2657,12 @@
         "navLabel": "Updates",
         "pageTitle": "What's new in L Studio.",
         "pageKicker": "L-STUDIO / UPDATES",
-        "pageIntro": "Now on Google Play, version 1.08.",
+        "pageIntro": "Version 1.08 is in the Google Play test now. L Studio Pro comes to Google Play in October 2026, for $8.",
         "tickerLabel": "Updates",
         "statusLabels": {
           "in_progress": "In progress",
           "upcoming": "Coming up",
-          "shipped": "Available"
+          "shipped": "Ready"
         },
         "sections": {
           "in_progress": "In progress",
@@ -2700,7 +2675,7 @@
             "status": "shipped",
             "title": "Sound FX + looper page colors",
             "ticker": "Sound FX and looper page colors",
-            "summary": "Now on Google Play, version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Each looper page gets a name and one of 8 colors. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
+            "summary": "In the Google Play test now, version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Each looper page gets a name and one of 8 colors. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
             "href": "/guide",
             "cta": "Open guide",
             "images": [
@@ -2717,7 +2692,7 @@
             "status": "shipped",
             "title": "Exclusive packs in Pro",
             "ticker": "Exclusive in Pro",
-            "summary": "Now on Google Play, version 1.08: whoever buys Pro also gets the Exclusive pack free, at no extra cost. That is 11 Exclusive drum packs in the app, on top of Factory 64. There is no download button. This site only describes the packs.",
+            "summary": "In the Google Play test now, version 1.08: whoever buys Pro also gets the Exclusive pack free, at no extra cost. That is 11 Exclusive drum packs in the app, on top of Factory 64. There is no download button. This site only describes the packs.",
             "href": "/exclusive",
             "cta": "View Exclusive",
             "images": [
@@ -2732,7 +2707,7 @@
             "status": "shipped",
             "title": "Mic FX, Drum FX + Back",
             "ticker": "Mic FX, Drum FX and Back",
-            "summary": "Now on Google Play, version 1.08: 8 effects for the mic and 8 for the drums. A long-press on an effect opens Amount, EQ, Mid-sweep, Transpose, and Reverb. One Back button on Loop and Mic brings back the last cleared take.",
+            "summary": "In the Google Play test now, version 1.08: 8 effects for the mic and 8 for the drums. A long-press on an effect opens Amount, EQ, Mid-sweep, Transpose, and Reverb. One Back button on Loop and Mic brings back the last cleared take.",
             "images": [
               "/assets/updates/mic-fx.jpg",
               "/assets/updates/drum-fx.jpg"
@@ -2747,7 +2722,7 @@
             "status": "shipped",
             "title": "Live mode, lyrics, Looper FX",
             "ticker": "Live mode, lyrics and 32 looper channels",
-            "summary": "Now on Google Play, version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. Every loop channel has Looper FX, and the looper has 8 pages with 4 channels each, 32 in all.",
+            "summary": "In the Google Play test now, version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. Every loop channel has Looper FX, and the looper has 8 pages with 4 channels each, 32 in all.",
             "images": [
               "/assets/updates/lyrics.jpg",
               "/assets/updates/looper-fx.jpg"
@@ -2758,6 +2733,11 @@
             ]
           }
         ]
+      },
+      "launch": {
+        "headline": "Coming to Google Play in October 2026.",
+        "price": "L Studio Pro, $8.",
+        "note": "Coming to Google Play in October 2026. L Studio Pro, $8."
       }
     },
     "ru": {
@@ -2778,8 +2758,6 @@
         "kicker": "Это для аналоговых людей в цифровом мире",
         "title": "Музыка не должна ощущаться как работа.",
         "body": "L-Studio вообще началась с другого. Я хотел сделать клавиатуру, в которой сам смогу задавать частоту каждой клавиши. Оттуда всё выросло в запись, лупер, барабаны, микрофон, пэд и многое другое. Сегодня всё это живёт внутри телефона.",
-        "offer": "Первые 44 получают L Studio Pro бесплатно, без ограничений.",
-        "offerDetail": "Полная версия Pro, без демо-ограничений, до официального платного запуска.",
         "ctaPrimary": "Познакомиться с L-Studio",
         "ctaSecondary": "Как всё началось",
         "stat1": "60.6 МБ",
@@ -2869,7 +2847,6 @@
         "lede": "Звук уже ждёт вас.",
         "shortText": "8 страниц пресетов. 8 барабанных наборов. Готово к игре.",
         "description": "В L Studio Pro есть полный Factory Pack: 8 страниц пресетов синтезатора (64 голоса), затем 8 барабанных наборов, по 8 стилей в каждом (всего 64 стиля, не 64 наборов). Выберите звук или кит, загрузите и играйте.",
-        "cta": "Ранний доступ",
         "detailCta": "Открыть Factory 64",
         "coverAlt": "Постер L Studio Factory Pack: пресеты, 8 страниц и 64 голоса, плюс барабаны, 8 наборов и 8 стилей",
         "drumsCta": "Барабаны"
@@ -3006,29 +2983,17 @@
       "finalCta": {
         "kicker": "06 / YOUR SOUND",
         "title": "Может, пора найти свой звук.",
-        "body": "Можно начать с одного звука, ритма, лупа или маленькой идеи. Ты никогда не узнаешь, что получится, пока не начнёшь играть.",
-        "cta": "Войти в L-Studio"
+        "body": "Можно начать с одного звука, ритма, лупа или маленькой идеи. Ты никогда не узнаешь, что получится, пока не начнёшь играть."
       },
       "tester": {
         "kicker": "РАННИЙ ДОСТУП",
-        "title": "Хочешь попробовать L-Studio?",
-        "body": "L-Studio ещё не вышла официально. Я ищу 44 человека, которые хотят открыть её бесплатно, поиграть и прислать честный отзыв: что работает и что ещё нужно улучшить. Оставьте имя и почту. Это внутреннее тестирование в Google Play на 14 дней. Я добавлю вас вручную и пришлю на почту приглашение из Google Play. Сайт не отправляет APK.",
-        "offer": "Первые 44 получают L Studio Pro бесплатно, без ограничений.",
-        "offerDetail": "Полная версия Pro, без демо-ограничений, до официального платного запуска.",
-        "name": "Имя",
-        "email": "Email",
-        "consent": "Я согласен получать обновления о L-Studio.",
-        "submit": "Хочу попробовать",
-        "note": "Бесплатный доступ · внутренний тест Google Play на 14 дней · 44 места",
-        "sending": "Отправляем...",
-        "success": "Спасибо. Вы в списке. На почту придёт приглашение во внутреннее тестирование Google Play от David или из магазина. Тест длится 14 дней.",
-        "already": "Эта почта уже зарегистрирована. Приглашение во внутреннее тестирование Google Play на 14 дней придёт от David или из магазина. Сайт не отправляет ссылку на APK.",
-        "full": "Все 44 места заняты. Спасибо, что хотели попробовать.",
-        "error": "Не удалось завершить регистрацию. Попробуйте снова через несколько минут. Это внутреннее тестирование Google Play на 14 дней, без APK с сайта.",
-        "invalid": "Этот адрес почты недействителен.",
-        "spotsLabel": "свободно",
-        "spotsCta": "Ранний доступ",
-        "imageAlt": "Чёрная коробка L Studio Factory Pack с надписью GET THE PACK и словами Small instrument. A lot of sound."
+        "title": "Запись в тестеры закрыта.",
+        "body": "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. После теста L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
+        "status": "Запись в тестеры закрыта. Все 44 места заняты.",
+        "spotsLabel": "занято",
+        "spotsStatus": "Запись закрыта",
+        "imageAlt": "Чёрная коробка L Studio Factory Pack с надписью GET THE PACK и словами Small instrument. A lot of sound.",
+        "freeAccess": "ЗАПИСЬ ЗАКРЫТА"
       },
       "footer": {
         "tagline": "Это для аналоговых людей в цифровом мире."
@@ -3675,7 +3640,7 @@
         "listenNote": "Низкие частоты почти не слышны в динамиках телефона. Для полного звучания используйте наушники или подходящие колонки.",
         "synthsHeading": "Страницы пресетов",
         "synthsIntro": "Восемь страниц пресетов синтезатора. Каждая страница - одна музыкальная задача, восемь голосов с именами.",
-        "earlyAccessCta": "Получить ранний доступ"
+        "launchNote": "Выходит в Google Play в октябре 2026. L Studio Pro, $8."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -4026,11 +3991,11 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro для Android есть в Google Play. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android есть в Google Play, версия 1.08, 60.6 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату. Заявка Early Access остаётся на главной странице.",
+        "lede": "L Studio Pro для Android выйдет в Google Play в октябре 2026, за $8. Покупки на этом сайте сейчас недоступны.",
+        "body": "L Studio Pro для Android выйдет в Google Play в октябре 2026, за $8. Версия 1.08, 60.6 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
-          "L Studio Pro для Android в Google Play, 60.6 МБ",
+          "L Studio Pro для Android в Google Play, $8 при запуске, 60.6 МБ",
           "Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет.",
           "Платная покупка на этом сайте сейчас не предлагается",
           "Factory Pack остаётся на своих страницах",
@@ -4062,12 +4027,12 @@
         "navLabel": "Обновления",
         "pageTitle": "Что нового в L Studio.",
         "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-        "pageIntro": "Уже в Google Play, версия 1.08.",
+        "pageIntro": "Версия 1.08 сейчас в тесте Google Play. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
         "tickerLabel": "Обновления",
         "statusLabels": {
           "in_progress": "В работе",
           "upcoming": "Скоро",
-          "shipped": "Доступно"
+          "shipped": "Готово"
         },
         "sections": {
           "in_progress": "В работе",
@@ -4080,7 +4045,7 @@
             "status": "shipped",
             "title": "Sound FX + цвета страниц лупера",
             "ticker": "Sound FX и цвета страниц лупера",
-            "summary": "Теперь в Google Play, версия 1.08: 8 новых Sound FX, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты сохраняют настройки всех 8. Каждой странице лупера можно дать имя и один из 8 цветов. Регуляторы показывают значение золотым кольцом, а тур в приложении показывает всё это.",
+            "summary": "Сейчас в тесте Google Play, версия 1.08: 8 новых Sound FX, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты сохраняют настройки всех 8. Каждой странице лупера можно дать имя и один из 8 цветов. Регуляторы показывают значение золотым кольцом, а тур в приложении показывает всё это.",
             "href": "/guide",
             "cta": "Открыть гид",
             "images": [
@@ -4097,7 +4062,7 @@
             "status": "shipped",
             "title": "Эксклюзивные паки в Pro",
             "ticker": "Exclusive в Pro",
-            "summary": "Теперь в Google Play, версия 1.08: кто покупает Pro, получает пак Exclusive бесплатно, без доплаты. Это 11 эксклюзивных наборов ударных в приложении, в дополнение к Factory 64. Кнопки скачивания нет. Сайт только описывает паки.",
+            "summary": "Сейчас в тесте Google Play, версия 1.08: кто покупает Pro, получает пак Exclusive бесплатно, без доплаты. Это 11 эксклюзивных наборов ударных в приложении, в дополнение к Factory 64. Кнопки скачивания нет. Сайт только описывает паки.",
             "href": "/exclusive",
             "cta": "Открыть Exclusive",
             "images": [
@@ -4112,7 +4077,7 @@
             "status": "shipped",
             "title": "Mic FX, Drum FX и кнопка Back",
             "ticker": "Mic FX, Drum FX и Back",
-            "summary": "Теперь в Google Play, версия 1.08: 8 эффектов для микрофона и 8 для ударных. Долгое нажатие на эффект открывает Amount, EQ, Mid-sweep, Transpose и Reverb. Одна кнопка Back в Loop и Mic возвращает последний очищенный дубль.",
+            "summary": "Сейчас в тесте Google Play, версия 1.08: 8 эффектов для микрофона и 8 для ударных. Долгое нажатие на эффект открывает Amount, EQ, Mid-sweep, Transpose и Reverb. Одна кнопка Back в Loop и Mic возвращает последний очищенный дубль.",
             "images": [
               "/assets/updates/mic-fx.jpg",
               "/assets/updates/drum-fx.jpg"
@@ -4127,7 +4092,7 @@
             "status": "shipped",
             "title": "Режим Live, текст и Looper FX",
             "ticker": "Режим Live, текст и 32 канала лупера",
-            "summary": "Теперь в Google Play, версия 1.08: режим LIVE блокирует имена, Clear и загрузку файлов во время игры. Окно текста прокручивает слова, пока вы поете. На каждом канале лупера есть Looper FX, а у лупера 8 страниц по 4 канала, всего 32.",
+            "summary": "Сейчас в тесте Google Play, версия 1.08: режим LIVE блокирует имена, Clear и загрузку файлов во время игры. Окно текста прокручивает слова, пока вы поете. На каждом канале лупера есть Looper FX, а у лупера 8 страниц по 4 канала, всего 32.",
             "images": [
               "/assets/updates/lyrics.jpg",
               "/assets/updates/looper-fx.jpg"
@@ -4138,6 +4103,11 @@
             ]
           }
         ]
+      },
+      "launch": {
+        "headline": "Выходит в Google Play в октябре 2026.",
+        "price": "L Studio Pro, $8.",
+        "note": "Выходит в Google Play в октябре 2026. L Studio Pro, $8."
       }
     },
     "ar": {
@@ -4158,8 +4128,6 @@
         "kicker": "هذا للأشخاص التناظريين في عالم رقمي",
         "title": "الموسيقى لا يجب أن تشعرك أنها عمل.",
         "body": "بدأت L-Studio من شيء آخر تماماً. أردت بناء لوحة مفاتيح يمكنني فيها تحديد تردد كل مفتاح بنفسي. من هناك تطور الأمر إلى التسجيل، اللوبر، الإيقاعات، الميكروفون، الـPad وغيرها. اليوم كل هذا موجود داخل الهاتف.",
-        "offer": "أول 44 شخصاً يحصلون على L Studio Pro مجاناً، بلا حدود.",
-        "offerDetail": "نسخة Pro كاملة، بلا قيود تجريبية، قبل الإطلاق الرسمي المدفوع.",
         "ctaPrimary": "تعرّف على L-Studio",
         "ctaSecondary": "كيف بدأ الأمر",
         "stat1": "60.6 ميغابايت",
@@ -4249,7 +4217,6 @@
         "lede": "الصوت بانتظارك مسبقاً.",
         "shortText": "8 صفحات إعدادات. 8 حزم طبول. جاهزة للعزف.",
         "description": "مع Pro تحصل على Factory Pack كاملاً: 8 صفحات إعدادات للسينث (64 صوتاً)، ثم 8 حزم طبول، 8 أساليب في كل حزمة (64 أسلوباً في المجموع، وليس 64 حزمة). اختر صوتاً أو كيتاً، حمّله، وابدأ العزف.",
-        "cta": "احصل على وصول مبكر",
         "detailCta": "استكشف Factory 64",
         "coverAlt": "ملصق L Studio Factory Pack: إعدادات، 8 صفحات و64 صوتاً، بالإضافة إلى الطبول، 8 حزم و8 أساليب",
         "drumsCta": "حزم الطبول"
@@ -4386,29 +4353,17 @@
       "finalCta": {
         "kicker": "06 / YOUR SOUND",
         "title": "ربما حان الوقت لتجد صوتك.",
-        "body": "يمكنك البدء من صوت واحد، إيقاع، لوب أو فكرة صغيرة. أنت لا تعرف حقاً ماذا سيخرج حتى تبدأ باللعب.",
-        "cta": "ادخل إلى L-Studio"
+        "body": "يمكنك البدء من صوت واحد، إيقاع، لوب أو فكرة صغيرة. أنت لا تعرف حقاً ماذا سيخرج حتى تبدأ باللعب."
       },
       "tester": {
         "kicker": "وصول مبكر",
-        "title": "هل تريد تجربة L-Studio؟",
-        "body": "لم تُطلق L-Studio رسمياً بعد. أبحث عن 44 شخصاً يريدون فتحها مجاناً، العزف عليها، وإرسال ملاحظات حقيقية عما يعمل وعما ما زال يحتاج إلى تحسين. اترك اسمك وبريدك. هذه تجربة داخلية عبر Google Play لمدة 14 يوماً. سأضيفك يدوياً وأرسل إلى بريدك دعوة من Google Play. الموقع لا يرسل ملف APK.",
-        "offer": "أول 44 شخصاً يحصلون على L Studio Pro مجاناً، بلا حدود.",
-        "offerDetail": "نسخة Pro كاملة، بلا قيود تجريبية، قبل الإطلاق الرسمي المدفوع.",
-        "name": "الاسم",
-        "email": "البريد الإلكتروني",
-        "consent": "أوافق على تلقي تحديثات L-Studio.",
-        "submit": "أريد أن أجرب",
-        "note": "وصول مجاني · اختبار داخلي في Google Play لمدة 14 يوماً · 44 مكاناً",
-        "sending": "جارٍ الإرسال...",
-        "success": "شكراً. تم تسجيلك. ستصلك عبر البريد دعوة إلى الاختبار الداخلي في Google Play من David أو من المتجر. الاختبار لمدة 14 يوماً.",
-        "already": "هذا البريد مسجّل مسبقاً. ستصلك دعوة إلى الاختبار الداخلي في Google Play لمدة 14 يوماً من David أو من المتجر. الموقع لا يرسل رابط APK.",
-        "full": "المقاعد الـ44 ممتلئة. شكراً لرغبتك في التجربة.",
-        "error": "تعذر إكمال التسجيل الآن. حاول مرة أخرى بعد بضع دقائق. هذا اختبار داخلي عبر Google Play لمدة 14 يوماً، بلا تنزيل APK من الموقع.",
-        "invalid": "عنوان البريد هذا غير صالح.",
-        "spotsLabel": "متاح",
-        "spotsCta": "احصل على وصول مبكر",
-        "imageAlt": "صندوق L Studio Factory Pack أسود مع عبارة GET THE PACK والكلمات Small instrument. A lot of sound."
+        "title": "التسجيل للمختبرين مغلق.",
+        "body": "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. بعد الاختبار، يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
+        "status": "التسجيل للمختبرين مغلق. جميع الأماكن الـ44 محجوزة.",
+        "spotsLabel": "محجوزة",
+        "spotsStatus": "التسجيل مغلق",
+        "imageAlt": "صندوق L Studio Factory Pack أسود مع عبارة GET THE PACK والكلمات Small instrument. A lot of sound.",
+        "freeAccess": "التسجيل مغلق"
       },
       "footer": {
         "tagline": "هذا لأشخاص تناظريين في عالم رقمي."
@@ -5055,7 +5010,7 @@
         "listenNote": "الترددات المنخفضة تكاد لا تُسمع عبر سماعات الهاتف. لتجربة كاملة استخدم سماعات رأس أو مكبرات مناسبة.",
         "synthsHeading": "صفحات الإعدادات المسبقة",
         "synthsIntro": "ثماني صفحات إعدادات للسينث. كل صفحة مهمة موسيقية واحدة، وثمانية أصوات بأسماء.",
-        "earlyAccessCta": "احصل على وصول مبكر"
+        "launchNote": "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -5406,11 +5361,11 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro لأندرويد متاح على Google Play. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد متاح على Google Play، الإصدار 1.08، 60.6 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً. يبقى تسجيل الوصول المبكر في الصفحة الرئيسية.",
+        "lede": "L Studio Pro لأندرويد يصل إلى Google Play في أكتوبر 2026، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
+        "body": "L Studio Pro لأندرويد يصل إلى Google Play في أكتوبر 2026، بسعر 8$. الإصدار 1.08، 60.6 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
-          "L Studio Pro لأندرويد على Google Play، 60.6 ميغابايت",
+          "L Studio Pro لأندرويد على Google Play، 8$ عند الإطلاق، 60.6 ميغابايت",
           "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل.",
           "الشراء المدفوع غير معروض على هذا الموقع حالياً",
           "يبقى Factory Pack في صفحاته",
@@ -5442,12 +5397,12 @@
         "navLabel": "التحديثات",
         "pageTitle": "ما الجديد في L Studio.",
         "pageKicker": "L-STUDIO / التحديثات",
-        "pageIntro": "متاح الآن على Google Play، الإصدار 1.08.",
+        "pageIntro": "الإصدار 1.08 في اختبار Google Play الآن. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
         "tickerLabel": "التحديثات",
         "statusLabels": {
           "in_progress": "قيد العمل",
           "upcoming": "قريباً",
-          "shipped": "متاح"
+          "shipped": "جاهز"
         },
         "sections": {
           "in_progress": "قيد العمل",
@@ -5460,7 +5415,7 @@
             "status": "shipped",
             "title": "Sound FX + ألوان صفحات اللوبر",
             "ticker": "Sound FX وألوان صفحات اللوبر",
-            "summary": "الآن على Google Play، الإصدار 1.08: ثمانية مؤثرات Sound FX جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة تحفظ إعدادات المؤثرات الثمانية كلها. لكل صفحة في اللوبر اسم وواحد من 8 ألوان. المقابض تعرض القيمة بحلقة ذهبية، والجولة داخل التطبيق تشرح كل ذلك.",
+            "summary": "الآن في اختبار Google Play، الإصدار 1.08: ثمانية مؤثرات Sound FX جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة تحفظ إعدادات المؤثرات الثمانية كلها. لكل صفحة في اللوبر اسم وواحد من 8 ألوان. المقابض تعرض القيمة بحلقة ذهبية، والجولة داخل التطبيق تشرح كل ذلك.",
             "href": "/guide",
             "cta": "فتح الدليل",
             "images": [
@@ -5477,7 +5432,7 @@
             "status": "shipped",
             "title": "حزم Exclusive في Pro",
             "ticker": "Exclusive في Pro",
-            "summary": "الآن على Google Play، الإصدار 1.08: من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية. ذلك 11 حزمة طبول Exclusive داخل التطبيق، إضافة إلى Factory 64. لا يوجد زر تنزيل. الموقع يصف الحزم فقط.",
+            "summary": "الآن في اختبار Google Play، الإصدار 1.08: من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية. ذلك 11 حزمة طبول Exclusive داخل التطبيق، إضافة إلى Factory 64. لا يوجد زر تنزيل. الموقع يصف الحزم فقط.",
             "href": "/exclusive",
             "cta": "عرض Exclusive",
             "images": [
@@ -5492,7 +5447,7 @@
             "status": "shipped",
             "title": "Mic FX وDrum FX وزر Back",
             "ticker": "Mic FX وDrum FX وBack",
-            "summary": "الآن على Google Play، الإصدار 1.08: ثمانية مؤثرات للميكروفون وثمانية للطبول. الضغط المطوّل على مؤثر يفتح Amount وEQ وMid-sweep وTranspose وReverb. زر Back واحد في Loop وMic يعيد آخر تسجيل تم مسحه.",
+            "summary": "الآن في اختبار Google Play، الإصدار 1.08: ثمانية مؤثرات للميكروفون وثمانية للطبول. الضغط المطوّل على مؤثر يفتح Amount وEQ وMid-sweep وTranspose وReverb. زر Back واحد في Loop وMic يعيد آخر تسجيل تم مسحه.",
             "images": [
               "/assets/updates/mic-fx.jpg",
               "/assets/updates/drum-fx.jpg"
@@ -5507,7 +5462,7 @@
             "status": "shipped",
             "title": "وضع Live والكلمات وLooper FX",
             "ticker": "وضع Live والكلمات و32 قناة للوبر",
-            "summary": "الآن على Google Play، الإصدار 1.08: وضع LIVE يقفل الأسماء وClear وتحميل الملفات أثناء العزف. نافذة الكلمات تمرّر النص وأنت تغني. في كل قناة لوب يوجد Looper FX، وللوبر 8 صفحات بـ4 قنوات في كل صفحة، 32 في المجموع.",
+            "summary": "الآن في اختبار Google Play، الإصدار 1.08: وضع LIVE يقفل الأسماء وClear وتحميل الملفات أثناء العزف. نافذة الكلمات تمرّر النص وأنت تغني. في كل قناة لوب يوجد Looper FX، وللوبر 8 صفحات بـ4 قنوات في كل صفحة، 32 في المجموع.",
             "images": [
               "/assets/updates/lyrics.jpg",
               "/assets/updates/looper-fx.jpg"
@@ -5518,11 +5473,16 @@
             ]
           }
         ]
+      },
+      "launch": {
+        "headline": "قادم إلى Google Play في أكتوبر 2026.",
+        "price": "L Studio Pro، 8$.",
+        "note": "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$."
       }
     }
   },
   "earlyAccess": {
-    "spotsAvailable": 7,
+    "spotsAvailable": 0,
     "spotsTotal": 44
   },
   "commerce": {

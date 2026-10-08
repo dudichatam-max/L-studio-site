@@ -40,7 +40,7 @@ type ChromeCopy = {
   privacy: string;
   terms: string;
   presetsLabel: string;
-  earlyAccessCta: string;
+  launchNote: string;
   onThisPage: string;
 };
 
@@ -106,7 +106,7 @@ const emptyChrome = (language: Language): ChromeCopy => ({
   privacy: language === "he" ? "פרטיות" : language === "ru" ? "Приватность" : language === "ar" ? "الخصوصية" : "Privacy",
   terms: language === "he" ? "תנאי שימוש" : language === "ru" ? "Условия" : language === "ar" ? "الشروط" : "Terms",
   presetsLabel: "Factory 64",
-  earlyAccessCta: language === "he" ? "לקבלת גישה מוקדמת" : language === "ru" ? "Получить ранний доступ" : language === "ar" ? "احصل على وصول مبكر" : "Get early access",
+  launchNote: language === "he" ? "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$." : language === "ru" ? "Выходит в Google Play в октябре 2026. L Studio Pro, $8." : language === "ar" ? "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$." : "Coming to Google Play in October 2026. L Studio Pro, $8.",
   onThisPage: language === "he" ? "בעמוד הזה" : language === "ru" ? "На этой странице" : language === "ar" ? "في هذه الصفحة" : "On this page",
 });
 
@@ -206,7 +206,7 @@ export default function FactoryDrums() {
         const exclusiveNav = lang?.exclusive?.navLabel ?? lang?.nav?.exclusive;
         setUpdatesLabel(updatesNavLabelFrom(language, lang));
         if (typeof exclusiveNav === "string" && exclusiveNav) setExclusiveLabel(exclusiveNav);
-        const presets = lang?.factory64 as { navLabel?: string; earlyAccessCta?: string; back?: string; home?: string; features?: string; architecture?: string; guide?: string; privacy?: string; terms?: string; onThisPage?: string } | undefined;
+        const presets = lang?.factory64 as { navLabel?: string; launchNote?: string; back?: string; home?: string; features?: string; architecture?: string; guide?: string; privacy?: string; terms?: string; onThisPage?: string } | undefined;
         if (block) {
           setText({
             ...emptyDrums(language),
@@ -229,7 +229,7 @@ export default function FactoryDrums() {
               privacy: presets.privacy || emptyChrome(language).privacy,
               terms: presets.terms || emptyChrome(language).terms,
               presetsLabel: presets.navLabel || "Factory 64",
-              earlyAccessCta: presets.earlyAccessCta || emptyChrome(language).earlyAccessCta,
+              launchNote: presets.launchNote || emptyChrome(language).launchNote,
               onThisPage: presets.onThisPage || emptyChrome(language).onThisPage,
             },
           });
@@ -280,9 +280,7 @@ export default function FactoryDrums() {
           </h1>
           {text.intro ? <p>{text.intro}</p> : null}
           <div className="factory64-hero-actions">
-            <a className="button button--primary" href="/#early-access">
-              {chrome.earlyAccessCta}
-            </a>
+            <p className="launch-note">{chrome.launchNote}</p>
             <Link className="button button--light" href="/factory-64">
               {chrome.presetsLabel}
             </Link>

@@ -42,7 +42,7 @@ type Factory64Copy = {
   presetsHeading: string;
   oneLineList: string;
   storeBlurb: string;
-  earlyAccessCta: string;
+  launchNote: string;
   pages: FactoryPage[];
 };
 
@@ -85,7 +85,7 @@ const emptyCopy = (language: Language): Factory64Copy => ({
   presetsHeading: language === "he" ? "פריסטים" : language === "ru" ? "Пресеты" : language === "ar" ? "إعدادات مسبقة" : "Presets",
   oneLineList: "",
   storeBlurb: "",
-  earlyAccessCta: language === "he" ? "לקבלת גישה מוקדמת" : language === "ru" ? "Получить ранний доступ" : language === "ar" ? "احصل على وصول مبكر" : "Get early access",
+  launchNote: language === "he" ? "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$." : language === "ru" ? "Выходит в Google Play в октябре 2026. L Studio Pro, $8." : language === "ar" ? "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$." : "Coming to Google Play in October 2026. L Studio Pro, $8.",
   pages: [],
 });
 
@@ -235,9 +235,7 @@ export default function Factory64() {
                 <span>{text.voicesMeta}</span>
               </div>
               <div className="factory64-hero-actions">
-                <a className="button button--primary" href="/#early-access">
-                  {text.earlyAccessCta}
-                </a>
+                <p className="launch-note">{text.launchNote}</p>
                 <Link className="button button--light" href="/factory-64/drums">
                   {drumsLabel}
                 </Link>

@@ -854,3 +854,13 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
 .guide-page .guide-toc-screen { display: block; min-width: 0; padding: 8px 0 6px; border: 0; border-bottom: 1px solid rgba(242,241,235,.16); background: transparent; color: var(--paper); font-size: 14px; font-weight: 600; }
 .guide-page .guide-toc-sub a { display: block; min-width: 0; padding: 6px 0 6px 14px; border: 0; border-bottom: 1px solid rgba(242,241,235,.06); background: transparent; }
 html[dir="rtl"] .guide-page .guide-toc-sub a { padding: 6px 14px 6px 0; }
+
+/* Tester signup closed (David 2026-10-08): static ribbon, hero note, and launch notes. */
+.hero-offer--static:hover { border-color: rgba(227,197,101,.45); background: rgba(227,197,101,.08); }
+.spots-ribbon__link--static:hover .spots-ribbon__cta { color: var(--acid); background: transparent; }
+.launch-note { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin: 0; padding: 10px 16px; border: 1px solid rgba(227,197,101,.5); border-radius: 999px; color: var(--acid); font-size: 14px; font-weight: 700; line-height: 1.4; }
+.launch-note strong { color: var(--paper); font-weight: 600; }
+.final-cta .launch-note { margin: 28px auto 0; max-width: none; color: var(--acid); font-size: 15px; line-height: 1.4; }
+.tester-form--closed { gap: 18px; }
+.tester-form--closed .launch-note { align-self: flex-start; border-radius: 18px; }
+html[dir="ltr"] .final-cta { direction: ltr; }
