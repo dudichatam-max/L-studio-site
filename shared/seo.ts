@@ -53,26 +53,26 @@ const CANONICAL_PATH: Record<Exclude<SeoPageId, "not-found">, string> = {
 const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
   home: {
     en: {
-      title: "L Studio: Microtonal Music Workstation",
+      title: "L Studio: Android Music App with Looper, Drums and Mic",
       description:
-        "L Studio: microtonal music workstation for Android. Real-time creation, local audio, SOUND / LOOP / DRUM / MIC.",
+        "Make music on your Android phone. A looper with 8 pages and 4 channels per page, 8 drum kits, mic recording, a lyrics window that scrolls while you sing, and keys you tune to your own frequencies. Version 1.08.",
       socialDescription:
-        "Real-time microtonal music creation for Android. Local audio, SOUND / LOOP / DRUM / MIC.",
+        "Make music on your Android phone: looper, drums, mic, lyrics and keys you tune yourself.",
     },
     he: {
-      title: "L Studio: תחנת עבודה מוזיקלית מיקרוטונלית",
+      title: "L Studio: אפליקציה ליצירת מוזיקה באנדרואיד, לופר ותופים",
       description:
-        "L Studio: תחנת עבודה מוזיקלית מיקרוטונלית לאנדרואיד. יצירה בזמן אמת, אודיו מקומי, SOUND / LOOP / DRUM / MIC.",
+        "יוצרים מוזיקה בטלפון האנדרואיד: לופר עם 8 עמודים ו-4 ערוצים בכל עמוד, 8 ערכות תופים, הקלטה במיקרופון, חלון מילים שגולל בזמן שאתם שרים, וקלידים שמכוונים לתדרים משלכם. גרסה 1.08.",
     },
     ru: {
-      title: "L Studio: микротональная музыкальная рабочая станция",
+      title: "L Studio: приложение для создания музыки на Android, лупер и барабаны",
       description:
-        "L Studio: микротональная музыкальная рабочая станция для Android. Создание в реальном времени, локальное аудио, SOUND / LOOP / DRUM / MIC.",
+        "Создавай музыку на телефоне с Android: лупер с 8 страницами и 4 каналами на каждой, 8 наборов барабанов, запись с микрофона, окно текста, которое прокручивается, пока ты поёшь, и клавиши, которые ты настраиваешь на свои частоты. Версия 1.08.",
     },
     ar: {
-      title: "L Studio: محطة عمل موسيقية ميكروتونية",
+      title: "L Studio: تطبيق لصنع الموسيقى على أندرويد، لوبر وطبول",
       description:
-        "L Studio: محطة عمل موسيقية ميكروتونية لأندرويد. إنشاء في الوقت الفعلي، صوت محلي، SOUND / LOOP / DRUM / MIC.",
+        "اصنع الموسيقى على هاتف أندرويد: لوبر بـ8 صفحات و4 قنوات في كل صفحة، 8 مجموعات طبول، تسجيل بالميكروفون، نافذة كلمات تمرّ وأنت تغني، ومفاتيح تضبطها على تردداتك الخاصة. الإصدار 1.08.",
     },
   },
   privacy: {

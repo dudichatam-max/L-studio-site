@@ -15,10 +15,10 @@
         "updates": "עדכונים"
       },
       "hero": {
-        "kicker": "זה לאנשים אנלוגיים בעולם דיגיטלי",
-        "title": "מוזיקה לא צריכה להרגיש כמו עבודה.",
-        "body": "L-Studio התחילה בכלל ממשהו אחר. רציתי לבנות מקלדת שבה אני יכול לקבוע בעצמי איזה תדר יהיה בכל קליד. משם זה התגלגל להקלטה, לופר, תופים, מיקרופון, פאד ועוד. היום כל הדברים האלה נמצאים בתוך הטלפון.",
-        "ctaPrimary": "להכיר את L-Studio",
+        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.08",
+        "title": "יוצרים מוזיקה בטלפון.",
+        "body": "L Studio היא אפליקציה ליצירת מוזיקה בטלפון האנדרואיד. מקליטים לופים, מוסיפים תופים, שרים עם המילים מול העיניים, ואם בא לכם לצאת מהתווים הרגילים, מכוונים כל קליד לתדר משלו.",
+        "ctaPrimary": "לצפייה בסרטון הקצר",
         "ctaSecondary": "איך זה התחיל",
         "stat1": "60.6MB",
         "stat2": "Android 7.0+",
@@ -27,7 +27,7 @@
       "meet": {
         "kicker": "L-STUDIO / היכרות",
         "title": "הכירו את L-studio",
-        "body": "פתחו את הסרטון הקצר והכירו את הסטודיו.",
+        "body": "פתחו את הסרטון הקצר והכירו את האפליקציה.",
         "videoTitle": "היכרות עם L-studio"
       },
       "signalStrip": {
@@ -42,10 +42,10 @@
           "יום אחד שאלתי את עצמי למה רק שבעה.",
           "פתאום עלה לי בראש צליל נוסף. \"אל\".",
           "משם נולד הרעיון הראשון של L-Studio. רציתי לבנות מקלדת שבה אני יכול לקבוע בעצמי איזה תדר שייך לכל קליד.",
-          "בכלל לא תכננתי לבנות סטודיו. רציתי כלי נגינה.",
+          "בכלל לא תכננתי לבנות אפליקציה גדולה. רציתי כלי נגינה.",
           "אחר כך רציתי להקליט את מה שאני מנגן, אז בניתי הקלטת WAV. אחר כך רציתי לופר. ואז תופים. ואז מיקרופון.",
           "וכל פעם שאלתי את עצמי, למה לא להכניס גם את זה?",
-          "ככה, לאט לאט, הכלי הפך לסטודיו."
+          "ככה, לאט לאט, הכלי הפך לאפליקציה שלמה ליצירת מוזיקה."
         ],
         "closing": "מה שהתחיל בחיפוש אחר התו השמיני הפך ל-L-Studio."
       },
@@ -83,8 +83,8 @@
         ],
         "pipeline": [
           "קלידים",
-          "DSP / קולות",
-          "אפקטים / מיקס",
+          "סאונד",
+          "אפקטים",
           "WAV"
         ],
         "specsTitle": "מפת נתיב האודיו",
@@ -113,13 +113,13 @@
       },
       "vision": {
         "kicker": "05 / החזון",
-        "title": "בניתי את הסטודיו שהייתי צריך.",
+        "title": "בניתי את האפליקציה שהייתי צריך.",
         "author": "דוד חתם, מפתח L-Studio",
         "body": [
           "אני לא מגיע מרקע של לימודי מוזיקה. לא למדתי איך בונים תוכנת מוזיקה מקצועית ולא הייתה לי מערכת גדולה לעבוד איתה.",
           "אני פשוט אוהב מוזיקה ורציתי לשלוט בסאונד בדרך שהייתה לי טבעית.",
           "הכול התחיל מהרעיון של לקבוע בעצמי את התדרים של הקלידים. משם הוספתי הקלטה, לופר, תופים, מיקרופון ועוד דברים שהייתי צריך בדרך.",
-          "החזון הוא לפתח סביב האפליקציה שבניתי קהילה של אומנים, מוזיקאים מיועד בעיקר למעמד חלש, אנשים בלי גישה למחשב או תוכנה, יוצרים שמחפשים דרך איכותית ופשוטה לבטא את היצירתיות שלהם."
+          "אני רוצה לבנות סביב L Studio קהילה של אנשים שאוהבים מוזיקה. גם מי שאין לו מחשב או תוכנה יקרה יכול ליצור מהטלפון שכבר יש לו ביד."
         ],
         "mainLine": "זה לאנשים אנלוגיים בעולם דיגיטלי.",
         "cards": [
@@ -135,13 +135,13 @@
           },
           {
             "no": "03",
-            "title": "לקחת את הסטודיו איתך",
+            "title": "לקחת את המוזיקה איתך",
             "body": "היצירה לא צריכה לחכות למחשב. אם יש לך רעיון, אפשר להתחיל ממנו עכשיו."
           }
         ]
       },
       "faq": {
-        "kicker": "07 / FAQ",
+        "kicker": "06 / שאלות",
         "title": "שאלות ותשובות",
         "items": [
           {
@@ -241,7 +241,7 @@
         ]
       },
       "finalCta": {
-        "kicker": "06 / YOUR SOUND",
+        "kicker": "07 / הצליל שלך",
         "title": "אולי הגיע הזמן למצוא את הצליל שלך.",
         "body": "אתה יכול להתחיל מסאונד אחד, מקצב, לופ או רעיון קטן. אתה לא באמת יודע מה ייצא עד שאתה מתחיל לשחק."
       },
@@ -1385,10 +1385,10 @@
         "updates": "Updates"
       },
       "hero": {
-        "kicker": "It's for analog people in a digital world",
-        "title": "Music shouldn't feel like work.",
-        "body": "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.",
-        "ctaPrimary": "Meet L-Studio",
+        "kicker": "Android music app · Version 1.08",
+        "title": "Make music on your phone.",
+        "body": "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.",
+        "ctaPrimary": "Watch the short",
         "ctaSecondary": "How it started",
         "stat1": "60.6 MB",
         "stat2": "Android 7.0+",
@@ -1397,7 +1397,7 @@
       "meet": {
         "kicker": "L-STUDIO / INTRO",
         "title": "Meet L-studio",
-        "body": "Open the short and meet the studio.",
+        "body": "Open the short and meet the app.",
         "videoTitle": "Meet L-studio intro"
       },
       "signalStrip": {
@@ -1412,10 +1412,10 @@
           "One day I asked myself, why only seven?",
           "Suddenly another sound popped into my head. \"Al.\"",
           "That's where the first idea for L-Studio was born. I wanted to build a keyboard where I could set which frequency belongs to each key myself.",
-          "I never planned to build a studio. I wanted an instrument.",
+          "I never planned to build a big app. I wanted an instrument.",
           "Then I wanted to record what I played, so I built a WAV recorder. Then I wanted a looper. Then drums. Then a microphone.",
           "And every time I asked myself, why not add that too?",
-          "That's how, little by little, the instrument became a studio."
+          "That's how, little by little, the instrument became a whole app for making music."
         ],
         "closing": "What started as a search for the eighth note became L-Studio."
       },
@@ -1452,9 +1452,9 @@
           }
         ],
         "pipeline": [
-          "KEYBOARD",
-          "DSP / VOICES",
-          "FX / MIX",
+          "KEYS",
+          "SOUND",
+          "FX",
           "WAV"
         ],
         "specsTitle": "Technical signal map",
@@ -1483,13 +1483,13 @@
       },
       "vision": {
         "kicker": "05 / THE VISION",
-        "title": "I built the studio I needed.",
+        "title": "I built the app I needed.",
         "author": "David Chatam, L-Studio developer",
         "body": [
           "I don't come from a background of music studies. I never learned how to build professional music software, and I didn't have a big system to work with.",
           "I just love music and wanted to control sound in a way that felt natural to me.",
           "It all started from the idea of setting the frequencies of the keys myself. From there I added recording, a looper, drums, a microphone and other things I needed along the way.",
-          "The vision is to grow around the app I built a community of artists and musicians, aimed especially at people with fewer resources: people without access to a computer or software, creators looking for a quality, simple way to express their creativity."
+          "I want to build a community around L Studio of people who love music. Even if you don't have a computer or expensive software, you can create with the phone you already have."
         ],
         "mainLine": "It's for analog people in a digital world.",
         "cards": [
@@ -1505,13 +1505,13 @@
           },
           {
             "no": "03",
-            "title": "Take the studio with you",
+            "title": "Take your music with you",
             "body": "Creating shouldn't have to wait for a computer. If you have an idea, you can start from it right now."
           }
         ]
       },
       "faq": {
-        "kicker": "07 / FAQ",
+        "kicker": "06 / FAQ",
         "title": "Questions and answers",
         "items": [
           {
@@ -1611,7 +1611,7 @@
         ]
       },
       "finalCta": {
-        "kicker": "06 / YOUR SOUND",
+        "kicker": "07 / YOUR SOUND",
         "title": "Maybe it's time to find your sound.",
         "body": "You can start from one sound, a beat, a loop, or a small idea. You never really know what will come out until you start playing."
       },
@@ -2755,10 +2755,10 @@
         "updates": "Обновления"
       },
       "hero": {
-        "kicker": "Это для аналоговых людей в цифровом мире",
-        "title": "Музыка не должна ощущаться как работа.",
-        "body": "L-Studio вообще началась с другого. Я хотел сделать клавиатуру, в которой сам смогу задавать частоту каждой клавиши. Оттуда всё выросло в запись, лупер, барабаны, микрофон, пэд и многое другое. Сегодня всё это живёт внутри телефона.",
-        "ctaPrimary": "Познакомиться с L-Studio",
+        "kicker": "Музыкальное приложение для Android · версия 1.08",
+        "title": "Создавай музыку на телефоне.",
+        "body": "L Studio это приложение для создания музыки на телефоне с Android. Записывай лупы, добавляй барабаны, пой, глядя на текст песни, а если хочется выйти за привычные ноты, настрой для каждой клавиши свою частоту.",
+        "ctaPrimary": "Смотреть короткое видео",
         "ctaSecondary": "Как всё началось",
         "stat1": "60.6 МБ",
         "stat2": "Android 7.0+",
@@ -2767,7 +2767,7 @@
       "meet": {
         "kicker": "L-STUDIO / ЗНАКОМСТВО",
         "title": "Знакомьтесь: L-studio",
-        "body": "Откройте короткое видео и познакомьтесь со студией.",
+        "body": "Откройте короткое видео и познакомьтесь с приложением.",
         "videoTitle": "Знакомство с L-studio"
       },
       "signalStrip": {
@@ -2782,10 +2782,10 @@
           "Однажды я спросил себя, почему их только семь.",
           "Вдруг в голове появился ещё один звук. «Аль».",
           "Оттуда родилась первая идея L-Studio. Я хотел сделать клавиатуру, в которой сам смогу задавать, какая частота принадлежит каждой клавише.",
-          "Я вообще не планировал строить студию. Я хотел музыкальный инструмент.",
+          "Я вообще не планировал делать большое приложение. Я хотел музыкальный инструмент.",
           "Потом я захотел записывать то, что играю, и сделал WAV-рекордер. Потом захотел лупер. Потом барабаны. Потом микрофон.",
           "И каждый раз я спрашивал себя: а почему бы не добавить и это?",
-          "Так, шаг за шагом, инструмент превратился в студию."
+          "Так, шаг за шагом, инструмент превратился в целое приложение для создания музыки."
         ],
         "closing": "То, что началось с поиска восьмой ноты, стало L-Studio."
       },
@@ -2823,8 +2823,8 @@
         ],
         "pipeline": [
           "КЛАВИШИ",
-          "DSP / ГОЛОСА",
-          "FX / МИКС",
+          "ЗВУК",
+          "ЭФФЕКТЫ",
           "WAV"
         ],
         "specsTitle": "Карта аудиосигнала",
@@ -2853,13 +2853,13 @@
       },
       "vision": {
         "kicker": "05 / ВИДЕНИЕ",
-        "title": "Я построил студию, которая была нужна мне самому.",
+        "title": "Я сделал приложение, которое было нужно мне самому.",
         "author": "Давид Хатам, разработчик L-Studio",
         "body": [
           "Я не из музыкального образования. Я не учился строить профессиональный музыкальный софт, и у меня не было большой системы для работы.",
           "Я просто люблю музыку и хотел управлять звуком так, как это было естественно для меня.",
           "Всё началось с идеи самому задавать частоты клавиш. Оттуда я добавил запись, лупер, барабаны, микрофон и другие вещи, которые были нужны по пути.",
-          "Видение: развить вокруг приложения, которое я создал, сообщество художников и музыкантов, рассчитанное в первую очередь на менее обеспеченных людей, тех, у кого нет доступа к компьютеру или программам, творцов, ищущих качественный и простой способ выразить свою креативность."
+          "Я хочу собрать вокруг L Studio сообщество людей, которые любят музыку. Даже если у тебя нет компьютера или дорогих программ, можно творить на телефоне, который уже есть у тебя в руке."
         ],
         "mainLine": "Это для аналоговых людей в цифровом мире.",
         "cards": [
@@ -2875,13 +2875,13 @@
           },
           {
             "no": "03",
-            "title": "Взять студию с собой",
+            "title": "Музыка всегда с тобой",
             "body": "Творчество не должно ждать компьютера. Если есть идея, можно начать с неё прямо сейчас."
           }
         ]
       },
       "faq": {
-        "kicker": "07 / FAQ",
+        "kicker": "06 / ВОПРОСЫ",
         "title": "Вопросы и ответы",
         "items": [
           {
@@ -2981,7 +2981,7 @@
         ]
       },
       "finalCta": {
-        "kicker": "06 / YOUR SOUND",
+        "kicker": "07 / ТВОЙ ЗВУК",
         "title": "Может, пора найти свой звук.",
         "body": "Можно начать с одного звука, ритма, лупа или маленькой идеи. Ты никогда не узнаешь, что получится, пока не начнёшь играть."
       },
@@ -4125,10 +4125,10 @@
         "updates": "التحديثات"
       },
       "hero": {
-        "kicker": "هذا للأشخاص التناظريين في عالم رقمي",
-        "title": "الموسيقى لا يجب أن تشعرك أنها عمل.",
-        "body": "بدأت L-Studio من شيء آخر تماماً. أردت بناء لوحة مفاتيح يمكنني فيها تحديد تردد كل مفتاح بنفسي. من هناك تطور الأمر إلى التسجيل، اللوبر، الإيقاعات، الميكروفون، الـPad وغيرها. اليوم كل هذا موجود داخل الهاتف.",
-        "ctaPrimary": "تعرّف على L-Studio",
+        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.08",
+        "title": "اصنع الموسيقى على هاتفك.",
+        "body": "L Studio تطبيق لصنع الموسيقى على هاتف أندرويد. سجّل لوبات، أضف طبولاً، غنِّ وكلمات الأغنية أمام عينيك، وإن أردت الخروج عن النوتات المعتادة، اضبط لكل مفتاح تردده الخاص.",
+        "ctaPrimary": "شاهد الفيديو القصير",
         "ctaSecondary": "كيف بدأ الأمر",
         "stat1": "60.6 ميغابايت",
         "stat2": "Android 7.0+",
@@ -4137,7 +4137,7 @@
       "meet": {
         "kicker": "L-STUDIO / مقدمة",
         "title": "تعرّف على L-studio",
-        "body": "افتحوا الفيديو القصير وتعرّفوا على الاستوديو.",
+        "body": "افتحوا الفيديو القصير وتعرّفوا على التطبيق.",
         "videoTitle": "تعرّف على L-studio"
       },
       "signalStrip": {
@@ -4152,10 +4152,10 @@
           "في يوم من الأيام سألت نفسي، لماذا سبع نغمات فقط؟",
           "فجأة خطر ببالي صوت إضافي: \"آل\".",
           "من هناك وُلدت الفكرة الأولى لـL-Studio. أردت بناء لوحة مفاتيح يمكنني فيها تحديد التردد الذي ينتمي لكل مفتاح بنفسي.",
-          "لم أخطط إطلاقاً لبناء استوديو. أردت آلة موسيقية.",
+          "لم أخطط إطلاقاً لبناء تطبيق كبير. أردت آلة موسيقية.",
           "بعدها أردت تسجيل ما أعزفه، فبنيت مسجّل WAV. ثم أردت لوبر. ثم إيقاعات. ثم ميكروفون.",
           "وفي كل مرة كنت أسأل نفسي، لماذا لا أضيف هذا أيضاً؟",
-          "هكذا، شيئاً فشيئاً، تحولت الأداة إلى استوديو."
+          "هكذا، شيئاً فشيئاً، تحولت الأداة إلى تطبيق كامل لصنع الموسيقى."
         ],
         "closing": "ما بدأ كبحث عن النغمة الثامنة أصبح L-Studio."
       },
@@ -4193,8 +4193,8 @@
         ],
         "pipeline": [
           "المفاتيح",
-          "DSP / الأصوات",
-          "المؤثرات / المزيج",
+          "الصوت",
+          "المؤثرات",
           "WAV"
         ],
         "specsTitle": "خريطة مسار الصوت",
@@ -4223,13 +4223,13 @@
       },
       "vision": {
         "kicker": "05 / الرؤية",
-        "title": "بنيت الاستوديو الذي كنت بحاجة إليه.",
+        "title": "بنيت التطبيق الذي كنت بحاجة إليه.",
         "author": "دافيد حاتام، مطوّر L-Studio",
         "body": [
           "أنا لا آتي من خلفية دراسة موسيقية. لم أتعلم كيف تُبنى برامج الموسيقى الاحترافية، ولم يكن لدي نظام كبير للعمل معه.",
           "أنا فقط أحب الموسيقى وأردت التحكم بالصوت بطريقة كانت طبيعية بالنسبة لي.",
           "كل شيء بدأ من فكرة تحديد ترددات المفاتيح بنفسي. من هناك أضفت التسجيل، اللوبر، الإيقاعات، الميكروفون وأشياء أخرى احتجتها في الطريق.",
-          "الرؤية هي بناء مجتمع من الفنّانين والموسيقيّين حول التطبيق الذي بنيتُه، موجّه بشكل أساسي لمن هم أضعف اقتصادياً: أشخاص بلا وصول إلى حاسوب أو برنامج، ومبدعون يبحثون عن طريق نوعيّة وبسيطة للتعبير عن إبداعهم."
+          "أريد أن أبني حول L Studio مجتمعاً من الناس الذين يحبون الموسيقى. حتى من لا يملك حاسوباً أو برنامجاً غالياً يمكنه الإبداع من الهاتف الذي في يده."
         ],
         "mainLine": "هذا لأشخاص تناظريين في عالم رقمي.",
         "cards": [
@@ -4245,13 +4245,13 @@
           },
           {
             "no": "03",
-            "title": "خذ الاستوديو معك",
+            "title": "خذ موسيقاك معك",
             "body": "الإبداع لا يجب أن ينتظر جهاز كمبيوتر. إن كانت لديك فكرة، يمكنك البدء منها الآن."
           }
         ]
       },
       "faq": {
-        "kicker": "07 / FAQ",
+        "kicker": "06 / أسئلة",
         "title": "أسئلة وأجوبة",
         "items": [
           {
@@ -4351,7 +4351,7 @@
         ]
       },
       "finalCta": {
-        "kicker": "06 / YOUR SOUND",
+        "kicker": "07 / صوتك",
         "title": "ربما حان الوقت لتجد صوتك.",
         "body": "يمكنك البدء من صوت واحد، إيقاع، لوب أو فكرة صغيرة. أنت لا تعرف حقاً ماذا سيخرج حتى تبدأ باللعب."
       },
