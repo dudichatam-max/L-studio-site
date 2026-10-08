@@ -207,20 +207,20 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What L Studio is working on, what is coming next, and what is already available.",
+        "What's new in L Studio for Android. Version 1.08 is now on Google Play.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "על מה L Studio עובדת, מה בדרך, ומה כבר זמין.",
+      description: "מה חדש ב-L Studio לאנדרואיד. גרסה 1.08 כבר ב-Google Play.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Над чем работает L Studio, что на подходе и что уже доступно.",
+        "Что нового в L Studio для Android. Версия 1.08 уже в Google Play.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما تعمل عليه L Studio، وما هو قادم، وما هو متاح بالفعل.",
+      description: "ما الجديد في L Studio لأندرويد. الإصدار 1.08 متاح الآن على Google Play.",
     },
   },
   buy: {
