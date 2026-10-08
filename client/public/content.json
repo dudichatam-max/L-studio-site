@@ -331,9 +331,9 @@
               },
               {
                 "id": "freq",
-                "title": "Costume Frequency",
+                "title": "Custom Frequency",
                 "body": [
-                  "Costume Frequency היא השורה הראשונה ב-Settings. הקשה פותחת את Tune frequencies (Hz).",
+                  "Custom Frequency היא השורה הראשונה ב-Settings. הקשה פותחת את Tune frequencies (Hz).",
                   "לכל קליד יש תדר ב-Hz. אפשר לכוון את המקלדת לתדרים שרוצים, או לנגן מתבנית.",
                   "Ready scales (D = 261 Hz) הן התבניות: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, ו-Pentatonic. הקשה על שם מפעילה את התבנית הזאת, עם D על 261 Hz.",
                   "Reset בשורת הכותרת. Default מעל Close. הקשה על Close סוגרת את החלון."
@@ -374,8 +374,7 @@
                   "הקשה על Load פותחת את הסאונד השמור במקום. הקשה על Save שומרת את הסאונד הנוכחי שם. הקשה על Edit משנה את השם.",
                   "Save שומר גם את ההגדרות של כל 8 ה-Sound FX ואיזה אפקט דולק. Load מחזיר אותם בדיוק. פריסטים של Factory 64 ופריסטים ישנים נטענים בלי לשנות את ה-Sound FX.",
                   "הקשה על Import בוחרת קובץ עמוד. הקשה על Save בשורה התחתונה מבקשת מהטלפון איפה לשמור את העמוד. הקשה על Close סוגרת את החלון."
-                ],
-                "media": "assets/guide/presets-window.jpg"
+                ]
               },
               {
                 "id": "key",
@@ -390,11 +389,12 @@
                 "title": "Settings",
                 "body": [
                   "הקשה על Settings, בראש כל מסך, פותחת את החלון הזה. השורה מתחת לכותרת אומרת Language & console session.",
-                  "הקשה על Costume Frequency, השורה הראשונה, פותחת את Tune frequencies (Hz).",
+                  "הקשה על Custom Frequency, השורה הראשונה, פותחת את Tune frequencies (Hz).",
                   "הקשה על Language סוגרת את Settings ופותחת את Choose language. Continue מחיל את השפה. Dismiss סוגר את הרשימה.",
                   "הקשה על Save as פותחת את Save Console. Save מאשר. Cancel סוגר. סשן שמור שומר גם את ה-Sound FX ואת השמות והצבעים של עמודי הלופ.",
                   "הקשה על Load פותחת את Load Console. אם אין שמור, כתוב No saved sessions. Export all ו-Import all נמצאים שם. Delete שואל לפני שהוא מוחק.",
                   "הקשה על Show tutorial מתחילה את הסיור מחדש.",
+                  "הסיור עודכן ל-1.08. עכשיו הוא מלמד את Sound FX, את 8 עמודי הלופ עם השמות והצבעים שלהם, ואת טבעת הזהב שמראה את הערך של נוב. פותחים אותו מ-Settings > Show tutorial.",
                   "הקשה על Factory 64 שואלת Restore Factory 64? Restore מחליף את פריסטי Factory 64, את כל 8 חבילות ה-Style, ואת כל 11 חבילות ה-Exclusive, ואז טוען את מקום 1 בעמוד 1. Cancel סוגר את השאלה.",
                   "הקשה על benchmark, מתחת ל-Factory 64, פותחת את כלי בדיקת האודיו.",
                   "ה-X ו-Close סוגרים את Settings."
@@ -1404,12 +1404,10 @@
             "ticker": "רענון זרימת העבודה, 32 ערוצי לופר",
             "summary": "Pro ו-Live לנגינה מול אנשים, מילים שנשארות על המסך בזמן הקלטה, ואפקטים על הלופר. בלופר 8 עמודים ו-4 ערוצים בכל עמוד, 32 ערוצים בסך הכל. בבדיקות לפני פרסום רחב.",
             "images": [
-              "/assets/updates/lyrics.jpg",
-              "/assets/updates/looper-fx.jpg"
+              "/assets/updates/lyrics.jpg"
             ],
             "imageAlts": [
-              "טלפרומפטר למילים פתוח מעל הסטודיו.",
-              "לוח Looper FX. Trance Stack נבחר."
+              "טלפרומפטר למילים פתוח מעל הסטודיו."
             ]
           }
         ]
@@ -1746,9 +1744,9 @@
               },
               {
                 "id": "freq",
-                "title": "Costume Frequency",
+                "title": "Custom Frequency",
                 "body": [
-                  "Costume Frequency is the first row in Settings. A tap opens Tune frequencies (Hz).",
+                  "Custom Frequency is the first row in Settings. A tap opens Tune frequencies (Hz).",
                   "Each key shows its frequency in Hz. Set the keyboard to the frequencies you want, or play from a template.",
                   "Ready scales (D = 261 Hz) are the templates: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, and Pentatonic. A tap on a name applies that template, with D at 261 Hz.",
                   "Reset is on the title row. Default is above Close. A tap on Close closes the window."
@@ -1789,8 +1787,7 @@
                   "A tap on Load opens the saved sound in that slot. A tap on Save stores the current sound there. A tap on Edit changes the name.",
                   "Save also stores the settings of all 8 Sound FX and which effect is on. Load brings them back exactly. Factory 64 presets and older presets load without changing the Sound FX.",
                   "A tap on Import picks a page file. A tap on Save on the bottom row asks the phone where to store the page. A tap on Close closes the window."
-                ],
-                "media": "assets/guide/presets-window.jpg"
+                ]
               },
               {
                 "id": "key",
@@ -1805,11 +1802,12 @@
                 "title": "Settings",
                 "body": [
                   "A tap on Settings, at the top of every screen, opens this window. The line under the title reads Language & console session.",
-                  "A tap on Costume Frequency, the first row, opens Tune frequencies (Hz).",
+                  "A tap on Custom Frequency, the first row, opens Tune frequencies (Hz).",
                   "A tap on Language closes Settings and opens Choose language. Continue applies the language. Dismiss closes the list.",
                   "A tap on Save as opens Save Console. Save confirms. Cancel closes it. A saved session also keeps the Sound FX and the loop page names and colors.",
                   "A tap on Load opens Load Console. If nothing is saved, it reads No saved sessions. Export all and Import all are in that window. Delete asks before it removes a session.",
                   "A tap on Show tutorial starts the tour again.",
+                  "The tour was updated for 1.08. It now covers Sound FX, the 8 loop pages with their names and colors, and the gold ring that shows a knob's value. Open it from Settings > Show tutorial.",
                   "A tap on Factory 64 asks Restore Factory 64? Restore replaces the Factory 64 presets, all 8 Style drum packs, and all 11 Exclusive packs, then loads slot 1 on page 1. Cancel closes the question.",
                   "A tap on benchmark, under Factory 64, opens the audio test tool.",
                   "The X and Close close Settings."
@@ -2819,12 +2817,10 @@
             "ticker": "Studio workflow refresh, 32 looper channels",
             "summary": "Pro and Live for playing in front of people, lyrics that stay on screen while you record, and effects on the loop. The looper has 8 pages and 4 channels on each page, 32 channels in all. In testing before a wider release.",
             "images": [
-              "/assets/updates/lyrics.jpg",
-              "/assets/updates/looper-fx.jpg"
+              "/assets/updates/lyrics.jpg"
             ],
             "imageAlts": [
-              "Lyrics teleprompter open over the studio.",
-              "Looper FX panel with Trance Stack selected."
+              "Lyrics teleprompter open over the studio."
             ]
           }
         ]
@@ -3161,9 +3157,9 @@
               },
               {
                 "id": "freq",
-                "title": "Costume Frequency",
+                "title": "Custom Frequency",
                 "body": [
-                  "Costume Frequency это первая строка в Settings. Нажатие открывает Tune frequencies (Hz).",
+                  "Custom Frequency это первая строка в Settings. Нажатие открывает Tune frequencies (Hz).",
                   "У каждой клавиши есть частота в Hz. Можно настроить клавиатуру на нужные частоты или играть по шаблону.",
                   "Ready scales (D = 261 Hz) это шаблоны: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd и Pentatonic. Нажатие на имя применяет этот шаблон, с D на 261 Hz.",
                   "Reset в строке заголовка. Default над Close. Нажатие на Close закрывает окно."
@@ -3204,8 +3200,7 @@
                   "Нажатие на Load открывает сохранённый звук в этом месте. Нажатие на Save кладёт туда текущий звук. Нажатие на Edit меняет имя.",
                   "Save также сохраняет настройки всех 8 Sound FX и то, какой эффект включён. Load возвращает их точно. Пресеты Factory 64 и старые пресеты загружаются, не меняя Sound FX.",
                   "Нажатие на Import выбирает файл страницы. Нажатие на Save в нижней строке спрашивает телефон, куда сохранить страницу. Нажатие на Close закрывает окно."
-                ],
-                "media": "assets/guide/presets-window.jpg"
+                ]
               },
               {
                 "id": "key",
@@ -3220,11 +3215,12 @@
                 "title": "Settings",
                 "body": [
                   "Нажатие на Settings, вверху каждого экрана, открывает это окно. Строка под заголовком говорит Language & console session.",
-                  "Нажатие на Costume Frequency, первую строку, открывает Tune frequencies (Hz).",
+                  "Нажатие на Custom Frequency, первую строку, открывает Tune frequencies (Hz).",
                   "Нажатие на Language закрывает Settings и открывает Choose language. Continue применяет язык. Dismiss закрывает список.",
                   "Нажатие на Save as открывает Save Console. Save подтверждает. Cancel закрывает. Сохранённая сессия хранит также Sound FX и имена и цвета страниц лупера.",
                   "Нажатие на Load открывает Load Console. Если ничего не сохранено, написано No saved sessions. Export all и Import all находятся там. Delete спрашивает, прежде чем удалить сессию.",
                   "Нажатие на Show tutorial начинает тур заново.",
+                  "Тур обновлён для 1.08. Теперь он показывает Sound FX, 8 страниц лупера с их именами и цветами и золотое кольцо, которое показывает значение регулятора. Откройте его через Settings > Show tutorial.",
                   "Нажатие на Factory 64 спрашивает Restore Factory 64? Restore заменяет пресеты Factory 64, все 8 наборов Style и все 11 наборов Exclusive, затем загружает место 1 на странице 1. Cancel закрывает вопрос.",
                   "Нажатие на benchmark, под Factory 64, открывает инструмент проверки звука.",
                   "X и Close закрывают Settings."
@@ -4234,12 +4230,10 @@
             "ticker": "Обновление рабочего процесса, 32 канала лупера",
             "summary": "Pro и Live для игры перед людьми, слова остаются на экране во время записи, и эффекты на лупе. У лупера 8 страниц и 4 канала на каждой, всего 32 канала. На проверке перед более широким выпуском.",
             "images": [
-              "/assets/updates/lyrics.jpg",
-              "/assets/updates/looper-fx.jpg"
+              "/assets/updates/lyrics.jpg"
             ],
             "imageAlts": [
-              "Телесуфлёр текста открыт поверх студии.",
-              "Панель Looper FX. Выбран Trance Stack."
+              "Телесуфлёр текста открыт поверх студии."
             ]
           }
         ]
@@ -4576,9 +4570,9 @@
               },
               {
                 "id": "freq",
-                "title": "Costume Frequency",
+                "title": "Custom Frequency",
                 "body": [
-                  "Costume Frequency هو الصف الأول في Settings. الضغط يفتح Tune frequencies (Hz).",
+                  "Custom Frequency هو الصف الأول في Settings. الضغط يفتح Tune frequencies (Hz).",
                   "لكل مفتاح تردد بالـ Hz. اضبط لوحة المفاتيح على الترددات التي تريد، أو اعزف من قالب.",
                   "Ready scales (D = 261 Hz) هي القوالب: Major وMinor وHarmonic وDorian وMixolydian وHijaz وKurd وPentatonic. الضغط على اسم يطبّق ذلك القالب، مع D على 261 Hz.",
                   "Reset في سطر العنوان. Default فوق Close. الضغط على Close يغلق النافذة."
@@ -4619,8 +4613,7 @@
                   "الضغط على Load يفتح الصوت المحفوظ في الخانة. الضغط على Save يخزّن الصوت الحالي هناك. الضغط على Edit يغيّر الاسم.",
                   "Save يحفظ أيضاً إعدادات مؤثرات Sound FX الثمانية وأي مؤثر يعمل. Load يعيدها كما هي. إعدادات Factory 64 والإعدادات القديمة تُحمَّل دون تغيير Sound FX.",
                   "الضغط على Import يختار ملف صفحة. الضغط على Save في الصف السفلي يسأل الهاتف أين يحفظ الصفحة. الضغط على Close يغلق النافذة."
-                ],
-                "media": "assets/guide/presets-window.jpg"
+                ]
               },
               {
                 "id": "key",
@@ -4635,11 +4628,12 @@
                 "title": "Settings",
                 "body": [
                   "الضغط على Settings، في أعلى كل شاشة، يفتح هذه النافذة. السطر تحت العنوان يقول Language & console session.",
-                  "الضغط على Costume Frequency، الصف الأول، يفتح Tune frequencies (Hz).",
+                  "الضغط على Custom Frequency، الصف الأول، يفتح Tune frequencies (Hz).",
                   "الضغط على Language يغلق Settings ويفتح Choose language. Continue يطبّق اللغة. Dismiss يغلق القائمة.",
                   "الضغط على Save as يفتح Save Console. Save يؤكد. Cancel يغلق. الجلسة المحفوظة تحفظ أيضاً Sound FX وأسماء صفحات اللوب وألوانها.",
                   "الضغط على Load يفتح Load Console. إذا لم يوجد محفوظ، يظهر No saved sessions. Export all وImport all هناك. Delete يسأل قبل أن يحذف الجلسة.",
                   "الضغط على Show tutorial يبدأ الجولة من جديد.",
+                  "تم تحديث الجولة للإصدار 1.08. وهي تشرح الآن Sound FX، وصفحات اللوب الثماني بأسمائها وألوانها، والحلقة الذهبية التي تعرض قيمة المقبض. افتحها من Settings > Show tutorial.",
                   "الضغط على Factory 64 يسأل Restore Factory 64? Restore يستبدل إعدادات Factory 64 وكل حزم Style الثماني وكل حزم Exclusive الإحدى عشرة، ثم يحمّل الخانة 1 في الصفحة 1. Cancel يغلق السؤال.",
                   "الضغط على benchmark، تحت Factory 64، يفتح أداة فحص الصوت.",
                   "X وClose يغلقان Settings."
@@ -5649,12 +5643,10 @@
             "ticker": "تحديث مسار العمل، 32 قناة للوبر",
             "summary": "Pro وLive للعزف أمام الناس، والكلمات تبقى على الشاشة أثناء التسجيل، ومؤثرات على اللوب. للوبر 8 صفحات و4 قنوات في كل صفحة، 32 قناة في المجموع. قيد الاختبار قبل إصدار أوسع.",
             "images": [
-              "/assets/updates/lyrics.jpg",
-              "/assets/updates/looper-fx.jpg"
+              "/assets/updates/lyrics.jpg"
             ],
             "imageAlts": [
-              "تلبرومبتر الكلمات مفتوح فوق الاستوديو.",
-              "لوحة Looper FX. Trance Stack محدد."
+              "تلبرومبتر الكلمات مفتوح فوق الاستوديو."
             ]
           }
         ]
