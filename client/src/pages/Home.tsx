@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from "react";
+import { useEffect, useState } from "react";
 import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Facebook, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, X, Instagram } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
@@ -120,25 +120,13 @@ const featureData = {
 
 // Fallback copy, used only if content.json fails to load.
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive", updates: "Updates" };
-const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", offer: "The first 44 get L Studio Pro free, with no limits.", offerDetail: "Full Pro, with no demo limits, before the official paid launch.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "60.6 MB", stat2: "Android 7.0+", stat3: "No ads" };
-const heroOfferDefaults = {
-  he: {
-    offer: "44 הראשונים מקבלים את גרסת ה־Pro בחינם, בלי הגבלה.",
-    offerDetail: "גרסת Pro מלאה, בלי מגבלות דמו, לפני ההשקה הרשמית בתשלום.",
-  },
-  en: {
-    offer: "The first 44 get L Studio Pro free, with no limits.",
-    offerDetail: "Full Pro, with no demo limits, before the official paid launch.",
-  },
-  ru: {
-    offer: "Первые 44 получают L Studio Pro бесплатно, без ограничений.",
-    offerDetail: "Полная версия Pro, без демо-ограничений, до официального платного запуска.",
-  },
-  ar: {
-    offer: "أول 44 شخصاً يحصلون على L Studio Pro مجاناً، بلا حدود.",
-    offerDetail: "نسخة Pro كاملة، بلا قيود تجريبية، قبل الإطلاق الرسمي المدفوع.",
-  },
-} satisfies Record<Language, { offer: string; offerDetail: string }>;
+const heroDefault = { kicker: "It's for analog people in a digital world", title: "Music shouldn't feel like work.", body: "L-Studio actually began as something else. I wanted to build a keyboard where I could set the frequency of every key myself. From there it grew into recording, a looper, drums, a microphone, a pad and more. Today all of that lives inside your phone.", ctaPrimary: "Meet L-Studio", ctaSecondary: "How it started", stat1: "60.6 MB", stat2: "Android 7.0+", stat3: "No ads" };
+const launchDefaults: Record<Language, { headline: string; price: string; note: string }> = {
+  he: {headline: "מגיע ל-Google Play באוקטובר 2026.", price: "L Studio Pro, 8$.", note: "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$."},
+  en: {headline: "Coming to Google Play in October 2026.", price: "L Studio Pro, $8.", note: "Coming to Google Play in October 2026. L Studio Pro, $8."},
+  ru: {headline: "Выходит в Google Play в октябре 2026.", price: "L Studio Pro, $8.", note: "Выходит в Google Play в октябре 2026. L Studio Pro, $8."},
+  ar: {headline: "قادم إلى Google Play في أكتوبر 2026.", price: "L Studio Pro، 8$.", note: "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$."},
+};
 const signalDefault = { text: "From key to sound to loop to recording", note: "All inside L-Studio" };
 const INTRO_SHORT_EMBED = "https://www.youtube.com/embed/a2CGFDQkZ80";
 const meetDefaults = {
@@ -171,7 +159,7 @@ const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started wi
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
 const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
-const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "L Studio Pro comes with the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", cta: "Get early access", coverAlt: "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles" };
+const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "L Studio Pro comes with the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", coverAlt: "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles" };
 const exclusiveFan = {
   jpg: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.jpg`,
   webp: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.webp`,
@@ -184,26 +172,14 @@ const exclusiveDefaults: Record<Language, { navLabel: string; comingSoon: string
 };
 const visionDefault = { kicker: "05 / THE VISION", title: "I built the studio I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take the studio with you", body: "Creating shouldn't have to wait for a computer." }] };
 const faqDefault = { kicker: "07 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
-const finalCtaDefault = { kicker: "06 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea.", cta: "Enter L-Studio" };
+const finalCtaDefault = { kicker: "06 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea." };
 type TesterCopy = {
   kicker: string;
   title: string;
   body: string;
-  offer: string;
-  offerDetail: string;
-  name: string;
-  email: string;
-  consent: string;
-  submit: string;
-  note: string;
-  sending: string;
-  success: string;
-  already: string;
-  full: string;
-  error: string;
-  invalid: string;
+  status: string;
   spotsLabel: string;
-  spotsCta: string;
+  spotsStatus: string;
   imageAlt: string;
   freeAccess: string;
   localAudio: string;
@@ -212,94 +188,46 @@ type TesterCopy = {
 const testerDefaults = {
   he: {
     kicker: "EARLY ACCESS",
-    title: "רוצה לנסות את L-Studio?",
-    body: "L-Studio עדיין לפני ההשקה הרשמית. אני מחפש 44 אנשים שרוצים לפתוח אותה בחינם, לנגן, ולשלוח משוב אמיתי על מה שעובד ומה עוד צריך להשתפר. השאירו שם ומייל. זו בדיקה פנימית ב-Google Play ל-14 יום. אוסיף אתכם ידנית ואשלח למייל הזמנה מ-Google Play. האתר לא שולח קובץ APK.",
-    offer: "44 הראשונים מקבלים את גרסת ה־Pro בחינם, בלי הגבלה.",
-    offerDetail: "גרסת Pro מלאה, בלי מגבלות דמו, לפני ההשקה הרשמית בתשלום.",
-    name: "שם",
-    email: "כתובת מייל",
-    consent: "אני מאשר/ת לקבל עדכונים על L-Studio.",
-    submit: "אני רוצה לנסות",
-    note: "גישה חינמית · בדיקה פנימית ב-Google Play ל-14 יום · 44 מקומות",
-    sending: "שולחים...",
-    success: "תודה. נרשמת. תקבלו במייל הזמנה לבדיקה פנימית ב-Google Play, מ-David או מהחנות. הבדיקה נמשכת 14 יום.",
-    already: "המייל הזה כבר רשום. תקבלו הזמנה לבדיקה פנימית ב-Google Play ל-14 יום, מ-David או מהחנות. האתר לא שולח קישור APK.",
-    full: "44 המקומות נתפסו. תודה שרציתם לנסות.",
-    error: "לא הצלחנו לסיים את ההרשמה עכשיו. נסו שוב בעוד כמה דקות. זו בדיקה פנימית ב-Google Play ל-14 יום, בלי הורדת APK מהאתר.",
-    invalid: "כתובת המייל לא תקינה.",
-    spotsLabel: "פנויים",
-    spotsCta: "לקבלת גישה מוקדמת",
+    title: "ההרשמה לבודקים נסגרה.",
+    body: "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. אחרי הבדיקה, L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
+    status: "ההרשמה לבודקים נסגרה. כל 44 המקומות נתפסו.",
+    spotsLabel: "נתפסו",
+    spotsStatus: "ההרשמה נסגרה",
     imageAlt: "קופסת L Studio Factory Pack שחורה עם הכיתוב GET THE PACK והמילים Small instrument. A lot of sound.",
-    freeAccess: "גישה חינמית",
+    freeAccess: "ההרשמה נסגרה",
     localAudio: "אודיו מקומי",
   },
   en: {
     kicker: "EARLY ACCESS",
-    title: "Want to try L-Studio?",
-    body: "L-Studio is not officially launched yet. I am looking for 44 people who want to open it free, play, and send real feedback about what works and what still needs work. Leave your name and email. This is a 14-day Google Play internal test. I will add you by hand and email you the Play invite. This site does not send an APK.",
-    offer: "The first 44 get L Studio Pro free, with no limits.",
-    offerDetail: "Full Pro, with no demo limits, before the official paid launch.",
-    name: "Name",
-    email: "Email address",
-    consent: "I agree to receive L-Studio updates.",
-    submit: "I want to try it",
-    note: "Free access · 14-day Google Play internal test · 44 spots",
-    sending: "Sending...",
-    success: "Thank you. You are in. You will get a Google Play internal-test invite by email from David or from the store. The test runs for 14 days.",
-    already: "This email is already signed up. You will get a Google Play internal-test invite by email from David or from the store. The test runs for 14 days. This site does not send an APK link.",
-    full: "All 44 spots are taken. Thank you for wanting to try it.",
-    error: "We could not finish your signup right now. Try again in a few minutes. This is a 14-day Google Play internal test, with no APK from this site.",
-    invalid: "That email address is not valid.",
-    spotsLabel: "available",
-    spotsCta: "Get early access",
+    title: "Tester signup is closed.",
+    body: "All 44 spots are taken. Thank you to everyone who joined the Google Play test. After the test, L Studio Pro comes to Google Play in October 2026, for $8.",
+    status: "Tester signup is closed. All 44 spots are taken.",
+    spotsLabel: "taken",
+    spotsStatus: "Signup closed",
     imageAlt: "Black L Studio Factory Pack box with the words GET THE PACK and Small instrument. A lot of sound.",
-    freeAccess: "FREE ACCESS",
+    freeAccess: "SIGNUP CLOSED",
     localAudio: "LOCAL AUDIO",
   },
   ru: {
     kicker: "РАННИЙ ДОСТУП",
-    title: "Хочешь попробовать L-Studio?",
-    body: "L-Studio ещё не вышла официально. Я ищу 44 человека, которые хотят открыть её бесплатно, поиграть и прислать честный отзыв: что работает и что ещё нужно улучшить. Оставьте имя и почту. Это внутреннее тестирование в Google Play на 14 дней. Я добавлю вас вручную и пришлю на почту приглашение из Google Play. Сайт не отправляет APK.",
-    offer: "Первые 44 получают L Studio Pro бесплатно, без ограничений.",
-    offerDetail: "Полная версия Pro, без демо-ограничений, до официального платного запуска.",
-    name: "Имя",
-    email: "Email",
-    consent: "Я согласен получать обновления о L-Studio.",
-    submit: "Хочу попробовать",
-    note: "Бесплатный доступ · внутренний тест Google Play на 14 дней · 44 места",
-    sending: "Отправляем...",
-    success: "Спасибо. Вы в списке. На почту придёт приглашение во внутреннее тестирование Google Play от David или из магазина. Тест длится 14 дней.",
-    already: "Эта почта уже зарегистрирована. Приглашение во внутреннее тестирование Google Play на 14 дней придёт от David или из магазина. Сайт не отправляет ссылку на APK.",
-    full: "Все 44 места заняты. Спасибо, что хотели попробовать.",
-    error: "Не удалось завершить регистрацию. Попробуйте снова через несколько минут. Это внутреннее тестирование Google Play на 14 дней, без APK с сайта.",
-    invalid: "Этот адрес почты недействителен.",
-    spotsLabel: "свободно",
-    spotsCta: "Ранний доступ",
+    title: "Запись в тестеры закрыта.",
+    body: "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. После теста L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
+    status: "Запись в тестеры закрыта. Все 44 места заняты.",
+    spotsLabel: "занято",
+    spotsStatus: "Запись закрыта",
     imageAlt: "Чёрная коробка L Studio Factory Pack с надписью GET THE PACK и словами Small instrument. A lot of sound.",
-    freeAccess: "БЕСПЛАТНЫЙ ДОСТУП",
+    freeAccess: "ЗАПИСЬ ЗАКРЫТА",
     localAudio: "ЛОКАЛЬНЫЙ ЗВУК",
   },
   ar: {
     kicker: "وصول مبكر",
-    title: "هل تريد تجربة L-Studio؟",
-    body: "لم تُطلق L-Studio رسمياً بعد. أبحث عن 44 شخصاً يريدون فتحها مجاناً، العزف عليها، وإرسال ملاحظات حقيقية عما يعمل وعما ما زال يحتاج إلى تحسين. اترك اسمك وبريدك. هذه تجربة داخلية عبر Google Play لمدة 14 يوماً. سأضيفك يدوياً وأرسل إلى بريدك دعوة من Google Play. الموقع لا يرسل ملف APK.",
-    offer: "أول 44 شخصاً يحصلون على L Studio Pro مجاناً، بلا حدود.",
-    offerDetail: "نسخة Pro كاملة، بلا قيود تجريبية، قبل الإطلاق الرسمي المدفوع.",
-    name: "الاسم",
-    email: "البريد الإلكتروني",
-    consent: "أوافق على تلقي تحديثات L-Studio.",
-    submit: "أريد أن أجرب",
-    note: "وصول مجاني · اختبار داخلي في Google Play لمدة 14 يوماً · 44 مكاناً",
-    sending: "جارٍ الإرسال...",
-    success: "شكراً. تم تسجيلك. ستصلك عبر البريد دعوة إلى الاختبار الداخلي في Google Play من David أو من المتجر. الاختبار لمدة 14 يوماً.",
-    already: "هذا البريد مسجّل مسبقاً. ستصلك دعوة إلى الاختبار الداخلي في Google Play لمدة 14 يوماً من David أو من المتجر. الموقع لا يرسل رابط APK.",
-    full: "المقاعد الـ44 ممتلئة. شكراً لرغبتك في التجربة.",
-    error: "تعذر إكمال التسجيل الآن. حاول مرة أخرى بعد بضع دقائق. هذا اختبار داخلي عبر Google Play لمدة 14 يوماً، بلا تنزيل APK من الموقع.",
-    invalid: "عنوان البريد هذا غير صالح.",
-    spotsLabel: "متاح",
-    spotsCta: "احصل على وصول مبكر",
+    title: "التسجيل للمختبرين مغلق.",
+    body: "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. بعد الاختبار، يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
+    status: "التسجيل للمختبرين مغلق. جميع الأماكن الـ44 محجوزة.",
+    spotsLabel: "محجوزة",
+    spotsStatus: "التسجيل مغلق",
     imageAlt: "صندوق L Studio Factory Pack أسود مع عبارة GET THE PACK والكلمات Small instrument. A lot of sound.",
-    freeAccess: "وصول مجاني",
+    freeAccess: "التسجيل مغلق",
     localAudio: "صوت محلي",
   },
 } satisfies Record<Language, TesterCopy>;
@@ -314,13 +242,9 @@ function FeatureMedia({ image, alt }: { image: string; alt: string }) {
 
 // Renders a headline as "lead words" + a line break + the last word in the accent color,
 // matching the site's existing typographic style (see h1 em / h2 em in index.css).
-function commerceUrl(apiBase: string, path: string) {
-  const configured = (apiBase || import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
-  return `${configured}${path}`;
-}
 
 /** Published Early Access meters (hero ribbon and form). Edit content.json; do not use the signup API. */
-const MANUAL_SPOTS = { available: 13, total: 44 };
+const MANUAL_SPOTS = { available: 0, total: 44 };
 
 function readSpotCount(value: unknown, fallback: number): number {
   const parsed = typeof value === "number" ? value : typeof value === "string" && /^\d+$/.test(value.trim()) ? Number(value.trim()) : Number.NaN;
@@ -337,11 +261,12 @@ function manualEarlyAccessSpots(raw: unknown): { available: number; total: numbe
 }
 
 function EarlyAccessMeter({ available, total, label }: { available: number; total: number; label: string }) {
-  const width = total > 0 ? Math.max(0, Math.min(100, (available / total) * 100)) : 0;
+  const taken = Math.max(0, Math.min(total, total - available));
+  const width = total > 0 ? (taken / total) * 100 : 0;
   return (
     <div className="tester-meter" dir="ltr">
       <p className="tester-spots">
-        <span className="tester-spots__count">{available}/{total}</span>{" "}
+        <span className="tester-spots__count">{taken}/{total}</span>{" "}
         <span className="tester-spots__label">{label}</span>
       </p>
       <div className="tester-spots__track" aria-hidden="true">
@@ -355,153 +280,63 @@ function HeroSpotsRibbon({
   available,
   total,
   label,
-  cta,
+  status,
   kicker,
 }: {
   available: number;
   total: number;
   label: string;
-  cta: string;
+  status: string;
   kicker: string;
 }) {
-  const ratio = total > 0 ? Math.max(0, Math.min(1, available / total)) : 0;
+  const taken = Math.max(0, Math.min(total, total - available));
+  const ratio = total > 0 ? taken / total : 0;
   const radius = 8;
   const circumference = 2 * Math.PI * radius;
   const dash = circumference * ratio;
   return (
     <div className="spots-ribbon">
-      <a className="spots-ribbon__link container" href="#early-access">
+      <div className="spots-ribbon__link spots-ribbon__link--static container">
         <span className="spots-ribbon__kicker">{kicker}</span>
         <span
           className="spots-ribbon__meter"
           role="meter"
-          aria-valuenow={available}
+          aria-valuenow={taken}
           aria-valuemin={0}
           aria-valuemax={total}
-          aria-valuetext={`${available}/${total} ${label}`}
+          aria-valuetext={`${taken}/${total} ${label}`}
         >
           <svg className="spots-ribbon__ring" viewBox="0 0 22 22" aria-hidden="true">
             <circle className="spots-ribbon__ring-track" cx="11" cy="11" r={radius} />
             <circle className="spots-ribbon__ring-value" cx="11" cy="11" r={radius} strokeDasharray={`${dash} ${circumference}`} />
           </svg>
           <span className="spots-ribbon__count" dir="ltr">
-            <b>{available}</b>
+            <b>{taken}</b>
             <span>/{total}</span>
           </span>
           <span className="spots-ribbon__label">{label}</span>
         </span>
-        <span className="spots-ribbon__cta">
-          {cta} <ArrowUpRight size={14} />
-        </span>
-      </a>
+        <span className="spots-ribbon__cta">{status}</span>
+      </div>
     </div>
   );
 }
 
-function EarlyAccessForm({
+function ClosedSignupPanel({
   tester,
+  launch,
   spots,
-  apiBase,
-  ready,
 }: {
   tester: TesterCopy;
+  launch: { headline: string; price: string };
   spots: { available: number; total: number };
-  apiBase: string;
-  ready: boolean;
 }) {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [consent, setConsent] = useState(false);
-  const [phase, setPhase] = useState<"idle" | "sending" | "success" | "already" | "full" | "error" | "invalid">("idle");
-
-  useEffect(() => {
-    if (!ready) return;
-    let cancelled = false;
-    fetch(commerceUrl(apiBase, "/api/early-access/status"))
-      .then((response) => (response.ok ? response.json() : null))
-      .then((data: { remaining?: number } | null) => {
-        if (!cancelled && data && typeof data.remaining === "number" && data.remaining <= 0) setPhase("full");
-      })
-      .catch(() => undefined);
-    return () => {
-      cancelled = true;
-    };
-  }, [apiBase, ready]);
-
-  const message =
-    phase === "success"
-      ? tester.success
-      : phase === "already"
-        ? tester.already
-        : phase === "full"
-          ? tester.full
-          : phase === "error"
-            ? tester.error
-            : phase === "invalid"
-              ? tester.invalid
-              : "";
-  const locked = !ready || phase === "sending" || phase === "success" || phase === "full";
-
-  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (locked || !consent) return;
-    setPhase("sending");
-    try {
-      const response = await fetch(commerceUrl(apiBase, "/api/early-access"), {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email }),
-      });
-      const payload = (await response.json().catch(() => null)) as { error?: string; status?: string } | null;
-      if (response.status === 410 || payload?.error === "full") {
-        setPhase("full");
-        return;
-      }
-      if (response.status === 400 && payload?.error === "invalid_email") {
-        setPhase("invalid");
-        return;
-      }
-      if (response.ok && payload?.status === "already_registered") {
-        setPhase("already");
-        return;
-      }
-      if (response.ok && payload?.status === "registered") {
-        setPhase("success");
-        return;
-      }
-      setPhase("error");
-    } catch {
-      setPhase("error");
-    }
-  };
-
   return (
-    <form className="tester-form" onSubmit={onSubmit}>
+    <div className="tester-form tester-form--closed">
       <EarlyAccessMeter available={spots.available} total={spots.total} label={tester.spotsLabel} />
-      <label>
-        <span>{tester.name}</span>
-        <input type="text" name="name" autoComplete="name" placeholder={tester.name} maxLength={80} value={name} disabled={locked} onChange={(event) => setName(event.target.value)} />
-      </label>
-      <label>
-        <span>{tester.email}</span>
-        <input type="email" name="email" autoComplete="email" placeholder={tester.email} maxLength={254} required value={email} disabled={locked} onChange={(event) => setEmail(event.target.value)} />
-      </label>
-      <label className="tester-consent">
-        <input type="checkbox" required checked={consent} disabled={locked} onChange={(event) => setConsent(event.target.checked)} />
-        <span>{tester.consent}</span>
-      </label>
-      {message ? (
-        <p className={`tester-status${phase === "error" || phase === "invalid" ? " is-error" : ""}`} role="status">
-          {message}
-        </p>
-      ) : null}
-      {phase !== "success" && phase !== "full" ? (
-        <button className="button button--primary" type="submit" disabled={locked}>
-          {phase === "sending" ? tester.sending : tester.submit} <ArrowUpRight size={16} />
-        </button>
-      ) : null}
-      <small>{tester.note}</small>
-    </form>
+      <p className="tester-status" role="status">{tester.status}</p>
+      <p className="launch-note"><strong>{launch.headline}</strong> <span>{launch.price}</span></p>
+    </div>
   );
 }
 
@@ -521,22 +356,19 @@ function Headline({ text }: { text: string }) {
 export default function Home() {
   const { language, isRtl } = useLanguage();
   const [editableContent, setEditableContent] = useState<any>(null);
-  const [apiBase, setApiBase] = useState("");
-  const [contentReady, setContentReady] = useState(false);
   useEffect(() => {
     fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         setEditableContent(data);
-        setApiBase(typeof data?.commerce?.apiBaseUrl === "string" ? data.commerce.apiBaseUrl : "");
-        setContentReady(true);
       })
-      .catch(() => setContentReady(true));
+      .catch(() => undefined);
   }, []);
 
   const copy = editableContent?.languages?.[language] ?? {};
   const nav = copy.nav ?? navDefault;
-  const hero = { ...heroDefault, ...heroOfferDefaults[language], ...(copy.hero ?? {}) };
+  const hero = { ...heroDefault, ...(copy.hero ?? {}) };
+  const launch = { ...launchDefaults[language], ...(copy.launch ?? {}) };
   const meet = { ...meetDefaults[language], ...(copy.meet ?? {}) };
   const signal = copy.signalStrip ?? signalDefault;
   const story = copy.story ?? storyDefault;
@@ -549,7 +381,7 @@ export default function Home() {
   const vision = copy.vision ?? visionDefault;
   const faq = copy.faq ?? faqDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
-  const tester = { ...testerDefaults[language], ...(copy.tester ?? {}) };
+  const tester: TesterCopy = { ...testerDefaults[language], ...(copy.tester ?? {}) };
   const spots = manualEarlyAccessSpots(editableContent?.earlyAccess);
   const footer = copy.footer ?? footerDefault;
   const chrome = chromeUi[language];
@@ -578,14 +410,14 @@ export default function Home() {
           </nav>
           <div className="header-actions">
             <LanguageSwitcher />
-            <a className="button button--small button--light" href="#early-access"><span>{nav.cta}</span><ArrowUpRight size={15} /></a>
+            <a className="button button--small button--light" href="#meet"><span>{nav.cta}</span><ArrowUpRight size={15} /></a>
             <button className="menu-toggle" type="button" aria-label={mobileOpen ? chrome.close : chrome.open} onClick={() => setMobileOpen((value) => !value)}>{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
           </div>
         </div>
         {mobileOpen && (
           <nav className="mobile-nav" aria-label={nav.features}>
             <LanguageSwitcher />
-            <a href="#early-access" onClick={() => setMobileOpen(false)}>{nav.cta}</a>
+            <a href="#meet" onClick={() => setMobileOpen(false)}>{nav.cta}</a>
             <a href="#features" onClick={() => setMobileOpen(false)}>{nav.features}</a>
             <a href="#architecture" onClick={() => setMobileOpen(false)}>{nav.architecture}</a>
             <a href="#vision" onClick={() => setMobileOpen(false)}>{nav.vision}</a>
@@ -603,7 +435,7 @@ export default function Home() {
         available={spots.available}
         total={spots.total}
         label={tester.spotsLabel}
-        cta={tester.spotsCta}
+        status={tester.spotsStatus}
         kicker={tester.kicker}
       />
 
@@ -615,10 +447,10 @@ export default function Home() {
           <div className="hero-copy">
             <div className="eyebrow"><span className="eyebrow-dot" /> {hero.kicker}</div>
             <h1 id="hero-title"><Headline text={hero.title} /></h1>
-            <a className="hero-offer" href="#early-access">
-              <strong>{hero.offer}</strong>
-              <span>{hero.offerDetail}</span>
-            </a>
+            <div className="hero-offer hero-offer--static">
+              <strong>{launch.headline}</strong>
+              <span>{launch.price} {tester.status}</span>
+            </div>
             <p className="hero-lede">{hero.body}</p>
             <div className="hero-actions">
               <a className="button button--primary" href="#meet">{hero.ctaPrimary} <ArrowUpRight size={17} /></a>
@@ -780,7 +612,6 @@ export default function Home() {
             <div className="factory-pack-actions">
               <Link className="button button--primary" href="/factory-64">{factory.detailCta ?? "Explore Factory 64"} <ArrowUpRight size={17} /></Link>
               <Link className="button button--light" href="/factory-64/drums">{factory.drumsCta ?? "Drum kits"} <ArrowUpRight size={17} /></Link>
-              <a className="button button--light" href="#early-access">{factory.cta} <ArrowUpRight size={17} /></a>
             </div>
           </div>
         </section>
@@ -857,7 +688,7 @@ export default function Home() {
           </Accordion>
         </section>
 
-        {/* 8. Early Access */}
+        {/* 8. Early Access (closed) */}
         <section className="tester-section container" id="early-access">
           <div className="tester-panel">
             <figure className="tester-hero">
@@ -867,14 +698,10 @@ export default function Home() {
             <div className="tester-copy">
               <span className="kicker">{tester.kicker}</span>
               <h2>{tester.title}</h2>
-              <p className="tester-offer">
-                <strong>{tester.offer}</strong>
-                <span>{tester.offerDetail}</span>
-              </p>
               <p>{tester.body}</p>
               <div className="tester-proof"><span>01</span><span>{tester.freeAccess}</span><span>{tester.localAudio}</span></div>
             </div>
-            <EarlyAccessForm tester={tester} spots={spots} apiBase={apiBase} ready={contentReady} />
+            <ClosedSignupPanel tester={tester} launch={launch} spots={spots} />
             </div>
           </div>
         </section>
@@ -885,7 +712,7 @@ export default function Home() {
           <h2><Headline text={finalCta.title} /></h2>
           <p>{finalCta.body}</p>
           <div className="teaser-video"><video controls playsInline preload="metadata" src={`${import.meta.env.BASE_URL}assets/teaser.mp4`} aria-label="L Studio Factory Pack teaser" /></div>
-          <a className="button button--primary" href="#early-access">{finalCta.cta} <ArrowUpRight size={17} /></a>
+          <p className="launch-note"><strong>{launch.headline}</strong> <span>{launch.price}</span></p>
         </section>
       </main>
 
