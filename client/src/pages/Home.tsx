@@ -19,11 +19,11 @@ const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
 type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 
 const playShots: Record<PlayId, string> = {
-  sound: `${import.meta.env.BASE_URL}assets/guide/sound-screen.jpg`,
-  mic: `${import.meta.env.BASE_URL}assets/guide/mic-screen.jpg`,
-  loop: `${import.meta.env.BASE_URL}assets/guide/loop-screen.jpg`,
-  pad: `${import.meta.env.BASE_URL}assets/guide/pad-screen.jpg`,
-  drum: `${import.meta.env.BASE_URL}assets/guide/drum-screen.jpg`,
+  sound: `${import.meta.env.BASE_URL}assets/guide/sound-screen.jpg?v=108`,
+  mic: `${import.meta.env.BASE_URL}assets/guide/mic-screen.jpg?v=108`,
+  loop: `${import.meta.env.BASE_URL}assets/guide/loop-screen.jpg?v=108`,
+  pad: `${import.meta.env.BASE_URL}assets/guide/pad-screen.jpg?v=108`,
+  drum: `${import.meta.env.BASE_URL}assets/guide/drum-screen.jpg?v=108`,
 };
 
 const playShotAlt = {

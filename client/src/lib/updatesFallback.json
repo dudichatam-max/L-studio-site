@@ -17,6 +17,17 @@
     },
     "items": [
       {
+        "id": "sound-fx-looper-pages",
+        "status": "in_progress",
+        "title": "Sound FX + צבעים לעמודי הלופר",
+        "ticker": "Sound FX וצבעים לעמודי הלופר",
+        "summary": "מגיע בגרסה 1.08: ל-Sound FX יש 8 אפקטים חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים וסשנים שומרים עכשיו את ההגדרות של כל 8 ה-Sound FX. לכל עמוד בלופר אפשר לתת שם ואחד מ-8 צבעים. לנובים יש טבעת זהב חדשה שמראה את הערך.",
+        "href": "/guide",
+        "cta": "למדריך",
+        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
+        "imageAlts": ["חלון Sound FX עם Psy Orbit נבחר.", "מסך Loop עם מספרי עמודים צבעוניים ושם עמוד."]
+      },
+      {
         "id": "mic-fx-and-back",
         "status": "in_progress",
         "title": "Mic FX + כפתור Back",
@@ -72,7 +83,7 @@
         "ticker": "רענון זרימת העבודה, 32 ערוצי לופר",
         "summary": "Pro ו-Live לנגינה מול אנשים, מילים שנשארות על המסך בזמן הקלטה, ואפקטים על הלופר. בלופר 8 עמודים ו-4 ערוצים בכל עמוד, 32 ערוצים בסך הכל. בבדיקות לפני פרסום רחב.",
         "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
-        "imageAlts": ["טלפרומפטר למילים פתוח מעל הסטודיו.", "לוח Looper FX. Trance Stack נבחר."]
+        "imageAlts": ["טלפרומפטר למילים פתוח מעל הסטודיו.", "חלון Looper FX. Double Lane נבחר."]
       }
     ]
   },
@@ -93,6 +104,17 @@
       "shipped": "Recently shipped"
     },
     "items": [
+      {
+        "id": "sound-fx-looper-pages",
+        "status": "in_progress",
+        "title": "Sound FX + looper page colors",
+        "ticker": "Sound FX and looper page colors",
+        "summary": "Coming in 1.08: Sound FX has 8 new effects that follow the drum beat, and you can switch between them while you play. Presets and sessions now keep the settings of all 8 Sound FX. Each looper page can get a name and one of 8 colors. Knobs have a new gold ring that shows the value.",
+        "href": "/guide",
+        "cta": "Open guide",
+        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
+        "imageAlts": ["Sound FX window with Psy Orbit selected.", "Loop screen with colored page numbers and a page name."]
+      },
       {
         "id": "mic-fx-and-back",
         "status": "in_progress",
@@ -149,7 +171,7 @@
         "ticker": "Studio workflow refresh, 32 looper channels",
         "summary": "Pro and Live for playing in front of people, lyrics that stay on screen while you record, and effects on the loop. The looper has 8 pages and 4 channels on each page, 32 channels in all. In testing before a wider release.",
         "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
-        "imageAlts": ["Lyrics teleprompter open over the studio.", "Looper FX panel with Trance Stack selected."]
+        "imageAlts": ["Lyrics teleprompter open over the studio.", "Looper FX window with Double Lane selected."]
       }
     ]
   },
@@ -170,6 +192,17 @@
       "shipped": "Недавно вышло"
     },
     "items": [
+      {
+        "id": "sound-fx-looper-pages",
+        "status": "in_progress",
+        "title": "Sound FX + цвета страниц лупера",
+        "ticker": "Sound FX и цвета страниц лупера",
+        "summary": "В версии 1.08: у Sound FX 8 новых эффектов, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты и сессии теперь сохраняют настройки всех 8 Sound FX. Каждой странице лупера можно дать имя и один из 8 цветов. У регуляторов новое золотое кольцо, которое показывает значение.",
+        "href": "/guide",
+        "cta": "Открыть гид",
+        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
+        "imageAlts": ["Окно Sound FX, выбран Psy Orbit.", "Экран Loop с цветными номерами страниц и именем страницы."]
+      },
       {
         "id": "mic-fx-and-back",
         "status": "in_progress",
@@ -226,7 +259,7 @@
         "ticker": "Обновление рабочего процесса, 32 канала лупера",
         "summary": "Pro и Live для игры перед людьми, слова остаются на экране во время записи, и эффекты на лупе. У лупера 8 страниц и 4 канала на каждой, всего 32 канала. На проверке перед более широким выпуском.",
         "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
-        "imageAlts": ["Телесуфлёр текста открыт поверх студии.", "Панель Looper FX. Выбран Trance Stack."]
+        "imageAlts": ["Телесуфлёр текста открыт поверх студии.", "Окно Looper FX. Выбран Double Lane."]
       }
     ]
   },
@@ -247,6 +280,17 @@
       "shipped": "صدر مؤخراً"
     },
     "items": [
+      {
+        "id": "sound-fx-looper-pages",
+        "status": "in_progress",
+        "title": "Sound FX + ألوان صفحات اللوبر",
+        "ticker": "Sound FX وألوان صفحات اللوبر",
+        "summary": "في الإصدار 1.08: في Sound FX ثمانية مؤثرات جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة والجلسات تحفظ الآن إعدادات مؤثرات Sound FX الثمانية كلها. يمكن إعطاء كل صفحة في اللوبر اسماً وواحداً من 8 ألوان. للمقابض حلقة ذهبية جديدة تعرض القيمة.",
+        "href": "/guide",
+        "cta": "فتح الدليل",
+        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
+        "imageAlts": ["نافذة Sound FX مع اختيار Psy Orbit.", "شاشة Loop بأرقام صفحات ملوّنة واسم صفحة."]
+      },
       {
         "id": "mic-fx-and-back",
         "status": "in_progress",
@@ -303,7 +347,7 @@
         "ticker": "تحديث مسار العمل، 32 قناة للوبر",
         "summary": "Pro وLive للعزف أمام الناس، والكلمات تبقى على الشاشة أثناء التسجيل، ومؤثرات على اللوب. للوبر 8 صفحات و4 قنوات في كل صفحة، 32 قناة في المجموع. قيد الاختبار قبل إصدار أوسع.",
         "images": ["/assets/updates/lyrics.jpg", "/assets/updates/looper-fx.jpg"],
-        "imageAlts": ["تلبرومبتر الكلمات مفتوح فوق الاستوديو.", "لوحة Looper FX. Trance Stack محدد."]
+        "imageAlts": ["تلبرومبتر الكلمات مفتوح فوق الاستوديو.", "نافذة Looper FX. Double Lane محدد."]
       }
     ]
   }
