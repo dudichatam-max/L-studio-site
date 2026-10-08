@@ -228,7 +228,11 @@ function vitePluginCommerceApi(): Plugin {
   };
 }
 
-const plugins = [vitePluginCommerceApi(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+// Dev-only helpers (jsx-loc adds data-loc to every element, manus-runtime inlines
+// a ~366 KB script into index.html). They stay out of the production build.
+const devOnlyPlugins = [jsxLocPlugin(), vitePluginManusRuntime()].flat().map(plugin => ({ ...plugin, apply: "serve" as const }));
+
+const plugins = [vitePluginCommerceApi(), react(), tailwindcss(), ...devOnlyPlugins, vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 function contentRevision(): string {
   try {

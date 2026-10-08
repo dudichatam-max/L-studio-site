@@ -10,11 +10,25 @@ import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import UpdatesTicker from "@/components/UpdatesTicker";
 import { mergeUpdates, updatesNavLabel } from "@/lib/updatesCopy";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import YouTubeFacade from "@/components/YouTubeFacade";
 
-const factoryHero = `${import.meta.env.BASE_URL}assets/factory-pack-hero-v4.png`;
+const factoryHero = {
+  webp800: `${import.meta.env.BASE_URL}assets/factory-pack-hero-v4-800.webp`,
+  webp1254: `${import.meta.env.BASE_URL}assets/factory-pack-hero-v4-1254.webp`,
+  jpg800: `${import.meta.env.BASE_URL}assets/factory-pack-hero-v4-800.jpg`,
+};
 const factoryBoxJpg = `${import.meta.env.BASE_URL}assets/factory-pack-box.jpg?v=108-packs`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=108-packs`;
-const developerImage = `${import.meta.env.BASE_URL}assets/Developer.jpg`;
+const factoryBoxWebp800 = `${import.meta.env.BASE_URL}assets/factory-pack-box-800.webp?v=108-packs`;
+const developerImage = {
+  webp: `${import.meta.env.BASE_URL}assets/Developer-720.webp`,
+  jpg: `${import.meta.env.BASE_URL}assets/Developer-720.jpg`,
+};
+const logoSmall = `${import.meta.env.BASE_URL}assets/logo-160.png`;
+const meetPoster = {
+  webp: `${import.meta.env.BASE_URL}assets/meet-short-poster.webp`,
+  jpg: `${import.meta.env.BASE_URL}assets/meet-short-poster.jpg`,
+};
 
 type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 
@@ -132,7 +146,7 @@ const launchDefaults: Record<Language, { headline: string; price: string; note: 
   ar: {headline: "قادم إلى Google Play في أكتوبر 2026.", price: "L Studio Pro، 8$.", note: "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$."},
 };
 const signalDefault = { text: "From key to sound to loop to recording", note: "All inside L-Studio" };
-const INTRO_SHORT_EMBED = "https://www.youtube.com/embed/a2CGFDQkZ80";
+const INTRO_SHORT_ID = "a2CGFDQkZ80";
 const meetDefaults = {
   he: {
     kicker: "L-STUDIO / היכרות",
@@ -167,6 +181,7 @@ const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is 
 const exclusiveFan = {
   jpg: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.jpg`,
   webp: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.webp`,
+  webp960: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan-960.webp`,
 };
 const exclusiveDefaults: Record<Language, { navLabel: string; comingSoon: string; homeKicker: string; homeTitle: string; homeBody: string; homeCta: string; homeImageAlt: string }> = {
   he: { navLabel: "בלעדי", comingSoon: "כלול ב-Pro", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "אחת עשרה חבילות מיוחדות. כלול ב-Pro.", homeBody: "אחת עשרה חבילות תופים בלעדיות יושבות מחוץ לערכות Factory Drums. שמונה ערוצים ושמונה סגנונות בכל חבילה. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה.", homeCta: "לעמוד הבלעדי", homeImageAlt: "מניפה של תשע כרזות לחבילות תופים בלעדיות של L Studio" },
@@ -474,7 +489,7 @@ export default function Home() {
           <div className="hero-console" aria-label="L Studio console">
             <div className="console-topline"><span>LIVE SESSION / 01</span><span className="live-status"><i /> AUDIO ENGINE ACTIVE</span></div>
             <div className="console-display">
-              <div className="display-mark"><img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="L Studio" /></div>
+              <div className="display-mark"><img src={logoSmall} alt="L Studio" width={50} height={50} /></div>
               <div className="display-title">L STUDIO</div>
               <div className="display-subtitle">MICROTONAL WORKSTATION</div>
               <div className="waveform" aria-hidden="true">{[26,42,74,48,31,57,88,42,69,36,62,93,52,33,72,45,25,60,38,79,46,30,66,40,82,55,33,70,45,27,64,39].map((height, index) => <span key={index} style={{ height: `${height}%` }} />)}</div>
@@ -498,14 +513,7 @@ export default function Home() {
             <p>{meet.body}</p>
           </div>
           <div className="meet-short">
-            <iframe
-              src={INTRO_SHORT_EMBED}
-              title={meet.videoTitle}
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              referrerPolicy="strict-origin-when-cross-origin"
-            />
+            <YouTubeFacade videoId={INTRO_SHORT_ID} title={meet.videoTitle} poster={meetPoster} />
           </div>
         </section>
 
@@ -610,8 +618,8 @@ export default function Home() {
             <span className="kicker">{factory.kicker}</span>
             <div className="factory-pack-cover">
               <picture>
-                <source srcSet={factoryBoxWebp} type="image/webp" />
-                <img src={factoryBoxJpg} alt={factory.coverAlt ?? "L Studio Pro pack covers side by side: Factory 64 with 64 presets on 8 pages, Drum Kits with 8 kits and 8 styles, and Exclusive with 11 drum packs"} width={1120} height={740} />
+                <source srcSet={`${factoryBoxWebp800} 800w, ${factoryBoxWebp} 1120w`} sizes="(max-width: 600px) calc(100vw - 40px), 560px" type="image/webp" />
+                <img src={factoryBoxJpg} alt={factory.coverAlt ?? "L Studio Pro pack covers side by side: Factory 64 with 64 presets on 8 pages, Drum Kits with 8 kits and 8 styles, and Exclusive with 11 drum packs"} width={1120} height={740} loading="lazy" decoding="async" />
               </picture>
             </div>
             <p className="factory-pack-lede">{factory.lede}</p>
@@ -639,7 +647,7 @@ export default function Home() {
           </div>
           <Link className="exclusive-home-fan" href="/exclusive">
             <picture>
-              <source srcSet={exclusiveFan.webp} type="image/webp" />
+              <source srcSet={`${exclusiveFan.webp960} 960w, ${exclusiveFan.webp} 1920w`} sizes="(max-width: 1240px) calc(100vw - 40px), 1200px" type="image/webp" />
               <img src={exclusiveFan.jpg} alt={exclusive.homeImageAlt ?? exclusiveDefaults[language].homeImageAlt} width={1920} height={1080} loading="lazy" decoding="async" />
             </picture>
           </Link>
@@ -649,7 +657,7 @@ export default function Home() {
         <section className="vision-section" id="vision" dir={dir}>
           <div className="container vision-grid">
             <div className="vision-copy">
-              <div className="vision-portrait"><img src={developerImage} alt="L Studio developer" /></div>
+              <div className="vision-portrait"><picture><source srcSet={developerImage.webp} type="image/webp" /><img src={developerImage.jpg} alt="L Studio developer" loading="lazy" decoding="async" /></picture></div>
               <span className="kicker">{vision.kicker}</span>
               <h2><Headline text={vision.title} /></h2>
               <span className="vision-author">{vision.author}</span>
@@ -701,7 +709,10 @@ export default function Home() {
         <section className="tester-section container" id="early-access">
           <div className="tester-panel">
             <figure className="tester-hero">
-              <img src={factoryHero} alt={tester.imageAlt} width={1254} height={1254} />
+              <picture>
+                <source srcSet={`${factoryHero.webp800} 800w, ${factoryHero.webp1254} 1254w`} sizes="(max-width: 800px) calc(100vw - 40px), 760px" type="image/webp" />
+                <img src={factoryHero.jpg800} alt={tester.imageAlt} width={1254} height={1254} loading="lazy" decoding="async" />
+              </picture>
             </figure>
             <div className="tester-grid">
             <div className="tester-copy">
