@@ -59,13 +59,15 @@ The site never offers Exclusive kit downloads or ZIP links. Whoever buys Pro als
 
 Current pairings:
 
+Status rule: `shipped` only when the item is verified live, on Google Play (a release note or team STATUS that says it was uploaded; a GitHub release or AAB build is not an upload) or on this website itself. Features in the approved release build that are not verified on Play are `in_progress` and say "in the next Google Play update", never "on Google Play now".
+
 - `sound-fx-looper-pages`: status `in_progress` until the team lead confirms 1.08 is on Google Play. `sound-fx.jpg` (Sound FX, Psy Orbit selected) and `looper-pages.jpg` (Loop screen with colored page numbers and a page name). `href` is `/guide`. Do not say it is on Google Play.
-- `drum-fx`: `drum-fx.jpg` only (Drum FX, one of eight effects selected). Status bar and system navigation are cropped. Do not name Comp or Gate in the alt.
-- `mic-fx-and-back`: `mic-fx.jpg` (Phone Line) and `looper-back.jpg` (Back on the looper). Status bar and system navigation are cropped.
-- `studio-workflow-refresh`: `lyrics.jpg` (lyrics teleprompter) and `looper-fx.jpg` (1.08 Looper FX window, Double Lane). The summary says the looper has 8 pages and 4 channels on each page, 32 channels in all. Do not call L Studio a DAW. Do not mention Comp or Gate. Do not call Redo undo. Status bar and system navigation are cropped.
-- `exclusive-packs-gallery`: status `shipped`. Still is `exclusive-packs-poster.jpg`, the Exclusive Pro poster (11 kits, Pro unlock). It is promotional art, not a phone shot, so it is not cropped like a status bar. `href` is `/exclusive`. The copy says whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. The site only describes the packs.
+- `drum-fx`: status `in_progress` (in the release build, next Google Play update). `drum-fx.jpg` only (Drum FX, one of eight effects selected). Status bar and system navigation are cropped. Do not name Comp or Gate in the alt.
+- `mic-fx-and-back`: status `in_progress` (next Google Play update). Back brings back the last cleared take only. `mic-fx.jpg` (Phone Line) and `looper-back.jpg` (Back on the looper). Status bar and system navigation are cropped.
+- `studio-workflow-refresh`: title Live mode, lyrics, Looper FX. Status `in_progress` (next Google Play update). `lyrics.jpg` (lyrics teleprompter) and `looper-fx.jpg` (1.08 Looper FX window, Double Lane). The summary says the looper has 8 pages and 4 channels on each page, 32 channels in all. Do not call L Studio a DAW. Do not mention Comp or Gate. Do not call Redo undo. Status bar and system navigation are cropped.
+- `exclusive-packs-gallery`: status `in_progress` ("Coming soon, in the next Google Play update") until an upload to Play is confirmed. Still is `exclusive-packs-poster.jpg`, the Exclusive Pro poster (11 kits, Pro unlock). It is promotional art, not a phone shot, so it is not cropped like a status bar. `href` is `/exclusive`. The copy says whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. The site only describes the packs.
 - `early-access-play`: no screenshot. `href` is `/#early-access`. The summary asks visitors to fill the Early Access form on the home page for a Google Play Internal testing spot. It does not promise an APK email or a public APK download.
-- `user-guide-style-random`: `user-guide-style-random.jpg`. `href` is `/guide`. The summary says Style opens the Drum Style window and Random builds another pattern in the current style. Do not describe a Random genre window.
+- `user-guide-1-08`: status `shipped` (a site item: the 1.08 user guide is live on this website). No still. `href` is `/guide`. It describes the site guide, not the app. It replaces `user-guide-style-random`.
 
 ## Images
 
