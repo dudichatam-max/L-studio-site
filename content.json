@@ -1300,9 +1300,9 @@
       },
       "updates": {
         "navLabel": "עדכונים",
-        "pageTitle": "על מה אנחנו עובדים.",
+        "pageTitle": "מה חדש ב-L Studio.",
         "pageKicker": "L-STUDIO / עדכונים",
-        "pageIntro": "מבט קצר על עבודה שמתקדמת, על מה שבדרך, ועל מה שכבר זמין. בלי תאריכי השקה.",
+        "pageIntro": "עכשיו ב-Google Play, גרסה 1.08.",
         "tickerLabel": "עדכונים",
         "statusLabels": {
           "in_progress": "בעבודה",
@@ -2680,9 +2680,9 @@
       },
       "updates": {
         "navLabel": "Updates",
-        "pageTitle": "What we are working on.",
+        "pageTitle": "What's new in L Studio.",
         "pageKicker": "L-STUDIO / UPDATES",
-        "pageIntro": "A short look at work in progress, what is coming next, and what is already available. No release dates.",
+        "pageIntro": "Now on Google Play, version 1.08.",
         "tickerLabel": "Updates",
         "statusLabels": {
           "in_progress": "In progress",
@@ -4060,9 +4060,9 @@
       },
       "updates": {
         "navLabel": "Обновления",
-        "pageTitle": "Над чем мы работаем.",
+        "pageTitle": "Что нового в L Studio.",
         "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-        "pageIntro": "Короткий обзор того, что сейчас в работе, что на подходе и что уже доступно. Без дат выпуска.",
+        "pageIntro": "Уже в Google Play, версия 1.08.",
         "tickerLabel": "Обновления",
         "statusLabels": {
           "in_progress": "В работе",
@@ -5440,9 +5440,9 @@
       },
       "updates": {
         "navLabel": "التحديثات",
-        "pageTitle": "ما نعمل عليه.",
+        "pageTitle": "ما الجديد في L Studio.",
         "pageKicker": "L-STUDIO / التحديثات",
-        "pageIntro": "نظرة قصيرة على العمل الجاري، وما هو قادم، وما هو متاح بالفعل. بلا تواريخ إصدار.",
+        "pageIntro": "متاح الآن على Google Play، الإصدار 1.08.",
         "tickerLabel": "التحديثات",
         "statusLabels": {
           "in_progress": "قيد العمل",

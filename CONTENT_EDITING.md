@@ -47,7 +47,7 @@ Purchase copy lives under `languages.*.pro` (same keys in Hebrew, English, Russi
 
 ### Updates (`/updates`)
 
-Update copy lives under `languages.*.updates`. The same items are the fallback in `client/src/lib/updatesFallback.json`. Keep Hebrew, English, Russian, and Arabic in sync, including alts. Keep root `content.json`, `client/public/content.json`, and `client/src/lib/updatesFallback.json` aligned.
+Update copy lives under `languages.*.updates`. The same items are the fallback in `client/src/lib/updatesFallback.json`. Keep Hebrew, English, Russian, and Arabic in sync, including alts. Keep root `content.json`, `client/public/content.json`, and `client/src/lib/updatesFallback.json` aligned. The page title and intro describe what is already out (David 2026-10-08): EN "What's new in L Studio." / "Now on Google Play, version 1.08.", with the same idea in HE, RU, and AR and in the `updates` meta description in `shared/seo.ts`. Update the version number in the intro when a new version reaches Google Play.
 
 A card can show stills beside the text. Prefer `images`, an array of site-root paths such as `/assets/updates/drum-fx.jpg`. You can also set one `image`, then add more paths in `images`. The card shows `image` first, then any extra `images` that are not already listed. Alts are per language: `imageAlts` is one string per screenshot, in that same order, or use a single `imageAlt`.
 
