@@ -17,6 +17,17 @@
     },
     "items": [
       {
+        "id": "sound-fx-looper-pages",
+        "status": "in_progress",
+        "title": "Sound FX + צבעים לעמודי הלופר",
+        "ticker": "Sound FX וצבעים לעמודי הלופר",
+        "summary": "מגיע בגרסה 1.08: ל-Sound FX יש 8 אפקטים חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים וסשנים שומרים עכשיו את ההגדרות של כל 8 ה-Sound FX. לכל עמוד בלופר אפשר לתת שם ואחד מ-8 צבעים. לנובים יש טבעת זהב חדשה שמראה את הערך.",
+        "href": "/guide",
+        "cta": "למדריך",
+        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
+        "imageAlts": ["חלון Sound FX עם Psy Orbit נבחר.", "מסך Loop עם מספרי עמודים צבעוניים ושם עמוד."]
+      },
+      {
         "id": "mic-fx-and-back",
         "status": "in_progress",
         "title": "Mic FX + כפתור Back",
@@ -93,6 +104,17 @@
       "shipped": "Recently shipped"
     },
     "items": [
+      {
+        "id": "sound-fx-looper-pages",
+        "status": "in_progress",
+        "title": "Sound FX + looper page colors",
+        "ticker": "Sound FX and looper page colors",
+        "summary": "Coming in 1.08: Sound FX has 8 new effects that follow the drum beat, and you can switch between them while you play. Presets and sessions now keep the settings of all 8 Sound FX. Each looper page can get a name and one of 8 colors. Knobs have a new gold ring that shows the value.",
+        "href": "/guide",
+        "cta": "Open guide",
+        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
+        "imageAlts": ["Sound FX window with Psy Orbit selected.", "Loop screen with colored page numbers and a page name."]
+      },
       {
         "id": "mic-fx-and-back",
         "status": "in_progress",
@@ -171,6 +193,17 @@
     },
     "items": [
       {
+        "id": "sound-fx-looper-pages",
+        "status": "in_progress",
+        "title": "Sound FX + цвета страниц лупера",
+        "ticker": "Sound FX и цвета страниц лупера",
+        "summary": "В версии 1.08: у Sound FX 8 новых эффектов, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты и сессии теперь сохраняют настройки всех 8 Sound FX. Каждой странице лупера можно дать имя и один из 8 цветов. У регуляторов новое золотое кольцо, которое показывает значение.",
+        "href": "/guide",
+        "cta": "Открыть гид",
+        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
+        "imageAlts": ["Окно Sound FX, выбран Psy Orbit.", "Экран Loop с цветными номерами страниц и именем страницы."]
+      },
+      {
         "id": "mic-fx-and-back",
         "status": "in_progress",
         "title": "Mic FX и кнопка Back",
@@ -247,6 +280,17 @@
       "shipped": "صدر مؤخراً"
     },
     "items": [
+      {
+        "id": "sound-fx-looper-pages",
+        "status": "in_progress",
+        "title": "Sound FX + ألوان صفحات اللوبر",
+        "ticker": "Sound FX وألوان صفحات اللوبر",
+        "summary": "في الإصدار 1.08: في Sound FX ثمانية مؤثرات جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة والجلسات تحفظ الآن إعدادات مؤثرات Sound FX الثمانية كلها. يمكن إعطاء كل صفحة في اللوبر اسماً وواحداً من 8 ألوان. للمقابض حلقة ذهبية جديدة تعرض القيمة.",
+        "href": "/guide",
+        "cta": "فتح الدليل",
+        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
+        "imageAlts": ["نافذة Sound FX مع اختيار Psy Orbit.", "شاشة Loop بأرقام صفحات ملوّنة واسم صفحة."]
+      },
       {
         "id": "mic-fx-and-back",
         "status": "in_progress",

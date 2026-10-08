@@ -293,9 +293,10 @@
             "id": "sound",
             "title": "Sound",
             "body": [
-              "הקשה על Sound פותחת את המסך הזה. לחיצה ארוכה על Sound פותחת את חלון ה-benchmark.",
+              "הקשה על Sound פותחת את המסך הזה.",
               "Sine, Square, Triangle, Saw, ו-Noise נמצאים מתחת לסקופים. הקשה בוחרת את הגל. המסך מתחיל על Saw.",
               "הקשה על Detune מדליקה או מכבה את detune. הקשה על RIP, FUZZ, PHAZ, או PIANO מדליקה או מכבה את זה.",
+              "הקשה על FX פותחת את Sound FX. FX נצבע בזהב כשאפקט דולק.",
               "החצים ליד PRESET טוענים את הפריסט השמור הבא או הקודם. אם אין שמורים, הטלפון אומר No saved presets.",
               "החצים ליד DRUM KIT טוענים את הקיט הבא או הקודם. LIVE מכבה את החצים האלה.",
               "PRO ו-LIVE נמצאים בראש כל מסך. הקשה מחליפה ביניהם. LIVE מכבה את Clear, טעינת קובץ, Import, טעינת סמפל לתוף, דפדוף קיטים, Load של קיט, והקלדת מספר על נוב. Back נשאר אחרי מחיקה.",
@@ -317,10 +318,22 @@
                 "media": "assets/guide/octave.jpg"
               },
               {
-                "id": "freq",
-                "title": "freq",
+                "id": "sound-fx",
+                "title": "Sound FX",
                 "body": [
-                  "freq נמצא במסך הסאונד. הקשה פותחת את Tune frequencies (Hz).",
+                  "הקשה על FX פותחת את Sound FX. הקלידים ממשיכים לנגן כשהחלון פתוח. הקשה על Close, או מחוץ לחלון, סוגרת אותו.",
+                  "יש 8 אפקטים: Sub Forge, Depth Drop, Bass Clamp, Floor Pump, Iron Growl, Psy Orbit, Thick Vein, ו-Kick Bond. הקשה מדליקה אפקט. הקשה על האפקט הדולק מכבה את ה-FX. רק אחד דולק בכל פעם.",
+                  "אפשר להחליף אפקט תוך כדי נגינה. המעבר חלק והווליום נשאר בערך אותו דבר. שומעים את האפקט ברמקול, בהקלטת WAV, ובמה שהלופר מקליט.",
+                  "האפקטים הולכים לפי הביט של התופים. לפני שהתופים ניגנו, הם רצים ב-120 BPM. אחרי שהתופים נעצרים, הם נשארים בטמפו האחרון של התופים. Depth Drop יורד מחדש כל 2 ביטים ובכל תו חדש.",
+                  "לחיצה ארוכה פותחת Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לאפקט הזה. כל אחד מ-8 האפקטים שומר את ההגדרות שלו כשמחליפים. Transpose רץ מ-12- עד 12 ומשנה את כל 8 האפקטים, כולל Sub Forge."
+                ],
+                "media": "assets/guide/sound-fx-window.jpg"
+              },
+              {
+                "id": "freq",
+                "title": "Costume Frequency",
+                "body": [
+                  "Costume Frequency היא השורה הראשונה ב-Settings. הקשה פותחת את Tune frequencies (Hz).",
                   "לכל קליד יש תדר ב-Hz. אפשר לכוון את המקלדת לתדרים שרוצים, או לנגן מתבנית.",
                   "Ready scales (D = 261 Hz) הן התבניות: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, ו-Pentatonic. הקשה על שם מפעילה את התבנית הזאת, עם D על 261 Hz.",
                   "Reset בשורת הכותרת. Default מעל Close. הקשה על Close סוגרת את החלון."
@@ -339,7 +352,8 @@
                 "id": "volume",
                 "title": "Volume",
                 "body": [
-                  "Volume, Attack, Decay, Sustain, Release, Cutoff, Resonance, Echo Mix, ו-Glide הם הנובים במסך הסאונד. גרירה קובעת את הנוב. הקשה על המספר פותחת תיבה שבה מקלידים ערך. LIVE לא פותחת את התיבה."
+                  "Volume, Attack, Decay, Sustain, Release, Cutoff, Resonance, Echo Mix, ו-Glide הם הנובים במסך הסאונד. גרירה קובעת את הנוב. הקשה על המספר פותחת תיבה שבה מקלידים ערך. LIVE לא פותחת את התיבה.",
+                  "לכל נוב באפליקציה יש טבעת זהב שמראה את הערך. בנובים של L/R הטבעת מתחילה למעלה ומתמלאת לכיוון L או R."
                 ],
                 "media": "assets/guide/volume-knobs.jpg"
               },
@@ -358,6 +372,7 @@
                 "body": [
                   "הקשה על Presets פותחת את Presets, עם 8 מקומות. עמודים 1 עד 8 למעלה. הקשה על מספר עמוד מראה את העמוד. הקשה על Edit page name פותחת את השם.",
                   "הקשה על Load פותחת את הסאונד השמור במקום. הקשה על Save שומרת את הסאונד הנוכחי שם. הקשה על Edit משנה את השם.",
+                  "Save שומר גם את ההגדרות של כל 8 ה-Sound FX ואיזה אפקט דולק. Load מחזיר אותם בדיוק. פריסטים של Factory 64 ופריסטים ישנים נטענים בלי לשנות את ה-Sound FX.",
                   "הקשה על Import בוחרת קובץ עמוד. הקשה על Save בשורה התחתונה מבקשת מהטלפון איפה לשמור את העמוד. הקשה על Close סוגרת את החלון."
                 ],
                 "media": "assets/guide/presets-window.jpg"
@@ -375,11 +390,13 @@
                 "title": "Settings",
                 "body": [
                   "הקשה על Settings, בראש כל מסך, פותחת את החלון הזה. השורה מתחת לכותרת אומרת Language & console session.",
+                  "הקשה על Costume Frequency, השורה הראשונה, פותחת את Tune frequencies (Hz).",
                   "הקשה על Language סוגרת את Settings ופותחת את Choose language. Continue מחיל את השפה. Dismiss סוגר את הרשימה.",
-                  "הקשה על Save as פותחת את Save Console. Save מאשר. Cancel סוגר.",
+                  "הקשה על Save as פותחת את Save Console. Save מאשר. Cancel סוגר. סשן שמור שומר גם את ה-Sound FX ואת השמות והצבעים של עמודי הלופ.",
                   "הקשה על Load פותחת את Load Console. אם אין שמור, כתוב No saved sessions. Export all ו-Import all נמצאים שם. Delete שואל לפני שהוא מוחק.",
                   "הקשה על Show tutorial מתחילה את הסיור מחדש.",
                   "הקשה על Factory 64 שואלת Restore Factory 64? Restore מחליף את פריסטי Factory 64, את כל 8 חבילות ה-Style, ואת כל 11 חבילות ה-Exclusive, ואז טוען את מקום 1 בעמוד 1. Cancel סוגר את השאלה.",
+                  "הקשה על benchmark, מתחת ל-Factory 64, פותחת את כלי בדיקת האודיו.",
                   "ה-X ו-Close סוגרים את Settings."
                 ],
                 "media": "assets/guide/settings-window.jpg"
@@ -462,8 +479,9 @@
             "title": "Loop",
             "body": [
               "הקשה על Loop פותחת את המסך הזה. יש בו 8 עמודים ו-4 ערוצים בכל עמוד, 32 ערוצים בסך הכל. הקלטה נעצרת ב-60 שניות.",
-              "שם הפרויקט מתחיל כ-Looper Project. הקשה בשם משנה אותו. LIVE נועל את השם.",
-              "הקשה על מספר עמוד, 1 עד 8, מראה את העמוד.",
+              "הקשה על מספר עמוד, 1 עד 8, מראה את העמוד. לחיצה ארוכה פותחת את Page name. מקלידים שם, בוחרים אחד מ-8 צבעים (כתום, אדום, זהב, חום, ירוק, כחול, סגול, ורוד), ומקישים OK. Reset מוריד את הצבע. Cancel סוגר בלי שינוי. LIVE מכבה את הלחיצה הארוכה.",
+              "צבע העמוד ממלא את מספר העמוד וצובע את גלי הערוצים בעמוד הזה.",
+              "שדה השם ליד Back מראה את שם העמוד שאתם עליו. כשהוא ריק, כתוב בו Page ומספר העמוד. הקשה בשדה נותנת להקליד שם. LIVE נועל את השם. השמות והצבעים נשמרים עם פרויקט הלופ וב-Export.",
               "שם כל ערוץ מתחיל כ-Ch ומספר. הקשה בשם משנה אותו. LIVE נועל את השם.",
               "הקשה על Back מחזירה את ההקלטה שנמחקה לאחרונה במסך הזה. זה לא עוזב את המסך. זה עובד רק אחרי מחיקה שעדיין אפשר להחזיר, ולא בזמן שהערוץ עסוק. LIVE עדיין מאפשר את Back כשההחזרה הזאת קיימת.",
               "הקשה על Rec מתחילה הקלטה. אחר כך כתוב STOP. הקשה נוספת עוצרת את ההקלטה. התחלת הקלטה מוחקת את החזרת ה-Back של הערוץ.",
@@ -489,6 +507,9 @@
                 ],
                 "media": "assets/guide/looper-fx-window.jpg"
               }
+            ],
+            "images": [
+              "assets/guide/loop-pages.jpg"
             ]
           },
           {
@@ -1293,6 +1314,23 @@
         },
         "items": [
           {
+            "id": "sound-fx-looper-pages",
+            "status": "in_progress",
+            "title": "Sound FX + צבעים לעמודי הלופר",
+            "ticker": "Sound FX וצבעים לעמודי הלופר",
+            "summary": "מגיע בגרסה 1.08: ל-Sound FX יש 8 אפקטים חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים וסשנים שומרים עכשיו את ההגדרות של כל 8 ה-Sound FX. לכל עמוד בלופר אפשר לתת שם ואחד מ-8 צבעים. לנובים יש טבעת זהב חדשה שמראה את הערך.",
+            "href": "/guide",
+            "cta": "למדריך",
+            "images": [
+              "/assets/updates/sound-fx.jpg",
+              "/assets/updates/looper-pages.jpg"
+            ],
+            "imageAlts": [
+              "חלון Sound FX עם Psy Orbit נבחר.",
+              "מסך Loop עם מספרי עמודים צבעוניים ושם עמוד."
+            ]
+          },
+          {
             "id": "mic-fx-and-back",
             "status": "in_progress",
             "title": "Mic FX + כפתור Back",
@@ -1670,9 +1708,10 @@
             "id": "sound",
             "title": "Sound",
             "body": [
-              "A tap on Sound opens this screen. A long-press on Sound opens the benchmark window.",
+              "A tap on Sound opens this screen.",
               "Sine, Square, Triangle, Saw, and Noise sit under the scopes. A tap selects that wave. The screen starts on Saw.",
               "A tap on Detune turns detune on or off. A tap on RIP, FUZZ, PHAZ, or PIANO turns that one on or off.",
+              "A tap on FX opens Sound FX. FX turns gold while an effect is on.",
               "The arrows beside PRESET load the next or previous saved preset. If none are saved, the phone says No saved presets.",
               "The arrows beside DRUM KIT load the next or previous kit. LIVE turns those arrows off.",
               "PRO and LIVE sit at the top of every screen. A tap switches between them. LIVE turns off Clear, file load, Import, loading a drum sample, kit browsing, kit Load, and typing a number on a knob. Back still works after a clear.",
@@ -1694,10 +1733,22 @@
                 "media": "assets/guide/octave.jpg"
               },
               {
-                "id": "freq",
-                "title": "freq",
+                "id": "sound-fx",
+                "title": "Sound FX",
                 "body": [
-                  "freq is on the sound screen. A tap opens Tune frequencies (Hz).",
+                  "A tap on FX opens Sound FX. The keys still play while it is open. A tap on Close, or outside the window, closes it.",
+                  "There are 8 effects: Sub Forge, Depth Drop, Bass Clamp, Floor Pump, Iron Growl, Psy Orbit, Thick Vein, and Kick Bond. A tap turns one on. A tap on the one that is on turns FX off. Only one is on at a time.",
+                  "You can switch effects while you play. The change is smooth and the volume stays about the same. You hear the effect in the speakers, in a WAV recording, and in what the looper records.",
+                  "The effects follow the drum beat. Before the drums have played, they run at 120 BPM. After the drums stop, they keep the last drum tempo. Depth Drop drops again every 2 beats and on each new note.",
+                  "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that effect. Each of the 8 effects keeps its own settings when you switch. Transpose runs from -12 to 12 and changes all 8 effects, Sub Forge included."
+                ],
+                "media": "assets/guide/sound-fx-window.jpg"
+              },
+              {
+                "id": "freq",
+                "title": "Costume Frequency",
+                "body": [
+                  "Costume Frequency is the first row in Settings. A tap opens Tune frequencies (Hz).",
                   "Each key shows its frequency in Hz. Set the keyboard to the frequencies you want, or play from a template.",
                   "Ready scales (D = 261 Hz) are the templates: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, and Pentatonic. A tap on a name applies that template, with D at 261 Hz.",
                   "Reset is on the title row. Default is above Close. A tap on Close closes the window."
@@ -1716,7 +1767,8 @@
                 "id": "volume",
                 "title": "Volume",
                 "body": [
-                  "Volume, Attack, Decay, Sustain, Release, Cutoff, Resonance, Echo Mix, and Glide are the knobs on the sound screen. A drag sets the knob. A tap on the number opens a box where you type a value. LIVE does not open that box."
+                  "Volume, Attack, Decay, Sustain, Release, Cutoff, Resonance, Echo Mix, and Glide are the knobs on the sound screen. A drag sets the knob. A tap on the number opens a box where you type a value. LIVE does not open that box.",
+                  "Every knob in the app has a gold ring that shows the value. On L/R knobs the ring starts at the top and fills toward L or R."
                 ],
                 "media": "assets/guide/volume-knobs.jpg"
               },
@@ -1735,6 +1787,7 @@
                 "body": [
                   "A tap on Presets opens Presets, with 8 slots. Pages 1 to 8 are at the top. A tap on a page number shows that page. A tap on Edit page name opens the name.",
                   "A tap on Load opens the saved sound in that slot. A tap on Save stores the current sound there. A tap on Edit changes the name.",
+                  "Save also stores the settings of all 8 Sound FX and which effect is on. Load brings them back exactly. Factory 64 presets and older presets load without changing the Sound FX.",
                   "A tap on Import picks a page file. A tap on Save on the bottom row asks the phone where to store the page. A tap on Close closes the window."
                 ],
                 "media": "assets/guide/presets-window.jpg"
@@ -1752,11 +1805,13 @@
                 "title": "Settings",
                 "body": [
                   "A tap on Settings, at the top of every screen, opens this window. The line under the title reads Language & console session.",
+                  "A tap on Costume Frequency, the first row, opens Tune frequencies (Hz).",
                   "A tap on Language closes Settings and opens Choose language. Continue applies the language. Dismiss closes the list.",
-                  "A tap on Save as opens Save Console. Save confirms. Cancel closes it.",
+                  "A tap on Save as opens Save Console. Save confirms. Cancel closes it. A saved session also keeps the Sound FX and the loop page names and colors.",
                   "A tap on Load opens Load Console. If nothing is saved, it reads No saved sessions. Export all and Import all are in that window. Delete asks before it removes a session.",
                   "A tap on Show tutorial starts the tour again.",
                   "A tap on Factory 64 asks Restore Factory 64? Restore replaces the Factory 64 presets, all 8 Style drum packs, and all 11 Exclusive packs, then loads slot 1 on page 1. Cancel closes the question.",
+                  "A tap on benchmark, under Factory 64, opens the audio test tool.",
                   "The X and Close close Settings."
                 ],
                 "media": "assets/guide/settings-window.jpg"
@@ -1839,8 +1894,9 @@
             "title": "Loop",
             "body": [
               "A tap on Loop opens this screen. It has 8 pages and 4 channels on each page, 32 channels in all. A recording stops at 60 seconds.",
-              "The project name starts as Looper Project. A tap in the name changes it. LIVE locks the name.",
-              "A tap on a page number, 1 through 8, shows that page.",
+              "A tap on a page number, 1 through 8, shows that page. A long-press opens Page name. Type a name, pick one of 8 colors (orange, red, gold, brown, green, blue, purple, pink), and tap OK. Reset removes the color. Cancel closes without changes. LIVE turns the long-press off.",
+              "The page color fills that page number and colors the channel waves on that page.",
+              "The name field next to Back shows the name of the page you are on. While it is empty, it reads Page and the number. A tap in it lets you type the name. LIVE locks the name. Names and colors are saved with the loop project and in Export.",
               "Each channel name starts as Ch and a number. A tap in the name changes it. LIVE locks the name.",
               "A tap on Back restores the take cleared most recently on this screen. It does not leave the screen. It works only after a clear that can still be restored, and not while that channel is busy. LIVE still allows Back when that restore is there.",
               "A tap on Rec starts recording. The label then reads STOP. Another tap stops the take. Starting a recording drops the Back restore for that channel.",
@@ -1866,6 +1922,9 @@
                 ],
                 "media": "assets/guide/looper-fx-window.jpg"
               }
+            ],
+            "images": [
+              "assets/guide/loop-pages.jpg"
             ]
           },
           {
@@ -2670,6 +2729,23 @@
         },
         "items": [
           {
+            "id": "sound-fx-looper-pages",
+            "status": "in_progress",
+            "title": "Sound FX + looper page colors",
+            "ticker": "Sound FX and looper page colors",
+            "summary": "Coming in 1.08: Sound FX has 8 new effects that follow the drum beat, and you can switch between them while you play. Presets and sessions now keep the settings of all 8 Sound FX. Each looper page can get a name and one of 8 colors. Knobs have a new gold ring that shows the value.",
+            "href": "/guide",
+            "cta": "Open guide",
+            "images": [
+              "/assets/updates/sound-fx.jpg",
+              "/assets/updates/looper-pages.jpg"
+            ],
+            "imageAlts": [
+              "Sound FX window with Psy Orbit selected.",
+              "Loop screen with colored page numbers and a page name."
+            ]
+          },
+          {
             "id": "mic-fx-and-back",
             "status": "in_progress",
             "title": "Mic FX + Back button",
@@ -3047,9 +3123,10 @@
             "id": "sound",
             "title": "Sound",
             "body": [
-              "Нажатие на Sound открывает этот экран. Долгое нажатие на Sound открывает окно benchmark.",
+              "Нажатие на Sound открывает этот экран.",
               "Sine, Square, Triangle, Saw и Noise находятся под скоупами. Нажатие выбирает эту волну. Экран начинает с Saw.",
               "Нажатие на Detune включает или выключает detune. Нажатие на RIP, FUZZ, PHAZ или PIANO включает или выключает это.",
+              "Нажатие на FX открывает Sound FX. FX становится золотым, пока эффект включён.",
               "Стрелки рядом с PRESET загружают следующий или предыдущий сохранённый пресет. Если сохранённых нет, телефон пишет No saved presets.",
               "Стрелки рядом с DRUM KIT загружают следующий или предыдущий набор. LIVE выключает эти стрелки.",
               "PRO и LIVE находятся вверху каждого экрана. Нажатие переключает их. LIVE выключает Clear, загрузку файла, Import, загрузку сэмпла ударных, листание наборов, Load набора и ввод числа на регуляторе. Back остаётся после очистки.",
@@ -3071,10 +3148,22 @@
                 "media": "assets/guide/octave.jpg"
               },
               {
-                "id": "freq",
-                "title": "freq",
+                "id": "sound-fx",
+                "title": "Sound FX",
                 "body": [
-                  "freq находится на экране звука. Нажатие открывает Tune frequencies (Hz).",
+                  "Нажатие на FX открывает Sound FX. Клавиши играют, пока окно открыто. Нажатие на Close или за пределами окна закрывает его.",
+                  "Эффектов 8: Sub Forge, Depth Drop, Bass Clamp, Floor Pump, Iron Growl, Psy Orbit, Thick Vein и Kick Bond. Нажатие включает эффект. Нажатие на включённый эффект выключает FX. Включён только один за раз.",
+                  "Эффекты можно переключать во время игры. Переход плавный, громкость остаётся примерно той же. Эффект слышен в динамике, в записи WAV и в том, что записывает лупер.",
+                  "Эффекты идут в такт барабанам. Пока барабаны ещё не играли, темп 120 BPM. После остановки барабанов остаётся их последний темп. Depth Drop падает заново каждые 2 доли и на каждой новой ноте.",
+                  "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого эффекта. Каждый из 8 эффектов хранит свои настройки при переключении. Transpose идёт от -12 до 12 и меняет все 8 эффектов, включая Sub Forge."
+                ],
+                "media": "assets/guide/sound-fx-window.jpg"
+              },
+              {
+                "id": "freq",
+                "title": "Costume Frequency",
+                "body": [
+                  "Costume Frequency это первая строка в Settings. Нажатие открывает Tune frequencies (Hz).",
                   "У каждой клавиши есть частота в Hz. Можно настроить клавиатуру на нужные частоты или играть по шаблону.",
                   "Ready scales (D = 261 Hz) это шаблоны: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd и Pentatonic. Нажатие на имя применяет этот шаблон, с D на 261 Hz.",
                   "Reset в строке заголовка. Default над Close. Нажатие на Close закрывает окно."
@@ -3093,7 +3182,8 @@
                 "id": "volume",
                 "title": "Volume",
                 "body": [
-                  "Volume, Attack, Decay, Sustain, Release, Cutoff, Resonance, Echo Mix и Glide это регуляторы на экране звука. Перетаскивание задаёт регулятор. Нажатие на число открывает поле, где можно ввести значение. LIVE не открывает это поле."
+                  "Volume, Attack, Decay, Sustain, Release, Cutoff, Resonance, Echo Mix и Glide это регуляторы на экране звука. Перетаскивание задаёт регулятор. Нажатие на число открывает поле, где можно ввести значение. LIVE не открывает это поле.",
+                  "У каждого регулятора в приложении есть золотое кольцо, которое показывает значение. На регуляторах L/R кольцо начинается сверху и заполняется к L или R."
                 ],
                 "media": "assets/guide/volume-knobs.jpg"
               },
@@ -3112,6 +3202,7 @@
                 "body": [
                   "Нажатие на Presets открывает Presets, с 8 местами. Страницы 1 до 8 сверху. Нажатие на номер страницы показывает страницу. Нажатие на Edit page name открывает имя.",
                   "Нажатие на Load открывает сохранённый звук в этом месте. Нажатие на Save кладёт туда текущий звук. Нажатие на Edit меняет имя.",
+                  "Save также сохраняет настройки всех 8 Sound FX и то, какой эффект включён. Load возвращает их точно. Пресеты Factory 64 и старые пресеты загружаются, не меняя Sound FX.",
                   "Нажатие на Import выбирает файл страницы. Нажатие на Save в нижней строке спрашивает телефон, куда сохранить страницу. Нажатие на Close закрывает окно."
                 ],
                 "media": "assets/guide/presets-window.jpg"
@@ -3129,11 +3220,13 @@
                 "title": "Settings",
                 "body": [
                   "Нажатие на Settings, вверху каждого экрана, открывает это окно. Строка под заголовком говорит Language & console session.",
+                  "Нажатие на Costume Frequency, первую строку, открывает Tune frequencies (Hz).",
                   "Нажатие на Language закрывает Settings и открывает Choose language. Continue применяет язык. Dismiss закрывает список.",
-                  "Нажатие на Save as открывает Save Console. Save подтверждает. Cancel закрывает.",
+                  "Нажатие на Save as открывает Save Console. Save подтверждает. Cancel закрывает. Сохранённая сессия хранит также Sound FX и имена и цвета страниц лупера.",
                   "Нажатие на Load открывает Load Console. Если ничего не сохранено, написано No saved sessions. Export all и Import all находятся там. Delete спрашивает, прежде чем удалить сессию.",
                   "Нажатие на Show tutorial начинает тур заново.",
                   "Нажатие на Factory 64 спрашивает Restore Factory 64? Restore заменяет пресеты Factory 64, все 8 наборов Style и все 11 наборов Exclusive, затем загружает место 1 на странице 1. Cancel закрывает вопрос.",
+                  "Нажатие на benchmark, под Factory 64, открывает инструмент проверки звука.",
                   "X и Close закрывают Settings."
                 ],
                 "media": "assets/guide/settings-window.jpg"
@@ -3216,8 +3309,9 @@
             "title": "Loop",
             "body": [
               "Нажатие на Loop открывает этот экран. В нём 8 страниц и 4 канала на каждой, всего 32 канала. Запись останавливается на 60 секундах.",
-              "Имя проекта начинает как Looper Project. Нажатие в имени меняет его. LIVE запирает имя.",
-              "Нажатие на номер страницы, от 1 до 8, показывает страницу.",
+              "Нажатие на номер страницы, от 1 до 8, показывает страницу. Долгое нажатие открывает Page name. Введите имя, выберите один из 8 цветов (оранжевый, красный, золотой, коричневый, зелёный, синий, фиолетовый, розовый) и нажмите OK. Reset убирает цвет. Cancel закрывает без изменений. LIVE выключает долгое нажатие.",
+              "Цвет страницы заполняет её номер и окрашивает волны каналов на этой странице.",
+              "Поле имени рядом с Back показывает имя текущей страницы. Пока оно пустое, там написано Page и номер. Нажатие в поле позволяет ввести имя. LIVE запирает имя. Имена и цвета сохраняются вместе с проектом лупера и в Export.",
               "Имя каждого канала начинает как Ch и число. Нажатие в имени меняет его. LIVE запирает имя.",
               "Нажатие на Back возвращает запись, очищенную последней на этом экране. Оно не уходит с экрана. Оно работает только после очистки, которую ещё можно вернуть, и не пока канал занят. LIVE всё ещё позволяет Back, когда это восстановление есть.",
               "Нажатие на Rec начинает запись. Затем надпись говорит STOP. Ещё одно нажатие останавливает запись. Начало записи сбрасывает восстановление Back этого канала.",
@@ -3243,6 +3337,9 @@
                 ],
                 "media": "assets/guide/looper-fx-window.jpg"
               }
+            ],
+            "images": [
+              "assets/guide/loop-pages.jpg"
             ]
           },
           {
@@ -4047,6 +4144,23 @@
         },
         "items": [
           {
+            "id": "sound-fx-looper-pages",
+            "status": "in_progress",
+            "title": "Sound FX + цвета страниц лупера",
+            "ticker": "Sound FX и цвета страниц лупера",
+            "summary": "В версии 1.08: у Sound FX 8 новых эффектов, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты и сессии теперь сохраняют настройки всех 8 Sound FX. Каждой странице лупера можно дать имя и один из 8 цветов. У регуляторов новое золотое кольцо, которое показывает значение.",
+            "href": "/guide",
+            "cta": "Открыть гид",
+            "images": [
+              "/assets/updates/sound-fx.jpg",
+              "/assets/updates/looper-pages.jpg"
+            ],
+            "imageAlts": [
+              "Окно Sound FX, выбран Psy Orbit.",
+              "Экран Loop с цветными номерами страниц и именем страницы."
+            ]
+          },
+          {
             "id": "mic-fx-and-back",
             "status": "in_progress",
             "title": "Mic FX и кнопка Back",
@@ -4424,9 +4538,10 @@
             "id": "sound",
             "title": "Sound",
             "body": [
-              "الضغط على Sound يفتح هذه الشاشة. الضغط المطوّل على Sound يفتح نافذة benchmark.",
+              "الضغط على Sound يفتح هذه الشاشة.",
               "Sine وSquare وTriangle وSaw وNoise تحت المناظير. الضغط يختار هذه الموجة. الشاشة تبدأ على Saw.",
               "الضغط على Detune يشغّل detune أو يوقفه. الضغط على RIP أو FUZZ أو PHAZ أو PIANO يشغّل ذلك أو يوقفه.",
+              "الضغط على FX يفتح Sound FX. يصبح FX ذهبياً ما دام مؤثر يعمل.",
               "الأسهم بجانب PRESET تحمّل الإعداد المحفوظ التالي أو السابق. إذا لم يوجد محفوظ، يقول الهاتف No saved presets.",
               "الأسهم بجانب DRUM KIT تحمّل الطقم التالي أو السابق. LIVE يوقف هذه الأسهم.",
               "PRO وLIVE في أعلى كل شاشة. الضغط يبدّل بينهما. LIVE يوقف Clear وتحميل ملف وImport وتحميل عينة طبل وتصفح الأطقم وLoad للطقم وكتابة رقم على مقبض. Back يبقى بعد المسح.",
@@ -4448,10 +4563,22 @@
                 "media": "assets/guide/octave.jpg"
               },
               {
-                "id": "freq",
-                "title": "freq",
+                "id": "sound-fx",
+                "title": "Sound FX",
                 "body": [
-                  "freq على شاشة الصوت. الضغط يفتح Tune frequencies (Hz).",
+                  "الضغط على FX يفتح Sound FX. المفاتيح تبقى تعزف والنافذة مفتوحة. الضغط على Close أو خارج النافذة يغلقها.",
+                  "هناك 8 مؤثرات: Sub Forge وDepth Drop وBass Clamp وFloor Pump وIron Growl وPsy Orbit وThick Vein وKick Bond. الضغط يشغّل مؤثراً. الضغط على المؤثر الذي يعمل يوقف FX. يعمل مؤثر واحد فقط في كل مرة.",
+                  "يمكنك تبديل المؤثر أثناء العزف. الانتقال ناعم ويبقى مستوى الصوت تقريباً كما هو. تسمع المؤثر في السماعة وفي تسجيل WAV وفيما يسجّله اللوبر.",
+                  "المؤثرات تتبع إيقاع الطبول. قبل أن تعزف الطبول تعمل على 120 BPM. بعد توقف الطبول تبقى على آخر سرعة للطبول. Depth Drop يهبط من جديد كل 2 نبضة ومع كل نغمة جديدة.",
+                  "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لذلك المؤثر. كل مؤثر من الثمانية يحتفظ بإعداداته عند التبديل. Transpose يجري من -12 إلى 12 ويغيّر المؤثرات الثمانية كلها، ومنها Sub Forge."
+                ],
+                "media": "assets/guide/sound-fx-window.jpg"
+              },
+              {
+                "id": "freq",
+                "title": "Costume Frequency",
+                "body": [
+                  "Costume Frequency هو الصف الأول في Settings. الضغط يفتح Tune frequencies (Hz).",
                   "لكل مفتاح تردد بالـ Hz. اضبط لوحة المفاتيح على الترددات التي تريد، أو اعزف من قالب.",
                   "Ready scales (D = 261 Hz) هي القوالب: Major وMinor وHarmonic وDorian وMixolydian وHijaz وKurd وPentatonic. الضغط على اسم يطبّق ذلك القالب، مع D على 261 Hz.",
                   "Reset في سطر العنوان. Default فوق Close. الضغط على Close يغلق النافذة."
@@ -4470,7 +4597,8 @@
                 "id": "volume",
                 "title": "Volume",
                 "body": [
-                  "Volume وAttack وDecay وSustain وRelease وCutoff وResonance وEcho Mix وGlide مقابض على شاشة الصوت. السحب يحدد المقبض. الضغط على الرقم يفتح خانة تكتب فيها قيمة. LIVE لا يفتح هذه الخانة."
+                  "Volume وAttack وDecay وSustain وRelease وCutoff وResonance وEcho Mix وGlide مقابض على شاشة الصوت. السحب يحدد المقبض. الضغط على الرقم يفتح خانة تكتب فيها قيمة. LIVE لا يفتح هذه الخانة.",
+                  "لكل مقبض في التطبيق حلقة ذهبية تعرض القيمة. في مقابض L/R تبدأ الحلقة من الأعلى وتمتلئ نحو L أو R."
                 ],
                 "media": "assets/guide/volume-knobs.jpg"
               },
@@ -4489,6 +4617,7 @@
                 "body": [
                   "الضغط على Presets يفتح Presets، مع 8 خانات. الصفحات 1 إلى 8 في الأعلى. الضغط على رقم صفحة يعرض الصفحة. الضغط على Edit page name يفتح الاسم.",
                   "الضغط على Load يفتح الصوت المحفوظ في الخانة. الضغط على Save يخزّن الصوت الحالي هناك. الضغط على Edit يغيّر الاسم.",
+                  "Save يحفظ أيضاً إعدادات مؤثرات Sound FX الثمانية وأي مؤثر يعمل. Load يعيدها كما هي. إعدادات Factory 64 والإعدادات القديمة تُحمَّل دون تغيير Sound FX.",
                   "الضغط على Import يختار ملف صفحة. الضغط على Save في الصف السفلي يسأل الهاتف أين يحفظ الصفحة. الضغط على Close يغلق النافذة."
                 ],
                 "media": "assets/guide/presets-window.jpg"
@@ -4506,11 +4635,13 @@
                 "title": "Settings",
                 "body": [
                   "الضغط على Settings، في أعلى كل شاشة، يفتح هذه النافذة. السطر تحت العنوان يقول Language & console session.",
+                  "الضغط على Costume Frequency، الصف الأول، يفتح Tune frequencies (Hz).",
                   "الضغط على Language يغلق Settings ويفتح Choose language. Continue يطبّق اللغة. Dismiss يغلق القائمة.",
-                  "الضغط على Save as يفتح Save Console. Save يؤكد. Cancel يغلق.",
+                  "الضغط على Save as يفتح Save Console. Save يؤكد. Cancel يغلق. الجلسة المحفوظة تحفظ أيضاً Sound FX وأسماء صفحات اللوب وألوانها.",
                   "الضغط على Load يفتح Load Console. إذا لم يوجد محفوظ، يظهر No saved sessions. Export all وImport all هناك. Delete يسأل قبل أن يحذف الجلسة.",
                   "الضغط على Show tutorial يبدأ الجولة من جديد.",
                   "الضغط على Factory 64 يسأل Restore Factory 64? Restore يستبدل إعدادات Factory 64 وكل حزم Style الثماني وكل حزم Exclusive الإحدى عشرة، ثم يحمّل الخانة 1 في الصفحة 1. Cancel يغلق السؤال.",
+                  "الضغط على benchmark، تحت Factory 64، يفتح أداة فحص الصوت.",
                   "X وClose يغلقان Settings."
                 ],
                 "media": "assets/guide/settings-window.jpg"
@@ -4593,8 +4724,9 @@
             "title": "Loop",
             "body": [
               "الضغط على Loop يفتح هذه الشاشة. فيها 8 صفحات و4 قنوات في كل صفحة، 32 قناة في المجموع. التسجيل يتوقف عند 60 ثانية.",
-              "اسم المشروع يبدأ Looper Project. الضغط في الاسم يغيّره. LIVE يقفل الاسم.",
-              "الضغط على رقم صفحة، من 1 إلى 8، يعرض الصفحة.",
+              "الضغط على رقم صفحة، من 1 إلى 8، يعرض الصفحة. الضغط المطوّل يفتح Page name. اكتب اسماً، واختر لوناً من 8 ألوان (برتقالي، أحمر، ذهبي، بني، أخضر، أزرق، بنفسجي، وردي)، ثم اضغط OK. Reset يزيل اللون. Cancel يغلق دون تغيير. LIVE يوقف الضغط المطوّل.",
+              "لون الصفحة يملأ رقمها ويلوّن موجات القنوات في تلك الصفحة.",
+              "حقل الاسم بجانب Back يعرض اسم الصفحة التي أنت عليها. وهو فارغ يظهر فيه Page والرقم. الضغط في الحقل يتيح كتابة الاسم. LIVE يقفل الاسم. الأسماء والألوان تُحفظ مع مشروع اللوب وفي Export.",
               "اسم كل قناة يبدأ Ch ورقماً. الضغط في الاسم يغيّره. LIVE يقفل الاسم.",
               "الضغط على Back يعيد الأخذ الذي مُسح أخيراً على هذه الشاشة. لا يغادر الشاشة. يعمل فقط بعد مسح ما زال يمكن إعادته، وليس بينما القناة مشغولة. LIVE ما زال يسمح بـ Back عندما توجد هذه الإعادة.",
               "الضغط على Rec يبدأ التسجيل. ثم يقول النص STOP. ضغط آخر يوقف الأخذ. بدء التسجيل يسقط إعادة Back لتلك القناة.",
@@ -4620,6 +4752,9 @@
                 ],
                 "media": "assets/guide/looper-fx-window.jpg"
               }
+            ],
+            "images": [
+              "assets/guide/loop-pages.jpg"
             ]
           },
           {
@@ -5423,6 +5558,23 @@
           "shipped": "صدر مؤخراً"
         },
         "items": [
+          {
+            "id": "sound-fx-looper-pages",
+            "status": "in_progress",
+            "title": "Sound FX + ألوان صفحات اللوبر",
+            "ticker": "Sound FX وألوان صفحات اللوبر",
+            "summary": "في الإصدار 1.08: في Sound FX ثمانية مؤثرات جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة والجلسات تحفظ الآن إعدادات مؤثرات Sound FX الثمانية كلها. يمكن إعطاء كل صفحة في اللوبر اسماً وواحداً من 8 ألوان. للمقابض حلقة ذهبية جديدة تعرض القيمة.",
+            "href": "/guide",
+            "cta": "فتح الدليل",
+            "images": [
+              "/assets/updates/sound-fx.jpg",
+              "/assets/updates/looper-pages.jpg"
+            ],
+            "imageAlts": [
+              "نافذة Sound FX مع اختيار Psy Orbit.",
+              "شاشة Loop بأرقام صفحات ملوّنة واسم صفحة."
+            ]
+          },
           {
             "id": "mic-fx-and-back",
             "status": "in_progress",
