@@ -3,7 +3,7 @@ import { createServer } from "http";
 import fs from "node:fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { applySeoToHtml, languageFromSearch, seoDocument } from "../shared/seo";
+import { applySeoToHtml, languageFromPath, languageFromSearch, seoDocument } from "../shared/seo";
 import { attachCommerceApi, prepareCommerce } from "./commerce";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -41,7 +41,8 @@ async function startServer() {
   ) => {
     if (!indexTemplate)
       indexTemplate = fs.readFileSync(indexTemplatePath, "utf8");
-    const language = languageFromSearch(originalUrl) ?? "en";
+    const language =
+      languageFromPath(pathname) ?? languageFromSearch(originalUrl) ?? "en";
     const html = applySeoToHtml(indexTemplate, seoDocument(pathname, language));
     res.status(200).type("html").send(html);
   };

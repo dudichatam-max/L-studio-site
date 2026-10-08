@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "wouter";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { seoDocument, syncLanguageSearch } from "@shared/seo";
+import { seoDocument, syncLanguageUrl } from "@shared/seo";
 
 function setContent(selector: string, content: string) {
   const element = document.querySelector(selector);
@@ -42,7 +42,7 @@ export default function DocumentSeo() {
     setContent('meta[name="twitter:description"]', doc.socialDescription);
     const script = document.getElementById("l-studio-jsonld");
     if (script) script.textContent = JSON.stringify(doc.jsonLd);
-    syncLanguageSearch(language);
+    syncLanguageUrl(language);
   }, [language, location]);
 
   return null;

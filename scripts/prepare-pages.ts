@@ -6,7 +6,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { applySeoToHtml, renderSitemapXml, seoDocument } from "../shared/seo";
+import { LANGUAGES, applySeoToHtml, localizedPath, renderSitemapXml, seoDocument } from "../shared/seo";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = join(root, "dist", "public");
@@ -33,11 +33,18 @@ const targets: Array<{ file: string; path: string }> = [
   { file: "buy/success/index.html", path: "/buy/success/" },
 ];
 
-for (const target of targets) {
-  const dest = join(publicDir, target.file);
-  mkdirSync(dirname(dest), { recursive: true });
-  writeFileSync(dest, applySeoToHtml(template, seoDocument(target.path, "en")));
-  console.log(`Prepared ${dest}`);
+// English at the root, then /he/, /ru/ and /ar/ copies with their own lang, dir,
+// title, description, canonical and hreflang in the static HTML.
+for (const language of LANGUAGES) {
+  for (const target of targets) {
+    if (language !== "en" && target.path === "/404") continue;
+    const path = localizedPath(target.path, language);
+    const file = language === "en" ? target.file : `${language}/${target.file}`;
+    const dest = join(publicDir, file);
+    mkdirSync(dirname(dest), { recursive: true });
+    writeFileSync(dest, applySeoToHtml(template, seoDocument(path, language)));
+    console.log(`Prepared ${dest}`);
+  }
 }
 
 writeFileSync(join(publicDir, "sitemap.xml"), renderSitemapXml(), "utf8");

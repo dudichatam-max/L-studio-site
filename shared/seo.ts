@@ -303,7 +303,7 @@ export type SeoDocument = {
 
 type SeoJsonLd = {
   "@context": "https://schema.org";
-  "@graph": [SeoWebSite, SeoSoftwareApplication];
+  "@graph": [SeoWebSite, SeoMobileApplication];
 };
 
 type SeoWebSite = {
@@ -315,20 +315,52 @@ type SeoWebSite = {
   description: string;
 };
 
-type SeoSoftwareApplication = {
-  "@type": "SoftwareApplication";
+type SeoMobileApplication = {
+  "@type": "MobileApplication";
   "@id": string;
   name: "L Studio";
-  operatingSystem: "Android";
-  applicationCategory: "MusicApplication";
+  operatingSystem: typeof APP_FACTS.operatingSystem;
+  applicationCategory: "MultimediaApplication";
+  softwareVersion: typeof APP_FACTS.softwareVersion;
+  fileSize: typeof APP_FACTS.fileSize;
   url: string;
   inLanguage: Language;
   description: string;
+  image: string;
+  screenshot: string[];
+  offers: {
+    "@type": "Offer";
+    price: typeof APP_FACTS.price;
+    priceCurrency: typeof APP_FACTS.priceCurrency;
+  };
   author: { "@type": "Person"; name: "David Chatam" };
 };
 
+/**
+ * App facts for structured data. Source: app repo dudichatam-max/L-studio,
+ * branch google-play-pro 685060d, app/build.gradle (versionName "1.08",
+ * minSdk 24 = Android 7.0). Size: 1.08 build as shown on the site (60.6 MB).
+ * Price: David, 2026-10-08, L Studio Pro on Google Play for $8.
+ * No installUrl or Play link until the public Google Play listing is live.
+ */
+export const APP_FACTS = {
+  operatingSystem: "Android 7.0+",
+  softwareVersion: "1.08",
+  fileSize: "60.6MB",
+  price: "8",
+  priceCurrency: "USD",
+} as const;
+
+const APP_SCREENSHOTS = [
+  "/assets/play/01-sound-fx.jpg",
+  "/assets/play/12-looper-8-colours.jpg",
+  "/assets/play/04-drum-machine.jpg",
+  "/assets/play/05-live-pad.jpg",
+  "/assets/play/07-mic-fx.jpg",
+];
+
 export const SITEMAP_PAGES: Array<{
-  id: Exclude<SeoPageId, "not-found" | "buy-success">;
+  id: Exclude<SeoPageId, "not-found" | "buy-success" | "buy">;
   changefreq: "weekly" | "monthly";
   priority: "1.0" | "0.8" | "0.7" | "0.6";
 }> = [
@@ -338,7 +370,6 @@ export const SITEMAP_PAGES: Array<{
   { id: "updates", changefreq: "weekly", priority: "0.7" },
   { id: "guide", changefreq: "monthly", priority: "0.7" },
   { id: "factory-64", changefreq: "monthly", priority: "0.8" },
-  { id: "buy", changefreq: "monthly", priority: "0.7" },
   { id: "factory-drums", changefreq: "monthly", priority: "0.8" },
   { id: "exclusive", changefreq: "monthly", priority: "0.7" },
 ];
@@ -349,6 +380,33 @@ export function isLanguage(
   return value === "en" || value === "he" || value === "ru" || value === "ar";
 }
 
+/** Path prefix for each language. English lives at the root. */
+export function languagePrefix(language: Language): string {
+  return language === "en" ? "" : `/${language}`;
+}
+
+/** Language from a /he/, /ru/ or /ar/ path prefix. English has no prefix. */
+export function languageFromPath(pathname: string): Language | null {
+  const match = /^\/(he|ru|ar)(?:\/|$)/.exec(normalizePathname(pathname, false));
+  return match && isLanguage(match[1]) ? match[1] : null;
+}
+
+/** Drops a /he/, /ru/ or /ar/ prefix: "/he/guide/" becomes "/guide/". */
+export function stripLanguagePrefix(pathname: string): string {
+  const path = normalizePathname(pathname, false);
+  const match = /^\/(he|ru|ar)(\/.*)?$/.exec(path);
+  if (!match) return path;
+  return match[2] || "/";
+}
+
+/** Same page in another language: localizedPath("/he/guide/", "ru") is "/ru/guide/". */
+export function localizedPath(pathname: string, language: Language): string {
+  const bare = stripLanguagePrefix(pathname);
+  const prefix = languagePrefix(language);
+  if (!prefix) return bare;
+  return bare === "/" ? `${prefix}/` : `${prefix}${bare}`;
+}
+
 export function languageFromSearch(search: string): Language | null {
   const query = search.includes("?")
     ? search.slice(search.indexOf("?") + 1)
@@ -357,12 +415,16 @@ export function languageFromSearch(search: string): Language | null {
   return isLanguage(value) ? value : null;
 }
 
-export function normalizePathname(pathname: string): string {
+export function normalizePathname(pathname: string, stripLanguage = true): string {
   let path = pathname.split("?")[0]?.split("#")[0] || "/";
   if (path.startsWith("/L-studio-site")) {
     path = path.slice("/L-studio-site".length) || "/";
   }
   if (!path.startsWith("/")) path = `/${path}`;
+  if (stripLanguage) {
+    const match = /^\/(he|ru|ar)(\/.*)?$/.exec(path);
+    if (match) path = match[2] || "/";
+  }
   return path;
 }
 
@@ -424,8 +486,9 @@ export function canonicalUrl(
   requestedPath = "/"
 ): string {
   const base = canonicalBase(pageId, requestedPath);
-  if (language === "en") return base;
-  return `${base}?lang=${language}`;
+  const prefix = languagePrefix(language);
+  if (!prefix) return base;
+  return `${SITE_ORIGIN}${prefix}${base.slice(SITE_ORIGIN.length)}`;
 }
 
 function alternatesFor(
@@ -448,6 +511,7 @@ function appDescription(language: Language): string {
 
 export function buildJsonLd(language: Language): SeoJsonLd {
   const description = appDescription(language);
+  const home = canonicalUrl("home", language);
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -455,19 +519,28 @@ export function buildJsonLd(language: Language): SeoJsonLd {
         "@type": "WebSite",
         "@id": `${SITE_ORIGIN}/#website`,
         name: "L Studio",
-        url: `${SITE_ORIGIN}/`,
+        url: home,
         inLanguage: language,
         description,
       },
       {
-        "@type": "SoftwareApplication",
+        "@type": "MobileApplication",
         "@id": `${SITE_ORIGIN}/#app`,
         name: "L Studio",
-        operatingSystem: "Android",
-        applicationCategory: "MusicApplication",
-        url: `${SITE_ORIGIN}/`,
+        operatingSystem: APP_FACTS.operatingSystem,
+        applicationCategory: "MultimediaApplication",
+        softwareVersion: APP_FACTS.softwareVersion,
+        fileSize: APP_FACTS.fileSize,
+        url: home,
         inLanguage: language,
         description,
+        image: `${SITE_ORIGIN}/icon-512.png`,
+        screenshot: APP_SCREENSHOTS.map(path => `${SITE_ORIGIN}${path}`),
+        offers: {
+          "@type": "Offer",
+          price: APP_FACTS.price,
+          priceCurrency: APP_FACTS.priceCurrency,
+        },
         author: {
           "@type": "Person",
           name: "David Chatam",
@@ -480,7 +553,9 @@ export function buildJsonLd(language: Language): SeoJsonLd {
 export function seoDocument(pathname: string, language: Language): SeoDocument {
   const pageId = pageIdFromPath(pathname);
   const copy = COPY[pageId][language];
-  const indexable = pageId !== "not-found" && pageId !== "buy-success";
+  // /buy/ only says purchases are not available on the site: keep it out of search.
+  const indexable =
+    pageId !== "not-found" && pageId !== "buy-success" && pageId !== "buy";
   return {
     pageId,
     language,
@@ -549,8 +624,10 @@ export function applySeoToHtml(html: string, doc: SeoDocument): string {
 }
 
 export function renderSitemapXml(): string {
-  const urls = SITEMAP_PAGES.map(page => {
-    const doc = seoDocument(CANONICAL_PATH[page.id], "en");
+  const urls = SITEMAP_PAGES.flatMap(page =>
+    LANGUAGES.map(language => ({ page, language }))
+  ).map(({ page, language }) => {
+    const doc = seoDocument(CANONICAL_PATH[page.id], language);
     const links = doc.alternates
       .map(
         alt =>
@@ -575,11 +652,13 @@ export function renderSitemapXml(): string {
   ].join("\n");
 }
 
-export function syncLanguageSearch(language: Language): void {
+/** Keeps the address bar on the language path (/he/...) and drops a legacy ?lang=. */
+export function syncLanguageUrl(language: Language): void {
   if (typeof window === "undefined") return;
   const url = new URL(window.location.href);
-  if (language === "en") url.searchParams.delete("lang");
-  else url.searchParams.set("lang", language);
+  url.searchParams.delete("lang");
+  const legacyBase = url.pathname.startsWith("/L-studio-site") ? "/L-studio-site" : "";
+  url.pathname = `${legacyBase}${localizedPath(url.pathname, language)}`;
   const next = `${url.pathname}${url.search}${url.hash}`;
   const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
   if (next !== current) {

@@ -84,6 +84,13 @@ const chromeUi = {
   ar: { close: "إغلاق القائمة", open: "فتح القائمة" },
 } satisfies Record<Language, { close: string; open: string }>;
 
+const developerAlt = {
+  he: "דוד חתם, המפתח של L Studio",
+  en: "David Chatam, the developer of L Studio",
+  ru: "Давид Хатам, разработчик L Studio",
+  ar: "دافيد حاتام، مطوّر L Studio",
+} satisfies Record<Language, string>;
+
 const instagramLabel = {
   he: "הצטרפו לקהילה באינסטגרם",
   en: "Join the community on Instagram",
@@ -657,7 +664,7 @@ export default function Home() {
         <section className="vision-section" id="vision" dir={dir}>
           <div className="container vision-grid">
             <div className="vision-copy">
-              <div className="vision-portrait"><picture><source srcSet={developerImage.webp} type="image/webp" /><img src={developerImage.jpg} alt="L Studio developer" loading="lazy" decoding="async" /></picture></div>
+              <div className="vision-portrait"><picture><source srcSet={developerImage.webp} type="image/webp" /><img src={developerImage.jpg} alt={developerAlt[language]} loading="lazy" decoding="async" /></picture></div>
               <span className="kicker">{vision.kicker}</span>
               <h2><Headline text={vision.title} /></h2>
               <span className="vision-author">{vision.author}</span>

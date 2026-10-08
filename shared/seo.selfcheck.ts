@@ -6,7 +6,11 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  APP_FACTS,
   LANGUAGES,
+  languageFromPath,
+  localizedPath,
+  stripLanguagePrefix,
   SITEMAP_PAGES,
   applySeoToHtml,
   buildJsonLd,
@@ -81,22 +85,26 @@ for (const page of pages) {
       !/daw/i.test(doc.title) && !/daw/i.test(doc.description),
       `${page}/${language} calls the product a DAW`
     );
+    const app = doc.jsonLd["@graph"][1];
+    assert(app["@type"] === "MobileApplication", "MobileApplication node");
     assert(
-      doc.jsonLd["@graph"][1].applicationCategory === "MusicApplication",
+      app.applicationCategory === "MultimediaApplication",
       "applicationCategory"
     );
+    assert(app.operatingSystem === "Android 7.0+", "operatingSystem (minSdk 24)");
+    assert(app.softwareVersion === "1.08", "softwareVersion");
+    assert(app.name === "L Studio", "app name");
+    // Price set by David for the public Google Play launch: $8. Do not change without him.
     assert(
-      doc.jsonLd["@graph"][1].operatingSystem === "Android",
-      "operatingSystem"
+      app.offers.price === "8" && app.offers.priceCurrency === "USD",
+      `${page}/${language} offer must be 8 USD`
     );
-    assert(doc.jsonLd["@graph"][1].name === "L Studio", "app name");
+    const json = JSON.stringify(doc.jsonLd);
+    assert(!/installUrl|play\.google|\.apk/i.test(json), `${page}/${language} has a store or APK link`);
+    assert(app.screenshot.length > 0, "screenshots");
     assert(
-      !JSON.stringify(doc.jsonLd).includes("offers"),
-      `${page}/${language} invents an offer`
-    );
-    assert(
-      !JSON.stringify(doc.jsonLd).includes("price"),
-      `${page}/${language} invents a price`
+      app.screenshot.every(url => url.startsWith("https://l-studio.studio/assets/")),
+      "screenshots are on the site"
     );
     seen.add(doc.description);
     const hreflang = doc.alternates.map(item => item.hreflang).join(",");
@@ -104,18 +112,23 @@ for (const page of pages) {
       hreflang === "en,he,ru,ar,x-default",
       `${page}/${language} hreflang set`
     );
+    assert(!doc.canonical.includes("lang="), `${page}/${language} canonical has no lang query`);
     if (language === "en") {
       assert(
-        !doc.canonical.includes("lang="),
-        `${page} English canonical has no lang query`
+        !/l-studio\.studio\/(he|ru|ar)(\/|$)/.test(doc.canonical),
+        `${page} English canonical has no language prefix`
       );
     } else {
       assert(
-        doc.canonical.endsWith(`?lang=${language}`),
-        `${page}/${language} canonical`
+        doc.canonical.startsWith(`https://l-studio.studio/${language}/`),
+        `${page}/${language} canonical uses /${language}/`
       );
     }
-    if (page === "not-found" || page === "buy-success") {
+    // The prefixed path resolves to the same page and canonical.
+    const prefixed = seoDocument(localizedPath(paths[page], language), language);
+    assert(prefixed.pageId === page, `${page}/${language} prefixed path resolves`);
+    assert(prefixed.canonical === doc.canonical, `${page}/${language} prefixed canonical`);
+    if (page === "not-found" || page === "buy-success" || page === "buy") {
       assert(doc.robots === "noindex, follow", `${page} robots`);
     } else {
       assert(doc.robots === "index, follow", `${page} robots`);
@@ -133,8 +146,28 @@ assert(
 );
 assert(
   seoDocument("/guide", "he").canonical ===
-    "https://l-studio.studio/guide/?lang=he",
+    "https://l-studio.studio/he/guide/",
   "guide Hebrew canonical"
+);
+assert(
+  seoDocument("/he/guide/", "he").canonical ===
+    "https://l-studio.studio/he/guide/",
+  "Hebrew guide path canonical"
+);
+assert(
+  seoDocument("/", "ar").canonical === "https://l-studio.studio/ar/",
+  "Arabic home canonical"
+);
+assert(languageFromPath("/he/") === "he", "language from /he/");
+assert(languageFromPath("/ru/guide/") === "ru", "language from /ru/guide/");
+assert(languageFromPath("/help/") === null, "no language from /help/");
+assert(languageFromPath("/") === null, "no language at root");
+assert(stripLanguagePrefix("/ar/factory-64/drums/") === "/factory-64/drums/", "strip prefix");
+assert(localizedPath("/he/guide/", "en") === "/guide/", "back to English path");
+assert(localizedPath("/", "he") === "/he/", "Hebrew home path");
+assert(
+  seoDocument("/he/nope", "he").canonical === "https://l-studio.studio/he/nope",
+  "unknown Hebrew path self canonical"
 );
 assert(
   seoDocument("/exclusive/", "en").canonical ===
@@ -158,9 +191,11 @@ const homeEn = buildJsonLd("en");
 const homeHe = buildJsonLd("he");
 assert(homeEn["@graph"][0]["@type"] === "WebSite", "WebSite node");
 assert(
-  homeEn["@graph"][1]["@type"] === "SoftwareApplication",
-  "SoftwareApplication node"
+  homeEn["@graph"][1]["@type"] === "MobileApplication",
+  "MobileApplication node"
 );
+assert(homeHe["@graph"][1].url === "https://l-studio.studio/he/", "Hebrew app url");
+assert(APP_FACTS.softwareVersion === "1.08", "app facts version");
 assert(homeHe["@graph"][0].inLanguage === "he", "Hebrew inLanguage");
 assert(
   homeEn["@graph"][0].description !== homeHe["@graph"][0].description,
@@ -190,6 +225,14 @@ assert(
   "Hebrew html lang and dir"
 );
 assert(
+  hebrewHome.includes('rel="canonical" href="https://l-studio.studio/he/"'),
+  "Hebrew canonical injection"
+);
+assert(
+  hebrewHome.includes('hreflang="he" href="https://l-studio.studio/he/"'),
+  "Hebrew hreflang injection"
+);
+assert(
   hebrewHome.includes("תחנת עבודה מוזיקלית מיקרוטונלית"),
   "Hebrew title injection"
 );
@@ -201,13 +244,17 @@ assert(
   "sitemap.xml matches renderSitemapXml()"
 );
 for (const page of SITEMAP_PAGES) {
-  assert(
-    sitemap.includes(
-      `<loc>${seoDocument(paths[page.id], "en").canonical}</loc>`
-    ),
-    `sitemap lists ${page.id}`
-  );
+  for (const language of LANGUAGES) {
+    assert(
+      sitemap.includes(
+        `<loc>${seoDocument(paths[page.id], language).canonical}</loc>`
+      ),
+      `sitemap lists ${page.id}/${language}`
+    );
+  }
 }
+assert(!sitemap.includes("?lang="), "sitemap has no ?lang= URLs");
+assert(!sitemap.includes("/buy/"), "sitemap omits /buy/ (no purchase on the site)");
 assert(
   !sitemap.includes("/buy/success"),
   "sitemap omits the download return page"

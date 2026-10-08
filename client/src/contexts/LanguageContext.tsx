@@ -1,12 +1,14 @@
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useMemo,
   useState,
   type ReactNode,
 } from "react";
-import { isLanguage, languageFromSearch, type Language } from "@shared/seo";
+import { isLanguage, languageFromPath, languageFromSearch, type Language } from "@shared/seo";
+import { replaceUrlLanguage, setActiveLanguage } from "@/lib/languageRouting";
 
 export type { Language };
 
@@ -25,13 +27,29 @@ type LanguageContextValue = {
 };
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
+/** Old GitHub project-pages path. The live site uses the root. */
+export function legacyBase(): string {
+  return window.location.pathname.startsWith("/L-studio-site") ? "/L-studio-site" : "";
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>(() => {
-    const fromUrl = languageFromSearch(window.location.search);
-    if (fromUrl) return fromUrl;
+  const [language, setLanguageState] = useState<Language>(() => {
+    // Order: /he/ path, legacy ?lang=he, saved choice, English.
     const saved = window.localStorage.getItem("l-studio-language");
-    return isLanguage(saved) ? saved : "en";
+    const initial =
+      languageFromPath(window.location.pathname) ??
+      languageFromSearch(window.location.search) ??
+      (isLanguage(saved) ? saved : "en");
+    setActiveLanguage(initial);
+    // Keep the address bar on the matching language path before the first render.
+    replaceUrlLanguage(initial, legacyBase());
+    return initial;
   });
+  const setLanguage = useCallback((next: Language) => {
+    setActiveLanguage(next);
+    replaceUrlLanguage(next, legacyBase());
+    setLanguageState(next);
+  }, []);
   const isRtl = language === "he" || language === "ar";
 
   useEffect(() => {
@@ -42,7 +60,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo(
     () => ({ language, setLanguage, isRtl }),
-    [isRtl, language]
+    [isRtl, language, setLanguage]
   );
   return (
     <LanguageContext.Provider value={value}>

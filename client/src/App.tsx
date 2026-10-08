@@ -2,7 +2,8 @@ import { lazy, Suspense, useEffect } from "react";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { LanguageProvider } from "./contexts/LanguageContext";
+import { LanguageProvider, legacyBase, useLanguage } from "./contexts/LanguageContext";
+import { languageHref, useLanguageLocation } from "./lib/languageRouting";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 
@@ -43,11 +44,10 @@ function ScrollToTop() {
 }
 
 function Router() {
-  const base = window.location.pathname.startsWith("/L-studio-site")
-    ? "/L-studio-site"
-    : "";
+  // Re-render links when the language changes (hrefs read the active language).
+  useLanguage();
   return (
-    <WouterRouter base={base}>
+    <WouterRouter base={legacyBase()} hook={useLanguageLocation} hrefs={languageHref}>
       <ScrollToTop />
       <DocumentSeo />
       <Suspense fallback={null}>
