@@ -17,9 +17,9 @@ const factoryHero = {
   webp1254: `${import.meta.env.BASE_URL}assets/factory-pack-hero-v4-1254.webp`,
   jpg800: `${import.meta.env.BASE_URL}assets/factory-pack-hero-v4-800.jpg`,
 };
-const factoryBoxPng = `${import.meta.env.BASE_URL}assets/factory-pack-box.png?v=20260930`;
-const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=20260930`;
-const factoryBoxWebp800 = `${import.meta.env.BASE_URL}assets/factory-pack-box-800.webp`;
+const factoryBoxJpg = `${import.meta.env.BASE_URL}assets/factory-pack-box.jpg?v=108-packs`;
+const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=108-packs`;
+const factoryBoxWebp800 = `${import.meta.env.BASE_URL}assets/factory-pack-box-800.webp?v=108-packs`;
 const developerImage = {
   webp: `${import.meta.env.BASE_URL}assets/Developer-720.webp`,
   jpg: `${import.meta.env.BASE_URL}assets/Developer-720.jpg`,
@@ -177,7 +177,7 @@ const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started wi
 const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
 const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYBOARD", "DSP / VOICES", "FX / MIX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
 const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
-const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "L Studio Pro comes with the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", coverAlt: "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles" };
+const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "L Studio Pro comes with the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", coverAlt: "L Studio Pro pack covers side by side: Factory 64 with 64 presets on 8 pages, Drum Kits with 8 kits and 8 styles, and Exclusive with 11 drum packs" };
 const exclusiveFan = {
   jpg: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.jpg`,
   webp: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.webp`,
@@ -618,8 +618,8 @@ export default function Home() {
             <span className="kicker">{factory.kicker}</span>
             <div className="factory-pack-cover">
               <picture>
-                <source srcSet={`${factoryBoxWebp800} 800w, ${factoryBoxWebp} 1600w`} sizes="(max-width: 600px) calc(100vw - 40px), 560px" type="image/webp" />
-                <img src={factoryBoxPng} alt={factory.coverAlt ?? "L Studio Factory Pack poster: presets with 8 pages and 64 voices, plus drums with 8 kits and 8 styles"} width={1600} height={1565} loading="lazy" decoding="async" />
+                <source srcSet={`${factoryBoxWebp800} 800w, ${factoryBoxWebp} 1120w`} sizes="(max-width: 600px) calc(100vw - 40px), 560px" type="image/webp" />
+                <img src={factoryBoxJpg} alt={factory.coverAlt ?? "L Studio Pro pack covers side by side: Factory 64 with 64 presets on 8 pages, Drum Kits with 8 kits and 8 styles, and Exclusive with 11 drum packs"} width={1120} height={740} loading="lazy" decoding="async" />
               </picture>
             </div>
             <p className="factory-pack-lede">{factory.lede}</p>
