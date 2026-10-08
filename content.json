@@ -374,7 +374,8 @@
                   "הקשה על Load פותחת את הסאונד השמור במקום. הקשה על Save שומרת את הסאונד הנוכחי שם. הקשה על Edit משנה את השם.",
                   "Save שומר גם את ההגדרות של כל 8 ה-Sound FX ואיזה אפקט דולק. Load מחזיר אותם בדיוק. פריסטים של Factory 64 ופריסטים ישנים נטענים בלי לשנות את ה-Sound FX.",
                   "הקשה על Import בוחרת קובץ עמוד. הקשה על Save בשורה התחתונה מבקשת מהטלפון איפה לשמור את העמוד. הקשה על Close סוגרת את החלון."
-                ]
+                ],
+                "media": "assets/guide/presets-window.jpg"
               },
               {
                 "id": "key",
@@ -1790,7 +1791,8 @@
                   "A tap on Load opens the saved sound in that slot. A tap on Save stores the current sound there. A tap on Edit changes the name.",
                   "Save also stores the settings of all 8 Sound FX and which effect is on. Load brings them back exactly. Factory 64 presets and older presets load without changing the Sound FX.",
                   "A tap on Import picks a page file. A tap on Save on the bottom row asks the phone where to store the page. A tap on Close closes the window."
-                ]
+                ],
+                "media": "assets/guide/presets-window.jpg"
               },
               {
                 "id": "key",
@@ -3206,7 +3208,8 @@
                   "Нажатие на Load открывает сохранённый звук в этом месте. Нажатие на Save кладёт туда текущий звук. Нажатие на Edit меняет имя.",
                   "Save также сохраняет настройки всех 8 Sound FX и то, какой эффект включён. Load возвращает их точно. Пресеты Factory 64 и старые пресеты загружаются, не меняя Sound FX.",
                   "Нажатие на Import выбирает файл страницы. Нажатие на Save в нижней строке спрашивает телефон, куда сохранить страницу. Нажатие на Close закрывает окно."
-                ]
+                ],
+                "media": "assets/guide/presets-window.jpg"
               },
               {
                 "id": "key",
@@ -4622,7 +4625,8 @@
                   "الضغط على Load يفتح الصوت المحفوظ في الخانة. الضغط على Save يخزّن الصوت الحالي هناك. الضغط على Edit يغيّر الاسم.",
                   "Save يحفظ أيضاً إعدادات مؤثرات Sound FX الثمانية وأي مؤثر يعمل. Load يعيدها كما هي. إعدادات Factory 64 والإعدادات القديمة تُحمَّل دون تغيير Sound FX.",
                   "الضغط على Import يختار ملف صفحة. الضغط على Save في الصف السفلي يسأل الهاتف أين يحفظ الصفحة. الضغط على Close يغلق النافذة."
-                ]
+                ],
+                "media": "assets/guide/presets-window.jpg"
               },
               {
                 "id": "key",
