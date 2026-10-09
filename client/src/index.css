@@ -114,6 +114,9 @@ h1 em, h2 em { color: var(--acid); font-style: normal; }
 .hero-console { position: relative; min-height: 485px; padding: 20px; border: 1px solid rgba(242,241,235,.19); background: linear-gradient(145deg, #171719 0%, #0c0c0e 58%, #141319 100%); box-shadow: -22px 22px 0 rgba(227,197,101,.06), 0 30px 80px rgba(0,0,0,.3); direction: ltr; transform: rotate(2.5deg); transition: transform 400ms var(--ease-out); }
 .hero-console:hover { transform: rotate(0deg) translateY(-5px); }
 .hero-console::after { content: ""; position: absolute; inset: 8px; border: 1px solid rgba(255,255,255,.035); pointer-events: none; }
+/* Hero without the side image: one column that follows the page direction. */
+.hero.hero--solo { grid-template-columns: minmax(0, 1fr); direction: inherit; }
+.hero.hero--solo .hero-copy { direction: inherit; max-width: 760px; }
 .hero-shot { position: relative; justify-self: center; width: min(100%, 360px); margin: 0; border: 2px solid #3a3a3a; border-radius: 30px; overflow: hidden; background: #0a0a0a; box-shadow: -22px 22px 0 rgba(227,197,101,.06), 0 30px 80px rgba(0,0,0,.45); transform: rotate(2.5deg); transition: transform 400ms var(--ease-out); }
 .hero-shot:hover { transform: rotate(0deg) translateY(-5px); }
 .hero-shot picture, .hero-shot img { display: block; width: 100%; height: auto; }
