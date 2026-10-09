@@ -24,6 +24,13 @@ const developerImage = {
   webp: `${import.meta.env.BASE_URL}assets/Developer-720.webp`,
   jpg: `${import.meta.env.BASE_URL}assets/Developer-720.jpg`,
 };
+// Hidden for now (David, 2026-10-09) until a new video with the new interface exists.
+// To restore: set the flag back to true. Files, copy and styles are kept.
+// SHOW_HERO_SHOT: hero app screenshot (assets/hero/app-looper-*).
+// SHOW_MEET_VIDEO: the "Meet L-studio" section with the intro Short, the hero
+// "Watch the short" button (hero.ctaPrimary) and the header button (nav.cta), all linking to #meet.
+const SHOW_HERO_SHOT: boolean = false;
+const SHOW_MEET_VIDEO: boolean = false;
 const heroShot = {
   webp420: `${import.meta.env.BASE_URL}assets/hero/app-looper-420.webp`,
   webp720: `${import.meta.env.BASE_URL}assets/hero/app-looper-720.webp`,
@@ -453,14 +460,14 @@ export default function Home() {
           </nav>
           <div className="header-actions">
             <LanguageSwitcher />
-            <a className="button button--small button--light" href="#meet"><span>{nav.cta}</span><ArrowUpRight size={15} /></a>
+            {SHOW_MEET_VIDEO && <a className="button button--small button--light" href="#meet"><span>{nav.cta}</span><ArrowUpRight size={15} /></a>}
             <button className="menu-toggle" type="button" aria-label={mobileOpen ? chrome.close : chrome.open} onClick={() => setMobileOpen((value) => !value)}>{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
           </div>
         </div>
         {mobileOpen && (
           <nav className="mobile-nav" aria-label={nav.features}>
             <LanguageSwitcher />
-            <a href="#meet" onClick={() => setMobileOpen(false)}>{nav.cta}</a>
+            {SHOW_MEET_VIDEO && <a href="#meet" onClick={() => setMobileOpen(false)}>{nav.cta}</a>}
             <a href="#features" onClick={() => setMobileOpen(false)}>{nav.features}</a>
             <a href="#architecture" onClick={() => setMobileOpen(false)}>{nav.architecture}</a>
             <a href="#vision" onClick={() => setMobileOpen(false)}>{nav.vision}</a>
@@ -486,7 +493,7 @@ export default function Home() {
 
       <main>
         {/* 1. Hero */}
-        <section className="hero container" aria-labelledby="hero-title">
+        <section className={`hero container${SHOW_HERO_SHOT ? "" : " hero--solo"}`} aria-labelledby="hero-title">
           <div className="hero-copy">
             <div className="eyebrow"><span className="eyebrow-dot" /> {hero.kicker}</div>
             <h1 id="hero-title"><Headline text={hero.title} /></h1>
@@ -496,7 +503,7 @@ export default function Home() {
             </div>
             <p className="hero-lede">{hero.body}</p>
             <div className="hero-actions">
-              <a className="button button--primary" href="#meet">{hero.ctaPrimary} <ArrowUpRight size={17} /></a>
+              {SHOW_MEET_VIDEO && <a className="button button--primary" href="#meet">{hero.ctaPrimary} <ArrowUpRight size={17} /></a>}
               <a className="text-link" href="#story">{hero.ctaSecondary} <ChevronRight size={16} /></a>
             </div>
             <div className="hero-proof">
@@ -505,15 +512,15 @@ export default function Home() {
               <span><b>{hero.stat3}</b></span>
             </div>
           </div>
-          <figure className="hero-shot">
+          {SHOW_HERO_SHOT && <figure className="hero-shot">
             <picture>
               <source srcSet={`${heroShot.webp420} 420w, ${heroShot.webp720} 720w`} sizes="(max-width: 1000px) min(78vw, 340px), 360px" type="image/webp" />
               <img src={heroShot.jpg720} alt={heroShotAlt[language]} width={720} height={1478} fetchPriority="high" decoding="async" />
             </picture>
-          </figure>
+          </figure>}
         </section>
 
-        <section className="meet-section container" id="meet" dir={dir} aria-labelledby="meet-title">
+        {SHOW_MEET_VIDEO && <section className="meet-section container" id="meet" dir={dir} aria-labelledby="meet-title">
           <div className="meet-copy">
             <span className="kicker">{meet.kicker}</span>
             <h2 id="meet-title"><Headline text={meet.title} /></h2>
@@ -522,7 +529,7 @@ export default function Home() {
           <div className="meet-short">
             <YouTubeFacade videoId={INTRO_SHORT_ID} title={meet.videoTitle} poster={meetPoster} />
           </div>
-        </section>
+        </section>}
 
         {/* Signal strip: hero → story bridge */}
         <div className="signal-strip"><div className="container signal-inner"><b>{signal.text}</b><span className="strip-note">{signal.note}</span></div></div>
