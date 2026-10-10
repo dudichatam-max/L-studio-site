@@ -52,7 +52,8 @@ type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 
 const PLAY_SHOT_VER = "108-play";
 const playShotFiles: Record<PlayId, string> = {
-  sound: "01-sound-fx",
+  // 1.09 Sound screen (real, cropped) until the designer's 1.09 Play assets replace it.
+  sound: "sound-109",
   loop: "12-looper-8-colours",
   drum: "04-drum-machine",
   pad: "05-live-pad",
@@ -64,28 +65,28 @@ function playShotUrl(id: PlayId, ext: "jpg" | "webp") {
 
 const playShotAlt = {
   he: {
-    sound: "תמונת Google Play: 8 אפקטי Sound FX מסונכרנים לביט.",
+    sound: "מסך Sound בגרסה 1.09: אייקון לכל גל, שני גלים דולקים יחד, הנובים והקלידים.",
     mic: "תמונת Google Play: ערוצי מיקרופון ואפקטי Mic FX.",
     loop: "תמונת Google Play: לופר עם 8 עמודים צבעוניים עם שם.",
     pad: "תמונת Google Play: ה-Pad עם Wah, Octave ו-Vibrato.",
     drum: "תמונת Google Play: מכונת תופים ב-16 צעדים עם ערכות ו-BPM.",
   },
   en: {
-    sound: "Google Play shot: 8 Sound FX synced to the beat.",
+    sound: "The Sound screen in version 1.09: an icon for each wave, two waves on together, the knobs and the keys.",
     mic: "Google Play shot: mic channels and Mic FX.",
     loop: "Google Play shot: looper with 8 colour-coded named pages.",
     pad: "Google Play shot: the Pad with Wah, Octave and Vibrato.",
     drum: "Google Play shot: 16-step drum machine with kits and BPM.",
   },
   ru: {
-    sound: "Скриншот Google Play: 8 Sound FX, синхронизированных с битом.",
+    sound: "Экран Sound в версии 1.09: значок у каждой волны, две волны включены вместе, ручки и клавиши.",
     mic: "Скриншот Google Play: каналы микрофона и Mic FX.",
     loop: "Скриншот Google Play: лупер с 8 цветными именованными страницами.",
     pad: "Скриншот Google Play: Pad с Wah, Octave и Vibrato.",
     drum: "Скриншот Google Play: барабанная машина на 16 шагов с наборами и BPM.",
   },
   ar: {
-    sound: "لقطة Google Play: 8 مؤثرات Sound FX متزامنة مع الإيقاع.",
+    sound: "شاشة Sound في الإصدار 1.09: أيقونة لكل موجة، موجتان تعملان معًا، المقابض والمفاتيح.",
     mic: "لقطة Google Play: قنوات الميكروفون ومؤثرات Mic FX.",
     loop: "لقطة Google Play: لوبر بـ 8 صفحات ملونة بأسماء.",
     pad: "لقطة Google Play: الـ Pad مع Wah وOctave وVibrato.",
@@ -284,7 +285,7 @@ function FeatureMedia({ id, alt }: { id: PlayId; alt: string }) {
   return (
     <picture>
       <source srcSet={playShotUrl(id, "webp")} type="image/webp" />
-      <img className="preview-media" src={playShotUrl(id, "jpg")} alt={alt} width={720} height={1280} loading="lazy" decoding="async" />
+      <img className="preview-media" src={playShotUrl(id, "jpg")} alt={alt} width={720} height={id === "sound" ? 1478 : 1280} loading="lazy" decoding="async" />
     </picture>
   );
 }
