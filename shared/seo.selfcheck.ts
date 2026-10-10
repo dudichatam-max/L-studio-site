@@ -96,7 +96,7 @@ for (const page of pages) {
       "applicationCategory"
     );
     assert(app.operatingSystem === "Android 7.0+", "operatingSystem (minSdk 24)");
-    assert(app.softwareVersion === "1.08", "softwareVersion");
+    assert(app.softwareVersion === "1.09", "softwareVersion");
     assert(app.name === "L Studio", "app name");
     // Price set by David for the public Google Play launch: $8. Do not change without him.
     assert(
@@ -199,7 +199,7 @@ assert(
   "MobileApplication node"
 );
 assert(homeHe["@graph"][1].url === "https://l-studio.studio/he/", "Hebrew app url");
-assert(APP_FACTS.softwareVersion === "1.08", "app facts version");
+assert(APP_FACTS.softwareVersion === "1.09", "app facts version");
 assert(homeHe["@graph"][0].inLanguage === "he", "Hebrew inLanguage");
 assert(
   homeEn["@graph"][0].description !== homeHe["@graph"][0].description,

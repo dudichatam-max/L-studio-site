@@ -343,7 +343,7 @@ export default function Terms() {
           <h1>{titleBlock(language)}</h1>
           <p>{text.hero}</p>
           <div className="privacy-date">
-            {text.date} <span>·</span> L Studio 1.08
+            {text.date} <span>·</span> L Studio 1.09
           </div>
         </section>
         <section className="privacy-intro container">

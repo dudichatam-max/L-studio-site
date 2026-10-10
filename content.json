@@ -15,7 +15,7 @@
         "updates": "עדכונים"
       },
       "hero": {
-        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.08",
+        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.09",
         "title": "יוצרים מוזיקה בטלפון.",
         "body": "L Studio היא אפליקציה ליצירת מוזיקה בטלפון האנדרואיד. מקליטים לופים, מוסיפים תופים, שרים עם המילים מול העיניים, ואם בא לכם לצאת מהתווים הרגילים, מכוונים כל קליד לתדר משלו.",
         "ctaPrimary": "לצפייה בסרטון הקצר",
@@ -1254,7 +1254,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro לאנדרואיד מגיע ל-Google Play באוקטובר 2026, ב-8$. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד מגיע ל-Google Play באוקטובר 2026, ב-8$. גרסה 1.08, 60.6MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
+        "body": "L Studio Pro לאנדרואיד מגיע ל-Google Play באוקטובר 2026, ב-8$. גרסה 1.09, 60.6MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
           "L Studio Pro לאנדרואיד ב-Google Play, 8$ בהשקה, 60.6MB",
@@ -1289,7 +1289,7 @@
         "navLabel": "עדכונים",
         "pageTitle": "מה חדש ב-L Studio.",
         "pageKicker": "L-STUDIO / עדכונים",
-        "pageIntro": "גרסה 1.08 בבדיקה ב-Google Play עכשיו. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
+        "pageIntro": "גרסה 1.09 בבדיקה ב-Google Play עכשיו. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
         "tickerLabel": "עדכונים",
         "statusLabels": {
           "in_progress": "בעבודה",
@@ -1304,10 +1304,10 @@
         "items": [
           {
             "id": "app-1-09-waves-drums",
-            "status": "in_progress",
-            "title": "מגיע ב-1.09: כמה גלים יחד",
-            "ticker": "מגיע ב-1.09: כמה גלים יחד ותופים בזמן אמת",
-            "summary": "מגיע בעדכון הבא ב-Google Play, גרסה 1.09. על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
+            "status": "shipped",
+            "title": "חדש ב-1.09: כמה גלים יחד",
+            "ticker": "חדש ב-1.09: כמה גלים יחד ותופים בזמן אמת",
+            "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.09: על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -1322,7 +1322,7 @@
             "status": "shipped",
             "title": "Sound FX + צבעים לעמודי הלופר",
             "ticker": "Sound FX וצבעים לעמודי הלופר",
-            "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.08: 8 אפקטי Sound FX חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים שומרים את ההגדרות של כל ה-8. לכל עמוד בלופר יש שם ואחד מ-8 צבעים. הנובים מראים את הערך בטבעת זהב, והמדריך באפליקציה מלמד את כל זה.",
+            "summary": "מאז גרסה 1.08: 8 אפקטי Sound FX חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים שומרים את ההגדרות של כל ה-8. לכל עמוד בלופר יש שם ואחד מ-8 צבעים. הנובים מראים את הערך בטבעת זהב, והמדריך באפליקציה מלמד את כל זה.",
             "href": "/guide",
             "cta": "למדריך",
             "images": [
@@ -1339,7 +1339,7 @@
             "status": "shipped",
             "title": "חבילות Exclusive ב-Pro",
             "ticker": "Exclusive ב-Pro",
-            "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.08: מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת. אלה 11 ערכות תופים Exclusive באפליקציה, בנוסף ל-Factory 64. אין כפתור הורדה. האתר רק מציג מידע על הערכות.",
+            "summary": "מאז גרסה 1.08: מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת. אלה 11 ערכות תופים Exclusive באפליקציה, בנוסף ל-Factory 64. אין כפתור הורדה. האתר רק מציג מידע על הערכות.",
             "href": "/exclusive",
             "cta": "לעמוד Exclusive",
             "images": [
@@ -1350,33 +1350,18 @@
             ]
           },
           {
-            "id": "mic-fx-and-back",
-            "status": "shipped",
-            "title": "Mic FX, Drum FX + כפתור Back",
-            "ticker": "Mic FX, Drum FX ו-Back",
-            "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.08: 8 אפקטים למיקרופון ו-8 לתופים. לחיצה ארוכה על אפקט פותחת Amount, EQ, Mid-sweep, Transpose ו-Reverb. כפתור Back אחד ב-Loop וב-Mic מחזיר את הטייק האחרון שנמחק.",
-            "images": [
-              "/assets/updates/mic-fx.jpg",
-              "/assets/updates/drum-fx.jpg"
-            ],
-            "imageAlts": [
-              "לוח Mic FX. Phone Line נבחר.",
-              "לוח Drum FX עם שמונה אפקטים. אפקט אחד נבחר."
-            ]
-          },
-          {
             "id": "studio-workflow-refresh",
             "status": "shipped",
-            "title": "מצב Live, מילים ו-Looper FX",
-            "ticker": "מצב Live, מילים ו-32 ערוצי לופר",
-            "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.08: מצב LIVE נועל שמות, Clear וטעינת קבצים בזמן נגינה. חלון המילים גולל את הטקסט בזמן שאתם שרים. לכל ערוץ לופ יש Looper FX, ובלופר 8 עמודים עם 4 ערוצים בכל עמוד, 32 בסך הכל.",
+            "title": "מצב Live, מילים, Mic FX ו-Drum FX",
+            "ticker": "מצב Live, מילים, Mic FX ו-Drum FX",
+            "summary": "מאז גרסה 1.08: מצב LIVE נועל שמות, Clear וטעינת קבצים בזמן נגינה. חלון המילים גולל את הטקסט בזמן שאתם שרים. למיקרופון ולתופים יש 8 אפקטים לכל אחד, לכל ערוץ לופ יש Looper FX, וכפתור Back אחד מחזיר את ההקלטה האחרונה שנמחקה.",
             "images": [
               "/assets/updates/lyrics.jpg",
-              "/assets/updates/looper-fx.jpg"
+              "/assets/updates/mic-fx.jpg"
             ],
             "imageAlts": [
               "חלון המילים פתוח מעל האפליקציה.",
-              "חלון Looper FX. Double Lane נבחר."
+              "לוח Mic FX. Phone Line נבחר."
             ]
           }
         ]
@@ -1402,7 +1387,7 @@
         "updates": "Updates"
       },
       "hero": {
-        "kicker": "Android music app · Version 1.08",
+        "kicker": "Android music app · Version 1.09",
         "title": "Make music on your phone.",
         "body": "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.",
         "ctaPrimary": "Watch the short",
@@ -2641,7 +2626,7 @@
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro for Android comes to Google Play in October 2026, for $8. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android comes to Google Play in October 2026, for $8. Version 1.08, 60.6 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
+        "body": "L Studio Pro for Android comes to Google Play in October 2026, for $8. Version 1.09, 60.6 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
           "L Studio Pro for Android on Google Play, $8 at launch, 60.6 MB",
@@ -2676,7 +2661,7 @@
         "navLabel": "Updates",
         "pageTitle": "What's new in L Studio.",
         "pageKicker": "L-STUDIO / UPDATES",
-        "pageIntro": "Version 1.08 is in the Google Play test now. L Studio Pro comes to Google Play in October 2026, for $8.",
+        "pageIntro": "Version 1.09 is in the Google Play test now. L Studio Pro comes to Google Play in October 2026, for $8.",
         "tickerLabel": "Updates",
         "statusLabels": {
           "in_progress": "In progress",
@@ -2691,10 +2676,10 @@
         "items": [
           {
             "id": "app-1-09-waves-drums",
-            "status": "in_progress",
-            "title": "Coming in 1.09: layered waves",
-            "ticker": "Coming in 1.09: layered waves and live drums",
-            "summary": "Coming in the next Google Play update, version 1.09. Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
+            "status": "shipped",
+            "title": "New in 1.09: layered waves",
+            "ticker": "New in 1.09: layered waves and live drums",
+            "summary": "In the Google Play test now, version 1.09: Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
             "href": "/guide",
             "cta": "Open guide",
             "images": [
@@ -2709,7 +2694,7 @@
             "status": "shipped",
             "title": "Sound FX + looper page colors",
             "ticker": "Sound FX and looper page colors",
-            "summary": "In the Google Play test now, version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Each looper page gets a name and one of 8 colors. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
+            "summary": "Since version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Each looper page gets a name and one of 8 colors. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
             "href": "/guide",
             "cta": "Open guide",
             "images": [
@@ -2726,7 +2711,7 @@
             "status": "shipped",
             "title": "Exclusive packs in Pro",
             "ticker": "Exclusive in Pro",
-            "summary": "In the Google Play test now, version 1.08: whoever buys Pro also gets the Exclusive pack free, at no extra cost. That is 11 Exclusive drum packs in the app, on top of Factory 64. There is no download button. This site only describes the packs.",
+            "summary": "Since version 1.08: whoever buys Pro also gets the Exclusive pack free, at no extra cost. That is 11 Exclusive drum packs in the app, on top of Factory 64. There is no download button. This site only describes the packs.",
             "href": "/exclusive",
             "cta": "View Exclusive",
             "images": [
@@ -2737,33 +2722,18 @@
             ]
           },
           {
-            "id": "mic-fx-and-back",
-            "status": "shipped",
-            "title": "Mic FX, Drum FX + Back",
-            "ticker": "Mic FX, Drum FX and Back",
-            "summary": "In the Google Play test now, version 1.08: 8 effects for the mic and 8 for the drums. A long-press on an effect opens Amount, EQ, Mid-sweep, Transpose, and Reverb. One Back button on Loop and Mic brings back the last cleared take.",
-            "images": [
-              "/assets/updates/mic-fx.jpg",
-              "/assets/updates/drum-fx.jpg"
-            ],
-            "imageAlts": [
-              "Mic FX panel with Phone Line selected.",
-              "Drum FX panel with eight effects. One effect is selected."
-            ]
-          },
-          {
             "id": "studio-workflow-refresh",
             "status": "shipped",
-            "title": "Live mode, lyrics, Looper FX",
-            "ticker": "Live mode, lyrics and 32 looper channels",
-            "summary": "In the Google Play test now, version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. Every loop channel has Looper FX, and the looper has 8 pages with 4 channels each, 32 in all.",
+            "title": "Live mode, lyrics, Mic FX, Drum FX",
+            "ticker": "Live mode, lyrics, Mic FX and Drum FX",
+            "summary": "Since version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. The mic and the drums get 8 effects each, every loop channel has Looper FX, and one Back button brings back the last cleared take.",
             "images": [
               "/assets/updates/lyrics.jpg",
-              "/assets/updates/looper-fx.jpg"
+              "/assets/updates/mic-fx.jpg"
             ],
             "imageAlts": [
               "Lyrics window open over the app.",
-              "Looper FX window with Double Lane selected."
+              "Mic FX panel with Phone Line selected."
             ]
           }
         ]
@@ -2789,7 +2759,7 @@
         "updates": "Обновления"
       },
       "hero": {
-        "kicker": "Музыкальное приложение для Android · версия 1.08",
+        "kicker": "Музыкальное приложение для Android · версия 1.09",
         "title": "Создавай музыку на телефоне.",
         "body": "L Studio это приложение для создания музыки на телефоне с Android. Записывай лупы, добавляй барабаны, пой, глядя на текст песни, а если хочется выйти за привычные ноты, настрой для каждой клавиши свою частоту.",
         "ctaPrimary": "Смотреть короткое видео",
@@ -4028,7 +3998,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro для Android выйдет в Google Play в октябре 2026, за $8. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android выйдет в Google Play в октябре 2026, за $8. Версия 1.08, 60.6 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
+        "body": "L Studio Pro для Android выйдет в Google Play в октябре 2026, за $8. Версия 1.09, 60.6 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
           "L Studio Pro для Android в Google Play, $8 при запуске, 60.6 МБ",
@@ -4063,7 +4033,7 @@
         "navLabel": "Обновления",
         "pageTitle": "Что нового в L Studio.",
         "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-        "pageIntro": "Версия 1.08 сейчас в тесте Google Play. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
+        "pageIntro": "Версия 1.09 сейчас в тесте Google Play. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
         "tickerLabel": "Обновления",
         "statusLabels": {
           "in_progress": "В работе",
@@ -4078,10 +4048,10 @@
         "items": [
           {
             "id": "app-1-09-waves-drums",
-            "status": "in_progress",
-            "title": "Скоро в 1.09: несколько волн сразу",
-            "ticker": "Скоро в 1.09: несколько волн сразу и живые ударные",
-            "summary": "Выйдет в следующем обновлении в Google Play, версия 1.09. На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
+            "status": "shipped",
+            "title": "Новое в 1.09: несколько волн сразу",
+            "ticker": "Новое в 1.09: несколько волн сразу и живые ударные",
+            "summary": "Сейчас в тесте Google Play, версия 1.09: На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -4096,7 +4066,7 @@
             "status": "shipped",
             "title": "Sound FX + цвета страниц лупера",
             "ticker": "Sound FX и цвета страниц лупера",
-            "summary": "Сейчас в тесте Google Play, версия 1.08: 8 новых Sound FX, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты сохраняют настройки всех 8. Каждой странице лупера можно дать имя и один из 8 цветов. Регуляторы показывают значение золотым кольцом, а тур в приложении показывает всё это.",
+            "summary": "С версии 1.08: 8 новых Sound FX, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты сохраняют настройки всех 8. Каждой странице лупера можно дать имя и один из 8 цветов. Регуляторы показывают значение золотым кольцом, а тур в приложении показывает всё это.",
             "href": "/guide",
             "cta": "Открыть гид",
             "images": [
@@ -4113,7 +4083,7 @@
             "status": "shipped",
             "title": "Эксклюзивные паки в Pro",
             "ticker": "Exclusive в Pro",
-            "summary": "Сейчас в тесте Google Play, версия 1.08: кто покупает Pro, получает пак Exclusive бесплатно, без доплаты. Это 11 эксклюзивных наборов ударных в приложении, в дополнение к Factory 64. Кнопки скачивания нет. Сайт только описывает паки.",
+            "summary": "С версии 1.08: кто покупает Pro, получает пак Exclusive бесплатно, без доплаты. Это 11 эксклюзивных наборов ударных в приложении, в дополнение к Factory 64. Кнопки скачивания нет. Сайт только описывает паки.",
             "href": "/exclusive",
             "cta": "Открыть Exclusive",
             "images": [
@@ -4124,33 +4094,18 @@
             ]
           },
           {
-            "id": "mic-fx-and-back",
-            "status": "shipped",
-            "title": "Mic FX, Drum FX и кнопка Back",
-            "ticker": "Mic FX, Drum FX и Back",
-            "summary": "Сейчас в тесте Google Play, версия 1.08: 8 эффектов для микрофона и 8 для ударных. Долгое нажатие на эффект открывает Amount, EQ, Mid-sweep, Transpose и Reverb. Одна кнопка Back в Loop и Mic возвращает последний очищенный дубль.",
-            "images": [
-              "/assets/updates/mic-fx.jpg",
-              "/assets/updates/drum-fx.jpg"
-            ],
-            "imageAlts": [
-              "Панель Mic FX. Выбран Phone Line.",
-              "Панель Drum FX с восемью эффектами. Выбран один эффект."
-            ]
-          },
-          {
             "id": "studio-workflow-refresh",
             "status": "shipped",
-            "title": "Режим Live, текст и Looper FX",
-            "ticker": "Режим Live, текст и 32 канала лупера",
-            "summary": "Сейчас в тесте Google Play, версия 1.08: режим LIVE блокирует имена, Clear и загрузку файлов во время игры. Окно текста прокручивает слова, пока вы поете. На каждом канале лупера есть Looper FX, а у лупера 8 страниц по 4 канала, всего 32.",
+            "title": "Режим Live, текст, Mic FX, Drum FX",
+            "ticker": "Режим Live, текст, Mic FX и Drum FX",
+            "summary": "С версии 1.08: режим LIVE блокирует имена, Clear и загрузку файлов во время игры. Окно текста прокручивает слова, пока вы поете. У микрофона и у ударных по 8 эффектов, на каждом канале лупера есть Looper FX, а одна кнопка Back возвращает последний стёртый дубль.",
             "images": [
               "/assets/updates/lyrics.jpg",
-              "/assets/updates/looper-fx.jpg"
+              "/assets/updates/mic-fx.jpg"
             ],
             "imageAlts": [
               "Окно текста открыто поверх приложения.",
-              "Окно Looper FX. Выбран Double Lane."
+              "Панель Mic FX. Выбран Phone Line."
             ]
           }
         ]
@@ -4176,7 +4131,7 @@
         "updates": "التحديثات"
       },
       "hero": {
-        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.08",
+        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.09",
         "title": "اصنع الموسيقى على هاتفك.",
         "body": "L Studio تطبيق لصنع الموسيقى على هاتف أندرويد. سجّل لوبات، أضف طبولاً، غنِّ وكلمات الأغنية أمام عينيك، وإن أردت الخروج عن النوتات المعتادة، اضبط لكل مفتاح تردده الخاص.",
         "ctaPrimary": "شاهد الفيديو القصير",
@@ -5415,7 +5370,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro لأندرويد يصل إلى Google Play في أكتوبر 2026، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد يصل إلى Google Play في أكتوبر 2026، بسعر 8$. الإصدار 1.08، 60.6 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
+        "body": "L Studio Pro لأندرويد يصل إلى Google Play في أكتوبر 2026، بسعر 8$. الإصدار 1.09، 60.6 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
           "L Studio Pro لأندرويد على Google Play، 8$ عند الإطلاق، 60.6 ميغابايت",
@@ -5450,7 +5405,7 @@
         "navLabel": "التحديثات",
         "pageTitle": "ما الجديد في L Studio.",
         "pageKicker": "L-STUDIO / التحديثات",
-        "pageIntro": "الإصدار 1.08 في اختبار Google Play الآن. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
+        "pageIntro": "الإصدار 1.09 في اختبار Google Play الآن. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
         "tickerLabel": "التحديثات",
         "statusLabels": {
           "in_progress": "قيد العمل",
@@ -5465,10 +5420,10 @@
         "items": [
           {
             "id": "app-1-09-waves-drums",
-            "status": "in_progress",
-            "title": "قادم في 1.09: عدة موجات معاً",
-            "ticker": "قادم في 1.09: عدة موجات معاً وطبول مباشرة",
-            "summary": "قادم في تحديث Google Play القادم، الإصدار 1.09. على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
+            "status": "shipped",
+            "title": "جديد في 1.09: عدة موجات معاً",
+            "ticker": "جديد في 1.09: عدة موجات معاً وطبول مباشرة",
+            "summary": "الآن في اختبار Google Play، الإصدار 1.09: على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -5483,7 +5438,7 @@
             "status": "shipped",
             "title": "Sound FX + ألوان صفحات اللوبر",
             "ticker": "Sound FX وألوان صفحات اللوبر",
-            "summary": "الآن في اختبار Google Play، الإصدار 1.08: ثمانية مؤثرات Sound FX جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة تحفظ إعدادات المؤثرات الثمانية كلها. لكل صفحة في اللوبر اسم وواحد من 8 ألوان. المقابض تعرض القيمة بحلقة ذهبية، والجولة داخل التطبيق تشرح كل ذلك.",
+            "summary": "منذ الإصدار 1.08: ثمانية مؤثرات Sound FX جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة تحفظ إعدادات المؤثرات الثمانية كلها. لكل صفحة في اللوبر اسم وواحد من 8 ألوان. المقابض تعرض القيمة بحلقة ذهبية، والجولة داخل التطبيق تشرح كل ذلك.",
             "href": "/guide",
             "cta": "فتح الدليل",
             "images": [
@@ -5500,7 +5455,7 @@
             "status": "shipped",
             "title": "حزم Exclusive في Pro",
             "ticker": "Exclusive في Pro",
-            "summary": "الآن في اختبار Google Play، الإصدار 1.08: من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية. ذلك 11 حزمة طبول Exclusive داخل التطبيق، إضافة إلى Factory 64. لا يوجد زر تنزيل. الموقع يصف الحزم فقط.",
+            "summary": "منذ الإصدار 1.08: من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية. ذلك 11 حزمة طبول Exclusive داخل التطبيق، إضافة إلى Factory 64. لا يوجد زر تنزيل. الموقع يصف الحزم فقط.",
             "href": "/exclusive",
             "cta": "عرض Exclusive",
             "images": [
@@ -5511,33 +5466,18 @@
             ]
           },
           {
-            "id": "mic-fx-and-back",
-            "status": "shipped",
-            "title": "Mic FX وDrum FX وزر Back",
-            "ticker": "Mic FX وDrum FX وBack",
-            "summary": "الآن في اختبار Google Play، الإصدار 1.08: ثمانية مؤثرات للميكروفون وثمانية للطبول. الضغط المطوّل على مؤثر يفتح Amount وEQ وMid-sweep وTranspose وReverb. زر Back واحد في Loop وMic يعيد آخر تسجيل تم مسحه.",
-            "images": [
-              "/assets/updates/mic-fx.jpg",
-              "/assets/updates/drum-fx.jpg"
-            ],
-            "imageAlts": [
-              "لوحة Mic FX. Phone Line محدد.",
-              "لوحة Drum FX بثمانية مؤثرات. مؤثر واحد محدد."
-            ]
-          },
-          {
             "id": "studio-workflow-refresh",
             "status": "shipped",
-            "title": "وضع Live والكلمات وLooper FX",
-            "ticker": "وضع Live والكلمات و32 قناة للوبر",
-            "summary": "الآن في اختبار Google Play، الإصدار 1.08: وضع LIVE يقفل الأسماء وClear وتحميل الملفات أثناء العزف. نافذة الكلمات تمرّر النص وأنت تغني. في كل قناة لوب يوجد Looper FX، وللوبر 8 صفحات بـ4 قنوات في كل صفحة، 32 في المجموع.",
+            "title": "وضع Live والكلمات وMic FX وDrum FX",
+            "ticker": "وضع Live والكلمات وMic FX وDrum FX",
+            "summary": "منذ الإصدار 1.08: وضع LIVE يقفل الأسماء وClear وتحميل الملفات أثناء العزف. نافذة الكلمات تمرّر النص وأنت تغني. للميكروفون وللطبول ثمانية مؤثرات لكل منهما، وفي كل قناة لوب يوجد Looper FX، وزر Back واحد يعيد آخر تسجيل تم مسحه.",
             "images": [
               "/assets/updates/lyrics.jpg",
-              "/assets/updates/looper-fx.jpg"
+              "/assets/updates/mic-fx.jpg"
             ],
             "imageAlts": [
               "نافذة الكلمات مفتوحة فوق التطبيق.",
-              "نافذة Looper FX. Double Lane محدد."
+              "لوحة Mic FX. Phone Line محدد."
             ]
           }
         ]
