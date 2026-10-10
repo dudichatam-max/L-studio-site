@@ -17,6 +17,17 @@
     },
     "items": [
       {
+        "id": "app-1-09-waves-drums",
+        "status": "in_progress",
+        "title": "מגיע ב-1.09: כמה גלים יחד",
+        "ticker": "מגיע ב-1.09: כמה גלים יחד ותופים בזמן אמת",
+        "summary": "מגיע בעדכון הבא ב-Google Play, גרסה 1.09. על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
+        "href": "/guide",
+        "cta": "לפתיחת המדריך",
+        "images": ["/assets/updates/sound-109.jpg"],
+        "imageAlts": ["מסך Sound בגרסה 1.09: אייקון על כל כפתור גל, Sine ו-Saw דולקים יחד."]
+      },
+      {
         "id": "sound-fx-looper-pages",
         "status": "shipped",
         "title": "Sound FX + צבעים לעמודי הלופר",
@@ -75,6 +86,17 @@
       "shipped": "Recently shipped"
     },
     "items": [
+      {
+        "id": "app-1-09-waves-drums",
+        "status": "in_progress",
+        "title": "Coming in 1.09: layered waves",
+        "ticker": "Coming in 1.09: layered waves and live drums",
+        "summary": "Coming in the next Google Play update, version 1.09. Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
+        "href": "/guide",
+        "cta": "Open guide",
+        "images": ["/assets/updates/sound-109.jpg"],
+        "imageAlts": ["The Sound screen in 1.09: an icon on each wave button, Sine and Saw on together."]
+      },
       {
         "id": "sound-fx-looper-pages",
         "status": "shipped",
@@ -135,6 +157,17 @@
     },
     "items": [
       {
+        "id": "app-1-09-waves-drums",
+        "status": "in_progress",
+        "title": "Скоро в 1.09: несколько волн сразу",
+        "ticker": "Скоро в 1.09: несколько волн сразу и живые ударные",
+        "summary": "Выйдет в следующем обновлении в Google Play, версия 1.09. На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
+        "href": "/guide",
+        "cta": "Открыть руководство",
+        "images": ["/assets/updates/sound-109.jpg"],
+        "imageAlts": ["Экран Sound в 1.09: значок на каждой кнопке волны, Sine и Saw включены вместе."]
+      },
+      {
         "id": "sound-fx-looper-pages",
         "status": "shipped",
         "title": "Sound FX + цвета страниц лупера",
@@ -193,6 +226,17 @@
       "shipped": "صدر مؤخراً"
     },
     "items": [
+      {
+        "id": "app-1-09-waves-drums",
+        "status": "in_progress",
+        "title": "قادم في 1.09: عدة موجات معاً",
+        "ticker": "قادم في 1.09: عدة موجات معاً وطبول مباشرة",
+        "summary": "قادم في تحديث Google Play القادم، الإصدار 1.09. على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
+        "href": "/guide",
+        "cta": "افتح الدليل",
+        "images": ["/assets/updates/sound-109.jpg"],
+        "imageAlts": ["شاشة Sound في 1.09: أيقونة على كل زر موجة، Sine وSaw مفعّلتان معاً."]
+      },
       {
         "id": "sound-fx-looper-pages",
         "status": "shipped",

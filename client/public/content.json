@@ -279,7 +279,7 @@
             "title": "Sound",
             "body": [
               "הקשה על Sound פותחת את המסך הזה.",
-              "Sine, Square, Triangle, Saw, ו-Noise נמצאים מתחת לסקופים. הקשה בוחרת את הגל. המסך מתחיל על Saw.",
+              "Sine, Square, Triangle, Saw, ו-Noise נמצאים מתחת לסקופים. על כל כפתור יש אייקון של הגל, וגל דולק נצבע בזהב. הקשה מנגנת רק את הגל הזה. לחיצה ארוכה מדליקה או מכבה את הגל ומשאירה את האחרים דולקים, כך שקליד אחד יכול לנגן כמה גלים יחד. שתי המקלדות מנגנות את הגלים הדולקים. המסך מתחיל על Saw.",
               "הקשה על Detune מדליקה או מכבה את detune. הקשה על RIP, FUZZ, PHAZ, או PIANO מדליקה או מכבה את זה.",
               "הקשה על FX פותחת את Sound FX. FX נצבע בזהב כשאפקט דולק.",
               "החצים ליד PRESET טוענים את הפריסט השמור הבא או הקודם. אם אין שמורים, הטלפון אומר No saved presets.",
@@ -289,8 +289,9 @@
               "הקשה על WAV מתחילה להקליט את מה ששומעים. בזמן ההקלטה כתוב Save WAV. הקשה נוספת עוצרת ומבקשת מהטלפון איפה לשמור את הקובץ.",
               "הקשה על Settings פותחת את Settings."
             ],
-            "media": "assets/guide/sound-screen.jpg",
+            "media": "assets/guide/sound-screen-109.jpg",
             "images": [
+              "assets/guide/sound-waves-109.jpg",
               "assets/guide/sound-tones.jpg"
             ],
             "sections": [
@@ -356,8 +357,9 @@
                 "title": "Presets",
                 "body": [
                   "הקשה על Presets פותחת את Presets, עם 8 מקומות. עמודים 1 עד 8 למעלה. הקשה על מספר עמוד מראה את העמוד. הקשה על Edit page name פותחת את השם.",
+                  "לחיצה ארוכה על Presets שומרת את הסאונד הנוכחי בפריסט שטעון, והטלפון כותב Preset saved. אם לא טעון פריסט, כתוב No preset loaded. כשהחלון נפתח, הוא מראה את העמוד של הפריסט הטעון.",
                   "הקשה על Load פותחת את הסאונד השמור במקום. הקשה על Save שומרת את הסאונד הנוכחי שם. הקשה על Edit משנה את השם.",
-                  "Save שומר גם את ההגדרות של כל 8 ה-Sound FX ואיזה אפקט דולק. Load מחזיר אותם בדיוק. פריסטים של Factory 64 ופריסטים ישנים נטענים בלי לשנות את ה-Sound FX.",
+                  "Save שומר גם את ההגדרות של כל 8 ה-Sound FX ואיזה אפקט דולק. Load מחזיר אותם בדיוק. פריסטים של Factory 64 ופריסטים ישנים נטענים בלי לשנות את ה-Sound FX. Save שומר גם אילו גלים דולקים, ו-Load מדליק אותם שוב. פריסט ישן מדליק רק את הגל האחד שלו.",
                   "הקשה על Import בוחרת קובץ עמוד. הקשה על Save בשורה התחתונה מבקשת מהטלפון איפה לשמור את העמוד. הקשה על Close סוגרת את החלון."
                 ],
                 "media": "assets/guide/presets-window.jpg"
@@ -415,10 +417,10 @@
               "הקשה על Drum FX פותחת את Drum FX. כשפריסט דולק, כתוב FX ומספר.",
               "הקשה על Style פותחת את Drum styles. לחיצה ארוכה על Style פותחת את Random genre. ההערה שם אומרת Selection affects Random. הקשה על Rock, Trance, Rap, או Techno שומרת את הז'אנר וסוגרת את החלון. Cancel סוגר ומשאיר את הז'אנר כמו שהיה. Random במסך הזה משתמש בז'אנר, והוא מתחיל כ-Rock. החלון הזה לא בונה פטרן בעצמו.",
               "גרירה על Drum Vol קובעת את ווליום התופים מ-0% עד 100%. הקשה על המספר נותנת להקליד ערך. LIVE לא פותחת את התיבה.",
-              "גרירה על Swing קובעת swing מ-0% עד 100%. גרירה על BPM קובעת את הטמפו מ-60 עד 200.",
+              "גרירה על Swing קובעת swing מ-0% עד 100%. גרירה על BPM קובעת את הטמפו מ-60 עד 200. BPM, Swing, והווליום של השורות פועלים בזמן אמת: שינוי שעושים בזמן שהתופים מנגנים נשאר גם כשהפטרן הבא מתחיל.",
               "מחזיקים 1/4, 1/8, 1/16, או 1/32 כדי לחזור על התופים בחלוקה הזאת כל עוד מחזיקים. עוזבים, והחזרה נעצרת. הקשה עליהם לא עושה כלום. מחזיקים STOP. הקשה עליו לא עושה כלום.",
               "הקשה על מספר פטרן, 1 עד 8, טוענת את הפטרן, כולל הטמפו, ה-swing, הווליום, וימין ושמאל. לחיצה ארוכה פותחת את Pattern repeats.",
-              "הקשה על Save שומרת את התופים הנוכחיים לתוך הפטרן שעליו אתם. הקשה על Random בונה פטרן חדש בז'אנר שנבחר.",
+              "הקשה על Save שומרת את התופים הנוכחיים לתוך הפטרן שעליו אתם, וכותבת את ה-BPM, ה-Swing והווליום של השורות לכל 8 הפטרנים. הקשה על Random בונה פטרן חדש בז'אנר שנבחר.",
               "בכל שורה, הקשה על Load בוחרת קובץ שמע. אם כבר יש סמפל, כתוב Swap. LIVE מכבה את זה.",
               "גרירה על הסליידר של השורה קובעת את הווליום שלה. הוא מראה אחוז ובלי מילה. גרירה על L/R מזיזה את השורה בין L ל-R.",
               "לכל שורה יש 16 צעדים. הקשה מדליקה או מכבה צעד.",
@@ -1301,6 +1303,21 @@
         },
         "items": [
           {
+            "id": "app-1-09-waves-drums",
+            "status": "in_progress",
+            "title": "מגיע ב-1.09: כמה גלים יחד",
+            "ticker": "מגיע ב-1.09: כמה גלים יחד ותופים בזמן אמת",
+            "summary": "מגיע בעדכון הבא ב-Google Play, גרסה 1.09. על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
+            "href": "/guide",
+            "cta": "לפתיחת המדריך",
+            "images": [
+              "/assets/updates/sound-109.jpg"
+            ],
+            "imageAlts": [
+              "מסך Sound בגרסה 1.09: אייקון על כל כפתור גל, Sine ו-Saw דולקים יחד."
+            ]
+          },
+          {
             "id": "sound-fx-looper-pages",
             "status": "shipped",
             "title": "Sound FX + צבעים לעמודי הלופר",
@@ -1649,7 +1666,7 @@
             "title": "Sound",
             "body": [
               "A tap on Sound opens this screen.",
-              "Sine, Square, Triangle, Saw, and Noise sit under the scopes. A tap selects that wave. The screen starts on Saw.",
+              "Sine, Square, Triangle, Saw, and Noise sit under the scopes. Each button shows an icon of its wave, and a lit wave turns gold. A tap plays only that wave. A long-press turns that wave on or off and leaves the others on, so one key can play several waves at once. Both keyboards play the lit waves. The screen starts on Saw.",
               "A tap on Detune turns detune on or off. A tap on RIP, FUZZ, PHAZ, or PIANO turns that one on or off.",
               "A tap on FX opens Sound FX. FX turns gold while an effect is on.",
               "The arrows beside PRESET load the next or previous saved preset. If none are saved, the phone says No saved presets.",
@@ -1659,8 +1676,9 @@
               "A tap on WAV starts recording what you hear. While it records, the label reads Save WAV. Another tap stops and asks the phone where to save the file.",
               "A tap on Settings opens Settings."
             ],
-            "media": "assets/guide/sound-screen.jpg",
+            "media": "assets/guide/sound-screen-109.jpg",
             "images": [
+              "assets/guide/sound-waves-109.jpg",
               "assets/guide/sound-tones.jpg"
             ],
             "sections": [
@@ -1726,8 +1744,9 @@
                 "title": "Presets",
                 "body": [
                   "A tap on Presets opens Presets, with 8 slots. Pages 1 to 8 are at the top. A tap on a page number shows that page. A tap on Edit page name opens the name.",
+                  "A long-press on Presets saves the current sound into the preset that is loaded, and the phone says Preset saved. If no preset is loaded, it says No preset loaded. When the window opens, it shows the page of the loaded preset.",
                   "A tap on Load opens the saved sound in that slot. A tap on Save stores the current sound there. A tap on Edit changes the name.",
-                  "Save also stores the settings of all 8 Sound FX and which effect is on. Load brings them back exactly. Factory 64 presets and older presets load without changing the Sound FX.",
+                  "Save also stores the settings of all 8 Sound FX and which effect is on. Load brings them back exactly. Factory 64 presets and older presets load without changing the Sound FX. Save also stores which waves are on, and Load lights them again. An older preset lights only its one wave.",
                   "A tap on Import picks a page file. A tap on Save on the bottom row asks the phone where to store the page. A tap on Close closes the window."
                 ],
                 "media": "assets/guide/presets-window.jpg"
@@ -1785,10 +1804,10 @@
               "A tap on Drum FX opens Drum FX. When a preset is on, the label shows FX and a number.",
               "A tap on Style opens Drum styles. A long-press on Style opens Random genre. The note there reads Selection affects Random. A tap on Rock, Trance, Rap, or Techno saves that genre and closes the window. Cancel closes it and leaves the genre as it was. Random on this screen uses that genre, and it starts as Rock. That window does not build a pattern by itself.",
               "A drag on Drum Vol sets the drum volume from 0% to 100%. A tap on the number lets you type a value. LIVE does not open that box.",
-              "A drag on Swing sets swing from 0% to 100%. A drag on BPM sets the tempo from 60 to 200.",
+              "A drag on Swing sets swing from 0% to 100%. A drag on BPM sets the tempo from 60 to 200. BPM, Swing, and the row volumes are live: a change you make while the drums play stays when the next pattern starts.",
               "Hold 1/4, 1/8, 1/16, or 1/32 to repeat the drums at that division while you hold it. Release, and that repeat stops. A tap on them does nothing. Hold STOP. A tap on it does nothing.",
               "A tap on a pattern number, 1 through 8, loads that pattern, including its tempo, swing, volumes, and left and right. A long-press opens Pattern repeats.",
-              "A tap on Save stores the current drums into the pattern you are on. A tap on Random builds a new pattern in the chosen genre.",
+              "A tap on Save stores the current drums into the pattern you are on and writes the current BPM, Swing, and row volumes into all 8 patterns. A tap on Random builds a new pattern in the chosen genre.",
               "On each row, a tap on Load picks an audio file. If a sample is already there, the label reads Swap. LIVE turns this off.",
               "A drag on the row slider sets that row's volume. It shows a percent and no word. A drag on L/R moves the row between L and R.",
               "Each row has 16 steps. A tap turns a step on or off.",
@@ -2671,6 +2690,21 @@
         },
         "items": [
           {
+            "id": "app-1-09-waves-drums",
+            "status": "in_progress",
+            "title": "Coming in 1.09: layered waves",
+            "ticker": "Coming in 1.09: layered waves and live drums",
+            "summary": "Coming in the next Google Play update, version 1.09. Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
+            "href": "/guide",
+            "cta": "Open guide",
+            "images": [
+              "/assets/updates/sound-109.jpg"
+            ],
+            "imageAlts": [
+              "The Sound screen in 1.09: an icon on each wave button, Sine and Saw on together."
+            ]
+          },
+          {
             "id": "sound-fx-looper-pages",
             "status": "shipped",
             "title": "Sound FX + looper page colors",
@@ -3019,7 +3053,7 @@
             "title": "Sound",
             "body": [
               "Нажатие на Sound открывает этот экран.",
-              "Sine, Square, Triangle, Saw и Noise находятся под скоупами. Нажатие выбирает эту волну. Экран начинает с Saw.",
+              "Sine, Square, Triangle, Saw и Noise находятся под скоупами. На каждой кнопке значок своей волны, включённая волна горит золотым. Нажатие включает только эту волну. Долгое нажатие включает или выключает волну и оставляет остальные, так что одна клавиша может играть несколько волн сразу. Обе клавиатуры играют включённые волны. Экран начинает с Saw.",
               "Нажатие на Detune включает или выключает detune. Нажатие на RIP, FUZZ, PHAZ или PIANO включает или выключает это.",
               "Нажатие на FX открывает Sound FX. FX становится золотым, пока эффект включён.",
               "Стрелки рядом с PRESET загружают следующий или предыдущий сохранённый пресет. Если сохранённых нет, телефон пишет No saved presets.",
@@ -3029,8 +3063,9 @@
               "Нажатие на WAV начинает запись того, что слышно. Пока идёт запись, надпись говорит Save WAV. Ещё одно нажатие останавливает и спрашивает телефон, куда сохранить файл.",
               "Нажатие на Settings открывает Settings."
             ],
-            "media": "assets/guide/sound-screen.jpg",
+            "media": "assets/guide/sound-screen-109.jpg",
             "images": [
+              "assets/guide/sound-waves-109.jpg",
               "assets/guide/sound-tones.jpg"
             ],
             "sections": [
@@ -3096,8 +3131,9 @@
                 "title": "Presets",
                 "body": [
                   "Нажатие на Presets открывает Presets, с 8 местами. Страницы 1 до 8 сверху. Нажатие на номер страницы показывает страницу. Нажатие на Edit page name открывает имя.",
+                  "Долгое нажатие на Presets сохраняет текущий звук в загруженный пресет, и телефон пишет Preset saved. Если пресет не загружен, он пишет No preset loaded. Окно открывается на странице загруженного пресета.",
                   "Нажатие на Load открывает сохранённый звук в этом месте. Нажатие на Save кладёт туда текущий звук. Нажатие на Edit меняет имя.",
-                  "Save также сохраняет настройки всех 8 Sound FX и то, какой эффект включён. Load возвращает их точно. Пресеты Factory 64 и старые пресеты загружаются, не меняя Sound FX.",
+                  "Save также сохраняет настройки всех 8 Sound FX и то, какой эффект включён. Load возвращает их точно. Пресеты Factory 64 и старые пресеты загружаются, не меняя Sound FX. Save также сохраняет, какие волны включены, и Load включает их снова. Старый пресет включает только свою одну волну.",
                   "Нажатие на Import выбирает файл страницы. Нажатие на Save в нижней строке спрашивает телефон, куда сохранить страницу. Нажатие на Close закрывает окно."
                 ],
                 "media": "assets/guide/presets-window.jpg"
@@ -3155,10 +3191,10 @@
               "Нажатие на Drum FX открывает Drum FX. Когда пресет включён, надпись показывает FX и число.",
               "Нажатие на Style открывает Drum styles. Долгое нажатие на Style открывает Random genre. Заметка там говорит Selection affects Random. Нажатие на Rock, Trance, Rap или Techno сохраняет этот жанр и закрывает окно. Cancel закрывает его и оставляет жанр как был. Random на этом экране использует этот жанр, и он начинает с Rock. Это окно само не строит паттерн.",
               "Перетаскивание Drum Vol задаёт громкость ударных от 0% до 100%. Нажатие на число даёт ввести значение. LIVE не открывает это поле.",
-              "Перетаскивание Swing задаёт swing от 0% до 100%. Перетаскивание BPM задаёт темп от 60 до 200.",
+              "Перетаскивание Swing задаёт swing от 0% до 100%. Перетаскивание BPM задаёт темп от 60 до 200. BPM, Swing и громкость дорожек работают вживую: изменение во время игры сохраняется, когда начинается следующий паттерн.",
               "Удерживайте 1/4, 1/8, 1/16 или 1/32, чтобы повторять ударные в этом делении, пока держите. Отпустите, и повтор остановится. Нажатие на них ничего не делает. Удерживайте STOP. Нажатие на него ничего не делает.",
               "Нажатие на номер паттерна, от 1 до 8, загружает этот паттерн, включая темп, swing, громкость и лево и право. Долгое нажатие открывает Pattern repeats.",
-              "Нажатие на Save сохраняет текущие ударные в паттерн, на котором вы находитесь. Нажатие на Random строит новый паттерн в выбранном жанре.",
+              "Нажатие на Save сохраняет текущие ударные в паттерн, на котором вы находитесь, и записывает текущие BPM, Swing и громкость дорожек во все 8 паттернов. Нажатие на Random строит новый паттерн в выбранном жанре.",
               "В каждом ряду нажатие на Load выбирает аудиофайл. Если сэмпл уже есть, надпись говорит Swap. LIVE выключает это.",
               "Перетаскивание слайдера ряда задаёт громкость ряда. Он показывает процент и без слова. Перетаскивание L/R двигает ряд между L и R.",
               "В каждом ряду 16 шагов. Нажатие включает или выключает шаг.",
@@ -4041,6 +4077,21 @@
         },
         "items": [
           {
+            "id": "app-1-09-waves-drums",
+            "status": "in_progress",
+            "title": "Скоро в 1.09: несколько волн сразу",
+            "ticker": "Скоро в 1.09: несколько волн сразу и живые ударные",
+            "summary": "Выйдет в следующем обновлении в Google Play, версия 1.09. На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
+            "href": "/guide",
+            "cta": "Открыть руководство",
+            "images": [
+              "/assets/updates/sound-109.jpg"
+            ],
+            "imageAlts": [
+              "Экран Sound в 1.09: значок на каждой кнопке волны, Sine и Saw включены вместе."
+            ]
+          },
+          {
             "id": "sound-fx-looper-pages",
             "status": "shipped",
             "title": "Sound FX + цвета страниц лупера",
@@ -4389,7 +4440,7 @@
             "title": "Sound",
             "body": [
               "الضغط على Sound يفتح هذه الشاشة.",
-              "Sine وSquare وTriangle وSaw وNoise تحت المناظير. الضغط يختار هذه الموجة. الشاشة تبدأ على Saw.",
+              "Sine وSquare وTriangle وSaw وNoise تحت المناظير. على كل زر أيقونة لموجته، والموجة المفعّلة تصبح ذهبية. الضغط يشغّل هذه الموجة وحدها. الضغط المطوّل يفعّل الموجة أو يوقفها ويترك الباقي، فيمكن لمفتاح واحد أن يعزف عدة موجات معاً. لوحتا المفاتيح تعزفان الموجات المفعّلة. الشاشة تبدأ على Saw.",
               "الضغط على Detune يشغّل detune أو يوقفه. الضغط على RIP أو FUZZ أو PHAZ أو PIANO يشغّل ذلك أو يوقفه.",
               "الضغط على FX يفتح Sound FX. يصبح FX ذهبياً ما دام مؤثر يعمل.",
               "الأسهم بجانب PRESET تحمّل الإعداد المحفوظ التالي أو السابق. إذا لم يوجد محفوظ، يقول الهاتف No saved presets.",
@@ -4399,8 +4450,9 @@
               "الضغط على WAV يبدأ تسجيل ما تسمعه. أثناء التسجيل يقول النص Save WAV. ضغط آخر يوقف ويسأل الهاتف أين يحفظ الملف.",
               "الضغط على Settings يفتح Settings."
             ],
-            "media": "assets/guide/sound-screen.jpg",
+            "media": "assets/guide/sound-screen-109.jpg",
             "images": [
+              "assets/guide/sound-waves-109.jpg",
               "assets/guide/sound-tones.jpg"
             ],
             "sections": [
@@ -4466,8 +4518,9 @@
                 "title": "Presets",
                 "body": [
                   "الضغط على Presets يفتح Presets، مع 8 خانات. الصفحات 1 إلى 8 في الأعلى. الضغط على رقم صفحة يعرض الصفحة. الضغط على Edit page name يفتح الاسم.",
+                  "الضغط المطوّل على Presets يحفظ الصوت الحالي في الإعداد المحمّل، ويكتب الهاتف Preset saved. إذا لم يكن هناك إعداد محمّل، يكتب No preset loaded. عند فتح النافذة تظهر صفحة الإعداد المحمّل.",
                   "الضغط على Load يفتح الصوت المحفوظ في الخانة. الضغط على Save يخزّن الصوت الحالي هناك. الضغط على Edit يغيّر الاسم.",
-                  "Save يحفظ أيضاً إعدادات مؤثرات Sound FX الثمانية وأي مؤثر يعمل. Load يعيدها كما هي. إعدادات Factory 64 والإعدادات القديمة تُحمَّل دون تغيير Sound FX.",
+                  "Save يحفظ أيضاً إعدادات مؤثرات Sound FX الثمانية وأي مؤثر يعمل. Load يعيدها كما هي. إعدادات Factory 64 والإعدادات القديمة تُحمَّل دون تغيير Sound FX. Save يحفظ أيضاً أي الموجات مفعّلة، وLoad يفعّلها من جديد. الإعداد القديم يفعّل موجته الواحدة فقط.",
                   "الضغط على Import يختار ملف صفحة. الضغط على Save في الصف السفلي يسأل الهاتف أين يحفظ الصفحة. الضغط على Close يغلق النافذة."
                 ],
                 "media": "assets/guide/presets-window.jpg"
@@ -4525,10 +4578,10 @@
               "الضغط على Drum FX يفتح Drum FX. عندما يكون إعداد شغّالاً، يظهر FX ورقم.",
               "الضغط على Style يفتح Drum styles. الضغط المطوّل على Style يفتح Random genre. الملاحظة هناك تقول Selection affects Random. الضغط على Rock أو Trance أو Rap أو Techno يحفظ ذلك النوع ويغلق النافذة. Cancel يغلقها ويترك النوع كما كان. Random على هذه الشاشة يستخدم ذلك النوع، ويبدأ على Rock. تلك النافذة لا تبني نمطاً وحدها.",
               "السحب على Drum Vol يحدد حجم الطبول من 0% إلى 100%. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح الخانة.",
-              "السحب على Swing يحدد swing من 0% إلى 100%. السحب على BPM يحدد الإيقاع من 60 إلى 200.",
+              "السحب على Swing يحدد swing من 0% إلى 100%. السحب على BPM يحدد الإيقاع من 60 إلى 200. BPM وSwing وحجم الصفوف تعمل مباشرة: التغيير أثناء العزف يبقى عندما يبدأ النمط التالي.",
               "أمسك 1/4 أو 1/8 أو 1/16 أو 1/32 لتكرار الطبول على ذلك التقسيم ما دمت ممسكاً. اترك، فيتوقف التكرار. الضغط عليها لا يفعل شيئاً. أمسك STOP. الضغط عليه لا يفعل شيئاً.",
               "الضغط على رقم نمط، من 1 إلى 8، يحمّل ذلك النمط، بما فيه الإيقاع وswing والحجم واليسار واليمين. الضغط المطوّل يفتح Pattern repeats.",
-              "الضغط على Save يحفظ الطبول الحالية في النمط الذي أنت عليه. الضغط على Random يبني نمطاً جديداً في النوع المختار.",
+              "الضغط على Save يحفظ الطبول الحالية في النمط الذي أنت عليه ويكتب BPM وSwing وحجم الصفوف الحالية في الأنماط الثمانية كلها. الضغط على Random يبني نمطاً جديداً في النوع المختار.",
               "في كل صف، الضغط على Load يختار ملف صوت. إذا كانت عينة موجودة، يقول النص Swap. LIVE يوقف ذلك.",
               "السحب على منزلق الصف يحدد حجم الصف. يعرض نسبة ومن دون كلمة. السحب على L/R يحرّك الصف بين L وR.",
               "لكل صف 16 خطوة. الضغط يشغّل خطوة أو يوقفها.",
@@ -5410,6 +5463,21 @@
           "shipped": "صدر مؤخراً"
         },
         "items": [
+          {
+            "id": "app-1-09-waves-drums",
+            "status": "in_progress",
+            "title": "قادم في 1.09: عدة موجات معاً",
+            "ticker": "قادم في 1.09: عدة موجات معاً وطبول مباشرة",
+            "summary": "قادم في تحديث Google Play القادم، الإصدار 1.09. على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
+            "href": "/guide",
+            "cta": "افتح الدليل",
+            "images": [
+              "/assets/updates/sound-109.jpg"
+            ],
+            "imageAlts": [
+              "شاشة Sound في 1.09: أيقونة على كل زر موجة، Sine وSaw مفعّلتان معاً."
+            ]
+          },
           {
             "id": "sound-fx-looper-pages",
             "status": "shipped",

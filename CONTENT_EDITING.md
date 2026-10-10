@@ -79,3 +79,11 @@ The homepage block `02 / PLAY WITH SOUND` ("Just open it and play.") shows one f
 ## Publishing
 
 In the repository settings, set GitHub Pages > Build and deployment > Source to `GitHub Actions`. Every push to `main` then runs `.github/workflows/deploy-pages.yml` and publishes the latest version.
+
+### App 1.09 (draft, 2026-10-10)
+
+App 1.09 (tag `v1.09`, `83045ad` on `google-play-pro`) is not on Google Play yet. The updates item `app-1-09-waves-drums` is `in_progress` and says "coming in the next Google Play update" in all four languages. When 1.09 reaches Google Play, set it to `shipped`, change its wording, and update the version in `updates.pageIntro`, the hero kicker, the `shared/seo.ts` APP_FACTS (`softwareVersion` 1.08, `fileSize` 60.6MB) and the hero stat `60.6 MB`. Those still show 1.08 on purpose.
+
+What 1.09 does, checked in the app code: a tap on a wave plays only that wave, and a long-press turns a wave on or off so several waves play at once on both keyboards. Each wave button shows an icon. Presets save which waves are on (`_waves`), and an older preset lights only its one wave. A long-press on Presets saves into the loaded preset ("Preset saved" or "No preset loaded"), and the window opens on the page of the loaded preset. On Drum, BPM, Swing and row volumes changed while playing carry into the next patterns, and Save writes them into all 8 patterns. Do not write that each wave stores its own sound values, and do not write that the top keyboard keeps a separate preset. Neither is in 1.09.
+
+The guide Sound screen is `assets/guide/sound-screen-109.jpg`, and the wave row is `assets/guide/sound-waves-109.jpg`. The homepage windows menu uses the approved 1.09 Play assets for Sound (`assets/play/01-layer-waveforms`) and Loop (`assets/play/03-looper-pages`), 720×1280 webp + jpg, cache version `109-play`. Pad, Drum and Mic keep the 1.08 Play assets.
