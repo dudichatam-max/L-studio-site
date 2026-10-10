@@ -50,11 +50,10 @@ const meetPoster = {
 
 type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 
-const PLAY_SHOT_VER = "108-play";
+const PLAY_SHOT_VER = "109-play";
 const playShotFiles: Record<PlayId, string> = {
-  // 1.09 Sound screen (real, cropped) until the designer's 1.09 Play assets replace it.
-  sound: "sound-109",
-  loop: "12-looper-8-colours",
+  sound: "01-layer-waveforms",
+  loop: "03-looper-pages",
   drum: "04-drum-machine",
   pad: "05-live-pad",
   mic: "07-mic-fx",
@@ -65,30 +64,30 @@ function playShotUrl(id: PlayId, ext: "jpg" | "webp") {
 
 const playShotAlt = {
   he: {
-    sound: "מסך Sound בגרסה 1.09: אייקון לכל גל, שני גלים דולקים יחד, הנובים והקלידים.",
+    sound: "תמונת Google Play: Layer Waveforms, כמה גלים יחד כמו Sine ו-Saw, מנגנים אותם ביחד.",
     mic: "תמונת Google Play: ערוצי מיקרופון ואפקטי Mic FX.",
-    loop: "תמונת Google Play: לופר עם 8 עמודים צבעוניים עם שם.",
+    loop: "תמונת Google Play: לופר עם 8 עמודים, צבע ושם לכל עמוד, 4 ערוצים בעמוד.",
     pad: "תמונת Google Play: ה-Pad עם Wah, Octave ו-Vibrato.",
     drum: "תמונת Google Play: מכונת תופים ב-16 צעדים עם ערכות ו-BPM.",
   },
   en: {
-    sound: "The Sound screen in version 1.09: an icon for each wave, two waves on together, the knobs and the keys.",
+    sound: "Google Play shot: Layer Waveforms, stack Sine, Saw and more and play them together.",
     mic: "Google Play shot: mic channels and Mic FX.",
-    loop: "Google Play shot: looper with 8 colour-coded named pages.",
+    loop: "Google Play shot: looper with 8 pages, colour-coded and named, 4 channels per page.",
     pad: "Google Play shot: the Pad with Wah, Octave and Vibrato.",
     drum: "Google Play shot: 16-step drum machine with kits and BPM.",
   },
   ru: {
-    sound: "Экран Sound в версии 1.09: значок у каждой волны, две волны включены вместе, ручки и клавиши.",
+    sound: "Скриншот Google Play: Layer Waveforms, несколько волн вместе, например Sine и Saw, звучат сразу.",
     mic: "Скриншот Google Play: каналы микрофона и Mic FX.",
-    loop: "Скриншот Google Play: лупер с 8 цветными именованными страницами.",
+    loop: "Скриншот Google Play: лупер с 8 страницами, у страниц цвет и имя, 4 канала на странице.",
     pad: "Скриншот Google Play: Pad с Wah, Octave и Vibrato.",
     drum: "Скриншот Google Play: барабанная машина на 16 шагов с наборами и BPM.",
   },
   ar: {
-    sound: "شاشة Sound في الإصدار 1.09: أيقونة لكل موجة، موجتان تعملان معًا، المقابض والمفاتيح.",
+    sound: "لقطة Google Play: Layer Waveforms، عدة موجات معاً مثل Sine وSaw تُعزف في الوقت نفسه.",
     mic: "لقطة Google Play: قنوات الميكروفون ومؤثرات Mic FX.",
-    loop: "لقطة Google Play: لوبر بـ 8 صفحات ملونة بأسماء.",
+    loop: "لقطة Google Play: لوبر بـ 8 صفحات، لكل صفحة لون واسم، و4 قنوات في كل صفحة.",
     pad: "لقطة Google Play: الـ Pad مع Wah وOctave وVibrato.",
     drum: "لقطة Google Play: آلة طبول بـ 16 خطوة مع أطقم وBPM.",
   },
@@ -285,7 +284,7 @@ function FeatureMedia({ id, alt }: { id: PlayId; alt: string }) {
   return (
     <picture>
       <source srcSet={playShotUrl(id, "webp")} type="image/webp" />
-      <img className="preview-media" src={playShotUrl(id, "jpg")} alt={alt} width={720} height={id === "sound" ? 1478 : 1280} loading="lazy" decoding="async" />
+      <img className="preview-media" src={playShotUrl(id, "jpg")} alt={alt} width={720} height={1280} loading="lazy" decoding="async" />
     </picture>
   );
 }
