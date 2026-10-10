@@ -875,6 +875,8 @@ html[dir="rtl"] .guide-page .guide-toc-sub a { padding: 6px 14px 6px 0; }
 .tester-form--closed .launch-note { align-self: flex-start; border-radius: 18px; }
 html[dir="ltr"] .final-cta { direction: ltr; }
 
-/* Feature graphic under the updates ticker: native 1024x500, scales down, reserved height (no layout shift). */
-.feature-graphic { margin: 0 auto; width: 100%; max-width: 1024px; aspect-ratio: 1024 / 500; background: #0b0b0b; }
-.feature-graphic picture, .feature-graphic img { display: block; width: 100%; height: auto; aspect-ratio: 1024 / 500; }
+/* Feature graphic under the updates ticker: centered in the content width, same in RTL and LTR (never mirrored),
+   equal space above and below, guide-style gold frame. Fixed 1024/500 ratio, so no layout shift. */
+.feature-graphic-wrap { display: flex; justify-content: center; padding-block: clamp(20px, 3vw, 36px); }
+.feature-graphic { margin: 0; width: 100%; max-width: 1024px; aspect-ratio: 1024 / 500; border: 1px solid rgba(227,197,101,.35); border-radius: 10px; overflow: hidden; background: #0c0c0e; box-shadow: 0 22px 70px rgba(0,0,0,.32); }
+.feature-graphic picture, .feature-graphic img { display: block; width: 100%; height: 100%; object-fit: cover; transform: none; }
