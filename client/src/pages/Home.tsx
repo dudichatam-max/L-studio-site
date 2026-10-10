@@ -503,12 +503,14 @@ export default function Home() {
       <UpdatesTicker copy={updates} isRtl={isRtl} />
 
       {/* Feature graphic under the ticker (David, 2026-10-10). Image used as is. */}
+      <div className="container feature-graphic-wrap">
       <figure className="feature-graphic">
         <picture>
           <source srcSet={`${featureGraphic.webp800} 800w, ${featureGraphic.webp1024} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" />
           <img src={featureGraphic.jpg} alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
         </picture>
       </figure>
+      </div>
 
       <main>
         {/* 1. Hero */}
