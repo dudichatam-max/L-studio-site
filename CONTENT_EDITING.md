@@ -91,3 +91,7 @@ The guide Sound screen is `assets/guide/sound-screen-109.jpg`, and the wave row 
 ### Feature graphic (2026-10-10)
 
 The homepage shows the 1024×500 feature graphic directly under the updates ticker, used as is: `assets/feature-graphic-1024.webp/.jpg` and `assets/feature-graphic-800.webp`, with alt text `featureGraphicAlt` in `client/src/pages/Home.tsx`. The picture itself still says "Microtonal music workstation" and "L-studio". Replace the files with a new export when the designer fixes that wording.
+
+### Demo video toggle (2026-10-11)
+
+Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/Home.tsx`, HE "סרטון הדגמה") opens the YouTube Short `d89y14QAHuA` (`DEMO_SHORT_ID`) in a 9:16 frame. It starts closed. The player loads only after a tap on the poster (`assets/demo-short-poster.webp/.jpg`, taken from the YouTube thumbnail). To change the video, change `DEMO_SHORT_ID` and the poster files.

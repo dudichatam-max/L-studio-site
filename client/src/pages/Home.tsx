@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Facebook, Menu, Mic2, Music2, SlidersHorizontal, Sparkles, X, Instagram } from "lucide-react";
+import { ArrowDownLeft, ArrowUpRight, AudioWaveform, ChevronRight, Disc3, Drum, Facebook, Menu, Mic2, Music2, PlayCircle, SlidersHorizontal, Sparkles, X, Instagram } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import WaveScope from "@/components/WaveScope";
@@ -25,6 +25,17 @@ const featureGraphic = {
   webp1024: `${import.meta.env.BASE_URL}assets/feature-graphic-1024.webp`,
   jpg: `${import.meta.env.BASE_URL}assets/feature-graphic-1024.jpg`,
 };
+const DEMO_SHORT_ID = "d89y14QAHuA";
+const demoPoster = {
+  webp: `${import.meta.env.BASE_URL}assets/demo-short-poster.webp`,
+  jpg: `${import.meta.env.BASE_URL}assets/demo-short-poster.jpg`,
+};
+const demoCopy = {
+  he: { label: "סרטון הדגמה", title: "סרטון הדגמה של L Studio" },
+  en: { label: "Demo video", title: "L Studio demo video" },
+  ru: { label: "Демо-видео", title: "Демо-видео L Studio" },
+  ar: { label: "فيديو تجريبي", title: "فيديو تجريبي لـ L Studio" },
+} satisfies Record<Language, { label: string; title: string }>;
 const featureGraphicAlt = {
   he: "L Studio, אפליקציית מוזיקה לאנדרואיד: מסך Sound עם גלים, נובים וקלידים, ומסך Pad עם WAH, OCT ו-Vibrato. Sound, Mic, Loop, Pad, Drum.",
   en: "L Studio, an Android music app: the Sound screen with waves, knobs and keys, and the Pad screen with WAH, OCT and Vibrato. Sound, Mic, Loop, Pad, Drum.",
@@ -450,6 +461,7 @@ export default function Home() {
   const [mobileOpen, setMobileOpen] = useState(false);
   // First feature open so a real screenshot shows without a click.
   const [activeFeature, setActiveFeature] = useState("sound");
+  const [demoOpen, setDemoOpen] = useState(false);
   const dir = isRtl ? "rtl" : "ltr";
 
   return (
@@ -510,6 +522,32 @@ export default function Home() {
           <img src={featureGraphic.jpg} alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
         </picture>
       </figure>
+      </div>
+      {/* Demo video toggle (David, 2026-10-11): same tab style as the windows menu, starts closed. */}
+      <div className="container demo-video-wrap" dir={dir}>
+        <div className="interface-feature-list demo-video-list">
+          <div className={`interface-feature-item ${demoOpen ? "is-active" : ""}`}>
+            <button
+              type="button"
+              aria-expanded={demoOpen}
+              aria-controls="demo-video-panel"
+              className="interface-feature"
+              onClick={() => setDemoOpen((open) => !open)}
+            >
+              <span className="feature-index">▶</span>
+              <span className="feature-icon"><PlayCircle size={20} /></span>
+              <span className="feature-label">{demoCopy[language].label}</span>
+              <ChevronRight size={16} />
+            </button>
+            {demoOpen && (
+              <div className="demo-video-panel" id="demo-video-panel">
+                <div className="demo-video-frame">
+                  <YouTubeFacade videoId={DEMO_SHORT_ID} title={demoCopy[language].title} poster={demoPoster} />
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
       <main>

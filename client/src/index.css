@@ -880,3 +880,10 @@ html[dir="ltr"] .final-cta { direction: ltr; }
 .feature-graphic-wrap { display: flex; justify-content: center; padding-block: clamp(20px, 3vw, 36px); }
 .feature-graphic { margin: 0; width: 100%; max-width: 1024px; aspect-ratio: 1024 / 500; border: 1px solid rgba(227,197,101,.35); border-radius: 10px; overflow: hidden; background: #0c0c0e; box-shadow: 0 22px 70px rgba(0,0,0,.32); }
 .feature-graphic picture, .feature-graphic img { display: block; width: 100%; height: 100%; object-fit: cover; transform: none; }
+
+/* Demo video toggle under the feature graphic: windows-menu tab style, 9:16 frame centered, iframe loads on click. */
+.demo-video-wrap { display: flex; justify-content: center; padding-bottom: clamp(20px, 3vw, 36px); }
+.demo-video-list { width: 100%; max-width: 1024px; }
+.demo-video-panel { display: flex; justify-content: center; padding: 18px 12px 24px; background: #080809; }
+.demo-video-frame { width: min(100%, 340px, calc(70vh * 9 / 16)); aspect-ratio: 9 / 16; border: 1px solid rgba(227,197,101,.35); border-radius: 10px; overflow: hidden; background: #000; box-shadow: 0 22px 70px rgba(0,0,0,.32); }
+.demo-video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
