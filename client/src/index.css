@@ -874,3 +874,7 @@ html[dir="rtl"] .guide-page .guide-toc-sub a { padding: 6px 14px 6px 0; }
 .tester-form--closed { gap: 18px; }
 .tester-form--closed .launch-note { align-self: flex-start; border-radius: 18px; }
 html[dir="ltr"] .final-cta { direction: ltr; }
+
+/* Feature graphic under the updates ticker: native 1024x500, scales down, reserved height (no layout shift). */
+.feature-graphic { margin: 0 auto; width: 100%; max-width: 1024px; aspect-ratio: 1024 / 500; background: #0b0b0b; }
+.feature-graphic picture, .feature-graphic img { display: block; width: 100%; height: auto; aspect-ratio: 1024 / 500; }

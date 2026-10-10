@@ -20,6 +20,17 @@ const factoryHero = {
 const factoryBoxJpg = `${import.meta.env.BASE_URL}assets/factory-pack-box.jpg?v=108-packs`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=108-packs`;
 const factoryBoxWebp800 = `${import.meta.env.BASE_URL}assets/factory-pack-box-800.webp?v=108-packs`;
+const featureGraphic = {
+  webp800: `${import.meta.env.BASE_URL}assets/feature-graphic-800.webp`,
+  webp1024: `${import.meta.env.BASE_URL}assets/feature-graphic-1024.webp`,
+  jpg: `${import.meta.env.BASE_URL}assets/feature-graphic-1024.jpg`,
+};
+const featureGraphicAlt = {
+  he: "L Studio, אפליקציית מוזיקה לאנדרואיד: מסך Sound עם גלים, נובים וקלידים, ומסך Pad עם WAH, OCT ו-Vibrato. Sound, Mic, Loop, Pad, Drum.",
+  en: "L Studio, an Android music app: the Sound screen with waves, knobs and keys, and the Pad screen with WAH, OCT and Vibrato. Sound, Mic, Loop, Pad, Drum.",
+  ru: "L Studio, музыкальное приложение для Android: экран Sound с волнами, ручками и клавишами и экран Pad с WAH, OCT и Vibrato. Sound, Mic, Loop, Pad, Drum.",
+  ar: "L Studio، تطبيق موسيقى لأندرويد: شاشة Sound مع الموجات والمقابض والمفاتيح، وشاشة Pad مع WAH وOCT وVibrato. Sound وMic وLoop وPad وDrum.",
+} satisfies Record<Language, string>;
 const developerImage = {
   webp: `${import.meta.env.BASE_URL}assets/Developer-720.webp`,
   jpg: `${import.meta.env.BASE_URL}assets/Developer-720.jpg`,
@@ -490,6 +501,14 @@ export default function Home() {
       />
 
       <UpdatesTicker copy={updates} isRtl={isRtl} />
+
+      {/* Feature graphic under the ticker (David, 2026-10-10). Image used as is. */}
+      <figure className="feature-graphic">
+        <picture>
+          <source srcSet={`${featureGraphic.webp800} 800w, ${featureGraphic.webp1024} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" />
+          <img src={featureGraphic.jpg} alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
+        </picture>
+      </figure>
 
       <main>
         {/* 1. Hero */}
