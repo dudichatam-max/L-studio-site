@@ -423,7 +423,7 @@
               "מחזיקים 1/4, 1/8, 1/16, או 1/32 כדי לחזור על התופים בחלוקה הזאת כל עוד מחזיקים. עוזבים, והחזרה נעצרת. הקשה עליהם לא עושה כלום. מחזיקים STOP. הקשה עליו לא עושה כלום.",
               "הקשה על מספר פטרן, 1 עד 8, טוענת את הפטרן, כולל הטמפו, ה-swing, הווליום, וימין ושמאל. לחיצה ארוכה פותחת את Pattern repeats.",
               "הקשה על Save, ליד Random, שומרת את התופים הנוכחיים לתוך הפטרן שעליו אתם, כותבת את ה-BPM, ה-Swing והווליום של השורות לכל 8 הפטרנים, ושומרת את הקיט עם הסאונד שנבחר בכל שורה. הקשה על Random בונה פטרן חדש בז'אנר שנבחר.",
-              "השורות הן Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 ו-Voice. הקשה על שם שורה פותחת רשימת סאונדים לשורה הזאת, מכל קיטי ה-Factory, ומקיטי ה-Exclusive כשהם באפליקציה. כל שורה מציגה רק סאונדים מהסוג שלה: FX 1 עד FX 3 חולקים רשימה אחת, ו-Voice מציג רק שירה. הקשה על סאונד שמה אותו בשורה והרשימה נשארת פתוחה. כשהתופים מנגנים שומעים אותו במכה הבאה. כשהם עצורים הוא מתנגן פעם אחת. החצים ◀ ו-▶ ליד Load עוברים לסאונד הקודם או הבא. הקשה על Load בוחרת קובץ שמע מהטלפון. LIVE מכבה את Load.",
+              "השורות הן Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 ו-Voice. הקשה על שם שורה פותחת רשימת סאונדים לשורה הזאת, מכל קיטי ה-Factory, ומקיטי ה-Exclusive כשהם באפליקציה. כל שורה מציגה רק סאונדים מהסוג שלה: FX 1 עד FX 3 חולקים רשימה אחת, ו-Voice מציג רק שירה. הקשה על סאונד שמה אותו בשורה והרשימה נשארת פתוחה. כשהתופים מנגנים שומעים אותו במכה הבאה. כשהם עצורים הוא מתנגן פעם אחת. החצים ◀ ו-▶ ליד Load עוברים לסאונד הקודם או הבא. הקשה על Load בוחרת קובץ שמע מהטלפון. LIVE מכבה את Load. החצים ◀ ו-▶ נצבעים בזהב לשנייה אחת אחרי הקשה.",
               "גרירה על הסליידר של השורה קובעת את הווליום שלה. הוא מראה אחוז ובלי מילה. גרירה על L/R מזיזה את השורה בין L ל-R.",
               "לכל שורה יש 16 צעדים. הקשה מדליקה או מכבה צעד.",
               "החצים ליד DRUM KIT טוענים את הקיט הבא או הקודם. LIVE מכבה את החצים האלה."
@@ -471,7 +471,7 @@
             "id": "loop",
             "title": "Loop",
             "body": [
-              "הקשה על Loop פותחת את המסך הזה. יש בו 8 עמודים ו-4 ערוצים בכל עמוד, 32 ערוצים בסך הכל. הקלטה יכולה להימשך עד 30 דקות.",
+              "הקשה על Loop פותחת את המסך הזה. יש 32 ערוצי לופר: 8 עמודים, 1 עד 8, ובכל עמוד 4 ערוצים. הקלטה יכולה להימשך עד 30 דקות. ב-30:00 ההקלטה נעצרת לבד.",
               "הקשה על מספר עמוד, 1 עד 8, מראה את העמוד. לחיצה ארוכה פותחת את Page name. מקלידים שם, בוחרים אחד מ-8 צבעים (כתום, אדום, זהב, חום, ירוק, כחול, סגול, ורוד), ומקישים OK. Reset מוריד את הצבע. Cancel סוגר בלי שינוי. LIVE מכבה את הלחיצה הארוכה.",
               "צבע העמוד ממלא את מספר העמוד וצובע את גלי הערוצים בעמוד הזה.",
               "שדה השם ליד Redo מראה את שם העמוד שאתם עליו. כשהוא ריק, כתוב בו Page ומספר העמוד. הקשה בשדה נותנת להקליד שם. LIVE נועל את השם. השמות והצבעים נשמרים עם פרויקט הלופ וב-Export.",
@@ -1324,16 +1324,67 @@
           {
             "id": "app-1-10-loop-editor-drums",
             "status": "in_progress",
-            "title": "L Studio 1.10 מגיע בעדכון הבא",
-            "ticker": "בעדכון הבא: עורך לופר חדש, הקלטה עד 30 דקות, Redo להקלטות, ותופים גמישים יותר.",
-            "summary": "מגיע בעדכון הבא ב-Google Play, גרסה 1.10: הקשה על גל בלופר פותחת עורך לופר חדש, עם Trim, Loop, Repeats ו-EQ בשלושה פסים. הקלטה יכולה להימשך עד 30 דקות, ו-Redo מחזיר הקלטה שנמחקה או שהוקלט עליה מחדש. בתופים, הקשה על שם שורה פותחת את הסאונדים שלה מכל הקיטים, ושומעים כל בחירה בזמן שהביט מתנגן. סשן שמור שומר עכשיו את כל סביבת העבודה, מפריסטי התדרים ובחירות התופים ועד המילים, כך שאפשר להעביר אותה למכשיר אחר. טעינה שואלת קודם ושומרת גיבוי, ו-New session ב-Settings מרוקן רק את ה-Looper וה-Mic.",
+            "title": "מגיע בעדכון הבא: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
+            "ticker": "מגיע בעדכון הבא: Loop Editor בלופר, עם Trim, לופ ומספר חזרות",
+            "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, ובוחר סאמפלים לתופים עם Factory ו-Exclusive לכל ערוץ.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
               "/assets/updates/loop-editor-110.jpg"
             ],
             "imageAlts": [
-              "Loop Editor בגרסה 1.10: Trim, Loop, Repeats ו-EQ לערוץ אחד בלופר."
+              "Loop Editor בגרסה 1.10: Trim, Loop, Repeats, EQ, Gain ו-Squeeze לערוץ אחד בלופר."
+            ],
+            "sections": [
+              {
+                "title": "לופר",
+                "bullets": [
+                  "הקלטה של עד 30 דקות. ב-30:00 ההקלטה נעצרת לבד.",
+                  "כשהתופים מנגנים, Play מתחיל בתחילת התיבה הבאה של התופים.",
+                  "אין קליקים כשערוץ מתחיל או נעצר, או כשמשנים ווליום.",
+                  "Drive משתנה בצורה חלקה כשמזיזים אותו תוך כדי נגינה.",
+                  "Back הפך ל-Redo, בלופר וב-Mic. הוא מחזיר הקלטה שהוקלט עליה או שנמחקה. בלופר הוא מחזיר גם הקלטה מלפני חיתוך."
+                ]
+              },
+              {
+                "title": "עורך לופים",
+                "bullets": [
+                  "נפתח בהקשה על הגל של הערוץ.",
+                  "חיתוך ההקלטה עם Trim.",
+                  "קביעת לופ ומספר חזרות: הקשה על 1 עד 10 או על אינסוף, או הקלדה של מספר מ-1 עד 88.",
+                  "EQ: Low, Mid, High ו-Mid Hz.",
+                  "Gain ו-Squeeze."
+                ]
+              },
+              {
+                "title": "תופים",
+                "bullets": [
+                  "הכפתור Swap נקרא עכשיו Load.",
+                  "כפתור Save שליד Random שומר את הסאמפלים יחד עם הביטים בקיט הנוכחי.",
+                  "בוחר הסאמפלים מציג לכל ערוץ רק את הסאמפלים שלו, מחולקים ל-Factory ול-Exclusive.",
+                  "הערוצים Extra 1 עד 3 נקראים עכשיו FX 1 עד 3 וחולקים בנק אחד.",
+                  "החצים בערוצי התופים נצבעים בזהב לשנייה אחת אחרי הקשה.",
+                  "מי שקונה Pro מקבל גם את החבילה האקסקלוסיבית בחינם, בלי עלות נוספת ובלי כפתור הורדה."
+                ]
+              },
+              {
+                "title": "תדרים",
+                "bullets": [
+                  "החלון Custom Frequency, שנפתח מ-Settings, מציג את התדרים במלואם.",
+                  "8 פריסטים אישיים.",
+                  "Save כותב על הפריסט שנבחר. אם לא נבחר פריסט, הוא שומר לפריסט הריק הראשון.",
+                  "הקשה על פריסט טוענת אותו מיד."
+                ]
+              },
+              {
+                "title": "סשן",
+                "bullets": [
+                  "שמירת סשן שומרת את כל סביבת העבודה, כך שטעינה במכשיר אחר מחזירה אותה: פריסטים של תדרים, בחירות הסאמפלים בתופים, שני בנקי התופים, הגלים הפעילים, המקלדת הכפולה, יעדי הפד והמילים.",
+                  "לפני כל טעינה יש שאלת אישור וגיבוי אוטומטי. אחרי הטעינה ניטור המיקרופון כבוי.",
+                  "כפתור חדש New session, ראשון ב-Settings. הוא מבקש שם ומנקה רק את ערוצי הלופר והמיקרופון. הקיטים, הביטים והפריסטים נשארים.",
+                  "שם כפול בייבוא מקבל שם חדש, במקום לכתוב על הקיים."
+                ]
+              }
             ]
           },
           {
@@ -1829,7 +1880,7 @@
               "Hold 1/4, 1/8, 1/16, or 1/32 to repeat the drums at that division while you hold it. Release, and that repeat stops. A tap on them does nothing. Hold STOP. A tap on it does nothing.",
               "A tap on a pattern number, 1 through 8, loads that pattern, including its tempo, swing, volumes, and left and right. A long-press opens Pattern repeats.",
               "A tap on Save, next to Random, stores the current drums into the pattern you are on, writes the current BPM, Swing, and row volumes into all 8 patterns, and saves the kit with the sound picked on each row. A tap on Random builds a new pattern in the chosen genre.",
-              "The rows are Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3, and Voice. A tap on a row name opens a sound list for that row, from all the Factory kits, and from the Exclusive kits when they are in the app. Each row lists only its own kind of sound: FX 1 to FX 3 share one list, and Voice lists vocals only. A tap on a sound puts it on the row and the list stays open. While the drums play you hear it on the next hit. When they are stopped it plays once. The ◀ and ▶ arrows next to Load step to the previous or next sound. A tap on Load picks an audio file from the phone. LIVE turns Load off.",
+              "The rows are Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3, and Voice. A tap on a row name opens a sound list for that row, from all the Factory kits, and from the Exclusive kits when they are in the app. Each row lists only its own kind of sound: FX 1 to FX 3 share one list, and Voice lists vocals only. A tap on a sound puts it on the row and the list stays open. While the drums play you hear it on the next hit. When they are stopped it plays once. The ◀ and ▶ arrows next to Load step to the previous or next sound. A tap on Load picks an audio file from the phone. LIVE turns Load off. The ◀ and ▶ arrows turn gold for one second after a tap.",
               "A drag on the row slider sets that row's volume. It shows a percent and no word. A drag on L/R moves the row between L and R.",
               "Each row has 16 steps. A tap turns a step on or off.",
               "The arrows beside DRUM KIT load the next or previous kit. LIVE turns those arrows off."
@@ -1877,7 +1928,7 @@
             "id": "loop",
             "title": "Loop",
             "body": [
-              "A tap on Loop opens this screen. It has 8 pages and 4 channels on each page, 32 channels in all. A recording can run up to 30 minutes.",
+              "A tap on Loop opens this screen. There are 32 looper channels: 8 pages, 1 to 8, with 4 channels on each page. A recording can run up to 30 minutes. At 30:00 it stops by itself.",
               "A tap on a page number, 1 through 8, shows that page. A long-press opens Page name. Type a name, pick one of 8 colors (orange, red, gold, brown, green, blue, purple, pink), and tap OK. Reset removes the color. Cancel closes without changes. LIVE turns the long-press off.",
               "The page color fills that page number and colors the channel waves on that page.",
               "The name field next to Redo shows the name of the page you are on. While it is empty, it reads Page and the number. A tap in it lets you type the name. LIVE locks the name. Names and colors are saved with the loop project and in Export.",
@@ -2730,16 +2781,67 @@
           {
             "id": "app-1-10-loop-editor-drums",
             "status": "in_progress",
-            "title": "L Studio 1.10 is coming in the next update",
-            "ticker": "Coming next: a new looper editor, recording up to 30 minutes, Redo for recordings, and more flexible drums.",
-            "summary": "Coming in the next Google Play update, version 1.10: a tap on a looper waveform opens a new loop editor, with Trim, Loop, Repeats, and a 3-band EQ. Recordings can run up to 30 minutes, and Redo brings back a take you cleared or recorded over. In the drums, a tap on a row name opens its sounds from all the kits, and you hear each pick while the beat plays. A saved session now keeps your whole setup, from frequency presets and drum picks to the lyrics, so you can move it to another device. Loading asks first and keeps a backup, and New session in Settings empties only the Looper and Mic.",
+            "title": "Coming in the next update: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
+            "ticker": "Coming in the next update: Loop Editor in the looper, with Trim, loop and repeats",
+            "summary": "Coming in the next update, version 1.10: a new loop editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, and a drum sample picker with Factory and Exclusive for each channel.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
               "/assets/updates/loop-editor-110.jpg"
             ],
             "imageAlts": [
-              "Loop Editor in 1.10: Trim, Loop, Repeats, and EQ for one looper channel."
+              "Loop Editor in 1.10: Trim, Loop, Repeats, EQ, Gain and Squeeze for one looper channel."
+            ],
+            "sections": [
+              {
+                "title": "Looper",
+                "bullets": [
+                  "Recording up to 30 minutes. It stops by itself at 30:00.",
+                  "While the drums play, Play starts at the next drum bar.",
+                  "No clicks when a channel starts or stops, or when you change the volume.",
+                  "Drive changes smoothly when you move it while you play.",
+                  "Back is now Redo, in the looper and in Mic. It brings back a take you recorded over or cleared. In the looper it also brings back a take from before a trim."
+                ]
+              },
+              {
+                "title": "Loop editor",
+                "bullets": [
+                  "Opens when you tap the waveform.",
+                  "Trim the recording.",
+                  "Set a loop and the number of repeats: tap 1 to 10 or infinity, or type a number from 1 to 88.",
+                  "EQ: Low, Mid, High and Mid Hz.",
+                  "Gain and Squeeze."
+                ]
+              },
+              {
+                "title": "Drums",
+                "bullets": [
+                  "The Swap button is now called Load.",
+                  "The Save button next to Random saves the samples together with the beats into the current kit.",
+                  "The sample picker shows each channel only its own samples, split into Factory and Exclusive.",
+                  "Channels Extra 1 to 3 are now called FX 1 to 3 and share one bank.",
+                  "The arrows on the drum channels turn gold for one second after a tap.",
+                  "Whoever buys Pro also gets the Exclusive pack free, at no extra cost and with no download button."
+                ]
+              },
+              {
+                "title": "Frequencies",
+                "bullets": [
+                  "The Custom Frequency window, opened from Settings, shows the frequencies in full.",
+                  "8 personal presets.",
+                  "Save overwrites the selected preset. If none is selected, it saves to the first empty preset.",
+                  "Tapping a preset loads it immediately."
+                ]
+              },
+              {
+                "title": "Session",
+                "bullets": [
+                  "Saving a session saves the whole workspace, so loading it on another device restores it: frequency presets, drum sample choices, both drum banks, active waves, the dual keyboard, the pad targets and the lyrics.",
+                  "Before every load there is a confirmation question and an automatic backup. After a load, the mic monitor is off.",
+                  "New button New session, first in Settings. It asks for a name and clears only the looper and mic channels. Kits, beats and presets stay.",
+                  "A duplicate name on import gets a new name instead of overwriting the existing one."
+                ]
+              }
             ]
           },
           {
@@ -3235,7 +3337,7 @@
               "Удерживайте 1/4, 1/8, 1/16 или 1/32, чтобы повторять ударные в этом делении, пока держите. Отпустите, и повтор остановится. Нажатие на них ничего не делает. Удерживайте STOP. Нажатие на него ничего не делает.",
               "Нажатие на номер паттерна, от 1 до 8, загружает этот паттерн, включая темп, swing, громкость и лево и право. Долгое нажатие открывает Pattern repeats.",
               "Нажатие на Save, рядом с Random, сохраняет текущие ударные в паттерн, на котором вы находитесь, записывает текущие BPM, Swing и громкость дорожек во все 8 паттернов и сохраняет набор со звуком, выбранным на каждом ряду. Нажатие на Random строит новый паттерн в выбранном жанре.",
-              "Ряды называются Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 и Voice. Нажатие на имя ряда открывает список звуков для этого ряда из всех наборов Factory, а также из наборов Exclusive, когда они есть в приложении. Каждый ряд показывает только свой вид звуков: FX 1 до FX 3 делят один список, а Voice показывает только вокал. Нажатие на звук ставит его на ряд, и список остаётся открытым. Пока играют ударные, его слышно на следующем ударе. Когда они остановлены, он звучит один раз. Стрелки ◀ и ▶ рядом с Load переходят к предыдущему или следующему звуку. Нажатие на Load выбирает аудиофайл с телефона. LIVE выключает Load.",
+              "Ряды называются Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 и Voice. Нажатие на имя ряда открывает список звуков для этого ряда из всех наборов Factory, а также из наборов Exclusive, когда они есть в приложении. Каждый ряд показывает только свой вид звуков: FX 1 до FX 3 делят один список, а Voice показывает только вокал. Нажатие на звук ставит его на ряд, и список остаётся открытым. Пока играют ударные, его слышно на следующем ударе. Когда они остановлены, он звучит один раз. Стрелки ◀ и ▶ рядом с Load переходят к предыдущему или следующему звуку. Нажатие на Load выбирает аудиофайл с телефона. LIVE выключает Load. Стрелки ◀ и ▶ загораются золотым на одну секунду после нажатия.",
               "Перетаскивание слайдера ряда задаёт громкость ряда. Он показывает процент и без слова. Перетаскивание L/R двигает ряд между L и R.",
               "В каждом ряду 16 шагов. Нажатие включает или выключает шаг.",
               "Стрелки рядом с DRUM KIT загружают следующий или предыдущий набор. LIVE выключает эти стрелки."
@@ -3283,7 +3385,7 @@
             "id": "loop",
             "title": "Loop",
             "body": [
-              "Нажатие на Loop открывает этот экран. В нём 8 страниц и 4 канала на каждой, всего 32 канала. Запись может длиться до 30 минут.",
+              "Нажатие на Loop открывает этот экран. Здесь 32 канала лупера: 8 страниц, от 1 до 8, по 4 канала на каждой. Запись может длиться до 30 минут. На 30:00 она останавливается сама.",
               "Нажатие на номер страницы, от 1 до 8, показывает страницу. Долгое нажатие открывает Page name. Введите имя, выберите один из 8 цветов (оранжевый, красный, золотой, коричневый, зелёный, синий, фиолетовый, розовый) и нажмите OK. Reset убирает цвет. Cancel закрывает без изменений. LIVE выключает долгое нажатие.",
               "Цвет страницы заполняет её номер и окрашивает волны каналов на этой странице.",
               "Поле имени рядом с Redo показывает имя текущей страницы. Пока оно пустое, там написано Page и номер. Нажатие в поле позволяет ввести имя. LIVE запирает имя. Имена и цвета сохраняются вместе с проектом лупера и в Export.",
@@ -4136,16 +4238,67 @@
           {
             "id": "app-1-10-loop-editor-drums",
             "status": "in_progress",
-            "title": "L Studio 1.10 выйдет в следующем обновлении",
-            "ticker": "В следующем обновлении: новый редактор лупов, запись до 30 минут, Redo для записей и более гибкие ударные.",
-            "summary": "В следующем обновлении Google Play, версия 1.10: нажатие на волну в лупере открывает новый редактор лупов с Trim, Loop, Repeats и 3-полосным EQ. Запись может длиться до 30 минут, а Redo возвращает очищенную или записанную поверх запись. В ударных нажатие на имя ряда открывает его звуки из всех наборов, и каждый выбор слышно, пока играет бит. Сохранённая сессия теперь хранит всю настройку, от пресетов частот и выбора ударных до текстов, и её можно перенести на другое устройство. Загрузка сначала спрашивает и делает копию, а New session в Settings очищает только Looper и Mic.",
+            "title": "В следующем обновлении: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
+            "ticker": "В следующем обновлении: Loop Editor в лупере, с Trim, лупом и повторами",
+            "summary": "В следующем обновлении, версия 1.10: новый редактор лупов, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency и выбор сэмплов ударных с Factory и Exclusive для каждого канала.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
               "/assets/updates/loop-editor-110.jpg"
             ],
             "imageAlts": [
-              "Loop Editor в 1.10: Trim, Loop, Repeats и EQ для одного канала лупера."
+              "Loop Editor в 1.10: Trim, Loop, Repeats, EQ, Gain и Squeeze для одного канала лупера."
+            ],
+            "sections": [
+              {
+                "title": "Лупер",
+                "bullets": [
+                  "Запись до 30 минут. На 30:00 она останавливается сама.",
+                  "Пока играют ударные, Play начинается со следующего такта ударных.",
+                  "Нет щелчков, когда канал стартует или останавливается или когда меняется громкость.",
+                  "Drive меняется плавно, когда его двигают во время игры.",
+                  "Back теперь Redo, в лупере и в Mic. Он возвращает запись, поверх которой записали, или очищенную запись. В лупере он также возвращает запись до обрезки."
+                ]
+              },
+              {
+                "title": "Редактор лупов",
+                "bullets": [
+                  "Открывается нажатием на волну канала.",
+                  "Обрезка записи с Trim.",
+                  "Луп и число повторов: нажмите 1 до 10 или бесконечность, или введите число от 1 до 88.",
+                  "EQ: Low, Mid, High и Mid Hz.",
+                  "Gain и Squeeze."
+                ]
+              },
+              {
+                "title": "Ударные",
+                "bullets": [
+                  "Кнопка Swap теперь называется Load.",
+                  "Кнопка Save рядом с Random сохраняет сэмплы вместе с битами в текущий набор.",
+                  "Выбор сэмплов показывает каждому каналу только его сэмплы, разделённые на Factory и Exclusive.",
+                  "Каналы Extra 1 до 3 теперь называются FX 1 до 3 и делят один банк.",
+                  "Стрелки на каналах ударных загораются золотым на одну секунду после нажатия.",
+                  "Кто покупает Pro, получает и пакет Exclusive бесплатно, без доплаты и без кнопки загрузки."
+                ]
+              },
+              {
+                "title": "Частоты",
+                "bullets": [
+                  "Окно Custom Frequency, которое открывается из Settings, показывает частоты полностью.",
+                  "8 личных пресетов.",
+                  "Save перезаписывает выбранный пресет. Если ничего не выбрано, он сохраняет в первый пустой пресет.",
+                  "Нажатие на пресет сразу загружает его."
+                ]
+              },
+              {
+                "title": "Сессия",
+                "bullets": [
+                  "Сохранение сессии сохраняет всё рабочее пространство, и загрузка на другом устройстве возвращает его: пресеты частот, выбор сэмплов ударных, оба банка ударных, включённые волны, две клавиатуры, цели пэдов и тексты.",
+                  "Перед каждой загрузкой есть вопрос с подтверждением и автоматическая резервная копия. После загрузки монитор микрофона выключен.",
+                  "Новая кнопка New session, первая в Settings. Она спрашивает имя и очищает только каналы лупера и микрофона. Наборы, биты и пресеты остаются.",
+                  "Сессия с повторяющимся именем при импорте получает новое имя и не перезаписывает существующую."
+                ]
+              }
             ]
           },
           {
@@ -4641,7 +4794,7 @@
               "أمسك 1/4 أو 1/8 أو 1/16 أو 1/32 لتكرار الطبول على ذلك التقسيم ما دمت ممسكاً. اترك، فيتوقف التكرار. الضغط عليها لا يفعل شيئاً. أمسك STOP. الضغط عليه لا يفعل شيئاً.",
               "الضغط على رقم نمط، من 1 إلى 8، يحمّل ذلك النمط، بما فيه الإيقاع وswing والحجم واليسار واليمين. الضغط المطوّل يفتح Pattern repeats.",
               "الضغط على Save، بجانب Random، يحفظ الطبول الحالية في النمط الذي أنت عليه، ويكتب BPM وSwing وحجم الصفوف الحالية في الأنماط الثمانية كلها، ويحفظ الطقم مع الصوت المختار في كل صف. الضغط على Random يبني نمطاً جديداً في النوع المختار.",
-              "الصفوف هي Kick وSnare وHi-Hat وPerc وFX 1 وFX 2 وFX 3 وVoice. الضغط على اسم صف يفتح قائمة أصوات لذلك الصف من كل أطقم Factory، ومن أطقم Exclusive عندما تكون في التطبيق. كل صف يعرض نوع أصواته فقط: FX 1 حتى FX 3 تتشارك قائمة واحدة، وVoice يعرض الغناء فقط. الضغط على صوت يضعه على الصف وتبقى القائمة مفتوحة. أثناء عزف الطبول تسمعه في الضربة التالية. وعندما تكون متوقفة يُعزف مرة واحدة. السهمان ◀ و▶ بجانب Load ينتقلان إلى الصوت السابق أو التالي. الضغط على Load يختار ملف صوت من الهاتف. LIVE يوقف Load.",
+              "الصفوف هي Kick وSnare وHi-Hat وPerc وFX 1 وFX 2 وFX 3 وVoice. الضغط على اسم صف يفتح قائمة أصوات لذلك الصف من كل أطقم Factory، ومن أطقم Exclusive عندما تكون في التطبيق. كل صف يعرض نوع أصواته فقط: FX 1 حتى FX 3 تتشارك قائمة واحدة، وVoice يعرض الغناء فقط. الضغط على صوت يضعه على الصف وتبقى القائمة مفتوحة. أثناء عزف الطبول تسمعه في الضربة التالية. وعندما تكون متوقفة يُعزف مرة واحدة. السهمان ◀ و▶ بجانب Load ينتقلان إلى الصوت السابق أو التالي. الضغط على Load يختار ملف صوت من الهاتف. LIVE يوقف Load. السهمان ◀ و▶ يصبحان ذهبيين لثانية واحدة بعد الضغط.",
               "السحب على منزلق الصف يحدد حجم الصف. يعرض نسبة ومن دون كلمة. السحب على L/R يحرّك الصف بين L وR.",
               "لكل صف 16 خطوة. الضغط يشغّل خطوة أو يوقفها.",
               "الأسهم بجانب DRUM KIT تحمّل الطقم التالي أو السابق. LIVE يوقف هذه الأسهم."
@@ -4689,7 +4842,7 @@
             "id": "loop",
             "title": "Loop",
             "body": [
-              "الضغط على Loop يفتح هذه الشاشة. فيها 8 صفحات و4 قنوات في كل صفحة، 32 قناة في المجموع. يمكن أن يستمر التسجيل حتى 30 دقيقة.",
+              "الضغط على Loop يفتح هذه الشاشة. فيها 32 قناة لوبر: 8 صفحات، من 1 إلى 8، و4 قنوات في كل صفحة. يمكن أن يستمر التسجيل حتى 30 دقيقة. عند 30:00 يتوقف وحده.",
               "الضغط على رقم صفحة، من 1 إلى 8، يعرض الصفحة. الضغط المطوّل يفتح Page name. اكتب اسماً، واختر لوناً من 8 ألوان (برتقالي، أحمر، ذهبي، بني، أخضر، أزرق، بنفسجي، وردي)، ثم اضغط OK. Reset يزيل اللون. Cancel يغلق دون تغيير. LIVE يوقف الضغط المطوّل.",
               "لون الصفحة يملأ رقمها ويلوّن موجات القنوات في تلك الصفحة.",
               "حقل الاسم بجانب Redo يعرض اسم الصفحة التي أنت عليها. وهو فارغ يظهر فيه Page والرقم. الضغط في الحقل يتيح كتابة الاسم. LIVE يقفل الاسم. الأسماء والألوان تُحفظ مع مشروع اللوب وفي Export.",
@@ -5542,16 +5695,67 @@
           {
             "id": "app-1-10-loop-editor-drums",
             "status": "in_progress",
-            "title": "L Studio 1.10 قادم في التحديث القادم",
-            "ticker": "في التحديث القادم: محرر لوب جديد، تسجيل حتى 30 دقيقة، Redo للتسجيلات، وطبول أكثر مرونة.",
-            "summary": "في تحديث Google Play القادم، الإصدار 1.10: الضغط على موجة في اللوبر يفتح محرر لوب جديداً، مع Trim وLoop وRepeats وEQ بثلاثة نطاقات. يمكن أن يستمر التسجيل حتى 30 دقيقة، وRedo يعيد أخذاً مُسح أو سُجّل فوقه. في الطبول، الضغط على اسم صف يفتح أصواته من كل الأطقم، وتسمع كل اختيار أثناء عزف الإيقاع. الجلسة المحفوظة تحفظ الآن الإعداد كله، من إعدادات الترددات واختيارات الطبول حتى الكلمات، فيمكن نقلها إلى جهاز آخر. التحميل يسأل أولاً ويحفظ نسخة احتياطية، وNew session في Settings يفرغ Looper وMic فقط.",
+            "title": "في التحديث القادم: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
+            "ticker": "في التحديث القادم: Loop Editor في اللوبر، مع Trim واللوب وعدد التكرارات",
+            "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive لكل قناة.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
               "/assets/updates/loop-editor-110.jpg"
             ],
             "imageAlts": [
-              "Loop Editor في الإصدار 1.10: Trim وLoop وRepeats وEQ لقناة واحدة في اللوبر."
+              "Loop Editor في الإصدار 1.10: Trim وLoop وRepeats وEQ وGain وSqueeze لقناة واحدة في اللوبر."
+            ],
+            "sections": [
+              {
+                "title": "اللوبر",
+                "bullets": [
+                  "تسجيل حتى 30 دقيقة. عند 30:00 يتوقف وحده.",
+                  "أثناء عزف الطبول، يبدأ Play عند بداية المازورة التالية للطبول.",
+                  "لا نقرات عندما تبدأ القناة أو تتوقف، أو عندما يتغير الحجم.",
+                  "يتغير Drive بسلاسة عندما تحرّكه أثناء العزف.",
+                  "أصبح Back الآن Redo، في اللوبر وفي Mic. يعيد أخذاً سُجّل فوقه أو مُسح. وفي اللوبر يعيد أيضاً الأخذ من قبل القص."
+                ]
+              },
+              {
+                "title": "محرر اللوب",
+                "bullets": [
+                  "يُفتح بالضغط على موجة القناة.",
+                  "قص التسجيل بـ Trim.",
+                  "تحديد اللوب وعدد التكرارات: اضغط 1 حتى 10 أو اللانهاية، أو اكتب رقماً من 1 إلى 88.",
+                  "EQ: Low وMid وHigh وMid Hz.",
+                  "Gain وSqueeze."
+                ]
+              },
+              {
+                "title": "الطبول",
+                "bullets": [
+                  "زر Swap اسمه الآن Load.",
+                  "زر Save بجانب Random يحفظ العينات مع الإيقاعات في الطقم الحالي.",
+                  "منتقي العينات يعرض لكل قناة عيناتها فقط، مقسّمة إلى Factory وExclusive.",
+                  "القنوات Extra 1 حتى 3 اسمها الآن FX 1 حتى 3 وتتشارك بنكاً واحداً.",
+                  "الأسهم على قنوات الطبول تصبح ذهبية لثانية واحدة بعد الضغط.",
+                  "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، دون تكلفة إضافية ودون زر تنزيل."
+                ]
+              },
+              {
+                "title": "الترددات",
+                "bullets": [
+                  "نافذة Custom Frequency، التي تُفتح من Settings، تعرض الترددات كاملة.",
+                  "8 إعدادات شخصية.",
+                  "Save يكتب فوق الإعداد المختار. إذا لم يُختر إعداد، يحفظ في أول إعداد فارغ.",
+                  "الضغط على إعداد يحمّله فوراً."
+                ]
+              },
+              {
+                "title": "الجلسة",
+                "bullets": [
+                  "حفظ الجلسة يحفظ مساحة العمل كلها، فيعيدها التحميل على جهاز آخر: إعدادات الترددات، واختيارات عينات الطبول، وبنكا الطبول، والموجات المشغّلة، ولوحتا المفاتيح، وأهداف الـ Pad، والكلمات.",
+                  "قبل كل تحميل يظهر سؤال تأكيد وتُحفظ نسخة احتياطية تلقائية. بعد التحميل تكون مراقبة الميكروفون متوقفة.",
+                  "زر جديد New session، الأول في Settings. يطلب اسماً ويمسح قنوات اللوبر والميكروفون فقط. الأطقم والإيقاعات والإعدادات تبقى.",
+                  "الاسم المكرر عند الاستيراد يحصل على اسم جديد بدل الكتابة فوق الموجود."
+                ]
+              }
             ]
           },
           {

@@ -23,6 +23,13 @@ export type UpdateItem = {
   href?: string;
   /** Optional link label, in the same language as the card. */
   cta?: string;
+  /** Optional grouped bullets under the summary. Cards without it show only `summary`. */
+  sections?: UpdateItemSection[];
+};
+
+export type UpdateItemSection = {
+  title: string;
+  bullets: string[];
 };
 
 export type UpdateScreenshot = {

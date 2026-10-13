@@ -88,30 +88,30 @@ const playShotAlt = {
   he: {
     sound: "תמונת Google Play: Layer Waveforms, כמה גלים יחד כמו Sine ו-Saw, מנגנים אותם ביחד.",
     mic: "תמונת Google Play: ערוצי מיקרופון ואפקטי Mic FX.",
-    loop: "תמונת Google Play של 1.10: לופר עם 32 ערוצים, הקשה על הגל פותחת את עורך הלופ.",
+    loop: "הלופר בגרסה 1.10: עמוד 1 מתוך 8, ארבעה ערוצים עם Rec, Play ו-Redo.",
     pad: "תמונת Google Play: ה-Pad עם Wah, Octave ו-Vibrato.",
-    drum: "תמונת Google Play של 1.10: בחירת סמפל לערוץ FX 1 תוך כדי שהביט מתנגן.",
+    drum: "בוחר הסאמפלים של FX 1 בגרסה 1.10, עם הלשוניות Factory ו-Exclusive.",
   },
   en: {
     sound: "Google Play shot: Layer Waveforms, stack Sine, Saw and more and play them together.",
     mic: "Google Play shot: mic channels and Mic FX.",
-    loop: "Google Play shot for 1.10: looper with 32 channels, tap a waveform to edit the track.",
+    loop: "The looper in 1.10: page 1 of 8, four channels with Rec, Play and Redo.",
     pad: "Google Play shot: the Pad with Wah, Octave and Vibrato.",
-    drum: "Google Play shot for 1.10: picking a sample for the FX 1 channel while the beat plays.",
+    drum: "The FX 1 sample picker in 1.10, with the Factory and Exclusive tabs.",
   },
   ru: {
     sound: "Скриншот Google Play: Layer Waveforms, несколько волн вместе, например Sine и Saw, звучат сразу.",
     mic: "Скриншот Google Play: каналы микрофона и Mic FX.",
-    loop: "Скриншот Google Play для 1.10: лупер с 32 каналами, нажатие на волну открывает редактор.",
+    loop: "Лупер в 1.10: страница 1 из 8, четыре канала с Rec, Play и Redo.",
     pad: "Скриншот Google Play: Pad с Wah, Octave и Vibrato.",
-    drum: "Скриншот Google Play для 1.10: выбор сэмпла для канала FX 1, пока играет бит.",
+    drum: "Выбор сэмплов для FX 1 в 1.10, с вкладками Factory и Exclusive.",
   },
   ar: {
     sound: "لقطة Google Play: Layer Waveforms، عدة موجات معاً مثل Sine وSaw تُعزف في الوقت نفسه.",
     mic: "لقطة Google Play: قنوات الميكروفون ومؤثرات Mic FX.",
-    loop: "لقطة Google Play للإصدار 1.10: لوبر بـ32 قناة، الضغط على الموجة يفتح محرر اللوب.",
+    loop: "اللوبر في الإصدار 1.10: الصفحة 1 من 8، أربع قنوات مع Rec وPlay وRedo.",
     pad: "لقطة Google Play: الـ Pad مع Wah وOctave وVibrato.",
-    drum: "لقطة Google Play للإصدار 1.10: اختيار عيّنة لقناة FX 1 أثناء تشغيل الإيقاع.",
+    drum: "منتقي عينات FX 1 في الإصدار 1.10، مع تبويبي Factory وExclusive.",
   },
 } satisfies Record<Language, Record<PlayId, string>>;
 

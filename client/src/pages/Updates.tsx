@@ -160,6 +160,22 @@ export default function Updates() {
                         </div>
                         <p>{item.summary}</p>
                         {item.detail ? <p className="updates-detail">{item.detail}</p> : null}
+                        {Array.isArray(item.sections) && item.sections.length ? (
+                          <div className="updates-sections">
+                            {item.sections.map((section) =>
+                              section && section.title && Array.isArray(section.bullets) && section.bullets.length ? (
+                                <section className="updates-section" key={section.title}>
+                                  <h4>{section.title}</h4>
+                                  <ul>
+                                    {section.bullets.map((bullet) => (
+                                      <li key={bullet}>{bullet}</li>
+                                    ))}
+                                  </ul>
+                                </section>
+                              ) : null,
+                            )}
+                          </div>
+                        ) : null}
                         {item.href && item.cta ? (
                           hashHref(item.href) ? (
                             <a className="button button--small button--light updates-cta" href={item.href}>{item.cta}</a>
