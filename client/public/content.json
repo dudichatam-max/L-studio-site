@@ -469,7 +469,8 @@
               "assets/guide/voice-110.jpg"
             ],
             "imageAlts": {
-              "assets/guide/voice-110.jpg": "בוחר הסאמפלים של Voice בגרסה 1.10, בלשונית Authentic עם 33 ווקאלים."
+              "assets/guide/voice-110.jpg": "בוחר הסאמפלים של Voice בגרסה 1.10, בלשונית Authentic עם 33 ווקאלים.",
+              "assets/guide/drum-screen-110.jpg": "מסך Drum בגרסה 1.10, עם השורות Kick עד FX 3 ו-8. Voice, ובכל אחת Load והחצים ◀ ▶."
             }
           },
           {
@@ -545,7 +546,7 @@
               "הקשה על Import בוחרת קובץ פרויקט וטוענת את כל פרויקט המיקרופון. LIVE מכבה את Import.",
               "הקשה על Export מבקשת מהטלפון איפה לשמור את כל פרויקט המיקרופון."
             ],
-            "media": "assets/guide/mic-screen.jpg",
+            "media": "assets/guide/mic-screen-110.jpg",
             "sections": [
               {
                 "id": "mic-fx",
@@ -572,7 +573,10 @@
                 ],
                 "media": "assets/guide/lyrics-window.jpg"
               }
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/mic-screen-110.jpg": "מסך Mic בגרסה 1.10, עם Redo במקום שבו היה Back."
+            }
           }
         ]
       },
@@ -1935,7 +1939,8 @@
               "assets/guide/voice-110.jpg"
             ],
             "imageAlts": {
-              "assets/guide/voice-110.jpg": "The Voice sample picker in 1.10, on the Authentic tab with 33 vocals."
+              "assets/guide/voice-110.jpg": "The Voice sample picker in 1.10, on the Authentic tab with 33 vocals.",
+              "assets/guide/drum-screen-110.jpg": "The Drum screen in 1.10, with rows Kick to FX 3 and 8. Voice, each with Load and the ◀ ▶ arrows."
             }
           },
           {
@@ -2011,7 +2016,7 @@
               "A tap on Import picks a project file and loads the whole mic project. LIVE turns Import off.",
               "A tap on Export asks the phone where to store the whole mic project."
             ],
-            "media": "assets/guide/mic-screen.jpg",
+            "media": "assets/guide/mic-screen-110.jpg",
             "sections": [
               {
                 "id": "mic-fx",
@@ -2038,7 +2043,10 @@
                 ],
                 "media": "assets/guide/lyrics-window.jpg"
               }
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/mic-screen-110.jpg": "The Mic screen in 1.10, with Redo where Back used to be."
+            }
           }
         ]
       },
@@ -3401,7 +3409,8 @@
               "assets/guide/voice-110.jpg"
             ],
             "imageAlts": {
-              "assets/guide/voice-110.jpg": "Выбор сэмплов Voice в 1.10, на вкладке Authentic с 33 вокалами."
+              "assets/guide/voice-110.jpg": "Выбор сэмплов Voice в 1.10, на вкладке Authentic с 33 вокалами.",
+              "assets/guide/drum-screen-110.jpg": "Экран Drum в 1.10, с рядами от Kick до FX 3 и 8. Voice, у каждого Load и стрелки ◀ ▶."
             }
           },
           {
@@ -3477,7 +3486,7 @@
               "Нажатие на Import выбирает файл проекта и загружает весь проект микрофона. LIVE выключает Import.",
               "Нажатие на Export спрашивает телефон, куда сохранить весь проект микрофона."
             ],
-            "media": "assets/guide/mic-screen.jpg",
+            "media": "assets/guide/mic-screen-110.jpg",
             "sections": [
               {
                 "id": "mic-fx",
@@ -3504,7 +3513,10 @@
                 ],
                 "media": "assets/guide/lyrics-window.jpg"
               }
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/mic-screen-110.jpg": "Экран Mic в 1.10, с Redo на месте Back."
+            }
           }
         ]
       },
@@ -4867,7 +4879,8 @@
               "assets/guide/voice-110.jpg"
             ],
             "imageAlts": {
-              "assets/guide/voice-110.jpg": "منتقي عينات Voice في الإصدار 1.10، على تبويب Authentic مع 33 عيّنة غناء."
+              "assets/guide/voice-110.jpg": "منتقي عينات Voice في الإصدار 1.10، على تبويب Authentic مع 33 عيّنة غناء.",
+              "assets/guide/drum-screen-110.jpg": "شاشة Drum في الإصدار 1.10، مع الصفوف من Kick حتى FX 3 و8. Voice، ولكل صف Load والسهمان ◀ ▶."
             }
           },
           {
@@ -4943,7 +4956,7 @@
               "الضغط على Import يختار ملف مشروع ويحمّل مشروع الميكروفون كله. LIVE يوقف Import.",
               "الضغط على Export يسأل الهاتف أين يحفظ مشروع الميكروفون كله."
             ],
-            "media": "assets/guide/mic-screen.jpg",
+            "media": "assets/guide/mic-screen-110.jpg",
             "sections": [
               {
                 "id": "mic-fx",
@@ -4970,7 +4983,10 @@
                 ],
                 "media": "assets/guide/lyrics-window.jpg"
               }
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/mic-screen-110.jpg": "شاشة Mic في الإصدار 1.10، مع Redo مكان Back."
+            }
           }
         ]
       },
