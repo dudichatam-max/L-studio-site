@@ -98,7 +98,7 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 
 ## App 1.10 draft (not on Google Play yet)
 
-- Guide Loop, Mic, Drum, and Sound (Frequencies, Drive) text, the new Loop Editor section, and the 1.10 guide shots (`assets/guide/*-110.jpg`) describe app 1.10 (commit d95fbe8).
+- Guide Loop, Mic, Drum, and Sound (Frequencies, Drive) text, the new Loop Editor section, and the 1.10 guide shots (`assets/guide/*-110.jpg`) describe app 1.10 (final commit ea63c40). Settings also covers New session, the fuller session save, the load confirm and backup, and rename on import (ea63c40). The new Factory vocals (Voice 7 to 40) are left out until David approves their sound.
 - Homepage windows menu: the Loop and Drum tabs use the approved 1.10 Play assets `assets/play/110-03-looper` and `110-01-live-sample-swap` (`PLAY_SHOT_VER = "110-play"` in `Home.tsx`). The Loop Editor Play asset (02) is not used on the homepage yet.
 - Updates: item `app-1-10-loop-editor-drums` is `in_progress` and says "coming in the next Google Play update". When 1.10 is live on Google Play, set it to `shipped`, change the wording, and update the version and size shown on the site (still 1.09 / 60.6 MB).
-- The Mic guide image (`assets/guide/mic-screen.jpg`) is an older shot that still shows Back. Replace it with a 1.10 shot when there is one.
+- The Mic guide image (`assets/guide/mic-screen.jpg`) is an older shot that still shows Back. `ui-mic.png` in team docs shows the Loop tab, not Mic, so it was not used. Replace the Mic shot when a real 1.10 Mic shot exists.

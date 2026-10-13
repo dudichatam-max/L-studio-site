@@ -19,9 +19,9 @@
       {
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
-        "title": "מגיע ב-1.10: Loop Editor וסאונדים לתופים",
-        "ticker": "מגיע בעדכון הבא ב-Google Play: Loop Editor וסאונדים לתופים בזמן נגינה",
-        "summary": "מגיע בעדכון הבא ב-Google Play, גרסה 1.10: הקשה על גל בלופר פותחת את Loop Editor, עם Trim, Loop, Repeats ו-EQ בשלושה פסים. הקלטה יכולה להימשך עד 30 דקות, ו-Redo מחזיר הקלטה שנמחקה או שהוקלט עליה מחדש. בתופים, הקשה על שם שורה פותחת את הסאונדים שלה מכל הקיטים, ושומעים כל בחירה בזמן שהביט מתנגן. Save, ליד Random, שומר את הסאונדים עם הפטרנים.",
+        "title": "L Studio 1.10 מגיע בעדכון הבא",
+        "ticker": "בעדכון הבא: עורך לופר חדש, הקלטה עד 30 דקות, Redo להקלטות, ותופים גמישים יותר.",
+        "summary": "מגיע בעדכון הבא ב-Google Play, גרסה 1.10: הקשה על גל בלופר פותחת עורך לופר חדש, עם Trim, Loop, Repeats ו-EQ בשלושה פסים. הקלטה יכולה להימשך עד 30 דקות, ו-Redo מחזיר הקלטה שנמחקה או שהוקלט עליה מחדש. בתופים, הקשה על שם שורה פותחת את הסאונדים שלה מכל הקיטים, ושומעים כל בחירה בזמן שהביט מתנגן. סשן שמור שומר עכשיו את כל סביבת העבודה, מפריסטי התדרים ובחירות התופים ועד המילים, כך שאפשר להעביר אותה למכשיר אחר. טעינה שואלת קודם ושומרת גיבוי, ו-New session ב-Settings מרוקן רק את ה-Looper וה-Mic.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
         "images": [
@@ -115,9 +115,9 @@
       {
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
-        "title": "Coming in 1.10: Loop Editor and drum sounds",
-        "ticker": "Coming in the next Google Play update: Loop Editor and live drum sounds",
-        "summary": "Coming in the next Google Play update, version 1.10: a tap on a looper waveform opens Loop Editor, with Trim, Loop, Repeats, and a 3-band EQ. Recordings can run up to 30 minutes, and Redo brings back a take you cleared or recorded over. In the drums, a tap on a row name opens its sounds from all the kits, and you hear each pick while the beat plays. Save, next to Random, keeps the sounds with the patterns.",
+        "title": "L Studio 1.10 is coming in the next update",
+        "ticker": "Coming next: a new looper editor, recording up to 30 minutes, Redo for recordings, and more flexible drums.",
+        "summary": "Coming in the next Google Play update, version 1.10: a tap on a looper waveform opens a new loop editor, with Trim, Loop, Repeats, and a 3-band EQ. Recordings can run up to 30 minutes, and Redo brings back a take you cleared or recorded over. In the drums, a tap on a row name opens its sounds from all the kits, and you hear each pick while the beat plays. A saved session now keeps your whole setup, from frequency presets and drum picks to the lyrics, so you can move it to another device. Loading asks first and keeps a backup, and New session in Settings empties only the Looper and Mic.",
         "href": "/guide",
         "cta": "Open the guide",
         "images": [
@@ -211,9 +211,9 @@
       {
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
-        "title": "Скоро в 1.10: Loop Editor и звуки ударных",
-        "ticker": "В следующем обновлении Google Play: Loop Editor и звуки ударных на ходу",
-        "summary": "В следующем обновлении Google Play, версия 1.10: нажатие на волну в лупере открывает Loop Editor с Trim, Loop, Repeats и 3-полосным EQ. Запись может длиться до 30 минут, а Redo возвращает очищенную или записанную поверх запись. В ударных нажатие на имя ряда открывает его звуки из всех наборов, и каждый выбор слышно, пока играет бит. Save рядом с Random сохраняет звуки вместе с паттернами.",
+        "title": "L Studio 1.10 выйдет в следующем обновлении",
+        "ticker": "В следующем обновлении: новый редактор лупов, запись до 30 минут, Redo для записей и более гибкие ударные.",
+        "summary": "В следующем обновлении Google Play, версия 1.10: нажатие на волну в лупере открывает новый редактор лупов с Trim, Loop, Repeats и 3-полосным EQ. Запись может длиться до 30 минут, а Redo возвращает очищенную или записанную поверх запись. В ударных нажатие на имя ряда открывает его звуки из всех наборов, и каждый выбор слышно, пока играет бит. Сохранённая сессия теперь хранит всю настройку, от пресетов частот и выбора ударных до текстов, и её можно перенести на другое устройство. Загрузка сначала спрашивает и делает копию, а New session в Settings очищает только Looper и Mic.",
         "href": "/guide",
         "cta": "Открыть руководство",
         "images": [
@@ -307,9 +307,9 @@
       {
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
-        "title": "قريباً في 1.10: Loop Editor وأصوات الطبول",
-        "ticker": "في تحديث Google Play القادم: Loop Editor وأصوات الطبول أثناء العزف",
-        "summary": "في تحديث Google Play القادم، الإصدار 1.10: الضغط على موجة في اللوبر يفتح Loop Editor، مع Trim وLoop وRepeats وEQ بثلاثة نطاقات. يمكن أن يستمر التسجيل حتى 30 دقيقة، وRedo يعيد أخذاً مُسح أو سُجّل فوقه. في الطبول، الضغط على اسم صف يفتح أصواته من كل الأطقم، وتسمع كل اختيار أثناء عزف الإيقاع. Save، بجانب Random، يحفظ الأصوات مع الأنماط.",
+        "title": "L Studio 1.10 قادم في التحديث القادم",
+        "ticker": "في التحديث القادم: محرر لوب جديد، تسجيل حتى 30 دقيقة، Redo للتسجيلات، وطبول أكثر مرونة.",
+        "summary": "في تحديث Google Play القادم، الإصدار 1.10: الضغط على موجة في اللوبر يفتح محرر لوب جديداً، مع Trim وLoop وRepeats وEQ بثلاثة نطاقات. يمكن أن يستمر التسجيل حتى 30 دقيقة، وRedo يعيد أخذاً مُسح أو سُجّل فوقه. في الطبول، الضغط على اسم صف يفتح أصواته من كل الأطقم، وتسمع كل اختيار أثناء عزف الإيقاع. الجلسة المحفوظة تحفظ الآن الإعداد كله، من إعدادات الترددات واختيارات الطبول حتى الكلمات، فيمكن نقلها إلى جهاز آخر. التحميل يسأل أولاً ويحفظ نسخة احتياطية، وNew session في Settings يفرغ Looper وMic فقط.",
         "href": "/guide",
         "cta": "افتح الدليل",
         "images": [
