@@ -322,10 +322,10 @@
                   "Custom Frequency היא השורה הראשונה ב-Settings. הקשה פותחת את Tune frequencies (Hz).",
                   "לכל קליד יש תדר ב-Hz. אפשר לכוון את המקלדת לתדרים שרוצים, או לנגן מתבנית.",
                   "Ready scales (D = 261 Hz) הן התבניות: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, ו-Pentatonic. הקשה על שם מפעילה את התבנית הזאת, עם D על 261 Hz.",
-                  "כל שדה תדר מראה את המספר המלא ב-Hz, עם 2 ספרות אחרי הנקודה. מתחת לתבניות, ב-My Presets יש 8 כפתורים עם שמות שאתם בוחרים. הקשה על אחד טוענת את התדרים שלו למקלדת ובוחרת אותו. Save שומר את התדרים הנוכחיים בפריסט שנבחר, או בראשון הריק כשלא נבחר פריסט. Save* אומר שיש שינויים שעוד לא נשמרו.",
+                  "כל שדה תדר מראה את המספר המלא ב-Hz, למשל 222.00. מתחת לתבניות, ב-My Presets יש 8 כפתורים עם שמות שאתם בוחרים. הקשה על אחד טוענת את התדרים שלו למקלדת ובוחרת אותו. Save שומר את התדרים הנוכחיים בפריסט שנבחר, או בראשון הריק כשלא נבחר פריסט. Save* אומר שיש שינויים שעוד לא נשמרו.",
                   "Reset בשורת הכותרת. Default מעל Close. הקשה על Close סוגרת את החלון."
                 ],
-                "media": "assets/guide/freq-window.jpg"
+                "media": "assets/guide/freq-window-110.jpg"
               },
               {
                 "id": "drive",
@@ -389,7 +389,7 @@
                   "הקשה על benchmark, מתחת ל-Factory 64, פותחת את כלי בדיקת האודיו.",
                   "ה-X ו-Close סוגרים את Settings."
                 ],
-                "media": "assets/guide/settings-window.jpg"
+                "media": "assets/guide/settings-window-110.jpg"
               }
             ]
           },
@@ -1728,10 +1728,10 @@
                   "Custom Frequency is the first row in Settings. A tap opens Tune frequencies (Hz).",
                   "Each key shows its frequency in Hz. Set the keyboard to the frequencies you want, or play from a template.",
                   "Ready scales (D = 261 Hz) are the templates: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, and Pentatonic. A tap on a name applies that template, with D at 261 Hz.",
-                  "Each frequency box shows the full number in Hz, with 2 decimals. Under the templates, My Presets has 8 buttons with your own names. A tap on one loads its frequencies into the keyboard and selects it. Save stores the current frequencies in the selected preset, or in the first empty one when none is selected. Save* means there are changes that are not saved yet.",
+                  "Each frequency box shows the full number in Hz, such as 222.00. Under the templates, My Presets has 8 buttons with your own names. A tap on one loads its frequencies into the keyboard and selects it. Save stores the current frequencies in the selected preset, or in the first empty one when none is selected. Save* means there are changes that are not saved yet.",
                   "Reset is on the title row. Default is above Close. A tap on Close closes the window."
                 ],
-                "media": "assets/guide/freq-window.jpg"
+                "media": "assets/guide/freq-window-110.jpg"
               },
               {
                 "id": "drive",
@@ -1795,7 +1795,7 @@
                   "A tap on benchmark, under Factory 64, opens the audio test tool.",
                   "The X and Close close Settings."
                 ],
-                "media": "assets/guide/settings-window.jpg"
+                "media": "assets/guide/settings-window-110.jpg"
               }
             ]
           },
@@ -3134,10 +3134,10 @@
                   "Custom Frequency это первая строка в Settings. Нажатие открывает Tune frequencies (Hz).",
                   "У каждой клавиши есть частота в Hz. Можно настроить клавиатуру на нужные частоты или играть по шаблону.",
                   "Ready scales (D = 261 Hz) это шаблоны: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd и Pentatonic. Нажатие на имя применяет этот шаблон, с D на 261 Hz.",
-                  "Каждое поле частоты показывает полное число в Hz, с 2 знаками после точки. Под шаблонами в My Presets есть 8 кнопок с вашими именами. Нажатие на кнопку загружает её частоты в клавиатуру и выбирает её. Save сохраняет текущие частоты в выбранный пресет, а если ничего не выбрано, в первый пустой. Save* значит, что есть несохранённые изменения.",
+                  "Каждое поле частоты показывает полное число в Hz, например 222.00. Под шаблонами в My Presets есть 8 кнопок с вашими именами. Нажатие на кнопку загружает её частоты в клавиатуру и выбирает её. Save сохраняет текущие частоты в выбранный пресет, а если ничего не выбрано, в первый пустой. Save* значит, что есть несохранённые изменения.",
                   "Reset в строке заголовка. Default над Close. Нажатие на Close закрывает окно."
                 ],
-                "media": "assets/guide/freq-window.jpg"
+                "media": "assets/guide/freq-window-110.jpg"
               },
               {
                 "id": "drive",
@@ -3201,7 +3201,7 @@
                   "Нажатие на benchmark, под Factory 64, открывает инструмент проверки звука.",
                   "X и Close закрывают Settings."
                 ],
-                "media": "assets/guide/settings-window.jpg"
+                "media": "assets/guide/settings-window-110.jpg"
               }
             ]
           },
@@ -4540,10 +4540,10 @@
                   "Custom Frequency هو الصف الأول في Settings. الضغط يفتح Tune frequencies (Hz).",
                   "لكل مفتاح تردد بالـ Hz. اضبط لوحة المفاتيح على الترددات التي تريد، أو اعزف من قالب.",
                   "Ready scales (D = 261 Hz) هي القوالب: Major وMinor وHarmonic وDorian وMixolydian وHijaz وKurd وPentatonic. الضغط على اسم يطبّق ذلك القالب، مع D على 261 Hz.",
-                  "كل حقل تردد يعرض الرقم كاملاً بالـ Hz، مع منزلتين عشريتين. تحت القوالب، في My Presets ثمانية أزرار بأسمائك. الضغط على زر يحمّل تردداته إلى لوحة المفاتيح ويختاره. Save يحفظ الترددات الحالية في الإعداد المختار، أو في أول إعداد فارغ عندما لا يكون أي إعداد مختاراً. Save* يعني أن هناك تغييرات لم تُحفظ بعد.",
+                  "كل حقل تردد يعرض الرقم كاملاً بالـ Hz، مثل 222.00. تحت القوالب، في My Presets ثمانية أزرار بأسمائك. الضغط على زر يحمّل تردداته إلى لوحة المفاتيح ويختاره. Save يحفظ الترددات الحالية في الإعداد المختار، أو في أول إعداد فارغ عندما لا يكون أي إعداد مختاراً. Save* يعني أن هناك تغييرات لم تُحفظ بعد.",
                   "Reset في سطر العنوان. Default فوق Close. الضغط على Close يغلق النافذة."
                 ],
-                "media": "assets/guide/freq-window.jpg"
+                "media": "assets/guide/freq-window-110.jpg"
               },
               {
                 "id": "drive",
@@ -4607,7 +4607,7 @@
                   "الضغط على benchmark، تحت Factory 64، يفتح أداة فحص الصوت.",
                   "X وClose يغلقان Settings."
                 ],
-                "media": "assets/guide/settings-window.jpg"
+                "media": "assets/guide/settings-window-110.jpg"
               }
             ]
           },
