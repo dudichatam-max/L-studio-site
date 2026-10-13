@@ -72,11 +72,11 @@ const meetPoster = {
 
 type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 
-const PLAY_SHOT_VER = "109-play";
+const PLAY_SHOT_VER = "110-play";
 const playShotFiles: Record<PlayId, string> = {
   sound: "01-layer-waveforms",
-  loop: "03-looper-pages",
-  drum: "04-drum-machine",
+  loop: "110-03-looper",
+  drum: "110-01-live-sample-swap",
   pad: "05-live-pad",
   mic: "07-mic-fx",
 };
@@ -88,30 +88,30 @@ const playShotAlt = {
   he: {
     sound: "תמונת Google Play: Layer Waveforms, כמה גלים יחד כמו Sine ו-Saw, מנגנים אותם ביחד.",
     mic: "תמונת Google Play: ערוצי מיקרופון ואפקטי Mic FX.",
-    loop: "תמונת Google Play: לופר עם 8 עמודים, צבע ושם לכל עמוד, 4 ערוצים בעמוד.",
+    loop: "תמונת Google Play של 1.10: לופר עם 32 ערוצים, הקשה על הגל פותחת את עורך הלופ.",
     pad: "תמונת Google Play: ה-Pad עם Wah, Octave ו-Vibrato.",
-    drum: "תמונת Google Play: מכונת תופים ב-16 צעדים עם ערכות ו-BPM.",
+    drum: "תמונת Google Play של 1.10: בחירת סמפל לערוץ FX 1 תוך כדי שהביט מתנגן.",
   },
   en: {
     sound: "Google Play shot: Layer Waveforms, stack Sine, Saw and more and play them together.",
     mic: "Google Play shot: mic channels and Mic FX.",
-    loop: "Google Play shot: looper with 8 pages, colour-coded and named, 4 channels per page.",
+    loop: "Google Play shot for 1.10: looper with 32 channels, tap a waveform to edit the track.",
     pad: "Google Play shot: the Pad with Wah, Octave and Vibrato.",
-    drum: "Google Play shot: 16-step drum machine with kits and BPM.",
+    drum: "Google Play shot for 1.10: picking a sample for the FX 1 channel while the beat plays.",
   },
   ru: {
     sound: "Скриншот Google Play: Layer Waveforms, несколько волн вместе, например Sine и Saw, звучат сразу.",
     mic: "Скриншот Google Play: каналы микрофона и Mic FX.",
-    loop: "Скриншот Google Play: лупер с 8 страницами, у страниц цвет и имя, 4 канала на странице.",
+    loop: "Скриншот Google Play для 1.10: лупер с 32 каналами, нажатие на волну открывает редактор.",
     pad: "Скриншот Google Play: Pad с Wah, Octave и Vibrato.",
-    drum: "Скриншот Google Play: барабанная машина на 16 шагов с наборами и BPM.",
+    drum: "Скриншот Google Play для 1.10: выбор сэмпла для канала FX 1, пока играет бит.",
   },
   ar: {
     sound: "لقطة Google Play: Layer Waveforms، عدة موجات معاً مثل Sine وSaw تُعزف في الوقت نفسه.",
     mic: "لقطة Google Play: قنوات الميكروفون ومؤثرات Mic FX.",
-    loop: "لقطة Google Play: لوبر بـ 8 صفحات، لكل صفحة لون واسم، و4 قنوات في كل صفحة.",
+    loop: "لقطة Google Play للإصدار 1.10: لوبر بـ32 قناة، الضغط على الموجة يفتح محرر اللوب.",
     pad: "لقطة Google Play: الـ Pad مع Wah وOctave وVibrato.",
-    drum: "لقطة Google Play: آلة طبول بـ 16 خطوة مع أطقم وBPM.",
+    drum: "لقطة Google Play للإصدار 1.10: اختيار عيّنة لقناة FX 1 أثناء تشغيل الإيقاع.",
   },
 } satisfies Record<Language, Record<PlayId, string>>;
 

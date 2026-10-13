@@ -95,3 +95,10 @@ The homepage shows the 1024×500 feature graphic directly under the updates tick
 ### Demo video toggle (2026-10-11)
 
 Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/Home.tsx`, HE "סרטון הדגמה") opens the YouTube Short `d89y14QAHuA` (`DEMO_SHORT_ID`) in a 9:16 frame. It starts closed. The player loads only after a tap on the poster (`assets/demo-short-poster.webp/.jpg`, taken from the YouTube thumbnail). To change the video, change `DEMO_SHORT_ID` and the poster files.
+
+## App 1.10 draft (not on Google Play yet)
+
+- Guide Loop, Mic, Drum, and Sound (Frequencies, Drive) text, the new Loop Editor section, and the 1.10 guide shots (`assets/guide/*-110.jpg`) describe app 1.10 (commit d95fbe8).
+- Homepage windows menu: the Loop and Drum tabs use the approved 1.10 Play assets `assets/play/110-03-looper` and `110-01-live-sample-swap` (`PLAY_SHOT_VER = "110-play"` in `Home.tsx`). The Loop Editor Play asset (02) is not used on the homepage yet.
+- Updates: item `app-1-10-loop-editor-drums` is `in_progress` and says "coming in the next Google Play update". When 1.10 is live on Google Play, set it to `shipped`, change the wording, and update the version and size shown on the site (still 1.09 / 60.6 MB).
+- The Mic guide image (`assets/guide/mic-screen.jpg`) is an older shot that still shows Back. Replace it with a 1.10 shot when there is one.

@@ -322,6 +322,7 @@
                   "Custom Frequency היא השורה הראשונה ב-Settings. הקשה פותחת את Tune frequencies (Hz).",
                   "לכל קליד יש תדר ב-Hz. אפשר לכוון את המקלדת לתדרים שרוצים, או לנגן מתבנית.",
                   "Ready scales (D = 261 Hz) הן התבניות: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, ו-Pentatonic. הקשה על שם מפעילה את התבנית הזאת, עם D על 261 Hz.",
+                  "מתחת לתבניות, ב-My Presets יש 8 כפתורים עם שמות שאתם בוחרים. הקשה על אחד טוענת את התדרים שלו. מתחתיהם מופיעים שדה שם ו-Save. Save שומר את השם ואת התדרים. Save* אומר שיש שינויים שעוד לא נשמרו.",
                   "Reset בשורת הכותרת. Default מעל Close. הקשה על Close סוגרת את החלון."
                 ],
                 "media": "assets/guide/freq-window.jpg"
@@ -330,7 +331,7 @@
                 "id": "drive",
                 "title": "Drive",
                 "body": [
-                  "Drive הוא הסליידר במסך הסאונד. גרירה קובעת את כמות ה-drive."
+                  "Drive הוא הסליידר במסך הסאונד. גרירה קובעת את כמות ה-drive. ה-Drive משתנה בצורה חלקה, בלי קפיצות."
                 ],
                 "media": "assets/guide/drive-slider.jpg"
               },
@@ -413,20 +414,20 @@
             "body": [
               "הקשה על Drum פותחת את המסך הזה. הכותרת אומרת DRUM MACHINE.",
               "הקשה על Play Drums מתחילה את התופים מההתחלה. אחר כך כתוב Stop Drums. הקשה נוספת עוצרת ומחזירה להתחלה.",
-              "הקשה על + מראה את Extra 1 עד Extra 4 ומסתירה את המקלדת. הסימון אז מראה מינוס. הקשה נוספת מסתירה את השורות ומחזירה את המקלדת.",
+              "הקשה על + מראה את FX 1, FX 2, FX 3 ו-Voice ומסתירה את המקלדת. הסימון אז מראה מינוס. הקשה נוספת מסתירה את השורות ומחזירה את המקלדת.",
               "הקשה על Drum FX פותחת את Drum FX. כשפריסט דולק, כתוב FX ומספר.",
               "הקשה על Style פותחת את Drum styles. לחיצה ארוכה על Style פותחת את Random genre. ההערה שם אומרת Selection affects Random. הקשה על Rock, Trance, Rap, או Techno שומרת את הז'אנר וסוגרת את החלון. Cancel סוגר ומשאיר את הז'אנר כמו שהיה. Random במסך הזה משתמש בז'אנר, והוא מתחיל כ-Rock. החלון הזה לא בונה פטרן בעצמו.",
               "גרירה על Drum Vol קובעת את ווליום התופים מ-0% עד 100%. הקשה על המספר נותנת להקליד ערך. LIVE לא פותחת את התיבה.",
               "גרירה על Swing קובעת swing מ-0% עד 100%. גרירה על BPM קובעת את הטמפו מ-60 עד 200. BPM, Swing, והווליום של השורות פועלים בזמן אמת: שינוי שעושים בזמן שהתופים מנגנים נשאר גם כשהפטרן הבא מתחיל.",
               "מחזיקים 1/4, 1/8, 1/16, או 1/32 כדי לחזור על התופים בחלוקה הזאת כל עוד מחזיקים. עוזבים, והחזרה נעצרת. הקשה עליהם לא עושה כלום. מחזיקים STOP. הקשה עליו לא עושה כלום.",
               "הקשה על מספר פטרן, 1 עד 8, טוענת את הפטרן, כולל הטמפו, ה-swing, הווליום, וימין ושמאל. לחיצה ארוכה פותחת את Pattern repeats.",
-              "הקשה על Save שומרת את התופים הנוכחיים לתוך הפטרן שעליו אתם, וכותבת את ה-BPM, ה-Swing והווליום של השורות לכל 8 הפטרנים. הקשה על Random בונה פטרן חדש בז'אנר שנבחר.",
-              "בכל שורה, הקשה על Load בוחרת קובץ שמע. אם כבר יש סמפל, כתוב Swap. LIVE מכבה את זה.",
+              "הקשה על Save, ליד Random, שומרת את התופים הנוכחיים לתוך הפטרן שעליו אתם, כותבת את ה-BPM, ה-Swing והווליום של השורות לכל 8 הפטרנים, ושומרת את הקיט עם הסאונד שנבחר בכל שורה. הקשה על Random בונה פטרן חדש בז'אנר שנבחר.",
+              "השורות הן Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 ו-Voice. הקשה על שם שורה פותחת רשימת סאונדים לשורה הזאת, מכל קיטי ה-Factory, ומקיטי ה-Exclusive כשהם באפליקציה. כל שורה מציגה רק סאונדים מהסוג שלה: FX 1 עד FX 3 חולקים רשימה אחת, ו-Voice מציג רק שירה. הקשה על סאונד שמה אותו בשורה והרשימה נשארת פתוחה. כשהתופים מנגנים שומעים אותו במכה הבאה. כשהם עצורים הוא מתנגן פעם אחת. החצים ◀ ו-▶ ליד Load עוברים לסאונד הקודם או הבא. הקשה על Load בוחרת קובץ שמע מהטלפון. LIVE מכבה את Load.",
               "גרירה על הסליידר של השורה קובעת את הווליום שלה. הוא מראה אחוז ובלי מילה. גרירה על L/R מזיזה את השורה בין L ל-R.",
               "לכל שורה יש 16 צעדים. הקשה מדליקה או מכבה צעד.",
               "החצים ליד DRUM KIT טוענים את הקיט הבא או הקודם. LIVE מכבה את החצים האלה."
             ],
-            "media": "assets/guide/drum-screen.jpg",
+            "media": "assets/guide/drum-screen-110.jpg",
             "sections": [
               {
                 "id": "drum-fx",
@@ -460,30 +461,47 @@
                 ],
                 "media": "assets/guide/pattern-repeats.jpg"
               }
+            ],
+            "images": [
+              "assets/guide/drum-sample-picker-110.jpg"
             ]
           },
           {
             "id": "loop",
             "title": "Loop",
             "body": [
-              "הקשה על Loop פותחת את המסך הזה. יש בו 8 עמודים ו-4 ערוצים בכל עמוד, 32 ערוצים בסך הכל. הקלטה נעצרת ב-60 שניות.",
+              "הקשה על Loop פותחת את המסך הזה. יש בו 8 עמודים ו-4 ערוצים בכל עמוד, 32 ערוצים בסך הכל. הקלטה יכולה להימשך עד 30 דקות.",
               "הקשה על מספר עמוד, 1 עד 8, מראה את העמוד. לחיצה ארוכה פותחת את Page name. מקלידים שם, בוחרים אחד מ-8 צבעים (כתום, אדום, זהב, חום, ירוק, כחול, סגול, ורוד), ומקישים OK. Reset מוריד את הצבע. Cancel סוגר בלי שינוי. LIVE מכבה את הלחיצה הארוכה.",
               "צבע העמוד ממלא את מספר העמוד וצובע את גלי הערוצים בעמוד הזה.",
-              "שדה השם ליד Back מראה את שם העמוד שאתם עליו. כשהוא ריק, כתוב בו Page ומספר העמוד. הקשה בשדה נותנת להקליד שם. LIVE נועל את השם. השמות והצבעים נשמרים עם פרויקט הלופ וב-Export.",
+              "שדה השם ליד Redo מראה את שם העמוד שאתם עליו. כשהוא ריק, כתוב בו Page ומספר העמוד. הקשה בשדה נותנת להקליד שם. LIVE נועל את השם. השמות והצבעים נשמרים עם פרויקט הלופ וב-Export.",
               "שם כל ערוץ מתחיל כ-Ch ומספר. הקשה בשם משנה אותו. LIVE נועל את השם.",
-              "הקשה על Back מחזירה את ההקלטה שנמחקה לאחרונה במסך הזה. זה לא עוזב את המסך. זה עובד רק אחרי מחיקה שעדיין אפשר להחזיר, ולא בזמן שהערוץ עסוק. LIVE עדיין מאפשר את Back כשההחזרה הזאת קיימת.",
-              "הקשה על Rec מתחילה הקלטה. אחר כך כתוב STOP. הקשה נוספת עוצרת את ההקלטה. התחלת הקלטה מוחקת את החזרת ה-Back של הערוץ.",
-              "הקשה על Play מנגנת את הערוץ. אחר כך כתוב Stop. הקשה נוספת עוצרת. Play נשאר כבוי כשהערוץ ריק, אלא אם הוא כבר מנגן או מקליט.",
+              "הקשה על הגל של ערוץ פותחת את Loop Editor. מעליו כתוב Tap on the visualizer. זה עובד כשיש בערוץ הקלטה והוא לא מקליט. ערוץ עם עריכה שמורה מקבל מסגרת זהב.",
+              "הקשה על Redo מחזירה את ההקלטה האחרונה שאבדה במסך הזה: הקלטה שנמחקה, שהוקלט עליה מחדש, או שנחתכה ב-Loop Editor. זה לא עוזב את המסך. זה לא עובד בזמן שהערוץ עסוק. LIVE עדיין מאפשר את Redo כשיש הקלטה להחזיר.",
+              "הקשה על Rec מתחילה הקלטה. אחר כך כתוב STOP. הקשה נוספת עוצרת את ההקלטה. אם כבר הייתה הקלטה בערוץ, Redo יכול להחזיר אותה.",
+              "הקשה על Play מנגנת את הערוץ. אחר כך כתוב Stop. הקשה נוספת עוצרת. Play נשאר כבוי כשהערוץ ריק, אלא אם הוא כבר מנגן או מקליט. כשהתופים מנגנים, Play מחכה לתחילת התיבה הבאה של התופים. ההתחלה, העצירה ושינויי הווליום חלקים.",
               "הקשה על Load בוחרת קובץ שמע לערוץ. LIVE מכבה את Load.",
               "הקשה על Save מבקשת מהטלפון איפה לשמור את הערוץ כקובץ wav. Save נשאר כבוי כשהערוץ ריק.",
-              "הקשה על Clear מנקה את הערוץ ושומרת את ההקלטה ל-Back. LIVE מכבה את Clear.",
+              "הקשה על Clear מנקה את הערוץ ושומרת את ההקלטה ל-Redo. LIVE מכבה את Clear.",
               "גרירה על Vol קובעת ווליום מ-0% עד 100%. הקשה על המספר נותנת להקליד ערך. LIVE לא פותחת את התיבה.",
               "הקשה על FX פותחת את Looper FX לערוץ. גרירה על L/R מזיזה את הסאונד בין L ל-R.",
               "הקשה על Import בוחרת קובץ פרויקט וטוענת את כל פרויקט הלופ. LIVE מכבה את Import.",
               "הקשה על Export מבקשת מהטלפון איפה לשמור את כל פרויקט הלופ."
             ],
-            "media": "assets/guide/loop-screen.jpg",
+            "media": "assets/guide/loop-screen-110.jpg",
             "sections": [
+              {
+                "id": "loop-editor",
+                "title": "Loop Editor",
+                "body": [
+                  "הקשה על הגל של ערוץ פותחת את Loop Editor לערוץ הזה, וההקלטה מצוירת בצבע הערוץ. שומעים את השינויים תוך כדי עריכה.",
+                  "Trim קובע איזה חלק מההקלטה נשאר. Loop קובע איפה הלופ מתחיל ונגמר.",
+                  "Repeats: הקשה על 1 עד 10 או על ∞, או הקלדה של 1 עד 88 בתיבה. עם מספר, הערוץ מתנגן כמה פעמים ואז נעצר לבד.",
+                  "LOW, MID ו-HIGH נעים מ-30- dB עד 30+ dB. MID HZ מזיז את הפס האמצעי מ-100 Hz עד 8 kHz. GAIN ו-SQUEEZE נעים מ-0 עד 100.",
+                  "Play מנגן את הערוץ. Reset מחזיר הכל לערכי ההתחלה. Close יוצא בלי לשמור. Save שומר את השינויים, וחיתוך עם Trim חותך את ההקלטה. Redo יכול להחזיר את ההקלטה מלפני החיתוך.",
+                  "הגדרות העורך נשמרות עם סשן הלופ ובפרויקט שמייצאים."
+                ],
+                "media": "assets/guide/loop-editor-110.jpg"
+              },
               {
                 "id": "looper-fx",
                 "title": "Looper FX",
@@ -497,7 +515,7 @@
               }
             ],
             "images": [
-              "assets/guide/loop-pages.jpg",
+              "assets/guide/loop-pages-110.jpg",
               "assets/guide/loop-page-name.jpg"
             ]
           },
@@ -506,14 +524,14 @@
             "title": "Mic",
             "body": [
               "הקשה על Mic פותחת את המסך הזה.",
-              "הקשה על Back מחזירה את ההקלטה שנמחקה לאחרונה במסך הזה. זה לא עוזב את המסך. זה עובד רק אחרי מחיקה שעדיין אפשר להחזיר, ולא בזמן שהערוץ עסוק. LIVE עדיין מאפשר את Back כשההחזרה הזאת קיימת. ל-Mic ול-Loop יש החזרות נפרדות.",
+              "הקשה על Redo מחזירה את ההקלטה האחרונה שאבדה במסך הזה: הקלטה שנמחקה או שהוקלט עליה מחדש. זה לא עוזב את המסך. זה לא עובד בזמן שהערוץ עסוק. LIVE עדיין מאפשר את Redo כשיש הקלטה להחזיר. ל-Mic ול-Loop יש החזרות נפרדות.",
               "הקשה על Lyrics פותחת את Lyrics.",
               "הקשה על Monitor מדליקה או מכבה את המוניטור. כשהוא דולק, כתוב Monitor ON. אם הוא דולק ואין אוזניות, הטלפון מזהיר מפידבק של הרמקול.",
               "Gain, Mon, HPF, Gate, Low, Pres, ו-Comp נמצאים מתחת לכותרת. גרירה קובעת את הנוב. Gain רץ מ-1x עד 4x. HPF רץ מ-40 Hz עד 240 Hz. הקשה על המספר נותנת להקליד ערך. LIVE לא פותחת את התיבה.",
               "למקומות 1, 2, ו-3 יש Load ו-Save. הקשה על Load שמה את הגדרת המוניטור השמורה על הנובים. LIVE מכבה את ה-Load הזה. הקשה על Save שומרת את הגדרת המוניטור.",
               "שמות הערוצים מתחילים כ-Vocal 1, Vocal 2, Vocal 3, Guitar, Bass, ו-Inst 3. הקשה בשם משנה אותו. LIVE נועל את השם.",
-              "הקשה על Rec מתחילה הקלטה. אחר כך כתוב Stop. הקשה נוספת עוצרת. הקשה על Play מנגנת את הערוץ. אחר כך כתוב Stop. הקשה נוספת עוצרת.",
-              "הקשה על Clear מנקה את הערוץ ושומרת את ההקלטה ל-Back. LIVE מכבה את Clear.",
+              "הקשה על Rec מתחילה הקלטה. אחר כך כתוב Stop. הקשה נוספת עוצרת. הקשה על Play מנגנת את הערוץ. אחר כך כתוב Stop. הקשה נוספת עוצרת. אם כבר הייתה הקלטה בערוץ, Redo יכול להחזיר אותה.",
+              "הקשה על Clear מנקה את הערוץ ושומרת את ההקלטה ל-Redo. LIVE מכבה את Clear.",
               "הקשה על Save מבקשת מהטלפון איפה לשמור את הערוץ כקובץ wav. Save נשאר כבוי כשהערוץ ריק.",
               "HPF, Gate, ו-Pres על הערוץ משפיעים רק על הערוץ הזה. גרירה קובעת אותם.",
               "הקשה על Mic FX פותחת את Mic FX לערוץ. מתחת לשם כתוב FX, ו-Off או מספר הפריסט.",
@@ -1303,6 +1321,21 @@
         },
         "items": [
           {
+            "id": "app-1-10-loop-editor-drums",
+            "status": "in_progress",
+            "title": "מגיע ב-1.10: Loop Editor וסאונדים לתופים",
+            "ticker": "מגיע בעדכון הבא ב-Google Play: Loop Editor וסאונדים לתופים בזמן נגינה",
+            "summary": "מגיע בעדכון הבא ב-Google Play, גרסה 1.10: הקשה על גל בלופר פותחת את Loop Editor, עם Trim, Loop, Repeats ו-EQ בשלושה פסים. הקלטה יכולה להימשך עד 30 דקות, ו-Redo מחזיר הקלטה שנמחקה או שהוקלט עליה מחדש. בתופים, הקשה על שם שורה פותחת את הסאונדים שלה מכל הקיטים, ושומעים כל בחירה בזמן שהביט מתנגן. Save, ליד Random, שומר את הסאונדים עם הפטרנים.",
+            "href": "/guide",
+            "cta": "לפתיחת המדריך",
+            "images": [
+              "/assets/updates/loop-editor-110.jpg"
+            ],
+            "imageAlts": [
+              "Loop Editor בגרסה 1.10: Trim, Loop, Repeats ו-EQ לערוץ אחד בלופר."
+            ]
+          },
+          {
             "id": "app-1-09-waves-drums",
             "status": "shipped",
             "title": "חדש ב-1.09: כמה גלים יחד",
@@ -1694,6 +1727,7 @@
                   "Custom Frequency is the first row in Settings. A tap opens Tune frequencies (Hz).",
                   "Each key shows its frequency in Hz. Set the keyboard to the frequencies you want, or play from a template.",
                   "Ready scales (D = 261 Hz) are the templates: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, and Pentatonic. A tap on a name applies that template, with D at 261 Hz.",
+                  "Under the templates, My Presets has 8 buttons that show your own names. A tap on one loads its frequencies. A name box and Save then show under them. Save stores the name and the frequencies. Save* means there are changes that are not saved yet.",
                   "Reset is on the title row. Default is above Close. A tap on Close closes the window."
                 ],
                 "media": "assets/guide/freq-window.jpg"
@@ -1702,7 +1736,7 @@
                 "id": "drive",
                 "title": "Drive",
                 "body": [
-                  "Drive is the slider on the sound screen. A drag sets the drive amount."
+                  "Drive is the slider on the sound screen. A drag sets the drive amount. Drive changes smoothly, without jumps."
                 ],
                 "media": "assets/guide/drive-slider.jpg"
               },
@@ -1785,20 +1819,20 @@
             "body": [
               "A tap on Drum opens this screen. The heading reads DRUM MACHINE.",
               "A tap on Play Drums starts the drums from the beginning. The label then reads Stop Drums. Another tap stops and returns to the start.",
-              "A tap on + shows Extra 1 through Extra 4 and hides the keyboard. The mark then shows a minus. Another tap hides those rows and brings the keyboard back.",
+              "A tap on + shows FX 1, FX 2, FX 3, and Voice and hides the keyboard. The mark then shows a minus. Another tap hides those rows and brings the keyboard back.",
               "A tap on Drum FX opens Drum FX. When a preset is on, the label shows FX and a number.",
               "A tap on Style opens Drum styles. A long-press on Style opens Random genre. The note there reads Selection affects Random. A tap on Rock, Trance, Rap, or Techno saves that genre and closes the window. Cancel closes it and leaves the genre as it was. Random on this screen uses that genre, and it starts as Rock. That window does not build a pattern by itself.",
               "A drag on Drum Vol sets the drum volume from 0% to 100%. A tap on the number lets you type a value. LIVE does not open that box.",
               "A drag on Swing sets swing from 0% to 100%. A drag on BPM sets the tempo from 60 to 200. BPM, Swing, and the row volumes are live: a change you make while the drums play stays when the next pattern starts.",
               "Hold 1/4, 1/8, 1/16, or 1/32 to repeat the drums at that division while you hold it. Release, and that repeat stops. A tap on them does nothing. Hold STOP. A tap on it does nothing.",
               "A tap on a pattern number, 1 through 8, loads that pattern, including its tempo, swing, volumes, and left and right. A long-press opens Pattern repeats.",
-              "A tap on Save stores the current drums into the pattern you are on and writes the current BPM, Swing, and row volumes into all 8 patterns. A tap on Random builds a new pattern in the chosen genre.",
-              "On each row, a tap on Load picks an audio file. If a sample is already there, the label reads Swap. LIVE turns this off.",
+              "A tap on Save, next to Random, stores the current drums into the pattern you are on, writes the current BPM, Swing, and row volumes into all 8 patterns, and saves the kit with the sound picked on each row. A tap on Random builds a new pattern in the chosen genre.",
+              "The rows are Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3, and Voice. A tap on a row name opens a sound list for that row, from all the Factory kits, and from the Exclusive kits when they are in the app. Each row lists only its own kind of sound: FX 1 to FX 3 share one list, and Voice lists vocals only. A tap on a sound puts it on the row and the list stays open. While the drums play you hear it on the next hit. When they are stopped it plays once. The ◀ and ▶ arrows next to Load step to the previous or next sound. A tap on Load picks an audio file from the phone. LIVE turns Load off.",
               "A drag on the row slider sets that row's volume. It shows a percent and no word. A drag on L/R moves the row between L and R.",
               "Each row has 16 steps. A tap turns a step on or off.",
               "The arrows beside DRUM KIT load the next or previous kit. LIVE turns those arrows off."
             ],
-            "media": "assets/guide/drum-screen.jpg",
+            "media": "assets/guide/drum-screen-110.jpg",
             "sections": [
               {
                 "id": "drum-fx",
@@ -1832,30 +1866,47 @@
                 ],
                 "media": "assets/guide/pattern-repeats.jpg"
               }
+            ],
+            "images": [
+              "assets/guide/drum-sample-picker-110.jpg"
             ]
           },
           {
             "id": "loop",
             "title": "Loop",
             "body": [
-              "A tap on Loop opens this screen. It has 8 pages and 4 channels on each page, 32 channels in all. A recording stops at 60 seconds.",
+              "A tap on Loop opens this screen. It has 8 pages and 4 channels on each page, 32 channels in all. A recording can run up to 30 minutes.",
               "A tap on a page number, 1 through 8, shows that page. A long-press opens Page name. Type a name, pick one of 8 colors (orange, red, gold, brown, green, blue, purple, pink), and tap OK. Reset removes the color. Cancel closes without changes. LIVE turns the long-press off.",
               "The page color fills that page number and colors the channel waves on that page.",
-              "The name field next to Back shows the name of the page you are on. While it is empty, it reads Page and the number. A tap in it lets you type the name. LIVE locks the name. Names and colors are saved with the loop project and in Export.",
+              "The name field next to Redo shows the name of the page you are on. While it is empty, it reads Page and the number. A tap in it lets you type the name. LIVE locks the name. Names and colors are saved with the loop project and in Export.",
               "Each channel name starts as Ch and a number. A tap in the name changes it. LIVE locks the name.",
-              "A tap on Back restores the take cleared most recently on this screen. It does not leave the screen. It works only after a clear that can still be restored, and not while that channel is busy. LIVE still allows Back when that restore is there.",
-              "A tap on Rec starts recording. The label then reads STOP. Another tap stops the take. Starting a recording drops the Back restore for that channel.",
-              "A tap on Play plays the channel. The label then reads Stop. Another tap stops. Play stays off when the channel is empty, unless it is already playing or recording.",
+              "A tap on a channel's waveform opens Loop Editor. The line above it reads Tap on the visualizer. It works when the channel has a take and is not recording. A channel with saved edits gets a gold frame.",
+              "A tap on Redo brings back the take you lost most recently on this screen: one you cleared, recorded over, or trimmed in Loop Editor. It does not leave the screen. It does not work while that channel is busy. LIVE still allows Redo when there is a take to bring back.",
+              "A tap on Rec starts recording. The label then reads STOP. Another tap stops the take. If the channel already had a take, Redo can bring it back.",
+              "A tap on Play plays the channel. The label then reads Stop. Another tap stops. Play stays off when the channel is empty, unless it is already playing or recording. While the drums play, Play waits for the start of the next drum bar. Starting, stopping, and volume changes are smoothed.",
               "A tap on Load picks an audio file for the channel. LIVE turns Load off.",
               "A tap on Save asks the phone where to store the channel as a wav file. Save stays off when the channel is empty.",
-              "A tap on Clear clears the channel and keeps that take for Back. LIVE turns Clear off.",
+              "A tap on Clear clears the channel and keeps that take for Redo. LIVE turns Clear off.",
               "A drag on Vol sets the volume from 0% to 100%. A tap on the number lets you type a value. LIVE does not open that box.",
               "A tap on FX opens Looper FX for that channel. A drag on L/R moves the sound between L and R.",
               "A tap on Import picks a project file and loads the whole loop project. LIVE turns Import off.",
               "A tap on Export asks the phone where to store the whole loop project."
             ],
-            "media": "assets/guide/loop-screen.jpg",
+            "media": "assets/guide/loop-screen-110.jpg",
             "sections": [
+              {
+                "id": "loop-editor",
+                "title": "Loop Editor",
+                "body": [
+                  "A tap on a channel's waveform opens Loop Editor for that channel, with its take drawn in the channel color. You hear the changes while you edit.",
+                  "Trim sets the part of the take to keep. Loop sets where the loop starts and ends.",
+                  "Repeats: a tap on 1 to 10 or on ∞, or type 1 to 88 in the box. With a number, the channel plays that many times and then stops by itself.",
+                  "LOW, MID, and HIGH run from -30 dB to +30 dB. MID HZ moves the middle band from 100 Hz to 8 kHz. GAIN and SQUEEZE run from 0 to 100.",
+                  "Play plays the channel. Reset sets everything back to the start values. Close leaves without saving. Save keeps the changes, and a trim cuts the take. Redo can bring back the take from before the trim.",
+                  "The editor settings are saved with the loop session and in the exported project."
+                ],
+                "media": "assets/guide/loop-editor-110.jpg"
+              },
               {
                 "id": "looper-fx",
                 "title": "Looper FX",
@@ -1869,7 +1920,7 @@
               }
             ],
             "images": [
-              "assets/guide/loop-pages.jpg",
+              "assets/guide/loop-pages-110.jpg",
               "assets/guide/loop-page-name.jpg"
             ]
           },
@@ -1878,14 +1929,14 @@
             "title": "Mic",
             "body": [
               "A tap on Mic opens this screen.",
-              "A tap on Back restores the take cleared most recently on this screen. It does not leave the screen. It works only after a clear that can still be restored, and not while that channel is busy. LIVE still allows Back when that restore is there. Mic and Loop keep separate restores.",
+              "A tap on Redo brings back the take you lost most recently on this screen: one you cleared or recorded over. It does not leave the screen. It does not work while that channel is busy. LIVE still allows Redo when there is a take to bring back. Mic and Loop keep separate restores.",
               "A tap on Lyrics opens Lyrics.",
               "A tap on Monitor turns the monitor on or off. When it is on, the label reads Monitor ON. If it is on and headphones are not connected, the phone warns about speaker feedback.",
               "Gain, Mon, HPF, Gate, Low, Pres, and Comp sit under the heading. A drag sets the knob. Gain runs from 1x to 4x. HPF runs from 40 Hz to 240 Hz. A tap on the number lets you type a value. LIVE does not open that box.",
               "Slots 1, 2, and 3 each have Load and Save. A tap on Load puts that saved monitor setting on the knobs. LIVE turns that Load off. A tap on Save stores the monitor setting.",
               "Channel names start as Vocal 1, Vocal 2, Vocal 3, Guitar, Bass, and Inst 3. A tap in the name changes it. LIVE locks the name.",
-              "A tap on Rec starts recording. The label then reads Stop. Another tap stops. A tap on Play plays the channel. The label then reads Stop. Another tap stops.",
-              "A tap on Clear clears the channel and keeps that take for Back. LIVE turns Clear off.",
+              "A tap on Rec starts recording. The label then reads Stop. Another tap stops. A tap on Play plays the channel. The label then reads Stop. Another tap stops. If the channel already had a take, Redo can bring it back.",
+              "A tap on Clear clears the channel and keeps that take for Redo. LIVE turns Clear off.",
               "A tap on Save asks the phone where to store the channel as a wav file. Save stays off when the channel is empty.",
               "HPF, Gate, and Pres on the channel affect only that channel. A drag sets them.",
               "A tap on Mic FX opens Mic FX for that channel. Under the name it shows FX, and Off or the preset number.",
@@ -2675,6 +2726,21 @@
         },
         "items": [
           {
+            "id": "app-1-10-loop-editor-drums",
+            "status": "in_progress",
+            "title": "Coming in 1.10: Loop Editor and drum sounds",
+            "ticker": "Coming in the next Google Play update: Loop Editor and live drum sounds",
+            "summary": "Coming in the next Google Play update, version 1.10: a tap on a looper waveform opens Loop Editor, with Trim, Loop, Repeats, and a 3-band EQ. Recordings can run up to 30 minutes, and Redo brings back a take you cleared or recorded over. In the drums, a tap on a row name opens its sounds from all the kits, and you hear each pick while the beat plays. Save, next to Random, keeps the sounds with the patterns.",
+            "href": "/guide",
+            "cta": "Open the guide",
+            "images": [
+              "/assets/updates/loop-editor-110.jpg"
+            ],
+            "imageAlts": [
+              "Loop Editor in 1.10: Trim, Loop, Repeats, and EQ for one looper channel."
+            ]
+          },
+          {
             "id": "app-1-09-waves-drums",
             "status": "shipped",
             "title": "New in 1.09: layered waves",
@@ -3066,6 +3132,7 @@
                   "Custom Frequency это первая строка в Settings. Нажатие открывает Tune frequencies (Hz).",
                   "У каждой клавиши есть частота в Hz. Можно настроить клавиатуру на нужные частоты или играть по шаблону.",
                   "Ready scales (D = 261 Hz) это шаблоны: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd и Pentatonic. Нажатие на имя применяет этот шаблон, с D на 261 Hz.",
+                  "Под шаблонами в My Presets есть 8 кнопок с вашими именами. Нажатие на кнопку загружает её частоты. Под кнопками появляются поле имени и Save. Save сохраняет имя и частоты. Save* значит, что есть несохранённые изменения.",
                   "Reset в строке заголовка. Default над Close. Нажатие на Close закрывает окно."
                 ],
                 "media": "assets/guide/freq-window.jpg"
@@ -3074,7 +3141,7 @@
                 "id": "drive",
                 "title": "Drive",
                 "body": [
-                  "Drive это слайдер на экране звука. Перетаскивание задаёт величину drive."
+                  "Drive это слайдер на экране звука. Перетаскивание задаёт величину drive. Drive меняется плавно, без скачков."
                 ],
                 "media": "assets/guide/drive-slider.jpg"
               },
@@ -3157,20 +3224,20 @@
             "body": [
               "Нажатие на Drum открывает этот экран. Заголовок говорит DRUM MACHINE.",
               "Нажатие на Play Drums запускает ударные с начала. Затем надпись говорит Stop Drums. Ещё одно нажатие останавливает и возвращает к началу.",
-              "Нажатие на + показывает Extra 1 до Extra 4 и прячет клавиатуру. Знак тогда показывает минус. Ещё одно нажатие прячет эти ряды и возвращает клавиатуру.",
+              "Нажатие на + показывает FX 1, FX 2, FX 3 и Voice и прячет клавиатуру. Знак тогда показывает минус. Ещё одно нажатие прячет эти ряды и возвращает клавиатуру.",
               "Нажатие на Drum FX открывает Drum FX. Когда пресет включён, надпись показывает FX и число.",
               "Нажатие на Style открывает Drum styles. Долгое нажатие на Style открывает Random genre. Заметка там говорит Selection affects Random. Нажатие на Rock, Trance, Rap или Techno сохраняет этот жанр и закрывает окно. Cancel закрывает его и оставляет жанр как был. Random на этом экране использует этот жанр, и он начинает с Rock. Это окно само не строит паттерн.",
               "Перетаскивание Drum Vol задаёт громкость ударных от 0% до 100%. Нажатие на число даёт ввести значение. LIVE не открывает это поле.",
               "Перетаскивание Swing задаёт swing от 0% до 100%. Перетаскивание BPM задаёт темп от 60 до 200. BPM, Swing и громкость дорожек работают вживую: изменение во время игры сохраняется, когда начинается следующий паттерн.",
               "Удерживайте 1/4, 1/8, 1/16 или 1/32, чтобы повторять ударные в этом делении, пока держите. Отпустите, и повтор остановится. Нажатие на них ничего не делает. Удерживайте STOP. Нажатие на него ничего не делает.",
               "Нажатие на номер паттерна, от 1 до 8, загружает этот паттерн, включая темп, swing, громкость и лево и право. Долгое нажатие открывает Pattern repeats.",
-              "Нажатие на Save сохраняет текущие ударные в паттерн, на котором вы находитесь, и записывает текущие BPM, Swing и громкость дорожек во все 8 паттернов. Нажатие на Random строит новый паттерн в выбранном жанре.",
-              "В каждом ряду нажатие на Load выбирает аудиофайл. Если сэмпл уже есть, надпись говорит Swap. LIVE выключает это.",
+              "Нажатие на Save, рядом с Random, сохраняет текущие ударные в паттерн, на котором вы находитесь, записывает текущие BPM, Swing и громкость дорожек во все 8 паттернов и сохраняет набор со звуком, выбранным на каждом ряду. Нажатие на Random строит новый паттерн в выбранном жанре.",
+              "Ряды называются Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 и Voice. Нажатие на имя ряда открывает список звуков для этого ряда из всех наборов Factory, а также из наборов Exclusive, когда они есть в приложении. Каждый ряд показывает только свой вид звуков: FX 1 до FX 3 делят один список, а Voice показывает только вокал. Нажатие на звук ставит его на ряд, и список остаётся открытым. Пока играют ударные, его слышно на следующем ударе. Когда они остановлены, он звучит один раз. Стрелки ◀ и ▶ рядом с Load переходят к предыдущему или следующему звуку. Нажатие на Load выбирает аудиофайл с телефона. LIVE выключает Load.",
               "Перетаскивание слайдера ряда задаёт громкость ряда. Он показывает процент и без слова. Перетаскивание L/R двигает ряд между L и R.",
               "В каждом ряду 16 шагов. Нажатие включает или выключает шаг.",
               "Стрелки рядом с DRUM KIT загружают следующий или предыдущий набор. LIVE выключает эти стрелки."
             ],
-            "media": "assets/guide/drum-screen.jpg",
+            "media": "assets/guide/drum-screen-110.jpg",
             "sections": [
               {
                 "id": "drum-fx",
@@ -3204,30 +3271,47 @@
                 ],
                 "media": "assets/guide/pattern-repeats.jpg"
               }
+            ],
+            "images": [
+              "assets/guide/drum-sample-picker-110.jpg"
             ]
           },
           {
             "id": "loop",
             "title": "Loop",
             "body": [
-              "Нажатие на Loop открывает этот экран. В нём 8 страниц и 4 канала на каждой, всего 32 канала. Запись останавливается на 60 секундах.",
+              "Нажатие на Loop открывает этот экран. В нём 8 страниц и 4 канала на каждой, всего 32 канала. Запись может длиться до 30 минут.",
               "Нажатие на номер страницы, от 1 до 8, показывает страницу. Долгое нажатие открывает Page name. Введите имя, выберите один из 8 цветов (оранжевый, красный, золотой, коричневый, зелёный, синий, фиолетовый, розовый) и нажмите OK. Reset убирает цвет. Cancel закрывает без изменений. LIVE выключает долгое нажатие.",
               "Цвет страницы заполняет её номер и окрашивает волны каналов на этой странице.",
-              "Поле имени рядом с Back показывает имя текущей страницы. Пока оно пустое, там написано Page и номер. Нажатие в поле позволяет ввести имя. LIVE запирает имя. Имена и цвета сохраняются вместе с проектом лупера и в Export.",
+              "Поле имени рядом с Redo показывает имя текущей страницы. Пока оно пустое, там написано Page и номер. Нажатие в поле позволяет ввести имя. LIVE запирает имя. Имена и цвета сохраняются вместе с проектом лупера и в Export.",
               "Имя каждого канала начинает как Ch и число. Нажатие в имени меняет его. LIVE запирает имя.",
-              "Нажатие на Back возвращает запись, очищенную последней на этом экране. Оно не уходит с экрана. Оно работает только после очистки, которую ещё можно вернуть, и не пока канал занят. LIVE всё ещё позволяет Back, когда это восстановление есть.",
-              "Нажатие на Rec начинает запись. Затем надпись говорит STOP. Ещё одно нажатие останавливает запись. Начало записи сбрасывает восстановление Back этого канала.",
-              "Нажатие на Play играет канал. Затем надпись говорит Stop. Ещё одно нажатие останавливает. Play остаётся выключенным, когда канал пуст, если он уже не играет и не пишет.",
+              "Нажатие на волну канала открывает Loop Editor. Над ней написано Tap on the visualizer. Это работает, когда в канале есть запись и он не пишет. Канал с сохранёнными правками получает золотую рамку.",
+              "Нажатие на Redo возвращает запись, потерянную последней на этом экране: очищенную, записанную поверх или обрезанную в Loop Editor. Оно не уходит с экрана. Оно не работает, пока канал занят. LIVE всё ещё позволяет Redo, когда есть что вернуть.",
+              "Нажатие на Rec начинает запись. Затем надпись говорит STOP. Ещё одно нажатие останавливает запись. Если в канале уже была запись, Redo может её вернуть.",
+              "Нажатие на Play играет канал. Затем надпись говорит Stop. Ещё одно нажатие останавливает. Play остаётся выключенным, когда канал пуст, если он уже не играет и не пишет. Пока играют ударные, Play ждёт начала следующего такта ударных. Старт, стоп и изменения громкости сглажены.",
               "Нажатие на Load выбирает аудиофайл для канала. LIVE выключает Load.",
               "Нажатие на Save спрашивает телефон, куда сохранить канал как файл wav. Save остаётся выключенным, когда канал пуст.",
-              "Нажатие на Clear очищает канал и оставляет запись для Back. LIVE выключает Clear.",
+              "Нажатие на Clear очищает канал и оставляет запись для Redo. LIVE выключает Clear.",
               "Перетаскивание Vol задаёт громкость от 0% до 100%. Нажатие на число даёт ввести значение. LIVE не открывает это поле.",
               "Нажатие на FX открывает Looper FX для канала. Перетаскивание L/R двигает звук между L и R.",
               "Нажатие на Import выбирает файл проекта и загружает весь проект лупа. LIVE выключает Import.",
               "Нажатие на Export спрашивает телефон, куда сохранить весь проект лупа."
             ],
-            "media": "assets/guide/loop-screen.jpg",
+            "media": "assets/guide/loop-screen-110.jpg",
             "sections": [
+              {
+                "id": "loop-editor",
+                "title": "Loop Editor",
+                "body": [
+                  "Нажатие на волну канала открывает Loop Editor для этого канала, запись нарисована цветом канала. Изменения слышны во время правки.",
+                  "Trim задаёт часть записи, которая остаётся. Loop задаёт, где луп начинается и заканчивается.",
+                  "Repeats: нажатие на 1 до 10 или на ∞, или ввод от 1 до 88 в поле. С числом канал играет столько раз и потом сам останавливается.",
+                  "LOW, MID и HIGH идут от -30 dB до +30 dB. MID HZ сдвигает среднюю полосу от 100 Hz до 8 kHz. GAIN и SQUEEZE идут от 0 до 100.",
+                  "Play играет канал. Reset возвращает начальные значения. Close выходит без сохранения. Save сохраняет изменения, а Trim обрезает запись. Redo может вернуть запись до обрезки.",
+                  "Настройки редактора сохраняются в сессии лупера и в экспортированном проекте."
+                ],
+                "media": "assets/guide/loop-editor-110.jpg"
+              },
               {
                 "id": "looper-fx",
                 "title": "Looper FX",
@@ -3241,7 +3325,7 @@
               }
             ],
             "images": [
-              "assets/guide/loop-pages.jpg",
+              "assets/guide/loop-pages-110.jpg",
               "assets/guide/loop-page-name.jpg"
             ]
           },
@@ -3250,14 +3334,14 @@
             "title": "Mic",
             "body": [
               "Нажатие на Mic открывает этот экран.",
-              "Нажатие на Back возвращает запись, очищенную последней на этом экране. Оно не уходит с экрана. Оно работает только после очистки, которую ещё можно вернуть, и не пока канал занят. LIVE всё ещё позволяет Back, когда это восстановление есть. У Mic и Loop отдельные восстановления.",
+              "Нажатие на Redo возвращает запись, потерянную последней на этом экране: очищенную или записанную поверх. Оно не уходит с экрана. Оно не работает, пока канал занят. LIVE всё ещё позволяет Redo, когда есть что вернуть. У Mic и Loop отдельные восстановления.",
               "Нажатие на Lyrics открывает Lyrics.",
               "Нажатие на Monitor включает или выключает монитор. Когда он включён, надпись говорит Monitor ON. Если он включён и наушники не подключены, телефон предупреждает об отдаче динамика.",
               "Gain, Mon, HPF, Gate, Low, Pres и Comp находятся под заголовком. Перетаскивание задаёт регулятор. Gain идёт от 1x до 4x. HPF идёт от 40 Hz до 240 Hz. Нажатие на число даёт ввести значение. LIVE не открывает это поле.",
               "У мест 1, 2 и 3 есть Load и Save. Нажатие на Load ставит сохранённую настройку монитора на регуляторы. LIVE выключает этот Load. Нажатие на Save сохраняет настройку монитора.",
               "Имена каналов начинают как Vocal 1, Vocal 2, Vocal 3, Guitar, Bass и Inst 3. Нажатие в имени меняет его. LIVE запирает имя.",
-              "Нажатие на Rec начинает запись. Затем надпись говорит Stop. Ещё одно нажатие останавливает. Нажатие на Play играет канал. Затем надпись говорит Stop. Ещё одно нажатие останавливает.",
-              "Нажатие на Clear очищает канал и оставляет запись для Back. LIVE выключает Clear.",
+              "Нажатие на Rec начинает запись. Затем надпись говорит Stop. Ещё одно нажатие останавливает. Нажатие на Play играет канал. Затем надпись говорит Stop. Ещё одно нажатие останавливает. Если в канале уже была запись, Redo может её вернуть.",
+              "Нажатие на Clear очищает канал и оставляет запись для Redo. LIVE выключает Clear.",
               "Нажатие на Save спрашивает телефон, куда сохранить канал как файл wav. Save остаётся выключенным, когда канал пуст.",
               "HPF, Gate и Pres на канале действуют только на этот канал. Перетаскивание задаёт их.",
               "Нажатие на Mic FX открывает Mic FX для канала. Под именем показано FX, и Off или номер пресета.",
@@ -4047,6 +4131,21 @@
         },
         "items": [
           {
+            "id": "app-1-10-loop-editor-drums",
+            "status": "in_progress",
+            "title": "Скоро в 1.10: Loop Editor и звуки ударных",
+            "ticker": "В следующем обновлении Google Play: Loop Editor и звуки ударных на ходу",
+            "summary": "В следующем обновлении Google Play, версия 1.10: нажатие на волну в лупере открывает Loop Editor с Trim, Loop, Repeats и 3-полосным EQ. Запись может длиться до 30 минут, а Redo возвращает очищенную или записанную поверх запись. В ударных нажатие на имя ряда открывает его звуки из всех наборов, и каждый выбор слышно, пока играет бит. Save рядом с Random сохраняет звуки вместе с паттернами.",
+            "href": "/guide",
+            "cta": "Открыть руководство",
+            "images": [
+              "/assets/updates/loop-editor-110.jpg"
+            ],
+            "imageAlts": [
+              "Loop Editor в 1.10: Trim, Loop, Repeats и EQ для одного канала лупера."
+            ]
+          },
+          {
             "id": "app-1-09-waves-drums",
             "status": "shipped",
             "title": "Новое в 1.09: несколько волн сразу",
@@ -4438,6 +4537,7 @@
                   "Custom Frequency هو الصف الأول في Settings. الضغط يفتح Tune frequencies (Hz).",
                   "لكل مفتاح تردد بالـ Hz. اضبط لوحة المفاتيح على الترددات التي تريد، أو اعزف من قالب.",
                   "Ready scales (D = 261 Hz) هي القوالب: Major وMinor وHarmonic وDorian وMixolydian وHijaz وKurd وPentatonic. الضغط على اسم يطبّق ذلك القالب، مع D على 261 Hz.",
+                  "تحت القوالب، في My Presets ثمانية أزرار بأسمائك. الضغط على زر يحمّل تردداته. ثم يظهر تحتها حقل اسم وSave. Save يحفظ الاسم والترددات. Save* يعني أن هناك تغييرات لم تُحفظ بعد.",
                   "Reset في سطر العنوان. Default فوق Close. الضغط على Close يغلق النافذة."
                 ],
                 "media": "assets/guide/freq-window.jpg"
@@ -4446,7 +4546,7 @@
                 "id": "drive",
                 "title": "Drive",
                 "body": [
-                  "Drive هو المنزلق على شاشة الصوت. السحب يحدد مقدار drive."
+                  "Drive هو المنزلق على شاشة الصوت. السحب يحدد مقدار drive. يتغير Drive بسلاسة، دون قفزات."
                 ],
                 "media": "assets/guide/drive-slider.jpg"
               },
@@ -4529,20 +4629,20 @@
             "body": [
               "الضغط على Drum يفتح هذه الشاشة. العنوان يقول DRUM MACHINE.",
               "الضغط على Play Drums يبدأ الطبول من البداية. ثم يقول النص Stop Drums. ضغط آخر يوقف ويعيد إلى البداية.",
-              "الضغط على + يعرض Extra 1 حتى Extra 4 ويخفي لوحة المفاتيح. العلامة حينها تظهر ناقصاً. ضغط آخر يخفي الصفوف ويعيد لوحة المفاتيح.",
+              "الضغط على + يعرض FX 1 وFX 2 وFX 3 وVoice ويخفي لوحة المفاتيح. العلامة حينها تظهر ناقصاً. ضغط آخر يخفي الصفوف ويعيد لوحة المفاتيح.",
               "الضغط على Drum FX يفتح Drum FX. عندما يكون إعداد شغّالاً، يظهر FX ورقم.",
               "الضغط على Style يفتح Drum styles. الضغط المطوّل على Style يفتح Random genre. الملاحظة هناك تقول Selection affects Random. الضغط على Rock أو Trance أو Rap أو Techno يحفظ ذلك النوع ويغلق النافذة. Cancel يغلقها ويترك النوع كما كان. Random على هذه الشاشة يستخدم ذلك النوع، ويبدأ على Rock. تلك النافذة لا تبني نمطاً وحدها.",
               "السحب على Drum Vol يحدد حجم الطبول من 0% إلى 100%. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح الخانة.",
               "السحب على Swing يحدد swing من 0% إلى 100%. السحب على BPM يحدد الإيقاع من 60 إلى 200. BPM وSwing وحجم الصفوف تعمل مباشرة: التغيير أثناء العزف يبقى عندما يبدأ النمط التالي.",
               "أمسك 1/4 أو 1/8 أو 1/16 أو 1/32 لتكرار الطبول على ذلك التقسيم ما دمت ممسكاً. اترك، فيتوقف التكرار. الضغط عليها لا يفعل شيئاً. أمسك STOP. الضغط عليه لا يفعل شيئاً.",
               "الضغط على رقم نمط، من 1 إلى 8، يحمّل ذلك النمط، بما فيه الإيقاع وswing والحجم واليسار واليمين. الضغط المطوّل يفتح Pattern repeats.",
-              "الضغط على Save يحفظ الطبول الحالية في النمط الذي أنت عليه ويكتب BPM وSwing وحجم الصفوف الحالية في الأنماط الثمانية كلها. الضغط على Random يبني نمطاً جديداً في النوع المختار.",
-              "في كل صف، الضغط على Load يختار ملف صوت. إذا كانت عينة موجودة، يقول النص Swap. LIVE يوقف ذلك.",
+              "الضغط على Save، بجانب Random، يحفظ الطبول الحالية في النمط الذي أنت عليه، ويكتب BPM وSwing وحجم الصفوف الحالية في الأنماط الثمانية كلها، ويحفظ الطقم مع الصوت المختار في كل صف. الضغط على Random يبني نمطاً جديداً في النوع المختار.",
+              "الصفوف هي Kick وSnare وHi-Hat وPerc وFX 1 وFX 2 وFX 3 وVoice. الضغط على اسم صف يفتح قائمة أصوات لذلك الصف من كل أطقم Factory، ومن أطقم Exclusive عندما تكون في التطبيق. كل صف يعرض نوع أصواته فقط: FX 1 حتى FX 3 تتشارك قائمة واحدة، وVoice يعرض الغناء فقط. الضغط على صوت يضعه على الصف وتبقى القائمة مفتوحة. أثناء عزف الطبول تسمعه في الضربة التالية. وعندما تكون متوقفة يُعزف مرة واحدة. السهمان ◀ و▶ بجانب Load ينتقلان إلى الصوت السابق أو التالي. الضغط على Load يختار ملف صوت من الهاتف. LIVE يوقف Load.",
               "السحب على منزلق الصف يحدد حجم الصف. يعرض نسبة ومن دون كلمة. السحب على L/R يحرّك الصف بين L وR.",
               "لكل صف 16 خطوة. الضغط يشغّل خطوة أو يوقفها.",
               "الأسهم بجانب DRUM KIT تحمّل الطقم التالي أو السابق. LIVE يوقف هذه الأسهم."
             ],
-            "media": "assets/guide/drum-screen.jpg",
+            "media": "assets/guide/drum-screen-110.jpg",
             "sections": [
               {
                 "id": "drum-fx",
@@ -4576,30 +4676,47 @@
                 ],
                 "media": "assets/guide/pattern-repeats.jpg"
               }
+            ],
+            "images": [
+              "assets/guide/drum-sample-picker-110.jpg"
             ]
           },
           {
             "id": "loop",
             "title": "Loop",
             "body": [
-              "الضغط على Loop يفتح هذه الشاشة. فيها 8 صفحات و4 قنوات في كل صفحة، 32 قناة في المجموع. التسجيل يتوقف عند 60 ثانية.",
+              "الضغط على Loop يفتح هذه الشاشة. فيها 8 صفحات و4 قنوات في كل صفحة، 32 قناة في المجموع. يمكن أن يستمر التسجيل حتى 30 دقيقة.",
               "الضغط على رقم صفحة، من 1 إلى 8، يعرض الصفحة. الضغط المطوّل يفتح Page name. اكتب اسماً، واختر لوناً من 8 ألوان (برتقالي، أحمر، ذهبي، بني، أخضر، أزرق، بنفسجي، وردي)، ثم اضغط OK. Reset يزيل اللون. Cancel يغلق دون تغيير. LIVE يوقف الضغط المطوّل.",
               "لون الصفحة يملأ رقمها ويلوّن موجات القنوات في تلك الصفحة.",
-              "حقل الاسم بجانب Back يعرض اسم الصفحة التي أنت عليها. وهو فارغ يظهر فيه Page والرقم. الضغط في الحقل يتيح كتابة الاسم. LIVE يقفل الاسم. الأسماء والألوان تُحفظ مع مشروع اللوب وفي Export.",
+              "حقل الاسم بجانب Redo يعرض اسم الصفحة التي أنت عليها. وهو فارغ يظهر فيه Page والرقم. الضغط في الحقل يتيح كتابة الاسم. LIVE يقفل الاسم. الأسماء والألوان تُحفظ مع مشروع اللوب وفي Export.",
               "اسم كل قناة يبدأ Ch ورقماً. الضغط في الاسم يغيّره. LIVE يقفل الاسم.",
-              "الضغط على Back يعيد الأخذ الذي مُسح أخيراً على هذه الشاشة. لا يغادر الشاشة. يعمل فقط بعد مسح ما زال يمكن إعادته، وليس بينما القناة مشغولة. LIVE ما زال يسمح بـ Back عندما توجد هذه الإعادة.",
-              "الضغط على Rec يبدأ التسجيل. ثم يقول النص STOP. ضغط آخر يوقف الأخذ. بدء التسجيل يسقط إعادة Back لتلك القناة.",
-              "الضغط على Play يشغّل القناة. ثم يقول النص Stop. ضغط آخر يوقف. يبقى Play متوقفاً عندما تكون القناة فارغة، إلا إذا كانت تعزف أو تسجّل.",
+              "الضغط على موجة القناة يفتح Loop Editor. فوقها مكتوب Tap on the visualizer. يعمل عندما يكون في القناة تسجيل وهي لا تسجّل. القناة ذات التعديلات المحفوظة تحصل على إطار ذهبي.",
+              "الضغط على Redo يعيد آخر أخذ فُقد على هذه الشاشة: أخذ مُسح، أو سُجّل فوقه، أو قُصّ في Loop Editor. لا يغادر الشاشة. لا يعمل بينما القناة مشغولة. LIVE ما زال يسمح بـ Redo عندما يوجد أخذ لإعادته.",
+              "الضغط على Rec يبدأ التسجيل. ثم يقول النص STOP. ضغط آخر يوقف الأخذ. إذا كان في القناة أخذ من قبل، يمكن لـ Redo أن يعيده.",
+              "الضغط على Play يشغّل القناة. ثم يقول النص Stop. ضغط آخر يوقف. يبقى Play متوقفاً عندما تكون القناة فارغة، إلا إذا كانت تعزف أو تسجّل. أثناء عزف الطبول، ينتظر Play بداية المازورة التالية للطبول. البدء والإيقاف وتغييرات الحجم سلسة.",
               "الضغط على Load يختار ملف صوت للقناة. LIVE يوقف Load.",
               "الضغط على Save يسأل الهاتف أين يحفظ القناة كملف wav. يبقى Save متوقفاً عندما تكون القناة فارغة.",
-              "الضغط على Clear يمسح القناة ويبقي الأخذ لـ Back. LIVE يوقف Clear.",
+              "الضغط على Clear يمسح القناة ويبقي الأخذ لـ Redo. LIVE يوقف Clear.",
               "السحب على Vol يحدد الحجم من 0% إلى 100%. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح الخانة.",
               "الضغط على FX يفتح Looper FX للقناة. السحب على L/R يحرّك الصوت بين L وR.",
               "الضغط على Import يختار ملف مشروع ويحمّل مشروع اللوب كله. LIVE يوقف Import.",
               "الضغط على Export يسأل الهاتف أين يحفظ مشروع اللوب كله."
             ],
-            "media": "assets/guide/loop-screen.jpg",
+            "media": "assets/guide/loop-screen-110.jpg",
             "sections": [
+              {
+                "id": "loop-editor",
+                "title": "Loop Editor",
+                "body": [
+                  "الضغط على موجة القناة يفتح Loop Editor لتلك القناة، والأخذ مرسوم بلون القناة. تسمع التغييرات أثناء التعديل.",
+                  "Trim يحدد الجزء الذي يبقى من الأخذ. Loop يحدد أين يبدأ اللوب وأين ينتهي.",
+                  "Repeats: الضغط على 1 حتى 10 أو على ∞، أو كتابة 1 حتى 88 في المربع. مع رقم، تعزف القناة ذلك العدد من المرات ثم تتوقف وحدها.",
+                  "LOW وMID وHIGH من -30 dB إلى +30 dB. MID HZ يحرّك النطاق الأوسط من 100 Hz إلى 8 kHz. GAIN وSQUEEZE من 0 إلى 100.",
+                  "Play يشغّل القناة. Reset يعيد كل شيء إلى قيم البداية. Close يخرج دون حفظ. Save يحفظ التغييرات، وTrim يقصّ الأخذ. يمكن لـ Redo أن يعيد الأخذ من قبل القص.",
+                  "إعدادات المحرر تُحفظ مع جلسة اللوب وفي المشروع المصدَّر."
+                ],
+                "media": "assets/guide/loop-editor-110.jpg"
+              },
               {
                 "id": "looper-fx",
                 "title": "Looper FX",
@@ -4613,7 +4730,7 @@
               }
             ],
             "images": [
-              "assets/guide/loop-pages.jpg",
+              "assets/guide/loop-pages-110.jpg",
               "assets/guide/loop-page-name.jpg"
             ]
           },
@@ -4622,14 +4739,14 @@
             "title": "Mic",
             "body": [
               "الضغط على Mic يفتح هذه الشاشة.",
-              "الضغط على Back يعيد الأخذ الذي مُسح أخيراً على هذه الشاشة. لا يغادر الشاشة. يعمل فقط بعد مسح ما زال يمكن إعادته، وليس بينما القناة مشغولة. LIVE ما زال يسمح بـ Back عندما توجد هذه الإعادة. لـ Mic وLoop إعادات منفصلة.",
+              "الضغط على Redo يعيد آخر أخذ فُقد على هذه الشاشة: أخذ مُسح أو سُجّل فوقه. لا يغادر الشاشة. لا يعمل بينما القناة مشغولة. LIVE ما زال يسمح بـ Redo عندما يوجد أخذ لإعادته. لـ Mic وLoop إعادات منفصلة.",
               "الضغط على Lyrics يفتح Lyrics.",
               "الضغط على Monitor يشغّل المراقب أو يوقفه. عندما يكون شغّالاً، يقول النص Monitor ON. إذا كان شغّالاً ولم تكن السماعات موصولة، يحذّر الهاتف من ارتداد السماعة.",
               "Gain وMon وHPF وGate وLow وPres وComp تحت العنوان. السحب يحدد المقبض. Gain يجري من 1x إلى 4x. HPF يجري من 40 Hz إلى 240 Hz. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح الخانة.",
               "للخانات 1 و2 و3 Load وSave. الضغط على Load يضع إعداد المراقب المحفوظ على المقابض. LIVE يوقف Load هذا. الضغط على Save يحفظ إعداد المراقب.",
               "أسماء القنوات تبدأ Vocal 1 وVocal 2 وVocal 3 وGuitar وBass وInst 3. الضغط في الاسم يغيّره. LIVE يقفل الاسم.",
-              "الضغط على Rec يبدأ التسجيل. ثم يقول النص Stop. ضغط آخر يوقف. الضغط على Play يشغّل القناة. ثم يقول النص Stop. ضغط آخر يوقف.",
-              "الضغط على Clear يمسح القناة ويبقي الأخذ لـ Back. LIVE يوقف Clear.",
+              "الضغط على Rec يبدأ التسجيل. ثم يقول النص Stop. ضغط آخر يوقف. الضغط على Play يشغّل القناة. ثم يقول النص Stop. ضغط آخر يوقف. إذا كان في القناة أخذ من قبل، يمكن لـ Redo أن يعيده.",
+              "الضغط على Clear يمسح القناة ويبقي الأخذ لـ Redo. LIVE يوقف Clear.",
               "الضغط على Save يسأل الهاتف أين يحفظ القناة كملف wav. يبقى Save متوقفاً عندما تكون القناة فارغة.",
               "HPF وGate وPres على القناة يؤثران على هذه القناة فقط. السحب يحددها.",
               "الضغط على Mic FX يفتح Mic FX للقناة. تحت الاسم يظهر FX، وOff أو رقم الإعداد.",
@@ -5418,6 +5535,21 @@
           "shipped": "صدر مؤخراً"
         },
         "items": [
+          {
+            "id": "app-1-10-loop-editor-drums",
+            "status": "in_progress",
+            "title": "قريباً في 1.10: Loop Editor وأصوات الطبول",
+            "ticker": "في تحديث Google Play القادم: Loop Editor وأصوات الطبول أثناء العزف",
+            "summary": "في تحديث Google Play القادم، الإصدار 1.10: الضغط على موجة في اللوبر يفتح Loop Editor، مع Trim وLoop وRepeats وEQ بثلاثة نطاقات. يمكن أن يستمر التسجيل حتى 30 دقيقة، وRedo يعيد أخذاً مُسح أو سُجّل فوقه. في الطبول، الضغط على اسم صف يفتح أصواته من كل الأطقم، وتسمع كل اختيار أثناء عزف الإيقاع. Save، بجانب Random، يحفظ الأصوات مع الأنماط.",
+            "href": "/guide",
+            "cta": "افتح الدليل",
+            "images": [
+              "/assets/updates/loop-editor-110.jpg"
+            ],
+            "imageAlts": [
+              "Loop Editor في الإصدار 1.10: Trim وLoop وRepeats وEQ لقناة واحدة في اللوبر."
+            ]
+          },
           {
             "id": "app-1-09-waves-drums",
             "status": "shipped",
