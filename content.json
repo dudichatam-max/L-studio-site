@@ -465,8 +465,12 @@
               }
             ],
             "images": [
-              "assets/guide/drum-sample-picker-110.jpg"
-            ]
+              "assets/guide/drum-sample-picker-110.jpg",
+              "assets/guide/voice-110.jpg"
+            ],
+            "imageAlts": {
+              "assets/guide/voice-110.jpg": "בוחר הסאמפלים של Voice בגרסה 1.10, בלשונית Authentic עם 33 ווקאלים."
+            }
           },
           {
             "id": "loop",
@@ -1927,8 +1931,12 @@
               }
             ],
             "images": [
-              "assets/guide/drum-sample-picker-110.jpg"
-            ]
+              "assets/guide/drum-sample-picker-110.jpg",
+              "assets/guide/voice-110.jpg"
+            ],
+            "imageAlts": {
+              "assets/guide/voice-110.jpg": "The Voice sample picker in 1.10, on the Authentic tab with 33 vocals."
+            }
           },
           {
             "id": "loop",
@@ -3389,8 +3397,12 @@
               }
             ],
             "images": [
-              "assets/guide/drum-sample-picker-110.jpg"
-            ]
+              "assets/guide/drum-sample-picker-110.jpg",
+              "assets/guide/voice-110.jpg"
+            ],
+            "imageAlts": {
+              "assets/guide/voice-110.jpg": "Выбор сэмплов Voice в 1.10, на вкладке Authentic с 33 вокалами."
+            }
           },
           {
             "id": "loop",
@@ -4851,8 +4863,12 @@
               }
             ],
             "images": [
-              "assets/guide/drum-sample-picker-110.jpg"
-            ]
+              "assets/guide/drum-sample-picker-110.jpg",
+              "assets/guide/voice-110.jpg"
+            ],
+            "imageAlts": {
+              "assets/guide/voice-110.jpg": "منتقي عينات Voice في الإصدار 1.10، على تبويب Authentic مع 33 عيّنة غناء."
+            }
           },
           {
             "id": "loop",

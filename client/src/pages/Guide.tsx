@@ -30,6 +30,8 @@ type GuideGroup = {
   body: string[];
   media?: string;
   images?: string[];
+  /** Optional alt per image path. Missing entries use the group title. */
+  imageAlts?: Record<string, string>;
   mediaSize?: "thumb" | "panel";
   sections?: GuideSection[];
 };
@@ -99,7 +101,7 @@ function sectionShots(section: { media?: string; images?: string[] }) {
 }
 
 function guideEntries(groups: GuideGroup[]) {
-  const entries: Array<{ id: string; title: string; body: string[]; media?: string; images?: string[]; mediaSize?: "thumb" | "panel"; layout?: "steps"; bullets?: string[]; tipBeginner?: string; tipAdvanced?: string; tag?: string; nested: boolean }> = [];
+  const entries: Array<{ id: string; title: string; body: string[]; media?: string; images?: string[]; imageAlts?: Record<string, string>; mediaSize?: "thumb" | "panel"; layout?: "steps"; bullets?: string[]; tipBeginner?: string; tipAdvanced?: string; tag?: string; nested: boolean }> = [];
   for (const group of groups) {
     entries.push({ ...group, nested: false });
     for (const section of group.sections ?? []) {
@@ -237,7 +239,7 @@ export default function Guide() {
                           <div className="guide-shots">
                             {shots.map((src) => (
                               <figure className={mediaClass} key={src}>
-                                <img src={mediaUrl(src)} alt={section.title} loading="lazy" />
+                                <img src={mediaUrl(src)} alt={section.imageAlts?.[src] || section.title} loading="lazy" />
                               </figure>
                             ))}
                           </div>
