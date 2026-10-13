@@ -58,6 +58,7 @@
               "כפתור Save שליד Random שומר את הסאמפלים יחד עם הביטים בקיט הנוכחי.",
               "בוחר הסאמפלים מציג לכל ערוץ רק את הסאמפלים שלו, מחולקים ל-Factory ול-Exclusive.",
               "הערוצים Extra 1 עד 3 נקראים עכשיו FX 1 עד 3 וחולקים בנק אחד.",
+              "ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים: 40 ב-Factory, 18 ב-Exclusive ו-33 בקטגוריה החדשה Authentic. סך הכל 91.",
               "החצים בערוצי התופים נצבעים בזהב לשנייה אחת אחרי הקשה.",
               "מי שקונה Pro מקבל גם את החבילה האקסקלוסיבית בחינם, בלי עלות נוספת ובלי כפתור הורדה."
             ]
@@ -80,6 +81,9 @@
               "שם כפול בייבוא מקבל שם חדש, במקום לכתוב על הקיים."
             ]
           }
+        ],
+        "tickerMore": [
+          "מגיע בעדכון הבא: ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים, 91 סאמפלים"
         ]
       },
       {
@@ -205,6 +209,7 @@
               "The Save button next to Random saves the samples together with the beats into the current kit.",
               "The sample picker shows each channel only its own samples, split into Factory and Exclusive.",
               "Channels Extra 1 to 3 are now called FX 1 to 3 and share one bank.",
+              "Channel 8 is now called Voice and holds only vocals: 40 in Factory, 18 in Exclusive and 33 in the new Authentic category. Total 91.",
               "The arrows on the drum channels turn gold for one second after a tap.",
               "Whoever buys Pro also gets the Exclusive pack free, at no extra cost and with no download button."
             ]
@@ -227,6 +232,9 @@
               "A duplicate name on import gets a new name instead of overwriting the existing one."
             ]
           }
+        ],
+        "tickerMore": [
+          "Coming in the next update: channel 8 is now called Voice and holds only vocals, 91 samples"
         ]
       },
       {
@@ -352,6 +360,7 @@
               "Кнопка Save рядом с Random сохраняет сэмплы вместе с битами в текущий набор.",
               "Выбор сэмплов показывает каждому каналу только его сэмплы, разделённые на Factory и Exclusive.",
               "Каналы Extra 1 до 3 теперь называются FX 1 до 3 и делят один банк.",
+              "Канал 8 теперь называется Voice и хранит только вокал: 40 в Factory, 18 в Exclusive и 33 в новой категории Authentic. Всего 91.",
               "Стрелки на каналах ударных загораются золотым на одну секунду после нажатия.",
               "Кто покупает Pro, получает и пакет Exclusive бесплатно, без доплаты и без кнопки загрузки."
             ]
@@ -374,6 +383,9 @@
               "Сессия с повторяющимся именем при импорте получает новое имя и не перезаписывает существующую."
             ]
           }
+        ],
+        "tickerMore": [
+          "В следующем обновлении: канал 8 теперь называется Voice и хранит только вокал, 91 сэмпл"
         ]
       },
       {
@@ -499,6 +511,7 @@
               "زر Save بجانب Random يحفظ العينات مع الإيقاعات في الطقم الحالي.",
               "منتقي العينات يعرض لكل قناة عيناتها فقط، مقسّمة إلى Factory وExclusive.",
               "القنوات Extra 1 حتى 3 اسمها الآن FX 1 حتى 3 وتتشارك بنكاً واحداً.",
+              "القناة 8 اسمها الآن Voice وتحمل الغناء فقط: 40 في Factory و18 في Exclusive و33 في الفئة الجديدة Authentic. المجموع 91.",
               "الأسهم على قنوات الطبول تصبح ذهبية لثانية واحدة بعد الضغط.",
               "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، دون تكلفة إضافية ودون زر تنزيل."
             ]
@@ -521,6 +534,9 @@
               "الاسم المكرر عند الاستيراد يحصل على اسم جديد بدل الكتابة فوق الموجود."
             ]
           }
+        ],
+        "tickerMore": [
+          "في التحديث القادم: القناة 8 اسمها الآن Voice وتحمل الغناء فقط، 91 عيّنة"
         ]
       },
       {

@@ -32,19 +32,20 @@ function TickerGroup({
       aria-hidden={clone ? true : undefined}
       ref={groupRef}
     >
-      {items.map((item) => {
+      {items.flatMap((item) => {
         const status = copy.statusLabels?.[item.status] ?? item.status;
-        return (
-          <span className="updates-ticker__slot" key={item.id}>
+        const lines = [item.ticker || item.title, ...(item.tickerMore ?? [])].filter(Boolean);
+        return lines.map((line, i) => (
+          <span className="updates-ticker__slot" key={`${item.id}-${i}`}>
             <Link className="updates-ticker__item" href={`/updates#${item.id}`} tabIndex={clone ? -1 : undefined}>
               <span className="updates-ticker__status">{status}</span>
-              <span>{item.title}</span>
+              <span>{line}</span>
             </Link>
             <span className="updates-ticker__sep" aria-hidden="true">
               ·
             </span>
           </span>
-        );
+        ));
       })}
     </div>
   );

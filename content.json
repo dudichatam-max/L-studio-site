@@ -423,7 +423,8 @@
               "מחזיקים 1/4, 1/8, 1/16, או 1/32 כדי לחזור על התופים בחלוקה הזאת כל עוד מחזיקים. עוזבים, והחזרה נעצרת. הקשה עליהם לא עושה כלום. מחזיקים STOP. הקשה עליו לא עושה כלום.",
               "הקשה על מספר פטרן, 1 עד 8, טוענת את הפטרן, כולל הטמפו, ה-swing, הווליום, וימין ושמאל. לחיצה ארוכה פותחת את Pattern repeats.",
               "הקשה על Save, ליד Random, שומרת את התופים הנוכחיים לתוך הפטרן שעליו אתם, כותבת את ה-BPM, ה-Swing והווליום של השורות לכל 8 הפטרנים, ושומרת את הקיט עם הסאונד שנבחר בכל שורה. הקשה על Random בונה פטרן חדש בז'אנר שנבחר.",
-              "השורות הן Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 ו-Voice. הקשה על שם שורה פותחת רשימת סאונדים לשורה הזאת, מכל קיטי ה-Factory, ומקיטי ה-Exclusive כשהם באפליקציה. כל שורה מציגה רק סאונדים מהסוג שלה: FX 1 עד FX 3 חולקים רשימה אחת, ו-Voice מציג רק שירה. הקשה על סאונד שמה אותו בשורה והרשימה נשארת פתוחה. כשהתופים מנגנים שומעים אותו במכה הבאה. כשהם עצורים הוא מתנגן פעם אחת. החצים ◀ ו-▶ ליד Load עוברים לסאונד הקודם או הבא. הקשה על Load בוחרת קובץ שמע מהטלפון. LIVE מכבה את Load. החצים ◀ ו-▶ נצבעים בזהב לשנייה אחת אחרי הקשה.",
+              "השורות הן Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 ו-Voice. הקשה על שם שורה פותחת רשימת סאונדים לשורה הזאת, מכל קיטי ה-Factory, מקיטי ה-Exclusive כשהם באפליקציה, וב-Voice גם מ-Authentic. כל שורה מציגה רק סאונדים מהסוג שלה: FX 1 עד FX 3 חולקים רשימה אחת, ו-Voice מציג רק שירה. הקשה על סאונד שמה אותו בשורה והרשימה נשארת פתוחה. כשהתופים מנגנים שומעים אותו במכה הבאה. כשהם עצורים הוא מתנגן פעם אחת. החצים ◀ ו-▶ ליד Load עוברים לסאונד הקודם או הבא. הקשה על Load בוחרת קובץ שמע מהטלפון. LIVE מכבה את Load. החצים ◀ ו-▶ נצבעים בזהב לשנייה אחת אחרי הקשה.",
+              "השורה השמינית נקראת עכשיו Voice ומחזיקה רק ווקאלים. ברשימת הסאונדים שלה יש 40 ווקאלים ב-Factory, 18 ב-Exclusive ו-33 בקטגוריה החדשה Authentic, 91 בסך הכל.",
               "גרירה על הסליידר של השורה קובעת את הווליום שלה. הוא מראה אחוז ובלי מילה. גרירה על L/R מזיזה את השורה בין L ל-R.",
               "לכל שורה יש 16 צעדים. הקשה מדליקה או מכבה צעד.",
               "החצים ליד DRUM KIT טוענים את הקיט הבא או הקודם. LIVE מכבה את החצים האלה."
@@ -1363,6 +1364,7 @@
                   "כפתור Save שליד Random שומר את הסאמפלים יחד עם הביטים בקיט הנוכחי.",
                   "בוחר הסאמפלים מציג לכל ערוץ רק את הסאמפלים שלו, מחולקים ל-Factory ול-Exclusive.",
                   "הערוצים Extra 1 עד 3 נקראים עכשיו FX 1 עד 3 וחולקים בנק אחד.",
+                  "ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים: 40 ב-Factory, 18 ב-Exclusive ו-33 בקטגוריה החדשה Authentic. סך הכל 91.",
                   "החצים בערוצי התופים נצבעים בזהב לשנייה אחת אחרי הקשה.",
                   "מי שקונה Pro מקבל גם את החבילה האקסקלוסיבית בחינם, בלי עלות נוספת ובלי כפתור הורדה."
                 ]
@@ -1385,6 +1387,9 @@
                   "שם כפול בייבוא מקבל שם חדש, במקום לכתוב על הקיים."
                 ]
               }
+            ],
+            "tickerMore": [
+              "מגיע בעדכון הבא: ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים, 91 סאמפלים"
             ]
           },
           {
@@ -1880,7 +1885,8 @@
               "Hold 1/4, 1/8, 1/16, or 1/32 to repeat the drums at that division while you hold it. Release, and that repeat stops. A tap on them does nothing. Hold STOP. A tap on it does nothing.",
               "A tap on a pattern number, 1 through 8, loads that pattern, including its tempo, swing, volumes, and left and right. A long-press opens Pattern repeats.",
               "A tap on Save, next to Random, stores the current drums into the pattern you are on, writes the current BPM, Swing, and row volumes into all 8 patterns, and saves the kit with the sound picked on each row. A tap on Random builds a new pattern in the chosen genre.",
-              "The rows are Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3, and Voice. A tap on a row name opens a sound list for that row, from all the Factory kits, and from the Exclusive kits when they are in the app. Each row lists only its own kind of sound: FX 1 to FX 3 share one list, and Voice lists vocals only. A tap on a sound puts it on the row and the list stays open. While the drums play you hear it on the next hit. When they are stopped it plays once. The ◀ and ▶ arrows next to Load step to the previous or next sound. A tap on Load picks an audio file from the phone. LIVE turns Load off. The ◀ and ▶ arrows turn gold for one second after a tap.",
+              "The rows are Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3, and Voice. A tap on a row name opens a sound list for that row, from all the Factory kits, from the Exclusive kits when they are in the app, and for Voice also from Authentic. Each row lists only its own kind of sound: FX 1 to FX 3 share one list, and Voice lists vocals only. A tap on a sound puts it on the row and the list stays open. While the drums play you hear it on the next hit. When they are stopped it plays once. The ◀ and ▶ arrows next to Load step to the previous or next sound. A tap on Load picks an audio file from the phone. LIVE turns Load off. The ◀ and ▶ arrows turn gold for one second after a tap.",
+              "Row 8 is now called Voice and holds only vocals. Its sound list has 40 vocals in Factory, 18 in Exclusive and 33 in the new Authentic category, 91 in all.",
               "A drag on the row slider sets that row's volume. It shows a percent and no word. A drag on L/R moves the row between L and R.",
               "Each row has 16 steps. A tap turns a step on or off.",
               "The arrows beside DRUM KIT load the next or previous kit. LIVE turns those arrows off."
@@ -2820,6 +2826,7 @@
                   "The Save button next to Random saves the samples together with the beats into the current kit.",
                   "The sample picker shows each channel only its own samples, split into Factory and Exclusive.",
                   "Channels Extra 1 to 3 are now called FX 1 to 3 and share one bank.",
+                  "Channel 8 is now called Voice and holds only vocals: 40 in Factory, 18 in Exclusive and 33 in the new Authentic category. Total 91.",
                   "The arrows on the drum channels turn gold for one second after a tap.",
                   "Whoever buys Pro also gets the Exclusive pack free, at no extra cost and with no download button."
                 ]
@@ -2842,6 +2849,9 @@
                   "A duplicate name on import gets a new name instead of overwriting the existing one."
                 ]
               }
+            ],
+            "tickerMore": [
+              "Coming in the next update: channel 8 is now called Voice and holds only vocals, 91 samples"
             ]
           },
           {
@@ -3337,7 +3347,8 @@
               "Удерживайте 1/4, 1/8, 1/16 или 1/32, чтобы повторять ударные в этом делении, пока держите. Отпустите, и повтор остановится. Нажатие на них ничего не делает. Удерживайте STOP. Нажатие на него ничего не делает.",
               "Нажатие на номер паттерна, от 1 до 8, загружает этот паттерн, включая темп, swing, громкость и лево и право. Долгое нажатие открывает Pattern repeats.",
               "Нажатие на Save, рядом с Random, сохраняет текущие ударные в паттерн, на котором вы находитесь, записывает текущие BPM, Swing и громкость дорожек во все 8 паттернов и сохраняет набор со звуком, выбранным на каждом ряду. Нажатие на Random строит новый паттерн в выбранном жанре.",
-              "Ряды называются Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 и Voice. Нажатие на имя ряда открывает список звуков для этого ряда из всех наборов Factory, а также из наборов Exclusive, когда они есть в приложении. Каждый ряд показывает только свой вид звуков: FX 1 до FX 3 делят один список, а Voice показывает только вокал. Нажатие на звук ставит его на ряд, и список остаётся открытым. Пока играют ударные, его слышно на следующем ударе. Когда они остановлены, он звучит один раз. Стрелки ◀ и ▶ рядом с Load переходят к предыдущему или следующему звуку. Нажатие на Load выбирает аудиофайл с телефона. LIVE выключает Load. Стрелки ◀ и ▶ загораются золотым на одну секунду после нажатия.",
+              "Ряды называются Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 и Voice. Нажатие на имя ряда открывает список звуков для этого ряда из всех наборов Factory, из наборов Exclusive, когда они есть в приложении, а для Voice ещё и из Authentic. Каждый ряд показывает только свой вид звуков: FX 1 до FX 3 делят один список, а Voice показывает только вокал. Нажатие на звук ставит его на ряд, и список остаётся открытым. Пока играют ударные, его слышно на следующем ударе. Когда они остановлены, он звучит один раз. Стрелки ◀ и ▶ рядом с Load переходят к предыдущему или следующему звуку. Нажатие на Load выбирает аудиофайл с телефона. LIVE выключает Load. Стрелки ◀ и ▶ загораются золотым на одну секунду после нажатия.",
+              "Ряд 8 теперь называется Voice и хранит только вокал. В его списке звуков 40 вокалов в Factory, 18 в Exclusive и 33 в новой категории Authentic, всего 91.",
               "Перетаскивание слайдера ряда задаёт громкость ряда. Он показывает процент и без слова. Перетаскивание L/R двигает ряд между L и R.",
               "В каждом ряду 16 шагов. Нажатие включает или выключает шаг.",
               "Стрелки рядом с DRUM KIT загружают следующий или предыдущий набор. LIVE выключает эти стрелки."
@@ -4277,6 +4288,7 @@
                   "Кнопка Save рядом с Random сохраняет сэмплы вместе с битами в текущий набор.",
                   "Выбор сэмплов показывает каждому каналу только его сэмплы, разделённые на Factory и Exclusive.",
                   "Каналы Extra 1 до 3 теперь называются FX 1 до 3 и делят один банк.",
+                  "Канал 8 теперь называется Voice и хранит только вокал: 40 в Factory, 18 в Exclusive и 33 в новой категории Authentic. Всего 91.",
                   "Стрелки на каналах ударных загораются золотым на одну секунду после нажатия.",
                   "Кто покупает Pro, получает и пакет Exclusive бесплатно, без доплаты и без кнопки загрузки."
                 ]
@@ -4299,6 +4311,9 @@
                   "Сессия с повторяющимся именем при импорте получает новое имя и не перезаписывает существующую."
                 ]
               }
+            ],
+            "tickerMore": [
+              "В следующем обновлении: канал 8 теперь называется Voice и хранит только вокал, 91 сэмпл"
             ]
           },
           {
@@ -4794,7 +4809,8 @@
               "أمسك 1/4 أو 1/8 أو 1/16 أو 1/32 لتكرار الطبول على ذلك التقسيم ما دمت ممسكاً. اترك، فيتوقف التكرار. الضغط عليها لا يفعل شيئاً. أمسك STOP. الضغط عليه لا يفعل شيئاً.",
               "الضغط على رقم نمط، من 1 إلى 8، يحمّل ذلك النمط، بما فيه الإيقاع وswing والحجم واليسار واليمين. الضغط المطوّل يفتح Pattern repeats.",
               "الضغط على Save، بجانب Random، يحفظ الطبول الحالية في النمط الذي أنت عليه، ويكتب BPM وSwing وحجم الصفوف الحالية في الأنماط الثمانية كلها، ويحفظ الطقم مع الصوت المختار في كل صف. الضغط على Random يبني نمطاً جديداً في النوع المختار.",
-              "الصفوف هي Kick وSnare وHi-Hat وPerc وFX 1 وFX 2 وFX 3 وVoice. الضغط على اسم صف يفتح قائمة أصوات لذلك الصف من كل أطقم Factory، ومن أطقم Exclusive عندما تكون في التطبيق. كل صف يعرض نوع أصواته فقط: FX 1 حتى FX 3 تتشارك قائمة واحدة، وVoice يعرض الغناء فقط. الضغط على صوت يضعه على الصف وتبقى القائمة مفتوحة. أثناء عزف الطبول تسمعه في الضربة التالية. وعندما تكون متوقفة يُعزف مرة واحدة. السهمان ◀ و▶ بجانب Load ينتقلان إلى الصوت السابق أو التالي. الضغط على Load يختار ملف صوت من الهاتف. LIVE يوقف Load. السهمان ◀ و▶ يصبحان ذهبيين لثانية واحدة بعد الضغط.",
+              "الصفوف هي Kick وSnare وHi-Hat وPerc وFX 1 وFX 2 وFX 3 وVoice. الضغط على اسم صف يفتح قائمة أصوات لذلك الصف من كل أطقم Factory، ومن أطقم Exclusive عندما تكون في التطبيق، ولـ Voice أيضاً من Authentic. كل صف يعرض نوع أصواته فقط: FX 1 حتى FX 3 تتشارك قائمة واحدة، وVoice يعرض الغناء فقط. الضغط على صوت يضعه على الصف وتبقى القائمة مفتوحة. أثناء عزف الطبول تسمعه في الضربة التالية. وعندما تكون متوقفة يُعزف مرة واحدة. السهمان ◀ و▶ بجانب Load ينتقلان إلى الصوت السابق أو التالي. الضغط على Load يختار ملف صوت من الهاتف. LIVE يوقف Load. السهمان ◀ و▶ يصبحان ذهبيين لثانية واحدة بعد الضغط.",
+              "الصف الثامن اسمه الآن Voice ويحمل الغناء فقط. في قائمة أصواته 40 عيّنة غناء في Factory و18 في Exclusive و33 في الفئة الجديدة Authentic، 91 في المجموع.",
               "السحب على منزلق الصف يحدد حجم الصف. يعرض نسبة ومن دون كلمة. السحب على L/R يحرّك الصف بين L وR.",
               "لكل صف 16 خطوة. الضغط يشغّل خطوة أو يوقفها.",
               "الأسهم بجانب DRUM KIT تحمّل الطقم التالي أو السابق. LIVE يوقف هذه الأسهم."
@@ -5734,6 +5750,7 @@
                   "زر Save بجانب Random يحفظ العينات مع الإيقاعات في الطقم الحالي.",
                   "منتقي العينات يعرض لكل قناة عيناتها فقط، مقسّمة إلى Factory وExclusive.",
                   "القنوات Extra 1 حتى 3 اسمها الآن FX 1 حتى 3 وتتشارك بنكاً واحداً.",
+                  "القناة 8 اسمها الآن Voice وتحمل الغناء فقط: 40 في Factory و18 في Exclusive و33 في الفئة الجديدة Authentic. المجموع 91.",
                   "الأسهم على قنوات الطبول تصبح ذهبية لثانية واحدة بعد الضغط.",
                   "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، دون تكلفة إضافية ودون زر تنزيل."
                 ]
@@ -5756,6 +5773,9 @@
                   "الاسم المكرر عند الاستيراد يحصل على اسم جديد بدل الكتابة فوق الموجود."
                 ]
               }
+            ],
+            "tickerMore": [
+              "في التحديث القادم: القناة 8 اسمها الآن Voice وتحمل الغناء فقط، 91 عيّنة"
             ]
           },
           {

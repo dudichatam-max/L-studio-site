@@ -8,7 +8,10 @@ export type UpdateItem = {
   status: UpdateStatus;
   title: string;
   summary: string;
+  /** Ticker line. Falls back to `title` when missing. */
   ticker?: string;
+  /** Extra ticker lines for the same item, each linking to the item. */
+  tickerMore?: string[];
   detail?: string;
   dateLabel?: string;
   /** One screenshot. Site-root path such as `/assets/updates/drum-fx.jpg`. */
