@@ -122,3 +122,9 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Guide: `sound-screen-110`, `sound-fx-window-110`, `freq-window-110` (2-decimal Hz), `drum-screen-110` from `ui-1.10-20261014/`.
 - Homepage windows menu: Sound `play/110-04-sound`, Pad `play/110-05-pad-dual` (dual keyboard with +).
 - Hint above Looper/Mic channels: `Tap the visualizer to edit` (`hint_tap_visualizer_edit`). Tutorial is 68 steps (was 63).
+
+## 1.10 extension (app tip 12cdde6)
+- Drum screen: PLAY/STOP, REDO (undo stack), +4 (Pro), SAMPLES panel with arrows next to DRUM KIT, CLEAR replaces the drum Save, auto-save, empty rhythm copies the one you came from.
+- New guide section drum/drum-sound: 6 knobs GAIN 0..+18 dB, SQUEEZE 0..100, ATTACK 0..200 ms, SUSTAIN 0..100%, RELEASE 5..2000 ms, REVERB 0..100%, per row per rhythm, live waveform. No image yet (see /workspace/site-1.10/missing-images.md).
+- Pattern repeats: COPY/PASTE (paste keeps the target repeat count, BPM and swing). Drum styles: page banners. Scales: SCALES title. Waves: tap toggles, one always on (no long-press).
+- Updates item: Drums bullets rewritten, new Look section, a tickerMore line and a summary sentence. Tablet support: not in code, not mentioned.

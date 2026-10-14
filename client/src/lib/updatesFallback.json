@@ -21,7 +21,7 @@
         "status": "in_progress",
         "title": "Coming in the next update: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
         "ticker": "Coming in the next update: Loop Editor and Mic Editor, with Trim, Loop and 8 drum-rhythm boxes",
-        "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save.",
+        "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows.",
         "href": "/guide",
         "cta": "Open the guide",
         "images": [
@@ -54,13 +54,13 @@
             "title": "Drums",
             "bullets": [
               "The Swap button is now called Load.",
-              "The Save button next to Random saves the samples together with the beats into the current kit.",
-              "Each rhythm keeps its own samples, volumes and left and right. Save, and switching rhythms, write them into the current kit.",
-              "The sample picker shows each channel only its own samples, split into Factory and Exclusive.",
-              "Channels Extra 1 to 3 are now called FX 1 to 3 and share one bank.",
-              "Channel 8 is now called Voice and holds only vocals: 40 in Factory, 18 in Exclusive and 33 in the new Authentic category. Total 91.",
-              "The arrows on the drum channels turn gold for one second after a tap.",
-              "Whoever buys Pro also gets the Exclusive pack free, at no extra cost and with no download button."
+              "CLEAR, next to RANDOM, clears the steps of the current rhythm. It replaces the drum Save button. Everything is saved automatically.",
+              "Each rhythm keeps its own samples, sound knobs, volumes and left and right. Switching rhythms writes them into the current kit.",
+              "An empty rhythm starts as a copy of the rhythm you came from.",
+              "Six sound knobs per row in each rhythm: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE and REVERB, with a waveform that follows them.",
+              "COPY and PASTE a rhythm from the long-press window.",
+              "One REDO key steps back through drum changes.",
+              "SAMPLES with arrows, next to DRUM KIT, steps the last row's sample."
             ]
           },
           {
@@ -86,10 +86,20 @@
               "New button New session, first in Settings. It asks for a name and clears only the looper and mic channels. Kits, beats and presets stay.",
               "A duplicate name on import gets a new name instead of overwriting the existing one."
             ]
+          },
+          {
+            "title": "Look",
+            "bullets": [
+              "New hardware-style keys on Drum, Sound and Pad.",
+              "New SCALES, PATTERN REPEATS and DRUM STYLES windows. Each drum styles page has its own banner.",
+              "A tap turns a wave on or off. One wave always stays on.",
+              "The Loop and Mic editor waveforms follow the knobs live."
+            ]
           }
         ],
         "tickerMore": [
-          "Coming in the next update: channel 8 is now called Voice and holds only vocals, 91 samples"
+          "Coming in the next update: channel 8 is now called Voice and holds only vocals, 91 samples",
+          "Coming in the next update: six sound knobs on every drum row, Copy and Paste of rhythms, and new hardware-style keys"
         ]
       },
       {
@@ -178,7 +188,7 @@
         "status": "in_progress",
         "title": "מגיע בעדכון הבא: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
         "ticker": "מגיע בעדכון הבא: Loop Editor ו-Mic Editor, עם Trim, לופ ו-8 תיבות מקצב תופים",
-        "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית.",
+        "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
         "images": [
@@ -211,13 +221,13 @@
             "title": "תופים",
             "bullets": [
               "הכפתור Swap נקרא עכשיו Load.",
-              "כפתור Save שליד Random שומר את הסאמפלים יחד עם הביטים בקיט הנוכחי.",
-              "כל מקצב שומר את הסאמפלים, הווליום וימין ושמאל שלו. Save, ומעבר בין מקצבים, כותבים אותם לקיט הנוכחי.",
-              "בוחר הסאמפלים מציג לכל ערוץ רק את הסאמפלים שלו, מחולקים ל-Factory ול-Exclusive.",
-              "הערוצים Extra 1 עד 3 נקראים עכשיו FX 1 עד 3 וחולקים בנק אחד.",
-              "ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים: 40 ב-Factory, 18 ב-Exclusive ו-33 בקטגוריה החדשה Authentic. סך הכל 91.",
-              "החצים בערוצי התופים נצבעים בזהב לשנייה אחת אחרי הקשה.",
-              "מי שקונה Pro מקבל גם את החבילה האקסקלוסיבית בחינם, בלי עלות נוספת ובלי כפתור הורדה."
+              "CLEAR, ליד RANDOM, מנקה את הצעדים של הקצב הנוכחי. הוא מחליף את כפתור Save של התופים. הכול נשמר אוטומטית.",
+              "כל קצב שומר סאמפלים, כפתורי סאונד, עוצמות ושמאל וימין משלו. מעבר בין קצבים כותב אותם לקיט הנוכחי.",
+              "קצב ריק מתחיל כהעתק של הקצב שבאתם ממנו.",
+              "שישה כפתורי סאונד לכל שורה בכל קצב: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE ו-REVERB, עם צורת גל שעוקבת אחריהם.",
+              "COPY ו-PASTE של קצב מחלון הלחיצה הארוכה.",
+              "מקש REDO אחד חוזר אחורה בשינויי התופים.",
+              "SAMPLES עם חצים, ליד DRUM KIT, מחליף את הסאמפל של השורה האחרונה."
             ]
           },
           {
@@ -243,10 +253,20 @@
               "כפתור חדש New session, ראשון ב-Settings. הוא מבקש שם ומנקה רק את ערוצי הלופר והמיקרופון. הקיטים, הביטים והפריסטים נשארים.",
               "שם כפול בייבוא מקבל שם חדש, במקום לכתוב על הקיים."
             ]
+          },
+          {
+            "title": "מראה",
+            "bullets": [
+              "מקשים חדשים בסגנון חומרה ב-Drum, Sound ו-Pad.",
+              "חלונות SCALES, PATTERN REPEATS ו-DRUM STYLES חדשים. לכל עמוד סגנונות תופים יש באנר משלו.",
+              "הקשה מדליקה או מכבה גל. גל אחד תמיד נשאר דולק.",
+              "צורות הגל בעורכי Loop ו-Mic עוקבות אחרי הכפתורים בזמן אמת."
+            ]
           }
         ],
         "tickerMore": [
-          "מגיע בעדכון הבא: ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים, 91 סאמפלים"
+          "מגיע בעדכון הבא: ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים, 91 סאמפלים",
+          "בעדכון הבא: שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, ומקשים חדשים בסגנון חומרה"
         ]
       },
       {
@@ -335,7 +355,7 @@
         "status": "in_progress",
         "title": "В следующем обновлении: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
         "ticker": "В следующем обновлении: Loop Editor и Mic Editor, с Trim, лупом и 8 ячейками ритма ударных",
-        "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением.",
+        "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле.",
         "href": "/guide",
         "cta": "Открыть руководство",
         "images": [
@@ -368,13 +388,13 @@
             "title": "Ударные",
             "bullets": [
               "Кнопка Swap теперь называется Load.",
-              "Кнопка Save рядом с Random сохраняет сэмплы вместе с битами в текущий набор.",
-              "Каждый ритм хранит свои сэмплы, громкость и лево и право. Save и смена ритма записывают их в текущий набор.",
-              "Выбор сэмплов показывает каждому каналу только его сэмплы, разделённые на Factory и Exclusive.",
-              "Каналы Extra 1 до 3 теперь называются FX 1 до 3 и делят один банк.",
-              "Канал 8 теперь называется Voice и хранит только вокал: 40 в Factory, 18 в Exclusive и 33 в новой категории Authentic. Всего 91.",
-              "Стрелки на каналах ударных загораются золотым на одну секунду после нажатия.",
-              "Кто покупает Pro, получает и пакет Exclusive бесплатно, без доплаты и без кнопки загрузки."
+              "CLEAR, рядом с RANDOM, очищает шаги текущего ритма. Она заменяет кнопку Save ударных. Всё сохраняется автоматически.",
+              "Каждый ритм хранит свои сэмплы, ручки звука, громкости и панораму. Переход между ритмами записывает их в текущий кит.",
+              "Пустой ритм начинается как копия ритма, с которого вы пришли.",
+              "Шесть ручек звука на каждый ряд в каждом ритме: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE и REVERB, с формой волны, которая следует за ними.",
+              "COPY и PASTE ритма в окне долгого нажатия.",
+              "Одна клавиша REDO возвращает назад изменения ударных.",
+              "SAMPLES со стрелками, рядом с DRUM KIT, переключает сэмпл последнего ряда."
             ]
           },
           {
@@ -400,10 +420,20 @@
               "Новая кнопка New session, первая в Settings. Она спрашивает имя и очищает только каналы лупера и микрофона. Наборы, биты и пресеты остаются.",
               "Сессия с повторяющимся именем при импорте получает новое имя и не перезаписывает существующую."
             ]
+          },
+          {
+            "title": "Внешний вид",
+            "bullets": [
+              "Новые клавиши в аппаратном стиле на Drum, Sound и Pad.",
+              "Новые окна SCALES, PATTERN REPEATS и DRUM STYLES. У каждой страницы стилей ударных свой баннер.",
+              "Нажатие включает или выключает волну. Одна волна всегда остаётся включённой.",
+              "Формы волны в редакторах Loop и Mic следуют за ручками вживую."
+            ]
           }
         ],
         "tickerMore": [
-          "В следующем обновлении: канал 8 теперь называется Voice и хранит только вокал, 91 сэмпл"
+          "В следующем обновлении: канал 8 теперь называется Voice и хранит только вокал, 91 сэмпл",
+          "В следующем обновлении: шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов и новые клавиши в аппаратном стиле"
         ]
       },
       {
@@ -492,7 +522,7 @@
         "status": "in_progress",
         "title": "في التحديث القادم: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
         "ticker": "في التحديث القادم: Loop Editor وMic Editor، مع Trim واللوب و8 مربعات إيقاع طبول",
-        "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي.",
+        "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة.",
         "href": "/guide",
         "cta": "افتح الدليل",
         "images": [
@@ -525,13 +555,13 @@
             "title": "الطبول",
             "bullets": [
               "زر Swap اسمه الآن Load.",
-              "زر Save بجانب Random يحفظ العينات مع الإيقاعات في الطقم الحالي.",
-              "كل إيقاع يحتفظ بعيّناته وحجمه ويساره ويمينه. Save والانتقال بين الإيقاعات يكتبانها في الطقم الحالي.",
-              "منتقي العينات يعرض لكل قناة عيناتها فقط، مقسّمة إلى Factory وExclusive.",
-              "القنوات Extra 1 حتى 3 اسمها الآن FX 1 حتى 3 وتتشارك بنكاً واحداً.",
-              "القناة 8 اسمها الآن Voice وتحمل الغناء فقط: 40 في Factory و18 في Exclusive و33 في الفئة الجديدة Authentic. المجموع 91.",
-              "الأسهم على قنوات الطبول تصبح ذهبية لثانية واحدة بعد الضغط.",
-              "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، دون تكلفة إضافية ودون زر تنزيل."
+              "CLEAR، بجانب RANDOM، يمسح خطوات الإيقاع الحالي. يحل محل زر Save في الطبول. كل شيء يُحفظ تلقائيًا.",
+              "كل إيقاع يحتفظ بعيناته ومقابض الصوت ومستويات الصوت واليسار واليمين. الانتقال بين الإيقاعات يكتبها في الطقم الحالي.",
+              "الإيقاع الفارغ يبدأ كنسخة من الإيقاع الذي جئت منه.",
+              "ستة مقابض صوت لكل صف في كل إيقاع: GAIN وSQUEEZE وATTACK وSUSTAIN وRELEASE وREVERB، مع شكل موجة يتبعها.",
+              "COPY وPASTE للإيقاع من نافذة الضغط المطول.",
+              "مفتاح REDO واحد يعود في تغييرات الطبول.",
+              "SAMPLES بأسهم، بجانب DRUM KIT، يغيّر عينة آخر صف."
             ]
           },
           {
@@ -557,10 +587,20 @@
               "زر جديد New session، الأول في Settings. يطلب اسماً ويمسح قنوات اللوبر والميكروفون فقط. الأطقم والإيقاعات والإعدادات تبقى.",
               "الاسم المكرر عند الاستيراد يحصل على اسم جديد بدل الكتابة فوق الموجود."
             ]
+          },
+          {
+            "title": "المظهر",
+            "bullets": [
+              "مفاتيح جديدة بنمط الأجهزة في Drum وSound وPad.",
+              "نوافذ SCALES وPATTERN REPEATS وDRUM STYLES جديدة. لكل صفحة أنماط طبول لافتة خاصة بها.",
+              "النقر يشغّل الموجة أو يطفئها. تبقى موجة واحدة مضاءة دائمًا.",
+              "أشكال الموجة في محرري Loop وMic تتبع المقابض مباشرة."
+            ]
           }
         ],
         "tickerMore": [
-          "في التحديث القادم: القناة 8 اسمها الآن Voice وتحمل الغناء فقط، 91 عيّنة"
+          "في التحديث القادم: القناة 8 اسمها الآن Voice وتحمل الغناء فقط، 91 عيّنة",
+          "في التحديث القادم: ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، ومفاتيح جديدة بنمط الأجهزة"
         ]
       },
       {

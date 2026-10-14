@@ -279,7 +279,7 @@
             "title": "Sound",
             "body": [
               "הקשה על Sound פותחת את המסך הזה.",
-              "Sine, Square, Triangle, Saw, ו-Noise נמצאים מתחת לסקופים. על כל כפתור יש אייקון של הגל, וגל דולק נצבע בזהב. הקשה מנגנת רק את הגל הזה. לחיצה ארוכה מדליקה או מכבה את הגל ומשאירה את האחרים דולקים, כך שקליד אחד יכול לנגן כמה גלים יחד. שתי המקלדות מנגנות את הגלים הדולקים. המסך מתחיל על Saw.",
+              "Sine, Square, Triangle, Saw ו-Noise נמצאים מתחת לסקופים. על כל כפתור יש סמל של הגל שלו, וגל דולק נצבע בזהב. הקשה מדליקה או מכבה גל. הקישו על גלים נוספים כדי להוסיף או להסיר אותם, כך שכמה גלים נשמעים יחד. גל אחד תמיד נשאר דולק. שתי המקלדות מנגנות את הגלים הדולקים. המסך נפתח על Saw.",
               "הקשה על Detune מדליקה או מכבה את detune. הקשה על RIP, FUZZ, PHAZ, או PIANO מדליקה או מכבה את זה.",
               "הקשה על FX פותחת את Sound FX. FX נצבע בזהב כשאפקט דולק.",
               "החצים ליד PRESET טוענים את הפריסט השמור הבא או הקודם. אם אין שמורים, הטלפון אומר No saved presets.",
@@ -375,7 +375,8 @@
                 "id": "key",
                 "title": "Key",
                 "body": [
-                  "הקשה על Key פותחת את Scales. הקשה על OFF מנקה את הסולם. Major מציג מ-C maj עד B maj. Minor מציג מ-C min עד B min. הקשה על שם סולם בוחרת אותו. הקשה על Close סוגרת את החלון."
+                  "הקשה על Key פותחת את Scales. הקשה על OFF מנקה את הסולם. Major מציג מ-C maj עד B maj. Minor מציג מ-C min עד B min. הקשה על שם סולם בוחרת אותו. הקשה על Close סוגרת את החלון.",
+                  "כותרת החלון היא SCALES, באותו סגנון מקשים כמו שאר החלונות של 1.10."
                 ],
                 "media": "assets/guide/scales-window.jpg"
               },
@@ -390,7 +391,7 @@
                   "הקשה על Save as פותחת את Save Console. Save מאשר. Cancel סוגר. סשן שמור שומר גם את ה-Sound FX ואת השמות והצבעים של עמודי הלופ. הוא שומר גם את פריסטי התדרים, בחירות הסמפלים בתופים, בנקי התופים Factory ו-Exclusive, אילו גלים דולקים, תצוגת שתי המקלדות, יעדי הפד והמילים. עם Export all ו-Import all כל סביבת העבודה עוברת למכשיר אחר.",
                   "הקשה על Load פותחת את Load Console. אם אין שמור, כתוב No saved sessions. Export all ו-Import all נמצאים שם. Delete שואל לפני שהוא מוחק. לפני שסשן נטען, האפליקציה שואלת קודם ושומרת גיבוי אוטומטי של הפריסטים וקיטי התופים הנוכחיים. ה-Monitor של המיק כבוי אחרי טעינה. סשן מיובא עם שם שכבר קיים בטלפון מקבל שם חדש במקום לדרוס.",
                   "הקשה על Show tutorial מתחילה את הסיור מחדש.",
-                  "הסיור עודכן ל-1.10. יש בו 68 שלבים, והוא מלמד עכשיו את ההקשה והלחיצה הארוכה על גל, שמירת פריסט בלחיצה ארוכה, Tune frequencies, המקלדת השנייה ב-Pad, Mic Editor ו-Loop Editor, ערוצי התופים והסאמפלים לכל מקצב, Save והשמירה האוטומטית בתופים, ו-New session. פותחים אותו מ-Settings.",
+                  "המדריך עודכן ל-1.10. יש בו 68 שלבים, והוא מכסה עכשיו את הקשת הגל, שמירת פריסט בלחיצה ארוכה, Tune frequencies, המקלדת השנייה ב-Pad, Mic Editor ו-Loop Editor, ערוצי התופים והסאמפלים לכל קצב, Clear בתופים ושמירה אוטומטית, ו-New session. פותחים אותו מ-Settings.",
                   "הקשה על Factory 64 שואלת Restore Factory 64? Restore מחליף את פריסטי Factory 64, את כל 8 חבילות ה-Style, ואת כל 11 חבילות ה-Exclusive, ואז טוען את מקום 1 בעמוד 1. Cancel סוגר את השאלה.",
                   "הקשה על Benchmark, מתחת ל-Factory 64, פותחת את כלי בדיקת האודיו.",
                   "ה-X ו-Close סוגרים את Settings."
@@ -434,23 +435,35 @@
             "title": "Drum",
             "body": [
               "הקשה על Drum פותחת את המסך הזה. הכותרת אומרת DRUM MACHINE.",
-              "הקשה על Play Drums מתחילה את התופים מההתחלה. אחר כך כתוב Stop Drums. הקשה נוספת עוצרת ומחזירה להתחלה.",
-              "הקשה על + מראה את FX 1, FX 2, FX 3 ו-Voice ומסתירה את המקלדת. הסימון אז מראה מינוס. הקשה נוספת מסתירה את השורות ומחזירה את המקלדת.",
+              "הקשה על PLAY מתחילה את התופים מההתחלה. התווית מתחלפת ל-STOP. הקשה נוספת עוצרת וחוזרת להתחלה.",
+              "ב-Pro, הקשה על +4 מציגה את FX 1, FX 2, FX 3 ו-Voice ומסתירה את המקלדת. המקש מתחלף ל-‎-4. הקשה נוספת מסתירה את השורות ומחזירה את המקלדת.",
               "הקשה על Drum FX פותחת את Drum FX. כשפריסט דולק, כתוב FX ומספר.",
               "הקשה על Style פותחת את Drum styles. לחיצה ארוכה על Style פותחת את Random genre. ההערה שם אומרת Selection affects Random. הקשה על Rock, Trance, Rap, או Techno שומרת את הז'אנר וסוגרת את החלון. Cancel סוגר ומשאיר את הז'אנר כמו שהיה. Random במסך הזה משתמש בז'אנר, והוא מתחיל כ-Rock. החלון הזה לא בונה פטרן בעצמו.",
               "גרירה על Drum Vol קובעת את ווליום התופים מ-0% עד 100%. הקשה על המספר נותנת להקליד ערך. LIVE לא פותחת את התיבה.",
               "גרירה על Swing קובעת swing מ-0% עד 100%. גרירה על BPM קובעת את הטמפו מ-60 עד 200. BPM, Swing, והווליום של השורות פועלים בזמן אמת: שינוי שעושים בזמן שהתופים מנגנים נשאר גם כשהפטרן הבא מתחיל.",
               "מחזיקים 1/4, 1/8, 1/16, או 1/32 כדי לחזור על התופים בחלוקה הזאת כל עוד מחזיקים. עוזבים, והחזרה נעצרת. הקשה עליהם לא עושה כלום. מחזיקים STOP. הקשה עליו לא עושה כלום.",
-              "הקשה על מספר מקצב, 1 עד 8, טוענת את המקצב, כולל הטמפו, ה-swing, הסמפל בכל שורה, הווליום, וימין ושמאל. מעבר למקצב אחר שומר את זה שעוזבים לתוך הקיט הנוכחי. הקשה על Save, ליד Random, גם שומרת את המקצב הנוכחי וכותבת על הקיט הנוכחי. לחיצה ארוכה על מספר מקצב פותחת את Pattern repeats.",
-              "הקשה על Save, ליד Random, שומרת את התופים הנוכחיים לתוך הפטרן שעליו אתם, כותבת את ה-BPM, ה-Swing והווליום של השורות לכל 8 הפטרנים, ושומרת את הקיט עם הסאונד שנבחר בכל שורה. הקשה על Random בונה פטרן חדש בז'אנר שנבחר.",
+              "הקשה על מספר קצב, 1 עד 8, טוענת את הקצב, כולל הטמפו, הסווינג, הסאמפל בכל שורה, שישה כפתורי הסאונד, העוצמות ושמאל וימין. מעבר לקצב אחר שומר את הקצב שעזבתם לתוך הקיט הנוכחי. אם הקצב שעוברים אליו ריק, הוא מתחיל כהעתק מלא של הקצב שבאתם ממנו, ו-REDO יכול לבטל את ההעתקה. לחיצה ארוכה על מספר קצב פותחת את Pattern repeats.",
+              "הקשה על CLEAR, ליד RANDOM, מנקה את הצעדים של הקצב הנוכחי ושומרת אותו. הסאמפלים, העוצמות ושמאל וימין נשארים. REDO יכול להחזיר את הצעדים. הקשה על RANDOM בונה תבנית חדשה בז'אנר שנבחר.",
               "השורות הן Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 ו-Voice. הקשה על שם שורה פותחת רשימת סאונדים לשורה הזאת, מכל קיטי ה-Factory, מקיטי ה-Exclusive כשהם באפליקציה, וב-Voice גם מ-Authentic. כל שורה מציגה רק סאונדים מהסוג שלה: FX 1 עד FX 3 חולקים רשימה אחת, ו-Voice מציג רק שירה. הקשה על סאונד שמה אותו בשורה והרשימה נשארת פתוחה. כשהתופים מנגנים שומעים אותו במכה הבאה. כשהם עצורים הוא מתנגן פעם אחת. החצים ◀ ו-▶ ליד Load עוברים לסאונד הקודם או הבא. הקשה על Load בוחרת קובץ שמע מהטלפון. LIVE מכבה את Load. החצים ◀ ו-▶ נצבעים בזהב לשנייה אחת אחרי הקשה.",
               "השורה השמינית נקראת עכשיו Voice ומחזיקה רק ווקאלים. ברשימת הסאונדים שלה יש 40 ווקאלים ב-Factory, 18 ב-Exclusive ו-33 בקטגוריה החדשה Authentic, 91 בסך הכל.",
               "גרירה על הסליידר של השורה קובעת את הווליום שלה. הוא מראה אחוז ובלי מילה. גרירה על L/R מזיזה את השורה בין L ל-R.",
               "לכל שורה יש 16 צעדים. הקשה מדליקה או מכבה צעד.",
-              "החצים ליד DRUM KIT טוענים את הקיט הבא או הקודם. LIVE מכבה את החצים האלה."
+              "החצים ליד DRUM KIT טוענים את הקיט הבא או הקודם. LIVE מכבה את החצים האלה.",
+              "REDO, בשורה העליונה של התופים, חוזר אחורה בשינויים שעשיתם בתופים: צעדים, סאמפלים, עוצמות, שמאל וימין, כפתורי הסאונד והקצב. כל הקשה חוזרת צעד אחד.",
+              "SAMPLES נמצא ליד DRUM KIT ומציג את הסאמפל של השורה האחרונה שהשתמשתם בה. החצים שלו מעבירים את השורה לסאמפל הקודם או הבא.",
+              "המקשים במסכי Drum, Sound ו-Pad נראים כמו מקשי חומרה, עם תוויות באותיות גדולות. מקש זהב דולק."
             ],
             "media": "assets/guide/drum-screen-110.jpg",
             "sections": [
+              {
+                "id": "drum-sound",
+                "title": "כפתורי סאונד לתופים",
+                "body": [
+                  "ברשימת הסאונדים של כל שורה יש צורת גל של הסאמפל הנוכחי ומתחתיה שישה כפתורים: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE ו-REVERB.",
+                  "GAIN מוסיף 0 עד ‎+18 dB. SQUEEZE נע בין 0 ל-100 ומשטיח את הדינמיקה. ATTACK מכניס כל מכה בהדרגה במשך 0 עד 200 ms. SUSTAIN קובע כמה מהסאמפל מוחזק, מ-0% עד 100%. RELEASE מוציא אותו בהדרגה במשך 5 עד 2000 ms ונשמע רק כש-SUSTAIN מתחת ל-100%. REVERB שולח 0% עד 100% לריוורב של התופים.",
+                  "צורת הגל עוקבת אחרי הכפתורים בזמן שמסובבים אותם. כל שורה בכל קצב שומרת סאמפל וכפתורים משלה, והם נשמרים עם הקצב בקיט."
+                ]
+              },
               {
                 "id": "drum-fx",
                 "title": "Drum FX",
@@ -470,7 +483,8 @@
                   "הקשה על Switch to exclusive עוברת בין עמודי ה-factory לעמודי Exclusive.",
                   "יש 8 עמודי factory ו-11 עמודי Exclusive. לכל עמוד יש 8 קיטים. הקשה על מספר עמוד רק מראה את העמוד. הקיט נטען בהקשה על Load.",
                   "הקשה על Load טוענת את הקיט. LIVE מכבה את Load. הקשה על Save שומרת את הקיט הנוכחי תחת השם. הקשה על Edit משנה את שם הקיט.",
-                  "הקשה על Edit page name משנה את שם העמוד. הקשה על Import בוחרת קובץ סגנון. הקשה על Export מבקשת מהטלפון איפה לשמור את העמוד."
+                  "הקשה על Edit page name משנה את שם העמוד. הקשה על Import בוחרת קובץ סגנון. הקשה על Export מבקשת מהטלפון איפה לשמור את העמוד.",
+                  "הכותרת היא DRUM STYLES (8 STYLES), או EXCLUSIVE STYLES (8 STYLES) בעמודי Exclusive. מתחת למספרי העמודים, לכל עמוד יש באנר משלו. 8 הקיטים נכנסים בלי גלילה."
                 ],
                 "media": "assets/guide/drum-styles-window.jpg"
               },
@@ -479,7 +493,8 @@
                 "title": "Pattern repeats",
                 "body": [
                   "לחיצה ארוכה על מספר פטרן פותחת את Pattern repeats. השורה מתחת לכותרת אומרת: How many times the pattern repeats before the next.",
-                  "הקשה על 1 עד 10 קובעת את המספר. הקשה על סימן האינסוף משאירה את החזרה. הקשה על Default מנקה את החזרה. הקשה על Close סוגרת את החלון."
+                  "הקשה על 1 עד 10 קובעת את המספר. הקשה על סימן האינסוף משאירה את החזרה. הקשה על Default מנקה את החזרה. הקשה על Close סוגרת את החלון.",
+                  "מתחת ל-RHYTHM יש COPY ו-PASTE. COPY מעתיק את הקצב הנוכחי. PASTE מדביק אותו לקצב שאתם עליו, והקצב הזה שומר את מספר החזרות, ה-BPM והסווינג שלו. PASTE כבוי עד שמעתיקים."
                 ],
                 "media": "assets/guide/pattern-repeats.jpg"
               }
@@ -524,6 +539,7 @@
                   "Trim קובע איזה חלק מההקלטה נשאר. Loop קובע איפה הלופ מתחיל ונגמר.",
                   "Drum rhythms: 8 תיבות, אחת לכל מקצב תופים. הקשה מדליקה או מכבה תיבה. לחיצה ארוכה פותחת את Pattern repeats לתיבה (1 עד 10 או אינסוף). כשהתופים מנגנים, הערוץ הולך אחרי המקצבים האלה. בלי תיבות דולקות, הערוץ ממשיך בלופ לבד.",
                   "LOW, MID ו-HIGH נעים מ-30- dB עד 30+ dB. MID HZ מזיז את הפס האמצעי מ-100 Hz עד 8 kHz. GAIN ו-SQUEEZE נעים מ-0 עד 100.",
+                  "צורת הגל מתעדכנת בזמן אמת כשמסובבים את הכפתורים, כך שרואים את השינוי בזמן ששומעים אותו.",
                   "Play מנגן את הערוץ. Reset מחזיר הכל לערכי ההתחלה. Close יוצא בלי לשמור. Save שומר את השינויים, וחיתוך עם Trim חותך את ההקלטה. Redo יכול להחזיר את ההקלטה מלפני החיתוך.",
                   "הגדרות העורך נשמרות עם סשן הלופ ובפרויקט שמייצאים."
                 ],
@@ -1374,7 +1390,7 @@
             "status": "in_progress",
             "title": "מגיע בעדכון הבא: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
             "ticker": "מגיע בעדכון הבא: Loop Editor ו-Mic Editor, עם Trim, לופ ו-8 תיבות מקצב תופים",
-            "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית.",
+            "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -1407,13 +1423,13 @@
                 "title": "תופים",
                 "bullets": [
                   "הכפתור Swap נקרא עכשיו Load.",
-                  "כפתור Save שליד Random שומר את הסאמפלים יחד עם הביטים בקיט הנוכחי.",
-                  "כל מקצב שומר את הסאמפלים, הווליום וימין ושמאל שלו. Save, ומעבר בין מקצבים, כותבים אותם לקיט הנוכחי.",
-                  "בוחר הסאמפלים מציג לכל ערוץ רק את הסאמפלים שלו, מחולקים ל-Factory ול-Exclusive.",
-                  "הערוצים Extra 1 עד 3 נקראים עכשיו FX 1 עד 3 וחולקים בנק אחד.",
-                  "ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים: 40 ב-Factory, 18 ב-Exclusive ו-33 בקטגוריה החדשה Authentic. סך הכל 91.",
-                  "החצים בערוצי התופים נצבעים בזהב לשנייה אחת אחרי הקשה.",
-                  "מי שקונה Pro מקבל גם את החבילה האקסקלוסיבית בחינם, בלי עלות נוספת ובלי כפתור הורדה."
+                  "CLEAR, ליד RANDOM, מנקה את הצעדים של הקצב הנוכחי. הוא מחליף את כפתור Save של התופים. הכול נשמר אוטומטית.",
+                  "כל קצב שומר סאמפלים, כפתורי סאונד, עוצמות ושמאל וימין משלו. מעבר בין קצבים כותב אותם לקיט הנוכחי.",
+                  "קצב ריק מתחיל כהעתק של הקצב שבאתם ממנו.",
+                  "שישה כפתורי סאונד לכל שורה בכל קצב: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE ו-REVERB, עם צורת גל שעוקבת אחריהם.",
+                  "COPY ו-PASTE של קצב מחלון הלחיצה הארוכה.",
+                  "מקש REDO אחד חוזר אחורה בשינויי התופים.",
+                  "SAMPLES עם חצים, ליד DRUM KIT, מחליף את הסאמפל של השורה האחרונה."
                 ]
               },
               {
@@ -1439,10 +1455,20 @@
                   "כפתור חדש New session, ראשון ב-Settings. הוא מבקש שם ומנקה רק את ערוצי הלופר והמיקרופון. הקיטים, הביטים והפריסטים נשארים.",
                   "שם כפול בייבוא מקבל שם חדש, במקום לכתוב על הקיים."
                 ]
+              },
+              {
+                "title": "מראה",
+                "bullets": [
+                  "מקשים חדשים בסגנון חומרה ב-Drum, Sound ו-Pad.",
+                  "חלונות SCALES, PATTERN REPEATS ו-DRUM STYLES חדשים. לכל עמוד סגנונות תופים יש באנר משלו.",
+                  "הקשה מדליקה או מכבה גל. גל אחד תמיד נשאר דולק.",
+                  "צורות הגל בעורכי Loop ו-Mic עוקבות אחרי הכפתורים בזמן אמת."
+                ]
               }
             ],
             "tickerMore": [
-              "מגיע בעדכון הבא: ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים, 91 סאמפלים"
+              "מגיע בעדכון הבא: ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים, 91 סאמפלים",
+              "בעדכון הבא: שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, ומקשים חדשים בסגנון חומרה"
             ]
           },
           {
@@ -1794,7 +1820,7 @@
             "title": "Sound",
             "body": [
               "A tap on Sound opens this screen.",
-              "Sine, Square, Triangle, Saw, and Noise sit under the scopes. Each button shows an icon of its wave, and a lit wave turns gold. A tap plays only that wave. A long-press turns that wave on or off and leaves the others on, so one key can play several waves at once. Both keyboards play the lit waves. The screen starts on Saw.",
+              "Sine, Square, Triangle, Saw, and Noise sit under the scopes. Each button shows an icon of its wave, and a lit wave turns gold. A tap turns a wave on or off. Tap others to add or remove them, so several waves sound together. One wave always stays on. Both keyboards play the lit waves. The screen starts on Saw.",
               "A tap on Detune turns detune on or off. A tap on RIP, FUZZ, PHAZ, or PIANO turns that one on or off.",
               "A tap on FX opens Sound FX. FX turns gold while an effect is on.",
               "The arrows beside PRESET load the next or previous saved preset. If none are saved, the phone says No saved presets.",
@@ -1890,7 +1916,8 @@
                 "id": "key",
                 "title": "Key",
                 "body": [
-                  "A tap on Key opens Scales. A tap on OFF clears the scale. Major lists C maj through B maj. Minor lists C min through B min. A tap on a scale name selects it. A tap on Close closes the window."
+                  "A tap on Key opens Scales. A tap on OFF clears the scale. Major lists C maj through B maj. Minor lists C min through B min. A tap on a scale name selects it. A tap on Close closes the window.",
+                  "The window title reads SCALES, in the same key style as the other 1.10 windows."
                 ],
                 "media": "assets/guide/scales-window.jpg"
               },
@@ -1905,7 +1932,7 @@
                   "A tap on Save as opens Save Console. Save confirms. Cancel closes it. A saved session also keeps the Sound FX and the loop page names and colors. It also keeps the frequency presets, the drum sample picks, the Factory and Exclusive drum banks, which waves are on, the two-keyboard view, the pad targets, and the lyrics. With Export all and Import all, the whole setup moves to another device.",
                   "A tap on Load opens Load Console. If nothing is saved, it reads No saved sessions. Export all and Import all are in that window. Delete asks before it removes a session. Before a session loads, the app asks first and keeps an automatic backup of the current presets and drum kits. Mic monitor is off after a load. An imported session with the same name as one on the phone gets a new name instead of replacing it.",
                   "A tap on Show tutorial starts the tour again.",
-                  "The tour was updated for 1.10. It has 68 steps and now covers the wave tap and long-press, saving a preset with a long-press, Tune frequencies, the Pad second keyboard, Mic Editor and Loop Editor, the drum channels and per-rhythm samples, drum Save and auto-save, and New session. Open it from Settings.",
+                  "The tour was updated for 1.10. It has 68 steps and now covers the wave tap, saving a preset with a long-press, Tune frequencies, the Pad second keyboard, Mic Editor and Loop Editor, the drum channels and per-rhythm samples, drum Clear and auto-save, and New session. Open it from Settings.",
                   "A tap on Factory 64 asks Restore Factory 64? Restore replaces the Factory 64 presets, all 8 Style drum packs, and all 11 Exclusive packs, then loads slot 1 on page 1. Cancel closes the question.",
                   "A tap on Benchmark, under Factory 64, opens the audio test tool.",
                   "The X and Close close Settings."
@@ -1949,23 +1976,35 @@
             "title": "Drum",
             "body": [
               "A tap on Drum opens this screen. The heading reads DRUM MACHINE.",
-              "A tap on Play Drums starts the drums from the beginning. The label then reads Stop Drums. Another tap stops and returns to the start.",
-              "A tap on + shows FX 1, FX 2, FX 3, and Voice and hides the keyboard. The mark then shows a minus. Another tap hides those rows and brings the keyboard back.",
+              "A tap on PLAY starts the drums from the beginning. The label then reads STOP. Another tap stops and returns to the start.",
+              "In Pro, a tap on +4 shows FX 1, FX 2, FX 3, and Voice and hides the keyboard. The key then reads -4. Another tap hides those rows and brings the keyboard back.",
               "A tap on Drum FX opens Drum FX. When a preset is on, the label shows FX and a number.",
               "A tap on Style opens Drum styles. A long-press on Style opens Random genre. The note there reads Selection affects Random. A tap on Rock, Trance, Rap, or Techno saves that genre and closes the window. Cancel closes it and leaves the genre as it was. Random on this screen uses that genre, and it starts as Rock. That window does not build a pattern by itself.",
               "A drag on Drum Vol sets the drum volume from 0% to 100%. A tap on the number lets you type a value. LIVE does not open that box.",
               "A drag on Swing sets swing from 0% to 100%. A drag on BPM sets the tempo from 60 to 200. BPM, Swing, and the row volumes are live: a change you make while the drums play stays when the next pattern starts.",
               "Hold 1/4, 1/8, 1/16, or 1/32 to repeat the drums at that division while you hold it. Release, and that repeat stops. A tap on them does nothing. Hold STOP. A tap on it does nothing.",
-              "A tap on a rhythm number, 1 through 8, loads that rhythm, including its tempo, swing, the sample on each row, the volumes, and left and right. Switching to another rhythm saves the one you leave into the current kit. A tap on Save, next to Random, also saves the current rhythm and overwrites the current kit. A long-press on a rhythm number opens Pattern repeats.",
-              "A tap on Save, next to Random, stores the current drums into the pattern you are on, writes the current BPM, Swing, and row volumes into all 8 patterns, and saves the kit with the sound picked on each row. A tap on Random builds a new pattern in the chosen genre.",
+              "A tap on a rhythm number, 1 through 8, loads that rhythm, including its tempo, swing, the sample on each row, the six sound knobs, the volumes, and left and right. Switching to another rhythm saves the one you leave into the current kit. If the rhythm you switch to is empty, it starts as a full copy of the one you came from, and REDO can undo the copy. A long-press on a rhythm number opens Pattern repeats.",
+              "A tap on CLEAR, next to RANDOM, clears the steps of the current rhythm and saves it. Its samples, volumes, and left and right stay. REDO can bring the steps back. A tap on RANDOM builds a new pattern in the chosen genre.",
               "The rows are Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3, and Voice. A tap on a row name opens a sound list for that row, from all the Factory kits, from the Exclusive kits when they are in the app, and for Voice also from Authentic. Each row lists only its own kind of sound: FX 1 to FX 3 share one list, and Voice lists vocals only. A tap on a sound puts it on the row and the list stays open. While the drums play you hear it on the next hit. When they are stopped it plays once. The ◀ and ▶ arrows next to Load step to the previous or next sound. A tap on Load picks an audio file from the phone. LIVE turns Load off. The ◀ and ▶ arrows turn gold for one second after a tap.",
               "Row 8 is now called Voice and holds only vocals. Its sound list has 40 vocals in Factory, 18 in Exclusive and 33 in the new Authentic category, 91 in all.",
               "A drag on the row slider sets that row's volume. It shows a percent and no word. A drag on L/R moves the row between L and R.",
               "Each row has 16 steps. A tap turns a step on or off.",
-              "The arrows beside DRUM KIT load the next or previous kit. LIVE turns those arrows off."
+              "The arrows beside DRUM KIT load the next or previous kit. LIVE turns those arrows off.",
+              "REDO, in the drum header, steps back through your drum changes: steps, samples, volumes, left and right, the sound knobs, and the rhythm. Each tap goes back one step.",
+              "SAMPLES sits next to DRUM KIT and shows the sample of the last row you used. Its arrows step that row to the previous or next sample.",
+              "The keys on the Drum, Sound, and Pad screens look like hardware keys, with uppercase labels. A gold key is on."
             ],
             "media": "assets/guide/drum-screen-110.jpg",
             "sections": [
+              {
+                "id": "drum-sound",
+                "title": "Drum sound knobs",
+                "body": [
+                  "The sound list of each row has a waveform of the current sample and six knobs under it: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE, and REVERB.",
+                  "GAIN adds 0 to +18 dB. SQUEEZE runs from 0 to 100 and flattens the dynamics. ATTACK fades each hit in over 0 to 200 ms. SUSTAIN sets how much of the sample is held, from 0% to 100%. RELEASE fades it out over 5 to 2000 ms and is heard only when SUSTAIN is under 100%. REVERB sends 0% to 100% into the drum reverb.",
+                  "The waveform follows the knobs while you turn them. Each row of each rhythm keeps its own sample and knobs, and they are saved with the rhythm into the kit."
+                ]
+              },
               {
                 "id": "drum-fx",
                 "title": "Drum FX",
@@ -1985,7 +2024,8 @@
                   "A tap on Switch to exclusive moves between the factory pages and the Exclusive pages.",
                   "There are 8 factory pages and 11 Exclusive pages. Each page has 8 kits. A tap on a page number only shows that page. The kit loads when you tap Load.",
                   "A tap on Load loads that kit. LIVE turns Load off. A tap on Save stores the current kit under that name. A tap on Edit changes the kit name.",
-                  "A tap on Edit page name changes the page name. A tap on Import picks a style file. A tap on Export asks the phone where to store the page."
+                  "A tap on Edit page name changes the page name. A tap on Import picks a style file. A tap on Export asks the phone where to store the page.",
+                  "The title reads DRUM STYLES (8 STYLES), or EXCLUSIVE STYLES (8 STYLES) on the Exclusive pages. Under the page numbers, each page has its own banner. The 8 kits fit without scrolling."
                 ],
                 "media": "assets/guide/drum-styles-window.jpg"
               },
@@ -1994,7 +2034,8 @@
                 "title": "Pattern repeats",
                 "body": [
                   "A long-press on a pattern number opens Pattern repeats. The line under the title reads: How many times the pattern repeats before the next.",
-                  "A tap on 1 through 10 sets that count. A tap on the infinity mark keeps it repeating. A tap on Default clears the repeat. A tap on Close closes the window."
+                  "A tap on 1 through 10 sets that count. A tap on the infinity mark keeps it repeating. A tap on Default clears the repeat. A tap on Close closes the window.",
+                  "Under RHYTHM there are COPY and PASTE. COPY copies the current rhythm. PASTE puts it into the rhythm you are on, and that rhythm keeps its own repeat count, BPM, and swing. PASTE is off until you copy."
                 ],
                 "media": "assets/guide/pattern-repeats.jpg"
               }
@@ -2039,6 +2080,7 @@
                   "Trim sets the part of the take to keep. Loop sets where the loop starts and ends.",
                   "Drum rhythms: 8 boxes, one for each drum rhythm. A tap turns a box on or off. A long-press opens Pattern repeats for that box (1 to 10 or infinity). When the drums play, the channel follows those rhythms. With no boxes on, the channel keeps looping on its own.",
                   "LOW, MID, and HIGH run from -30 dB to +30 dB. MID HZ moves the middle band from 100 Hz to 8 kHz. GAIN and SQUEEZE run from 0 to 100.",
+                  "The waveform redraws live while you turn the knobs, so you see the change as you hear it.",
                   "Play plays the channel. Reset sets everything back to the start values. Close leaves without saving. Save keeps the changes, and a trim cuts the take. Redo can bring back the take from before the trim.",
                   "The editor settings are saved with the loop session and in the exported project."
                 ],
@@ -2889,7 +2931,7 @@
             "status": "in_progress",
             "title": "Coming in the next update: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
             "ticker": "Coming in the next update: Loop Editor and Mic Editor, with Trim, Loop and 8 drum-rhythm boxes",
-            "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save.",
+            "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
@@ -2922,13 +2964,13 @@
                 "title": "Drums",
                 "bullets": [
                   "The Swap button is now called Load.",
-                  "The Save button next to Random saves the samples together with the beats into the current kit.",
-                  "Each rhythm keeps its own samples, volumes and left and right. Save, and switching rhythms, write them into the current kit.",
-                  "The sample picker shows each channel only its own samples, split into Factory and Exclusive.",
-                  "Channels Extra 1 to 3 are now called FX 1 to 3 and share one bank.",
-                  "Channel 8 is now called Voice and holds only vocals: 40 in Factory, 18 in Exclusive and 33 in the new Authentic category. Total 91.",
-                  "The arrows on the drum channels turn gold for one second after a tap.",
-                  "Whoever buys Pro also gets the Exclusive pack free, at no extra cost and with no download button."
+                  "CLEAR, next to RANDOM, clears the steps of the current rhythm. It replaces the drum Save button. Everything is saved automatically.",
+                  "Each rhythm keeps its own samples, sound knobs, volumes and left and right. Switching rhythms writes them into the current kit.",
+                  "An empty rhythm starts as a copy of the rhythm you came from.",
+                  "Six sound knobs per row in each rhythm: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE and REVERB, with a waveform that follows them.",
+                  "COPY and PASTE a rhythm from the long-press window.",
+                  "One REDO key steps back through drum changes.",
+                  "SAMPLES with arrows, next to DRUM KIT, steps the last row's sample."
                 ]
               },
               {
@@ -2954,10 +2996,20 @@
                   "New button New session, first in Settings. It asks for a name and clears only the looper and mic channels. Kits, beats and presets stay.",
                   "A duplicate name on import gets a new name instead of overwriting the existing one."
                 ]
+              },
+              {
+                "title": "Look",
+                "bullets": [
+                  "New hardware-style keys on Drum, Sound and Pad.",
+                  "New SCALES, PATTERN REPEATS and DRUM STYLES windows. Each drum styles page has its own banner.",
+                  "A tap turns a wave on or off. One wave always stays on.",
+                  "The Loop and Mic editor waveforms follow the knobs live."
+                ]
               }
             ],
             "tickerMore": [
-              "Coming in the next update: channel 8 is now called Voice and holds only vocals, 91 samples"
+              "Coming in the next update: channel 8 is now called Voice and holds only vocals, 91 samples",
+              "Coming in the next update: six sound knobs on every drum row, Copy and Paste of rhythms, and new hardware-style keys"
             ]
           },
           {
@@ -3309,7 +3361,7 @@
             "title": "Sound",
             "body": [
               "Нажатие на Sound открывает этот экран.",
-              "Sine, Square, Triangle, Saw и Noise находятся под скоупами. На каждой кнопке значок своей волны, включённая волна горит золотым. Нажатие включает только эту волну. Долгое нажатие включает или выключает волну и оставляет остальные, так что одна клавиша может играть несколько волн сразу. Обе клавиатуры играют включённые волны. Экран начинает с Saw.",
+              "Sine, Square, Triangle, Saw и Noise находятся под осциллографами. На каждой кнопке значок её волны, включённая волна становится золотой. Нажатие включает или выключает волну. Нажимайте другие, чтобы добавить или убрать их, и несколько волн зазвучат вместе. Одна волна всегда остаётся включённой. Обе клавиатуры играют включённые волны. Экран открывается на Saw.",
               "Нажатие на Detune включает или выключает detune. Нажатие на RIP, FUZZ, PHAZ или PIANO включает или выключает это.",
               "Нажатие на FX открывает Sound FX. FX становится золотым, пока эффект включён.",
               "Стрелки рядом с PRESET загружают следующий или предыдущий сохранённый пресет. Если сохранённых нет, телефон пишет No saved presets.",
@@ -3405,7 +3457,8 @@
                 "id": "key",
                 "title": "Key",
                 "body": [
-                  "Нажатие на Key открывает Scales. Нажатие на OFF снимает лад. Major показывает от C maj до B maj. Minor показывает от C min до B min. Нажатие на имя лада выбирает его. Нажатие на Close закрывает окно."
+                  "Нажатие на Key открывает Scales. Нажатие на OFF снимает лад. Major показывает от C maj до B maj. Minor показывает от C min до B min. Нажатие на имя лада выбирает его. Нажатие на Close закрывает окно.",
+                  "Заголовок окна: SCALES, в том же стиле клавиш, что и другие окна 1.10."
                 ],
                 "media": "assets/guide/scales-window.jpg"
               },
@@ -3420,7 +3473,7 @@
                   "Нажатие на Save as открывает Save Console. Save подтверждает. Cancel закрывает. Сохранённая сессия хранит также Sound FX и имена и цвета страниц лупера. Она также хранит пресеты частот, выбранные сэмплы ударных, банки ударных Factory и Exclusive, включённые волны, вид с двумя клавиатурами, цели пэдов и тексты. С Export all и Import all вся настройка переходит на другое устройство.",
                   "Нажатие на Load открывает Load Console. Если ничего не сохранено, написано No saved sessions. Export all и Import all находятся там. Delete спрашивает, прежде чем удалить сессию. Перед загрузкой сессии приложение сначала спрашивает и автоматически сохраняет копию текущих пресетов и наборов ударных. После загрузки Monitor микрофона выключен. Импортированная сессия с тем же именем, что уже есть на телефоне, получает новое имя и ничего не заменяет.",
                   "Нажатие на Show tutorial начинает тур заново.",
-                  "Тур обновлён для 1.10. В нём 68 шагов, и теперь он показывает нажатие и долгое нажатие на волну, сохранение пресета долгим нажатием, Tune frequencies, вторую клавиатуру на Pad, Mic Editor и Loop Editor, каналы ударных и сэмплы на каждый ритм, Save и автосохранение ударных, и New session. Открывается из Settings.",
+                  "Обучение обновлено для 1.10. В нём 68 шагов, и теперь оно охватывает нажатие на волну, сохранение пресета долгим нажатием, Tune frequencies, вторую клавиатуру Pad, Mic Editor и Loop Editor, каналы ударных и сэмплы для каждого ритма, Clear ударных и автосохранение, а также New session. Откройте его в Settings.",
                   "Нажатие на Factory 64 спрашивает Restore Factory 64? Restore заменяет пресеты Factory 64, все 8 наборов Style и все 11 наборов Exclusive, затем загружает место 1 на странице 1. Cancel закрывает вопрос.",
                   "Нажатие на Benchmark, под Factory 64, открывает инструмент проверки звука.",
                   "X и Close закрывают Settings."
@@ -3464,23 +3517,35 @@
             "title": "Drum",
             "body": [
               "Нажатие на Drum открывает этот экран. Заголовок говорит DRUM MACHINE.",
-              "Нажатие на Play Drums запускает ударные с начала. Затем надпись говорит Stop Drums. Ещё одно нажатие останавливает и возвращает к началу.",
-              "Нажатие на + показывает FX 1, FX 2, FX 3 и Voice и прячет клавиатуру. Знак тогда показывает минус. Ещё одно нажатие прячет эти ряды и возвращает клавиатуру.",
+              "Нажатие на PLAY запускает ударные с начала. Надпись меняется на STOP. Повторное нажатие останавливает и возвращает в начало.",
+              "В Pro нажатие на +4 показывает FX 1, FX 2, FX 3 и Voice и скрывает клавиатуру. Клавиша меняется на -4. Повторное нажатие скрывает эти ряды и возвращает клавиатуру.",
               "Нажатие на Drum FX открывает Drum FX. Когда пресет включён, надпись показывает FX и число.",
               "Нажатие на Style открывает Drum styles. Долгое нажатие на Style открывает Random genre. Заметка там говорит Selection affects Random. Нажатие на Rock, Trance, Rap или Techno сохраняет этот жанр и закрывает окно. Cancel закрывает его и оставляет жанр как был. Random на этом экране использует этот жанр, и он начинает с Rock. Это окно само не строит паттерн.",
               "Перетаскивание Drum Vol задаёт громкость ударных от 0% до 100%. Нажатие на число даёт ввести значение. LIVE не открывает это поле.",
               "Перетаскивание Swing задаёт swing от 0% до 100%. Перетаскивание BPM задаёт темп от 60 до 200. BPM, Swing и громкость дорожек работают вживую: изменение во время игры сохраняется, когда начинается следующий паттерн.",
               "Удерживайте 1/4, 1/8, 1/16 или 1/32, чтобы повторять ударные в этом делении, пока держите. Отпустите, и повтор остановится. Нажатие на них ничего не делает. Удерживайте STOP. Нажатие на него ничего не делает.",
-              "Нажатие на номер ритма, от 1 до 8, загружает этот ритм, включая темп, swing, сэмпл на каждом ряду, громкость и лево и право. Переход к другому ритму сохраняет тот, который вы оставляете, в текущий набор. Нажатие на Save рядом с Random тоже сохраняет текущий ритм и перезаписывает текущий набор. Долгое нажатие на номер ритма открывает Pattern repeats.",
-              "Нажатие на Save, рядом с Random, сохраняет текущие ударные в паттерн, на котором вы находитесь, записывает текущие BPM, Swing и громкость дорожек во все 8 паттернов и сохраняет набор со звуком, выбранным на каждом ряду. Нажатие на Random строит новый паттерн в выбранном жанре.",
+              "Нажатие на номер ритма, от 1 до 8, загружает этот ритм вместе с темпом, свингом, сэмплом каждого ряда, шестью ручками звука, громкостями и панорамой. При переходе на другой ритм тот, который вы покидаете, сохраняется в текущий кит. Если ритм, на который вы переходите, пуст, он начинается как полная копия ритма, с которого вы пришли, и REDO может отменить копию. Долгое нажатие на номер ритма открывает Pattern repeats.",
+              "Нажатие на CLEAR, рядом с RANDOM, очищает шаги текущего ритма и сохраняет его. Сэмплы, громкости и панорама остаются. REDO может вернуть шаги. Нажатие на RANDOM создаёт новый паттерн в выбранном жанре.",
               "Ряды называются Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 и Voice. Нажатие на имя ряда открывает список звуков для этого ряда из всех наборов Factory, из наборов Exclusive, когда они есть в приложении, а для Voice ещё и из Authentic. Каждый ряд показывает только свой вид звуков: FX 1 до FX 3 делят один список, а Voice показывает только вокал. Нажатие на звук ставит его на ряд, и список остаётся открытым. Пока играют ударные, его слышно на следующем ударе. Когда они остановлены, он звучит один раз. Стрелки ◀ и ▶ рядом с Load переходят к предыдущему или следующему звуку. Нажатие на Load выбирает аудиофайл с телефона. LIVE выключает Load. Стрелки ◀ и ▶ загораются золотым на одну секунду после нажатия.",
               "Ряд 8 теперь называется Voice и хранит только вокал. В его списке звуков 40 вокалов в Factory, 18 в Exclusive и 33 в новой категории Authentic, всего 91.",
               "Перетаскивание слайдера ряда задаёт громкость ряда. Он показывает процент и без слова. Перетаскивание L/R двигает ряд между L и R.",
               "В каждом ряду 16 шагов. Нажатие включает или выключает шаг.",
-              "Стрелки рядом с DRUM KIT загружают следующий или предыдущий набор. LIVE выключает эти стрелки."
+              "Стрелки рядом с DRUM KIT загружают следующий или предыдущий набор. LIVE выключает эти стрелки.",
+              "REDO в верхней строке ударных возвращает назад ваши изменения: шаги, сэмплы, громкости, панораму, ручки звука и ритм. Каждое нажатие возвращает один шаг.",
+              "SAMPLES находится рядом с DRUM KIT и показывает сэмпл последнего ряда, которым вы пользовались. Его стрелки переключают этот ряд на предыдущий или следующий сэмпл.",
+              "Клавиши на экранах Drum, Sound и Pad выглядят как аппаратные, с надписями заглавными буквами. Золотая клавиша включена."
             ],
             "media": "assets/guide/drum-screen-110.jpg",
             "sections": [
+              {
+                "id": "drum-sound",
+                "title": "Ручки звука ударных",
+                "body": [
+                  "В списке звуков каждого ряда есть форма волны текущего сэмпла и под ней шесть ручек: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE и REVERB.",
+                  "GAIN добавляет от 0 до +18 dB. SQUEEZE от 0 до 100 сглаживает динамику. ATTACK плавно вводит каждый удар за 0-200 ms. SUSTAIN задаёт, какая часть сэмпла удерживается, от 0% до 100%. RELEASE плавно гасит его за 5-2000 ms и слышен, только когда SUSTAIN меньше 100%. REVERB отправляет от 0% до 100% в реверб ударных.",
+                  "Форма волны следует за ручками, пока вы их крутите. Каждый ряд каждого ритма хранит свой сэмпл и свои ручки, и они сохраняются вместе с ритмом в кит."
+                ]
+              },
               {
                 "id": "drum-fx",
                 "title": "Drum FX",
@@ -3500,7 +3565,8 @@
                   "Нажатие на Switch to exclusive переходит между страницами factory и страницами Exclusive.",
                   "Есть 8 страниц factory и 11 страниц Exclusive. На каждой странице 8 наборов. Нажатие на номер страницы только показывает страницу. Набор загружается нажатием на Load.",
                   "Нажатие на Load загружает набор. LIVE выключает Load. Нажатие на Save сохраняет текущий набор под этим именем. Нажатие на Edit меняет имя набора.",
-                  "Нажатие на Edit page name меняет имя страницы. Нажатие на Import выбирает файл стиля. Нажатие на Export спрашивает телефон, куда сохранить страницу."
+                  "Нажатие на Edit page name меняет имя страницы. Нажатие на Import выбирает файл стиля. Нажатие на Export спрашивает телефон, куда сохранить страницу.",
+                  "Заголовок: DRUM STYLES (8 STYLES), а на страницах Exclusive: EXCLUSIVE STYLES (8 STYLES). Под номерами страниц у каждой страницы свой баннер. 8 китов помещаются без прокрутки."
                 ],
                 "media": "assets/guide/drum-styles-window.jpg"
               },
@@ -3509,7 +3575,8 @@
                 "title": "Pattern repeats",
                 "body": [
                   "Долгое нажатие на номер паттерна открывает Pattern repeats. Строка под заголовком говорит: How many times the pattern repeats before the next.",
-                  "Нажатие от 1 до 10 задаёт это число. Нажатие на знак бесконечности оставляет повтор. Нажатие на Default снимает повтор. Нажатие на Close закрывает окно."
+                  "Нажатие от 1 до 10 задаёт это число. Нажатие на знак бесконечности оставляет повтор. Нажатие на Default снимает повтор. Нажатие на Close закрывает окно.",
+                  "Под RHYTHM есть COPY и PASTE. COPY копирует текущий ритм. PASTE вставляет его в ритм, на котором вы находитесь, и этот ритм сохраняет своё число повторов, BPM и свинг. PASTE выключена, пока вы ничего не скопировали."
                 ],
                 "media": "assets/guide/pattern-repeats.jpg"
               }
@@ -3554,6 +3621,7 @@
                   "Trim задаёт часть записи, которая остаётся. Loop задаёт, где луп начинается и заканчивается.",
                   "Drum rhythms: 8 ячеек, по одной на каждый ритм ударных. Нажатие включает или выключает ячейку. Долгое нажатие открывает Pattern repeats для этой ячейки (1 до 10 или бесконечность). Пока играют ударные, канал следует этим ритмам. Без включённых ячеек канал сам продолжает луп.",
                   "LOW, MID и HIGH идут от -30 dB до +30 dB. MID HZ сдвигает среднюю полосу от 100 Hz до 8 kHz. GAIN и SQUEEZE идут от 0 до 100.",
+                  "Форма волны перерисовывается вживую, пока вы крутите ручки, и вы видите изменение, пока его слышите.",
                   "Play играет канал. Reset возвращает начальные значения. Close выходит без сохранения. Save сохраняет изменения, а Trim обрезает запись. Redo может вернуть запись до обрезки.",
                   "Настройки редактора сохраняются в сессии лупера и в экспортированном проекте."
                 ],
@@ -4404,7 +4472,7 @@
             "status": "in_progress",
             "title": "В следующем обновлении: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
             "ticker": "В следующем обновлении: Loop Editor и Mic Editor, с Trim, лупом и 8 ячейками ритма ударных",
-            "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением.",
+            "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -4437,13 +4505,13 @@
                 "title": "Ударные",
                 "bullets": [
                   "Кнопка Swap теперь называется Load.",
-                  "Кнопка Save рядом с Random сохраняет сэмплы вместе с битами в текущий набор.",
-                  "Каждый ритм хранит свои сэмплы, громкость и лево и право. Save и смена ритма записывают их в текущий набор.",
-                  "Выбор сэмплов показывает каждому каналу только его сэмплы, разделённые на Factory и Exclusive.",
-                  "Каналы Extra 1 до 3 теперь называются FX 1 до 3 и делят один банк.",
-                  "Канал 8 теперь называется Voice и хранит только вокал: 40 в Factory, 18 в Exclusive и 33 в новой категории Authentic. Всего 91.",
-                  "Стрелки на каналах ударных загораются золотым на одну секунду после нажатия.",
-                  "Кто покупает Pro, получает и пакет Exclusive бесплатно, без доплаты и без кнопки загрузки."
+                  "CLEAR, рядом с RANDOM, очищает шаги текущего ритма. Она заменяет кнопку Save ударных. Всё сохраняется автоматически.",
+                  "Каждый ритм хранит свои сэмплы, ручки звука, громкости и панораму. Переход между ритмами записывает их в текущий кит.",
+                  "Пустой ритм начинается как копия ритма, с которого вы пришли.",
+                  "Шесть ручек звука на каждый ряд в каждом ритме: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE и REVERB, с формой волны, которая следует за ними.",
+                  "COPY и PASTE ритма в окне долгого нажатия.",
+                  "Одна клавиша REDO возвращает назад изменения ударных.",
+                  "SAMPLES со стрелками, рядом с DRUM KIT, переключает сэмпл последнего ряда."
                 ]
               },
               {
@@ -4469,10 +4537,20 @@
                   "Новая кнопка New session, первая в Settings. Она спрашивает имя и очищает только каналы лупера и микрофона. Наборы, биты и пресеты остаются.",
                   "Сессия с повторяющимся именем при импорте получает новое имя и не перезаписывает существующую."
                 ]
+              },
+              {
+                "title": "Внешний вид",
+                "bullets": [
+                  "Новые клавиши в аппаратном стиле на Drum, Sound и Pad.",
+                  "Новые окна SCALES, PATTERN REPEATS и DRUM STYLES. У каждой страницы стилей ударных свой баннер.",
+                  "Нажатие включает или выключает волну. Одна волна всегда остаётся включённой.",
+                  "Формы волны в редакторах Loop и Mic следуют за ручками вживую."
+                ]
               }
             ],
             "tickerMore": [
-              "В следующем обновлении: канал 8 теперь называется Voice и хранит только вокал, 91 сэмпл"
+              "В следующем обновлении: канал 8 теперь называется Voice и хранит только вокал, 91 сэмпл",
+              "В следующем обновлении: шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов и новые клавиши в аппаратном стиле"
             ]
           },
           {
@@ -4824,7 +4902,7 @@
             "title": "Sound",
             "body": [
               "الضغط على Sound يفتح هذه الشاشة.",
-              "Sine وSquare وTriangle وSaw وNoise تحت المناظير. على كل زر أيقونة لموجته، والموجة المفعّلة تصبح ذهبية. الضغط يشغّل هذه الموجة وحدها. الضغط المطوّل يفعّل الموجة أو يوقفها ويترك الباقي، فيمكن لمفتاح واحد أن يعزف عدة موجات معاً. لوحتا المفاتيح تعزفان الموجات المفعّلة. الشاشة تبدأ على Saw.",
+              "توجد Sine وSquare وTriangle وSaw وNoise تحت شاشات الموجة. على كل زر رمز موجته، والموجة المضاءة تصبح ذهبية. النقر يشغّل الموجة أو يطفئها. انقر على موجات أخرى لإضافتها أو إزالتها، فتعزف عدة موجات معًا. تبقى موجة واحدة مضاءة دائمًا. لوحتا المفاتيح تعزفان الموجات المضاءة. تبدأ الشاشة على Saw.",
               "الضغط على Detune يشغّل detune أو يوقفه. الضغط على RIP أو FUZZ أو PHAZ أو PIANO يشغّل ذلك أو يوقفه.",
               "الضغط على FX يفتح Sound FX. يصبح FX ذهبياً ما دام مؤثر يعمل.",
               "الأسهم بجانب PRESET تحمّل الإعداد المحفوظ التالي أو السابق. إذا لم يوجد محفوظ، يقول الهاتف No saved presets.",
@@ -4920,7 +4998,8 @@
                 "id": "key",
                 "title": "Key",
                 "body": [
-                  "الضغط على Key يفتح Scales. الضغط على OFF يمسح السلم. Major يعرض من C maj إلى B maj. Minor يعرض من C min إلى B min. الضغط على اسم سلم يختاره. الضغط على Close يغلق النافذة."
+                  "الضغط على Key يفتح Scales. الضغط على OFF يمسح السلم. Major يعرض من C maj إلى B maj. Minor يعرض من C min إلى B min. الضغط على اسم سلم يختاره. الضغط على Close يغلق النافذة.",
+                  "عنوان النافذة SCALES، بنفس نمط المفاتيح في نوافذ 1.10 الأخرى."
                 ],
                 "media": "assets/guide/scales-window.jpg"
               },
@@ -4935,7 +5014,7 @@
                   "الضغط على Save as يفتح Save Console. Save يؤكد. Cancel يغلق. الجلسة المحفوظة تحفظ أيضاً Sound FX وأسماء صفحات اللوب وألوانها. وتحفظ أيضاً إعدادات الترددات، واختيارات عينات الطبول، وبنكي الطبول Factory وExclusive، والموجات المشغّلة، وعرض لوحتي المفاتيح، وأهداف الـ Pad، والكلمات. مع Export all وImport all ينتقل الإعداد كله إلى جهاز آخر.",
                   "الضغط على Load يفتح Load Console. إذا لم يوجد محفوظ، يظهر No saved sessions. Export all وImport all هناك. Delete يسأل قبل أن يحذف الجلسة. قبل تحميل جلسة، يسأل التطبيق أولاً ويحفظ نسخة احتياطية تلقائية من الإعدادات وأطقم الطبول الحالية. Monitor الميكروفون متوقف بعد التحميل. الجلسة المستوردة التي لها اسم موجود على الهاتف تحصل على اسم جديد بدل أن تحل محله.",
                   "الضغط على Show tutorial يبدأ الجولة من جديد.",
-                  "تم تحديث الجولة للإصدار 1.10. فيها 68 خطوة، وهي تشرح الآن الضغط والضغط المطوّل على الموجة، وحفظ إعداد بضغط مطوّل، وTune frequencies، ولوحة المفاتيح الثانية في Pad، وMic Editor وLoop Editor، وقنوات الطبول والعيّنات لكل إيقاع، وSave والحفظ التلقائي في الطبول، وNew session. تُفتح من Settings.",
+                  "تم تحديث الجولة للإصدار 1.10. فيها 68 خطوة، وتغطي الآن النقر على الموجة، وحفظ إعداد مسبق بضغطة مطولة، وTune frequencies، ولوحة المفاتيح الثانية في Pad، وMic Editor وLoop Editor، وقنوات الطبول والعينات لكل إيقاع، وClear في الطبول والحفظ التلقائي، وNew session. افتحها من Settings.",
                   "الضغط على Factory 64 يسأل Restore Factory 64? Restore يستبدل إعدادات Factory 64 وكل حزم Style الثماني وكل حزم Exclusive الإحدى عشرة، ثم يحمّل الخانة 1 في الصفحة 1. Cancel يغلق السؤال.",
                   "الضغط على Benchmark، تحت Factory 64، يفتح أداة فحص الصوت.",
                   "X وClose يغلقان Settings."
@@ -4979,23 +5058,35 @@
             "title": "Drum",
             "body": [
               "الضغط على Drum يفتح هذه الشاشة. العنوان يقول DRUM MACHINE.",
-              "الضغط على Play Drums يبدأ الطبول من البداية. ثم يقول النص Stop Drums. ضغط آخر يوقف ويعيد إلى البداية.",
-              "الضغط على + يعرض FX 1 وFX 2 وFX 3 وVoice ويخفي لوحة المفاتيح. العلامة حينها تظهر ناقصاً. ضغط آخر يخفي الصفوف ويعيد لوحة المفاتيح.",
+              "النقر على PLAY يبدأ الطبول من البداية. يتغير الاسم إلى STOP. نقرة أخرى توقفها وتعود إلى البداية.",
+              "في Pro، النقر على +4 يُظهر FX 1 وFX 2 وFX 3 وVoice ويخفي لوحة المفاتيح. يصبح المفتاح -4. نقرة أخرى تخفي هذه الصفوف وتعيد لوحة المفاتيح.",
               "الضغط على Drum FX يفتح Drum FX. عندما يكون إعداد شغّالاً، يظهر FX ورقم.",
               "الضغط على Style يفتح Drum styles. الضغط المطوّل على Style يفتح Random genre. الملاحظة هناك تقول Selection affects Random. الضغط على Rock أو Trance أو Rap أو Techno يحفظ ذلك النوع ويغلق النافذة. Cancel يغلقها ويترك النوع كما كان. Random على هذه الشاشة يستخدم ذلك النوع، ويبدأ على Rock. تلك النافذة لا تبني نمطاً وحدها.",
               "السحب على Drum Vol يحدد حجم الطبول من 0% إلى 100%. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح الخانة.",
               "السحب على Swing يحدد swing من 0% إلى 100%. السحب على BPM يحدد الإيقاع من 60 إلى 200. BPM وSwing وحجم الصفوف تعمل مباشرة: التغيير أثناء العزف يبقى عندما يبدأ النمط التالي.",
               "أمسك 1/4 أو 1/8 أو 1/16 أو 1/32 لتكرار الطبول على ذلك التقسيم ما دمت ممسكاً. اترك، فيتوقف التكرار. الضغط عليها لا يفعل شيئاً. أمسك STOP. الضغط عليه لا يفعل شيئاً.",
-              "الضغط على رقم إيقاع، من 1 إلى 8، يحمّل ذلك الإيقاع، بما فيه الإيقاع وswing والعيّنة في كل صف والحجم واليسار واليمين. الانتقال إلى إيقاع آخر يحفظ الذي تغادره في الطقم الحالي. الضغط على Save، بجانب Random، يحفظ أيضاً الإيقاع الحالي ويكتب فوق الطقم الحالي. الضغط المطوّل على رقم إيقاع يفتح Pattern repeats.",
-              "الضغط على Save، بجانب Random، يحفظ الطبول الحالية في النمط الذي أنت عليه، ويكتب BPM وSwing وحجم الصفوف الحالية في الأنماط الثمانية كلها، ويحفظ الطقم مع الصوت المختار في كل صف. الضغط على Random يبني نمطاً جديداً في النوع المختار.",
+              "النقر على رقم إيقاع، من 1 إلى 8، يحمّل ذلك الإيقاع، مع السرعة والسوينغ والعينة في كل صف ومقابض الصوت الستة ومستويات الصوت واليسار واليمين. الانتقال إلى إيقاع آخر يحفظ الإيقاع الذي تغادره في الطقم الحالي. إذا كان الإيقاع الذي تنتقل إليه فارغًا، يبدأ كنسخة كاملة من الإيقاع الذي جئت منه، ويمكن لـ REDO التراجع عن النسخ. الضغط المطول على رقم إيقاع يفتح Pattern repeats.",
+              "النقر على CLEAR، بجانب RANDOM، يمسح خطوات الإيقاع الحالي ويحفظه. تبقى العينات ومستويات الصوت واليسار واليمين. يمكن لـ REDO إعادة الخطوات. النقر على RANDOM يبني نمطًا جديدًا في النوع المختار.",
               "الصفوف هي Kick وSnare وHi-Hat وPerc وFX 1 وFX 2 وFX 3 وVoice. الضغط على اسم صف يفتح قائمة أصوات لذلك الصف من كل أطقم Factory، ومن أطقم Exclusive عندما تكون في التطبيق، ولـ Voice أيضاً من Authentic. كل صف يعرض نوع أصواته فقط: FX 1 حتى FX 3 تتشارك قائمة واحدة، وVoice يعرض الغناء فقط. الضغط على صوت يضعه على الصف وتبقى القائمة مفتوحة. أثناء عزف الطبول تسمعه في الضربة التالية. وعندما تكون متوقفة يُعزف مرة واحدة. السهمان ◀ و▶ بجانب Load ينتقلان إلى الصوت السابق أو التالي. الضغط على Load يختار ملف صوت من الهاتف. LIVE يوقف Load. السهمان ◀ و▶ يصبحان ذهبيين لثانية واحدة بعد الضغط.",
               "الصف الثامن اسمه الآن Voice ويحمل الغناء فقط. في قائمة أصواته 40 عيّنة غناء في Factory و18 في Exclusive و33 في الفئة الجديدة Authentic، 91 في المجموع.",
               "السحب على منزلق الصف يحدد حجم الصف. يعرض نسبة ومن دون كلمة. السحب على L/R يحرّك الصف بين L وR.",
               "لكل صف 16 خطوة. الضغط يشغّل خطوة أو يوقفها.",
-              "الأسهم بجانب DRUM KIT تحمّل الطقم التالي أو السابق. LIVE يوقف هذه الأسهم."
+              "الأسهم بجانب DRUM KIT تحمّل الطقم التالي أو السابق. LIVE يوقف هذه الأسهم.",
+              "REDO، في الصف العلوي للطبول، يعود خطوة إلى الوراء في تغييرات الطبول: الخطوات والعينات ومستويات الصوت واليسار واليمين ومقابض الصوت والإيقاع. كل نقرة تعود خطوة واحدة.",
+              "SAMPLES بجانب DRUM KIT ويعرض عينة آخر صف استخدمته. أسهمه تنقل ذلك الصف إلى العينة السابقة أو التالية.",
+              "تبدو المفاتيح في شاشات Drum وSound وPad مثل مفاتيح الأجهزة، بأسماء بأحرف كبيرة. المفتاح الذهبي مُفعّل."
             ],
             "media": "assets/guide/drum-screen-110.jpg",
             "sections": [
+              {
+                "id": "drum-sound",
+                "title": "مقابض صوت الطبول",
+                "body": [
+                  "في قائمة أصوات كل صف شكل موجة العينة الحالية وتحته ستة مقابض: GAIN وSQUEEZE وATTACK وSUSTAIN وRELEASE وREVERB.",
+                  "GAIN يضيف من 0 إلى +18 dB. SQUEEZE من 0 إلى 100 ويُسطّح الديناميكية. ATTACK يُدخل كل ضربة تدريجيًا خلال 0 إلى 200 ms. SUSTAIN يحدد كم من العينة يُمسك، من 0% إلى 100%. RELEASE يُخفتها خلال 5 إلى 2000 ms ويُسمع فقط عندما يكون SUSTAIN أقل من 100%. REVERB يرسل من 0% إلى 100% إلى صدى الطبول.",
+                  "يتبع شكل الموجة المقابض أثناء تحريكها. كل صف في كل إيقاع يحتفظ بعينته ومقابضه، وتُحفظ مع الإيقاع في الطقم."
+                ]
+              },
               {
                 "id": "drum-fx",
                 "title": "Drum FX",
@@ -5015,7 +5106,8 @@
                   "الضغط على Switch to exclusive ينتقل بين صفحات factory وصفحات Exclusive.",
                   "هناك 8 صفحات factory و11 صفحة Exclusive. لكل صفحة 8 أطقم. الضغط على رقم صفحة يعرض الصفحة فقط. الطقم يُحمّل عند الضغط على Load.",
                   "الضغط على Load يحمّل الطقم. LIVE يوقف Load. الضغط على Save يحفظ الطقم الحالي تحت ذلك الاسم. الضغط على Edit يغيّر اسم الطقم.",
-                  "الضغط على Edit page name يغيّر اسم الصفحة. الضغط على Import يختار ملف أسلوب. الضغط على Export يسأل الهاتف أين يحفظ الصفحة."
+                  "الضغط على Edit page name يغيّر اسم الصفحة. الضغط على Import يختار ملف أسلوب. الضغط على Export يسأل الهاتف أين يحفظ الصفحة.",
+                  "العنوان DRUM STYLES (8 STYLES)، أو EXCLUSIVE STYLES (8 STYLES) في صفحات Exclusive. تحت أرقام الصفحات، لكل صفحة لافتة خاصة بها. تتسع الأطقم الثمانية بلا تمرير."
                 ],
                 "media": "assets/guide/drum-styles-window.jpg"
               },
@@ -5024,7 +5116,8 @@
                 "title": "Pattern repeats",
                 "body": [
                   "الضغط المطوّل على رقم نمط يفتح Pattern repeats. السطر تحت العنوان يقول: How many times the pattern repeats before the next.",
-                  "الضغط من 1 إلى 10 يحدد هذا العدد. الضغط على علامة اللانهاية يبقي التكرار. الضغط على Default يمسح التكرار. الضغط على Close يغلق النافذة."
+                  "الضغط من 1 إلى 10 يحدد هذا العدد. الضغط على علامة اللانهاية يبقي التكرار. الضغط على Default يمسح التكرار. الضغط على Close يغلق النافذة.",
+                  "تحت RHYTHM يوجد COPY وPASTE. COPY ينسخ الإيقاع الحالي. PASTE يلصقه في الإيقاع الذي أنت عليه، ويحتفظ ذلك الإيقاع بعدد تكراره وBPM والسوينغ الخاصة به. يبقى PASTE معطلًا حتى تنسخ."
                 ],
                 "media": "assets/guide/pattern-repeats.jpg"
               }
@@ -5069,6 +5162,7 @@
                   "Trim يحدد الجزء الذي يبقى من الأخذ. Loop يحدد أين يبدأ اللوب وأين ينتهي.",
                   "Drum rhythms: 8 مربعات، واحد لكل إيقاع طبول. الضغط يشغّل أو يوقف مربعاً. الضغط المطوّل يفتح Pattern repeats لذلك المربع (1 حتى 10 أو اللانهاية). أثناء عزف الطبول، تتبع القناة تلك الإيقاعات. بلا مربعات مشغّلة، تواصل القناة اللوب وحدها.",
                   "LOW وMID وHIGH من -30 dB إلى +30 dB. MID HZ يحرّك النطاق الأوسط من 100 Hz إلى 8 kHz. GAIN وSQUEEZE من 0 إلى 100.",
+                  "يُعاد رسم شكل الموجة مباشرة أثناء تحريك المقابض، فترى التغيير وأنت تسمعه.",
                   "Play يشغّل القناة. Reset يعيد كل شيء إلى قيم البداية. Close يخرج دون حفظ. Save يحفظ التغييرات، وTrim يقصّ الأخذ. يمكن لـ Redo أن يعيد الأخذ من قبل القص.",
                   "إعدادات المحرر تُحفظ مع جلسة اللوب وفي المشروع المصدَّر."
                 ],
@@ -5919,7 +6013,7 @@
             "status": "in_progress",
             "title": "في التحديث القادم: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
             "ticker": "في التحديث القادم: Loop Editor وMic Editor، مع Trim واللوب و8 مربعات إيقاع طبول",
-            "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي.",
+            "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -5952,13 +6046,13 @@
                 "title": "الطبول",
                 "bullets": [
                   "زر Swap اسمه الآن Load.",
-                  "زر Save بجانب Random يحفظ العينات مع الإيقاعات في الطقم الحالي.",
-                  "كل إيقاع يحتفظ بعيّناته وحجمه ويساره ويمينه. Save والانتقال بين الإيقاعات يكتبانها في الطقم الحالي.",
-                  "منتقي العينات يعرض لكل قناة عيناتها فقط، مقسّمة إلى Factory وExclusive.",
-                  "القنوات Extra 1 حتى 3 اسمها الآن FX 1 حتى 3 وتتشارك بنكاً واحداً.",
-                  "القناة 8 اسمها الآن Voice وتحمل الغناء فقط: 40 في Factory و18 في Exclusive و33 في الفئة الجديدة Authentic. المجموع 91.",
-                  "الأسهم على قنوات الطبول تصبح ذهبية لثانية واحدة بعد الضغط.",
-                  "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، دون تكلفة إضافية ودون زر تنزيل."
+                  "CLEAR، بجانب RANDOM، يمسح خطوات الإيقاع الحالي. يحل محل زر Save في الطبول. كل شيء يُحفظ تلقائيًا.",
+                  "كل إيقاع يحتفظ بعيناته ومقابض الصوت ومستويات الصوت واليسار واليمين. الانتقال بين الإيقاعات يكتبها في الطقم الحالي.",
+                  "الإيقاع الفارغ يبدأ كنسخة من الإيقاع الذي جئت منه.",
+                  "ستة مقابض صوت لكل صف في كل إيقاع: GAIN وSQUEEZE وATTACK وSUSTAIN وRELEASE وREVERB، مع شكل موجة يتبعها.",
+                  "COPY وPASTE للإيقاع من نافذة الضغط المطول.",
+                  "مفتاح REDO واحد يعود في تغييرات الطبول.",
+                  "SAMPLES بأسهم، بجانب DRUM KIT، يغيّر عينة آخر صف."
                 ]
               },
               {
@@ -5984,10 +6078,20 @@
                   "زر جديد New session، الأول في Settings. يطلب اسماً ويمسح قنوات اللوبر والميكروفون فقط. الأطقم والإيقاعات والإعدادات تبقى.",
                   "الاسم المكرر عند الاستيراد يحصل على اسم جديد بدل الكتابة فوق الموجود."
                 ]
+              },
+              {
+                "title": "المظهر",
+                "bullets": [
+                  "مفاتيح جديدة بنمط الأجهزة في Drum وSound وPad.",
+                  "نوافذ SCALES وPATTERN REPEATS وDRUM STYLES جديدة. لكل صفحة أنماط طبول لافتة خاصة بها.",
+                  "النقر يشغّل الموجة أو يطفئها. تبقى موجة واحدة مضاءة دائمًا.",
+                  "أشكال الموجة في محرري Loop وMic تتبع المقابض مباشرة."
+                ]
               }
             ],
             "tickerMore": [
-              "في التحديث القادم: القناة 8 اسمها الآن Voice وتحمل الغناء فقط، 91 عيّنة"
+              "في التحديث القادم: القناة 8 اسمها الآن Voice وتحمل الغناء فقط، 91 عيّنة",
+              "في التحديث القادم: ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، ومفاتيح جديدة بنمط الأجهزة"
             ]
           },
           {
