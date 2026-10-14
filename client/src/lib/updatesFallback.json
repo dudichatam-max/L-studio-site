@@ -20,15 +20,15 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
         "title": "מגיע בעדכון הבא: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
-        "ticker": "מגיע בעדכון הבא: Loop Editor בלופר, עם Trim, לופ ומספר חזרות",
-        "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, ובוחר סאמפלים לתופים עם Factory ו-Exclusive לכל ערוץ.",
+        "ticker": "מגיע בעדכון הבא: Loop Editor ו-Mic Editor, עם Trim, לופ ו-8 תיבות מקצב תופים",
+        "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
         "images": [
           "/assets/updates/loop-editor-110.jpg"
         ],
         "imageAlts": [
-          "Loop Editor בגרסה 1.10: Trim, Loop, Repeats, EQ, Gain ו-Squeeze לערוץ אחד בלופר."
+          "Loop Editor בגרסה 1.10: Trim, Loop, 8 תיבות מקצב תופים, EQ, Gain ו-Squeeze."
         ],
         "sections": [
           {
@@ -44,11 +44,10 @@
           {
             "title": "עורך לופים",
             "bullets": [
-              "נפתח בהקשה על הגל של הערוץ.",
-              "חיתוך ההקלטה עם Trim.",
-              "קביעת לופ ומספר חזרות: הקשה על 1 עד 10 או על אינסוף, או הקלדה של מספר מ-1 עד 88.",
-              "EQ: Low, Mid, High ו-Mid Hz.",
-              "Gain ו-Squeeze."
+              "נפתח בהקשה על הגל. Mic Editor נפתח באותו אופן בערוץ Mic.",
+              "חיתוך ההקלטה עם Trim. קביעת לופ.",
+              "8 תיבות מקצב תופים: הקשה מדליקה או מכבה, לחיצה ארוכה לחזרות (1 עד 10 או אינסוף). בלי תיבות דולקות, הערוץ ממשיך בלופ.",
+              "EQ: Low, Mid, High ו-Mid Hz. Gain ו-Squeeze."
             ]
           },
           {
@@ -56,11 +55,18 @@
             "bullets": [
               "הכפתור Swap נקרא עכשיו Load.",
               "כפתור Save שליד Random שומר את הסאמפלים יחד עם הביטים בקיט הנוכחי.",
+              "כל מקצב שומר את הסאמפלים, הווליום וימין ושמאל שלו. Save, ומעבר בין מקצבים, כותבים אותם לקיט הנוכחי.",
               "בוחר הסאמפלים מציג לכל ערוץ רק את הסאמפלים שלו, מחולקים ל-Factory ול-Exclusive.",
               "הערוצים Extra 1 עד 3 נקראים עכשיו FX 1 עד 3 וחולקים בנק אחד.",
               "ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים: 40 ב-Factory, 18 ב-Exclusive ו-33 בקטגוריה החדשה Authentic. סך הכל 91.",
               "החצים בערוצי התופים נצבעים בזהב לשנייה אחת אחרי הקשה.",
               "מי שקונה Pro מקבל גם את החבילה האקסקלוסיבית בחינם, בלי עלות נוספת ובלי כפתור הורדה."
+            ]
+          },
+          {
+            "title": "Pad",
+            "bullets": [
+              "הקשה על + פותחת מקלדת שנייה, משותפת עם מסך Sound."
             ]
           },
           {
@@ -171,15 +177,15 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
         "title": "Coming in the next update: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
-        "ticker": "Coming in the next update: Loop Editor in the looper, with Trim, loop and repeats",
-        "summary": "Coming in the next update, version 1.10: a new loop editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, and a drum sample picker with Factory and Exclusive for each channel.",
+        "ticker": "Coming in the next update: Loop Editor and Mic Editor, with Trim, Loop and 8 drum-rhythm boxes",
+        "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save.",
         "href": "/guide",
         "cta": "Open the guide",
         "images": [
           "/assets/updates/loop-editor-110.jpg"
         ],
         "imageAlts": [
-          "Loop Editor in 1.10: Trim, Loop, Repeats, EQ, Gain and Squeeze for one looper channel."
+          "Loop Editor in 1.10: Trim, Loop, 8 drum-rhythm boxes, EQ, Gain and Squeeze."
         ],
         "sections": [
           {
@@ -195,11 +201,10 @@
           {
             "title": "Loop editor",
             "bullets": [
-              "Opens when you tap the waveform.",
-              "Trim the recording.",
-              "Set a loop and the number of repeats: tap 1 to 10 or infinity, or type a number from 1 to 88.",
-              "EQ: Low, Mid, High and Mid Hz.",
-              "Gain and Squeeze."
+              "Opens when you tap the waveform. Mic Editor opens the same way on a Mic channel.",
+              "Trim the recording. Set a loop.",
+              "8 drum-rhythm boxes: tap to turn on or off, long-press for repeats (1 to 10 or infinity). With no boxes on, the channel keeps looping.",
+              "EQ: Low, Mid, High and Mid Hz. Gain and Squeeze."
             ]
           },
           {
@@ -207,11 +212,18 @@
             "bullets": [
               "The Swap button is now called Load.",
               "The Save button next to Random saves the samples together with the beats into the current kit.",
+              "Each rhythm keeps its own samples, volumes and left and right. Save, and switching rhythms, write them into the current kit.",
               "The sample picker shows each channel only its own samples, split into Factory and Exclusive.",
               "Channels Extra 1 to 3 are now called FX 1 to 3 and share one bank.",
               "Channel 8 is now called Voice and holds only vocals: 40 in Factory, 18 in Exclusive and 33 in the new Authentic category. Total 91.",
               "The arrows on the drum channels turn gold for one second after a tap.",
               "Whoever buys Pro also gets the Exclusive pack free, at no extra cost and with no download button."
+            ]
+          },
+          {
+            "title": "Pad",
+            "bullets": [
+              "A tap on + opens a second keyboard, shared with the Sound screen."
             ]
           },
           {
@@ -322,15 +334,15 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
         "title": "В следующем обновлении: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
-        "ticker": "В следующем обновлении: Loop Editor в лупере, с Trim, лупом и повторами",
-        "summary": "В следующем обновлении, версия 1.10: новый редактор лупов, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency и выбор сэмплов ударных с Factory и Exclusive для каждого канала.",
+        "ticker": "В следующем обновлении: Loop Editor и Mic Editor, с Trim, лупом и 8 ячейками ритма ударных",
+        "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением.",
         "href": "/guide",
         "cta": "Открыть руководство",
         "images": [
           "/assets/updates/loop-editor-110.jpg"
         ],
         "imageAlts": [
-          "Loop Editor в 1.10: Trim, Loop, Repeats, EQ, Gain и Squeeze для одного канала лупера."
+          "Loop Editor в 1.10: Trim, Loop, 8 ячеек ритма ударных, EQ, Gain и Squeeze."
         ],
         "sections": [
           {
@@ -346,11 +358,10 @@
           {
             "title": "Редактор лупов",
             "bullets": [
-              "Открывается нажатием на волну канала.",
-              "Обрезка записи с Trim.",
-              "Луп и число повторов: нажмите 1 до 10 или бесконечность, или введите число от 1 до 88.",
-              "EQ: Low, Mid, High и Mid Hz.",
-              "Gain и Squeeze."
+              "Открывается нажатием на волну. Mic Editor открывается так же на канале Mic.",
+              "Обрезка записи с Trim. Задание лупа.",
+              "8 ячеек ритма ударных: нажатие включает или выключает, долгое нажатие для повторов (1 до 10 или бесконечность). Без включённых ячеек канал продолжает луп.",
+              "EQ: Low, Mid, High и Mid Hz. Gain и Squeeze."
             ]
           },
           {
@@ -358,11 +369,18 @@
             "bullets": [
               "Кнопка Swap теперь называется Load.",
               "Кнопка Save рядом с Random сохраняет сэмплы вместе с битами в текущий набор.",
+              "Каждый ритм хранит свои сэмплы, громкость и лево и право. Save и смена ритма записывают их в текущий набор.",
               "Выбор сэмплов показывает каждому каналу только его сэмплы, разделённые на Factory и Exclusive.",
               "Каналы Extra 1 до 3 теперь называются FX 1 до 3 и делят один банк.",
               "Канал 8 теперь называется Voice и хранит только вокал: 40 в Factory, 18 в Exclusive и 33 в новой категории Authentic. Всего 91.",
               "Стрелки на каналах ударных загораются золотым на одну секунду после нажатия.",
               "Кто покупает Pro, получает и пакет Exclusive бесплатно, без доплаты и без кнопки загрузки."
+            ]
+          },
+          {
+            "title": "Pad",
+            "bullets": [
+              "Нажатие на + открывает вторую клавиатуру, общую с экраном Sound."
             ]
           },
           {
@@ -473,15 +491,15 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
         "title": "في التحديث القادم: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
-        "ticker": "في التحديث القادم: Loop Editor في اللوبر، مع Trim واللوب وعدد التكرارات",
-        "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive لكل قناة.",
+        "ticker": "في التحديث القادم: Loop Editor وMic Editor، مع Trim واللوب و8 مربعات إيقاع طبول",
+        "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي.",
         "href": "/guide",
         "cta": "افتح الدليل",
         "images": [
           "/assets/updates/loop-editor-110.jpg"
         ],
         "imageAlts": [
-          "Loop Editor في الإصدار 1.10: Trim وLoop وRepeats وEQ وGain وSqueeze لقناة واحدة في اللوبر."
+          "Loop Editor في الإصدار 1.10: Trim وLoop و8 مربعات إيقاع طبول وEQ وGain وSqueeze."
         ],
         "sections": [
           {
@@ -497,11 +515,10 @@
           {
             "title": "محرر اللوب",
             "bullets": [
-              "يُفتح بالضغط على موجة القناة.",
-              "قص التسجيل بـ Trim.",
-              "تحديد اللوب وعدد التكرارات: اضغط 1 حتى 10 أو اللانهاية، أو اكتب رقماً من 1 إلى 88.",
-              "EQ: Low وMid وHigh وMid Hz.",
-              "Gain وSqueeze."
+              "يُفتح بالضغط على الموجة. Mic Editor يُفتح بنفس الطريقة على قناة Mic.",
+              "قص التسجيل بـ Trim. تحديد اللوب.",
+              "8 مربعات إيقاع طبول: الضغط يشغّل أو يوقف، والضغط المطوّل للتكرارات (1 حتى 10 أو اللانهاية). بلا مربعات مشغّلة، تواصل القناة اللوب.",
+              "EQ: Low وMid وHigh وMid Hz. Gain وSqueeze."
             ]
           },
           {
@@ -509,11 +526,18 @@
             "bullets": [
               "زر Swap اسمه الآن Load.",
               "زر Save بجانب Random يحفظ العينات مع الإيقاعات في الطقم الحالي.",
+              "كل إيقاع يحتفظ بعيّناته وحجمه ويساره ويمينه. Save والانتقال بين الإيقاعات يكتبانها في الطقم الحالي.",
               "منتقي العينات يعرض لكل قناة عيناتها فقط، مقسّمة إلى Factory وExclusive.",
               "القنوات Extra 1 حتى 3 اسمها الآن FX 1 حتى 3 وتتشارك بنكاً واحداً.",
               "القناة 8 اسمها الآن Voice وتحمل الغناء فقط: 40 في Factory و18 في Exclusive و33 في الفئة الجديدة Authentic. المجموع 91.",
               "الأسهم على قنوات الطبول تصبح ذهبية لثانية واحدة بعد الضغط.",
               "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، دون تكلفة إضافية ودون زر تنزيل."
+            ]
+          },
+          {
+            "title": "Pad",
+            "bullets": [
+              "الضغط على + يفتح لوحة مفاتيح ثانية، مشتركة مع شاشة Sound."
             ]
           },
           {

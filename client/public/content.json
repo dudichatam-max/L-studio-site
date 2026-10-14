@@ -349,7 +349,7 @@
                 "title": "Keys",
                 "body": [
                   "על הקלידים כתוב D, R, M, F, S, L, S, L. המספר מתחת לקליד הוא ה-Hz שלו. לוחצים על קליד כדי לנגן. עוזבים כדי לעצור. הם מתחילים ב-222, 299, 333, 355, 396, 444, 463, ו-477 Hz.",
-                  "הקשה על + פותחת מקלדת שנייה מעל הראשונה, אוקטבה אחת גבוה יותר. הקשה נוספת סוגרת אותה."
+                  "הקשה על + פותחת מקלדת שנייה מעל הראשונה, אוקטבה אחת גבוה יותר. אותו + נמצא גם במסך Pad, והמקלדת השנייה נשארת פתוחה כשעוברים בין Sound ל-Pad. הקשה נוספת סוגרת אותה."
                 ],
                 "media": "assets/guide/keys.jpg"
               },
@@ -386,10 +386,13 @@
                   "הקשה על Show tutorial מתחילה את הסיור מחדש.",
                   "הסיור עודכן ל-1.08. עכשיו הוא מלמד את Sound FX, את 8 עמודי הלופ עם השמות והצבעים שלהם, ואת טבעת הזהב שמראה את הערך של נוב. פותחים אותו מ-Settings > Show tutorial.",
                   "הקשה על Factory 64 שואלת Restore Factory 64? Restore מחליף את פריסטי Factory 64, את כל 8 חבילות ה-Style, ואת כל 11 חבילות ה-Exclusive, ואז טוען את מקום 1 בעמוד 1. Cancel סוגר את השאלה.",
-                  "הקשה על benchmark, מתחת ל-Factory 64, פותחת את כלי בדיקת האודיו.",
+                  "הקשה על Benchmark, מתחת ל-Factory 64, פותחת את כלי בדיקת האודיו.",
                   "ה-X ו-Close סוגרים את Settings."
                 ],
-                "media": "assets/guide/settings-window-110.jpg"
+                "media": "assets/guide/settings-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/settings-window-110.jpg": "Settings בגרסה 1.10: New session ראשון, ואחריו Custom Frequency, Language, Save as, Load ו-Benchmark."
+                }
               }
             ]
           },
@@ -404,10 +407,18 @@
               "הקשה על SUB מדליקה או מכבה אותו. הרמז אומר Bass -1 oct.",
               "הקשה על WARM מדליקה או מכבה אותו. הרמז אומר Analog warm.",
               "הקשה על VIBE מדליקה או מכבה אותו. הרמז אומר Soft vibrato.",
-              "מחזיקים 1/4, 1/8, 1/16, או 1/32. מחזיקים STOP."
+              "מחזיקים 1/4, 1/8, 1/16, או 1/32. מחזיקים STOP.",
+              "הקשה על +, ליד שורת הקולות, פותחת מקלדת שנייה מעל הראשונה, אוקטבה אחת גבוה יותר. אותו + נמצא גם במסך Sound, והמקלדת השנייה נשארת פתוחה כשעוברים בין Pad ל-Sound. הקשה נוספת סוגרת אותה."
             ],
-            "media": "assets/guide/pad-screen.jpg",
-            "sections": []
+            "media": "assets/guide/pad-screen-110.jpg",
+            "sections": [],
+            "images": [
+              "assets/guide/pad-dual-keyboard-110.jpg"
+            ],
+            "imageAlts": {
+              "assets/guide/pad-screen-110.jpg": "מסך Pad בגרסה 1.10, עם ה-Pad החי והמקלדת התחתונה.",
+              "assets/guide/pad-dual-keyboard-110.jpg": "מסך Pad בגרסה 1.10 עם המקלדת השנייה פתוחה, משותפת עם Sound."
+            }
           },
           {
             "id": "drum",
@@ -421,7 +432,7 @@
               "גרירה על Drum Vol קובעת את ווליום התופים מ-0% עד 100%. הקשה על המספר נותנת להקליד ערך. LIVE לא פותחת את התיבה.",
               "גרירה על Swing קובעת swing מ-0% עד 100%. גרירה על BPM קובעת את הטמפו מ-60 עד 200. BPM, Swing, והווליום של השורות פועלים בזמן אמת: שינוי שעושים בזמן שהתופים מנגנים נשאר גם כשהפטרן הבא מתחיל.",
               "מחזיקים 1/4, 1/8, 1/16, או 1/32 כדי לחזור על התופים בחלוקה הזאת כל עוד מחזיקים. עוזבים, והחזרה נעצרת. הקשה עליהם לא עושה כלום. מחזיקים STOP. הקשה עליו לא עושה כלום.",
-              "הקשה על מספר פטרן, 1 עד 8, טוענת את הפטרן, כולל הטמפו, ה-swing, הווליום, וימין ושמאל. לחיצה ארוכה פותחת את Pattern repeats.",
+              "הקשה על מספר מקצב, 1 עד 8, טוענת את המקצב, כולל הטמפו, ה-swing, הסמפל בכל שורה, הווליום, וימין ושמאל. מעבר למקצב אחר שומר את זה שעוזבים לתוך הקיט הנוכחי. הקשה על Save, ליד Random, גם שומרת את המקצב הנוכחי וכותבת על הקיט הנוכחי. לחיצה ארוכה על מספר מקצב פותחת את Pattern repeats.",
               "הקשה על Save, ליד Random, שומרת את התופים הנוכחיים לתוך הפטרן שעליו אתם, כותבת את ה-BPM, ה-Swing והווליום של השורות לכל 8 הפטרנים, ושומרת את הקיט עם הסאונד שנבחר בכל שורה. הקשה על Random בונה פטרן חדש בז'אנר שנבחר.",
               "השורות הן Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 ו-Voice. הקשה על שם שורה פותחת רשימת סאונדים לשורה הזאת, מכל קיטי ה-Factory, מקיטי ה-Exclusive כשהם באפליקציה, וב-Voice גם מ-Authentic. כל שורה מציגה רק סאונדים מהסוג שלה: FX 1 עד FX 3 חולקים רשימה אחת, ו-Voice מציג רק שירה. הקשה על סאונד שמה אותו בשורה והרשימה נשארת פתוחה. כשהתופים מנגנים שומעים אותו במכה הבאה. כשהם עצורים הוא מתנגן פעם אחת. החצים ◀ ו-▶ ליד Load עוברים לסאונד הקודם או הבא. הקשה על Load בוחרת קובץ שמע מהטלפון. LIVE מכבה את Load. החצים ◀ ו-▶ נצבעים בזהב לשנייה אחת אחרי הקשה.",
               "השורה השמינית נקראת עכשיו Voice ומחזיקה רק ווקאלים. ברשימת הסאונדים שלה יש 40 ווקאלים ב-Factory, 18 ב-Exclusive ו-33 בקטגוריה החדשה Authentic, 91 בסך הכל.",
@@ -502,12 +513,15 @@
                 "body": [
                   "הקשה על הגל של ערוץ פותחת את Loop Editor לערוץ הזה, וההקלטה מצוירת בצבע הערוץ. שומעים את השינויים תוך כדי עריכה.",
                   "Trim קובע איזה חלק מההקלטה נשאר. Loop קובע איפה הלופ מתחיל ונגמר.",
-                  "Repeats: הקשה על 1 עד 10 או על ∞, או הקלדה של 1 עד 88 בתיבה. עם מספר, הערוץ מתנגן כמה פעמים ואז נעצר לבד.",
+                  "Drum rhythms: 8 תיבות, אחת לכל מקצב תופים. הקשה מדליקה או מכבה תיבה. לחיצה ארוכה פותחת את Pattern repeats לתיבה (1 עד 10 או אינסוף). כשהתופים מנגנים, הערוץ הולך אחרי המקצבים האלה. בלי תיבות דולקות, הערוץ ממשיך בלופ לבד.",
                   "LOW, MID ו-HIGH נעים מ-30- dB עד 30+ dB. MID HZ מזיז את הפס האמצעי מ-100 Hz עד 8 kHz. GAIN ו-SQUEEZE נעים מ-0 עד 100.",
                   "Play מנגן את הערוץ. Reset מחזיר הכל לערכי ההתחלה. Close יוצא בלי לשמור. Save שומר את השינויים, וחיתוך עם Trim חותך את ההקלטה. Redo יכול להחזיר את ההקלטה מלפני החיתוך.",
                   "הגדרות העורך נשמרות עם סשן הלופ ובפרויקט שמייצאים."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg"
+                "media": "assets/guide/loop-editor-110.jpg",
+                "imageAlts": {
+                  "assets/guide/loop-editor-110.jpg": "Loop Editor בגרסה 1.10: Trim, Loop, 8 תיבות מקצב תופים, EQ, Gain ו-Squeeze."
+                }
               },
               {
                 "id": "looper-fx",
@@ -524,7 +538,10 @@
             "images": [
               "assets/guide/loop-pages-110.jpg",
               "assets/guide/loop-page-name.jpg"
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/loop-screen-110.jpg": "הלופר בגרסה 1.10: עמוד 1 מתוך 8, ארבעה ערוצים עם Rec, Play, Redo ו-Tap on the visualizer."
+            }
           },
           {
             "id": "mic",
@@ -532,6 +549,7 @@
             "body": [
               "הקשה על Mic פותחת את המסך הזה.",
               "הקשה על Redo מחזירה את ההקלטה האחרונה שאבדה במסך הזה: הקלטה שנמחקה או שהוקלט עליה מחדש. זה לא עוזב את המסך. זה לא עובד בזמן שהערוץ עסוק. LIVE עדיין מאפשר את Redo כשיש הקלטה להחזיר. ל-Mic ול-Loop יש החזרות נפרדות.",
+              "הקשה על הויזואלייזר של ערוץ פותחת את Mic Editor. זה עובד כשיש בערוץ הקלטה והוא לא מקליט.",
               "הקשה על Lyrics פותחת את Lyrics.",
               "הקשה על Monitor מדליקה או מכבה את המוניטור. כשהוא דולק, כתוב Monitor ON. אם הוא דולק ואין אוזניות, הטלפון מזהיר מפידבק של הרמקול.",
               "Gain, Mon, HPF, Gate, Low, Pres, ו-Comp נמצאים מתחת לכותרת. גרירה קובעת את הנוב. Gain רץ מ-1x עד 4x. HPF רץ מ-40 Hz עד 240 Hz. הקשה על המספר נותנת להקליד ערך. LIVE לא פותחת את התיבה.",
@@ -548,6 +566,18 @@
             ],
             "media": "assets/guide/mic-screen-110.jpg",
             "sections": [
+              {
+                "id": "mic-editor",
+                "title": "Mic Editor",
+                "body": [
+                  "הקשה על הויזואלייזר של ערוץ Mic פותחת את Mic Editor. זה אותו עורך כמו Loop Editor: Trim, Loop, 8 תיבות מקצב התופים, EQ, Gain ו-Squeeze.",
+                  "זה עובד כשיש בערוץ הקלטה והוא לא מקליט. Save שומר את השינויים עם פרויקט המיק. Redo יכול להחזיר הקלטה מלפני חיתוך."
+                ],
+                "media": "assets/guide/loop-editor-110.jpg",
+                "imageAlts": {
+                  "assets/guide/loop-editor-110.jpg": "Loop Editor בגרסה 1.10: Trim, Loop, 8 תיבות מקצב תופים, EQ, Gain ו-Squeeze."
+                }
+              },
               {
                 "id": "mic-fx",
                 "title": "Mic FX",
@@ -575,7 +605,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/mic-screen-110.jpg": "מסך Mic בגרסה 1.10, עם Redo במקום שבו היה Back."
+              "assets/guide/mic-screen-110.jpg": "מסך Mic בגרסה 1.10, עם Redo והקשה על הויזואלייזר ל-Mic Editor."
             }
           }
         ]
@@ -1334,15 +1364,15 @@
             "id": "app-1-10-loop-editor-drums",
             "status": "in_progress",
             "title": "מגיע בעדכון הבא: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
-            "ticker": "מגיע בעדכון הבא: Loop Editor בלופר, עם Trim, לופ ומספר חזרות",
-            "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, ובוחר סאמפלים לתופים עם Factory ו-Exclusive לכל ערוץ.",
+            "ticker": "מגיע בעדכון הבא: Loop Editor ו-Mic Editor, עם Trim, לופ ו-8 תיבות מקצב תופים",
+            "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
               "/assets/updates/loop-editor-110.jpg"
             ],
             "imageAlts": [
-              "Loop Editor בגרסה 1.10: Trim, Loop, Repeats, EQ, Gain ו-Squeeze לערוץ אחד בלופר."
+              "Loop Editor בגרסה 1.10: Trim, Loop, 8 תיבות מקצב תופים, EQ, Gain ו-Squeeze."
             ],
             "sections": [
               {
@@ -1358,11 +1388,10 @@
               {
                 "title": "עורך לופים",
                 "bullets": [
-                  "נפתח בהקשה על הגל של הערוץ.",
-                  "חיתוך ההקלטה עם Trim.",
-                  "קביעת לופ ומספר חזרות: הקשה על 1 עד 10 או על אינסוף, או הקלדה של מספר מ-1 עד 88.",
-                  "EQ: Low, Mid, High ו-Mid Hz.",
-                  "Gain ו-Squeeze."
+                  "נפתח בהקשה על הגל. Mic Editor נפתח באותו אופן בערוץ Mic.",
+                  "חיתוך ההקלטה עם Trim. קביעת לופ.",
+                  "8 תיבות מקצב תופים: הקשה מדליקה או מכבה, לחיצה ארוכה לחזרות (1 עד 10 או אינסוף). בלי תיבות דולקות, הערוץ ממשיך בלופ.",
+                  "EQ: Low, Mid, High ו-Mid Hz. Gain ו-Squeeze."
                 ]
               },
               {
@@ -1370,11 +1399,18 @@
                 "bullets": [
                   "הכפתור Swap נקרא עכשיו Load.",
                   "כפתור Save שליד Random שומר את הסאמפלים יחד עם הביטים בקיט הנוכחי.",
+                  "כל מקצב שומר את הסאמפלים, הווליום וימין ושמאל שלו. Save, ומעבר בין מקצבים, כותבים אותם לקיט הנוכחי.",
                   "בוחר הסאמפלים מציג לכל ערוץ רק את הסאמפלים שלו, מחולקים ל-Factory ול-Exclusive.",
                   "הערוצים Extra 1 עד 3 נקראים עכשיו FX 1 עד 3 וחולקים בנק אחד.",
                   "ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים: 40 ב-Factory, 18 ב-Exclusive ו-33 בקטגוריה החדשה Authentic. סך הכל 91.",
                   "החצים בערוצי התופים נצבעים בזהב לשנייה אחת אחרי הקשה.",
                   "מי שקונה Pro מקבל גם את החבילה האקסקלוסיבית בחינם, בלי עלות נוספת ובלי כפתור הורדה."
+                ]
+              },
+              {
+                "title": "Pad",
+                "bullets": [
+                  "הקשה על + פותחת מקלדת שנייה, משותפת עם מסך Sound."
                 ]
               },
               {
@@ -1819,7 +1855,7 @@
                 "title": "Keys",
                 "body": [
                   "The keys read D, R, M, F, S, L, S, L. The number under a key is its Hz. Press a key to play it. Release it to stop. They start at 222, 299, 333, 355, 396, 444, 463, and 477 Hz.",
-                  "A tap on + opens a second keyboard above the first, one octave higher. Another tap closes it."
+                  "A tap on + opens a second keyboard above the first, one octave higher. The same + is on the Pad screen, and the second keyboard stays open when you switch between Sound and Pad. Another tap closes it."
                 ],
                 "media": "assets/guide/keys.jpg"
               },
@@ -1856,10 +1892,13 @@
                   "A tap on Show tutorial starts the tour again.",
                   "The tour was updated for 1.08. It now covers Sound FX, the 8 loop pages with their names and colors, and the gold ring that shows a knob's value. Open it from Settings > Show tutorial.",
                   "A tap on Factory 64 asks Restore Factory 64? Restore replaces the Factory 64 presets, all 8 Style drum packs, and all 11 Exclusive packs, then loads slot 1 on page 1. Cancel closes the question.",
-                  "A tap on benchmark, under Factory 64, opens the audio test tool.",
+                  "A tap on Benchmark, under Factory 64, opens the audio test tool.",
                   "The X and Close close Settings."
                 ],
-                "media": "assets/guide/settings-window-110.jpg"
+                "media": "assets/guide/settings-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/settings-window-110.jpg": "Settings in 1.10: New session first, then Custom Frequency, Language, Save as, Load, and Benchmark."
+                }
               }
             ]
           },
@@ -1874,10 +1913,18 @@
               "A tap on SUB turns it on or off. The hint reads Bass -1 oct.",
               "A tap on WARM turns it on or off. The hint reads Analog warm.",
               "A tap on VIBE turns it on or off. The hint reads Soft vibrato.",
-              "Hold 1/4, 1/8, 1/16, or 1/32. Hold STOP."
+              "Hold 1/4, 1/8, 1/16, or 1/32. Hold STOP.",
+              "A tap on +, next to the voice row, opens a second keyboard above the first, one octave higher. The same + is on the Sound screen, and the second keyboard stays open when you switch between Pad and Sound. Another tap closes it."
             ],
-            "media": "assets/guide/pad-screen.jpg",
-            "sections": []
+            "media": "assets/guide/pad-screen-110.jpg",
+            "sections": [],
+            "images": [
+              "assets/guide/pad-dual-keyboard-110.jpg"
+            ],
+            "imageAlts": {
+              "assets/guide/pad-screen-110.jpg": "The Pad screen in 1.10, with the live pad and the bottom keyboard.",
+              "assets/guide/pad-dual-keyboard-110.jpg": "The Pad screen in 1.10 with the second keyboard open, shared with Sound."
+            }
           },
           {
             "id": "drum",
@@ -1891,7 +1938,7 @@
               "A drag on Drum Vol sets the drum volume from 0% to 100%. A tap on the number lets you type a value. LIVE does not open that box.",
               "A drag on Swing sets swing from 0% to 100%. A drag on BPM sets the tempo from 60 to 200. BPM, Swing, and the row volumes are live: a change you make while the drums play stays when the next pattern starts.",
               "Hold 1/4, 1/8, 1/16, or 1/32 to repeat the drums at that division while you hold it. Release, and that repeat stops. A tap on them does nothing. Hold STOP. A tap on it does nothing.",
-              "A tap on a pattern number, 1 through 8, loads that pattern, including its tempo, swing, volumes, and left and right. A long-press opens Pattern repeats.",
+              "A tap on a rhythm number, 1 through 8, loads that rhythm, including its tempo, swing, the sample on each row, the volumes, and left and right. Switching to another rhythm saves the one you leave into the current kit. A tap on Save, next to Random, also saves the current rhythm and overwrites the current kit. A long-press on a rhythm number opens Pattern repeats.",
               "A tap on Save, next to Random, stores the current drums into the pattern you are on, writes the current BPM, Swing, and row volumes into all 8 patterns, and saves the kit with the sound picked on each row. A tap on Random builds a new pattern in the chosen genre.",
               "The rows are Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3, and Voice. A tap on a row name opens a sound list for that row, from all the Factory kits, from the Exclusive kits when they are in the app, and for Voice also from Authentic. Each row lists only its own kind of sound: FX 1 to FX 3 share one list, and Voice lists vocals only. A tap on a sound puts it on the row and the list stays open. While the drums play you hear it on the next hit. When they are stopped it plays once. The ◀ and ▶ arrows next to Load step to the previous or next sound. A tap on Load picks an audio file from the phone. LIVE turns Load off. The ◀ and ▶ arrows turn gold for one second after a tap.",
               "Row 8 is now called Voice and holds only vocals. Its sound list has 40 vocals in Factory, 18 in Exclusive and 33 in the new Authentic category, 91 in all.",
@@ -1972,12 +2019,15 @@
                 "body": [
                   "A tap on a channel's waveform opens Loop Editor for that channel, with its take drawn in the channel color. You hear the changes while you edit.",
                   "Trim sets the part of the take to keep. Loop sets where the loop starts and ends.",
-                  "Repeats: a tap on 1 to 10 or on ∞, or type 1 to 88 in the box. With a number, the channel plays that many times and then stops by itself.",
+                  "Drum rhythms: 8 boxes, one for each drum rhythm. A tap turns a box on or off. A long-press opens Pattern repeats for that box (1 to 10 or infinity). When the drums play, the channel follows those rhythms. With no boxes on, the channel keeps looping on its own.",
                   "LOW, MID, and HIGH run from -30 dB to +30 dB. MID HZ moves the middle band from 100 Hz to 8 kHz. GAIN and SQUEEZE run from 0 to 100.",
                   "Play plays the channel. Reset sets everything back to the start values. Close leaves without saving. Save keeps the changes, and a trim cuts the take. Redo can bring back the take from before the trim.",
                   "The editor settings are saved with the loop session and in the exported project."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg"
+                "media": "assets/guide/loop-editor-110.jpg",
+                "imageAlts": {
+                  "assets/guide/loop-editor-110.jpg": "Loop Editor in 1.10: Trim, Loop, 8 drum-rhythm boxes, EQ, Gain and Squeeze."
+                }
               },
               {
                 "id": "looper-fx",
@@ -1994,7 +2044,10 @@
             "images": [
               "assets/guide/loop-pages-110.jpg",
               "assets/guide/loop-page-name.jpg"
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/loop-screen-110.jpg": "The looper in 1.10: page 1 of 8, four channels with Rec, Play, Redo, and Tap on the visualizer."
+            }
           },
           {
             "id": "mic",
@@ -2002,6 +2055,7 @@
             "body": [
               "A tap on Mic opens this screen.",
               "A tap on Redo brings back the take you lost most recently on this screen: one you cleared or recorded over. It does not leave the screen. It does not work while that channel is busy. LIVE still allows Redo when there is a take to bring back. Mic and Loop keep separate restores.",
+              "A tap on a channel's visualizer opens Mic Editor. It works when the channel has a take and is not recording.",
               "A tap on Lyrics opens Lyrics.",
               "A tap on Monitor turns the monitor on or off. When it is on, the label reads Monitor ON. If it is on and headphones are not connected, the phone warns about speaker feedback.",
               "Gain, Mon, HPF, Gate, Low, Pres, and Comp sit under the heading. A drag sets the knob. Gain runs from 1x to 4x. HPF runs from 40 Hz to 240 Hz. A tap on the number lets you type a value. LIVE does not open that box.",
@@ -2018,6 +2072,18 @@
             ],
             "media": "assets/guide/mic-screen-110.jpg",
             "sections": [
+              {
+                "id": "mic-editor",
+                "title": "Mic Editor",
+                "body": [
+                  "A tap on a Mic channel's visualizer opens Mic Editor. It is the same editor as Loop Editor: Trim, Loop, the 8 drum-rhythm boxes, EQ, Gain and Squeeze.",
+                  "It works when the channel has a take and is not recording. Save keeps the changes with the mic project. Redo can bring back a take from before a trim."
+                ],
+                "media": "assets/guide/loop-editor-110.jpg",
+                "imageAlts": {
+                  "assets/guide/loop-editor-110.jpg": "Loop Editor in 1.10: Trim, Loop, 8 drum-rhythm boxes, EQ, Gain and Squeeze."
+                }
+              },
               {
                 "id": "mic-fx",
                 "title": "Mic FX",
@@ -2045,7 +2111,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/mic-screen-110.jpg": "The Mic screen in 1.10, with Redo where Back used to be."
+              "assets/guide/mic-screen-110.jpg": "The Mic screen in 1.10, with Redo and a tap on the visualizer for Mic Editor."
             }
           }
         ]
@@ -2804,15 +2870,15 @@
             "id": "app-1-10-loop-editor-drums",
             "status": "in_progress",
             "title": "Coming in the next update: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
-            "ticker": "Coming in the next update: Loop Editor in the looper, with Trim, loop and repeats",
-            "summary": "Coming in the next update, version 1.10: a new loop editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, and a drum sample picker with Factory and Exclusive for each channel.",
+            "ticker": "Coming in the next update: Loop Editor and Mic Editor, with Trim, Loop and 8 drum-rhythm boxes",
+            "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
               "/assets/updates/loop-editor-110.jpg"
             ],
             "imageAlts": [
-              "Loop Editor in 1.10: Trim, Loop, Repeats, EQ, Gain and Squeeze for one looper channel."
+              "Loop Editor in 1.10: Trim, Loop, 8 drum-rhythm boxes, EQ, Gain and Squeeze."
             ],
             "sections": [
               {
@@ -2828,11 +2894,10 @@
               {
                 "title": "Loop editor",
                 "bullets": [
-                  "Opens when you tap the waveform.",
-                  "Trim the recording.",
-                  "Set a loop and the number of repeats: tap 1 to 10 or infinity, or type a number from 1 to 88.",
-                  "EQ: Low, Mid, High and Mid Hz.",
-                  "Gain and Squeeze."
+                  "Opens when you tap the waveform. Mic Editor opens the same way on a Mic channel.",
+                  "Trim the recording. Set a loop.",
+                  "8 drum-rhythm boxes: tap to turn on or off, long-press for repeats (1 to 10 or infinity). With no boxes on, the channel keeps looping.",
+                  "EQ: Low, Mid, High and Mid Hz. Gain and Squeeze."
                 ]
               },
               {
@@ -2840,11 +2905,18 @@
                 "bullets": [
                   "The Swap button is now called Load.",
                   "The Save button next to Random saves the samples together with the beats into the current kit.",
+                  "Each rhythm keeps its own samples, volumes and left and right. Save, and switching rhythms, write them into the current kit.",
                   "The sample picker shows each channel only its own samples, split into Factory and Exclusive.",
                   "Channels Extra 1 to 3 are now called FX 1 to 3 and share one bank.",
                   "Channel 8 is now called Voice and holds only vocals: 40 in Factory, 18 in Exclusive and 33 in the new Authentic category. Total 91.",
                   "The arrows on the drum channels turn gold for one second after a tap.",
                   "Whoever buys Pro also gets the Exclusive pack free, at no extra cost and with no download button."
+                ]
+              },
+              {
+                "title": "Pad",
+                "bullets": [
+                  "A tap on + opens a second keyboard, shared with the Sound screen."
                 ]
               },
               {
@@ -3289,7 +3361,7 @@
                 "title": "Keys",
                 "body": [
                   "На клавишах написано D, R, M, F, S, L, S, L. Число под клавишей это её Hz. Нажатие на клавишу играет её. Отпускание останавливает. Они начинают с 222, 299, 333, 355, 396, 444, 463 и 477 Hz.",
-                  "Нажатие на + открывает вторую клавиатуру над первой, на октаву выше. Ещё одно нажатие закрывает её."
+                  "Нажатие на + открывает вторую клавиатуру над первой, на октаву выше. Тот же + есть на экране Pad, и вторая клавиатура остаётся открытой при переходе между Sound и Pad. Ещё одно нажатие закрывает её."
                 ],
                 "media": "assets/guide/keys.jpg"
               },
@@ -3326,10 +3398,13 @@
                   "Нажатие на Show tutorial начинает тур заново.",
                   "Тур обновлён для 1.08. Теперь он показывает Sound FX, 8 страниц лупера с их именами и цветами и золотое кольцо, которое показывает значение регулятора. Откройте его через Settings > Show tutorial.",
                   "Нажатие на Factory 64 спрашивает Restore Factory 64? Restore заменяет пресеты Factory 64, все 8 наборов Style и все 11 наборов Exclusive, затем загружает место 1 на странице 1. Cancel закрывает вопрос.",
-                  "Нажатие на benchmark, под Factory 64, открывает инструмент проверки звука.",
+                  "Нажатие на Benchmark, под Factory 64, открывает инструмент проверки звука.",
                   "X и Close закрывают Settings."
                 ],
-                "media": "assets/guide/settings-window-110.jpg"
+                "media": "assets/guide/settings-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/settings-window-110.jpg": "Settings в 1.10: New session первым, затем Custom Frequency, Language, Save as, Load и Benchmark."
+                }
               }
             ]
           },
@@ -3344,10 +3419,18 @@
               "Нажатие на SUB включает или выключает его. Подсказка говорит Bass -1 oct.",
               "Нажатие на WARM включает или выключает его. Подсказка говорит Analog warm.",
               "Нажатие на VIBE включает или выключает его. Подсказка говорит Soft vibrato.",
-              "Удерживайте 1/4, 1/8, 1/16 или 1/32. Удерживайте STOP."
+              "Удерживайте 1/4, 1/8, 1/16 или 1/32. Удерживайте STOP.",
+              "Нажатие на +, рядом с рядом голосов, открывает вторую клавиатуру над первой, на октаву выше. Тот же + есть на экране Sound, и вторая клавиатура остаётся открытой при переходе между Pad и Sound. Ещё одно нажатие закрывает её."
             ],
-            "media": "assets/guide/pad-screen.jpg",
-            "sections": []
+            "media": "assets/guide/pad-screen-110.jpg",
+            "sections": [],
+            "images": [
+              "assets/guide/pad-dual-keyboard-110.jpg"
+            ],
+            "imageAlts": {
+              "assets/guide/pad-screen-110.jpg": "Экран Pad в 1.10, с живым пэдом и нижней клавиатурой.",
+              "assets/guide/pad-dual-keyboard-110.jpg": "Экран Pad в 1.10 со второй клавиатурой, общей с Sound."
+            }
           },
           {
             "id": "drum",
@@ -3361,7 +3444,7 @@
               "Перетаскивание Drum Vol задаёт громкость ударных от 0% до 100%. Нажатие на число даёт ввести значение. LIVE не открывает это поле.",
               "Перетаскивание Swing задаёт swing от 0% до 100%. Перетаскивание BPM задаёт темп от 60 до 200. BPM, Swing и громкость дорожек работают вживую: изменение во время игры сохраняется, когда начинается следующий паттерн.",
               "Удерживайте 1/4, 1/8, 1/16 или 1/32, чтобы повторять ударные в этом делении, пока держите. Отпустите, и повтор остановится. Нажатие на них ничего не делает. Удерживайте STOP. Нажатие на него ничего не делает.",
-              "Нажатие на номер паттерна, от 1 до 8, загружает этот паттерн, включая темп, swing, громкость и лево и право. Долгое нажатие открывает Pattern repeats.",
+              "Нажатие на номер ритма, от 1 до 8, загружает этот ритм, включая темп, swing, сэмпл на каждом ряду, громкость и лево и право. Переход к другому ритму сохраняет тот, который вы оставляете, в текущий набор. Нажатие на Save рядом с Random тоже сохраняет текущий ритм и перезаписывает текущий набор. Долгое нажатие на номер ритма открывает Pattern repeats.",
               "Нажатие на Save, рядом с Random, сохраняет текущие ударные в паттерн, на котором вы находитесь, записывает текущие BPM, Swing и громкость дорожек во все 8 паттернов и сохраняет набор со звуком, выбранным на каждом ряду. Нажатие на Random строит новый паттерн в выбранном жанре.",
               "Ряды называются Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 и Voice. Нажатие на имя ряда открывает список звуков для этого ряда из всех наборов Factory, из наборов Exclusive, когда они есть в приложении, а для Voice ещё и из Authentic. Каждый ряд показывает только свой вид звуков: FX 1 до FX 3 делят один список, а Voice показывает только вокал. Нажатие на звук ставит его на ряд, и список остаётся открытым. Пока играют ударные, его слышно на следующем ударе. Когда они остановлены, он звучит один раз. Стрелки ◀ и ▶ рядом с Load переходят к предыдущему или следующему звуку. Нажатие на Load выбирает аудиофайл с телефона. LIVE выключает Load. Стрелки ◀ и ▶ загораются золотым на одну секунду после нажатия.",
               "Ряд 8 теперь называется Voice и хранит только вокал. В его списке звуков 40 вокалов в Factory, 18 в Exclusive и 33 в новой категории Authentic, всего 91.",
@@ -3442,12 +3525,15 @@
                 "body": [
                   "Нажатие на волну канала открывает Loop Editor для этого канала, запись нарисована цветом канала. Изменения слышны во время правки.",
                   "Trim задаёт часть записи, которая остаётся. Loop задаёт, где луп начинается и заканчивается.",
-                  "Repeats: нажатие на 1 до 10 или на ∞, или ввод от 1 до 88 в поле. С числом канал играет столько раз и потом сам останавливается.",
+                  "Drum rhythms: 8 ячеек, по одной на каждый ритм ударных. Нажатие включает или выключает ячейку. Долгое нажатие открывает Pattern repeats для этой ячейки (1 до 10 или бесконечность). Пока играют ударные, канал следует этим ритмам. Без включённых ячеек канал сам продолжает луп.",
                   "LOW, MID и HIGH идут от -30 dB до +30 dB. MID HZ сдвигает среднюю полосу от 100 Hz до 8 kHz. GAIN и SQUEEZE идут от 0 до 100.",
                   "Play играет канал. Reset возвращает начальные значения. Close выходит без сохранения. Save сохраняет изменения, а Trim обрезает запись. Redo может вернуть запись до обрезки.",
                   "Настройки редактора сохраняются в сессии лупера и в экспортированном проекте."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg"
+                "media": "assets/guide/loop-editor-110.jpg",
+                "imageAlts": {
+                  "assets/guide/loop-editor-110.jpg": "Loop Editor в 1.10: Trim, Loop, 8 ячеек ритма ударных, EQ, Gain и Squeeze."
+                }
               },
               {
                 "id": "looper-fx",
@@ -3464,7 +3550,10 @@
             "images": [
               "assets/guide/loop-pages-110.jpg",
               "assets/guide/loop-page-name.jpg"
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/loop-screen-110.jpg": "Лупер в 1.10: страница 1 из 8, четыре канала с Rec, Play, Redo и Tap on the visualizer."
+            }
           },
           {
             "id": "mic",
@@ -3472,6 +3561,7 @@
             "body": [
               "Нажатие на Mic открывает этот экран.",
               "Нажатие на Redo возвращает запись, потерянную последней на этом экране: очищенную или записанную поверх. Оно не уходит с экрана. Оно не работает, пока канал занят. LIVE всё ещё позволяет Redo, когда есть что вернуть. У Mic и Loop отдельные восстановления.",
+              "Нажатие на визуализатор канала открывает Mic Editor. Это работает, когда в канале есть запись и он не пишет.",
               "Нажатие на Lyrics открывает Lyrics.",
               "Нажатие на Monitor включает или выключает монитор. Когда он включён, надпись говорит Monitor ON. Если он включён и наушники не подключены, телефон предупреждает об отдаче динамика.",
               "Gain, Mon, HPF, Gate, Low, Pres и Comp находятся под заголовком. Перетаскивание задаёт регулятор. Gain идёт от 1x до 4x. HPF идёт от 40 Hz до 240 Hz. Нажатие на число даёт ввести значение. LIVE не открывает это поле.",
@@ -3488,6 +3578,18 @@
             ],
             "media": "assets/guide/mic-screen-110.jpg",
             "sections": [
+              {
+                "id": "mic-editor",
+                "title": "Mic Editor",
+                "body": [
+                  "Нажатие на визуализатор канала Mic открывает Mic Editor. Это тот же редактор, что и Loop Editor: Trim, Loop, 8 ячеек ритма ударных, EQ, Gain и Squeeze.",
+                  "Это работает, когда в канале есть запись и он не пишет. Save сохраняет изменения с проектом микрофона. Redo может вернуть запись до обрезки."
+                ],
+                "media": "assets/guide/loop-editor-110.jpg",
+                "imageAlts": {
+                  "assets/guide/loop-editor-110.jpg": "Loop Editor в 1.10: Trim, Loop, 8 ячеек ритма ударных, EQ, Gain и Squeeze."
+                }
+              },
               {
                 "id": "mic-fx",
                 "title": "Mic FX",
@@ -3515,7 +3617,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/mic-screen-110.jpg": "Экран Mic в 1.10, с Redo на месте Back."
+              "assets/guide/mic-screen-110.jpg": "Экран Mic в 1.10, с Redo и нажатием на визуализатор для Mic Editor."
             }
           }
         ]
@@ -4274,15 +4376,15 @@
             "id": "app-1-10-loop-editor-drums",
             "status": "in_progress",
             "title": "В следующем обновлении: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
-            "ticker": "В следующем обновлении: Loop Editor в лупере, с Trim, лупом и повторами",
-            "summary": "В следующем обновлении, версия 1.10: новый редактор лупов, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency и выбор сэмплов ударных с Factory и Exclusive для каждого канала.",
+            "ticker": "В следующем обновлении: Loop Editor и Mic Editor, с Trim, лупом и 8 ячейками ритма ударных",
+            "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
               "/assets/updates/loop-editor-110.jpg"
             ],
             "imageAlts": [
-              "Loop Editor в 1.10: Trim, Loop, Repeats, EQ, Gain и Squeeze для одного канала лупера."
+              "Loop Editor в 1.10: Trim, Loop, 8 ячеек ритма ударных, EQ, Gain и Squeeze."
             ],
             "sections": [
               {
@@ -4298,11 +4400,10 @@
               {
                 "title": "Редактор лупов",
                 "bullets": [
-                  "Открывается нажатием на волну канала.",
-                  "Обрезка записи с Trim.",
-                  "Луп и число повторов: нажмите 1 до 10 или бесконечность, или введите число от 1 до 88.",
-                  "EQ: Low, Mid, High и Mid Hz.",
-                  "Gain и Squeeze."
+                  "Открывается нажатием на волну. Mic Editor открывается так же на канале Mic.",
+                  "Обрезка записи с Trim. Задание лупа.",
+                  "8 ячеек ритма ударных: нажатие включает или выключает, долгое нажатие для повторов (1 до 10 или бесконечность). Без включённых ячеек канал продолжает луп.",
+                  "EQ: Low, Mid, High и Mid Hz. Gain и Squeeze."
                 ]
               },
               {
@@ -4310,11 +4411,18 @@
                 "bullets": [
                   "Кнопка Swap теперь называется Load.",
                   "Кнопка Save рядом с Random сохраняет сэмплы вместе с битами в текущий набор.",
+                  "Каждый ритм хранит свои сэмплы, громкость и лево и право. Save и смена ритма записывают их в текущий набор.",
                   "Выбор сэмплов показывает каждому каналу только его сэмплы, разделённые на Factory и Exclusive.",
                   "Каналы Extra 1 до 3 теперь называются FX 1 до 3 и делят один банк.",
                   "Канал 8 теперь называется Voice и хранит только вокал: 40 в Factory, 18 в Exclusive и 33 в новой категории Authentic. Всего 91.",
                   "Стрелки на каналах ударных загораются золотым на одну секунду после нажатия.",
                   "Кто покупает Pro, получает и пакет Exclusive бесплатно, без доплаты и без кнопки загрузки."
+                ]
+              },
+              {
+                "title": "Pad",
+                "bullets": [
+                  "Нажатие на + открывает вторую клавиатуру, общую с экраном Sound."
                 ]
               },
               {
@@ -4759,7 +4867,7 @@
                 "title": "Keys",
                 "body": [
                   "على المفاتيح D وR وM وF وS وL وS وL. الرقم تحت المفتاح هو Hz. اضغط المفتاح لعزفه. اتركه ليوقف. تبدأ على 222 و299 و333 و355 و396 و444 و463 و477 Hz.",
-                  "الضغط على + يفتح لوحة ثانية فوق الأولى، أعلى بأوكتاف. ضغط آخر يغلقها."
+                  "الضغط على + يفتح لوحة مفاتيح ثانية فوق الأولى، أوكتافاً أعلى. نفس الـ + موجود على شاشة Pad، وتبقى لوحة المفاتيح الثانية مفتوحة عند التنقل بين Sound وPad. ضغط آخر يغلقها."
                 ],
                 "media": "assets/guide/keys.jpg"
               },
@@ -4796,10 +4904,13 @@
                   "الضغط على Show tutorial يبدأ الجولة من جديد.",
                   "تم تحديث الجولة للإصدار 1.08. وهي تشرح الآن Sound FX، وصفحات اللوب الثماني بأسمائها وألوانها، والحلقة الذهبية التي تعرض قيمة المقبض. افتحها من Settings > Show tutorial.",
                   "الضغط على Factory 64 يسأل Restore Factory 64? Restore يستبدل إعدادات Factory 64 وكل حزم Style الثماني وكل حزم Exclusive الإحدى عشرة، ثم يحمّل الخانة 1 في الصفحة 1. Cancel يغلق السؤال.",
-                  "الضغط على benchmark، تحت Factory 64، يفتح أداة فحص الصوت.",
+                  "الضغط على Benchmark، تحت Factory 64، يفتح أداة فحص الصوت.",
                   "X وClose يغلقان Settings."
                 ],
-                "media": "assets/guide/settings-window-110.jpg"
+                "media": "assets/guide/settings-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/settings-window-110.jpg": "Settings في الإصدار 1.10: New session أولاً، ثم Custom Frequency وLanguage وSave as وLoad وBenchmark."
+                }
               }
             ]
           },
@@ -4814,10 +4925,18 @@
               "الضغط على SUB يشغّله أو يوقفه. التلميح يقول Bass -1 oct.",
               "الضغط على WARM يشغّله أو يوقفه. التلميح يقول Analog warm.",
               "الضغط على VIBE يشغّله أو يوقفه. التلميح يقول Soft vibrato.",
-              "أمسك 1/4 أو 1/8 أو 1/16 أو 1/32. أمسك STOP."
+              "أمسك 1/4 أو 1/8 أو 1/16 أو 1/32. أمسك STOP.",
+              "الضغط على +، بجانب صف الأصوات، يفتح لوحة مفاتيح ثانية فوق الأولى، أوكتافاً أعلى. نفس الـ + موجود على شاشة Sound، وتبقى لوحة المفاتيح الثانية مفتوحة عند التنقل بين Pad وSound. ضغط آخر يغلقها."
             ],
-            "media": "assets/guide/pad-screen.jpg",
-            "sections": []
+            "media": "assets/guide/pad-screen-110.jpg",
+            "sections": [],
+            "images": [
+              "assets/guide/pad-dual-keyboard-110.jpg"
+            ],
+            "imageAlts": {
+              "assets/guide/pad-screen-110.jpg": "شاشة Pad في الإصدار 1.10، مع الـ Pad الحي ولوحة المفاتيح السفلية.",
+              "assets/guide/pad-dual-keyboard-110.jpg": "شاشة Pad في الإصدار 1.10 مع لوحة المفاتيح الثانية مفتوحة، مشتركة مع Sound."
+            }
           },
           {
             "id": "drum",
@@ -4831,7 +4950,7 @@
               "السحب على Drum Vol يحدد حجم الطبول من 0% إلى 100%. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح الخانة.",
               "السحب على Swing يحدد swing من 0% إلى 100%. السحب على BPM يحدد الإيقاع من 60 إلى 200. BPM وSwing وحجم الصفوف تعمل مباشرة: التغيير أثناء العزف يبقى عندما يبدأ النمط التالي.",
               "أمسك 1/4 أو 1/8 أو 1/16 أو 1/32 لتكرار الطبول على ذلك التقسيم ما دمت ممسكاً. اترك، فيتوقف التكرار. الضغط عليها لا يفعل شيئاً. أمسك STOP. الضغط عليه لا يفعل شيئاً.",
-              "الضغط على رقم نمط، من 1 إلى 8، يحمّل ذلك النمط، بما فيه الإيقاع وswing والحجم واليسار واليمين. الضغط المطوّل يفتح Pattern repeats.",
+              "الضغط على رقم إيقاع، من 1 إلى 8، يحمّل ذلك الإيقاع، بما فيه الإيقاع وswing والعيّنة في كل صف والحجم واليسار واليمين. الانتقال إلى إيقاع آخر يحفظ الذي تغادره في الطقم الحالي. الضغط على Save، بجانب Random، يحفظ أيضاً الإيقاع الحالي ويكتب فوق الطقم الحالي. الضغط المطوّل على رقم إيقاع يفتح Pattern repeats.",
               "الضغط على Save، بجانب Random، يحفظ الطبول الحالية في النمط الذي أنت عليه، ويكتب BPM وSwing وحجم الصفوف الحالية في الأنماط الثمانية كلها، ويحفظ الطقم مع الصوت المختار في كل صف. الضغط على Random يبني نمطاً جديداً في النوع المختار.",
               "الصفوف هي Kick وSnare وHi-Hat وPerc وFX 1 وFX 2 وFX 3 وVoice. الضغط على اسم صف يفتح قائمة أصوات لذلك الصف من كل أطقم Factory، ومن أطقم Exclusive عندما تكون في التطبيق، ولـ Voice أيضاً من Authentic. كل صف يعرض نوع أصواته فقط: FX 1 حتى FX 3 تتشارك قائمة واحدة، وVoice يعرض الغناء فقط. الضغط على صوت يضعه على الصف وتبقى القائمة مفتوحة. أثناء عزف الطبول تسمعه في الضربة التالية. وعندما تكون متوقفة يُعزف مرة واحدة. السهمان ◀ و▶ بجانب Load ينتقلان إلى الصوت السابق أو التالي. الضغط على Load يختار ملف صوت من الهاتف. LIVE يوقف Load. السهمان ◀ و▶ يصبحان ذهبيين لثانية واحدة بعد الضغط.",
               "الصف الثامن اسمه الآن Voice ويحمل الغناء فقط. في قائمة أصواته 40 عيّنة غناء في Factory و18 في Exclusive و33 في الفئة الجديدة Authentic، 91 في المجموع.",
@@ -4912,12 +5031,15 @@
                 "body": [
                   "الضغط على موجة القناة يفتح Loop Editor لتلك القناة، والأخذ مرسوم بلون القناة. تسمع التغييرات أثناء التعديل.",
                   "Trim يحدد الجزء الذي يبقى من الأخذ. Loop يحدد أين يبدأ اللوب وأين ينتهي.",
-                  "Repeats: الضغط على 1 حتى 10 أو على ∞، أو كتابة 1 حتى 88 في المربع. مع رقم، تعزف القناة ذلك العدد من المرات ثم تتوقف وحدها.",
+                  "Drum rhythms: 8 مربعات، واحد لكل إيقاع طبول. الضغط يشغّل أو يوقف مربعاً. الضغط المطوّل يفتح Pattern repeats لذلك المربع (1 حتى 10 أو اللانهاية). أثناء عزف الطبول، تتبع القناة تلك الإيقاعات. بلا مربعات مشغّلة، تواصل القناة اللوب وحدها.",
                   "LOW وMID وHIGH من -30 dB إلى +30 dB. MID HZ يحرّك النطاق الأوسط من 100 Hz إلى 8 kHz. GAIN وSQUEEZE من 0 إلى 100.",
                   "Play يشغّل القناة. Reset يعيد كل شيء إلى قيم البداية. Close يخرج دون حفظ. Save يحفظ التغييرات، وTrim يقصّ الأخذ. يمكن لـ Redo أن يعيد الأخذ من قبل القص.",
                   "إعدادات المحرر تُحفظ مع جلسة اللوب وفي المشروع المصدَّر."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg"
+                "media": "assets/guide/loop-editor-110.jpg",
+                "imageAlts": {
+                  "assets/guide/loop-editor-110.jpg": "Loop Editor في الإصدار 1.10: Trim وLoop و8 مربعات إيقاع طبول وEQ وGain وSqueeze."
+                }
               },
               {
                 "id": "looper-fx",
@@ -4934,7 +5056,10 @@
             "images": [
               "assets/guide/loop-pages-110.jpg",
               "assets/guide/loop-page-name.jpg"
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/loop-screen-110.jpg": "اللوبر في الإصدار 1.10: الصفحة 1 من 8، أربع قنوات مع Rec وPlay وRedo وTap on the visualizer."
+            }
           },
           {
             "id": "mic",
@@ -4942,6 +5067,7 @@
             "body": [
               "الضغط على Mic يفتح هذه الشاشة.",
               "الضغط على Redo يعيد آخر أخذ فُقد على هذه الشاشة: أخذ مُسح أو سُجّل فوقه. لا يغادر الشاشة. لا يعمل بينما القناة مشغولة. LIVE ما زال يسمح بـ Redo عندما يوجد أخذ لإعادته. لـ Mic وLoop إعادات منفصلة.",
+              "الضغط على العارض البصري للقناة يفتح Mic Editor. يعمل عندما يكون في القناة أخذ وهي لا تسجّل.",
               "الضغط على Lyrics يفتح Lyrics.",
               "الضغط على Monitor يشغّل المراقب أو يوقفه. عندما يكون شغّالاً، يقول النص Monitor ON. إذا كان شغّالاً ولم تكن السماعات موصولة، يحذّر الهاتف من ارتداد السماعة.",
               "Gain وMon وHPF وGate وLow وPres وComp تحت العنوان. السحب يحدد المقبض. Gain يجري من 1x إلى 4x. HPF يجري من 40 Hz إلى 240 Hz. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح الخانة.",
@@ -4958,6 +5084,18 @@
             ],
             "media": "assets/guide/mic-screen-110.jpg",
             "sections": [
+              {
+                "id": "mic-editor",
+                "title": "Mic Editor",
+                "body": [
+                  "الضغط على العارض البصري لقناة Mic يفتح Mic Editor. هو نفس محرر Loop Editor: Trim وLoop و8 مربعات إيقاع الطبول وEQ وGain وSqueeze.",
+                  "يعمل عندما يكون في القناة أخذ وهي لا تسجّل. Save يحفظ التغييرات مع مشروع الميكروفون. يمكن لـ Redo أن يعيد أخذاً من قبل القص."
+                ],
+                "media": "assets/guide/loop-editor-110.jpg",
+                "imageAlts": {
+                  "assets/guide/loop-editor-110.jpg": "Loop Editor في الإصدار 1.10: Trim وLoop و8 مربعات إيقاع طبول وEQ وGain وSqueeze."
+                }
+              },
               {
                 "id": "mic-fx",
                 "title": "Mic FX",
@@ -4985,7 +5123,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/mic-screen-110.jpg": "شاشة Mic في الإصدار 1.10، مع Redo مكان Back."
+              "assets/guide/mic-screen-110.jpg": "شاشة Mic في الإصدار 1.10، مع Redo والضغط على العارض البصري لـ Mic Editor."
             }
           }
         ]
@@ -5744,15 +5882,15 @@
             "id": "app-1-10-loop-editor-drums",
             "status": "in_progress",
             "title": "في التحديث القادم: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
-            "ticker": "في التحديث القادم: Loop Editor في اللوبر، مع Trim واللوب وعدد التكرارات",
-            "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive لكل قناة.",
+            "ticker": "في التحديث القادم: Loop Editor وMic Editor، مع Trim واللوب و8 مربعات إيقاع طبول",
+            "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
               "/assets/updates/loop-editor-110.jpg"
             ],
             "imageAlts": [
-              "Loop Editor في الإصدار 1.10: Trim وLoop وRepeats وEQ وGain وSqueeze لقناة واحدة في اللوبر."
+              "Loop Editor في الإصدار 1.10: Trim وLoop و8 مربعات إيقاع طبول وEQ وGain وSqueeze."
             ],
             "sections": [
               {
@@ -5768,11 +5906,10 @@
               {
                 "title": "محرر اللوب",
                 "bullets": [
-                  "يُفتح بالضغط على موجة القناة.",
-                  "قص التسجيل بـ Trim.",
-                  "تحديد اللوب وعدد التكرارات: اضغط 1 حتى 10 أو اللانهاية، أو اكتب رقماً من 1 إلى 88.",
-                  "EQ: Low وMid وHigh وMid Hz.",
-                  "Gain وSqueeze."
+                  "يُفتح بالضغط على الموجة. Mic Editor يُفتح بنفس الطريقة على قناة Mic.",
+                  "قص التسجيل بـ Trim. تحديد اللوب.",
+                  "8 مربعات إيقاع طبول: الضغط يشغّل أو يوقف، والضغط المطوّل للتكرارات (1 حتى 10 أو اللانهاية). بلا مربعات مشغّلة، تواصل القناة اللوب.",
+                  "EQ: Low وMid وHigh وMid Hz. Gain وSqueeze."
                 ]
               },
               {
@@ -5780,11 +5917,18 @@
                 "bullets": [
                   "زر Swap اسمه الآن Load.",
                   "زر Save بجانب Random يحفظ العينات مع الإيقاعات في الطقم الحالي.",
+                  "كل إيقاع يحتفظ بعيّناته وحجمه ويساره ويمينه. Save والانتقال بين الإيقاعات يكتبانها في الطقم الحالي.",
                   "منتقي العينات يعرض لكل قناة عيناتها فقط، مقسّمة إلى Factory وExclusive.",
                   "القنوات Extra 1 حتى 3 اسمها الآن FX 1 حتى 3 وتتشارك بنكاً واحداً.",
                   "القناة 8 اسمها الآن Voice وتحمل الغناء فقط: 40 في Factory و18 في Exclusive و33 في الفئة الجديدة Authentic. المجموع 91.",
                   "الأسهم على قنوات الطبول تصبح ذهبية لثانية واحدة بعد الضغط.",
                   "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، دون تكلفة إضافية ودون زر تنزيل."
+                ]
+              },
+              {
+                "title": "Pad",
+                "bullets": [
+                  "الضغط على + يفتح لوحة مفاتيح ثانية، مشتركة مع شاشة Sound."
                 ]
               },
               {

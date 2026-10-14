@@ -107,3 +107,12 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Ticker: each item shows its `ticker` line (falls back to `title`), plus any `tickerMore` lines, each linking to the item. Before this, the ticker showed `title` only.
 - Voice (David approved the sound, 2026-10-13): row 8 is Voice, vocals only, 40 Factory, 18 Exclusive, 33 Authentic, 91 in all. App commit e6b6e3c: `assets/drum_vocals` has 33 vocals (Factory) and `assets/drum_vocals_authentic` has 33 (Authentic). `DrumVocalAllowlist` adds 7 kit vocals from Experimental (Factory) and 18 from Afro-Techno, Ithaca-Remains and Kreepy-Bastard-v2 (Exclusive).
 - Drum guide: `assets/guide/voice-110.jpg` is the 1.10 Voice picker (Authentic tab, 33), from David's `ui-voice.png`. Guide groups can carry `imageAlts: { "<path>": "alt" }`; images without an entry use the group title as alt.
+
+## App 1.10 follow-up (f091717 / 7d9932c, 2026-10-14)
+
+- Loop/Mic editors: drum-rhythm boxes are 1-8 (tap on/off, long-press for Pattern repeats 1-10 or infinity). No boxes on = free loop. Old 1-10 / typed 1-88 repeats are gone (migrated to free loop).
+- Mic Editor: same component as Loop Editor, opens by tapping a Mic channel visualizer.
+- Pad `+` opens the upper keyboard shared with Sound (`dualKeyboardVisibleOn`).
+- Drums: each rhythm keeps samples, volumes and L/R; Save and switching rhythms write into the current kit (`commitDrumRhythmAndKit`).
+- Settings label is `Benchmark` (capital B).
+- New guide shots from `ui-1.10-20261014/`: mic, settings, loop-editor, looper, pad, pad-dual-keyboard. Sound / Drums / Tune frequencies / Sound FX shots still pending.

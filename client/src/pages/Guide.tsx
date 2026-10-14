@@ -20,6 +20,8 @@ type GuideSection = {
   media?: string;
   /** Extra screenshots after `media`, each in its own frame. */
   images?: string[];
+  /** Optional alt per image path. Missing entries use the section title. */
+  imageAlts?: Record<string, string>;
   mediaSize?: "thumb" | "panel";
   bullets?: string[];
 };
