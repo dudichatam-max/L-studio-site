@@ -289,7 +289,7 @@
               "הקשה על WAV מתחילה להקליט את מה ששומעים. בזמן ההקלטה כתוב Save WAV. הקשה נוספת עוצרת ומבקשת מהטלפון איפה לשמור את הקובץ.",
               "הקשה על Settings פותחת את Settings."
             ],
-            "media": "assets/guide/sound-screen-109.jpg",
+            "media": "assets/guide/sound-screen-110.jpg",
             "images": [
               "assets/guide/sound-waves-109.jpg",
               "assets/guide/sound-tones.jpg"
@@ -313,7 +313,10 @@
                   "האפקטים הולכים לפי הביט של התופים. לפני שהתופים ניגנו, הם רצים ב-120 BPM. אחרי שהתופים נעצרים, הם נשארים בטמפו האחרון של התופים. Depth Drop יורד מחדש כל 2 ביטים ובכל תו חדש.",
                   "לחיצה ארוכה פותחת Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לאפקט הזה. כל אחד מ-8 האפקטים שומר את ההגדרות שלו כשמחליפים. Transpose רץ מ-12- עד 12 ומשנה את כל 8 האפקטים, כולל Sub Forge."
                 ],
-                "media": "assets/guide/sound-fx-window.jpg"
+                "media": "assets/guide/sound-fx-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/sound-fx-window-110.jpg": "חלון Sound FX בגרסה 1.10, עם שמונה משבצות אפקט ו-Kick Bond נבחר."
+                }
               },
               {
                 "id": "freq",
@@ -325,7 +328,10 @@
                   "כל שדה תדר מראה את המספר המלא ב-Hz, למשל 222.00. מתחת לתבניות, ב-My Presets יש 8 כפתורים עם שמות שאתם בוחרים. הקשה על אחד טוענת את התדרים שלו למקלדת ובוחרת אותו. Save שומר את התדרים הנוכחיים בפריסט שנבחר, או בראשון הריק כשלא נבחר פריסט. Save* אומר שיש שינויים שעוד לא נשמרו.",
                   "Reset בשורת הכותרת. Default מעל Close. הקשה על Close סוגרת את החלון."
                 ],
-                "media": "assets/guide/freq-window-110.jpg"
+                "media": "assets/guide/freq-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/freq-window-110.jpg": "Tune frequencies בגרסה 1.10: Hz מלא עם שתי ספרות אחרי הנקודה, Ready scales, ו-My Presets 1 עד 8."
+                }
               },
               {
                 "id": "drive",
@@ -384,7 +390,7 @@
                   "הקשה על Save as פותחת את Save Console. Save מאשר. Cancel סוגר. סשן שמור שומר גם את ה-Sound FX ואת השמות והצבעים של עמודי הלופ. הוא שומר גם את פריסטי התדרים, בחירות הסמפלים בתופים, בנקי התופים Factory ו-Exclusive, אילו גלים דולקים, תצוגת שתי המקלדות, יעדי הפד והמילים. עם Export all ו-Import all כל סביבת העבודה עוברת למכשיר אחר.",
                   "הקשה על Load פותחת את Load Console. אם אין שמור, כתוב No saved sessions. Export all ו-Import all נמצאים שם. Delete שואל לפני שהוא מוחק. לפני שסשן נטען, האפליקציה שואלת קודם ושומרת גיבוי אוטומטי של הפריסטים וקיטי התופים הנוכחיים. ה-Monitor של המיק כבוי אחרי טעינה. סשן מיובא עם שם שכבר קיים בטלפון מקבל שם חדש במקום לדרוס.",
                   "הקשה על Show tutorial מתחילה את הסיור מחדש.",
-                  "הסיור עודכן ל-1.08. עכשיו הוא מלמד את Sound FX, את 8 עמודי הלופ עם השמות והצבעים שלהם, ואת טבעת הזהב שמראה את הערך של נוב. פותחים אותו מ-Settings > Show tutorial.",
+                  "הסיור עודכן ל-1.10. יש בו 68 שלבים, והוא מלמד עכשיו את ההקשה והלחיצה הארוכה על גל, שמירת פריסט בלחיצה ארוכה, Tune frequencies, המקלדת השנייה ב-Pad, Mic Editor ו-Loop Editor, ערוצי התופים והסאמפלים לכל מקצב, Save והשמירה האוטומטית בתופים, ו-New session. פותחים אותו מ-Settings.",
                   "הקשה על Factory 64 שואלת Restore Factory 64? Restore מחליף את פריסטי Factory 64, את כל 8 חבילות ה-Style, ואת כל 11 חבילות ה-Exclusive, ואז טוען את מקום 1 בעמוד 1. Cancel סוגר את השאלה.",
                   "הקשה על Benchmark, מתחת ל-Factory 64, פותחת את כלי בדיקת האודיו.",
                   "ה-X ו-Close סוגרים את Settings."
@@ -394,7 +400,10 @@
                   "assets/guide/settings-window-110.jpg": "Settings בגרסה 1.10: New session ראשון, ואחריו Custom Frequency, Language, Save as, Load ו-Benchmark."
                 }
               }
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/sound-screen-110.jpg": "מסך Sound בגרסה 1.10: גלים בשכבות, Drive, נובים, ו-+ למקלדת שנייה."
+            }
           },
           {
             "id": "pad",
@@ -481,7 +490,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "בוחר הסאמפלים של Voice בגרסה 1.10, בלשונית Authentic עם 33 ווקאלים.",
-              "assets/guide/drum-screen-110.jpg": "מסך Drum בגרסה 1.10, עם השורות Kick עד FX 3 ו-8. Voice, ובכל אחת Load והחצים ◀ ▶."
+              "assets/guide/drum-screen-110.jpg": "מסך Drum בגרסה 1.10: FX 1 עד FX 3, 8. Voice, Load בכל שורה, מקצבים 1 עד 8, Save ו-Random."
             }
           },
           {
@@ -493,7 +502,7 @@
               "צבע העמוד ממלא את מספר העמוד וצובע את גלי הערוצים בעמוד הזה.",
               "שדה השם ליד Redo מראה את שם העמוד שאתם עליו. כשהוא ריק, כתוב בו Page ומספר העמוד. הקשה בשדה נותנת להקליד שם. LIVE נועל את השם. השמות והצבעים נשמרים עם פרויקט הלופ וב-Export.",
               "שם כל ערוץ מתחיל כ-Ch ומספר. הקשה בשם משנה אותו. LIVE נועל את השם.",
-              "הקשה על הגל של ערוץ פותחת את Loop Editor. מעליו כתוב Tap on the visualizer. זה עובד כשיש בערוץ הקלטה והוא לא מקליט. ערוץ עם עריכה שמורה מקבל מסגרת זהב.",
+              "הקשה על הגל של ערוץ פותחת את Loop Editor. מעל הגל כתוב לחצו על הויזואלייזר לעריכה. זה עובד כשיש בערוץ הקלטה והוא לא מקליט. ערוץ עם עריכה שמורה מקבל מסגרת זהב.",
               "הקשה על Redo מחזירה את ההקלטה האחרונה שאבדה במסך הזה: הקלטה שנמחקה, שהוקלט עליה מחדש, או שנחתכה ב-Loop Editor. זה לא עוזב את המסך. זה לא עובד בזמן שהערוץ עסוק. LIVE עדיין מאפשר את Redo כשיש הקלטה להחזיר.",
               "הקשה על Rec מתחילה הקלטה. אחר כך כתוב STOP. הקשה נוספת עוצרת את ההקלטה. אם כבר הייתה הקלטה בערוץ, Redo יכול להחזיר אותה.",
               "הקשה על Play מנגנת את הערוץ. אחר כך כתוב Stop. הקשה נוספת עוצרת. Play נשאר כבוי כשהערוץ ריק, אלא אם הוא כבר מנגן או מקליט. כשהתופים מנגנים, Play מחכה לתחילת התיבה הבאה של התופים. ההתחלה, העצירה ושינויי הווליום חלקים.",
@@ -549,7 +558,7 @@
             "body": [
               "הקשה על Mic פותחת את המסך הזה.",
               "הקשה על Redo מחזירה את ההקלטה האחרונה שאבדה במסך הזה: הקלטה שנמחקה או שהוקלט עליה מחדש. זה לא עוזב את המסך. זה לא עובד בזמן שהערוץ עסוק. LIVE עדיין מאפשר את Redo כשיש הקלטה להחזיר. ל-Mic ול-Loop יש החזרות נפרדות.",
-              "הקשה על הויזואלייזר של ערוץ פותחת את Mic Editor. זה עובד כשיש בערוץ הקלטה והוא לא מקליט.",
+              "הקשה על הויזואלייזר של ערוץ פותחת את Mic Editor. מעליו אותה רמז: לחצו על הויזואלייזר לעריכה. זה עובד כשיש בערוץ הקלטה והוא לא מקליט.",
               "הקשה על Lyrics פותחת את Lyrics.",
               "הקשה על Monitor מדליקה או מכבה את המוניטור. כשהוא דולק, כתוב Monitor ON. אם הוא דולק ואין אוזניות, הטלפון מזהיר מפידבק של הרמקול.",
               "Gain, Mon, HPF, Gate, Low, Pres, ו-Comp נמצאים מתחת לכותרת. גרירה קובעת את הנוב. Gain רץ מ-1x עד 4x. HPF רץ מ-40 Hz עד 240 Hz. הקשה על המספר נותנת להקליד ערך. LIVE לא פותחת את התיבה.",
@@ -1795,7 +1804,7 @@
               "A tap on WAV starts recording what you hear. While it records, the label reads Save WAV. Another tap stops and asks the phone where to save the file.",
               "A tap on Settings opens Settings."
             ],
-            "media": "assets/guide/sound-screen-109.jpg",
+            "media": "assets/guide/sound-screen-110.jpg",
             "images": [
               "assets/guide/sound-waves-109.jpg",
               "assets/guide/sound-tones.jpg"
@@ -1819,7 +1828,10 @@
                   "The effects follow the drum beat. Before the drums have played, they run at 120 BPM. After the drums stop, they keep the last drum tempo. Depth Drop drops again every 2 beats and on each new note.",
                   "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that effect. Each of the 8 effects keeps its own settings when you switch. Transpose runs from -12 to 12 and changes all 8 effects, Sub Forge included."
                 ],
-                "media": "assets/guide/sound-fx-window.jpg"
+                "media": "assets/guide/sound-fx-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/sound-fx-window-110.jpg": "The Sound FX window in 1.10, with eight effect slots and Kick Bond selected."
+                }
               },
               {
                 "id": "freq",
@@ -1831,7 +1843,10 @@
                   "Each frequency box shows the full number in Hz, such as 222.00. Under the templates, My Presets has 8 buttons with your own names. A tap on one loads its frequencies into the keyboard and selects it. Save stores the current frequencies in the selected preset, or in the first empty one when none is selected. Save* means there are changes that are not saved yet.",
                   "Reset is on the title row. Default is above Close. A tap on Close closes the window."
                 ],
-                "media": "assets/guide/freq-window-110.jpg"
+                "media": "assets/guide/freq-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/freq-window-110.jpg": "Tune frequencies in 1.10: full Hz with two decimals, Ready scales, and My Presets 1 to 8."
+                }
               },
               {
                 "id": "drive",
@@ -1890,7 +1905,7 @@
                   "A tap on Save as opens Save Console. Save confirms. Cancel closes it. A saved session also keeps the Sound FX and the loop page names and colors. It also keeps the frequency presets, the drum sample picks, the Factory and Exclusive drum banks, which waves are on, the two-keyboard view, the pad targets, and the lyrics. With Export all and Import all, the whole setup moves to another device.",
                   "A tap on Load opens Load Console. If nothing is saved, it reads No saved sessions. Export all and Import all are in that window. Delete asks before it removes a session. Before a session loads, the app asks first and keeps an automatic backup of the current presets and drum kits. Mic monitor is off after a load. An imported session with the same name as one on the phone gets a new name instead of replacing it.",
                   "A tap on Show tutorial starts the tour again.",
-                  "The tour was updated for 1.08. It now covers Sound FX, the 8 loop pages with their names and colors, and the gold ring that shows a knob's value. Open it from Settings > Show tutorial.",
+                  "The tour was updated for 1.10. It has 68 steps and now covers the wave tap and long-press, saving a preset with a long-press, Tune frequencies, the Pad second keyboard, Mic Editor and Loop Editor, the drum channels and per-rhythm samples, drum Save and auto-save, and New session. Open it from Settings.",
                   "A tap on Factory 64 asks Restore Factory 64? Restore replaces the Factory 64 presets, all 8 Style drum packs, and all 11 Exclusive packs, then loads slot 1 on page 1. Cancel closes the question.",
                   "A tap on Benchmark, under Factory 64, opens the audio test tool.",
                   "The X and Close close Settings."
@@ -1900,7 +1915,10 @@
                   "assets/guide/settings-window-110.jpg": "Settings in 1.10: New session first, then Custom Frequency, Language, Save as, Load, and Benchmark."
                 }
               }
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/sound-screen-110.jpg": "The Sound screen in 1.10: layered waves, Drive, knobs, and the + for a second keyboard."
+            }
           },
           {
             "id": "pad",
@@ -1987,7 +2005,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "The Voice sample picker in 1.10, on the Authentic tab with 33 vocals.",
-              "assets/guide/drum-screen-110.jpg": "The Drum screen in 1.10, with rows Kick to FX 3 and 8. Voice, each with Load and the ◀ ▶ arrows."
+              "assets/guide/drum-screen-110.jpg": "The Drum screen in 1.10: FX 1 to FX 3, 8. Voice, Load on each row, rhythms 1 to 8, Save and Random."
             }
           },
           {
@@ -1999,7 +2017,7 @@
               "The page color fills that page number and colors the channel waves on that page.",
               "The name field next to Redo shows the name of the page you are on. While it is empty, it reads Page and the number. A tap in it lets you type the name. LIVE locks the name. Names and colors are saved with the loop project and in Export.",
               "Each channel name starts as Ch and a number. A tap in the name changes it. LIVE locks the name.",
-              "A tap on a channel's waveform opens Loop Editor. The line above it reads Tap on the visualizer. It works when the channel has a take and is not recording. A channel with saved edits gets a gold frame.",
+              "A tap on a channel's waveform opens Loop Editor. Above the waveform it reads Tap the visualizer to edit. It works when the channel has a take and is not recording. A channel with saved edits gets a gold frame.",
               "A tap on Redo brings back the take you lost most recently on this screen: one you cleared, recorded over, or trimmed in Loop Editor. It does not leave the screen. It does not work while that channel is busy. LIVE still allows Redo when there is a take to bring back.",
               "A tap on Rec starts recording. The label then reads STOP. Another tap stops the take. If the channel already had a take, Redo can bring it back.",
               "A tap on Play plays the channel. The label then reads Stop. Another tap stops. Play stays off when the channel is empty, unless it is already playing or recording. While the drums play, Play waits for the start of the next drum bar. Starting, stopping, and volume changes are smoothed.",
@@ -2055,7 +2073,7 @@
             "body": [
               "A tap on Mic opens this screen.",
               "A tap on Redo brings back the take you lost most recently on this screen: one you cleared or recorded over. It does not leave the screen. It does not work while that channel is busy. LIVE still allows Redo when there is a take to bring back. Mic and Loop keep separate restores.",
-              "A tap on a channel's visualizer opens Mic Editor. It works when the channel has a take and is not recording.",
+              "A tap on a channel's visualizer opens Mic Editor. Above it, the same hint reads Tap the visualizer to edit. It works when the channel has a take and is not recording.",
               "A tap on Lyrics opens Lyrics.",
               "A tap on Monitor turns the monitor on or off. When it is on, the label reads Monitor ON. If it is on and headphones are not connected, the phone warns about speaker feedback.",
               "Gain, Mon, HPF, Gate, Low, Pres, and Comp sit under the heading. A drag sets the knob. Gain runs from 1x to 4x. HPF runs from 40 Hz to 240 Hz. A tap on the number lets you type a value. LIVE does not open that box.",
@@ -3301,7 +3319,7 @@
               "Нажатие на WAV начинает запись того, что слышно. Пока идёт запись, надпись говорит Save WAV. Ещё одно нажатие останавливает и спрашивает телефон, куда сохранить файл.",
               "Нажатие на Settings открывает Settings."
             ],
-            "media": "assets/guide/sound-screen-109.jpg",
+            "media": "assets/guide/sound-screen-110.jpg",
             "images": [
               "assets/guide/sound-waves-109.jpg",
               "assets/guide/sound-tones.jpg"
@@ -3325,7 +3343,10 @@
                   "Эффекты идут в такт барабанам. Пока барабаны ещё не играли, темп 120 BPM. После остановки барабанов остаётся их последний темп. Depth Drop падает заново каждые 2 доли и на каждой новой ноте.",
                   "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого эффекта. Каждый из 8 эффектов хранит свои настройки при переключении. Transpose идёт от -12 до 12 и меняет все 8 эффектов, включая Sub Forge."
                 ],
-                "media": "assets/guide/sound-fx-window.jpg"
+                "media": "assets/guide/sound-fx-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/sound-fx-window-110.jpg": "Окно Sound FX в 1.10, с восемью слотами эффектов и выбранным Kick Bond."
+                }
               },
               {
                 "id": "freq",
@@ -3337,7 +3358,10 @@
                   "Каждое поле частоты показывает полное число в Hz, например 222.00. Под шаблонами в My Presets есть 8 кнопок с вашими именами. Нажатие на кнопку загружает её частоты в клавиатуру и выбирает её. Save сохраняет текущие частоты в выбранный пресет, а если ничего не выбрано, в первый пустой. Save* значит, что есть несохранённые изменения.",
                   "Reset в строке заголовка. Default над Close. Нажатие на Close закрывает окно."
                 ],
-                "media": "assets/guide/freq-window-110.jpg"
+                "media": "assets/guide/freq-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/freq-window-110.jpg": "Tune frequencies в 1.10: полные Hz с двумя знаками, Ready scales и My Presets 1 до 8."
+                }
               },
               {
                 "id": "drive",
@@ -3396,7 +3420,7 @@
                   "Нажатие на Save as открывает Save Console. Save подтверждает. Cancel закрывает. Сохранённая сессия хранит также Sound FX и имена и цвета страниц лупера. Она также хранит пресеты частот, выбранные сэмплы ударных, банки ударных Factory и Exclusive, включённые волны, вид с двумя клавиатурами, цели пэдов и тексты. С Export all и Import all вся настройка переходит на другое устройство.",
                   "Нажатие на Load открывает Load Console. Если ничего не сохранено, написано No saved sessions. Export all и Import all находятся там. Delete спрашивает, прежде чем удалить сессию. Перед загрузкой сессии приложение сначала спрашивает и автоматически сохраняет копию текущих пресетов и наборов ударных. После загрузки Monitor микрофона выключен. Импортированная сессия с тем же именем, что уже есть на телефоне, получает новое имя и ничего не заменяет.",
                   "Нажатие на Show tutorial начинает тур заново.",
-                  "Тур обновлён для 1.08. Теперь он показывает Sound FX, 8 страниц лупера с их именами и цветами и золотое кольцо, которое показывает значение регулятора. Откройте его через Settings > Show tutorial.",
+                  "Тур обновлён для 1.10. В нём 68 шагов, и теперь он показывает нажатие и долгое нажатие на волну, сохранение пресета долгим нажатием, Tune frequencies, вторую клавиатуру на Pad, Mic Editor и Loop Editor, каналы ударных и сэмплы на каждый ритм, Save и автосохранение ударных, и New session. Открывается из Settings.",
                   "Нажатие на Factory 64 спрашивает Restore Factory 64? Restore заменяет пресеты Factory 64, все 8 наборов Style и все 11 наборов Exclusive, затем загружает место 1 на странице 1. Cancel закрывает вопрос.",
                   "Нажатие на Benchmark, под Factory 64, открывает инструмент проверки звука.",
                   "X и Close закрывают Settings."
@@ -3406,7 +3430,10 @@
                   "assets/guide/settings-window-110.jpg": "Settings в 1.10: New session первым, затем Custom Frequency, Language, Save as, Load и Benchmark."
                 }
               }
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/sound-screen-110.jpg": "Экран Sound в 1.10: слои волн, Drive, регуляторы и + для второй клавиатуры."
+            }
           },
           {
             "id": "pad",
@@ -3493,7 +3520,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "Выбор сэмплов Voice в 1.10, на вкладке Authentic с 33 вокалами.",
-              "assets/guide/drum-screen-110.jpg": "Экран Drum в 1.10, с рядами от Kick до FX 3 и 8. Voice, у каждого Load и стрелки ◀ ▶."
+              "assets/guide/drum-screen-110.jpg": "Экран Drum в 1.10: FX 1 до FX 3, 8. Voice, Load на каждом ряду, ритмы 1 до 8, Save и Random."
             }
           },
           {
@@ -3505,7 +3532,7 @@
               "Цвет страницы заполняет её номер и окрашивает волны каналов на этой странице.",
               "Поле имени рядом с Redo показывает имя текущей страницы. Пока оно пустое, там написано Page и номер. Нажатие в поле позволяет ввести имя. LIVE запирает имя. Имена и цвета сохраняются вместе с проектом лупера и в Export.",
               "Имя каждого канала начинает как Ch и число. Нажатие в имени меняет его. LIVE запирает имя.",
-              "Нажатие на волну канала открывает Loop Editor. Над ней написано Tap on the visualizer. Это работает, когда в канале есть запись и он не пишет. Канал с сохранёнными правками получает золотую рамку.",
+              "Нажатие на волну канала открывает Loop Editor. Над волной написано Нажмите на визуализатор, чтобы править. Это работает, когда в канале есть запись и он не пишет. Канал с сохранёнными правками получает золотую рамку.",
               "Нажатие на Redo возвращает запись, потерянную последней на этом экране: очищенную, записанную поверх или обрезанную в Loop Editor. Оно не уходит с экрана. Оно не работает, пока канал занят. LIVE всё ещё позволяет Redo, когда есть что вернуть.",
               "Нажатие на Rec начинает запись. Затем надпись говорит STOP. Ещё одно нажатие останавливает запись. Если в канале уже была запись, Redo может её вернуть.",
               "Нажатие на Play играет канал. Затем надпись говорит Stop. Ещё одно нажатие останавливает. Play остаётся выключенным, когда канал пуст, если он уже не играет и не пишет. Пока играют ударные, Play ждёт начала следующего такта ударных. Старт, стоп и изменения громкости сглажены.",
@@ -3561,7 +3588,7 @@
             "body": [
               "Нажатие на Mic открывает этот экран.",
               "Нажатие на Redo возвращает запись, потерянную последней на этом экране: очищенную или записанную поверх. Оно не уходит с экрана. Оно не работает, пока канал занят. LIVE всё ещё позволяет Redo, когда есть что вернуть. У Mic и Loop отдельные восстановления.",
-              "Нажатие на визуализатор канала открывает Mic Editor. Это работает, когда в канале есть запись и он не пишет.",
+              "Нажатие на визуализатор канала открывает Mic Editor. Над ним та же подсказка: Нажмите на визуализатор, чтобы править. Это работает, когда в канале есть запись и он не пишет.",
               "Нажатие на Lyrics открывает Lyrics.",
               "Нажатие на Monitor включает или выключает монитор. Когда он включён, надпись говорит Monitor ON. Если он включён и наушники не подключены, телефон предупреждает об отдаче динамика.",
               "Gain, Mon, HPF, Gate, Low, Pres и Comp находятся под заголовком. Перетаскивание задаёт регулятор. Gain идёт от 1x до 4x. HPF идёт от 40 Hz до 240 Hz. Нажатие на число даёт ввести значение. LIVE не открывает это поле.",
@@ -4807,7 +4834,7 @@
               "الضغط على WAV يبدأ تسجيل ما تسمعه. أثناء التسجيل يقول النص Save WAV. ضغط آخر يوقف ويسأل الهاتف أين يحفظ الملف.",
               "الضغط على Settings يفتح Settings."
             ],
-            "media": "assets/guide/sound-screen-109.jpg",
+            "media": "assets/guide/sound-screen-110.jpg",
             "images": [
               "assets/guide/sound-waves-109.jpg",
               "assets/guide/sound-tones.jpg"
@@ -4831,7 +4858,10 @@
                   "المؤثرات تتبع إيقاع الطبول. قبل أن تعزف الطبول تعمل على 120 BPM. بعد توقف الطبول تبقى على آخر سرعة للطبول. Depth Drop يهبط من جديد كل 2 نبضة ومع كل نغمة جديدة.",
                   "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لذلك المؤثر. كل مؤثر من الثمانية يحتفظ بإعداداته عند التبديل. Transpose يجري من -12 إلى 12 ويغيّر المؤثرات الثمانية كلها، ومنها Sub Forge."
                 ],
-                "media": "assets/guide/sound-fx-window.jpg"
+                "media": "assets/guide/sound-fx-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/sound-fx-window-110.jpg": "نافذة Sound FX في الإصدار 1.10، مع ثماني خانات مؤثرات وKick Bond محدداً."
+                }
               },
               {
                 "id": "freq",
@@ -4843,7 +4873,10 @@
                   "كل حقل تردد يعرض الرقم كاملاً بالـ Hz، مثل 222.00. تحت القوالب، في My Presets ثمانية أزرار بأسمائك. الضغط على زر يحمّل تردداته إلى لوحة المفاتيح ويختاره. Save يحفظ الترددات الحالية في الإعداد المختار، أو في أول إعداد فارغ عندما لا يكون أي إعداد مختاراً. Save* يعني أن هناك تغييرات لم تُحفظ بعد.",
                   "Reset في سطر العنوان. Default فوق Close. الضغط على Close يغلق النافذة."
                 ],
-                "media": "assets/guide/freq-window-110.jpg"
+                "media": "assets/guide/freq-window-110.jpg",
+                "imageAlts": {
+                  "assets/guide/freq-window-110.jpg": "Tune frequencies في الإصدار 1.10: Hz كامل بمنزلتين، Ready scales وMy Presets من 1 إلى 8."
+                }
               },
               {
                 "id": "drive",
@@ -4902,7 +4935,7 @@
                   "الضغط على Save as يفتح Save Console. Save يؤكد. Cancel يغلق. الجلسة المحفوظة تحفظ أيضاً Sound FX وأسماء صفحات اللوب وألوانها. وتحفظ أيضاً إعدادات الترددات، واختيارات عينات الطبول، وبنكي الطبول Factory وExclusive، والموجات المشغّلة، وعرض لوحتي المفاتيح، وأهداف الـ Pad، والكلمات. مع Export all وImport all ينتقل الإعداد كله إلى جهاز آخر.",
                   "الضغط على Load يفتح Load Console. إذا لم يوجد محفوظ، يظهر No saved sessions. Export all وImport all هناك. Delete يسأل قبل أن يحذف الجلسة. قبل تحميل جلسة، يسأل التطبيق أولاً ويحفظ نسخة احتياطية تلقائية من الإعدادات وأطقم الطبول الحالية. Monitor الميكروفون متوقف بعد التحميل. الجلسة المستوردة التي لها اسم موجود على الهاتف تحصل على اسم جديد بدل أن تحل محله.",
                   "الضغط على Show tutorial يبدأ الجولة من جديد.",
-                  "تم تحديث الجولة للإصدار 1.08. وهي تشرح الآن Sound FX، وصفحات اللوب الثماني بأسمائها وألوانها، والحلقة الذهبية التي تعرض قيمة المقبض. افتحها من Settings > Show tutorial.",
+                  "تم تحديث الجولة للإصدار 1.10. فيها 68 خطوة، وهي تشرح الآن الضغط والضغط المطوّل على الموجة، وحفظ إعداد بضغط مطوّل، وTune frequencies، ولوحة المفاتيح الثانية في Pad، وMic Editor وLoop Editor، وقنوات الطبول والعيّنات لكل إيقاع، وSave والحفظ التلقائي في الطبول، وNew session. تُفتح من Settings.",
                   "الضغط على Factory 64 يسأل Restore Factory 64? Restore يستبدل إعدادات Factory 64 وكل حزم Style الثماني وكل حزم Exclusive الإحدى عشرة، ثم يحمّل الخانة 1 في الصفحة 1. Cancel يغلق السؤال.",
                   "الضغط على Benchmark، تحت Factory 64، يفتح أداة فحص الصوت.",
                   "X وClose يغلقان Settings."
@@ -4912,7 +4945,10 @@
                   "assets/guide/settings-window-110.jpg": "Settings في الإصدار 1.10: New session أولاً، ثم Custom Frequency وLanguage وSave as وLoad وBenchmark."
                 }
               }
-            ]
+            ],
+            "imageAlts": {
+              "assets/guide/sound-screen-110.jpg": "شاشة Sound في الإصدار 1.10: موجات بطبقات وDrive ومقابض و+ للوحة مفاتيح ثانية."
+            }
           },
           {
             "id": "pad",
@@ -4999,7 +5035,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "منتقي عينات Voice في الإصدار 1.10، على تبويب Authentic مع 33 عيّنة غناء.",
-              "assets/guide/drum-screen-110.jpg": "شاشة Drum في الإصدار 1.10، مع الصفوف من Kick حتى FX 3 و8. Voice، ولكل صف Load والسهمان ◀ ▶."
+              "assets/guide/drum-screen-110.jpg": "شاشة Drum في الإصدار 1.10: FX 1 حتى FX 3 و8. Voice وLoad في كل صف وإيقاعات 1 حتى 8 وSave وRandom."
             }
           },
           {
@@ -5011,7 +5047,7 @@
               "لون الصفحة يملأ رقمها ويلوّن موجات القنوات في تلك الصفحة.",
               "حقل الاسم بجانب Redo يعرض اسم الصفحة التي أنت عليها. وهو فارغ يظهر فيه Page والرقم. الضغط في الحقل يتيح كتابة الاسم. LIVE يقفل الاسم. الأسماء والألوان تُحفظ مع مشروع اللوب وفي Export.",
               "اسم كل قناة يبدأ Ch ورقماً. الضغط في الاسم يغيّره. LIVE يقفل الاسم.",
-              "الضغط على موجة القناة يفتح Loop Editor. فوقها مكتوب Tap on the visualizer. يعمل عندما يكون في القناة تسجيل وهي لا تسجّل. القناة ذات التعديلات المحفوظة تحصل على إطار ذهبي.",
+              "الضغط على موجة القناة يفتح Loop Editor. فوق الموجة مكتوب اضغط على العرض المرئي للتحرير. يعمل عندما يكون في القناة تسجيل وهي لا تسجّل. القناة ذات التعديلات المحفوظة تحصل على إطار ذهبي.",
               "الضغط على Redo يعيد آخر أخذ فُقد على هذه الشاشة: أخذ مُسح، أو سُجّل فوقه، أو قُصّ في Loop Editor. لا يغادر الشاشة. لا يعمل بينما القناة مشغولة. LIVE ما زال يسمح بـ Redo عندما يوجد أخذ لإعادته.",
               "الضغط على Rec يبدأ التسجيل. ثم يقول النص STOP. ضغط آخر يوقف الأخذ. إذا كان في القناة أخذ من قبل، يمكن لـ Redo أن يعيده.",
               "الضغط على Play يشغّل القناة. ثم يقول النص Stop. ضغط آخر يوقف. يبقى Play متوقفاً عندما تكون القناة فارغة، إلا إذا كانت تعزف أو تسجّل. أثناء عزف الطبول، ينتظر Play بداية المازورة التالية للطبول. البدء والإيقاف وتغييرات الحجم سلسة.",
@@ -5067,7 +5103,7 @@
             "body": [
               "الضغط على Mic يفتح هذه الشاشة.",
               "الضغط على Redo يعيد آخر أخذ فُقد على هذه الشاشة: أخذ مُسح أو سُجّل فوقه. لا يغادر الشاشة. لا يعمل بينما القناة مشغولة. LIVE ما زال يسمح بـ Redo عندما يوجد أخذ لإعادته. لـ Mic وLoop إعادات منفصلة.",
-              "الضغط على العارض البصري للقناة يفتح Mic Editor. يعمل عندما يكون في القناة أخذ وهي لا تسجّل.",
+              "الضغط على العارض البصري للقناة يفتح Mic Editor. فوقه نفس التلميح: اضغط على العرض المرئي للتحرير. يعمل عندما يكون في القناة أخذ وهي لا تسجّل.",
               "الضغط على Lyrics يفتح Lyrics.",
               "الضغط على Monitor يشغّل المراقب أو يوقفه. عندما يكون شغّالاً، يقول النص Monitor ON. إذا كان شغّالاً ولم تكن السماعات موصولة، يحذّر الهاتف من ارتداد السماعة.",
               "Gain وMon وHPF وGate وLow وPres وComp تحت العنوان. السحب يحدد المقبض. Gain يجري من 1x إلى 4x. HPF يجري من 40 Hz إلى 240 Hz. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح الخانة.",

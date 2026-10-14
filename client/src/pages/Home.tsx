@@ -74,10 +74,10 @@ type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 
 const PLAY_SHOT_VER = "110-play";
 const playShotFiles: Record<PlayId, string> = {
-  sound: "01-layer-waveforms",
+  sound: "110-04-sound",
   loop: "110-03-looper",
   drum: "110-01-live-sample-swap",
-  pad: "05-live-pad",
+  pad: "110-05-pad-dual",
   mic: "07-mic-fx",
 };
 function playShotUrl(id: PlayId, ext: "jpg" | "webp") {
@@ -86,31 +86,31 @@ function playShotUrl(id: PlayId, ext: "jpg" | "webp") {
 
 const playShotAlt = {
   he: {
-    sound: "תמונת Google Play: Layer Waveforms, כמה גלים יחד כמו Sine ו-Saw, מנגנים אותם ביחד.",
+    sound: "מסך Sound בגרסה 1.10: גלים בשכבות, Drive, ושורת הקולות עם +.",
     mic: "תמונת Google Play: ערוצי מיקרופון ואפקטי Mic FX.",
     loop: "הלופר בגרסה 1.10: עמוד 1 מתוך 8, ארבעה ערוצים עם Rec, Play, Redo ו-Tap on the visualizer.",
-    pad: "ה-Pad בגרסה 1.10 עם המקלדת השנייה פתוחה, משותפת עם Sound.",
+    pad: "ה-Pad בגרסה 1.10 עם המקלדת השנייה פתוחה. ה-+ ליד שורת הקולות.",
     drum: "בוחר הסאמפלים של FX 1 בגרסה 1.10, עם הלשוניות Factory ו-Exclusive.",
   },
   en: {
-    sound: "Google Play shot: Layer Waveforms, stack Sine, Saw and more and play them together.",
+    sound: "The Sound screen in 1.10: layered waves, Drive, and the voice row with +.",
     mic: "Google Play shot: mic channels and Mic FX.",
     loop: "The looper in 1.10: page 1 of 8, four channels with Rec, Play, Redo and Tap on the visualizer.",
-    pad: "The Pad in 1.10 with the second keyboard open, shared with Sound.",
+    pad: "The Pad in 1.10 with the second keyboard open. The + sits next to the voice row.",
     drum: "The FX 1 sample picker in 1.10, with the Factory and Exclusive tabs.",
   },
   ru: {
-    sound: "Скриншот Google Play: Layer Waveforms, несколько волн вместе, например Sine и Saw, звучат сразу.",
+    sound: "Экран Sound в 1.10: слои волн, Drive и ряд голосов с +.",
     mic: "Скриншот Google Play: каналы микрофона и Mic FX.",
     loop: "Лупер в 1.10: страница 1 из 8, четыре канала с Rec, Play, Redo и Tap on the visualizer.",
-    pad: "Pad в 1.10 со второй клавиатурой, общей с Sound.",
+    pad: "Pad в 1.10 со второй клавиатурой. + рядом с рядом голосов.",
     drum: "Выбор сэмплов для FX 1 в 1.10, с вкладками Factory и Exclusive.",
   },
   ar: {
-    sound: "لقطة Google Play: Layer Waveforms، عدة موجات معاً مثل Sine وSaw تُعزف في الوقت نفسه.",
+    sound: "شاشة Sound في الإصدار 1.10: موجات بطبقات وDrive وصف الأصوات مع +.",
     mic: "لقطة Google Play: قنوات الميكروفون ومؤثرات Mic FX.",
     loop: "اللوبر في الإصدار 1.10: الصفحة 1 من 8، أربع قنوات مع Rec وPlay وRedo وTap on the visualizer.",
-    pad: "الـ Pad في الإصدار 1.10 مع لوحة المفاتيح الثانية مفتوحة، مشتركة مع Sound.",
+    pad: "الـ Pad في الإصدار 1.10 مع لوحة المفاتيح الثانية مفتوحة. زر + بجانب صف الأصوات.",
     drum: "منتقي عينات FX 1 في الإصدار 1.10، مع تبويبي Factory وExclusive.",
   },
 } satisfies Record<Language, Record<PlayId, string>>;

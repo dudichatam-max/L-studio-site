@@ -116,3 +116,9 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Drums: each rhythm keeps samples, volumes and L/R; Save and switching rhythms write into the current kit (`commitDrumRhythmAndKit`).
 - Settings label is `Benchmark` (capital B).
 - New guide shots from `ui-1.10-20261014/`: mic, settings, loop-editor, looper, pad, pad-dual-keyboard. Sound / Drums / Tune frequencies / Sound FX shots still pending.
+
+## Shots 2026-10-14 (0b5eaf5)
+
+- Guide: `sound-screen-110`, `sound-fx-window-110`, `freq-window-110` (2-decimal Hz), `drum-screen-110` from `ui-1.10-20261014/`.
+- Homepage windows menu: Sound `play/110-04-sound`, Pad `play/110-05-pad-dual` (dual keyboard with +).
+- Hint above Looper/Mic channels: `Tap the visualizer to edit` (`hint_tap_visualizer_edit`). Tutorial is 68 steps (was 63).
