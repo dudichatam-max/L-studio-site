@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { POSTER_VER } from "@/lib/posters";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { groupUpdates, mergeUpdates, updateScreenshots, type UpdatesCopy } from "@/lib/updatesCopy";
@@ -22,7 +23,8 @@ type ChromeCopy = {
 type GuideChrome = Partial<ChromeCopy>;
 
 function assetUrl(path: string) {
-  return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+  const version = /^\/?assets\/posters\//.test(path) ? `?v=${POSTER_VER}` : "";
+  return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}${version}`;
 }
 
 function webpUrl(path: string) {

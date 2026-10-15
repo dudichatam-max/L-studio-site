@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
-import { POSTER_LARGE } from "@/lib/posters";
+import { POSTER_LARGE, POSTER_VER } from "@/lib/posters";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel } from "@/lib/updatesCopy";
@@ -249,8 +249,8 @@ export default function Guide() {
                               <figure className={mediaClass} key={src}>
                                 {isPoster(src) ? (
                                   <picture>
-                                    <source type="image/webp" srcSet={mediaUrl(src.replace(/\.jpe?g$/i, ".webp"))} />
-                                    <img src={mediaUrl(src)} alt={section.imageAlts?.[src] || section.title} width={POSTER_LARGE.width} height={POSTER_LARGE.height} loading="lazy" decoding="async" />
+                                    <source type="image/webp" srcSet={`${mediaUrl(src.replace(/\.jpe?g$/i, ".webp"))}?v=${POSTER_VER}`} />
+                                    <img src={`${mediaUrl(src)}?v=${POSTER_VER}`} alt={section.imageAlts?.[src] || section.title} width={POSTER_LARGE.width} height={POSTER_LARGE.height} loading="lazy" decoding="async" />
                                   </picture>
                                 ) : (
                                   <img src={mediaUrl(src)} alt={section.imageAlts?.[src] || section.title} loading="lazy" />

@@ -441,7 +441,7 @@
             ],
             "imageAlts": {
               "assets/guide/pad-dual-keyboard-110.jpg": "מסך Pad בגרסה 1.10 עם המקלדת השנייה פתוחה, משותפת עם Sound.",
-              "assets/posters/he/p03-pad-w630.jpg": "פוסטר: פד לנגינה חיה. מסך ה-Pad עם משטח ההחלקה ומקשי ההחזקה 1/4 עד 1/32."
+              "assets/posters/he/p03-pad-w630.jpg": "פוסטר: פד לנגינה חיה. מסך ה-Pad: מחליקים על הפד כדי להזיז את הצליל, והידיות Wah, Oct ו-Vibrato מוסיפות אפקטים חיים."
             }
           },
           {
@@ -654,7 +654,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/he/p04-mic-w630.jpg": "פוסטר: הקליטו את הקול. מסך Mic עם ערוצים נפרדים, גיין, HPF, נוכחות ו-Mic FX."
+              "assets/posters/he/p04-mic-w630.jpg": "פוסטר: הקליטו את הקול. מסך Mic עם ערוצים נפרדים, ולכל ערוץ HPF, נוכחות, Mic FX, השתקה וסולו."
             }
           }
         ]
@@ -2026,7 +2026,7 @@
             ],
             "imageAlts": {
               "assets/guide/pad-dual-keyboard-110.jpg": "The Pad screen in 1.10 with the second keyboard open, shared with Sound.",
-              "assets/posters/en/p03-pad-w630.jpg": "Poster: Live Performance Pad. The Pad screen with the slide area and the 1/4 to 1/32 hold keys."
+              "assets/posters/en/p03-pad-w630.jpg": "Poster: Live Performance Pad. The Pad screen: slide on the pad to move the sound, and the Wah, Oct and Vibrato knobs add live effects."
             }
           },
           {
@@ -2239,7 +2239,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/en/p04-mic-w630.jpg": "Poster: Record Your Voice. The Mic screen with separate channels, gain, high-pass, presence and Mic FX."
+              "assets/posters/en/p04-mic-w630.jpg": "Poster: Record Your Voice. The Mic screen with separate channels, each with its own high-pass, presence, FX, mute and solo."
             }
           }
         ]
@@ -3611,7 +3611,7 @@
             ],
             "imageAlts": {
               "assets/guide/pad-dual-keyboard-110.jpg": "Экран Pad в 1.10 со второй клавиатурой, общей с Sound.",
-              "assets/posters/en/p03-pad-w630.jpg": "Постер (на английском): Live Performance Pad. Экран Pad с областью скольжения и клавишами удержания от 1/4 до 1/32."
+              "assets/posters/en/p03-pad-w630.jpg": "Постер (на английском): Live Performance Pad. Экран Pad: скольжение по паду двигает звук, а ручки Wah, Oct и Vibrato добавляют живые эффекты."
             }
           },
           {
@@ -3824,7 +3824,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/en/p04-mic-w630.jpg": "Постер (на английском): Record Your Voice. Экран Mic с отдельными каналами, gain, фильтром высоких частот, presence и Mic FX."
+              "assets/posters/en/p04-mic-w630.jpg": "Постер (на английском): Record Your Voice. Экран Mic с отдельными каналами, у каждого свои фильтр высоких частот, presence, FX, mute и solo."
             }
           }
         ]
@@ -5196,7 +5196,7 @@
             ],
             "imageAlts": {
               "assets/guide/pad-dual-keyboard-110.jpg": "شاشة Pad في الإصدار 1.10 مع لوحة المفاتيح الثانية مفتوحة، مشتركة مع Sound.",
-              "assets/posters/en/p03-pad-w630.jpg": "ملصق (بالإنجليزية): Live Performance Pad. شاشة Pad مع منطقة الانزلاق ومفاتيح الإمساك من 1/4 إلى 1/32."
+              "assets/posters/en/p03-pad-w630.jpg": "ملصق (بالإنجليزية): Live Performance Pad. شاشة Pad: الانزلاق على اللوحة يحرّك الصوت، ومقابض Wah وOct وVibrato تضيف مؤثرات حية."
             }
           },
           {
@@ -5409,7 +5409,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/en/p04-mic-w630.jpg": "ملصق (بالإنجليزية): Record Your Voice. شاشة Mic مع قنوات منفصلة وgain وفلتر الترددات العالية وpresence وMic FX."
+              "assets/posters/en/p04-mic-w630.jpg": "ملصق (بالإنجليزية): Record Your Voice. شاشة Mic بقنوات منفصلة، ولكل قناة فلتر الترددات العالية وpresence وFX وmute وsolo."
             }
           }
         ]
