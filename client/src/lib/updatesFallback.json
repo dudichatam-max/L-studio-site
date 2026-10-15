@@ -21,7 +21,7 @@
         "status": "in_progress",
         "title": "Coming in the next update: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
         "ticker": "Coming in the next update: Loop Editor and Mic Editor, with Trim, Loop and 8 drum-rhythm boxes",
-        "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows.",
+        "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading.",
         "href": "/guide",
         "cta": "Open the guide",
         "images": [
@@ -38,7 +38,18 @@
               "While the drums play, Play starts at the next drum bar.",
               "No clicks when a channel starts or stops, or when you change the volume.",
               "Drive changes smoothly when you move it while you play.",
-              "Back is now Redo, in the looper and in Mic. It brings back a take you recorded over or cleared. In the looper it also brings back a take from before a trim."
+              "Back is now Redo, in the looper and in Mic. It brings back a take you recorded over or cleared. In the looper it also brings back a take from before a trim.",
+              "STOP on a channel stops it for good. The rhythm boxes do not start it again. Play starts it.",
+              "M (mute) and S (solo) on every channel. Solo works across all 8 pages, and a second tap on S restores. M is saved with the session.",
+              "The channel waveform keeps moving when the channel is muted or not soloed. It stops only when the channel stops."
+            ]
+          },
+          {
+            "title": "Mic",
+            "bullets": [
+              "M and S on every channel. STOP works the same way as in the Looper.",
+              "The top row is cleaner and evenly spaced: no MIC title, and the three monitor slots are gone. Numbers under the knobs are no longer cut off.",
+              "The Gate knob on each channel is removed. Gate stays in the monitor row."
             ]
           },
           {
@@ -60,7 +71,9 @@
               "Six sound knobs per row in each rhythm: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE and REVERB, with a waveform that follows them.",
               "COPY and PASTE a rhythm from the long-press window.",
               "One REDO key steps back through drum changes.",
-              "SAMPLES with arrows, next to DRUM KIT, steps the last row's sample."
+              "SAMPLES with arrows, next to DRUM KIT, steps the last row's sample.",
+              "Switching a drum kit while the drums play is smooth, with no clicks or distortion. A WAV recording hears it clean too.",
+              "The Style key is now Drum Kits, with a small gold HOLD above it. A long-press opens Random genre."
             ]
           },
           {
@@ -84,7 +97,11 @@
               "Saving a session saves the whole workspace, so loading it on another device restores it: frequency presets, drum sample choices, both drum banks, active waves, the dual keyboard, the pad targets and the lyrics.",
               "Before every load there is a confirmation question and an automatic backup. After a load, the mic monitor is off.",
               "New button New session, first in Settings. It asks for a name and clears only the looper and mic channels. Kits, beats and presets stay.",
-              "A duplicate name on import gets a new name instead of overwriting the existing one."
+              "A duplicate name on import gets a new name instead of overwriting the existing one.",
+              "Load Console: every session has LOAD, SAVE, EDIT and X (delete, with a question first). The full name is on one line.",
+              "Export selected and Import session move a single session.",
+              "Saving, loading, exporting and importing show real progress in percent, then success or the reason it failed.",
+              "Steadier: a Mic recording stops with a message if the microphone is taken away, and the app tells you if some recordings could not be restored."
             ]
           },
           {
@@ -93,13 +110,16 @@
               "New hardware-style keys on Drum, Sound and Pad.",
               "New SCALES, PATTERN REPEATS and DRUM STYLES windows. Each drum styles page has its own banner.",
               "A tap turns a wave on or off. One wave always stays on.",
-              "The Loop and Mic editor waveforms follow the knobs live."
+              "The Loop and Mic editor waveforms follow the knobs live.",
+              "A gold MM:SS clock shows next to MIDI and WAV while they record.",
+              "The drum kits welcome window opens with a new sound: a key click and a light creak.",
+              "Hebrew, Arabic and Russian texts updated."
             ]
           }
         ],
         "tickerMore": [
           "Coming in the next update: channel 8 is now called Voice and holds only vocals, 91 samples",
-          "Coming in the next update: six sound knobs on every drum row, Copy and Paste of rhythms, and new hardware-style keys"
+          "Coming in the next update: Mute and Solo on every Looper and Mic channel, and real progress when saving a session"
         ]
       },
       {
@@ -188,7 +208,7 @@
         "status": "in_progress",
         "title": "מגיע בעדכון הבא: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
         "ticker": "מגיע בעדכון הבא: Loop Editor ו-Mic Editor, עם Trim, לופ ו-8 תיבות מקצב תופים",
-        "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה.",
+        "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
         "images": [
@@ -205,7 +225,18 @@
               "כשהתופים מנגנים, Play מתחיל בתחילת התיבה הבאה של התופים.",
               "אין קליקים כשערוץ מתחיל או נעצר, או כשמשנים ווליום.",
               "Drive משתנה בצורה חלקה כשמזיזים אותו תוך כדי נגינה.",
-              "Back הפך ל-Redo, בלופר וב-Mic. הוא מחזיר הקלטה שהוקלט עליה או שנמחקה. בלופר הוא מחזיר גם הקלטה מלפני חיתוך."
+              "Back הפך ל-Redo, בלופר וב-Mic. הוא מחזיר הקלטה שהוקלט עליה או שנמחקה. בלופר הוא מחזיר גם הקלטה מלפני חיתוך.",
+              "STOP בערוץ עוצר אותו סופית. תיבות הקצב לא מפעילות אותו שוב. Play מפעיל אותו.",
+              "M (השתקה) ו-S (סולו) בכל ערוץ. הסולו עובד בכל 8 העמודים, והקשה שנייה על S מחזירה. M נשמר עם הסשן.",
+              "צורת הגל של הערוץ ממשיכה לזוז כשהערוץ מושתק או לא בסולו. היא נעצרת רק כשהערוץ נעצר."
+            ]
+          },
+          {
+            "title": "Mic",
+            "bullets": [
+              "M ו-S בכל ערוץ. STOP עובד כמו ב-Looper.",
+              "השורה העליונה נקייה יותר ובמרווחים שווים: בלי כותרת MIC, ושלושת הסלוטים של המוניטור נעלמו. המספרים מתחת לנובים כבר לא נחתכים.",
+              "נוב Gate בכל ערוץ הוסר. Gate נשאר בשורת המוניטור."
             ]
           },
           {
@@ -227,7 +258,9 @@
               "שישה כפתורי סאונד לכל שורה בכל קצב: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE ו-REVERB, עם צורת גל שעוקבת אחריהם.",
               "COPY ו-PASTE של קצב מחלון הלחיצה הארוכה.",
               "מקש REDO אחד חוזר אחורה בשינויי התופים.",
-              "SAMPLES עם חצים, ליד DRUM KIT, מחליף את הסאמפל של השורה האחרונה."
+              "SAMPLES עם חצים, ליד DRUM KIT, מחליף את הסאמפל של השורה האחרונה.",
+              "החלפת קיט תופים בזמן שהתופים מנגנים חלקה, בלי קליקים ובלי עיוות. גם הקלטת WAV שומעת אותה נקייה.",
+              "המקש Style נקרא עכשיו Drum Kits, ומעליו HOLD קטן בזהב. לחיצה ארוכה פותחת את Random genre."
             ]
           },
           {
@@ -251,7 +284,11 @@
               "שמירת סשן שומרת את כל סביבת העבודה, כך שטעינה במכשיר אחר מחזירה אותה: פריסטים של תדרים, בחירות הסאמפלים בתופים, שני בנקי התופים, הגלים הפעילים, המקלדת הכפולה, יעדי הפד והמילים.",
               "לפני כל טעינה יש שאלת אישור וגיבוי אוטומטי. אחרי הטעינה ניטור המיקרופון כבוי.",
               "כפתור חדש New session, ראשון ב-Settings. הוא מבקש שם ומנקה רק את ערוצי הלופר והמיקרופון. הקיטים, הביטים והפריסטים נשארים.",
-              "שם כפול בייבוא מקבל שם חדש, במקום לכתוב על הקיים."
+              "שם כפול בייבוא מקבל שם חדש, במקום לכתוב על הקיים.",
+              "Load Console: לכל סשן יש LOAD, SAVE, EDIT ו-X (מחיקה, אחרי שאלה). השם המלא בשורה אחת.",
+              "Export selected ו-Import session מעבירים סשן בודד.",
+              "שמירה, טעינה, ייצוא וייבוא מראים התקדמות אמיתית באחוזים, ואז הצלחה או הסיבה לכישלון.",
+              "יציב יותר: הקלטת Mic נעצרת עם הודעה אם המיקרופון נלקח, והאפליקציה אומרת אם אי אפשר היה לשחזר חלק מההקלטות."
             ]
           },
           {
@@ -260,13 +297,16 @@
               "מקשים חדשים בסגנון חומרה ב-Drum, Sound ו-Pad.",
               "חלונות SCALES, PATTERN REPEATS ו-DRUM STYLES חדשים. לכל עמוד סגנונות תופים יש באנר משלו.",
               "הקשה מדליקה או מכבה גל. גל אחד תמיד נשאר דולק.",
-              "צורות הגל בעורכי Loop ו-Mic עוקבות אחרי הכפתורים בזמן אמת."
+              "צורות הגל בעורכי Loop ו-Mic עוקבות אחרי הכפתורים בזמן אמת.",
+              "שעון זהב MM:SS מופיע ליד MIDI ו-WAV בזמן ההקלטה.",
+              "חלון הפתיחה של קיטי התופים נפתח עם צליל חדש: נקישת מפתח וחריקה קלה.",
+              "הטקסטים בעברית, ערבית ורוסית עודכנו."
             ]
           }
         ],
         "tickerMore": [
           "מגיע בעדכון הבא: ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים, 91 סאמפלים",
-          "בעדכון הבא: שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, ומקשים חדשים בסגנון חומרה"
+          "בעדכון הבא: השתקה וסולו בכל ערוץ Looper ו-Mic, והתקדמות אמיתית בשמירת סשן"
         ]
       },
       {
@@ -355,7 +395,7 @@
         "status": "in_progress",
         "title": "В следующем обновлении: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
         "ticker": "В следующем обновлении: Loop Editor и Mic Editor, с Trim, лупом и 8 ячейками ритма ударных",
-        "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле.",
+        "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке.",
         "href": "/guide",
         "cta": "Открыть руководство",
         "images": [
@@ -372,7 +412,18 @@
               "Пока играют ударные, Play начинается со следующего такта ударных.",
               "Нет щелчков, когда канал стартует или останавливается или когда меняется громкость.",
               "Drive меняется плавно, когда его двигают во время игры.",
-              "Back теперь Redo, в лупере и в Mic. Он возвращает запись, поверх которой записали, или очищенную запись. В лупере он также возвращает запись до обрезки."
+              "Back теперь Redo, в лупере и в Mic. Он возвращает запись, поверх которой записали, или очищенную запись. В лупере он также возвращает запись до обрезки.",
+              "STOP в канале останавливает его насовсем. Ритмические боксы не запускают его снова. Play запускает.",
+              "M (mute) и S (соло) на каждом канале. Соло работает на всех 8 страницах, а второе нажатие на S возвращает всё. M сохраняется с сессией.",
+              "Волна канала продолжает двигаться, когда канал заглушён или не в соло. Она останавливается, только когда останавливается канал."
+            ]
+          },
+          {
+            "title": "Mic",
+            "bullets": [
+              "M и S на каждом канале. STOP работает так же, как в Looper.",
+              "Верхняя строка стала чище и с равными промежутками: нет заголовка MIC, и три слота монитора убраны. Числа под регуляторами больше не обрезаются.",
+              "Регулятор Gate на каждом канале убран. Gate остаётся в строке монитора."
             ]
           },
           {
@@ -394,7 +445,9 @@
               "Шесть ручек звука на каждый ряд в каждом ритме: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE и REVERB, с формой волны, которая следует за ними.",
               "COPY и PASTE ритма в окне долгого нажатия.",
               "Одна клавиша REDO возвращает назад изменения ударных.",
-              "SAMPLES со стрелками, рядом с DRUM KIT, переключает сэмпл последнего ряда."
+              "SAMPLES со стрелками, рядом с DRUM KIT, переключает сэмпл последнего ряда.",
+              "Смена набора ударных, пока они играют, плавная, без щелчков и искажений. Запись WAV тоже слышит её чистой.",
+              "Клавиша Style теперь называется Drum Kits, над ней маленькая золотая надпись HOLD. Долгое нажатие открывает Random genre."
             ]
           },
           {
@@ -418,7 +471,11 @@
               "Сохранение сессии сохраняет всё рабочее пространство, и загрузка на другом устройстве возвращает его: пресеты частот, выбор сэмплов ударных, оба банка ударных, включённые волны, две клавиатуры, цели пэдов и тексты.",
               "Перед каждой загрузкой есть вопрос с подтверждением и автоматическая резервная копия. После загрузки монитор микрофона выключен.",
               "Новая кнопка New session, первая в Settings. Она спрашивает имя и очищает только каналы лупера и микрофона. Наборы, биты и пресеты остаются.",
-              "Сессия с повторяющимся именем при импорте получает новое имя и не перезаписывает существующую."
+              "Сессия с повторяющимся именем при импорте получает новое имя и не перезаписывает существующую.",
+              "Load Console: у каждой сессии есть LOAD, SAVE, EDIT и X (удаление, сначала вопрос). Полное имя в одной строке.",
+              "Export selected и Import session переносят одну сессию.",
+              "Сохранение, загрузка, экспорт и импорт показывают реальный прогресс в процентах, затем успех или причину сбоя.",
+              "Стабильнее: запись Mic останавливается с сообщением, если микрофон отобран, а приложение сообщает, если часть записей не удалось восстановить."
             ]
           },
           {
@@ -427,13 +484,16 @@
               "Новые клавиши в аппаратном стиле на Drum, Sound и Pad.",
               "Новые окна SCALES, PATTERN REPEATS и DRUM STYLES. У каждой страницы стилей ударных свой баннер.",
               "Нажатие включает или выключает волну. Одна волна всегда остаётся включённой.",
-              "Формы волны в редакторах Loop и Mic следуют за ручками вживую."
+              "Формы волны в редакторах Loop и Mic следуют за ручками вживую.",
+              "Золотые часы MM:SS появляются рядом с MIDI и WAV во время записи.",
+              "Приветственное окно наборов ударных открывается с новым звуком: щелчок ключа и лёгкий скрип.",
+              "Тексты на иврите, арабском и русском обновлены."
             ]
           }
         ],
         "tickerMore": [
           "В следующем обновлении: канал 8 теперь называется Voice и хранит только вокал, 91 сэмпл",
-          "В следующем обновлении: шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов и новые клавиши в аппаратном стиле"
+          "В следующем обновлении: Mute и Solo на каждом канале Looper и Mic и реальный прогресс при сохранении сессии"
         ]
       },
       {
@@ -522,7 +582,7 @@
         "status": "in_progress",
         "title": "في التحديث القادم: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
         "ticker": "في التحديث القادم: Loop Editor وMic Editor، مع Trim واللوب و8 مربعات إيقاع طبول",
-        "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة.",
+        "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل.",
         "href": "/guide",
         "cta": "افتح الدليل",
         "images": [
@@ -539,7 +599,18 @@
               "أثناء عزف الطبول، يبدأ Play عند بداية المازورة التالية للطبول.",
               "لا نقرات عندما تبدأ القناة أو تتوقف، أو عندما يتغير الحجم.",
               "يتغير Drive بسلاسة عندما تحرّكه أثناء العزف.",
-              "أصبح Back الآن Redo، في اللوبر وفي Mic. يعيد أخذاً سُجّل فوقه أو مُسح. وفي اللوبر يعيد أيضاً الأخذ من قبل القص."
+              "أصبح Back الآن Redo، في اللوبر وفي Mic. يعيد أخذاً سُجّل فوقه أو مُسح. وفي اللوبر يعيد أيضاً الأخذ من قبل القص.",
+              "STOP في القناة يوقفها نهائياً. مربعات الإيقاع لا تشغّلها من جديد. Play يشغّلها.",
+              "M (كتم) وS (انفراد) على كل قناة. الانفراد يعمل في الصفحات الثماني، وضغطة ثانية على S تعيد كل شيء. M يُحفظ مع الجلسة.",
+              "شكل موجة القناة يواصل الحركة عندما تكون القناة مكتومة أو غير منفردة. يتوقف فقط عندما تتوقف القناة."
+            ]
+          },
+          {
+            "title": "Mic",
+            "bullets": [
+              "M وS على كل قناة. STOP يعمل مثل Looper.",
+              "الصف العلوي أنظف وبمسافات متساوية: بلا عنوان MIC، وخانات المراقبة الثلاث أُزيلت. الأرقام تحت المقابض لم تعد تُقطع.",
+              "مقبض Gate في كل قناة أُزيل. يبقى Gate في صف المراقبة."
             ]
           },
           {
@@ -561,7 +632,9 @@
               "ستة مقابض صوت لكل صف في كل إيقاع: GAIN وSQUEEZE وATTACK وSUSTAIN وRELEASE وREVERB، مع شكل موجة يتبعها.",
               "COPY وPASTE للإيقاع من نافذة الضغط المطول.",
               "مفتاح REDO واحد يعود في تغييرات الطبول.",
-              "SAMPLES بأسهم، بجانب DRUM KIT، يغيّر عينة آخر صف."
+              "SAMPLES بأسهم، بجانب DRUM KIT، يغيّر عينة آخر صف.",
+              "تبديل طقم الطبول أثناء عزفها سلس، بلا نقرات ولا تشويه. تسجيل WAV يسمعه نظيفاً أيضاً.",
+              "مفتاح Style اسمه الآن Drum Kits، وفوقه HOLD صغيرة بالذهبي. الضغط المطول يفتح Random genre."
             ]
           },
           {
@@ -585,7 +658,11 @@
               "حفظ الجلسة يحفظ مساحة العمل كلها، فيعيدها التحميل على جهاز آخر: إعدادات الترددات، واختيارات عينات الطبول، وبنكا الطبول، والموجات المشغّلة، ولوحتا المفاتيح، وأهداف الـ Pad، والكلمات.",
               "قبل كل تحميل يظهر سؤال تأكيد وتُحفظ نسخة احتياطية تلقائية. بعد التحميل تكون مراقبة الميكروفون متوقفة.",
               "زر جديد New session، الأول في Settings. يطلب اسماً ويمسح قنوات اللوبر والميكروفون فقط. الأطقم والإيقاعات والإعدادات تبقى.",
-              "الاسم المكرر عند الاستيراد يحصل على اسم جديد بدل الكتابة فوق الموجود."
+              "الاسم المكرر عند الاستيراد يحصل على اسم جديد بدل الكتابة فوق الموجود.",
+              "Load Console: لكل جلسة LOAD وSAVE وEDIT وX (حذف، بعد سؤال). الاسم الكامل في سطر واحد.",
+              "Export selected وImport session ينقلان جلسة واحدة.",
+              "الحفظ والتحميل والتصدير والاستيراد تعرض تقدماً حقيقياً بالنسبة المئوية، ثم النجاح أو سبب الفشل.",
+              "أكثر ثباتاً: تسجيل Mic يتوقف برسالة إذا سُحب الميكروفون، ويخبرك التطبيق إذا تعذّر استعادة بعض التسجيلات."
             ]
           },
           {
@@ -594,13 +671,16 @@
               "مفاتيح جديدة بنمط الأجهزة في Drum وSound وPad.",
               "نوافذ SCALES وPATTERN REPEATS وDRUM STYLES جديدة. لكل صفحة أنماط طبول لافتة خاصة بها.",
               "النقر يشغّل الموجة أو يطفئها. تبقى موجة واحدة مضاءة دائمًا.",
-              "أشكال الموجة في محرري Loop وMic تتبع المقابض مباشرة."
+              "أشكال الموجة في محرري Loop وMic تتبع المقابض مباشرة.",
+              "ساعة ذهبية MM:SS تظهر بجانب MIDI وWAV أثناء التسجيل.",
+              "نافذة الترحيب بأطقم الطبول تُفتح بصوت جديد: نقرة مفتاح وصرير خفيف.",
+              "نصوص العبرية والعربية والروسية حُدّثت."
             ]
           }
         ],
         "tickerMore": [
           "في التحديث القادم: القناة 8 اسمها الآن Voice وتحمل الغناء فقط، 91 عيّنة",
-          "في التحديث القادم: ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، ومفاتيح جديدة بنمط الأجهزة"
+          "في التحديث القادم: كتم وانفراد لكل قناة في Looper وMic، وتقدّم حقيقي عند حفظ الجلسة"
         ]
       },
       {

@@ -128,3 +128,11 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - New guide section drum/drum-sound: 6 knobs GAIN 0..+18 dB, SQUEEZE 0..100, ATTACK 0..200 ms, SUSTAIN 0..100%, RELEASE 5..2000 ms, REVERB 0..100%, per row per rhythm, live waveform. No image yet (see /workspace/site-1.10/missing-images.md).
 - Pattern repeats: COPY/PASTE (paste keeps the target repeat count, BPM and swing). Drum styles: page banners. Scales: SCALES title. Waves: tap toggles, one always on (no long-press).
 - Updates item: Drums bullets rewritten, new Look section, a tickerMore line and a summary sentence. Tablet support: not in code, not mentioned.
+
+## 1.10 extension 2 (app branch tip ad2ceeb)
+- New guide section sound/live-mode, written from StudioUiMode.kt and its call sites. Locked in LIVE: Clear (Looper, Mic), file Load on drum rows and Looper and Mic channels, Import (Loop, Mic, Drum styles), kit Load, DRUM KIT arrows, numeric typing on knobs, channel names, Looper page name (long-press). Open in LIVE: Rec, Play, Stop, M, S, Redo, Save, Export, sample list and arrows, drum CLEAR. Re-check this list when the app changes.
+- Settings: Load Console rows (LOAD, SAVE, EDIT, X), Export selected, Import session, real progress window. Settings has only a Close key (no X). Language list closes with Close (was Dismiss).
+- Drum Kits key (was Style) with the gold HOLD caption. Scales key reads Scale off. Mic: top row without MIC title and without monitor slots, no per-channel Gate knob.
+- Looper and Mic: M (mute) and S (solo), STOP holds until PLAY, visualizer keeps moving. A gold MM:SS clock shows while MIDI or WAV records.
+- Not mentioned on purpose: tablet layout (content capped at 440 dp, phones locked to portrait), Android 7/8 items, circular recording buffer, safe session names, sample rate in session.
+- All of this is 1.10 in smoke test, not on Google Play. Keep PR #74 a draft until 1.10 is released.

@@ -284,9 +284,10 @@
               "הקשה על FX פותחת את Sound FX. FX נצבע בזהב כשאפקט דולק.",
               "החצים ליד PRESET טוענים את הפריסט השמור הבא או הקודם. אם אין שמורים, הטלפון אומר No saved presets.",
               "החצים ליד DRUM KIT טוענים את הקיט הבא או הקודם. LIVE מכבה את החצים האלה.",
-              "PRO ו-LIVE נמצאים בראש כל מסך. הקשה מחליפה ביניהם. LIVE מכבה את Clear, טעינת קובץ, Import, טעינת סמפל לתוף, דפדוף קיטים, Load של קיט, והקלדת מספר על נוב. Redo נשאר אחרי מחיקה.",
+              "הכפתור בראש כל מסך מחליף בין PRO ל-LIVE. הקשה מחליפה ביניהם. ראו את מצב LIVE למטה.",
               "הקשה על MIDI מתחילה הקלטת MIDI. בזמן ההקלטה כתוב Save MIDI. הקשה נוספת עוצרת ומבקשת מהטלפון איפה לשמור את הקובץ.",
               "הקשה על WAV מתחילה להקליט את מה ששומעים. בזמן ההקלטה כתוב Save WAV. הקשה נוספת עוצרת ומבקשת מהטלפון איפה לשמור את הקובץ.",
+              "בזמן שמקליטים MIDI או WAV, שעון זהב בדקות ושניות (MM:SS) מופיע בין הכותרת למקש MIDI. הדקות ממשיכות לספור אחרי 60. אם שניהם מקליטים, הוא סופר מזה שהתחיל ראשון.",
               "הקשה על Settings פותחת את Settings."
             ],
             "media": "assets/guide/sound-screen-110.jpg",
@@ -375,10 +376,19 @@
                 "id": "key",
                 "title": "Key",
                 "body": [
-                  "הקשה על Key פותחת את Scales. הקשה על OFF מנקה את הסולם. Major מציג מ-C maj עד B maj. Minor מציג מ-C min עד B min. הקשה על שם סולם בוחרת אותו. הקשה על Close סוגרת את החלון.",
+                  "הקשה על Key פותחת את Scales. הקשה על Scale off מנקה את הסולם. Major מציג מ-C maj עד B maj. Minor מציג מ-C min עד B min. הקשה על שם סולם בוחרת אותו. הקשה על Close סוגרת את החלון.",
                   "כותרת החלון היא SCALES, באותו סגנון מקשים כמו שאר החלונות של 1.10."
                 ],
                 "media": "assets/guide/scales-window.jpg"
+              },
+              {
+                "id": "live-mode",
+                "title": "מצב LIVE",
+                "body": [
+                  "הכפתור בראש כל מסך מחליף בין PRO ל-LIVE. PRO הוא המצב הרגיל, עם הכול פתוח. LIVE הוא מצב שנועל כמה כפתורים כדי שתוכלו להתרכז בנגינה. הוא טוב להקלטה ולהופעה, כי הקשה בטעות לא תמחק הקלטה, לא תטען קובץ ולא תשנה שם של ערוץ.",
+                  "מה LIVE נועל: Clear בערוצי Looper ו-Mic. Load בשורות התופים ובערוצי Looper ו-Mic. Import במסכי Loop ו-Mic, ו-Import ו-Load ב-Drum styles. חיצי DRUM KIT במסכי Sound ו-Drum. הקלדת מספר על נוב, וגרירה עדיין עובדת. שמות ערוצי Looper ו-Mic, שם עמוד ה-Looper, והלחיצה הארוכה שפותחת את Page name.",
+                  "מה LIVE משאיר פתוח: Rec, Play, Stop, M, S, Redo, Save ו-Export. רשימת סמפלי התופים וחיצי הסמפלים, CLEAR בתופים, מעבר בין עמודים, פריסטים, וכל מה שאתם מנגנים. הקשה נוספת על הכפתור מחזירה ל-PRO."
+                ]
               },
               {
                 "id": "settings",
@@ -387,14 +397,22 @@
                   "הקשה על Settings, בראש כל מסך, פותחת את החלון הזה. השורה מתחת לכותרת אומרת Language & console session.",
                   "New session היא השורה הראשונה. היא מבקשת שם לסשן ואז מרוקנת את ערוצי ה-Looper וה-Mic. הקיטים, המקצבים והפריסטים נשארים. אם השם כבר קיים, היא שואלת לפני שהיא דורסת.",
                   "הקשה על Custom Frequency, השורה הראשונה, פותחת את Tune frequencies (Hz).",
-                  "הקשה על Language סוגרת את Settings ופותחת את Choose language. Continue מחיל את השפה. Dismiss סוגר את הרשימה.",
+                  "הקשה על Language סוגרת את Settings ופותחת את Choose language. Continue מחיל את השפה. Close סוגר את הרשימה.",
                   "הקשה על Save as פותחת את Save Console. Save מאשר. Cancel סוגר. סשן שמור שומר גם את ה-Sound FX ואת השמות והצבעים של עמודי הלופ. הוא שומר גם את פריסטי התדרים, בחירות הסמפלים בתופים, בנקי התופים Factory ו-Exclusive, אילו גלים דולקים, תצוגת שתי המקלדות, יעדי הפד והמילים. עם Export all ו-Import all כל סביבת העבודה עוברת למכשיר אחר.",
-                  "הקשה על Load פותחת את Load Console. אם אין שמור, כתוב No saved sessions. Export all ו-Import all נמצאים שם. Delete שואל לפני שהוא מוחק. לפני שסשן נטען, האפליקציה שואלת קודם ושומרת גיבוי אוטומטי של הפריסטים וקיטי התופים הנוכחיים. ה-Monitor של המיק כבוי אחרי טעינה. סשן מיובא עם שם שכבר קיים בטלפון מקבל שם חדש במקום לדרוס.",
+                  "שמירה, טעינה, ייצוא וייבוא של סשן פותחים כל אחד חלון עם פס התקדמות ואחוז אמיתי. הוא נשאר על 99% עד שהעבודה באמת נגמרת, ואי אפשר לסגור אותו בזמן שהפעולה רצה. אחר כך כתוב, למשל, Session saved successfully, או Saving failed עם הסיבה, כמו חוסר באחסון פנוי. פעולה שנייה נדחית בהודעה Another session action is still running.",
+                  "הקשה על Load פותחת את Load Console. אם אין שמור, כתוב No saved sessions.",
+                  "כל סשן שמור הוא שורה עם המספר שלו ושמו המלא בשורה אחת. טקסט השם מתכווץ כדי להיכנס. מתחת לשם יש ארבעה מקשים: LOAD, SAVE, EDIT ו-X.",
+                  "LOAD טוען את הסשן. לפני שסשן נטען, האפליקציה שואלת קודם ושומרת גיבוי אוטומטי של הפריסטים וקיטי התופים הנוכחיים. ה-Monitor של המיק כבוי אחרי טעינה.",
+                  "SAVE מחליף את הסשן בהגדרה הנוכחית, אחרי שהוא שואל Replace the session with the current console? Overwrite מאשר ו-Cancel סוגר את השאלה.",
+                  "EDIT משנה את שם הסשן, ולחיצה ארוכה על השורה עושה אותו דבר. אם השם החדש כבר תפוס, הוא שואל לפני שהוא דורס.",
+                  "X מוחק את הסשן, אחרי שהוא שואל Delete session? Delete מאשר ו-Cancel משאיר את הסשן.",
+                  "Export all שומר את כל הסשנים בקובץ אחד. Export selected שומר רק את הסשן המסומן בקובץ אחד. Import all ו-Import session שניהם קוראים קובץ שייצאתם. סשן מיובא עם שם שכבר קיים בטלפון מקבל שם חדש במקום להחליף.",
+                  "מקש Load בתחתית טוען את הסשן המסומן, ו-Cancel סוגר את החלון.",
                   "הקשה על Show tutorial מתחילה את הסיור מחדש.",
                   "המדריך עודכן ל-1.10. יש בו 68 שלבים, והוא מכסה עכשיו את הקשת הגל, שמירת פריסט בלחיצה ארוכה, Tune frequencies, המקלדת השנייה ב-Pad, Mic Editor ו-Loop Editor, ערוצי התופים והסאמפלים לכל קצב, Clear בתופים ושמירה אוטומטית, ו-New session. פותחים אותו מ-Settings.",
                   "הקשה על Factory 64 שואלת Restore Factory 64? Restore מחליף את פריסטי Factory 64, את כל 8 חבילות ה-Style, ואת כל 11 חבילות ה-Exclusive, ואז טוען את מקום 1 בעמוד 1. Cancel סוגר את השאלה.",
                   "הקשה על Benchmark, מתחת ל-Factory 64, פותחת את כלי בדיקת האודיו.",
-                  "ה-X ו-Close סוגרים את Settings."
+                  "הקשה על Close סוגרת את Settings."
                 ],
                 "media": "assets/guide/settings-window-110.jpg",
                 "imageAlts": {
@@ -438,7 +456,7 @@
               "הקשה על PLAY מתחילה את התופים מההתחלה. התווית מתחלפת ל-STOP. הקשה נוספת עוצרת וחוזרת להתחלה.",
               "ב-Pro, הקשה על +4 מציגה את FX 1, FX 2, FX 3 ו-Voice ומסתירה את המקלדת. המקש מתחלף ל-‎-4. הקשה נוספת מסתירה את השורות ומחזירה את המקלדת.",
               "הקשה על Drum FX פותחת את Drum FX. כשפריסט דולק, כתוב FX ומספר.",
-              "הקשה על Style פותחת את Drum styles. לחיצה ארוכה על Style פותחת את Random genre. ההערה שם אומרת Selection affects Random. הקשה על Rock, Trance, Rap, או Techno שומרת את הז'אנר וסוגרת את החלון. Cancel סוגר ומשאיר את הז'אנר כמו שהיה. Random במסך הזה משתמש בז'אנר, והוא מתחיל כ-Rock. החלון הזה לא בונה פטרן בעצמו.",
+              "המקש נקרא Drum Kits, ומעל שמו יש HOLD קטן בזהב. הקשה על Drum Kits פותחת את Drum styles. לחיצה ארוכה פותחת את Random genre, וזה מה ש-HOLD אומר. כשהמקש צר, השם קטן, ובמקרה האחרון כתוב Kits. ההערה ב-Random genre אומרת Selection affects Random. הקשה על Rock, Trance, Rap, או Techno שומרת את הז'אנר וסוגרת את החלון. Cancel סוגר ומשאיר את הז'אנר כמו שהיה. Random במסך הזה משתמש בז'אנר, והוא מתחיל כ-Rock. החלון הזה לא בונה פטרן בעצמו.",
               "גרירה על Drum Vol קובעת את ווליום התופים מ-0% עד 100%. הקשה על המספר נותנת להקליד ערך. LIVE לא פותחת את התיבה.",
               "גרירה על Swing קובעת swing מ-0% עד 100%. גרירה על BPM קובעת את הטמפו מ-60 עד 200. BPM, Swing, והווליום של השורות פועלים בזמן אמת: שינוי שעושים בזמן שהתופים מנגנים נשאר גם כשהפטרן הבא מתחיל.",
               "מחזיקים 1/4, 1/8, 1/16, או 1/32 כדי לחזור על התופים בחלוקה הזאת כל עוד מחזיקים. עוזבים, והחזרה נעצרת. הקשה עליהם לא עושה כלום. מחזיקים STOP. הקשה עליו לא עושה כלום.",
@@ -479,12 +497,13 @@
                 "id": "drum-styles",
                 "title": "Drum styles",
                 "body": [
-                  "הקשה על Style פותחת את Drum styles. הכותרת אומרת Drum styles (8 styles). הקשה על Close סוגרת אותו.",
+                  "הקשה על Drum Kits פותחת את Drum styles. הכותרת אומרת Drum styles (8 styles). הקשה על Close סוגרת אותו.",
                   "הקשה על Switch to exclusive עוברת בין עמודי ה-factory לעמודי Exclusive.",
                   "יש 8 עמודי factory ו-11 עמודי Exclusive. לכל עמוד יש 8 קיטים. הקשה על מספר עמוד רק מראה את העמוד. הקיט נטען בהקשה על Load.",
                   "הקשה על Load טוענת את הקיט. LIVE מכבה את Load. הקשה על Save שומרת את הקיט הנוכחי תחת השם. הקשה על Edit משנה את שם הקיט.",
                   "הקשה על Edit page name משנה את שם העמוד. הקשה על Import בוחרת קובץ סגנון. הקשה על Export מבקשת מהטלפון איפה לשמור את העמוד.",
-                  "הכותרת היא DRUM STYLES (8 STYLES), או EXCLUSIVE STYLES (8 STYLES) בעמודי Exclusive. מתחת למספרי העמודים, לכל עמוד יש באנר משלו. 8 הקיטים נכנסים בלי גלילה."
+                  "הכותרת היא DRUM STYLES (8 STYLES), או EXCLUSIVE STYLES (8 STYLES) בעמודי Exclusive. מתחת למספרי העמודים, לכל עמוד יש באנר משלו. 8 הקיטים נכנסים בלי גלילה.",
+                  "אפשר לטעון קיט בזמן שהתופים מנגנים. צלילים שעדיין מצלצלים דועכים תוך כ-20 ms, כך שאין קליקים או עיוות, והווליום והפאן גולשים לערכים החדשים תוך כ-10 ms. מכות חדשות משתמשות בקיט החדש מיד. הקלטת WAV שומעת את אותו מעבר נקי."
                 ],
                 "media": "assets/guide/drum-styles-window.jpg"
               },
@@ -521,6 +540,9 @@
               "הקשה על Redo מחזירה את ההקלטה האחרונה שאבדה במסך הזה: הקלטה שנמחקה, שהוקלט עליה מחדש, או שנחתכה ב-Loop Editor. זה לא עוזב את המסך. זה לא עובד בזמן שהערוץ עסוק. LIVE עדיין מאפשר את Redo כשיש הקלטה להחזיר.",
               "הקשה על Rec מתחילה הקלטה. אחר כך כתוב STOP. הקשה נוספת עוצרת את ההקלטה. אם כבר הייתה הקלטה בערוץ, Redo יכול להחזיר אותה.",
               "הקשה על Play מנגנת את הערוץ. אחר כך כתוב Stop. הקשה נוספת עוצרת. Play נשאר כבוי כשהערוץ ריק, אלא אם הוא כבר מנגן או מקליט. כשהתופים מנגנים, Play מחכה לתחילת התיבה הבאה של התופים. ההתחלה, העצירה ושינויי הווליום חלקים.",
+              "הקשה על Stop עוצרת את הערוץ סופית. כשהתופים מנגנים, תיבות הקצב ב-Loop Editor לא מפעילות אותו שוב. הוא מנגן שוב רק כשמקישים Play על הערוץ הזה.",
+              "M משתיק את הערוץ ו-S עושה לו סולו. M נמצא מעל עיגול ה-FX, ו-S נמצא מעל L/R. M נצבע בזהב כשהערוץ מושתק. S נצבע בזהב כשהוא בסולו, וכל ערוץ שאינו בסולו נהיה שקט, בכל 8 העמודים. אפשר לשים כמה ערוצים בסולו. הקשה שנייה על S מוציאה את הערוץ מהסולו, וכשאף ערוץ לא בסולו הכול מנגן שוב. ערוץ שמושתק וגם בסולו נשאר שקט. M נשמר עם הסשן. S לא נשמר, ולכן טעינה מתחילה בלי סולו.",
+              "צורת הגל של הערוץ ממשיכה לזוז כשהערוץ מושתק או לא בסולו, כך שעדיין רואים את ההקלטה. היא נעצרת רק כשהערוץ עצמו נעצר. היא מראה את ההקלטה לפני Vol, M ו-S.",
               "הקשה על Load בוחרת קובץ שמע לערוץ. LIVE מכבה את Load.",
               "הקשה על Save מבקשת מהטלפון איפה לשמור את הערוץ כקובץ wav. Save נשאר כבוי כשהערוץ ריק.",
               "הקשה על Clear מנקה את הערוץ ושומרת את ההקלטה ל-Redo. LIVE מכבה את Clear.",
@@ -578,12 +600,15 @@
               "הקשה על Lyrics פותחת את Lyrics.",
               "הקשה על Monitor מדליקה או מכבה את המוניטור. כשהוא דולק, כתוב Monitor ON. אם הוא דולק ואין אוזניות, הטלפון מזהיר מפידבק של הרמקול.",
               "Gain, Mon, HPF, Gate, Low, Pres, ו-Comp נמצאים מתחת לכותרת. גרירה קובעת את הנוב. Gain רץ מ-1x עד 4x. HPF רץ מ-40 Hz עד 240 Hz. הקשה על המספר נותנת להקליד ערך. LIVE לא פותחת את התיבה.",
-              "למקומות 1, 2, ו-3 יש Load ו-Save. הקשה על Load שמה את הגדרת המוניטור השמורה על הנובים. LIVE מכבה את ה-Load הזה. הקשה על Save שומרת את הגדרת המוניטור.",
+              "בשורה העליונה יש Lyrics, Monitor, Redo ומקשי העמודים 1 ו-2, במרווחים שווים. אין כותרת MIC ואין שורת סלוטים של מוניטור ב-1.10.",
               "שמות הערוצים מתחילים כ-Vocal 1, Vocal 2, Vocal 3, Guitar, Bass, ו-Inst 3. הקשה בשם משנה אותו. LIVE נועל את השם.",
               "הקשה על Rec מתחילה הקלטה. אחר כך כתוב Stop. הקשה נוספת עוצרת. הקשה על Play מנגנת את הערוץ. אחר כך כתוב Stop. הקשה נוספת עוצרת. אם כבר הייתה הקלטה בערוץ, Redo יכול להחזיר אותה.",
+              "הקשה על Stop עוצרת את הערוץ סופית, בדיוק כמו ב-Looper. הוא מנגן שוב רק כשמקישים Play על הערוץ הזה.",
+              "S נמצא משמאל לעיגול ה-FX, ו-M נמצא מימינו, ליד Vol. הם עובדים כמו M ו-S ב-Looper. הסולו מכסה רק את ערוצי Mic: ל-Mic ול-Looper יש לכל אחד סולו משלו. M נשמר עם הסשן. S לא.",
+              "צורת הגל של הערוץ ממשיכה לזוז כשהערוץ מושתק או לא בסולו. היא נעצרת רק כשהערוץ עצמו נעצר.",
               "הקשה על Clear מנקה את הערוץ ושומרת את ההקלטה ל-Redo. LIVE מכבה את Clear.",
               "הקשה על Save מבקשת מהטלפון איפה לשמור את הערוץ כקובץ wav. Save נשאר כבוי כשהערוץ ריק.",
-              "HPF, Gate, ו-Pres על הערוץ משפיעים רק על הערוץ הזה. גרירה קובעת אותם.",
+              "HPF ו-Pres על הערוץ משפיעים רק על הערוץ הזה. גרירה קובעת אותם. לערוץ אין נוב Gate.",
               "הקשה על Mic FX פותחת את Mic FX לערוץ. מתחת לשם כתוב FX, ו-Off או מספר הפריסט.",
               "גרירה על Vol קובעת את הווליום של הערוץ. גרירה על L/R מזיזה את הסאונד בין L, המרכז, ו-R.",
               "הקשה על Import בוחרת קובץ פרויקט וטוענת את כל פרויקט המיקרופון. LIVE מכבה את Import.",
@@ -1390,7 +1415,7 @@
             "status": "in_progress",
             "title": "מגיע בעדכון הבא: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
             "ticker": "מגיע בעדכון הבא: Loop Editor ו-Mic Editor, עם Trim, לופ ו-8 תיבות מקצב תופים",
-            "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה.",
+            "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -1407,7 +1432,18 @@
                   "כשהתופים מנגנים, Play מתחיל בתחילת התיבה הבאה של התופים.",
                   "אין קליקים כשערוץ מתחיל או נעצר, או כשמשנים ווליום.",
                   "Drive משתנה בצורה חלקה כשמזיזים אותו תוך כדי נגינה.",
-                  "Back הפך ל-Redo, בלופר וב-Mic. הוא מחזיר הקלטה שהוקלט עליה או שנמחקה. בלופר הוא מחזיר גם הקלטה מלפני חיתוך."
+                  "Back הפך ל-Redo, בלופר וב-Mic. הוא מחזיר הקלטה שהוקלט עליה או שנמחקה. בלופר הוא מחזיר גם הקלטה מלפני חיתוך.",
+                  "STOP בערוץ עוצר אותו סופית. תיבות הקצב לא מפעילות אותו שוב. Play מפעיל אותו.",
+                  "M (השתקה) ו-S (סולו) בכל ערוץ. הסולו עובד בכל 8 העמודים, והקשה שנייה על S מחזירה. M נשמר עם הסשן.",
+                  "צורת הגל של הערוץ ממשיכה לזוז כשהערוץ מושתק או לא בסולו. היא נעצרת רק כשהערוץ נעצר."
+                ]
+              },
+              {
+                "title": "Mic",
+                "bullets": [
+                  "M ו-S בכל ערוץ. STOP עובד כמו ב-Looper.",
+                  "השורה העליונה נקייה יותר ובמרווחים שווים: בלי כותרת MIC, ושלושת הסלוטים של המוניטור נעלמו. המספרים מתחת לנובים כבר לא נחתכים.",
+                  "נוב Gate בכל ערוץ הוסר. Gate נשאר בשורת המוניטור."
                 ]
               },
               {
@@ -1429,7 +1465,9 @@
                   "שישה כפתורי סאונד לכל שורה בכל קצב: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE ו-REVERB, עם צורת גל שעוקבת אחריהם.",
                   "COPY ו-PASTE של קצב מחלון הלחיצה הארוכה.",
                   "מקש REDO אחד חוזר אחורה בשינויי התופים.",
-                  "SAMPLES עם חצים, ליד DRUM KIT, מחליף את הסאמפל של השורה האחרונה."
+                  "SAMPLES עם חצים, ליד DRUM KIT, מחליף את הסאמפל של השורה האחרונה.",
+                  "החלפת קיט תופים בזמן שהתופים מנגנים חלקה, בלי קליקים ובלי עיוות. גם הקלטת WAV שומעת אותה נקייה.",
+                  "המקש Style נקרא עכשיו Drum Kits, ומעליו HOLD קטן בזהב. לחיצה ארוכה פותחת את Random genre."
                 ]
               },
               {
@@ -1453,7 +1491,11 @@
                   "שמירת סשן שומרת את כל סביבת העבודה, כך שטעינה במכשיר אחר מחזירה אותה: פריסטים של תדרים, בחירות הסאמפלים בתופים, שני בנקי התופים, הגלים הפעילים, המקלדת הכפולה, יעדי הפד והמילים.",
                   "לפני כל טעינה יש שאלת אישור וגיבוי אוטומטי. אחרי הטעינה ניטור המיקרופון כבוי.",
                   "כפתור חדש New session, ראשון ב-Settings. הוא מבקש שם ומנקה רק את ערוצי הלופר והמיקרופון. הקיטים, הביטים והפריסטים נשארים.",
-                  "שם כפול בייבוא מקבל שם חדש, במקום לכתוב על הקיים."
+                  "שם כפול בייבוא מקבל שם חדש, במקום לכתוב על הקיים.",
+                  "Load Console: לכל סשן יש LOAD, SAVE, EDIT ו-X (מחיקה, אחרי שאלה). השם המלא בשורה אחת.",
+                  "Export selected ו-Import session מעבירים סשן בודד.",
+                  "שמירה, טעינה, ייצוא וייבוא מראים התקדמות אמיתית באחוזים, ואז הצלחה או הסיבה לכישלון.",
+                  "יציב יותר: הקלטת Mic נעצרת עם הודעה אם המיקרופון נלקח, והאפליקציה אומרת אם אי אפשר היה לשחזר חלק מההקלטות."
                 ]
               },
               {
@@ -1462,13 +1504,16 @@
                   "מקשים חדשים בסגנון חומרה ב-Drum, Sound ו-Pad.",
                   "חלונות SCALES, PATTERN REPEATS ו-DRUM STYLES חדשים. לכל עמוד סגנונות תופים יש באנר משלו.",
                   "הקשה מדליקה או מכבה גל. גל אחד תמיד נשאר דולק.",
-                  "צורות הגל בעורכי Loop ו-Mic עוקבות אחרי הכפתורים בזמן אמת."
+                  "צורות הגל בעורכי Loop ו-Mic עוקבות אחרי הכפתורים בזמן אמת.",
+                  "שעון זהב MM:SS מופיע ליד MIDI ו-WAV בזמן ההקלטה.",
+                  "חלון הפתיחה של קיטי התופים נפתח עם צליל חדש: נקישת מפתח וחריקה קלה.",
+                  "הטקסטים בעברית, ערבית ורוסית עודכנו."
                 ]
               }
             ],
             "tickerMore": [
               "מגיע בעדכון הבא: ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים, 91 סאמפלים",
-              "בעדכון הבא: שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, ומקשים חדשים בסגנון חומרה"
+              "בעדכון הבא: השתקה וסולו בכל ערוץ Looper ו-Mic, והתקדמות אמיתית בשמירת סשן"
             ]
           },
           {
@@ -1825,9 +1870,10 @@
               "A tap on FX opens Sound FX. FX turns gold while an effect is on.",
               "The arrows beside PRESET load the next or previous saved preset. If none are saved, the phone says No saved presets.",
               "The arrows beside DRUM KIT load the next or previous kit. LIVE turns those arrows off.",
-              "PRO and LIVE sit at the top of every screen. A tap switches between them. LIVE turns off Clear, file load, Import, loading a drum sample, kit browsing, kit Load, and typing a number on a knob. Redo still works after a clear.",
+              "The chip at the top of every screen switches between PRO and LIVE. A tap switches between them. See LIVE mode below.",
               "A tap on MIDI starts a MIDI recording. While it records, the label reads Save MIDI. Another tap stops and asks the phone where to save the file.",
               "A tap on WAV starts recording what you hear. While it records, the label reads Save WAV. Another tap stops and asks the phone where to save the file.",
+              "While MIDI or WAV records, a gold clock in minutes and seconds (MM:SS) shows between the title and the MIDI key. The minutes keep counting past 60. If both record, it counts from the one that started first.",
               "A tap on Settings opens Settings."
             ],
             "media": "assets/guide/sound-screen-110.jpg",
@@ -1916,10 +1962,19 @@
                 "id": "key",
                 "title": "Key",
                 "body": [
-                  "A tap on Key opens Scales. A tap on OFF clears the scale. Major lists C maj through B maj. Minor lists C min through B min. A tap on a scale name selects it. A tap on Close closes the window.",
+                  "A tap on Key opens Scales. A tap on Scale off clears the scale. Major lists C maj through B maj. Minor lists C min through B min. A tap on a scale name selects it. A tap on Close closes the window.",
                   "The window title reads SCALES, in the same key style as the other 1.10 windows."
                 ],
                 "media": "assets/guide/scales-window.jpg"
+              },
+              {
+                "id": "live-mode",
+                "title": "LIVE mode",
+                "body": [
+                  "The chip at the top of every screen switches between PRO and LIVE. PRO is the normal mode, with everything open. LIVE is a mode that locks some buttons, so you can focus on playing. It is good for recording and for performing, because a stray tap cannot clear a take, load a file, or rename a channel.",
+                  "What LIVE locks: Clear on Looper and Mic channels. Load on the drum rows and on Looper and Mic channels. Import on the Loop and Mic screens, and Import and Load in Drum styles. The DRUM KIT arrows on the Sound and Drum screens. Typing a number on a knob, while a drag still works. The names of Looper and Mic channels, the Looper page name, and the long-press that opens Page name.",
+                  "What LIVE leaves open: Rec, Play, Stop, M, S, Redo, Save, and Export. The drum sample list and the sample arrows, CLEAR on the drums, switching pages, presets, and everything you play. Another tap on the chip goes back to PRO."
+                ]
               },
               {
                 "id": "settings",
@@ -1928,14 +1983,22 @@
                   "A tap on Settings, at the top of every screen, opens this window. The line under the title reads Language & console session.",
                   "New session is the first row. It asks for a session name, then empties the Looper and Mic channels. Kits, rhythms, and presets stay. If the name is already taken, it asks before it overwrites.",
                   "A tap on Custom Frequency, the first row, opens Tune frequencies (Hz).",
-                  "A tap on Language closes Settings and opens Choose language. Continue applies the language. Dismiss closes the list.",
+                  "A tap on Language closes Settings and opens Choose language. Continue applies the language. Close closes the list.",
                   "A tap on Save as opens Save Console. Save confirms. Cancel closes it. A saved session also keeps the Sound FX and the loop page names and colors. It also keeps the frequency presets, the drum sample picks, the Factory and Exclusive drum banks, which waves are on, the two-keyboard view, the pad targets, and the lyrics. With Export all and Import all, the whole setup moves to another device.",
-                  "A tap on Load opens Load Console. If nothing is saved, it reads No saved sessions. Export all and Import all are in that window. Delete asks before it removes a session. Before a session loads, the app asks first and keeps an automatic backup of the current presets and drum kits. Mic monitor is off after a load. An imported session with the same name as one on the phone gets a new name instead of replacing it.",
+                  "Saving, loading, exporting, and importing a session each open a window with a progress bar and the real percent. It stays at 99% until the work is truly finished, and it cannot be closed while the job runs. Then it reads, for example, Session saved successfully, or Saving failed with the reason, such as not enough free storage. A second job is refused with the message Another session action is still running.",
+                  "A tap on Load opens Load Console. If nothing is saved, it reads No saved sessions.",
+                  "Each saved session is a row with its number and its full name on one line. The name text shrinks to fit. Under the name are four keys: LOAD, SAVE, EDIT, and X.",
+                  "LOAD loads that session. Before a session loads, the app asks first and keeps an automatic backup of the current presets and drum kits. Mic monitor is off after a load.",
+                  "SAVE replaces that session with the current setup, after it asks Replace the session with the current console? Overwrite confirms and Cancel closes the question.",
+                  "EDIT renames the session, and a long-press on the row does the same. If the new name is already taken, it asks before it overwrites.",
+                  "X deletes the session, after it asks Delete session? Delete confirms and Cancel keeps the session.",
+                  "Export all saves every session as one file. Export selected saves only the highlighted session as one file. Import all and Import session both read a file you exported. An imported session with the same name as one on the phone gets a new name instead of replacing it.",
+                  "The Load key at the bottom loads the highlighted session, and Cancel closes the window.",
                   "A tap on Show tutorial starts the tour again.",
                   "The tour was updated for 1.10. It has 68 steps and now covers the wave tap, saving a preset with a long-press, Tune frequencies, the Pad second keyboard, Mic Editor and Loop Editor, the drum channels and per-rhythm samples, drum Clear and auto-save, and New session. Open it from Settings.",
                   "A tap on Factory 64 asks Restore Factory 64? Restore replaces the Factory 64 presets, all 8 Style drum packs, and all 11 Exclusive packs, then loads slot 1 on page 1. Cancel closes the question.",
                   "A tap on Benchmark, under Factory 64, opens the audio test tool.",
-                  "The X and Close close Settings."
+                  "A tap on Close closes Settings."
                 ],
                 "media": "assets/guide/settings-window-110.jpg",
                 "imageAlts": {
@@ -1979,7 +2042,7 @@
               "A tap on PLAY starts the drums from the beginning. The label then reads STOP. Another tap stops and returns to the start.",
               "In Pro, a tap on +4 shows FX 1, FX 2, FX 3, and Voice and hides the keyboard. The key then reads -4. Another tap hides those rows and brings the keyboard back.",
               "A tap on Drum FX opens Drum FX. When a preset is on, the label shows FX and a number.",
-              "A tap on Style opens Drum styles. A long-press on Style opens Random genre. The note there reads Selection affects Random. A tap on Rock, Trance, Rap, or Techno saves that genre and closes the window. Cancel closes it and leaves the genre as it was. Random on this screen uses that genre, and it starts as Rock. That window does not build a pattern by itself.",
+              "The key is named Drum Kits, with a small gold HOLD above its name. A tap on Drum Kits opens Drum styles. A long-press opens Random genre, and that is what HOLD says. When the key is narrow, the name gets smaller, and as a last resort it reads Kits. The note in Random genre reads Selection affects Random. A tap on Rock, Trance, Rap, or Techno saves that genre and closes the window. Cancel closes it and leaves the genre as it was. Random on this screen uses that genre, and it starts as Rock. That window does not build a pattern by itself.",
               "A drag on Drum Vol sets the drum volume from 0% to 100%. A tap on the number lets you type a value. LIVE does not open that box.",
               "A drag on Swing sets swing from 0% to 100%. A drag on BPM sets the tempo from 60 to 200. BPM, Swing, and the row volumes are live: a change you make while the drums play stays when the next pattern starts.",
               "Hold 1/4, 1/8, 1/16, or 1/32 to repeat the drums at that division while you hold it. Release, and that repeat stops. A tap on them does nothing. Hold STOP. A tap on it does nothing.",
@@ -2020,12 +2083,13 @@
                 "id": "drum-styles",
                 "title": "Drum styles",
                 "body": [
-                  "A tap on Style opens Drum styles. The title reads Drum styles (8 styles). A tap on Close closes it.",
+                  "A tap on Drum Kits opens Drum styles. The title reads Drum styles (8 styles). A tap on Close closes it.",
                   "A tap on Switch to exclusive moves between the factory pages and the Exclusive pages.",
                   "There are 8 factory pages and 11 Exclusive pages. Each page has 8 kits. A tap on a page number only shows that page. The kit loads when you tap Load.",
                   "A tap on Load loads that kit. LIVE turns Load off. A tap on Save stores the current kit under that name. A tap on Edit changes the kit name.",
                   "A tap on Edit page name changes the page name. A tap on Import picks a style file. A tap on Export asks the phone where to store the page.",
-                  "The title reads DRUM STYLES (8 STYLES), or EXCLUSIVE STYLES (8 STYLES) on the Exclusive pages. Under the page numbers, each page has its own banner. The 8 kits fit without scrolling."
+                  "The title reads DRUM STYLES (8 STYLES), or EXCLUSIVE STYLES (8 STYLES) on the Exclusive pages. Under the page numbers, each page has its own banner. The 8 kits fit without scrolling.",
+                  "You can load a kit while the drums play. Sounds that still ring fade out in about 20 ms, so there are no clicks or distortion, and volume and pan glide to the new values in about 10 ms. New hits use the new kit at once. A WAV recording hears the same clean change."
                 ],
                 "media": "assets/guide/drum-styles-window.jpg"
               },
@@ -2062,6 +2126,9 @@
               "A tap on Redo brings back the take you lost most recently on this screen: one you cleared, recorded over, or trimmed in Loop Editor. It does not leave the screen. It does not work while that channel is busy. LIVE still allows Redo when there is a take to bring back.",
               "A tap on Rec starts recording. The label then reads STOP. Another tap stops the take. If the channel already had a take, Redo can bring it back.",
               "A tap on Play plays the channel. The label then reads Stop. Another tap stops. Play stays off when the channel is empty, unless it is already playing or recording. While the drums play, Play waits for the start of the next drum bar. Starting, stopping, and volume changes are smoothed.",
+              "A tap on Stop stops that channel for good. While the drums play, the rhythm boxes in Loop Editor do not start it again. It plays again only when you tap Play on that channel.",
+              "M mutes the channel and S solos it. M sits above the FX circle, and S sits above L/R. M turns gold while the channel is muted. S turns gold while it is soloed, and every channel that is not soloed goes quiet, on all 8 pages. You can solo several channels. A second tap on S takes the channel out of solo, and when none is soloed everything plays again. A channel that is both muted and soloed stays silent. M is saved with the session. S is not saved, so a load starts with no solo.",
+              "The channel waveform keeps moving while the channel is muted or not soloed, so you still see the take. It stops only when the channel itself stops. It shows the take before Vol, M, and S.",
               "A tap on Load picks an audio file for the channel. LIVE turns Load off.",
               "A tap on Save asks the phone where to store the channel as a wav file. Save stays off when the channel is empty.",
               "A tap on Clear clears the channel and keeps that take for Redo. LIVE turns Clear off.",
@@ -2119,12 +2186,15 @@
               "A tap on Lyrics opens Lyrics.",
               "A tap on Monitor turns the monitor on or off. When it is on, the label reads Monitor ON. If it is on and headphones are not connected, the phone warns about speaker feedback.",
               "Gain, Mon, HPF, Gate, Low, Pres, and Comp sit under the heading. A drag sets the knob. Gain runs from 1x to 4x. HPF runs from 40 Hz to 240 Hz. A tap on the number lets you type a value. LIVE does not open that box.",
-              "Slots 1, 2, and 3 each have Load and Save. A tap on Load puts that saved monitor setting on the knobs. LIVE turns that Load off. A tap on Save stores the monitor setting.",
+              "The top row has Lyrics, Monitor, Redo, and the page keys 1 and 2, evenly spaced. There is no MIC title and no row of monitor slots in 1.10.",
               "Channel names start as Vocal 1, Vocal 2, Vocal 3, Guitar, Bass, and Inst 3. A tap in the name changes it. LIVE locks the name.",
               "A tap on Rec starts recording. The label then reads Stop. Another tap stops. A tap on Play plays the channel. The label then reads Stop. Another tap stops. If the channel already had a take, Redo can bring it back.",
+              "A tap on Stop stops that channel for good, the same way as in the Looper. It plays again only when you tap Play on that channel.",
+              "S sits left of the FX circle, and M sits right of it, next to Vol. They work like M and S in the Looper. Solo covers the Mic channels only: the Mic and the Looper each have their own solo. M is saved with the session. S is not.",
+              "The channel waveform keeps moving while the channel is muted or not soloed. It stops only when the channel itself stops.",
               "A tap on Clear clears the channel and keeps that take for Redo. LIVE turns Clear off.",
               "A tap on Save asks the phone where to store the channel as a wav file. Save stays off when the channel is empty.",
-              "HPF, Gate, and Pres on the channel affect only that channel. A drag sets them.",
+              "HPF and Pres on the channel affect only that channel. A drag sets them. The channel has no Gate knob.",
               "A tap on Mic FX opens Mic FX for that channel. Under the name it shows FX, and Off or the preset number.",
               "A drag on Vol sets that channel's volume. A drag on L/R moves the sound between L, the center, and R.",
               "A tap on Import picks a project file and loads the whole mic project. LIVE turns Import off.",
@@ -2931,7 +3001,7 @@
             "status": "in_progress",
             "title": "Coming in the next update: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
             "ticker": "Coming in the next update: Loop Editor and Mic Editor, with Trim, Loop and 8 drum-rhythm boxes",
-            "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows.",
+            "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
@@ -2948,7 +3018,18 @@
                   "While the drums play, Play starts at the next drum bar.",
                   "No clicks when a channel starts or stops, or when you change the volume.",
                   "Drive changes smoothly when you move it while you play.",
-                  "Back is now Redo, in the looper and in Mic. It brings back a take you recorded over or cleared. In the looper it also brings back a take from before a trim."
+                  "Back is now Redo, in the looper and in Mic. It brings back a take you recorded over or cleared. In the looper it also brings back a take from before a trim.",
+                  "STOP on a channel stops it for good. The rhythm boxes do not start it again. Play starts it.",
+                  "M (mute) and S (solo) on every channel. Solo works across all 8 pages, and a second tap on S restores. M is saved with the session.",
+                  "The channel waveform keeps moving when the channel is muted or not soloed. It stops only when the channel stops."
+                ]
+              },
+              {
+                "title": "Mic",
+                "bullets": [
+                  "M and S on every channel. STOP works the same way as in the Looper.",
+                  "The top row is cleaner and evenly spaced: no MIC title, and the three monitor slots are gone. Numbers under the knobs are no longer cut off.",
+                  "The Gate knob on each channel is removed. Gate stays in the monitor row."
                 ]
               },
               {
@@ -2970,7 +3051,9 @@
                   "Six sound knobs per row in each rhythm: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE and REVERB, with a waveform that follows them.",
                   "COPY and PASTE a rhythm from the long-press window.",
                   "One REDO key steps back through drum changes.",
-                  "SAMPLES with arrows, next to DRUM KIT, steps the last row's sample."
+                  "SAMPLES with arrows, next to DRUM KIT, steps the last row's sample.",
+                  "Switching a drum kit while the drums play is smooth, with no clicks or distortion. A WAV recording hears it clean too.",
+                  "The Style key is now Drum Kits, with a small gold HOLD above it. A long-press opens Random genre."
                 ]
               },
               {
@@ -2994,7 +3077,11 @@
                   "Saving a session saves the whole workspace, so loading it on another device restores it: frequency presets, drum sample choices, both drum banks, active waves, the dual keyboard, the pad targets and the lyrics.",
                   "Before every load there is a confirmation question and an automatic backup. After a load, the mic monitor is off.",
                   "New button New session, first in Settings. It asks for a name and clears only the looper and mic channels. Kits, beats and presets stay.",
-                  "A duplicate name on import gets a new name instead of overwriting the existing one."
+                  "A duplicate name on import gets a new name instead of overwriting the existing one.",
+                  "Load Console: every session has LOAD, SAVE, EDIT and X (delete, with a question first). The full name is on one line.",
+                  "Export selected and Import session move a single session.",
+                  "Saving, loading, exporting and importing show real progress in percent, then success or the reason it failed.",
+                  "Steadier: a Mic recording stops with a message if the microphone is taken away, and the app tells you if some recordings could not be restored."
                 ]
               },
               {
@@ -3003,13 +3090,16 @@
                   "New hardware-style keys on Drum, Sound and Pad.",
                   "New SCALES, PATTERN REPEATS and DRUM STYLES windows. Each drum styles page has its own banner.",
                   "A tap turns a wave on or off. One wave always stays on.",
-                  "The Loop and Mic editor waveforms follow the knobs live."
+                  "The Loop and Mic editor waveforms follow the knobs live.",
+                  "A gold MM:SS clock shows next to MIDI and WAV while they record.",
+                  "The drum kits welcome window opens with a new sound: a key click and a light creak.",
+                  "Hebrew, Arabic and Russian texts updated."
                 ]
               }
             ],
             "tickerMore": [
               "Coming in the next update: channel 8 is now called Voice and holds only vocals, 91 samples",
-              "Coming in the next update: six sound knobs on every drum row, Copy and Paste of rhythms, and new hardware-style keys"
+              "Coming in the next update: Mute and Solo on every Looper and Mic channel, and real progress when saving a session"
             ]
           },
           {
@@ -3366,9 +3456,10 @@
               "Нажатие на FX открывает Sound FX. FX становится золотым, пока эффект включён.",
               "Стрелки рядом с PRESET загружают следующий или предыдущий сохранённый пресет. Если сохранённых нет, телефон пишет No saved presets.",
               "Стрелки рядом с DRUM KIT загружают следующий или предыдущий набор. LIVE выключает эти стрелки.",
-              "PRO и LIVE находятся вверху каждого экрана. Нажатие переключает их. LIVE выключает Clear, загрузку файла, Import, загрузку сэмпла ударных, листание наборов, Load набора и ввод числа на регуляторе. Redo остаётся после очистки.",
+              "Значок вверху каждого экрана переключает между PRO и LIVE. Нажатие переключает их. См. режим LIVE ниже.",
               "Нажатие на MIDI начинает запись MIDI. Пока идёт запись, надпись говорит Save MIDI. Ещё одно нажатие останавливает и спрашивает телефон, куда сохранить файл.",
               "Нажатие на WAV начинает запись того, что слышно. Пока идёт запись, надпись говорит Save WAV. Ещё одно нажатие останавливает и спрашивает телефон, куда сохранить файл.",
+              "Пока записывается MIDI или WAV, золотые часы в минутах и секундах (MM:SS) показаны между заголовком и клавишей MIDI. Минуты продолжают считаться после 60. Если пишутся оба, часы считают от того, что начался первым.",
               "Нажатие на Settings открывает Settings."
             ],
             "media": "assets/guide/sound-screen-110.jpg",
@@ -3457,10 +3548,19 @@
                 "id": "key",
                 "title": "Key",
                 "body": [
-                  "Нажатие на Key открывает Scales. Нажатие на OFF снимает лад. Major показывает от C maj до B maj. Minor показывает от C min до B min. Нажатие на имя лада выбирает его. Нажатие на Close закрывает окно.",
+                  "Нажатие на Key открывает Scales. Нажатие на Scale off снимает лад. Major показывает от C maj до B maj. Minor показывает от C min до B min. Нажатие на имя лада выбирает его. Нажатие на Close закрывает окно.",
                   "Заголовок окна: SCALES, в том же стиле клавиш, что и другие окна 1.10."
                 ],
                 "media": "assets/guide/scales-window.jpg"
+              },
+              {
+                "id": "live-mode",
+                "title": "Режим LIVE",
+                "body": [
+                  "Значок вверху каждого экрана переключает между PRO и LIVE. PRO обычный режим, где всё открыто. LIVE режим, который блокирует некоторые кнопки, чтобы вы могли сосредоточиться на игре. Он удобен для записи и выступления, потому что случайное нажатие не сотрёт запись, не загрузит файл и не переименует канал.",
+                  "Что блокирует LIVE: Clear в каналах Looper и Mic. Load в рядах ударных и в каналах Looper и Mic. Import на экранах Loop и Mic, а также Import и Load в Drum styles. Стрелки DRUM KIT на экранах Sound и Drum. Ввод числа на регуляторе, при этом перетаскивание работает. Имена каналов Looper и Mic, имя страницы Looper и долгое нажатие, открывающее Page name.",
+                  "Что LIVE оставляет открытым: Rec, Play, Stop, M, S, Redo, Save и Export. Список сэмплов ударных и стрелки сэмплов, CLEAR на ударных, переключение страниц, пресеты и всё, что вы играете. Ещё одно нажатие на значок возвращает PRO."
+                ]
               },
               {
                 "id": "settings",
@@ -3469,14 +3569,22 @@
                   "Нажатие на Settings, вверху каждого экрана, открывает это окно. Строка под заголовком говорит Language & console session.",
                   "New session это первая строка. Она спрашивает имя сессии, а потом очищает каналы Looper и Mic. Наборы, ритмы и пресеты остаются. Если имя уже занято, она спрашивает, прежде чем перезаписать.",
                   "Нажатие на Custom Frequency, первую строку, открывает Tune frequencies (Hz).",
-                  "Нажатие на Language закрывает Settings и открывает Choose language. Continue применяет язык. Dismiss закрывает список.",
+                  "Нажатие на Language закрывает Settings и открывает Choose language. Continue применяет язык. Close закрывает список.",
                   "Нажатие на Save as открывает Save Console. Save подтверждает. Cancel закрывает. Сохранённая сессия хранит также Sound FX и имена и цвета страниц лупера. Она также хранит пресеты частот, выбранные сэмплы ударных, банки ударных Factory и Exclusive, включённые волны, вид с двумя клавиатурами, цели пэдов и тексты. С Export all и Import all вся настройка переходит на другое устройство.",
-                  "Нажатие на Load открывает Load Console. Если ничего не сохранено, написано No saved sessions. Export all и Import all находятся там. Delete спрашивает, прежде чем удалить сессию. Перед загрузкой сессии приложение сначала спрашивает и автоматически сохраняет копию текущих пресетов и наборов ударных. После загрузки Monitor микрофона выключен. Импортированная сессия с тем же именем, что уже есть на телефоне, получает новое имя и ничего не заменяет.",
+                  "Сохранение, загрузка, экспорт и импорт сессии открывают окно с полосой прогресса и реальным процентом. Он держится на 99%, пока работа действительно не закончится, и окно нельзя закрыть, пока задача идёт. Затем написано, например, Session saved successfully, или Saving failed с причиной, например нехватка свободной памяти. Вторая задача отклоняется сообщением Another session action is still running.",
+                  "Нажатие на Load открывает Load Console. Если ничего не сохранено, написано No saved sessions.",
+                  "Каждая сохранённая сессия это строка с номером и полным именем в одну строку. Текст имени уменьшается, чтобы поместиться. Под именем четыре клавиши: LOAD, SAVE, EDIT и X.",
+                  "LOAD загружает сессию. Перед загрузкой приложение сначала спрашивает и автоматически сохраняет копию текущих пресетов и наборов ударных. После загрузки Monitor микрофона выключен.",
+                  "SAVE заменяет сессию текущей настройкой, после вопроса Replace the session with the current console? Overwrite подтверждает, Cancel закрывает вопрос.",
+                  "EDIT переименовывает сессию, и долгое нажатие на строку делает то же самое. Если новое имя уже занято, приложение спрашивает перед заменой.",
+                  "X удаляет сессию после вопроса Delete session? Delete подтверждает, Cancel оставляет сессию.",
+                  "Export all сохраняет все сессии одним файлом. Export selected сохраняет одним файлом только выделенную сессию. Import all и Import session оба читают файл, который вы экспортировали. Импортированная сессия с тем же именем, что уже есть на телефоне, получает новое имя и ничего не заменяет.",
+                  "Клавиша Load внизу загружает выделенную сессию, а Cancel закрывает окно.",
                   "Нажатие на Show tutorial начинает тур заново.",
                   "Обучение обновлено для 1.10. В нём 68 шагов, и теперь оно охватывает нажатие на волну, сохранение пресета долгим нажатием, Tune frequencies, вторую клавиатуру Pad, Mic Editor и Loop Editor, каналы ударных и сэмплы для каждого ритма, Clear ударных и автосохранение, а также New session. Откройте его в Settings.",
                   "Нажатие на Factory 64 спрашивает Restore Factory 64? Restore заменяет пресеты Factory 64, все 8 наборов Style и все 11 наборов Exclusive, затем загружает место 1 на странице 1. Cancel закрывает вопрос.",
                   "Нажатие на Benchmark, под Factory 64, открывает инструмент проверки звука.",
-                  "X и Close закрывают Settings."
+                  "Нажатие на Close закрывает Settings."
                 ],
                 "media": "assets/guide/settings-window-110.jpg",
                 "imageAlts": {
@@ -3520,7 +3628,7 @@
               "Нажатие на PLAY запускает ударные с начала. Надпись меняется на STOP. Повторное нажатие останавливает и возвращает в начало.",
               "В Pro нажатие на +4 показывает FX 1, FX 2, FX 3 и Voice и скрывает клавиатуру. Клавиша меняется на -4. Повторное нажатие скрывает эти ряды и возвращает клавиатуру.",
               "Нажатие на Drum FX открывает Drum FX. Когда пресет включён, надпись показывает FX и число.",
-              "Нажатие на Style открывает Drum styles. Долгое нажатие на Style открывает Random genre. Заметка там говорит Selection affects Random. Нажатие на Rock, Trance, Rap или Techno сохраняет этот жанр и закрывает окно. Cancel закрывает его и оставляет жанр как был. Random на этом экране использует этот жанр, и он начинает с Rock. Это окно само не строит паттерн.",
+              "Клавиша называется Drum Kits, над её названием маленькая золотая надпись HOLD. Нажатие на Drum Kits открывает Drum styles. Долгое нажатие открывает Random genre, об этом и говорит HOLD. Когда клавиша узкая, название уменьшается, а в крайнем случае написано Kits. Заметка в Random genre говорит Selection affects Random. Нажатие на Rock, Trance, Rap или Techno сохраняет жанр и закрывает окно. Cancel закрывает его и оставляет жанр как был. Random на этом экране использует этот жанр, и он начинается с Rock. Это окно само паттерн не строит.",
               "Перетаскивание Drum Vol задаёт громкость ударных от 0% до 100%. Нажатие на число даёт ввести значение. LIVE не открывает это поле.",
               "Перетаскивание Swing задаёт swing от 0% до 100%. Перетаскивание BPM задаёт темп от 60 до 200. BPM, Swing и громкость дорожек работают вживую: изменение во время игры сохраняется, когда начинается следующий паттерн.",
               "Удерживайте 1/4, 1/8, 1/16 или 1/32, чтобы повторять ударные в этом делении, пока держите. Отпустите, и повтор остановится. Нажатие на них ничего не делает. Удерживайте STOP. Нажатие на него ничего не делает.",
@@ -3561,12 +3669,13 @@
                 "id": "drum-styles",
                 "title": "Drum styles",
                 "body": [
-                  "Нажатие на Style открывает Drum styles. Заголовок говорит Drum styles (8 styles). Нажатие на Close закрывает его.",
+                  "Нажатие на Drum Kits открывает Drum styles. Заголовок говорит Drum styles (8 styles). Нажатие на Close закрывает его.",
                   "Нажатие на Switch to exclusive переходит между страницами factory и страницами Exclusive.",
                   "Есть 8 страниц factory и 11 страниц Exclusive. На каждой странице 8 наборов. Нажатие на номер страницы только показывает страницу. Набор загружается нажатием на Load.",
                   "Нажатие на Load загружает набор. LIVE выключает Load. Нажатие на Save сохраняет текущий набор под этим именем. Нажатие на Edit меняет имя набора.",
                   "Нажатие на Edit page name меняет имя страницы. Нажатие на Import выбирает файл стиля. Нажатие на Export спрашивает телефон, куда сохранить страницу.",
-                  "Заголовок: DRUM STYLES (8 STYLES), а на страницах Exclusive: EXCLUSIVE STYLES (8 STYLES). Под номерами страниц у каждой страницы свой баннер. 8 китов помещаются без прокрутки."
+                  "Заголовок: DRUM STYLES (8 STYLES), а на страницах Exclusive: EXCLUSIVE STYLES (8 STYLES). Под номерами страниц у каждой страницы свой баннер. 8 китов помещаются без прокрутки.",
+                  "Набор можно загружать, пока играют ударные. Звуки, которые ещё звучат, затихают примерно за 20 ms, поэтому нет щелчков и искажений, а громкость и панорама плавно переходят к новым значениям примерно за 10 ms. Новые удары сразу берут новый набор. Запись WAV слышит тот же чистый переход."
                 ],
                 "media": "assets/guide/drum-styles-window.jpg"
               },
@@ -3603,6 +3712,9 @@
               "Нажатие на Redo возвращает запись, потерянную последней на этом экране: очищенную, записанную поверх или обрезанную в Loop Editor. Оно не уходит с экрана. Оно не работает, пока канал занят. LIVE всё ещё позволяет Redo, когда есть что вернуть.",
               "Нажатие на Rec начинает запись. Затем надпись говорит STOP. Ещё одно нажатие останавливает запись. Если в канале уже была запись, Redo может её вернуть.",
               "Нажатие на Play играет канал. Затем надпись говорит Stop. Ещё одно нажатие останавливает. Play остаётся выключенным, когда канал пуст, если он уже не играет и не пишет. Пока играют ударные, Play ждёт начала следующего такта ударных. Старт, стоп и изменения громкости сглажены.",
+              "Нажатие на Stop останавливает канал насовсем. Пока играют ударные, ритмические боксы в Loop Editor не запускают его снова. Он играет снова, только когда вы нажмёте Play на этом канале.",
+              "M выключает звук канала, а S включает соло. M находится над кружком FX, а S над L/R. M становится золотым, пока канал заглушён. S становится золотым, пока канал в соло, и каждый канал без соло затихает, на всех 8 страницах. Можно включить соло у нескольких каналов. Второе нажатие на S выводит канал из соло, а когда соло нет ни у кого, играет всё. Канал, который заглушён и в соло, остаётся тихим. M сохраняется с сессией. S не сохраняется, поэтому загрузка начинается без соло.",
+              "Волна канала продолжает двигаться, пока канал заглушён или не в соло, так что запись по-прежнему видна. Она останавливается только когда останавливается сам канал. Она показывает запись до Vol, M и S.",
               "Нажатие на Load выбирает аудиофайл для канала. LIVE выключает Load.",
               "Нажатие на Save спрашивает телефон, куда сохранить канал как файл wav. Save остаётся выключенным, когда канал пуст.",
               "Нажатие на Clear очищает канал и оставляет запись для Redo. LIVE выключает Clear.",
@@ -3660,12 +3772,15 @@
               "Нажатие на Lyrics открывает Lyrics.",
               "Нажатие на Monitor включает или выключает монитор. Когда он включён, надпись говорит Monitor ON. Если он включён и наушники не подключены, телефон предупреждает об отдаче динамика.",
               "Gain, Mon, HPF, Gate, Low, Pres и Comp находятся под заголовком. Перетаскивание задаёт регулятор. Gain идёт от 1x до 4x. HPF идёт от 40 Hz до 240 Hz. Нажатие на число даёт ввести значение. LIVE не открывает это поле.",
-              "У мест 1, 2 и 3 есть Load и Save. Нажатие на Load ставит сохранённую настройку монитора на регуляторы. LIVE выключает этот Load. Нажатие на Save сохраняет настройку монитора.",
+              "В верхней строке Lyrics, Monitor, Redo и клавиши страниц 1 и 2 с равными промежутками. В 1.10 нет заголовка MIC и нет ряда слотов монитора.",
               "Имена каналов начинают как Vocal 1, Vocal 2, Vocal 3, Guitar, Bass и Inst 3. Нажатие в имени меняет его. LIVE запирает имя.",
               "Нажатие на Rec начинает запись. Затем надпись говорит Stop. Ещё одно нажатие останавливает. Нажатие на Play играет канал. Затем надпись говорит Stop. Ещё одно нажатие останавливает. Если в канале уже была запись, Redo может её вернуть.",
+              "Нажатие на Stop останавливает канал насовсем, так же как в Looper. Он играет снова, только когда вы нажмёте Play на этом канале.",
+              "S находится слева от кружка FX, а M справа от него, рядом с Vol. Они работают как M и S в Looper. Соло охватывает только каналы Mic: у Mic и у Looper своё соло. M сохраняется с сессией. S нет.",
+              "Волна канала продолжает двигаться, пока канал заглушён или не в соло. Она останавливается только когда останавливается сам канал.",
               "Нажатие на Clear очищает канал и оставляет запись для Redo. LIVE выключает Clear.",
               "Нажатие на Save спрашивает телефон, куда сохранить канал как файл wav. Save остаётся выключенным, когда канал пуст.",
-              "HPF, Gate и Pres на канале действуют только на этот канал. Перетаскивание задаёт их.",
+              "HPF и Pres на канале влияют только на этот канал. Перетаскивание задаёт их. У канала нет регулятора Gate.",
               "Нажатие на Mic FX открывает Mic FX для канала. Под именем показано FX, и Off или номер пресета.",
               "Перетаскивание Vol задаёт громкость канала. Перетаскивание L/R двигает звук между L, центром и R.",
               "Нажатие на Import выбирает файл проекта и загружает весь проект микрофона. LIVE выключает Import.",
@@ -4472,7 +4587,7 @@
             "status": "in_progress",
             "title": "В следующем обновлении: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
             "ticker": "В следующем обновлении: Loop Editor и Mic Editor, с Trim, лупом и 8 ячейками ритма ударных",
-            "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле.",
+            "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -4489,7 +4604,18 @@
                   "Пока играют ударные, Play начинается со следующего такта ударных.",
                   "Нет щелчков, когда канал стартует или останавливается или когда меняется громкость.",
                   "Drive меняется плавно, когда его двигают во время игры.",
-                  "Back теперь Redo, в лупере и в Mic. Он возвращает запись, поверх которой записали, или очищенную запись. В лупере он также возвращает запись до обрезки."
+                  "Back теперь Redo, в лупере и в Mic. Он возвращает запись, поверх которой записали, или очищенную запись. В лупере он также возвращает запись до обрезки.",
+                  "STOP в канале останавливает его насовсем. Ритмические боксы не запускают его снова. Play запускает.",
+                  "M (mute) и S (соло) на каждом канале. Соло работает на всех 8 страницах, а второе нажатие на S возвращает всё. M сохраняется с сессией.",
+                  "Волна канала продолжает двигаться, когда канал заглушён или не в соло. Она останавливается, только когда останавливается канал."
+                ]
+              },
+              {
+                "title": "Mic",
+                "bullets": [
+                  "M и S на каждом канале. STOP работает так же, как в Looper.",
+                  "Верхняя строка стала чище и с равными промежутками: нет заголовка MIC, и три слота монитора убраны. Числа под регуляторами больше не обрезаются.",
+                  "Регулятор Gate на каждом канале убран. Gate остаётся в строке монитора."
                 ]
               },
               {
@@ -4511,7 +4637,9 @@
                   "Шесть ручек звука на каждый ряд в каждом ритме: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE и REVERB, с формой волны, которая следует за ними.",
                   "COPY и PASTE ритма в окне долгого нажатия.",
                   "Одна клавиша REDO возвращает назад изменения ударных.",
-                  "SAMPLES со стрелками, рядом с DRUM KIT, переключает сэмпл последнего ряда."
+                  "SAMPLES со стрелками, рядом с DRUM KIT, переключает сэмпл последнего ряда.",
+                  "Смена набора ударных, пока они играют, плавная, без щелчков и искажений. Запись WAV тоже слышит её чистой.",
+                  "Клавиша Style теперь называется Drum Kits, над ней маленькая золотая надпись HOLD. Долгое нажатие открывает Random genre."
                 ]
               },
               {
@@ -4535,7 +4663,11 @@
                   "Сохранение сессии сохраняет всё рабочее пространство, и загрузка на другом устройстве возвращает его: пресеты частот, выбор сэмплов ударных, оба банка ударных, включённые волны, две клавиатуры, цели пэдов и тексты.",
                   "Перед каждой загрузкой есть вопрос с подтверждением и автоматическая резервная копия. После загрузки монитор микрофона выключен.",
                   "Новая кнопка New session, первая в Settings. Она спрашивает имя и очищает только каналы лупера и микрофона. Наборы, биты и пресеты остаются.",
-                  "Сессия с повторяющимся именем при импорте получает новое имя и не перезаписывает существующую."
+                  "Сессия с повторяющимся именем при импорте получает новое имя и не перезаписывает существующую.",
+                  "Load Console: у каждой сессии есть LOAD, SAVE, EDIT и X (удаление, сначала вопрос). Полное имя в одной строке.",
+                  "Export selected и Import session переносят одну сессию.",
+                  "Сохранение, загрузка, экспорт и импорт показывают реальный прогресс в процентах, затем успех или причину сбоя.",
+                  "Стабильнее: запись Mic останавливается с сообщением, если микрофон отобран, а приложение сообщает, если часть записей не удалось восстановить."
                 ]
               },
               {
@@ -4544,13 +4676,16 @@
                   "Новые клавиши в аппаратном стиле на Drum, Sound и Pad.",
                   "Новые окна SCALES, PATTERN REPEATS и DRUM STYLES. У каждой страницы стилей ударных свой баннер.",
                   "Нажатие включает или выключает волну. Одна волна всегда остаётся включённой.",
-                  "Формы волны в редакторах Loop и Mic следуют за ручками вживую."
+                  "Формы волны в редакторах Loop и Mic следуют за ручками вживую.",
+                  "Золотые часы MM:SS появляются рядом с MIDI и WAV во время записи.",
+                  "Приветственное окно наборов ударных открывается с новым звуком: щелчок ключа и лёгкий скрип.",
+                  "Тексты на иврите, арабском и русском обновлены."
                 ]
               }
             ],
             "tickerMore": [
               "В следующем обновлении: канал 8 теперь называется Voice и хранит только вокал, 91 сэмпл",
-              "В следующем обновлении: шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов и новые клавиши в аппаратном стиле"
+              "В следующем обновлении: Mute и Solo на каждом канале Looper и Mic и реальный прогресс при сохранении сессии"
             ]
           },
           {
@@ -4907,9 +5042,10 @@
               "الضغط على FX يفتح Sound FX. يصبح FX ذهبياً ما دام مؤثر يعمل.",
               "الأسهم بجانب PRESET تحمّل الإعداد المحفوظ التالي أو السابق. إذا لم يوجد محفوظ، يقول الهاتف No saved presets.",
               "الأسهم بجانب DRUM KIT تحمّل الطقم التالي أو السابق. LIVE يوقف هذه الأسهم.",
-              "PRO وLIVE في أعلى كل شاشة. الضغط يبدّل بينهما. LIVE يوقف Clear وتحميل ملف وImport وتحميل عينة طبل وتصفح الأطقم وLoad للطقم وكتابة رقم على مقبض. Redo يبقى بعد المسح.",
+              "الشارة في أعلى كل شاشة تبدّل بين PRO وLIVE. الضغط يبدّل بينهما. انظر وضع LIVE أدناه.",
               "الضغط على MIDI يبدأ تسجيل MIDI. أثناء التسجيل يقول النص Save MIDI. ضغط آخر يوقف ويسأل الهاتف أين يحفظ الملف.",
               "الضغط على WAV يبدأ تسجيل ما تسمعه. أثناء التسجيل يقول النص Save WAV. ضغط آخر يوقف ويسأل الهاتف أين يحفظ الملف.",
+              "أثناء تسجيل MIDI أو WAV، تظهر ساعة ذهبية بالدقائق والثواني (MM:SS) بين العنوان ومفتاح MIDI. تستمر الدقائق بالعد بعد 60. إذا سُجّل الاثنان معاً، تعدّ من الذي بدأ أولاً.",
               "الضغط على Settings يفتح Settings."
             ],
             "media": "assets/guide/sound-screen-110.jpg",
@@ -4998,10 +5134,19 @@
                 "id": "key",
                 "title": "Key",
                 "body": [
-                  "الضغط على Key يفتح Scales. الضغط على OFF يمسح السلم. Major يعرض من C maj إلى B maj. Minor يعرض من C min إلى B min. الضغط على اسم سلم يختاره. الضغط على Close يغلق النافذة.",
+                  "الضغط على Key يفتح Scales. الضغط على Scale off يمسح السلم. Major يعرض من C maj إلى B maj. Minor يعرض من C min إلى B min. الضغط على اسم سلم يختاره. الضغط على Close يغلق النافذة.",
                   "عنوان النافذة SCALES، بنفس نمط المفاتيح في نوافذ 1.10 الأخرى."
                 ],
                 "media": "assets/guide/scales-window.jpg"
+              },
+              {
+                "id": "live-mode",
+                "title": "وضع LIVE",
+                "body": [
+                  "الشارة في أعلى كل شاشة تبدّل بين PRO وLIVE. PRO هو الوضع العادي، وكل شيء فيه مفتوح. LIVE وضع يقفل بعض الأزرار لتركّز على العزف. وهو مناسب للتسجيل وللعروض، لأن نقرة بالخطأ لن تمسح تسجيلاً ولن تحمّل ملفاً ولن تغيّر اسم قناة.",
+                  "ما يقفله LIVE: Clear في قنوات Looper وMic. Load في صفوف الطبول وفي قنوات Looper وMic. Import في شاشتي Loop وMic، وImport وLoad في Drum styles. أسهم DRUM KIT في شاشتي Sound وDrum. كتابة رقم على مقبض، بينما يبقى السحب يعمل. أسماء قنوات Looper وMic، واسم صفحة Looper، والضغط المطول الذي يفتح Page name.",
+                  "ما يتركه LIVE مفتوحاً: Rec وPlay وStop وM وS وRedo وSave وExport. قائمة عينات الطبول وأسهم العينات، وCLEAR في الطبول، والتبديل بين الصفحات، والإعدادات المسبقة، وكل ما تعزفه. نقرة أخرى على الشارة تعيدك إلى PRO."
+                ]
               },
               {
                 "id": "settings",
@@ -5010,14 +5155,22 @@
                   "الضغط على Settings، في أعلى كل شاشة، يفتح هذه النافذة. السطر تحت العنوان يقول Language & console session.",
                   "New session هو الصف الأول. يطلب اسماً للجلسة ثم يفرغ قنوات Looper وMic. الأطقم والإيقاعات والإعدادات تبقى. إذا كان الاسم موجوداً، يسأل قبل الكتابة فوقه.",
                   "الضغط على Custom Frequency، الصف الأول، يفتح Tune frequencies (Hz).",
-                  "الضغط على Language يغلق Settings ويفتح Choose language. Continue يطبّق اللغة. Dismiss يغلق القائمة.",
+                  "الضغط على Language يغلق Settings ويفتح Choose language. Continue يطبّق اللغة. Close يغلق القائمة.",
                   "الضغط على Save as يفتح Save Console. Save يؤكد. Cancel يغلق. الجلسة المحفوظة تحفظ أيضاً Sound FX وأسماء صفحات اللوب وألوانها. وتحفظ أيضاً إعدادات الترددات، واختيارات عينات الطبول، وبنكي الطبول Factory وExclusive، والموجات المشغّلة، وعرض لوحتي المفاتيح، وأهداف الـ Pad، والكلمات. مع Export all وImport all ينتقل الإعداد كله إلى جهاز آخر.",
-                  "الضغط على Load يفتح Load Console. إذا لم يوجد محفوظ، يظهر No saved sessions. Export all وImport all هناك. Delete يسأل قبل أن يحذف الجلسة. قبل تحميل جلسة، يسأل التطبيق أولاً ويحفظ نسخة احتياطية تلقائية من الإعدادات وأطقم الطبول الحالية. Monitor الميكروفون متوقف بعد التحميل. الجلسة المستوردة التي لها اسم موجود على الهاتف تحصل على اسم جديد بدل أن تحل محله.",
+                  "حفظ الجلسة وتحميلها وتصديرها واستيرادها يفتح كل منها نافذة بشريط تقدّم ونسبة حقيقية. تبقى النسبة عند 99% حتى ينتهي العمل فعلاً، ولا يمكن إغلاق النافذة أثناء تشغيل المهمة. بعد ذلك يظهر مثلاً Session saved successfully، أو Saving failed مع السبب، مثل نقص المساحة الحرة. المهمة الثانية تُرفض برسالة Another session action is still running.",
+                  "الضغط على Load يفتح Load Console. إذا لم يوجد محفوظ، يظهر No saved sessions.",
+                  "كل جلسة محفوظة صف برقمها واسمها الكامل في سطر واحد. نص الاسم يصغر ليتسع. تحت الاسم أربعة مفاتيح: LOAD وSAVE وEDIT وX.",
+                  "LOAD يحمّل الجلسة. قبل تحميل جلسة، يسأل التطبيق أولاً ويحفظ نسخة احتياطية تلقائية من الإعدادات وأطقم الطبول الحالية. Monitor الميكروفون متوقف بعد التحميل.",
+                  "SAVE يستبدل الجلسة بالإعداد الحالي، بعد أن يسأل Replace the session with the current console? Overwrite يؤكد وCancel يغلق السؤال.",
+                  "EDIT يغيّر اسم الجلسة، والضغط المطول على الصف يفعل الشيء نفسه. إذا كان الاسم الجديد مأخوذاً، يسأل قبل أن يستبدل.",
+                  "X يحذف الجلسة، بعد أن يسأل Delete session? Delete يؤكد وCancel يُبقي الجلسة.",
+                  "Export all يحفظ كل الجلسات في ملف واحد. Export selected يحفظ الجلسة المحددة فقط في ملف واحد. Import all وImport session كلاهما يقرأ ملفاً صدّرته. الجلسة المستوردة التي لها اسم موجود على الهاتف تحصل على اسم جديد بدل أن تحل محله.",
+                  "مفتاح Load في الأسفل يحمّل الجلسة المحددة، وCancel يغلق النافذة.",
                   "الضغط على Show tutorial يبدأ الجولة من جديد.",
                   "تم تحديث الجولة للإصدار 1.10. فيها 68 خطوة، وتغطي الآن النقر على الموجة، وحفظ إعداد مسبق بضغطة مطولة، وTune frequencies، ولوحة المفاتيح الثانية في Pad، وMic Editor وLoop Editor، وقنوات الطبول والعينات لكل إيقاع، وClear في الطبول والحفظ التلقائي، وNew session. افتحها من Settings.",
                   "الضغط على Factory 64 يسأل Restore Factory 64? Restore يستبدل إعدادات Factory 64 وكل حزم Style الثماني وكل حزم Exclusive الإحدى عشرة، ثم يحمّل الخانة 1 في الصفحة 1. Cancel يغلق السؤال.",
                   "الضغط على Benchmark، تحت Factory 64، يفتح أداة فحص الصوت.",
-                  "X وClose يغلقان Settings."
+                  "الضغط على Close يغلق Settings."
                 ],
                 "media": "assets/guide/settings-window-110.jpg",
                 "imageAlts": {
@@ -5061,7 +5214,7 @@
               "النقر على PLAY يبدأ الطبول من البداية. يتغير الاسم إلى STOP. نقرة أخرى توقفها وتعود إلى البداية.",
               "في Pro، النقر على +4 يُظهر FX 1 وFX 2 وFX 3 وVoice ويخفي لوحة المفاتيح. يصبح المفتاح -4. نقرة أخرى تخفي هذه الصفوف وتعيد لوحة المفاتيح.",
               "الضغط على Drum FX يفتح Drum FX. عندما يكون إعداد شغّالاً، يظهر FX ورقم.",
-              "الضغط على Style يفتح Drum styles. الضغط المطوّل على Style يفتح Random genre. الملاحظة هناك تقول Selection affects Random. الضغط على Rock أو Trance أو Rap أو Techno يحفظ ذلك النوع ويغلق النافذة. Cancel يغلقها ويترك النوع كما كان. Random على هذه الشاشة يستخدم ذلك النوع، ويبدأ على Rock. تلك النافذة لا تبني نمطاً وحدها.",
+              "يسمى المفتاح Drum Kits، وفوق اسمه كلمة HOLD صغيرة بالذهبي. الضغط على Drum Kits يفتح Drum styles. الضغط المطول يفتح Random genre، وهذا ما تقوله HOLD. عندما يكون المفتاح ضيقاً يصغر الاسم، وفي الحالة الأخيرة يظهر Kits. الملاحظة في Random genre تقول Selection affects Random. الضغط على Rock أو Trance أو Rap أو Techno يحفظ النوع ويغلق النافذة. Cancel يغلقها ويترك النوع كما كان. Random في هذه الشاشة يستخدم هذا النوع، ويبدأ بـ Rock. هذه النافذة لا تبني نمطاً بنفسها.",
               "السحب على Drum Vol يحدد حجم الطبول من 0% إلى 100%. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح الخانة.",
               "السحب على Swing يحدد swing من 0% إلى 100%. السحب على BPM يحدد الإيقاع من 60 إلى 200. BPM وSwing وحجم الصفوف تعمل مباشرة: التغيير أثناء العزف يبقى عندما يبدأ النمط التالي.",
               "أمسك 1/4 أو 1/8 أو 1/16 أو 1/32 لتكرار الطبول على ذلك التقسيم ما دمت ممسكاً. اترك، فيتوقف التكرار. الضغط عليها لا يفعل شيئاً. أمسك STOP. الضغط عليه لا يفعل شيئاً.",
@@ -5102,12 +5255,13 @@
                 "id": "drum-styles",
                 "title": "Drum styles",
                 "body": [
-                  "الضغط على Style يفتح Drum styles. العنوان يقول Drum styles (8 styles). الضغط على Close يغلقه.",
+                  "الضغط على Drum Kits يفتح Drum styles. العنوان يقول Drum styles (8 styles). الضغط على Close يغلقه.",
                   "الضغط على Switch to exclusive ينتقل بين صفحات factory وصفحات Exclusive.",
                   "هناك 8 صفحات factory و11 صفحة Exclusive. لكل صفحة 8 أطقم. الضغط على رقم صفحة يعرض الصفحة فقط. الطقم يُحمّل عند الضغط على Load.",
                   "الضغط على Load يحمّل الطقم. LIVE يوقف Load. الضغط على Save يحفظ الطقم الحالي تحت ذلك الاسم. الضغط على Edit يغيّر اسم الطقم.",
                   "الضغط على Edit page name يغيّر اسم الصفحة. الضغط على Import يختار ملف أسلوب. الضغط على Export يسأل الهاتف أين يحفظ الصفحة.",
-                  "العنوان DRUM STYLES (8 STYLES)، أو EXCLUSIVE STYLES (8 STYLES) في صفحات Exclusive. تحت أرقام الصفحات، لكل صفحة لافتة خاصة بها. تتسع الأطقم الثمانية بلا تمرير."
+                  "العنوان DRUM STYLES (8 STYLES)، أو EXCLUSIVE STYLES (8 STYLES) في صفحات Exclusive. تحت أرقام الصفحات، لكل صفحة لافتة خاصة بها. تتسع الأطقم الثمانية بلا تمرير.",
+                  "يمكنك تحميل طقم أثناء عزف الطبول. الأصوات التي ما زالت ترنّ تتلاشى خلال نحو 20 ms، فلا نقرات ولا تشويه، وينتقل الحجم والتوزيع إلى القيم الجديدة بسلاسة خلال نحو 10 ms. الضربات الجديدة تستخدم الطقم الجديد فوراً. تسجيل WAV يسمع الانتقال النظيف نفسه."
                 ],
                 "media": "assets/guide/drum-styles-window.jpg"
               },
@@ -5144,6 +5298,9 @@
               "الضغط على Redo يعيد آخر أخذ فُقد على هذه الشاشة: أخذ مُسح، أو سُجّل فوقه، أو قُصّ في Loop Editor. لا يغادر الشاشة. لا يعمل بينما القناة مشغولة. LIVE ما زال يسمح بـ Redo عندما يوجد أخذ لإعادته.",
               "الضغط على Rec يبدأ التسجيل. ثم يقول النص STOP. ضغط آخر يوقف الأخذ. إذا كان في القناة أخذ من قبل، يمكن لـ Redo أن يعيده.",
               "الضغط على Play يشغّل القناة. ثم يقول النص Stop. ضغط آخر يوقف. يبقى Play متوقفاً عندما تكون القناة فارغة، إلا إذا كانت تعزف أو تسجّل. أثناء عزف الطبول، ينتظر Play بداية المازورة التالية للطبول. البدء والإيقاف وتغييرات الحجم سلسة.",
+              "الضغط على Stop يوقف القناة نهائياً. أثناء عزف الطبول، لا تشغّلها مربعات الإيقاع في Loop Editor من جديد. تعزف مرة أخرى فقط عندما تضغط Play على هذه القناة.",
+              "M يكتم القناة وS يجعلها منفردة. M فوق دائرة FX، وS فوق L/R. يصبح M ذهبياً أثناء كتم القناة. يصبح S ذهبياً أثناء الانفراد، وكل قناة ليست منفردة تصمت، في الصفحات الثماني كلها. يمكنك جعل عدة قنوات منفردة. ضغطة ثانية على S تُخرج القناة من الانفراد، وعندما لا توجد قناة منفردة يعزف كل شيء من جديد. القناة المكتومة والمنفردة معاً تبقى صامتة. M يُحفظ مع الجلسة. S لا يُحفظ، لذلك يبدأ التحميل بلا انفراد.",
+              "شكل موجة القناة يواصل الحركة أثناء كتم القناة أو عدم انفرادها، فتبقى ترى التسجيل. يتوقف فقط عندما تتوقف القناة نفسها. يعرض التسجيل قبل Vol وM وS.",
               "الضغط على Load يختار ملف صوت للقناة. LIVE يوقف Load.",
               "الضغط على Save يسأل الهاتف أين يحفظ القناة كملف wav. يبقى Save متوقفاً عندما تكون القناة فارغة.",
               "الضغط على Clear يمسح القناة ويبقي الأخذ لـ Redo. LIVE يوقف Clear.",
@@ -5201,12 +5358,15 @@
               "الضغط على Lyrics يفتح Lyrics.",
               "الضغط على Monitor يشغّل المراقب أو يوقفه. عندما يكون شغّالاً، يقول النص Monitor ON. إذا كان شغّالاً ولم تكن السماعات موصولة، يحذّر الهاتف من ارتداد السماعة.",
               "Gain وMon وHPF وGate وLow وPres وComp تحت العنوان. السحب يحدد المقبض. Gain يجري من 1x إلى 4x. HPF يجري من 40 Hz إلى 240 Hz. الضغط على الرقم يتيح كتابة قيمة. LIVE لا يفتح الخانة.",
-              "للخانات 1 و2 و3 Load وSave. الضغط على Load يضع إعداد المراقب المحفوظ على المقابض. LIVE يوقف Load هذا. الضغط على Save يحفظ إعداد المراقب.",
+              "الصف العلوي فيه Lyrics وMonitor وRedo ومفتاحا الصفحتين 1 و2، بمسافات متساوية. لا يوجد عنوان MIC ولا صف خانات للمراقبة في 1.10.",
               "أسماء القنوات تبدأ Vocal 1 وVocal 2 وVocal 3 وGuitar وBass وInst 3. الضغط في الاسم يغيّره. LIVE يقفل الاسم.",
               "الضغط على Rec يبدأ التسجيل. ثم يقول النص Stop. ضغط آخر يوقف. الضغط على Play يشغّل القناة. ثم يقول النص Stop. ضغط آخر يوقف. إذا كان في القناة أخذ من قبل، يمكن لـ Redo أن يعيده.",
+              "الضغط على Stop يوقف القناة نهائياً، تماماً كما في Looper. تعزف مرة أخرى فقط عندما تضغط Play على هذه القناة.",
+              "S على يسار دائرة FX، وM على يمينها، بجانب Vol. يعملان مثل M وS في Looper. الانفراد يشمل قنوات Mic فقط: لكل من Mic وLooper انفراده الخاص. M يُحفظ مع الجلسة. S لا.",
+              "شكل موجة القناة يواصل الحركة أثناء كتم القناة أو عدم انفرادها. يتوقف فقط عندما تتوقف القناة نفسها.",
               "الضغط على Clear يمسح القناة ويبقي الأخذ لـ Redo. LIVE يوقف Clear.",
               "الضغط على Save يسأل الهاتف أين يحفظ القناة كملف wav. يبقى Save متوقفاً عندما تكون القناة فارغة.",
-              "HPF وGate وPres على القناة يؤثران على هذه القناة فقط. السحب يحددها.",
+              "HPF وPres على القناة يؤثران في هذه القناة فقط. السحب يحددهما. ليس للقناة مقبض Gate.",
               "الضغط على Mic FX يفتح Mic FX للقناة. تحت الاسم يظهر FX، وOff أو رقم الإعداد.",
               "السحب على Vol يحدد حجم القناة. السحب على L/R يحرّك الصوت بين L والوسط وR.",
               "الضغط على Import يختار ملف مشروع ويحمّل مشروع الميكروفون كله. LIVE يوقف Import.",
@@ -6013,7 +6173,7 @@
             "status": "in_progress",
             "title": "في التحديث القادم: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
             "ticker": "في التحديث القادم: Loop Editor وMic Editor، مع Trim واللوب و8 مربعات إيقاع طبول",
-            "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة.",
+            "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -6030,7 +6190,18 @@
                   "أثناء عزف الطبول، يبدأ Play عند بداية المازورة التالية للطبول.",
                   "لا نقرات عندما تبدأ القناة أو تتوقف، أو عندما يتغير الحجم.",
                   "يتغير Drive بسلاسة عندما تحرّكه أثناء العزف.",
-                  "أصبح Back الآن Redo، في اللوبر وفي Mic. يعيد أخذاً سُجّل فوقه أو مُسح. وفي اللوبر يعيد أيضاً الأخذ من قبل القص."
+                  "أصبح Back الآن Redo، في اللوبر وفي Mic. يعيد أخذاً سُجّل فوقه أو مُسح. وفي اللوبر يعيد أيضاً الأخذ من قبل القص.",
+                  "STOP في القناة يوقفها نهائياً. مربعات الإيقاع لا تشغّلها من جديد. Play يشغّلها.",
+                  "M (كتم) وS (انفراد) على كل قناة. الانفراد يعمل في الصفحات الثماني، وضغطة ثانية على S تعيد كل شيء. M يُحفظ مع الجلسة.",
+                  "شكل موجة القناة يواصل الحركة عندما تكون القناة مكتومة أو غير منفردة. يتوقف فقط عندما تتوقف القناة."
+                ]
+              },
+              {
+                "title": "Mic",
+                "bullets": [
+                  "M وS على كل قناة. STOP يعمل مثل Looper.",
+                  "الصف العلوي أنظف وبمسافات متساوية: بلا عنوان MIC، وخانات المراقبة الثلاث أُزيلت. الأرقام تحت المقابض لم تعد تُقطع.",
+                  "مقبض Gate في كل قناة أُزيل. يبقى Gate في صف المراقبة."
                 ]
               },
               {
@@ -6052,7 +6223,9 @@
                   "ستة مقابض صوت لكل صف في كل إيقاع: GAIN وSQUEEZE وATTACK وSUSTAIN وRELEASE وREVERB، مع شكل موجة يتبعها.",
                   "COPY وPASTE للإيقاع من نافذة الضغط المطول.",
                   "مفتاح REDO واحد يعود في تغييرات الطبول.",
-                  "SAMPLES بأسهم، بجانب DRUM KIT، يغيّر عينة آخر صف."
+                  "SAMPLES بأسهم، بجانب DRUM KIT، يغيّر عينة آخر صف.",
+                  "تبديل طقم الطبول أثناء عزفها سلس، بلا نقرات ولا تشويه. تسجيل WAV يسمعه نظيفاً أيضاً.",
+                  "مفتاح Style اسمه الآن Drum Kits، وفوقه HOLD صغيرة بالذهبي. الضغط المطول يفتح Random genre."
                 ]
               },
               {
@@ -6076,7 +6249,11 @@
                   "حفظ الجلسة يحفظ مساحة العمل كلها، فيعيدها التحميل على جهاز آخر: إعدادات الترددات، واختيارات عينات الطبول، وبنكا الطبول، والموجات المشغّلة، ولوحتا المفاتيح، وأهداف الـ Pad، والكلمات.",
                   "قبل كل تحميل يظهر سؤال تأكيد وتُحفظ نسخة احتياطية تلقائية. بعد التحميل تكون مراقبة الميكروفون متوقفة.",
                   "زر جديد New session، الأول في Settings. يطلب اسماً ويمسح قنوات اللوبر والميكروفون فقط. الأطقم والإيقاعات والإعدادات تبقى.",
-                  "الاسم المكرر عند الاستيراد يحصل على اسم جديد بدل الكتابة فوق الموجود."
+                  "الاسم المكرر عند الاستيراد يحصل على اسم جديد بدل الكتابة فوق الموجود.",
+                  "Load Console: لكل جلسة LOAD وSAVE وEDIT وX (حذف، بعد سؤال). الاسم الكامل في سطر واحد.",
+                  "Export selected وImport session ينقلان جلسة واحدة.",
+                  "الحفظ والتحميل والتصدير والاستيراد تعرض تقدماً حقيقياً بالنسبة المئوية، ثم النجاح أو سبب الفشل.",
+                  "أكثر ثباتاً: تسجيل Mic يتوقف برسالة إذا سُحب الميكروفون، ويخبرك التطبيق إذا تعذّر استعادة بعض التسجيلات."
                 ]
               },
               {
@@ -6085,13 +6262,16 @@
                   "مفاتيح جديدة بنمط الأجهزة في Drum وSound وPad.",
                   "نوافذ SCALES وPATTERN REPEATS وDRUM STYLES جديدة. لكل صفحة أنماط طبول لافتة خاصة بها.",
                   "النقر يشغّل الموجة أو يطفئها. تبقى موجة واحدة مضاءة دائمًا.",
-                  "أشكال الموجة في محرري Loop وMic تتبع المقابض مباشرة."
+                  "أشكال الموجة في محرري Loop وMic تتبع المقابض مباشرة.",
+                  "ساعة ذهبية MM:SS تظهر بجانب MIDI وWAV أثناء التسجيل.",
+                  "نافذة الترحيب بأطقم الطبول تُفتح بصوت جديد: نقرة مفتاح وصرير خفيف.",
+                  "نصوص العبرية والعربية والروسية حُدّثت."
                 ]
               }
             ],
             "tickerMore": [
               "في التحديث القادم: القناة 8 اسمها الآن Voice وتحمل الغناء فقط، 91 عيّنة",
-              "في التحديث القادم: ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، ومفاتيح جديدة بنمط الأجهزة"
+              "في التحديث القادم: كتم وانفراد لكل قناة في Looper وMic، وتقدّم حقيقي عند حفظ الجلسة"
             ]
           },
           {
