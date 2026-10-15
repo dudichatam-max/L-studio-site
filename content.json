@@ -290,19 +290,14 @@
               "בזמן שמקליטים MIDI או WAV, שעון זהב בדקות ושניות (MM:SS) מופיע בין הכותרת למקש MIDI. הדקות ממשיכות לספור אחרי 60. אם שניהם מקליטים, הוא סופר מזה שהתחיל ראשון.",
               "הקשה על Settings פותחת את Settings."
             ],
-            "media": "assets/guide/sound-screen-110.jpg",
-            "images": [
-              "assets/guide/sound-waves-109.jpg",
-              "assets/guide/sound-tones.jpg"
-            ],
+            "media": "assets/posters/he/p01-sound-w630.jpg",
             "sections": [
               {
                 "id": "oct",
                 "title": "-1 / +1",
                 "body": [
                   "-1 ו-+1 נמצאים ליד Oct במסך הסאונד. הקשה על -1 מורידה אוקטבה אחת, עד -2. הקשה על +1 מעלה אוקטבה אחת, עד 2. Oct מראה את האוקטבה הנוכחית."
-                ],
-                "media": "assets/guide/octave.jpg"
+                ]
               },
               {
                 "id": "sound-fx",
@@ -339,8 +334,7 @@
                 "title": "Drive",
                 "body": [
                   "Drive הוא הסליידר במסך הסאונד. גרירה קובעת את כמות ה-drive. ה-Drive משתנה בצורה חלקה, בלי קפיצות."
-                ],
-                "media": "assets/guide/drive-slider.jpg"
+                ]
               },
               {
                 "id": "volume",
@@ -348,8 +342,7 @@
                 "body": [
                   "Volume, Attack, Decay, Sustain, Release, Cutoff, Resonance, Echo Mix, ו-Glide הם הנובים במסך הסאונד. גרירה קובעת את הנוב. הקשה על המספר פותחת תיבה שבה מקלידים ערך. LIVE לא פותחת את התיבה.",
                   "לכל נוב באפליקציה יש טבעת זהב שמראה את הערך. בנובים של L/R הטבעת מתחילה למעלה ומתמלאת לכיוון L או R."
-                ],
-                "media": "assets/guide/volume-knobs.jpg"
+                ]
               },
               {
                 "id": "keys",
@@ -357,8 +350,7 @@
                 "body": [
                   "על הקלידים כתוב D, R, M, F, S, L, S, L. המספר מתחת לקליד הוא ה-Hz שלו. לוחצים על קליד כדי לנגן. עוזבים כדי לעצור. הם מתחילים ב-222, 299, 333, 355, 396, 444, 463, ו-477 Hz.",
                   "הקשה על + פותחת מקלדת שנייה מעל הראשונה, אוקטבה אחת גבוה יותר. אותו + נמצא גם במסך Pad, והמקלדת השנייה נשארת פתוחה כשעוברים בין Sound ל-Pad. הקשה נוספת סוגרת אותה."
-                ],
-                "media": "assets/guide/keys.jpg"
+                ]
               },
               {
                 "id": "presets",
@@ -388,7 +380,11 @@
                   "הכפתור בראש כל מסך מחליף בין PRO ל-LIVE. PRO הוא המצב הרגיל, עם הכול פתוח. LIVE הוא מצב שנועל כמה כפתורים כדי שתוכלו להתרכז בנגינה. הוא טוב להקלטה ולהופעה, כי הקשה בטעות לא תמחק הקלטה, לא תטען קובץ ולא תשנה שם של ערוץ.",
                   "מה LIVE נועל: Clear בערוצי Looper ו-Mic. Load בשורות התופים ובערוצי Looper ו-Mic. Import במסכי Loop ו-Mic, ו-Import ו-Load ב-Drum styles. חיצי DRUM KIT במסכי Sound ו-Drum. הקלדת מספר על נוב, וגרירה עדיין עובדת. שמות ערוצי Looper ו-Mic, שם עמוד ה-Looper, והלחיצה הארוכה שפותחת את Page name.",
                   "מה LIVE משאיר פתוח: Rec, Play, Stop, M, S, Redo, Save ו-Export. רשימת סמפלי התופים וחיצי הסמפלים, CLEAR בתופים, מעבר בין עמודים, פריסטים, וכל מה שאתם מנגנים. הקשה נוספת על הכפתור מחזירה ל-PRO."
-                ]
+                ],
+                "imageAlts": {
+                  "assets/posters/he/p02-sound-live-w630.jpg": "פוסטר: שתי מקלדות, בלייב. מסך Sound עם שתי מקלדות ומצב LIVE שנועל חלק מהכפתורים."
+                },
+                "media": "assets/posters/he/p02-sound-live-w630.jpg"
               },
               {
                 "id": "settings",
@@ -421,7 +417,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/sound-screen-110.jpg": "מסך Sound בגרסה 1.10: גלים בשכבות, Drive, נובים, ו-+ למקלדת שנייה."
+              "assets/posters/he/p01-sound-w630.jpg": "פוסטר: עצבו את הסאונד. מסך Sound עם בחירת גל, מעטפת, פילטר והד, והמקלדת מתחת."
             }
           },
           {
@@ -438,14 +434,14 @@
               "מחזיקים 1/4, 1/8, 1/16, או 1/32. מחזיקים STOP.",
               "הקשה על +, ליד שורת הקולות, פותחת מקלדת שנייה מעל הראשונה, אוקטבה אחת גבוה יותר. אותו + נמצא גם במסך Sound, והמקלדת השנייה נשארת פתוחה כשעוברים בין Pad ל-Sound. הקשה נוספת סוגרת אותה."
             ],
-            "media": "assets/guide/pad-screen-110.jpg",
+            "media": "assets/posters/he/p03-pad-w630.jpg",
             "sections": [],
             "images": [
               "assets/guide/pad-dual-keyboard-110.jpg"
             ],
             "imageAlts": {
-              "assets/guide/pad-screen-110.jpg": "מסך Pad בגרסה 1.10, עם ה-Pad החי והמקלדת התחתונה.",
-              "assets/guide/pad-dual-keyboard-110.jpg": "מסך Pad בגרסה 1.10 עם המקלדת השנייה פתוחה, משותפת עם Sound."
+              "assets/guide/pad-dual-keyboard-110.jpg": "מסך Pad בגרסה 1.10 עם המקלדת השנייה פתוחה, משותפת עם Sound.",
+              "assets/posters/he/p03-pad-w630.jpg": "פוסטר: פד לנגינה חיה. מסך ה-Pad עם משטח ההחלקה ומקשי ההחזקה 1/4 עד 1/32."
             }
           },
           {
@@ -471,7 +467,7 @@
               "SAMPLES נמצא ליד DRUM KIT ומציג את הסאמפל של השורה האחרונה שהשתמשתם בה. החצים שלו מעבירים את השורה לסאמפל הקודם או הבא.",
               "המקשים במסכי Drum, Sound ו-Pad נראים כמו מקשי חומרה, עם תוויות באותיות גדולות. מקש זהב דולק."
             ],
-            "media": "assets/guide/drum-screen-110.jpg",
+            "media": "assets/posters/he/p07-drums-w630.jpg",
             "sections": [
               {
                 "id": "drum-sound",
@@ -505,7 +501,10 @@
                   "הכותרת היא DRUM STYLES (8 STYLES), או EXCLUSIVE STYLES (8 STYLES) בעמודי Exclusive. מתחת למספרי העמודים, לכל עמוד יש באנר משלו. 8 הקיטים נכנסים בלי גלילה.",
                   "אפשר לטעון קיט בזמן שהתופים מנגנים. צלילים שעדיין מצלצלים דועכים תוך כ-20 ms, כך שאין קליקים או עיוות, והווליום והפאן גולשים לערכים החדשים תוך כ-10 ms. מכות חדשות משתמשות בקיט החדש מיד. הקלטת WAV שומעת את אותו מעבר נקי."
                 ],
-                "media": "assets/guide/drum-styles-window.jpg"
+                "media": "assets/posters/he/p08-drum-styles-w630.jpg",
+                "imageAlts": {
+                  "assets/posters/he/p08-drum-styles-w630.jpg": "פוסטר: סגנונות תופים. חלון Drum Styles עם חבילת EXPERIMENTAL וכפתורי Load, Edit, Import ו-Export."
+                }
               },
               {
                 "id": "pattern-repeat",
@@ -524,7 +523,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "בוחר הסאמפלים של Voice בגרסה 1.10, בלשונית Authentic עם 33 ווקאלים.",
-              "assets/guide/drum-screen-110.jpg": "מסך Drum בגרסה 1.10: FX 1 עד FX 3, 8. Voice, Load בכל שורה, מקצבים 1 עד 8, Save ו-Random."
+              "assets/posters/he/p07-drums-w630.jpg": "פוסטר: בנו את הביט. מסך Drum עם תבניות צעדים בארבעה ערוצים ומקלדת מתחת."
             }
           },
           {
@@ -551,7 +550,7 @@
               "הקשה על Import בוחרת קובץ פרויקט וטוענת את כל פרויקט הלופ. LIVE מכבה את Import.",
               "הקשה על Export מבקשת מהטלפון איפה לשמור את כל פרויקט הלופ."
             ],
-            "media": "assets/guide/loop-screen-110.jpg",
+            "media": "assets/posters/he/p06-looper-w630.jpg",
             "sections": [
               {
                 "id": "loop-editor",
@@ -565,9 +564,9 @@
                   "Play מנגן את הערוץ. Reset מחזיר הכל לערכי ההתחלה. Close יוצא בלי לשמור. Save שומר את השינויים, וחיתוך עם Trim חותך את ההקלטה. Redo יכול להחזיר את ההקלטה מלפני החיתוך.",
                   "הגדרות העורך נשמרות עם סשן הלופ ובפרויקט שמייצאים."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg",
+                "media": "assets/posters/he/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/guide/loop-editor-110.jpg": "Loop Editor בגרסה 1.10: Trim, Loop, 8 תיבות מקצב תופים, EQ, Gain ו-Squeeze."
+                  "assets/posters/he/p05-loop-editor-w630.jpg": "פוסטר: ערכו כל לופ. עורך הלופ עם גל, גזירה ולופ, קשירה לקצבי התופים, EQ ו-SQUEEZE."
                 }
               },
               {
@@ -587,7 +586,7 @@
               "assets/guide/loop-page-name.jpg"
             ],
             "imageAlts": {
-              "assets/guide/loop-screen-110.jpg": "הלופר בגרסה 1.10: עמוד 1 מתוך 8, ארבעה ערוצים עם Rec, Play, Redo ו-Tap on the visualizer."
+              "assets/posters/he/p06-looper-w630.jpg": "פוסטר: בנו שכבות של לופים. מסך הלופר עם עמודים 1 עד 8, ערוצים וצבעים."
             }
           },
           {
@@ -614,7 +613,7 @@
               "הקשה על Import בוחרת קובץ פרויקט וטוענת את כל פרויקט המיקרופון. LIVE מכבה את Import.",
               "הקשה על Export מבקשת מהטלפון איפה לשמור את כל פרויקט המיקרופון."
             ],
-            "media": "assets/guide/mic-screen-110.jpg",
+            "media": "assets/posters/he/p04-mic-w630.jpg",
             "sections": [
               {
                 "id": "mic-editor",
@@ -623,9 +622,9 @@
                   "הקשה על הויזואלייזר של ערוץ Mic פותחת את Mic Editor. זה אותו עורך כמו Loop Editor: Trim, Loop, 8 תיבות מקצב התופים, EQ, Gain ו-Squeeze.",
                   "זה עובד כשיש בערוץ הקלטה והוא לא מקליט. Save שומר את השינויים עם פרויקט המיק. Redo יכול להחזיר הקלטה מלפני חיתוך."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg",
+                "media": "assets/posters/he/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/guide/loop-editor-110.jpg": "Loop Editor בגרסה 1.10: Trim, Loop, 8 תיבות מקצב תופים, EQ, Gain ו-Squeeze."
+                  "assets/posters/he/p05-loop-editor-w630.jpg": "פוסטר: ערכו כל לופ. עורך הלופ עם גל, גזירה ולופ, קשירה לקצבי התופים, EQ ו-SQUEEZE."
                 }
               },
               {
@@ -655,7 +654,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/mic-screen-110.jpg": "מסך Mic בגרסה 1.10, עם Redo והקשה על הויזואלייזר ל-Mic Editor."
+              "assets/posters/he/p04-mic-w630.jpg": "פוסטר: הקליטו את הקול. מסך Mic עם ערוצים נפרדים, גיין, HPF, נוכחות ו-Mic FX."
             }
           }
         ]
@@ -1419,10 +1418,10 @@
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
-              "/assets/updates/loop-editor-110.jpg"
+              "/assets/posters/he/p05-loop-editor-w630.jpg"
             ],
             "imageAlts": [
-              "Loop Editor בגרסה 1.10: Trim, Loop, 8 תיבות מקצב תופים, EQ, Gain ו-Squeeze."
+              "פוסטר: ערכו כל לופ. עורך הלופ עם גל, גזירה ולופ, קשירה לקצבי התופים, EQ ו-SQUEEZE."
             ],
             "sections": [
               {
@@ -1876,19 +1875,14 @@
               "While MIDI or WAV records, a gold clock in minutes and seconds (MM:SS) shows between the title and the MIDI key. The minutes keep counting past 60. If both record, it counts from the one that started first.",
               "A tap on Settings opens Settings."
             ],
-            "media": "assets/guide/sound-screen-110.jpg",
-            "images": [
-              "assets/guide/sound-waves-109.jpg",
-              "assets/guide/sound-tones.jpg"
-            ],
+            "media": "assets/posters/en/p01-sound-w630.jpg",
             "sections": [
               {
                 "id": "oct",
                 "title": "-1 / +1",
                 "body": [
                   "-1 and +1 sit beside Oct on the sound screen. A tap on -1 lowers the octave by one, down to -2. A tap on +1 raises the octave by one, up to 2. Oct shows the current octave."
-                ],
-                "media": "assets/guide/octave.jpg"
+                ]
               },
               {
                 "id": "sound-fx",
@@ -1925,8 +1919,7 @@
                 "title": "Drive",
                 "body": [
                   "Drive is the slider on the sound screen. A drag sets the drive amount. Drive changes smoothly, without jumps."
-                ],
-                "media": "assets/guide/drive-slider.jpg"
+                ]
               },
               {
                 "id": "volume",
@@ -1934,8 +1927,7 @@
                 "body": [
                   "Volume, Attack, Decay, Sustain, Release, Cutoff, Resonance, Echo Mix, and Glide are the knobs on the sound screen. A drag sets the knob. A tap on the number opens a box where you type a value. LIVE does not open that box.",
                   "Every knob in the app has a gold ring that shows the value. On L/R knobs the ring starts at the top and fills toward L or R."
-                ],
-                "media": "assets/guide/volume-knobs.jpg"
+                ]
               },
               {
                 "id": "keys",
@@ -1943,8 +1935,7 @@
                 "body": [
                   "The keys read D, R, M, F, S, L, S, L. The number under a key is its Hz. Press a key to play it. Release it to stop. They start at 222, 299, 333, 355, 396, 444, 463, and 477 Hz.",
                   "A tap on + opens a second keyboard above the first, one octave higher. The same + is on the Pad screen, and the second keyboard stays open when you switch between Sound and Pad. Another tap closes it."
-                ],
-                "media": "assets/guide/keys.jpg"
+                ]
               },
               {
                 "id": "presets",
@@ -1974,7 +1965,11 @@
                   "The chip at the top of every screen switches between PRO and LIVE. PRO is the normal mode, with everything open. LIVE is a mode that locks some buttons, so you can focus on playing. It is good for recording and for performing, because a stray tap cannot clear a take, load a file, or rename a channel.",
                   "What LIVE locks: Clear on Looper and Mic channels. Load on the drum rows and on Looper and Mic channels. Import on the Loop and Mic screens, and Import and Load in Drum styles. The DRUM KIT arrows on the Sound and Drum screens. Typing a number on a knob, while a drag still works. The names of Looper and Mic channels, the Looper page name, and the long-press that opens Page name.",
                   "What LIVE leaves open: Rec, Play, Stop, M, S, Redo, Save, and Export. The drum sample list and the sample arrows, CLEAR on the drums, switching pages, presets, and everything you play. Another tap on the chip goes back to PRO."
-                ]
+                ],
+                "imageAlts": {
+                  "assets/posters/en/p02-sound-live-w630.jpg": "Poster: Two Keyboards, Live. The Sound screen with two keyboards and LIVE mode, which locks some buttons."
+                },
+                "media": "assets/posters/en/p02-sound-live-w630.jpg"
               },
               {
                 "id": "settings",
@@ -2007,7 +2002,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/sound-screen-110.jpg": "The Sound screen in 1.10: layered waves, Drive, knobs, and the + for a second keyboard."
+              "assets/posters/en/p01-sound-w630.jpg": "Poster: Shape Your Sound. The Sound screen with a waveform, envelope, filter and echo, and the keyboard below."
             }
           },
           {
@@ -2024,14 +2019,14 @@
               "Hold 1/4, 1/8, 1/16, or 1/32. Hold STOP.",
               "A tap on +, next to the voice row, opens a second keyboard above the first, one octave higher. The same + is on the Sound screen, and the second keyboard stays open when you switch between Pad and Sound. Another tap closes it."
             ],
-            "media": "assets/guide/pad-screen-110.jpg",
+            "media": "assets/posters/en/p03-pad-w630.jpg",
             "sections": [],
             "images": [
               "assets/guide/pad-dual-keyboard-110.jpg"
             ],
             "imageAlts": {
-              "assets/guide/pad-screen-110.jpg": "The Pad screen in 1.10, with the live pad and the bottom keyboard.",
-              "assets/guide/pad-dual-keyboard-110.jpg": "The Pad screen in 1.10 with the second keyboard open, shared with Sound."
+              "assets/guide/pad-dual-keyboard-110.jpg": "The Pad screen in 1.10 with the second keyboard open, shared with Sound.",
+              "assets/posters/en/p03-pad-w630.jpg": "Poster: Live Performance Pad. The Pad screen with the slide area and the 1/4 to 1/32 hold keys."
             }
           },
           {
@@ -2057,7 +2052,7 @@
               "SAMPLES sits next to DRUM KIT and shows the sample of the last row you used. Its arrows step that row to the previous or next sample.",
               "The keys on the Drum, Sound, and Pad screens look like hardware keys, with uppercase labels. A gold key is on."
             ],
-            "media": "assets/guide/drum-screen-110.jpg",
+            "media": "assets/posters/en/p07-drums-w630.jpg",
             "sections": [
               {
                 "id": "drum-sound",
@@ -2091,7 +2086,10 @@
                   "The title reads DRUM STYLES (8 STYLES), or EXCLUSIVE STYLES (8 STYLES) on the Exclusive pages. Under the page numbers, each page has its own banner. The 8 kits fit without scrolling.",
                   "You can load a kit while the drums play. Sounds that still ring fade out in about 20 ms, so there are no clicks or distortion, and volume and pan glide to the new values in about 10 ms. New hits use the new kit at once. A WAV recording hears the same clean change."
                 ],
-                "media": "assets/guide/drum-styles-window.jpg"
+                "media": "assets/posters/en/p08-drum-styles-w630.jpg",
+                "imageAlts": {
+                  "assets/posters/en/p08-drum-styles-w630.jpg": "Poster: Drum Styles. The Drum Styles window with the EXPERIMENTAL pack and Load, Edit, Import and Export."
+                }
               },
               {
                 "id": "pattern-repeat",
@@ -2110,7 +2108,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "The Voice sample picker in 1.10, on the Authentic tab with 33 vocals.",
-              "assets/guide/drum-screen-110.jpg": "The Drum screen in 1.10: FX 1 to FX 3, 8. Voice, Load on each row, rhythms 1 to 8, Save and Random."
+              "assets/posters/en/p07-drums-w630.jpg": "Poster: Build Your Beat. The Drum screen with step patterns on four channels and the keyboard below."
             }
           },
           {
@@ -2137,7 +2135,7 @@
               "A tap on Import picks a project file and loads the whole loop project. LIVE turns Import off.",
               "A tap on Export asks the phone where to store the whole loop project."
             ],
-            "media": "assets/guide/loop-screen-110.jpg",
+            "media": "assets/posters/en/p06-looper-w630.jpg",
             "sections": [
               {
                 "id": "loop-editor",
@@ -2151,9 +2149,9 @@
                   "Play plays the channel. Reset sets everything back to the start values. Close leaves without saving. Save keeps the changes, and a trim cuts the take. Redo can bring back the take from before the trim.",
                   "The editor settings are saved with the loop session and in the exported project."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg",
+                "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/guide/loop-editor-110.jpg": "Loop Editor in 1.10: Trim, Loop, 8 drum-rhythm boxes, EQ, Gain and Squeeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "Poster: Edit Every Loop. The Loop Editor with the waveform, trim and loop, drum rhythms, EQ and squeeze."
                 }
               },
               {
@@ -2173,7 +2171,7 @@
               "assets/guide/loop-page-name.jpg"
             ],
             "imageAlts": {
-              "assets/guide/loop-screen-110.jpg": "The looper in 1.10: page 1 of 8, four channels with Rec, Play, Redo, and Tap on the visualizer."
+              "assets/posters/en/p06-looper-w630.jpg": "Poster: Layer Your Loops. The looper with pages 1 to 8, channels and page colors."
             }
           },
           {
@@ -2200,7 +2198,7 @@
               "A tap on Import picks a project file and loads the whole mic project. LIVE turns Import off.",
               "A tap on Export asks the phone where to store the whole mic project."
             ],
-            "media": "assets/guide/mic-screen-110.jpg",
+            "media": "assets/posters/en/p04-mic-w630.jpg",
             "sections": [
               {
                 "id": "mic-editor",
@@ -2209,9 +2207,9 @@
                   "A tap on a Mic channel's visualizer opens Mic Editor. It is the same editor as Loop Editor: Trim, Loop, the 8 drum-rhythm boxes, EQ, Gain and Squeeze.",
                   "It works when the channel has a take and is not recording. Save keeps the changes with the mic project. Redo can bring back a take from before a trim."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg",
+                "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/guide/loop-editor-110.jpg": "Loop Editor in 1.10: Trim, Loop, 8 drum-rhythm boxes, EQ, Gain and Squeeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "Poster: Edit Every Loop. The Loop Editor with the waveform, trim and loop, drum rhythms, EQ and squeeze."
                 }
               },
               {
@@ -2241,7 +2239,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/mic-screen-110.jpg": "The Mic screen in 1.10, with Redo and a tap on the visualizer for Mic Editor."
+              "assets/posters/en/p04-mic-w630.jpg": "Poster: Record Your Voice. The Mic screen with separate channels, gain, high-pass, presence and Mic FX."
             }
           }
         ]
@@ -3005,10 +3003,10 @@
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
-              "/assets/updates/loop-editor-110.jpg"
+              "/assets/posters/en/p05-loop-editor-w630.jpg"
             ],
             "imageAlts": [
-              "Loop Editor in 1.10: Trim, Loop, 8 drum-rhythm boxes, EQ, Gain and Squeeze."
+              "Poster: Edit Every Loop. The Loop Editor with the waveform, trim and loop, drum rhythms, EQ and squeeze."
             ],
             "sections": [
               {
@@ -3462,19 +3460,14 @@
               "Пока записывается MIDI или WAV, золотые часы в минутах и секундах (MM:SS) показаны между заголовком и клавишей MIDI. Минуты продолжают считаться после 60. Если пишутся оба, часы считают от того, что начался первым.",
               "Нажатие на Settings открывает Settings."
             ],
-            "media": "assets/guide/sound-screen-110.jpg",
-            "images": [
-              "assets/guide/sound-waves-109.jpg",
-              "assets/guide/sound-tones.jpg"
-            ],
+            "media": "assets/posters/en/p01-sound-w630.jpg",
             "sections": [
               {
                 "id": "oct",
                 "title": "-1 / +1",
                 "body": [
                   "-1 и +1 находятся рядом с Oct на экране звука. Нажатие на -1 опускает октаву на одну, до -2. Нажатие на +1 поднимает октаву на одну, до 2. Oct показывает текущую октаву."
-                ],
-                "media": "assets/guide/octave.jpg"
+                ]
               },
               {
                 "id": "sound-fx",
@@ -3511,8 +3504,7 @@
                 "title": "Drive",
                 "body": [
                   "Drive это слайдер на экране звука. Перетаскивание задаёт величину drive. Drive меняется плавно, без скачков."
-                ],
-                "media": "assets/guide/drive-slider.jpg"
+                ]
               },
               {
                 "id": "volume",
@@ -3520,8 +3512,7 @@
                 "body": [
                   "Volume, Attack, Decay, Sustain, Release, Cutoff, Resonance, Echo Mix и Glide это регуляторы на экране звука. Перетаскивание задаёт регулятор. Нажатие на число открывает поле, где можно ввести значение. LIVE не открывает это поле.",
                   "У каждого регулятора в приложении есть золотое кольцо, которое показывает значение. На регуляторах L/R кольцо начинается сверху и заполняется к L или R."
-                ],
-                "media": "assets/guide/volume-knobs.jpg"
+                ]
               },
               {
                 "id": "keys",
@@ -3529,8 +3520,7 @@
                 "body": [
                   "На клавишах написано D, R, M, F, S, L, S, L. Число под клавишей это её Hz. Нажатие на клавишу играет её. Отпускание останавливает. Они начинают с 222, 299, 333, 355, 396, 444, 463 и 477 Hz.",
                   "Нажатие на + открывает вторую клавиатуру над первой, на октаву выше. Тот же + есть на экране Pad, и вторая клавиатура остаётся открытой при переходе между Sound и Pad. Ещё одно нажатие закрывает её."
-                ],
-                "media": "assets/guide/keys.jpg"
+                ]
               },
               {
                 "id": "presets",
@@ -3560,7 +3550,11 @@
                   "Значок вверху каждого экрана переключает между PRO и LIVE. PRO обычный режим, где всё открыто. LIVE режим, который блокирует некоторые кнопки, чтобы вы могли сосредоточиться на игре. Он удобен для записи и выступления, потому что случайное нажатие не сотрёт запись, не загрузит файл и не переименует канал.",
                   "Что блокирует LIVE: Clear в каналах Looper и Mic. Load в рядах ударных и в каналах Looper и Mic. Import на экранах Loop и Mic, а также Import и Load в Drum styles. Стрелки DRUM KIT на экранах Sound и Drum. Ввод числа на регуляторе, при этом перетаскивание работает. Имена каналов Looper и Mic, имя страницы Looper и долгое нажатие, открывающее Page name.",
                   "Что LIVE оставляет открытым: Rec, Play, Stop, M, S, Redo, Save и Export. Список сэмплов ударных и стрелки сэмплов, CLEAR на ударных, переключение страниц, пресеты и всё, что вы играете. Ещё одно нажатие на значок возвращает PRO."
-                ]
+                ],
+                "imageAlts": {
+                  "assets/posters/en/p02-sound-live-w630.jpg": "Постер (на английском): Two Keyboards, Live. Экран Sound с двумя клавиатурами и режимом LIVE, который блокирует часть кнопок."
+                },
+                "media": "assets/posters/en/p02-sound-live-w630.jpg"
               },
               {
                 "id": "settings",
@@ -3593,7 +3587,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/sound-screen-110.jpg": "Экран Sound в 1.10: слои волн, Drive, регуляторы и + для второй клавиатуры."
+              "assets/posters/en/p01-sound-w630.jpg": "Постер (на английском): Shape Your Sound. Экран Sound с волной, огибающей, фильтром и эхо, а внизу клавиатура."
             }
           },
           {
@@ -3610,14 +3604,14 @@
               "Удерживайте 1/4, 1/8, 1/16 или 1/32. Удерживайте STOP.",
               "Нажатие на +, рядом с рядом голосов, открывает вторую клавиатуру над первой, на октаву выше. Тот же + есть на экране Sound, и вторая клавиатура остаётся открытой при переходе между Pad и Sound. Ещё одно нажатие закрывает её."
             ],
-            "media": "assets/guide/pad-screen-110.jpg",
+            "media": "assets/posters/en/p03-pad-w630.jpg",
             "sections": [],
             "images": [
               "assets/guide/pad-dual-keyboard-110.jpg"
             ],
             "imageAlts": {
-              "assets/guide/pad-screen-110.jpg": "Экран Pad в 1.10, с живым пэдом и нижней клавиатурой.",
-              "assets/guide/pad-dual-keyboard-110.jpg": "Экран Pad в 1.10 со второй клавиатурой, общей с Sound."
+              "assets/guide/pad-dual-keyboard-110.jpg": "Экран Pad в 1.10 со второй клавиатурой, общей с Sound.",
+              "assets/posters/en/p03-pad-w630.jpg": "Постер (на английском): Live Performance Pad. Экран Pad с областью скольжения и клавишами удержания от 1/4 до 1/32."
             }
           },
           {
@@ -3643,7 +3637,7 @@
               "SAMPLES находится рядом с DRUM KIT и показывает сэмпл последнего ряда, которым вы пользовались. Его стрелки переключают этот ряд на предыдущий или следующий сэмпл.",
               "Клавиши на экранах Drum, Sound и Pad выглядят как аппаратные, с надписями заглавными буквами. Золотая клавиша включена."
             ],
-            "media": "assets/guide/drum-screen-110.jpg",
+            "media": "assets/posters/en/p07-drums-w630.jpg",
             "sections": [
               {
                 "id": "drum-sound",
@@ -3677,7 +3671,10 @@
                   "Заголовок: DRUM STYLES (8 STYLES), а на страницах Exclusive: EXCLUSIVE STYLES (8 STYLES). Под номерами страниц у каждой страницы свой баннер. 8 китов помещаются без прокрутки.",
                   "Набор можно загружать, пока играют ударные. Звуки, которые ещё звучат, затихают примерно за 20 ms, поэтому нет щелчков и искажений, а громкость и панорама плавно переходят к новым значениям примерно за 10 ms. Новые удары сразу берут новый набор. Запись WAV слышит тот же чистый переход."
                 ],
-                "media": "assets/guide/drum-styles-window.jpg"
+                "media": "assets/posters/en/p08-drum-styles-w630.jpg",
+                "imageAlts": {
+                  "assets/posters/en/p08-drum-styles-w630.jpg": "Постер (на английском): Drum Styles. Окно Drum Styles с паком EXPERIMENTAL и кнопками Load, Edit, Import и Export."
+                }
               },
               {
                 "id": "pattern-repeat",
@@ -3696,7 +3693,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "Выбор сэмплов Voice в 1.10, на вкладке Authentic с 33 вокалами.",
-              "assets/guide/drum-screen-110.jpg": "Экран Drum в 1.10: FX 1 до FX 3, 8. Voice, Load на каждом ряду, ритмы 1 до 8, Save и Random."
+              "assets/posters/en/p07-drums-w630.jpg": "Постер (на английском): Build Your Beat. Экран Drum с шаговыми паттернами на четырех каналах и клавиатурой внизу."
             }
           },
           {
@@ -3723,7 +3720,7 @@
               "Нажатие на Import выбирает файл проекта и загружает весь проект лупа. LIVE выключает Import.",
               "Нажатие на Export спрашивает телефон, куда сохранить весь проект лупа."
             ],
-            "media": "assets/guide/loop-screen-110.jpg",
+            "media": "assets/posters/en/p06-looper-w630.jpg",
             "sections": [
               {
                 "id": "loop-editor",
@@ -3737,9 +3734,9 @@
                   "Play играет канал. Reset возвращает начальные значения. Close выходит без сохранения. Save сохраняет изменения, а Trim обрезает запись. Redo может вернуть запись до обрезки.",
                   "Настройки редактора сохраняются в сессии лупера и в экспортированном проекте."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg",
+                "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/guide/loop-editor-110.jpg": "Loop Editor в 1.10: Trim, Loop, 8 ячеек ритма ударных, EQ, Gain и Squeeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "Постер (на английском): Edit Every Loop. Редактор лупа с волной, обрезкой и циклом, ритмами барабанов, EQ и squeeze."
                 }
               },
               {
@@ -3759,7 +3756,7 @@
               "assets/guide/loop-page-name.jpg"
             ],
             "imageAlts": {
-              "assets/guide/loop-screen-110.jpg": "Лупер в 1.10: страница 1 из 8, четыре канала с Rec, Play, Redo и Tap on the visualizer."
+              "assets/posters/en/p06-looper-w630.jpg": "Постер (на английском): Layer Your Loops. Лупер со страницами с 1 по 8, каналами и цветами страниц."
             }
           },
           {
@@ -3786,7 +3783,7 @@
               "Нажатие на Import выбирает файл проекта и загружает весь проект микрофона. LIVE выключает Import.",
               "Нажатие на Export спрашивает телефон, куда сохранить весь проект микрофона."
             ],
-            "media": "assets/guide/mic-screen-110.jpg",
+            "media": "assets/posters/en/p04-mic-w630.jpg",
             "sections": [
               {
                 "id": "mic-editor",
@@ -3795,9 +3792,9 @@
                   "Нажатие на визуализатор канала Mic открывает Mic Editor. Это тот же редактор, что и Loop Editor: Trim, Loop, 8 ячеек ритма ударных, EQ, Gain и Squeeze.",
                   "Это работает, когда в канале есть запись и он не пишет. Save сохраняет изменения с проектом микрофона. Redo может вернуть запись до обрезки."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg",
+                "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/guide/loop-editor-110.jpg": "Loop Editor в 1.10: Trim, Loop, 8 ячеек ритма ударных, EQ, Gain и Squeeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "Постер (на английском): Edit Every Loop. Редактор лупа с волной, обрезкой и циклом, ритмами барабанов, EQ и squeeze."
                 }
               },
               {
@@ -3827,7 +3824,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/mic-screen-110.jpg": "Экран Mic в 1.10, с Redo и нажатием на визуализатор для Mic Editor."
+              "assets/posters/en/p04-mic-w630.jpg": "Постер (на английском): Record Your Voice. Экран Mic с отдельными каналами, gain, фильтром высоких частот, presence и Mic FX."
             }
           }
         ]
@@ -4591,10 +4588,10 @@
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
-              "/assets/updates/loop-editor-110.jpg"
+              "/assets/posters/en/p05-loop-editor-w630.jpg"
             ],
             "imageAlts": [
-              "Loop Editor в 1.10: Trim, Loop, 8 ячеек ритма ударных, EQ, Gain и Squeeze."
+              "Постер (на английском): Edit Every Loop. Редактор лупа с волной, обрезкой и циклом, ритмами барабанов, EQ и squeeze."
             ],
             "sections": [
               {
@@ -5048,19 +5045,14 @@
               "أثناء تسجيل MIDI أو WAV، تظهر ساعة ذهبية بالدقائق والثواني (MM:SS) بين العنوان ومفتاح MIDI. تستمر الدقائق بالعد بعد 60. إذا سُجّل الاثنان معاً، تعدّ من الذي بدأ أولاً.",
               "الضغط على Settings يفتح Settings."
             ],
-            "media": "assets/guide/sound-screen-110.jpg",
-            "images": [
-              "assets/guide/sound-waves-109.jpg",
-              "assets/guide/sound-tones.jpg"
-            ],
+            "media": "assets/posters/en/p01-sound-w630.jpg",
             "sections": [
               {
                 "id": "oct",
                 "title": "-1 / +1",
                 "body": [
                   "-1 و+1 بجانب Oct على شاشة الصوت. الضغط على -1 يخفض الأوكتاف واحداً، حتى -2. الضغط على +1 يرفع الأوكتاف واحداً، حتى 2. Oct يعرض الأوكتاف الحالي."
-                ],
-                "media": "assets/guide/octave.jpg"
+                ]
               },
               {
                 "id": "sound-fx",
@@ -5097,8 +5089,7 @@
                 "title": "Drive",
                 "body": [
                   "Drive هو المنزلق على شاشة الصوت. السحب يحدد مقدار drive. يتغير Drive بسلاسة، دون قفزات."
-                ],
-                "media": "assets/guide/drive-slider.jpg"
+                ]
               },
               {
                 "id": "volume",
@@ -5106,8 +5097,7 @@
                 "body": [
                   "Volume وAttack وDecay وSustain وRelease وCutoff وResonance وEcho Mix وGlide مقابض على شاشة الصوت. السحب يحدد المقبض. الضغط على الرقم يفتح خانة تكتب فيها قيمة. LIVE لا يفتح هذه الخانة.",
                   "لكل مقبض في التطبيق حلقة ذهبية تعرض القيمة. في مقابض L/R تبدأ الحلقة من الأعلى وتمتلئ نحو L أو R."
-                ],
-                "media": "assets/guide/volume-knobs.jpg"
+                ]
               },
               {
                 "id": "keys",
@@ -5115,8 +5105,7 @@
                 "body": [
                   "على المفاتيح D وR وM وF وS وL وS وL. الرقم تحت المفتاح هو Hz. اضغط المفتاح لعزفه. اتركه ليوقف. تبدأ على 222 و299 و333 و355 و396 و444 و463 و477 Hz.",
                   "الضغط على + يفتح لوحة مفاتيح ثانية فوق الأولى، أوكتافاً أعلى. نفس الـ + موجود على شاشة Pad، وتبقى لوحة المفاتيح الثانية مفتوحة عند التنقل بين Sound وPad. ضغط آخر يغلقها."
-                ],
-                "media": "assets/guide/keys.jpg"
+                ]
               },
               {
                 "id": "presets",
@@ -5146,7 +5135,11 @@
                   "الشارة في أعلى كل شاشة تبدّل بين PRO وLIVE. PRO هو الوضع العادي، وكل شيء فيه مفتوح. LIVE وضع يقفل بعض الأزرار لتركّز على العزف. وهو مناسب للتسجيل وللعروض، لأن نقرة بالخطأ لن تمسح تسجيلاً ولن تحمّل ملفاً ولن تغيّر اسم قناة.",
                   "ما يقفله LIVE: Clear في قنوات Looper وMic. Load في صفوف الطبول وفي قنوات Looper وMic. Import في شاشتي Loop وMic، وImport وLoad في Drum styles. أسهم DRUM KIT في شاشتي Sound وDrum. كتابة رقم على مقبض، بينما يبقى السحب يعمل. أسماء قنوات Looper وMic، واسم صفحة Looper، والضغط المطول الذي يفتح Page name.",
                   "ما يتركه LIVE مفتوحاً: Rec وPlay وStop وM وS وRedo وSave وExport. قائمة عينات الطبول وأسهم العينات، وCLEAR في الطبول، والتبديل بين الصفحات، والإعدادات المسبقة، وكل ما تعزفه. نقرة أخرى على الشارة تعيدك إلى PRO."
-                ]
+                ],
+                "imageAlts": {
+                  "assets/posters/en/p02-sound-live-w630.jpg": "ملصق (بالإنجليزية): Two Keyboards, Live. شاشة Sound مع لوحتي مفاتيح ووضع LIVE الذي يقفل بعض الأزرار."
+                },
+                "media": "assets/posters/en/p02-sound-live-w630.jpg"
               },
               {
                 "id": "settings",
@@ -5179,7 +5172,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/sound-screen-110.jpg": "شاشة Sound في الإصدار 1.10: موجات بطبقات وDrive ومقابض و+ للوحة مفاتيح ثانية."
+              "assets/posters/en/p01-sound-w630.jpg": "ملصق (بالإنجليزية): Shape Your Sound. شاشة Sound مع الموجة والغلاف والفلتر والصدى، وتحتها لوحة المفاتيح."
             }
           },
           {
@@ -5196,14 +5189,14 @@
               "أمسك 1/4 أو 1/8 أو 1/16 أو 1/32. أمسك STOP.",
               "الضغط على +، بجانب صف الأصوات، يفتح لوحة مفاتيح ثانية فوق الأولى، أوكتافاً أعلى. نفس الـ + موجود على شاشة Sound، وتبقى لوحة المفاتيح الثانية مفتوحة عند التنقل بين Pad وSound. ضغط آخر يغلقها."
             ],
-            "media": "assets/guide/pad-screen-110.jpg",
+            "media": "assets/posters/en/p03-pad-w630.jpg",
             "sections": [],
             "images": [
               "assets/guide/pad-dual-keyboard-110.jpg"
             ],
             "imageAlts": {
-              "assets/guide/pad-screen-110.jpg": "شاشة Pad في الإصدار 1.10، مع الـ Pad الحي ولوحة المفاتيح السفلية.",
-              "assets/guide/pad-dual-keyboard-110.jpg": "شاشة Pad في الإصدار 1.10 مع لوحة المفاتيح الثانية مفتوحة، مشتركة مع Sound."
+              "assets/guide/pad-dual-keyboard-110.jpg": "شاشة Pad في الإصدار 1.10 مع لوحة المفاتيح الثانية مفتوحة، مشتركة مع Sound.",
+              "assets/posters/en/p03-pad-w630.jpg": "ملصق (بالإنجليزية): Live Performance Pad. شاشة Pad مع منطقة الانزلاق ومفاتيح الإمساك من 1/4 إلى 1/32."
             }
           },
           {
@@ -5229,7 +5222,7 @@
               "SAMPLES بجانب DRUM KIT ويعرض عينة آخر صف استخدمته. أسهمه تنقل ذلك الصف إلى العينة السابقة أو التالية.",
               "تبدو المفاتيح في شاشات Drum وSound وPad مثل مفاتيح الأجهزة، بأسماء بأحرف كبيرة. المفتاح الذهبي مُفعّل."
             ],
-            "media": "assets/guide/drum-screen-110.jpg",
+            "media": "assets/posters/en/p07-drums-w630.jpg",
             "sections": [
               {
                 "id": "drum-sound",
@@ -5263,7 +5256,10 @@
                   "العنوان DRUM STYLES (8 STYLES)، أو EXCLUSIVE STYLES (8 STYLES) في صفحات Exclusive. تحت أرقام الصفحات، لكل صفحة لافتة خاصة بها. تتسع الأطقم الثمانية بلا تمرير.",
                   "يمكنك تحميل طقم أثناء عزف الطبول. الأصوات التي ما زالت ترنّ تتلاشى خلال نحو 20 ms، فلا نقرات ولا تشويه، وينتقل الحجم والتوزيع إلى القيم الجديدة بسلاسة خلال نحو 10 ms. الضربات الجديدة تستخدم الطقم الجديد فوراً. تسجيل WAV يسمع الانتقال النظيف نفسه."
                 ],
-                "media": "assets/guide/drum-styles-window.jpg"
+                "media": "assets/posters/en/p08-drum-styles-w630.jpg",
+                "imageAlts": {
+                  "assets/posters/en/p08-drum-styles-w630.jpg": "ملصق (بالإنجليزية): Drum Styles. نافذة Drum Styles مع حزمة EXPERIMENTAL وأزرار Load وEdit وImport وExport."
+                }
               },
               {
                 "id": "pattern-repeat",
@@ -5282,7 +5278,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "منتقي عينات Voice في الإصدار 1.10، على تبويب Authentic مع 33 عيّنة غناء.",
-              "assets/guide/drum-screen-110.jpg": "شاشة Drum في الإصدار 1.10: FX 1 حتى FX 3 و8. Voice وLoad في كل صف وإيقاعات 1 حتى 8 وSave وRandom."
+              "assets/posters/en/p07-drums-w630.jpg": "ملصق (بالإنجليزية): Build Your Beat. شاشة Drum مع أنماط خطوات على أربع قنوات ولوحة المفاتيح تحتها."
             }
           },
           {
@@ -5309,7 +5305,7 @@
               "الضغط على Import يختار ملف مشروع ويحمّل مشروع اللوب كله. LIVE يوقف Import.",
               "الضغط على Export يسأل الهاتف أين يحفظ مشروع اللوب كله."
             ],
-            "media": "assets/guide/loop-screen-110.jpg",
+            "media": "assets/posters/en/p06-looper-w630.jpg",
             "sections": [
               {
                 "id": "loop-editor",
@@ -5323,9 +5319,9 @@
                   "Play يشغّل القناة. Reset يعيد كل شيء إلى قيم البداية. Close يخرج دون حفظ. Save يحفظ التغييرات، وTrim يقصّ الأخذ. يمكن لـ Redo أن يعيد الأخذ من قبل القص.",
                   "إعدادات المحرر تُحفظ مع جلسة اللوب وفي المشروع المصدَّر."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg",
+                "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/guide/loop-editor-110.jpg": "Loop Editor في الإصدار 1.10: Trim وLoop و8 مربعات إيقاع طبول وEQ وGain وSqueeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب مع الموجة والقص والتكرار وإيقاعات الطبول وEQ وsqueeze."
                 }
               },
               {
@@ -5345,7 +5341,7 @@
               "assets/guide/loop-page-name.jpg"
             ],
             "imageAlts": {
-              "assets/guide/loop-screen-110.jpg": "اللوبر في الإصدار 1.10: الصفحة 1 من 8، أربع قنوات مع Rec وPlay وRedo وTap on the visualizer."
+              "assets/posters/en/p06-looper-w630.jpg": "ملصق (بالإنجليزية): Layer Your Loops. اللوبر مع الصفحات من 1 إلى 8 والقنوات وألوان الصفحات."
             }
           },
           {
@@ -5372,7 +5368,7 @@
               "الضغط على Import يختار ملف مشروع ويحمّل مشروع الميكروفون كله. LIVE يوقف Import.",
               "الضغط على Export يسأل الهاتف أين يحفظ مشروع الميكروفون كله."
             ],
-            "media": "assets/guide/mic-screen-110.jpg",
+            "media": "assets/posters/en/p04-mic-w630.jpg",
             "sections": [
               {
                 "id": "mic-editor",
@@ -5381,9 +5377,9 @@
                   "الضغط على العارض البصري لقناة Mic يفتح Mic Editor. هو نفس محرر Loop Editor: Trim وLoop و8 مربعات إيقاع الطبول وEQ وGain وSqueeze.",
                   "يعمل عندما يكون في القناة أخذ وهي لا تسجّل. Save يحفظ التغييرات مع مشروع الميكروفون. يمكن لـ Redo أن يعيد أخذاً من قبل القص."
                 ],
-                "media": "assets/guide/loop-editor-110.jpg",
+                "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/guide/loop-editor-110.jpg": "Loop Editor في الإصدار 1.10: Trim وLoop و8 مربعات إيقاع طبول وEQ وGain وSqueeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب مع الموجة والقص والتكرار وإيقاعات الطبول وEQ وsqueeze."
                 }
               },
               {
@@ -5413,7 +5409,7 @@
               }
             ],
             "imageAlts": {
-              "assets/guide/mic-screen-110.jpg": "شاشة Mic في الإصدار 1.10، مع Redo والضغط على العارض البصري لـ Mic Editor."
+              "assets/posters/en/p04-mic-w630.jpg": "ملصق (بالإنجليزية): Record Your Voice. شاشة Mic مع قنوات منفصلة وgain وفلتر الترددات العالية وpresence وMic FX."
             }
           }
         ]
@@ -6177,10 +6173,10 @@
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
-              "/assets/updates/loop-editor-110.jpg"
+              "/assets/posters/en/p05-loop-editor-w630.jpg"
             ],
             "imageAlts": [
-              "Loop Editor في الإصدار 1.10: Trim وLoop و8 مربعات إيقاع طبول وEQ وGain وSqueeze."
+              "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب مع الموجة والقص والتكرار وإيقاعات الطبول وEQ وsqueeze."
             ],
             "sections": [
               {

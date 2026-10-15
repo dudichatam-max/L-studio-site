@@ -136,3 +136,13 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Looper and Mic: M (mute) and S (solo), STOP holds until PLAY, visualizer keeps moving. A gold MM:SS clock shows while MIDI or WAV records.
 - Not mentioned on purpose: tablet layout (content capped at 440 dp, phones locked to portrait), Android 7/8 items, circular recording buffer, safe session names, sample rate in session.
 - All of this is 1.10 in smoke test, not on Google Play. Keep PR #74 a draft until 1.10 is released.
+
+## 1.10 posters (approved store/site posters, 8 EN + 8 HE)
+- Files: `assets/posters/{en,he}/pNN-slug-w360|w630.{webp,jpg}` (also in `client/public/assets/posters/`). Sources are 1080x1920 PNGs in `/workspace/store-posters/`. 9:16, webp 80 and jpg 82, widths 360 and 630. Helper: `client/src/lib/posters.ts` (URLs, sizes, alt texts for the homepage).
+- Order and names: 01 sound, 02 sound-live, 03 pad, 04 mic, 05 loop-editor, 06 looper, 07 drums, 08 drum-styles.
+- Language: HE uses `posters/he`. EN, RU and AR use `posters/en` (no RU or AR posters exist). In `content.json` the paths are per language, so a new RU or AR poster set only needs new files and new paths.
+- Homepage windows menu: Sound = 1 + 2, Loop = 5 + 6, Drum = 7 + 8 (two columns on desktop, a swipe row on phones), Pad = 3, Mic = 4. Gold frame like the guide. Change the mapping in `playPosters` in `Home.tsx`.
+- Guide: poster as the group image (sound 1, pad 3, drum 7, loop 6, mic 4) and in sections (sound/live-mode 2, drum/drum-styles 8, loop/loop-editor 5, mic/mic-editor 5). Paths that start with `assets/posters/` render as `<picture>` with a webp twin and fixed 630x1120. Alt texts live in `imageAlts`.
+- Updates: the 1.10 item uses poster 5. `imageAlts` is a list there, parallel to `images`.
+- Pre-1.10 Sound strips (octave, drive-slider, volume-knobs, keys, sound-waves-109, sound-tones) and drum-styles-window are not used any more, because posters cover those screens. The files stay in `assets/guide/`.
+- Poster captions are baked into the images. Two of them contain an en dash (EN 2 and 7). Poster 3 says "Slide on the pad for Wah, Octave and Vibrato", but in the app Wah, Oct and Vibrato are knobs and the pad moves the sound. Do not copy that wording into site text.

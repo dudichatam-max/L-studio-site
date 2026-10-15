@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { POSTER_LARGE } from "@/lib/posters";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel } from "@/lib/updatesCopy";
@@ -87,6 +88,11 @@ const guideNavLabel: Record<Language, string> = {
 
 function mediaUrl(path: string) {
   return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+}
+
+/** Approved store posters (assets/posters/{en,he}/...-w630.jpg) ship a webp twin and a fixed 630x1120 size. */
+function isPoster(path: string) {
+  return /^\/?assets\/posters\//.test(path);
 }
 
 function sectionNumber(index: number) {
@@ -241,7 +247,14 @@ export default function Guide() {
                           <div className="guide-shots">
                             {shots.map((src) => (
                               <figure className={mediaClass} key={src}>
-                                <img src={mediaUrl(src)} alt={section.imageAlts?.[src] || section.title} loading="lazy" />
+                                {isPoster(src) ? (
+                                  <picture>
+                                    <source type="image/webp" srcSet={mediaUrl(src.replace(/\.jpe?g$/i, ".webp"))} />
+                                    <img src={mediaUrl(src)} alt={section.imageAlts?.[src] || section.title} width={POSTER_LARGE.width} height={POSTER_LARGE.height} loading="lazy" decoding="async" />
+                                  </picture>
+                                ) : (
+                                  <img src={mediaUrl(src)} alt={section.imageAlts?.[src] || section.title} loading="lazy" />
+                                )}
                               </figure>
                             ))}
                           </div>

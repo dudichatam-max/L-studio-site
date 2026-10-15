@@ -5,6 +5,7 @@ import SiteLogo from "@/components/SiteLogo";
 import WaveScope from "@/components/WaveScope";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { POSTER_LARGE, POSTER_SMALL, posterAlt, posterUrl, type PosterId } from "@/lib/posters";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import UpdatesTicker from "@/components/UpdatesTicker";
@@ -72,48 +73,15 @@ const meetPoster = {
 
 type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 
-const PLAY_SHOT_VER = "110-play";
-const playShotFiles: Record<PlayId, string> = {
-  sound: "110-04-sound",
-  loop: "110-03-looper",
-  drum: "110-01-live-sample-swap",
-  pad: "110-05-pad-dual",
-  mic: "07-mic-fx",
+// Windows menu posters. Pairs (Sound, Loop, Drum) sit side by side; Pad and Mic show one poster.
+// HE uses the Hebrew posters, EN/RU/AR use the English ones (see lib/posters.ts).
+const playPosters: Record<PlayId, PosterId[]> = {
+  sound: ["sound", "soundLive"],
+  mic: ["mic"],
+  loop: ["loopEditor", "looper"],
+  pad: ["pad"],
+  drum: ["drums", "drumStyles"],
 };
-function playShotUrl(id: PlayId, ext: "jpg" | "webp") {
-  return `${import.meta.env.BASE_URL}assets/play/${playShotFiles[id]}.${ext}?v=${PLAY_SHOT_VER}`;
-}
-
-const playShotAlt = {
-  he: {
-    sound: "מסך Sound בגרסה 1.10: גלים בשכבות, Drive, ושורת הקולות עם +.",
-    mic: "תמונת Google Play: ערוצי מיקרופון ואפקטי Mic FX.",
-    loop: "הלופר בגרסה 1.10: עמוד 1 מתוך 8, ארבעה ערוצים עם Rec, Play, Redo ו-Tap on the visualizer.",
-    pad: "ה-Pad בגרסה 1.10 עם המקלדת השנייה פתוחה. ה-+ ליד שורת הקולות.",
-    drum: "בוחר הסאמפלים של FX 1 בגרסה 1.10, עם הלשוניות Factory ו-Exclusive.",
-  },
-  en: {
-    sound: "The Sound screen in 1.10: layered waves, Drive, and the voice row with +.",
-    mic: "Google Play shot: mic channels and Mic FX.",
-    loop: "The looper in 1.10: page 1 of 8, four channels with Rec, Play, Redo and Tap on the visualizer.",
-    pad: "The Pad in 1.10 with the second keyboard open. The + sits next to the voice row.",
-    drum: "The FX 1 sample picker in 1.10, with the Factory and Exclusive tabs.",
-  },
-  ru: {
-    sound: "Экран Sound в 1.10: слои волн, Drive и ряд голосов с +.",
-    mic: "Скриншот Google Play: каналы микрофона и Mic FX.",
-    loop: "Лупер в 1.10: страница 1 из 8, четыре канала с Rec, Play, Redo и Tap on the visualizer.",
-    pad: "Pad в 1.10 со второй клавиатурой. + рядом с рядом голосов.",
-    drum: "Выбор сэмплов для FX 1 в 1.10, с вкладками Factory и Exclusive.",
-  },
-  ar: {
-    sound: "شاشة Sound في الإصدار 1.10: موجات بطبقات وDrive وصف الأصوات مع +.",
-    mic: "لقطة Google Play: قنوات الميكروفون ومؤثرات Mic FX.",
-    loop: "اللوبر في الإصدار 1.10: الصفحة 1 من 8، أربع قنوات مع Rec وPlay وRedo وTap on the visualizer.",
-    pad: "الـ Pad في الإصدار 1.10 مع لوحة المفاتيح الثانية مفتوحة. زر + بجانب صف الأصوات.",
-    drum: "منتقي عينات FX 1 في الإصدار 1.10، مع تبويبي Factory وExclusive.",
-  },
-} satisfies Record<Language, Record<PlayId, string>>;
 
 // Small chrome-only labels that are not part of the editable site copy in content.json
 // (menu open/close).
@@ -302,12 +270,31 @@ const footerDefault = { tagline: "It's for analog people in a digital world." };
 const visionIcons = [Sparkles, Music2, ArrowDownLeft];
 
 
-function FeatureMedia({ id, alt }: { id: PlayId; alt: string }) {
+function FeatureMedia({ id, language }: { id: PlayId; language: Language }) {
+  const posters = playPosters[id];
   return (
-    <picture>
-      <source srcSet={playShotUrl(id, "webp")} type="image/webp" />
-      <img className="preview-media" src={playShotUrl(id, "jpg")} alt={alt} width={720} height={1280} loading="lazy" decoding="async" />
-    </picture>
+    <>
+      {posters.map((poster) => (
+        <picture key={poster}>
+          <source
+            type="image/webp"
+            srcSet={`${posterUrl(language, poster, "w360", "webp")} ${POSTER_SMALL.width}w, ${posterUrl(language, poster, "w630", "webp")} ${POSTER_LARGE.width}w`}
+            sizes={posters.length > 1 ? "(max-width: 720px) 78vw, 250px" : "(max-width: 720px) 78vw, 300px"}
+          />
+          <img
+            className="preview-media"
+            src={posterUrl(language, poster, "w630", "jpg")}
+            srcSet={`${posterUrl(language, poster, "w360", "jpg")} ${POSTER_SMALL.width}w, ${posterUrl(language, poster, "w630", "jpg")} ${POSTER_LARGE.width}w`}
+            sizes={posters.length > 1 ? "(max-width: 720px) 78vw, 250px" : "(max-width: 720px) 78vw, 300px"}
+            alt={posterAlt[language][poster]}
+            width={POSTER_LARGE.width}
+            height={POSTER_LARGE.height}
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      ))}
+    </>
   );
 }
 
@@ -632,8 +619,8 @@ export default function Home() {
                     </button>
                     {isActive && (
                       <div className="interface-preview" id={`feature-panel-${feature.id}`}>
-                        <div className="preview-image-wrap">
-                          <FeatureMedia id={feature.id as PlayId} alt={playShotAlt[language][feature.id as PlayId]} />
+                        <div className={`preview-image-wrap ${playPosters[feature.id as PlayId].length > 1 ? "preview-image-wrap--pair" : ""}`}>
+                          <FeatureMedia id={feature.id as PlayId} language={language} />
                         </div>
                         <div className="preview-copy">
                           <span className="kicker">{feature.meta}</span>

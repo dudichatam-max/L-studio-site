@@ -42,8 +42,12 @@ const STILL_SIZE: Record<string, { width: number; height: number }> = {
   "/assets/updates/exclusive-packs-poster.jpg": { width: 1024, height: 1536 },
 };
 
+function stillSizeFor(src: string) {
+  return /^\/?assets\/posters\//.test(src) ? { width: 630, height: 1120 } : STILL_SIZE[src] ?? { width: 720, height: 1348 };
+}
+
 function stillSize(src: string) {
-  return STILL_SIZE[src] ?? { width: 720, height: 1348 };
+  return stillSizeFor(src);
 }
 
 function hashHref(href: string) {
