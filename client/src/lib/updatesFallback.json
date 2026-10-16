@@ -3,7 +3,7 @@
     "navLabel": "Updates",
     "pageTitle": "What's new in L Studio.",
     "pageKicker": "L-STUDIO / UPDATES",
-    "pageIntro": "Version 1.09 is in the Google Play test now. L Studio Pro comes to Google Play in October 2026, for $8.",
+    "pageIntro": "Version 1.10 comes in the next Google Play update. L Studio Pro comes to Google Play in October 2026, for $8.",
     "tickerLabel": "Updates",
     "statusLabels": {
       "in_progress": "In progress",
@@ -193,7 +193,7 @@
     "navLabel": "עדכונים",
     "pageTitle": "מה חדש ב-L Studio.",
     "pageKicker": "L-STUDIO / עדכונים",
-    "pageIntro": "גרסה 1.09 בבדיקה ב-Google Play עכשיו. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
+    "pageIntro": "גרסה 1.10 מגיעה בעדכון הבא ב-Google Play. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
     "tickerLabel": "עדכונים",
     "statusLabels": {
       "in_progress": "בעבודה",
@@ -383,7 +383,7 @@
     "navLabel": "Обновления",
     "pageTitle": "Что нового в L Studio.",
     "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-    "pageIntro": "Версия 1.09 сейчас в тесте Google Play. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
+    "pageIntro": "Версия 1.10 выйдет в следующем обновлении Google Play. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
     "tickerLabel": "Обновления",
     "statusLabels": {
       "in_progress": "В работе",
@@ -573,7 +573,7 @@
     "navLabel": "التحديثات",
     "pageTitle": "ما الجديد في L Studio.",
     "pageKicker": "L-STUDIO / التحديثات",
-    "pageIntro": "الإصدار 1.09 في اختبار Google Play الآن. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
+    "pageIntro": "الإصدار 1.10 يصل في تحديث Google Play القادم. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
     "tickerLabel": "التحديثات",
     "statusLabels": {
       "in_progress": "قيد العمل",
