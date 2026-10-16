@@ -329,7 +329,7 @@
       "tester": {
         "kicker": "EARLY ACCESS",
         "title": "ההרשמה לבודקים נסגרה.",
-        "body": "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. אחרי הבדיקה, L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
+        "body": "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. אחרי הבדיקה, L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
         "status": "ההרשמה לבודקים נסגרה. כל 44 המקומות נתפסו.",
         "spotsLabel": "נתפסו",
         "spotsStatus": "ההרשמה נסגרה",
@@ -376,7 +376,7 @@
                 "title": "מצב LIVE",
                 "body": [
                   "PRO הוא המצב הרגיל, עם הכול פתוח. LIVE הוא מצב שנועל כמה כפתורים כדי שתוכלו להתרכז בנגינה. הוא טוב להקלטה ולהופעה, כי הקשה בטעות לא תמחק הקלטה, לא תטען קובץ ולא תשנה שם של ערוץ.",
-                  "מה LIVE נועל: Clear בערוצי Looper ו-Mic. Load בשורות התופים ובערוצי Looper ו-Mic. Import במסכי Loop ו-Mic, ו-Import ו-Load ב-Drum styles. חיצי DRUM KIT במסכי Sound ו-Drum. הקלדת מספר על נוב, וגרירה עדיין עובדת. שמות ערוצי Looper ו-Mic, שם עמוד ה-Looper, והלחיצה הארוכה שפותחת את Page name.",
+                  "מה LIVE נועל: Clear בערוצי Looper ו-Mic. Load בשורות התופים ובערוצי Looper בלבד. לערוצי Mic אין מקש Load ב-1.10. Import במסכי Loop ו-Mic, ו-Import ו-Load ב-Drum styles. חיצי DRUM KIT במסכי Sound ו-Drum. הקלדת מספר על נוב, וגרירה עדיין עובדת. שמות ערוצי Looper ו-Mic, שם עמוד ה-Looper, והלחיצה הארוכה שפותחת את Page name.",
                   "מה LIVE משאיר פתוח: Rec, Play, Stop, M, S, Redo, Save ו-Export. רשימת סמפלי התופים וחיצי הסמפלים, CLEAR בתופים, מעבר בין עמודים, פריסטים, וכל מה שאתם מנגנים. הקשה נוספת על הכפתור מחזירה ל-PRO."
                 ],
                 "media": "assets/posters/he/p02-sound-live-w630.jpg",
@@ -1210,7 +1210,7 @@
         "listenNote": "תדרים נמוכים כמעט לא נשמעים ברמקולים של הטלפון. לחוויה מלאה השתמשו באוזניות או ברמקולים מתאימים.",
         "synthsHeading": "עמודי הפריסטים",
         "synthsIntro": "שמונה עמודי פריסטים לסינתיסייזר. כל עמוד הוא משימה מוזיקלית אחת, שמונה קולות עם שם.",
-        "launchNote": "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$."
+        "launchNote": "מגיע בקרוב ל-Google Play. L Studio Pro, 8$."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -1561,8 +1561,8 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro לאנדרואיד מגיע ל-Google Play באוקטובר 2026, ב-8$. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד מגיע ל-Google Play באוקטובר 2026, ב-8$. גרסה 1.10 (בקרוב בחנות), 77.5MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
+        "lede": "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. רכישה באתר אינה זמינה כרגע.",
+        "body": "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. גרסה 1.10 (בקרוב בחנות), 77.5MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
           "L Studio Pro לאנדרואיד ב-Google Play, 8$ בהשקה, 77.5MB",
@@ -1597,7 +1597,7 @@
         "navLabel": "עדכונים",
         "pageTitle": "מה חדש ב-L Studio.",
         "pageKicker": "L-STUDIO / עדכונים",
-        "pageIntro": "גרסה 1.10 בקרוב בחנות. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
+        "pageIntro": "גרסה 1.10 בקרוב בחנות. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
         "tickerLabel": "עדכונים",
         "statusLabels": {
           "in_progress": "בעבודה",
@@ -1784,9 +1784,9 @@
         ]
       },
       "launch": {
-        "headline": "מגיע ל-Google Play באוקטובר 2026.",
+        "headline": "מגיע בקרוב ל-Google Play.",
         "price": "L Studio Pro, 8$.",
-        "note": "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$."
+        "note": "מגיע בקרוב ל-Google Play. L Studio Pro, 8$."
       }
     },
     "en": {
@@ -2118,7 +2118,7 @@
       "tester": {
         "kicker": "EARLY ACCESS",
         "title": "Tester signup is closed.",
-        "body": "All 44 spots are taken. Thank you to everyone who joined the Google Play test. After the test, L Studio Pro comes to Google Play in October 2026, for $8.",
+        "body": "All 44 spots are taken. Thank you to everyone who joined the Google Play test. After the test, L Studio Pro is coming soon to Google Play, for $8.",
         "status": "Tester signup is closed. All 44 spots are taken.",
         "spotsLabel": "taken",
         "spotsStatus": "Signup closed",
@@ -2165,7 +2165,7 @@
                 "title": "LIVE mode",
                 "body": [
                   "PRO is the normal mode, with everything open. LIVE is a mode that locks some buttons, so you can focus on playing. It is good for recording and for performing, because a stray tap cannot clear a take, load a file, or rename a channel.",
-                  "What LIVE locks: Clear on Looper and Mic channels. Load on the drum rows and on Looper and Mic channels. Import on the Loop and Mic screens, and Import and Load in Drum styles. The DRUM KIT arrows on the Sound and Drum screens. Typing a number on a knob, while a drag still works. The names of Looper and Mic channels, the Looper page name, and the long-press that opens Page name.",
+                  "What LIVE locks: Clear on Looper and Mic channels. Load on the drum rows and on Looper channels only. Mic channels have no Load key in 1.10. Import on the Loop and Mic screens, and Import and Load in Drum styles. The DRUM KIT arrows on the Sound and Drum screens. Typing a number on a knob, while a drag still works. The names of Looper and Mic channels, the Looper page name, and the long-press that opens Page name.",
                   "What LIVE leaves open: Rec, Play, Stop, M, S, Redo, Save, and Export. The drum sample list and the sample arrows, CLEAR on the drums, switching pages, presets, and everything you play. Another tap on the chip goes back to PRO."
                 ],
                 "media": "assets/posters/en/p02-sound-live-w630.jpg",
@@ -2999,7 +2999,7 @@
         "listenNote": "Low frequencies are barely audible on phone speakers. For the full experience, use headphones or suitable speakers.",
         "synthsHeading": "Preset pages",
         "synthsIntro": "Eight synth preset pages. Each page is one musical job, eight named voices.",
-        "launchNote": "Coming to Google Play in October 2026. L Studio Pro, $8."
+        "launchNote": "Coming soon to Google Play. L Studio Pro, $8."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -3350,8 +3350,8 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro for Android comes to Google Play in October 2026, for $8. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android comes to Google Play in October 2026, for $8. Version 1.10 (coming soon to the store), 77.5 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
+        "lede": "L Studio Pro for Android is coming soon to Google Play, for $8. Purchases are not available on this website right now.",
+        "body": "L Studio Pro for Android is coming soon to Google Play, for $8. Version 1.10 (coming soon to the store), 77.5 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
           "L Studio Pro for Android on Google Play, $8 at launch, 77.5 MB",
@@ -3386,7 +3386,7 @@
         "navLabel": "Updates",
         "pageTitle": "What's new in L Studio.",
         "pageKicker": "L-STUDIO / UPDATES",
-        "pageIntro": "Version 1.10 is coming soon to the store. L Studio Pro comes to Google Play in October 2026, for $8.",
+        "pageIntro": "Version 1.10 is coming soon to the store. L Studio Pro is coming soon to Google Play, for $8.",
         "tickerLabel": "Updates",
         "statusLabels": {
           "in_progress": "In progress",
@@ -3573,9 +3573,9 @@
         ]
       },
       "launch": {
-        "headline": "Coming to Google Play in October 2026.",
+        "headline": "Coming soon to Google Play.",
         "price": "L Studio Pro, $8.",
-        "note": "Coming to Google Play in October 2026. L Studio Pro, $8."
+        "note": "Coming soon to Google Play. L Studio Pro, $8."
       }
     },
     "ru": {
@@ -3907,7 +3907,7 @@
       "tester": {
         "kicker": "РАННИЙ ДОСТУП",
         "title": "Запись в тестеры закрыта.",
-        "body": "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. После теста L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
+        "body": "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. После теста L Studio Pro скоро выйдет в Google Play, за $8.",
         "status": "Запись в тестеры закрыта. Все 44 места заняты.",
         "spotsLabel": "занято",
         "spotsStatus": "Запись закрыта",
@@ -3954,7 +3954,7 @@
                 "title": "Режим LIVE",
                 "body": [
                   "PRO обычный режим, где всё открыто. LIVE режим, который блокирует некоторые кнопки, чтобы вы могли сосредоточиться на игре. Он удобен для записи и выступления, потому что случайное нажатие не сотрёт запись, не загрузит файл и не переименует канал.",
-                  "Что блокирует LIVE: Clear в каналах Looper и Mic. Load в рядах ударных и в каналах Looper и Mic. Import на экранах Loop и Mic, а также Import и Load в Drum styles. Стрелки DRUM KIT на экранах Sound и Drum. Ввод числа на регуляторе, при этом перетаскивание работает. Имена каналов Looper и Mic, имя страницы Looper и долгое нажатие, открывающее Page name.",
+                  "Что блокирует LIVE: Clear в каналах Looper и Mic. Load только в рядах ударных и в каналах Looper. У каналов Mic в 1.10 нет клавиши Load. Import на экранах Loop и Mic, а также Import и Load в Drum styles. Стрелки DRUM KIT на экранах Sound и Drum. Ввод числа на регуляторе, при этом перетаскивание работает. Имена каналов Looper и Mic, имя страницы Looper и долгое нажатие, открывающее Page name.",
                   "Что LIVE оставляет открытым: Rec, Play, Stop, M, S, Redo, Save и Export. Список сэмплов ударных и стрелки сэмплов, CLEAR на ударных, переключение страниц, пресеты и всё, что вы играете. Ещё одно нажатие на значок возвращает PRO."
                 ],
                 "media": "assets/posters/en/p02-sound-live-w630.jpg",
@@ -4788,7 +4788,7 @@
         "listenNote": "Низкие частоты почти не слышны в динамиках телефона. Для полного звучания используйте наушники или подходящие колонки.",
         "synthsHeading": "Страницы пресетов",
         "synthsIntro": "Восемь страниц пресетов синтезатора. Каждая страница - одна музыкальная задача, восемь голосов с именами.",
-        "launchNote": "Выходит в Google Play в октябре 2026. L Studio Pro, $8."
+        "launchNote": "Скоро в Google Play. L Studio Pro, $8."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -5139,8 +5139,8 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro для Android выйдет в Google Play в октябре 2026, за $8. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android выйдет в Google Play в октябре 2026, за $8. Версия 1.10 (скоро в магазине), 77.5 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
+        "lede": "L Studio Pro для Android скоро выйдет в Google Play, за $8. Покупки на этом сайте сейчас недоступны.",
+        "body": "L Studio Pro для Android скоро выйдет в Google Play, за $8. Версия 1.10 (скоро в магазине), 77.5 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
           "L Studio Pro для Android в Google Play, $8 при запуске, 77.5 МБ",
@@ -5175,7 +5175,7 @@
         "navLabel": "Обновления",
         "pageTitle": "Что нового в L Studio.",
         "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-        "pageIntro": "Версия 1.10 скоро появится в магазине. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
+        "pageIntro": "Версия 1.10 скоро появится в магазине. L Studio Pro скоро выйдет в Google Play, за $8.",
         "tickerLabel": "Обновления",
         "statusLabels": {
           "in_progress": "В работе",
@@ -5362,9 +5362,9 @@
         ]
       },
       "launch": {
-        "headline": "Выходит в Google Play в октябре 2026.",
+        "headline": "Скоро в Google Play.",
         "price": "L Studio Pro, $8.",
-        "note": "Выходит в Google Play в октябре 2026. L Studio Pro, $8."
+        "note": "Скоро в Google Play. L Studio Pro, $8."
       }
     },
     "ar": {
@@ -5696,7 +5696,7 @@
       "tester": {
         "kicker": "وصول مبكر",
         "title": "التسجيل للمختبرين مغلق.",
-        "body": "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. بعد الاختبار، يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
+        "body": "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. بعد الاختبار، يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
         "status": "التسجيل للمختبرين مغلق. جميع الأماكن الـ44 محجوزة.",
         "spotsLabel": "محجوزة",
         "spotsStatus": "التسجيل مغلق",
@@ -5743,7 +5743,7 @@
                 "title": "وضع LIVE",
                 "body": [
                   "PRO هو الوضع العادي، وكل شيء فيه مفتوح. LIVE وضع يقفل بعض الأزرار لتركّز على العزف. وهو مناسب للتسجيل وللعروض، لأن نقرة بالخطأ لن تمسح تسجيلاً ولن تحمّل ملفاً ولن تغيّر اسم قناة.",
-                  "ما يقفله LIVE: Clear في قنوات Looper وMic. Load في صفوف الطبول وفي قنوات Looper وMic. Import في شاشتي Loop وMic، وImport وLoad في Drum styles. أسهم DRUM KIT في شاشتي Sound وDrum. كتابة رقم على مقبض، بينما يبقى السحب يعمل. أسماء قنوات Looper وMic، واسم صفحة Looper، والضغط المطول الذي يفتح Page name.",
+                  "ما يقفله LIVE: Clear في قنوات Looper وMic. Load في صفوف الطبول وفي قنوات Looper فقط. قنوات Mic ليس فيها مفتاح Load في 1.10. Import في شاشتي Loop وMic، وImport وLoad في Drum styles. أسهم DRUM KIT في شاشتي Sound وDrum. كتابة رقم على مقبض، بينما يبقى السحب يعمل. أسماء قنوات Looper وMic، واسم صفحة Looper، والضغط المطول الذي يفتح Page name.",
                   "ما يتركه LIVE مفتوحاً: Rec وPlay وStop وM وS وRedo وSave وExport. قائمة عينات الطبول وأسهم العينات، وCLEAR في الطبول، والتبديل بين الصفحات، والإعدادات المسبقة، وكل ما تعزفه. نقرة أخرى على الشارة تعيدك إلى PRO."
                 ],
                 "media": "assets/posters/en/p02-sound-live-w630.jpg",
@@ -6577,7 +6577,7 @@
         "listenNote": "الترددات المنخفضة تكاد لا تُسمع عبر سماعات الهاتف. لتجربة كاملة استخدم سماعات رأس أو مكبرات مناسبة.",
         "synthsHeading": "صفحات الإعدادات المسبقة",
         "synthsIntro": "ثماني صفحات إعدادات للسينث. كل صفحة مهمة موسيقية واحدة، وثمانية أصوات بأسماء.",
-        "launchNote": "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$."
+        "launchNote": "قادم قريباً إلى Google Play. L Studio Pro، 8$."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -6928,8 +6928,8 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro لأندرويد يصل إلى Google Play في أكتوبر 2026، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد يصل إلى Google Play في أكتوبر 2026، بسعر 8$. الإصدار 1.10 (قريباً في المتجر)، 77.5 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
+        "lede": "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
+        "body": "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. الإصدار 1.10 (قريباً في المتجر)، 77.5 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
           "L Studio Pro لأندرويد على Google Play، 8$ عند الإطلاق، 77.5 ميغابايت",
@@ -6964,7 +6964,7 @@
         "navLabel": "التحديثات",
         "pageTitle": "ما الجديد في L Studio.",
         "pageKicker": "L-STUDIO / التحديثات",
-        "pageIntro": "الإصدار 1.10 قريباً في المتجر. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
+        "pageIntro": "الإصدار 1.10 قريباً في المتجر. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
         "tickerLabel": "التحديثات",
         "statusLabels": {
           "in_progress": "قيد العمل",
@@ -7151,9 +7151,9 @@
         ]
       },
       "launch": {
-        "headline": "قادم إلى Google Play في أكتوبر 2026.",
+        "headline": "قادم قريباً إلى Google Play.",
         "price": "L Studio Pro، 8$.",
-        "note": "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$."
+        "note": "قادم قريباً إلى Google Play. L Studio Pro، 8$."
       }
     }
   },

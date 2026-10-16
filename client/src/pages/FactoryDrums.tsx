@@ -106,7 +106,7 @@ const emptyChrome = (language: Language): ChromeCopy => ({
   privacy: language === "he" ? "פרטיות" : language === "ru" ? "Приватность" : language === "ar" ? "الخصوصية" : "Privacy",
   terms: language === "he" ? "תנאי שימוש" : language === "ru" ? "Условия" : language === "ar" ? "الشروط" : "Terms",
   presetsLabel: "Factory 64",
-  launchNote: language === "he" ? "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$." : language === "ru" ? "Выходит в Google Play в октябре 2026. L Studio Pro, $8." : language === "ar" ? "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$." : "Coming to Google Play in October 2026. L Studio Pro, $8.",
+  launchNote: language === "he" ? "מגיע בקרוב ל-Google Play. L Studio Pro, 8$." : language === "ru" ? "Скоро в Google Play. L Studio Pro, $8." : language === "ar" ? "قادم قريباً إلى Google Play. L Studio Pro، 8$." : "Coming soon to Google Play. L Studio Pro, $8.",
   onThisPage: language === "he" ? "בעמוד הזה" : language === "ru" ? "На этой странице" : language === "ar" ? "في هذه الصفحة" : "On this page",
 });
 
