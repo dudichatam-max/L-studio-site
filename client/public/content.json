@@ -145,97 +145,178 @@
         "title": "שאלות ותשובות",
         "items": [
           {
-            "question": "מה מיוחד בעבודה עם תדרים במקום רק עם שמות של תווים?",
+            "question": "האפליקציה כבר בגוגל פליי? וכמה היא עולה?",
             "answer": [
-              "ב־L Studio כל מקש יכול להיות מכוון לתדר משלו. אתה לא חייב להיצמד למרווחים של כיוון שווה־מזג או לתווים קבועים של פסנתר.",
-              "אפשר לערוך את התדרים עצמם, לשנות אוקטבה ולבנות מערכת צלילים שמתאימה בדיוק למה שאתה רוצה לשמוע."
+              "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. זה תשלום חד פעמי. גרסה 1.10 בקרוב בחנות.",
+              "אחרי שהיא תשוחרר, קונים אותה דרך Google Play. האתר הזה לא מוכר את האפליקציה ואין בו כפתור הורדה."
             ]
           },
           {
-            "question": "אם הקלטתי לופ ואז שיניתי את הסאונד, הלופ משתנה גם הוא?",
+            "question": "מה כלול ב-Pro? יש גרסה חינמית?",
             "answer": [
-              "לא.",
-              "כשהלופ מוקלט, L Studio שומר את הצליל שכבר עבר דרך הסינתיסייזר והאפקטים. כלומר, הלופ הוא הקלטת אודיו אמיתית ולא רשימה של תווים שמחכה להתנגן מחדש.",
-              "אם תשנה אחר כך את ה־Cutoff, ה־Wave, ה־Drive או אפקט אחר, ההקלטה שכבר עשית תישאר כמו שהייתה בזמן ההקלטה.",
-              "זה מאפשר לבנות שכבות של סאונד ולהמשיך לנגן מעליהן בלי שהשכבות הישנות ישתנו מתחת לידיים שלך."
+              "יש גרסה אחת של האפליקציה: Pro. זו האפליקציה המלאה: חבילת Factory עם 64 פריסטים ושמונה ערכות תופים, וגם אחת עשרה חבילות התופים של Exclusive, בלי עלות נוספת. ל-Exclusive אין כפתור הורדה.",
+              "ב-Pro אין פרסומות, והכול בו פתוח מההפעלה הראשונה.",
+              "דמו חינמי יגיע בקרוב, ויהיה אפשר להוריד אותו מהאתר הזה.",
+              "את חבילות Exclusive אפשר לראות בעמוד Exclusive באתר."
             ]
           },
           {
-            "question": "אז ה־PAD הוא אפקט או כלי נגינה?",
+            "question": "על אילו מכשירים זה רץ, ובאילו שפות?",
             "answer": [
-              "ה־PAD נועד לנגינה.",
-              "הוא עובד בשני צירים ויכול לשלוט במקורות שונים במערכת. אפשר להפנות אותו לסינתיסייזר, ללופר, למיקרופון או לתופים, ולהשתמש בתנועה שלו גם ל־Wah, שינוי אוקטבה, Chorus ופעולות קצביות כמו Stutter.",
-              "כשמקליטים לופ, גם תנועת ה־PAD יכולה להישמר יחד עם ההקלטה.",
-              "כלומר, אפשר לא רק להקליט מה ניגנת, אלא גם חלק מהדרך שבה ניגנת אותו."
+              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה, וגודלה 77.5MB. בינתיים אין גרסה לאייפון.",
+              "האפליקציה נבדקה על טלפוני אנדרואיד שונים. היא לא נבדקה על טאבלטים, ולכן אין הבטחה לתמיכה בטאבלט.",
+              "בטלפון האפליקציה נשארת זקופה, לאורך.",
+              "האפליקציה בארבע שפות: עברית, אנגלית, רוסית וערבית. מחליפים ב-Settings, בשורה Language."
             ]
           },
           {
-            "question": "אפשר להוציא נגינה מיקרוטונאלית ל־MIDI?",
+            "question": "האפליקציה עובדת בלי אינטרנט? מישהו רואה את המוזיקה שלי?",
             "answer": [
-              "כן, אבל חשוב להבין איך זה עובד.",
-              "MIDI רגיל מבוסס על תווים, ולכן L Studio שומר את הכוונון המיקרוטונאלי באמצעות שילוב של תו MIDI ו־Pitch Bend. המערכת מחשבת את התדר וממפה אותו לתו הקרוב ביותר, ואז משתמשת ב־Pitch Bend כדי להחזיר את הסטייה מהתדר הסטנדרטי.",
-              "לכן, כדי לשמוע את הכיוון המיקרוטונאלי גם בתוכנה או בכלי חיצוני, הכלי שמקבל את ה־MIDI צריך לתמוך ב־Pitch Bend ולהיות מוגדר בהתאם."
+              "כן, היא עובדת בלי חיבור לאינטרנט. האפליקציה לא מבקשת הרשאת אינטרנט בכלל.",
+              "ההרשאה היחידה שהיא מבקשת היא למיקרופון, בפעם הראשונה שמקישים Rec. אפשר לבטל אותה בכל רגע בהגדרות הטלפון.",
+              "ההקלטות, הפריסטים והסשנים נשארים בטלפון או במקום שבחרתם לשמור אליו. באפליקציה אין פרסומות ואין איסוף נתוני שימוש."
             ]
           },
           {
-            "question": "אפשר להשתמש במיקרופון כחלק מהנגינה ולא רק להקליט קול?",
+            "question": "אני חדש בזה. מאיפה מתחילים?",
             "answer": [
-              "כן.",
-              "המיקרופון הוא חלק מנתיב האודיו של L Studio. יש לו ערוצים משלו, שליטה בעוצמה ובמיקום בסטריאו, ניטור, Gain ופילטר High-Pass.",
-              "כך אפשר לשלב מקור חי בתוך הסטאפ ולשלוט בו לצד הסינתיסייזר, הלופים והתופים.",
-              "אם משתמשים בניטור דרך רמקולים, צריך כמובן לשים לב לפידבק אקוסטי."
+              "פותחים ונוגעים. אין צורך בקורס.",
+              "ב-Settings יש Show tutorial, סיור קצר באפליקציה. לסיור יש תפריט תחנות: אפשר לדלג, להמשיך מהמקום שעצרתם או לסיים מהתפריט.",
+              "במדריך למשתמש באתר יש שבעה נושאים. בסוף כל נושא יש שלושה טיפים למתחילים וטיפ אחד למתקדמים."
             ]
           },
           {
-            "question": "אפשר לבנות ביט בלי לתכנת כל תוף מאפס?",
+            "question": "איך מקליטים ומשתפים את מה שיצרתי?",
             "answer": [
-              "כן.",
-              "Style פותח את חלון Drum Style. שם בוחרים ערכה.",
-              "Random בונה תבנית אחרת בסגנון הנוכחי. זה לא הטלת מטבע.",
-              "אחר כך אפשר לערוך את התבנית, את ה-BPM ואת ה-Swing.",
-              "ב־Pro יש גם שמונה ערכות תופים מוכנות, כולל Experimental עם שמונה ערוצים טעונים ומקצבים מוכנים."
+              "בשורה העליונה יש שני מקשים. WAV מקליט את מה ששומעים, כך שאפשר לשתף אותו בדיוק כמו שהוא נשמע. MIDI שומר את הנוטות שניגנתם על המקלדות, כך שאפשר לערוך אותן אחר כך.",
+              "מקישים פעם אחת כדי להתחיל ופעם נוספת כדי לעצור. אחרי העצירה הטלפון שואל איפה לשמור את הקובץ. בזמן ההקלטה מופיע שעון זהב בדקות ושניות.",
+              "MIDI לא כולל את התופים, הלופים והמיקרופון. הוא כולל רק את מה שניגנתם על המקשים.",
+              "כדי לשמור ערוץ לופר או ערוץ מיק אחד כקובץ WAV, משתמשים ב-Save של הערוץ. Export שומר את כל הפרויקט."
             ]
           },
           {
-            "question": "מה ההבדל בין Preset לבין Session?",
+            "question": "אפשר להשתמש בצלילים ובקבצי אודיו משלי?",
             "answer": [
-              "Preset מיועד בעיקר לשמור סאונד.",
-              "Session מיועד לשמור מצב עבודה שלם.",
-              "ב־Session נשמרים בין היתר הכיוון של המקלדת, הסולם, ה־Waveform, מעטפת ה־ADSR, הפילטר, האפקטים, האוקטבה, ניתוב ה־PAD ומידע הקשור ללופר, לתופים ולמיקרופון.",
-              "כלומר, במקום לנסות לזכור איך בנית את הסטאפ, אתה יכול לשמור אותו ולחזור אליו."
+              "כן, בשורות התופים ובערוצי הלופר. לערוצי המיק אין Load: הם מקליטים מהמיקרופון, ו-Save כותב קובץ WAV.",
+              "תופים: במסך Drum, הקשה על שם שורה (Kick, Snare ועוד) פותחת רשימת צלילים, ו-Load בוחר קובץ אודיו מהטלפון. הקובץ הופך לצליל של השורה הזאת בקיט, ואפשר לעצב אותו עם GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE ו-REVERB. מקצב שבחר בשורה הזאת צליל אחר מהרשימה שומר על הבחירה שלו. בכל אחת מ-8 השורות יש קובץ טעון אחד, וטעינה חדשה מחליפה אותו.",
+              "לופר: Load בערוץ בוחר קובץ אודיו לערוץ הזה ומחליף את ההקלטה שבו. Redo לא יחזיר את ההקלטה הקודמת. יש 32 ערוצים, קובץ אחד בכל ערוץ.",
+              "אילו קבצים: כל קובץ אודיו שהאנדרואיד בטלפון שלכם יודע לנגן ולפענח. ל-L Studio אין רשימת פורמטים משלה, ולכן פורמט שהטלפון לא מפענח נכשל עם הודעה (Could not load audio או Could not load the audio file).",
+              "איך הקובץ נקרא: קובץ סטריאו מעורבב למונו. כל קצב דגימה מומר לקצב של האפליקציה, שהוא קצב יציאת האודיו של הטלפון (44.1 kHz אם הטלפון לא מדווח).",
+              "אורך: בשורת תופים אין לאפליקציה מגבלת אורך או גודל. היא מפענחת את כל הקובץ לזיכרון, ולכן עדיף צלילים קצרים. בערוץ לופר, קובץ ארוך מ-30:00 נחתך ב-30:00 בלי הודעה.",
+              "במצב LIVE הכפתור Load נעול. כדי לטעון, חוזרים ל-PRO."
             ]
           },
           {
-            "question": "ומה קורה אם אני רוצה להעביר את הפרויקט למכשיר אחר?",
+            "question": "מה ההבדל בין Preset לבין סשן?",
             "answer": [
-              "L Studio כולל מנגנוני Import ו־Export לפרויקטים ולערכות.",
-              "פרויקטים של לופר יכולים לכלול את האודיו ואת נתוני ה־PAD שלהם, ערכות התופים יכולות לעבור יחד עם הדגימות וה־Patterns שלהן, ו־Sessions ניתנים לייצוא וייבוא כקבצי פרויקט.",
-              "המטרה היא שהעבודה שלך לא תהיה כלואה בתוך מסך אחד של האפליקציה."
+              "Preset שומר סאונד אחד, כולל אילו גלים דולקים והגדרות ה-Sound FX. לחיצה ארוכה על Presets שומרת מהר את הסאונד הנוכחי בפריסט שנטען.",
+              "סשן שומר את כל הפרויקט: הלופים, ערוצי המיק, התופים, הפריסטים, ה-Sound FX, השמות והצבעים של עמודי הלופ, פריסטי התדרים, בחירות הסמפלים בתופים, יעדי הפד והמילים.",
+              "New session מרוקן את ערוצי הלופר והמיק. הקיטים, המקצבים והפריסטים נשארים."
             ]
           },
           {
-            "question": "אפשר ממש להקליט שיר שלם מתוך L Studio?",
+            "question": "איך מגבים את העבודה או עוברים לטלפון חדש?",
             "answer": [
-              "אפשר לבנות ולהקליט ביצוע שלם בתוך המערכת.",
-              "העבודה בנויה יותר סביב נגינה, שכבות, לופים, תופים, מיקרופון וסינתזה בזמן אמת.",
-              "בנוסף, אפשר להקליט את המיקס הסופי ישירות לקובץ WAV, כך שאפשר לקחת את הביצוע החוצה גם בלי להפוך את L Studio לעורך אולפן מלא."
+              "פותחים את Load Console מתוך Settings. Export all שומר את כל הסשנים בקובץ אחד, ו-Export selected שומר רק את הסשן המסומן. כדאי לשמור את הקובץ גם מחוץ לאפליקציה.",
+              "בטלפון החדש משתמשים ב-Import all או ב-Import session ובוחרים את הקובץ. סשן מיובא עם שם שכבר קיים מקבל שם חדש, ולא מחליף את הקיים.",
+              "לפרויקט לופר או מיק בלבד יש Export ו-Import במסך שלו. לפריסטים ולסגנונות תופים יש Save, Export ו-Import בחלון שלהם."
             ]
           },
           {
-            "question": "כמה מהדברים שאני עושה בזמן נגינה באמת נשמרים?",
+            "question": "מה זה Load Console?",
             "answer": [
-              "יותר ממה שנדמה.",
-              "בנוסף לתווים עצמם, המערכת יכולה לתעד אירועי MIDI ואת התדרים שלהם, וב־Looper תנועת ה־PAD יכולה להישמר כחלק מהביצוע.",
-              "זה חשוב במיוחד כשאתה עובד בצורה ביצועית: תנועה של הפד, שינויי סאונד ושכבות אודיו יכולים להיות חלק מהתוצאה ולא רק הגדרה זמנית של המערכת."
+              "ב-Settings, הקשה על Load פותחת את Load Console. כל סשן שמור הוא שורה עם מספר ושם, ומתחת לשם יש ארבעה מקשים: LOAD, SAVE, EDIT ו-X.",
+              "LOAD טוען את הסשן. לפני הטעינה האפליקציה שואלת, ושומרת גיבוי אוטומטי של הפריסטים וקיטי התופים הנוכחיים. SAVE מחליף את הסשן בהגדרה הנוכחית, אחרי שמאשרים ב-Overwrite. EDIT משנה שם, וגם לחיצה ארוכה על השורה עושה את זה. X מוחק, אחרי שאלה.",
+              "בשמירה, בטעינה, בייצוא ובייבוא מופיע פס התקדמות עם אחוז אמיתי והודעת הצלחה או שגיאה ברורה. אי אפשר לסגור אותו בזמן שהפעולה רצה."
             ]
           },
           {
-            "question": "אפשר להשתמש ב־L Studio ככלי ביצוע ולא רק ככלי ליצירה?",
+            "question": "יש פעולות נסתרות שכדאי להכיר?",
             "answer": [
-              "כן. למעשה, חלק גדול מהארכיטקטורה בנוי סביב הרעיון הזה.",
-              "הסינתיסייזר, ה־PAD, הלופר, התופים והמיקרופון נמצאים באותו נתיב אודיו ומגיעים יחד למיקס הסופי.",
-              "אפשר להתחיל מצליל חי, להקליט אותו ללופ, להוסיף עליו תופים, להשתמש שוב ב־PAD ולשלב מקור מהמיקרופון בלי להחליף סביבת עבודה בכל שלב.",
-              "L Studio בנוי כך שהפעולות האלה יכולות לקרות כחלק מאותו ביצוע."
+              "כן. לכמה פעולות אין כפתור משלהן, רק לחיצה ארוכה או החזקה.",
+              "Presets (מסך Sound): לחיצה ארוכה שומרת מהר את הסאונד הנוכחי בפריסט שנטען.",
+              "מספר מקצב במסך Drum (1 עד 8): לחיצה ארוכה פותחת Pattern repeats, עם COPY ו-PASTE.",
+              "Drum Kits (מסך Drum): החזקה פותחת Random genre, ובו בוחרים את הז'אנר ש-RANDOM משתמש בו.",
+              "מספר עמוד בלופר: לחיצה ארוכה פותחת שם וצבע לעמוד, מתוך 8 צבעים.",
+              "פריסט ב-Sound FX, ב-Drum FX, ב-Looper FX או ב-Mic FX: לחיצה ארוכה פותחת Amount, EQ, Transpose ו-Reverb לפריסט הזה.",
+              "שורת סשן ב-Load Console: לחיצה ארוכה משנה שם.",
+              "תיבת מקצב ב-Loop Editor: לחיצה ארוכה בוחרת כמה פעמים המקצב הזה חוזר.",
+              "1/4, 1/8, 1/16 ו-1/32 בפד ובמסך Drum: מחזיקים כדי לחזור בקצב ה-BPM של התופים, ומשחררים כדי להפסיק. החזקת STOP מנמיכה ומשתיקה.",
+              "המספר מתחת לנוב: הקשה עליו פותחת תיבה להקלדת ערך מדויק."
+            ]
+          },
+          {
+            "question": "איך הופכים כמה מקצבי תופים לשיר שלם?",
+            "answer": [
+              "לוחצים לחיצה ארוכה על מספר מקצב, פותחים Pattern repeats ובוחרים 1 עד 10 חזרות, אינסוף או Default. נותנים למקצבים 1, 2 ו-3 את הערך 4, והתופים מנגנים את מקצב 1 ארבע פעמים, אחר כך 2, אחר כך 3, וחוזרים ל-1.",
+              "מקצבים שנשארו על Default מדולגים. אינסוף נשאר על המקצב עד שמשנים.",
+              "כדי להעתיק מקצב: לוחצים לחיצה ארוכה על המקצב שרוצים להעתיק ומקישים COPY. אחר כך לוחצים לחיצה ארוכה על המקצב שרוצים לשנות ומקישים PASTE. ההדבקה מחליפה צעדים, סאמפלים, עוצמות וכפתורי סאונד, והמקצב שומר את מספר החזרות, ה-BPM והסווינג שלו. REDO מבטל הדבקה.",
+              "גם ערוצי לופר יכולים ללכת אחרי המקצבים: ב-Loop Editor מדליקים תיבות מקצב, והערוץ מנגן רק כשהתופים על אחד המקצבים האלה."
+            ]
+          },
+          {
+            "question": "מה זה PRO ו-LIVE בשורה העליונה?",
+            "answer": [
+              "PRO הוא המצב הרגיל, עם הכול פתוח. LIVE נועל כמה כפתורים כדי שתוכלו להתרכז בנגינה, וכדי שהקשה בטעות לא תמחק הקלטה ולא תטען קובץ.",
+              "LIVE נועל Clear בערוצי הלופר והמיק, Load בשורות התופים ובערוצי הלופר, שמות של ערוצים ועמודים, Import, חיצי DRUM KIT והקלדת מספר על נוב.",
+              "הוא משאיר פתוחים Rec, Play, Stop, השתקה וסולו, Save, Export, מעבר בין עמודים, פריסטים וכל מה שמנגנים. הקשה נוספת על הכפתור מחזירה ל-PRO."
+            ]
+          },
+          {
+            "question": "מחקתי הקלטה או הקלטתי מעליה בטעות. אפשר להחזיר?",
+            "answer": [
+              "כן. במסכי Loop ו-Mic יש מקש Redo ליד מקשי העמודים. הוא מחזיר את ההקלטה האחרונה שאיבדתם במסך הזה: כזו שנמחקה, שהוקלט עליה או שנחתכה בעורך. הוא לא עובד בזמן שהערוץ עסוק.",
+              "לכל אחד מהם, הלופר והמיק, יש שחזור נפרד.",
+              "במסך Drum, REDO בכותרת חוזר צעד אחד אחורה בכל הקשה: צעדים, סאמפלים, עוצמות, שמאל וימין, נובי הסאונד והמקצב, כולל CLEAR והדבקה."
+            ]
+          },
+          {
+            "question": "איך עובד Custom Frequency? אפשר לכוון סקאלה משלי?",
+            "answer": [
+              "כן. ב-Settings, השורה הראשונה Custom Frequency פותחת Tune frequencies (Hz). לכל קליד יש תדר ב-Hz, ואפשר לכוון אותו לתדר שרוצים. הקלידים מתחילים על 222, 299, 333, 355, 396, 444, 463 ו-477 Hz.",
+              "אם אתם רוצים נקודת התחלה, יש תבניות: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd ו-Pentatonic, עם D על 261 Hz. הקשה על שם מפעילה את התבנית.",
+              "ב-My Presets יש 8 כפתורים עם שמות שאתם בוחרים. Save שומר בהם את התדרים הנוכחיים, ופריסטי התדרים נשמרים גם בסשן.",
+              "המקש Key במסך Sound הוא משהו אחר: הוא רק מסמן אילו מקשים שייכים לסקאלה, ולא משנה אף תדר."
+            ]
+          },
+          {
+            "question": "אפשר לשמור נגינה מיקרוטונאלית ב-MIDI? אפשר לחבר מקלדת MIDI?",
+            "answer": [
+              "כן, אבל זו הקלטה שנשמרת לקובץ. מקש MIDI שומר קובץ MIDI של הנוטות שניגנתם על המקלדות. כל תו נשמר כנוטה הקרובה אליו ועוד Pitch Bend שמחזיר את ההפרש מהתדר המדויק. הקובץ מניח טווח Pitch Bend של שני חצאי טונים.",
+              "כדי לשמוע את הכוונון המיקרוטונאלי, התוכנה שפותחת את הקובץ צריכה לתמוך ב-Pitch Bend ולהיות מוגדרת לשני חצאי טונים. תווים שמוחזקים יחד מקבלים כל אחד ערוץ MIDI משלו, כדי שכל אחד ישמור על הכיפוף שלו.",
+              "בינתיים ל-L Studio אין תמיכה במקלדת MIDI חיצונית, ואין MIDI חי, לא כניסה ולא יציאה. זה מתוכנן לעתיד, בלי תאריך."
+            ]
+          },
+          {
+            "question": "ההקלטה מהמיקרופון שקטה או מחזירה סאונד. מה עושים?",
+            "answer": [
+              "אם היא שקטה: מגבירים את Gain, שנע מ-1x עד 4x ומתחיל ב-2x. אחר כך בודקים את Vol של הערוץ, מ-0% עד 100%. אחרי שיש הקלטה, מקישים על הוויזואלייזר של הערוץ ופותחים את Mic Editor: ב-GAIN הערך 50 הוא הווליום המקורי, ו-100 מוסיף 12 dB.",
+              "אם יש החזר סאונד: כש-Monitor דולק, משתמשים באוזניות. בלי אוזניות הטלפון מזהיר מהחזר מהרמקול.",
+              "HPF חותך רעם נמוך, מ-40 Hz עד 240 Hz. בפעם הראשונה שמקישים Rec הטלפון מבקש גישה למיקרופון. אם סירבתם, מאשרים אותה בהגדרות הטלפון."
+            ]
+          },
+          {
+            "question": "כמה ערוצים יש, ומה המגבלות?",
+            "answer": [
+              "לופר: 32 ערוצים, כלומר 8 עמודים ו-4 ערוצים בכל עמוד. הקלטה יכולה להימשך עד 30 דקות, וב-30:00 היא נעצרת לבד.",
+              "מיק: שישה ערוצים בשני עמודים. הקלטה יכולה להימשך עד 4:00 בשלושת הערוצים של העמוד הראשון ועד 3:00 בשלושת הערוצים של העמוד השני. היא נעצרת לבד בגבול.",
+              "תופים: 8 שורות (Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 ו-Voice), 8 מקצבים בכל קיט ו-16 צעדים בכל שורה."
+            ]
+          },
+          {
+            "question": "יש השהיה באודיו או חריקות. מה אפשר לעשות?",
+            "answer": [
+              "L Studio מבקשת מאנדרואיד אודיו בהשהיה נמוכה באנדרואיד 8.0 ומעלה. באנדרואיד 7.0 ו-7.1 היא רצה בלי הבקשה הזאת, ולכן ההשהיה יכולה להיות גדולה יותר.",
+              "ההשהיה תלויה גם בטלפון עצמו. ב-Settings, מתחת ל-Factory 64, Benchmark פותח כלי בדיקת אודיו.",
+              "אם החריקות או ההשהיה לא עוברות, כתבו לתמיכה עם דגם הטלפון, גרסת האנדרואיד וגרסת האפליקציה."
+            ]
+          },
+          {
+            "question": "איך מקבלים עזרה, ומה לגבי החזר כספי?",
+            "answer": [
+              "כותבים ל-dudichatam@gmail.com. כדאי לצרף דגם טלפון, גרסת אנדרואיד, גרסת אפליקציה ומה עשיתם.",
+              "האתר הזה לא מוכר כלום ואין בו מדיניות החזר משלו. אחרי שהאפליקציה תשוחרר, הרכישה תהיה דרך Google Play, ולשאלות על רכישה אפשר לכתוב לאותה כתובת.",
+              "מה השתנה בכל גרסה אפשר לראות בעמוד Updates באתר."
             ]
           }
         ]
@@ -248,7 +329,7 @@
       "tester": {
         "kicker": "EARLY ACCESS",
         "title": "ההרשמה לבודקים נסגרה.",
-        "body": "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. אחרי הבדיקה, L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
+        "body": "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. אחרי הבדיקה, L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
         "status": "ההרשמה לבודקים נסגרה. כל 44 המקומות נתפסו.",
         "spotsLabel": "נתפסו",
         "spotsStatus": "ההרשמה נסגרה",
@@ -295,7 +376,7 @@
                 "title": "מצב LIVE",
                 "body": [
                   "PRO הוא המצב הרגיל, עם הכול פתוח. LIVE הוא מצב שנועל כמה כפתורים כדי שתוכלו להתרכז בנגינה. הוא טוב להקלטה ולהופעה, כי הקשה בטעות לא תמחק הקלטה, לא תטען קובץ ולא תשנה שם של ערוץ.",
-                  "מה LIVE נועל: Clear בערוצי Looper ו-Mic. Load בשורות התופים ובערוצי Looper ו-Mic. Import במסכי Loop ו-Mic, ו-Import ו-Load ב-Drum styles. חיצי DRUM KIT במסכי Sound ו-Drum. הקלדת מספר על נוב, וגרירה עדיין עובדת. שמות ערוצי Looper ו-Mic, שם עמוד ה-Looper, והלחיצה הארוכה שפותחת את Page name.",
+                  "מה LIVE נועל: Clear בערוצי Looper ו-Mic. Load בשורות התופים ובערוצי Looper בלבד. לערוצי Mic אין מקש Load ב-1.10. Import במסכי Loop ו-Mic, ו-Import ו-Load ב-Drum styles. חיצי DRUM KIT במסכי Sound ו-Drum. הקלדת מספר על נוב, וגרירה עדיין עובדת. שמות ערוצי Looper ו-Mic, שם עמוד ה-Looper, והלחיצה הארוכה שפותחת את Page name.",
                   "מה LIVE משאיר פתוח: Rec, Play, Stop, M, S, Redo, Save ו-Export. רשימת סמפלי התופים וחיצי הסמפלים, CLEAR בתופים, מעבר בין עמודים, פריסטים, וכל מה שאתם מנגנים. הקשה נוספת על הכפתור מחזירה ל-PRO."
                 ],
                 "media": "assets/posters/he/p02-sound-live-w630.jpg",
@@ -1129,7 +1210,7 @@
         "listenNote": "תדרים נמוכים כמעט לא נשמעים ברמקולים של הטלפון. לחוויה מלאה השתמשו באוזניות או ברמקולים מתאימים.",
         "synthsHeading": "עמודי הפריסטים",
         "synthsIntro": "שמונה עמודי פריסטים לסינתיסייזר. כל עמוד הוא משימה מוזיקלית אחת, שמונה קולות עם שם.",
-        "launchNote": "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$."
+        "launchNote": "מגיע בקרוב ל-Google Play. L Studio Pro, 8$."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -1480,8 +1561,8 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro לאנדרואיד מגיע ל-Google Play באוקטובר 2026, ב-8$. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד מגיע ל-Google Play באוקטובר 2026, ב-8$. גרסה 1.10 (בקרוב בחנות), 77.5MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
+        "lede": "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. רכישה באתר אינה זמינה כרגע.",
+        "body": "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. גרסה 1.10 (בקרוב בחנות), 77.5MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
           "L Studio Pro לאנדרואיד ב-Google Play, 8$ בהשקה, 77.5MB",
@@ -1516,7 +1597,7 @@
         "navLabel": "עדכונים",
         "pageTitle": "מה חדש ב-L Studio.",
         "pageKicker": "L-STUDIO / עדכונים",
-        "pageIntro": "גרסה 1.10 בקרוב בחנות. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
+        "pageIntro": "גרסה 1.10 בקרוב בחנות. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
         "tickerLabel": "עדכונים",
         "statusLabels": {
           "in_progress": "בעבודה",
@@ -1703,9 +1784,9 @@
         ]
       },
       "launch": {
-        "headline": "מגיע ל-Google Play באוקטובר 2026.",
+        "headline": "מגיע בקרוב ל-Google Play.",
         "price": "L Studio Pro, 8$.",
-        "note": "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$."
+        "note": "מגיע בקרוב ל-Google Play. L Studio Pro, 8$."
       },
       "carousel": {
         "poster": "פוסטר",
@@ -1938,97 +2019,178 @@
         "title": "Questions and answers",
         "items": [
           {
-            "question": "What's special about working with frequencies instead of only note names?",
+            "question": "Is L Studio on Google Play yet, and how much is it?",
             "answer": [
-              "In L Studio every key can be tuned to its own frequency. You don't have to stick to equal-temperament intervals or fixed piano notes.",
-              "You can edit the frequencies themselves, change octave, and build a sound system that matches exactly what you want to hear."
+              "L Studio Pro for Android is coming soon to Google Play, for $8. It is a one-time payment. Version 1.10 is coming soon to the store.",
+              "Once it is released, you buy it through Google Play. This website does not sell the app and has no download button."
             ]
           },
           {
-            "question": "If I recorded a loop and then changed the sound, does the loop change too?",
+            "question": "What does Pro include? Is there a free version?",
             "answer": [
-              "No.",
-              "When a loop is recorded, L Studio keeps the sound that already went through the synthesizer and effects. In other words, the loop is a real audio recording, not a list of notes waiting to play again.",
-              "If you later change Cutoff, Wave, Drive, or another effect, the recording you already made stays as it was at record time.",
-              "That lets you build layers of sound and keep playing over them without the older layers shifting under your hands."
+              "There is a single version of the app: Pro. It is the whole app: the Factory Pack with 64 presets and eight drum kits, and also the eleven Exclusive drum packs, at no extra cost. There is no download button for Exclusive.",
+              "Pro has no ads, and everything in it is open from the first launch.",
+              "A free demo is coming soon, and it will be downloadable from this website.",
+              "You can see the Exclusive packs on the Exclusive page of this site."
             ]
           },
           {
-            "question": "So is the PAD an effect or an instrument?",
+            "question": "Which devices does it run on, and in which languages?",
             "answer": [
-              "The PAD is meant for playing.",
-              "It works on two axes and can control different sources in the system. You can point it at the synthesizer, the looper, the microphone, or the drums, and use its motion for Wah, octave shifts, Chorus, and rhythmic moves like Stutter.",
-              "When you record a loop, PAD motion can be saved with the recording too.",
-              "So you can capture not only what you played, but also part of how you played it."
+              "L Studio is an Android app. It needs Android 7.0 or newer, and its size is 77.5 MB. There is no iPhone version for now.",
+              "It was tested on various Android phones. It was not tested on tablets, so tablet support is not promised.",
+              "On a phone the app stays upright, in portrait.",
+              "The app comes in four languages: English, Hebrew, Russian, and Arabic. You switch in Settings, on the Language row."
             ]
           },
           {
-            "question": "Can I send microtonal playing out over MIDI?",
+            "question": "Does it work offline? Does anyone see my music?",
             "answer": [
-              "Yes, but it's important to understand how it works.",
-              "Regular MIDI is based on notes, so L Studio keeps microtonal tuning with a mix of a MIDI note and Pitch Bend. The system calculates the frequency, maps it to the nearest note, then uses Pitch Bend to restore the offset from the standard frequency.",
-              "So to hear the microtonal tuning in external software or hardware, the MIDI destination needs to support Pitch Bend and be set up for it."
+              "Yes, it works without an internet connection. The app does not ask for internet access at all.",
+              "The only permission it asks for is the microphone, the first time you tap Rec. You can take it back at any time in your phone's settings.",
+              "Your recordings, presets, and sessions stay on your phone, or wherever you choose to save them. The app has no ads and no analytics."
             ]
           },
           {
-            "question": "Can I use the microphone as part of playing, not only to record voice?",
+            "question": "I'm new to this. Where do I start?",
             "answer": [
-              "Yes.",
-              "The microphone is part of L Studio's audio path. It has its own channels, level and stereo placement, monitoring, Gain, and a High-Pass filter.",
-              "That way you can bring a live source into the setup and control it beside the synthesizer, loops, and drums.",
-              "If you monitor through speakers, of course watch out for acoustic feedback."
+              "Open the app and touch things. You don't need a course.",
+              "In Settings, Show tutorial starts a short tour. The tour has a menu of stations: you can skip, resume where you left off, or finish from the menu.",
+              "The user guide on this site has seven topics. Each one ends with three tips for beginners and one tip for advanced users."
             ]
           },
           {
-            "question": "Can I build a beat without programming every drum from scratch?",
+            "question": "How do I record and share what I made?",
             "answer": [
-              "Yes.",
-              "Style opens the Drum Style window. That is where you pick a kit.",
-              "Random builds another pattern in the current style. It is not a pure coin-flip.",
-              "After that you can edit the pattern, BPM, and Swing.",
-              "Pro also comes with eight ready drum packs, including Experimental with eight loaded channels and ready rhythms."
+              "The top bar has two keys. WAV records what you hear, so you can share it exactly as it sounds. MIDI saves the notes you played on the keyboards, so you can edit them later.",
+              "Tap once to start and once more to stop. After you stop, the phone asks where to save the file. While recording, a gold clock shows minutes and seconds.",
+              "MIDI does not include the drums, the loops, or the microphone. It holds only what you played on the keys.",
+              "To save one Looper or Mic channel as a WAV file, use Save on that channel. Export saves the whole project."
+            ]
+          },
+          {
+            "question": "Can I use my own sounds and audio files?",
+            "answer": [
+              "Yes, on the Drum rows and on the Looper channels. Mic channels have no Load: they record from the microphone, and Save writes a WAV file.",
+              "Drums: on the Drum screen, a tap on a row name (Kick, Snare, and so on) opens a sound list, and Load picks an audio file from your phone. The file becomes that row's own sound in the kit, and you can shape it with GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE, and REVERB. A rhythm that picked a different sound from the list for that row keeps its pick. Each of the 8 rows holds one loaded file, and a new Load replaces it.",
+              "Looper: Load on a channel picks an audio file for that channel and replaces the take on it. Redo can't bring the old take back. There are 32 channels, one file each.",
+              "Which files: any audio file that your phone's Android can play and decode. L Studio has no format list of its own, so a format your phone can't decode fails with a message (Could not load audio, or Could not load the audio file).",
+              "How it is read: a stereo file is mixed down to mono. Any sample rate is converted to the app's rate, which is your phone's audio output rate (44.1 kHz if the phone doesn't report one).",
+              "Length: for a drum row, the app has no length or size limit. It decodes the whole file into memory, so short sounds are the sensible choice. For a Looper channel, a file longer than 30:00 is cut at 30:00 with no message.",
+              "In LIVE mode Load is locked. Go back to PRO to load."
             ]
           },
           {
             "question": "What's the difference between a Preset and a Session?",
             "answer": [
-              "A Preset is mainly for saving a sound.",
-              "A Session is for saving a full working state.",
-              "A Session keeps things like keyboard tuning, scale, Waveform, ADSR envelope, filter, effects, octave, PAD routing, and info related to the looper, drums, and microphone.",
-              "So instead of trying to remember how you built the setup, you can save it and come back to it."
+              "A Preset saves one sound, including which waves are on and the Sound FX settings. A long-press on Presets quick-saves the current sound into the preset that is loaded.",
+              "A Session saves the whole project: the loops, the Mic channels, the drums, the presets, the Sound FX, the Loop page names and colors, the frequency presets, the drum sample picks, the Pad targets, and the lyrics.",
+              "New session empties the Looper and Mic channels. Kits, rhythms, and presets stay."
             ]
           },
           {
-            "question": "And what if I want to move the project to another device?",
+            "question": "How do I back up my work or move to a new phone?",
             "answer": [
-              "L Studio includes Import and Export for projects and kits.",
-              "Looper projects can include their audio and PAD data, drum kits can travel with their samples and Patterns, and Sessions can be exported and imported as project files.",
-              "The goal is that your work isn't locked inside one screen of the app."
+              "Open the Load Console from Settings. Export all saves every session as one file, and Export selected saves only the highlighted session. Keep the file somewhere outside the app too.",
+              "On the new phone, use Import all or Import session and pick the file. An imported session whose name already exists gets a new name and does not replace the old one.",
+              "A Looper or Mic project alone has Export and Import on its own screen. Presets and drum styles have their own Save, Export, and Import in their windows."
             ]
           },
           {
-            "question": "Can I actually record a full song from inside L Studio?",
+            "question": "What is the Load Console?",
             "answer": [
-              "You can build and record a full performance inside the system.",
-              "The work is built more around playing, layers, loops, drums, microphone, and real-time synthesis.",
-              "You can also record the final mix straight to a WAV file, so you can take the performance out without turning L Studio into a full studio editor."
+              "In Settings, a tap on Load opens the Load Console. Each saved session is a row with a number and a name, and under the name are four keys: LOAD, SAVE, EDIT, and X.",
+              "LOAD loads the session. Before it loads, the app asks first and keeps an automatic backup of your current presets and drum kits. SAVE replaces the session with your current setup, after you confirm with Overwrite. EDIT renames it, and so does a long-press on the row. X deletes it, after a question.",
+              "Saving, loading, exporting, and importing show a progress bar with the real percent and a clear success or error message. You can't close it while the job runs."
             ]
           },
           {
-            "question": "How much of what I do while playing is actually saved?",
+            "question": "Are there hidden actions worth knowing?",
             "answer": [
-              "More than it seems.",
-              "Beyond the notes themselves, the system can capture MIDI events and their frequencies, and in the Looper, PAD motion can be saved as part of the performance.",
-              "That matters especially when you work in a performative way: pad motion, sound changes, and audio layers can be part of the result, not just a temporary system setting."
+              "Yes. Some actions have no button of their own, only a long-press or a hold.",
+              "Presets (Sound screen): a long-press quick-saves the current sound into the loaded preset.",
+              "A rhythm number on the Drum screen (1 to 8): a long-press opens Pattern repeats, with COPY and PASTE.",
+              "Drum Kits (Drum screen): hold it to open Random genre, where you pick the genre that RANDOM uses.",
+              "A page number in the Looper: a long-press opens the page name and a color, from 8 colors.",
+              "A preset in Sound FX, Drum FX, Looper FX, or Mic FX: a long-press opens Amount, EQ, Transpose, and Reverb for that preset.",
+              "A session row in the Load Console: a long-press renames it.",
+              "A rhythm box in Loop Editor: a long-press picks how many times that rhythm repeats.",
+              "1/4, 1/8, 1/16, and 1/32 on the Pad and on the Drum screen: hold to repeat at the drum BPM, release to stop. Hold STOP to fade out.",
+              "The number under a knob: a tap opens a box where you type an exact value."
             ]
           },
           {
-            "question": "Can I use L Studio as a performance tool, not only a creation tool?",
+            "question": "How do I turn a few drum rhythms into a whole song?",
             "answer": [
-              "Yes. In fact, a large part of the architecture is built around that idea.",
-              "The synthesizer, PAD, looper, drums, and microphone live on the same audio path and arrive together at the final mix.",
-              "You can start from a live sound, record it to a loop, add drums on top, use the PAD again, and bring in a mic source without switching workspaces at every step.",
-              "L Studio is built so these moves can happen as part of the same performance."
+              "Long-press a rhythm number to open Pattern repeats and pick 1 to 10 repeats, infinity, or Default. Give rhythms 1, 2, and 3 the value 4, and the drums play rhythm 1 four times, then 2, then 3, and back to 1.",
+              "Rhythms left on Default are skipped. Infinity stays on that rhythm until you change it.",
+              "To copy a rhythm: long-press the rhythm you want to copy and tap COPY. Then long-press the rhythm you want to change and tap PASTE. The paste replaces its steps, samples, volumes, and sound knobs, and that rhythm keeps its own repeat count, BPM, and swing. REDO undoes a paste.",
+              "Looper channels can follow the rhythms too: turn on rhythm boxes in Loop Editor, and the channel plays only while the drums are on one of those rhythms."
+            ]
+          },
+          {
+            "question": "What are PRO and LIVE in the top bar?",
+            "answer": [
+              "PRO is the normal mode, with everything open. LIVE locks some buttons so you can focus on playing, and a stray tap can't clear a take or load a file.",
+              "LIVE locks Clear on Looper and Mic channels, Load on the drum rows and on Looper channels, channel and page names, Import, the DRUM KIT arrows, and typing a number on a knob.",
+              "It leaves open Rec, Play, Stop, mute and solo, Save, Export, switching pages, presets, and everything you play. Another tap on the chip goes back to PRO."
+            ]
+          },
+          {
+            "question": "I cleared or recorded over a take by mistake. Can I get it back?",
+            "answer": [
+              "Yes. The Loop and Mic screens have a Redo key beside the page keys. It brings back the take you lost most recently on that screen: one you cleared, recorded over, or trimmed in the editor. It does not work while that channel is busy.",
+              "The Looper and the Mic each keep their own restore.",
+              "On the Drum screen, REDO in the header steps back one change per tap: steps, samples, volumes, left and right, sound knobs, and the rhythm, including CLEAR and paste."
+            ]
+          },
+          {
+            "question": "How does Custom Frequency work? Can I tune my own scale?",
+            "answer": [
+              "Yes. In Settings, the first row, Custom Frequency, opens Tune frequencies (Hz). Every key shows its frequency in Hz, and you can set it to the frequency you want. The keys start at 222, 299, 333, 355, 396, 444, 463, and 477 Hz.",
+              "If you want a starting point, there are templates: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd, and Pentatonic, with D at 261 Hz. A tap on a name applies it.",
+              "My Presets has 8 buttons with names you choose. Save stores the current frequencies in them, and the frequency presets are also saved in a session.",
+              "The Key key on the Sound screen is something else: it only marks which keys belong to a scale. It does not change any frequency."
+            ]
+          },
+          {
+            "question": "Can I save microtonal playing in MIDI? Can I connect a MIDI keyboard?",
+            "answer": [
+              "Yes, but it is a recording saved to a file. The MIDI key saves a .mid file of the notes you played on the keyboards. Each note is saved as the nearest note plus a Pitch Bend that restores the offset from the exact frequency. The file assumes a Pitch Bend range of two semitones.",
+              "To hear the microtonal tuning, the program that opens the file must support Pitch Bend and be set to two semitones. Notes held together each get their own MIDI channel, so each keeps its own bend.",
+              "For now, L Studio does not support an external MIDI keyboard, and it has no live MIDI, neither input nor output. This is planned for later, with no date yet."
+            ]
+          },
+          {
+            "question": "My mic recording is quiet, or it feeds back. What do I do?",
+            "answer": [
+              "Quiet: raise Gain, which runs from 1x to 4x and starts at 2x. Then check the channel's Vol, from 0% to 100%. After a take exists, tap the channel's visualizer to open Mic Editor: in GAIN, 50 is the original level and 100 adds 12 dB.",
+              "Feedback: when Monitor is on, use headphones. Without headphones the phone warns about speaker feedback.",
+              "HPF cuts low rumble, from 40 Hz to 240 Hz. The first time you tap Rec, the phone asks for the microphone. If you said no, allow it in your phone's settings."
+            ]
+          },
+          {
+            "question": "How many channels are there, and what are the limits?",
+            "answer": [
+              "Looper: 32 channels, which is 8 pages with 4 channels on each. A recording can run up to 30 minutes, and at 30:00 it stops by itself.",
+              "Mic: six channels on two pages. A recording can run up to 4:00 on the three channels of the first page and up to 3:00 on the three channels of the second page. It stops by itself at the limit.",
+              "Drums: 8 rows (Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3, and Voice), 8 rhythms in each kit, and 16 steps in each row."
+            ]
+          },
+          {
+            "question": "There is audio delay or crackling. What can I do?",
+            "answer": [
+              "L Studio asks Android for low-latency audio on Android 8.0 and newer. On Android 7.0 and 7.1 it runs without that request, so the delay can be larger.",
+              "The delay also depends on the phone itself. In Settings, under Factory 64, Benchmark opens an audio test tool.",
+              "If the crackling or delay does not go away, write to support with your phone model, Android version, and app version."
+            ]
+          },
+          {
+            "question": "How do I get help, and what about refunds?",
+            "answer": [
+              "Write to dudichatam@gmail.com. It helps to include your phone model, Android version, app version, and what you did.",
+              "This website sells nothing and has no refund policy of its own. Once the app is released, the purchase goes through Google Play, and for questions about a purchase you can write to the same address.",
+              "The Updates page on this site shows what changed in each version."
             ]
           }
         ]
@@ -2041,7 +2203,7 @@
       "tester": {
         "kicker": "EARLY ACCESS",
         "title": "Tester signup is closed.",
-        "body": "All 44 spots are taken. Thank you to everyone who joined the Google Play test. After the test, L Studio Pro comes to Google Play in October 2026, for $8.",
+        "body": "All 44 spots are taken. Thank you to everyone who joined the Google Play test. After the test, L Studio Pro is coming soon to Google Play, for $8.",
         "status": "Tester signup is closed. All 44 spots are taken.",
         "spotsLabel": "taken",
         "spotsStatus": "Signup closed",
@@ -2088,7 +2250,7 @@
                 "title": "LIVE mode",
                 "body": [
                   "PRO is the normal mode, with everything open. LIVE is a mode that locks some buttons, so you can focus on playing. It is good for recording and for performing, because a stray tap cannot clear a take, load a file, or rename a channel.",
-                  "What LIVE locks: Clear on Looper and Mic channels. Load on the drum rows and on Looper and Mic channels. Import on the Loop and Mic screens, and Import and Load in Drum styles. The DRUM KIT arrows on the Sound and Drum screens. Typing a number on a knob, while a drag still works. The names of Looper and Mic channels, the Looper page name, and the long-press that opens Page name.",
+                  "What LIVE locks: Clear on Looper and Mic channels. Load on the drum rows and on Looper channels only. Mic channels have no Load key in 1.10. Import on the Loop and Mic screens, and Import and Load in Drum styles. The DRUM KIT arrows on the Sound and Drum screens. Typing a number on a knob, while a drag still works. The names of Looper and Mic channels, the Looper page name, and the long-press that opens Page name.",
                   "What LIVE leaves open: Rec, Play, Stop, M, S, Redo, Save, and Export. The drum sample list and the sample arrows, CLEAR on the drums, switching pages, presets, and everything you play. Another tap on the chip goes back to PRO."
                 ],
                 "media": "assets/posters/en/p02-sound-live-w630.jpg",
@@ -2922,7 +3084,7 @@
         "listenNote": "Low frequencies are barely audible on phone speakers. For the full experience, use headphones or suitable speakers.",
         "synthsHeading": "Preset pages",
         "synthsIntro": "Eight synth preset pages. Each page is one musical job, eight named voices.",
-        "launchNote": "Coming to Google Play in October 2026. L Studio Pro, $8."
+        "launchNote": "Coming soon to Google Play. L Studio Pro, $8."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -3273,8 +3435,8 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro for Android comes to Google Play in October 2026, for $8. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android comes to Google Play in October 2026, for $8. Version 1.10 (coming soon to the store), 77.5 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
+        "lede": "L Studio Pro for Android is coming soon to Google Play, for $8. Purchases are not available on this website right now.",
+        "body": "L Studio Pro for Android is coming soon to Google Play, for $8. Version 1.10 (coming soon to the store), 77.5 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
           "L Studio Pro for Android on Google Play, $8 at launch, 77.5 MB",
@@ -3309,7 +3471,7 @@
         "navLabel": "Updates",
         "pageTitle": "What's new in L Studio.",
         "pageKicker": "L-STUDIO / UPDATES",
-        "pageIntro": "Version 1.10 is coming soon to the store. L Studio Pro comes to Google Play in October 2026, for $8.",
+        "pageIntro": "Version 1.10 is coming soon to the store. L Studio Pro is coming soon to Google Play, for $8.",
         "tickerLabel": "Updates",
         "statusLabels": {
           "in_progress": "In progress",
@@ -3496,9 +3658,9 @@
         ]
       },
       "launch": {
-        "headline": "Coming to Google Play in October 2026.",
+        "headline": "Coming soon to Google Play.",
         "price": "L Studio Pro, $8.",
-        "note": "Coming to Google Play in October 2026. L Studio Pro, $8."
+        "note": "Coming soon to Google Play. L Studio Pro, $8."
       },
       "carousel": {
         "poster": "Poster",
@@ -3731,97 +3893,178 @@
         "title": "Вопросы и ответы",
         "items": [
           {
-            "question": "Что особенного в работе с частотами вместо только названий нот?",
+            "question": "L Studio уже в Google Play? И сколько стоит?",
             "answer": [
-              "В L Studio каждая клавиша может быть настроена на свою частоту. Тебе не нужно держаться интервалов равномерной темперации или фиксированных нот рояля.",
-              "Можно править сами частоты, менять октаву и собирать звуковую систему, которая точно совпадает с тем, что ты хочешь слышать."
+              "L Studio Pro для Android скоро выйдет в Google Play, за $8. Это единоразовый платёж. Версия 1.10 скоро в магазине.",
+              "Когда приложение выйдет, купить его можно будет через Google Play. Этот сайт не продаёт приложение, и кнопки скачивания здесь нет."
             ]
           },
           {
-            "question": "Если я записал луп, а потом изменил звук, луп тоже меняется?",
+            "question": "Что входит в Pro? Есть бесплатная версия?",
             "answer": [
-              "Нет.",
-              "Когда луп записан, L Studio сохраняет звук, который уже прошёл через синтезатор и эффекты. То есть луп: это настоящая аудиозапись, а не список нот, который ждёт повторного воспроизведения.",
-              "Если потом изменить Cutoff, Wave, Drive или другой эффект, уже сделанная запись останется такой, какой была в момент записи.",
-              "Так можно строить слои звука и продолжать играть поверх них, не меняя старые слои у себя под руками."
+              "Версия приложения одна: Pro. Это всё приложение: Factory Pack с 64 пресетами и восемью наборами ударных, а также одиннадцать паков ударных Exclusive, без доплаты. Кнопки скачивания для Exclusive нет.",
+              "В Pro нет рекламы, и всё в нём открыто с первого запуска.",
+              "Бесплатное демо скоро выйдет, и его можно будет скачать с этого сайта.",
+              "Паки Exclusive можно посмотреть на странице Exclusive этого сайта."
             ]
           },
           {
-            "question": "Значит, PAD: это эффект или инструмент?",
+            "question": "На каких устройствах работает и на каких языках?",
             "answer": [
-              "PAD предназначен для игры.",
-              "Он работает по двум осям и может управлять разными источниками в системе. Его можно направить на синтезатор, лупер, микрофон или барабаны и использовать движение и для Wah, смены октавы, Chorus и ритмических действий вроде Stutter.",
-              "При записи лупа движение PAD тоже может сохраняться вместе с записью.",
-              "То есть можно записать не только что ты сыграл, но и часть того, как ты это сыграл."
+              "L Studio это приложение для Android. Нужен Android 7.0 или новее, размер 77.5 МБ. Версии для iPhone пока нет.",
+              "Приложение проверялось на разных телефонах с Android. На планшетах оно не проверялось, поэтому поддержка планшетов не обещается.",
+              "На телефоне приложение остаётся вертикальным, в портретной ориентации.",
+              "Приложение на четырёх языках: английском, иврите, русском и арабском. Язык меняется в Settings, в строке Language."
             ]
           },
           {
-            "question": "Можно ли вывести микротональную игру по MIDI?",
+            "question": "Работает без интернета? Кто-нибудь видит мою музыку?",
             "answer": [
-              "Да, но важно понимать, как это работает.",
-              "Обычный MIDI основан на нотах, поэтому L Studio сохраняет микротональный строй через сочетание MIDI-ноты и Pitch Bend. Система считает частоту, сопоставляет её ближайшей ноте, а затем использует Pitch Bend, чтобы вернуть отклонение от стандартной частоты.",
-              "Поэтому, чтобы слышать микротональный строй и во внешней программе или инструменте, приёмник MIDI должен поддерживать Pitch Bend и быть настроен соответствующим образом."
+              "Да, оно работает без подключения к интернету. Приложение вообще не запрашивает доступ в интернет.",
+              "Единственное разрешение, которое оно просит, это микрофон, при первом нажатии на Rec. Его можно отозвать в любой момент в настройках телефона.",
+              "Ваши записи, пресеты и сессии остаются на телефоне или там, куда вы сами их сохранили. В приложении нет рекламы и нет сбора данных об использовании."
             ]
           },
           {
-            "question": "Можно ли использовать микрофон как часть игры, а не только для записи голоса?",
+            "question": "Я новичок. С чего начать?",
             "answer": [
-              "Да.",
-              "Микрофон: часть аудиопути L Studio. У него свои каналы, управление громкостью и положением в стерео, мониторинг, Gain и фильтр High-Pass.",
-              "Так можно встроить живой источник в сетап и управлять им рядом с синтезатором, лупами и барабанами.",
-              "Если слушать мониторинг через колонки, конечно, нужно следить за акустической обратной связью."
+              "Откройте приложение и трогайте всё подряд. Курс не нужен.",
+              "В Settings пункт Show tutorial запускает короткий тур. У тура есть меню станций: можно пропустить, продолжить с того места, где остановились, или закончить из меню.",
+              "В руководстве на этом сайте семь тем. В конце каждой темы три совета новичкам и один совет для продвинутых."
             ]
           },
           {
-            "question": "Можно ли собрать бит, не программируя каждый барабан с нуля?",
+            "question": "Как записать и поделиться тем, что я сделал?",
             "answer": [
-              "Да.",
-              "Style открывает окно Drum Style. Там выбирают набор.",
-              "Random строит другой паттерн в текущем стиле. Это не подбрасывание монеты.",
-              "После этого можно править паттерн, BPM и Swing.",
-              "В Pro также есть восемь готовых барабанных наборов, включая Experimental с восемью загруженными каналами и готовыми ритмами."
+              "В верхней строке две клавиши. WAV записывает то, что вы слышите, так что можно поделиться звуком в точности как он звучит. MIDI сохраняет ноты, которые вы сыграли на клавиатурах, чтобы потом их можно было править.",
+              "Нажмите один раз, чтобы начать, и ещё раз, чтобы остановить. После остановки телефон спросит, куда сохранить файл. Во время записи золотые часы показывают минуты и секунды.",
+              "В MIDI не входят ударные, лупы и микрофон. Там только то, что вы играли на клавишах.",
+              "Чтобы сохранить один канал Looper или Mic как файл WAV, используйте Save на этом канале. Export сохраняет весь проект."
             ]
           },
           {
-            "question": "В чём разница между Preset и Session?",
+            "question": "Можно использовать свои звуки и аудиофайлы?",
             "answer": [
-              "Preset в основном нужен, чтобы сохранить звук.",
-              "Session нужен, чтобы сохранить полное рабочее состояние.",
-              "В Session сохраняются, среди прочего, строй клавиатуры, гамма, Waveform, огибающая ADSR, фильтр, эффекты, октава, маршрутизация PAD и данные, связанные с лупером, барабанами и микрофоном.",
-              "То есть вместо того чтобы вспоминать, как ты собрал сетап, можно сохранить его и вернуться к нему."
+              "Да, в рядах ударных и в каналах Looper. У каналов Mic кнопки Load нет: они записывают с микрофона, а Save сохраняет файл WAV.",
+              "Ударные: на экране Drum нажатие на название ряда (Kick, Snare и другие) открывает список звуков, а Load выбирает аудиофайл с телефона. Файл становится собственным звуком этого ряда в наборе, и его можно настроить ручками GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE и REVERB. Ритм, в котором для этого ряда выбран другой звук из списка, сохраняет свой выбор. В каждом из 8 рядов лежит один загруженный файл, новая загрузка его заменяет.",
+              "Looper: Load на канале выбирает аудиофайл для этого канала и заменяет запись на нём. Redo прежнюю запись не вернёт. Каналов 32, по одному файлу на канал.",
+              "Какие файлы: любой аудиофайл, который Android на вашем телефоне умеет воспроизводить и декодировать. Собственного списка форматов у L Studio нет, поэтому формат, который телефон не декодирует, не загрузится, и появится сообщение (Could not load audio или Could not load the audio file).",
+              "Как читается файл: стереофайл сводится в моно. Любая частота дискретизации преобразуется в частоту приложения, то есть частоту аудиовыхода телефона (44.1 kHz, если телефон её не сообщает).",
+              "Длина: для ряда ударных ограничения по длине или размеру в приложении нет. Оно декодирует весь файл в память, поэтому разумно брать короткие звуки. Для канала Looper файл длиннее 30:00 обрезается на 30:00 без сообщения.",
+              "В режиме LIVE Load заблокирован. Чтобы загрузить, вернитесь в PRO."
             ]
           },
           {
-            "question": "А что, если я хочу перенести проект на другое устройство?",
+            "question": "В чём разница между Preset и сессией?",
             "answer": [
-              "В L Studio есть механизмы Import и Export для проектов и наборов.",
-              "Проекты лупера могут включать аудио и данные PAD, барабанные наборы могут переноситься вместе с семплами и Patterns, а Sessions можно экспортировать и импортировать как файлы проекта.",
-              "Цель в том, чтобы твоя работа не была заперта внутри одного экрана приложения."
+              "Preset сохраняет один звук, включая то, какие волны включены, и настройки Sound FX. Долгое нажатие на Presets быстро сохраняет текущий звук в загруженный пресет.",
+              "Сессия сохраняет весь проект: лупы, каналы Mic, ударные, пресеты, Sound FX, имена и цвета страниц Loop, пресеты частот, выбор сэмплов в ударных, цели Pad и текст песни.",
+              "New session очищает каналы Looper и Mic. Наборы, ритмы и пресеты остаются."
             ]
           },
           {
-            "question": "Можно ли прямо записать целую песню из L Studio?",
+            "question": "Как сделать резервную копию или перейти на новый телефон?",
             "answer": [
-              "Можно собрать и записать целое исполнение внутри системы.",
-              "Работа больше построена вокруг игры, слоёв, лупов, барабанов, микрофона и синтеза в реальном времени.",
-              "Кроме того, финальный микс можно записать сразу в файл WAV, и тогда исполнение можно вынести наружу, не превращая L Studio в полноценный студийный редактор."
+              "Откройте Load Console из Settings. Export all сохраняет все сессии одним файлом, а Export selected только выделенную сессию. Храните файл ещё и вне приложения.",
+              "На новом телефоне используйте Import all или Import session и выберите файл. Импортированная сессия с уже существующим именем получает новое имя и не заменяет старую.",
+              "У проекта Looper или Mic отдельно есть Export и Import на его экране. У пресетов и стилей ударных есть свои Save, Export и Import в их окнах."
             ]
           },
           {
-            "question": "Сколько из того, что я делаю во время игры, действительно сохраняется?",
+            "question": "Что такое Load Console?",
             "answer": [
-              "Больше, чем кажется.",
-              "Помимо самих нот система может фиксировать MIDI-события и их частоты, а в Looper движение PAD может сохраняться как часть исполнения.",
-              "Это особенно важно, когда ты работаешь перформативно: движение пэда, изменения звука и аудиослои могут быть частью результата, а не только временной настройкой системы."
+              "В Settings нажатие на Load открывает Load Console. Каждая сохранённая сессия это строка с номером и именем, а под именем четыре клавиши: LOAD, SAVE, EDIT и X.",
+              "LOAD загружает сессию. Перед загрузкой приложение спрашивает и делает автоматическую копию ваших текущих пресетов и наборов ударных. SAVE заменяет сессию текущей настройкой после подтверждения в Overwrite. EDIT переименовывает, и долгое нажатие на строку делает то же самое. X удаляет после вопроса.",
+              "Сохранение, загрузка, экспорт и импорт показывают полосу прогресса с настоящим процентом и понятное сообщение об успехе или ошибке. Пока идёт работа, окно закрыть нельзя."
             ]
           },
           {
-            "question": "Можно ли использовать L Studio как инструмент для выступления, а не только для создания?",
+            "question": "Есть скрытые действия, которые стоит знать?",
             "answer": [
-              "Да. На самом деле большая часть архитектуры построена вокруг этой идеи.",
-              "Синтезатор, PAD, лупер, барабаны и микрофон находятся в одном аудиопути и вместе приходят в финальный микс.",
-              "Можно начать с живого звука, записать его в луп, добавить поверх барабаны, снова использовать PAD и подключить источник с микрофона, без смены рабочей среды на каждом шаге.",
-              "L Studio устроен так, чтобы эти действия могли происходить как часть одного исполнения."
+              "Да. У некоторых действий нет своей кнопки, только долгое нажатие или удержание.",
+              "Presets (экран Sound): долгое нажатие быстро сохраняет текущий звук в загруженный пресет.",
+              "Номер ритма на экране Drum (от 1 до 8): долгое нажатие открывает Pattern repeats, с COPY и PASTE.",
+              "Drum Kits (экран Drum): удержание открывает Random genre, где выбирается жанр для RANDOM.",
+              "Номер страницы в Looper: долгое нажатие открывает имя и цвет страницы, из 8 цветов.",
+              "Пресет в Sound FX, Drum FX, Looper FX или Mic FX: долгое нажатие открывает Amount, EQ, Transpose и Reverb для этого пресета.",
+              "Строка сессии в Load Console: долгое нажатие переименовывает.",
+              "Ячейка ритма в Loop Editor: долгое нажатие выбирает, сколько раз этот ритм повторяется.",
+              "1/4, 1/8, 1/16 и 1/32 на Pad и на экране Drum: удерживайте, чтобы повторять в темпе BPM ударных, отпустите, чтобы остановить. Удержание STOP приглушает звук.",
+              "Число под ручкой: нажатие открывает окно, где можно ввести точное значение."
+            ]
+          },
+          {
+            "question": "Как превратить несколько ритмов ударных в целую песню?",
+            "answer": [
+              "Долгое нажатие на номер ритма открывает Pattern repeats: выберите от 1 до 10 повторов, бесконечность или Default. Задайте ритмам 1, 2 и 3 значение 4, и ударные сыграют ритм 1 четыре раза, потом 2, потом 3 и вернутся к 1.",
+              "Ритмы с Default пропускаются. Бесконечность остаётся на ритме, пока вы его не смените.",
+              "Чтобы скопировать ритм: долгое нажатие на ритм, который нужно скопировать, и COPY. Потом долгое нажатие на ритм, который нужно изменить, и PASTE. Вставка заменяет шаги, сэмплы, громкости и ручки звука, а у ритма остаются свои число повторов, BPM и свинг. REDO отменяет вставку.",
+              "Каналы Looper тоже могут идти за ритмами: включите ячейки ритма в Loop Editor, и канал играет только пока ударные на одном из этих ритмов."
+            ]
+          },
+          {
+            "question": "Что такое PRO и LIVE в верхней строке?",
+            "answer": [
+              "PRO обычный режим, где всё открыто. LIVE блокирует некоторые кнопки, чтобы вы могли сосредоточиться на игре, а случайное нажатие не стёрло запись и не загрузило файл.",
+              "LIVE блокирует Clear в каналах Looper и Mic, Load в рядах ударных и в каналах Looper, имена каналов и страниц, Import, стрелки DRUM KIT и ввод числа на ручке.",
+              "Открытыми остаются Rec, Play, Stop, mute и solo, Save, Export, переключение страниц, пресеты и всё, что вы играете. Ещё одно нажатие на значок возвращает PRO."
+            ]
+          },
+          {
+            "question": "Я случайно стёр запись или записал поверх. Можно вернуть?",
+            "answer": [
+              "Да. На экранах Loop и Mic рядом с клавишами страниц есть клавиша Redo. Она возвращает запись, которую вы потеряли последней на этом экране: стёртую, записанную поверх или обрезанную в редакторе. Пока канал занят, она не работает.",
+              "У Looper и у Mic своё восстановление.",
+              "На экране Drum REDO в заголовке отступает на одно изменение за нажатие: шаги, сэмплы, громкости, левое и правое, ручки звука и ритм, включая CLEAR и вставку."
+            ]
+          },
+          {
+            "question": "Как работает Custom Frequency? Можно настроить свой строй?",
+            "answer": [
+              "Да. В Settings первая строка Custom Frequency открывает Tune frequencies (Hz). У каждой клавиши показана частота в Hz, и её можно задать любой. Клавиши начинают с 222, 299, 333, 355, 396, 444, 463 и 477 Hz.",
+              "Если нужна отправная точка, есть шаблоны: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd и Pentatonic, с D на 261 Hz. Нажатие на название применяет шаблон.",
+              "В My Presets 8 кнопок с именами на ваш выбор. Save сохраняет в них текущие частоты, а пресеты частот сохраняются и в сессии.",
+              "Клавиша Key на экране Sound это другое: она только отмечает, какие клавиши входят в гамму, и не меняет ни одной частоты."
+            ]
+          },
+          {
+            "question": "Можно сохранить микротональную игру в MIDI? Можно подключить MIDI-клавиатуру?",
+            "answer": [
+              "Да, но это запись в файл. Клавиша MIDI сохраняет файл MIDI с нотами, которые вы сыграли на клавиатурах. Каждый звук сохраняется как ближайшая нота плюс Pitch Bend, который возвращает отклонение от точной частоты. Файл рассчитан на диапазон Pitch Bend в два полутона.",
+              "Чтобы услышать микротональный строй, программа, открывающая файл, должна поддерживать Pitch Bend и быть настроена на два полутона. Ноты, которые звучат вместе, получают каждая свой канал MIDI, чтобы у каждой сохранился свой изгиб.",
+              "Пока L Studio не поддерживает внешнюю MIDI-клавиатуру, и в ней нет живого MIDI, ни входа, ни выхода. Это запланировано на потом, без даты."
+            ]
+          },
+          {
+            "question": "Запись с микрофона тихая или звук возвращается. Что делать?",
+            "answer": [
+              "Если тихо: увеличьте Gain, он идёт от 1x до 4x и начинается с 2x. Потом проверьте Vol канала, от 0% до 100%. Когда запись есть, нажмите на визуализатор канала и откройте Mic Editor: в GAIN значение 50 это исходный уровень, а 100 добавляет 12 dB.",
+              "Если звук возвращается: при включённом Monitor пользуйтесь наушниками. Без наушников телефон предупреждает об обратной связи через динамик.",
+              "HPF срезает низкий гул, от 40 Hz до 240 Hz. При первом нажатии на Rec телефон просит доступ к микрофону. Если вы отказали, разрешите его в настройках телефона."
+            ]
+          },
+          {
+            "question": "Сколько есть каналов и какие ограничения?",
+            "answer": [
+              "Looper: 32 канала, то есть 8 страниц по 4 канала. Запись может идти до 30 минут, а на 30:00 она останавливается сама.",
+              "Mic: шесть каналов на двух страницах. Запись может идти до 4:00 на трёх каналах первой страницы и до 3:00 на трёх каналах второй страницы. На пределе она останавливается сама.",
+              "Ударные: 8 рядов (Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 и Voice), 8 ритмов в каждом наборе и 16 шагов в каждом ряду."
+            ]
+          },
+          {
+            "question": "Есть задержка звука или треск. Что можно сделать?",
+            "answer": [
+              "L Studio просит у Android аудио с малой задержкой на Android 8.0 и новее. На Android 7.0 и 7.1 приложение работает без этого запроса, поэтому задержка может быть больше.",
+              "Задержка зависит и от самого телефона. В Settings, под Factory 64, Benchmark открывает инструмент проверки звука.",
+              "Если треск или задержка не проходят, напишите в поддержку: модель телефона, версия Android и версия приложения."
+            ]
+          },
+          {
+            "question": "Как получить помощь и что с возвратом денег?",
+            "answer": [
+              "Пишите на dudichatam@gmail.com. Полезно указать модель телефона, версию Android, версию приложения и что вы делали.",
+              "Этот сайт ничего не продаёт, и у него нет собственных правил возврата. Когда приложение выйдет, покупка будет через Google Play, а с вопросами о покупке можно писать на тот же адрес.",
+              "Что изменилось в каждой версии, видно на странице Updates этого сайта."
             ]
           }
         ]
@@ -3834,7 +4077,7 @@
       "tester": {
         "kicker": "РАННИЙ ДОСТУП",
         "title": "Запись в тестеры закрыта.",
-        "body": "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. После теста L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
+        "body": "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. После теста L Studio Pro скоро выйдет в Google Play, за $8.",
         "status": "Запись в тестеры закрыта. Все 44 места заняты.",
         "spotsLabel": "занято",
         "spotsStatus": "Запись закрыта",
@@ -3881,7 +4124,7 @@
                 "title": "Режим LIVE",
                 "body": [
                   "PRO обычный режим, где всё открыто. LIVE режим, который блокирует некоторые кнопки, чтобы вы могли сосредоточиться на игре. Он удобен для записи и выступления, потому что случайное нажатие не сотрёт запись, не загрузит файл и не переименует канал.",
-                  "Что блокирует LIVE: Clear в каналах Looper и Mic. Load в рядах ударных и в каналах Looper и Mic. Import на экранах Loop и Mic, а также Import и Load в Drum styles. Стрелки DRUM KIT на экранах Sound и Drum. Ввод числа на регуляторе, при этом перетаскивание работает. Имена каналов Looper и Mic, имя страницы Looper и долгое нажатие, открывающее Page name.",
+                  "Что блокирует LIVE: Clear в каналах Looper и Mic. Load только в рядах ударных и в каналах Looper. У каналов Mic в 1.10 нет клавиши Load. Import на экранах Loop и Mic, а также Import и Load в Drum styles. Стрелки DRUM KIT на экранах Sound и Drum. Ввод числа на регуляторе, при этом перетаскивание работает. Имена каналов Looper и Mic, имя страницы Looper и долгое нажатие, открывающее Page name.",
                   "Что LIVE оставляет открытым: Rec, Play, Stop, M, S, Redo, Save и Export. Список сэмплов ударных и стрелки сэмплов, CLEAR на ударных, переключение страниц, пресеты и всё, что вы играете. Ещё одно нажатие на значок возвращает PRO."
                 ],
                 "media": "assets/posters/en/p02-sound-live-w630.jpg",
@@ -4715,7 +4958,7 @@
         "listenNote": "Низкие частоты почти не слышны в динамиках телефона. Для полного звучания используйте наушники или подходящие колонки.",
         "synthsHeading": "Страницы пресетов",
         "synthsIntro": "Восемь страниц пресетов синтезатора. Каждая страница - одна музыкальная задача, восемь голосов с именами.",
-        "launchNote": "Выходит в Google Play в октябре 2026. L Studio Pro, $8."
+        "launchNote": "Скоро в Google Play. L Studio Pro, $8."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -5066,8 +5309,8 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro для Android выйдет в Google Play в октябре 2026, за $8. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android выйдет в Google Play в октябре 2026, за $8. Версия 1.10 (скоро в магазине), 77.5 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
+        "lede": "L Studio Pro для Android скоро выйдет в Google Play, за $8. Покупки на этом сайте сейчас недоступны.",
+        "body": "L Studio Pro для Android скоро выйдет в Google Play, за $8. Версия 1.10 (скоро в магазине), 77.5 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
           "L Studio Pro для Android в Google Play, $8 при запуске, 77.5 МБ",
@@ -5102,7 +5345,7 @@
         "navLabel": "Обновления",
         "pageTitle": "Что нового в L Studio.",
         "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-        "pageIntro": "Версия 1.10 скоро появится в магазине. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
+        "pageIntro": "Версия 1.10 скоро появится в магазине. L Studio Pro скоро выйдет в Google Play, за $8.",
         "tickerLabel": "Обновления",
         "statusLabels": {
           "in_progress": "В работе",
@@ -5289,9 +5532,9 @@
         ]
       },
       "launch": {
-        "headline": "Выходит в Google Play в октябре 2026.",
+        "headline": "Скоро в Google Play.",
         "price": "L Studio Pro, $8.",
-        "note": "Выходит в Google Play в октябре 2026. L Studio Pro, $8."
+        "note": "Скоро в Google Play. L Studio Pro, $8."
       },
       "carousel": {
         "poster": "Постер",
@@ -5524,97 +5767,178 @@
         "title": "أسئلة وأجوبة",
         "items": [
           {
-            "question": "ما المميز في العمل بالترددات بدل أسماء النغمات فقط؟",
+            "question": "هل L Studio على Google Play الآن؟ وكم سعره؟",
             "answer": [
-              "في L Studio يمكن ضبط كل مفتاح على تردده الخاص. لست مضطراً للالتزام بفواصل الضبط المتساوي أو نغمات البيانو الثابتة.",
-              "يمكنك تحرير الترددات نفسها، وتغيير الأوكتاف، وبناء منظومة أصوات تناسب تماماً ما تريد سماعه."
+              "L Studio Pro لأندرويد قادم قريباً إلى Google Play، بسعر 8$. وهي دفعة واحدة. الإصدار 1.10 قريباً في المتجر.",
+              "بعد إطلاقه تشتريه عبر Google Play. هذا الموقع لا يبيع التطبيق وليس فيه زر تنزيل."
             ]
           },
           {
-            "question": "إذا سجّلت لوباً ثم غيّرت الصوت، هل يتغيّر اللوب أيضاً؟",
+            "question": "ماذا يشمل Pro؟ هل توجد نسخة مجانية؟",
             "answer": [
-              "لا.",
-              "عندما يُسجَّل اللوب، يحفظ L Studio الصوت الذي مرّ أصلاً عبر السينث والأثرات. أي أن اللوب تسجيل صوتي حقيقي، وليس قائمة نغمات تنتظر إعادة التشغيل.",
-              "إذا غيّرت لاحقاً الـCutoff أو الـWave أو الـDrive أو أثراً آخر، يبقى التسجيل الذي أنجزته كما كان وقت التسجيل.",
-              "هذا يتيح بناء طبقات من الصوت ومتابعة العزف فوقها دون أن تتغيّر الطبقات القديمة تحت يديك."
+              "للتطبيق نسخة واحدة: Pro. وهي التطبيق كله: Factory Pack بـ 64 Preset وثماني مجموعات طبول، وكذلك إحدى عشرة حزمة طبول Exclusive، بلا تكلفة إضافية. لا يوجد زر تنزيل لـ Exclusive.",
+              "لا توجد إعلانات في Pro، وكل شيء فيه مفتوح من أول تشغيل.",
+              "نسخة تجريبية مجانية قادمة قريباً، وسيمكن تنزيلها من هذا الموقع.",
+              "يمكنك رؤية حزم Exclusive في صفحة Exclusive على هذا الموقع."
             ]
           },
           {
-            "question": "إذن، هل الـPAD أثر أم آلة عزف؟",
+            "question": "على أي أجهزة يعمل وبأي لغات؟",
             "answer": [
-              "الـPAD مخصّص للعزف.",
-              "يعمل على محورين ويمكنه التحكم بمصادر مختلفة في النظام. يمكنك توجيهه إلى السينث أو اللوبر أو الميكروفون أو الطبول، واستخدام حركته أيضاً لـWah وتغيير الأوكتاف وChorus وعمليات إيقاعية مثل Stutter.",
-              "عند تسجيل لوب، يمكن حفظ حركة الـPAD مع التسجيل أيضاً.",
-              "أي أنه يمكن تسجيل ليس فقط ما عزفته، بل جزءاً من الطريقة التي عزفت بها."
+              "L Studio تطبيق لأندرويد. يحتاج إلى Android 7.0 أو أحدث، وحجمه 77.5 ميغابايت. لا توجد نسخة للآيفون حالياً.",
+              "جُرّب التطبيق على هواتف أندرويد مختلفة. ولم يُجرَّب على التابلت، لذلك لا نَعِد بدعم التابلت.",
+              "على الهاتف يبقى التطبيق قائماً، بوضع طولي.",
+              "التطبيق بأربع لغات: الإنجليزية والعبرية والروسية والعربية. تبدّل اللغة من Settings، في صف Language."
             ]
           },
           {
-            "question": "هل يمكن إخراج عزف مايكروتونال عبر MIDI؟",
+            "question": "هل يعمل دون إنترنت؟ هل يرى أحد موسيقاي؟",
             "answer": [
-              "نعم، لكن من المهم فهم كيف يعمل ذلك.",
-              "MIDI العادي مبني على النغمات، لذلك يحفظ L Studio الضبط المايكروتونالي عبر مزيج من نغمة MIDI وPitch Bend. يحسب النظام التردد ويربطه بأقرب نغمة، ثم يستخدم Pitch Bend لإعادة الانحراف عن التردد القياسي.",
-              "لذلك، لتسمع الضبط المايكروتونالي أيضاً في برنامج أو آلة خارجية، يجب أن يدعم المستقبل Pitch Bend وأن يُضبط وفقاً لذلك."
+              "نعم، يعمل دون اتصال بالإنترنت. التطبيق لا يطلب إذن الإنترنت أصلاً.",
+              "الإذن الوحيد الذي يطلبه هو الميكروفون، عند أول ضغطة على Rec. يمكنك سحبه في أي وقت من إعدادات الهاتف.",
+              "تسجيلاتك وPresets وجلساتك تبقى على هاتفك، أو في المكان الذي تختاره للحفظ. لا توجد إعلانات ولا جمع لبيانات الاستخدام في التطبيق."
             ]
           },
           {
-            "question": "هل يمكن استخدام الميكروفون كجزء من العزف وليس فقط لتسجيل الصوت؟",
+            "question": "أنا مبتدئ. من أين أبدأ؟",
             "answer": [
-              "نعم.",
-              "الميكروفون جزء من مسار الصوت في L Studio. له قنواته الخاصة، وتحكم في المستوى والموضع في الستيريو، ومراقبة، وGain، وفلتر High-Pass.",
-              "هكذا يمكنك دمج مصدر حي داخل الإعداد والتحكم به إلى جانب السينث واللوبات والطبول.",
-              "إذا كنت تراقب عبر سماعات، فبالطبع انتبه للتغذية الراجعة الصوتية."
+              "افتح التطبيق والمس الأزرار. لا حاجة إلى دورة.",
+              "في Settings يبدأ Show tutorial جولة قصيرة. للجولة قائمة محطات: يمكنك التخطي، أو المتابعة من حيث توقفت، أو الإنهاء من القائمة.",
+              "في دليل المستخدم على هذا الموقع سبعة مواضيع. ينتهي كل موضوع بثلاث نصائح للمبتدئين ونصيحة واحدة للمتقدمين."
             ]
           },
           {
-            "question": "هل يمكن بناء بيت دون برمجة كل طبل من الصفر؟",
+            "question": "كيف أسجّل وأشارك ما صنعته؟",
             "answer": [
-              "نعم.",
-              "Style يفتح نافذة Drum Style. هناك تختار المجموعة.",
-              "Random يبني نمطاً آخر في الأسلوب الحالي. هذا ليس رمية عملة.",
-              "بعد ذلك يمكن تعديل النمط وBPM وSwing.",
-              "مع Pro تحصل أيضاً على ثماني حزم طبول جاهزة، بما فيها Experimental بثماني قنوات محمّلة وإيقاعات جاهزة."
+              "في الشريط العلوي مفتاحان. WAV يسجّل ما تسمعه، فتشاركه تماماً كما يبدو. MIDI يحفظ النوتات التي عزفتها على لوحتي المفاتيح، لتعدّلها لاحقاً.",
+              "اضغط مرة للبدء ومرة أخرى للإيقاف. بعد الإيقاف يسأل الهاتف أين يحفظ الملف. أثناء التسجيل تظهر ساعة ذهبية بالدقائق والثواني.",
+              "لا يتضمن MIDI الطبول ولا اللوبات ولا الميكروفون. فيه فقط ما عزفته على المفاتيح.",
+              "لحفظ قناة Looper أو Mic واحدة كملف WAV، استخدم Save في تلك القناة. Export يحفظ المشروع كله."
             ]
           },
           {
-            "question": "ما الفرق بين Preset وSession؟",
+            "question": "هل أستطيع استخدام أصواتي وملفاتي الصوتية؟",
             "answer": [
-              "الـPreset مخصّص أساساً لحفظ صوت.",
-              "الـSession مخصّص لحفظ حالة عمل كاملة.",
-              "في الـSession تُحفظ، من بين أمور أخرى، ضبط لوحة المفاتيح، والسلم، والـWaveform، وغلاف الـADSR، والفلتر، والأثرات، والأوكتاف، وتوجيه الـPAD، ومعلومات مرتبطة باللوبر والطبول والميكروفون.",
-              "أي أنه بدل محاولة تذكّر كيف بنيت الإعداد، يمكنك حفظه والعودة إليه."
+              "نعم، في صفوف الطبول وفي قنوات Looper. قنوات Mic ليس فيها Load: فهي تسجّل من الميكروفون، وSave يكتب ملف WAV.",
+              "الطبول: في شاشة Drum، الضغط على اسم صف (Kick وSnare وغيرهما) يفتح قائمة أصوات، وLoad يختار ملفاً صوتياً من هاتفك. يصبح الملف الصوت الخاص بذلك الصف في المجموعة، ويمكنك تشكيله بـ GAIN وSQUEEZE وATTACK وSUSTAIN وRELEASE وREVERB. الإيقاع الذي اختار لذلك الصف صوتاً آخر من القائمة يحتفظ باختياره. في كل صف من الصفوف الثمانية ملف محمّل واحد، والتحميل الجديد يستبدله.",
+              "Looper: Load على قناة يختار ملفاً صوتياً لتلك القناة ويستبدل التسجيل الذي عليها. لن يعيد Redo التسجيل السابق. هناك 32 قناة، وملف واحد لكل قناة.",
+              "أي الملفات: أي ملف صوتي يستطيع أندرويد في هاتفك تشغيله وفك ترميزه. ليست لدى L Studio قائمة صيغ خاصة بها، لذلك تفشل الصيغة التي لا يفك الهاتف ترميزها مع رسالة (Could not load audio أو Could not load the audio file).",
+              "كيف يُقرأ الملف: الملف الستيريو يُدمج إلى أحادي. وأي معدل عيّنات يُحوَّل إلى معدل التطبيق، وهو معدل خرج الصوت في هاتفك (44.1 kHz إذا لم يُبلغ الهاتف عنه).",
+              "الطول: لصف الطبول لا يوجد حد للطول أو للحجم في التطبيق. يفك ترميز الملف كله في الذاكرة، لذلك الأصوات القصيرة هي الخيار المعقول. لقناة Looper، الملف الأطول من 30:00 يُقطع عند 30:00 دون رسالة.",
+              "في وضع LIVE يكون Load مقفلاً. ارجع إلى PRO لتحمّل."
             ]
           },
           {
-            "question": "وماذا لو أردت نقل المشروع إلى جهاز آخر؟",
+            "question": "ما الفرق بين Preset وجلسة؟",
             "answer": [
-              "يتضمن L Studio آليات Import وExport للمشاريع والمجموعات.",
-              "يمكن لمشاريع اللوبر أن تشمل الصوت وبيانات الـPAD، ويمكن لمجموعات الطبول أن تنتقل مع عيناتها وPatterns، ويمكن تصدير Sessions واستيرادها كملفات مشروع.",
-              "الهدف أن لا يبقى عملك محبوساً داخل شاشة واحدة من التطبيق."
+              "Preset يحفظ صوتاً واحداً، بما في ذلك الموجات المشغّلة وإعدادات Sound FX. الضغط المطوّل على Presets يحفظ الصوت الحالي بسرعة في الـ Preset المحمّل.",
+              "الجلسة تحفظ المشروع كله: اللوبات وقنوات Mic والطبول والـ Presets وSound FX وأسماء وألوان صفحات Loop وإعدادات التردد المسبقة واختيارات عينات الطبول وأهداف Pad والكلمات.",
+              "New session تفرغ قنوات Looper وMic. تبقى المجموعات والإيقاعات والـ Presets."
             ]
           },
           {
-            "question": "هل يمكن فعلاً تسجيل أغنية كاملة من داخل L Studio؟",
+            "question": "كيف أنسخ عملي احتياطياً أو أنتقل إلى هاتف جديد؟",
             "answer": [
-              "يمكنك بناء وتسجيل أداء كامل داخل النظام.",
-              "العمل مبني أكثر حول العزف والطبقات واللوبات والطبول والميكروفون والتركيب في الوقت الفعلي.",
-              "إضافة إلى ذلك، يمكن تسجيل المزج النهائي مباشرة إلى ملف WAV، فيمكنك إخراج الأداء دون تحويل L Studio إلى محرر استوديو كامل."
+              "افتح Load Console من Settings. Export all يحفظ كل الجلسات في ملف واحد، وExport selected يحفظ الجلسة المحددة فقط. احتفظ بالملف خارج التطبيق أيضاً.",
+              "على الهاتف الجديد استخدم Import all أو Import session واختر الملف. الجلسة المستوردة التي يوجد اسمها مسبقاً تحصل على اسم جديد ولا تستبدل القديمة.",
+              "لمشروع Looper أو Mic وحده يوجد Export وImport في شاشته. وللـ Presets وأساليب الطبول Save وExport وImport في نوافذها."
             ]
           },
           {
-            "question": "كم مما أفعله أثناء العزف يُحفظ فعلاً؟",
+            "question": "ما هو Load Console؟",
             "answer": [
-              "أكثر مما يبدو.",
-              "إلى جانب النغمات نفسها، يمكن للنظام تسجيل أحداث MIDI وتردداتها، وفي الـLooper يمكن حفظ حركة الـPAD كجزء من الأداء.",
-              "هذا مهم خصوصاً عندما تعمل بأسلوب أدائي: حركة الباد وتغيّرات الصوت وطبقات الصوت يمكن أن تكون جزءاً من النتيجة، لا مجرد إعداد مؤقت للنظام."
+              "في Settings، الضغط على Load يفتح Load Console. كل جلسة محفوظة صف برقم واسم، وتحت الاسم أربعة مفاتيح: LOAD وSAVE وEDIT وX.",
+              "LOAD يحمّل الجلسة. قبل التحميل يسأل التطبيق ويحتفظ بنسخة احتياطية تلقائية من Presets ومجموعات الطبول الحالية. SAVE يستبدل الجلسة بإعدادك الحالي بعد التأكيد في Overwrite. EDIT يغيّر الاسم، والضغط المطوّل على الصف يفعل ذلك أيضاً. X يحذف بعد سؤال.",
+              "الحفظ والتحميل والتصدير والاستيراد تعرض شريط تقدم بنسبة حقيقية ورسالة نجاح أو خطأ واضحة. لا يمكن إغلاقها أثناء عمل المهمة."
             ]
           },
           {
-            "question": "هل يمكن استخدام L Studio كأداة أداء وليس فقط كأداة إبداع؟",
+            "question": "هل توجد إجراءات مخفية تستحق المعرفة؟",
             "answer": [
-              "نعم. في الواقع، جزء كبير من البنية مبني حول هذه الفكرة.",
-              "السينث والـPAD واللوبر والطبول والميكروفون على مسار صوت واحد ويصلون معاً إلى المزج النهائي.",
-              "يمكنك البدء من صوت حي، وتسجيله في لوب، وإضافة طبول فوقه، واستخدام الـPAD مجدداً، ودمج مصدر من الميكروفون دون تبديل بيئة العمل في كل خطوة.",
-              "L Studio مبني بحيث يمكن أن تحدث هذه الأفعال كجزء من الأداء نفسه."
+              "نعم. بعض الإجراءات ليس لها زر خاص، بل ضغط مطوّل أو إمساك فقط.",
+              "Presets (شاشة Sound): الضغط المطوّل يحفظ الصوت الحالي بسرعة في الـ Preset المحمّل.",
+              "رقم إيقاع في شاشة Drum (من 1 إلى 8): الضغط المطوّل يفتح Pattern repeats، مع COPY وPASTE.",
+              "Drum Kits (شاشة Drum): الإمساك يفتح Random genre، حيث تختار النوع الذي يستخدمه RANDOM.",
+              "رقم صفحة في Looper: الضغط المطوّل يفتح اسم الصفحة ولوناً من 8 ألوان.",
+              "Preset في Sound FX أو Drum FX أو Looper FX أو Mic FX: الضغط المطوّل يفتح Amount وEQ وTranspose وReverb لذلك الـ Preset.",
+              "صف جلسة في Load Console: الضغط المطوّل يغيّر الاسم.",
+              "مربع إيقاع في Loop Editor: الضغط المطوّل يختار عدد مرات تكرار ذلك الإيقاع.",
+              "1/4 و1/8 و1/16 و1/32 في Pad وفي شاشة Drum: أمسك للتكرار بحسب BPM الطبول، وأفلت للإيقاف. إمساك STOP يخفت الصوت.",
+              "الرقم تحت المقبض: الضغط عليه يفتح مربعاً لكتابة قيمة دقيقة."
+            ]
+          },
+          {
+            "question": "كيف أحوّل عدة إيقاعات طبول إلى أغنية كاملة؟",
+            "answer": [
+              "اضغط مطوّلاً على رقم إيقاع لفتح Pattern repeats واختر من 1 إلى 10 تكرارات أو اللانهاية أو Default. أعطِ الإيقاعات 1 و2 و3 القيمة 4، فتعزف الطبول الإيقاع 1 أربع مرات، ثم 2، ثم 3، ثم تعود إلى 1.",
+              "الإيقاعات على Default تُتجاوز. اللانهاية تبقى على ذلك الإيقاع حتى تغيّره.",
+              "لنسخ إيقاع: اضغط مطوّلاً على الإيقاع الذي تريد نسخه ثم COPY. بعد ذلك اضغط مطوّلاً على الإيقاع الذي تريد تغييره ثم PASTE. اللصق يستبدل الخطوات والعينات والأحجام ومقابض الصوت، ويحتفظ ذلك الإيقاع بعدد تكراره وBPM والسوينغ الخاصة به. REDO يتراجع عن اللصق.",
+              "قنوات Looper تستطيع أيضاً أن تتبع الإيقاعات: شغّل مربعات الإيقاع في Loop Editor، فتعزف القناة فقط أثناء وجود الطبول على أحد تلك الإيقاعات."
+            ]
+          },
+          {
+            "question": "ما هما PRO وLIVE في الشريط العلوي؟",
+            "answer": [
+              "PRO هو الوضع العادي، وكل شيء فيه مفتوح. LIVE يقفل بعض الأزرار لتركّز على العزف، فلا تمسح نقرة بالخطأ تسجيلاً ولا تحمّل ملفاً.",
+              "LIVE يقفل Clear في قنوات Looper وMic، وLoad في صفوف الطبول وفي قنوات Looper، وأسماء القنوات والصفحات، وImport، وأسهم DRUM KIT، وكتابة رقم على مقبض.",
+              "ويترك مفتوحاً Rec وPlay وStop وكتم الصوت والعزل وSave وExport والتبديل بين الصفحات والـ Presets وكل ما تعزفه. نقرة أخرى على الشارة تعيدك إلى PRO."
+            ]
+          },
+          {
+            "question": "مسحت تسجيلاً أو سجّلت فوقه بالخطأ. هل يمكن استرجاعه؟",
+            "answer": [
+              "نعم. في شاشتي Loop وMic مفتاح Redo بجانب مفاتيح الصفحات. يعيد آخر تسجيل فقدته في تلك الشاشة: تسجيل مُسح أو سُجّل فوقه أو قُصّ في المحرر. لا يعمل أثناء انشغال القناة.",
+              "لكل من Looper وMic استرجاع مستقل.",
+              "في شاشة Drum، يتراجع REDO في الترويسة خطوة واحدة مع كل ضغطة: الخطوات والعينات والأحجام واليسار واليمين ومقابض الصوت والإيقاع، بما في ذلك CLEAR واللصق."
+            ]
+          },
+          {
+            "question": "كيف يعمل Custom Frequency؟ هل أستطيع ضبط سلّمي الخاص؟",
+            "answer": [
+              "نعم. في Settings، الصف الأول Custom Frequency يفتح Tune frequencies (Hz). لكل مفتاح تردد بالهرتز، ويمكنك ضبطه على التردد الذي تريد. تبدأ المفاتيح عند 222 و299 و333 و355 و396 و444 و463 و477 Hz.",
+              "إن أردت نقطة بداية فهناك قوالب: Major وMinor وHarmonic وDorian وMixolydian وHijaz وKurd وPentatonic، مع D عند 261 Hz. الضغط على اسم يطبّق القالب.",
+              "في My Presets ثمانية أزرار بأسماء تختارها. Save يحفظ فيها الترددات الحالية، كما تُحفظ إعدادات الترددات في الجلسة.",
+              "مفتاح Key في شاشة Sound شيء آخر: هو فقط يحدد أي المفاتيح تنتمي إلى سلّم، ولا يغيّر أي تردد."
+            ]
+          },
+          {
+            "question": "هل أستطيع حفظ عزف ميكروتونالي في MIDI؟ وهل أوصل لوحة مفاتيح MIDI؟",
+            "answer": [
+              "نعم، لكنه تسجيل يُحفظ في ملف. مفتاح MIDI يحفظ ملف MIDI بالنوتات التي عزفتها على لوحتي المفاتيح. تُحفظ كل نغمة كأقرب نوتة مع Pitch Bend يعيد الفرق عن التردد الدقيق. يفترض الملف مدى Pitch Bend قدره نصفا نغمة.",
+              "لتسمع الضبط الميكروتونالي، يجب أن يدعم البرنامج الذي يفتح الملف Pitch Bend وأن يكون مضبوطاً على نصفي نغمة. النغمات المضغوطة معاً تحصل كل واحدة على قناة MIDI خاصة بها، فتحتفظ كل واحدة بانحنائها.",
+              "حالياً لا تدعم L Studio لوحة مفاتيح MIDI خارجية، وليس فيها MIDI مباشر، لا إدخال ولا إخراج. هذا مخطط لوقت لاحق، دون موعد."
+            ]
+          },
+          {
+            "question": "تسجيل الميكروفون هادئ أو يحدث صدى. ماذا أفعل؟",
+            "answer": [
+              "إن كان هادئاً: ارفع Gain، وهو يتراوح من 1x إلى 4x ويبدأ عند 2x. ثم افحص Vol للقناة، من 0% إلى 100%. بعد وجود تسجيل، المس مرئي القناة لتفتح Mic Editor: في GAIN القيمة 50 هي المستوى الأصلي، و100 تضيف 12 dB.",
+              "إن حدث صدى: عندما يكون Monitor مشغّلاً استخدم سماعات. بدون سماعات يحذّر الهاتف من ارتداد الصوت من السماعة.",
+              "HPF يقطع الدمدمة المنخفضة، من 40 Hz إلى 240 Hz. عند أول ضغطة على Rec يطلب الهاتف الوصول إلى الميكروفون. إن رفضت، اسمح به في إعدادات الهاتف."
+            ]
+          },
+          {
+            "question": "كم عدد القنوات وما الحدود؟",
+            "answer": [
+              "Looper: 32 قناة، أي 8 صفحات في كل منها 4 قنوات. يمكن للتسجيل أن يستمر حتى 30 دقيقة، وعند 30:00 يتوقف من تلقاء نفسه.",
+              "Mic: ست قنوات في صفحتين. يمكن للتسجيل أن يستمر حتى 4:00 في قنوات الصفحة الأولى الثلاث وحتى 3:00 في قنوات الصفحة الثانية الثلاث. يتوقف من تلقاء نفسه عند الحد.",
+              "الطبول: 8 صفوف (Kick وSnare وHi-Hat وPerc وFX 1 وFX 2 وFX 3 وVoice)، و8 إيقاعات في كل مجموعة، و16 خطوة في كل صف."
+            ]
+          },
+          {
+            "question": "يوجد تأخر في الصوت أو تقطّع. ماذا يمكنني أن أفعل؟",
+            "answer": [
+              "L Studio تطلب من أندرويد صوتاً بزمن تأخر منخفض على Android 8.0 وأحدث. على Android 7.0 و7.1 يعمل التطبيق دون هذا الطلب، لذلك قد يكون التأخر أكبر.",
+              "ويعتمد التأخر على الهاتف نفسه أيضاً. في Settings، تحت Factory 64، يفتح Benchmark أداة اختبار الصوت.",
+              "إن لم يزل التقطّع أو التأخر، اكتب إلى الدعم مع طراز الهاتف وإصدار أندرويد وإصدار التطبيق."
+            ]
+          },
+          {
+            "question": "كيف أحصل على مساعدة؟ وماذا عن استرداد المبلغ؟",
+            "answer": [
+              "اكتب إلى dudichatam@gmail.com. من المفيد ذكر طراز الهاتف وإصدار أندرويد وإصدار التطبيق وما فعلته.",
+              "هذا الموقع لا يبيع شيئاً وليست له سياسة استرداد خاصة به. بعد إطلاق التطبيق سيكون الشراء عبر Google Play، ولأسئلة الشراء يمكنك الكتابة إلى العنوان نفسه.",
+              "ما تغيّر في كل إصدار تراه في صفحة Updates على هذا الموقع."
             ]
           }
         ]
@@ -5627,7 +5951,7 @@
       "tester": {
         "kicker": "وصول مبكر",
         "title": "التسجيل للمختبرين مغلق.",
-        "body": "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. بعد الاختبار، يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
+        "body": "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. بعد الاختبار، يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
         "status": "التسجيل للمختبرين مغلق. جميع الأماكن الـ44 محجوزة.",
         "spotsLabel": "محجوزة",
         "spotsStatus": "التسجيل مغلق",
@@ -5674,7 +5998,7 @@
                 "title": "وضع LIVE",
                 "body": [
                   "PRO هو الوضع العادي، وكل شيء فيه مفتوح. LIVE وضع يقفل بعض الأزرار لتركّز على العزف. وهو مناسب للتسجيل وللعروض، لأن نقرة بالخطأ لن تمسح تسجيلاً ولن تحمّل ملفاً ولن تغيّر اسم قناة.",
-                  "ما يقفله LIVE: Clear في قنوات Looper وMic. Load في صفوف الطبول وفي قنوات Looper وMic. Import في شاشتي Loop وMic، وImport وLoad في Drum styles. أسهم DRUM KIT في شاشتي Sound وDrum. كتابة رقم على مقبض، بينما يبقى السحب يعمل. أسماء قنوات Looper وMic، واسم صفحة Looper، والضغط المطول الذي يفتح Page name.",
+                  "ما يقفله LIVE: Clear في قنوات Looper وMic. Load في صفوف الطبول وفي قنوات Looper فقط. قنوات Mic ليس فيها مفتاح Load في 1.10. Import في شاشتي Loop وMic، وImport وLoad في Drum styles. أسهم DRUM KIT في شاشتي Sound وDrum. كتابة رقم على مقبض، بينما يبقى السحب يعمل. أسماء قنوات Looper وMic، واسم صفحة Looper، والضغط المطول الذي يفتح Page name.",
                   "ما يتركه LIVE مفتوحاً: Rec وPlay وStop وM وS وRedo وSave وExport. قائمة عينات الطبول وأسهم العينات، وCLEAR في الطبول، والتبديل بين الصفحات، والإعدادات المسبقة، وكل ما تعزفه. نقرة أخرى على الشارة تعيدك إلى PRO."
                 ],
                 "media": "assets/posters/en/p02-sound-live-w630.jpg",
@@ -6508,7 +6832,7 @@
         "listenNote": "الترددات المنخفضة تكاد لا تُسمع عبر سماعات الهاتف. لتجربة كاملة استخدم سماعات رأس أو مكبرات مناسبة.",
         "synthsHeading": "صفحات الإعدادات المسبقة",
         "synthsIntro": "ثماني صفحات إعدادات للسينث. كل صفحة مهمة موسيقية واحدة، وثمانية أصوات بأسماء.",
-        "launchNote": "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$."
+        "launchNote": "قادم قريباً إلى Google Play. L Studio Pro، 8$."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -6859,8 +7183,8 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro لأندرويد يصل إلى Google Play في أكتوبر 2026، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد يصل إلى Google Play في أكتوبر 2026، بسعر 8$. الإصدار 1.10 (قريباً في المتجر)، 77.5 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
+        "lede": "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
+        "body": "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. الإصدار 1.10 (قريباً في المتجر)، 77.5 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
           "L Studio Pro لأندرويد على Google Play، 8$ عند الإطلاق، 77.5 ميغابايت",
@@ -6895,7 +7219,7 @@
         "navLabel": "التحديثات",
         "pageTitle": "ما الجديد في L Studio.",
         "pageKicker": "L-STUDIO / التحديثات",
-        "pageIntro": "الإصدار 1.10 قريباً في المتجر. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
+        "pageIntro": "الإصدار 1.10 قريباً في المتجر. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
         "tickerLabel": "التحديثات",
         "statusLabels": {
           "in_progress": "قيد العمل",
@@ -7082,9 +7406,9 @@
         ]
       },
       "launch": {
-        "headline": "قادم إلى Google Play في أكتوبر 2026.",
+        "headline": "قادم قريباً إلى Google Play.",
         "price": "L Studio Pro، 8$.",
-        "note": "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$."
+        "note": "قادم قريباً إلى Google Play. L Studio Pro، 8$."
       },
       "carousel": {
         "poster": "ملصق",
