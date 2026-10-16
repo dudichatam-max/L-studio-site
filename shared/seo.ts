@@ -347,7 +347,7 @@ type SeoMobileApplication = {
 export const APP_FACTS = {
   operatingSystem: "Android 7.0+",
   softwareVersion: "1.10",
-  fileSize: "60.6MB",
+  fileSize: "77.5MB",
   price: "8",
   priceCurrency: "USD",
 } as const;

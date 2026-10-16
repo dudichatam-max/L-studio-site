@@ -156,3 +156,8 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Left at 1.09 on purpose: the history item `app-1-09-waves-drums` (it describes 1.09).
 - No APK, AAB, download or GitHub release link was added. The release repo `dudichatam-max/L-studio` is private and its release carries an APK and an AAB, so linking it is not allowed.
 - To go back to 1.09 before David approves: revert the commit titled "1.10 draft: version 1.10 ..." (the size is a separate commit).
+
+## Size 77.5 MB (Oct 16, separate commit from the version, easy to revert)
+- Source: GitHub release `v1.10` (private repo), asset `L-Studio-1.10-play-fix1.apk` = 81,252,020 bytes = 77.49 MiB. Same method as 1.09 (60.6 = 63,509,827 bytes in MiB, written as MB). The AAB `L-Studio-1.10-play-fix1.aab` is 77,863,522 bytes = 74.26 MiB.
+- This is the release APK size, NOT the number Google Play will show for the download (Play serves split APKs from the AAB). Check the Play listing size after the closed test and correct if it differs. To go back to 60.6 MB, revert the commit titled "1.10 draft: app size ...".
+- Places: `hero.stat1`, the Pro body and the Pro list item in `content.json` (and the `client/public` copy), `shared/pro-copy.json`, `fileSize` in `shared/seo.ts` and the static JSON-LD in `client/index.html`, the `heroDefault` stat in `Home.tsx`.
