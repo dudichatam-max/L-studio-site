@@ -20,7 +20,7 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "upcoming",
         "title": "Coming soon to the store: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
-        "ticker": "Coming soon to the store: a new Loop Editor with trim, repeats and EQ, for loops and for Mic too",
+        "ticker": "Coming soon to the store: a new Loop Editor, also for Mic, with trim, EQ, and a choice of which drum rhythm plays with the loop and how many times it repeats",
         "summary": "Coming soon to the store, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
         "href": "/guide",
         "cta": "Open the guide",
@@ -57,7 +57,7 @@
             "bullets": [
               "Opens when you tap the waveform. Mic Editor opens the same way on a Mic channel.",
               "Trim the recording. Set a loop.",
-              "8 drum-rhythm boxes: tap to turn on or off, long-press for repeats (1 to 10 or infinity). With no boxes on, the channel keeps looping.",
+              "8 drum-rhythm boxes choose which rhythm plays with the loop and how many times it repeats: a short press turns a box on or off, a long press picks repeats (1 to 10, infinity, or Default). With no boxes on, the channel keeps looping.",
               "EQ: Low, Mid, High and Mid Hz. Gain and Squeeze."
             ]
           },
@@ -210,7 +210,7 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "upcoming",
         "title": "בקרוב בחנות: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
-        "ticker": "בקרוב בחנות: עורך לופ חדש עם חיתוך, חזרות ואקולייזר, גם לערוצי המיקרופון",
+        "ticker": "בקרוב בחנות: עורך לופ חדש, גם לערוצי המיקרופון, עם חיתוך, אקולייזר ובחירה של איזה מקצב תופים מתנגן עם הלופ וכמה פעמים הוא חוזר",
         "summary": "בקרוב בחנות, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
@@ -247,7 +247,7 @@
             "bullets": [
               "נפתח בהקשה על הגל. Mic Editor נפתח באותו אופן בערוץ Mic.",
               "חיתוך ההקלטה עם Trim. קביעת לופ.",
-              "8 תיבות מקצב תופים: הקשה מדליקה או מכבה, לחיצה ארוכה לחזרות (1 עד 10 או אינסוף). בלי תיבות דולקות, הערוץ ממשיך בלופ.",
+              "8 תיבות מקצב תופים קובעות איזה מקצב מתנגן עם הלופ וכמה פעמים הוא חוזר: לחיצה קצרה מדליקה או מכבה תיבה, לחיצה ארוכה בוחרת חזרות (1 עד 10, אינסוף או Default). בלי תיבות דולקות, הערוץ ממשיך בלופ.",
               "EQ: Low, Mid, High ו-Mid Hz. Gain ו-Squeeze."
             ]
           },
@@ -400,7 +400,7 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "upcoming",
         "title": "Скоро в магазине: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
-        "ticker": "Скоро в магазине: новый редактор лупов с обрезкой, повторами и EQ, в том числе для Mic",
+        "ticker": "Скоро в магазине: новый редактор лупов, в том числе для Mic, с обрезкой, EQ и выбором, какой ритм ударных играет вместе с лупом и сколько раз он повторяется",
         "summary": "Скоро в магазине, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
         "href": "/guide",
         "cta": "Открыть руководство",
@@ -437,7 +437,7 @@
             "bullets": [
               "Открывается нажатием на волну. Mic Editor открывается так же на канале Mic.",
               "Обрезка записи с Trim. Задание лупа.",
-              "8 ячеек ритма ударных: нажатие включает или выключает, долгое нажатие для повторов (1 до 10 или бесконечность). Без включённых ячеек канал продолжает луп.",
+              "8 ячеек ритма ударных выбирают, какой ритм играет вместе с лупом и сколько раз он повторяется: короткое нажатие включает или выключает ячейку, долгое выбирает повторы (от 1 до 10, бесконечность или Default). Без включённых ячеек канал продолжает луп.",
               "EQ: Low, Mid, High и Mid Hz. Gain и Squeeze."
             ]
           },
@@ -590,7 +590,7 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "upcoming",
         "title": "قريباً في المتجر: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
-        "ticker": "قريباً في المتجر: محرر لوب جديد مع القص والتكرار وEQ، ولقنوات Mic أيضاً",
+        "ticker": "قريباً في المتجر: محرر لوب جديد، ولقنوات Mic أيضاً، مع القص وEQ واختيار أي إيقاع طبول يعزف مع اللوب وكم مرة يتكرر",
         "summary": "قريباً في المتجر، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
         "href": "/guide",
         "cta": "افتح الدليل",
@@ -627,7 +627,7 @@
             "bullets": [
               "يُفتح بالضغط على الموجة. Mic Editor يُفتح بنفس الطريقة على قناة Mic.",
               "قص التسجيل بـ Trim. تحديد اللوب.",
-              "8 مربعات إيقاع طبول: الضغط يشغّل أو يوقف، والضغط المطوّل للتكرارات (1 حتى 10 أو اللانهاية). بلا مربعات مشغّلة، تواصل القناة اللوب.",
+              "8 مربعات إيقاع طبول تحدد أي إيقاع يعزف مع اللوب وكم مرة يتكرر: الضغط القصير يشغّل مربعاً أو يوقفه، والضغط المطوّل يختار التكرارات (من 1 إلى 10 أو اللانهاية أو Default). بلا مربعات مشغّلة، تواصل القناة اللوب.",
               "EQ: Low وMid وHigh وMid Hz. Gain وSqueeze."
             ]
           },
