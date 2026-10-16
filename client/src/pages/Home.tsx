@@ -21,11 +21,11 @@ const factoryHero = {
 const factoryBoxJpg = `${import.meta.env.BASE_URL}assets/factory-pack-box.jpg?v=108-packs`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=108-packs`;
 const factoryBoxWebp800 = `${import.meta.env.BASE_URL}assets/factory-pack-box-800.webp?v=108-packs`;
-const featureGraphic = {
-  webp800: `${import.meta.env.BASE_URL}assets/feature-graphic-800.webp`,
-  webp1024: `${import.meta.env.BASE_URL}assets/feature-graphic-1024.webp`,
-  jpg: `${import.meta.env.BASE_URL}assets/feature-graphic-1024.jpg`,
-};
+// 1.10 feature graphic (1024x500). HE uses the Hebrew one, EN/RU/AR use the English one.
+const FEATURE_GRAPHIC_VER = "fg-110";
+function featureGraphicUrl(language: Language, width: 640 | 800 | 1024, ext: "jpg" | "webp") {
+  return `${import.meta.env.BASE_URL}assets/feature-graphic-${language === "he" ? "he" : "en"}-${width}.${ext}?v=${FEATURE_GRAPHIC_VER}`;
+}
 const DEMO_SHORT_ID = "d89y14QAHuA";
 const demoPoster = {
   webp: `${import.meta.env.BASE_URL}assets/demo-short-poster.webp`,
@@ -38,10 +38,10 @@ const demoCopy = {
   ar: { label: "فيديو تجريبي", title: "فيديو تجريبي لـ L Studio" },
 } satisfies Record<Language, { label: string; title: string }>;
 const featureGraphicAlt = {
-  he: "L Studio, אפליקציית מוזיקה לאנדרואיד: מסך Sound עם גלים, נובים וקלידים, ומסך Pad עם WAH, OCT ו-Vibrato. Sound, Mic, Loop, Pad, Drum.",
-  en: "L Studio, an Android music app: the Sound screen with waves, knobs and keys, and the Pad screen with WAH, OCT and Vibrato. Sound, Mic, Loop, Pad, Drum.",
-  ru: "L Studio, музыкальное приложение для Android: экран Sound с волнами, ручками и клавишами и экран Pad с WAH, OCT и Vibrato. Sound, Mic, Loop, Pad, Drum.",
-  ar: "L Studio، تطبيق موسيقى لأندرويد: شاشة Sound مع الموجات والمقابض والمفاتيح، وشاشة Pad مع WAH وOCT وVibrato. Sound وMic وLoop وPad وDrum.",
+  he: "L Studio, גרפיקה עם שלושה מסכי טלפון: סינתיסייזר עם חמישה גלי קול, מעטפת, פילטר והד. לופר עם 32 ערוצים ו-8 עמודים. תופים עם מעל אלף דגימות ו-8 ערוצים. לאנשים אנלוגיים בעולם דיגיטלי.",
+  en: "L Studio, a graphic with three phone screens: Synth with 5 waveforms, ADSR, filter and echo. Looper with 32 channels and 8 pages. Drums with 1,000+ samples and 8 channels. For analog people in a digital world.",
+  ru: "L Studio, графика с тремя экранами телефона: синтезатор с 5 волнами, ADSR, фильтром и эхо. Лупер с 32 каналами и 8 страницами. Ударные с более чем 1000 сэмплов и 8 каналами. Для аналоговых людей в цифровом мире.",
+  ar: "L Studio، رسم بثلاث شاشات هاتف: سينث بـ5 موجات وADSR وفلتر وصدى. لوبر بـ32 قناة و8 صفحات. طبول بأكثر من 1000 عينة و8 قنوات. للأشخاص التناظريين في عالم رقمي.",
 } satisfies Record<Language, string>;
 const developerImage = {
   webp: `${import.meta.env.BASE_URL}assets/Developer-720.webp`,
@@ -505,8 +505,8 @@ export default function Home() {
       <div className="container feature-graphic-wrap">
       <figure className="feature-graphic">
         <picture>
-          <source srcSet={`${featureGraphic.webp800} 800w, ${featureGraphic.webp1024} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" />
-          <img src={featureGraphic.jpg} alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
+          <source srcSet={`${featureGraphicUrl(language, 640, "webp")} 640w, ${featureGraphicUrl(language, 800, "webp")} 800w, ${featureGraphicUrl(language, 1024, "webp")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" />
+          <img src={featureGraphicUrl(language, 1024, "jpg")} srcSet={`${featureGraphicUrl(language, 640, "jpg")} 640w, ${featureGraphicUrl(language, 1024, "jpg")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
         </picture>
       </figure>
       </div>

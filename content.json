@@ -382,7 +382,7 @@
                   "מה LIVE משאיר פתוח: Rec, Play, Stop, M, S, Redo, Save ו-Export. רשימת סמפלי התופים וחיצי הסמפלים, CLEAR בתופים, מעבר בין עמודים, פריסטים, וכל מה שאתם מנגנים. הקשה נוספת על הכפתור מחזירה ל-PRO."
                 ],
                 "imageAlts": {
-                  "assets/posters/he/p02-sound-live-w630.jpg": "פוסטר: שתי מקלדות, בלייב. מסך Sound עם שתי מקלדות ומצב LIVE שנועל חלק מהכפתורים."
+                  "assets/posters/he/p02-sound-live-w630.jpg": "פוסטר: שתי מקלדות, נגינה חיה. מסך Sound עם 16 קלידים ומצב LIVE שנועל חלק מהכפתורים."
                 },
                 "media": "assets/posters/he/p02-sound-live-w630.jpg"
               },
@@ -417,7 +417,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/he/p01-sound-w630.jpg": "פוסטר: עצבו את הסאונד. מסך Sound עם בחירת גל, מעטפת, פילטר והד, והמקלדת מתחת."
+              "assets/posters/he/p01-sound-w630.jpg": "פוסטר: נגינה עם צלילים משלך. מסך Sound עם חמישה גלי קול, מעטפת, פילטר והד."
             }
           },
           {
@@ -441,7 +441,7 @@
             ],
             "imageAlts": {
               "assets/guide/pad-dual-keyboard-110.jpg": "מסך Pad בגרסה 1.10 עם המקלדת השנייה פתוחה, משותפת עם Sound.",
-              "assets/posters/he/p03-pad-w630.jpg": "פוסטר: פד לנגינה חיה. מסך ה-Pad: מחליקים על הפד כדי להזיז את הצליל, והידיות Wah, Oct ו-Vibrato מוסיפות אפקטים חיים."
+              "assets/posters/he/p03-pad-w630.jpg": "פוסטר: משטח נגינה חי. מסך Pad: גוררים על המשטח כדי לעצב את הצליל בזמן אמת."
             }
           },
           {
@@ -503,7 +503,7 @@
                 ],
                 "media": "assets/posters/he/p08-drum-styles-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/he/p08-drum-styles-w630.jpg": "פוסטר: סגנונות תופים. חלון Drum Styles עם חבילת EXPERIMENTAL וכפתורי Load, Edit, Import ו-Export."
+                  "assets/posters/he/p08-drum-styles-w630.jpg": "פוסטר: ערכות תופים מוכנות. חלון Drum Styles עם 8 חבילות סגנון ועוד 11 עמודים בלעדיים, ויותר מ-1,000 דגימות מובנות."
                 }
               },
               {
@@ -523,7 +523,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "בוחר הסאמפלים של Voice בגרסה 1.10, בלשונית Authentic עם 33 ווקאלים.",
-              "assets/posters/he/p07-drums-w630.jpg": "פוסטר: בנו את הביט. מסך Drum עם תבניות צעדים בארבעה ערוצים ומקלדת מתחת."
+              "assets/posters/he/p07-drums-w630.jpg": "פוסטר: בנו את הקצב. מסך Drum עם עד 8 ערוצים ו-16 צעדים, ודגימה מובנית לכל ערוץ ולכל קצב."
             }
           },
           {
@@ -566,7 +566,7 @@
                 ],
                 "media": "assets/posters/he/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/he/p05-loop-editor-w630.jpg": "פוסטר: ערכו כל לופ. עורך הלופ עם גל, גזירה ולופ, קשירה לקצבי התופים, EQ ו-SQUEEZE."
+                  "assets/posters/he/p05-loop-editor-w630.jpg": "פוסטר: ערכו כל לולאה. עורך הלופ: חיתוך, חזרות, איזון וקשירה לקצב התופים."
                 }
               },
               {
@@ -586,7 +586,7 @@
               "assets/guide/loop-page-name.jpg"
             ],
             "imageAlts": {
-              "assets/posters/he/p06-looper-w630.jpg": "פוסטר: בנו שכבות של לופים. מסך הלופר עם עמודים 1 עד 8, ערוצים וצבעים."
+              "assets/posters/he/p06-looper-w630.jpg": "פוסטר: בנו שכבות של לולאות. מסך הלופר עם 32 ערוצים ב-8 עמודים, עם שמות וצבעים."
             }
           },
           {
@@ -624,7 +624,7 @@
                 ],
                 "media": "assets/posters/he/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/he/p05-loop-editor-w630.jpg": "פוסטר: ערכו כל לופ. עורך הלופ עם גל, גזירה ולופ, קשירה לקצבי התופים, EQ ו-SQUEEZE."
+                  "assets/posters/he/p05-loop-editor-w630.jpg": "פוסטר: ערכו כל לולאה. עורך הלופ: חיתוך, חזרות, איזון וקשירה לקצב התופים."
                 }
               },
               {
@@ -654,7 +654,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/he/p04-mic-w630.jpg": "פוסטר: הקליטו את הקול. מסך Mic עם ערוצים נפרדים, ולכל ערוץ HPF, נוכחות, Mic FX, השתקה וסולו."
+              "assets/posters/he/p04-mic-w630.jpg": "פוסטר: הקליטו את הקול. מסך Mic עם שלושה ערוצי שירה, גיטרה, בס וכלי נגינה, ולכל ערוץ עורך סאונד."
             }
           }
         ]
@@ -1421,7 +1421,7 @@
               "/assets/posters/he/p05-loop-editor-w630.jpg"
             ],
             "imageAlts": [
-              "פוסטר: ערכו כל לופ. עורך הלופ עם גל, גזירה ולופ, קשירה לקצבי התופים, EQ ו-SQUEEZE."
+              "פוסטר: ערכו כל לולאה. עורך הלופ: חיתוך, חזרות, איזון וקשירה לקצב התופים."
             ],
             "sections": [
               {
@@ -1967,7 +1967,7 @@
                   "What LIVE leaves open: Rec, Play, Stop, M, S, Redo, Save, and Export. The drum sample list and the sample arrows, CLEAR on the drums, switching pages, presets, and everything you play. Another tap on the chip goes back to PRO."
                 ],
                 "imageAlts": {
-                  "assets/posters/en/p02-sound-live-w630.jpg": "Poster: Two Keyboards, Live. The Sound screen with two keyboards and LIVE mode, which locks some buttons."
+                  "assets/posters/en/p02-sound-live-w630.jpg": "Poster: Two Keyboards, Live. The Sound screen with two keyboards (16 keys) and LIVE mode, which locks some buttons on stage."
                 },
                 "media": "assets/posters/en/p02-sound-live-w630.jpg"
               },
@@ -2002,7 +2002,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/en/p01-sound-w630.jpg": "Poster: Shape Your Sound. The Sound screen with a waveform, envelope, filter and echo, and the keyboard below."
+              "assets/posters/en/p01-sound-w630.jpg": "Poster: Play Your Own Sound. The Sound screen with five waveforms, envelope, filter and echo."
             }
           },
           {
@@ -2026,7 +2026,7 @@
             ],
             "imageAlts": {
               "assets/guide/pad-dual-keyboard-110.jpg": "The Pad screen in 1.10 with the second keyboard open, shared with Sound.",
-              "assets/posters/en/p03-pad-w630.jpg": "Poster: Live Performance Pad. The Pad screen: slide on the pad to move the sound, and the Wah, Oct and Vibrato knobs add live effects."
+              "assets/posters/en/p03-pad-w630.jpg": "Poster: A Live Performance Pad. The Pad screen: drag on the pad to shape the sound in real time."
             }
           },
           {
@@ -2088,7 +2088,7 @@
                 ],
                 "media": "assets/posters/en/p08-drum-styles-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/en/p08-drum-styles-w630.jpg": "Poster: Drum Styles. The Drum Styles window with the EXPERIMENTAL pack and Load, Edit, Import and Export."
+                  "assets/posters/en/p08-drum-styles-w630.jpg": "Poster: Drum Styles. The Drum Styles window with 8 style packs and 11 Exclusive pages, with 1,000+ built-in samples."
                 }
               },
               {
@@ -2108,7 +2108,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "The Voice sample picker in 1.10, on the Authentic tab with 33 vocals.",
-              "assets/posters/en/p07-drums-w630.jpg": "Poster: Build Your Beat. The Drum screen with step patterns on four channels and the keyboard below."
+              "assets/posters/en/p07-drums-w630.jpg": "Poster: Build the Beat. The Drum screen with up to 8 channels and 16 steps, and a built-in sample for each channel and rhythm."
             }
           },
           {
@@ -2151,7 +2151,7 @@
                 ],
                 "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/en/p05-loop-editor-w630.jpg": "Poster: Edit Every Loop. The Loop Editor with the waveform, trim and loop, drum rhythms, EQ and squeeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "Poster: Edit Every Loop. The Loop Editor: trim, repeat, EQ, and lock it to the drum rhythm."
                 }
               },
               {
@@ -2171,7 +2171,7 @@
               "assets/guide/loop-page-name.jpg"
             ],
             "imageAlts": {
-              "assets/posters/en/p06-looper-w630.jpg": "Poster: Layer Your Loops. The looper with pages 1 to 8, channels and page colors."
+              "assets/posters/en/p06-looper-w630.jpg": "Poster: Build Layers of Loops. The looper with 32 channels across 8 pages, named and colored."
             }
           },
           {
@@ -2209,7 +2209,7 @@
                 ],
                 "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/en/p05-loop-editor-w630.jpg": "Poster: Edit Every Loop. The Loop Editor with the waveform, trim and loop, drum rhythms, EQ and squeeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "Poster: Edit Every Loop. The Loop Editor: trim, repeat, EQ, and lock it to the drum rhythm."
                 }
               },
               {
@@ -2239,7 +2239,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/en/p04-mic-w630.jpg": "Poster: Record Your Voice. The Mic screen with separate channels, each with its own high-pass, presence, FX, mute and solo."
+              "assets/posters/en/p04-mic-w630.jpg": "Poster: Record Your Voice. The Mic screen with three vocal channels, guitar, bass and instrument, each with its own sound editor."
             }
           }
         ]
@@ -3006,7 +3006,7 @@
               "/assets/posters/en/p05-loop-editor-w630.jpg"
             ],
             "imageAlts": [
-              "Poster: Edit Every Loop. The Loop Editor with the waveform, trim and loop, drum rhythms, EQ and squeeze."
+              "Poster: Edit Every Loop. The Loop Editor: trim, repeat, EQ, and lock it to the drum rhythm."
             ],
             "sections": [
               {
@@ -3552,7 +3552,7 @@
                   "Что LIVE оставляет открытым: Rec, Play, Stop, M, S, Redo, Save и Export. Список сэмплов ударных и стрелки сэмплов, CLEAR на ударных, переключение страниц, пресеты и всё, что вы играете. Ещё одно нажатие на значок возвращает PRO."
                 ],
                 "imageAlts": {
-                  "assets/posters/en/p02-sound-live-w630.jpg": "Постер (на английском): Two Keyboards, Live. Экран Sound с двумя клавиатурами и режимом LIVE, который блокирует часть кнопок."
+                  "assets/posters/en/p02-sound-live-w630.jpg": "Постер (на английском): Two Keyboards, Live. Экран Sound с двумя клавиатурами (16 клавиш) и режимом LIVE, который блокирует часть кнопок на сцене."
                 },
                 "media": "assets/posters/en/p02-sound-live-w630.jpg"
               },
@@ -3587,7 +3587,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/en/p01-sound-w630.jpg": "Постер (на английском): Shape Your Sound. Экран Sound с волной, огибающей, фильтром и эхо, а внизу клавиатура."
+              "assets/posters/en/p01-sound-w630.jpg": "Постер (на английском): Play Your Own Sound. Экран Sound с пятью волнами, огибающей, фильтром и эхо."
             }
           },
           {
@@ -3611,7 +3611,7 @@
             ],
             "imageAlts": {
               "assets/guide/pad-dual-keyboard-110.jpg": "Экран Pad в 1.10 со второй клавиатурой, общей с Sound.",
-              "assets/posters/en/p03-pad-w630.jpg": "Постер (на английском): Live Performance Pad. Экран Pad: скольжение по паду двигает звук, а ручки Wah, Oct и Vibrato добавляют живые эффекты."
+              "assets/posters/en/p03-pad-w630.jpg": "Постер (на английском): A Live Performance Pad. Экран Pad: проведите по паду, чтобы менять звук в реальном времени."
             }
           },
           {
@@ -3673,7 +3673,7 @@
                 ],
                 "media": "assets/posters/en/p08-drum-styles-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/en/p08-drum-styles-w630.jpg": "Постер (на английском): Drum Styles. Окно Drum Styles с паком EXPERIMENTAL и кнопками Load, Edit, Import и Export."
+                  "assets/posters/en/p08-drum-styles-w630.jpg": "Постер (на английском): Drum Styles. Окно Drum Styles: 8 пакетов стилей и 11 страниц Exclusive, более 1000 встроенных сэмплов."
                 }
               },
               {
@@ -3693,7 +3693,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "Выбор сэмплов Voice в 1.10, на вкладке Authentic с 33 вокалами.",
-              "assets/posters/en/p07-drums-w630.jpg": "Постер (на английском): Build Your Beat. Экран Drum с шаговыми паттернами на четырех каналах и клавиатурой внизу."
+              "assets/posters/en/p07-drums-w630.jpg": "Постер (на английском): Build the Beat. Экран Drum: до 8 каналов и 16 шагов, встроенный сэмпл для каждого канала и ритма."
             }
           },
           {
@@ -3736,7 +3736,7 @@
                 ],
                 "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/en/p05-loop-editor-w630.jpg": "Постер (на английском): Edit Every Loop. Редактор лупа с волной, обрезкой и циклом, ритмами барабанов, EQ и squeeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "Постер (на английском): Edit Every Loop. Редактор лупа: обрезка, повторы, EQ и привязка к ритму ударных."
                 }
               },
               {
@@ -3756,7 +3756,7 @@
               "assets/guide/loop-page-name.jpg"
             ],
             "imageAlts": {
-              "assets/posters/en/p06-looper-w630.jpg": "Постер (на английском): Layer Your Loops. Лупер со страницами с 1 по 8, каналами и цветами страниц."
+              "assets/posters/en/p06-looper-w630.jpg": "Постер (на английском): Build Layers of Loops. Лупер: 32 канала на 8 страницах, с названиями и цветами."
             }
           },
           {
@@ -3794,7 +3794,7 @@
                 ],
                 "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/en/p05-loop-editor-w630.jpg": "Постер (на английском): Edit Every Loop. Редактор лупа с волной, обрезкой и циклом, ритмами барабанов, EQ и squeeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "Постер (на английском): Edit Every Loop. Редактор лупа: обрезка, повторы, EQ и привязка к ритму ударных."
                 }
               },
               {
@@ -3824,7 +3824,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/en/p04-mic-w630.jpg": "Постер (на английском): Record Your Voice. Экран Mic с отдельными каналами, у каждого свои фильтр высоких частот, presence, FX, mute и solo."
+              "assets/posters/en/p04-mic-w630.jpg": "Постер (на английском): Record Your Voice. Экран Mic: три вокальных канала, гитара, бас и инструмент, у каждого свой редактор звука."
             }
           }
         ]
@@ -4591,7 +4591,7 @@
               "/assets/posters/en/p05-loop-editor-w630.jpg"
             ],
             "imageAlts": [
-              "Постер (на английском): Edit Every Loop. Редактор лупа с волной, обрезкой и циклом, ритмами барабанов, EQ и squeeze."
+              "Постер (на английском): Edit Every Loop. Редактор лупа: обрезка, повторы, EQ и привязка к ритму ударных."
             ],
             "sections": [
               {
@@ -5137,7 +5137,7 @@
                   "ما يتركه LIVE مفتوحاً: Rec وPlay وStop وM وS وRedo وSave وExport. قائمة عينات الطبول وأسهم العينات، وCLEAR في الطبول، والتبديل بين الصفحات، والإعدادات المسبقة، وكل ما تعزفه. نقرة أخرى على الشارة تعيدك إلى PRO."
                 ],
                 "imageAlts": {
-                  "assets/posters/en/p02-sound-live-w630.jpg": "ملصق (بالإنجليزية): Two Keyboards, Live. شاشة Sound مع لوحتي مفاتيح ووضع LIVE الذي يقفل بعض الأزرار."
+                  "assets/posters/en/p02-sound-live-w630.jpg": "ملصق (بالإنجليزية): Two Keyboards, Live. شاشة Sound مع لوحتي مفاتيح (16 مفتاحاً) ووضع LIVE الذي يقفل بعض الأزرار على المسرح."
                 },
                 "media": "assets/posters/en/p02-sound-live-w630.jpg"
               },
@@ -5172,7 +5172,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/en/p01-sound-w630.jpg": "ملصق (بالإنجليزية): Shape Your Sound. شاشة Sound مع الموجة والغلاف والفلتر والصدى، وتحتها لوحة المفاتيح."
+              "assets/posters/en/p01-sound-w630.jpg": "ملصق (بالإنجليزية): Play Your Own Sound. شاشة Sound مع خمس موجات والغلاف والفلتر والصدى."
             }
           },
           {
@@ -5196,7 +5196,7 @@
             ],
             "imageAlts": {
               "assets/guide/pad-dual-keyboard-110.jpg": "شاشة Pad في الإصدار 1.10 مع لوحة المفاتيح الثانية مفتوحة، مشتركة مع Sound.",
-              "assets/posters/en/p03-pad-w630.jpg": "ملصق (بالإنجليزية): Live Performance Pad. شاشة Pad: الانزلاق على اللوحة يحرّك الصوت، ومقابض Wah وOct وVibrato تضيف مؤثرات حية."
+              "assets/posters/en/p03-pad-w630.jpg": "ملصق (بالإنجليزية): A Live Performance Pad. شاشة Pad: اسحب على اللوحة لتشكيل الصوت في الوقت الفعلي."
             }
           },
           {
@@ -5258,7 +5258,7 @@
                 ],
                 "media": "assets/posters/en/p08-drum-styles-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/en/p08-drum-styles-w630.jpg": "ملصق (بالإنجليزية): Drum Styles. نافذة Drum Styles مع حزمة EXPERIMENTAL وأزرار Load وEdit وImport وExport."
+                  "assets/posters/en/p08-drum-styles-w630.jpg": "ملصق (بالإنجليزية): Drum Styles. نافذة Drum Styles: 8 حزم أنماط و11 صفحة Exclusive، وأكثر من 1000 عينة مدمجة."
                 }
               },
               {
@@ -5278,7 +5278,7 @@
             ],
             "imageAlts": {
               "assets/guide/voice-110.jpg": "منتقي عينات Voice في الإصدار 1.10، على تبويب Authentic مع 33 عيّنة غناء.",
-              "assets/posters/en/p07-drums-w630.jpg": "ملصق (بالإنجليزية): Build Your Beat. شاشة Drum مع أنماط خطوات على أربع قنوات ولوحة المفاتيح تحتها."
+              "assets/posters/en/p07-drums-w630.jpg": "ملصق (بالإنجليزية): Build the Beat. شاشة Drum: حتى 8 قنوات و16 خطوة، وعينة مدمجة لكل قناة ولكل إيقاع."
             }
           },
           {
@@ -5321,7 +5321,7 @@
                 ],
                 "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/en/p05-loop-editor-w630.jpg": "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب مع الموجة والقص والتكرار وإيقاعات الطبول وEQ وsqueeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب: قص وتكرار وEQ وربط بإيقاع الطبول."
                 }
               },
               {
@@ -5341,7 +5341,7 @@
               "assets/guide/loop-page-name.jpg"
             ],
             "imageAlts": {
-              "assets/posters/en/p06-looper-w630.jpg": "ملصق (بالإنجليزية): Layer Your Loops. اللوبر مع الصفحات من 1 إلى 8 والقنوات وألوان الصفحات."
+              "assets/posters/en/p06-looper-w630.jpg": "ملصق (بالإنجليزية): Build Layers of Loops. اللوبر: 32 قناة على 8 صفحات، بأسماء وألوان."
             }
           },
           {
@@ -5379,7 +5379,7 @@
                 ],
                 "media": "assets/posters/en/p05-loop-editor-w630.jpg",
                 "imageAlts": {
-                  "assets/posters/en/p05-loop-editor-w630.jpg": "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب مع الموجة والقص والتكرار وإيقاعات الطبول وEQ وsqueeze."
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب: قص وتكرار وEQ وربط بإيقاع الطبول."
                 }
               },
               {
@@ -5409,7 +5409,7 @@
               }
             ],
             "imageAlts": {
-              "assets/posters/en/p04-mic-w630.jpg": "ملصق (بالإنجليزية): Record Your Voice. شاشة Mic بقنوات منفصلة، ولكل قناة فلتر الترددات العالية وpresence وFX وmute وsolo."
+              "assets/posters/en/p04-mic-w630.jpg": "ملصق (بالإنجليزية): Record Your Voice. شاشة Mic: ثلاث قنوات صوت وغيتار وباس وآلة، ولكل قناة محرر صوت خاص."
             }
           }
         ]
@@ -6176,7 +6176,7 @@
               "/assets/posters/en/p05-loop-editor-w630.jpg"
             ],
             "imageAlts": [
-              "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب مع الموجة والقص والتكرار وإيقاعات الطبول وEQ وsqueeze."
+              "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب: قص وتكرار وEQ وربط بإيقاع الطبول."
             ],
             "sections": [
               {

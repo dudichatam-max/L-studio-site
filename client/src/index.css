@@ -292,7 +292,7 @@ html[dir="rtl"] .guide-toc-sub a { padding: 6px 14px 6px 0; }
 .preview-image-wrap img.preview-media { width: min(100%, 320px); height: auto; min-height: 0; display: block; object-fit: contain; object-position: center top; border: 1px solid rgba(227,197,101,.35); border-radius: 10px; background: #0c0c0e; }
 .preview-image-wrap picture { display: block; min-width: 0; }
 /* Two posters per tab (Sound, Loop, Drum): equal columns, same gold frame. */
-.interface-preview:has(.preview-image-wrap--pair) { grid-template-columns: minmax(300px, 560px) 1fr; }
+.interface-preview:has(.preview-image-wrap--pair) { grid-template-columns: minmax(300px, 600px) 1fr; }
 .preview-image-wrap--pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 16px 16px 18px; align-items: start; }
 .preview-image-wrap--pair img.preview-media { width: 100%; }
 .preview-mute { position: absolute; z-index: 2; top: 16px; inset-inline-end: 16px; display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid rgba(242,241,235,.28); border-radius: 999px; color: var(--paper); background: rgba(8,8,9,.72); backdrop-filter: blur(8px); font: 10px var(--mono); letter-spacing: .1em; cursor: pointer; transition: border-color 180ms ease, background 180ms ease, color 180ms ease; }

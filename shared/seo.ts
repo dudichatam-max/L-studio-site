@@ -352,11 +352,11 @@ export const APP_FACTS = {
 } as const;
 
 const APP_SCREENSHOTS = [
-  "/assets/play/01-sound-fx.jpg",
-  "/assets/play/12-looper-8-colours.jpg",
-  "/assets/play/04-drum-machine.jpg",
-  "/assets/play/05-live-pad.jpg",
-  "/assets/play/07-mic-fx.jpg",
+  "/assets/posters/en/p01-sound-w630.jpg",
+  "/assets/posters/en/p06-looper-w630.jpg",
+  "/assets/posters/en/p07-drums-w630.jpg",
+  "/assets/posters/en/p03-pad-w630.jpg",
+  "/assets/posters/en/p04-mic-w630.jpg",
 ];
 
 export const SITEMAP_PAGES: Array<{
