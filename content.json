@@ -1706,6 +1706,106 @@
         "headline": "מגיע ל-Google Play באוקטובר 2026.",
         "price": "L Studio Pro, 8$.",
         "note": "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$."
+      },
+      "carousel": {
+        "region": "קרוסלת מסכים",
+        "prev": "השקופית הקודמת",
+        "next": "השקופית הבאה",
+        "slide": "שקופית {n} מתוך {total}",
+        "slides": {
+          "sound-keys": {
+            "title": "גלים, מעטפת, פילטר",
+            "text": "מדליקים כמה גלים שיישמעו יחד. Attack, Release, Cutoff, Resonance ו-Glide הם נובים, והקשה על המספר נותנת להקליד ערך."
+          },
+          "sound-live": {
+            "title": "שתי מקלדות ו-LIVE",
+            "text": "המקש + פותח מקלדת שנייה, אוקטבה אחת גבוה יותר. LIVE נועל מקשים שעלולים למחוק או לטעון משהו בטעות, וכל מה שמנגנים נשאר פתוח."
+          },
+          "sound-presets": {
+            "title": "Presets: 8 מקומות, 8 עמודים",
+            "text": "פריסט שומר את הסאונד יחד עם Sound FX והגלים הדולקים. לחיצה ארוכה על Presets שומרת לפריסט שטעון.",
+            "alt": "חלון Presets, 8 slots: מקשי עמודים 1 עד 8 כש-4 מסומן, שם העמוד עם מקש Edit page name, מקשי Import ו-Save, שמונה שורות ממוספרות 1 עד 8 וכל אחת עם Load, Save ו-Edit, שורה אחת מסומנת, ומקש Close."
+          },
+          "sound-scales": {
+            "title": "Key וסקאלות",
+            "text": "בוחרים Major או Minor מכל תו שורש, מ-C עד B. סולם רק מסמן את הקלידים שלו ולא משנה את התדרים שלהם.",
+            "alt": "חלון Scales: מקש Scale off, ואז Major ו-Minor, כל אחד עם התווים C, C#, D, E במול, E, F, F#, G, A במול, A, B במול, B. C Minor מסומן. למטה מקש Close."
+          },
+          "sound-frequencies": {
+            "title": "כוונו כל קליד",
+            "text": "נותנים לכל אחד מ-8 הקלידים תדר משלו ב-Hz, או מתחילים מסולם מוכן. My Presets שומר 8 סטים משלכם.",
+            "alt": "חלון Tune frequencies (Hz): שמונה שדות תדר D, R, M, F, S, L, S, L, מקש Reset, Ready scales (D = 261 Hz) מ-Major עד Pentatonic, My Presets 1 עד 8, Save, Default ו-Close."
+          },
+          "mic-channels": {
+            "title": "ערוצים עם סאונד משלהם",
+            "text": "שישה ערוצים בשני עמודים. לכל ערוץ HPF, Pres, FX, עוצמה ו-L/R משלו, ועוד השתקה וסולו."
+          },
+          "mic-fx": {
+            "title": "Mic FX לכל ערוץ",
+            "text": "שמונה פריסטים. הקשה בוחרת, הקשה נוספת מכבה, ולחיצה ארוכה פותחת את המחוונים, כולל Transpose מ-‎-12 עד 12.",
+            "alt": "חלון Mic FX: אותה שורת הנחיה, שמונה אייקונים עגולים של פריסטים מ-Street Punch עד Wire Grit כש-Street Punch נבחר, ומתחתיהם מחוונים של Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep (כולם 50%), Transpose (0 semitones) ו-Reverb (0%)."
+          },
+          "mic-lyrics": {
+            "title": "המילים מול העיניים",
+            "text": "מדביקים את המילים ולוחצים Play כדי לגלול אותן כמו טלפרומפטר. Speed נע בין 20 ל-150, ו-A- ו-A+ משנים את גודל הטקסט.",
+            "alt": "חלון Lyrics: מקשי Play, A- ו-A+, Done ו-X לסגירה למעלה, מחוון Speed על 20, תיבת טקסט ריקה עם הכיתוב Paste lyrics here, ומקש Close למטה."
+          },
+          "mic-console": {
+            "title": "Load Console",
+            "text": "כל סשן שמור הוא שורה עם Load, Save, Edit ו-X. Export all ו-Import all מעבירים את כל ההגדרות למכשיר אחר.",
+            "alt": "חלון Load Console: שני סשנים שמורים, בכל אחד מקשי Load, Save, Edit ומקש X אדום, הראשון מסומן. מתחת Export all, Import all, Export selected, Import session ומקשי Cancel ו-Load."
+          },
+          "loop-looper": {
+            "title": "32 ערוצים, 8 עמודים",
+            "text": "ארבעה ערוצים בכל עמוד. הקלטה יכולה להימשך עד 30 דקות, ו-Redo מחזיר הקלטה שמחקתם."
+          },
+          "loop-editor": {
+            "title": "Loop Editor",
+            "text": "חותכים את ההקלטה, קובעים את נקודות הלופ ומעצבים עם EQ, Gain ו-Squeeze. שמונה תיבות קושרות את הלופ לקצב תופים."
+          },
+          "loop-fx": {
+            "title": "Looper FX",
+            "text": "שמונה פריסטים לערוץ. הקשה בוחרת, ולחיצה ארוכה פותחת Amount, EQ, Mid-sweep, Transpose ו-Reverb שלו.",
+            "alt": "חלון Looper FX: אותה שורת הנחיה, שמונה אייקונים עגולים של פריסטים מ-Hook Glue עד Dust Weave כש-Indie Wash נבחר, ומתחתיהם מחוונים של Amount (91%), EQ Low (66%), EQ Mid (71%), EQ High (57%), Mid-sweep (62%), Transpose (0 semitones) ו-Reverb (36%)."
+          },
+          "loop-page-name": {
+            "title": "שם וצבע לעמוד",
+            "text": "לחיצה ארוכה על מספר עמוד פותחת את Page name. מקלידים שם ובוחרים אחד מ-8 צבעים. הצבע גם צובע את הגלים של העמוד.",
+            "alt": "חלון Page name: שדה Name, Page color עם 8 צבעים (כתום, אדום, זהב, חום, ירוק, כחול, סגול, ורוד) כשהאדום מסומן, מקש Reset ומקשי Cancel ו-OK."
+          },
+          "pad-live": {
+            "title": "מעצבים את הסאונד חי",
+            "text": "מחזיקים צליל וגוררים. KEY, MIC, LOOP ו-DRUM קובעים מה הפד מזיז, והפד חוזר למרכז כשעוזבים."
+          },
+          "drum-beat": {
+            "title": "8 ערוצים, 16 צעדים",
+            "text": "הקשה מדליקה או מכבה צעד. BPM נע בין 60 ל-200, ולחיצה ארוכה על מספר קצב קובעת כמה פעמים הוא חוזר."
+          },
+          "drum-styles": {
+            "title": "Drum Styles",
+            "text": "8 עמודי סגנון ו-11 עמודי Exclusive, עם 8 ערכות בכל עמוד. לחיצה ארוכה על Drum Kits קובעת את הז'אנר של Random."
+          },
+          "drum-fx": {
+            "title": "Drum FX",
+            "text": "שמונה פריסטים לתופים. הקשה מדליקה, הקשה נוספת מכבה, ולחיצה ארוכה פותחת את המחוונים.",
+            "alt": "חלון Drum FX: השורה Long-press a preset for Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb, שמונה אייקונים עגולים של פריסטים מ-Street Boom עד Wire Glitch כש-Street Boom נבחר, ומתחתיהם מחוונים של Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose (0 semitones) ו-Reverb (0%)."
+          },
+          "drum-repeats": {
+            "title": "Pattern repeats",
+            "text": "בוחרים 1 עד 10 חזרות או אינסוף לפני הקצב הבא. COPY ו-PASTE מעבירים קצב שלם למספר אחר, ו-REDO מבטל הדבקה.",
+            "alt": "חלון Pattern repeats 1: השורה How many times the pattern repeats before the next, מקשי Repeats מ-1 עד 10, מקש אינסוף, Default מסומן, מתחת ל-Rhythm מקש Copy ומקש Paste עמום, ו-Close."
+          },
+          "drum-samples": {
+            "title": "סאמפל לכל שורה",
+            "text": "הקשה על שם שורה פותחת את רשימת הסאונדים שלה מהבנקים Factory ו-Exclusive, עם Gain, Squeeze, Attack, Release, Reverb ו-Sustain לשורה.",
+            "alt": "רשימת הסאונדים של שורת Kick: הלשוניות Factory ו-Exclusive כש-Exclusive נבחרת, שמונה שמות סאמפלים בשני טורים כש-War Horn מודגש, עמוד 1 מתוך 9 עם 88 סאמפלים, צורת גל, שישה נובים (Gain, Squeeze, Attack, Release, Reverb, Sustain) ומקש Close."
+          },
+          "drum-voice": {
+            "title": "שורת Voice",
+            "text": "ל-Voice יש גם בנק Authentic, והיא מציגה רק קולות. כל שורה בכל קצב שומרת סאמפל ונובים משלה.",
+            "alt": "רשימת הסאונדים של שורת Voice: הלשוניות Factory, Exclusive ו-Authentic כש-Exclusive נבחרת, שמונה שמות סאמפלים כש-Harbor Deep מודגש, עמוד 2 מתוך 2 עם 18 סאמפלים, צורת גל, אותם שישה נובים ומקש Close."
+          }
+        }
       }
     },
     "en": {
@@ -3414,6 +3514,106 @@
         "headline": "Coming to Google Play in October 2026.",
         "price": "L Studio Pro, $8.",
         "note": "Coming to Google Play in October 2026. L Studio Pro, $8."
+      },
+      "carousel": {
+        "region": "Screen carousel",
+        "prev": "Previous slide",
+        "next": "Next slide",
+        "slide": "Slide {n} of {total}",
+        "slides": {
+          "sound-keys": {
+            "title": "Waves, envelope, filter",
+            "text": "Turn on several waves to sound together. Attack, Release, Cutoff, Resonance and Glide are knobs, and a tap on a number lets you type the value."
+          },
+          "sound-live": {
+            "title": "Two keyboards and LIVE",
+            "text": "The + key opens a second keyboard, one octave higher. LIVE locks keys that could clear or load something by mistake, and everything you play stays open."
+          },
+          "sound-presets": {
+            "title": "Presets: 8 slots, 8 pages",
+            "text": "A preset keeps the sound with its Sound FX and the waves that are on. A long-press on Presets saves into the preset that is loaded.",
+            "alt": "The Presets, 8 slots window: page keys 1 to 8 with 4 marked, the page name with an Edit page name key, Import and Save keys, eight rows numbered 1 to 8 each with Load, Save, and Edit, one row marked, and a Close key."
+          },
+          "sound-scales": {
+            "title": "Key and scales",
+            "text": "Pick Major or Minor from any root, C to B. A scale only marks its keys. It never changes their frequencies.",
+            "alt": "The Scales window: a Scale off key, then Major and Minor, each with the roots C, C#, D, E flat, E, F, F#, G, A flat, A, B flat, B. C Minor is marked. A Close key is at the bottom."
+          },
+          "sound-frequencies": {
+            "title": "Tune every key",
+            "text": "Give each of the 8 keys its own frequency in Hz, or start from a ready scale. My Presets keeps 8 sets of your own.",
+            "alt": "The Tune frequencies (Hz) window: eight frequency fields D, R, M, F, S, L, S, L, a Reset key, Ready scales (D = 261 Hz) from Major to Pentatonic, My Presets 1 to 8, Save, Default, and Close."
+          },
+          "mic-channels": {
+            "title": "Channels with their own sound",
+            "text": "Six channels on two pages. Each one has its own HPF, Pres, FX, volume and L/R, plus mute and solo."
+          },
+          "mic-fx": {
+            "title": "Mic FX for each channel",
+            "text": "Eight presets. A tap selects one, a second tap turns it off, and a long-press opens its sliders, with Transpose from -12 to 12.",
+            "alt": "The Mic FX window: the same hint line, eight round preset icons from Street Punch to Wire Grit with Street Punch selected, and below them sliders for Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep (all 50%), Transpose (0 semitones), and Reverb (0%)."
+          },
+          "mic-lyrics": {
+            "title": "Lyrics in front of you",
+            "text": "Paste your words and press Play to scroll them like a teleprompter. Speed runs from 20 to 150, and A- and A+ change the text size.",
+            "alt": "The Lyrics window: Play, A- and A+ keys, Done and a close X at the top, a Speed slider set to 20, an empty text box that says Paste lyrics here, and a Close key at the bottom."
+          },
+          "mic-console": {
+            "title": "Load Console",
+            "text": "Each saved session is a row with Load, Save, Edit and X. Export all and Import all move the whole setup to another device.",
+            "alt": "The Load Console window: two saved sessions, each with Load, Save, Edit, and a red X key, the first one highlighted. Below are Export all, Import all, Export selected, Import session, and the Cancel and Load keys."
+          },
+          "loop-looper": {
+            "title": "32 channels, 8 pages",
+            "text": "Four channels on each page. A take can run up to 30 minutes, and Redo brings back a take you cleared."
+          },
+          "loop-editor": {
+            "title": "Loop Editor",
+            "text": "Trim the take, set the loop points, and shape it with EQ, Gain and Squeeze. Eight boxes tie the loop to a drum rhythm."
+          },
+          "loop-fx": {
+            "title": "Looper FX",
+            "text": "Eight presets for a channel. A tap selects one, and a long-press opens Amount, EQ, Mid-sweep, Transpose and Reverb for it.",
+            "alt": "The Looper FX window: the same hint line, eight round preset icons from Hook Glue to Dust Weave with Indie Wash selected, and below them sliders for Amount (91%), EQ Low (66%), EQ Mid (71%), EQ High (57%), Mid-sweep (62%), Transpose (0 semitones), and Reverb (36%)."
+          },
+          "loop-page-name": {
+            "title": "Name and color a page",
+            "text": "A long-press on a page number opens Page name. Type a name and pick one of 8 colors. The color also tints that page's waves.",
+            "alt": "The Page name window: a Name field, Page color with 8 colors (orange, red, gold, brown, green, blue, purple, pink) and red marked, a Reset key, and Cancel and OK keys."
+          },
+          "pad-live": {
+            "title": "Shape the sound live",
+            "text": "Hold a note, then drag. KEY, MIC, LOOP and DRUM choose what the pad moves, and the pad glides back to center when you let go."
+          },
+          "drum-beat": {
+            "title": "8 channels, 16 steps",
+            "text": "A tap turns a step on or off. BPM runs from 60 to 200, and a long-press on a rhythm number sets how many times it repeats."
+          },
+          "drum-styles": {
+            "title": "Drum Styles",
+            "text": "8 style pages and 11 Exclusive pages, with 8 kits on each. A long-press on Drum Kits sets the genre for Random."
+          },
+          "drum-fx": {
+            "title": "Drum FX",
+            "text": "Eight presets for the drums. A tap turns one on, a second tap turns it off, and a long-press opens its sliders.",
+            "alt": "The Drum FX window: the line Long-press a preset for Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb, eight round preset icons from Street Boom to Wire Glitch with Street Boom selected, and below them sliders for Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose (0 semitones), and Reverb (0%)."
+          },
+          "drum-repeats": {
+            "title": "Pattern repeats",
+            "text": "Pick 1 to 10 repeats or infinity before the next rhythm. COPY and PASTE move a whole rhythm to another number, and REDO undoes a paste.",
+            "alt": "The Pattern repeats 1 window: the line How many times the pattern repeats before the next, Repeats keys 1 to 10, an infinity key, Default marked, under Rhythm the Copy key and a dimmed Paste key, and Close."
+          },
+          "drum-samples": {
+            "title": "A sample for every row",
+            "text": "A tap on a row name opens its sound list from the Factory and Exclusive banks, with Gain, Squeeze, Attack, Release, Reverb and Sustain for that row.",
+            "alt": "The sound list of the Kick row: Factory and Exclusive tabs with Exclusive selected, eight sample names in two columns with War Horn highlighted, page 1 of 9 with 88 samples, a waveform, six knobs (Gain, Squeeze, Attack, Release, Reverb, Sustain), and a Close key."
+          },
+          "drum-voice": {
+            "title": "The Voice row",
+            "text": "Voice adds an Authentic bank and lists vocal sounds only. Each row of each rhythm keeps its own sample and knobs.",
+            "alt": "The sound list of the Voice row: Factory, Exclusive, and Authentic tabs with Exclusive selected, eight sample names with Harbor Deep highlighted, page 2 of 2 with 18 samples, a waveform, the same six knobs, and a Close key."
+          }
+        }
       }
     },
     "ru": {
@@ -5122,6 +5322,106 @@
         "headline": "Выходит в Google Play в октябре 2026.",
         "price": "L Studio Pro, $8.",
         "note": "Выходит в Google Play в октябре 2026. L Studio Pro, $8."
+      },
+      "carousel": {
+        "region": "Карусель экранов",
+        "prev": "Предыдущий слайд",
+        "next": "Следующий слайд",
+        "slide": "Слайд {n} из {total}",
+        "slides": {
+          "sound-keys": {
+            "title": "Волны, огибающая, фильтр",
+            "text": "Включайте несколько волн, чтобы они звучали вместе. Attack, Release, Cutoff, Resonance и Glide это ручки, а нажатие на число позволяет ввести значение."
+          },
+          "sound-live": {
+            "title": "Две клавиатуры и LIVE",
+            "text": "Клавиша + открывает вторую клавиатуру на октаву выше. LIVE блокирует клавиши, которые могут по ошибке стереть или загрузить что-то, а всё, на чём вы играете, остаётся открытым."
+          },
+          "sound-presets": {
+            "title": "Presets: 8 мест, 8 страниц",
+            "text": "Пресет хранит звук вместе с Sound FX и включёнными волнами. Долгое нажатие на Presets сохраняет в загруженный пресет.",
+            "alt": "Окно Presets, 8 slots: клавиши страниц 1 до 8, отмечена 4, имя страницы с клавишей Edit page name, клавиши Import и Save, восемь строк с номерами 1 до 8, в каждой Load, Save и Edit, одна строка отмечена, и клавиша Close."
+          },
+          "sound-scales": {
+            "title": "Key и гаммы",
+            "text": "Выберите Major или Minor от любого основного тона, от C до B. Лад только отмечает свои клавиши и никогда не меняет их частоты.",
+            "alt": "Окно Scales: клавиша Scale off, затем Major и Minor, в каждом основные тоны C, C#, D, E бемоль, E, F, F#, G, A бемоль, A, B бемоль, B. Отмечен C Minor. Внизу клавиша Close."
+          },
+          "sound-frequencies": {
+            "title": "Настройте каждую клавишу",
+            "text": "Задайте каждой из 8 клавиш свою частоту в Гц или начните с готового лада. My Presets хранит 8 ваших наборов.",
+            "alt": "Окно Tune frequencies (Hz): восемь полей частот D, R, M, F, S, L, S, L, клавиша Reset, Ready scales (D = 261 Hz) от Major до Pentatonic, My Presets с 1 по 8, Save, Default и Close."
+          },
+          "mic-channels": {
+            "title": "Каналы со своим звуком",
+            "text": "Шесть каналов на двух страницах. У каждого свои HPF, Pres, FX, громкость и L/R, а также mute и solo."
+          },
+          "mic-fx": {
+            "title": "Mic FX для каждого канала",
+            "text": "Восемь пресетов. Нажатие выбирает, второе нажатие выключает, а долгое открывает ползунки, включая Transpose от -12 до 12.",
+            "alt": "Окно Mic FX: та же строка подсказки, восемь круглых значков пресетов от Street Punch до Wire Grit, выбран Street Punch, а под ними ползунки Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep (все 50%), Transpose (0 semitones) и Reverb (0%)."
+          },
+          "mic-lyrics": {
+            "title": "Слова перед глазами",
+            "text": "Вставьте слова и нажмите Play, чтобы они прокручивались как на телесуфлёре. Speed от 20 до 150, а A- и A+ меняют размер текста.",
+            "alt": "Окно Lyrics: клавиши Play, A- и A+, Done и крестик закрытия сверху, ползунок Speed на значении 20, пустое поле с надписью Paste lyrics here и клавиша Close внизу."
+          },
+          "mic-console": {
+            "title": "Load Console",
+            "text": "Каждая сохранённая сессия это строка с Load, Save, Edit и X. Export all и Import all переносят всю настройку на другое устройство.",
+            "alt": "Окно Load Console: две сохранённые сессии, в каждой клавиши Load, Save, Edit и красный X, первая выделена. Ниже Export all, Import all, Export selected, Import session и клавиши Cancel и Load."
+          },
+          "loop-looper": {
+            "title": "32 канала, 8 страниц",
+            "text": "По четыре канала на странице. Запись может идти до 30 минут, а Redo возвращает стёртый дубль."
+          },
+          "loop-editor": {
+            "title": "Loop Editor",
+            "text": "Обрежьте дубль, задайте точки петли и настройте звук через EQ, Gain и Squeeze. Восемь окошек привязывают луп к ритму ударных."
+          },
+          "loop-fx": {
+            "title": "Looper FX",
+            "text": "Восемь пресетов для канала. Нажатие выбирает, а долгое нажатие открывает для него Amount, EQ, Mid-sweep, Transpose и Reverb.",
+            "alt": "Окно Looper FX: та же строка подсказки, восемь круглых значков пресетов от Hook Glue до Dust Weave, выбран Indie Wash, а под ними ползунки Amount (91%), EQ Low (66%), EQ Mid (71%), EQ High (57%), Mid-sweep (62%), Transpose (0 semitones) и Reverb (36%)."
+          },
+          "loop-page-name": {
+            "title": "Имя и цвет страницы",
+            "text": "Долгое нажатие на номер страницы открывает Page name. Введите имя и выберите один из 8 цветов. Цвет также окрашивает волны этой страницы.",
+            "alt": "Окно Page name: поле Name, Page color с 8 цветами (оранжевый, красный, золотой, коричневый, зелёный, синий, фиолетовый, розовый), отмечен красный, клавиша Reset и клавиши Cancel и OK."
+          },
+          "pad-live": {
+            "title": "Звук в движении",
+            "text": "Удерживайте ноту и ведите пальцем. KEY, MIC, LOOP и DRUM выбирают, что двигает пад, а при отпускании он плавно возвращается в центр."
+          },
+          "drum-beat": {
+            "title": "8 каналов, 16 шагов",
+            "text": "Нажатие включает или выключает шаг. BPM от 60 до 200, а долгое нажатие на номер ритма задаёт, сколько раз он повторяется."
+          },
+          "drum-styles": {
+            "title": "Drum Styles",
+            "text": "8 страниц стилей и 11 страниц Exclusive, по 8 наборов на каждой. Долгое нажатие на Drum Kits задаёт жанр для Random."
+          },
+          "drum-fx": {
+            "title": "Drum FX",
+            "text": "Восемь пресетов для ударных. Нажатие включает, второе нажатие выключает, а долгое открывает ползунки.",
+            "alt": "Окно Drum FX: строка Long-press a preset for Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb, восемь круглых значков пресетов от Street Boom до Wire Glitch, выбран Street Boom, а под ними ползунки Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose (0 semitones) и Reverb (0%)."
+          },
+          "drum-repeats": {
+            "title": "Pattern repeats",
+            "text": "Выберите от 1 до 10 повторов или бесконечность до следующего ритма. COPY и PASTE переносят ритм целиком на другой номер, а REDO отменяет вставку.",
+            "alt": "Окно Pattern repeats 1: строка How many times the pattern repeats before the next, клавиши Repeats от 1 до 10, клавиша бесконечности, отмечен Default, под Rhythm клавиша Copy и приглушённая Paste, и Close."
+          },
+          "drum-samples": {
+            "title": "Свой сэмпл для каждого ряда",
+            "text": "Нажатие на имя ряда открывает его список звуков из банков Factory и Exclusive, с Gain, Squeeze, Attack, Release, Reverb и Sustain для этого ряда.",
+            "alt": "Список звуков ряда Kick: вкладки Factory и Exclusive, выбрана Exclusive, восемь имён сэмплов в два столбца, выделен War Horn, страница 1 из 9 и 88 сэмплов, форма волны, шесть ручек (Gain, Squeeze, Attack, Release, Reverb, Sustain) и клавиша Close."
+          },
+          "drum-voice": {
+            "title": "Ряд Voice",
+            "text": "У Voice есть ещё банк Authentic, и в списке только вокальные звуки. Каждый ряд каждого ритма хранит свой сэмпл и ручки.",
+            "alt": "Список звуков ряда Voice: вкладки Factory, Exclusive и Authentic, выбрана Exclusive, восемь имён сэмплов, выделен Harbor Deep, страница 2 из 2 и 18 сэмплов, форма волны, те же шесть ручек и клавиша Close."
+          }
+        }
       }
     },
     "ar": {
@@ -6830,6 +7130,106 @@
         "headline": "قادم إلى Google Play في أكتوبر 2026.",
         "price": "L Studio Pro، 8$.",
         "note": "قادم إلى Google Play في أكتوبر 2026. L Studio Pro، 8$."
+      },
+      "carousel": {
+        "region": "عرض الشاشات",
+        "prev": "الشريحة السابقة",
+        "next": "الشريحة التالية",
+        "slide": "الشريحة {n} من {total}",
+        "slides": {
+          "sound-keys": {
+            "title": "الموجات والغلاف والفلتر",
+            "text": "شغّل عدة موجات لتُسمع معاً. Attack وRelease وCutoff وResonance وGlide مقابض، والضغط على الرقم يتيح كتابة القيمة."
+          },
+          "sound-live": {
+            "title": "لوحتا مفاتيح ووضع LIVE",
+            "text": "مفتاح + يفتح لوحة مفاتيح ثانية أعلى بأوكتاف واحد. LIVE يقفل مفاتيح قد تمسح أو تحمّل شيئاً بالخطأ، ويبقى كل ما تعزفه مفتوحاً."
+          },
+          "sound-presets": {
+            "title": "Presets: 8 خانات و8 صفحات",
+            "text": "الإعداد يحفظ الصوت مع Sound FX والموجات المفعّلة. الضغط المطوّل على Presets يحفظ في الإعداد المحمّل.",
+            "alt": "نافذة Presets, 8 slots: مفاتيح الصفحات 1 إلى 8 والرقم 4 محدد، واسم الصفحة مع مفتاح Edit page name، ومفتاحا Import وSave، وثمانية صفوف مرقمة 1 إلى 8 في كل منها Load وSave وEdit، وصف واحد محدد، ومفتاح Close."
+          },
+          "sound-scales": {
+            "title": "Key والسلالم",
+            "text": "اختر Major أو Minor من أي نغمة أساس، من C إلى B. السلم يعلّم مفاتيحه فقط ولا يغيّر ترددها أبداً.",
+            "alt": "نافذة Scales: مفتاح Scale off، ثم Major وMinor، في كل منهما النغمات C وC# وD وE بيمول وE وF وF# وG وA بيمول وA وB بيمول وB. C Minor محدد. في الأسفل مفتاح Close."
+          },
+          "sound-frequencies": {
+            "title": "اضبط كل مفتاح",
+            "text": "أعطِ كل مفتاح من المفاتيح الثمانية تردده الخاص بالهرتز، أو ابدأ من سلم جاهز. My Presets يحفظ 8 مجموعات خاصة بك.",
+            "alt": "نافذة Tune frequencies (Hz): ثمانية حقول للتردد D وR وM وF وS وL وS وL، ومفتاح Reset، وReady scales (D = 261 Hz) من Major إلى Pentatonic، وMy Presets من 1 إلى 8، وSave وDefault وClose."
+          },
+          "mic-channels": {
+            "title": "قنوات لكل منها صوتها",
+            "text": "ست قنوات على صفحتين. لكل قناة HPF وPres وFX وحجم وL/R خاصة بها، مع كتم وسولو."
+          },
+          "mic-fx": {
+            "title": "Mic FX لكل قناة",
+            "text": "ثمانية إعدادات. الضغط يختار، والضغط الثاني يوقف، والضغط المطوّل يفتح المنزلقات، ومنها Transpose من -12 إلى 12.",
+            "alt": "نافذة Mic FX: سطر التلميح نفسه، وثماني أيقونات دائرية للإعدادات من Street Punch إلى Wire Grit وStreet Punch محدد، وتحتها منزلقات Amount (72%) وEQ Low وEQ Mid وEQ High وMid-sweep (كلها 50%) وTranspose (0 semitones) وReverb (0%)."
+          },
+          "mic-lyrics": {
+            "title": "الكلمات أمام عينيك",
+            "text": "الصق كلماتك واضغط Play لتتمرر مثل شاشة التلقين. Speed من 20 إلى 150، وA- وA+ يغيّران حجم النص.",
+            "alt": "نافذة Lyrics: مفاتيح Play وA- وA+ وDone وعلامة X للإغلاق في الأعلى، ومنزلق Speed عند 20، ومربع نص فارغ مكتوب فيه Paste lyrics here، ومفتاح Close في الأسفل."
+          },
+          "mic-console": {
+            "title": "Load Console",
+            "text": "كل جلسة محفوظة هي صف فيه Load وSave وEdit وX. Export all وImport all ينقلان الإعداد كله إلى جهاز آخر.",
+            "alt": "نافذة Load Console: جلستان محفوظتان، في كل منهما مفاتيح Load وSave وEdit ومفتاح X أحمر، والأولى محددة. تحتهما Export all وImport all وExport selected وImport session ومفتاحا Cancel وLoad."
+          },
+          "loop-looper": {
+            "title": "32 قناة و8 صفحات",
+            "text": "أربع قنوات في كل صفحة. يمكن للتسجيل أن يستمر حتى 30 دقيقة، وRedo يعيد أخذاً مسحته."
+          },
+          "loop-editor": {
+            "title": "Loop Editor",
+            "text": "قص الأخذ، وحدد نقاط اللوب، وشكّله بـ EQ وGain وSqueeze. ثماني خانات تربط اللوب بإيقاع الطبول."
+          },
+          "loop-fx": {
+            "title": "Looper FX",
+            "text": "ثمانية إعدادات للقناة. الضغط يختار، والضغط المطوّل يفتح Amount وEQ وMid-sweep وTranspose وReverb له.",
+            "alt": "نافذة Looper FX: سطر التلميح نفسه، وثماني أيقونات دائرية للإعدادات من Hook Glue إلى Dust Weave وIndie Wash محدد، وتحتها منزلقات Amount (91%) وEQ Low (66%) وEQ Mid (71%) وEQ High (57%) وMid-sweep (62%) وTranspose (0 semitones) وReverb (36%)."
+          },
+          "loop-page-name": {
+            "title": "اسم ولون للصفحة",
+            "text": "الضغط المطوّل على رقم صفحة يفتح Page name. اكتب اسماً واختر لوناً من 8 ألوان. اللون يلوّن أيضاً موجات تلك الصفحة.",
+            "alt": "نافذة Page name: حقل Name، وPage color بثمانية ألوان (برتقالي، أحمر، ذهبي، بني، أخضر، أزرق، بنفسجي، وردي) والأحمر محدد، ومفتاح Reset ومفتاحا Cancel وOK."
+          },
+          "pad-live": {
+            "title": "شكّل الصوت مباشرة",
+            "text": "أمسك نغمة ثم اسحب. KEY وMIC وLOOP وDRUM تحدد ما تحرّكه اللوحة، وتعود اللوحة إلى الوسط بسلاسة عند الترك."
+          },
+          "drum-beat": {
+            "title": "8 قنوات و16 خطوة",
+            "text": "الضغط يشغّل الخطوة أو يطفئها. BPM من 60 إلى 200، والضغط المطوّل على رقم إيقاع يحدد عدد مرات تكراره."
+          },
+          "drum-styles": {
+            "title": "Drum Styles",
+            "text": "8 صفحات أنماط و11 صفحة Exclusive، في كل منها 8 أطقم. الضغط المطوّل على Drum Kits يحدد نوع Random."
+          },
+          "drum-fx": {
+            "title": "Drum FX",
+            "text": "ثمانية إعدادات للطبول. الضغط يشغّل، والضغط الثاني يطفئ، والضغط المطوّل يفتح المنزلقات.",
+            "alt": "نافذة Drum FX: السطر Long-press a preset for Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb، وثماني أيقونات دائرية للإعدادات من Street Boom إلى Wire Glitch وStreet Boom محدد، وتحتها منزلقات Amount (72%) وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose (0 semitones) وReverb (0%)."
+          },
+          "drum-repeats": {
+            "title": "Pattern repeats",
+            "text": "اختر من 1 إلى 10 تكرارات أو اللانهاية قبل الإيقاع التالي. COPY وPASTE ينقلان إيقاعاً كاملاً إلى رقم آخر، وREDO يتراجع عن اللصق.",
+            "alt": "نافذة Pattern repeats 1: السطر How many times the pattern repeats before the next، ومفاتيح Repeats من 1 إلى 10، ومفتاح اللانهاية، وDefault محدد، وتحت Rhythm مفتاح Copy ومفتاح Paste خافت، وClose."
+          },
+          "drum-samples": {
+            "title": "عيّنة لكل صف",
+            "text": "الضغط على اسم صف يفتح قائمة أصواته من بنكي Factory وExclusive، مع Gain وSqueeze وAttack وRelease وReverb وSustain لذلك الصف.",
+            "alt": "قائمة أصوات صف Kick: تبويبا Factory وExclusive والمحدد Exclusive، وثمانية أسماء عينات في عمودين مع تمييز War Horn، والصفحة 1 من 9 و88 عينة، وشكل موجة، وستة مقابض (Gain وSqueeze وAttack وRelease وReverb وSustain) ومفتاح Close."
+          },
+          "drum-voice": {
+            "title": "صف Voice",
+            "text": "يضيف Voice بنك Authentic ويعرض أصواتاً صوتية فقط. كل صف في كل إيقاع يحتفظ بعينته ومقابضه.",
+            "alt": "قائمة أصوات صف Voice: تبويبات Factory وExclusive وAuthentic والمحدد Exclusive، وثمانية أسماء عينات مع تمييز Harbor Deep، والصفحة 2 من 2 و18 عينة، وشكل موجة، والمقابض الستة نفسها ومفتاح Close."
+          }
+        }
       }
     }
   },

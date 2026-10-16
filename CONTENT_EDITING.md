@@ -181,3 +181,13 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Sections that still have no real image (text stays, no placeholder): Sound FX, Getting started and Recording MIDI and WAV (top bar), Mic Editor, Loop recording and files, and the Settings extras. Several topics show a poster only. See `guide-audit/missing-real-shots.md`.
 - Checked against the app code (ad2ceeb) for the new shots: Presets (Import and Save are under the page name, not on a bottom row), Pattern repeats (COPY/PASTE act on the rhythm whose number was long-pressed, only from the Drum window; PASTE keeps repeat count, BPM, swing; any pick closes the window), Scales (a pick closes the window), Page name (Cancel restores name and color), Load Console (a tap on a row highlights it; Save asks for Overwrite).
 - Fixed: the guide said a tap on WAH, OCT, or Vibrato turns it on or off. In the app they are knobs (0 to 100%) and only change the keyboard sound.
+
+## Home windows menu carousel (Sound, Mic, Loop, Pad, Drum)
+
+- Each tab is a carousel of N slides (swipe, arrows, dots, keyboard, RTL-correct). Code: `client/src/components/PlayCarousel.tsx`, slide list in `client/src/lib/carousel.ts`.
+- Slide titles, texts and alts are in `languages.*.carousel.slides[slide-id]` (all 4 languages). The text under a slide says what the screen does. Every claim must match the app code. No em-dashes, no DAW, pro or studio wording.
+- Images: designed store posters per language in `assets/carousel/{he,en,ar,ru}/<slide-id>-w360|w630.{webp,jpg}` (also under `client/public/assets/carousel/`). The poster has its own counter n/N baked in, so the site draws no counter on it. N is the number of slides of that tab.
+- To import new posters from `/workspace/store-posters/carousel/{lang}/<tab>-<n>.png` run `python3 scripts/import-carousel-posters.py`. It resizes, writes the 4 files and updates `client/src/lib/carouselDesigned.ts`.
+- A slide without a designed poster for a language falls back to the approved poster (HE or EN folder) or the real phone shot in `assets/carousel/shots/`, with a site-style counter. Only real in-app shots or approved posters are allowed. Never draw UI.
+- If a tab gets a new slide, the designer must rebake that tab's counters with the new N. Slides that are not in a carousel now are in `parkedSlides` (texts stay in content.json).
+- Pad has a single slide, so it shows no counter.
