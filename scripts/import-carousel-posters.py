@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Import the designer's home-carousel posters.
 
-Source: /workspace/store-posters/carousel/{he,en,ar,ru}/<slide-id>.png|jpg|jpeg|webp (1080x1920).
-Writes assets/carousel/{lang}/<slide-id>-w360|w630.{webp,jpg} (and the client/public copy) and
-rewrites client/src/lib/carouselDesigned.ts. Only slide ids that exist in client/src/lib/carousel.ts are imported.
+Source: /workspace/store-posters/carousel/{he,en,ar,ru}/<tab>-<n>.png (1080x1920, counter n/N baked in).
+For every slide in client/src/lib/carousel.ts ({ id, designed }) it writes
+assets/carousel/{lang}/<slide-id>-w360|w630.{webp,jpg} (and the client/public copy) and removes stale files
+(any file in those folders that does not belong to a listed slide). Each language uses its own folder.
 Run from the repo root: python3 scripts/import-carousel-posters.py [source-dir]
 """
 import os, re, sys
@@ -12,44 +13,38 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else "/workspace/store-posters/carousel"
 LANGS = ["he", "en", "ru", "ar"]
-# <designer stem> -> slide id, read from the "designed" fields in carousel.ts (a stem equal to a slide id also works).
-src_ts = open("client/src/lib/carousel.ts").read()
-stems = dict((m[1], m[0]) for m in re.findall(r'id: "([a-z-]+)", designed: "([a-z0-9-]+)"', src_ts))
-ids = re.findall(r'id: "([a-z-]+)"', src_ts)
-found = {l: [] for l in LANGS}
+OUTS = ("assets/carousel", "client/public/assets/carousel")
+pairs = re.findall(r'id: "([a-z-]+)", designed: "([a-z0-9-]+)"', open("client/src/lib/carousel.ts").read())
+if not pairs:
+    sys.exit("no slides found in carousel.ts")
+missing = []
+for out in OUTS:
+    for lang in LANGS:
+        os.makedirs(f"{out}/{lang}", exist_ok=True)
+keep = {lang: set() for lang in LANGS}
 for lang in LANGS:
-    d = os.path.join(SRC, lang)
-    if not os.path.isdir(d):
-        continue
-    for name in sorted(os.listdir(d)):
-        stem, ext = os.path.splitext(name)
-        if ext.lower() not in (".png", ".jpg", ".jpeg", ".webp"):
+    for sid, stem in pairs:
+        src = next((os.path.join(SRC, lang, stem + e) for e in (".png", ".jpg", ".jpeg", ".webp") if os.path.exists(os.path.join(SRC, lang, stem + e))), None)
+        if not src:
+            missing.append((lang, stem))
             continue
-        sid = stems.get(stem) or (stem if stem in ids else None)
-        if not sid:
-            print("skip (unknown slide id):", lang, name)
-            continue
-        im = Image.open(os.path.join(d, name)).convert("RGB")
+        im = Image.open(src).convert("RGB")
         if abs(im.width / im.height - 9 / 16) > 0.01:
-            print("skip (not 9:16):", lang, name, im.size)
-            continue
-        for out in ("assets/carousel", "client/public/assets/carousel"):
-            os.makedirs(f"{out}/{lang}", exist_ok=True)
+            sys.exit(f"not 9:16: {src} {im.size}")
+        for out in OUTS:
             for w, h, suf in ((630, 1120, "w630"), (360, 640, "w360")):
                 r = im.resize((w, h), Image.LANCZOS)
                 r.save(f"{out}/{lang}/{sid}-{suf}.jpg", quality=84, optimize=True, progressive=True)
                 r.save(f"{out}/{lang}/{sid}-{suf}.webp", quality=82, method=6)
-        found[lang].append(sid)
-        print("imported", lang, sid)
-
-body = "\n".join(f"  {l}: [{', '.join(repr(s).replace(chr(39), chr(34)) for s in sorted(set(found[l])))}]," for l in LANGS)
-open("client/src/lib/carouselDesigned.ts", "w").write(f'''import type {{ Language }} from "@/contexts/LanguageContext";
-
-/**
- * Slide ids that have a designed store poster per language in assets/carousel/{{lang}}/.
- * Written by scripts/import-carousel-posters.py. Leave a slide out to fall back to the approved poster or the real phone shot.
- */
-export const DESIGNED: Record<Language, string[]> = {{
-{body}
-}};
-''')
+        for suf in ("w630", "w360"):
+            keep[lang] |= {f"{sid}-{suf}.jpg", f"{sid}-{suf}.webp"}
+removed = 0
+for out in OUTS:
+    for entry in os.listdir(out):
+        p = f"{out}/{entry}"
+        if entry not in LANGS:  # old shots/ folder etc.
+            os.system(f"rm -rf '{p}'"); removed += 1; continue
+        for f in os.listdir(p):
+            if f not in keep[entry]:
+                os.remove(f"{p}/{f}"); removed += 1
+print("slides:", len(pairs), "languages:", len(LANGS), "stale removed:", removed, "missing:", missing)

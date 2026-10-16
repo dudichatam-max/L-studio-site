@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Language } from "@/contexts/LanguageContext";
-import { posterAlt } from "@/lib/posters";
 import { carouselSlides, slideImage, type PlayId } from "@/lib/carousel";
 
 export type CarouselSlideCopy = { title?: string; text?: string; alt?: string };
@@ -10,14 +9,15 @@ export type CarouselCopy = {
   prev?: string;
   next?: string;
   slide?: string; // "Slide {n} of {total}"
+  poster?: string; // alt prefix, e.g. "Poster"
   slides?: Record<string, CarouselSlideCopy>;
 };
 
-const chromeDefault: Record<Language, Required<Pick<CarouselCopy, "region" | "prev" | "next" | "slide">>> = {
-  he: { region: "קרוסלת מסכים", prev: "השקופית הקודמת", next: "השקופית הבאה", slide: "שקופית {n} מתוך {total}" },
-  en: { region: "Screen carousel", prev: "Previous slide", next: "Next slide", slide: "Slide {n} of {total}" },
-  ru: { region: "Карусель экранов", prev: "Предыдущий слайд", next: "Следующий слайд", slide: "Слайд {n} из {total}" },
-  ar: { region: "عرض الشاشات", prev: "الشريحة السابقة", next: "الشريحة التالية", slide: "الشريحة {n} من {total}" },
+const chromeDefault: Record<Language, Required<Pick<CarouselCopy, "region" | "prev" | "next" | "slide" | "poster">>> = {
+  he: { poster: "פוסטר", region: "קרוסלת מסכים", prev: "השקופית הקודמת", next: "השקופית הבאה", slide: "שקופית {n} מתוך {total}" },
+  en: { poster: "Poster", region: "Screen carousel", prev: "Previous slide", next: "Next slide", slide: "Slide {n} of {total}" },
+  ru: { poster: "Постер", region: "Карусель экранов", prev: "Предыдущий слайд", next: "Следующий слайд", slide: "Слайд {n} из {total}" },
+  ar: { poster: "ملصق", region: "عرض الشاشات", prev: "الشريحة السابقة", next: "الشريحة التالية", slide: "الشريحة {n} من {total}" },
 };
 
 const fmt = (tpl: string, n: number, total: number) => tpl.replace("{n}", String(n)).replace("{total}", String(total));
@@ -42,7 +42,7 @@ export default function PlayCarousel({
   const slides = carouselSlides[tab];
   const total = slides.length;
   const d = chromeDefault[language];
-  const chrome = { region: copy?.region || d.region, prev: copy?.prev || d.prev, next: copy?.next || d.next, slide: copy?.slide || d.slide };
+  const chrome = { region: copy?.region || d.region, prev: copy?.prev || d.prev, next: copy?.next || d.next, slide: copy?.slide || d.slide, poster: copy?.poster || d.poster };
   const trackRef = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
   const raf = useRef(0);
@@ -115,10 +115,7 @@ export default function PlayCarousel({
             {slides.map((slide, i) => {
               const img = slideImage(language, slide);
               const c = slideCopy[slide.id];
-              const poster = "poster" in slide.source ? posterAlt[language][slide.source.poster] : "";
-              const alt = c?.alt || poster || c?.title || "";
-              // Designed store posters carry their own n/N counter. Temporary slides get a matching one in the site design.
-              const showCounter = img.kind !== "designed" && total > 1;
+              const alt = c?.alt || (c?.title ? `${chrome.poster}: ${c.title}` : "");
               return (
                 <figure
                   className="play-carousel__slide"
@@ -128,11 +125,6 @@ export default function PlayCarousel({
                   aria-label={fmt(chrome.slide, i + 1, total)}
                   aria-hidden={i === index ? undefined : true}
                 >
-                  {showCounter && (
-                    <span className="play-carousel__counter" dir="ltr" aria-hidden="true">
-                      {i + 1}/{total}
-                    </span>
-                  )}
                   <picture>
                     <source type="image/webp" srcSet={img.webpSet} sizes="(max-width: 720px) 78vw, 300px" />
                     <img

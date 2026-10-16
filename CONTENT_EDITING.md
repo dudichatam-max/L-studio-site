@@ -184,10 +184,8 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 
 ## Home windows menu carousel (Sound, Mic, Loop, Pad, Drum)
 
-- Each tab is a carousel of N slides (swipe, arrows, dots, keyboard, RTL-correct). Code: `client/src/components/PlayCarousel.tsx`, slide list in `client/src/lib/carousel.ts`.
-- Slide titles, texts and alts are in `languages.*.carousel.slides[slide-id]` (all 4 languages). The text under a slide says what the screen does. Every claim must match the app code. No em-dashes, no DAW, pro or studio wording.
-- Images: designed store posters per language in `assets/carousel/{he,en,ar,ru}/<slide-id>-w360|w630.{webp,jpg}` (also under `client/public/assets/carousel/`). The poster has its own counter n/N baked in, so the site draws no counter on it. N is the number of slides of that tab.
-- To import new posters from `/workspace/store-posters/carousel/{lang}/<tab>-<n>.png` run `python3 scripts/import-carousel-posters.py`. It resizes, writes the 4 files and updates `client/src/lib/carouselDesigned.ts`.
-- A slide without a designed poster for a language falls back to the approved poster (HE or EN folder) or the real phone shot in `assets/carousel/shots/`, with a site-style counter. Only real in-app shots or approved posters are allowed. Never draw UI.
-- If a tab gets a new slide, the designer must rebake that tab's counters with the new N. Slides that are not in a carousel now are in `parkedSlides` (texts stay in content.json).
-- Pad has a single slide, so it shows no counter.
+- Each tab is a carousel (swipe, arrows, dots, arrow keys, RTL-correct). Code: `client/src/components/PlayCarousel.tsx`, slide list per tab in `client/src/lib/carousel.ts` (Sound 4, Mic 4, Loop 4, Pad 3, Drum 4).
+- Every slide is a designed store poster, one set per language: `assets/carousel/{he,en,ar,ru}/<slide-id>-w360|w630.{webp,jpg}` (also under `client/public/assets/carousel/`). The counter n/N is baked into the poster (N = slides in that tab), so the site draws none. Each language uses only its own folder. Old numbered posters (01-08) are never used in a carousel.
+- To import: `python3 scripts/import-carousel-posters.py` (reads `/workspace/store-posters/carousel/{lang}/<tab>-<n>.png`, writes the 4 files per slide, removes stale files).
+- Adding or removing a slide: the designer rebakes that tab's counters, then edit `carousel.ts` (`{ id, designed }`), add the texts to `languages.*.carousel.slides[id]` in all 4 languages, and run the import.
+- Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
