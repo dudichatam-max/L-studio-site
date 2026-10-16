@@ -280,16 +280,6 @@
             "body": [
               "ב-L Studio יש חמישה מסכים: Sound, Pad, Drum, Loop ו-Mic. הלשוניות מתחת לסקופים מחליפות ביניהם. הסרגל העליון נשאר בכל מסך: הכפתור PRO או LIVE, MIDI, WAV ו-Settings."
             ],
-            "media": "assets/guide/top-bar-final.jpg",
-            "imageAlts": {
-              "assets/guide/top-bar-final.jpg": "מסך Sound עם הסרגל העליון: כותרת, הכפתור PRO, MIDI, WAV ו-Settings, ולשוניות חמשת המסכים."
-            },
-            "imageSizes": {
-              "assets/guide/top-bar-final.jpg": [
-                720,
-                1280
-              ]
-            },
             "sections": [
               {
                 "id": "rec-export",
@@ -349,17 +339,7 @@
                   "אפשר להחליף אפקט תוך כדי נגינה. המעבר חלק והווליום נשאר בערך אותו דבר. שומעים את האפקט ברמקול, בהקלטת WAV, ובמה שהלופר מקליט.",
                   "האפקטים הולכים לפי הביט של התופים. לפני שהתופים ניגנו, הם רצים ב-120 BPM. אחרי שהתופים נעצרים, הם נשארים בטמפו האחרון של התופים. Depth Drop יורד מחדש כל 2 ביטים ובכל תו חדש.",
                   "לחיצה ארוכה פותחת Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לאפקט הזה. כל אחד מ-8 האפקטים שומר את ההגדרות שלו כשמחליפים. Transpose רץ מ-12- עד 12 ומשנה את כל 8 האפקטים, כולל Sub Forge."
-                ],
-                "media": "assets/guide/sound-fx-final.jpg",
-                "imageAlts": {
-                  "assets/guide/sound-fx-final.jpg": "חלון Sound FX עם שמונה משבצות אפקט."
-                },
-                "imageSizes": {
-                  "assets/guide/sound-fx-final.jpg": [
-                    720,
-                    630
-                  ]
-                }
+                ]
               },
               {
                 "id": "presets",
@@ -389,14 +369,14 @@
                   "מתחת לתבניות, ב-My Presets יש 8 כפתורים עם שמות שאתם בוחרים. הקשה על אחד טוענת את התדרים שלו למקלדת ובוחרת אותו. Save שומר את התדרים הנוכחיים בפריסט שנבחר, או בראשון הריק כשלא נבחר פריסט. Save* אומר שיש שינויים שעוד לא נשמרו.",
                   "Reset בשורת הכותרת. Default מעל Close."
                 ],
-                "media": "assets/guide/freq-final.jpg",
+                "media": "assets/guide/custom-frequency-phone.jpg",
                 "imageAlts": {
-                  "assets/guide/freq-final.jpg": "Tune frequencies: שמונה מקשים ב-Hz, Ready scales ו-My Presets 1 עד 8."
+                  "assets/guide/custom-frequency-phone.jpg": "חלון Tune frequencies (Hz): שמונה שדות תדר D, R, M, F, S, L, S, L, מקש Reset, Ready scales (D = 261 Hz) מ-Major עד Pentatonic, My Presets 1 עד 8, Save, Default ו-Close."
                 },
                 "imageSizes": {
-                  "assets/guide/freq-final.jpg": [
+                  "assets/guide/custom-frequency-phone.jpg": [
                     720,
-                    1017
+                    1462
                   ]
                 }
               }
@@ -423,18 +403,8 @@
               "הקשה על +, ליד שורת הקולות, פותחת מקלדת שנייה מעל הראשונה, אוקטבה אחת גבוה יותר. אותו + נמצא גם במסך Sound, והמקלדת השנייה נשארת פתוחה כשעוברים בין Pad ל-Sound. הקשה נוספת סוגרת אותה."
             ],
             "media": "assets/posters/he/p03-pad-w630.jpg",
-            "images": [
-              "assets/guide/pad-dual-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/he/p03-pad-w630.jpg": "פוסטר: משטח נגינה חי. מסך Pad: גוררים על המשטח כדי לעצב את הצליל בזמן אמת.",
-              "assets/guide/pad-dual-final.jpg": "מסך Pad עם המקלדת השנייה פתוחה, משותפת עם Sound."
-            },
-            "imageSizes": {
-              "assets/guide/pad-dual-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/he/p03-pad-w630.jpg": "פוסטר: משטח נגינה חי. מסך Pad: גוררים על המשטח כדי לעצב את הצליל בזמן אמת."
             },
             "tipsBeginner": [
               "מחזיקים תו קודם ורק אז גוררים על הפד. הסאונד עוקב אחרי האצבע כל עוד התו מנגן.",
@@ -473,22 +443,22 @@
                   "GAIN מוסיף 0 עד ‎+18 dB. SQUEEZE נע בין 0 ל-100 ומשטיח את הדינמיקה. ATTACK מכניס כל מכה בהדרגה במשך 0 עד 200 ms. SUSTAIN קובע כמה מהסאמפל מוחזק, מ-0% עד 100%. RELEASE מוציא אותו בהדרגה במשך 5 עד 2000 ms ונשמע רק כש-SUSTAIN מתחת ל-100%. REVERB שולח 0% עד 100% לריוורב של התופים.",
                   "כל שורה בכל קצב שומרת סאמפל וכפתורים משלה, והם נשמרים עם הקצב בקיט."
                 ],
-                "media": "assets/guide/drum-sample-picker-110.jpg",
+                "media": "assets/guide/drum-samples-phone.jpg",
                 "images": [
-                  "assets/guide/voice-110.jpg"
+                  "assets/guide/voice-phone.jpg"
                 ],
                 "imageAlts": {
-                  "assets/guide/drum-sample-picker-110.jpg": "בורר הסאמפלים של שורת תופים, עם הלשוניות Factory ו-Exclusive ורשימת סאונדים.",
-                  "assets/guide/voice-110.jpg": "בוחר הסאמפלים של Voice בגרסה 1.10, בלשונית Authentic עם 33 ווקאלים."
+                  "assets/guide/drum-samples-phone.jpg": "רשימת הסאונדים של שורת Kick: הלשוניות Factory ו-Exclusive כש-Exclusive נבחרת, שמונה שמות סאמפלים בשני טורים כש-War Horn מודגש, עמוד 1 מתוך 9 עם 88 סאמפלים, צורת גל, שישה נובים (Gain, Squeeze, Attack, Release, Reverb, Sustain) ומקש Close.",
+                  "assets/guide/voice-phone.jpg": "רשימת הסאונדים של שורת Voice: הלשוניות Factory, Exclusive ו-Authentic כש-Exclusive נבחרת, שמונה שמות סאמפלים כש-Harbor Deep מודגש, עמוד 2 מתוך 2 עם 18 סאמפלים, צורת גל, אותם שישה נובים ומקש Close."
                 },
                 "imageSizes": {
-                  "assets/guide/drum-sample-picker-110.jpg": [
-                    660,
-                    1082
+                  "assets/guide/drum-samples-phone.jpg": [
+                    720,
+                    1462
                   ],
-                  "assets/guide/voice-110.jpg": [
-                    650,
-                    1074
+                  "assets/guide/voice-phone.jpg": [
+                    720,
+                    1454
                   ]
                 }
               },
@@ -505,18 +475,8 @@
                   "אפשר לטעון קיט בזמן שהתופים מנגנים. צלילים שעדיין מצלצלים דועכים תוך כ-20 ms, כך שאין נקישות או עיוות, והווליום והאיזון שמאל וימין גולשים לערכים החדשים תוך כ-10 ms. מכות חדשות משתמשות בקיט החדש מיד. הקלטת WAV שומעת את אותו מעבר נקי."
                 ],
                 "media": "assets/posters/he/p08-drum-styles-w630.jpg",
-                "images": [
-                  "assets/guide/drum-styles-final.jpg"
-                ],
                 "imageAlts": {
-                  "assets/posters/he/p08-drum-styles-w630.jpg": "פוסטר: ערכות תופים מוכנות. חלון Drum Styles עם 8 חבילות סגנון ועוד 11 עמודים בלעדיים, ויותר מ-1,000 דגימות מובנות.",
-                  "assets/guide/drum-styles-final.jpg": "Drum styles: שמונה קיטים בעמוד, ולכל אחד Load, Save ו-Edit."
-                },
-                "imageSizes": {
-                  "assets/guide/drum-styles-final.jpg": [
-                    720,
-                    1315
-                  ]
+                  "assets/posters/he/p08-drum-styles-w630.jpg": "פוסטר: ערכות תופים מוכנות. חלון Drum Styles עם 8 חבילות סגנון ועוד 11 עמודים בלעדיים, ויותר מ-1,000 דגימות מובנות."
                 }
               },
               {
@@ -553,18 +513,8 @@
               "יש 32 ערוצי לופר: 8 עמודים, 1 עד 8, ובכל עמוד 4 ערוצים. הקלטה יכולה להימשך עד 30 דקות. ב-30:00 ההקלטה נעצרת לבד."
             ],
             "media": "assets/posters/he/p06-looper-w630.jpg",
-            "images": [
-              "assets/guide/looper-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/he/p06-looper-w630.jpg": "פוסטר: בנו שכבות של לולאות. מסך הלופר עם 32 ערוצים ב-8 עמודים, עם שמות וצבעים.",
-              "assets/guide/looper-final.jpg": "מסך Loop: עמוד 1 עם ארבעה ערוצים, Import ו-Export."
-            },
-            "imageSizes": {
-              "assets/guide/looper-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/he/p06-looper-w630.jpg": "פוסטר: בנו שכבות של לולאות. מסך הלופר עם 32 ערוצים ב-8 עמודים, עם שמות וצבעים."
             },
             "sections": [
               {
@@ -611,18 +561,8 @@
                   "הגדרות העורך נשמרות עם סשן הלופ ובפרויקט שמייצאים."
                 ],
                 "media": "assets/posters/he/p05-loop-editor-w630.jpg",
-                "images": [
-                  "assets/guide/loop-editor-final.jpg"
-                ],
                 "imageAlts": {
-                  "assets/posters/he/p05-loop-editor-w630.jpg": "פוסטר: ערכו כל לולאה. עורך הלופ: חיתוך, חזרות, איזון וקשירה לקצב התופים.",
-                  "assets/guide/loop-editor-final.jpg": "Loop Editor: Trim, Loop, שמונה תיבות מקצב, EQ, Gain ו-Squeeze."
-                },
-                "imageSizes": {
-                  "assets/guide/loop-editor-final.jpg": [
-                    720,
-                    937
-                  ]
+                  "assets/posters/he/p05-loop-editor-w630.jpg": "פוסטר: ערכו כל לולאה. עורך הלופ: חיתוך, חזרות, איזון וקשירה לקצב התופים."
                 }
               },
               {
@@ -661,18 +601,8 @@
               "הקשה על Import בוחרת קובץ פרויקט וטוענת את כל פרויקט המיקרופון. הקשה על Export מבקשת מהטלפון איפה לשמור את כל פרויקט המיקרופון."
             ],
             "media": "assets/posters/he/p04-mic-w630.jpg",
-            "images": [
-              "assets/guide/mic-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/he/p04-mic-w630.jpg": "פוסטר: הקליטו את הקול. מסך Mic עם שלושה ערוצי שירה, גיטרה, בס וכלי נגינה, ולכל ערוץ עורך סאונד.",
-              "assets/guide/mic-final.jpg": "מסך Mic עם שלושה ערוצים, Lyrics, Monitor והמקשים 1 ו-2 לעמודים."
-            },
-            "imageSizes": {
-              "assets/guide/mic-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/he/p04-mic-w630.jpg": "פוסטר: הקליטו את הקול. מסך Mic עם שלושה ערוצי שירה, גיטרה, בס וכלי נגינה, ולכל ערוץ עורך סאונד."
             },
             "sections": [
               {
@@ -702,7 +632,17 @@
                   "הקשה על Edit נותנת לשנות את המילים. Done יוצא מהעריכה. הקשה על Play מתחילה את הגלילה.",
                   "הקשה על A- מקטינה את הטקסט. הקשה על A+ מגדילה אותו. גרירה על Speed קובעת את הגלילה מ-20 עד 150. זה מתחיל ב-60.",
                   "ה-X ו-Close סוגרים את החלון ושומרים את המילים."
-                ]
+                ],
+                "media": "assets/guide/lyrics-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/lyrics-phone.jpg": "חלון Lyrics: מקשי Play, A- ו-A+, Done ו-X לסגירה למעלה, מחוון Speed על 20, תיבת טקסט ריקה עם הכיתוב Paste lyrics here, ומקש Close למטה."
+                },
+                "imageSizes": {
+                  "assets/guide/lyrics-phone.jpg": [
+                    720,
+                    1460
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -721,14 +661,14 @@
               "הקשה על Factory 64 שואלת Restore Factory 64? Restore מחליף את פריסטי Factory 64, את כל 8 חבילות ה-Style, ואת כל 11 חבילות ה-Exclusive, ואז טוען את מקום 1 בעמוד 1. Cancel סוגר את השאלה.",
               "הקשה על Benchmark, מתחת ל-Factory 64, פותחת את כלי בדיקת האודיו."
             ],
-            "media": "assets/guide/settings-window-110.jpg",
+            "media": "assets/guide/settings-phone.jpg",
             "imageAlts": {
-              "assets/guide/settings-window-110.jpg": "Settings בגרסה 1.10: New session ראשון, ואחריו Custom Frequency, Language, Save as, Load ו-Benchmark."
+              "assets/guide/settings-phone.jpg": "חלון Settings בכותרת Language and console session, עם New session, Custom Frequency, Language, Save as, Load, Show tutorial, Factory 64, Benchmark ומקש Close."
             },
             "imageSizes": {
-              "assets/guide/settings-window-110.jpg": [
-                642,
-                1472
+              "assets/guide/settings-phone.jpg": [
+                720,
+                1462
               ]
             },
             "sections": [
@@ -1968,16 +1908,6 @@
             "body": [
               "L Studio has five screens: Sound, Pad, Drum, Loop, and Mic. The tabs under the scopes switch between them. The top bar stays on every screen: the PRO or LIVE chip, MIDI, WAV, and Settings."
             ],
-            "media": "assets/guide/top-bar-final.jpg",
-            "imageAlts": {
-              "assets/guide/top-bar-final.jpg": "The Sound screen with the top bar: title, PRO chip, MIDI, WAV, and Settings, and the five screen tabs."
-            },
-            "imageSizes": {
-              "assets/guide/top-bar-final.jpg": [
-                720,
-                1280
-              ]
-            },
             "sections": [
               {
                 "id": "rec-export",
@@ -2037,17 +1967,7 @@
                   "You can switch effects while you play. The change is smooth and the volume stays about the same. You hear the effect in the speakers, in a WAV recording, and in what the looper records.",
                   "The effects follow the drum beat. Before the drums have played, they run at 120 BPM. After the drums stop, they keep the last drum tempo. Depth Drop drops again every 2 beats and on each new note.",
                   "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that effect. Each of the 8 effects keeps its own settings when you switch. Transpose runs from -12 to 12 and changes all 8 effects, Sub Forge included."
-                ],
-                "media": "assets/guide/sound-fx-final.jpg",
-                "imageAlts": {
-                  "assets/guide/sound-fx-final.jpg": "The Sound FX window with eight effect slots."
-                },
-                "imageSizes": {
-                  "assets/guide/sound-fx-final.jpg": [
-                    720,
-                    630
-                  ]
-                }
+                ]
               },
               {
                 "id": "presets",
@@ -2077,14 +1997,14 @@
                   "Under the templates, My Presets has 8 buttons with your own names. A tap on one loads its frequencies into the keyboard and selects it. Save stores the current frequencies in the selected preset, or in the first empty one when none is selected. Save* means there are changes that are not saved yet.",
                   "Reset is on the title row. Default is above Close."
                 ],
-                "media": "assets/guide/freq-final.jpg",
+                "media": "assets/guide/custom-frequency-phone.jpg",
                 "imageAlts": {
-                  "assets/guide/freq-final.jpg": "Tune frequencies: eight keys in Hz, Ready scales, and My Presets 1 to 8."
+                  "assets/guide/custom-frequency-phone.jpg": "The Tune frequencies (Hz) window: eight frequency fields D, R, M, F, S, L, S, L, a Reset key, Ready scales (D = 261 Hz) from Major to Pentatonic, My Presets 1 to 8, Save, Default, and Close."
                 },
                 "imageSizes": {
-                  "assets/guide/freq-final.jpg": [
+                  "assets/guide/custom-frequency-phone.jpg": [
                     720,
-                    1017
+                    1462
                   ]
                 }
               }
@@ -2111,18 +2031,8 @@
               "A tap on +, next to the voice row, opens a second keyboard above the first, one octave higher. The same + is on the Sound screen, and the second keyboard stays open when you switch between Pad and Sound. Another tap closes it."
             ],
             "media": "assets/posters/en/p03-pad-w630.jpg",
-            "images": [
-              "assets/guide/pad-dual-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/en/p03-pad-w630.jpg": "Poster: A Live Performance Pad. The Pad screen: drag on the pad to shape the sound in real time.",
-              "assets/guide/pad-dual-final.jpg": "The Pad screen with the second keyboard open, shared with Sound."
-            },
-            "imageSizes": {
-              "assets/guide/pad-dual-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/en/p03-pad-w630.jpg": "Poster: A Live Performance Pad. The Pad screen: drag on the pad to shape the sound in real time."
             },
             "tipsBeginner": [
               "Hold a note first, then drag on the pad. The sound follows your finger while the note plays.",
@@ -2161,22 +2071,22 @@
                   "GAIN adds 0 to +18 dB. SQUEEZE runs from 0 to 100 and flattens the dynamics. ATTACK fades each hit in over 0 to 200 ms. SUSTAIN sets how much of the sample is held, from 0% to 100%. RELEASE fades it out over 5 to 2000 ms and is heard only when SUSTAIN is under 100%. REVERB sends 0% to 100% into the drum reverb.",
                   "Each row of each rhythm keeps its own sample and knobs, and they are saved with the rhythm into the kit."
                 ],
-                "media": "assets/guide/drum-sample-picker-110.jpg",
+                "media": "assets/guide/drum-samples-phone.jpg",
                 "images": [
-                  "assets/guide/voice-110.jpg"
+                  "assets/guide/voice-phone.jpg"
                 ],
                 "imageAlts": {
-                  "assets/guide/drum-sample-picker-110.jpg": "The sample picker of a drum row, with the Factory and Exclusive tabs and a list of sounds.",
-                  "assets/guide/voice-110.jpg": "The Voice sample picker in 1.10, on the Authentic tab with 33 vocals."
+                  "assets/guide/drum-samples-phone.jpg": "The sound list of the Kick row: Factory and Exclusive tabs with Exclusive selected, eight sample names in two columns with War Horn highlighted, page 1 of 9 with 88 samples, a waveform, six knobs (Gain, Squeeze, Attack, Release, Reverb, Sustain), and a Close key.",
+                  "assets/guide/voice-phone.jpg": "The sound list of the Voice row: Factory, Exclusive, and Authentic tabs with Exclusive selected, eight sample names with Harbor Deep highlighted, page 2 of 2 with 18 samples, a waveform, the same six knobs, and a Close key."
                 },
                 "imageSizes": {
-                  "assets/guide/drum-sample-picker-110.jpg": [
-                    660,
-                    1082
+                  "assets/guide/drum-samples-phone.jpg": [
+                    720,
+                    1462
                   ],
-                  "assets/guide/voice-110.jpg": [
-                    650,
-                    1074
+                  "assets/guide/voice-phone.jpg": [
+                    720,
+                    1454
                   ]
                 }
               },
@@ -2193,18 +2103,8 @@
                   "You can load a kit while the drums play. Sounds that still ring fade out in about 20 ms, so there are no clicks or distortion, and volume and pan glide to the new values in about 10 ms. New hits use the new kit at once. A WAV recording hears the same clean change."
                 ],
                 "media": "assets/posters/en/p08-drum-styles-w630.jpg",
-                "images": [
-                  "assets/guide/drum-styles-final.jpg"
-                ],
                 "imageAlts": {
-                  "assets/posters/en/p08-drum-styles-w630.jpg": "Poster: Drum Styles. The Drum Styles window with 8 style packs and 11 Exclusive pages, with 1,000+ built-in samples.",
-                  "assets/guide/drum-styles-final.jpg": "Drum styles: eight kits on a page, each with Load, Save, and Edit."
-                },
-                "imageSizes": {
-                  "assets/guide/drum-styles-final.jpg": [
-                    720,
-                    1315
-                  ]
+                  "assets/posters/en/p08-drum-styles-w630.jpg": "Poster: Drum Styles. The Drum Styles window with 8 style packs and 11 Exclusive pages, with 1,000+ built-in samples."
                 }
               },
               {
@@ -2241,18 +2141,8 @@
               "There are 32 looper channels: 8 pages, 1 to 8, with 4 channels on each page. A recording can run up to 30 minutes. At 30:00 it stops by itself."
             ],
             "media": "assets/posters/en/p06-looper-w630.jpg",
-            "images": [
-              "assets/guide/looper-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/en/p06-looper-w630.jpg": "Poster: Build Layers of Loops. The looper with 32 channels across 8 pages, named and colored.",
-              "assets/guide/looper-final.jpg": "The Loop screen: page 1 with four channels, Import and Export."
-            },
-            "imageSizes": {
-              "assets/guide/looper-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/en/p06-looper-w630.jpg": "Poster: Build Layers of Loops. The looper with 32 channels across 8 pages, named and colored."
             },
             "sections": [
               {
@@ -2299,18 +2189,8 @@
                   "The editor settings are saved with the loop session and in the exported project."
                 ],
                 "media": "assets/posters/en/p05-loop-editor-w630.jpg",
-                "images": [
-                  "assets/guide/loop-editor-final.jpg"
-                ],
                 "imageAlts": {
-                  "assets/posters/en/p05-loop-editor-w630.jpg": "Poster: Edit Every Loop. The Loop Editor: trim, repeat, EQ, and lock it to the drum rhythm.",
-                  "assets/guide/loop-editor-final.jpg": "Loop Editor: Trim, Loop, eight rhythm boxes, EQ, Gain, and Squeeze."
-                },
-                "imageSizes": {
-                  "assets/guide/loop-editor-final.jpg": [
-                    720,
-                    937
-                  ]
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "Poster: Edit Every Loop. The Loop Editor: trim, repeat, EQ, and lock it to the drum rhythm."
                 }
               },
               {
@@ -2349,18 +2229,8 @@
               "A tap on Import picks a project file and loads the whole mic project. A tap on Export asks the phone where to store the whole mic project."
             ],
             "media": "assets/posters/en/p04-mic-w630.jpg",
-            "images": [
-              "assets/guide/mic-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/en/p04-mic-w630.jpg": "Poster: Record Your Voice. The Mic screen with three vocal channels, guitar, bass and instrument, each with its own sound editor.",
-              "assets/guide/mic-final.jpg": "The Mic screen with three channels, Lyrics, Monitor, and the page keys 1 and 2."
-            },
-            "imageSizes": {
-              "assets/guide/mic-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/en/p04-mic-w630.jpg": "Poster: Record Your Voice. The Mic screen with three vocal channels, guitar, bass and instrument, each with its own sound editor."
             },
             "sections": [
               {
@@ -2390,7 +2260,17 @@
                   "A tap on Edit lets you change the words. Done leaves editing. A tap on Play starts the scroll.",
                   "A tap on A- makes the text smaller. A tap on A+ makes it larger. A drag on Speed sets the scroll from 20 to 150. It starts at 60.",
                   "The X and Close close the window and keep the words."
-                ]
+                ],
+                "media": "assets/guide/lyrics-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/lyrics-phone.jpg": "The Lyrics window: Play, A- and A+ keys, Done and a close X at the top, a Speed slider set to 20, an empty text box that says Paste lyrics here, and a Close key at the bottom."
+                },
+                "imageSizes": {
+                  "assets/guide/lyrics-phone.jpg": [
+                    720,
+                    1460
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -2409,14 +2289,14 @@
               "A tap on Factory 64 asks Restore Factory 64? Restore replaces the Factory 64 presets, all 8 Style drum packs, and all 11 Exclusive packs, then loads slot 1 on page 1. Cancel closes the question.",
               "A tap on Benchmark, under Factory 64, opens the audio test tool."
             ],
-            "media": "assets/guide/settings-window-110.jpg",
+            "media": "assets/guide/settings-phone.jpg",
             "imageAlts": {
-              "assets/guide/settings-window-110.jpg": "Settings in 1.10: New session first, then Custom Frequency, Language, Save as, Load, and Benchmark."
+              "assets/guide/settings-phone.jpg": "The Settings window, titled Language and console session, with New session, Custom Frequency, Language, Save as, Load, Show tutorial, Factory 64, Benchmark, and a Close key."
             },
             "imageSizes": {
-              "assets/guide/settings-window-110.jpg": [
-                642,
-                1472
+              "assets/guide/settings-phone.jpg": [
+                720,
+                1462
               ]
             },
             "sections": [
@@ -3656,16 +3536,6 @@
             "body": [
               "В L Studio пять экранов: Sound, Pad, Drum, Loop и Mic. Вкладки под осциллографами переключают их. Верхняя панель есть на каждом экране: значок PRO или LIVE, MIDI, WAV и Settings."
             ],
-            "media": "assets/guide/top-bar-final.jpg",
-            "imageAlts": {
-              "assets/guide/top-bar-final.jpg": "Экран Sound с верхней панелью: заголовок, значок PRO, MIDI, WAV и Settings, и вкладки пяти экранов."
-            },
-            "imageSizes": {
-              "assets/guide/top-bar-final.jpg": [
-                720,
-                1280
-              ]
-            },
             "sections": [
               {
                 "id": "rec-export",
@@ -3725,17 +3595,7 @@
                   "Эффекты можно переключать во время игры. Переход плавный, громкость остаётся примерно той же. Эффект слышен в динамике, в записи WAV и в том, что записывает лупер.",
                   "Эффекты идут в такт барабанам. Пока барабаны ещё не играли, темп 120 BPM. После остановки барабанов остаётся их последний темп. Depth Drop падает заново каждые 2 доли и на каждой новой ноте.",
                   "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого эффекта. Каждый из 8 эффектов хранит свои настройки при переключении. Transpose идёт от -12 до 12 и меняет все 8 эффектов, включая Sub Forge."
-                ],
-                "media": "assets/guide/sound-fx-final.jpg",
-                "imageAlts": {
-                  "assets/guide/sound-fx-final.jpg": "Окно Sound FX с восемью слотами эффектов."
-                },
-                "imageSizes": {
-                  "assets/guide/sound-fx-final.jpg": [
-                    720,
-                    630
-                  ]
-                }
+                ]
               },
               {
                 "id": "presets",
@@ -3765,14 +3625,14 @@
                   "Под шаблонами в My Presets есть 8 кнопок с вашими именами. Нажатие на кнопку загружает её частоты в клавиатуру и выбирает её. Save сохраняет текущие частоты в выбранный пресет, а если ничего не выбрано, в первый пустой. Save* значит, что есть несохранённые изменения.",
                   "Reset в строке заголовка. Default над Close."
                 ],
-                "media": "assets/guide/freq-final.jpg",
+                "media": "assets/guide/custom-frequency-phone.jpg",
                 "imageAlts": {
-                  "assets/guide/freq-final.jpg": "Tune frequencies: восемь клавиш в Hz, Ready scales и My Presets от 1 до 8."
+                  "assets/guide/custom-frequency-phone.jpg": "Окно Tune frequencies (Hz): восемь полей частот D, R, M, F, S, L, S, L, клавиша Reset, Ready scales (D = 261 Hz) от Major до Pentatonic, My Presets с 1 по 8, Save, Default и Close."
                 },
                 "imageSizes": {
-                  "assets/guide/freq-final.jpg": [
+                  "assets/guide/custom-frequency-phone.jpg": [
                     720,
-                    1017
+                    1462
                   ]
                 }
               }
@@ -3799,18 +3659,8 @@
               "Нажатие на +, рядом с рядом голосов, открывает вторую клавиатуру над первой, на октаву выше. Тот же + есть на экране Sound, и вторая клавиатура остаётся открытой при переходе между Pad и Sound. Ещё одно нажатие закрывает её."
             ],
             "media": "assets/posters/en/p03-pad-w630.jpg",
-            "images": [
-              "assets/guide/pad-dual-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/en/p03-pad-w630.jpg": "Постер (на английском): A Live Performance Pad. Экран Pad: проведите по паду, чтобы менять звук в реальном времени.",
-              "assets/guide/pad-dual-final.jpg": "Экран Pad с открытой второй клавиатурой, общей с Sound."
-            },
-            "imageSizes": {
-              "assets/guide/pad-dual-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/en/p03-pad-w630.jpg": "Постер (на английском): A Live Performance Pad. Экран Pad: проведите по паду, чтобы менять звук в реальном времени."
             },
             "tipsBeginner": [
               "Сначала удерживайте ноту, потом ведите пальцем по паду. Звук следует за пальцем, пока нота играет.",
@@ -3849,22 +3699,22 @@
                   "GAIN добавляет от 0 до +18 dB. SQUEEZE от 0 до 100 сглаживает динамику. ATTACK плавно вводит каждый удар за 0-200 ms. SUSTAIN задаёт, какая часть сэмпла удерживается, от 0% до 100%. RELEASE плавно гасит его за 5-2000 ms и слышен, только когда SUSTAIN меньше 100%. REVERB отправляет от 0% до 100% в реверб ударных.",
                   "Каждый ряд каждого ритма хранит свой сэмпл и свои ручки, и они сохраняются вместе с ритмом в кит."
                 ],
-                "media": "assets/guide/drum-sample-picker-110.jpg",
+                "media": "assets/guide/drum-samples-phone.jpg",
                 "images": [
-                  "assets/guide/voice-110.jpg"
+                  "assets/guide/voice-phone.jpg"
                 ],
                 "imageAlts": {
-                  "assets/guide/drum-sample-picker-110.jpg": "Выбор сэмпла для ряда ударных: вкладки Factory и Exclusive и список звуков.",
-                  "assets/guide/voice-110.jpg": "Выбор сэмплов Voice в 1.10, на вкладке Authentic с 33 вокалами."
+                  "assets/guide/drum-samples-phone.jpg": "Список звуков ряда Kick: вкладки Factory и Exclusive, выбрана Exclusive, восемь имён сэмплов в два столбца, выделен War Horn, страница 1 из 9 и 88 сэмплов, форма волны, шесть ручек (Gain, Squeeze, Attack, Release, Reverb, Sustain) и клавиша Close.",
+                  "assets/guide/voice-phone.jpg": "Список звуков ряда Voice: вкладки Factory, Exclusive и Authentic, выбрана Exclusive, восемь имён сэмплов, выделен Harbor Deep, страница 2 из 2 и 18 сэмплов, форма волны, те же шесть ручек и клавиша Close."
                 },
                 "imageSizes": {
-                  "assets/guide/drum-sample-picker-110.jpg": [
-                    660,
-                    1082
+                  "assets/guide/drum-samples-phone.jpg": [
+                    720,
+                    1462
                   ],
-                  "assets/guide/voice-110.jpg": [
-                    650,
-                    1074
+                  "assets/guide/voice-phone.jpg": [
+                    720,
+                    1454
                   ]
                 }
               },
@@ -3881,18 +3731,8 @@
                   "Набор можно загружать, пока играют ударные. Звуки, которые ещё звучат, затихают примерно за 20 ms, поэтому нет щелчков и искажений, а громкость и панорама плавно переходят к новым значениям примерно за 10 ms. Новые удары сразу берут новый набор. Запись WAV слышит тот же чистый переход."
                 ],
                 "media": "assets/posters/en/p08-drum-styles-w630.jpg",
-                "images": [
-                  "assets/guide/drum-styles-final.jpg"
-                ],
                 "imageAlts": {
-                  "assets/posters/en/p08-drum-styles-w630.jpg": "Постер (на английском): Drum Styles. Окно Drum Styles: 8 пакетов стилей и 11 страниц Exclusive, более 1000 встроенных сэмплов.",
-                  "assets/guide/drum-styles-final.jpg": "Drum styles: восемь наборов на странице, у каждого Load, Save и Edit."
-                },
-                "imageSizes": {
-                  "assets/guide/drum-styles-final.jpg": [
-                    720,
-                    1315
-                  ]
+                  "assets/posters/en/p08-drum-styles-w630.jpg": "Постер (на английском): Drum Styles. Окно Drum Styles: 8 пакетов стилей и 11 страниц Exclusive, более 1000 встроенных сэмплов."
                 }
               },
               {
@@ -3929,18 +3769,8 @@
               "Здесь 32 канала лупера: 8 страниц, от 1 до 8, по 4 канала на каждой. Запись может длиться до 30 минут. На 30:00 она останавливается сама."
             ],
             "media": "assets/posters/en/p06-looper-w630.jpg",
-            "images": [
-              "assets/guide/looper-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/en/p06-looper-w630.jpg": "Постер (на английском): Build Layers of Loops. Лупер: 32 канала на 8 страницах, с названиями и цветами.",
-              "assets/guide/looper-final.jpg": "Экран Loop: страница 1 с четырьмя каналами, Import и Export."
-            },
-            "imageSizes": {
-              "assets/guide/looper-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/en/p06-looper-w630.jpg": "Постер (на английском): Build Layers of Loops. Лупер: 32 канала на 8 страницах, с названиями и цветами."
             },
             "sections": [
               {
@@ -3987,18 +3817,8 @@
                   "Настройки редактора сохраняются в сессии лупера и в экспортированном проекте."
                 ],
                 "media": "assets/posters/en/p05-loop-editor-w630.jpg",
-                "images": [
-                  "assets/guide/loop-editor-final.jpg"
-                ],
                 "imageAlts": {
-                  "assets/posters/en/p05-loop-editor-w630.jpg": "Постер (на английском): Edit Every Loop. Редактор лупа: обрезка, повторы, EQ и привязка к ритму ударных.",
-                  "assets/guide/loop-editor-final.jpg": "Loop Editor: Trim, Loop, восемь ячеек ритма, EQ, Gain и Squeeze."
-                },
-                "imageSizes": {
-                  "assets/guide/loop-editor-final.jpg": [
-                    720,
-                    937
-                  ]
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "Постер (на английском): Edit Every Loop. Редактор лупа: обрезка, повторы, EQ и привязка к ритму ударных."
                 }
               },
               {
@@ -4037,18 +3857,8 @@
               "Нажатие на Import выбирает файл проекта и загружает весь проект микрофона. Нажатие на Export спрашивает телефон, куда сохранить весь проект микрофона."
             ],
             "media": "assets/posters/en/p04-mic-w630.jpg",
-            "images": [
-              "assets/guide/mic-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/en/p04-mic-w630.jpg": "Постер (на английском): Record Your Voice. Экран Mic: три вокальных канала, гитара, бас и инструмент, у каждого свой редактор звука.",
-              "assets/guide/mic-final.jpg": "Экран Mic с тремя каналами, Lyrics, Monitor и клавишами страниц 1 и 2."
-            },
-            "imageSizes": {
-              "assets/guide/mic-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/en/p04-mic-w630.jpg": "Постер (на английском): Record Your Voice. Экран Mic: три вокальных канала, гитара, бас и инструмент, у каждого свой редактор звука."
             },
             "sections": [
               {
@@ -4078,7 +3888,17 @@
                   "Нажатие на Edit даёт менять слова. Done выходит из правки. Нажатие на Play начинает прокрутку.",
                   "Нажатие на A- уменьшает текст. Нажатие на A+ увеличивает его. Перетаскивание Speed задаёт прокрутку от 20 до 150. Она начинает с 60.",
                   "X и Close закрывают окно и сохраняют слова."
-                ]
+                ],
+                "media": "assets/guide/lyrics-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/lyrics-phone.jpg": "Окно Lyrics: клавиши Play, A- и A+, Done и крестик закрытия сверху, ползунок Speed на значении 20, пустое поле с надписью Paste lyrics here и клавиша Close внизу."
+                },
+                "imageSizes": {
+                  "assets/guide/lyrics-phone.jpg": [
+                    720,
+                    1460
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -4097,14 +3917,14 @@
               "Нажатие на Factory 64 спрашивает Restore Factory 64? Restore заменяет пресеты Factory 64, все 8 наборов Style и все 11 наборов Exclusive, затем загружает место 1 на странице 1. Cancel закрывает вопрос.",
               "Нажатие на Benchmark, под Factory 64, открывает инструмент проверки звука."
             ],
-            "media": "assets/guide/settings-window-110.jpg",
+            "media": "assets/guide/settings-phone.jpg",
             "imageAlts": {
-              "assets/guide/settings-window-110.jpg": "Settings в 1.10: New session первым, затем Custom Frequency, Language, Save as, Load и Benchmark."
+              "assets/guide/settings-phone.jpg": "Окно Settings с подзаголовком Language and console session: New session, Custom Frequency, Language, Save as, Load, Show tutorial, Factory 64, Benchmark и клавиша Close."
             },
             "imageSizes": {
-              "assets/guide/settings-window-110.jpg": [
-                642,
-                1472
+              "assets/guide/settings-phone.jpg": [
+                720,
+                1462
               ]
             },
             "sections": [
@@ -5344,16 +5164,6 @@
             "body": [
               "في L Studio خمس شاشات: Sound وPad وDrum وLoop وMic. تبدّل علامات التبويب تحت شاشات الموجة بينها. يبقى الشريط العلوي في كل شاشة: شارة PRO أو LIVE وMIDI وWAV وSettings."
             ],
-            "media": "assets/guide/top-bar-final.jpg",
-            "imageAlts": {
-              "assets/guide/top-bar-final.jpg": "شاشة Sound مع الشريط العلوي: العنوان وشارة PRO وMIDI وWAV وSettings، وتبويبات الشاشات الخمس."
-            },
-            "imageSizes": {
-              "assets/guide/top-bar-final.jpg": [
-                720,
-                1280
-              ]
-            },
             "sections": [
               {
                 "id": "rec-export",
@@ -5413,17 +5223,7 @@
                   "يمكنك تبديل المؤثر أثناء العزف. الانتقال ناعم ويبقى مستوى الصوت تقريباً كما هو. تسمع المؤثر في السماعة وفي تسجيل WAV وفيما يسجّله اللوبر.",
                   "المؤثرات تتبع إيقاع الطبول. قبل أن تعزف الطبول تعمل على 120 BPM. بعد توقف الطبول تبقى على آخر سرعة للطبول. Depth Drop يهبط من جديد كل 2 نبضة ومع كل نغمة جديدة.",
                   "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لذلك المؤثر. كل مؤثر من الثمانية يحتفظ بإعداداته عند التبديل. Transpose يجري من -12 إلى 12 ويغيّر المؤثرات الثمانية كلها، ومنها Sub Forge."
-                ],
-                "media": "assets/guide/sound-fx-final.jpg",
-                "imageAlts": {
-                  "assets/guide/sound-fx-final.jpg": "نافذة Sound FX بثماني خانات للتأثيرات."
-                },
-                "imageSizes": {
-                  "assets/guide/sound-fx-final.jpg": [
-                    720,
-                    630
-                  ]
-                }
+                ]
               },
               {
                 "id": "presets",
@@ -5453,14 +5253,14 @@
                   "تحت القوالب، في My Presets ثمانية أزرار بأسمائك. الضغط على زر يحمّل تردداته إلى لوحة المفاتيح ويختاره. Save يحفظ الترددات الحالية في الإعداد المختار، أو في أول إعداد فارغ عندما لا يكون أي إعداد مختاراً. Save* يعني أن هناك تغييرات لم تُحفظ بعد.",
                   "Reset في سطر العنوان. Default فوق Close."
                 ],
-                "media": "assets/guide/freq-final.jpg",
+                "media": "assets/guide/custom-frequency-phone.jpg",
                 "imageAlts": {
-                  "assets/guide/freq-final.jpg": "Tune frequencies: ثمانية مفاتيح بالهرتز وReady scales وMy Presets من 1 إلى 8."
+                  "assets/guide/custom-frequency-phone.jpg": "نافذة Tune frequencies (Hz): ثمانية حقول للتردد D وR وM وF وS وL وS وL، ومفتاح Reset، وReady scales (D = 261 Hz) من Major إلى Pentatonic، وMy Presets من 1 إلى 8، وSave وDefault وClose."
                 },
                 "imageSizes": {
-                  "assets/guide/freq-final.jpg": [
+                  "assets/guide/custom-frequency-phone.jpg": [
                     720,
-                    1017
+                    1462
                   ]
                 }
               }
@@ -5487,18 +5287,8 @@
               "الضغط على +، بجانب صف الأصوات، يفتح لوحة مفاتيح ثانية فوق الأولى، أوكتافاً أعلى. نفس الـ + موجود على شاشة Sound، وتبقى لوحة المفاتيح الثانية مفتوحة عند التنقل بين Pad وSound. ضغط آخر يغلقها."
             ],
             "media": "assets/posters/en/p03-pad-w630.jpg",
-            "images": [
-              "assets/guide/pad-dual-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/en/p03-pad-w630.jpg": "ملصق (بالإنجليزية): A Live Performance Pad. شاشة Pad: اسحب على اللوحة لتشكيل الصوت في الوقت الفعلي.",
-              "assets/guide/pad-dual-final.jpg": "شاشة Pad مع لوحة المفاتيح الثانية مفتوحة، مشتركة مع Sound."
-            },
-            "imageSizes": {
-              "assets/guide/pad-dual-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/en/p03-pad-w630.jpg": "ملصق (بالإنجليزية): A Live Performance Pad. شاشة Pad: اسحب على اللوحة لتشكيل الصوت في الوقت الفعلي."
             },
             "tipsBeginner": [
               "أمسك نوتة أولاً، ثم اسحب على اللوحة. يتبع الصوت إصبعك ما دامت النوتة تُعزف.",
@@ -5537,22 +5327,22 @@
                   "GAIN يضيف من 0 إلى +18 dB. SQUEEZE من 0 إلى 100 ويُسطّح الديناميكية. ATTACK يُدخل كل ضربة تدريجيًا خلال 0 إلى 200 ms. SUSTAIN يحدد كم من العينة يُمسك، من 0% إلى 100%. RELEASE يُخفتها خلال 5 إلى 2000 ms ويُسمع فقط عندما يكون SUSTAIN أقل من 100%. REVERB يرسل من 0% إلى 100% إلى صدى الطبول.",
                   "كل صف في كل إيقاع يحتفظ بعينته ومقابضه، وتُحفظ مع الإيقاع في الطقم."
                 ],
-                "media": "assets/guide/drum-sample-picker-110.jpg",
+                "media": "assets/guide/drum-samples-phone.jpg",
                 "images": [
-                  "assets/guide/voice-110.jpg"
+                  "assets/guide/voice-phone.jpg"
                 ],
                 "imageAlts": {
-                  "assets/guide/drum-sample-picker-110.jpg": "منتقي العينات لصف طبول، مع تبويبي Factory وExclusive وقائمة أصوات.",
-                  "assets/guide/voice-110.jpg": "منتقي عينات Voice في الإصدار 1.10، على تبويب Authentic مع 33 عيّنة غناء."
+                  "assets/guide/drum-samples-phone.jpg": "قائمة أصوات صف Kick: تبويبا Factory وExclusive والمحدد Exclusive، وثمانية أسماء عينات في عمودين مع تمييز War Horn، والصفحة 1 من 9 و88 عينة، وشكل موجة، وستة مقابض (Gain وSqueeze وAttack وRelease وReverb وSustain) ومفتاح Close.",
+                  "assets/guide/voice-phone.jpg": "قائمة أصوات صف Voice: تبويبات Factory وExclusive وAuthentic والمحدد Exclusive، وثمانية أسماء عينات مع تمييز Harbor Deep، والصفحة 2 من 2 و18 عينة، وشكل موجة، والمقابض الستة نفسها ومفتاح Close."
                 },
                 "imageSizes": {
-                  "assets/guide/drum-sample-picker-110.jpg": [
-                    660,
-                    1082
+                  "assets/guide/drum-samples-phone.jpg": [
+                    720,
+                    1462
                   ],
-                  "assets/guide/voice-110.jpg": [
-                    650,
-                    1074
+                  "assets/guide/voice-phone.jpg": [
+                    720,
+                    1454
                   ]
                 }
               },
@@ -5569,18 +5359,8 @@
                   "يمكنك تحميل طقم أثناء عزف الطبول. الأصوات التي ما زالت ترنّ تتلاشى خلال نحو 20 ms، فلا نقرات ولا تشويه، وينتقل الحجم والتوزيع إلى القيم الجديدة بسلاسة خلال نحو 10 ms. الضربات الجديدة تستخدم الطقم الجديد فوراً. تسجيل WAV يسمع الانتقال النظيف نفسه."
                 ],
                 "media": "assets/posters/en/p08-drum-styles-w630.jpg",
-                "images": [
-                  "assets/guide/drum-styles-final.jpg"
-                ],
                 "imageAlts": {
-                  "assets/posters/en/p08-drum-styles-w630.jpg": "ملصق (بالإنجليزية): Drum Styles. نافذة Drum Styles: 8 حزم أنماط و11 صفحة Exclusive، وأكثر من 1000 عينة مدمجة.",
-                  "assets/guide/drum-styles-final.jpg": "Drum styles: ثمانية أطقم في صفحة، ولكل منها Load وSave وEdit."
-                },
-                "imageSizes": {
-                  "assets/guide/drum-styles-final.jpg": [
-                    720,
-                    1315
-                  ]
+                  "assets/posters/en/p08-drum-styles-w630.jpg": "ملصق (بالإنجليزية): Drum Styles. نافذة Drum Styles: 8 حزم أنماط و11 صفحة Exclusive، وأكثر من 1000 عينة مدمجة."
                 }
               },
               {
@@ -5617,18 +5397,8 @@
               "فيها 32 قناة لوبر: 8 صفحات، من 1 إلى 8، و4 قنوات في كل صفحة. يمكن أن يستمر التسجيل حتى 30 دقيقة. عند 30:00 يتوقف وحده."
             ],
             "media": "assets/posters/en/p06-looper-w630.jpg",
-            "images": [
-              "assets/guide/looper-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/en/p06-looper-w630.jpg": "ملصق (بالإنجليزية): Build Layers of Loops. اللوبر: 32 قناة على 8 صفحات، بأسماء وألوان.",
-              "assets/guide/looper-final.jpg": "شاشة Loop: الصفحة 1 بأربع قنوات، مع Import وExport."
-            },
-            "imageSizes": {
-              "assets/guide/looper-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/en/p06-looper-w630.jpg": "ملصق (بالإنجليزية): Build Layers of Loops. اللوبر: 32 قناة على 8 صفحات، بأسماء وألوان."
             },
             "sections": [
               {
@@ -5675,18 +5445,8 @@
                   "إعدادات المحرر تُحفظ مع جلسة اللوب وفي المشروع المصدَّر."
                 ],
                 "media": "assets/posters/en/p05-loop-editor-w630.jpg",
-                "images": [
-                  "assets/guide/loop-editor-final.jpg"
-                ],
                 "imageAlts": {
-                  "assets/posters/en/p05-loop-editor-w630.jpg": "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب: قص وتكرار وEQ وربط بإيقاع الطبول.",
-                  "assets/guide/loop-editor-final.jpg": "Loop Editor: Trim وLoop وثمانية مربعات إيقاع وEQ وGain وSqueeze."
-                },
-                "imageSizes": {
-                  "assets/guide/loop-editor-final.jpg": [
-                    720,
-                    937
-                  ]
+                  "assets/posters/en/p05-loop-editor-w630.jpg": "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب: قص وتكرار وEQ وربط بإيقاع الطبول."
                 }
               },
               {
@@ -5725,18 +5485,8 @@
               "الضغط على Import يختار ملف مشروع ويحمّل مشروع الميكروفون كله. الضغط على Export يسأل الهاتف أين يحفظ مشروع الميكروفون كله."
             ],
             "media": "assets/posters/en/p04-mic-w630.jpg",
-            "images": [
-              "assets/guide/mic-final.jpg"
-            ],
             "imageAlts": {
-              "assets/posters/en/p04-mic-w630.jpg": "ملصق (بالإنجليزية): Record Your Voice. شاشة Mic: ثلاث قنوات صوت وغيتار وباس وآلة، ولكل قناة محرر صوت خاص.",
-              "assets/guide/mic-final.jpg": "شاشة Mic بثلاث قنوات، مع Lyrics وMonitor ومفتاحي الصفحتين 1 و2."
-            },
-            "imageSizes": {
-              "assets/guide/mic-final.jpg": [
-                720,
-                1280
-              ]
+              "assets/posters/en/p04-mic-w630.jpg": "ملصق (بالإنجليزية): Record Your Voice. شاشة Mic: ثلاث قنوات صوت وغيتار وباس وآلة، ولكل قناة محرر صوت خاص."
             },
             "sections": [
               {
@@ -5766,7 +5516,17 @@
                   "الضغط على Edit يتيح تغيير الكلمات. Done يخرج من التحرير. الضغط على Play يبدأ التمرير.",
                   "الضغط على A- يصغّر النص. الضغط على A+ يكبّره. السحب على Speed يحدد التمرير من 20 إلى 150. يبدأ عند 60.",
                   "X وClose يغلقان النافذة ويبقيان الكلمات."
-                ]
+                ],
+                "media": "assets/guide/lyrics-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/lyrics-phone.jpg": "نافذة Lyrics: مفاتيح Play وA- وA+ وDone وعلامة X للإغلاق في الأعلى، ومنزلق Speed عند 20، ومربع نص فارغ مكتوب فيه Paste lyrics here، ومفتاح Close في الأسفل."
+                },
+                "imageSizes": {
+                  "assets/guide/lyrics-phone.jpg": [
+                    720,
+                    1460
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -5785,14 +5545,14 @@
               "الضغط على Factory 64 يسأل Restore Factory 64? Restore يستبدل إعدادات Factory 64 وكل حزم Style الثماني وكل حزم Exclusive الإحدى عشرة، ثم يحمّل الخانة 1 في الصفحة 1. Cancel يغلق السؤال.",
               "الضغط على Benchmark، تحت Factory 64، يفتح أداة فحص الصوت."
             ],
-            "media": "assets/guide/settings-window-110.jpg",
+            "media": "assets/guide/settings-phone.jpg",
             "imageAlts": {
-              "assets/guide/settings-window-110.jpg": "Settings في الإصدار 1.10: New session أولاً، ثم Custom Frequency وLanguage وSave as وLoad وBenchmark."
+              "assets/guide/settings-phone.jpg": "نافذة Settings بعنوان Language and console session، وفيها New session وCustom Frequency وLanguage وSave as وLoad وShow tutorial وFactory 64 وBenchmark ومفتاح Close."
             },
             "imageSizes": {
-              "assets/guide/settings-window-110.jpg": [
-                642,
-                1472
+              "assets/guide/settings-phone.jpg": [
+                720,
+                1462
               ]
             },
             "sections": [

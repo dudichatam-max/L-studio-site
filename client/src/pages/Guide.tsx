@@ -118,7 +118,19 @@ function GuideBlock({ item }: { item: GuideSection }) {
                   <img src={`${mediaUrl(src)}?v=${POSTER_VER}`} alt={item.imageAlts?.[src] || item.title} width={POSTER_LARGE.width} height={POSTER_LARGE.height} loading="lazy" decoding="async" />
                 </picture>
               ) : (
-                <img src={mediaUrl(src)} alt={item.imageAlts?.[src] || item.title} width={item.imageSizes?.[src]?.[0]} height={item.imageSizes?.[src]?.[1]} loading="lazy" decoding="async" />
+                <picture>
+                  <source type="image/webp" sizes={PHONE_SIZES} srcSet={`${mediaUrl(src.replace(/\.jpe?g$/i, "-w360.webp"))} 360w, ${mediaUrl(src.replace(/\.jpe?g$/i, ".webp"))} 720w`} />
+                  <img
+                    src={mediaUrl(src)}
+                    srcSet={`${mediaUrl(src.replace(/\.jpe?g$/i, "-w360.jpg"))} 360w, ${mediaUrl(src)} 720w`}
+                    sizes={PHONE_SIZES}
+                    alt={item.imageAlts?.[src] || item.title}
+                    width={item.imageSizes?.[src]?.[0]}
+                    height={item.imageSizes?.[src]?.[1]}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               )}
             </figure>
           ))}
@@ -127,6 +139,9 @@ function GuideBlock({ item }: { item: GuideSection }) {
     </div>
   );
 }
+
+/** Phone screenshots show at 240px on desktop and the full column on phones. */
+const PHONE_SIZES = "(max-width: 720px) 100vw, 240px";
 
 const NAV_OFFSET = 130;
 
