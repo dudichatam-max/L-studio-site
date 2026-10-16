@@ -181,3 +181,11 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Sections that still have no real image (text stays, no placeholder): Sound FX, Getting started and Recording MIDI and WAV (top bar), Mic Editor, Loop recording and files, and the Settings extras. Several topics show a poster only. See `guide-audit/missing-real-shots.md`.
 - Checked against the app code (ad2ceeb) for the new shots: Presets (Import and Save are under the page name, not on a bottom row), Pattern repeats (COPY/PASTE act on the rhythm whose number was long-pressed, only from the Drum window; PASTE keeps repeat count, BPM, swing; any pick closes the window), Scales (a pick closes the window), Page name (Cancel restores name and color), Load Console (a tap on a row highlights it; Save asks for Overwrite).
 - Fixed: the guide said a tap on WAH, OCT, or Vibrato turns it on or off. In the app they are knobs (0 to 100%) and only change the keyboard sound.
+
+## Home windows menu carousel (Sound, Mic, Loop, Pad, Drum)
+
+- Each tab is a carousel (swipe, arrows, dots, arrow keys, RTL-correct). Code: `client/src/components/PlayCarousel.tsx`, slide list per tab in `client/src/lib/carousel.ts` (Sound 4, Mic 4, Loop 4, Pad 3, Drum 4).
+- Every slide is a designed store poster, one set per language: `assets/carousel/{he,en,ar,ru}/<slide-id>-w360|w630.{webp,jpg}` (also under `client/public/assets/carousel/`). The counter n/N is baked into the poster (N = slides in that tab), so the site draws none. Each language uses only its own folder. Old numbered posters (01-08) are never used in a carousel.
+- To import: `python3 scripts/import-carousel-posters.py` (reads `/workspace/store-posters/carousel/{lang}/<tab>-<n>.png`, writes the 4 files per slide, removes stale files).
+- Adding or removing a slide: the designer rebakes that tab's counters, then edit `carousel.ts` (`{ id, designed }`), add the texts to `languages.*.carousel.slides[id]` in all 4 languages, and run the import.
+- Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
