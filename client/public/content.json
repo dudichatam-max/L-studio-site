@@ -147,23 +147,25 @@
           {
             "question": "האפליקציה כבר בגוגל פליי? וכמה היא עולה?",
             "answer": [
-              "L Studio Pro לאנדרואיד מגיע ל-Google Play באוקטובר 2026, ב-8$. גרסה 1.10 בקרוב בחנות.",
-              "האתר הזה לא מוכר את האפליקציה ואין בו כפתור הורדה."
+              "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. זה תשלום חד פעמי. גרסה 1.10 בקרוב בחנות.",
+              "אחרי שהיא תשוחרר, קונים אותה דרך Google Play. האתר הזה לא מוכר את האפליקציה ואין בו כפתור הורדה."
             ]
           },
           {
             "question": "מה כלול ב-Pro? יש גרסה חינמית?",
             "answer": [
-              "מי שקונה Pro מקבל את כל האפליקציה: חבילת Factory עם 64 פריסטים ושמונה ערכות תופים, וגם את אחת עשרה חבילות התופים של Exclusive, בלי עלות נוספת. ל-Exclusive אין כפתור הורדה.",
-              "אין מצב דמו ואין פרסומות. הכול פתוח מההפעלה הראשונה.",
+              "יש גרסה אחת של האפליקציה: Pro. זו האפליקציה המלאה: חבילת Factory עם 64 פריסטים ושמונה ערכות תופים, וגם אחת עשרה חבילות התופים של Exclusive, בלי עלות נוספת. ל-Exclusive אין כפתור הורדה.",
+              "ב-Pro אין פרסומות, והכול בו פתוח מההפעלה הראשונה.",
+              "דמו חינמי יגיע בקרוב, ויהיה אפשר להוריד אותו מהאתר הזה.",
               "את חבילות Exclusive אפשר לראות בעמוד Exclusive באתר."
             ]
           },
           {
             "question": "על אילו מכשירים זה רץ, ובאילו שפות?",
             "answer": [
-              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה, וגודלה 77.5MB.",
-              "בטלפון האפליקציה נשארת זקופה, לאורך. בטאבלט היא יכולה להסתובב.",
+              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה, וגודלה 77.5MB. בינתיים אין גרסה לאייפון.",
+              "האפליקציה נבדקה על טלפוני אנדרואיד שונים. היא לא נבדקה על טאבלטים, ולכן אין הבטחה לתמיכה בטאבלט.",
+              "בטלפון האפליקציה נשארת זקופה, לאורך.",
               "האפליקציה בארבע שפות: עברית, אנגלית, רוסית וערבית. מחליפים ב-Settings, בשורה Language."
             ]
           },
@@ -195,9 +197,12 @@
           {
             "question": "אפשר להשתמש בצלילים ובקבצי אודיו משלי?",
             "answer": [
-              "כן. במסך Drum, הקשה על שם שורה (Kick, Snare ועוד) פותחת רשימת צלילים, ו-Load בוחר קובץ אודיו מהטלפון. הצליל נכנס לשורה הזאת, ואפשר לעצב אותו עם GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE ו-REVERB.",
-              "כל שורה בכל מקצב שומרת את הסאמפל שלה, והוא נשמר עם המקצב בתוך הקיט.",
-              "בלופר, Load בערוץ בוחר קובץ אודיו לערוץ הזה.",
+              "כן, בשורות התופים ובערוצי הלופר. לערוצי המיק אין Load: הם מקליטים מהמיקרופון, ו-Save כותב קובץ WAV.",
+              "תופים: במסך Drum, הקשה על שם שורה (Kick, Snare ועוד) פותחת רשימת צלילים, ו-Load בוחר קובץ אודיו מהטלפון. הקובץ הופך לצליל של השורה הזאת בקיט, ואפשר לעצב אותו עם GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE ו-REVERB. מקצב שבחר בשורה הזאת צליל אחר מהרשימה שומר על הבחירה שלו. בכל אחת מ-8 השורות יש קובץ טעון אחד, וטעינה חדשה מחליפה אותו.",
+              "לופר: Load בערוץ בוחר קובץ אודיו לערוץ הזה ומחליף את ההקלטה שבו. Redo לא יחזיר את ההקלטה הקודמת. יש 32 ערוצים, קובץ אחד בכל ערוץ.",
+              "אילו קבצים: כל קובץ אודיו שהאנדרואיד בטלפון שלכם יודע לנגן ולפענח. ל-L Studio אין רשימת פורמטים משלה, ולכן פורמט שהטלפון לא מפענח נכשל עם הודעה (Could not load audio או Could not load the audio file).",
+              "איך הקובץ נקרא: קובץ סטריאו מעורבב למונו. כל קצב דגימה מומר לקצב של האפליקציה, שהוא קצב יציאת האודיו של הטלפון (44.1 kHz אם הטלפון לא מדווח).",
+              "אורך: בשורת תופים אין לאפליקציה מגבלת אורך או גודל. היא מפענחת את כל הקובץ לזיכרון, ולכן עדיף צלילים קצרים. בערוץ לופר, קובץ ארוך מ-30:00 נחתך ב-30:00 בלי הודעה.",
               "במצב LIVE הכפתור Load נעול. כדי לטעון, חוזרים ל-PRO."
             ]
           },
@@ -253,7 +258,7 @@
             "question": "מה זה PRO ו-LIVE בשורה העליונה?",
             "answer": [
               "PRO הוא המצב הרגיל, עם הכול פתוח. LIVE נועל כמה כפתורים כדי שתוכלו להתרכז בנגינה, וכדי שהקשה בטעות לא תמחק הקלטה ולא תטען קובץ.",
-              "LIVE נועל Clear ו-Load בערוצי הלופר והמיק, שמות של ערוצים ועמודים, Import, חיצי DRUM KIT והקלדת מספר על נוב.",
+              "LIVE נועל Clear בערוצי הלופר והמיק, Load בשורות התופים ובערוצי הלופר, שמות של ערוצים ועמודים, Import, חיצי DRUM KIT והקלדת מספר על נוב.",
               "הוא משאיר פתוחים Rec, Play, Stop, השתקה וסולו, Save, Export, מעבר בין עמודים, פריסטים וכל מה שמנגנים. הקשה נוספת על הכפתור מחזירה ל-PRO."
             ]
           },
@@ -279,7 +284,7 @@
             "answer": [
               "כן, אבל זו הקלטה שנשמרת לקובץ. מקש MIDI שומר קובץ MIDI של הנוטות שניגנתם על המקלדות. כל תו נשמר כנוטה הקרובה אליו ועוד Pitch Bend שמחזיר את ההפרש מהתדר המדויק. הקובץ מניח טווח Pitch Bend של שני חצאי טונים.",
               "כדי לשמוע את הכוונון המיקרוטונאלי, התוכנה שפותחת את הקובץ צריכה לתמוך ב-Pitch Bend ולהיות מוגדרת לשני חצאי טונים. תווים שמוחזקים יחד מקבלים כל אחד ערוץ MIDI משלו, כדי שכל אחד ישמור על הכיפוף שלו.",
-              "ל-L Studio אין MIDI חי, לא כניסה ולא יציאה. אי אפשר לחבר מקלדת MIDI או לשלוח נגינה בזמן אמת למכשיר אחר."
+              "בינתיים ל-L Studio אין תמיכה במקלדת MIDI חיצונית, ואין MIDI חי, לא כניסה ולא יציאה. זה מתוכנן לעתיד, בלי תאריך."
             ]
           },
           {
@@ -294,7 +299,7 @@
             "question": "כמה ערוצים יש, ומה המגבלות?",
             "answer": [
               "לופר: 32 ערוצים, כלומר 8 עמודים ו-4 ערוצים בכל עמוד. הקלטה יכולה להימשך עד 30 דקות, וב-30:00 היא נעצרת לבד.",
-              "מיק: שישה ערוצים בשני עמודים.",
+              "מיק: שישה ערוצים בשני עמודים. הקלטה יכולה להימשך עד 4:00 בשלושת הערוצים של העמוד הראשון ועד 3:00 בשלושת הערוצים של העמוד השני. היא נעצרת לבד בגבול.",
               "תופים: 8 שורות (Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 ו-Voice), 8 מקצבים בכל קיט ו-16 צעדים בכל שורה."
             ]
           },
@@ -310,7 +315,7 @@
             "question": "איך מקבלים עזרה, ומה לגבי החזר כספי?",
             "answer": [
               "כותבים ל-dudichatam@gmail.com. כדאי לצרף דגם טלפון, גרסת אנדרואיד, גרסת אפליקציה ומה עשיתם.",
-              "האתר הזה לא מוכר כלום ואין בו מדיניות החזר משלו. את Pro קונים ב-Google Play, ולשאלות על רכישה אפשר לכתוב לאותה כתובת.",
+              "האתר הזה לא מוכר כלום ואין בו מדיניות החזר משלו. אחרי שהאפליקציה תשוחרר, הרכישה תהיה דרך Google Play, ולשאלות על רכישה אפשר לכתוב לאותה כתובת.",
               "מה השתנה בכל גרסה אפשר לראות בעמוד Updates באתר."
             ]
           }
@@ -1931,23 +1936,25 @@
           {
             "question": "Is L Studio on Google Play yet, and how much is it?",
             "answer": [
-              "L Studio Pro for Android comes to Google Play in October 2026, for $8. Version 1.10 is coming soon to the store.",
-              "This website does not sell the app and has no download button."
+              "L Studio Pro for Android is coming soon to Google Play, for $8. It is a one-time payment. Version 1.10 is coming soon to the store.",
+              "Once it is released, you buy it through Google Play. This website does not sell the app and has no download button."
             ]
           },
           {
             "question": "What does Pro include? Is there a free version?",
             "answer": [
-              "Whoever buys Pro gets the whole app: the Factory Pack with 64 presets and eight drum kits, and also the eleven Exclusive drum packs, at no extra cost. There is no download button for Exclusive.",
-              "There is no demo mode and there are no ads. Everything is open from the first launch.",
+              "There is a single version of the app: Pro. It is the whole app: the Factory Pack with 64 presets and eight drum kits, and also the eleven Exclusive drum packs, at no extra cost. There is no download button for Exclusive.",
+              "Pro has no ads, and everything in it is open from the first launch.",
+              "A free demo is coming soon, and it will be downloadable from this website.",
               "You can see the Exclusive packs on the Exclusive page of this site."
             ]
           },
           {
             "question": "Which devices does it run on, and in which languages?",
             "answer": [
-              "L Studio is an Android app. It needs Android 7.0 or newer, and its size is 77.5 MB.",
-              "On a phone the app stays upright, in portrait. On a tablet it can rotate.",
+              "L Studio is an Android app. It needs Android 7.0 or newer, and its size is 77.5 MB. There is no iPhone version for now.",
+              "It was tested on various Android phones. It was not tested on tablets, so tablet support is not promised.",
+              "On a phone the app stays upright, in portrait.",
               "The app comes in four languages: English, Hebrew, Russian, and Arabic. You switch in Settings, on the Language row."
             ]
           },
@@ -1979,9 +1986,12 @@
           {
             "question": "Can I use my own sounds and audio files?",
             "answer": [
-              "Yes. On the Drum screen, a tap on a row name (Kick, Snare, and so on) opens a sound list, and Load picks an audio file from your phone. The sound goes onto that row, and you can shape it with GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE, and REVERB.",
-              "Each row of each rhythm keeps its own sample, and it is saved with the rhythm inside the kit.",
-              "In the Looper, Load on a channel picks an audio file for that channel.",
+              "Yes, on the Drum rows and on the Looper channels. Mic channels have no Load: they record from the microphone, and Save writes a WAV file.",
+              "Drums: on the Drum screen, a tap on a row name (Kick, Snare, and so on) opens a sound list, and Load picks an audio file from your phone. The file becomes that row's own sound in the kit, and you can shape it with GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE, and REVERB. A rhythm that picked a different sound from the list for that row keeps its pick. Each of the 8 rows holds one loaded file, and a new Load replaces it.",
+              "Looper: Load on a channel picks an audio file for that channel and replaces the take on it. Redo can't bring the old take back. There are 32 channels, one file each.",
+              "Which files: any audio file that your phone's Android can play and decode. L Studio has no format list of its own, so a format your phone can't decode fails with a message (Could not load audio, or Could not load the audio file).",
+              "How it is read: a stereo file is mixed down to mono. Any sample rate is converted to the app's rate, which is your phone's audio output rate (44.1 kHz if the phone doesn't report one).",
+              "Length: for a drum row, the app has no length or size limit. It decodes the whole file into memory, so short sounds are the sensible choice. For a Looper channel, a file longer than 30:00 is cut at 30:00 with no message.",
               "In LIVE mode Load is locked. Go back to PRO to load."
             ]
           },
@@ -2037,7 +2047,7 @@
             "question": "What are PRO and LIVE in the top bar?",
             "answer": [
               "PRO is the normal mode, with everything open. LIVE locks some buttons so you can focus on playing, and a stray tap can't clear a take or load a file.",
-              "LIVE locks Clear and Load on Looper and Mic channels, channel and page names, Import, the DRUM KIT arrows, and typing a number on a knob.",
+              "LIVE locks Clear on Looper and Mic channels, Load on the drum rows and on Looper channels, channel and page names, Import, the DRUM KIT arrows, and typing a number on a knob.",
               "It leaves open Rec, Play, Stop, mute and solo, Save, Export, switching pages, presets, and everything you play. Another tap on the chip goes back to PRO."
             ]
           },
@@ -2063,7 +2073,7 @@
             "answer": [
               "Yes, but it is a recording saved to a file. The MIDI key saves a .mid file of the notes you played on the keyboards. Each note is saved as the nearest note plus a Pitch Bend that restores the offset from the exact frequency. The file assumes a Pitch Bend range of two semitones.",
               "To hear the microtonal tuning, the program that opens the file must support Pitch Bend and be set to two semitones. Notes held together each get their own MIDI channel, so each keeps its own bend.",
-              "L Studio has no live MIDI, neither input nor output. You can't connect a MIDI keyboard or send playing to another device in real time."
+              "For now, L Studio does not support an external MIDI keyboard, and it has no live MIDI, neither input nor output. This is planned for later, with no date yet."
             ]
           },
           {
@@ -2078,7 +2088,7 @@
             "question": "How many channels are there, and what are the limits?",
             "answer": [
               "Looper: 32 channels, which is 8 pages with 4 channels on each. A recording can run up to 30 minutes, and at 30:00 it stops by itself.",
-              "Mic: six channels on two pages.",
+              "Mic: six channels on two pages. A recording can run up to 4:00 on the three channels of the first page and up to 3:00 on the three channels of the second page. It stops by itself at the limit.",
               "Drums: 8 rows (Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3, and Voice), 8 rhythms in each kit, and 16 steps in each row."
             ]
           },
@@ -2094,7 +2104,7 @@
             "question": "How do I get help, and what about refunds?",
             "answer": [
               "Write to dudichatam@gmail.com. It helps to include your phone model, Android version, app version, and what you did.",
-              "This website sells nothing and has no refund policy of its own. Pro is bought in Google Play, and for questions about a purchase you can write to the same address.",
+              "This website sells nothing and has no refund policy of its own. Once the app is released, the purchase goes through Google Play, and for questions about a purchase you can write to the same address.",
               "The Updates page on this site shows what changed in each version."
             ]
           }
@@ -3715,23 +3725,25 @@
           {
             "question": "L Studio уже в Google Play? И сколько стоит?",
             "answer": [
-              "L Studio Pro для Android выйдет в Google Play в октябре 2026, за $8. Версия 1.10 скоро в магазине.",
-              "Этот сайт не продаёт приложение, и кнопки скачивания здесь нет."
+              "L Studio Pro для Android скоро выйдет в Google Play, за $8. Это единоразовый платёж. Версия 1.10 скоро в магазине.",
+              "Когда приложение выйдет, купить его можно будет через Google Play. Этот сайт не продаёт приложение, и кнопки скачивания здесь нет."
             ]
           },
           {
             "question": "Что входит в Pro? Есть бесплатная версия?",
             "answer": [
-              "Кто покупает Pro, получает всё приложение: Factory Pack с 64 пресетами и восемью наборами ударных, а также одиннадцать паков ударных Exclusive, без доплаты. Кнопки скачивания для Exclusive нет.",
-              "Демо-режима нет, рекламы тоже нет. Всё открыто с первого запуска.",
+              "Версия приложения одна: Pro. Это всё приложение: Factory Pack с 64 пресетами и восемью наборами ударных, а также одиннадцать паков ударных Exclusive, без доплаты. Кнопки скачивания для Exclusive нет.",
+              "В Pro нет рекламы, и всё в нём открыто с первого запуска.",
+              "Бесплатное демо скоро выйдет, и его можно будет скачать с этого сайта.",
               "Паки Exclusive можно посмотреть на странице Exclusive этого сайта."
             ]
           },
           {
             "question": "На каких устройствах работает и на каких языках?",
             "answer": [
-              "L Studio это приложение для Android. Нужен Android 7.0 или новее, размер 77.5 МБ.",
-              "На телефоне приложение остаётся вертикальным, в портретной ориентации. На планшете оно может поворачиваться.",
+              "L Studio это приложение для Android. Нужен Android 7.0 или новее, размер 77.5 МБ. Версии для iPhone пока нет.",
+              "Приложение проверялось на разных телефонах с Android. На планшетах оно не проверялось, поэтому поддержка планшетов не обещается.",
+              "На телефоне приложение остаётся вертикальным, в портретной ориентации.",
               "Приложение на четырёх языках: английском, иврите, русском и арабском. Язык меняется в Settings, в строке Language."
             ]
           },
@@ -3763,9 +3775,12 @@
           {
             "question": "Можно использовать свои звуки и аудиофайлы?",
             "answer": [
-              "Да. На экране Drum нажатие на название ряда (Kick, Snare и другие) открывает список звуков, а Load выбирает аудиофайл с телефона. Звук ложится на этот ряд, и его можно настроить ручками GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE и REVERB.",
-              "Каждый ряд каждого ритма хранит свой сэмпл, и он сохраняется вместе с ритмом в наборе.",
-              "В Looper кнопка Load на канале выбирает аудиофайл для этого канала.",
+              "Да, в рядах ударных и в каналах Looper. У каналов Mic кнопки Load нет: они записывают с микрофона, а Save сохраняет файл WAV.",
+              "Ударные: на экране Drum нажатие на название ряда (Kick, Snare и другие) открывает список звуков, а Load выбирает аудиофайл с телефона. Файл становится собственным звуком этого ряда в наборе, и его можно настроить ручками GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE и REVERB. Ритм, в котором для этого ряда выбран другой звук из списка, сохраняет свой выбор. В каждом из 8 рядов лежит один загруженный файл, новая загрузка его заменяет.",
+              "Looper: Load на канале выбирает аудиофайл для этого канала и заменяет запись на нём. Redo прежнюю запись не вернёт. Каналов 32, по одному файлу на канал.",
+              "Какие файлы: любой аудиофайл, который Android на вашем телефоне умеет воспроизводить и декодировать. Собственного списка форматов у L Studio нет, поэтому формат, который телефон не декодирует, не загрузится, и появится сообщение (Could not load audio или Could not load the audio file).",
+              "Как читается файл: стереофайл сводится в моно. Любая частота дискретизации преобразуется в частоту приложения, то есть частоту аудиовыхода телефона (44.1 kHz, если телефон её не сообщает).",
+              "Длина: для ряда ударных ограничения по длине или размеру в приложении нет. Оно декодирует весь файл в память, поэтому разумно брать короткие звуки. Для канала Looper файл длиннее 30:00 обрезается на 30:00 без сообщения.",
               "В режиме LIVE Load заблокирован. Чтобы загрузить, вернитесь в PRO."
             ]
           },
@@ -3821,7 +3836,7 @@
             "question": "Что такое PRO и LIVE в верхней строке?",
             "answer": [
               "PRO обычный режим, где всё открыто. LIVE блокирует некоторые кнопки, чтобы вы могли сосредоточиться на игре, а случайное нажатие не стёрло запись и не загрузило файл.",
-              "LIVE блокирует Clear и Load в каналах Looper и Mic, имена каналов и страниц, Import, стрелки DRUM KIT и ввод числа на ручке.",
+              "LIVE блокирует Clear в каналах Looper и Mic, Load в рядах ударных и в каналах Looper, имена каналов и страниц, Import, стрелки DRUM KIT и ввод числа на ручке.",
               "Открытыми остаются Rec, Play, Stop, mute и solo, Save, Export, переключение страниц, пресеты и всё, что вы играете. Ещё одно нажатие на значок возвращает PRO."
             ]
           },
@@ -3847,7 +3862,7 @@
             "answer": [
               "Да, но это запись в файл. Клавиша MIDI сохраняет файл MIDI с нотами, которые вы сыграли на клавиатурах. Каждый звук сохраняется как ближайшая нота плюс Pitch Bend, который возвращает отклонение от точной частоты. Файл рассчитан на диапазон Pitch Bend в два полутона.",
               "Чтобы услышать микротональный строй, программа, открывающая файл, должна поддерживать Pitch Bend и быть настроена на два полутона. Ноты, которые звучат вместе, получают каждая свой канал MIDI, чтобы у каждой сохранился свой изгиб.",
-              "В L Studio нет живого MIDI, ни входа, ни выхода. Нельзя подключить MIDI-клавиатуру или отправлять игру на другое устройство в реальном времени."
+              "Пока L Studio не поддерживает внешнюю MIDI-клавиатуру, и в ней нет живого MIDI, ни входа, ни выхода. Это запланировано на потом, без даты."
             ]
           },
           {
@@ -3862,7 +3877,7 @@
             "question": "Сколько есть каналов и какие ограничения?",
             "answer": [
               "Looper: 32 канала, то есть 8 страниц по 4 канала. Запись может идти до 30 минут, а на 30:00 она останавливается сама.",
-              "Mic: шесть каналов на двух страницах.",
+              "Mic: шесть каналов на двух страницах. Запись может идти до 4:00 на трёх каналах первой страницы и до 3:00 на трёх каналах второй страницы. На пределе она останавливается сама.",
               "Ударные: 8 рядов (Kick, Snare, Hi-Hat, Perc, FX 1, FX 2, FX 3 и Voice), 8 ритмов в каждом наборе и 16 шагов в каждом ряду."
             ]
           },
@@ -3878,7 +3893,7 @@
             "question": "Как получить помощь и что с возвратом денег?",
             "answer": [
               "Пишите на dudichatam@gmail.com. Полезно указать модель телефона, версию Android, версию приложения и что вы делали.",
-              "Этот сайт ничего не продаёт, и у него нет собственных правил возврата. Pro покупается в Google Play, а с вопросами о покупке можно писать на тот же адрес.",
+              "Этот сайт ничего не продаёт, и у него нет собственных правил возврата. Когда приложение выйдет, покупка будет через Google Play, а с вопросами о покупке можно писать на тот же адрес.",
               "Что изменилось в каждой версии, видно на странице Updates этого сайта."
             ]
           }
@@ -5499,23 +5514,25 @@
           {
             "question": "هل L Studio على Google Play الآن؟ وكم سعره؟",
             "answer": [
-              "L Studio Pro لأندرويد يصل إلى Google Play في أكتوبر 2026، بسعر 8$. الإصدار 1.10 قريباً في المتجر.",
-              "هذا الموقع لا يبيع التطبيق وليس فيه زر تنزيل."
+              "L Studio Pro لأندرويد قادم قريباً إلى Google Play، بسعر 8$. وهي دفعة واحدة. الإصدار 1.10 قريباً في المتجر.",
+              "بعد إطلاقه تشتريه عبر Google Play. هذا الموقع لا يبيع التطبيق وليس فيه زر تنزيل."
             ]
           },
           {
             "question": "ماذا يشمل Pro؟ هل توجد نسخة مجانية؟",
             "answer": [
-              "من يشتري Pro يحصل على التطبيق كله: Factory Pack بـ 64 Preset وثماني مجموعات طبول، وكذلك إحدى عشرة حزمة طبول Exclusive، بلا تكلفة إضافية. لا يوجد زر تنزيل لـ Exclusive.",
-              "لا يوجد وضع تجريبي ولا توجد إعلانات. كل شيء مفتوح من أول تشغيل.",
+              "للتطبيق نسخة واحدة: Pro. وهي التطبيق كله: Factory Pack بـ 64 Preset وثماني مجموعات طبول، وكذلك إحدى عشرة حزمة طبول Exclusive، بلا تكلفة إضافية. لا يوجد زر تنزيل لـ Exclusive.",
+              "لا توجد إعلانات في Pro، وكل شيء فيه مفتوح من أول تشغيل.",
+              "نسخة تجريبية مجانية قادمة قريباً، وسيمكن تنزيلها من هذا الموقع.",
               "يمكنك رؤية حزم Exclusive في صفحة Exclusive على هذا الموقع."
             ]
           },
           {
             "question": "على أي أجهزة يعمل وبأي لغات؟",
             "answer": [
-              "L Studio تطبيق لأندرويد. يحتاج إلى Android 7.0 أو أحدث، وحجمه 77.5 ميغابايت.",
-              "على الهاتف يبقى التطبيق قائماً، بوضع طولي. على التابلت يمكنه أن يدور.",
+              "L Studio تطبيق لأندرويد. يحتاج إلى Android 7.0 أو أحدث، وحجمه 77.5 ميغابايت. لا توجد نسخة للآيفون حالياً.",
+              "جُرّب التطبيق على هواتف أندرويد مختلفة. ولم يُجرَّب على التابلت، لذلك لا نَعِد بدعم التابلت.",
+              "على الهاتف يبقى التطبيق قائماً، بوضع طولي.",
               "التطبيق بأربع لغات: الإنجليزية والعبرية والروسية والعربية. تبدّل اللغة من Settings، في صف Language."
             ]
           },
@@ -5547,9 +5564,12 @@
           {
             "question": "هل أستطيع استخدام أصواتي وملفاتي الصوتية؟",
             "answer": [
-              "نعم. في شاشة Drum، الضغط على اسم صف (Kick وSnare وغيرهما) يفتح قائمة أصوات، وLoad يختار ملفاً صوتياً من هاتفك. يدخل الصوت إلى ذلك الصف، ويمكنك تشكيله بـ GAIN وSQUEEZE وATTACK وSUSTAIN وRELEASE وREVERB.",
-              "كل صف في كل إيقاع يحتفظ بعيّنته الخاصة، وتُحفظ مع الإيقاع داخل المجموعة.",
-              "في Looper، Load على قناة يختار ملفاً صوتياً لتلك القناة.",
+              "نعم، في صفوف الطبول وفي قنوات Looper. قنوات Mic ليس فيها Load: فهي تسجّل من الميكروفون، وSave يكتب ملف WAV.",
+              "الطبول: في شاشة Drum، الضغط على اسم صف (Kick وSnare وغيرهما) يفتح قائمة أصوات، وLoad يختار ملفاً صوتياً من هاتفك. يصبح الملف الصوت الخاص بذلك الصف في المجموعة، ويمكنك تشكيله بـ GAIN وSQUEEZE وATTACK وSUSTAIN وRELEASE وREVERB. الإيقاع الذي اختار لذلك الصف صوتاً آخر من القائمة يحتفظ باختياره. في كل صف من الصفوف الثمانية ملف محمّل واحد، والتحميل الجديد يستبدله.",
+              "Looper: Load على قناة يختار ملفاً صوتياً لتلك القناة ويستبدل التسجيل الذي عليها. لن يعيد Redo التسجيل السابق. هناك 32 قناة، وملف واحد لكل قناة.",
+              "أي الملفات: أي ملف صوتي يستطيع أندرويد في هاتفك تشغيله وفك ترميزه. ليست لدى L Studio قائمة صيغ خاصة بها، لذلك تفشل الصيغة التي لا يفك الهاتف ترميزها مع رسالة (Could not load audio أو Could not load the audio file).",
+              "كيف يُقرأ الملف: الملف الستيريو يُدمج إلى أحادي. وأي معدل عيّنات يُحوَّل إلى معدل التطبيق، وهو معدل خرج الصوت في هاتفك (44.1 kHz إذا لم يُبلغ الهاتف عنه).",
+              "الطول: لصف الطبول لا يوجد حد للطول أو للحجم في التطبيق. يفك ترميز الملف كله في الذاكرة، لذلك الأصوات القصيرة هي الخيار المعقول. لقناة Looper، الملف الأطول من 30:00 يُقطع عند 30:00 دون رسالة.",
               "في وضع LIVE يكون Load مقفلاً. ارجع إلى PRO لتحمّل."
             ]
           },
@@ -5605,7 +5625,7 @@
             "question": "ما هما PRO وLIVE في الشريط العلوي؟",
             "answer": [
               "PRO هو الوضع العادي، وكل شيء فيه مفتوح. LIVE يقفل بعض الأزرار لتركّز على العزف، فلا تمسح نقرة بالخطأ تسجيلاً ولا تحمّل ملفاً.",
-              "LIVE يقفل Clear وLoad في قنوات Looper وMic، وأسماء القنوات والصفحات، وImport، وأسهم DRUM KIT، وكتابة رقم على مقبض.",
+              "LIVE يقفل Clear في قنوات Looper وMic، وLoad في صفوف الطبول وفي قنوات Looper، وأسماء القنوات والصفحات، وImport، وأسهم DRUM KIT، وكتابة رقم على مقبض.",
               "ويترك مفتوحاً Rec وPlay وStop وكتم الصوت والعزل وSave وExport والتبديل بين الصفحات والـ Presets وكل ما تعزفه. نقرة أخرى على الشارة تعيدك إلى PRO."
             ]
           },
@@ -5631,7 +5651,7 @@
             "answer": [
               "نعم، لكنه تسجيل يُحفظ في ملف. مفتاح MIDI يحفظ ملف MIDI بالنوتات التي عزفتها على لوحتي المفاتيح. تُحفظ كل نغمة كأقرب نوتة مع Pitch Bend يعيد الفرق عن التردد الدقيق. يفترض الملف مدى Pitch Bend قدره نصفا نغمة.",
               "لتسمع الضبط الميكروتونالي، يجب أن يدعم البرنامج الذي يفتح الملف Pitch Bend وأن يكون مضبوطاً على نصفي نغمة. النغمات المضغوطة معاً تحصل كل واحدة على قناة MIDI خاصة بها، فتحتفظ كل واحدة بانحنائها.",
-              "ليس في L Studio MIDI مباشر، لا إدخال ولا إخراج. لا يمكن توصيل لوحة مفاتيح MIDI ولا إرسال العزف إلى جهاز آخر في الوقت الحقيقي."
+              "حالياً لا تدعم L Studio لوحة مفاتيح MIDI خارجية، وليس فيها MIDI مباشر، لا إدخال ولا إخراج. هذا مخطط لوقت لاحق، دون موعد."
             ]
           },
           {
@@ -5646,7 +5666,7 @@
             "question": "كم عدد القنوات وما الحدود؟",
             "answer": [
               "Looper: 32 قناة، أي 8 صفحات في كل منها 4 قنوات. يمكن للتسجيل أن يستمر حتى 30 دقيقة، وعند 30:00 يتوقف من تلقاء نفسه.",
-              "Mic: ست قنوات في صفحتين.",
+              "Mic: ست قنوات في صفحتين. يمكن للتسجيل أن يستمر حتى 4:00 في قنوات الصفحة الأولى الثلاث وحتى 3:00 في قنوات الصفحة الثانية الثلاث. يتوقف من تلقاء نفسه عند الحد.",
               "الطبول: 8 صفوف (Kick وSnare وHi-Hat وPerc وFX 1 وFX 2 وFX 3 وVoice)، و8 إيقاعات في كل مجموعة، و16 خطوة في كل صف."
             ]
           },
@@ -5662,7 +5682,7 @@
             "question": "كيف أحصل على مساعدة؟ وماذا عن استرداد المبلغ؟",
             "answer": [
               "اكتب إلى dudichatam@gmail.com. من المفيد ذكر طراز الهاتف وإصدار أندرويد وإصدار التطبيق وما فعلته.",
-              "هذا الموقع لا يبيع شيئاً وليست له سياسة استرداد خاصة به. يُشترى Pro من Google Play، ولأسئلة الشراء يمكنك الكتابة إلى العنوان نفسه.",
+              "هذا الموقع لا يبيع شيئاً وليست له سياسة استرداد خاصة به. بعد إطلاق التطبيق سيكون الشراء عبر Google Play، ولأسئلة الشراء يمكنك الكتابة إلى العنوان نفسه.",
               "ما تغيّر في كل إصدار تراه في صفحة Updates على هذا الموقع."
             ]
           }
