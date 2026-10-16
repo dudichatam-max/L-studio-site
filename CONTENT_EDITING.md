@@ -161,3 +161,8 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Source: GitHub release `v1.10` (private repo), asset `L-Studio-1.10-play-fix1.apk` = 81,252,020 bytes = 77.49 MiB. Same method as 1.09 (60.6 = 63,509,827 bytes in MiB, written as MB). The AAB `L-Studio-1.10-play-fix1.aab` is 77,863,522 bytes = 74.26 MiB.
 - This is the release APK size, NOT the number Google Play will show for the download (Play serves split APKs from the AAB). Check the Play listing size after the closed test and correct if it differs. To go back to 60.6 MB, revert the commit titled "1.10 draft: app size ...".
 - Places: `hero.stat1`, the Pro body and the Pro list item in `content.json` (and the `client/public` copy), `shared/pro-copy.json`, `fileSize` in `shared/seo.ts` and the static JSON-LD in `client/index.html`, the `heroDefault` stat in `Home.tsx`.
+
+## 1.10 under Google review (Oct 16)
+- David uploaded 1.10 to Google Play and it is under review. It is NOT live. All 1.10 lines now say "coming soon to the store" (HE: בקרוב בחנות, RU: скоро в магазине, AR: قريباً في المتجر), never "available" or "in the next update".
+- Strings: `updates.pageIntro` and the updates description in `shared/seo.ts`; the 1.10 item title, summary, ticker and tickerMore (prefix "Coming soon to the store: "); item status `upcoming` (chip "Coming soon" in EN, בקרוב, Скоро, قريباً); hero kicker ("Version 1.10, coming soon to the store"); the Pro body "Version 1.10 (coming soon to the store), 77.5 MB" in `content.json` and `shared/pro-copy.json`; `heroDefault` in `Home.tsx`.
+- When 1.10 is live in the store (David says so), change these to "Available now" wording and set the item status to `shipped`.

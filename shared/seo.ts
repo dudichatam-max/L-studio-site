@@ -207,20 +207,20 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What's new in L Studio for Android. Version 1.10 comes in the next Google Play update. L Studio Pro comes to Google Play in October 2026, for $8.",
+        "What's new in L Studio for Android. Version 1.10 is coming soon to the store. L Studio Pro comes to Google Play in October 2026, for $8.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש ב-L Studio לאנדרואיד. גרסה 1.10 מגיעה בעדכון הבא ב-Google Play. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
+      description: "מה חדש ב-L Studio לאנדרואיד. גרסה 1.10 בקרוב בחנות. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Что нового в L Studio для Android. Версия 1.10 выйдет в следующем обновлении Google Play. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
+        "Что нового в L Studio для Android. Версия 1.10 скоро появится в магазине. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما الجديد في L Studio لأندرويد. الإصدار 1.10 يصل في تحديث Google Play القادم. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
+      description: "ما الجديد في L Studio لأندرويد. الإصدار 1.10 قريباً في المتجر. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
     },
   },
   buy: {
