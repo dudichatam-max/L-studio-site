@@ -20,8 +20,8 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
         "title": "Coming in the next update: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
-        "ticker": "Coming in the next update: Loop Editor and Mic Editor, with Trim, Loop and 8 drum-rhythm boxes",
-        "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading.",
+        "ticker": "In the next update: a new Loop Editor with trim, repeats and EQ, for loops and for Mic too",
+        "summary": "Coming in the next update, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
         "href": "/guide",
         "cta": "Open the guide",
         "images": [
@@ -101,6 +101,7 @@
               "Load Console: every session has LOAD, SAVE, EDIT and X (delete, with a question first). The full name is on one line.",
               "Export selected and Import session move a single session.",
               "Saving, loading, exporting and importing show real progress in percent, then success or the reason it failed.",
+              "Much lower memory use: takes are stored at their real length, and a session loads as a stream.",
               "Steadier: a Mic recording stops with a message if the microphone is taken away, and the app tells you if some recordings could not be restored."
             ]
           },
@@ -118,8 +119,10 @@
           }
         ],
         "tickerMore": [
-          "Coming in the next update: channel 8 is now called Voice and holds only vocals, 91 samples",
-          "Coming in the next update: Mute and Solo on every Looper and Mic channel, and real progress when saving a session"
+          "In the next update: switch drum kits live or while recording, with no clicks",
+          "In the next update: Load Console, and real % progress when you save or load a session",
+          "In the next update: S (solo) on every looper and Mic channel, and STOP that truly stops until PLAY",
+          "In the next update: much lower memory use, and a welcome sound"
         ]
       },
       {
@@ -207,8 +210,8 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
         "title": "מגיע בעדכון הבא: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
-        "ticker": "מגיע בעדכון הבא: Loop Editor ו-Mic Editor, עם Trim, לופ ו-8 תיבות מקצב תופים",
-        "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה.",
+        "ticker": "בעדכון הבא: עורך לופ חדש עם חיתוך, חזרות ואקולייזר, גם לערוצי המיקרופון",
+        "summary": "מגיע בעדכון הבא, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
         "images": [
@@ -223,7 +226,7 @@
             "bullets": [
               "הקלטה של עד 30 דקות. ב-30:00 ההקלטה נעצרת לבד.",
               "כשהתופים מנגנים, Play מתחיל בתחילת התיבה הבאה של התופים.",
-              "אין קליקים כשערוץ מתחיל או נעצר, או כשמשנים ווליום.",
+              "אין נקישות כשערוץ מתחיל או נעצר, או כשמשנים ווליום.",
               "Drive משתנה בצורה חלקה כשמזיזים אותו תוך כדי נגינה.",
               "Back הפך ל-Redo, בלופר וב-Mic. הוא מחזיר הקלטה שהוקלט עליה או שנמחקה. בלופר הוא מחזיר גם הקלטה מלפני חיתוך.",
               "STOP בערוץ עוצר אותו סופית. תיבות הקצב לא מפעילות אותו שוב. Play מפעיל אותו.",
@@ -259,7 +262,7 @@
               "COPY ו-PASTE של קצב מחלון הלחיצה הארוכה.",
               "מקש REDO אחד חוזר אחורה בשינויי התופים.",
               "SAMPLES עם חצים, ליד DRUM KIT, מחליף את הסאמפל של השורה האחרונה.",
-              "החלפת קיט תופים בזמן שהתופים מנגנים חלקה, בלי קליקים ובלי עיוות. גם הקלטת WAV שומעת אותה נקייה.",
+              "החלפת קיט תופים בזמן שהתופים מנגנים חלקה, בלי נקישות ובלי עיוות. גם הקלטת WAV שומעת אותה נקייה.",
               "המקש Style נקרא עכשיו Drum Kits, ומעליו HOLD קטן בזהב. לחיצה ארוכה פותחת את Random genre."
             ]
           },
@@ -288,6 +291,7 @@
               "Load Console: לכל סשן יש LOAD, SAVE, EDIT ו-X (מחיקה, אחרי שאלה). השם המלא בשורה אחת.",
               "Export selected ו-Import session מעבירים סשן בודד.",
               "שמירה, טעינה, ייצוא וייבוא מראים התקדמות אמיתית באחוזים, ואז הצלחה או הסיבה לכישלון.",
+              "שימוש הרבה פחות בזיכרון: הקלטות נשמרות באורך האמיתי שלהן, וסשן נטען בהדרגה.",
               "יציב יותר: הקלטת Mic נעצרת עם הודעה אם המיקרופון נלקח, והאפליקציה אומרת אם אי אפשר היה לשחזר חלק מההקלטות."
             ]
           },
@@ -305,8 +309,10 @@
           }
         ],
         "tickerMore": [
-          "מגיע בעדכון הבא: ערוץ 8 נקרא עכשיו Voice ומחזיק רק ווקאלים, 91 סאמפלים",
-          "בעדכון הבא: השתקה וסולו בכל ערוץ Looper ו-Mic, והתקדמות אמיתית בשמירת סשן"
+          "בעדכון הבא: החלפת ערכות תופים בזמן נגינה או הקלטה, בלי נקישות",
+          "בעדכון הבא: מסוף הטעינה, ואחוזי התקדמות אמיתיים בשמירה וטעינה של סשן",
+          "בעדכון הבא: כפתור סולו בכל ערוץ לופר ומיקרופון, ועצירה שעוצרת באמת עד ללחיצה על הפעלה",
+          "בעדכון הבא: שימוש הרבה פחות בזיכרון, וצליל פתיחה"
         ]
       },
       {
@@ -394,8 +400,8 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
         "title": "В следующем обновлении: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
-        "ticker": "В следующем обновлении: Loop Editor и Mic Editor, с Trim, лупом и 8 ячейками ритма ударных",
-        "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке.",
+        "ticker": "В следующем обновлении: новый редактор лупов с обрезкой, повторами и EQ, в том числе для Mic",
+        "summary": "В следующем обновлении, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
         "href": "/guide",
         "cta": "Открыть руководство",
         "images": [
@@ -475,6 +481,7 @@
               "Load Console: у каждой сессии есть LOAD, SAVE, EDIT и X (удаление, сначала вопрос). Полное имя в одной строке.",
               "Export selected и Import session переносят одну сессию.",
               "Сохранение, загрузка, экспорт и импорт показывают реальный прогресс в процентах, затем успех или причину сбоя.",
+              "Заметно меньше памяти: записи хранятся в реальную длину, а сессия загружается потоком.",
               "Стабильнее: запись Mic останавливается с сообщением, если микрофон отобран, а приложение сообщает, если часть записей не удалось восстановить."
             ]
           },
@@ -492,8 +499,10 @@
           }
         ],
         "tickerMore": [
-          "В следующем обновлении: канал 8 теперь называется Voice и хранит только вокал, 91 сэмпл",
-          "В следующем обновлении: Mute и Solo на каждом канале Looper и Mic и реальный прогресс при сохранении сессии"
+          "В следующем обновлении: переключение наборов ударных вживую или во время записи, без щелчков",
+          "В следующем обновлении: Load Console и реальный прогресс в процентах при сохранении и загрузке сессии",
+          "В следующем обновлении: S (solo) на каждом канале лупера и Mic, а STOP действительно останавливает канал до нажатия PLAY",
+          "В следующем обновлении: заметно меньше памяти и приветственный звук"
         ]
       },
       {
@@ -581,8 +590,8 @@
         "id": "app-1-10-loop-editor-drums",
         "status": "in_progress",
         "title": "في التحديث القادم: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
-        "ticker": "في التحديث القادم: Loop Editor وMic Editor، مع Trim واللوب و8 مربعات إيقاع طبول",
-        "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل.",
+        "ticker": "في التحديث القادم: محرر لوب جديد مع القص والتكرار وEQ، ولقنوات Mic أيضاً",
+        "summary": "في التحديث القادم، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
         "href": "/guide",
         "cta": "افتح الدليل",
         "images": [
@@ -662,6 +671,7 @@
               "Load Console: لكل جلسة LOAD وSAVE وEDIT وX (حذف، بعد سؤال). الاسم الكامل في سطر واحد.",
               "Export selected وImport session ينقلان جلسة واحدة.",
               "الحفظ والتحميل والتصدير والاستيراد تعرض تقدماً حقيقياً بالنسبة المئوية، ثم النجاح أو سبب الفشل.",
+              "استهلاك أقل بكثير للذاكرة: تُخزَّن التسجيلات بطولها الحقيقي، وتُحمَّل الجلسة تدريجياً.",
               "أكثر ثباتاً: تسجيل Mic يتوقف برسالة إذا سُحب الميكروفون، ويخبرك التطبيق إذا تعذّر استعادة بعض التسجيلات."
             ]
           },
@@ -679,8 +689,10 @@
           }
         ],
         "tickerMore": [
-          "في التحديث القادم: القناة 8 اسمها الآن Voice وتحمل الغناء فقط، 91 عيّنة",
-          "في التحديث القادم: كتم وانفراد لكل قناة في Looper وMic، وتقدّم حقيقي عند حفظ الجلسة"
+          "في التحديث القادم: تبديل مجموعات الطبول أثناء العزف أو التسجيل، بلا نقرات",
+          "في التحديث القادم: Load Console وتقدّم حقيقي بالنسبة المئوية عند حفظ الجلسة أو تحميلها",
+          "في التحديث القادم: زر S (انفراد) في كل قناة لوبر وMic، وزر STOP يوقف القناة فعلاً حتى تضغط PLAY",
+          "في التحديث القادم: استهلاك أقل بكثير للذاكرة، وصوت ترحيب"
         ]
       },
       {
