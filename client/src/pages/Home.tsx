@@ -5,6 +5,7 @@ import SiteLogo from "@/components/SiteLogo";
 import WaveScope from "@/components/WaveScope";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { POSTER_LARGE, POSTER_SMALL, posterAlt, posterUrl, type PosterId } from "@/lib/posters";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import UpdatesTicker from "@/components/UpdatesTicker";
@@ -20,11 +21,11 @@ const factoryHero = {
 const factoryBoxJpg = `${import.meta.env.BASE_URL}assets/factory-pack-box.jpg?v=108-packs`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=108-packs`;
 const factoryBoxWebp800 = `${import.meta.env.BASE_URL}assets/factory-pack-box-800.webp?v=108-packs`;
-const featureGraphic = {
-  webp800: `${import.meta.env.BASE_URL}assets/feature-graphic-800.webp`,
-  webp1024: `${import.meta.env.BASE_URL}assets/feature-graphic-1024.webp`,
-  jpg: `${import.meta.env.BASE_URL}assets/feature-graphic-1024.jpg`,
-};
+// 1.10 feature graphic (1024x500). HE uses the Hebrew one, EN/RU/AR use the English one.
+const FEATURE_GRAPHIC_VER = "fg-110";
+function featureGraphicUrl(language: Language, width: 640 | 800 | 1024, ext: "jpg" | "webp") {
+  return `${import.meta.env.BASE_URL}assets/feature-graphic-${language === "he" ? "he" : "en"}-${width}.${ext}?v=${FEATURE_GRAPHIC_VER}`;
+}
 const DEMO_SHORT_ID = "d89y14QAHuA";
 const demoPoster = {
   webp: `${import.meta.env.BASE_URL}assets/demo-short-poster.webp`,
@@ -37,10 +38,10 @@ const demoCopy = {
   ar: { label: "فيديو تجريبي", title: "فيديو تجريبي لـ L Studio" },
 } satisfies Record<Language, { label: string; title: string }>;
 const featureGraphicAlt = {
-  he: "L Studio, אפליקציית מוזיקה לאנדרואיד: מסך Sound עם גלים, נובים וקלידים, ומסך Pad עם WAH, OCT ו-Vibrato. Sound, Mic, Loop, Pad, Drum.",
-  en: "L Studio, an Android music app: the Sound screen with waves, knobs and keys, and the Pad screen with WAH, OCT and Vibrato. Sound, Mic, Loop, Pad, Drum.",
-  ru: "L Studio, музыкальное приложение для Android: экран Sound с волнами, ручками и клавишами и экран Pad с WAH, OCT и Vibrato. Sound, Mic, Loop, Pad, Drum.",
-  ar: "L Studio، تطبيق موسيقى لأندرويد: شاشة Sound مع الموجات والمقابض والمفاتيح، وشاشة Pad مع WAH وOCT وVibrato. Sound وMic وLoop وPad وDrum.",
+  he: "L Studio, גרפיקה עם שלושה מסכי טלפון: סינתיסייזר עם חמישה גלי קול, מעטפת, פילטר והד. לופר עם 32 ערוצים ו-8 עמודים. תופים עם מעל אלף דגימות ו-8 ערוצים. לאנשים אנלוגיים בעולם דיגיטלי.",
+  en: "L Studio, a graphic with three phone screens: Synth with 5 waveforms, ADSR, filter and echo. Looper with 32 channels and 8 pages. Drums with 1,000+ samples and 8 channels. For analog people in a digital world.",
+  ru: "L Studio, графика с тремя экранами телефона: синтезатор с 5 волнами, ADSR, фильтром и эхо. Лупер с 32 каналами и 8 страницами. Ударные с более чем 1000 сэмплов и 8 каналами. Для аналоговых людей в цифровом мире.",
+  ar: "L Studio، رسم بثلاث شاشات هاتف: سينث بـ5 موجات وADSR وفلتر وصدى. لوبر بـ32 قناة و8 صفحات. طبول بأكثر من 1000 عينة و8 قنوات. للأشخاص التناظريين في عالم رقمي.",
 } satisfies Record<Language, string>;
 const developerImage = {
   webp: `${import.meta.env.BASE_URL}assets/Developer-720.webp`,
@@ -72,48 +73,15 @@ const meetPoster = {
 
 type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 
-const PLAY_SHOT_VER = "109-play";
-const playShotFiles: Record<PlayId, string> = {
-  sound: "01-layer-waveforms",
-  loop: "03-looper-pages",
-  drum: "04-drum-machine",
-  pad: "05-live-pad",
-  mic: "07-mic-fx",
+// Windows menu posters. Pairs (Sound, Loop, Drum) sit side by side; Pad and Mic show one poster.
+// HE uses the Hebrew posters, EN/RU/AR use the English ones (see lib/posters.ts).
+const playPosters: Record<PlayId, PosterId[]> = {
+  sound: ["sound", "soundLive"],
+  mic: ["mic"],
+  loop: ["loopEditor", "looper"],
+  pad: ["pad"],
+  drum: ["drums", "drumStyles"],
 };
-function playShotUrl(id: PlayId, ext: "jpg" | "webp") {
-  return `${import.meta.env.BASE_URL}assets/play/${playShotFiles[id]}.${ext}?v=${PLAY_SHOT_VER}`;
-}
-
-const playShotAlt = {
-  he: {
-    sound: "תמונת Google Play: Layer Waveforms, כמה גלים יחד כמו Sine ו-Saw, מנגנים אותם ביחד.",
-    mic: "תמונת Google Play: ערוצי מיקרופון ואפקטי Mic FX.",
-    loop: "תמונת Google Play: לופר עם 8 עמודים, צבע ושם לכל עמוד, 4 ערוצים בעמוד.",
-    pad: "תמונת Google Play: ה-Pad עם Wah, Octave ו-Vibrato.",
-    drum: "תמונת Google Play: מכונת תופים ב-16 צעדים עם ערכות ו-BPM.",
-  },
-  en: {
-    sound: "Google Play shot: Layer Waveforms, stack Sine, Saw and more and play them together.",
-    mic: "Google Play shot: mic channels and Mic FX.",
-    loop: "Google Play shot: looper with 8 pages, colour-coded and named, 4 channels per page.",
-    pad: "Google Play shot: the Pad with Wah, Octave and Vibrato.",
-    drum: "Google Play shot: 16-step drum machine with kits and BPM.",
-  },
-  ru: {
-    sound: "Скриншот Google Play: Layer Waveforms, несколько волн вместе, например Sine и Saw, звучат сразу.",
-    mic: "Скриншот Google Play: каналы микрофона и Mic FX.",
-    loop: "Скриншот Google Play: лупер с 8 страницами, у страниц цвет и имя, 4 канала на странице.",
-    pad: "Скриншот Google Play: Pad с Wah, Octave и Vibrato.",
-    drum: "Скриншот Google Play: барабанная машина на 16 шагов с наборами и BPM.",
-  },
-  ar: {
-    sound: "لقطة Google Play: Layer Waveforms، عدة موجات معاً مثل Sine وSaw تُعزف في الوقت نفسه.",
-    mic: "لقطة Google Play: قنوات الميكروفون ومؤثرات Mic FX.",
-    loop: "لقطة Google Play: لوبر بـ 8 صفحات، لكل صفحة لون واسم، و4 قنوات في كل صفحة.",
-    pad: "لقطة Google Play: الـ Pad مع Wah وOctave وVibrato.",
-    drum: "لقطة Google Play: آلة طبول بـ 16 خطوة مع أطقم وBPM.",
-  },
-} satisfies Record<Language, Record<PlayId, string>>;
 
 // Small chrome-only labels that are not part of the editable site copy in content.json
 // (menu open/close).
@@ -185,7 +153,7 @@ const featureData = {
 
 // Fallback copy, used only if content.json fails to load.
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive", updates: "Updates" };
-const heroDefault = { kicker: "Android music app · Version 1.09", title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "60.6 MB", stat2: "Android 7.0+", stat3: "No ads" };
+const heroDefault = { kicker: "Android music app · Version 1.10, coming soon to the store", title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "77.5 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const launchDefaults: Record<Language, { headline: string; price: string; note: string }> = {
   he: {headline: "מגיע ל-Google Play באוקטובר 2026.", price: "L Studio Pro, 8$.", note: "מגיע ל-Google Play באוקטובר 2026. L Studio Pro, 8$."},
   en: {headline: "Coming to Google Play in October 2026.", price: "L Studio Pro, $8.", note: "Coming to Google Play in October 2026. L Studio Pro, $8."},
@@ -302,12 +270,31 @@ const footerDefault = { tagline: "It's for analog people in a digital world." };
 const visionIcons = [Sparkles, Music2, ArrowDownLeft];
 
 
-function FeatureMedia({ id, alt }: { id: PlayId; alt: string }) {
+function FeatureMedia({ id, language }: { id: PlayId; language: Language }) {
+  const posters = playPosters[id];
   return (
-    <picture>
-      <source srcSet={playShotUrl(id, "webp")} type="image/webp" />
-      <img className="preview-media" src={playShotUrl(id, "jpg")} alt={alt} width={720} height={1280} loading="lazy" decoding="async" />
-    </picture>
+    <>
+      {posters.map((poster) => (
+        <picture key={poster}>
+          <source
+            type="image/webp"
+            srcSet={`${posterUrl(language, poster, "w360", "webp")} ${POSTER_SMALL.width}w, ${posterUrl(language, poster, "w630", "webp")} ${POSTER_LARGE.width}w`}
+            sizes={posters.length > 1 ? "(max-width: 720px) 78vw, 250px" : "(max-width: 720px) 78vw, 300px"}
+          />
+          <img
+            className="preview-media"
+            src={posterUrl(language, poster, "w630", "jpg")}
+            srcSet={`${posterUrl(language, poster, "w360", "jpg")} ${POSTER_SMALL.width}w, ${posterUrl(language, poster, "w630", "jpg")} ${POSTER_LARGE.width}w`}
+            sizes={posters.length > 1 ? "(max-width: 720px) 78vw, 250px" : "(max-width: 720px) 78vw, 300px"}
+            alt={posterAlt[language][poster]}
+            width={POSTER_LARGE.width}
+            height={POSTER_LARGE.height}
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      ))}
+    </>
   );
 }
 
@@ -518,8 +505,8 @@ export default function Home() {
       <div className="container feature-graphic-wrap">
       <figure className="feature-graphic">
         <picture>
-          <source srcSet={`${featureGraphic.webp800} 800w, ${featureGraphic.webp1024} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" />
-          <img src={featureGraphic.jpg} alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
+          <source srcSet={`${featureGraphicUrl(language, 640, "webp")} 640w, ${featureGraphicUrl(language, 800, "webp")} 800w, ${featureGraphicUrl(language, 1024, "webp")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" />
+          <img src={featureGraphicUrl(language, 1024, "jpg")} srcSet={`${featureGraphicUrl(language, 640, "jpg")} 640w, ${featureGraphicUrl(language, 1024, "jpg")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
         </picture>
       </figure>
       </div>
@@ -632,8 +619,8 @@ export default function Home() {
                     </button>
                     {isActive && (
                       <div className="interface-preview" id={`feature-panel-${feature.id}`}>
-                        <div className="preview-image-wrap">
-                          <FeatureMedia id={feature.id as PlayId} alt={playShotAlt[language][feature.id as PlayId]} />
+                        <div className={`preview-image-wrap ${playPosters[feature.id as PlayId].length > 1 ? "preview-image-wrap--pair" : ""}`}>
+                          <FeatureMedia id={feature.id as PlayId} language={language} />
                         </div>
                         <div className="preview-copy">
                           <span className="kicker">{feature.meta}</span>

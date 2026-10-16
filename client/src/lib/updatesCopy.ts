@@ -8,7 +8,10 @@ export type UpdateItem = {
   status: UpdateStatus;
   title: string;
   summary: string;
+  /** Ticker line. Falls back to `title` when missing. */
   ticker?: string;
+  /** Extra ticker lines for the same item, each linking to the item. */
+  tickerMore?: string[];
   detail?: string;
   dateLabel?: string;
   /** One screenshot. Site-root path such as `/assets/updates/drum-fx.jpg`. */
@@ -23,6 +26,13 @@ export type UpdateItem = {
   href?: string;
   /** Optional link label, in the same language as the card. */
   cta?: string;
+  /** Optional grouped bullets under the summary. Cards without it show only `summary`. */
+  sections?: UpdateItemSection[];
+};
+
+export type UpdateItemSection = {
+  title: string;
+  bullets: string[];
 };
 
 export type UpdateScreenshot = {

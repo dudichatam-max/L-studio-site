@@ -1,9 +1,199 @@
 {
+  "en": {
+    "navLabel": "Updates",
+    "pageTitle": "What's new in L Studio.",
+    "pageKicker": "L-STUDIO / UPDATES",
+    "pageIntro": "Version 1.10 is coming soon to the store. L Studio Pro comes to Google Play in October 2026, for $8.",
+    "tickerLabel": "Updates",
+    "statusLabels": {
+      "in_progress": "In progress",
+      "upcoming": "Coming soon",
+      "shipped": "Ready"
+    },
+    "sections": {
+      "in_progress": "In progress",
+      "upcoming": "Coming up",
+      "shipped": "Recently shipped"
+    },
+    "items": [
+      {
+        "id": "app-1-10-loop-editor-drums",
+        "status": "upcoming",
+        "title": "Coming soon to the store: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
+        "ticker": "Coming soon to the store: a new Loop Editor, also for Mic, with trim, EQ, and a choice of which drum rhythm plays with the loop and how many times it repeats",
+        "summary": "Coming soon to the store, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
+        "href": "/guide",
+        "cta": "Open the guide",
+        "images": [
+          "/assets/posters/en/p05-loop-editor-w630.jpg"
+        ],
+        "imageAlts": [
+          "Poster: Edit Every Loop. The Loop Editor: trim, repeat, EQ, and lock it to the drum rhythm."
+        ],
+        "sections": [
+          {
+            "title": "Looper",
+            "bullets": [
+              "Recording up to 30 minutes. It stops by itself at 30:00.",
+              "While the drums play, Play starts at the next drum bar.",
+              "No clicks when a channel starts or stops, or when you change the volume.",
+              "Drive changes smoothly when you move it while you play.",
+              "Back is now Redo, in the looper and in Mic. It brings back a take you recorded over or cleared. In the looper it also brings back a take from before a trim.",
+              "STOP on a channel stops it for good. The rhythm boxes do not start it again. Play starts it.",
+              "M (mute) and S (solo) on every channel. Solo works across all 8 pages, and a second tap on S restores. M is saved with the session.",
+              "The channel waveform keeps moving when the channel is muted or not soloed. It stops only when the channel stops."
+            ]
+          },
+          {
+            "title": "Mic",
+            "bullets": [
+              "M and S on every channel. STOP works the same way as in the Looper.",
+              "The top row is cleaner and evenly spaced: no MIC title, and the three monitor slots are gone. Numbers under the knobs are no longer cut off.",
+              "The Gate knob on each channel is removed. Gate stays in the monitor row."
+            ]
+          },
+          {
+            "title": "Loop editor",
+            "bullets": [
+              "Opens when you tap the waveform. Mic Editor opens the same way on a Mic channel.",
+              "Trim the recording. Set a loop.",
+              "8 drum-rhythm boxes choose which rhythm plays with the loop and how many times it repeats: a short press turns a box on or off, a long press picks repeats (1 to 10, infinity, or Default). With no boxes on, the channel keeps looping.",
+              "EQ: Low, Mid, High and Mid Hz. Gain and Squeeze."
+            ]
+          },
+          {
+            "title": "Drums",
+            "bullets": [
+              "The Swap button is now called Load.",
+              "CLEAR, next to RANDOM, clears the steps of the current rhythm. It replaces the drum Save button. Everything is saved automatically.",
+              "Each rhythm keeps its own samples, sound knobs, volumes and left and right. Switching rhythms writes them into the current kit.",
+              "An empty rhythm starts as a copy of the rhythm you came from.",
+              "Six sound knobs per row in each rhythm: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE and REVERB, with a waveform that follows them.",
+              "COPY and PASTE a rhythm from the long-press window.",
+              "One REDO key steps back through drum changes.",
+              "SAMPLES with arrows, next to DRUM KIT, steps the last row's sample.",
+              "Switching a drum kit while the drums play is smooth, with no clicks or distortion. A WAV recording hears it clean too.",
+              "The Style key is now Drum Kits, with a small gold HOLD above it. A long-press opens Random genre."
+            ]
+          },
+          {
+            "title": "Pad",
+            "bullets": [
+              "A tap on + opens a second keyboard, shared with the Sound screen."
+            ]
+          },
+          {
+            "title": "Frequencies",
+            "bullets": [
+              "The Custom Frequency window, opened from Settings, shows the frequencies in full.",
+              "8 personal presets.",
+              "Save overwrites the selected preset. If none is selected, it saves to the first empty preset.",
+              "Tapping a preset loads it immediately."
+            ]
+          },
+          {
+            "title": "Session",
+            "bullets": [
+              "Saving a session saves the whole workspace, so loading it on another device restores it: frequency presets, drum sample choices, both drum banks, active waves, the dual keyboard, the pad targets and the lyrics.",
+              "Before every load there is a confirmation question and an automatic backup. After a load, the mic monitor is off.",
+              "New button New session, first in Settings. It asks for a name and clears only the looper and mic channels. Kits, beats and presets stay.",
+              "A duplicate name on import gets a new name instead of overwriting the existing one.",
+              "Load Console: every session has LOAD, SAVE, EDIT and X (delete, with a question first). The full name is on one line.",
+              "Export selected and Import session move a single session.",
+              "Saving, loading, exporting and importing show real progress in percent, then success or the reason it failed.",
+              "Much lower memory use: takes are stored at their real length, and a session loads as a stream.",
+              "Steadier: a Mic recording stops with a message if the microphone is taken away, and the app tells you if some recordings could not be restored."
+            ]
+          },
+          {
+            "title": "Look",
+            "bullets": [
+              "New hardware-style keys on Drum, Sound and Pad.",
+              "New SCALES, PATTERN REPEATS and DRUM STYLES windows. Each drum styles page has its own banner.",
+              "A tap turns a wave on or off. One wave always stays on.",
+              "The Loop and Mic editor waveforms follow the knobs live.",
+              "A gold MM:SS clock shows next to MIDI and WAV while they record.",
+              "The drum kits welcome window opens with a new sound: a key click and a light creak.",
+              "Hebrew, Arabic and Russian texts updated."
+            ]
+          }
+        ],
+        "tickerMore": [
+          "Coming soon to the store: switch drum kits live or while recording, with no clicks",
+          "Coming soon to the store: Load Console, and real % progress when you save or load a session",
+          "Coming soon to the store: S (solo) on every looper and Mic channel, and STOP that truly stops until PLAY",
+          "Coming soon to the store: much lower memory use, and a welcome sound"
+        ]
+      },
+      {
+        "id": "app-1-09-waves-drums",
+        "status": "shipped",
+        "title": "New in 1.09: layered waves",
+        "ticker": "New in 1.09: layered waves and live drums",
+        "summary": "In the Google Play test now, version 1.09: Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
+        "href": "/guide",
+        "cta": "Open guide",
+        "images": [
+          "/assets/updates/sound-109.jpg"
+        ],
+        "imageAlts": [
+          "The Sound screen in 1.09: an icon on each wave button, Sine and Saw on together."
+        ]
+      },
+      {
+        "id": "sound-fx-looper-pages",
+        "status": "shipped",
+        "title": "Sound FX + looper page colors",
+        "ticker": "Sound FX and looper page colors",
+        "summary": "Since version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Each looper page gets a name and one of 8 colors. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
+        "href": "/guide",
+        "cta": "Open guide",
+        "images": [
+          "/assets/updates/sound-fx.jpg",
+          "/assets/updates/looper-pages.jpg"
+        ],
+        "imageAlts": [
+          "Sound FX window with Psy Orbit selected.",
+          "Loop screen with colored page numbers and a page name."
+        ]
+      },
+      {
+        "id": "exclusive-packs-gallery",
+        "status": "shipped",
+        "title": "Exclusive packs in Pro",
+        "ticker": "Exclusive in Pro",
+        "summary": "Since version 1.08: whoever buys Pro also gets the Exclusive pack free, at no extra cost. That is 11 Exclusive drum packs in the app, on top of Factory 64. There is no download button. This site only describes the packs.",
+        "href": "/exclusive",
+        "cta": "View Exclusive",
+        "images": [
+          "/assets/updates/exclusive-packs-poster.jpg"
+        ],
+        "imageAlts": [
+          "Exclusive Pro poster: 11 drum kits, unlocked in the app with Pro."
+        ]
+      },
+      {
+        "id": "studio-workflow-refresh",
+        "status": "shipped",
+        "title": "Live mode, lyrics, Mic FX, Drum FX",
+        "ticker": "Live mode, lyrics, Mic FX and Drum FX",
+        "summary": "Since version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. The mic and the drums get 8 effects each, every loop channel has Looper FX, and one Back button brings back the last cleared take.",
+        "images": [
+          "/assets/updates/lyrics.jpg",
+          "/assets/updates/mic-fx.jpg"
+        ],
+        "imageAlts": [
+          "Lyrics window open over the app.",
+          "Mic FX panel with Phone Line selected."
+        ]
+      }
+    ]
+  },
   "he": {
     "navLabel": "עדכונים",
     "pageTitle": "מה חדש ב-L Studio.",
     "pageKicker": "L-STUDIO / עדכונים",
-    "pageIntro": "גרסה 1.09 בבדיקה ב-Google Play עכשיו. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
+    "pageIntro": "גרסה 1.10 בקרוב בחנות. L Studio Pro מגיע ל-Google Play באוקטובר 2026, ב-8$.",
     "tickerLabel": "עדכונים",
     "statusLabels": {
       "in_progress": "בעבודה",
@@ -17,6 +207,115 @@
     },
     "items": [
       {
+        "id": "app-1-10-loop-editor-drums",
+        "status": "upcoming",
+        "title": "בקרוב בחנות: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
+        "ticker": "בקרוב בחנות: עורך לופ חדש, גם לערוצי המיקרופון, עם חיתוך, אקולייזר ובחירה של איזה מקצב תופים מתנגן עם הלופ וכמה פעמים הוא חוזר",
+        "summary": "בקרוב בחנות, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
+        "href": "/guide",
+        "cta": "לפתיחת המדריך",
+        "images": [
+          "/assets/posters/he/p05-loop-editor-w630.jpg"
+        ],
+        "imageAlts": [
+          "פוסטר: ערכו כל לולאה. עורך הלופ: חיתוך, חזרות, איזון וקשירה לקצב התופים."
+        ],
+        "sections": [
+          {
+            "title": "לופר",
+            "bullets": [
+              "הקלטה של עד 30 דקות. ב-30:00 ההקלטה נעצרת לבד.",
+              "כשהתופים מנגנים, Play מתחיל בתחילת התיבה הבאה של התופים.",
+              "אין נקישות כשערוץ מתחיל או נעצר, או כשמשנים ווליום.",
+              "Drive משתנה בצורה חלקה כשמזיזים אותו תוך כדי נגינה.",
+              "Back הפך ל-Redo, בלופר וב-Mic. הוא מחזיר הקלטה שהוקלט עליה או שנמחקה. בלופר הוא מחזיר גם הקלטה מלפני חיתוך.",
+              "STOP בערוץ עוצר אותו סופית. תיבות הקצב לא מפעילות אותו שוב. Play מפעיל אותו.",
+              "M (השתקה) ו-S (סולו) בכל ערוץ. הסולו עובד בכל 8 העמודים, והקשה שנייה על S מחזירה. M נשמר עם הסשן.",
+              "צורת הגל של הערוץ ממשיכה לזוז כשהערוץ מושתק או לא בסולו. היא נעצרת רק כשהערוץ נעצר."
+            ]
+          },
+          {
+            "title": "Mic",
+            "bullets": [
+              "M ו-S בכל ערוץ. STOP עובד כמו ב-Looper.",
+              "השורה העליונה נקייה יותר ובמרווחים שווים: בלי כותרת MIC, ושלושת הסלוטים של המוניטור נעלמו. המספרים מתחת לנובים כבר לא נחתכים.",
+              "נוב Gate בכל ערוץ הוסר. Gate נשאר בשורת המוניטור."
+            ]
+          },
+          {
+            "title": "עורך לופים",
+            "bullets": [
+              "נפתח בהקשה על הגל. Mic Editor נפתח באותו אופן בערוץ Mic.",
+              "חיתוך ההקלטה עם Trim. קביעת לופ.",
+              "8 תיבות מקצב תופים קובעות איזה מקצב מתנגן עם הלופ וכמה פעמים הוא חוזר: לחיצה קצרה מדליקה או מכבה תיבה, לחיצה ארוכה בוחרת חזרות (1 עד 10, אינסוף או Default). בלי תיבות דולקות, הערוץ ממשיך בלופ.",
+              "EQ: Low, Mid, High ו-Mid Hz. Gain ו-Squeeze."
+            ]
+          },
+          {
+            "title": "תופים",
+            "bullets": [
+              "הכפתור Swap נקרא עכשיו Load.",
+              "CLEAR, ליד RANDOM, מנקה את הצעדים של הקצב הנוכחי. הוא מחליף את כפתור Save של התופים. הכול נשמר אוטומטית.",
+              "כל קצב שומר סאמפלים, כפתורי סאונד, עוצמות ושמאל וימין משלו. מעבר בין קצבים כותב אותם לקיט הנוכחי.",
+              "קצב ריק מתחיל כהעתק של הקצב שבאתם ממנו.",
+              "שישה כפתורי סאונד לכל שורה בכל קצב: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE ו-REVERB, עם צורת גל שעוקבת אחריהם.",
+              "COPY ו-PASTE של קצב מחלון הלחיצה הארוכה.",
+              "מקש REDO אחד חוזר אחורה בשינויי התופים.",
+              "SAMPLES עם חצים, ליד DRUM KIT, מחליף את הסאמפל של השורה האחרונה.",
+              "החלפת קיט תופים בזמן שהתופים מנגנים חלקה, בלי נקישות ובלי עיוות. גם הקלטת WAV שומעת אותה נקייה.",
+              "המקש Style נקרא עכשיו Drum Kits, ומעליו HOLD קטן בזהב. לחיצה ארוכה פותחת את Random genre."
+            ]
+          },
+          {
+            "title": "Pad",
+            "bullets": [
+              "הקשה על + פותחת מקלדת שנייה, משותפת עם מסך Sound."
+            ]
+          },
+          {
+            "title": "תדרים",
+            "bullets": [
+              "החלון Custom Frequency, שנפתח מ-Settings, מציג את התדרים במלואם.",
+              "8 פריסטים אישיים.",
+              "Save כותב על הפריסט שנבחר. אם לא נבחר פריסט, הוא שומר לפריסט הריק הראשון.",
+              "הקשה על פריסט טוענת אותו מיד."
+            ]
+          },
+          {
+            "title": "סשן",
+            "bullets": [
+              "שמירת סשן שומרת את כל סביבת העבודה, כך שטעינה במכשיר אחר מחזירה אותה: פריסטים של תדרים, בחירות הסאמפלים בתופים, שני בנקי התופים, הגלים הפעילים, המקלדת הכפולה, יעדי הפד והמילים.",
+              "לפני כל טעינה יש שאלת אישור וגיבוי אוטומטי. אחרי הטעינה ניטור המיקרופון כבוי.",
+              "כפתור חדש New session, ראשון ב-Settings. הוא מבקש שם ומנקה רק את ערוצי הלופר והמיקרופון. הקיטים, הביטים והפריסטים נשארים.",
+              "שם כפול בייבוא מקבל שם חדש, במקום לכתוב על הקיים.",
+              "Load Console: לכל סשן יש LOAD, SAVE, EDIT ו-X (מחיקה, אחרי שאלה). השם המלא בשורה אחת.",
+              "Export selected ו-Import session מעבירים סשן בודד.",
+              "שמירה, טעינה, ייצוא וייבוא מראים התקדמות אמיתית באחוזים, ואז הצלחה או הסיבה לכישלון.",
+              "שימוש הרבה פחות בזיכרון: הקלטות נשמרות באורך האמיתי שלהן, וסשן נטען בהדרגה.",
+              "יציב יותר: הקלטת Mic נעצרת עם הודעה אם המיקרופון נלקח, והאפליקציה אומרת אם אי אפשר היה לשחזר חלק מההקלטות."
+            ]
+          },
+          {
+            "title": "מראה",
+            "bullets": [
+              "מקשים חדשים בסגנון חומרה ב-Drum, Sound ו-Pad.",
+              "חלונות SCALES, PATTERN REPEATS ו-DRUM STYLES חדשים. לכל עמוד סגנונות תופים יש באנר משלו.",
+              "הקשה מדליקה או מכבה גל. גל אחד תמיד נשאר דולק.",
+              "צורות הגל בעורכי Loop ו-Mic עוקבות אחרי הכפתורים בזמן אמת.",
+              "שעון זהב MM:SS מופיע ליד MIDI ו-WAV בזמן ההקלטה.",
+              "חלון הפתיחה של קיטי התופים נפתח עם צליל חדש: נקישת מפתח וחריקה קלה.",
+              "הטקסטים בעברית, ערבית ורוסית עודכנו."
+            ]
+          }
+        ],
+        "tickerMore": [
+          "בקרוב בחנות: החלפת ערכות תופים בזמן נגינה או הקלטה, בלי נקישות",
+          "בקרוב בחנות: מסוף הטעינה, ואחוזי התקדמות אמיתיים בשמירה וטעינה של סשן",
+          "בקרוב בחנות: כפתור סולו בכל ערוץ לופר ומיקרופון, ועצירה שעוצרת באמת עד ללחיצה על הפעלה",
+          "בקרוב בחנות: שימוש הרבה פחות בזיכרון, וצליל פתיחה"
+        ]
+      },
+      {
         "id": "app-1-09-waves-drums",
         "status": "shipped",
         "title": "חדש ב-1.09: כמה גלים יחד",
@@ -24,8 +323,12 @@
         "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.09: על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
-        "images": ["/assets/updates/sound-109.jpg"],
-        "imageAlts": ["מסך Sound בגרסה 1.09: אייקון על כל כפתור גל, Sine ו-Saw דולקים יחד."]
+        "images": [
+          "/assets/updates/sound-109.jpg"
+        ],
+        "imageAlts": [
+          "מסך Sound בגרסה 1.09: אייקון על כל כפתור גל, Sine ו-Saw דולקים יחד."
+        ]
       },
       {
         "id": "sound-fx-looper-pages",
@@ -35,8 +338,14 @@
         "summary": "מאז גרסה 1.08: 8 אפקטי Sound FX חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים שומרים את ההגדרות של כל ה-8. לכל עמוד בלופר יש שם ואחד מ-8 צבעים. הנובים מראים את הערך בטבעת זהב, והמדריך באפליקציה מלמד את כל זה.",
         "href": "/guide",
         "cta": "למדריך",
-        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
-        "imageAlts": ["חלון Sound FX עם Psy Orbit נבחר.", "מסך Loop עם מספרי עמודים צבעוניים ושם עמוד."]
+        "images": [
+          "/assets/updates/sound-fx.jpg",
+          "/assets/updates/looper-pages.jpg"
+        ],
+        "imageAlts": [
+          "חלון Sound FX עם Psy Orbit נבחר.",
+          "מסך Loop עם מספרי עמודים צבעוניים ושם עמוד."
+        ]
       },
       {
         "id": "exclusive-packs-gallery",
@@ -46,8 +355,12 @@
         "summary": "מאז גרסה 1.08: מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת. אלה 11 ערכות תופים Exclusive באפליקציה, בנוסף ל-Factory 64. אין כפתור הורדה. האתר רק מציג מידע על הערכות.",
         "href": "/exclusive",
         "cta": "לעמוד Exclusive",
-        "images": ["/assets/updates/exclusive-packs-poster.jpg"],
-        "imageAlts": ["פוסטר Exclusive ל-Pro: 11 ערכות תופים, פתיחה מתוך האפליקציה."]
+        "images": [
+          "/assets/updates/exclusive-packs-poster.jpg"
+        ],
+        "imageAlts": [
+          "פוסטר Exclusive ל-Pro: 11 ערכות תופים, פתיחה מתוך האפליקציה."
+        ]
       },
       {
         "id": "studio-workflow-refresh",
@@ -55,69 +368,14 @@
         "title": "מצב Live, מילים, Mic FX ו-Drum FX",
         "ticker": "מצב Live, מילים, Mic FX ו-Drum FX",
         "summary": "מאז גרסה 1.08: מצב LIVE נועל שמות, Clear וטעינת קבצים בזמן נגינה. חלון המילים גולל את הטקסט בזמן שאתם שרים. למיקרופון ולתופים יש 8 אפקטים לכל אחד, לכל ערוץ לופ יש Looper FX, וכפתור Back אחד מחזיר את ההקלטה האחרונה שנמחקה.",
-        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/mic-fx.jpg"],
-        "imageAlts": ["חלון המילים פתוח מעל האפליקציה.", "לוח Mic FX. Phone Line נבחר."]
-      }
-    ]
-  },
-  "en": {
-    "navLabel": "Updates",
-    "pageTitle": "What's new in L Studio.",
-    "pageKicker": "L-STUDIO / UPDATES",
-    "pageIntro": "Version 1.09 is in the Google Play test now. L Studio Pro comes to Google Play in October 2026, for $8.",
-    "tickerLabel": "Updates",
-    "statusLabels": {
-      "in_progress": "In progress",
-      "upcoming": "Coming up",
-      "shipped": "Ready"
-    },
-    "sections": {
-      "in_progress": "In progress",
-      "upcoming": "Coming up",
-      "shipped": "Recently shipped"
-    },
-    "items": [
-      {
-        "id": "app-1-09-waves-drums",
-        "status": "shipped",
-        "title": "New in 1.09: layered waves",
-        "ticker": "New in 1.09: layered waves and live drums",
-        "summary": "In the Google Play test now, version 1.09: Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
-        "href": "/guide",
-        "cta": "Open guide",
-        "images": ["/assets/updates/sound-109.jpg"],
-        "imageAlts": ["The Sound screen in 1.09: an icon on each wave button, Sine and Saw on together."]
-      },
-      {
-        "id": "sound-fx-looper-pages",
-        "status": "shipped",
-        "title": "Sound FX + looper page colors",
-        "ticker": "Sound FX and looper page colors",
-        "summary": "Since version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Each looper page gets a name and one of 8 colors. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
-        "href": "/guide",
-        "cta": "Open guide",
-        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
-        "imageAlts": ["Sound FX window with Psy Orbit selected.", "Loop screen with colored page numbers and a page name."]
-      },
-      {
-        "id": "exclusive-packs-gallery",
-        "status": "shipped",
-        "title": "Exclusive packs in Pro",
-        "ticker": "Exclusive in Pro",
-        "summary": "Since version 1.08: whoever buys Pro also gets the Exclusive pack free, at no extra cost. That is 11 Exclusive drum packs in the app, on top of Factory 64. There is no download button. This site only describes the packs.",
-        "href": "/exclusive",
-        "cta": "View Exclusive",
-        "images": ["/assets/updates/exclusive-packs-poster.jpg"],
-        "imageAlts": ["Exclusive Pro poster: 11 drum kits, unlocked in the app with Pro."]
-      },
-      {
-        "id": "studio-workflow-refresh",
-        "status": "shipped",
-        "title": "Live mode, lyrics, Mic FX, Drum FX",
-        "ticker": "Live mode, lyrics, Mic FX and Drum FX",
-        "summary": "Since version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. The mic and the drums get 8 effects each, every loop channel has Looper FX, and one Back button brings back the last cleared take.",
-        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/mic-fx.jpg"],
-        "imageAlts": ["Lyrics window open over the app.", "Mic FX panel with Phone Line selected."]
+        "images": [
+          "/assets/updates/lyrics.jpg",
+          "/assets/updates/mic-fx.jpg"
+        ],
+        "imageAlts": [
+          "חלון המילים פתוח מעל האפליקציה.",
+          "לוח Mic FX. Phone Line נבחר."
+        ]
       }
     ]
   },
@@ -125,7 +383,7 @@
     "navLabel": "Обновления",
     "pageTitle": "Что нового в L Studio.",
     "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-    "pageIntro": "Версия 1.09 сейчас в тесте Google Play. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
+    "pageIntro": "Версия 1.10 скоро появится в магазине. L Studio Pro выйдет в Google Play в октябре 2026, за $8.",
     "tickerLabel": "Обновления",
     "statusLabels": {
       "in_progress": "В работе",
@@ -139,6 +397,115 @@
     },
     "items": [
       {
+        "id": "app-1-10-loop-editor-drums",
+        "status": "upcoming",
+        "title": "Скоро в магазине: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
+        "ticker": "Скоро в магазине: новый редактор лупов, в том числе для Mic, с обрезкой, EQ и выбором, какой ритм ударных играет вместе с лупом и сколько раз он повторяется",
+        "summary": "Скоро в магазине, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
+        "href": "/guide",
+        "cta": "Открыть руководство",
+        "images": [
+          "/assets/posters/en/p05-loop-editor-w630.jpg"
+        ],
+        "imageAlts": [
+          "Постер (на английском): Edit Every Loop. Редактор лупа: обрезка, повторы, EQ и привязка к ритму ударных."
+        ],
+        "sections": [
+          {
+            "title": "Лупер",
+            "bullets": [
+              "Запись до 30 минут. На 30:00 она останавливается сама.",
+              "Пока играют ударные, Play начинается со следующего такта ударных.",
+              "Нет щелчков, когда канал стартует или останавливается или когда меняется громкость.",
+              "Drive меняется плавно, когда его двигают во время игры.",
+              "Back теперь Redo, в лупере и в Mic. Он возвращает запись, поверх которой записали, или очищенную запись. В лупере он также возвращает запись до обрезки.",
+              "STOP в канале останавливает его насовсем. Ритмические боксы не запускают его снова. Play запускает.",
+              "M (mute) и S (соло) на каждом канале. Соло работает на всех 8 страницах, а второе нажатие на S возвращает всё. M сохраняется с сессией.",
+              "Волна канала продолжает двигаться, когда канал заглушён или не в соло. Она останавливается, только когда останавливается канал."
+            ]
+          },
+          {
+            "title": "Mic",
+            "bullets": [
+              "M и S на каждом канале. STOP работает так же, как в Looper.",
+              "Верхняя строка стала чище и с равными промежутками: нет заголовка MIC, и три слота монитора убраны. Числа под регуляторами больше не обрезаются.",
+              "Регулятор Gate на каждом канале убран. Gate остаётся в строке монитора."
+            ]
+          },
+          {
+            "title": "Редактор лупов",
+            "bullets": [
+              "Открывается нажатием на волну. Mic Editor открывается так же на канале Mic.",
+              "Обрезка записи с Trim. Задание лупа.",
+              "8 ячеек ритма ударных выбирают, какой ритм играет вместе с лупом и сколько раз он повторяется: короткое нажатие включает или выключает ячейку, долгое выбирает повторы (от 1 до 10, бесконечность или Default). Без включённых ячеек канал продолжает луп.",
+              "EQ: Low, Mid, High и Mid Hz. Gain и Squeeze."
+            ]
+          },
+          {
+            "title": "Ударные",
+            "bullets": [
+              "Кнопка Swap теперь называется Load.",
+              "CLEAR, рядом с RANDOM, очищает шаги текущего ритма. Она заменяет кнопку Save ударных. Всё сохраняется автоматически.",
+              "Каждый ритм хранит свои сэмплы, ручки звука, громкости и панораму. Переход между ритмами записывает их в текущий кит.",
+              "Пустой ритм начинается как копия ритма, с которого вы пришли.",
+              "Шесть ручек звука на каждый ряд в каждом ритме: GAIN, SQUEEZE, ATTACK, SUSTAIN, RELEASE и REVERB, с формой волны, которая следует за ними.",
+              "COPY и PASTE ритма в окне долгого нажатия.",
+              "Одна клавиша REDO возвращает назад изменения ударных.",
+              "SAMPLES со стрелками, рядом с DRUM KIT, переключает сэмпл последнего ряда.",
+              "Смена набора ударных, пока они играют, плавная, без щелчков и искажений. Запись WAV тоже слышит её чистой.",
+              "Клавиша Style теперь называется Drum Kits, над ней маленькая золотая надпись HOLD. Долгое нажатие открывает Random genre."
+            ]
+          },
+          {
+            "title": "Pad",
+            "bullets": [
+              "Нажатие на + открывает вторую клавиатуру, общую с экраном Sound."
+            ]
+          },
+          {
+            "title": "Частоты",
+            "bullets": [
+              "Окно Custom Frequency, которое открывается из Settings, показывает частоты полностью.",
+              "8 личных пресетов.",
+              "Save перезаписывает выбранный пресет. Если ничего не выбрано, он сохраняет в первый пустой пресет.",
+              "Нажатие на пресет сразу загружает его."
+            ]
+          },
+          {
+            "title": "Сессия",
+            "bullets": [
+              "Сохранение сессии сохраняет всё рабочее пространство, и загрузка на другом устройстве возвращает его: пресеты частот, выбор сэмплов ударных, оба банка ударных, включённые волны, две клавиатуры, цели пэдов и тексты.",
+              "Перед каждой загрузкой есть вопрос с подтверждением и автоматическая резервная копия. После загрузки монитор микрофона выключен.",
+              "Новая кнопка New session, первая в Settings. Она спрашивает имя и очищает только каналы лупера и микрофона. Наборы, биты и пресеты остаются.",
+              "Сессия с повторяющимся именем при импорте получает новое имя и не перезаписывает существующую.",
+              "Load Console: у каждой сессии есть LOAD, SAVE, EDIT и X (удаление, сначала вопрос). Полное имя в одной строке.",
+              "Export selected и Import session переносят одну сессию.",
+              "Сохранение, загрузка, экспорт и импорт показывают реальный прогресс в процентах, затем успех или причину сбоя.",
+              "Заметно меньше памяти: записи хранятся в реальную длину, а сессия загружается потоком.",
+              "Стабильнее: запись Mic останавливается с сообщением, если микрофон отобран, а приложение сообщает, если часть записей не удалось восстановить."
+            ]
+          },
+          {
+            "title": "Внешний вид",
+            "bullets": [
+              "Новые клавиши в аппаратном стиле на Drum, Sound и Pad.",
+              "Новые окна SCALES, PATTERN REPEATS и DRUM STYLES. У каждой страницы стилей ударных свой баннер.",
+              "Нажатие включает или выключает волну. Одна волна всегда остаётся включённой.",
+              "Формы волны в редакторах Loop и Mic следуют за ручками вживую.",
+              "Золотые часы MM:SS появляются рядом с MIDI и WAV во время записи.",
+              "Приветственное окно наборов ударных открывается с новым звуком: щелчок ключа и лёгкий скрип.",
+              "Тексты на иврите, арабском и русском обновлены."
+            ]
+          }
+        ],
+        "tickerMore": [
+          "Скоро в магазине: переключение наборов ударных вживую или во время записи, без щелчков",
+          "Скоро в магазине: Load Console и реальный прогресс в процентах при сохранении и загрузке сессии",
+          "Скоро в магазине: S (solo) на каждом канале лупера и Mic, а STOP действительно останавливает канал до нажатия PLAY",
+          "Скоро в магазине: заметно меньше памяти и приветственный звук"
+        ]
+      },
+      {
         "id": "app-1-09-waves-drums",
         "status": "shipped",
         "title": "Новое в 1.09: несколько волн сразу",
@@ -146,8 +513,12 @@
         "summary": "Сейчас в тесте Google Play, версия 1.09: На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
         "href": "/guide",
         "cta": "Открыть руководство",
-        "images": ["/assets/updates/sound-109.jpg"],
-        "imageAlts": ["Экран Sound в 1.09: значок на каждой кнопке волны, Sine и Saw включены вместе."]
+        "images": [
+          "/assets/updates/sound-109.jpg"
+        ],
+        "imageAlts": [
+          "Экран Sound в 1.09: значок на каждой кнопке волны, Sine и Saw включены вместе."
+        ]
       },
       {
         "id": "sound-fx-looper-pages",
@@ -157,8 +528,14 @@
         "summary": "С версии 1.08: 8 новых Sound FX, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты сохраняют настройки всех 8. Каждой странице лупера можно дать имя и один из 8 цветов. Регуляторы показывают значение золотым кольцом, а тур в приложении показывает всё это.",
         "href": "/guide",
         "cta": "Открыть гид",
-        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
-        "imageAlts": ["Окно Sound FX, выбран Psy Orbit.", "Экран Loop с цветными номерами страниц и именем страницы."]
+        "images": [
+          "/assets/updates/sound-fx.jpg",
+          "/assets/updates/looper-pages.jpg"
+        ],
+        "imageAlts": [
+          "Окно Sound FX, выбран Psy Orbit.",
+          "Экран Loop с цветными номерами страниц и именем страницы."
+        ]
       },
       {
         "id": "exclusive-packs-gallery",
@@ -168,8 +545,12 @@
         "summary": "С версии 1.08: кто покупает Pro, получает пак Exclusive бесплатно, без доплаты. Это 11 эксклюзивных наборов ударных в приложении, в дополнение к Factory 64. Кнопки скачивания нет. Сайт только описывает паки.",
         "href": "/exclusive",
         "cta": "Открыть Exclusive",
-        "images": ["/assets/updates/exclusive-packs-poster.jpg"],
-        "imageAlts": ["Постер Exclusive для Pro: 11 наборов ударных, открытие внутри приложения."]
+        "images": [
+          "/assets/updates/exclusive-packs-poster.jpg"
+        ],
+        "imageAlts": [
+          "Постер Exclusive для Pro: 11 наборов ударных, открытие внутри приложения."
+        ]
       },
       {
         "id": "studio-workflow-refresh",
@@ -177,8 +558,14 @@
         "title": "Режим Live, текст, Mic FX, Drum FX",
         "ticker": "Режим Live, текст, Mic FX и Drum FX",
         "summary": "С версии 1.08: режим LIVE блокирует имена, Clear и загрузку файлов во время игры. Окно текста прокручивает слова, пока вы поете. У микрофона и у ударных по 8 эффектов, на каждом канале лупера есть Looper FX, а одна кнопка Back возвращает последний стёртый дубль.",
-        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/mic-fx.jpg"],
-        "imageAlts": ["Окно текста открыто поверх приложения.", "Панель Mic FX. Выбран Phone Line."]
+        "images": [
+          "/assets/updates/lyrics.jpg",
+          "/assets/updates/mic-fx.jpg"
+        ],
+        "imageAlts": [
+          "Окно текста открыто поверх приложения.",
+          "Панель Mic FX. Выбран Phone Line."
+        ]
       }
     ]
   },
@@ -186,7 +573,7 @@
     "navLabel": "التحديثات",
     "pageTitle": "ما الجديد في L Studio.",
     "pageKicker": "L-STUDIO / التحديثات",
-    "pageIntro": "الإصدار 1.09 في اختبار Google Play الآن. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
+    "pageIntro": "الإصدار 1.10 قريباً في المتجر. يصل L Studio Pro إلى Google Play في أكتوبر 2026، بسعر 8$.",
     "tickerLabel": "التحديثات",
     "statusLabels": {
       "in_progress": "قيد العمل",
@@ -200,6 +587,115 @@
     },
     "items": [
       {
+        "id": "app-1-10-loop-editor-drums",
+        "status": "upcoming",
+        "title": "قريباً في المتجر: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
+        "ticker": "قريباً في المتجر: محرر لوب جديد، ولقنوات Mic أيضاً، مع القص وEQ واختيار أي إيقاع طبول يعزف مع اللوب وكم مرة يتكرر",
+        "summary": "قريباً في المتجر، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
+        "href": "/guide",
+        "cta": "افتح الدليل",
+        "images": [
+          "/assets/posters/en/p05-loop-editor-w630.jpg"
+        ],
+        "imageAlts": [
+          "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب: قص وتكرار وEQ وربط بإيقاع الطبول."
+        ],
+        "sections": [
+          {
+            "title": "اللوبر",
+            "bullets": [
+              "تسجيل حتى 30 دقيقة. عند 30:00 يتوقف وحده.",
+              "أثناء عزف الطبول، يبدأ Play عند بداية المازورة التالية للطبول.",
+              "لا نقرات عندما تبدأ القناة أو تتوقف، أو عندما يتغير الحجم.",
+              "يتغير Drive بسلاسة عندما تحرّكه أثناء العزف.",
+              "أصبح Back الآن Redo، في اللوبر وفي Mic. يعيد أخذاً سُجّل فوقه أو مُسح. وفي اللوبر يعيد أيضاً الأخذ من قبل القص.",
+              "STOP في القناة يوقفها نهائياً. مربعات الإيقاع لا تشغّلها من جديد. Play يشغّلها.",
+              "M (كتم) وS (انفراد) على كل قناة. الانفراد يعمل في الصفحات الثماني، وضغطة ثانية على S تعيد كل شيء. M يُحفظ مع الجلسة.",
+              "شكل موجة القناة يواصل الحركة عندما تكون القناة مكتومة أو غير منفردة. يتوقف فقط عندما تتوقف القناة."
+            ]
+          },
+          {
+            "title": "Mic",
+            "bullets": [
+              "M وS على كل قناة. STOP يعمل مثل Looper.",
+              "الصف العلوي أنظف وبمسافات متساوية: بلا عنوان MIC، وخانات المراقبة الثلاث أُزيلت. الأرقام تحت المقابض لم تعد تُقطع.",
+              "مقبض Gate في كل قناة أُزيل. يبقى Gate في صف المراقبة."
+            ]
+          },
+          {
+            "title": "محرر اللوب",
+            "bullets": [
+              "يُفتح بالضغط على الموجة. Mic Editor يُفتح بنفس الطريقة على قناة Mic.",
+              "قص التسجيل بـ Trim. تحديد اللوب.",
+              "8 مربعات إيقاع طبول تحدد أي إيقاع يعزف مع اللوب وكم مرة يتكرر: الضغط القصير يشغّل مربعاً أو يوقفه، والضغط المطوّل يختار التكرارات (من 1 إلى 10 أو اللانهاية أو Default). بلا مربعات مشغّلة، تواصل القناة اللوب.",
+              "EQ: Low وMid وHigh وMid Hz. Gain وSqueeze."
+            ]
+          },
+          {
+            "title": "الطبول",
+            "bullets": [
+              "زر Swap اسمه الآن Load.",
+              "CLEAR، بجانب RANDOM، يمسح خطوات الإيقاع الحالي. يحل محل زر Save في الطبول. كل شيء يُحفظ تلقائيًا.",
+              "كل إيقاع يحتفظ بعيناته ومقابض الصوت ومستويات الصوت واليسار واليمين. الانتقال بين الإيقاعات يكتبها في الطقم الحالي.",
+              "الإيقاع الفارغ يبدأ كنسخة من الإيقاع الذي جئت منه.",
+              "ستة مقابض صوت لكل صف في كل إيقاع: GAIN وSQUEEZE وATTACK وSUSTAIN وRELEASE وREVERB، مع شكل موجة يتبعها.",
+              "COPY وPASTE للإيقاع من نافذة الضغط المطول.",
+              "مفتاح REDO واحد يعود في تغييرات الطبول.",
+              "SAMPLES بأسهم، بجانب DRUM KIT، يغيّر عينة آخر صف.",
+              "تبديل طقم الطبول أثناء عزفها سلس، بلا نقرات ولا تشويه. تسجيل WAV يسمعه نظيفاً أيضاً.",
+              "مفتاح Style اسمه الآن Drum Kits، وفوقه HOLD صغيرة بالذهبي. الضغط المطول يفتح Random genre."
+            ]
+          },
+          {
+            "title": "Pad",
+            "bullets": [
+              "الضغط على + يفتح لوحة مفاتيح ثانية، مشتركة مع شاشة Sound."
+            ]
+          },
+          {
+            "title": "الترددات",
+            "bullets": [
+              "نافذة Custom Frequency، التي تُفتح من Settings، تعرض الترددات كاملة.",
+              "8 إعدادات شخصية.",
+              "Save يكتب فوق الإعداد المختار. إذا لم يُختر إعداد، يحفظ في أول إعداد فارغ.",
+              "الضغط على إعداد يحمّله فوراً."
+            ]
+          },
+          {
+            "title": "الجلسة",
+            "bullets": [
+              "حفظ الجلسة يحفظ مساحة العمل كلها، فيعيدها التحميل على جهاز آخر: إعدادات الترددات، واختيارات عينات الطبول، وبنكا الطبول، والموجات المشغّلة، ولوحتا المفاتيح، وأهداف الـ Pad، والكلمات.",
+              "قبل كل تحميل يظهر سؤال تأكيد وتُحفظ نسخة احتياطية تلقائية. بعد التحميل تكون مراقبة الميكروفون متوقفة.",
+              "زر جديد New session، الأول في Settings. يطلب اسماً ويمسح قنوات اللوبر والميكروفون فقط. الأطقم والإيقاعات والإعدادات تبقى.",
+              "الاسم المكرر عند الاستيراد يحصل على اسم جديد بدل الكتابة فوق الموجود.",
+              "Load Console: لكل جلسة LOAD وSAVE وEDIT وX (حذف، بعد سؤال). الاسم الكامل في سطر واحد.",
+              "Export selected وImport session ينقلان جلسة واحدة.",
+              "الحفظ والتحميل والتصدير والاستيراد تعرض تقدماً حقيقياً بالنسبة المئوية، ثم النجاح أو سبب الفشل.",
+              "استهلاك أقل بكثير للذاكرة: تُخزَّن التسجيلات بطولها الحقيقي، وتُحمَّل الجلسة تدريجياً.",
+              "أكثر ثباتاً: تسجيل Mic يتوقف برسالة إذا سُحب الميكروفون، ويخبرك التطبيق إذا تعذّر استعادة بعض التسجيلات."
+            ]
+          },
+          {
+            "title": "المظهر",
+            "bullets": [
+              "مفاتيح جديدة بنمط الأجهزة في Drum وSound وPad.",
+              "نوافذ SCALES وPATTERN REPEATS وDRUM STYLES جديدة. لكل صفحة أنماط طبول لافتة خاصة بها.",
+              "النقر يشغّل الموجة أو يطفئها. تبقى موجة واحدة مضاءة دائمًا.",
+              "أشكال الموجة في محرري Loop وMic تتبع المقابض مباشرة.",
+              "ساعة ذهبية MM:SS تظهر بجانب MIDI وWAV أثناء التسجيل.",
+              "نافذة الترحيب بأطقم الطبول تُفتح بصوت جديد: نقرة مفتاح وصرير خفيف.",
+              "نصوص العبرية والعربية والروسية حُدّثت."
+            ]
+          }
+        ],
+        "tickerMore": [
+          "قريباً في المتجر: تبديل مجموعات الطبول أثناء العزف أو التسجيل، بلا نقرات",
+          "قريباً في المتجر: Load Console وتقدّم حقيقي بالنسبة المئوية عند حفظ الجلسة أو تحميلها",
+          "قريباً في المتجر: زر S (انفراد) في كل قناة لوبر وMic، وزر STOP يوقف القناة فعلاً حتى تضغط PLAY",
+          "قريباً في المتجر: استهلاك أقل بكثير للذاكرة، وصوت ترحيب"
+        ]
+      },
+      {
         "id": "app-1-09-waves-drums",
         "status": "shipped",
         "title": "جديد في 1.09: عدة موجات معاً",
@@ -207,8 +703,12 @@
         "summary": "الآن في اختبار Google Play، الإصدار 1.09: على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
         "href": "/guide",
         "cta": "افتح الدليل",
-        "images": ["/assets/updates/sound-109.jpg"],
-        "imageAlts": ["شاشة Sound في 1.09: أيقونة على كل زر موجة، Sine وSaw مفعّلتان معاً."]
+        "images": [
+          "/assets/updates/sound-109.jpg"
+        ],
+        "imageAlts": [
+          "شاشة Sound في 1.09: أيقونة على كل زر موجة، Sine وSaw مفعّلتان معاً."
+        ]
       },
       {
         "id": "sound-fx-looper-pages",
@@ -218,8 +718,14 @@
         "summary": "منذ الإصدار 1.08: ثمانية مؤثرات Sound FX جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة تحفظ إعدادات المؤثرات الثمانية كلها. لكل صفحة في اللوبر اسم وواحد من 8 ألوان. المقابض تعرض القيمة بحلقة ذهبية، والجولة داخل التطبيق تشرح كل ذلك.",
         "href": "/guide",
         "cta": "فتح الدليل",
-        "images": ["/assets/updates/sound-fx.jpg", "/assets/updates/looper-pages.jpg"],
-        "imageAlts": ["نافذة Sound FX مع اختيار Psy Orbit.", "شاشة Loop بأرقام صفحات ملوّنة واسم صفحة."]
+        "images": [
+          "/assets/updates/sound-fx.jpg",
+          "/assets/updates/looper-pages.jpg"
+        ],
+        "imageAlts": [
+          "نافذة Sound FX مع اختيار Psy Orbit.",
+          "شاشة Loop بأرقام صفحات ملوّنة واسم صفحة."
+        ]
       },
       {
         "id": "exclusive-packs-gallery",
@@ -229,8 +735,12 @@
         "summary": "منذ الإصدار 1.08: من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية. ذلك 11 حزمة طبول Exclusive داخل التطبيق، إضافة إلى Factory 64. لا يوجد زر تنزيل. الموقع يصف الحزم فقط.",
         "href": "/exclusive",
         "cta": "عرض Exclusive",
-        "images": ["/assets/updates/exclusive-packs-poster.jpg"],
-        "imageAlts": ["ملصق Exclusive لـ Pro: 11 حزمة طبول، والفتح داخل التطبيق."]
+        "images": [
+          "/assets/updates/exclusive-packs-poster.jpg"
+        ],
+        "imageAlts": [
+          "ملصق Exclusive لـ Pro: 11 حزمة طبول، والفتح داخل التطبيق."
+        ]
       },
       {
         "id": "studio-workflow-refresh",
@@ -238,8 +748,14 @@
         "title": "وضع Live والكلمات وMic FX وDrum FX",
         "ticker": "وضع Live والكلمات وMic FX وDrum FX",
         "summary": "منذ الإصدار 1.08: وضع LIVE يقفل الأسماء وClear وتحميل الملفات أثناء العزف. نافذة الكلمات تمرّر النص وأنت تغني. للميكروفون وللطبول ثمانية مؤثرات لكل منهما، وفي كل قناة لوب يوجد Looper FX، وزر Back واحد يعيد آخر تسجيل تم مسحه.",
-        "images": ["/assets/updates/lyrics.jpg", "/assets/updates/mic-fx.jpg"],
-        "imageAlts": ["نافذة الكلمات مفتوحة فوق التطبيق.", "لوحة Mic FX. Phone Line محدد."]
+        "images": [
+          "/assets/updates/lyrics.jpg",
+          "/assets/updates/mic-fx.jpg"
+        ],
+        "imageAlts": [
+          "نافذة الكلمات مفتوحة فوق التطبيق.",
+          "لوحة Mic FX. Phone Line محدد."
+        ]
       }
     ]
   }

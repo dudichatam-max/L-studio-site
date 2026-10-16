@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { POSTER_LARGE, POSTER_VER } from "@/lib/posters";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel } from "@/lib/updatesCopy";
@@ -20,6 +21,8 @@ type GuideSection = {
   media?: string;
   /** Extra screenshots after `media`, each in its own frame. */
   images?: string[];
+  /** Optional alt per image path. Missing entries use the section title. */
+  imageAlts?: Record<string, string>;
   mediaSize?: "thumb" | "panel";
   bullets?: string[];
 };
@@ -30,6 +33,8 @@ type GuideGroup = {
   body: string[];
   media?: string;
   images?: string[];
+  /** Optional alt per image path. Missing entries use the group title. */
+  imageAlts?: Record<string, string>;
   mediaSize?: "thumb" | "panel";
   sections?: GuideSection[];
 };
@@ -85,6 +90,11 @@ function mediaUrl(path: string) {
   return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
 }
 
+/** Approved store posters (assets/posters/{en,he}/...-w630.jpg) ship a webp twin and a fixed 630x1120 size. */
+function isPoster(path: string) {
+  return /^\/?assets\/posters\//.test(path);
+}
+
 function sectionNumber(index: number) {
   return String(index + 1).padStart(2, "0");
 }
@@ -99,7 +109,7 @@ function sectionShots(section: { media?: string; images?: string[] }) {
 }
 
 function guideEntries(groups: GuideGroup[]) {
-  const entries: Array<{ id: string; title: string; body: string[]; media?: string; images?: string[]; mediaSize?: "thumb" | "panel"; layout?: "steps"; bullets?: string[]; tipBeginner?: string; tipAdvanced?: string; tag?: string; nested: boolean }> = [];
+  const entries: Array<{ id: string; title: string; body: string[]; media?: string; images?: string[]; imageAlts?: Record<string, string>; mediaSize?: "thumb" | "panel"; layout?: "steps"; bullets?: string[]; tipBeginner?: string; tipAdvanced?: string; tag?: string; nested: boolean }> = [];
   for (const group of groups) {
     entries.push({ ...group, nested: false });
     for (const section of group.sections ?? []) {
@@ -237,7 +247,14 @@ export default function Guide() {
                           <div className="guide-shots">
                             {shots.map((src) => (
                               <figure className={mediaClass} key={src}>
-                                <img src={mediaUrl(src)} alt={section.title} loading="lazy" />
+                                {isPoster(src) ? (
+                                  <picture>
+                                    <source type="image/webp" srcSet={`${mediaUrl(src.replace(/\.jpe?g$/i, ".webp"))}?v=${POSTER_VER}`} />
+                                    <img src={`${mediaUrl(src)}?v=${POSTER_VER}`} alt={section.imageAlts?.[src] || section.title} width={POSTER_LARGE.width} height={POSTER_LARGE.height} loading="lazy" decoding="async" />
+                                  </picture>
+                                ) : (
+                                  <img src={mediaUrl(src)} alt={section.imageAlts?.[src] || section.title} loading="lazy" />
+                                )}
                               </figure>
                             ))}
                           </div>

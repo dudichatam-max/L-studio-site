@@ -95,3 +95,79 @@ The homepage shows the 1024×500 feature graphic directly under the updates tick
 ### Demo video toggle (2026-10-11)
 
 Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/Home.tsx`, HE "סרטון הדגמה") opens the YouTube Short `d89y14QAHuA` (`DEMO_SHORT_ID`) in a 9:16 frame. It starts closed. The player loads only after a tap on the poster (`assets/demo-short-poster.webp/.jpg`, taken from the YouTube thumbnail). To change the video, change `DEMO_SHORT_ID` and the poster files.
+
+## App 1.10 draft (not on Google Play yet)
+
+- Guide Loop, Mic, Drum, and Sound (Frequencies, Drive) text, the new Loop Editor section, and the 1.10 guide shots (`assets/guide/*-110.jpg`) describe app 1.10 (final commit ea63c40). Settings also covers New session, the fuller session save, the load confirm and backup, and rename on import (ea63c40). The new Factory vocals (Voice 7 to 40) are left out until David approves their sound.
+- Homepage windows menu: the Loop and Drum tabs use the approved 1.10 Play assets `assets/play/110-03-looper` and `110-01-live-sample-swap` (`PLAY_SHOT_VER = "110-play"` in `Home.tsx`). The Loop Editor Play asset (02) is not used on the homepage yet.
+- Updates: item `app-1-10-loop-editor-drums` is `in_progress` and says "coming in the next Google Play update". When 1.10 is live on Google Play, set it to `shipped`, change the wording, and update the version and size shown on the site (still 1.09 / 60.6 MB).
+- The Mic guide image is `assets/guide/mic-screen-110.jpg` (David's `ui-new-3.png`, Mic screen with Redo). `ui-mic.png` in team docs shows the Loop tab, not Mic, and is not used. `drum-screen-110.jpg` is now from `ui-new-4.png`.
+- Settings and Tune frequencies use David's 1.10 shots `assets/guide/settings-window-110.jpg` (ui-new-1, New session first) and `freq-window-110.jpg` (ui-new-2, My Presets 1-8 with Save). The older `settings-window.jpg` and `freq-window.jpg` stay in git but are no longer used by the guide.
+- Updates items can carry optional `sections: [{ "title", "bullets": [] }]`, shown as grouped lists under `summary` (`UpdateItemSection` in `client/src/lib/updatesCopy.ts`). Items without it show only `summary`. The 1.10 item uses it for the team-lead-approved text (Looper, Loop editor, Drums, Frequencies, Session), checked against app commit e6b6e3c. Left out on purpose: per-channel sample counts (not checkable in code), "Load Kit and Save Kit are gone" (1.09 never had them), and the Voice vocals (on hold). Redo is written as the code does it: it brings back a take that was recorded over or cleared, and in the looper also one from before a trim.
+- Ticker: each item shows its `ticker` line (falls back to `title`), plus any `tickerMore` lines, each linking to the item. Before this, the ticker showed `title` only.
+- Voice (David approved the sound, 2026-10-13): row 8 is Voice, vocals only, 40 Factory, 18 Exclusive, 33 Authentic, 91 in all. App commit e6b6e3c: `assets/drum_vocals` has 33 vocals (Factory) and `assets/drum_vocals_authentic` has 33 (Authentic). `DrumVocalAllowlist` adds 7 kit vocals from Experimental (Factory) and 18 from Afro-Techno, Ithaca-Remains and Kreepy-Bastard-v2 (Exclusive).
+- Drum guide: `assets/guide/voice-110.jpg` is the 1.10 Voice picker (Authentic tab, 33), from David's `ui-voice.png`. Guide groups can carry `imageAlts: { "<path>": "alt" }`; images without an entry use the group title as alt.
+
+## App 1.10 follow-up (f091717 / 7d9932c, 2026-10-14)
+
+- Loop/Mic editors: drum-rhythm boxes are 1-8 (tap on/off, long-press for Pattern repeats 1-10 or infinity). No boxes on = free loop. Old 1-10 / typed 1-88 repeats are gone (migrated to free loop).
+- Mic Editor: same component as Loop Editor, opens by tapping a Mic channel visualizer.
+- Pad `+` opens the upper keyboard shared with Sound (`dualKeyboardVisibleOn`).
+- Drums: each rhythm keeps samples, volumes and L/R; Save and switching rhythms write into the current kit (`commitDrumRhythmAndKit`).
+- Settings label is `Benchmark` (capital B).
+- New guide shots from `ui-1.10-20261014/`: mic, settings, loop-editor, looper, pad, pad-dual-keyboard. Sound / Drums / Tune frequencies / Sound FX shots still pending.
+
+## Shots 2026-10-14 (0b5eaf5)
+
+- Guide: `sound-screen-110`, `sound-fx-window-110`, `freq-window-110` (2-decimal Hz), `drum-screen-110` from `ui-1.10-20261014/`.
+- Homepage windows menu: Sound `play/110-04-sound`, Pad `play/110-05-pad-dual` (dual keyboard with +).
+- Hint above Looper/Mic channels: `Tap the visualizer to edit` (`hint_tap_visualizer_edit`). Tutorial is 68 steps (was 63).
+
+## 1.10 extension (app tip 12cdde6)
+- Drum screen: PLAY/STOP, REDO (undo stack), +4 (Pro), SAMPLES panel with arrows next to DRUM KIT, CLEAR replaces the drum Save, auto-save, empty rhythm copies the one you came from.
+- New guide section drum/drum-sound: 6 knobs GAIN 0..+18 dB, SQUEEZE 0..100, ATTACK 0..200 ms, SUSTAIN 0..100%, RELEASE 5..2000 ms, REVERB 0..100%, per row per rhythm, live waveform. No image yet (see /workspace/site-1.10/missing-images.md).
+- Pattern repeats: COPY/PASTE (paste keeps the target repeat count, BPM and swing). Drum styles: page banners. Scales: SCALES title. Waves: tap toggles, one always on (no long-press).
+- Updates item: Drums bullets rewritten, new Look section, a tickerMore line and a summary sentence. Tablet support: not in code, not mentioned.
+
+## 1.10 extension 2 (app branch tip ad2ceeb)
+- New guide section sound/live-mode, written from StudioUiMode.kt and its call sites. Locked in LIVE: Clear (Looper, Mic), file Load on drum rows and Looper and Mic channels, Import (Loop, Mic, Drum styles), kit Load, DRUM KIT arrows, numeric typing on knobs, channel names, Looper page name (long-press). Open in LIVE: Rec, Play, Stop, M, S, Redo, Save, Export, sample list and arrows, drum CLEAR. Re-check this list when the app changes.
+- Settings: Load Console rows (LOAD, SAVE, EDIT, X), Export selected, Import session, real progress window. Settings has only a Close key (no X). Language list closes with Close (was Dismiss).
+- Drum Kits key (was Style) with the gold HOLD caption. Scales key reads Scale off. Mic: top row without MIC title and without monitor slots, no per-channel Gate knob.
+- Looper and Mic: M (mute) and S (solo), STOP holds until PLAY, visualizer keeps moving. A gold MM:SS clock shows while MIDI or WAV records.
+- Not mentioned on purpose: tablet layout (content capped at 440 dp, phones locked to portrait), Android 7/8 items, circular recording buffer, safe session names, sample rate in session.
+- All of this is 1.10 in smoke test, not on Google Play. Keep PR #74 a draft until 1.10 is released.
+
+## 1.10 posters (approved store/site posters, 8 EN + 8 HE; new set of Oct 16)
+- Files: `assets/posters/{en,he}/pNN-slug-w360|w630.{webp,jpg}` (also in `client/public/assets/posters/`). Sources are the 1080x1920 PNGs `L-Studio-1.10-store-<EN|HE>-NN-<name>.png` in `/workspace/store-posters/upload/` (black background, 3 screens, L STUDIO logo; older set replaced). 9:16, webp 80 and jpg 82, widths 360 and 630. Helper: `client/src/lib/posters.ts` (URLs, sizes, alt texts for the homepage).
+- Order and names: 01 sound, 02 sound-live, 03 pad, 04 mic, 05 loop-editor, 06 looper, 07 drums, 08 drum-styles.
+- Language: HE uses `posters/he`. EN, RU and AR use `posters/en` (no RU or AR posters exist). In `content.json` the paths are per language, so a new RU or AR poster set only needs new files and new paths.
+- Homepage windows menu: Sound = 1 + 2, Loop = 5 + 6, Drum = 7 + 8 (two columns on desktop, a swipe row on phones), Pad = 3, Mic = 4. Gold frame like the guide. Change the mapping in `playPosters` in `Home.tsx`.
+- Guide: poster as the group image (sound 1, pad 3, drum 7, loop 6, mic 4) and in sections (sound/live-mode 2, drum/drum-styles 8, loop/loop-editor 5, mic/mic-editor 5). Paths that start with `assets/posters/` render as `<picture>` with a webp twin and fixed 630x1120. Alt texts live in `imageAlts`.
+- Updates: the 1.10 item uses poster 5. `imageAlts` is a list there, parallel to `images`.
+- Pre-1.10 Sound strips (octave, drive-slider, volume-knobs, keys, sound-waves-109, sound-tones) and drum-styles-window are not used any more, because posters cover those screens. The files stay in `assets/guide/`.
+- Poster captions are baked into the images. Round 2 (Oct 15, 20:05) fixed poster 3 (pad wording), poster 4 (per-channel HPF, presence, FX, mute, solo), the dashes, "color" and the page name "Page 1". Cache: bump `POSTER_VER` in `client/src/lib/posters.ts` whenever poster files are replaced (used by Home, Guide and Updates). Alt texts: `posterAlt` in `posters.ts` (homepage), `imageAlts` in `content.json` (guide, updates). Keep alts in sync with the baked captions.
+- Oct 16 set: captions checked against ad2ceeb. 5 waveforms, 16 keys (2 x 8), LIVE locks some buttons, Mic page 1 Vocal 1-3 and page 2 Guitar, Bass, Inst, Loop Editor trim/loop/EQ/drum-rhythm follow, 32 channels (8 pages x 4), drums 4 channels (8 with Pro) x 16 steps, 8 style packs + 11 Exclusive pages, 288 factory + 66 Voice + 704 Exclusive = 1,058 built-in samples (Exclusive ships in the Play AAB). HE posters write the brand as "אל סטודיו" (a transliteration, not the Latin L Studio).
+- Feature graphic (homepage, under the ticker): `assets/feature-graphic-{en,he}-{640,800,1024}.webp` and `-{640,1024}.jpg`, 1024x500. HE uses the HE one, EN/RU/AR the EN one. Version query `FEATURE_GRAPHIC_VER` in `Home.tsx`. Alt text `featureGraphicAlt`.
+- JSON-LD `screenshot` (shared/seo.ts APP_SCREENSHOTS and the static copy in client/index.html) now points at the EN posters 1, 6, 7, 3, 4. The old `assets/play/` Play shots and the 1.09 feature graphic were removed because nothing uses them any more.
+
+## Version 1.10 prepared (Oct 16, draft only, own commit so it can be reverted)
+- App 1.10 (versionCode 10) is merged in the app repo: tag `v1.10`, head `ad2ceeb6`. It is NOT on Google Play yet. David uploads it himself, closed test first. The site must not say it is live in the store. Wording: "in the next Google Play update" or "in testing".
+- Places that carry the version: `hero.kicker` (4 languages) and the `pro` body text in `content.json` (and `client/public/content.json`); `shared/pro-copy.json` (Pro body); `updates.pageIntro` and the same text in `shared/seo.ts` (updates page description); the home descriptions in `shared/seo.ts` and `client/index.html` ("Version 1.10."); JSON-LD `softwareVersion` (`APP_FACTS` in `shared/seo.ts`, the static copy in `client/index.html`, and the asserts in `shared/seo.selfcheck.ts`); `heroDefault` in `Home.tsx`; the "L Studio 1.10" line in `Privacy.tsx` and `Terms.tsx`.
+- Left at 1.09 on purpose: the history item `app-1-09-waves-drums` (it describes 1.09).
+- No APK, AAB, download or GitHub release link was added. The release repo `dudichatam-max/L-studio` is private and its release carries an APK and an AAB, so linking it is not allowed.
+- To go back to 1.09 before David approves: revert the commit titled "1.10 draft: version 1.10 ..." (the size is a separate commit).
+
+## Size 77.5 MB (Oct 16, separate commit from the version, easy to revert)
+- Source: GitHub release `v1.10` (private repo), asset `L-Studio-1.10-play-fix1.apk` = 81,252,020 bytes = 77.49 MiB. Same method as 1.09 (60.6 = 63,509,827 bytes in MiB, written as MB). The AAB `L-Studio-1.10-play-fix1.aab` is 77,863,522 bytes = 74.26 MiB.
+- This is the release APK size, NOT the number Google Play will show for the download (Play serves split APKs from the AAB). Check the Play listing size after the closed test and correct if it differs. To go back to 60.6 MB, revert the commit titled "1.10 draft: app size ...".
+- Places: `hero.stat1`, the Pro body and the Pro list item in `content.json` (and the `client/public` copy), `shared/pro-copy.json`, `fileSize` in `shared/seo.ts` and the static JSON-LD in `client/index.html`, the `heroDefault` stat in `Home.tsx`.
+
+## 1.10 under Google review (Oct 16)
+- David uploaded 1.10 to Google Play and it is under review. It is NOT live. All 1.10 lines now say "coming soon to the store" (HE: בקרוב בחנות, RU: скоро в магазине, AR: قريباً في المتجر), never "available" or "in the next update".
+- Strings: `updates.pageIntro` and the updates description in `shared/seo.ts`; the 1.10 item title, summary, ticker and tickerMore (prefix "Coming soon to the store: "); item status `upcoming` (chip "Coming soon" in EN, בקרוב, Скоро, قريباً); hero kicker ("Version 1.10, coming soon to the store"); the Pro body "Version 1.10 (coming soon to the store), 77.5 MB" in `content.json` and `shared/pro-copy.json`; `heroDefault` in `Home.tsx`.
+- When 1.10 is live in the store (David says so), change these to "Available now" wording and set the item status to `shipped`.
+
+## Loop Editor repeats wording (Oct 16)
+- Code (ad2ceeb, LoopEditorDialog.kt, PatternRepeatDialogB): the old repeat buttons (1-10) and the typed 1-88 count are gone. The editor has 8 rhythm boxes. A short press toggles a box (off to 1 pass, on to off), so the loop plays with that drum rhythm. A long press opens Pattern repeats for that box: 1 to 10, infinity, or Default (Default stores 0, which turns the box off). With no boxes on the channel is a free loop; with boxes on it follows drum Play.
+- Site wording (guide loop-editor section, 1.10 updates bullet, ticker line 1, HE/EN/RU/AR): the boxes "choose which rhythm plays with the loop and how many times it repeats". The poster 5 caption "Trim, repeat, EQ, and lock it to the drum rhythm" is baked in and stays (it is accurate: Loop sets the repeating region).
+- The live site (main, 1.09) has no Loop Editor and no such wording. Its only repeat text is the Drum "Pattern repeats" window (1-10, infinity, Default), which is correct for drums.

@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
+import { POSTER_VER } from "@/lib/posters";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { groupUpdates, mergeUpdates, updateScreenshots, type UpdatesCopy } from "@/lib/updatesCopy";
@@ -22,7 +23,8 @@ type ChromeCopy = {
 type GuideChrome = Partial<ChromeCopy>;
 
 function assetUrl(path: string) {
-  return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+  const version = /^\/?assets\/posters\//.test(path) ? `?v=${POSTER_VER}` : "";
+  return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}${version}`;
 }
 
 function webpUrl(path: string) {
@@ -42,8 +44,12 @@ const STILL_SIZE: Record<string, { width: number; height: number }> = {
   "/assets/updates/exclusive-packs-poster.jpg": { width: 1024, height: 1536 },
 };
 
+function stillSizeFor(src: string) {
+  return /^\/?assets\/posters\//.test(src) ? { width: 630, height: 1120 } : STILL_SIZE[src] ?? { width: 720, height: 1348 };
+}
+
 function stillSize(src: string) {
-  return STILL_SIZE[src] ?? { width: 720, height: 1348 };
+  return stillSizeFor(src);
 }
 
 function hashHref(href: string) {
@@ -160,6 +166,22 @@ export default function Updates() {
                         </div>
                         <p>{item.summary}</p>
                         {item.detail ? <p className="updates-detail">{item.detail}</p> : null}
+                        {Array.isArray(item.sections) && item.sections.length ? (
+                          <div className="updates-sections">
+                            {item.sections.map((section) =>
+                              section && section.title && Array.isArray(section.bullets) && section.bullets.length ? (
+                                <section className="updates-section" key={section.title}>
+                                  <h4>{section.title}</h4>
+                                  <ul>
+                                    {section.bullets.map((bullet) => (
+                                      <li key={bullet}>{bullet}</li>
+                                    ))}
+                                  </ul>
+                                </section>
+                              ) : null,
+                            )}
+                          </div>
+                        ) : null}
                         {item.href && item.cta ? (
                           hashHref(item.href) ? (
                             <a className="button button--small button--light updates-cta" href={item.href}>{item.cta}</a>
