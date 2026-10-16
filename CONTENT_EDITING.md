@@ -187,3 +187,11 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - `languages.*.faq` has 20 questions, each checked against the app code (ad2ceeb, 1.10) or the site. Pro is a one-time $8 payment bought through Google Play once released. There is a single app version (Pro). A free demo is coming soon from this website: write "soon" only, no date, no link. No iOS for now. Tablets were not tested, so claim no tablet support. No external MIDI keyboard or live MIDI for now, planned for later, no date.
 - No launch month or day anywhere on the site. Use "coming soon" (HE בקרוב, RU скоро, AR قريباً) in the hero, launch note, pro copy, tester text, updates intro, SEO descriptions, `shared/pro-copy.json`, and the Home, Factory64 and FactoryDrums defaults. The Privacy page "last updated" date is a document date and stays.
 - Mic channels have no Load key in 1.10 (only Clear and Save). Never write that Mic channels can load a file. Imported audio limits (drum rows, Looper channels) are in the FAQ answer to "Can I use my own sounds and audio files?".
+
+## Home windows menu carousel (Sound, Mic, Loop, Pad, Drum)
+
+- Each tab is a carousel (swipe, arrows, dots, arrow keys, RTL-correct). Code: `client/src/components/PlayCarousel.tsx`, slide list per tab in `client/src/lib/carousel.ts` (Sound 4, Mic 4, Loop 4, Pad 3, Drum 4).
+- Every slide is a designed store poster, one set per language: `assets/carousel/{he,en,ar,ru}/<slide-id>-w360|w630.{webp,jpg}` (also under `client/public/assets/carousel/`). The counter n/N is baked into the poster (N = slides in that tab), so the site draws none. Each language uses only its own folder. Old numbered posters (01-08) are never used in a carousel.
+- To import: `python3 scripts/import-carousel-posters.py` (reads `/workspace/store-posters/carousel/{lang}/<tab>-<n>.png`, writes the 4 files per slide, removes stale files).
+- Adding or removing a slide: the designer rebakes that tab's counters, then edit `carousel.ts` (`{ id, designed }`), add the texts to `languages.*.carousel.slides[id]` in all 4 languages, and run the import.
+- Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.

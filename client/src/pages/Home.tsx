@@ -5,7 +5,8 @@ import SiteLogo from "@/components/SiteLogo";
 import WaveScope from "@/components/WaveScope";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
-import { POSTER_LARGE, POSTER_SMALL, posterAlt, posterUrl, type PosterId } from "@/lib/posters";
+import PlayCarousel from "@/components/PlayCarousel";
+import type { PlayId } from "@/lib/carousel";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import UpdatesTicker from "@/components/UpdatesTicker";
@@ -71,17 +72,6 @@ const meetPoster = {
   jpg: `${import.meta.env.BASE_URL}assets/meet-short-poster.jpg`,
 };
 
-type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
-
-// Windows menu posters. Pairs (Sound, Loop, Drum) sit side by side; Pad and Mic show one poster.
-// HE uses the Hebrew posters, EN/RU/AR use the English ones (see lib/posters.ts).
-const playPosters: Record<PlayId, PosterId[]> = {
-  sound: ["sound", "soundLive"],
-  mic: ["mic"],
-  loop: ["loopEditor", "looper"],
-  pad: ["pad"],
-  drum: ["drums", "drumStyles"],
-};
 
 // Small chrome-only labels that are not part of the editable site copy in content.json
 // (menu open/close).
@@ -269,34 +259,6 @@ const footerDefault = { tagline: "It's for analog people in a digital world." };
 
 const visionIcons = [Sparkles, Music2, ArrowDownLeft];
 
-
-function FeatureMedia({ id, language }: { id: PlayId; language: Language }) {
-  const posters = playPosters[id];
-  return (
-    <>
-      {posters.map((poster) => (
-        <picture key={poster}>
-          <source
-            type="image/webp"
-            srcSet={`${posterUrl(language, poster, "w360", "webp")} ${POSTER_SMALL.width}w, ${posterUrl(language, poster, "w630", "webp")} ${POSTER_LARGE.width}w`}
-            sizes={posters.length > 1 ? "(max-width: 720px) 78vw, 250px" : "(max-width: 720px) 78vw, 300px"}
-          />
-          <img
-            className="preview-media"
-            src={posterUrl(language, poster, "w630", "jpg")}
-            srcSet={`${posterUrl(language, poster, "w360", "jpg")} ${POSTER_SMALL.width}w, ${posterUrl(language, poster, "w630", "jpg")} ${POSTER_LARGE.width}w`}
-            sizes={posters.length > 1 ? "(max-width: 720px) 78vw, 250px" : "(max-width: 720px) 78vw, 300px"}
-            alt={posterAlt[language][poster]}
-            width={POSTER_LARGE.width}
-            height={POSTER_LARGE.height}
-            loading="lazy"
-            decoding="async"
-          />
-        </picture>
-      ))}
-    </>
-  );
-}
 
 // Renders a headline as "lead words" + a line break + the last word in the accent color,
 // matching the site's existing typographic style (see h1 em / h2 em in index.css).
@@ -619,14 +581,21 @@ export default function Home() {
                     </button>
                     {isActive && (
                       <div className="interface-preview" id={`feature-panel-${feature.id}`}>
-                        <div className={`preview-image-wrap ${playPosters[feature.id as PlayId].length > 1 ? "preview-image-wrap--pair" : ""}`}>
-                          <FeatureMedia id={feature.id as PlayId} language={language} />
-                        </div>
-                        <div className="preview-copy">
-                          <span className="kicker">{feature.meta}</span>
-                          <h3>{feature.title}</h3>
-                          <p>{feature.description}</p>
-                        </div>
+                        <PlayCarousel tab={feature.id as PlayId} language={language} isRtl={isRtl} copy={copy.carousel}>
+                          {(caption) => (
+                            <div className="preview-copy">
+                              <span className="kicker">{feature.meta}</span>
+                              <h3>{feature.title}</h3>
+                              <p>{feature.description}</p>
+                              {caption?.title && (
+                                <div className="play-caption" aria-live="polite">
+                                  <h4>{caption.title}</h4>
+                                  {caption.text && <p>{caption.text}</p>}
+                                </div>
+                              )}
+                            </div>
+                          )}
+                        </PlayCarousel>
                       </div>
                     )}
                   </div>
