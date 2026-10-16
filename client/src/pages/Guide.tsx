@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { ArrowLeft, BookOpen, Sparkles } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ArrowLeft, BookOpen, ChevronDown, Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -11,32 +11,22 @@ import { updatesNavLabel } from "@/lib/updatesCopy";
 
 type GuideSection = {
   id: string;
-  tag?: string;
   title: string;
   body: string[];
-  /** Render `body` as numbered steps. Older sections stay as paragraphs. */
-  layout?: "steps";
-  tipBeginner?: string;
-  tipAdvanced?: string;
   media?: string;
   /** Extra screenshots after `media`, each in its own frame. */
   images?: string[];
   /** Optional alt per image path. Missing entries use the section title. */
   imageAlts?: Record<string, string>;
-  mediaSize?: "thumb" | "panel";
-  bullets?: string[];
+  /** Pixel size [width, height] per image path. Reserves the space so the page does not jump while images load. */
+  imageSizes?: Record<string, [number, number]>;
 };
 
-type GuideGroup = {
-  id: string;
-  title: string;
-  body: string[];
-  media?: string;
-  images?: string[];
-  /** Optional alt per image path. Missing entries use the group title. */
-  imageAlts?: Record<string, string>;
-  mediaSize?: "thumb" | "panel";
+/** A top-level topic. Subtopics sit in `sections`. Tips close the topic. */
+type GuideGroup = GuideSection & {
   sections?: GuideSection[];
+  tipsBeginner?: string[];
+  tipAdvanced?: string;
 };
 
 type GuideCopy = {
@@ -58,10 +48,10 @@ type GuideCopy = {
 };
 
 const chrome: Record<Language, Omit<GuideCopy, "groups" | "intro" | "title" | "titleEm" | "eyebrow">> = {
-  he: { onThisPage: "בעמוד הזה", screens: "מסכים", tipBeginner: "טיפ למתחילים", tipAdvanced: "טיפ למתקדמים", back: "חזרה לאתר", home: "דף הבית", privacy: "פרטיות", terms: "תנאי שימוש", features: "יכולות", architecture: "איך זה עובד" },
-  en: { onThisPage: "On this page", screens: "Screens", tipBeginner: "Beginner tip", tipAdvanced: "Advanced tip", back: "Back to site", home: "Home", privacy: "Privacy", terms: "Terms", features: "Features", architecture: "How it works" },
-  ru: { onThisPage: "На этой странице", screens: "Экраны", tipBeginner: "Совет новичкам", tipAdvanced: "Совет продвинутым", back: "Вернуться на сайт", home: "Главная", privacy: "Приватность", terms: "Условия", features: "Возможности", architecture: "Как это работает" },
-  ar: { onThisPage: "في هذه الصفحة", screens: "الشاشات", tipBeginner: "نصيحة للمبتدئين", tipAdvanced: "نصيحة للمتقدمين", back: "العودة إلى الموقع", home: "الرئيسية", privacy: "الخصوصية", terms: "الشروط", features: "المزايا", architecture: "كيف يعمل" },
+  he: { onThisPage: "נושאים", screens: "נושאים", tipBeginner: "טיפים למתחילים", tipAdvanced: "למתקדמים", back: "חזרה לאתר", home: "דף הבית", privacy: "פרטיות", terms: "תנאי שימוש", features: "יכולות", architecture: "איך זה עובד" },
+  en: { onThisPage: "Topics", screens: "Topics", tipBeginner: "Tips for beginners", tipAdvanced: "For advanced users", back: "Back to site", home: "Home", privacy: "Privacy", terms: "Terms", features: "Features", architecture: "How it works" },
+  ru: { onThisPage: "Темы", screens: "Темы", tipBeginner: "Советы новичкам", tipAdvanced: "Для продвинутых", back: "Вернуться на сайт", home: "Главная", privacy: "Приватность", terms: "Условия", features: "Возможности", architecture: "Как это работает" },
+  ar: { onThisPage: "المواضيع", screens: "المواضيع", tipBeginner: "نصائح للمبتدئين", tipAdvanced: "للمتقدمين", back: "العودة إلى الموقع", home: "الرئيسية", privacy: "الخصوصية", terms: "الشروط", features: "المزايا", architecture: "كيف يعمل" },
 };
 
 const emptyCopy = (language: Language): GuideCopy => ({
@@ -69,12 +59,12 @@ const emptyCopy = (language: Language): GuideCopy => ({
   titleEm: "L Studio.",
   eyebrow: "LEARN / USER GUIDE / L STUDIO",
   intro: language === "he"
-    ? "חמישה מסכים: Sound, Pad, Drum, Loop, ו-Mic. הקשה על שם המסך פותחת אותו. הטקסט אומר מה עושה הקשה, גרירה, או לחיצה ארוכה."
+    ? "בוחרים נושא מהתפריט. כל נושא נגמר בשלושה טיפים למתחילים ובטיפ אחד למתקדמים."
     : language === "ru"
-      ? "Пять экранов: Sound, Pad, Drum, Loop и Mic. Нажатие на имя экрана открывает его. Текст говорит, что делает нажатие, перетаскивание или долгое нажатие."
+      ? "Выберите тему в меню. В конце каждой темы три совета новичкам и один совет для продвинутых."
       : language === "ar"
-        ? "خمس شاشات: Sound وPad وDrum وLoop وMic. الضغط على اسم الشاشة يفتحها. النص يقول ماذا يفعل الضغط أو السحب أو الضغط المطوّل."
-        : "Five screens: Sound, Pad, Drum, Loop, and Mic. A tap on a screen name opens it. The text says what a tap, a drag, or a long-press does.",
+        ? "اختر موضوعاً من القائمة. ينتهي كل موضوع بثلاث نصائح للمبتدئين ونصيحة واحدة للمتقدمين."
+        : "Pick a topic from the menu. Every topic ends with three tips for beginners and one tip for advanced users.",
   ...chrome[language],
   groups: [],
 });
@@ -108,23 +98,98 @@ function sectionShots(section: { media?: string; images?: string[] }) {
   return shots;
 }
 
-function guideEntries(groups: GuideGroup[]) {
-  const entries: Array<{ id: string; title: string; body: string[]; media?: string; images?: string[]; imageAlts?: Record<string, string>; mediaSize?: "thumb" | "panel"; layout?: "steps"; bullets?: string[]; tipBeginner?: string; tipAdvanced?: string; tag?: string; nested: boolean }> = [];
-  for (const group of groups) {
-    entries.push({ ...group, nested: false });
-    for (const section of group.sections ?? []) {
-      entries.push({ ...section, nested: true });
-    }
-  }
-  return entries;
+/** Copy and screenshots of one topic or subtopic. */
+function GuideBlock({ item }: { item: GuideSection }) {
+  const shots = sectionShots(item);
+  return (
+    <div className={shots.length ? "guide-block-main" : "guide-block-main guide-block-main--solo"}>
+      <div className="guide-copy">
+        {(item.body ?? []).map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </div>
+      {shots.length ? (
+        <div className="guide-shots">
+          {shots.map((src) => (
+            <figure className="guide-media guide-media--panel" key={src}>
+              {isPoster(src) ? (
+                <picture>
+                  <source type="image/webp" srcSet={`${mediaUrl(src.replace(/\.jpe?g$/i, ".webp"))}?v=${POSTER_VER}`} />
+                  <img src={`${mediaUrl(src)}?v=${POSTER_VER}`} alt={item.imageAlts?.[src] || item.title} width={POSTER_LARGE.width} height={POSTER_LARGE.height} loading="lazy" decoding="async" />
+                </picture>
+              ) : (
+                <picture>
+                  <source type="image/webp" sizes={PHONE_SIZES} srcSet={`${mediaUrl(src.replace(/\.jpe?g$/i, "-w360.webp"))} 360w, ${mediaUrl(src.replace(/\.jpe?g$/i, ".webp"))} 720w`} />
+                  <img
+                    src={mediaUrl(src)}
+                    srcSet={`${mediaUrl(src.replace(/\.jpe?g$/i, "-w360.jpg"))} 360w, ${mediaUrl(src)} 720w`}
+                    sizes={PHONE_SIZES}
+                    alt={item.imageAlts?.[src] || item.title}
+                    width={item.imageSizes?.[src]?.[0]}
+                    height={item.imageSizes?.[src]?.[1]}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              )}
+            </figure>
+          ))}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+/** Phone screenshots show at 240px on desktop and the full column on phones. */
+const PHONE_SIZES = "(max-width: 720px) 100vw, 240px";
+
+const NAV_OFFSET = 130;
+
+/** Id of the topic and subtopic that are at the top of the viewport. */
+function useActiveGuideIds(ready: boolean) {
+  const [active, setActive] = useState<{ topic: string; sub: string }>({ topic: "", sub: "" });
+  useEffect(() => {
+    if (!ready) return;
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      let topic = "";
+      let sub = "";
+      document.querySelectorAll<HTMLElement>("[data-gtopic]").forEach((el) => {
+        if (el.getBoundingClientRect().top <= NAV_OFFSET) topic = el.dataset.gtopic || "";
+      });
+      document.querySelectorAll<HTMLElement>(`[data-gsub-of="${topic}"]`).forEach((el) => {
+        if (el.getBoundingClientRect().top <= NAV_OFFSET) sub = el.dataset.gsub || "";
+      });
+      if (!topic) topic = document.querySelector<HTMLElement>("[data-gtopic]")?.dataset.gtopic || "";
+      setActive((prev) => (prev.topic === topic && prev.sub === sub ? prev : { topic, sub }));
+    };
+    const onScroll = () => {
+      if (!frame) frame = window.requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
+  }, [ready]);
+  return active;
 }
 
 export default function Guide() {
   const { language, isRtl } = useLanguage();
   const [text, setText] = useState<GuideCopy>(() => emptyCopy(language));
+  const [menuOpen, setMenuOpen] = useState(false);
+  const hashHandled = useRef(false);
+  const ready = text.groups.length > 0;
+  const active = useActiveGuideIds(ready);
 
   useEffect(() => {
     let cancelled = false;
+    hashHandled.current = false;
     setText(emptyCopy(language));
     fetchSiteContent()
       .then((response) => (response.ok ? response.json() : null))
@@ -139,13 +204,33 @@ export default function Guide() {
     };
   }, [language]);
 
+  // The copy loads after the first paint, so a link such as /guide#guide-drum scrolls once it is in.
+  useEffect(() => {
+    if (!ready || hashHandled.current) return;
+    hashHandled.current = true;
+    const id = window.location.hash.replace(/^#/, "");
+    if (!id) return;
+    window.requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: "start" }));
+  }, [ready]);
+
+  const goTo = (event: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    const target = document.getElementById(`guide-${id}`);
+    setMenuOpen(false);
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#guide-${id}`);
+  };
+
+  const currentTopic = text.groups.find((group) => group.id === active.topic) ?? text.groups[0];
+
   return (
     <div className="site-shell guide-page">
       <div className="noise" aria-hidden="true" />
       <header className="site-header">
         <div className="container header-inner">
           <SiteLogo />
-          <nav className="desktop-nav" aria-label={text.onThisPage}>
+          <nav className="desktop-nav" aria-label={guideNavLabel[language]}>
             <Link href="/">{text.home}</Link>
             <a href="/#features">{text.features}</a>
             <a href="/#architecture">{text.architecture}</a>
@@ -177,111 +262,86 @@ export default function Guide() {
           {text.intro ? <p>{text.intro}</p> : null}
           <div className="guide-hero-meta">
             <BookOpen size={16} />
-            <span>{String(guideEntries(text.groups).length).padStart(2, "0")} SECTIONS</span>
+            <span>{String(text.groups.length).padStart(2, "0")} TOPICS</span>
             <span className="guide-hero-sep">·</span>
             <span>BEGINNER + ADVANCED</span>
           </div>
         </section>
 
         <section className="guide-content container">
-          <aside className="guide-aside" dir={isRtl ? "rtl" : "ltr"}>
-            <span className="kicker">{text.screens}</span>
-            <div className="guide-toc">
-              {text.groups.map((group) => (
-                <div className="guide-toc-group" key={group.id}>
-                  <a className="guide-toc-screen" href={`#guide-${group.id}`}>{group.title}</a>
-                  <div className="guide-toc-sub">
-                    {(group.sections ?? []).map((section) => (
-                      <a key={section.id} href={`#guide-${section.id}`}>
-                        <span className="guide-toc-title">{section.title}</span>
+          <aside className={menuOpen ? "guide-aside is-open" : "guide-aside"} dir={isRtl ? "rtl" : "ltr"}>
+            <button type="button" className="gtoc-toggle" aria-expanded={menuOpen} aria-controls="guide-toc" onClick={() => setMenuOpen((open) => !open)}>
+              <span className="gtoc-toggle-label">{text.screens}</span>
+              <span className="gtoc-toggle-current">{currentTopic?.title}</span>
+              <ChevronDown size={16} aria-hidden="true" />
+            </button>
+            <nav className="gtoc" id="guide-toc" aria-label={text.screens}>
+              <span className="kicker gtoc-kicker">{text.screens}</span>
+              <ol className="gtoc-list">
+                {text.groups.map((group, index) => {
+                  const isActive = group.id === active.topic;
+                  return (
+                    <li key={group.id} className={isActive ? "gtoc-item is-active" : "gtoc-item"}>
+                      <a className="gtoc-topic" href={`#guide-${group.id}`} aria-current={isActive ? "true" : undefined} onClick={(event) => goTo(event, group.id)}>
+                        <span className="gtoc-num">{sectionNumber(index)}</span>
+                        <span>{group.title}</span>
                       </a>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
+                      {isActive && group.sections?.length ? (
+                        <ul className="gtoc-subs">
+                          {group.sections.map((section) => (
+                            <li key={section.id}>
+                              <a className={section.id === active.sub ? "is-active" : undefined} href={`#guide-${section.id}`} onClick={(event) => goTo(event, section.id)}>
+                                {section.title}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : null}
+                    </li>
+                  );
+                })}
+              </ol>
+            </nav>
           </aside>
 
           <article className="guide-article" dir={isRtl ? "rtl" : "ltr"}>
-            {guideEntries(text.groups).map((section, index) => {
-              const shots = sectionShots(section);
-              const mediaClass = [
-                "guide-media",
-                section.mediaSize === "thumb" ? "guide-media--thumb" : shots.length ? "guide-media--panel" : "",
-              ]
-                .filter(Boolean)
-                .join(" ");
-              const paragraphs = section.body ?? [];
-              const showTips = Boolean(section.tipBeginner || section.tipAdvanced);
-
-              return (
-                <section className={section.nested ? "guide-block guide-block--sub" : "guide-block"} id={`guide-${section.id}`} key={section.id}>
-                    <div className="guide-block-head">
-                      <span className="guide-number">{sectionNumber(index)}</span>
-                      {section.tag ? <span className="guide-tag">{section.tag}</span> : null}
-                    </div>
-                    <div className="guide-block-body">
-                      <div className={shots.length ? "guide-block-main" : "guide-block-main guide-block-main--solo"}>
-                        <div className="guide-copy">
-                          <h2>{section.title}</h2>
-                          {section.layout === "steps" ? (
-                            <ol className="guide-steps">
-                              {paragraphs.map((step, stepIndex) => (
-                                <li key={`${section.id}-${stepIndex}`}>{step}</li>
-                              ))}
-                            </ol>
-                          ) : (
-                            paragraphs.map((paragraph) => (
-                              <p key={paragraph}>{paragraph}</p>
-                            ))
-                          )}
-                          {section.bullets?.length ? (
-                            <ul className="guide-bullets">
-                              {section.bullets.map((item) => (
-                                <li key={item}>{item}</li>
-                              ))}
-                            </ul>
-                          ) : null}
-                        </div>
-                        {shots.length ? (
-                          <div className="guide-shots">
-                            {shots.map((src) => (
-                              <figure className={mediaClass} key={src}>
-                                {isPoster(src) ? (
-                                  <picture>
-                                    <source type="image/webp" srcSet={`${mediaUrl(src.replace(/\.jpe?g$/i, ".webp"))}?v=${POSTER_VER}`} />
-                                    <img src={`${mediaUrl(src)}?v=${POSTER_VER}`} alt={section.imageAlts?.[src] || section.title} width={POSTER_LARGE.width} height={POSTER_LARGE.height} loading="lazy" decoding="async" />
-                                  </picture>
-                                ) : (
-                                  <img src={mediaUrl(src)} alt={section.imageAlts?.[src] || section.title} loading="lazy" />
-                                )}
-                              </figure>
-                            ))}
-                          </div>
-                        ) : null}
+            {text.groups.map((group, index) => (
+              <section className="gtopic" id={`guide-${group.id}`} data-gtopic={group.id} key={group.id}>
+                <header className="gtopic-head">
+                  <span className="guide-number">{sectionNumber(index)}</span>
+                  <h2>{group.title}</h2>
+                </header>
+                {group.body?.length || sectionShots(group).length ? <GuideBlock item={group} /> : null}
+                {(group.sections ?? []).map((section) => (
+                  <section className="gsub" id={`guide-${section.id}`} data-gsub={section.id} data-gsub-of={group.id} key={section.id}>
+                    <h3>{section.title}</h3>
+                    <GuideBlock item={section} />
+                  </section>
+                ))}
+                {group.tipsBeginner?.length || group.tipAdvanced ? (
+                  <div className="gtips">
+                    {group.tipsBeginner?.length ? (
+                      <div className="guide-tip guide-tip--beginner">
+                        <span className="guide-tip-label">
+                          <Sparkles size={14} /> {text.tipBeginner}
+                        </span>
+                        <ol className="gtips-list">
+                          {group.tipsBeginner.map((tip) => (
+                            <li key={tip}>{tip}</li>
+                          ))}
+                        </ol>
                       </div>
-                      {showTips ? (
-                        <div className="guide-tips">
-                          {section.tipBeginner ? (
-                            <div className="guide-tip guide-tip--beginner">
-                              <span className="guide-tip-label">
-                                <Sparkles size={14} /> {text.tipBeginner}
-                              </span>
-                              <p>{section.tipBeginner}</p>
-                            </div>
-                          ) : null}
-                          {section.tipAdvanced ? (
-                            <div className="guide-tip guide-tip--advanced">
-                              <span className="guide-tip-label">{text.tipAdvanced}</span>
-                              <p>{section.tipAdvanced}</p>
-                            </div>
-                          ) : null}
-                        </div>
-                      ) : null}
-                    </div>
-                </section>
-              );
-            })}
+                    ) : null}
+                    {group.tipAdvanced ? (
+                      <div className="guide-tip guide-tip--advanced">
+                        <span className="guide-tip-label">{text.tipAdvanced}</span>
+                        <p>{group.tipAdvanced}</p>
+                      </div>
+                    ) : null}
+                  </div>
+                ) : null}
+              </section>
+            ))}
           </article>
         </section>
       </main>
