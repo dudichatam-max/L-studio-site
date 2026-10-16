@@ -345,19 +345,39 @@
                 "id": "presets",
                 "title": "Presets",
                 "body": [
-                  "הקשה על Presets פותחת את Presets, עם 8 מקומות. עמודים 1 עד 8 למעלה. הקשה על Edit page name פותחת את השם.",
+                  "הקשה על Presets פותחת את Presets, עם 8 מקומות. עמודים 1 עד 8 למעלה. מתחתיהם שם העמוד ו-Edit page name, ששם משנה אותו.",
                   "לחיצה ארוכה על Presets שומרת את הסאונד הנוכחי בפריסט שטעון, והטלפון כותב Preset saved. אם לא טעון פריסט, כתוב No preset loaded. כשהחלון נפתח, הוא מראה את העמוד של הפריסט הטעון.",
                   "הקשה על Load פותחת את הסאונד השמור במקום. הקשה על Save שומרת את הסאונד הנוכחי שם. הקשה על Edit משנה את השם.",
                   "Save שומר גם את ההגדרות של כל 8 ה-Sound FX ואיזה אפקט דולק. Load מחזיר אותם בדיוק. פריסטים של Factory 64 ופריסטים ישנים נטענים בלי לשנות את ה-Sound FX. Save שומר גם אילו גלים דולקים, ו-Load מדליק אותם שוב. פריסט ישן מדליק רק את הגל האחד שלו.",
-                  "הקשה על Import בוחרת קובץ עמוד. הקשה על Save בשורה התחתונה מבקשת מהטלפון איפה לשמור את העמוד."
-                ]
+                  "מתחת לשם העמוד, Import בוחרת קובץ עמוד ו-Save מבקשת מהטלפון איפה לשמור את העמוד כקובץ."
+                ],
+                "media": "assets/guide/presets-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/presets-phone.jpg": "חלון Presets, 8 slots: מקשי עמודים 1 עד 8 כש-4 מסומן, שם העמוד עם מקש Edit page name, מקשי Import ו-Save, שמונה שורות ממוספרות 1 עד 8 וכל אחת עם Load, Save ו-Edit, שורה אחת מסומנת, ומקש Close."
+                },
+                "imageSizes": {
+                  "assets/guide/presets-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "key",
                 "title": "Key וסקאלות",
                 "body": [
-                  "הקשה על Key פותחת את Scales. הקשה על Scale off מנקה את הסולם. הקשה על שם סולם בוחרת אותו."
-                ]
+                  "הקשה על Key פותחת את Scales. בוחרים Scale off, או תו שורש מ-C עד B תחת Major או Minor. בחירה סוגרת את החלון, ו-Key נשאר דולק כל עוד סולם פעיל."
+                ],
+                "media": "assets/guide/scales-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/scales-phone.jpg": "חלון Scales: מקש Scale off, ואז Major ו-Minor, כל אחד עם התווים C, C#, D, E במול, E, F, F#, G, A במול, A, B במול, B. C Minor מסומן. למטה מקש Close."
+                },
+                "imageSizes": {
+                  "assets/guide/scales-phone.jpg": [
+                    720,
+                    905
+                  ]
+                }
               },
               {
                 "id": "freq",
@@ -487,16 +507,36 @@
                   "הקשה על פריסט בוחרת אותו. הקשה על הפריסט שכבר נבחר מכבה אותו.",
                   "הפריסטים הם Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate, ו-Wire Glitch.",
                   "לחיצה ארוכה פותחת Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לפריסט הזה. Transpose רץ מ-12- עד 12 חצאי טונים. הסליידרים נשארים רק כל עוד הפריסט נשאר נבחר."
-                ]
+                ],
+                "media": "assets/guide/drum-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/drum-fx-phone.jpg": "חלון Drum FX: השורה Long-press a preset for Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb, שמונה אייקונים עגולים של פריסטים מ-Street Boom עד Wire Glitch כש-Street Boom נבחר, ומתחתיהם מחוונים של Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose (0 semitones) ו-Reverb (0%)."
+                },
+                "imageSizes": {
+                  "assets/guide/drum-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "pattern-repeat",
                 "title": "Pattern repeats",
                 "body": [
                   "לחיצה ארוכה על מספר פטרן פותחת את Pattern repeats. השורה מתחת לכותרת אומרת: How many times the pattern repeats before the next.",
-                  "הקשה על 1 עד 10 קובעת את המספר. הקשה על סימן האינסוף משאירה את החזרה. הקשה על Default מנקה את החזרה.",
-                  "מתחת ל-RHYTHM יש COPY ו-PASTE. COPY מעתיק את הקצב הנוכחי. PASTE מדביק אותו לקצב שאתם עליו, והקצב הזה שומר את מספר החזרות, ה-BPM והסווינג שלו. PASTE כבוי עד שמעתיקים."
-                ]
+                  "הקשה על 1 עד 10 קובעת את המספר. הקשה על סימן האינסוף משאירה את החזרה. הקשה על Default מנקה את החזרה. כל בחירה סוגרת את החלון.",
+                  "RHYTHM, עם COPY ו-PASTE, מופיע רק כשפותחים את החלון ממסך Drum. COPY מעתיק את הקצב שלחצתם על המספר שלו לחיצה ארוכה. PASTE מדביק את ההעתק לקצב הזה ומחליף את הצעדים, הסאמפלים, העוצמות, שמאל וימין וכפתורי הסאונד שלו. הקצב הזה שומר את מספר החזרות, ה-BPM והסווינג שלו. REDO יכול לבטל הדבקה. PASTE כבוי עד שמעתיקים. COPY ו-PASTE סוגרים את החלון."
+                ],
+                "media": "assets/guide/pattern-repeats-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/pattern-repeats-phone.jpg": "חלון Pattern repeats 1: השורה How many times the pattern repeats before the next, מקשי Repeats מ-1 עד 10, מקש אינסוף, Default מסומן, מתחת ל-Rhythm מקש Copy ומקש Paste עמום, ו-Close."
+                },
+                "imageSizes": {
+                  "assets/guide/pattern-repeats-phone.jpg": [
+                    720,
+                    955
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -521,11 +561,21 @@
                 "id": "loop-pages",
                 "title": "עמודים וערוצים",
                 "body": [
-                  "הקשה על מספר עמוד, 1 עד 8, מראה את העמוד. לחיצה ארוכה פותחת את Page name. מקלידים שם, בוחרים אחד מ-8 צבעים (כתום, אדום, זהב, חום, ירוק, כחול, סגול, ורוד), ומקישים OK. Reset מוריד את הצבע.",
+                  "הקשה על מספר עמוד, 1 עד 8, מראה את העמוד. לחיצה ארוכה פותחת את Page name. מקלידים שם, בוחרים אחד מ-8 צבעים (כתום, אדום, זהב, חום, ירוק, כחול, סגול, ורוד), ומקישים OK. Reset מוריד את הצבע. Cancel משאיר את השם והצבע הקודמים.",
                   "צבע העמוד ממלא את מספר העמוד וצובע את גלי הערוצים בעמוד הזה.",
                   "שדה השם ליד Redo מראה את שם העמוד שאתם עליו. הקשה בשדה נותנת להקליד שם. השמות והצבעים נשמרים עם פרויקט הלופ וב-Export.",
                   "שם כל ערוץ מתחיל כ-Ch ומספר. הקשה בשם משנה אותו."
-                ]
+                ],
+                "media": "assets/guide/page-name-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/page-name-phone.jpg": "חלון Page name: שדה Name, Page color עם 8 צבעים (כתום, אדום, זהב, חום, ירוק, כחול, סגול, ורוד) כשהאדום מסומן, מקש Reset ומקשי Cancel ו-OK."
+                },
+                "imageSizes": {
+                  "assets/guide/page-name-phone.jpg": [
+                    720,
+                    808
+                  ]
+                }
               },
               {
                 "id": "loop-record",
@@ -573,7 +623,17 @@
                   "הקשה על פריסט בוחרת אותו. הקשה על הפריסט שכבר נבחר מכבה אותו.",
                   "הפריסטים הם Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate, ו-Dust Weave.",
                   "לחיצה ארוכה פותחת Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לפריסט הזה. Transpose רץ מ-12- עד 12 חצאי טונים. הסליידרים נשארים רק כל עוד הפריסט נשאר נבחר."
-                ]
+                ],
+                "media": "assets/guide/looper-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/looper-fx-phone.jpg": "חלון Looper FX: אותה שורת הנחיה, שמונה אייקונים עגולים של פריסטים מ-Hook Glue עד Dust Weave כש-Indie Wash נבחר, ומתחתיהם מחוונים של Amount (91%), EQ Low (66%), EQ Mid (71%), EQ High (57%), Mid-sweep (62%), Transpose (0 semitones) ו-Reverb (36%)."
+                },
+                "imageSizes": {
+                  "assets/guide/looper-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -622,7 +682,17 @@
                   "הקשה על פריסט בוחרת אותו. הקשה על הפריסט שכבר נבחר מכבה אותו.",
                   "הפריסטים הם Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap, ו-Wire Grit.",
                   "לחיצה ארוכה פותחת Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לפריסט הזה. Transpose רץ מ-12- עד 12 חצאי טונים. הסליידרים נשארים רק כל עוד הפריסט נשאר נבחר."
-                ]
+                ],
+                "media": "assets/guide/mic-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/mic-fx-phone.jpg": "חלון Mic FX: אותה שורת הנחיה, שמונה אייקונים עגולים של פריסטים מ-Street Punch עד Wire Grit כש-Street Punch נבחר, ומתחתיהם מחוונים של Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep (כולם 50%), Transpose (0 semitones) ו-Reverb (0%)."
+                },
+                "imageSizes": {
+                  "assets/guide/mic-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "lyrics",
@@ -682,12 +752,22 @@
                   "הקשה על Load פותחת את Load Console.",
                   "כל סשן שמור הוא שורה עם המספר שלו ושמו המלא בשורה אחת. מתחת לשם יש ארבעה מקשים: LOAD, SAVE, EDIT ו-X.",
                   "LOAD טוען את הסשן. לפני שסשן נטען, האפליקציה שואלת קודם ושומרת גיבוי אוטומטי של הפריסטים וקיטי התופים הנוכחיים. ה-Monitor של המיק כבוי אחרי טעינה.",
-                  "SAVE מחליף את הסשן בהגדרה הנוכחית, אחרי שהוא שואל Replace the session with the current console?",
+                  "SAVE מחליף את הסשן בהגדרה הנוכחית, אחרי שמאשרים ב-Overwrite. Cancel סוגר את השאלה.",
                   "EDIT משנה את שם הסשן, ולחיצה ארוכה על השורה עושה אותו דבר. אם השם החדש כבר תפוס, הוא שואל לפני שהוא דורס.",
                   "X מוחק את הסשן, אחרי שהוא שואל Delete session?",
                   "Export all שומר את כל הסשנים בקובץ אחד. Export selected שומר רק את הסשן המסומן בקובץ אחד. Import all ו-Import session שניהם קוראים קובץ שייצאתם. סשן מיובא עם שם שכבר קיים בטלפון מקבל שם חדש במקום להחליף.",
-                  "מקש Load בתחתית טוען את הסשן המסומן, ו-Cancel סוגר את החלון."
-                ]
+                  "הקשה על שורה מסמנת אותה. מקש Load בתחתית טוען את הסשן המסומן, ו-Cancel סוגר את החלון."
+                ],
+                "media": "assets/guide/load-console-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/load-console-phone.jpg": "חלון Load Console: שני סשנים שמורים, בכל אחד מקשי Load, Save, Edit ומקש X אדום, הראשון מסומן. מתחת Export all, Import all, Export selected, Import session ומקשי Cancel ו-Load."
+                },
+                "imageSizes": {
+                  "assets/guide/load-console-phone.jpg": [
+                    720,
+                    810
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -1973,19 +2053,39 @@
                 "id": "presets",
                 "title": "Presets",
                 "body": [
-                  "A tap on Presets opens Presets, with 8 slots. Pages 1 to 8 are at the top. A tap on Edit page name opens the name.",
+                  "A tap on Presets opens Presets, with 8 slots. Pages 1 to 8 are at the top. Under them are the page name and Edit page name, which changes it.",
                   "A long-press on Presets saves the current sound into the preset that is loaded, and the phone says Preset saved. If no preset is loaded, it says No preset loaded. When the window opens, it shows the page of the loaded preset.",
                   "A tap on Load opens the saved sound in that slot. A tap on Save stores the current sound there. A tap on Edit changes the name.",
                   "Save also stores the settings of all 8 Sound FX and which effect is on. Load brings them back exactly. Factory 64 presets and older presets load without changing the Sound FX. Save also stores which waves are on, and Load lights them again. An older preset lights only its one wave.",
-                  "A tap on Import picks a page file. A tap on Save on the bottom row asks the phone where to store the page."
-                ]
+                  "Under the page name, Import picks a page file and Save asks the phone where to store the page as a file."
+                ],
+                "media": "assets/guide/presets-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/presets-phone.jpg": "The Presets, 8 slots window: page keys 1 to 8 with 4 marked, the page name with an Edit page name key, Import and Save keys, eight rows numbered 1 to 8 each with Load, Save, and Edit, one row marked, and a Close key."
+                },
+                "imageSizes": {
+                  "assets/guide/presets-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "key",
                 "title": "Key and scales",
                 "body": [
-                  "A tap on Key opens Scales. A tap on Scale off clears the scale. A tap on a scale name selects it."
-                ]
+                  "A tap on Key opens Scales. Pick Scale off, or a root from C to B under Major or Minor. A pick closes the window, and Key stays lit while a scale is on."
+                ],
+                "media": "assets/guide/scales-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/scales-phone.jpg": "The Scales window: a Scale off key, then Major and Minor, each with the roots C, C#, D, E flat, E, F, F#, G, A flat, A, B flat, B. C Minor is marked. A Close key is at the bottom."
+                },
+                "imageSizes": {
+                  "assets/guide/scales-phone.jpg": [
+                    720,
+                    905
+                  ]
+                }
               },
               {
                 "id": "freq",
@@ -2115,16 +2215,36 @@
                   "A tap on a preset selects it. A tap on the selected preset turns it off.",
                   "The presets are Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate, and Wire Glitch.",
                   "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that preset. Transpose runs from -12 to 12 semitones. Those sliders stay only while that preset stays selected."
-                ]
+                ],
+                "media": "assets/guide/drum-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/drum-fx-phone.jpg": "The Drum FX window: the line Long-press a preset for Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb, eight round preset icons from Street Boom to Wire Glitch with Street Boom selected, and below them sliders for Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose (0 semitones), and Reverb (0%)."
+                },
+                "imageSizes": {
+                  "assets/guide/drum-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "pattern-repeat",
                 "title": "Pattern repeats",
                 "body": [
                   "A long-press on a pattern number opens Pattern repeats. The line under the title reads: How many times the pattern repeats before the next.",
-                  "A tap on 1 through 10 sets that count. A tap on the infinity mark keeps it repeating. A tap on Default clears the repeat.",
-                  "Under RHYTHM there are COPY and PASTE. COPY copies the current rhythm. PASTE puts it into the rhythm you are on, and that rhythm keeps its own repeat count, BPM, and swing. PASTE is off until you copy."
-                ]
+                  "A tap on 1 through 10 sets that count. A tap on the infinity mark keeps it repeating. A tap on Default clears the repeat. Any pick closes the window.",
+                  "RHYTHM, with COPY and PASTE, shows only when you open this window from the Drum screen. COPY copies the rhythm whose number you long-pressed. PASTE puts the copy into that rhythm and replaces its steps, samples, volumes, left and right, and sound knobs. That rhythm keeps its own repeat count, BPM, and swing. REDO can undo a paste. PASTE is off until you copy. COPY and PASTE close the window."
+                ],
+                "media": "assets/guide/pattern-repeats-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/pattern-repeats-phone.jpg": "The Pattern repeats 1 window: the line How many times the pattern repeats before the next, Repeats keys 1 to 10, an infinity key, Default marked, under Rhythm the Copy key and a dimmed Paste key, and Close."
+                },
+                "imageSizes": {
+                  "assets/guide/pattern-repeats-phone.jpg": [
+                    720,
+                    955
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -2149,11 +2269,21 @@
                 "id": "loop-pages",
                 "title": "Pages and channels",
                 "body": [
-                  "A tap on a page number, 1 through 8, shows that page. A long-press opens Page name. Type a name, pick one of 8 colors (orange, red, gold, brown, green, blue, purple, pink), and tap OK. Reset removes the color.",
+                  "A tap on a page number, 1 through 8, shows that page. A long-press opens Page name. Type a name, pick one of 8 colors (orange, red, gold, brown, green, blue, purple, pink), and tap OK. Reset removes the color. Cancel keeps the old name and color.",
                   "The page color fills that page number and colors the channel waves on that page.",
                   "The name field next to Redo shows the name of the page you are on. A tap in it lets you type the name. Names and colors are saved with the loop project and in Export.",
                   "Each channel name starts as Ch and a number. A tap in the name changes it."
-                ]
+                ],
+                "media": "assets/guide/page-name-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/page-name-phone.jpg": "The Page name window: a Name field, Page color with 8 colors (orange, red, gold, brown, green, blue, purple, pink) and red marked, a Reset key, and Cancel and OK keys."
+                },
+                "imageSizes": {
+                  "assets/guide/page-name-phone.jpg": [
+                    720,
+                    808
+                  ]
+                }
               },
               {
                 "id": "loop-record",
@@ -2201,7 +2331,17 @@
                   "A tap on a preset selects it. A tap on the selected preset turns it off.",
                   "The presets are Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate, and Dust Weave.",
                   "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that preset. Transpose runs from -12 to 12 semitones. Those sliders stay only while that preset stays selected."
-                ]
+                ],
+                "media": "assets/guide/looper-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/looper-fx-phone.jpg": "The Looper FX window: the same hint line, eight round preset icons from Hook Glue to Dust Weave with Indie Wash selected, and below them sliders for Amount (91%), EQ Low (66%), EQ Mid (71%), EQ High (57%), Mid-sweep (62%), Transpose (0 semitones), and Reverb (36%)."
+                },
+                "imageSizes": {
+                  "assets/guide/looper-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -2250,7 +2390,17 @@
                   "A tap on a preset selects it. A tap on the selected preset turns it off.",
                   "The presets are Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap, and Wire Grit.",
                   "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that preset. Transpose runs from -12 to 12 semitones. Those sliders stay only while that preset stays selected."
-                ]
+                ],
+                "media": "assets/guide/mic-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/mic-fx-phone.jpg": "The Mic FX window: the same hint line, eight round preset icons from Street Punch to Wire Grit with Street Punch selected, and below them sliders for Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep (all 50%), Transpose (0 semitones), and Reverb (0%)."
+                },
+                "imageSizes": {
+                  "assets/guide/mic-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "lyrics",
@@ -2310,12 +2460,22 @@
                   "A tap on Load opens Load Console.",
                   "Each saved session is a row with its number and its full name on one line. Under the name are four keys: LOAD, SAVE, EDIT, and X.",
                   "LOAD loads that session. Before a session loads, the app asks first and keeps an automatic backup of the current presets and drum kits. Mic monitor is off after a load.",
-                  "SAVE replaces that session with the current setup, after it asks Replace the session with the current console?",
+                  "SAVE replaces that session with the current setup, after you confirm with Overwrite. Cancel closes the question.",
                   "EDIT renames the session, and a long-press on the row does the same. If the new name is already taken, it asks before it overwrites.",
                   "X deletes the session, after it asks Delete session?",
                   "Export all saves every session as one file. Export selected saves only the highlighted session as one file. Import all and Import session both read a file you exported. An imported session with the same name as one on the phone gets a new name instead of replacing it.",
-                  "The Load key at the bottom loads the highlighted session, and Cancel closes the window."
-                ]
+                  "A tap on a row highlights it. The Load key at the bottom loads the highlighted session, and Cancel closes the window."
+                ],
+                "media": "assets/guide/load-console-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/load-console-phone.jpg": "The Load Console window: two saved sessions, each with Load, Save, Edit, and a red X key, the first one highlighted. Below are Export all, Import all, Export selected, Import session, and the Cancel and Load keys."
+                },
+                "imageSizes": {
+                  "assets/guide/load-console-phone.jpg": [
+                    720,
+                    810
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -3601,19 +3761,39 @@
                 "id": "presets",
                 "title": "Presets",
                 "body": [
-                  "Нажатие на Presets открывает Presets, с 8 местами. Страницы 1 до 8 сверху. Нажатие на Edit page name открывает имя.",
+                  "Нажатие на Presets открывает Presets, с 8 местами. Страницы 1 до 8 сверху. Под ними имя страницы и Edit page name, которое его меняет.",
                   "Долгое нажатие на Presets сохраняет текущий звук в загруженный пресет, и телефон пишет Preset saved. Если пресет не загружен, он пишет No preset loaded. Окно открывается на странице загруженного пресета.",
                   "Нажатие на Load открывает сохранённый звук в этом месте. Нажатие на Save кладёт туда текущий звук. Нажатие на Edit меняет имя.",
                   "Save также сохраняет настройки всех 8 Sound FX и то, какой эффект включён. Load возвращает их точно. Пресеты Factory 64 и старые пресеты загружаются, не меняя Sound FX. Save также сохраняет, какие волны включены, и Load включает их снова. Старый пресет включает только свою одну волну.",
-                  "Нажатие на Import выбирает файл страницы. Нажатие на Save в нижней строке спрашивает телефон, куда сохранить страницу."
-                ]
+                  "Под именем страницы Import выбирает файл страницы, а Save спрашивает телефон, куда сохранить страницу как файл."
+                ],
+                "media": "assets/guide/presets-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/presets-phone.jpg": "Окно Presets, 8 slots: клавиши страниц 1 до 8, отмечена 4, имя страницы с клавишей Edit page name, клавиши Import и Save, восемь строк с номерами 1 до 8, в каждой Load, Save и Edit, одна строка отмечена, и клавиша Close."
+                },
+                "imageSizes": {
+                  "assets/guide/presets-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "key",
                 "title": "Key и гаммы",
                 "body": [
-                  "Нажатие на Key открывает Scales. Нажатие на Scale off снимает лад. Нажатие на имя лада выбирает его."
-                ]
+                  "Нажатие на Key открывает Scales. Выберите Scale off или основной тон от C до B в Major или Minor. Выбор закрывает окно, а Key остаётся подсвеченным, пока лад включён."
+                ],
+                "media": "assets/guide/scales-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/scales-phone.jpg": "Окно Scales: клавиша Scale off, затем Major и Minor, в каждом основные тоны C, C#, D, E бемоль, E, F, F#, G, A бемоль, A, B бемоль, B. Отмечен C Minor. Внизу клавиша Close."
+                },
+                "imageSizes": {
+                  "assets/guide/scales-phone.jpg": [
+                    720,
+                    905
+                  ]
+                }
               },
               {
                 "id": "freq",
@@ -3743,16 +3923,36 @@
                   "Нажатие на пресет выбирает его. Нажатие на уже выбранный пресет выключает его.",
                   "Пресеты: Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate и Wire Glitch.",
                   "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого пресета. Transpose идёт от -12 до 12 полутонов. Эти слайдеры остаются, только пока пресет остаётся выбранным."
-                ]
+                ],
+                "media": "assets/guide/drum-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/drum-fx-phone.jpg": "Окно Drum FX: строка Long-press a preset for Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb, восемь круглых значков пресетов от Street Boom до Wire Glitch, выбран Street Boom, а под ними ползунки Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose (0 semitones) и Reverb (0%)."
+                },
+                "imageSizes": {
+                  "assets/guide/drum-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "pattern-repeat",
                 "title": "Pattern repeats",
                 "body": [
                   "Долгое нажатие на номер паттерна открывает Pattern repeats. Строка под заголовком говорит: How many times the pattern repeats before the next.",
-                  "Нажатие от 1 до 10 задаёт это число. Нажатие на знак бесконечности оставляет повтор. Нажатие на Default снимает повтор.",
-                  "Под RHYTHM есть COPY и PASTE. COPY копирует текущий ритм. PASTE вставляет его в ритм, на котором вы находитесь, и этот ритм сохраняет своё число повторов, BPM и свинг. PASTE выключена, пока вы ничего не скопировали."
-                ]
+                  "Нажатие от 1 до 10 задаёт это число. Нажатие на знак бесконечности оставляет повтор. Нажатие на Default снимает повтор. Любой выбор закрывает окно.",
+                  "RHYTHM с COPY и PASTE показывается, только когда окно открыто с экрана Drum. COPY копирует ритм, на номере которого вы сделали долгое нажатие. PASTE вставляет копию в этот ритм и заменяет его шаги, сэмплы, громкости, левое и правое и ручки звука. Этот ритм сохраняет своё число повторов, BPM и свинг. REDO может отменить вставку. PASTE выключена, пока вы ничего не скопировали. COPY и PASTE закрывают окно."
+                ],
+                "media": "assets/guide/pattern-repeats-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/pattern-repeats-phone.jpg": "Окно Pattern repeats 1: строка How many times the pattern repeats before the next, клавиши Repeats от 1 до 10, клавиша бесконечности, отмечен Default, под Rhythm клавиша Copy и приглушённая Paste, и Close."
+                },
+                "imageSizes": {
+                  "assets/guide/pattern-repeats-phone.jpg": [
+                    720,
+                    955
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -3777,11 +3977,21 @@
                 "id": "loop-pages",
                 "title": "Страницы и каналы",
                 "body": [
-                  "Нажатие на номер страницы, от 1 до 8, показывает страницу. Долгое нажатие открывает Page name. Введите имя, выберите один из 8 цветов (оранжевый, красный, золотой, коричневый, зелёный, синий, фиолетовый, розовый) и нажмите OK. Reset убирает цвет.",
+                  "Нажатие на номер страницы, от 1 до 8, показывает страницу. Долгое нажатие открывает Page name. Введите имя, выберите один из 8 цветов (оранжевый, красный, золотой, коричневый, зелёный, синий, фиолетовый, розовый) и нажмите OK. Reset убирает цвет. Cancel оставляет прежние имя и цвет.",
                   "Цвет страницы заполняет её номер и окрашивает волны каналов на этой странице.",
                   "Поле имени рядом с Redo показывает имя текущей страницы. Нажатие в поле позволяет ввести имя. Имена и цвета сохраняются вместе с проектом лупера и в Export.",
                   "Имя каждого канала начинает как Ch и число. Нажатие в имени меняет его."
-                ]
+                ],
+                "media": "assets/guide/page-name-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/page-name-phone.jpg": "Окно Page name: поле Name, Page color с 8 цветами (оранжевый, красный, золотой, коричневый, зелёный, синий, фиолетовый, розовый), отмечен красный, клавиша Reset и клавиши Cancel и OK."
+                },
+                "imageSizes": {
+                  "assets/guide/page-name-phone.jpg": [
+                    720,
+                    808
+                  ]
+                }
               },
               {
                 "id": "loop-record",
@@ -3829,7 +4039,17 @@
                   "Нажатие на пресет выбирает его. Нажатие на уже выбранный пресет выключает его.",
                   "Пресеты: Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate и Dust Weave.",
                   "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого пресета. Transpose идёт от -12 до 12 полутонов. Эти слайдеры остаются, только пока пресет остаётся выбранным."
-                ]
+                ],
+                "media": "assets/guide/looper-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/looper-fx-phone.jpg": "Окно Looper FX: та же строка подсказки, восемь круглых значков пресетов от Hook Glue до Dust Weave, выбран Indie Wash, а под ними ползунки Amount (91%), EQ Low (66%), EQ Mid (71%), EQ High (57%), Mid-sweep (62%), Transpose (0 semitones) и Reverb (36%)."
+                },
+                "imageSizes": {
+                  "assets/guide/looper-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -3878,7 +4098,17 @@
                   "Нажатие на пресет выбирает его. Нажатие на уже выбранный пресет выключает его.",
                   "Пресеты: Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap и Wire Grit.",
                   "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого пресета. Transpose идёт от -12 до 12 полутонов. Эти слайдеры остаются, только пока пресет остаётся выбранным."
-                ]
+                ],
+                "media": "assets/guide/mic-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/mic-fx-phone.jpg": "Окно Mic FX: та же строка подсказки, восемь круглых значков пресетов от Street Punch до Wire Grit, выбран Street Punch, а под ними ползунки Amount (72%), EQ Low, EQ Mid, EQ High, Mid-sweep (все 50%), Transpose (0 semitones) и Reverb (0%)."
+                },
+                "imageSizes": {
+                  "assets/guide/mic-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "lyrics",
@@ -3938,12 +4168,22 @@
                   "Нажатие на Load открывает Load Console.",
                   "Каждая сохранённая сессия это строка с номером и полным именем в одну строку. Под именем четыре клавиши: LOAD, SAVE, EDIT и X.",
                   "LOAD загружает сессию. Перед загрузкой приложение сначала спрашивает и автоматически сохраняет копию текущих пресетов и наборов ударных. После загрузки Monitor микрофона выключен.",
-                  "SAVE заменяет сессию текущей настройкой, после вопроса Replace the session with the current console?",
+                  "SAVE заменяет сессию текущей настройкой после подтверждения Overwrite. Cancel закрывает вопрос.",
                   "EDIT переименовывает сессию, и долгое нажатие на строку делает то же самое. Если новое имя уже занято, приложение спрашивает перед заменой.",
                   "X удаляет сессию после вопроса Delete session?",
                   "Export all сохраняет все сессии одним файлом. Export selected сохраняет одним файлом только выделенную сессию. Import all и Import session оба читают файл, который вы экспортировали. Импортированная сессия с тем же именем, что уже есть на телефоне, получает новое имя и ничего не заменяет.",
-                  "Клавиша Load внизу загружает выделенную сессию, а Cancel закрывает окно."
-                ]
+                  "Нажатие на строку выделяет её. Клавиша Load внизу загружает выделенную сессию, а Cancel закрывает окно."
+                ],
+                "media": "assets/guide/load-console-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/load-console-phone.jpg": "Окно Load Console: две сохранённые сессии, в каждой клавиши Load, Save, Edit и красный X, первая выделена. Ниже Export all, Import all, Export selected, Import session и клавиши Cancel и Load."
+                },
+                "imageSizes": {
+                  "assets/guide/load-console-phone.jpg": [
+                    720,
+                    810
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -5229,19 +5469,39 @@
                 "id": "presets",
                 "title": "Presets",
                 "body": [
-                  "الضغط على Presets يفتح Presets، مع 8 خانات. الصفحات 1 إلى 8 في الأعلى. الضغط على Edit page name يفتح الاسم.",
+                  "الضغط على Presets يفتح Presets، مع 8 خانات. الصفحات 1 إلى 8 في الأعلى. تحتها اسم الصفحة وEdit page name الذي يغيّره.",
                   "الضغط المطوّل على Presets يحفظ الصوت الحالي في الإعداد المحمّل، ويكتب الهاتف Preset saved. إذا لم يكن هناك إعداد محمّل، يكتب No preset loaded. عند فتح النافذة تظهر صفحة الإعداد المحمّل.",
                   "الضغط على Load يفتح الصوت المحفوظ في الخانة. الضغط على Save يخزّن الصوت الحالي هناك. الضغط على Edit يغيّر الاسم.",
                   "Save يحفظ أيضاً إعدادات مؤثرات Sound FX الثمانية وأي مؤثر يعمل. Load يعيدها كما هي. إعدادات Factory 64 والإعدادات القديمة تُحمَّل دون تغيير Sound FX. Save يحفظ أيضاً أي الموجات مفعّلة، وLoad يفعّلها من جديد. الإعداد القديم يفعّل موجته الواحدة فقط.",
-                  "الضغط على Import يختار ملف صفحة. الضغط على Save في الصف السفلي يسأل الهاتف أين يحفظ الصفحة."
-                ]
+                  "تحت اسم الصفحة، Import يختار ملف صفحة وSave يسأل الهاتف أين يحفظ الصفحة كملف."
+                ],
+                "media": "assets/guide/presets-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/presets-phone.jpg": "نافذة Presets, 8 slots: مفاتيح الصفحات 1 إلى 8 والرقم 4 محدد، واسم الصفحة مع مفتاح Edit page name، ومفتاحا Import وSave، وثمانية صفوف مرقمة 1 إلى 8 في كل منها Load وSave وEdit، وصف واحد محدد، ومفتاح Close."
+                },
+                "imageSizes": {
+                  "assets/guide/presets-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "key",
                 "title": "Key والسلالم",
                 "body": [
-                  "الضغط على Key يفتح Scales. الضغط على Scale off يمسح السلم. الضغط على اسم سلم يختاره."
-                ]
+                  "الضغط على Key يفتح Scales. اختر Scale off، أو نغمة أساس من C إلى B تحت Major أو Minor. الاختيار يغلق النافذة، ويبقى Key مضاءً ما دام سلم مفعّلاً."
+                ],
+                "media": "assets/guide/scales-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/scales-phone.jpg": "نافذة Scales: مفتاح Scale off، ثم Major وMinor، في كل منهما النغمات C وC# وD وE بيمول وE وF وF# وG وA بيمول وA وB بيمول وB. C Minor محدد. في الأسفل مفتاح Close."
+                },
+                "imageSizes": {
+                  "assets/guide/scales-phone.jpg": [
+                    720,
+                    905
+                  ]
+                }
               },
               {
                 "id": "freq",
@@ -5371,16 +5631,36 @@
                   "الضغط على إعداد يختاره. الضغط على الإعداد المختار يوقفه.",
                   "الإعدادات هي Street Boom وVinyl Dust وSoft Chamber وPsy Drive وTechno Crush وTribal Bloom وGoa Gate وWire Glitch.",
                   "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لذلك الإعداد. Transpose يجري من -12 إلى 12 نصف درجة. تبقى هذه المنزلقات فقط ما دام الإعداد مختاراً."
-                ]
+                ],
+                "media": "assets/guide/drum-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/drum-fx-phone.jpg": "نافذة Drum FX: السطر Long-press a preset for Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb، وثماني أيقونات دائرية للإعدادات من Street Boom إلى Wire Glitch وStreet Boom محدد، وتحتها منزلقات Amount (72%) وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose (0 semitones) وReverb (0%)."
+                },
+                "imageSizes": {
+                  "assets/guide/drum-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "pattern-repeat",
                 "title": "Pattern repeats",
                 "body": [
                   "الضغط المطوّل على رقم نمط يفتح Pattern repeats. السطر تحت العنوان يقول: How many times the pattern repeats before the next.",
-                  "الضغط من 1 إلى 10 يحدد هذا العدد. الضغط على علامة اللانهاية يبقي التكرار. الضغط على Default يمسح التكرار.",
-                  "تحت RHYTHM يوجد COPY وPASTE. COPY ينسخ الإيقاع الحالي. PASTE يلصقه في الإيقاع الذي أنت عليه، ويحتفظ ذلك الإيقاع بعدد تكراره وBPM والسوينغ الخاصة به. يبقى PASTE معطلًا حتى تنسخ."
-                ]
+                  "الضغط من 1 إلى 10 يحدد هذا العدد. الضغط على علامة اللانهاية يبقي التكرار. الضغط على Default يمسح التكرار. أي اختيار يغلق النافذة.",
+                  "يظهر RHYTHM مع COPY وPASTE فقط عند فتح النافذة من شاشة Drum. COPY ينسخ الإيقاع الذي ضغطت على رقمه ضغطاً مطوّلاً. PASTE يضع النسخة في ذلك الإيقاع ويستبدل خطواته وعيناته وأحجامه واليسار واليمين ومقابض الصوت فيه. يحتفظ ذلك الإيقاع بعدد تكراره وBPM والسوينغ الخاصة به. يستطيع REDO التراجع عن اللصق. يبقى PASTE معطلاً حتى تنسخ. COPY وPASTE يغلقان النافذة."
+                ],
+                "media": "assets/guide/pattern-repeats-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/pattern-repeats-phone.jpg": "نافذة Pattern repeats 1: السطر How many times the pattern repeats before the next، ومفاتيح Repeats من 1 إلى 10، ومفتاح اللانهاية، وDefault محدد، وتحت Rhythm مفتاح Copy ومفتاح Paste خافت، وClose."
+                },
+                "imageSizes": {
+                  "assets/guide/pattern-repeats-phone.jpg": [
+                    720,
+                    955
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -5405,11 +5685,21 @@
                 "id": "loop-pages",
                 "title": "الصفحات والقنوات",
                 "body": [
-                  "الضغط على رقم صفحة، من 1 إلى 8، يعرض الصفحة. الضغط المطوّل يفتح Page name. اكتب اسماً، واختر لوناً من 8 ألوان (برتقالي، أحمر، ذهبي، بني، أخضر، أزرق، بنفسجي، وردي)، ثم اضغط OK. Reset يزيل اللون.",
+                  "الضغط على رقم صفحة، من 1 إلى 8، يعرض الصفحة. الضغط المطوّل يفتح Page name. اكتب اسماً، واختر لوناً من 8 ألوان (برتقالي، أحمر، ذهبي، بني، أخضر، أزرق، بنفسجي، وردي)، ثم اضغط OK. Reset يزيل اللون. Cancel يُبقي الاسم واللون السابقين.",
                   "لون الصفحة يملأ رقمها ويلوّن موجات القنوات في تلك الصفحة.",
                   "حقل الاسم بجانب Redo يعرض اسم الصفحة التي أنت عليها. الضغط في الحقل يتيح كتابة الاسم. الأسماء والألوان تُحفظ مع مشروع اللوب وفي Export.",
                   "اسم كل قناة يبدأ Ch ورقماً. الضغط في الاسم يغيّره."
-                ]
+                ],
+                "media": "assets/guide/page-name-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/page-name-phone.jpg": "نافذة Page name: حقل Name، وPage color بثمانية ألوان (برتقالي، أحمر، ذهبي، بني، أخضر، أزرق، بنفسجي، وردي) والأحمر محدد، ومفتاح Reset ومفتاحا Cancel وOK."
+                },
+                "imageSizes": {
+                  "assets/guide/page-name-phone.jpg": [
+                    720,
+                    808
+                  ]
+                }
               },
               {
                 "id": "loop-record",
@@ -5457,7 +5747,17 @@
                   "الضغط على إعداد يختاره. الضغط على الإعداد المختار يوقفه.",
                   "الإعدادات هي Hook Glue وSpoken Soft وIndie Wash وTrance Stack وPhrase Throw وDouble Lane وPulse Gate وDust Weave.",
                   "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لذلك الإعداد. Transpose يجري من -12 إلى 12 نصف درجة. تبقى هذه المنزلقات فقط ما دام الإعداد مختاراً."
-                ]
+                ],
+                "media": "assets/guide/looper-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/looper-fx-phone.jpg": "نافذة Looper FX: سطر التلميح نفسه، وثماني أيقونات دائرية للإعدادات من Hook Glue إلى Dust Weave وIndie Wash محدد، وتحتها منزلقات Amount (91%) وEQ Low (66%) وEQ Mid (71%) وEQ High (57%) وMid-sweep (62%) وTranspose (0 semitones) وReverb (36%)."
+                },
+                "imageSizes": {
+                  "assets/guide/looper-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
@@ -5506,7 +5806,17 @@
                   "الضغط على إعداد يختاره. الضغط على الإعداد المختار يوقفه.",
                   "الإعدادات هي Street Punch وPhone Line وTalk Clarity وNeon Throw وPulse Delay وTwin Voice وGarage Slap وWire Grit.",
                   "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لذلك الإعداد. Transpose يجري من -12 إلى 12 نصف درجة. تبقى هذه المنزلقات فقط ما دام الإعداد مختاراً."
-                ]
+                ],
+                "media": "assets/guide/mic-fx-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/mic-fx-phone.jpg": "نافذة Mic FX: سطر التلميح نفسه، وثماني أيقونات دائرية للإعدادات من Street Punch إلى Wire Grit وStreet Punch محدد، وتحتها منزلقات Amount (72%) وEQ Low وEQ Mid وEQ High وMid-sweep (كلها 50%) وTranspose (0 semitones) وReverb (0%)."
+                },
+                "imageSizes": {
+                  "assets/guide/mic-fx-phone.jpg": [
+                    720,
+                    1472
+                  ]
+                }
               },
               {
                 "id": "lyrics",
@@ -5566,12 +5876,22 @@
                   "الضغط على Load يفتح Load Console.",
                   "كل جلسة محفوظة صف برقمها واسمها الكامل في سطر واحد. تحت الاسم أربعة مفاتيح: LOAD وSAVE وEDIT وX.",
                   "LOAD يحمّل الجلسة. قبل تحميل جلسة، يسأل التطبيق أولاً ويحفظ نسخة احتياطية تلقائية من الإعدادات وأطقم الطبول الحالية. Monitor الميكروفون متوقف بعد التحميل.",
-                  "SAVE يستبدل الجلسة بالإعداد الحالي، بعد أن يسأل Replace the session with the current console?",
+                  "SAVE يستبدل الجلسة بالإعداد الحالي بعد أن تؤكد بـ Overwrite. Cancel يغلق السؤال.",
                   "EDIT يغيّر اسم الجلسة، والضغط المطول على الصف يفعل الشيء نفسه. إذا كان الاسم الجديد مأخوذاً، يسأل قبل أن يستبدل.",
                   "X يحذف الجلسة، بعد أن يسأل Delete session?",
                   "Export all يحفظ كل الجلسات في ملف واحد. Export selected يحفظ الجلسة المحددة فقط في ملف واحد. Import all وImport session كلاهما يقرأ ملفاً صدّرته. الجلسة المستوردة التي لها اسم موجود على الهاتف تحصل على اسم جديد بدل أن تحل محله.",
-                  "مفتاح Load في الأسفل يحمّل الجلسة المحددة، وCancel يغلق النافذة."
-                ]
+                  "الضغط على صف يحدده. مفتاح Load في الأسفل يحمّل الجلسة المحددة، وCancel يغلق النافذة."
+                ],
+                "media": "assets/guide/load-console-phone.jpg",
+                "imageAlts": {
+                  "assets/guide/load-console-phone.jpg": "نافذة Load Console: جلستان محفوظتان، في كل منهما مفاتيح Load وSave وEdit ومفتاح X أحمر، والأولى محددة. تحتهما Export all وImport all وExport selected وImport session ومفتاحا Cancel وLoad."
+                },
+                "imageSizes": {
+                  "assets/guide/load-console-phone.jpg": [
+                    720,
+                    810
+                  ]
+                }
               }
             ],
             "tipsBeginner": [
