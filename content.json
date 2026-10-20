@@ -658,12 +658,12 @@
                   "הקשה על 1 עד 10 קובעת את המספר. למספר גבוה יותר מקלידים 1 עד 88 בשדה שליד סימן האינסוף ומאשרים במקלדת של הטלפון. מספר מעל 88 הופך ל-88. הקשה על סימן האינסוף משאירה את החזרה. הקשה על Default מנקה את החזרה. כל בחירה סוגרת את החלון.",
                   "RHYTHM, עם COPY ו-PASTE, מופיע רק כשפותחים את החלון ממסך Drum. COPY מעתיק את הקצב שלחצתם על המספר שלו לחיצה ארוכה. PASTE מדביק את ההעתק לקצב הזה ומחליף את הצעדים, הסאמפלים, העוצמות, שמאל וימין וכפתורי הסאונד שלו. הקצב הזה שומר את מספר החזרות, ה-BPM והסווינג שלו. REDO יכול לבטל הדבקה. PASTE כבוי עד שמעתיקים. COPY ו-PASTE סוגרים את החלון."
                 ],
-                "media": "assets/guide/keep-playing-phone.jpg",
+                "media": "assets/guide/drum-repeats-phone.jpg",
                 "imageAlts": {
-                  "assets/guide/keep-playing-phone.jpg": "החלון PATTERN REPEATS 1 של 1.11, כאן מה-Looper: מקשי 1 עד 10, שדה שכתוב בו 1-88, אינסוף דולק, DEFAULT ו-CLOSE. כשפותחים אותו ממסך Drum, באותו חלון יש RHYTHM עם COPY ו-PASTE במקום המקש KEEP PLAYING שרואים כאן."
+                  "assets/guide/drum-repeats-phone.jpg": "החלון PATTERN REPEATS 1 ממסך Drum: מקשי 1 עד 10, השדה 1-88 שמציג 88, אינסוף, DEFAULT, RHYTHM עם COPY ו-PASTE כבוי, ו-CLOSE."
                 },
                 "imageSizes": {
-                  "assets/guide/keep-playing-phone.jpg": [
+                  "assets/guide/drum-repeats-phone.jpg": [
                     720,
                     1472
                   ]
@@ -2686,12 +2686,12 @@
                   "A tap on 1 through 10 sets that count. For a higher count, type 1 to 88 in the field beside the infinity mark and confirm on the phone keyboard. A number above 88 becomes 88. A tap on the infinity mark keeps it repeating. A tap on Default clears the repeat. Any pick closes the window.",
                   "RHYTHM, with COPY and PASTE, shows only when you open this window from the Drum screen. COPY copies the rhythm whose number you long-pressed. PASTE puts the copy into that rhythm and replaces its steps, samples, volumes, left and right, and sound knobs. That rhythm keeps its own repeat count, BPM, and swing. REDO can undo a paste. PASTE is off until you copy. COPY and PASTE close the window."
                 ],
-                "media": "assets/guide/keep-playing-phone.jpg",
+                "media": "assets/guide/drum-repeats-phone.jpg",
                 "imageAlts": {
-                  "assets/guide/keep-playing-phone.jpg": "The 1.11 PATTERN REPEATS 1 window, shown here from the Looper: keys 1 to 10, a field marked 1-88, infinity lit, DEFAULT and CLOSE. Opened from the Drum screen, the same window has RHYTHM with COPY and PASTE in place of the KEEP PLAYING key seen here."
+                  "assets/guide/drum-repeats-phone.jpg": "The PATTERN REPEATS 1 window from the Drum screen: keys 1 to 10, the 1-88 field showing 88, infinity, DEFAULT, RHYTHM with COPY and a dimmed PASTE, and CLOSE."
                 },
                 "imageSizes": {
-                  "assets/guide/keep-playing-phone.jpg": [
+                  "assets/guide/drum-repeats-phone.jpg": [
                     720,
                     1472
                   ]
@@ -4714,12 +4714,12 @@
                   "Нажатие от 1 до 10 задаёт это число. Для большего числа введите от 1 до 88 в поле рядом со знаком бесконечности и подтвердите на клавиатуре телефона. Число больше 88 становится 88. Нажатие на знак бесконечности оставляет повтор. Нажатие на Default снимает повтор. Любой выбор закрывает окно.",
                   "RHYTHM с COPY и PASTE показывается, только когда окно открыто с экрана Drum. COPY копирует ритм, на номере которого вы сделали долгое нажатие. PASTE вставляет копию в этот ритм и заменяет его шаги, сэмплы, громкости, левое и правое и ручки звука. Этот ритм сохраняет своё число повторов, BPM и свинг. REDO может отменить вставку. PASTE выключена, пока вы ничего не скопировали. COPY и PASTE закрывают окно."
                 ],
-                "media": "assets/guide/keep-playing-phone.jpg",
+                "media": "assets/guide/drum-repeats-phone.jpg",
                 "imageAlts": {
-                  "assets/guide/keep-playing-phone.jpg": "Окно PATTERN REPEATS 1 в 1.11, здесь из Looper: клавиши от 1 до 10, поле с надписью 1-88, горящая бесконечность, DEFAULT и CLOSE. Если открыть его с экрана Drum, в том же окне вместо клавиши KEEP PLAYING, которая видна здесь, есть RHYTHM с COPY и PASTE."
+                  "assets/guide/drum-repeats-phone.jpg": "Окно PATTERN REPEATS 1 с экрана Drum: клавиши от 1 до 10, поле 1-88 со значением 88, бесконечность, DEFAULT, RHYTHM с COPY и неактивной PASTE и CLOSE."
                 },
                 "imageSizes": {
-                  "assets/guide/keep-playing-phone.jpg": [
+                  "assets/guide/drum-repeats-phone.jpg": [
                     720,
                     1472
                   ]
@@ -6742,12 +6742,12 @@
                   "الضغط من 1 إلى 10 يحدد هذا العدد. لعدد أكبر، اكتب من 1 إلى 88 في الخانة بجانب علامة اللانهاية ثم أكّد من لوحة مفاتيح الهاتف. العدد الأكبر من 88 يصبح 88. الضغط على علامة اللانهاية يبقي التكرار. الضغط على Default يمسح التكرار. أي اختيار يغلق النافذة.",
                   "يظهر RHYTHM مع COPY وPASTE فقط عند فتح النافذة من شاشة Drum. COPY ينسخ الإيقاع الذي ضغطت على رقمه ضغطاً مطوّلاً. PASTE يضع النسخة في ذلك الإيقاع ويستبدل خطواته وعيناته وأحجامه واليسار واليمين ومقابض الصوت فيه. يحتفظ ذلك الإيقاع بعدد تكراره وBPM والسوينغ الخاصة به. يستطيع REDO التراجع عن اللصق. يبقى PASTE معطلاً حتى تنسخ. COPY وPASTE يغلقان النافذة."
                 ],
-                "media": "assets/guide/keep-playing-phone.jpg",
+                "media": "assets/guide/drum-repeats-phone.jpg",
                 "imageAlts": {
-                  "assets/guide/keep-playing-phone.jpg": "نافذة PATTERN REPEATS 1 في 1.11، هنا من Looper: المفاتيح من 1 إلى 10، وخانة مكتوب فيها 1-88، واللانهاية مضاءة، وDEFAULT وCLOSE. عند فتحها من شاشة Drum، تحتوي النافذة نفسها على RHYTHM مع COPY وPASTE بدلاً من مفتاح KEEP PLAYING الظاهر هنا."
+                  "assets/guide/drum-repeats-phone.jpg": "نافذة PATTERN REPEATS 1 من شاشة Drum: المفاتيح من 1 إلى 10، وخانة 1-88 تعرض 88، واللانهاية، وDEFAULT، وRHYTHM مع COPY وPASTE غير مفعّل، وCLOSE."
                 },
                 "imageSizes": {
-                  "assets/guide/keep-playing-phone.jpg": [
+                  "assets/guide/drum-repeats-phone.jpg": [
                     720,
                     1472
                   ]
