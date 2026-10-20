@@ -563,9 +563,10 @@
               "לכל שורה יש 16 צעדים. הקשה מדליקה או מכבה צעד.",
               "REDO, בשורה העליונה של התופים, חוזר אחורה בשינויים שעשיתם בתופים: צעדים, סאמפלים, עוצמות, שמאל וימין, כפתורי הסאונד והקצב. כל הקשה חוזרת צעד אחד."
             ],
-            "media": "assets/posters/he/p07-drums-w630.jpg",
+            "media": "assets/guide/drum-tab-phone.jpg",
             "imageAlts": {
-              "assets/posters/he/p07-drums-w630.jpg": "פוסטר: בנו את הקצב. מסך Drum עם עד 8 ערוצים ו-16 צעדים, ודגימה מובנית לכל ערוץ ולכל קצב."
+              "assets/posters/he/p07-drums-w630.jpg": "פוסטר: בנו את הקצב. מסך Drum עם עד 8 ערוצים ו-16 צעדים, ודגימה מובנית לכל ערוץ ולכל קצב.",
+              "assets/guide/drum-tab-phone.jpg": "מסך Drum עם הקיט Vinyl Dust: למעלה STOP, REDO, DRUM FX ו-DRUM KITS, החצים של DRUM KIT ו-SAMPLES, הנובים Drum Vol, Swing ו-BPM, המקשים 1/4 עד 1/32 ו-STOP, הקצבים 1 עד 8 עם CLEAR ו-RANDOM, והשורות Kick, Snare, Hi-Hat ו-Perc, בכל אחת LOAD, חצים, סליידר ווליום ו-16 צעדים. מתחת מקלדת."
             },
             "sections": [
               {
@@ -674,7 +675,16 @@
               "עבודת התופים נשמרת מעצמה: כשעוברים למקצב או לקיט אחר, יוצאים ממסך Drum, שולחים את האפליקציה לרקע או שומרים סשן.",
               "Random בונה תבנית לפי הכללים של הז'אנר שנבחר, לא סתם רעש. בוחרים ז'אנר בלחיצה ארוכה על Drum Kits, מקישים RANDOM ומתקנים רק מה שלא מרגיש נכון."
             ],
-            "tipAdvanced": "אפשר לשרשר מקצבים לשיר. נותנים למקצבים 1, 2 ו-3 מספר חזרות, למשל 4. התופים מנגנים את מקצב 1 ארבע פעמים, אחר כך 2, אחר כך 3, ואז חוזרים ל-1. מקצבים שנשארו ב-Default מדולגים כשהתופים ממשיכים הלאה, ואינסוף נשאר על המקצב עד שמשנים."
+            "tipAdvanced": "אפשר לשרשר מקצבים לשיר. נותנים למקצבים 1, 2 ו-3 מספר חזרות, למשל 4. התופים מנגנים את מקצב 1 ארבע פעמים, אחר כך 2, אחר כך 3, ואז חוזרים ל-1. מקצבים שנשארו ב-Default מדולגים כשהתופים ממשיכים הלאה, ואינסוף נשאר על המקצב עד שמשנים.",
+            "images": [
+              "assets/posters/he/p07-drums-w630.jpg"
+            ],
+            "imageSizes": {
+              "assets/guide/drum-tab-phone.jpg": [
+                720,
+                1472
+              ]
+            }
           },
           {
             "id": "loop",
@@ -2581,9 +2591,10 @@
               "Each row has 16 steps. A tap turns a step on or off.",
               "REDO, in the drum header, steps back through your drum changes: steps, samples, volumes, left and right, the sound knobs, and the rhythm. Each tap goes back one step."
             ],
-            "media": "assets/posters/en/p07-drums-w630.jpg",
+            "media": "assets/guide/drum-tab-phone.jpg",
             "imageAlts": {
-              "assets/posters/en/p07-drums-w630.jpg": "Poster: Build the Beat. The Drum screen with up to 8 channels and 16 steps, and a built-in sample for each channel and rhythm."
+              "assets/posters/en/p07-drums-w630.jpg": "Poster: Build the Beat. The Drum screen with up to 8 channels and 16 steps, and a built-in sample for each channel and rhythm.",
+              "assets/guide/drum-tab-phone.jpg": "The Drum screen with the Vinyl Dust kit: STOP, REDO, DRUM FX and DRUM KITS at the top, the DRUM KIT and SAMPLES arrows, the Drum Vol, Swing and BPM knobs, 1/4 to 1/32 and STOP, rhythms 1 to 8 with CLEAR and RANDOM, and the Kick, Snare, Hi-Hat and Perc rows with LOAD, arrows, a volume slider and 16 steps each. A keyboard below."
             },
             "sections": [
               {
@@ -2692,7 +2703,16 @@
               "Your drum work saves itself: when you switch rhythm or kit, leave the Drum screen, send the app to the background, or save a session.",
               "Random builds a pattern from the rules of the chosen genre. It is not pure noise. Pick a genre with a long-press on Drum Kits, tap RANDOM, and edit only what feels off."
             ],
-            "tipAdvanced": "Chain rhythms into a song. Give rhythms 1, 2, and 3 a repeat count, such as 4. The drums play rhythm 1 four times, then 2, then 3, then back to 1. Rhythms left on Default are skipped when the drums move on, and infinity stays on a rhythm until you change it."
+            "tipAdvanced": "Chain rhythms into a song. Give rhythms 1, 2, and 3 a repeat count, such as 4. The drums play rhythm 1 four times, then 2, then 3, then back to 1. Rhythms left on Default are skipped when the drums move on, and infinity stays on a rhythm until you change it.",
+            "images": [
+              "assets/posters/en/p07-drums-w630.jpg"
+            ],
+            "imageSizes": {
+              "assets/guide/drum-tab-phone.jpg": [
+                720,
+                1472
+              ]
+            }
           },
           {
             "id": "loop",
@@ -4599,9 +4619,10 @@
               "В каждом ряду 16 шагов. Нажатие включает или выключает шаг.",
               "REDO в верхней строке ударных возвращает назад ваши изменения: шаги, сэмплы, громкости, панораму, ручки звука и ритм. Каждое нажатие возвращает один шаг."
             ],
-            "media": "assets/posters/en/p07-drums-w630.jpg",
+            "media": "assets/guide/drum-tab-phone.jpg",
             "imageAlts": {
-              "assets/posters/en/p07-drums-w630.jpg": "Постер (на английском): Build the Beat. Экран Drum: до 8 каналов и 16 шагов, встроенный сэмпл для каждого канала и ритма."
+              "assets/posters/en/p07-drums-w630.jpg": "Постер (на английском): Build the Beat. Экран Drum: до 8 каналов и 16 шагов, встроенный сэмпл для каждого канала и ритма.",
+              "assets/guide/drum-tab-phone.jpg": "Экран Drum с набором Vinyl Dust: вверху STOP, REDO, DRUM FX и DRUM KITS, стрелки DRUM KIT и SAMPLES, регуляторы Drum Vol, Swing и BPM, клавиши от 1/4 до 1/32 и STOP, ритмы от 1 до 8 с CLEAR и RANDOM и ряды Kick, Snare, Hi-Hat и Perc, в каждом LOAD, стрелки, ползунок громкости и 16 шагов. Ниже клавиатура."
             },
             "sections": [
               {
@@ -4710,7 +4731,16 @@
               "Работа с ударными сохраняется сама: когда вы меняете ритм или набор, уходите с экрана Drum, сворачиваете приложение или сохраняете сессию.",
               "Random строит паттерн по правилам выбранного жанра, а не просто шум. Выберите жанр долгим нажатием на Drum Kits, нажмите RANDOM и правьте только то, что не нравится."
             ],
-            "tipAdvanced": "Соедините ритмы в песню. Задайте ритмам 1, 2 и 3 число повторов, например 4. Ударные сыграют ритм 1 четыре раза, потом 2, потом 3 и вернутся к 1. Ритмы с Default пропускаются, когда ударные идут дальше, а бесконечность остаётся на ритме, пока вы его не смените."
+            "tipAdvanced": "Соедините ритмы в песню. Задайте ритмам 1, 2 и 3 число повторов, например 4. Ударные сыграют ритм 1 четыре раза, потом 2, потом 3 и вернутся к 1. Ритмы с Default пропускаются, когда ударные идут дальше, а бесконечность остаётся на ритме, пока вы его не смените.",
+            "images": [
+              "assets/posters/en/p07-drums-w630.jpg"
+            ],
+            "imageSizes": {
+              "assets/guide/drum-tab-phone.jpg": [
+                720,
+                1472
+              ]
+            }
           },
           {
             "id": "loop",
@@ -6617,9 +6647,10 @@
               "لكل صف 16 خطوة. الضغط يشغّل خطوة أو يوقفها.",
               "REDO، في الصف العلوي للطبول، يعود خطوة إلى الوراء في تغييرات الطبول: الخطوات والعينات ومستويات الصوت واليسار واليمين ومقابض الصوت والإيقاع. كل نقرة تعود خطوة واحدة."
             ],
-            "media": "assets/posters/en/p07-drums-w630.jpg",
+            "media": "assets/guide/drum-tab-phone.jpg",
             "imageAlts": {
-              "assets/posters/en/p07-drums-w630.jpg": "ملصق (بالإنجليزية): Build the Beat. شاشة Drum: حتى 8 قنوات و16 خطوة، وعينة مدمجة لكل قناة ولكل إيقاع."
+              "assets/posters/en/p07-drums-w630.jpg": "ملصق (بالإنجليزية): Build the Beat. شاشة Drum: حتى 8 قنوات و16 خطوة، وعينة مدمجة لكل قناة ولكل إيقاع.",
+              "assets/guide/drum-tab-phone.jpg": "شاشة Drum مع الطقم Vinyl Dust: في الأعلى STOP وREDO وDRUM FX وDRUM KITS، وأسهم DRUM KIT وSAMPLES، ومقابض Drum Vol وSwing وBPM، والمفاتيح من 1/4 إلى 1/32 وSTOP، والإيقاعات من 1 إلى 8 مع CLEAR وRANDOM، وصفوف Kick وSnare وHi-Hat وPerc، في كل منها LOAD وأسهم ومنزلق للصوت و16 خطوة. وتحتها لوحة مفاتيح."
             },
             "sections": [
               {
@@ -6728,7 +6759,16 @@
               "عملك على الطبول يُحفظ تلقائياً: عند تبديل الإيقاع أو الطقم، أو مغادرة شاشة Drum، أو إرسال التطبيق إلى الخلفية، أو حفظ جلسة.",
               "Random يبني نمطاً وفق قواعد النوع المختار، وليس ضوضاء عشوائية. اختر النوع بضغط مطوّل على Drum Kits، ثم اضغط RANDOM وعدّل فقط ما لا يعجبك."
             ],
-            "tipAdvanced": "اربط الإيقاعات في أغنية. أعطِ الإيقاعات 1 و2 و3 عدد تكرار، مثل 4. تعزف الطبول الإيقاع 1 أربع مرات، ثم 2، ثم 3، ثم تعود إلى 1. الإيقاعات على Default تُتجاوز عندما تنتقل الطبول، واللانهاية تبقى على الإيقاع حتى تغيّره."
+            "tipAdvanced": "اربط الإيقاعات في أغنية. أعطِ الإيقاعات 1 و2 و3 عدد تكرار، مثل 4. تعزف الطبول الإيقاع 1 أربع مرات، ثم 2، ثم 3، ثم تعود إلى 1. الإيقاعات على Default تُتجاوز عندما تنتقل الطبول، واللانهاية تبقى على الإيقاع حتى تغيّره.",
+            "images": [
+              "assets/posters/en/p07-drums-w630.jpg"
+            ],
+            "imageSizes": {
+              "assets/guide/drum-tab-phone.jpg": [
+                720,
+                1472
+              ]
+            }
           },
           {
             "id": "loop",
