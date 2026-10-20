@@ -205,3 +205,9 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - No longer used by the guide (files stay in git): `drum-samples-phone`, `voice-phone` (1.10 picker without LOADED or trim) and `pattern-repeats-phone` (1.10 window, 1-10 only).
 - FAQ: Q7 (own sounds: LOADED banks, multi-file LOAD, 30 s cap for drum files, trim), Q8, Q11 (wave long-press, repeats up to 88), Q12, Q13 (LIVE), and Q18 (limits) updated.
 - Drum topic: `drum-tab-phone` (final/`drum-tab.png`, real 1.10 Drum screen with Vinyl Dust, still valid for 1.11) is the topic's main image; the approved poster p07 stays as the second image. `drum-tab-alt.png` is not used.
+
+## Version 1.11 and size (Oct 20, own commit so it can be reverted)
+
+- Version 1.11 with "coming soon to the store" in the hero kicker (content and the `Home.tsx` default), the Pro body (`languages.*.pro` and `shared/pro-copy.json`), FAQ 1, the home SEO descriptions and JSON-LD `softwareVersion` (`shared/seo.ts`, asserts in `shared/seo.selfcheck.ts`).
+- Size: the site shows the release APK size in MiB, written MB (1.10: 81,252,020 B = 77.5 MB). 1.11 release APK `L-Studio-1.11.apk` is 81,194,413 B = 77.4 MB, so hero stat1, FAQ 3, the Pro text and `fileSize` say 77.4 MB. In decimal megabytes the same file is 81.2 MB; switch every spot together if David prefers that.
+- Privacy and Terms footers still say "L Studio 1.10": they name the app version the documents were written for and are left as is.

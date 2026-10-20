@@ -15,12 +15,12 @@
         "updates": "עדכונים"
       },
       "hero": {
-        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.10, בקרוב בחנות",
+        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.11, בקרוב בחנות",
         "title": "יוצרים מוזיקה בטלפון.",
         "body": "L Studio היא אפליקציה ליצירת מוזיקה בטלפון האנדרואיד. מקליטים לופים, מוסיפים תופים, שרים עם המילים מול העיניים, ואם בא לכם לצאת מהתווים הרגילים, מכוונים כל קליד לתדר משלו.",
         "ctaPrimary": "לצפייה בסרטון הקצר",
         "ctaSecondary": "איך זה התחיל",
-        "stat1": "77.5MB",
+        "stat1": "77.4MB",
         "stat2": "Android 7.0+",
         "stat3": "ללא פרסומות"
       },
@@ -147,7 +147,7 @@
           {
             "question": "האפליקציה כבר בגוגל פליי? וכמה היא עולה?",
             "answer": [
-              "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. זה תשלום חד פעמי. גרסה 1.10 בקרוב בחנות.",
+              "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. זה תשלום חד פעמי. גרסה 1.11 בקרוב בחנות.",
               "אחרי שהיא תשוחרר, קונים אותה דרך Google Play. האתר הזה לא מוכר את האפליקציה ואין בו כפתור הורדה."
             ]
           },
@@ -163,7 +163,7 @@
           {
             "question": "על אילו מכשירים זה רץ, ובאילו שפות?",
             "answer": [
-              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה, וגודלה 77.5MB. בינתיים אין גרסה לאייפון.",
+              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה, וגודלה 77.4MB. בינתיים אין גרסה לאייפון.",
               "האפליקציה נבדקה על טלפוני אנדרואיד שונים. היא לא נבדקה על טאבלטים, ולכן אין הבטחה לתמיכה בטאבלט.",
               "בטלפון האפליקציה נשארת זקופה, לאורך.",
               "האפליקציה בארבע שפות: עברית, אנגלית, רוסית וערבית. מחליפים ב-Settings, בשורה Language."
@@ -1642,10 +1642,10 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. גרסה 1.10 (בקרוב בחנות), 77.5MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
+        "body": "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. גרסה 1.11 (בקרוב בחנות), 77.4MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
-          "L Studio Pro לאנדרואיד ב-Google Play, 8$ בהשקה, 77.5MB",
+          "L Studio Pro לאנדרואיד ב-Google Play, 8$ בהשקה, 77.4MB",
           "מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה.",
           "רכישה בתשלום אינה מוצעת באתר הזה כרגע",
           "Factory Pack נשאר בעמודים שלו",
@@ -2043,12 +2043,12 @@
         "updates": "Updates"
       },
       "hero": {
-        "kicker": "Android music app · Version 1.10, coming soon to the store",
+        "kicker": "Android music app · Version 1.11, coming soon to the store",
         "title": "Make music on your phone.",
         "body": "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.",
         "ctaPrimary": "Watch the short",
         "ctaSecondary": "How it started",
-        "stat1": "77.5 MB",
+        "stat1": "77.4 MB",
         "stat2": "Android 7.0+",
         "stat3": "No ads"
       },
@@ -2175,7 +2175,7 @@
           {
             "question": "Is L Studio on Google Play yet, and how much is it?",
             "answer": [
-              "L Studio Pro for Android is coming soon to Google Play, for $8. It is a one-time payment. Version 1.10 is coming soon to the store.",
+              "L Studio Pro for Android is coming soon to Google Play, for $8. It is a one-time payment. Version 1.11 is coming soon to the store.",
               "Once it is released, you buy it through Google Play. This website does not sell the app and has no download button."
             ]
           },
@@ -2191,7 +2191,7 @@
           {
             "question": "Which devices does it run on, and in which languages?",
             "answer": [
-              "L Studio is an Android app. It needs Android 7.0 or newer, and its size is 77.5 MB. There is no iPhone version for now.",
+              "L Studio is an Android app. It needs Android 7.0 or newer, and its size is 77.4 MB. There is no iPhone version for now.",
               "It was tested on various Android phones. It was not tested on tablets, so tablet support is not promised.",
               "On a phone the app stays upright, in portrait.",
               "The app comes in four languages: English, Hebrew, Russian, and Arabic. You switch in Settings, on the Language row."
@@ -3670,10 +3670,10 @@
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro for Android is coming soon to Google Play, for $8. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android is coming soon to Google Play, for $8. Version 1.10 (coming soon to the store), 77.5 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
+        "body": "L Studio Pro for Android is coming soon to Google Play, for $8. Version 1.11 (coming soon to the store), 77.4 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
-          "L Studio Pro for Android on Google Play, $8 at launch, 77.5 MB",
+          "L Studio Pro for Android on Google Play, $8 at launch, 77.4 MB",
           "Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button.",
           "Paid purchase is not offered on this website right now",
           "Factory Pack stays on its own pages",
@@ -4071,12 +4071,12 @@
         "updates": "Обновления"
       },
       "hero": {
-        "kicker": "Музыкальное приложение для Android · версия 1.10, скоро в магазине",
+        "kicker": "Музыкальное приложение для Android · версия 1.11, скоро в магазине",
         "title": "Создавай музыку на телефоне.",
         "body": "L Studio это приложение для создания музыки на телефоне с Android. Записывай лупы, добавляй барабаны, пой, глядя на текст песни, а если хочется выйти за привычные ноты, настрой для каждой клавиши свою частоту.",
         "ctaPrimary": "Смотреть короткое видео",
         "ctaSecondary": "Как всё началось",
-        "stat1": "77.5 МБ",
+        "stat1": "77.4 МБ",
         "stat2": "Android 7.0+",
         "stat3": "Без рекламы"
       },
@@ -4203,7 +4203,7 @@
           {
             "question": "L Studio уже в Google Play? И сколько стоит?",
             "answer": [
-              "L Studio Pro для Android скоро выйдет в Google Play, за $8. Это единоразовый платёж. Версия 1.10 скоро в магазине.",
+              "L Studio Pro для Android скоро выйдет в Google Play, за $8. Это единоразовый платёж. Версия 1.11 скоро в магазине.",
               "Когда приложение выйдет, купить его можно будет через Google Play. Этот сайт не продаёт приложение, и кнопки скачивания здесь нет."
             ]
           },
@@ -4219,7 +4219,7 @@
           {
             "question": "На каких устройствах работает и на каких языках?",
             "answer": [
-              "L Studio это приложение для Android. Нужен Android 7.0 или новее, размер 77.5 МБ. Версии для iPhone пока нет.",
+              "L Studio это приложение для Android. Нужен Android 7.0 или новее, размер 77.4 МБ. Версии для iPhone пока нет.",
               "Приложение проверялось на разных телефонах с Android. На планшетах оно не проверялось, поэтому поддержка планшетов не обещается.",
               "На телефоне приложение остаётся вертикальным, в портретной ориентации.",
               "Приложение на четырёх языках: английском, иврите, русском и арабском. Язык меняется в Settings, в строке Language."
@@ -5698,10 +5698,10 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro для Android скоро выйдет в Google Play, за $8. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android скоро выйдет в Google Play, за $8. Версия 1.10 (скоро в магазине), 77.5 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
+        "body": "L Studio Pro для Android скоро выйдет в Google Play, за $8. Версия 1.11 (скоро в магазине), 77.4 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
-          "L Studio Pro для Android в Google Play, $8 при запуске, 77.5 МБ",
+          "L Studio Pro для Android в Google Play, $8 при запуске, 77.4 МБ",
           "Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет.",
           "Платная покупка на этом сайте сейчас не предлагается",
           "Factory Pack остаётся на своих страницах",
@@ -6099,12 +6099,12 @@
         "updates": "التحديثات"
       },
       "hero": {
-        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.10، قريباً في المتجر",
+        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.11، قريباً في المتجر",
         "title": "اصنع الموسيقى على هاتفك.",
         "body": "L Studio تطبيق لصنع الموسيقى على هاتف أندرويد. سجّل لوبات، أضف طبولاً، غنِّ وكلمات الأغنية أمام عينيك، وإن أردت الخروج عن النوتات المعتادة، اضبط لكل مفتاح تردده الخاص.",
         "ctaPrimary": "شاهد الفيديو القصير",
         "ctaSecondary": "كيف بدأ الأمر",
-        "stat1": "77.5 ميغابايت",
+        "stat1": "77.4 ميغابايت",
         "stat2": "Android 7.0+",
         "stat3": "بلا إعلانات"
       },
@@ -6231,7 +6231,7 @@
           {
             "question": "هل L Studio على Google Play الآن؟ وكم سعره؟",
             "answer": [
-              "L Studio Pro لأندرويد قادم قريباً إلى Google Play، بسعر 8$. وهي دفعة واحدة. الإصدار 1.10 قريباً في المتجر.",
+              "L Studio Pro لأندرويد قادم قريباً إلى Google Play، بسعر 8$. وهي دفعة واحدة. الإصدار 1.11 قريباً في المتجر.",
               "بعد إطلاقه تشتريه عبر Google Play. هذا الموقع لا يبيع التطبيق وليس فيه زر تنزيل."
             ]
           },
@@ -6247,7 +6247,7 @@
           {
             "question": "على أي أجهزة يعمل وبأي لغات؟",
             "answer": [
-              "L Studio تطبيق لأندرويد. يحتاج إلى Android 7.0 أو أحدث، وحجمه 77.5 ميغابايت. لا توجد نسخة للآيفون حالياً.",
+              "L Studio تطبيق لأندرويد. يحتاج إلى Android 7.0 أو أحدث، وحجمه 77.4 ميغابايت. لا توجد نسخة للآيفون حالياً.",
               "جُرّب التطبيق على هواتف أندرويد مختلفة. ولم يُجرَّب على التابلت، لذلك لا نَعِد بدعم التابلت.",
               "على الهاتف يبقى التطبيق قائماً، بوضع طولي.",
               "التطبيق بأربع لغات: الإنجليزية والعبرية والروسية والعربية. تبدّل اللغة من Settings، في صف Language."
@@ -7726,10 +7726,10 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. الإصدار 1.10 (قريباً في المتجر)، 77.5 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
+        "body": "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. الإصدار 1.11 (قريباً في المتجر)، 77.4 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
-          "L Studio Pro لأندرويد على Google Play، 8$ عند الإطلاق، 77.5 ميغابايت",
+          "L Studio Pro لأندرويد على Google Play، 8$ عند الإطلاق، 77.4 ميغابايت",
           "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل.",
           "الشراء المدفوع غير معروض على هذا الموقع حالياً",
           "يبقى Factory Pack في صفحاته",
