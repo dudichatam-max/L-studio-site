@@ -37,10 +37,10 @@ export const carouselSlides: Record<PlayId, SlideDef[]> = {
     { id: "pad-targets", designed: "pad-3" },
   ],
   drum: [
-    { id: "drum-main", designed: "drum-1" },
-    { id: "drum-banks", designed: "drum-2" },
-    { id: "drum-loaded", designed: "drum-3" },
-    { id: "drum-shape", designed: "drum-4" },
+    { id: "drum-rows", designed: "drum-1" },
+    { id: "drum-main", designed: "drum-2" },
+    { id: "drum-banks", designed: "drum-3" },
+    { id: "drum-loaded", designed: "drum-4" },
     { id: "drum-fx", designed: "drum-5" },
     { id: "drum-repeats", designed: "drum-6" },
   ],
@@ -56,7 +56,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-3";
+export const CAROUSEL_VER = "carousel-4";
 const SMALL = 360;
 const LARGE = 630;
 
