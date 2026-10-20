@@ -143,7 +143,7 @@ const featureData = {
 
 // Fallback copy, used only if content.json fails to load.
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive", updates: "Updates" };
-const heroDefault = { kicker: "Android music app · Version 1.10, coming soon to the store", title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "77.5 MB", stat2: "Android 7.0+", stat3: "No ads" };
+const heroDefault = { kicker: "Android music app · Version 1.11, coming soon to the store", title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "77.4 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const launchDefaults: Record<Language, { headline: string; price: string; note: string }> = {
   he: {headline: "מגיע בקרוב ל-Google Play.", price: "L Studio Pro, 8$.", note: "מגיע בקרוב ל-Google Play. L Studio Pro, 8$."},
   en: {headline: "Coming soon to Google Play.", price: "L Studio Pro, $8.", note: "Coming soon to Google Play. L Studio Pro, $8."},

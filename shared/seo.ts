@@ -55,24 +55,24 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "L Studio: Android Music App with Looper, Drums and Mic",
       description:
-        "Make music on your Android phone. A looper with 8 pages and 4 channels per page, 8 drum kits, mic recording, a lyrics window that scrolls while you sing, and keys you tune to your own frequencies. Version 1.10.",
+        "Make music on your Android phone. A looper with 8 pages and 4 channels per page, 8 drum kits, mic recording, a lyrics window that scrolls while you sing, and keys you tune to your own frequencies. Version 1.11.",
       socialDescription:
         "Make music on your Android phone: looper, drums, mic, lyrics and keys you tune yourself.",
     },
     he: {
       title: "L Studio: אפליקציה ליצירת מוזיקה באנדרואיד, לופר ותופים",
       description:
-        "יוצרים מוזיקה בטלפון האנדרואיד: לופר עם 8 עמודים ו-4 ערוצים בכל עמוד, 8 ערכות תופים, הקלטה במיקרופון, חלון מילים שגולל בזמן שאתם שרים, וקלידים שמכוונים לתדרים משלכם. גרסה 1.10.",
+        "יוצרים מוזיקה בטלפון האנדרואיד: לופר עם 8 עמודים ו-4 ערוצים בכל עמוד, 8 ערכות תופים, הקלטה במיקרופון, חלון מילים שגולל בזמן שאתם שרים, וקלידים שמכוונים לתדרים משלכם. גרסה 1.11.",
     },
     ru: {
       title: "L Studio: приложение для создания музыки на Android, лупер и барабаны",
       description:
-        "Создавай музыку на телефоне с Android: лупер с 8 страницами и 4 каналами на каждой, 8 наборов барабанов, запись с микрофона, окно текста, которое прокручивается, пока ты поёшь, и клавиши, которые ты настраиваешь на свои частоты. Версия 1.10.",
+        "Создавай музыку на телефоне с Android: лупер с 8 страницами и 4 каналами на каждой, 8 наборов барабанов, запись с микрофона, окно текста, которое прокручивается, пока ты поёшь, и клавиши, которые ты настраиваешь на свои частоты. Версия 1.11.",
     },
     ar: {
       title: "L Studio: تطبيق لصنع الموسيقى على أندرويد، لوبر وطبول",
       description:
-        "اصنع الموسيقى على هاتف أندرويد: لوبر بـ8 صفحات و4 قنوات في كل صفحة، 8 مجموعات طبول، تسجيل بالميكروفون، نافذة كلمات تمرّ وأنت تغني، ومفاتيح تضبطها على تردداتك الخاصة. الإصدار 1.10.",
+        "اصنع الموسيقى على هاتف أندرويد: لوبر بـ8 صفحات و4 قنوات في كل صفحة، 8 مجموعات طبول، تسجيل بالميكروفون، نافذة كلمات تمرّ وأنت تغني، ومفاتيح تضبطها على تردداتك الخاصة. الإصدار 1.11.",
     },
   },
   privacy: {
@@ -207,20 +207,20 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What's new in L Studio for Android. Version 1.10 is coming soon to the store. L Studio Pro is coming soon to Google Play, for $8.",
+        "What's new in L Studio for Android. Versions 1.10 and 1.11 are coming soon to the store. L Studio Pro is coming soon to Google Play, for $8.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש ב-L Studio לאנדרואיד. גרסה 1.10 בקרוב בחנות. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
+      description: "מה חדש ב-L Studio לאנדרואיד. גרסאות 1.10 ו-1.11 בקרוב בחנות. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Что нового в L Studio для Android. Версия 1.10 скоро появится в магазине. L Studio Pro скоро выйдет в Google Play, за $8.",
+        "Что нового в L Studio для Android. Версии 1.10 и 1.11 скоро появятся в магазине. L Studio Pro скоро выйдет в Google Play, за $8.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما الجديد في L Studio لأندرويد. الإصدار 1.10 قريباً في المتجر. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
+      description: "ما الجديد في L Studio لأندرويد. الإصداران 1.10 و1.11 قريباً في المتجر. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
     },
   },
   buy: {
@@ -338,16 +338,16 @@ type SeoMobileApplication = {
 
 /**
  * App facts for structured data. Source: app repo dudichatam-max/L-studio,
- * tag v1.10 (ad2ceeb6, versionCode 10), minSdk 24 = Android 7.0. Version 1.10 is the
- * prepared version; it is NOT on Google Play yet (David uploads it, closed test first).
+ * tag v1.11 (fa391cf, versionCode 11), minSdk 24 = Android 7.0. Version 1.11 is the
+ * prepared version; it is NOT on Google Play yet (on its way to the store; 1.10 not confirmed live either).
  * Size: see the fileSize line below.
  * Price: David, 2026-10-08, L Studio Pro on Google Play for $8.
  * No installUrl or Play link until the public Google Play listing is live.
  */
 export const APP_FACTS = {
   operatingSystem: "Android 7.0+",
-  softwareVersion: "1.10",
-  fileSize: "77.5MB",
+  softwareVersion: "1.11",
+  fileSize: "77.4MB", // 1.11 release APK, 81,194,413 B = 77.4 MiB (same rule as 1.10: 81,252,020 B = 77.5)
   price: "8",
   priceCurrency: "USD",
 } as const;

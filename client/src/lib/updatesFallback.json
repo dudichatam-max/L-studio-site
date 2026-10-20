@@ -3,7 +3,7 @@
     "navLabel": "Updates",
     "pageTitle": "What's new in L Studio.",
     "pageKicker": "L-STUDIO / UPDATES",
-    "pageIntro": "Version 1.10 is coming soon to the store. L Studio Pro is coming soon to Google Play, for $8.",
+    "pageIntro": "Versions 1.10 and 1.11 are coming soon to the store. L Studio Pro is coming soon to Google Play, for $8.",
     "tickerLabel": "Updates",
     "statusLabels": {
       "in_progress": "In progress",
@@ -16,6 +16,80 @@
       "shipped": "Recently shipped"
     },
     "items": [
+      {
+        "id": "app-1-11-loaded-keep-playing",
+        "status": "upcoming",
+        "title": "Coming soon to the store: version 1.11 with your own drum samples, Keep playing, and an octave for each wave",
+        "ticker": "Coming soon to the store: version 1.11, up to 88 of your own samples on every drum row, with trim",
+        "summary": "Coming soon to the store, version 1.11: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
+        "href": "/guide",
+        "cta": "Open the guide",
+        "images": [
+          "/assets/guide/drum-loaded-trim-phone.jpg",
+          "/assets/guide/keep-playing-phone.jpg"
+        ],
+        "imageAlts": [
+          "The Voice sound list on the LOADED tab: NOW: MY VOICE · LOADED, a LOAD key showing 1 / 88, the sample MY VOICE at 4.73 s, PAGE 1 / 1 · 1 SAMPLES, a waveform trimmed to 1.10 s to 4.13 s with a start and end bar, six knobs, and SAVE, RESET, RENAME, DELETE and CLOSE.",
+          "The PATTERN REPEATS 1 window opened from a Loop Editor rhythm box: keys 1 to 10, a field marked 1-88, infinity lit, DEFAULT, KEEP PLAYING with its gold light on, and CLOSE."
+        ],
+        "sections": [
+          {
+            "title": "Drums",
+            "bullets": [
+              "LOADED: a new tab in the sound list of all 8 rows, with a bank of up to 88 of your own samples on each row.",
+              "LOAD on the LOADED tab picks several files at once. A file that is already in the bank is selected, not added twice. A file longer than 30 seconds keeps its first 30 seconds.",
+              "Trim with a start and end bar under the waveform, on the samples in the list. The original file never changes.",
+              "Every sample remembers its trim and its six knobs. SAVE, RESET, RENAME and DELETE in the sound list.",
+              "Pattern repeats: a field for any count from 1 to 88, next to 1 to 10, infinity and Default.",
+              "CLEAR also sets the rhythm's repeat count back to Default, and REDO brings both back."
+            ]
+          },
+          {
+            "title": "Loop and Mic editors",
+            "bullets": [
+              "KEEP PLAYING in Pattern repeats: when the drums enter that rhythm, the whole take plays to its end, even if the drums move on or stop.",
+              "The same 1 to 88 field for every rhythm box.",
+              "Without Keep playing, a drum STOP fades the channel out gently.",
+              "Clear on a channel also clears its editor settings, and Redo brings both back."
+            ]
+          },
+          {
+            "title": "Sound",
+            "bullets": [
+              "A long-press on a wave key opens an octave for that wave alone, from -2 to +2, with DEFAULT, SAVE and CLOSE. The keyboards keep playing while it is open.",
+              "A badge on the wave key shows its octave. Presets, sessions and the preset page file keep it.",
+              "The preset page file now also keeps which waves are on."
+            ]
+          },
+          {
+            "title": "LIVE",
+            "bullets": [
+              "The DRUM KIT arrows and Load in Drum styles work in LIVE, so you can switch kits while you play.",
+              "Loading, renaming and deleting drum samples stay locked in LIVE."
+            ]
+          },
+          {
+            "title": "Session",
+            "bullets": [
+              "A session carries the LOADED samples its rhythms use, with their names, trims and knobs, and the saved settings of the other samples, so it opens on another phone.",
+              "A drum kit file you export carries its LOADED samples too."
+            ]
+          },
+          {
+            "title": "Fixes",
+            "bullets": [
+              "Typing a value on a knob: the box no longer closes when the phone keyboard opens.",
+              "MIDI recording with several waves on saves one note for each key press.",
+              "No click at the end of a Keep playing take."
+            ]
+          }
+        ],
+        "tickerMore": [
+          "Coming soon to the store: Keep playing in the Loop and Mic editors, so a take plays to its end",
+          "Coming soon to the store: an octave for each wave, from a long-press on the wave key",
+          "Coming soon to the store: pattern repeats up to 88, and switching drum kits in LIVE"
+        ]
+      },
       {
         "id": "app-1-10-loop-editor-drums",
         "status": "upcoming",
@@ -193,7 +267,7 @@
     "navLabel": "עדכונים",
     "pageTitle": "מה חדש ב-L Studio.",
     "pageKicker": "L-STUDIO / עדכונים",
-    "pageIntro": "גרסה 1.10 בקרוב בחנות. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
+    "pageIntro": "גרסאות 1.10 ו-1.11 בקרוב בחנות. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
     "tickerLabel": "עדכונים",
     "statusLabels": {
       "in_progress": "בעבודה",
@@ -206,6 +280,80 @@
       "shipped": "עלה לאחרונה"
     },
     "items": [
+      {
+        "id": "app-1-11-loaded-keep-playing",
+        "status": "upcoming",
+        "title": "בקרוב בחנות: גרסה 1.11 עם סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
+        "ticker": "בקרוב בחנות: גרסה 1.11, עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך",
+        "summary": "בקרוב בחנות, גרסה 1.11: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
+        "href": "/guide",
+        "cta": "לפתיחת המדריך",
+        "images": [
+          "/assets/guide/drum-loaded-trim-phone.jpg",
+          "/assets/guide/keep-playing-phone.jpg"
+        ],
+        "imageAlts": [
+          "רשימת הסאונדים של Voice בלשונית LOADED: NOW: MY VOICE · LOADED, מקש LOAD עם 1 / 88, הסאמפל MY VOICE באורך 4.73 שניות, PAGE 1 / 1 · 1 SAMPLES, צורת גל חתוכה מ-1.10 עד 4.13 שניות עם פס התחלה וסוף, שישה כפתורים, ו-SAVE, RESET, RENAME, DELETE ו-CLOSE.",
+          "החלון PATTERN REPEATS 1 שנפתח מתיבת מקצב ב-Loop Editor: מקשי 1 עד 10, שדה שכתוב בו 1-88, אינסוף דולק, DEFAULT, KEEP PLAYING עם נורית זהב דולקת, ו-CLOSE."
+        ],
+        "sections": [
+          {
+            "title": "תופים",
+            "bullets": [
+              "LOADED: לשונית חדשה ברשימת הסאונדים של כל 8 השורות, עם בנק של עד 88 סאמפלים משלכם בכל שורה.",
+              "LOAD בלשונית LOADED בוחר כמה קבצים בבת אחת. קובץ שכבר נמצא בבנק נבחר ולא נוסף פעמיים. מקובץ ארוך מ-30 שניות נשמרות 30 השניות הראשונות.",
+              "חיתוך עם פס התחלה וסוף מתחת לצורת הגל, בסאמפלים שברשימה. הקובץ המקורי לא משתנה אף פעם.",
+              "כל סאמפל זוכר את החיתוך ואת ששת הכפתורים שלו. SAVE, RESET, RENAME ו-DELETE ברשימת הסאונדים.",
+              "Pattern repeats: שדה לכל מספר מ-1 עד 88, ליד 1 עד 10, אינסוף ו-Default.",
+              "CLEAR מחזיר גם את מספר החזרות של הקצב ל-Default, ו-REDO מחזיר את שניהם."
+            ]
+          },
+          {
+            "title": "עורכי Loop ו-Mic",
+            "bullets": [
+              "KEEP PLAYING ב-Pattern repeats: כשהתופים נכנסים לקצב הזה, ההקלטה כולה מתנגנת עד הסוף, גם אם התופים ממשיכים הלאה או נעצרים.",
+              "אותו שדה של 1 עד 88 לכל תיבת מקצב.",
+              "בלי Keep playing, עצירת התופים ב-STOP מנמיכה את הערוץ בעדינות.",
+              "Clear בערוץ מנקה גם את הגדרות העורך שלו, ו-Redo מחזיר את שניהם."
+            ]
+          },
+          {
+            "title": "Sound",
+            "bullets": [
+              "לחיצה ארוכה על מקש גל פותחת אוקטבה לגל הזה בלבד, בין -2 ל-+2, עם DEFAULT, SAVE ו-CLOSE. המקלדות ממשיכות לנגן כשהיא פתוחה.",
+              "תווית על מקש הגל מציגה את האוקטבה שלו. פריסטים, סשנים וקובץ עמוד הפריסטים שומרים אותה.",
+              "קובץ עמוד הפריסטים שומר עכשיו גם אילו גלים דולקים."
+            ]
+          },
+          {
+            "title": "LIVE",
+            "bullets": [
+              "חיצי DRUM KIT ו-Load ב-Drum styles עובדים ב-LIVE, כך שאפשר להחליף קיט תוך כדי נגינה.",
+              "טעינה, שינוי שם ומחיקה של סאמפלי תופים נשארים נעולים ב-LIVE."
+            ]
+          },
+          {
+            "title": "סשן",
+            "bullets": [
+              "סשן לוקח איתו את סאמפלי LOADED שהקצבים שלו משתמשים בהם, עם השמות, החיתוכים והכפתורים, ואת ההגדרות השמורות של שאר הסאמפלים, כך שהוא נפתח בטלפון אחר.",
+              "גם קובץ קיט תופים שמייצאים לוקח איתו את סאמפלי ה-LOADED שלו."
+            ]
+          },
+          {
+            "title": "תיקונים",
+            "bullets": [
+              "הקלדת ערך על נוב: התיבה כבר לא נסגרת כשמקלדת הטלפון נפתחת.",
+              "הקלטת MIDI עם כמה גלים דולקים שומרת תו אחד לכל לחיצה על מקש.",
+              "אין נקישה בסוף הקלטה שמתנגנת עם Keep playing."
+            ]
+          }
+        ],
+        "tickerMore": [
+          "בקרוב בחנות: Keep playing בעורכי Loop ו-Mic, כך שההקלטה מתנגנת עד הסוף",
+          "בקרוב בחנות: אוקטבה לכל גל, בלחיצה ארוכה על מקש הגל",
+          "בקרוב בחנות: חזרות פטרן עד 88, והחלפת קיט תופים ב-LIVE"
+        ]
+      },
       {
         "id": "app-1-10-loop-editor-drums",
         "status": "upcoming",
@@ -383,7 +531,7 @@
     "navLabel": "Обновления",
     "pageTitle": "Что нового в L Studio.",
     "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-    "pageIntro": "Версия 1.10 скоро появится в магазине. L Studio Pro скоро выйдет в Google Play, за $8.",
+    "pageIntro": "Версии 1.10 и 1.11 скоро появятся в магазине. L Studio Pro скоро выйдет в Google Play, за $8.",
     "tickerLabel": "Обновления",
     "statusLabels": {
       "in_progress": "В работе",
@@ -396,6 +544,80 @@
       "shipped": "Недавно вышло"
     },
     "items": [
+      {
+        "id": "app-1-11-loaded-keep-playing",
+        "status": "upcoming",
+        "title": "Скоро в магазине: версия 1.11 со своими сэмплами в ударных, Keep playing и октавой для каждой волны",
+        "ticker": "Скоро в магазине: версия 1.11, до 88 своих сэмплов в каждом ряду ударных, с обрезкой",
+        "summary": "Скоро в магазине, версия 1.11: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
+        "href": "/guide",
+        "cta": "Открыть руководство",
+        "images": [
+          "/assets/guide/drum-loaded-trim-phone.jpg",
+          "/assets/guide/keep-playing-phone.jpg"
+        ],
+        "imageAlts": [
+          "Список звуков Voice на вкладке LOADED: NOW: MY VOICE · LOADED, клавиша LOAD с 1 / 88, сэмпл MY VOICE длиной 4.73 с, PAGE 1 / 1 · 1 SAMPLES, форма волны, обрезанная с 1.10 до 4.13 с, с полосой начала и конца, шесть регуляторов и SAVE, RESET, RENAME, DELETE и CLOSE.",
+          "Окно PATTERN REPEATS 1, открытое из ячейки ритма в Loop Editor: клавиши от 1 до 10, поле с надписью 1-88, горящая бесконечность, DEFAULT, KEEP PLAYING с горящим золотым огоньком и CLOSE."
+        ],
+        "sections": [
+          {
+            "title": "Ударные",
+            "bullets": [
+              "LOADED: новая вкладка в списке звуков всех 8 рядов, с банком до 88 своих сэмплов в каждом ряду.",
+              "LOAD во вкладке LOADED выбирает сразу несколько файлов. Файл, который уже есть в банке, выбирается, а не добавляется второй раз. У файла длиннее 30 секунд остаются первые 30 секунд.",
+              "Обрезка полосой начала и конца под формой волны, для сэмплов из списка. Исходный файл никогда не меняется.",
+              "Каждый сэмпл помнит свою обрезку и шесть регуляторов. SAVE, RESET, RENAME и DELETE в списке звуков.",
+              "Pattern repeats: поле для любого числа от 1 до 88, рядом с 1 до 10, бесконечностью и Default.",
+              "CLEAR также возвращает число повторов ритма к Default, а REDO возвращает и то, и другое."
+            ]
+          },
+          {
+            "title": "Редакторы Loop и Mic",
+            "bullets": [
+              "KEEP PLAYING в Pattern repeats: когда ударные входят в этот ритм, вся запись доигрывает до конца, даже если ударные идут дальше или останавливаются.",
+              "То же поле от 1 до 88 для каждой ячейки ритма.",
+              "Без Keep playing STOP ударных плавно гасит канал.",
+              "Clear на канале очищает и настройки его редактора, а Redo возвращает и то, и другое."
+            ]
+          },
+          {
+            "title": "Sound",
+            "bullets": [
+              "Долгое нажатие на клавишу волны открывает октаву только для этой волны, от -2 до +2, с DEFAULT, SAVE и CLOSE. Клавиатуры играют, пока она открыта.",
+              "Значок на клавише волны показывает её октаву. Пресеты, сессии и файл страницы пресетов её хранят.",
+              "Файл страницы пресетов теперь также хранит, какие волны включены."
+            ]
+          },
+          {
+            "title": "LIVE",
+            "bullets": [
+              "Стрелки DRUM KIT и Load в Drum styles работают в LIVE, так что набор можно сменить прямо во время игры.",
+              "Загрузка, переименование и удаление сэмплов ударных остаются заблокированными в LIVE."
+            ]
+          },
+          {
+            "title": "Сессия",
+            "bullets": [
+              "Сессия несёт сэмплы LOADED, которые используют её ритмы, с именами, обрезкой и регуляторами, и сохранённые настройки остальных сэмплов, так что она открывается на другом телефоне.",
+              "Экспортированный файл набора ударных тоже несёт свои сэмплы LOADED."
+            ]
+          },
+          {
+            "title": "Исправления",
+            "bullets": [
+              "Ввод значения на регуляторе: окно больше не закрывается, когда открывается клавиатура телефона.",
+              "Запись MIDI с несколькими включёнными волнами сохраняет одну ноту на каждое нажатие клавиши.",
+              "Нет щелчка в конце записи, которая играет с Keep playing."
+            ]
+          }
+        ],
+        "tickerMore": [
+          "Скоро в магазине: Keep playing в редакторах Loop и Mic, чтобы запись доигрывала до конца",
+          "Скоро в магазине: своя октава для каждой волны, долгим нажатием на клавишу волны",
+          "Скоро в магазине: повторы паттерна до 88 и смена наборов ударных в LIVE"
+        ]
+      },
       {
         "id": "app-1-10-loop-editor-drums",
         "status": "upcoming",
@@ -573,7 +795,7 @@
     "navLabel": "التحديثات",
     "pageTitle": "ما الجديد في L Studio.",
     "pageKicker": "L-STUDIO / التحديثات",
-    "pageIntro": "الإصدار 1.10 قريباً في المتجر. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
+    "pageIntro": "الإصداران 1.10 و1.11 قريباً في المتجر. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
     "tickerLabel": "التحديثات",
     "statusLabels": {
       "in_progress": "قيد العمل",
@@ -586,6 +808,80 @@
       "shipped": "صدر مؤخراً"
     },
     "items": [
+      {
+        "id": "app-1-11-loaded-keep-playing",
+        "status": "upcoming",
+        "title": "قريباً في المتجر: الإصدار 1.11 مع عيناتك الخاصة في الطبول وKeep playing وأوكتاف لكل موجة",
+        "ticker": "قريباً في المتجر: الإصدار 1.11، حتى 88 من عيناتك في كل صف طبول، مع القص",
+        "summary": "قريباً في المتجر، الإصدار 1.11: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
+        "href": "/guide",
+        "cta": "افتح الدليل",
+        "images": [
+          "/assets/guide/drum-loaded-trim-phone.jpg",
+          "/assets/guide/keep-playing-phone.jpg"
+        ],
+        "imageAlts": [
+          "قائمة أصوات Voice في تبويب LOADED: NOW: MY VOICE · LOADED، ومفتاح LOAD مع 1 / 88، والعينة MY VOICE بطول 4.73 ثانية، وPAGE 1 / 1 · 1 SAMPLES، وشكل موجة مقصوص من 1.10 إلى 4.13 ثانية مع شريط للبداية والنهاية، وستة مقابض، وSAVE وRESET وRENAME وDELETE وCLOSE.",
+          "نافذة PATTERN REPEATS 1 مفتوحة من مربع إيقاع في Loop Editor: المفاتيح من 1 إلى 10، وخانة مكتوب فيها 1-88، واللانهاية مضاءة، وDEFAULT، وKEEP PLAYING بضوئه الذهبي مضاءً، وCLOSE."
+        ],
+        "sections": [
+          {
+            "title": "الطبول",
+            "bullets": [
+              "LOADED: تبويب جديد في قائمة أصوات الصفوف الثمانية كلها، مع بنك يصل إلى 88 من عيناتك في كل صف.",
+              "LOAD في تبويب LOADED يختار عدة ملفات دفعة واحدة. الملف الموجود في البنك يُختار ولا يُضاف مرتين. ومن الملف الأطول من 30 ثانية تبقى أول 30 ثانية.",
+              "القص بشريط للبداية والنهاية تحت شكل الموجة، للعينات في القائمة. الملف الأصلي لا يتغير أبداً.",
+              "كل عينة تتذكر قصّها ومقابضها الستة. SAVE وRESET وRENAME وDELETE في قائمة الأصوات.",
+              "Pattern repeats: خانة لأي عدد من 1 إلى 88، بجانب 1 إلى 10 واللانهاية وDefault.",
+              "CLEAR يعيد أيضاً عدد تكرار الإيقاع إلى Default، وREDO يعيد الاثنين."
+            ]
+          },
+          {
+            "title": "محررا Loop وMic",
+            "bullets": [
+              "KEEP PLAYING في Pattern repeats: عندما تدخل الطبول ذلك الإيقاع، يُعزف التسجيل كله حتى نهايته، حتى لو انتقلت الطبول أو توقفت.",
+              "خانة 1 إلى 88 نفسها لكل مربع إيقاع.",
+              "من دون Keep playing، يخفت STOP الطبول القناة بلطف.",
+              "Clear على قناة يمسح أيضاً إعدادات محررها، وRedo يعيد الاثنين."
+            ]
+          },
+          {
+            "title": "Sound",
+            "bullets": [
+              "الضغط المطوّل على مفتاح موجة يفتح أوكتافاً لتلك الموجة وحدها، من -2 إلى +2، مع DEFAULT وSAVE وCLOSE. لوحات المفاتيح تبقى تعزف وهو مفتوح.",
+              "شارة على مفتاح الموجة تعرض أوكتافها. الإعدادات المسبقة والجلسات وملف صفحة الإعدادات تحفظه.",
+              "ملف صفحة الإعدادات يحفظ الآن أيضاً الموجات المفعّلة."
+            ]
+          },
+          {
+            "title": "LIVE",
+            "bullets": [
+              "أسهم DRUM KIT وLoad في Drum styles تعمل في LIVE، فتستطيع تبديل الطقم أثناء العزف.",
+              "تحميل عينات الطبول وتغيير أسمائها وحذفها تبقى مقفلة في LIVE."
+            ]
+          },
+          {
+            "title": "الجلسة",
+            "bullets": [
+              "الجلسة تحمل عينات LOADED التي تستخدمها إيقاعاتها، بأسمائها وقصّها ومقابضها، والإعدادات المحفوظة لبقية العينات، فتُفتح على هاتف آخر.",
+              "ملف طقم الطبول الذي تصدّره يحمل عينات LOADED الخاصة به أيضاً."
+            ]
+          },
+          {
+            "title": "إصلاحات",
+            "bullets": [
+              "كتابة قيمة على مقبض: المربع لم يعد يُغلق عندما تُفتح لوحة مفاتيح الهاتف.",
+              "تسجيل MIDI مع عدة موجات مفعّلة يحفظ نغمة واحدة لكل ضغطة مفتاح.",
+              "لا نقرة في نهاية تسجيل يُعزف مع Keep playing."
+            ]
+          }
+        ],
+        "tickerMore": [
+          "قريباً في المتجر: Keep playing في محرري Loop وMic، ليُعزف التسجيل حتى نهايته",
+          "قريباً في المتجر: أوكتاف لكل موجة، بضغط مطوّل على مفتاح الموجة",
+          "قريباً في المتجر: تكرار النمط حتى 88، وتبديل أطقم الطبول في LIVE"
+        ]
+      },
       {
         "id": "app-1-10-loop-editor-drums",
         "status": "upcoming",
