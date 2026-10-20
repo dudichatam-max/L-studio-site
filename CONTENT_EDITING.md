@@ -190,10 +190,11 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 
 ## Home windows menu carousel (Sound, Mic, Loop, Pad, Drum)
 
-- Each tab is a carousel (swipe, arrows, dots, arrow keys, RTL-correct). Code: `client/src/components/PlayCarousel.tsx`, slide list per tab in `client/src/lib/carousel.ts` (Sound 4, Mic 4, Loop 4, Pad 3, Drum 4).
+- Each tab is a carousel (swipe, arrows, dots, arrow keys, RTL-correct). Code: `client/src/components/PlayCarousel.tsx`, slide list per tab in `client/src/lib/carousel.ts` (Sound 4, Mic 4, Loop 4, Pad 3, Drum 6).
 - Every slide is a designed store poster, one set per language: `assets/carousel/{he,en,ar,ru}/<slide-id>-w360|w630.{webp,jpg}` (also under `client/public/assets/carousel/`). The counter n/N is baked into the poster (N = slides in that tab), so the site draws none. Each language uses only its own folder. Old numbered posters (01-08) are never used in a carousel.
 - To import: `python3 scripts/import-carousel-posters.py` (reads `/workspace/store-posters/carousel/{lang}/<tab>-<n>.png`, writes the 4 files per slide, removes stale files).
 - Adding or removing a slide: the designer rebakes that tab's counters, then edit `carousel.ts` (`{ id, designed }`), add the texts to `languages.*.carousel.slides[id]` in all 4 languages, and run the import.
+- Drum (1.11, 6 slides): main Drum screen (`drum-tab`), sample banks, LOADED (`drum-loaded-trim` + `drum-loaded-rename`), sample shaping, Drum FX, Pattern repeats (`drum-repeats-phone`, the real 1.11 Drum window with the 1-88 box and COPY/PASTE). Cache key `CAROUSEL_VER` in `carousel.ts` (bump it whenever posters change).
 - Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
 
 ## App 1.11 draft (Oct 20, draft only, merge:no)
