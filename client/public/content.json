@@ -1981,14 +1981,6 @@
             "title": "שם וצבע לעמוד",
             "text": "לחיצה ארוכה על מספר עמוד פותחת את Page name. מקלידים שם ובוחרים אחד מ-8 צבעים. הצבע גם צובע את הגלים של העמוד."
           },
-          "drum-fx": {
-            "title": "Drum FX",
-            "text": "שמונה פריסטים לתופים. הקשה מדליקה, הקשה נוספת מכבה, ולחיצה ארוכה פותחת את המחוונים."
-          },
-          "drum-repeats": {
-            "title": "Pattern repeats",
-            "text": "בוחרים 1 עד 10 חזרות או אינסוף לפני הקצב הבא. COPY ו-PASTE מעבירים קצב שלם למספר אחר, ו-REDO מבטל הדבקה."
-          },
           "sound-fx": {
             "title": "Sound FX",
             "text": "שמונה אפקטים שעוקבים אחרי קצב התופים, אחד פעיל בכל רגע. לחיצה ארוכה פותחת את המחוונים: Amount, EQ, Mid-sweep, Transpose ו-Reverb."
@@ -2017,13 +2009,29 @@
             "title": "יעדי המשטח",
             "text": "KEY, MIC, LOOP ו-DRUM קובעים מה המשטח מזיז, ואפשר להדליק כמה יחד. מחזיקים 1/4, 1/8, 1/16 או 1/32 כדי לחזור עליהם במהירות בקצב ה-BPM של התופים, ומחזיקים STOP כדי להחליש אותם בהדרגה."
           },
+          "drum-rows": {
+            "title": "כל 8 השורות",
+            "text": "הקשה על +4 מציגה את FX 1, FX 2, FX 3 ו-Voice מתחת לארבע השורות הראשונות ומסתירה את המקלדת. המקש מתחלף ל-‎-4, והקשה נוספת מסתירה את השורות ומחזירה את המקלדת."
+          },
+          "drum-main": {
+            "title": "מסך Drum",
+            "text": "החצים מחליפים קיט וסאמפלים, והנובים קובעים Drum Vol, Swing ו-BPM. לכל אחד מ-8 המקצבים יש 16 צעדים בכל שורה. בכל שורה יש LOAD, חצים, סליידר ווליום ו-L/R. הקשה על +4 מציגה את FX 1, FX 2, FX 3 ו-Voice."
+          },
           "drum-banks": {
             "title": "בנקי סאמפלים",
             "text": "שמונה שורות, והקשה על שם שורה פותחת את רשימת הסאונדים שלה מהבנקים Factory ו-Exclusive. כל שורה מציגה רק סוג סאונד משלה."
           },
-          "drum-shape": {
-            "title": "מעצבים כל סאמפל",
-            "text": "שישה נובים מתחת לגל מעצבים את הסאמפל של השורה: Gain, Squeeze, Attack, Sustain, Release ו-Reverb. כל שורה בכל קצב שומרת את שלה."
+          "drum-loaded": {
+            "title": "הסאמפלים שלכם (LOADED)",
+            "text": "בכל אחת מ-8 השורות יש בנק LOADED של עד 88 סאמפלים משלכם, עד 30 שניות כל אחד, שנשמר לבד. פסי ההתחלה והסוף חותכים את הסאמפל. SAVE שומר, RESET מחזיר לאורך מלא, RENAME נותן שם של עד 24 תווים ו-DELETE מוחק."
+          },
+          "drum-fx": {
+            "title": "Drum FX",
+            "text": "שמונה פריסטים לתופים. הקשה מדליקה, הקשה נוספת מכבה, ולחיצה ארוכה פותחת את המחוונים."
+          },
+          "drum-repeats": {
+            "title": "Pattern repeats",
+            "text": "לחיצה ארוכה על מספר קצב פותחת את החלון. בוחרים 1 עד 10, מקלידים מספר עד 88 בתיבה, או בוחרים אינסוף או DEFAULT. COPY ו-PASTE מעבירים קצב שלם למספר אחר."
           }
         }
       }
@@ -4009,14 +4017,6 @@
             "title": "Name and color a page",
             "text": "A long-press on a page number opens Page name. Type a name and pick one of 8 colors. The color also tints that page's waves."
           },
-          "drum-fx": {
-            "title": "Drum FX",
-            "text": "Eight presets for the drums. A tap turns one on, a second tap turns it off, and a long-press opens its sliders."
-          },
-          "drum-repeats": {
-            "title": "Pattern repeats",
-            "text": "Pick 1 to 10 repeats or infinity before the next rhythm. COPY and PASTE move a whole rhythm to another number, and REDO undoes a paste."
-          },
           "sound-fx": {
             "title": "Sound FX",
             "text": "Eight effects that follow the drum beat, one on at a time. A long-press opens its sliders: Amount, EQ, Mid-sweep, Transpose and Reverb."
@@ -4045,13 +4045,29 @@
             "title": "Pad targets",
             "text": "KEY, MIC, LOOP and DRUM choose what the pad moves, and several can be on. Hold 1/4, 1/8, 1/16 or 1/32 to stutter them at the drum BPM, and hold STOP to fade them out."
           },
+          "drum-rows": {
+            "title": "All 8 rows",
+            "text": "A tap on +4 shows FX 1, FX 2, FX 3 and Voice under the first four rows and hides the keyboard. The key then reads -4, and another tap hides those rows and brings the keyboard back."
+          },
+          "drum-main": {
+            "title": "The Drum screen",
+            "text": "The arrows switch the kit and the samples, and the knobs set Drum Vol, Swing and BPM. Each of the 8 rhythms has 16 steps on every row. Every row has LOAD, arrows, a volume slider and L/R. A tap on +4 shows FX 1, FX 2, FX 3 and Voice."
+          },
           "drum-banks": {
             "title": "Sample banks",
             "text": "Eight rows, and a tap on a row name opens its sound list from the Factory and Exclusive banks. Each row lists only its own kind of sound."
           },
-          "drum-shape": {
-            "title": "Shape each sample",
-            "text": "Six knobs under the waveform shape the sample of that row: Gain, Squeeze, Attack, Sustain, Release and Reverb. Each row of each rhythm keeps its own."
+          "drum-loaded": {
+            "title": "Your own samples (LOADED)",
+            "text": "Each of the 8 rows has a LOADED bank of up to 88 of your own samples, up to 30 seconds each, saved by itself. The start and end bars trim a sample. SAVE keeps it, RESET goes back to full length, RENAME gives a name of up to 24 characters and DELETE removes it."
+          },
+          "drum-fx": {
+            "title": "Drum FX",
+            "text": "Eight presets for the drums. A tap turns one on, a second tap turns it off, and a long-press opens its sliders."
+          },
+          "drum-repeats": {
+            "title": "Pattern repeats",
+            "text": "A long-press on a rhythm number opens the window. Pick 1 to 10, type a number up to 88 in the box, or pick infinity or DEFAULT. COPY and PASTE move a whole rhythm to another number."
           }
         }
       }
@@ -6037,14 +6053,6 @@
             "title": "Имя и цвет страницы",
             "text": "Долгое нажатие на номер страницы открывает Page name. Введите имя и выберите один из 8 цветов. Цвет также окрашивает волны этой страницы."
           },
-          "drum-fx": {
-            "title": "Drum FX",
-            "text": "Восемь пресетов для ударных. Нажатие включает, второе нажатие выключает, а долгое открывает ползунки."
-          },
-          "drum-repeats": {
-            "title": "Pattern repeats",
-            "text": "Выберите от 1 до 10 повторов или бесконечность до следующего ритма. COPY и PASTE переносят ритм целиком на другой номер, а REDO отменяет вставку."
-          },
           "sound-fx": {
             "title": "Sound FX",
             "text": "Восемь эффектов, которые следуют за ритмом ударных, включён один за раз. Долгое нажатие открывает ползунки: Amount, EQ, Mid-sweep, Transpose и Reverb."
@@ -6073,13 +6081,29 @@
             "title": "Цели пэда",
             "text": "KEY, MIC, LOOP и DRUM выбирают, что двигает пад, и можно включить несколько. Удерживайте 1/4, 1/8, 1/16 или 1/32 для быстрых повторов в темпе барабанов, а STOP плавно приглушает цели, пока вы его держите."
           },
+          "drum-rows": {
+            "title": "Все 8 рядов",
+            "text": "Нажатие на +4 показывает FX 1, FX 2, FX 3 и Voice под первыми четырьмя рядами и скрывает клавиатуру. Клавиша становится -4, а следующее нажатие скрывает эти ряды и возвращает клавиатуру."
+          },
+          "drum-main": {
+            "title": "Экран Drum",
+            "text": "Стрелки переключают набор и сэмплы, а ручки задают Drum Vol, Swing и BPM. У каждого из 8 ритмов по 16 шагов в каждом ряду. В каждом ряду есть LOAD, стрелки, ползунок громкости и L/R. Нажатие на +4 показывает FX 1, FX 2, FX 3 и Voice."
+          },
           "drum-banks": {
             "title": "Банки сэмплов",
             "text": "Восемь рядов, и нажатие на имя ряда открывает его список звуков из банков Factory и Exclusive. Каждый ряд показывает только свой тип звука."
           },
-          "drum-shape": {
-            "title": "Настройте каждый сэмпл",
-            "text": "Шесть ручек под волной настраивают сэмпл этого ряда: Gain, Squeeze, Attack, Sustain, Release и Reverb. Каждый ряд каждого ритма хранит свои."
+          "drum-loaded": {
+            "title": "Свои сэмплы (LOADED)",
+            "text": "У каждого из 8 рядов есть банк LOADED до 88 своих сэмплов, до 30 секунд каждый, он сохраняется сам. Ползунки начала и конца обрезают сэмпл. SAVE сохраняет, RESET возвращает полную длину, RENAME задаёт имя до 24 символов, DELETE удаляет."
+          },
+          "drum-fx": {
+            "title": "Drum FX",
+            "text": "Восемь пресетов для ударных. Нажатие включает, второе нажатие выключает, а долгое открывает ползунки."
+          },
+          "drum-repeats": {
+            "title": "Pattern repeats",
+            "text": "Долгое нажатие на номер ритма открывает окно. Выберите от 1 до 10, введите число до 88 в поле или выберите бесконечность или DEFAULT. COPY и PASTE переносят ритм целиком на другой номер."
           }
         }
       }
@@ -8065,14 +8089,6 @@
             "title": "اسم ولون للصفحة",
             "text": "الضغط المطوّل على رقم صفحة يفتح Page name. اكتب اسماً واختر لوناً من 8 ألوان. اللون يلوّن أيضاً موجات تلك الصفحة."
           },
-          "drum-fx": {
-            "title": "Drum FX",
-            "text": "ثمانية إعدادات للطبول. الضغط يشغّل، والضغط الثاني يطفئ، والضغط المطوّل يفتح المنزلقات."
-          },
-          "drum-repeats": {
-            "title": "Pattern repeats",
-            "text": "اختر من 1 إلى 10 تكرارات أو اللانهاية قبل الإيقاع التالي. COPY وPASTE ينقلان إيقاعاً كاملاً إلى رقم آخر، وREDO يتراجع عن اللصق."
-          },
           "sound-fx": {
             "title": "Sound FX",
             "text": "ثمانية مؤثرات تتبع إيقاع الطبول، ويعمل واحد منها في كل مرة. الضغط المطوّل يفتح المنزلقات: Amount وEQ وMid-sweep وTranspose وReverb."
@@ -8101,13 +8117,29 @@
             "title": "أهداف اللوحة",
             "text": "KEY وMIC وLOOP وDRUM تحدد ما تحرّكه اللوحة، ويمكن تشغيل عدة أهداف معاً. أمسك 1/4 أو 1/8 أو 1/16 أو 1/32 لتكرار سريع بإيقاع الطبول، وأمسك STOP لإخفاتها تدريجياً."
           },
+          "drum-rows": {
+            "title": "الصفوف الثمانية",
+            "text": "الضغط على +4 يُظهر FX 1 وFX 2 وFX 3 وVoice تحت الصفوف الأربعة الأولى ويخفي لوحة المفاتيح. يصبح المفتاح ‎-4، والضغط مرة أخرى يخفي هذه الصفوف ويعيد لوحة المفاتيح."
+          },
+          "drum-main": {
+            "title": "شاشة Drum",
+            "text": "الأسهم تبدّل الطقم والعينات، والمقابض تضبط Drum Vol وSwing وBPM. لكل إيقاع من الإيقاعات الثمانية 16 خطوة في كل صف. في كل صف LOAD وأسهم ومنزلق لمستوى الصوت وL/R. الضغط على +4 يُظهر FX 1 وFX 2 وFX 3 وVoice."
+          },
           "drum-banks": {
             "title": "بنوك العينات",
             "text": "ثمانية صفوف، والضغط على اسم صف يفتح قائمة أصواته من بنكي Factory وExclusive. كل صف يعرض نوع صوته فقط."
           },
-          "drum-shape": {
-            "title": "شكّل كل عيّنة",
-            "text": "ست مقابض تحت الموجة تشكّل عيّنة ذلك الصف: Gain وSqueeze وAttack وSustain وRelease وReverb. كل صف في كل إيقاع يحتفظ بمقابضه."
+          "drum-loaded": {
+            "title": "عيناتك الخاصة (LOADED)",
+            "text": "لكل صف من الصفوف الثمانية بنك LOADED يضم حتى 88 عينة خاصة بك، حتى 30 ثانية لكل منها، ويُحفظ تلقائياً. شريطا البداية والنهاية يقصّان العينة. SAVE يحفظ، وRESET يعيد الطول الكامل، وRENAME يعطي اسماً حتى 24 حرفاً، وDELETE يحذف."
+          },
+          "drum-fx": {
+            "title": "Drum FX",
+            "text": "ثمانية إعدادات للطبول. الضغط يشغّل، والضغط الثاني يطفئ، والضغط المطوّل يفتح المنزلقات."
+          },
+          "drum-repeats": {
+            "title": "Pattern repeats",
+            "text": "الضغط المطوّل على رقم الإيقاع يفتح النافذة. اختر من 1 إلى 10، أو اكتب رقماً حتى 88 في الخانة، أو اختر اللانهاية أو DEFAULT. COPY وPASTE ينقلان إيقاعاً كاملاً إلى رقم آخر."
           }
         }
       }
