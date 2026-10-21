@@ -145,10 +145,10 @@ const featureData = {
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive", updates: "Updates" };
 const heroDefault = { kicker: "Android music app · Version 1.11, coming to the store in the next few days", title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "77.4 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const launchDefaults: Record<Language, { headline: string; price: string; note: string }> = {
-  he: {headline: "מגיע בקרוב ל-Google Play.", price: "L Studio Pro, 8$.", note: "מגיע בקרוב ל-Google Play. L Studio Pro, 8$."},
-  en: {headline: "Coming soon to Google Play.", price: "L Studio Pro, $8.", note: "Coming soon to Google Play. L Studio Pro, $8."},
-  ru: {headline: "Скоро в Google Play.", price: "L Studio Pro, $8.", note: "Скоро в Google Play. L Studio Pro, $8."},
-  ar: {headline: "قادم قريباً إلى Google Play.", price: "L Studio Pro، 8$.", note: "قادم قريباً إلى Google Play. L Studio Pro، 8$."},
+  he: {headline: "זמין עכשיו ב-Google Play.", price: "L Studio Pro, 8$.", note: "זמין עכשיו ב-Google Play. L Studio Pro, 8$."},
+  en: {headline: "Available now on Google Play.", price: "L Studio Pro, $8.", note: "Available now on Google Play. L Studio Pro, $8."},
+  ru: {headline: "Уже в Google Play.", price: "L Studio Pro, $8.", note: "Уже в Google Play. L Studio Pro, $8."},
+  ar: {headline: "متاح الآن على Google Play.", price: "L Studio Pro، 8$.", note: "متاح الآن على Google Play. L Studio Pro، 8$."},
 };
 const signalDefault = { text: "From key to sound to loop to recording", note: "All inside L-Studio" };
 const INTRO_SHORT_ID = "a2CGFDQkZ80";
@@ -213,7 +213,7 @@ const testerDefaults = {
   he: {
     kicker: "EARLY ACCESS",
     title: "ההרשמה לבודקים נסגרה.",
-    body: "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. אחרי הבדיקה, L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
+    body: "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. L Studio Pro זמין עכשיו ב-Google Play, ב-8$.",
     status: "ההרשמה לבודקים נסגרה. כל 44 המקומות נתפסו.",
     spotsLabel: "נתפסו",
     spotsStatus: "ההרשמה נסגרה",
@@ -224,7 +224,7 @@ const testerDefaults = {
   en: {
     kicker: "EARLY ACCESS",
     title: "Tester signup is closed.",
-    body: "All 44 spots are taken. Thank you to everyone who joined the Google Play test. After the test, L Studio Pro is coming soon to Google Play, for $8.",
+    body: "All 44 spots are taken. Thank you to everyone who joined the Google Play test. L Studio Pro is available now on Google Play, for $8.",
     status: "Tester signup is closed. All 44 spots are taken.",
     spotsLabel: "taken",
     spotsStatus: "Signup closed",
@@ -235,7 +235,7 @@ const testerDefaults = {
   ru: {
     kicker: "РАННИЙ ДОСТУП",
     title: "Запись в тестеры закрыта.",
-    body: "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. После теста L Studio Pro скоро выйдет в Google Play, за $8.",
+    body: "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. L Studio Pro уже доступен в Google Play, за $8.",
     status: "Запись в тестеры закрыта. Все 44 места заняты.",
     spotsLabel: "занято",
     spotsStatus: "Запись закрыта",
@@ -246,7 +246,7 @@ const testerDefaults = {
   ar: {
     kicker: "وصول مبكر",
     title: "التسجيل للمختبرين مغلق.",
-    body: "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. بعد الاختبار، يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
+    body: "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. L Studio Pro متاح الآن على Google Play، بسعر 8$.",
     status: "التسجيل للمختبرين مغلق. جميع الأماكن الـ44 محجوزة.",
     spotsLabel: "محجوزة",
     spotsStatus: "التسجيل مغلق",

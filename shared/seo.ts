@@ -207,41 +207,41 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What's new in L Studio for Android. Version 1.10 is available on Google Play. Version 1.11 is in Google review and arrives in the next few days. L Studio Pro is coming soon to Google Play, for $8.",
+        "What's new in L Studio for Android. Version 1.10 is available on Google Play. Version 1.11 is in Google review and arrives in the next few days. L Studio Pro is available now on Google Play, for $8.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש ב-L Studio לאנדרואיד. גרסה 1.10 זמינה ב-Google Play. גרסה 1.11 בבדיקה של Google ותגיע בימים הקרובים. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
+      description: "מה חדש ב-L Studio לאנדרואיד. גרסה 1.10 זמינה ב-Google Play. גרסה 1.11 בבדיקה של Google ותגיע בימים הקרובים. L Studio Pro זמין עכשיו ב-Google Play, ב-8$.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Что нового в L Studio для Android. Версия 1.10 уже в Google Play. Версия 1.11 на проверке в Google и выйдет в ближайшие дни. L Studio Pro скоро выйдет в Google Play, за $8.",
+        "Что нового в L Studio для Android. Версия 1.10 уже в Google Play. Версия 1.11 на проверке в Google и выйдет в ближайшие дни. L Studio Pro уже доступен в Google Play, за $8.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما الجديد في L Studio لأندرويد. الإصدار 1.10 متاح في Google Play. الإصدار 1.11 قيد مراجعة Google ويصل خلال الأيام القادمة. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
+      description: "ما الجديد في L Studio لأندرويد. الإصدار 1.10 متاح في Google Play. الإصدار 1.11 قيد مراجعة Google ويصل خلال الأيام القادمة. L Studio Pro متاح الآن على Google Play، بسعر 8$.",
     },
   },
   buy: {
     en: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro for Android is coming soon to Google Play, for $8. Purchases are not available on this website right now.",
+        "L Studio Pro for Android is available now on Google Play, for $8. Purchases are not available on this website right now.",
     },
     he: {
       title: "L Studio Pro",
-      description: "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. רכישה באתר אינה זמינה כרגע.",
+      description: "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-8$. רכישה באתר אינה זמינה כרגע.",
     },
     ru: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro для Android скоро выйдет в Google Play, за $8. Покупка на этом сайте сейчас недоступна.",
+        "L Studio Pro для Android уже доступен в Google Play, за $8. Покупка на этом сайте сейчас недоступна.",
     },
     ar: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. الشراء غير متاح على هذا الموقع حالياً.",
+        "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$. الشراء غير متاح على هذا الموقع حالياً.",
     },
   },
   "buy-success": {
