@@ -1,7 +1,7 @@
 import type { Language } from "@/contexts/LanguageContext";
 
 export type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
-/** "store" = the 8 Google Play listing screenshots under the hero title (not a windows tab).
+/** "store" = the 8 homepage slides under the hero title (same 8 screens as the Google Play listing, 1.12 poster style; not a windows tab).
  * "update112" = the 1.12 screenshots on /updates (analog mixer, wave EQ, Mastering), attached to the 1.12 item. */
 export type CarouselId = PlayId | "store" | "update112";
 
@@ -39,17 +39,17 @@ export const carouselSlides: Record<CarouselId, SlideDef[]> = {
     { id: "pad-keyboard", designed: "pad-2" },
     { id: "pad-targets", designed: "pad-3" },
   ],
-  // Google Play listing screenshots (1080x1920, counter 01 / 08 baked in), in baked-counter order.
-  // he = the Hebrew Play set; en, ru, ar = the default (English) Play set, since Play has no RU or AR set.
+  // Homepage top carousel: the same 8 screens as the Google Play listing (01..08), rendered in the 1.12 updates-carousel
+  // poster style (counter n/8, gold + white title, caption, one real capture). Captions per language (he, en, ru, ar).
   store: [
-    { id: "store-sound", designed: "store-1" },
-    { id: "store-keyboards", designed: "store-2" },
-    { id: "store-pad", designed: "store-3" },
-    { id: "store-voice", designed: "store-4" },
-    { id: "store-loop", designed: "store-5" },
-    { id: "store-layers", designed: "store-6" },
-    { id: "store-beat", designed: "store-7" },
-    { id: "store-drum-styles", designed: "store-8" },
+    { id: "store-sound", designed: "home-1" },
+    { id: "store-keyboards", designed: "home-2" },
+    { id: "store-pad", designed: "home-3" },
+    { id: "store-voice", designed: "home-4" },
+    { id: "store-loop", designed: "home-5" },
+    { id: "store-layers", designed: "home-6" },
+    { id: "store-beat", designed: "home-7" },
+    { id: "store-drum-styles", designed: "home-8" },
   ],
   // /updates, 1.12 item (counter n/10 baked in): mixer first, then Mastering. Real 1.12 smoke captures (David, Oct 21).
   // he and en have their own captions; ru and ar use the English posters for now (TODO in CONTENT_EDITING.md).
@@ -85,7 +85,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-6";
+export const CAROUSEL_VER = "carousel-7";
 const SMALL = 360;
 const LARGE = 630;
 

@@ -2098,36 +2098,44 @@
             "text": "לחיצה ארוכה על מספר קצב פותחת את החלון. בוחרים 1 עד 10, מקלידים מספר עד 88 בתיבה, או בוחרים אינסוף או DEFAULT. COPY ו-PASTE מעבירים קצב שלם למספר אחר."
           },
           "store-sound": {
-            "title": "נגינה עם צלילים משלך",
-            "alt": "צילום מסך מ-Google Play 1/8: נגינה עם צלילים משלך"
+            "title": "צלילים משלכם",
+            "text": "חמישה גלי קול: סינוס, ריבוע, משולש, מסור ורעש. מעטפת, מסנן, דרייב, הד וגלישה מעצבים את הצליל.",
+            "alt": "צלילים משלכם. חמישה גלי קול: סינוס, ריבוע, משולש, מסור ורעש. מעטפת, מסנן, דרייב, הד וגלישה מעצבים את הצליל."
           },
           "store-keyboards": {
-            "title": "שתי מקלדות, נגינה חיה",
-            "alt": "צילום מסך מ-Google Play 2/8: שתי מקלדות, נגינה חיה"
+            "title": "שתי מקלדות",
+            "text": "לוחצים על + ונפתחת מקלדת שנייה, 16 קלידים בסך הכול. מצב LIVE נועל ניקוי ושינוי שמות, כדי ששום דבר לא יימחק בהופעה.",
+            "alt": "שתי מקלדות. לוחצים על + ונפתחת מקלדת שנייה, 16 קלידים בסך הכול. מצב LIVE נועל ניקוי ושינוי שמות, כדי ששום דבר לא יימחק בהופעה."
           },
           "store-pad": {
-            "title": "משטח נגינה חיה",
-            "alt": "צילום מסך מ-Google Play 3/8: משטח נגינה חיה"
+            "title": "משטח נגינה חי",
+            "text": "גוררים על המשטח והצליל זז עם האצבע. כפתורי Wah, Oct ו־Vibrato, וחזרות מ־1/4 עד 1/32.",
+            "alt": "משטח נגינה חי. גוררים על המשטח והצליל זז עם האצבע. כפתורי Wah, Oct ו־Vibrato, וחזרות מ־1/4 עד 1/32."
           },
           "store-voice": {
             "title": "הקליטו את הקול",
-            "alt": "צילום מסך מ-Google Play 4/8: הקליטו את הקול"
+            "text": "שלושה ערוצי שירה בעמוד 1. גיטרה, בס וכלי נגינה בעמוד 2. לכל ערוץ עורך משלו.",
+            "alt": "הקליטו את הקול. שלושה ערוצי שירה בעמוד 1. גיטרה, בס וכלי נגינה בעמוד 2. לכל ערוץ עורך משלו."
           },
           "store-loop": {
-            "title": "ערכו כל לולאה",
-            "alt": "צילום מסך מ-Google Play 5/8: ערכו כל לולאה"
+            "title": "עורך לולאות",
+            "text": "חיתוך, לולאה ואקולייזר. 8 קופסאות קצב עוקבות אחרי התופים, ולחיצה ארוכה פותחת חזרות.",
+            "alt": "עורך לולאות. חיתוך, לולאה ואקולייזר. 8 קופסאות קצב עוקבות אחרי התופים, ולחיצה ארוכה פותחת חזרות."
           },
           "store-layers": {
-            "title": "בנו שכבות של לולאות",
-            "alt": "צילום מסך מ-Google Play 6/8: בנו שכבות של לולאות"
+            "title": "שכבות של לולאות",
+            "text": "32 ערוצי לולאה ב־8 עמודים. לחיצה ארוכה על מספר עמוד נותנת לו שם וצבע.",
+            "alt": "שכבות של לולאות. 32 ערוצי לולאה ב־8 עמודים. לחיצה ארוכה על מספר עמוד נותנת לו שם וצבע."
           },
           "store-beat": {
-            "title": "בנו את הקצב",
-            "alt": "צילום מסך מ-Google Play 7/8: בנו את הקצב"
+            "title": "בונים את הקצב",
+            "text": "עד 8 שורות תופים עם 16 צעדים. בוחרים דגימה לכל שורה ולכל קצב, ומשנים צעדים תוך כדי נגינה.",
+            "alt": "בונים את הקצב. עד 8 שורות תופים עם 16 צעדים. בוחרים דגימה לכל שורה ולכל קצב, ומשנים צעדים תוך כדי נגינה."
           },
           "store-drum-styles": {
-            "title": "ערכות תופים מוכנות",
-            "alt": "צילום מסך מ-Google Play 8/8: ערכות תופים מוכנות"
+            "title": "ערכות תופים",
+            "text": "8 חבילות סגנון ועוד 11 חבילות Exclusive. לוחצים על Style כדי לבחור ערכה, ועל Switch to exclusive לעוד.",
+            "alt": "ערכות תופים. 8 חבילות סגנון ועוד 11 חבילות Exclusive. לוחצים על Style כדי לבחור ערכה, ועל Switch to exclusive לעוד."
           }
         }
       }
@@ -4230,36 +4238,44 @@
             "text": "A long-press on a rhythm number opens the window. Pick 1 to 10, type a number up to 88 in the box, or pick infinity or DEFAULT. COPY and PASTE move a whole rhythm to another number."
           },
           "store-sound": {
-            "title": "Play your own sound",
-            "alt": "Google Play screenshot 1/8: Play your own sound"
+            "title": "Your Own Sound",
+            "text": "Five waves: Sine, Square, Triangle, Saw and Noise. Envelope, filter, Drive, Echo and Glide shape the sound.",
+            "alt": "Your Own Sound. Five waves: Sine, Square, Triangle, Saw and Noise. Envelope, filter, Drive, Echo and Glide shape the sound."
           },
           "store-keyboards": {
-            "title": "Two keyboards, live",
-            "alt": "Google Play screenshot 2/8: Two keyboards, live"
+            "title": "Two Keyboards",
+            "text": "Tap + for a second keyboard, 16 keys in all. LIVE mode locks Clear and names, so nothing is erased on stage.",
+            "alt": "Two Keyboards. Tap + for a second keyboard, 16 keys in all. LIVE mode locks Clear and names, so nothing is erased on stage."
           },
           "store-pad": {
-            "title": "A live performance pad",
-            "alt": "Google Play screenshot 3/8: A live performance pad"
+            "title": "Live Pad",
+            "text": "Drag on the pad and the sound moves with your finger. Wah, Oct and Vibrato knobs, and repeats from 1/4 to 1/32.",
+            "alt": "Live Pad. Drag on the pad and the sound moves with your finger. Wah, Oct and Vibrato knobs, and repeats from 1/4 to 1/32."
           },
           "store-voice": {
-            "title": "Record your voice",
-            "alt": "Google Play screenshot 4/8: Record your voice"
+            "title": "Record Your Voice",
+            "text": "Three vocal channels on page 1. Guitar, Bass and Instrumental on page 2. Each channel has its own editor.",
+            "alt": "Record Your Voice. Three vocal channels on page 1. Guitar, Bass and Instrumental on page 2. Each channel has its own editor."
           },
           "store-loop": {
-            "title": "Edit every loop",
-            "alt": "Google Play screenshot 5/8: Edit every loop"
+            "title": "Loop Editor",
+            "text": "Trim, loop and shape the EQ. 8 rhythm boxes follow the drums. Long-press one for repeats.",
+            "alt": "Loop Editor. Trim, loop and shape the EQ. 8 rhythm boxes follow the drums. Long-press one for repeats."
           },
           "store-layers": {
-            "title": "Build layers of loops",
-            "alt": "Google Play screenshot 6/8: Build layers of loops"
+            "title": "Layers of Loops",
+            "text": "32 loop channels on 8 pages. Long-press a page number to name it and pick its color.",
+            "alt": "Layers of Loops. 32 loop channels on 8 pages. Long-press a page number to name it and pick its color."
           },
           "store-beat": {
-            "title": "Build the beat",
-            "alt": "Google Play screenshot 7/8: Build the beat"
+            "title": "Build the Beat",
+            "text": "Up to 8 drum rows with 16 steps. Pick a sample for every row and every rhythm. Edit steps while it plays.",
+            "alt": "Build the Beat. Up to 8 drum rows with 16 steps. Pick a sample for every row and every rhythm. Edit steps while it plays."
           },
           "store-drum-styles": {
-            "title": "Drum styles",
-            "alt": "Google Play screenshot 8/8: Drum styles"
+            "title": "Drum Styles",
+            "text": "8 Style packs and 11 Exclusive packs. Tap Style to pick a kit, and Switch to exclusive for more.",
+            "alt": "Drum Styles. 8 Style packs and 11 Exclusive packs. Tap Style to pick a kit, and Switch to exclusive for more."
           }
         }
       }
@@ -6362,36 +6378,44 @@
             "text": "Долгое нажатие на номер ритма открывает окно. Выберите от 1 до 10, введите число до 88 в поле или выберите бесконечность или DEFAULT. COPY и PASTE переносят ритм целиком на другой номер."
           },
           "store-sound": {
-            "title": "Играй своим звуком",
-            "alt": "Скриншот из Google Play 1/8: Играй своим звуком"
+            "title": "Свой звук",
+            "text": "Пять волн: Sine, Square, Triangle, Saw и Noise. Огибающая, фильтр, Drive, Echo и Glide формируют звук.",
+            "alt": "Свой звук. Пять волн: Sine, Square, Triangle, Saw и Noise. Огибающая, фильтр, Drive, Echo и Glide формируют звук."
           },
           "store-keyboards": {
-            "title": "Две клавиатуры, игра вживую",
-            "alt": "Скриншот из Google Play 2/8: Две клавиатуры, игра вживую"
+            "title": "Две клавиатуры",
+            "text": "Нажмите + для второй клавиатуры, всего 16 клавиш. Режим LIVE блокирует Clear и имена, чтобы на сцене ничего не стерлось.",
+            "alt": "Две клавиатуры. Нажмите + для второй клавиатуры, всего 16 клавиш. Режим LIVE блокирует Clear и имена, чтобы на сцене ничего не стерлось."
           },
           "store-pad": {
-            "title": "Пэд для живой игры",
-            "alt": "Скриншот из Google Play 3/8: Пэд для живой игры"
+            "title": "Живой пэд",
+            "text": "Ведите пальцем по паду, и звук движется вместе с пальцем. Ручки Wah, Oct и Vibrato, повторы от 1/4 до 1/32.",
+            "alt": "Живой пэд. Ведите пальцем по паду, и звук движется вместе с пальцем. Ручки Wah, Oct и Vibrato, повторы от 1/4 до 1/32."
           },
           "store-voice": {
-            "title": "Запиши свой голос",
-            "alt": "Скриншот из Google Play 4/8: Запиши свой голос"
+            "title": "Запиши голос",
+            "text": "Три вокальных канала на странице 1. Гитара, бас и инструмент на странице 2. У каждого канала свой редактор.",
+            "alt": "Запиши голос. Три вокальных канала на странице 1. Гитара, бас и инструмент на странице 2. У каждого канала свой редактор."
           },
           "store-loop": {
-            "title": "Редактируй каждую петлю",
-            "alt": "Скриншот из Google Play 5/8: Редактируй каждую петлю"
+            "title": "Редактор лупов",
+            "text": "Обрезка, луп и эквалайзер. 8 ячеек ритма следуют за ударными. Долгое нажатие открывает повторы.",
+            "alt": "Редактор лупов. Обрезка, луп и эквалайзер. 8 ячеек ритма следуют за ударными. Долгое нажатие открывает повторы."
           },
           "store-layers": {
-            "title": "Собирай слои петель",
-            "alt": "Скриншот из Google Play 6/8: Собирай слои петель"
+            "title": "Слои лупов",
+            "text": "32 канала лупов на 8 страницах. Долгое нажатие на номер страницы задаёт имя и цвет.",
+            "alt": "Слои лупов. 32 канала лупов на 8 страницах. Долгое нажатие на номер страницы задаёт имя и цвет."
           },
           "store-beat": {
             "title": "Собери ритм",
-            "alt": "Скриншот из Google Play 7/8: Собери ритм"
+            "text": "До 8 рядов ударных по 16 шагов. Сэмпл для каждого ряда и каждого ритма. Шаги меняются прямо во время игры.",
+            "alt": "Собери ритм. До 8 рядов ударных по 16 шагов. Сэмпл для каждого ряда и каждого ритма. Шаги меняются прямо во время игры."
           },
           "store-drum-styles": {
-            "title": "Стили барабанов",
-            "alt": "Скриншот из Google Play 8/8: Стили барабанов"
+            "title": "Стили ударных",
+            "text": "8 пакетов Style и 11 пакетов Exclusive. Нажмите Style, чтобы выбрать набор, и Switch to exclusive для остальных.",
+            "alt": "Стили ударных. 8 пакетов Style и 11 пакетов Exclusive. Нажмите Style, чтобы выбрать набор, и Switch to exclusive для остальных."
           }
         }
       }
@@ -8494,36 +8518,44 @@
             "text": "الضغط المطوّل على رقم الإيقاع يفتح النافذة. اختر من 1 إلى 10، أو اكتب رقماً حتى 88 في الخانة، أو اختر اللانهاية أو DEFAULT. COPY وPASTE ينقلان إيقاعاً كاملاً إلى رقم آخر."
           },
           "store-sound": {
-            "title": "اعزف بصوتك الخاص",
-            "alt": "لقطة شاشة من Google Play 1/8: اعزف بصوتك الخاص"
+            "title": "صوتك الخاص",
+            "text": "خمس موجات: Sine وSquare وTriangle وSaw وNoise. الغلاف والفلتر وDrive وEcho وGlide تشكّل الصوت.",
+            "alt": "صوتك الخاص. خمس موجات: Sine وSquare وTriangle وSaw وNoise. الغلاف والفلتر وDrive وEcho وGlide تشكّل الصوت."
           },
           "store-keyboards": {
-            "title": "لوحتا مفاتيح، عزف حي",
-            "alt": "لقطة شاشة من Google Play 2/8: لوحتا مفاتيح، عزف حي"
+            "title": "لوحتا مفاتيح",
+            "text": "اضغط + لفتح لوحة ثانية، 16 مفتاحًا في المجموع. وضع LIVE يقفل Clear والأسماء حتى لا يُمحى شيء على المسرح.",
+            "alt": "لوحتا مفاتيح. اضغط + لفتح لوحة ثانية، 16 مفتاحًا في المجموع. وضع LIVE يقفل Clear والأسماء حتى لا يُمحى شيء على المسرح."
           },
           "store-pad": {
-            "title": "لوحة للأداء الحي",
-            "alt": "لقطة شاشة من Google Play 3/8: لوحة للأداء الحي"
+            "title": "لوحة الأداء الحي",
+            "text": "اسحب على اللوحة فيتحرك الصوت مع إصبعك. مقابض Wah وOct وVibrato، وتكرار من 1/4 حتى 1/32.",
+            "alt": "لوحة الأداء الحي. اسحب على اللوحة فيتحرك الصوت مع إصبعك. مقابض Wah وOct وVibrato، وتكرار من 1/4 حتى 1/32."
           },
           "store-voice": {
             "title": "سجّل صوتك",
-            "alt": "لقطة شاشة من Google Play 4/8: سجّل صوتك"
+            "text": "ثلاث قنوات للغناء في الصفحة 1. غيتار وباس وآلة في الصفحة 2. لكل قناة محررها الخاص.",
+            "alt": "سجّل صوتك. ثلاث قنوات للغناء في الصفحة 1. غيتار وباس وآلة في الصفحة 2. لكل قناة محررها الخاص."
           },
           "store-loop": {
-            "title": "حرّر كل حلقة",
-            "alt": "لقطة شاشة من Google Play 5/8: حرّر كل حلقة"
+            "title": "محرر اللوب",
+            "text": "قصّ وكرّر وشكّل الـ EQ. ثمانية مربعات إيقاع تتبع الطبول، والضغط المطوّل يفتح التكرارات.",
+            "alt": "محرر اللوب. قصّ وكرّر وشكّل الـ EQ. ثمانية مربعات إيقاع تتبع الطبول، والضغط المطوّل يفتح التكرارات."
           },
           "store-layers": {
-            "title": "ابنِ طبقات من الحلقات",
-            "alt": "لقطة شاشة من Google Play 6/8: ابنِ طبقات من الحلقات"
+            "title": "طبقات من اللوب",
+            "text": "32 قناة لوب في 8 صفحات. اضغط مطولًا على رقم الصفحة لتسميتها واختيار لونها.",
+            "alt": "طبقات من اللوب. 32 قناة لوب في 8 صفحات. اضغط مطولًا على رقم الصفحة لتسميتها واختيار لونها."
           },
           "store-beat": {
             "title": "ابنِ الإيقاع",
-            "alt": "لقطة شاشة من Google Play 7/8: ابنِ الإيقاع"
+            "text": "حتى 8 صفوف طبول بـ16 خطوة. اختر عينة لكل صف ولكل إيقاع، وعدّل الخطوات أثناء التشغيل.",
+            "alt": "ابنِ الإيقاع. حتى 8 صفوف طبول بـ16 خطوة. اختر عينة لكل صف ولكل إيقاع، وعدّل الخطوات أثناء التشغيل."
           },
           "store-drum-styles": {
             "title": "أنماط الطبول",
-            "alt": "لقطة شاشة من Google Play 8/8: أنماط الطبول"
+            "text": "8 حزم Style و11 حزمة Exclusive. المس Style لاختيار طقم، وSwitch to exclusive للمزيد.",
+            "alt": "أنماط الطبول. 8 حزم Style و11 حزمة Exclusive. المس Style لاختيار طقم، وSwitch to exclusive للمزيد."
           }
         }
       }
