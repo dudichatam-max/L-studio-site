@@ -154,7 +154,7 @@ const PLAY_ALT: Record<Language, string> = {
 
 const heroDefault = { kicker: "Android music app · Version 1.11, coming soon to the store", title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "77.4 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const launchDefaults: Record<Language, { headline: string; price: string; note: string }> = {
-  he: {headline: "זמין עכשיו ב-Google Play.", price: "L Studio Pro, 8$.", note: "זמין עכשיו ב-Google Play. L Studio Pro, 8$."},
+  he: {headline: "זמין עכשיו ב-Google Play.", price: "L Studio Pro, ‏24.90 ‏₪.", note: "זמין עכשיו ב-Google Play. L Studio Pro, ‏24.90 ‏₪."},
   en: {headline: "Available now on Google Play.", price: "L Studio Pro, $8.", note: "Available now on Google Play. L Studio Pro, $8."},
   ru: {headline: "Уже в Google Play.", price: "L Studio Pro, $8.", note: "Уже в Google Play. L Studio Pro, $8."},
   ar: {headline: "متاح الآن على Google Play.", price: "L Studio Pro، 8$.", note: "متاح الآن على Google Play. L Studio Pro، 8$."},
@@ -222,7 +222,7 @@ const testerDefaults = {
   he: {
     kicker: "EARLY ACCESS",
     title: "ההרשמה לבודקים נסגרה.",
-    body: "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. L Studio Pro זמין עכשיו ב-Google Play, ב-8$.",
+    body: "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪.",
     status: "ההרשמה לבודקים נסגרה. כל 44 המקומות נתפסו.",
     spotsLabel: "נתפסו",
     spotsStatus: "ההרשמה נסגרה",
