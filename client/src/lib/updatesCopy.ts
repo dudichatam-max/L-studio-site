@@ -10,6 +10,10 @@ export type UpdateItem = {
   summary: string;
   /** Ticker line. Falls back to `title` when missing. */
   ticker?: string;
+  /** YouTube video id shown in a 9:16 frame (youtube-nocookie, lazy). */
+  videoId?: string;
+  /** Accessible title for the video frame, per language. */
+  videoTitle?: string;
   /** Extra ticker lines for the same item, each linking to the item. */
   tickerMore?: string[];
   detail?: string;

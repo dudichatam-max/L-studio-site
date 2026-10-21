@@ -1691,6 +1691,14 @@
         },
         "items": [
           {
+            "id": "app-1-12-mixer-demo",
+            "status": "upcoming",
+            "title": "בקרוב: הדגמה של חלון המיקסר בגרסה 1.12",
+            "summary": "מבט ראשון על חלון המיקסר החדש שמגיע בגרסה 1.12. בסרטון רואים את החלון ואת דפי הגלים שלו.",
+            "videoId": "f6bLB0IP1ks",
+            "videoTitle": "סרטון הדגמה: חלון המיקסר בגרסה 1.12"
+          },
+          {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
             "title": "בקרוב בחנות: גרסה 1.11 עם סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
@@ -3726,6 +3734,14 @@
           "shipped": "Recently shipped"
         },
         "items": [
+          {
+            "id": "app-1-12-mixer-demo",
+            "status": "upcoming",
+            "title": "Coming soon: mixer window demo in version 1.12",
+            "summary": "A first look at the new mixer window coming in version 1.12. The video shows the window and its wave pages.",
+            "videoId": "f6bLB0IP1ks",
+            "videoTitle": "Demo video: the mixer window in version 1.12"
+          },
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
@@ -5763,6 +5779,14 @@
         },
         "items": [
           {
+            "id": "app-1-12-mixer-demo",
+            "status": "upcoming",
+            "title": "Скоро: демо окна микшера в версии 1.12",
+            "summary": "Первый взгляд на новое окно микшера, которое появится в версии 1.12. В видео показано окно и его страницы волн.",
+            "videoId": "f6bLB0IP1ks",
+            "videoTitle": "Демо-видео: окно микшера в версии 1.12"
+          },
+          {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
             "title": "Скоро в магазине: версия 1.11 со своими сэмплами в ударных, Keep playing и октавой для каждой волны",
@@ -7798,6 +7822,14 @@
           "shipped": "صدر مؤخراً"
         },
         "items": [
+          {
+            "id": "app-1-12-mixer-demo",
+            "status": "upcoming",
+            "title": "قريبًا: عرض نافذة المازج في الإصدار 1.12",
+            "summary": "نظرة أولى على نافذة المازج الجديدة القادمة في الإصدار 1.12. يعرض الفيديو النافذة وصفحات الموجات فيها.",
+            "videoId": "f6bLB0IP1ks",
+            "videoTitle": "فيديو العرض: نافذة المازج في الإصدار 1.12"
+          },
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
