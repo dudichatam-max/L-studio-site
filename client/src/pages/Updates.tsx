@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
+import PlayCarousel from "@/components/PlayCarousel";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { POSTER_VER } from "@/lib/posters";
@@ -160,7 +161,7 @@ export default function Updates() {
                 {group.items.map((item) => {
                   const shots = updateScreenshots(item);
                   return (
-                    <article className={shots.length || item.videoId ? "updates-card updates-card--media" : "updates-card"} id={item.id} key={item.id}>
+                    <article className={shots.length || item.videoId || item.carousel ? "updates-card updates-card--media" : "updates-card"} id={item.id} key={item.id}>
                       <div className="updates-card-copy">
                         <div className="updates-card-head">
                           <h3>{item.title}</h3>
@@ -193,8 +194,20 @@ export default function Updates() {
                         ) : null}
                         {item.dateLabel ? <p className="updates-date">{item.dateLabel}</p> : null}
                       </div>
-                      {item.videoId ? (
+                      {item.videoId || item.carousel ? (
                         <div className="updates-card-shots">
+                          {item.carousel ? (
+                            <div className="updates-carousel">
+                              <PlayCarousel
+                                tab={item.carousel.id}
+                                language={language}
+                                isRtl={isRtl}
+                                copy={{ region: item.carousel.label, slides: item.carousel.slides }}
+                                className="updates-carousel__inner"
+                              />
+                            </div>
+                          ) : null}
+                          {item.videoId ? (
                           <figure className="updates-shot updates-video">
                             <iframe
                               src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(item.videoId)}?playsinline=1&rel=0`}
@@ -205,6 +218,7 @@ export default function Updates() {
                               referrerPolicy="strict-origin-when-cross-origin"
                             />
                           </figure>
+                          ) : null}
                         </div>
                       ) : null}
                       {shots.length ? (

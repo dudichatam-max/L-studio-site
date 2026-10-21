@@ -204,6 +204,14 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Drum (1.11, 6 slides; the sample shaping slide was removed at David's request): all 8 rows open after +4 with no keyboard (`drum-rows`, David's Oct 20 shot cropped y 68..1540), main Drum screen (`drum-tab`), sample banks, LOADED (`drum-loaded-trim` + `drum-loaded-rename`), Drum FX, Pattern repeats (`drum-repeats-phone`, the real 1.11 Drum window with the 1-88 box and COPY/PASTE). Cache key `CAROUSEL_VER` in `carousel.ts` (bump it whenever posters change).
 - Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
 
+## Updates: 1.12 screenshots carousel (Oct 21)
+
+- The 1.12 item `app-1-12-mixer-demo` on `/updates` shows a 10-slide poster carousel next to the YouTube video, with the same `PlayCarousel` component (swipe, arrows, dots, RTL-correct, lazy webp + jpg). Slide list: `update112` in `client/src/lib/carousel.ts`; files `assets/carousel/{lang}/upd-*-w360|w630.{webp,jpg}`.
+- Order: mixer first, then Mastering: Analog Mixer, wave EQ, 4 pages per wave, octave per page, Mastering for beginners, 8 styles, Advanced mode, Tone EQ, Stereo check, Master saved. Counter n/10 baked in once per poster.
+- Copy lives in the item itself: `languages.*.updates.items[app-1-12-mixer-demo].carousel` (`id`, `label`, `slides[id].title/text/alt`), so `client/src/lib/updatesFallback.json` carries it too. Keep the alts equal to the baked captions.
+- Posters: real 1.12 smoke captures from David (Oct 21), rendered with the designer generator (`/workspace/store-posters/carousel/build_carousel.py` functions) by `/workspace/carousel-112/build_posters.py`, captions in `/workspace/carousel-112/captions112.py` (checked against feature/1.12-analog-mixer, feature/1.12-mastering and feature/1.12-smoke). Import: `python3 scripts/import-carousel-posters.py /workspace/carousel-112/import-src`, then bump `CAROUSEL_VER`.
+- TODO: RU and AR show the English posters and English alts for now (`ru/` and `ar/` hold copies of the EN posters). When RU and AR captions are written, render them, re-import and replace the `slides` texts in the ru and ar items.
+
 ## App 1.11 draft (Oct 20, draft only, merge:no)
 
 - Source: app tag v1.11, main and google-play-pro at fa391cf. 1.11 is on its way to Google Play and is NOT live; 1.10 is not confirmed live either. Write only "coming soon to the store" (HE בקרוב בחנות, RU скоро в магазине, AR قريباً في المتجر). Never "available now", and do not flip any item to `shipped`.
