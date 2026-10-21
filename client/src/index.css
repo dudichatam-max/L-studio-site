@@ -103,6 +103,9 @@ h1 em, h2 em { color: var(--acid); font-style: normal; }
 .hero-offer { display: block; max-width: 560px; margin: 0 0 22px; padding: 16px 18px; border: 1px solid rgba(227,197,101,.45); background: rgba(227,197,101,.08); color: inherit; text-decoration: none; }
 .hero-offer strong { display: block; color: var(--paper); font: 600 clamp(20px, 2.2vw, 28px)/1.25 var(--display); letter-spacing: -.03em; }
 .hero-offer span { display: block; margin-top: 8px; color: var(--acid); font-size: 15px; line-height: 1.5; }
+.hero-offer .play-badge { display: inline-block; margin-top: 14px; line-height: 0; border-radius: 8px; }
+.hero-offer .play-badge img { display: block; width: 202px; max-width: 100%; height: auto; }
+.hero-offer .play-badge:focus-visible { outline: 2px solid var(--acid); outline-offset: 3px; }
 .hero-offer:hover { border-color: var(--acid); background: rgba(227,197,101,.14); }
 .hero-actions { display: flex; align-items: center; gap: 25px; margin-top: 36px; }
 .text-link { display: inline-flex; align-items: center; gap: 7px; color: var(--paper); font-size: 14px; text-decoration: none; transition: color 160ms ease, gap 160ms ease; }

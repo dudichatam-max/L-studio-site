@@ -207,41 +207,41 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What's new in L Studio for Android. Versions 1.10 and 1.11 are coming soon to the store. L Studio Pro is coming soon to Google Play, for $8.",
+        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.09. New versions arrive as automatic updates through Google Play once they are approved. Version 1.10 is in closed testing, and version 1.11 is in Google review and coming soon to the store.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש ב-L Studio לאנדרואיד. גרסאות 1.10 ו-1.11 בקרוב בחנות. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
+      description: "מה חדש ב-L Studio לאנדרואיד. L Studio Pro זמין עכשיו ב-Google Play, ב-8$, עם גרסה 1.09. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.10 בבדיקה סגורה, וגרסה 1.11 בבדיקה של Google ובקרוב בחנות.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Что нового в L Studio для Android. Версии 1.10 и 1.11 скоро появятся в магазине. L Studio Pro скоро выйдет в Google Play, за $8.",
+        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.09. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.10 в закрытом тестировании, а версия 1.11 на проверке в Google и скоро появится в магазине.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما الجديد في L Studio لأندرويد. الإصداران 1.10 و1.11 قريباً في المتجر. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
+      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.09. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.10 في اختبار مغلق، والإصدار 1.11 قيد مراجعة Google وقريباً في المتجر.",
     },
   },
   buy: {
     en: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro for Android is coming soon to Google Play, for $8. Purchases are not available on this website right now.",
+        "L Studio Pro for Android is available now on Google Play, for $8. Purchases are not available on this website right now.",
     },
     he: {
       title: "L Studio Pro",
-      description: "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. רכישה באתר אינה זמינה כרגע.",
+      description: "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-8$. רכישה באתר אינה זמינה כרגע.",
     },
     ru: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro для Android скоро выйдет в Google Play, за $8. Покупка на этом сайте сейчас недоступна.",
+        "L Studio Pro для Android уже доступен в Google Play, за $8. Покупка на этом сайте сейчас недоступна.",
     },
     ar: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. الشراء غير متاح على هذا الموقع حالياً.",
+        "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$. الشراء غير متاح على هذا الموقع حالياً.",
     },
   },
   "buy-success": {
@@ -339,7 +339,7 @@ type SeoMobileApplication = {
 /**
  * App facts for structured data. Source: app repo dudichatam-max/L-studio,
  * tag v1.11 (fa391cf, versionCode 11), minSdk 24 = Android 7.0. Version 1.11 is the
- * prepared version; it is NOT on Google Play yet (on its way to the store; 1.10 not confirmed live either).
+ * prepared version; it is NOT on Google Play yet (in Google review, David 2026-10-21). 1.09 is live on Google Play; 1.10 is in closed testing (David 2026-10-21 14:49).
  * Size: see the fileSize line below.
  * Price: David, 2026-10-08, L Studio Pro on Google Play for $8.
  * No installUrl or Play link until the public Google Play listing is live.

@@ -147,8 +147,8 @@
           {
             "question": "האפליקציה כבר בגוגל פליי? וכמה היא עולה?",
             "answer": [
-              "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. זה תשלום חד פעמי. גרסה 1.11 בקרוב בחנות.",
-              "אחרי שהיא תשוחרר, קונים אותה דרך Google Play. האתר הזה לא מוכר את האפליקציה ואין בו כפתור הורדה."
+              "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-8$, עם גרסה 1.09. זה תשלום חד פעמי. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.11 בבדיקה של Google ובקרוב בחנות.",
+              "קונים אותה דרך Google Play. האתר הזה לא מוכר את האפליקציה ואין בו כפתור הורדה."
             ]
           },
           {
@@ -316,7 +316,7 @@
             "question": "איך מקבלים עזרה, ומה לגבי החזר כספי?",
             "answer": [
               "כותבים ל-dudichatam@gmail.com. כדאי לצרף דגם טלפון, גרסת אנדרואיד, גרסת אפליקציה ומה עשיתם.",
-              "האתר הזה לא מוכר כלום ואין בו מדיניות החזר משלו. אחרי שהאפליקציה תשוחרר, הרכישה תהיה דרך Google Play, ולשאלות על רכישה אפשר לכתוב לאותה כתובת.",
+              "האתר הזה לא מוכר כלום ואין בו מדיניות החזר משלו. הרכישה היא דרך Google Play, ולשאלות על רכישה אפשר לכתוב לאותה כתובת.",
               "מה השתנה בכל גרסה אפשר לראות בעמוד Updates באתר."
             ]
           }
@@ -330,7 +330,7 @@
       "tester": {
         "kicker": "EARLY ACCESS",
         "title": "ההרשמה לבודקים נסגרה.",
-        "body": "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. אחרי הבדיקה, L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
+        "body": "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב-Google Play. L Studio Pro זמין עכשיו ב-Google Play, ב-8$.",
         "status": "ההרשמה לבודקים נסגרה. כל 44 המקומות נתפסו.",
         "spotsLabel": "נתפסו",
         "spotsStatus": "ההרשמה נסגרה",
@@ -1290,7 +1290,7 @@
         "listenNote": "תדרים נמוכים כמעט לא נשמעים ברמקולים של הטלפון. לחוויה מלאה השתמשו באוזניות או ברמקולים מתאימים.",
         "synthsHeading": "עמודי הפריסטים",
         "synthsIntro": "שמונה עמודי פריסטים לסינתיסייזר. כל עמוד הוא משימה מוזיקלית אחת, שמונה קולות עם שם.",
-        "launchNote": "מגיע בקרוב ל-Google Play. L Studio Pro, 8$."
+        "launchNote": "זמין עכשיו ב-Google Play. L Studio Pro, 8$."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -1641,11 +1641,11 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד מגיע בקרוב ל-Google Play, ב-8$. גרסה 1.11 (בקרוב בחנות), 77.4MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
+        "lede": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-8$. רכישה באתר אינה זמינה כרגע.",
+        "body": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-8$, עם גרסה 1.09. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.11 בבדיקה של Google ובקרוב בחנות, 77.4MB. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
-          "L Studio Pro לאנדרואיד ב-Google Play, 8$ בהשקה, 77.4MB",
+          "L Studio Pro לאנדרואיד ב-Google Play, 8$",
           "מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה.",
           "רכישה בתשלום אינה מוצעת באתר הזה כרגע",
           "Factory Pack נשאר בעמודים שלו",
@@ -1677,7 +1677,7 @@
         "navLabel": "עדכונים",
         "pageTitle": "מה חדש ב-L Studio.",
         "pageKicker": "L-STUDIO / עדכונים",
-        "pageIntro": "גרסאות 1.10 ו-1.11 בקרוב בחנות. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
+        "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-8$, עם גרסה 1.09. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.10 בבדיקה סגורה, וגרסה 1.11 בבדיקה של Google ובקרוב בחנות.",
         "tickerLabel": "עדכונים",
         "statusLabels": {
           "in_progress": "בעבודה",
@@ -1693,7 +1693,7 @@
           {
             "id": "app-1-12-mixer-demo",
             "status": "upcoming",
-            "title": "בקרוב גרסה 1.12 מיקסר אנלוגי",
+            "title": "בקרוב גרסה 1.12: מיקסר אנלוגי וחלון מאסטרינג, בשבוע הבא ב-Google Play",
             "summary": "",
             "videoId": "f6bLB0IP1ks",
             "videoTitle": "סרטון: מיקסר אנלוגי בגרסה 1.12"
@@ -1701,9 +1701,9 @@
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
-            "title": "בקרוב בחנות: גרסה 1.11 עם סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
+            "title": "בבדיקה של Google, בקרוב בחנות: גרסה 1.11 עם סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
             "ticker": "בקרוב בחנות: גרסה 1.11, עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך",
-            "summary": "בקרוב בחנות, גרסה 1.11: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
+            "summary": "בבדיקה של Google, בקרוב בחנות, גרסה 1.11: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -1775,9 +1775,9 @@
           {
             "id": "app-1-10-loop-editor-drums",
             "status": "upcoming",
-            "title": "בקרוב בחנות: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
-            "ticker": "בקרוב בחנות: עורך לופ חדש, גם לערוצי המיקרופון, עם חיתוך, אקולייזר ובחירה של איזה מקצב תופים מתנגן עם הלופ וכמה פעמים הוא חוזר",
-            "summary": "בקרוב בחנות, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
+            "title": "בבדיקה סגורה ב-Google Play: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
+            "ticker": "בבדיקה סגורה ב-Google Play: עורך לופ חדש, גם לערוצי המיקרופון, עם חיתוך, אקולייזר ובחירה של איזה מקצב תופים מתנגן עם הלופ וכמה פעמים הוא חוזר",
+            "summary": "בבדיקה סגורה ב-Google Play, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -1875,10 +1875,10 @@
               }
             ],
             "tickerMore": [
-              "בקרוב בחנות: החלפת ערכות תופים בזמן נגינה או הקלטה, בלי נקישות",
-              "בקרוב בחנות: מסוף הטעינה, ואחוזי התקדמות אמיתיים בשמירה וטעינה של סשן",
-              "בקרוב בחנות: כפתור סולו בכל ערוץ לופר ומיקרופון, ועצירה שעוצרת באמת עד ללחיצה על הפעלה",
-              "בקרוב בחנות: שימוש הרבה פחות בזיכרון, וצליל פתיחה"
+              "בבדיקה סגורה ב-Google Play: החלפת ערכות תופים בזמן נגינה או הקלטה, בלי נקישות",
+              "בבדיקה סגורה ב-Google Play: מסוף הטעינה, ואחוזי התקדמות אמיתיים בשמירה וטעינה של סשן",
+              "בבדיקה סגורה ב-Google Play: כפתור סולו בכל ערוץ לופר ומיקרופון, ועצירה שעוצרת באמת עד ללחיצה על הפעלה",
+              "בבדיקה סגורה ב-Google Play: שימוש הרבה פחות בזיכרון, וצליל פתיחה"
             ]
           },
           {
@@ -1886,7 +1886,7 @@
             "status": "shipped",
             "title": "חדש ב-1.09: כמה גלים יחד",
             "ticker": "חדש ב-1.09: כמה גלים יחד ותופים בזמן אמת",
-            "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.09: על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
+            "summary": "ב-Google Play, גרסה 1.09: על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -1946,9 +1946,9 @@
         ]
       },
       "launch": {
-        "headline": "מגיע בקרוב ל-Google Play.",
+        "headline": "זמין עכשיו ב-Google Play.",
         "price": "L Studio Pro, 8$.",
-        "note": "מגיע בקרוב ל-Google Play. L Studio Pro, 8$."
+        "note": "זמין עכשיו ב-Google Play. L Studio Pro, 8$."
       },
       "carousel": {
         "poster": "פוסטר",
@@ -2191,7 +2191,7 @@
           {
             "question": "Is L Studio on Google Play yet, and how much is it?",
             "answer": [
-              "L Studio Pro for Android is coming soon to Google Play, for $8. It is a one-time payment. Version 1.11 is coming soon to the store.",
+              "L Studio Pro for Android is available now on Google Play, for $8, with version 1.09. It is a one-time payment. New versions arrive as automatic updates through Google Play once they are approved. Version 1.11 is in Google review and coming soon to the store.",
               "Once it is released, you buy it through Google Play. This website does not sell the app and has no download button."
             ]
           },
@@ -2360,7 +2360,7 @@
             "question": "How do I get help, and what about refunds?",
             "answer": [
               "Write to dudichatam@gmail.com. It helps to include your phone model, Android version, app version, and what you did.",
-              "This website sells nothing and has no refund policy of its own. Once the app is released, the purchase goes through Google Play, and for questions about a purchase you can write to the same address.",
+              "This website sells nothing and has no refund policy of its own. The purchase goes through Google Play, and for questions about a purchase you can write to the same address.",
               "The Updates page on this site shows what changed in each version."
             ]
           }
@@ -2374,7 +2374,7 @@
       "tester": {
         "kicker": "EARLY ACCESS",
         "title": "Tester signup is closed.",
-        "body": "All 44 spots are taken. Thank you to everyone who joined the Google Play test. After the test, L Studio Pro is coming soon to Google Play, for $8.",
+        "body": "All 44 spots are taken. Thank you to everyone who joined the Google Play test. L Studio Pro is available now on Google Play, for $8.",
         "status": "Tester signup is closed. All 44 spots are taken.",
         "spotsLabel": "taken",
         "spotsStatus": "Signup closed",
@@ -3334,7 +3334,7 @@
         "listenNote": "Low frequencies are barely audible on phone speakers. For the full experience, use headphones or suitable speakers.",
         "synthsHeading": "Preset pages",
         "synthsIntro": "Eight synth preset pages. Each page is one musical job, eight named voices.",
-        "launchNote": "Coming soon to Google Play. L Studio Pro, $8."
+        "launchNote": "Available now on Google Play. L Studio Pro, $8."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -3685,11 +3685,11 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro for Android is coming soon to Google Play, for $8. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android is coming soon to Google Play, for $8. Version 1.11 (coming soon to the store), 77.4 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
+        "lede": "L Studio Pro for Android is available now on Google Play, for $8. Purchases are not available on this website right now.",
+        "body": "L Studio Pro for Android is available now on Google Play, for $8, with version 1.09. New versions arrive as automatic updates through Google Play once they are approved. Version 1.11 is in Google review and coming soon to the store, 77.4 MB. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
-          "L Studio Pro for Android on Google Play, $8 at launch, 77.4 MB",
+          "L Studio Pro for Android on Google Play, $8",
           "Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button.",
           "Paid purchase is not offered on this website right now",
           "Factory Pack stays on its own pages",
@@ -3721,7 +3721,7 @@
         "navLabel": "Updates",
         "pageTitle": "What's new in L Studio.",
         "pageKicker": "L-STUDIO / UPDATES",
-        "pageIntro": "Versions 1.10 and 1.11 are coming soon to the store. L Studio Pro is coming soon to Google Play, for $8.",
+        "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.09. New versions arrive as automatic updates through Google Play once they are approved. Version 1.10 is in closed testing, and version 1.11 is in Google review and coming soon to the store.",
         "tickerLabel": "Updates",
         "statusLabels": {
           "in_progress": "In progress",
@@ -3737,7 +3737,7 @@
           {
             "id": "app-1-12-mixer-demo",
             "status": "upcoming",
-            "title": "Coming soon: version 1.12 analog mixer",
+            "title": "Coming soon: version 1.12 with an analog mixer and a mastering window, on Google Play next week",
             "summary": "",
             "videoId": "f6bLB0IP1ks",
             "videoTitle": "Video: version 1.12 analog mixer"
@@ -3745,9 +3745,9 @@
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
-            "title": "Coming soon to the store: version 1.11 with your own drum samples, Keep playing, and an octave for each wave",
+            "title": "In Google review, coming soon to the store: version 1.11 with your own drum samples, Keep playing, and an octave for each wave",
             "ticker": "Coming soon to the store: version 1.11, up to 88 of your own samples on every drum row, with trim",
-            "summary": "Coming soon to the store, version 1.11: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
+            "summary": "In Google review, coming soon to the store, version 1.11: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
@@ -3819,9 +3819,9 @@
           {
             "id": "app-1-10-loop-editor-drums",
             "status": "upcoming",
-            "title": "Coming soon to the store: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
-            "ticker": "Coming soon to the store: a new Loop Editor, also for Mic, with trim, EQ, and a choice of which drum rhythm plays with the loop and how many times it repeats",
-            "summary": "Coming soon to the store, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
+            "title": "In closed testing on Google Play: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
+            "ticker": "In closed testing on Google Play: a new Loop Editor, also for Mic, with trim, EQ, and a choice of which drum rhythm plays with the loop and how many times it repeats",
+            "summary": "In closed testing on Google Play, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
@@ -3919,10 +3919,10 @@
               }
             ],
             "tickerMore": [
-              "Coming soon to the store: switch drum kits live or while recording, with no clicks",
-              "Coming soon to the store: Load Console, and real % progress when you save or load a session",
-              "Coming soon to the store: S (solo) on every looper and Mic channel, and STOP that truly stops until PLAY",
-              "Coming soon to the store: much lower memory use, and a welcome sound"
+              "In closed testing on Google Play: switch drum kits live or while recording, with no clicks",
+              "In closed testing on Google Play: Load Console, and real % progress when you save or load a session",
+              "In closed testing on Google Play: S (solo) on every looper and Mic channel, and STOP that truly stops until PLAY",
+              "In closed testing on Google Play: much lower memory use, and a welcome sound"
             ]
           },
           {
@@ -3930,7 +3930,7 @@
             "status": "shipped",
             "title": "New in 1.09: layered waves",
             "ticker": "New in 1.09: layered waves and live drums",
-            "summary": "In the Google Play test now, version 1.09: Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
+            "summary": "On Google Play, version 1.09: Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
             "href": "/guide",
             "cta": "Open guide",
             "images": [
@@ -3990,9 +3990,9 @@
         ]
       },
       "launch": {
-        "headline": "Coming soon to Google Play.",
+        "headline": "Available now on Google Play.",
         "price": "L Studio Pro, $8.",
-        "note": "Coming soon to Google Play. L Studio Pro, $8."
+        "note": "Available now on Google Play. L Studio Pro, $8."
       },
       "carousel": {
         "poster": "Poster",
@@ -4235,8 +4235,8 @@
           {
             "question": "L Studio уже в Google Play? И сколько стоит?",
             "answer": [
-              "L Studio Pro для Android скоро выйдет в Google Play, за $8. Это единоразовый платёж. Версия 1.11 скоро в магазине.",
-              "Когда приложение выйдет, купить его можно будет через Google Play. Этот сайт не продаёт приложение, и кнопки скачивания здесь нет."
+              "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.09. Это единоразовый платёж. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.11 на проверке в Google и скоро появится в магазине.",
+              "Купить приложение можно через Google Play. Этот сайт не продаёт приложение, и кнопки скачивания здесь нет."
             ]
           },
           {
@@ -4404,7 +4404,7 @@
             "question": "Как получить помощь и что с возвратом денег?",
             "answer": [
               "Пишите на dudichatam@gmail.com. Полезно указать модель телефона, версию Android, версию приложения и что вы делали.",
-              "Этот сайт ничего не продаёт, и у него нет собственных правил возврата. Когда приложение выйдет, покупка будет через Google Play, а с вопросами о покупке можно писать на тот же адрес.",
+              "Этот сайт ничего не продаёт, и у него нет собственных правил возврата. Покупка идёт через Google Play, а с вопросами о покупке можно писать на тот же адрес.",
               "Что изменилось в каждой версии, видно на странице Updates этого сайта."
             ]
           }
@@ -4418,7 +4418,7 @@
       "tester": {
         "kicker": "РАННИЙ ДОСТУП",
         "title": "Запись в тестеры закрыта.",
-        "body": "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. После теста L Studio Pro скоро выйдет в Google Play, за $8.",
+        "body": "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. L Studio Pro уже доступен в Google Play, за $8.",
         "status": "Запись в тестеры закрыта. Все 44 места заняты.",
         "spotsLabel": "занято",
         "spotsStatus": "Запись закрыта",
@@ -5378,7 +5378,7 @@
         "listenNote": "Низкие частоты почти не слышны в динамиках телефона. Для полного звучания используйте наушники или подходящие колонки.",
         "synthsHeading": "Страницы пресетов",
         "synthsIntro": "Восемь страниц пресетов синтезатора. Каждая страница - одна музыкальная задача, восемь голосов с именами.",
-        "launchNote": "Скоро в Google Play. L Studio Pro, $8."
+        "launchNote": "Уже в Google Play. L Studio Pro, $8."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -5729,11 +5729,11 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro для Android скоро выйдет в Google Play, за $8. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android скоро выйдет в Google Play, за $8. Версия 1.11 (скоро в магазине), 77.4 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
+        "lede": "L Studio Pro для Android уже доступен в Google Play, за $8. Покупки на этом сайте сейчас недоступны.",
+        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.09. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.11 на проверке в Google и скоро появится в магазине, 77.4 МБ. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
-          "L Studio Pro для Android в Google Play, $8 при запуске, 77.4 МБ",
+          "L Studio Pro для Android в Google Play, $8",
           "Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет.",
           "Платная покупка на этом сайте сейчас не предлагается",
           "Factory Pack остаётся на своих страницах",
@@ -5765,7 +5765,7 @@
         "navLabel": "Обновления",
         "pageTitle": "Что нового в L Studio.",
         "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-        "pageIntro": "Версии 1.10 и 1.11 скоро появятся в магазине. L Studio Pro скоро выйдет в Google Play, за $8.",
+        "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.09. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.10 в закрытом тестировании, а версия 1.11 на проверке в Google и скоро появится в магазине.",
         "tickerLabel": "Обновления",
         "statusLabels": {
           "in_progress": "В работе",
@@ -5781,7 +5781,7 @@
           {
             "id": "app-1-12-mixer-demo",
             "status": "upcoming",
-            "title": "Скоро версия 1.12: аналоговый микшер",
+            "title": "Скоро версия 1.12: аналоговый микшер и окно мастеринга, в Google Play на следующей неделе",
             "summary": "",
             "videoId": "f6bLB0IP1ks",
             "videoTitle": "Видео: аналоговый микшер в версии 1.12"
@@ -5789,9 +5789,9 @@
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
-            "title": "Скоро в магазине: версия 1.11 со своими сэмплами в ударных, Keep playing и октавой для каждой волны",
+            "title": "На проверке в Google, скоро в магазине: версия 1.11 со своими сэмплами в ударных, Keep playing и октавой для каждой волны",
             "ticker": "Скоро в магазине: версия 1.11, до 88 своих сэмплов в каждом ряду ударных, с обрезкой",
-            "summary": "Скоро в магазине, версия 1.11: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
+            "summary": "На проверке в Google, скоро в магазине, версия 1.11: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -5863,9 +5863,9 @@
           {
             "id": "app-1-10-loop-editor-drums",
             "status": "upcoming",
-            "title": "Скоро в магазине: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
-            "ticker": "Скоро в магазине: новый редактор лупов, в том числе для Mic, с обрезкой, EQ и выбором, какой ритм ударных играет вместе с лупом и сколько раз он повторяется",
-            "summary": "Скоро в магазине, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
+            "title": "В закрытом тестировании Google Play: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
+            "ticker": "В закрытом тестировании Google Play: новый редактор лупов, в том числе для Mic, с обрезкой, EQ и выбором, какой ритм ударных играет вместе с лупом и сколько раз он повторяется",
+            "summary": "В закрытом тестировании Google Play, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -5963,10 +5963,10 @@
               }
             ],
             "tickerMore": [
-              "Скоро в магазине: переключение наборов ударных вживую или во время записи, без щелчков",
-              "Скоро в магазине: Load Console и реальный прогресс в процентах при сохранении и загрузке сессии",
-              "Скоро в магазине: S (solo) на каждом канале лупера и Mic, а STOP действительно останавливает канал до нажатия PLAY",
-              "Скоро в магазине: заметно меньше памяти и приветственный звук"
+              "В закрытом тестировании Google Play: переключение наборов ударных вживую или во время записи, без щелчков",
+              "В закрытом тестировании Google Play: Load Console и реальный прогресс в процентах при сохранении и загрузке сессии",
+              "В закрытом тестировании Google Play: S (solo) на каждом канале лупера и Mic, а STOP действительно останавливает канал до нажатия PLAY",
+              "В закрытом тестировании Google Play: заметно меньше памяти и приветственный звук"
             ]
           },
           {
@@ -5974,7 +5974,7 @@
             "status": "shipped",
             "title": "Новое в 1.09: несколько волн сразу",
             "ticker": "Новое в 1.09: несколько волн сразу и живые ударные",
-            "summary": "Сейчас в тесте Google Play, версия 1.09: На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
+            "summary": "В Google Play, версия 1.09: На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -6034,9 +6034,9 @@
         ]
       },
       "launch": {
-        "headline": "Скоро в Google Play.",
+        "headline": "Уже в Google Play.",
         "price": "L Studio Pro, $8.",
-        "note": "Скоро в Google Play. L Studio Pro, $8."
+        "note": "Уже в Google Play. L Studio Pro, $8."
       },
       "carousel": {
         "poster": "Постер",
@@ -6279,8 +6279,8 @@
           {
             "question": "هل L Studio على Google Play الآن؟ وكم سعره؟",
             "answer": [
-              "L Studio Pro لأندرويد قادم قريباً إلى Google Play، بسعر 8$. وهي دفعة واحدة. الإصدار 1.11 قريباً في المتجر.",
-              "بعد إطلاقه تشتريه عبر Google Play. هذا الموقع لا يبيع التطبيق وليس فيه زر تنزيل."
+              "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.09. وهي دفعة واحدة. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.11 قيد مراجعة Google وقريباً في المتجر.",
+              "تشتريه عبر Google Play. هذا الموقع لا يبيع التطبيق وليس فيه زر تنزيل."
             ]
           },
           {
@@ -6448,7 +6448,7 @@
             "question": "كيف أحصل على مساعدة؟ وماذا عن استرداد المبلغ؟",
             "answer": [
               "اكتب إلى dudichatam@gmail.com. من المفيد ذكر طراز الهاتف وإصدار أندرويد وإصدار التطبيق وما فعلته.",
-              "هذا الموقع لا يبيع شيئاً وليست له سياسة استرداد خاصة به. بعد إطلاق التطبيق سيكون الشراء عبر Google Play، ولأسئلة الشراء يمكنك الكتابة إلى العنوان نفسه.",
+              "هذا الموقع لا يبيع شيئاً وليست له سياسة استرداد خاصة به. الشراء عبر Google Play، ولأسئلة الشراء يمكنك الكتابة إلى العنوان نفسه.",
               "ما تغيّر في كل إصدار تراه في صفحة Updates على هذا الموقع."
             ]
           }
@@ -6462,7 +6462,7 @@
       "tester": {
         "kicker": "وصول مبكر",
         "title": "التسجيل للمختبرين مغلق.",
-        "body": "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. بعد الاختبار، يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
+        "body": "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. L Studio Pro متاح الآن على Google Play، بسعر 8$.",
         "status": "التسجيل للمختبرين مغلق. جميع الأماكن الـ44 محجوزة.",
         "spotsLabel": "محجوزة",
         "spotsStatus": "التسجيل مغلق",
@@ -7422,7 +7422,7 @@
         "listenNote": "الترددات المنخفضة تكاد لا تُسمع عبر سماعات الهاتف. لتجربة كاملة استخدم سماعات رأس أو مكبرات مناسبة.",
         "synthsHeading": "صفحات الإعدادات المسبقة",
         "synthsIntro": "ثماني صفحات إعدادات للسينث. كل صفحة مهمة موسيقية واحدة، وثمانية أصوات بأسماء.",
-        "launchNote": "قادم قريباً إلى Google Play. L Studio Pro، 8$."
+        "launchNote": "متاح الآن على Google Play. L Studio Pro، 8$."
       },
       "factoryDrums": {
         "eyebrow": "L-STUDIO / FACTORY PACK / DRUMS",
@@ -7773,11 +7773,11 @@
         "kicker": "L STUDIO PRO",
         "titleLead": "L Studio",
         "titleEm": "Pro.",
-        "lede": "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد يصل قريباً إلى Google Play، بسعر 8$. الإصدار 1.11 (قريباً في المتجر)، 77.4 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
+        "lede": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
+        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.09. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.11 قيد مراجعة Google وقريباً في المتجر، 77.4 ميغابايت. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
-          "L Studio Pro لأندرويد على Google Play، 8$ عند الإطلاق، 77.4 ميغابايت",
+          "L Studio Pro لأندرويد على Google Play، 8$",
           "من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل.",
           "الشراء المدفوع غير معروض على هذا الموقع حالياً",
           "يبقى Factory Pack في صفحاته",
@@ -7809,7 +7809,7 @@
         "navLabel": "التحديثات",
         "pageTitle": "ما الجديد في L Studio.",
         "pageKicker": "L-STUDIO / التحديثات",
-        "pageIntro": "الإصداران 1.10 و1.11 قريباً في المتجر. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
+        "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.09. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.10 في اختبار مغلق، والإصدار 1.11 قيد مراجعة Google وقريباً في المتجر.",
         "tickerLabel": "التحديثات",
         "statusLabels": {
           "in_progress": "قيد العمل",
@@ -7825,7 +7825,7 @@
           {
             "id": "app-1-12-mixer-demo",
             "status": "upcoming",
-            "title": "قريبًا الإصدار 1.12: مازج تناظري",
+            "title": "قريبًا الإصدار 1.12: مازج تناظري ونافذة ماسترينغ، في Google Play الأسبوع القادم",
             "summary": "",
             "videoId": "f6bLB0IP1ks",
             "videoTitle": "فيديو: مازج تناظري في الإصدار 1.12"
@@ -7833,9 +7833,9 @@
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
-            "title": "قريباً في المتجر: الإصدار 1.11 مع عيناتك الخاصة في الطبول وKeep playing وأوكتاف لكل موجة",
+            "title": "قيد مراجعة Google، قريباً في المتجر: الإصدار 1.11 مع عيناتك الخاصة في الطبول وKeep playing وأوكتاف لكل موجة",
             "ticker": "قريباً في المتجر: الإصدار 1.11، حتى 88 من عيناتك في كل صف طبول، مع القص",
-            "summary": "قريباً في المتجر، الإصدار 1.11: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
+            "summary": "قيد مراجعة Google، قريباً في المتجر، الإصدار 1.11: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -7907,9 +7907,9 @@
           {
             "id": "app-1-10-loop-editor-drums",
             "status": "upcoming",
-            "title": "قريباً في المتجر: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
-            "ticker": "قريباً في المتجر: محرر لوب جديد، ولقنوات Mic أيضاً، مع القص وEQ واختيار أي إيقاع طبول يعزف مع اللوب وكم مرة يتكرر",
-            "summary": "قريباً في المتجر، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
+            "title": "في الاختبار المغلق على Google Play: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
+            "ticker": "في الاختبار المغلق على Google Play: محرر لوب جديد، ولقنوات Mic أيضاً، مع القص وEQ واختيار أي إيقاع طبول يعزف مع اللوب وكم مرة يتكرر",
+            "summary": "في الاختبار المغلق على Google Play، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -8007,10 +8007,10 @@
               }
             ],
             "tickerMore": [
-              "قريباً في المتجر: تبديل مجموعات الطبول أثناء العزف أو التسجيل، بلا نقرات",
-              "قريباً في المتجر: Load Console وتقدّم حقيقي بالنسبة المئوية عند حفظ الجلسة أو تحميلها",
-              "قريباً في المتجر: زر S (انفراد) في كل قناة لوبر وMic، وزر STOP يوقف القناة فعلاً حتى تضغط PLAY",
-              "قريباً في المتجر: استهلاك أقل بكثير للذاكرة، وصوت ترحيب"
+              "في الاختبار المغلق على Google Play: تبديل مجموعات الطبول أثناء العزف أو التسجيل، بلا نقرات",
+              "في الاختبار المغلق على Google Play: Load Console وتقدّم حقيقي بالنسبة المئوية عند حفظ الجلسة أو تحميلها",
+              "في الاختبار المغلق على Google Play: زر S (انفراد) في كل قناة لوبر وMic، وزر STOP يوقف القناة فعلاً حتى تضغط PLAY",
+              "في الاختبار المغلق على Google Play: استهلاك أقل بكثير للذاكرة، وصوت ترحيب"
             ]
           },
           {
@@ -8018,7 +8018,7 @@
             "status": "shipped",
             "title": "جديد في 1.09: عدة موجات معاً",
             "ticker": "جديد في 1.09: عدة موجات معاً وطبول مباشرة",
-            "summary": "الآن في اختبار Google Play، الإصدار 1.09: على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
+            "summary": "في Google Play، الإصدار 1.09: على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -8078,9 +8078,9 @@
         ]
       },
       "launch": {
-        "headline": "قادم قريباً إلى Google Play.",
+        "headline": "متاح الآن على Google Play.",
         "price": "L Studio Pro، 8$.",
-        "note": "قادم قريباً إلى Google Play. L Studio Pro، 8$."
+        "note": "متاح الآن على Google Play. L Studio Pro، 8$."
       },
       "carousel": {
         "poster": "ملصق",

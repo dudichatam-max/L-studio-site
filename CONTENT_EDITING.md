@@ -212,3 +212,15 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Version 1.11 with "coming soon to the store" in the hero kicker (content and the `Home.tsx` default), the Pro body (`languages.*.pro` and `shared/pro-copy.json`), FAQ 1, the home SEO descriptions and JSON-LD `softwareVersion` (`shared/seo.ts`, asserts in `shared/seo.selfcheck.ts`).
 - Size: the site shows the release APK size in MiB, written MB (1.10: 81,252,020 B = 77.5 MB). 1.11 release APK `L-Studio-1.11.apk` is 81,194,413 B = 77.4 MB, so hero stat1, FAQ 3, the Pro text and `fileSize` say 77.4 MB. In decimal megabytes the same file is 81.2 MB; switch every spot together if David prefers that.
 - Privacy and Terms footers say "L Studio 1.11" (David, Oct 20). One string in `Privacy.tsx` and `Terms.tsx` serves all 4 languages.
+
+### Store status (David, 2026-10-21 14:49 IDT)
+
+- 1.09 is live on Google Play. Pro buyers get 1.09 now and receive new versions as automatic Google Play updates once approved. Item `app-1-09-waves-drums` is `shipped`, summary starts "On Google Play, version 1.09:".
+- 1.10 is in closed testing, not public. Item `app-1-10-loop-editor-drums` is `upcoming`, prefix "In closed testing on Google Play" (HE "בבדיקה סגורה ב-Google Play").
+- 1.11 is in Google production review. Item `app-1-11-loaded-keep-playing` is `upcoming`, title and summary start "In Google review, coming soon to the store", ticker lines start "Coming soon to the store". Hero kicker: "Version 1.11, coming soon to the store". No dates.
+- 1.12 (analog mixer and mastering window) reaches Google Play next week, after bug testing. Item `app-1-12-mixer-demo` keeps the video and has no summary.
+- Pro is available now on Google Play, for $8, with version 1.09 (intro, FAQ, Pro lede/body, launch strip, tester body, Factory launch notes, seo meta). The Pro "includes" line has no size. The Pro body keeps 77.4 MB only next to version 1.11. The site version and hero stat stay 1.11 / 77.4 MB.
+- FAQ purchase lines no longer say "after it is released". The tester section stays as a closed-signup thank-you. The free demo FAQ line still says "coming soon".
+- When 1.11 goes live: flip its item to `shipped`, update the kicker, FAQ, Pro body, intro and meta.
+
+- Google Play badge (David, 2026-10-21 15:25): the homepage hero offer box shows the official localized "Get it on Google Play" badge (`assets/badges/google-play-{he,en,ru,ar}.png`, from play.google.com badges, trimmed to 120 px high, also in `client/public/assets/badges/`). It links to `https://play.google.com/store/apps/details?id=com.microtonal.synth&hl=` (iw, en, ru, ar), new tab, `rel="noopener"`. This is the only store link allowed on the site. No APK or site purchase links.
