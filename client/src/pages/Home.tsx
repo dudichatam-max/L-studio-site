@@ -143,6 +143,15 @@ const featureData = {
 
 // Fallback copy, used only if content.json fails to load.
 const navDefault = { features: "What's inside", architecture: "How it works", vision: "Vision", faq: "FAQ", guide: "User guide", privacy: "Privacy", terms: "Terms", pro: "Pro", cta: "Meet L-Studio", exclusive: "Exclusive", updates: "Updates" };
+// Official Google Play badge, localized (David 2026-10-21: the one store link on the site).
+const PLAY_HL: Record<Language, string> = { he: "iw", en: "en", ru: "ru", ar: "ar" };
+const PLAY_ALT: Record<Language, string> = {
+  he: "כעת ב-Google Play",
+  en: "Get it on Google Play",
+  ru: "Скачать из Google Play",
+  ar: "احصل عليه من Google Play",
+};
+
 const heroDefault = { kicker: "Android music app · Version 1.11, coming soon to the store", title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "77.4 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const launchDefaults: Record<Language, { headline: string; price: string; note: string }> = {
   he: {headline: "זמין עכשיו ב-Google Play.", price: "L Studio Pro, 8$.", note: "זמין עכשיו ב-Google Play. L Studio Pro, 8$."},
@@ -508,6 +517,9 @@ export default function Home() {
             <div className="hero-offer hero-offer--static">
               <strong>{launch.headline}</strong>
               <span>{launch.price} {tester.status}</span>
+              <a className="play-badge" href={`https://play.google.com/store/apps/details?id=com.microtonal.synth&hl=${PLAY_HL[language]}`} target="_blank" rel="noopener">
+                <img src={`/assets/badges/google-play-${language}.png`} alt={PLAY_ALT[language]} width={202} height={60} decoding="async" />
+              </a>
             </div>
             <p className="hero-lede">{hero.body}</p>
             <div className="hero-actions">

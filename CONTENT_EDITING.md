@@ -222,3 +222,5 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Pro is available now on Google Play, for $8, with version 1.09 (intro, FAQ, Pro lede/body, launch strip, tester body, Factory launch notes, seo meta). The Pro "includes" line has no size. The Pro body keeps 77.4 MB only next to version 1.11. The site version and hero stat stay 1.11 / 77.4 MB.
 - FAQ purchase lines no longer say "after it is released". The tester section stays as a closed-signup thank-you. The free demo FAQ line still says "coming soon".
 - When 1.11 goes live: flip its item to `shipped`, update the kicker, FAQ, Pro body, intro and meta.
+
+- Google Play badge (David, 2026-10-21 15:25): the homepage hero offer box shows the official localized "Get it on Google Play" badge (`assets/badges/google-play-{he,en,ru,ar}.png`, from play.google.com badges, trimmed to 120 px high, also in `client/public/assets/badges/`). It links to `https://play.google.com/store/apps/details?id=com.microtonal.synth&hl=` (iw, en, ru, ar), new tab, `rel="noopener"`. This is the only store link allowed on the site. No APK or site purchase links.
