@@ -166,7 +166,7 @@ export default function Updates() {
                           <h3>{item.title}</h3>
                           <span className="exclusive-badge">{copy.statusLabels?.[item.status] ?? group.title}</span>
                         </div>
-                        <p>{item.summary}</p>
+                        {item.summary ? <p>{item.summary}</p> : null}
                         {item.detail ? <p className="updates-detail">{item.detail}</p> : null}
                         {Array.isArray(item.sections) && item.sections.length ? (
                           <div className="updates-sections">
