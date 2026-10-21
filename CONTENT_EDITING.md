@@ -224,3 +224,5 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - When 1.11 goes live: flip its item to `shipped`, update the kicker, FAQ, Pro body, intro and meta.
 
 - Google Play badge (David, 2026-10-21 15:25): the homepage hero offer box shows the official localized "Get it on Google Play" badge (`assets/badges/google-play-{he,en,ru,ar}.png`, from play.google.com badges, trimmed to 120 px high, also in `client/public/assets/badges/`). It links to `https://play.google.com/store/apps/details?id=com.microtonal.synth&hl=` (iw, en, ru, ar), new tab, `rel="noopener"`. This is the only store link allowed on the site. No APK or site purchase links.
+
+- Hebrew price (David, 2026-10-21): Hebrew shows the Google Play IL price exactly as Play writes it, "‏24.90 ‏₪" (with RLM marks), source https://play.google.com/store/apps/details?id=com.microtonal.synth&hl=iw&gl=IL (ILS 24.90). EN/RU/AR keep $8. JSON-LD offer stays 8 USD.

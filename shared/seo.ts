@@ -211,7 +211,7 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש ב-L Studio לאנדרואיד. L Studio Pro זמין עכשיו ב-Google Play, ב-8$, עם גרסה 1.09. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.10 בבדיקה סגורה, וגרסה 1.11 בבדיקה של Google ובקרוב בחנות.",
+      description: "מה חדש ב-L Studio לאנדרואיד. L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.09. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.10 בבדיקה סגורה, וגרסה 1.11 בבדיקה של Google ובקרוב בחנות.",
     },
     ru: {
       title: "Обновления | L Studio",
@@ -231,7 +231,7 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     },
     he: {
       title: "L Studio Pro",
-      description: "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-8$. רכישה באתר אינה זמינה כרגע.",
+      description: "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪. רכישה באתר אינה זמינה כרגע.",
     },
     ru: {
       title: "L Studio Pro",

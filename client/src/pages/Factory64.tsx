@@ -85,7 +85,7 @@ const emptyCopy = (language: Language): Factory64Copy => ({
   presetsHeading: language === "he" ? "פריסטים" : language === "ru" ? "Пресеты" : language === "ar" ? "إعدادات مسبقة" : "Presets",
   oneLineList: "",
   storeBlurb: "",
-  launchNote: language === "he" ? "זמין עכשיו ב-Google Play. L Studio Pro, 8$." : language === "ru" ? "Уже в Google Play. L Studio Pro, $8." : language === "ar" ? "متاح الآن على Google Play. L Studio Pro، 8$." : "Available now on Google Play. L Studio Pro, $8.",
+  launchNote: language === "he" ? "זמין עכשיו ב-Google Play. L Studio Pro, ‏24.90 ‏₪." : language === "ru" ? "Уже в Google Play. L Studio Pro, $8." : language === "ar" ? "متاح الآن على Google Play. L Studio Pro، 8$." : "Available now on Google Play. L Studio Pro, $8.",
   pages: [],
 });
 
