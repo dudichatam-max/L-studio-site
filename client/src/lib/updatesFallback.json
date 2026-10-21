@@ -3,7 +3,7 @@
     "navLabel": "Updates",
     "pageTitle": "What's new in L Studio.",
     "pageKicker": "L-STUDIO / UPDATES",
-    "pageIntro": "Versions 1.10 and 1.11 are coming soon to the store. L Studio Pro is coming soon to Google Play, for $8.",
+    "pageIntro": "Version 1.10 is available on Google Play. Version 1.11 is in Google review and arrives in the next few days. L Studio Pro is coming soon to Google Play, for $8.",
     "tickerLabel": "Updates",
     "statusLabels": {
       "in_progress": "In progress",
@@ -19,7 +19,7 @@
       {
         "id": "app-1-12-mixer-demo",
         "status": "upcoming",
-        "title": "Coming soon: version 1.12 analog mixer",
+        "title": "Coming soon: version 1.12 with an analog mixer and a mastering window, on Google Play next week",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "Video: version 1.12 analog mixer"
@@ -27,9 +27,9 @@
       {
         "id": "app-1-11-loaded-keep-playing",
         "status": "upcoming",
-        "title": "Coming soon to the store: version 1.11 with your own drum samples, Keep playing, and an octave for each wave",
-        "ticker": "Coming soon to the store: version 1.11, up to 88 of your own samples on every drum row, with trim",
-        "summary": "Coming soon to the store, version 1.11: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
+        "title": "In Google review, coming in the next few days: version 1.11 with your own drum samples, Keep playing, and an octave for each wave",
+        "ticker": "In the next few days: version 1.11, up to 88 of your own samples on every drum row, with trim",
+        "summary": "In Google review, coming in the next few days, version 1.11: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
         "href": "/guide",
         "cta": "Open the guide",
         "images": [
@@ -93,17 +93,17 @@
           }
         ],
         "tickerMore": [
-          "Coming soon to the store: Keep playing in the Loop and Mic editors, so a take plays to its end",
-          "Coming soon to the store: an octave for each wave, from a long-press on the wave key",
-          "Coming soon to the store: pattern repeats up to 88, and switching drum kits in LIVE"
+          "In the next few days: Keep playing in the Loop and Mic editors, so a take plays to its end",
+          "In the next few days: an octave for each wave, from a long-press on the wave key",
+          "In the next few days: pattern repeats up to 88, and switching drum kits in LIVE"
         ]
       },
       {
         "id": "app-1-10-loop-editor-drums",
-        "status": "upcoming",
-        "title": "Coming soon to the store: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
-        "ticker": "Coming soon to the store: a new Loop Editor, also for Mic, with trim, EQ, and a choice of which drum rhythm plays with the loop and how many times it repeats",
-        "summary": "Coming soon to the store, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
+        "status": "shipped",
+        "title": "Now on Google Play: version 1.10 with Loop Editor, recordings up to 30 minutes and full session saving",
+        "ticker": "Now on Google Play: a new Loop Editor, also for Mic, with trim, EQ, and a choice of which drum rhythm plays with the loop and how many times it repeats",
+        "summary": "Now on Google Play, version 1.10: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
         "href": "/guide",
         "cta": "Open the guide",
         "images": [
@@ -201,10 +201,10 @@
           }
         ],
         "tickerMore": [
-          "Coming soon to the store: switch drum kits live or while recording, with no clicks",
-          "Coming soon to the store: Load Console, and real % progress when you save or load a session",
-          "Coming soon to the store: S (solo) on every looper and Mic channel, and STOP that truly stops until PLAY",
-          "Coming soon to the store: much lower memory use, and a welcome sound"
+          "Now on Google Play: switch drum kits live or while recording, with no clicks",
+          "Now on Google Play: Load Console, and real % progress when you save or load a session",
+          "Now on Google Play: S (solo) on every looper and Mic channel, and STOP that truly stops until PLAY",
+          "Now on Google Play: much lower memory use, and a welcome sound"
         ]
       },
       {
@@ -212,7 +212,7 @@
         "status": "shipped",
         "title": "New in 1.09: layered waves",
         "ticker": "New in 1.09: layered waves and live drums",
-        "summary": "In the Google Play test now, version 1.09: Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
+        "summary": "On Google Play, version 1.09: Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
         "href": "/guide",
         "cta": "Open guide",
         "images": [
@@ -275,7 +275,7 @@
     "navLabel": "עדכונים",
     "pageTitle": "מה חדש ב-L Studio.",
     "pageKicker": "L-STUDIO / עדכונים",
-    "pageIntro": "גרסאות 1.10 ו-1.11 בקרוב בחנות. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
+    "pageIntro": "גרסה 1.10 זמינה ב-Google Play. גרסה 1.11 בבדיקה של Google ותגיע בימים הקרובים. L Studio Pro מגיע בקרוב ל-Google Play, ב-8$.",
     "tickerLabel": "עדכונים",
     "statusLabels": {
       "in_progress": "בעבודה",
@@ -291,7 +291,7 @@
       {
         "id": "app-1-12-mixer-demo",
         "status": "upcoming",
-        "title": "בקרוב גרסה 1.12 מיקסר אנלוגי",
+        "title": "בקרוב גרסה 1.12: מיקסר אנלוגי וחלון מאסטרינג, בשבוע הבא ב-Google Play",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "סרטון: מיקסר אנלוגי בגרסה 1.12"
@@ -299,9 +299,9 @@
       {
         "id": "app-1-11-loaded-keep-playing",
         "status": "upcoming",
-        "title": "בקרוב בחנות: גרסה 1.11 עם סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
-        "ticker": "בקרוב בחנות: גרסה 1.11, עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך",
-        "summary": "בקרוב בחנות, גרסה 1.11: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
+        "title": "בבדיקה של Google, בימים הקרובים: גרסה 1.11 עם סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
+        "ticker": "בימים הקרובים: גרסה 1.11, עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך",
+        "summary": "בבדיקה של Google, בימים הקרובים, גרסה 1.11: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
         "images": [
@@ -365,17 +365,17 @@
           }
         ],
         "tickerMore": [
-          "בקרוב בחנות: Keep playing בעורכי Loop ו-Mic, כך שההקלטה מתנגנת עד הסוף",
-          "בקרוב בחנות: אוקטבה לכל גל, בלחיצה ארוכה על מקש הגל",
-          "בקרוב בחנות: חזרות פטרן עד 88, והחלפת קיט תופים ב-LIVE"
+          "בימים הקרובים: Keep playing בעורכי Loop ו-Mic, כך שההקלטה מתנגנת עד הסוף",
+          "בימים הקרובים: אוקטבה לכל גל, בלחיצה ארוכה על מקש הגל",
+          "בימים הקרובים: חזרות פטרן עד 88, והחלפת קיט תופים ב-LIVE"
         ]
       },
       {
         "id": "app-1-10-loop-editor-drums",
-        "status": "upcoming",
-        "title": "בקרוב בחנות: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
-        "ticker": "בקרוב בחנות: עורך לופ חדש, גם לערוצי המיקרופון, עם חיתוך, אקולייזר ובחירה של איזה מקצב תופים מתנגן עם הלופ וכמה פעמים הוא חוזר",
-        "summary": "בקרוב בחנות, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
+        "status": "shipped",
+        "title": "זמין ב-Google Play: גרסה 1.10 עם Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
+        "ticker": "זמין ב-Google Play: עורך לופ חדש, גם לערוצי המיקרופון, עם חיתוך, אקולייזר ובחירה של איזה מקצב תופים מתנגן עם הלופ וכמה פעמים הוא חוזר",
+        "summary": "זמין ב-Google Play, גרסה 1.10: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
         "images": [
@@ -473,10 +473,10 @@
           }
         ],
         "tickerMore": [
-          "בקרוב בחנות: החלפת ערכות תופים בזמן נגינה או הקלטה, בלי נקישות",
-          "בקרוב בחנות: מסוף הטעינה, ואחוזי התקדמות אמיתיים בשמירה וטעינה של סשן",
-          "בקרוב בחנות: כפתור סולו בכל ערוץ לופר ומיקרופון, ועצירה שעוצרת באמת עד ללחיצה על הפעלה",
-          "בקרוב בחנות: שימוש הרבה פחות בזיכרון, וצליל פתיחה"
+          "זמין ב-Google Play: החלפת ערכות תופים בזמן נגינה או הקלטה, בלי נקישות",
+          "זמין ב-Google Play: מסוף הטעינה, ואחוזי התקדמות אמיתיים בשמירה וטעינה של סשן",
+          "זמין ב-Google Play: כפתור סולו בכל ערוץ לופר ומיקרופון, ועצירה שעוצרת באמת עד ללחיצה על הפעלה",
+          "זמין ב-Google Play: שימוש הרבה פחות בזיכרון, וצליל פתיחה"
         ]
       },
       {
@@ -484,7 +484,7 @@
         "status": "shipped",
         "title": "חדש ב-1.09: כמה גלים יחד",
         "ticker": "חדש ב-1.09: כמה גלים יחד ותופים בזמן אמת",
-        "summary": "עכשיו בבדיקה ב-Google Play, גרסה 1.09: על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
+        "summary": "ב-Google Play, גרסה 1.09: על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
         "images": [
@@ -547,7 +547,7 @@
     "navLabel": "Обновления",
     "pageTitle": "Что нового в L Studio.",
     "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-    "pageIntro": "Версии 1.10 и 1.11 скоро появятся в магазине. L Studio Pro скоро выйдет в Google Play, за $8.",
+    "pageIntro": "Версия 1.10 уже в Google Play. Версия 1.11 на проверке в Google и выйдет в ближайшие дни. L Studio Pro скоро выйдет в Google Play, за $8.",
     "tickerLabel": "Обновления",
     "statusLabels": {
       "in_progress": "В работе",
@@ -563,7 +563,7 @@
       {
         "id": "app-1-12-mixer-demo",
         "status": "upcoming",
-        "title": "Скоро версия 1.12: аналоговый микшер",
+        "title": "Скоро версия 1.12: аналоговый микшер и окно мастеринга, в Google Play на следующей неделе",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "Видео: аналоговый микшер в версии 1.12"
@@ -571,9 +571,9 @@
       {
         "id": "app-1-11-loaded-keep-playing",
         "status": "upcoming",
-        "title": "Скоро в магазине: версия 1.11 со своими сэмплами в ударных, Keep playing и октавой для каждой волны",
-        "ticker": "Скоро в магазине: версия 1.11, до 88 своих сэмплов в каждом ряду ударных, с обрезкой",
-        "summary": "Скоро в магазине, версия 1.11: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
+        "title": "На проверке в Google, выйдет в ближайшие дни: версия 1.11 со своими сэмплами в ударных, Keep playing и октавой для каждой волны",
+        "ticker": "В ближайшие дни: версия 1.11, до 88 своих сэмплов в каждом ряду ударных, с обрезкой",
+        "summary": "На проверке в Google, выйдет в ближайшие дни, версия 1.11: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
         "href": "/guide",
         "cta": "Открыть руководство",
         "images": [
@@ -637,17 +637,17 @@
           }
         ],
         "tickerMore": [
-          "Скоро в магазине: Keep playing в редакторах Loop и Mic, чтобы запись доигрывала до конца",
-          "Скоро в магазине: своя октава для каждой волны, долгим нажатием на клавишу волны",
-          "Скоро в магазине: повторы паттерна до 88 и смена наборов ударных в LIVE"
+          "В ближайшие дни: Keep playing в редакторах Loop и Mic, чтобы запись доигрывала до конца",
+          "В ближайшие дни: своя октава для каждой волны, долгим нажатием на клавишу волны",
+          "В ближайшие дни: повторы паттерна до 88 и смена наборов ударных в LIVE"
         ]
       },
       {
         "id": "app-1-10-loop-editor-drums",
-        "status": "upcoming",
-        "title": "Скоро в магазине: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
-        "ticker": "Скоро в магазине: новый редактор лупов, в том числе для Mic, с обрезкой, EQ и выбором, какой ритм ударных играет вместе с лупом и сколько раз он повторяется",
-        "summary": "Скоро в магазине, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
+        "status": "shipped",
+        "title": "Уже в Google Play: версия 1.10 с Loop Editor, записью до 30 минут и полным сохранением сессии",
+        "ticker": "Уже в Google Play: новый редактор лупов, в том числе для Mic, с обрезкой, EQ и выбором, какой ритм ударных играет вместе с лупом и сколько раз он повторяется",
+        "summary": "Уже в Google Play, версия 1.10: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
         "href": "/guide",
         "cta": "Открыть руководство",
         "images": [
@@ -745,10 +745,10 @@
           }
         ],
         "tickerMore": [
-          "Скоро в магазине: переключение наборов ударных вживую или во время записи, без щелчков",
-          "Скоро в магазине: Load Console и реальный прогресс в процентах при сохранении и загрузке сессии",
-          "Скоро в магазине: S (solo) на каждом канале лупера и Mic, а STOP действительно останавливает канал до нажатия PLAY",
-          "Скоро в магазине: заметно меньше памяти и приветственный звук"
+          "Уже в Google Play: переключение наборов ударных вживую или во время записи, без щелчков",
+          "Уже в Google Play: Load Console и реальный прогресс в процентах при сохранении и загрузке сессии",
+          "Уже в Google Play: S (solo) на каждом канале лупера и Mic, а STOP действительно останавливает канал до нажатия PLAY",
+          "Уже в Google Play: заметно меньше памяти и приветственный звук"
         ]
       },
       {
@@ -756,7 +756,7 @@
         "status": "shipped",
         "title": "Новое в 1.09: несколько волн сразу",
         "ticker": "Новое в 1.09: несколько волн сразу и живые ударные",
-        "summary": "Сейчас в тесте Google Play, версия 1.09: На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
+        "summary": "В Google Play, версия 1.09: На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
         "href": "/guide",
         "cta": "Открыть руководство",
         "images": [
@@ -819,7 +819,7 @@
     "navLabel": "التحديثات",
     "pageTitle": "ما الجديد في L Studio.",
     "pageKicker": "L-STUDIO / التحديثات",
-    "pageIntro": "الإصداران 1.10 و1.11 قريباً في المتجر. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
+    "pageIntro": "الإصدار 1.10 متاح في Google Play. الإصدار 1.11 قيد مراجعة Google ويصل خلال الأيام القادمة. يصل L Studio Pro قريباً إلى Google Play، بسعر 8$.",
     "tickerLabel": "التحديثات",
     "statusLabels": {
       "in_progress": "قيد العمل",
@@ -835,7 +835,7 @@
       {
         "id": "app-1-12-mixer-demo",
         "status": "upcoming",
-        "title": "قريبًا الإصدار 1.12: مازج تناظري",
+        "title": "قريبًا الإصدار 1.12: مازج تناظري ونافذة ماسترينغ، في Google Play الأسبوع القادم",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "فيديو: مازج تناظري في الإصدار 1.12"
@@ -843,9 +843,9 @@
       {
         "id": "app-1-11-loaded-keep-playing",
         "status": "upcoming",
-        "title": "قريباً في المتجر: الإصدار 1.11 مع عيناتك الخاصة في الطبول وKeep playing وأوكتاف لكل موجة",
-        "ticker": "قريباً في المتجر: الإصدار 1.11، حتى 88 من عيناتك في كل صف طبول، مع القص",
-        "summary": "قريباً في المتجر، الإصدار 1.11: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
+        "title": "قيد مراجعة Google، يصل خلال الأيام القادمة: الإصدار 1.11 مع عيناتك الخاصة في الطبول وKeep playing وأوكتاف لكل موجة",
+        "ticker": "خلال الأيام القادمة: الإصدار 1.11، حتى 88 من عيناتك في كل صف طبول، مع القص",
+        "summary": "قيد مراجعة Google، يصل خلال الأيام القادمة، الإصدار 1.11: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
         "href": "/guide",
         "cta": "افتح الدليل",
         "images": [
@@ -909,17 +909,17 @@
           }
         ],
         "tickerMore": [
-          "قريباً في المتجر: Keep playing في محرري Loop وMic، ليُعزف التسجيل حتى نهايته",
-          "قريباً في المتجر: أوكتاف لكل موجة، بضغط مطوّل على مفتاح الموجة",
-          "قريباً في المتجر: تكرار النمط حتى 88، وتبديل أطقم الطبول في LIVE"
+          "خلال الأيام القادمة: Keep playing في محرري Loop وMic، ليُعزف التسجيل حتى نهايته",
+          "خلال الأيام القادمة: أوكتاف لكل موجة، بضغط مطوّل على مفتاح الموجة",
+          "خلال الأيام القادمة: تكرار النمط حتى 88، وتبديل أطقم الطبول في LIVE"
         ]
       },
       {
         "id": "app-1-10-loop-editor-drums",
-        "status": "upcoming",
-        "title": "قريباً في المتجر: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
-        "ticker": "قريباً في المتجر: محرر لوب جديد، ولقنوات Mic أيضاً، مع القص وEQ واختيار أي إيقاع طبول يعزف مع اللوب وكم مرة يتكرر",
-        "summary": "قريباً في المتجر، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
+        "status": "shipped",
+        "title": "متاح الآن في Google Play: الإصدار 1.10 مع Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
+        "ticker": "متاح الآن في Google Play: محرر لوب جديد، ولقنوات Mic أيضاً، مع القص وEQ واختيار أي إيقاع طبول يعزف مع اللوب وكم مرة يتكرر",
+        "summary": "متاح الآن في Google Play، الإصدار 1.10: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
         "href": "/guide",
         "cta": "افتح الدليل",
         "images": [
@@ -1017,10 +1017,10 @@
           }
         ],
         "tickerMore": [
-          "قريباً في المتجر: تبديل مجموعات الطبول أثناء العزف أو التسجيل، بلا نقرات",
-          "قريباً في المتجر: Load Console وتقدّم حقيقي بالنسبة المئوية عند حفظ الجلسة أو تحميلها",
-          "قريباً في المتجر: زر S (انفراد) في كل قناة لوبر وMic، وزر STOP يوقف القناة فعلاً حتى تضغط PLAY",
-          "قريباً في المتجر: استهلاك أقل بكثير للذاكرة، وصوت ترحيب"
+          "متاح الآن في Google Play: تبديل مجموعات الطبول أثناء العزف أو التسجيل، بلا نقرات",
+          "متاح الآن في Google Play: Load Console وتقدّم حقيقي بالنسبة المئوية عند حفظ الجلسة أو تحميلها",
+          "متاح الآن في Google Play: زر S (انفراد) في كل قناة لوبر وMic، وزر STOP يوقف القناة فعلاً حتى تضغط PLAY",
+          "متاح الآن في Google Play: استهلاك أقل بكثير للذاكرة، وصوت ترحيب"
         ]
       },
       {
@@ -1028,7 +1028,7 @@
         "status": "shipped",
         "title": "جديد في 1.09: عدة موجات معاً",
         "ticker": "جديد في 1.09: عدة موجات معاً وطبول مباشرة",
-        "summary": "الآن في اختبار Google Play، الإصدار 1.09: على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
+        "summary": "في Google Play، الإصدار 1.09: على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
         "href": "/guide",
         "cta": "افتح الدليل",
         "images": [

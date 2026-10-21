@@ -212,3 +212,11 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Version 1.11 with "coming soon to the store" in the hero kicker (content and the `Home.tsx` default), the Pro body (`languages.*.pro` and `shared/pro-copy.json`), FAQ 1, the home SEO descriptions and JSON-LD `softwareVersion` (`shared/seo.ts`, asserts in `shared/seo.selfcheck.ts`).
 - Size: the site shows the release APK size in MiB, written MB (1.10: 81,252,020 B = 77.5 MB). 1.11 release APK `L-Studio-1.11.apk` is 81,194,413 B = 77.4 MB, so hero stat1, FAQ 3, the Pro text and `fileSize` say 77.4 MB. In decimal megabytes the same file is 81.2 MB; switch every spot together if David prefers that.
 - Privacy and Terms footers say "L Studio 1.11" (David, Oct 20). One string in `Privacy.tsx` and `Terms.tsx` serves all 4 languages.
+
+### Store status (David, 2026-10-21 14:45 IDT)
+
+- 1.10 is live on Google Play. Item `app-1-10-loop-editor-drums` is `shipped` and its title, ticker and ticker lines start "Now on Google Play" (HE "זמין ב-Google Play", RU "Уже в Google Play", AR "متاح الآن في Google Play"). Never "in progress" for it.
+- 1.11 is in Google review. Item `app-1-11-loaded-keep-playing` stays `upcoming`. Title and summary start "In Google review, coming in the next few days", and the ticker lines start "In the next few days". No date. The hero kicker, FAQ, Pro body (`content.json` and `shared/pro-copy.json`), `updates.pageIntro` and the updates meta in `shared/seo.ts` say the same. The site version and size stay 1.11 and 77.4 MB. There is no separate "version on store" field.
+- 1.12 (analog mixer and mastering window) reaches Google Play next week, after bug testing. Item `app-1-12-mixer-demo` title says so, keeps the video and has no summary.
+- 1.09 is live on Google Play. Its summary starts "On Google Play, version 1.09:" (no longer "In the Google Play test now").
+- When 1.11 goes live: flip its item to `shipped`, use the "Now on Google Play" prefix, and update the kicker, FAQ, Pro body, intro and meta.
