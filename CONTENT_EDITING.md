@@ -188,6 +188,13 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - No launch month or day anywhere on the site. Use "coming soon" (HE בקרוב, RU скоро, AR قريباً) in the hero, launch note, pro copy, tester text, updates intro, SEO descriptions, `shared/pro-copy.json`, and the Home, Factory64 and FactoryDrums defaults. The Privacy page "last updated" date is a document date and stays.
 - Mic channels have no Load key in 1.10 (only Clear and Save). Never write that Mic channels can load a file. Imported audio limits (drum rows, Looper channels) are in the FAQ answer to "Can I use my own sounds and audio files?".
 
+## Home Google Play carousel (under the hero title)
+
+- Directly under the hero heading ("יוצרים מוזיקה בפלאפון." / "Make music on your phone."): the 8 Google Play listing screenshots, same component as the windows carousel (`<PlayCarousel tab="store" className="hero-store-carousel" />` in `Home.tsx`, slides under `store` in `carousel.ts`).
+- Source: the live Play listing images (1080x1920, saved as `/workspace/store-posters/carousel/{lang}/store-<n>.png`, imported with `scripts/import-carousel-posters.py`). Hebrew uses the Hebrew Play set; EN, RU and AR use the default (English) Play set, because Play has no RU or AR set.
+- Each image already has its counter "01 / 08" baked in, so the site draws no counter. Slides follow the baked counter order (01 to 08): own sound, two keyboards, live pad, voice, edit loop, loop layers, build the beat, drum styles. Note: Play itself shows them in a different order (Play order HE: 02,05,04,01,03,06,08,07; EN: 03,06,08,05,01,04,02,07).
+- Alt text per language: `languages.*.carousel.slides["store-*"].alt`. When the Play images change, re-download, replace `store-<n>.png`, run the import and bump `CAROUSEL_VER`.
+
 ## Home windows menu carousel (Sound, Mic, Loop, Pad, Drum)
 
 - Each tab is a carousel (swipe, arrows, dots, arrow keys, RTL-correct). Code: `client/src/components/PlayCarousel.tsx`, slide list per tab in `client/src/lib/carousel.ts` (Sound 4, Mic 4, Loop 4, Pad 3, Drum 6).

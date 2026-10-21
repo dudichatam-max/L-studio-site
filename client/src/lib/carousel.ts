@@ -1,6 +1,8 @@
 import type { Language } from "@/contexts/LanguageContext";
 
 export type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
+/** "store" = the 8 Google Play listing screenshots under the hero title (not a windows tab). */
+export type CarouselId = PlayId | "store";
 
 /**
  * Home "Play with sound" carousels: one list per tab, in display order.
@@ -12,7 +14,7 @@ export type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
  */
 export type SlideDef = { id: string; designed: string };
 
-export const carouselSlides: Record<PlayId, SlideDef[]> = {
+export const carouselSlides: Record<CarouselId, SlideDef[]> = {
   sound: [
     { id: "sound-fx", designed: "sound-1" },
     { id: "sound-keyboards", designed: "sound-2" },
@@ -36,6 +38,18 @@ export const carouselSlides: Record<PlayId, SlideDef[]> = {
     { id: "pad-keyboard", designed: "pad-2" },
     { id: "pad-targets", designed: "pad-3" },
   ],
+  // Google Play listing screenshots (1080x1920, counter 01 / 08 baked in), in baked-counter order.
+  // he = the Hebrew Play set; en, ru, ar = the default (English) Play set, since Play has no RU or AR set.
+  store: [
+    { id: "store-sound", designed: "store-1" },
+    { id: "store-keyboards", designed: "store-2" },
+    { id: "store-pad", designed: "store-3" },
+    { id: "store-voice", designed: "store-4" },
+    { id: "store-loop", designed: "store-5" },
+    { id: "store-layers", designed: "store-6" },
+    { id: "store-beat", designed: "store-7" },
+    { id: "store-drum-styles", designed: "store-8" },
+  ],
   drum: [
     { id: "drum-rows", designed: "drum-1" },
     { id: "drum-main", designed: "drum-2" },
@@ -56,7 +70,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-4";
+export const CAROUSEL_VER = "carousel-5";
 const SMALL = 360;
 const LARGE = 630;
 
