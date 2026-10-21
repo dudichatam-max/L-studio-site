@@ -272,103 +272,6 @@ const visionIcons = [Sparkles, Music2, ArrowDownLeft];
 // Renders a headline as "lead words" + a line break + the last word in the accent color,
 // matching the site's existing typographic style (see h1 em / h2 em in index.css).
 
-/** Published Early Access meters (hero ribbon and form). Edit content.json; do not use the signup API. */
-const MANUAL_SPOTS = { available: 0, total: 44 };
-
-function readSpotCount(value: unknown, fallback: number): number {
-  const parsed = typeof value === "number" ? value : typeof value === "string" && /^\d+$/.test(value.trim()) ? Number(value.trim()) : Number.NaN;
-  if (!Number.isSafeInteger(parsed) || parsed < 0 || parsed > 100_000) return fallback;
-  return parsed;
-}
-
-function manualEarlyAccessSpots(raw: unknown): { available: number; total: number } {
-  const source = raw && typeof raw === "object" ? (raw as { spotsAvailable?: unknown; spotsTotal?: unknown }) : {};
-  return {
-    available: readSpotCount(source.spotsAvailable, MANUAL_SPOTS.available),
-    total: readSpotCount(source.spotsTotal, MANUAL_SPOTS.total),
-  };
-}
-
-function EarlyAccessMeter({ available, total, label }: { available: number; total: number; label: string }) {
-  const taken = Math.max(0, Math.min(total, total - available));
-  const width = total > 0 ? (taken / total) * 100 : 0;
-  return (
-    <div className="tester-meter" dir="ltr">
-      <p className="tester-spots">
-        <span className="tester-spots__count">{taken}/{total}</span>{" "}
-        <span className="tester-spots__label">{label}</span>
-      </p>
-      <div className="tester-spots__track" aria-hidden="true">
-        <span style={{ width: `${width}%` }} />
-      </div>
-    </div>
-  );
-}
-
-function HeroSpotsRibbon({
-  available,
-  total,
-  label,
-  status,
-  kicker,
-}: {
-  available: number;
-  total: number;
-  label: string;
-  status: string;
-  kicker: string;
-}) {
-  const taken = Math.max(0, Math.min(total, total - available));
-  const ratio = total > 0 ? taken / total : 0;
-  const radius = 8;
-  const circumference = 2 * Math.PI * radius;
-  const dash = circumference * ratio;
-  return (
-    <div className="spots-ribbon">
-      <div className="spots-ribbon__link spots-ribbon__link--static container">
-        <span className="spots-ribbon__kicker">{kicker}</span>
-        <span
-          className="spots-ribbon__meter"
-          role="meter"
-          aria-valuenow={taken}
-          aria-valuemin={0}
-          aria-valuemax={total}
-          aria-valuetext={`${taken}/${total} ${label}`}
-        >
-          <svg className="spots-ribbon__ring" viewBox="0 0 22 22" aria-hidden="true">
-            <circle className="spots-ribbon__ring-track" cx="11" cy="11" r={radius} />
-            <circle className="spots-ribbon__ring-value" cx="11" cy="11" r={radius} strokeDasharray={`${dash} ${circumference}`} />
-          </svg>
-          <span className="spots-ribbon__count" dir="ltr">
-            <b>{taken}</b>
-            <span>/{total}</span>
-          </span>
-          <span className="spots-ribbon__label">{label}</span>
-        </span>
-        <span className="spots-ribbon__cta">{status}</span>
-      </div>
-    </div>
-  );
-}
-
-function ClosedSignupPanel({
-  tester,
-  launch,
-  spots,
-}: {
-  tester: TesterCopy;
-  launch: { headline: string; price: string };
-  spots: { available: number; total: number };
-}) {
-  return (
-    <div className="tester-form tester-form--closed">
-      <EarlyAccessMeter available={spots.available} total={spots.total} label={tester.spotsLabel} />
-      <p className="tester-status" role="status">{tester.status}</p>
-      <p className="launch-note"><strong>{launch.headline}</strong> <span>{launch.price}</span></p>
-    </div>
-  );
-}
-
 function Headline({ text }: { text: string }) {
   const words = text.trim().split(" ").filter(Boolean);
   if (words.length < 2) return <em>{text}</em>;
@@ -411,7 +314,6 @@ export default function Home() {
   const faq = copy.faq ?? faqDefault;
   const finalCta = copy.finalCta ?? finalCtaDefault;
   const tester: TesterCopy = { ...testerDefaults[language], ...(copy.tester ?? {}) };
-  const spots = manualEarlyAccessSpots(editableContent?.earlyAccess);
   const footer = copy.footer ?? footerDefault;
   const chrome = chromeUi[language];
 
@@ -462,13 +364,6 @@ export default function Home() {
         )}
       </header>
 
-      <HeroSpotsRibbon
-        available={spots.available}
-        total={spots.total}
-        label={tester.spotsLabel}
-        status={tester.spotsStatus}
-        kicker={tester.kicker}
-      />
 
       <UpdatesTicker copy={updates} isRtl={isRtl} />
 
@@ -516,7 +411,7 @@ export default function Home() {
             <h1 id="hero-title"><Headline text={hero.title} /></h1>
             <div className="hero-offer hero-offer--static">
               <strong>{launch.headline}</strong>
-              <span>{launch.price} {tester.status}</span>
+              <span>{launch.price}</span>
               <a className="play-badge" href={`https://play.google.com/store/apps/details?id=com.microtonal.synth&hl=${PLAY_HL[language]}`} target="_blank" rel="noopener">
                 <img src={`/assets/badges/google-play-${language}.png`} alt={PLAY_ALT[language]} width={202} height={60} decoding="async" />
               </a>
@@ -744,27 +639,6 @@ export default function Home() {
               </AccordionItem>
             ))}
           </Accordion>
-        </section>
-
-        {/* 8. Early Access (closed) */}
-        <section className="tester-section container" id="early-access">
-          <div className="tester-panel">
-            <figure className="tester-hero">
-              <picture>
-                <source srcSet={`${factoryHero.webp800} 800w, ${factoryHero.webp1254} 1254w`} sizes="(max-width: 800px) calc(100vw - 40px), 760px" type="image/webp" />
-                <img src={factoryHero.jpg800} alt={tester.imageAlt} width={1254} height={1254} loading="lazy" decoding="async" />
-              </picture>
-            </figure>
-            <div className="tester-grid">
-            <div className="tester-copy">
-              <span className="kicker">{tester.kicker}</span>
-              <h2>{tester.title}</h2>
-              <p>{tester.body}</p>
-              <div className="tester-proof"><span>01</span><span>{tester.freeAccess}</span><span>{tester.localAudio}</span></div>
-            </div>
-            <ClosedSignupPanel tester={tester} launch={launch} spots={spots} />
-            </div>
-          </div>
         </section>
 
         {/* 9. Final CTA */}
