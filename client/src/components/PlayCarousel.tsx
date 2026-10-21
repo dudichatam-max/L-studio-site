@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Language } from "@/contexts/LanguageContext";
-import { carouselSlides, slideImage, type PlayId } from "@/lib/carousel";
+import { carouselSlides, slideImage, type CarouselId } from "@/lib/carousel";
 
 export type CarouselSlideCopy = { title?: string; text?: string; alt?: string };
 export type CarouselCopy = {
@@ -32,12 +32,14 @@ export default function PlayCarousel({
   isRtl,
   copy,
   children,
+  className,
 }: {
-  tab: PlayId;
+  tab: CarouselId;
   language: Language;
   isRtl: boolean;
   copy?: CarouselCopy;
-  children: (caption: CarouselSlideCopy | undefined) => React.ReactNode;
+  children?: (caption: CarouselSlideCopy | undefined) => React.ReactNode;
+  className?: string;
 }) {
   const slides = carouselSlides[tab];
   const total = slides.length;
@@ -100,7 +102,7 @@ export default function PlayCarousel({
 
   return (
     <>
-      <div className="preview-image-wrap play-carousel" dir={dirAttr}>
+      <div className={`preview-image-wrap play-carousel${className ? ` ${className}` : ""}`} dir={dirAttr}>
         <div className="play-carousel__stage">
           <div
             className="play-carousel__track"
@@ -184,7 +186,7 @@ export default function PlayCarousel({
           </div>
         )}
       </div>
-      {children(slideCopy[slides[index].id])}
+      {children?.(slideCopy[slides[index].id])}
     </>
   );
 }

@@ -16,7 +16,7 @@
       },
       "hero": {
         "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.11, בקרוב בחנות",
-        "title": "יוצרים מוזיקה בטלפון.",
+        "title": "יוצרים מוזיקה בפלאפון.",
         "body": "L Studio היא אפליקציה ליצירת מוזיקה בטלפון האנדרואיד. מקליטים לופים, מוסיפים תופים, שרים עם המילים מול העיניים, ואם בא לכם לצאת מהתווים הרגילים, מכוונים כל קליד לתדר משלו.",
         "ctaPrimary": "לצפייה בסרטון הקצר",
         "ctaSecondary": "איך זה התחיל",
@@ -2040,6 +2040,38 @@
           "drum-repeats": {
             "title": "Pattern repeats",
             "text": "לחיצה ארוכה על מספר קצב פותחת את החלון. בוחרים 1 עד 10, מקלידים מספר עד 88 בתיבה, או בוחרים אינסוף או DEFAULT. COPY ו-PASTE מעבירים קצב שלם למספר אחר."
+          },
+          "store-sound": {
+            "title": "נגינה עם צלילים משלך",
+            "alt": "צילום מסך מ-Google Play 1/8: נגינה עם צלילים משלך"
+          },
+          "store-keyboards": {
+            "title": "שתי מקלדות, נגינה חיה",
+            "alt": "צילום מסך מ-Google Play 2/8: שתי מקלדות, נגינה חיה"
+          },
+          "store-pad": {
+            "title": "משטח נגינה חיה",
+            "alt": "צילום מסך מ-Google Play 3/8: משטח נגינה חיה"
+          },
+          "store-voice": {
+            "title": "הקליטו את הקול",
+            "alt": "צילום מסך מ-Google Play 4/8: הקליטו את הקול"
+          },
+          "store-loop": {
+            "title": "ערכו כל לולאה",
+            "alt": "צילום מסך מ-Google Play 5/8: ערכו כל לולאה"
+          },
+          "store-layers": {
+            "title": "בנו שכבות של לולאות",
+            "alt": "צילום מסך מ-Google Play 6/8: בנו שכבות של לולאות"
+          },
+          "store-beat": {
+            "title": "בנו את הקצב",
+            "alt": "צילום מסך מ-Google Play 7/8: בנו את הקצב"
+          },
+          "store-drum-styles": {
+            "title": "ערכות תופים מוכנות",
+            "alt": "צילום מסך מ-Google Play 8/8: ערכות תופים מוכנות"
           }
         }
       }
@@ -4084,6 +4116,38 @@
           "drum-repeats": {
             "title": "Pattern repeats",
             "text": "A long-press on a rhythm number opens the window. Pick 1 to 10, type a number up to 88 in the box, or pick infinity or DEFAULT. COPY and PASTE move a whole rhythm to another number."
+          },
+          "store-sound": {
+            "title": "Play your own sound",
+            "alt": "Google Play screenshot 1/8: Play your own sound"
+          },
+          "store-keyboards": {
+            "title": "Two keyboards, live",
+            "alt": "Google Play screenshot 2/8: Two keyboards, live"
+          },
+          "store-pad": {
+            "title": "A live performance pad",
+            "alt": "Google Play screenshot 3/8: A live performance pad"
+          },
+          "store-voice": {
+            "title": "Record your voice",
+            "alt": "Google Play screenshot 4/8: Record your voice"
+          },
+          "store-loop": {
+            "title": "Edit every loop",
+            "alt": "Google Play screenshot 5/8: Edit every loop"
+          },
+          "store-layers": {
+            "title": "Build layers of loops",
+            "alt": "Google Play screenshot 6/8: Build layers of loops"
+          },
+          "store-beat": {
+            "title": "Build the beat",
+            "alt": "Google Play screenshot 7/8: Build the beat"
+          },
+          "store-drum-styles": {
+            "title": "Drum styles",
+            "alt": "Google Play screenshot 8/8: Drum styles"
           }
         }
       }
@@ -6128,6 +6192,38 @@
           "drum-repeats": {
             "title": "Pattern repeats",
             "text": "Долгое нажатие на номер ритма открывает окно. Выберите от 1 до 10, введите число до 88 в поле или выберите бесконечность или DEFAULT. COPY и PASTE переносят ритм целиком на другой номер."
+          },
+          "store-sound": {
+            "title": "Играй своим звуком",
+            "alt": "Скриншот из Google Play 1/8: Играй своим звуком"
+          },
+          "store-keyboards": {
+            "title": "Две клавиатуры, игра вживую",
+            "alt": "Скриншот из Google Play 2/8: Две клавиатуры, игра вживую"
+          },
+          "store-pad": {
+            "title": "Пэд для живой игры",
+            "alt": "Скриншот из Google Play 3/8: Пэд для живой игры"
+          },
+          "store-voice": {
+            "title": "Запиши свой голос",
+            "alt": "Скриншот из Google Play 4/8: Запиши свой голос"
+          },
+          "store-loop": {
+            "title": "Редактируй каждую петлю",
+            "alt": "Скриншот из Google Play 5/8: Редактируй каждую петлю"
+          },
+          "store-layers": {
+            "title": "Собирай слои петель",
+            "alt": "Скриншот из Google Play 6/8: Собирай слои петель"
+          },
+          "store-beat": {
+            "title": "Собери ритм",
+            "alt": "Скриншот из Google Play 7/8: Собери ритм"
+          },
+          "store-drum-styles": {
+            "title": "Стили барабанов",
+            "alt": "Скриншот из Google Play 8/8: Стили барабанов"
           }
         }
       }
@@ -8172,6 +8268,38 @@
           "drum-repeats": {
             "title": "Pattern repeats",
             "text": "الضغط المطوّل على رقم الإيقاع يفتح النافذة. اختر من 1 إلى 10، أو اكتب رقماً حتى 88 في الخانة، أو اختر اللانهاية أو DEFAULT. COPY وPASTE ينقلان إيقاعاً كاملاً إلى رقم آخر."
+          },
+          "store-sound": {
+            "title": "اعزف بصوتك الخاص",
+            "alt": "لقطة شاشة من Google Play 1/8: اعزف بصوتك الخاص"
+          },
+          "store-keyboards": {
+            "title": "لوحتا مفاتيح، عزف حي",
+            "alt": "لقطة شاشة من Google Play 2/8: لوحتا مفاتيح، عزف حي"
+          },
+          "store-pad": {
+            "title": "لوحة للأداء الحي",
+            "alt": "لقطة شاشة من Google Play 3/8: لوحة للأداء الحي"
+          },
+          "store-voice": {
+            "title": "سجّل صوتك",
+            "alt": "لقطة شاشة من Google Play 4/8: سجّل صوتك"
+          },
+          "store-loop": {
+            "title": "حرّر كل حلقة",
+            "alt": "لقطة شاشة من Google Play 5/8: حرّر كل حلقة"
+          },
+          "store-layers": {
+            "title": "ابنِ طبقات من الحلقات",
+            "alt": "لقطة شاشة من Google Play 6/8: ابنِ طبقات من الحلقات"
+          },
+          "store-beat": {
+            "title": "ابنِ الإيقاع",
+            "alt": "لقطة شاشة من Google Play 7/8: ابنِ الإيقاع"
+          },
+          "store-drum-styles": {
+            "title": "أنماط الطبول",
+            "alt": "لقطة شاشة من Google Play 8/8: أنماط الطبول"
           }
         }
       }
