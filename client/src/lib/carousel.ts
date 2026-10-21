@@ -1,8 +1,9 @@
 import type { Language } from "@/contexts/LanguageContext";
 
 export type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
-/** "store" = the 8 Google Play listing screenshots under the hero title (not a windows tab). */
-export type CarouselId = PlayId | "store";
+/** "store" = the 8 Google Play listing screenshots under the hero title (not a windows tab).
+ * "update112" = the 1.12 screenshots on /updates (analog mixer, wave EQ, Mastering), attached to the 1.12 item. */
+export type CarouselId = PlayId | "store" | "update112";
 
 /**
  * Home "Play with sound" carousels: one list per tab, in display order.
@@ -50,6 +51,20 @@ export const carouselSlides: Record<CarouselId, SlideDef[]> = {
     { id: "store-beat", designed: "store-7" },
     { id: "store-drum-styles", designed: "store-8" },
   ],
+  // /updates, 1.12 item (counter n/10 baked in): mixer first, then Mastering. Real 1.12 smoke captures (David, Oct 21).
+  // he and en have their own captions; ru and ar use the English posters for now (TODO in CONTENT_EDITING.md).
+  update112: [
+    { id: "upd-mixer", designed: "upd112-1" },
+    { id: "upd-wave-eq", designed: "upd112-2" },
+    { id: "upd-wave-pages", designed: "upd112-3" },
+    { id: "upd-wave-octave", designed: "upd112-4" },
+    { id: "upd-master-beginner", designed: "upd112-5" },
+    { id: "upd-master-styles", designed: "upd112-6" },
+    { id: "upd-master-advanced", designed: "upd112-7" },
+    { id: "upd-master-tone", designed: "upd112-8" },
+    { id: "upd-master-stereo", designed: "upd112-9" },
+    { id: "upd-master-saved", designed: "upd112-10" },
+  ],
   drum: [
     { id: "drum-rows", designed: "drum-1" },
     { id: "drum-main", designed: "drum-2" },
@@ -70,7 +85,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-5";
+export const CAROUSEL_VER = "carousel-6";
 const SMALL = 360;
 const LARGE = 630;
 

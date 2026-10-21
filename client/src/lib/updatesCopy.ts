@@ -1,4 +1,5 @@
 import type { Language } from "@/contexts/LanguageContext";
+import type { CarouselId } from "@/lib/carousel";
 import fallbackJson from "./updatesFallback.json";
 
 export type UpdateStatus = "in_progress" | "upcoming" | "shipped";
@@ -30,8 +31,20 @@ export type UpdateItem = {
   href?: string;
   /** Optional link label, in the same language as the card. */
   cta?: string;
+  /**
+   * Optional poster carousel next to the video (same PlayCarousel as the homepage). `id` is a list in carousel.ts;
+   * `slides[slideId]` holds the title, text and alt of each poster in this language (the caption is baked in).
+   */
+  carousel?: UpdateCarousel;
   /** Optional grouped bullets under the summary. Cards without it show only `summary`. */
   sections?: UpdateItemSection[];
+};
+
+export type UpdateCarousel = {
+  id: CarouselId;
+  /** Accessible name of the carousel region. */
+  label?: string;
+  slides: Record<string, { title?: string; text?: string; alt?: string }>;
 };
 
 export type UpdateItemSection = {
