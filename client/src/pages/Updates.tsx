@@ -160,13 +160,13 @@ export default function Updates() {
                 {group.items.map((item) => {
                   const shots = updateScreenshots(item);
                   return (
-                    <article className={shots.length ? "updates-card updates-card--media" : "updates-card"} id={item.id} key={item.id}>
+                    <article className={shots.length || item.videoId ? "updates-card updates-card--media" : "updates-card"} id={item.id} key={item.id}>
                       <div className="updates-card-copy">
                         <div className="updates-card-head">
                           <h3>{item.title}</h3>
                           <span className="exclusive-badge">{copy.statusLabels?.[item.status] ?? group.title}</span>
                         </div>
-                        <p>{item.summary}</p>
+                        {item.summary ? <p>{item.summary}</p> : null}
                         {item.detail ? <p className="updates-detail">{item.detail}</p> : null}
                         {Array.isArray(item.sections) && item.sections.length ? (
                           <div className="updates-sections">
@@ -193,6 +193,20 @@ export default function Updates() {
                         ) : null}
                         {item.dateLabel ? <p className="updates-date">{item.dateLabel}</p> : null}
                       </div>
+                      {item.videoId ? (
+                        <div className="updates-card-shots">
+                          <figure className="updates-shot updates-video">
+                            <iframe
+                              src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(item.videoId)}?playsinline=1&rel=0`}
+                              title={item.videoTitle ?? item.title}
+                              loading="lazy"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowFullScreen
+                              referrerPolicy="strict-origin-when-cross-origin"
+                            />
+                          </figure>
+                        </div>
+                      ) : null}
                       {shots.length ? (
                         <div className="updates-card-shots">
                           {shots.map((shot) => (

@@ -1691,6 +1691,14 @@
         },
         "items": [
           {
+            "id": "app-1-12-mixer-demo",
+            "status": "upcoming",
+            "title": "בקרוב גרסה 1.12 מיקסר אנלוגי",
+            "summary": "",
+            "videoId": "f6bLB0IP1ks",
+            "videoTitle": "סרטון: מיקסר אנלוגי בגרסה 1.12"
+          },
+          {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
             "title": "בקרוב בחנות: גרסה 1.11 עם סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
@@ -3726,6 +3734,14 @@
           "shipped": "Recently shipped"
         },
         "items": [
+          {
+            "id": "app-1-12-mixer-demo",
+            "status": "upcoming",
+            "title": "Coming soon: version 1.12 analog mixer",
+            "summary": "",
+            "videoId": "f6bLB0IP1ks",
+            "videoTitle": "Video: version 1.12 analog mixer"
+          },
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
@@ -5763,6 +5779,14 @@
         },
         "items": [
           {
+            "id": "app-1-12-mixer-demo",
+            "status": "upcoming",
+            "title": "Скоро версия 1.12: аналоговый микшер",
+            "summary": "",
+            "videoId": "f6bLB0IP1ks",
+            "videoTitle": "Видео: аналоговый микшер в версии 1.12"
+          },
+          {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
             "title": "Скоро в магазине: версия 1.11 со своими сэмплами в ударных, Keep playing и октавой для каждой волны",
@@ -7798,6 +7822,14 @@
           "shipped": "صدر مؤخراً"
         },
         "items": [
+          {
+            "id": "app-1-12-mixer-demo",
+            "status": "upcoming",
+            "title": "قريبًا الإصدار 1.12: مازج تناظري",
+            "summary": "",
+            "videoId": "f6bLB0IP1ks",
+            "videoTitle": "فيديو: مازج تناظري في الإصدار 1.12"
+          },
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "upcoming",
