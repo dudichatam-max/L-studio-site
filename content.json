@@ -2097,55 +2097,45 @@
             "title": "Pattern repeats",
             "text": "לחיצה ארוכה על מספר קצב פותחת את החלון. בוחרים 1 עד 10, מקלידים מספר עד 88 בתיבה, או בוחרים אינסוף או DEFAULT. COPY ו-PASTE מעבירים קצב שלם למספר אחר."
           },
-          "upd-mixer": {
-            "title": "מיקסר אנלוגי",
-            "text": "לתופים, ללופר ולמיקרופון יש ערוץ משלהם: דרייב, מסנן, גוון, דחיסה, מיקום ועוצמה, ועוד ערוץ מאסטר. מפת המיקס מראה איפה הם מתנגשים. 8 פריסטים.",
-            "alt": "מיקסר אנלוגי. לתופים, ללופר ולמיקרופון יש ערוץ משלהם: דרייב, מסנן, גוון, דחיסה, מיקום ועוצמה, ועוד ערוץ מאסטר. מפת המיקס מראה איפה הם מתנגשים. 8 פריסטים."
+          "home-sound": {
+            "title": "עצבו את הצליל שלכם",
+            "text": "שלבו סוגי גל, התחילו מצליל מוכן וכוונו כל קליד לסולם שלכם.",
+            "alt": "1/8: עצבו את הצליל שלכם. שלבו סוגי גל, התחילו מצליל מוכן וכוונו כל קליד לסולם שלכם."
           },
-          "upd-wave-eq": {
-            "title": "גוון לכל גל",
-            "text": "לחיצה ארוכה על מקש גל פותחת את הגוון שלו: נמוכים, אמצע, גבוהים, חיתוך נמוך, חיתוך גבוה ועוצמה. כל שינוי נשמע מיד ונשמר.",
-            "alt": "גוון לכל גל. לחיצה ארוכה על מקש גל פותחת את הגוון שלו: נמוכים, אמצע, גבוהים, חיתוך נמוך, חיתוך גבוה ועוצמה. כל שינוי נשמע מיד ונשמר."
+          "home-sound-fx": {
+            "title": "צבעו כל צליל",
+            "text": "בחרו עולם אפקטים לקלידים ולתופים, וכווננו את הגוון שלו.",
+            "alt": "2/8: צבעו כל צליל. בחרו עולם אפקטים לקלידים ולתופים, וכווננו את הגוון שלו."
           },
-          "upd-wave-pages": {
-            "title": "4 דפים לכל גל",
-            "text": "כל דף מוסיף עוד קול של אותו גל. דף 1 תמיד פועל, ודפים 2 עד 4 נדלקים ונכבים ב־ON ו־OFF. הכפתור DEFAULT מאפס את הדף שעל המסך.",
-            "alt": "4 דפים לכל גל. כל דף מוסיף עוד קול של אותו גל. דף 1 תמיד פועל, ודפים 2 עד 4 נדלקים ונכבים ב־ON ו־OFF. הכפתור DEFAULT מאפס את הדף שעל המסך."
+          "home-looper": {
+            "title": "בנו שכבות של לולאות",
+            "text": "הקליטו לולאות ערוץ אחר ערוץ, חתכו אותן לפי הקצב ובנו מהן קטע שלם.",
+            "alt": "3/8: בנו שכבות של לולאות. הקליטו לולאות ערוץ אחר ערוץ, חתכו אותן לפי הקצב ובנו מהן קטע שלם."
           },
-          "upd-wave-octave": {
-            "title": "אוקטבה לכל דף",
-            "text": "מקשי האוקטבה מורידים או מעלים כל דף עד שתי אוקטבות. מחליקים או לוחצים על החצים כדי לעבור בין הדפים. לחיצה על LIVE SCOPE למעלה פותחת את המיקסר.",
-            "alt": "אוקטבה לכל דף. מקשי האוקטבה מורידים או מעלים כל דף עד שתי אוקטבות. מחליקים או לוחצים על החצים כדי לעבור בין הדפים. לחיצה על LIVE SCOPE למעלה פותחת את המיקסר."
+          "home-live-pad": {
+            "title": "נגנו בזמן אמת",
+            "text": "שנו את הצליל באצבע אחת והפעילו חזרות בקצב תוך כדי הופעה.",
+            "alt": "4/8: נגנו בזמן אמת. שנו את הצליל באצבע אחת והפעילו חזרות בקצב תוך כדי הופעה."
           },
-          "upd-master-beginner": {
-            "title": "מאסטרינג למתחילים",
-            "text": "בוחרים סגנון ולוחצים נגן כדי לשמוע מיד. A זה לפני, B זה הסגנון, ו־Match משווה את העוצמה. ואז Start mastering.",
-            "alt": "מאסטרינג למתחילים. בוחרים סגנון ולוחצים נגן כדי לשמוע מיד. A זה לפני, B זה הסגנון, ו־Match משווה את העוצמה. ואז Start mastering."
+          "home-drums": {
+            "title": "בנו את הקצב שלכם",
+            "text": "תכנתו תבניות צעד אחר צעד, בחרו כל תוף מתוך ספריות דגימות ועצבו אותו.",
+            "alt": "5/8: בנו את הקצב שלכם. תכנתו תבניות צעד אחר צעד, בחרו כל תוף מתוך ספריות דגימות ועצבו אותו."
           },
-          "upd-master-styles": {
-            "title": "8 סגנונות",
-            "text": "מ־Sub Vault ועד Stream Peak, לכל סגנון צליל ויעד עוצמה משלו. האפליקציה מסמנת את הסגנון שהכי מתאים להקלטה. אפשר לשמור סגנון משלכם.",
-            "alt": "8 סגנונות. מ־Sub Vault ועד Stream Peak, לכל סגנון צליל ויעד עוצמה משלו. האפליקציה מסמנת את הסגנון שהכי מתאים להקלטה. אפשר לשמור סגנון משלכם."
+          "home-mixer": {
+            "title": "המיקסר האנלוגי שלכם",
+            "text": "ראו היכן יושבים התופים, הלולאות והמיקרופון, ועצבו מהם מיקס אחד מאוזן.",
+            "alt": "6/8: המיקסר האנלוגי שלכם. ראו היכן יושבים התופים, הלולאות והמיקרופון, ועצבו מהם מיקס אחד מאוזן."
           },
-          "upd-master-advanced": {
-            "title": "מצב מתקדם",
-            "text": "לשוניות גוון, דינמיקה, סטריאו ועוצמה, ובחירה בין עדין, רגיל וחזק. מקבלים אזהרה כשההקלטה הוקלטה חזק מדי.",
-            "alt": "מצב מתקדם. לשוניות גוון, דינמיקה, סטריאו ועוצמה, ובחירה בין עדין, רגיל וחזק. מקבלים אזהרה כשההקלטה הוקלטה חזק מדי."
+          "home-mastering-style": {
+            "title": "סיימו את השיר",
+            "text": "בחרו סגנון צליל, השוו לפני ואחרי וייצאו את הקובץ הסופי.",
+            "alt": "7/8: סיימו את השיר. בחרו סגנון צליל, השוו לפני ואחרי וייצאו את הקובץ הסופי."
           },
-          "upd-master-tone": {
-            "title": "גוון לכל השיר",
-            "text": "נמוכים, אמצע וגבוהים לכל השיר. העקומה מראה לפני ואחרי, ותמיד אפשר לבטל ולהחזיר.",
-            "alt": "גוון לכל השיר. נמוכים, אמצע וגבוהים לכל השיר. העקומה מראה לפני ואחרי, ותמיד אפשר לבטל ולהחזיר."
-          },
-          "upd-master-stereo": {
-            "title": "בדיקת סטריאו",
-            "text": "רוחב ומתאם לכל השיר. Mono ו־Phone check משמיעים איך השיר יישמע ברמקול של טלפון.",
-            "alt": "בדיקת סטריאו. רוחב ומתאם לכל השיר. Mono ו־Phone check משמיעים איך השיר יישמע ברמקול של טלפון."
-          },
-          "upd-master-saved": {
-            "title": "המאסטר נשמר",
-            "text": "מספרים של לפני ואחרי, מול יעד העוצמה של שירותי הסטרימינג. משתפים WAV + MP3, והקבצים נשארים במכשיר.",
-            "alt": "המאסטר נשמר. מספרים של לפני ואחרי, מול יעד העוצמה של שירותי הסטרימינג. משתפים WAV + MP3, והקבצים נשארים במכשיר."
+          "home-mastering-measure": {
+            "title": "מדדו כל פרט",
+            "text": "מדידה מדויקת של עוצמה, דינמיקה וסטריאו מראה איך השיר שלכם נשמע באמת.",
+            "alt": "8/8: מדדו כל פרט. מדידה מדויקת של עוצמה, דינמיקה וסטריאו מראה איך השיר שלכם נשמע באמת."
           }
         }
       }
@@ -4247,55 +4237,45 @@
             "title": "Pattern repeats",
             "text": "A long-press on a rhythm number opens the window. Pick 1 to 10, type a number up to 88 in the box, or pick infinity or DEFAULT. COPY and PASTE move a whole rhythm to another number."
           },
-          "upd-mixer": {
-            "title": "Analog Mixer",
-            "text": "Drums, Looper and Mic each get Drive, HPF, EQ, Comp, Pan and a fader, plus a Master strip. MIX MAP shows where they clash. 8 presets.",
-            "alt": "Analog Mixer. Drums, Looper and Mic each get Drive, HPF, EQ, Comp, Pan and a fader, plus a Master strip. MIX MAP shows where they clash. 8 presets."
+          "home-sound": {
+            "title": "Design your sound",
+            "text": "Blend wave types, start from a preset and tune every key to your scale.",
+            "alt": "1/8: Design your sound. Blend wave types, start from a preset and tune every key to your scale."
           },
-          "upd-wave-eq": {
-            "title": "EQ for Each Wave",
-            "text": "Hold a wave key to open its EQ: LOW, MID, HIGH, HPF, LPF and GAIN. You hear every change at once, and it is saved.",
-            "alt": "EQ for Each Wave. Hold a wave key to open its EQ: LOW, MID, HIGH, HPF, LPF and GAIN. You hear every change at once, and it is saved."
+          "home-sound-fx": {
+            "title": "Color every sound",
+            "text": "Pick an effect world for your keys and drums, then fine-tune its tone.",
+            "alt": "2/8: Color every sound. Pick an effect world for your keys and drums, then fine-tune its tone."
           },
-          "upd-wave-pages": {
-            "title": "4 Pages per Wave",
-            "text": "Each page adds one more voice of the same wave. Page 1 is always on, pages 2 to 4 turn ON or OFF. DEFAULT resets the page on screen.",
-            "alt": "4 Pages per Wave. Each page adds one more voice of the same wave. Page 1 is always on, pages 2 to 4 turn ON or OFF. DEFAULT resets the page on screen."
+          "home-looper": {
+            "title": "Layer your loops",
+            "text": "Record loops channel by channel, trim them to the beat and stack them into a track.",
+            "alt": "3/8: Layer your loops. Record loops channel by channel, trim them to the beat and stack them into a track."
           },
-          "upd-wave-octave": {
-            "title": "Octave per Page",
-            "text": "Keys -2 to +2 shift each page by up to two octaves. Swipe or tap the arrows to move between pages. Tap LIVE SCOPE on top to open the mixer.",
-            "alt": "Octave per Page. Keys -2 to +2 shift each page by up to two octaves. Swipe or tap the arrows to move between pages. Tap LIVE SCOPE on top to open the mixer."
+          "home-live-pad": {
+            "title": "Play it live",
+            "text": "Bend the sound with one finger and fire beat-synced repeats while you perform.",
+            "alt": "4/8: Play it live. Bend the sound with one finger and fire beat-synced repeats while you perform."
           },
-          "upd-master-beginner": {
-            "title": "Mastering for Beginners",
-            "text": "Pick a style and press Play to hear it at once. A is before, B is the style, Match evens out the volume. Then Start mastering.",
-            "alt": "Mastering for Beginners. Pick a style and press Play to hear it at once. A is before, B is the style, Match evens out the volume. Then Start mastering."
+          "home-drums": {
+            "title": "Build your beat",
+            "text": "Program patterns step by step, pick each drum from big sample banks and shape it.",
+            "alt": "5/8: Build your beat. Program patterns step by step, pick each drum from big sample banks and shape it."
           },
-          "upd-master-styles": {
-            "title": "8 Styles",
-            "text": "From Sub Vault to Stream Peak, each with its own sound and loudness target. The app marks the best match for your take. Save your own as My style.",
-            "alt": "8 Styles. From Sub Vault to Stream Peak, each with its own sound and loudness target. The app marks the best match for your take. Save your own as My style."
+          "home-mixer": {
+            "title": "Your analog mixer",
+            "text": "See where drums, loops and mic sit, and shape them into one balanced mix.",
+            "alt": "6/8: Your analog mixer. See where drums, loops and mic sit, and shape them into one balanced mix."
           },
-          "upd-master-advanced": {
-            "title": "Advanced Mode",
-            "text": "Tabs for Tone, Dynamics, Stereo and Loudness, with Light, Normal or Heavy. You get a warning when a take was recorded too loud.",
-            "alt": "Advanced Mode. Tabs for Tone, Dynamics, Stereo and Loudness, with Light, Normal or Heavy. You get a warning when a take was recorded too loud."
+          "home-mastering-style": {
+            "title": "Finish your track",
+            "text": "Choose a sound style, compare before and after, and export the final file.",
+            "alt": "7/8: Finish your track. Choose a sound style, compare before and after, and export the final file."
           },
-          "upd-master-tone": {
-            "title": "Tone EQ",
-            "text": "Low, Mid and High for the whole song. The curve shows before and after, and Undo and Redo are always there.",
-            "alt": "Tone EQ. Low, Mid and High for the whole song. The curve shows before and after, and Undo and Redo are always there."
-          },
-          "upd-master-stereo": {
-            "title": "Stereo Check",
-            "text": "Width and correlation for the whole song. Mono and Phone check let you hear how it will sound on a phone speaker.",
-            "alt": "Stereo Check. Width and correlation for the whole song. Mono and Phone check let you hear how it will sound on a phone speaker."
-          },
-          "upd-master-saved": {
-            "title": "Master Saved",
-            "text": "Before and after numbers, next to the -14 LUFS streaming target. Share WAV + MP3. The files stay on your device.",
-            "alt": "Master Saved. Before and after numbers, next to the -14 LUFS streaming target. Share WAV + MP3. The files stay on your device."
+          "home-mastering-measure": {
+            "title": "Measure every detail",
+            "text": "Precise loudness, dynamics and stereo readings show how your track really sounds.",
+            "alt": "8/8: Measure every detail. Precise loudness, dynamics and stereo readings show how your track really sounds."
           }
         }
       }
@@ -6397,55 +6377,45 @@
             "title": "Pattern repeats",
             "text": "Долгое нажатие на номер ритма открывает окно. Выберите от 1 до 10, введите число до 88 в поле или выберите бесконечность или DEFAULT. COPY и PASTE переносят ритм целиком на другой номер."
           },
-          "upd-mixer": {
-            "title": "Analog Mixer",
-            "text": "Drums, Looper and Mic each get Drive, HPF, EQ, Comp, Pan and a fader, plus a Master strip. MIX MAP shows where they clash. 8 presets.",
-            "alt": "Analog Mixer. Drums, Looper and Mic each get Drive, HPF, EQ, Comp, Pan and a fader, plus a Master strip. MIX MAP shows where they clash. 8 presets."
+          "home-sound": {
+            "title": "Создай свой звук",
+            "text": "Смешивай типы волн, начинай с пресета и настраивай каждую клавишу под свою гамму.",
+            "alt": "1/8: Создай свой звук. Смешивай типы волн, начинай с пресета и настраивай каждую клавишу под свою гамму."
           },
-          "upd-wave-eq": {
-            "title": "EQ for Each Wave",
-            "text": "Hold a wave key to open its EQ: LOW, MID, HIGH, HPF, LPF and GAIN. You hear every change at once, and it is saved.",
-            "alt": "EQ for Each Wave. Hold a wave key to open its EQ: LOW, MID, HIGH, HPF, LPF and GAIN. You hear every change at once, and it is saved."
+          "home-sound-fx": {
+            "title": "Раскрась каждый звук",
+            "text": "Выбери мир эффектов для клавиш и ударных и точно настрой его тембр.",
+            "alt": "2/8: Раскрась каждый звук. Выбери мир эффектов для клавиш и ударных и точно настрой его тембр."
           },
-          "upd-wave-pages": {
-            "title": "4 Pages per Wave",
-            "text": "Each page adds one more voice of the same wave. Page 1 is always on, pages 2 to 4 turn ON or OFF. DEFAULT resets the page on screen.",
-            "alt": "4 Pages per Wave. Each page adds one more voice of the same wave. Page 1 is always on, pages 2 to 4 turn ON or OFF. DEFAULT resets the page on screen."
+          "home-looper": {
+            "title": "Слои лупов",
+            "text": "Записывай лупы канал за каналом, обрезай их по ритму и собирай в трек.",
+            "alt": "3/8: Слои лупов. Записывай лупы канал за каналом, обрезай их по ритму и собирай в трек."
           },
-          "upd-wave-octave": {
-            "title": "Octave per Page",
-            "text": "Keys -2 to +2 shift each page by up to two octaves. Swipe or tap the arrows to move between pages. Tap LIVE SCOPE on top to open the mixer.",
-            "alt": "Octave per Page. Keys -2 to +2 shift each page by up to two octaves. Swipe or tap the arrows to move between pages. Tap LIVE SCOPE on top to open the mixer."
+          "home-live-pad": {
+            "title": "Играй вживую",
+            "text": "Меняй звук одним пальцем и запускай повторы в ритм прямо во время выступления.",
+            "alt": "4/8: Играй вживую. Меняй звук одним пальцем и запускай повторы в ритм прямо во время выступления."
           },
-          "upd-master-beginner": {
-            "title": "Mastering for Beginners",
-            "text": "Pick a style and press Play to hear it at once. A is before, B is the style, Match evens out the volume. Then Start mastering.",
-            "alt": "Mastering for Beginners. Pick a style and press Play to hear it at once. A is before, B is the style, Match evens out the volume. Then Start mastering."
+          "home-drums": {
+            "title": "Собери свой бит",
+            "text": "Программируй паттерны шаг за шагом, выбирай каждый барабан из больших банков сэмплов и настраивай его.",
+            "alt": "5/8: Собери свой бит. Программируй паттерны шаг за шагом, выбирай каждый барабан из больших банков сэмплов и настраивай его."
           },
-          "upd-master-styles": {
-            "title": "8 Styles",
-            "text": "From Sub Vault to Stream Peak, each with its own sound and loudness target. The app marks the best match for your take. Save your own as My style.",
-            "alt": "8 Styles. From Sub Vault to Stream Peak, each with its own sound and loudness target. The app marks the best match for your take. Save your own as My style."
+          "home-mixer": {
+            "title": "Твой аналоговый микшер",
+            "text": "Смотри, где звучат ударные, лупы и микрофон, и своди их в один сбалансированный микс.",
+            "alt": "6/8: Твой аналоговый микшер. Смотри, где звучат ударные, лупы и микрофон, и своди их в один сбалансированный микс."
           },
-          "upd-master-advanced": {
-            "title": "Advanced Mode",
-            "text": "Tabs for Tone, Dynamics, Stereo and Loudness, with Light, Normal or Heavy. You get a warning when a take was recorded too loud.",
-            "alt": "Advanced Mode. Tabs for Tone, Dynamics, Stereo and Loudness, with Light, Normal or Heavy. You get a warning when a take was recorded too loud."
+          "home-mastering-style": {
+            "title": "Закончи трек",
+            "text": "Выбери стиль звучания, сравни до и после и экспортируй готовый файл.",
+            "alt": "7/8: Закончи трек. Выбери стиль звучания, сравни до и после и экспортируй готовый файл."
           },
-          "upd-master-tone": {
-            "title": "Tone EQ",
-            "text": "Low, Mid and High for the whole song. The curve shows before and after, and Undo and Redo are always there.",
-            "alt": "Tone EQ. Low, Mid and High for the whole song. The curve shows before and after, and Undo and Redo are always there."
-          },
-          "upd-master-stereo": {
-            "title": "Stereo Check",
-            "text": "Width and correlation for the whole song. Mono and Phone check let you hear how it will sound on a phone speaker.",
-            "alt": "Stereo Check. Width and correlation for the whole song. Mono and Phone check let you hear how it will sound on a phone speaker."
-          },
-          "upd-master-saved": {
-            "title": "Master Saved",
-            "text": "Before and after numbers, next to the -14 LUFS streaming target. Share WAV + MP3. The files stay on your device.",
-            "alt": "Master Saved. Before and after numbers, next to the -14 LUFS streaming target. Share WAV + MP3. The files stay on your device."
+          "home-mastering-measure": {
+            "title": "Измеряй каждую деталь",
+            "text": "Точные замеры громкости, динамики и стерео показывают, как на самом деле звучит трек.",
+            "alt": "8/8: Измеряй каждую деталь. Точные замеры громкости, динамики и стерео показывают, как на самом деле звучит трек."
           }
         }
       }
@@ -8547,55 +8517,45 @@
             "title": "Pattern repeats",
             "text": "الضغط المطوّل على رقم الإيقاع يفتح النافذة. اختر من 1 إلى 10، أو اكتب رقماً حتى 88 في الخانة، أو اختر اللانهاية أو DEFAULT. COPY وPASTE ينقلان إيقاعاً كاملاً إلى رقم آخر."
           },
-          "upd-mixer": {
-            "title": "Analog Mixer",
-            "text": "Drums, Looper and Mic each get Drive, HPF, EQ, Comp, Pan and a fader, plus a Master strip. MIX MAP shows where they clash. 8 presets.",
-            "alt": "Analog Mixer. Drums, Looper and Mic each get Drive, HPF, EQ, Comp, Pan and a fader, plus a Master strip. MIX MAP shows where they clash. 8 presets."
+          "home-sound": {
+            "title": "صمّم صوتك",
+            "text": "امزج أنواع الموجات، وابدأ من إعداد جاهز، واضبط كل مفتاح على سلّمك.",
+            "alt": "1/8: صمّم صوتك. امزج أنواع الموجات، وابدأ من إعداد جاهز، واضبط كل مفتاح على سلّمك."
           },
-          "upd-wave-eq": {
-            "title": "EQ for Each Wave",
-            "text": "Hold a wave key to open its EQ: LOW, MID, HIGH, HPF, LPF and GAIN. You hear every change at once, and it is saved.",
-            "alt": "EQ for Each Wave. Hold a wave key to open its EQ: LOW, MID, HIGH, HPF, LPF and GAIN. You hear every change at once, and it is saved."
+          "home-sound-fx": {
+            "title": "لوّن كل صوت",
+            "text": "اختر عالم مؤثرات للمفاتيح والطبول، ثم اضبط نغمته بدقة.",
+            "alt": "2/8: لوّن كل صوت. اختر عالم مؤثرات للمفاتيح والطبول، ثم اضبط نغمته بدقة."
           },
-          "upd-wave-pages": {
-            "title": "4 Pages per Wave",
-            "text": "Each page adds one more voice of the same wave. Page 1 is always on, pages 2 to 4 turn ON or OFF. DEFAULT resets the page on screen.",
-            "alt": "4 Pages per Wave. Each page adds one more voice of the same wave. Page 1 is always on, pages 2 to 4 turn ON or OFF. DEFAULT resets the page on screen."
+          "home-looper": {
+            "title": "طبقات من اللوب",
+            "text": "سجّل اللوب قناة بعد قناة، وقصّه على الإيقاع، وابنِ منه مقطعًا كاملًا.",
+            "alt": "3/8: طبقات من اللوب. سجّل اللوب قناة بعد قناة، وقصّه على الإيقاع، وابنِ منه مقطعًا كاملًا."
           },
-          "upd-wave-octave": {
-            "title": "Octave per Page",
-            "text": "Keys -2 to +2 shift each page by up to two octaves. Swipe or tap the arrows to move between pages. Tap LIVE SCOPE on top to open the mixer.",
-            "alt": "Octave per Page. Keys -2 to +2 shift each page by up to two octaves. Swipe or tap the arrows to move between pages. Tap LIVE SCOPE on top to open the mixer."
+          "home-live-pad": {
+            "title": "اعزف مباشرة",
+            "text": "غيّر الصوت بإصبع واحد وأطلق تكرارات متزامنة مع الإيقاع أثناء العزف.",
+            "alt": "4/8: اعزف مباشرة. غيّر الصوت بإصبع واحد وأطلق تكرارات متزامنة مع الإيقاع أثناء العزف."
           },
-          "upd-master-beginner": {
-            "title": "Mastering for Beginners",
-            "text": "Pick a style and press Play to hear it at once. A is before, B is the style, Match evens out the volume. Then Start mastering.",
-            "alt": "Mastering for Beginners. Pick a style and press Play to hear it at once. A is before, B is the style, Match evens out the volume. Then Start mastering."
+          "home-drums": {
+            "title": "ابنِ إيقاعك",
+            "text": "برمج الأنماط خطوة بخطوة، واختر كل طبلة من بنوك عينات كبيرة واضبطها.",
+            "alt": "5/8: ابنِ إيقاعك. برمج الأنماط خطوة بخطوة، واختر كل طبلة من بنوك عينات كبيرة واضبطها."
           },
-          "upd-master-styles": {
-            "title": "8 Styles",
-            "text": "From Sub Vault to Stream Peak, each with its own sound and loudness target. The app marks the best match for your take. Save your own as My style.",
-            "alt": "8 Styles. From Sub Vault to Stream Peak, each with its own sound and loudness target. The app marks the best match for your take. Save your own as My style."
+          "home-mixer": {
+            "title": "المكسر التناظري الخاص بك",
+            "text": "شاهد أين تقع الطبول واللوب والميكروفون، وشكّلها في مزيج واحد متوازن.",
+            "alt": "6/8: المكسر التناظري الخاص بك. شاهد أين تقع الطبول واللوب والميكروفون، وشكّلها في مزيج واحد متوازن."
           },
-          "upd-master-advanced": {
-            "title": "Advanced Mode",
-            "text": "Tabs for Tone, Dynamics, Stereo and Loudness, with Light, Normal or Heavy. You get a warning when a take was recorded too loud.",
-            "alt": "Advanced Mode. Tabs for Tone, Dynamics, Stereo and Loudness, with Light, Normal or Heavy. You get a warning when a take was recorded too loud."
+          "home-mastering-style": {
+            "title": "أنهِ أغنيتك",
+            "text": "اختر نمط صوت، وقارن قبل وبعد، وصدّر الملف النهائي.",
+            "alt": "7/8: أنهِ أغنيتك. اختر نمط صوت، وقارن قبل وبعد، وصدّر الملف النهائي."
           },
-          "upd-master-tone": {
-            "title": "Tone EQ",
-            "text": "Low, Mid and High for the whole song. The curve shows before and after, and Undo and Redo are always there.",
-            "alt": "Tone EQ. Low, Mid and High for the whole song. The curve shows before and after, and Undo and Redo are always there."
-          },
-          "upd-master-stereo": {
-            "title": "Stereo Check",
-            "text": "Width and correlation for the whole song. Mono and Phone check let you hear how it will sound on a phone speaker.",
-            "alt": "Stereo Check. Width and correlation for the whole song. Mono and Phone check let you hear how it will sound on a phone speaker."
-          },
-          "upd-master-saved": {
-            "title": "Master Saved",
-            "text": "Before and after numbers, next to the -14 LUFS streaming target. Share WAV + MP3. The files stay on your device.",
-            "alt": "Master Saved. Before and after numbers, next to the -14 LUFS streaming target. Share WAV + MP3. The files stay on your device."
+          "home-mastering-measure": {
+            "title": "قِس كل التفاصيل",
+            "text": "قراءات دقيقة لعلو الصوت والديناميكية والستيريو تُظهر كيف تبدو أغنيتك فعلًا.",
+            "alt": "8/8: قِس كل التفاصيل. قراءات دقيقة لعلو الصوت والديناميكية والستيريو تُظهر كيف تبدو أغنيتك فعلًا."
           }
         }
       }
