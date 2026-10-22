@@ -1,8 +1,9 @@
 import type { Language } from "@/contexts/LanguageContext";
 
 export type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
-/** "update112" = the 1.12 screenshots (analog mixer, wave EQ, Mastering): on /updates in the 1.12 item, and under the hero title on Home. */
-export type CarouselId = PlayId | "update112";
+/** "update112" = the 1.12 screenshots (analog mixer, wave EQ, Mastering) on /updates, in the 1.12 item.
+ * "home112" = the homepage top carousel under the hero title: David's 8 Google Play 1.12 store images (Drive "נכסים 1.12"). */
+export type CarouselId = PlayId | "update112" | "home112";
 
 /**
  * Home "Play with sound" carousels: one list per tab, in display order.
@@ -38,6 +39,18 @@ export const carouselSlides: Record<CarouselId, SlideDef[]> = {
     { id: "pad-keyboard", designed: "pad-2" },
     { id: "pad-targets", designed: "pad-3" },
   ],
+  // Home top carousel: the 8 Google Play 1.12 store images from David's Drive folder "נכסים 1.12" (counter n/8 baked in).
+  // he = the Hebrew set (עברית), en, ru, ar = the English set. Images used as delivered, only resized.
+  home112: [
+    { id: "home-sound", designed: "play112-1" },
+    { id: "home-sound-fx", designed: "play112-2" },
+    { id: "home-looper", designed: "play112-3" },
+    { id: "home-live-pad", designed: "play112-4" },
+    { id: "home-drums", designed: "play112-5" },
+    { id: "home-mixer", designed: "play112-6" },
+    { id: "home-mastering-style", designed: "play112-7" },
+    { id: "home-mastering-measure", designed: "play112-8" },
+  ],
   // /updates, 1.12 item (counter n/10 baked in): mixer first, then Mastering. Real 1.12 smoke captures (David, Oct 21).
   // he and en have their own captions; ru and ar use the English posters for now (TODO in CONTENT_EDITING.md).
   update112: [
@@ -72,7 +85,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-8";
+export const CAROUSEL_VER = "carousel-9";
 const SMALL = 360;
 const LARGE = 630;
 

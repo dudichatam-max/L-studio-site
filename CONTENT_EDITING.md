@@ -188,12 +188,13 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - No launch month or day anywhere on the site. Use "coming soon" (HE בקרוב, RU скоро, AR قريباً) in the hero, launch note, pro copy, tester text, updates intro, SEO descriptions, `shared/pro-copy.json`, and the Home, Factory64 and FactoryDrums defaults. The Privacy page "last updated" date is a document date and stays.
 - Mic channels have no Load key in 1.10 (only Clear and Save). Never write that Mic channels can load a file. Imported audio limits (drum rows, Looper channels) are in the FAQ answer to "Can I use my own sounds and audio files?".
 
-## Home top carousel (under the hero title): the 1.12 carousel (Oct 22)
+## Home top carousel (under the hero title): Google Play 1.12 store images (Oct 22)
 
-- Directly under the hero heading ("יוצרים מוזיקה בפלאפון." / "Make music on your phone."): the 1.12 carousel, exactly as in the 1.12 item on `/updates` (David, Oct 22: "ביקשתי תמונות של גירסת 1.12"). `<PlayCarousel tab="update112" className="hero-store-carousel" />` in `Home.tsx`, same slide list `update112` in `carousel.ts`, same poster files `assets/carousel/{lang}/upd-*`.
-- 10 slides, counter n/10 baked in: Analog Mixer, wave EQ, 4 pages per wave, octave per page, Mastering for beginners, 8 styles, Advanced mode, Tone EQ, Stereo check, Master saved. HE and EN have their own posters; RU and AR show the English posters for now (same TODO as the 1.12 section below).
-- Copy: `languages.*.carousel.slides["upd-*"]` (title, text, alt) is a copy of `languages.*.updates.items[app-1-12-mixer-demo].carousel.slides`. When one changes, change the other too.
-- The old 8 slides (store-*, Play screens) were removed (PR #87 reverted in content, assets deleted).
+- Directly under the hero heading ("יוצרים מוזיקה בפלאפון." / "Make music on your phone."): David's 8 Google Play images for 1.12, from his Drive folder "נכסים 1.12" (subfolders "עברית" and "English", files "1-8 Sound" to "8-8 Mastering Measure", 1080x1920, counter n/8 baked in, so the site draws no counter). `<PlayCarousel tab="home112" className="hero-store-carousel" />` in `Home.tsx`, slide list `home112` in `carousel.ts`, files `assets/carousel/{lang}/home-*-w360|w630.{webp,jpg}`.
+- Order (file order): Sound, Sound FX, Looper, Live Pad, Drums, Mixer, Mastering Style, Mastering Measure. HE uses the Hebrew set; EN, RU and AR use the English set (there is no RU or AR set).
+- The images are used as delivered (only resized by `scripts/import-carousel-posters.py`). Local copies: `/workspace/drive-112/{he,en}/1..8.png`; import with `python3 scripts/import-carousel-posters.py /workspace/drive-112/import-src` (that folder links every other slide too), then bump `CAROUSEL_VER`.
+- Copy: `languages.*.carousel.slides["home-*"]` (title, text, alt). The alt is the text printed on the image ("n/8: title. text"), translated for RU and AR.
+- The /updates 1.12 carousel (`update112`) is separate and unchanged.
 
 ## Home windows menu carousel (Sound, Mic, Loop, Pad, Drum)
 
