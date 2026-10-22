@@ -409,8 +409,8 @@ export default function Home() {
           <div className="hero-copy">
             <div className="eyebrow"><span className="eyebrow-dot" /> {hero.kicker}</div>
             <h1 id="hero-title"><Headline text={hero.title} /></h1>
-            {/* Same 8 screens as the Google Play listing, 1.12 poster style, n/8 baked into each image (no site counter). */}
-            <PlayCarousel tab="store" language={language} isRtl={isRtl} copy={copy.carousel} className="hero-store-carousel" />
+            {/* The 1.12 carousel (same 10 posters, captions and order as the 1.12 item on /updates), n/10 baked in. */}
+            <PlayCarousel tab="update112" language={language} isRtl={isRtl} copy={copy.carousel} className="hero-store-carousel" />
             <div className="hero-offer hero-offer--static">
               <strong>{launch.headline}</strong>
               <span>{launch.price}</span>

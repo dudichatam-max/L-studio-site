@@ -1,9 +1,8 @@
 import type { Language } from "@/contexts/LanguageContext";
 
 export type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
-/** "store" = the 8 homepage slides under the hero title (same 8 screens as the Google Play listing, 1.12 poster style; not a windows tab).
- * "update112" = the 1.12 screenshots on /updates (analog mixer, wave EQ, Mastering), attached to the 1.12 item. */
-export type CarouselId = PlayId | "store" | "update112";
+/** "update112" = the 1.12 screenshots (analog mixer, wave EQ, Mastering): on /updates in the 1.12 item, and under the hero title on Home. */
+export type CarouselId = PlayId | "update112";
 
 /**
  * Home "Play with sound" carousels: one list per tab, in display order.
@@ -39,18 +38,6 @@ export const carouselSlides: Record<CarouselId, SlideDef[]> = {
     { id: "pad-keyboard", designed: "pad-2" },
     { id: "pad-targets", designed: "pad-3" },
   ],
-  // Homepage top carousel: the same 8 screens as the Google Play listing (01..08), rendered in the 1.12 updates-carousel
-  // poster style (counter n/8, gold + white title, caption, one real capture). Captions per language (he, en, ru, ar).
-  store: [
-    { id: "store-sound", designed: "home-1" },
-    { id: "store-keyboards", designed: "home-2" },
-    { id: "store-pad", designed: "home-3" },
-    { id: "store-voice", designed: "home-4" },
-    { id: "store-loop", designed: "home-5" },
-    { id: "store-layers", designed: "home-6" },
-    { id: "store-beat", designed: "home-7" },
-    { id: "store-drum-styles", designed: "home-8" },
-  ],
   // /updates, 1.12 item (counter n/10 baked in): mixer first, then Mastering. Real 1.12 smoke captures (David, Oct 21).
   // he and en have their own captions; ru and ar use the English posters for now (TODO in CONTENT_EDITING.md).
   update112: [
@@ -85,7 +72,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-7";
+export const CAROUSEL_VER = "carousel-8";
 const SMALL = 360;
 const LARGE = 630;
 
