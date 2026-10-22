@@ -188,13 +188,12 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - No launch month or day anywhere on the site. Use "coming soon" (HE בקרוב, RU скоро, AR قريباً) in the hero, launch note, pro copy, tester text, updates intro, SEO descriptions, `shared/pro-copy.json`, and the Home, Factory64 and FactoryDrums defaults. The Privacy page "last updated" date is a document date and stays.
 - Mic channels have no Load key in 1.10 (only Clear and Save). Never write that Mic channels can load a file. Imported audio limits (drum rows, Looper channels) are in the FAQ answer to "Can I use my own sounds and audio files?".
 
-## Home top carousel (under the hero title), 1.12 poster style (Oct 22)
+## Home top carousel (under the hero title): the 1.12 carousel (Oct 22)
 
-- Directly under the hero heading ("יוצרים מוזיקה בפלאפון." / "Make music on your phone."): 8 slides, same component as the windows carousel and the 1.12 carousel on /updates (`<PlayCarousel tab="store" className="hero-store-carousel" />` in `Home.tsx`, slides under `store` in `carousel.ts`).
-- David (Oct 22): the top carousel must look like the 1.12 carousel in the updates window. So the slides are no longer the Google Play listing images: they show the same 8 screens as Play (01 to 08, same order: own sound, two keyboards, live pad, voice, loop editor, loop layers, build the beat, drum styles), rendered in the 1.12 poster style (gold counter n/8, gold + white title, short caption, one real capture with status and nav bars cropped, L STUDIO logo).
-- Captures: `/workspace/shots-1015/s12, s11, s16, s23, s25, s24, s3, s6` (the same ones the Play images use; s24 is the unedited capture). Generator: `/workspace/home-carousel-112/build_posters.py` (designer functions from `/workspace/store-posters/carousel/build_carousel.py`), captions in `/workspace/home-carousel-112/captions_home.py`, all four languages with their own posters. Claims checked against the app, origin/google-play-pro (release 1.09).
-- Copy: `languages.*.carousel.slides["store-*"]` (`title`, `text`, `alt`); keep the alt equal to the baked caption ("title. text"). No minus signs in HE and AR captions (the generator flips them).
-- Rebuild: `python3 /workspace/home-carousel-112/build_posters.py`, then `python3 scripts/import-carousel-posters.py /workspace/home-carousel-112/import-src` (that folder links every other slide too, so nothing is removed), then bump `CAROUSEL_VER`.
+- Directly under the hero heading ("יוצרים מוזיקה בפלאפון." / "Make music on your phone."): the 1.12 carousel, exactly as in the 1.12 item on `/updates` (David, Oct 22: "ביקשתי תמונות של גירסת 1.12"). `<PlayCarousel tab="update112" className="hero-store-carousel" />` in `Home.tsx`, same slide list `update112` in `carousel.ts`, same poster files `assets/carousel/{lang}/upd-*`.
+- 10 slides, counter n/10 baked in: Analog Mixer, wave EQ, 4 pages per wave, octave per page, Mastering for beginners, 8 styles, Advanced mode, Tone EQ, Stereo check, Master saved. HE and EN have their own posters; RU and AR show the English posters for now (same TODO as the 1.12 section below).
+- Copy: `languages.*.carousel.slides["upd-*"]` (title, text, alt) is a copy of `languages.*.updates.items[app-1-12-mixer-demo].carousel.slides`. When one changes, change the other too.
+- The old 8 slides (store-*, Play screens) were removed (PR #87 reverted in content, assets deleted).
 
 ## Home windows menu carousel (Sound, Mic, Loop, Pad, Drum)
 
