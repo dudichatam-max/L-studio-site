@@ -22,8 +22,8 @@ const factoryHero = {
 const factoryBoxJpg = `${import.meta.env.BASE_URL}assets/factory-pack-box.jpg?v=108-packs`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=108-packs`;
 const factoryBoxWebp800 = `${import.meta.env.BASE_URL}assets/factory-pack-box-800.webp?v=108-packs`;
-// 1.10 feature graphic (1024x500). HE uses the Hebrew one, EN/RU/AR use the English one.
-const FEATURE_GRAPHIC_VER = "fg-110";
+// 1.12 feature graphic (1024x500, designer, Oct 22). HE uses the Hebrew one, EN/RU/AR use the English one.
+const FEATURE_GRAPHIC_VER = "fg-112";
 function featureGraphicUrl(language: Language, width: 640 | 800 | 1024, ext: "jpg" | "webp") {
   return `${import.meta.env.BASE_URL}assets/feature-graphic-${language === "he" ? "he" : "en"}-${width}.${ext}?v=${FEATURE_GRAPHIC_VER}`;
 }
@@ -39,10 +39,10 @@ const demoCopy = {
   ar: { label: "فيديو تجريبي", title: "فيديو تجريبي لـ L Studio" },
 } satisfies Record<Language, { label: string; title: string }>;
 const featureGraphicAlt = {
-  he: "L Studio, גרפיקה עם שלושה מסכי טלפון: סינתיסייזר עם חמישה גלי קול, מעטפת, פילטר והד. לופר עם 32 ערוצים ו-8 עמודים. תופים עם מעל אלף דגימות ו-8 ערוצים. לאנשים אנלוגיים בעולם דיגיטלי.",
-  en: "L Studio, a graphic with three phone screens: Synth with 5 waveforms, ADSR, filter and echo. Looper with 32 channels and 8 pages. Drums with 1,000+ samples and 8 channels. For analog people in a digital world.",
-  ru: "L Studio, графика с тремя экранами телефона: синтезатор с 5 волнами, ADSR, фильтром и эхо. Лупер с 32 каналами и 8 страницами. Ударные с более чем 1000 сэмплов и 8 каналами. Для аналоговых людей в цифровом мире.",
-  ar: "L Studio، رسم بثلاث شاشات هاتف: سينث بـ5 موجات وADSR وفلتر وصدى. لوبر بـ32 قناة و8 صفحات. طبول بأكثر من 1000 عينة و8 قنوات. للأشخاص التناظريين في عالم رقمي.",
+  he: "L Studio, לאנשים אנלוגיים בעולם דיגיטלי. שלושה מסכי טלפון: מיקסר אנלוגי (תופים, לופר, מיקרופון וערוץ מאסטר), סאונד (סוגי גל, צלילים מוכנים, אקולייזר) ועורך לופ (חיתוך, לולאה וחזרות בקצב). ללא פרסומות, אופליין מלא, אנדרואיד 7.0 ומעלה. מידע נוסף: www.l-studio.studio",
+  en: "L Studio, for analog people in a digital world. Three phone screens: Analog Mixer (drums, looper, mic and master bus), Sound (wave types, presets, EQ) and Loop Editor (trim, loop and beat-synced repeats). No ads, fully offline, Android 7.0+. More information: www.l-studio.studio",
+  ru: "L Studio, для аналоговых людей в цифровом мире. Три экрана телефона: аналоговый микшер (ударные, лупер, микрофон и мастер-шина), Sound (типы волн, пресеты, эквалайзер) и редактор лупов (обрезка, луп и повторы в ритм). Без рекламы, полностью офлайн, Android 7.0+. Подробнее: www.l-studio.studio",
+  ar: "L Studio، للأشخاص التناظريين في عالم رقمي. ثلاث شاشات هاتف: المكسر التناظري (الطبول واللوبر والميكروفون وقناة الماستر)، وSound (أنواع الموجات والإعدادات الجاهزة وEQ)، ومحرر اللوب (القص والتكرار والإعادة المتزامنة مع الإيقاع). بلا إعلانات، يعمل دون اتصال بالكامل، أندرويد 7.0 وما فوق. مزيد من المعلومات: www.l-studio.studio",
 } satisfies Record<Language, string>;
 const developerImage = {
   webp: `${import.meta.env.BASE_URL}assets/Developer-720.webp`,

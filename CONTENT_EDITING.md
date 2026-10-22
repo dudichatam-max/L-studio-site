@@ -88,9 +88,9 @@ What 1.09 does, checked in the app code: a tap on a wave plays only that wave, a
 
 The guide Sound screen is `assets/guide/sound-screen-109.jpg`, and the wave row is `assets/guide/sound-waves-109.jpg`. The homepage windows menu uses the approved 1.09 Play assets for Sound (`assets/play/01-layer-waveforms`) and Loop (`assets/play/03-looper-pages`), 720×1280 webp + jpg, cache version `109-play`. Pad, Drum and Mic keep the 1.08 Play assets.
 
-### Feature graphic (2026-10-10)
+### Feature graphic (1.12, 2026-10-22)
 
-The homepage shows the 1024×500 feature graphic directly under the updates ticker, used as is: `assets/feature-graphic-1024.webp/.jpg` and `assets/feature-graphic-800.webp`, with alt text `featureGraphicAlt` in `client/src/pages/Home.tsx`. The picture itself still says "Microtonal music workstation" and "L-studio". Replace the files with a new export when the designer fixes that wording.
+The homepage shows the 1024x500 feature graphic directly under the updates ticker (`<figure className="feature-graphic">` in `Home.tsx`), used as is. Since Oct 22 it is the designer's 1.12 graphic (David approved "כן תעלה את תמונת הפתיחה החדשה"): source `/workspace/store-112/out/final/feature-he.png` (HE) and `feature-en.png` (EN, RU, AR). Files: `assets/feature-graphic-{he,en}-{640,1024}.{webp,jpg}` and `-800.webp`, cache key `FEATURE_GRAPHIC_VER` ("fg-112"), alt text `featureGraphicAlt` (4 languages). The picture shows the logo, slogan, Analog Mixer, Sound and Loop Editor screens, "No ads / Fully offline / Size 82 MB / Android 7.0+" and www.l-studio.studio. Note: the graphic says 82 MB while the site text says 77.4 MB; the site text was not changed. To replace: export new PNGs, re-run the resize (Pillow, same names), bump `FEATURE_GRAPHIC_VER`.
 
 ### Demo video toggle (2026-10-11)
 
