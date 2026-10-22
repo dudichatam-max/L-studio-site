@@ -21,18 +21,21 @@ export const carouselSlides: Record<CarouselId, SlideDef[]> = {
     { id: "sound-keyboards", designed: "sound-2" },
     { id: "sound-presets", designed: "sound-3" },
     { id: "sound-scales", designed: "sound-4" },
+    { id: "sound-wave-panel", designed: "sound-5" },
   ],
   mic: [
     { id: "mic-channels", designed: "mic-1" },
     { id: "mic-editor", designed: "mic-2" },
     { id: "mic-fx", designed: "mic-3" },
     { id: "mic-lyrics", designed: "mic-4" },
+    { id: "mic-mastering", designed: "mic-5" },
   ],
   loop: [
     { id: "loop-looper", designed: "loop-1" },
     { id: "loop-editor", designed: "loop-2" },
     { id: "loop-fx", designed: "loop-3" },
     { id: "loop-page-name", designed: "loop-4" },
+    { id: "loop-mixer", designed: "loop-5" },
   ],
   pad: [
     { id: "pad-live", designed: "pad-1" },
@@ -85,7 +88,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-9";
+export const CAROUSEL_VER = "carousel-10";
 const SMALL = 360;
 const LARGE = 630;
 
