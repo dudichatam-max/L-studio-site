@@ -224,6 +224,11 @@ html[dir="rtl"] .footer-links {
 .guide-bullets li { padding: 12px 14px; border: 1px solid rgba(242,241,235,.12); border-inline-start: 2px solid var(--acid); background: rgba(242,241,235,.03); color: #bcbab1; font-size: 15px; line-height: 1.65; }
 .guide-block-main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(160px, 240px); gap: 22px 28px; align-items: start; }
 .guide-block-main--solo { grid-template-columns: 1fr; }
+.gsteps { display: flex; flex-direction: column; gap: 18px; max-width: 680px; }
+.gstep p { margin: 0 0 10px; color: #a8a69f; font-size: 16px; line-height: 1.8; }
+.gstep-crop { margin: 0; }
+.gstep-crop img { display: block; max-width: 100%; height: auto; border: 1px solid rgba(242,241,235,.12); border-radius: 10px; background: #0b0b0a; }
+@media (max-width: 720px) { .gstep p { font-size: 15px; } .gsteps { gap: 16px; } }
 .guide-copy h2 { margin: 0 0 14px; font: 600 28px var(--display); letter-spacing: -.035em; }
 .guide-copy p { max-width: 680px; margin: 0 0 12px; color: #a8a69f; font-size: 16px; line-height: 1.85; }
 .guide-copy p:last-of-type { margin-bottom: 0; }

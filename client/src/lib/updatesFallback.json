@@ -3,7 +3,7 @@
     "navLabel": "Updates",
     "pageTitle": "What's new in L Studio.",
     "pageKicker": "L-STUDIO / UPDATES",
-    "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.09. New versions arrive as automatic updates through Google Play once they are approved. Version 1.10 is in closed testing, and version 1.11 is in Google review and coming soon to the store.",
+    "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.09. New versions arrive as automatic updates through Google Play once they are approved. Version 1.10 is in closed testing, and version 1.11 is in Google review and coming soon to the store. Version 1.12, with the Analog Mixer and the Mastering window, reaches Google Play next week.",
     "tickerLabel": "Updates",
     "statusLabels": {
       "in_progress": "In progress",
@@ -331,7 +331,7 @@
     "navLabel": "עדכונים",
     "pageTitle": "מה חדש ב-L Studio.",
     "pageKicker": "L-STUDIO / עדכונים",
-    "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.09. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.10 בבדיקה סגורה, וגרסה 1.11 בבדיקה של Google ובקרוב בחנות.",
+    "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.09. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.10 בבדיקה סגורה, וגרסה 1.11 בבדיקה של Google ובקרוב בחנות. גרסה 1.12, עם המיקסר האנלוגי וחלון המאסטרינג, מגיעה ל-Google Play בשבוע הבא.",
     "tickerLabel": "עדכונים",
     "statusLabels": {
       "in_progress": "בעבודה",
@@ -463,7 +463,7 @@
           {
             "title": "סשן",
             "bullets": [
-              "סשן לוקח איתו את סאמפלי LOADED שהקצבים שלו משתמשים בהם, עם השמות, החיתוכים והכפתורים, ואת ההגדרות השמורות של שאר הסאמפלים, כך שהוא נפתח בטלפון אחר.",
+              "סשן לוקח איתו את סאמפלי LOADED שהקצבים שלו משתמשים בהם, עם השמות, החיתוכים והכפתורים, ואת ההגדרות השמורות של שאר הסאמפלים, כך שהוא נפתח בפלאפון אחר.",
               "גם קובץ קיט תופים שמייצאים לוקח איתו את סאמפלי ה-LOADED שלו."
             ]
           },
@@ -659,7 +659,7 @@
     "navLabel": "Обновления",
     "pageTitle": "Что нового в L Studio.",
     "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-    "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.09. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.10 в закрытом тестировании, а версия 1.11 на проверке в Google и скоро появится в магазине.",
+    "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.09. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.10 в закрытом тестировании, а версия 1.11 на проверке в Google и скоро появится в магазине. Версия 1.12 с аналоговым микшером и окном мастеринга выйдет в Google Play на следующей неделе.",
     "tickerLabel": "Обновления",
     "statusLabels": {
       "in_progress": "В работе",
@@ -987,7 +987,7 @@
     "navLabel": "التحديثات",
     "pageTitle": "ما الجديد في L Studio.",
     "pageKicker": "L-STUDIO / التحديثات",
-    "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.09. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.10 في اختبار مغلق، والإصدار 1.11 قيد مراجعة Google وقريباً في المتجر.",
+    "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.09. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.10 في اختبار مغلق، والإصدار 1.11 قيد مراجعة Google وقريباً في المتجر. الإصدار 1.12، مع الميكسر التناظري ونافذة الماسترنغ، يصل إلى Google Play الأسبوع القادم.",
     "tickerLabel": "التحديثات",
     "statusLabels": {
       "in_progress": "قيد العمل",

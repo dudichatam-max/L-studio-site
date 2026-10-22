@@ -9,10 +9,21 @@ import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel } from "@/lib/updatesCopy";
 
+/** One short step: 1 to 3 sentences, then a crop of the exact part of the screen they describe. */
+type GuideStep = {
+  text: string;
+  img?: string;
+  alt?: string;
+  /** Pixel size [width, height] of the crop. Shown at 1/1.6 of its pixels so the controls keep phone scale. */
+  size?: [number, number];
+};
+
 type GuideSection = {
   id: string;
   title: string;
-  body: string[];
+  body?: string[];
+  /** 1.12 layout: text and crops alternate. When present, body and media are not used. */
+  steps?: GuideStep[];
   media?: string;
   /** Extra screenshots after `media`, each in its own frame. */
   images?: string[];
@@ -98,8 +109,42 @@ function sectionShots(section: { media?: string; images?: string[] }) {
   return shots;
 }
 
+/** The alt of a crop is the first sentence of its step. */
+function firstSentence(text: string) {
+  return text.split(/(?<=[.!?\u061F])\s+/)[0] || text;
+}
+
+function GuideSteps({ steps }: { steps: GuideStep[] }) {
+  return (
+    <div className="gsteps">
+      {steps.map((step, index) => (
+        <div className="gstep" key={`${index}-${step.img ?? ""}`}>
+          <p>{step.text}</p>
+          {step.img ? (
+            <figure className="gstep-crop">
+              <picture>
+                <source type="image/webp" srcSet={mediaUrl(step.img.replace(/\.jpe?g$/i, ".webp"))} />
+                <img
+                  src={mediaUrl(step.img)}
+                  alt={step.alt || firstSentence(step.text)}
+                  width={step.size?.[0]}
+                  height={step.size?.[1]}
+                  style={step.size ? { width: `${Math.round(step.size[0] / 1.6)}px` } : undefined}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </figure>
+          ) : null}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 /** Copy and screenshots of one topic or subtopic. */
 function GuideBlock({ item }: { item: GuideSection }) {
+  if (item.steps?.length) return <GuideSteps steps={item.steps} />;
   const shots = sectionShots(item);
   return (
     <div className={shots.length ? "guide-block-main" : "guide-block-main guide-block-main--solo"}>
@@ -311,7 +356,7 @@ export default function Guide() {
                   <span className="guide-number">{sectionNumber(index)}</span>
                   <h2>{group.title}</h2>
                 </header>
-                {group.body?.length || sectionShots(group).length ? <GuideBlock item={group} /> : null}
+                {group.steps?.length || group.body?.length || sectionShots(group).length ? <GuideBlock item={group} /> : null}
                 {(group.sections ?? []).map((section) => (
                   <section className="gsub" id={`guide-${section.id}`} data-gsub={section.id} data-gsub-of={group.id} key={section.id}>
                     <h3>{section.title}</h3>
