@@ -27,16 +27,17 @@ const FEATURE_GRAPHIC_VER = "fg-112";
 function featureGraphicUrl(language: Language, width: 640 | 800 | 1024, ext: "jpg" | "webp") {
   return `${import.meta.env.BASE_URL}assets/feature-graphic-${language === "he" ? "he" : "en"}-${width}.${ext}?v=${FEATURE_GRAPHIC_VER}`;
 }
-const DEMO_SHORT_ID = "d89y14QAHuA";
+// YouTube Short "L STUDIO FOR ANDROID" (David, 2026-10-23). Poster = the Short's YouTube cover (oardefault).
+const DEMO_SHORT_ID = "H-IkJ1yFadA";
 const demoPoster = {
   webp: `${import.meta.env.BASE_URL}assets/demo-short-poster.webp`,
   jpg: `${import.meta.env.BASE_URL}assets/demo-short-poster.jpg`,
 };
 const demoCopy = {
-  he: { label: "סרטון הדגמה", title: "סרטון הדגמה של L Studio" },
-  en: { label: "Demo video", title: "L Studio demo video" },
-  ru: { label: "Демо-видео", title: "Демо-видео L Studio" },
-  ar: { label: "فيديو تجريبي", title: "فيديو تجريبي لـ L Studio" },
+  he: { label: "סרטון הדגמה", title: "L Studio לאנדרואיד" },
+  en: { label: "Demo video", title: "L Studio for Android" },
+  ru: { label: "Демо-видео", title: "L Studio для Android" },
+  ar: { label: "فيديو تجريبي", title: "L Studio لأندرويد" },
 } satisfies Record<Language, { label: string; title: string }>;
 const featureGraphicAlt = {
   he: "L Studio, לאנשים אנלוגיים בעולם דיגיטלי. שלושה מסכי טלפון: מיקסר אנלוגי (תופים, לופר, מיקרופון וערוץ מאסטר), סאונד (סוגי גל, צלילים מוכנים, אקולייזר) ועורך לופ (חיתוך, לולאה וחזרות בקצב). ללא פרסומות, אופליין מלא, אנדרואיד 7.0 ומעלה. מידע נוסף: www.l-studio.studio",
