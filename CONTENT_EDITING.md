@@ -94,7 +94,7 @@ The homepage shows the 1024x500 feature graphic directly under the updates ticke
 
 ### Demo video toggle (2026-10-11)
 
-Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/Home.tsx`, HE "סרטון הדגמה") opens the YouTube Short `d89y14QAHuA` (`DEMO_SHORT_ID`) in a 9:16 frame. It starts closed. The player loads only after a tap on the poster (`assets/demo-short-poster.webp/.jpg`, taken from the YouTube thumbnail). To change the video, change `DEMO_SHORT_ID` and the poster files.
+Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/Home.tsx`, HE "סרטון הדגמה") opens the YouTube Short `H-IkJ1yFadA` ("L STUDIO FOR ANDROID", since 2026-10-23; before: `d89y14QAHuA`) (`DEMO_SHORT_ID`), with the player title "L Studio for Android" in 4 languages in a 9:16 frame. It starts closed. The player loads only after a tap on the poster (`assets/demo-short-poster.webp/.jpg`, taken from the YouTube thumbnail). To change the video, change `DEMO_SHORT_ID` and the poster files.
 
 ## App 1.10 draft (not on Google Play yet)
 
