@@ -85,8 +85,8 @@
       },
       {
         "id": "app-1-12-mixer-demo",
-        "status": "upcoming",
-        "title": "Coming soon: version 1.12 with an analog mixer and a mastering window, on Google Play next week",
+        "status": "shipped",
+        "title": "On Google Play now: version 1.12 with an analog mixer and a mastering window",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "Video: version 1.12 analog mixer",
@@ -145,7 +145,8 @@
               "alt": "Master Saved. Before and after numbers, next to the -14 LUFS streaming target. Share WAV + MP3. The files stay on your device."
             }
           }
-        }
+        },
+        "ticker": "On Google Play: version 1.12 with an analog mixer and a mastering window"
       },
       {
         "id": "app-1-11-loaded-keep-playing",
@@ -480,8 +481,8 @@
       },
       {
         "id": "app-1-12-mixer-demo",
-        "status": "upcoming",
-        "title": "בקרוב גרסה 1.12: מיקסר אנלוגי וחלון מאסטרינג, בשבוע הבא ב-Google Play",
+        "status": "shipped",
+        "title": "עכשיו ב-Google Play: גרסה 1.12 עם מיקסר אנלוגי וחלון מאסטרינג",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "סרטון: מיקסר אנלוגי בגרסה 1.12",
@@ -540,7 +541,8 @@
               "alt": "המאסטר נשמר. מספרים של לפני ואחרי, מול יעד העוצמה של שירותי הסטרימינג. משתפים WAV + MP3, והקבצים נשארים במכשיר."
             }
           }
-        }
+        },
+        "ticker": "עכשיו ב-Google Play: גרסה 1.12 עם מיקסר אנלוגי וחלון מאסטרינג"
       },
       {
         "id": "app-1-11-loaded-keep-playing",
@@ -875,8 +877,8 @@
       },
       {
         "id": "app-1-12-mixer-demo",
-        "status": "upcoming",
-        "title": "Скоро версия 1.12: аналоговый микшер и окно мастеринга, в Google Play на следующей неделе",
+        "status": "shipped",
+        "title": "Теперь в Google Play: версия 1.12 с аналоговым микшером и окном мастеринга",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "Видео: аналоговый микшер в версии 1.12",
@@ -935,7 +937,8 @@
               "alt": "Master Saved. Before and after numbers, next to the -14 LUFS streaming target. Share WAV + MP3. The files stay on your device."
             }
           }
-        }
+        },
+        "ticker": "Теперь в Google Play: версия 1.12 с аналоговым микшером и окном мастеринга"
       },
       {
         "id": "app-1-11-loaded-keep-playing",
@@ -1270,8 +1273,8 @@
       },
       {
         "id": "app-1-12-mixer-demo",
-        "status": "upcoming",
-        "title": "قريبًا الإصدار 1.12: مازج تناظري ونافذة ماسترينغ، في Google Play الأسبوع القادم",
+        "status": "shipped",
+        "title": "الآن على Google Play: الإصدار 1.12 مع مازج تناظري ونافذة ماسترينغ",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "فيديو: مازج تناظري في الإصدار 1.12",
@@ -1330,7 +1333,8 @@
               "alt": "Master Saved. Before and after numbers, next to the -14 LUFS streaming target. Share WAV + MP3. The files stay on your device."
             }
           }
-        }
+        },
+        "ticker": "الآن على Google Play: الإصدار 1.12 مع مازج تناظري ونافذة ماسترينغ"
       },
       {
         "id": "app-1-11-loaded-keep-playing",
