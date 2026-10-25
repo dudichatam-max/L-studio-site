@@ -207,20 +207,20 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.09. New versions arrive as automatic updates through Google Play once they are approved. Version 1.10 is in closed testing, and version 1.11 is in Google review and coming soon to the store. Version 1.12, with the Analog Mixer and the Mastering window, reaches Google Play next week.",
+        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.12, which brings the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved. Version 1.13 is in Google review and is not available yet.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש ב-L Studio לאנדרואיד. L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.09. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.10 בבדיקה סגורה, וגרסה 1.11 בבדיקה של Google ובקרוב בחנות. גרסה 1.12, עם המיקסר האנלוגי וחלון המאסטרינג, מגיעה ל-Google Play בשבוע הבא.",
+      description: "מה חדש ב-L Studio לאנדרואיד. L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.12, שמביאה את המיקסר האנלוגי ואת חלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.13 בבדיקה של Google ועדיין לא זמינה.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.09. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.10 в закрытом тестировании, а версия 1.11 на проверке в Google и скоро появится в магазине. Версия 1.12 с аналоговым микшером и окном мастеринга выйдет в Google Play на следующей неделе.",
+        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.12, в которой есть аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.13 на проверке в Google и пока недоступна.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.09. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.10 في اختبار مغلق، والإصدار 1.11 قيد مراجعة Google وقريباً في المتجر. الإصدار 1.12، مع الميكسر التناظري ونافذة الماسترنغ، يصل إلى Google Play الأسبوع القادم.",
+      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.12 الذي يضم الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.13 قيد مراجعة Google وغير متاح بعد.",
     },
   },
   buy: {
@@ -339,7 +339,7 @@ type SeoMobileApplication = {
 /**
  * App facts for structured data. Source: app repo dudichatam-max/L-studio,
  * branch feature/1.12-smoke @ 7d22926 (versionCode 12, smoke PASS by David 2026-10-22 05:11), minSdk 24 = Android 7.0.
- * Version 1.12 is the prepared version; it is NOT on Google Play yet (David: next week). 1.11 is in Google review (David 2026-10-21). 1.09 is live on Google Play; 1.10 is in closed testing (David 2026-10-21 14:49).
+ * Version 1.12 is live on Google Play (public listing checked 2026-10-25: version 1.12, "Updated on Oct 22, 2026"). 1.13 (versionCode 13) is in Google review and NOT available (team lead, 2026-10-25).
  * Size: see the fileSize line below.
  * Price: David, 2026-10-08, L Studio Pro on Google Play for $8.
  * No installUrl or Play link until the public Google Play listing is live.

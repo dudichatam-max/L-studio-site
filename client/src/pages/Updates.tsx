@@ -41,6 +41,8 @@ const STILL_SIZE: Record<string, { width: number; height: number }> = {
   "/assets/updates/looper-back.jpg": { width: 720, height: 1468 },
   "/assets/updates/looper-fx.jpg": { width: 688, height: 1092 },
   "/assets/updates/sound-fx.jpg": { width: 720, height: 1468 },
+  "/assets/updates/sound-fx-113-fm.jpg": { width: 720, height: 1478 },
+  "/assets/updates/sound-fx-113-algos.jpg": { width: 720, height: 1478 },
   "/assets/updates/looper-pages.jpg": { width: 720, height: 1468 },
   "/assets/updates/lyrics.jpg": { width: 720, height: 1344 },
   "/assets/updates/user-guide-style-random.jpg": { width: 640, height: 857 },

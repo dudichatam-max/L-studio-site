@@ -153,7 +153,7 @@ const PLAY_ALT: Record<Language, string> = {
   ar: "احصل عليه من Google Play",
 };
 
-const heroDefault = { kicker: "Android music app · Version 1.12, next week on Google Play", title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "78.3 MB", stat2: "Android 7.0+", stat3: "No ads" };
+const heroDefault = { kicker: "Android music app · Version 1.12, on Google Play now", title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "78.3 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const launchDefaults: Record<Language, { headline: string; price: string; note: string }> = {
   he: {headline: "זמין עכשיו ב-Google Play.", price: "L Studio Pro, ‏24.90 ‏₪.", note: "זמין עכשיו ב-Google Play. L Studio Pro, ‏24.90 ‏₪."},
   en: {headline: "Available now on Google Play.", price: "L Studio Pro, $8.", note: "Available now on Google Play. L Studio Pro, $8."},
