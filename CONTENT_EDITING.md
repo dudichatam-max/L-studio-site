@@ -267,7 +267,7 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Version 1.13 is live on Google Play since 2026-10-25 (David, 2026-10-28). Hero, FAQ, Pro (`content.json` and `shared/pro-copy.json`), `/updates` intro and SEO descriptions say 1.13 is on Google Play now. The 1.13 update item is `shipped`; the ticker prefix is "On Google Play:" (HE "עכשיו ב-Google Play:", RU "Теперь в Google Play:", AR "الآن على Google Play:"). The 1.12 item title and ticker no longer say "now".
 - Size: 75.7 MB (binary MiB) from the uploaded release APK `L-Studio-1.13-r4.apk` (63be89f, 79,394,176 B). `APP_FACTS.softwareVersion` is "1.13", `fileSize` "75.7MB". Terms and Privacy show L Studio 1.13.
 - Rule (David, 2026-10-28): every version update replaces all images of the old interface. A screen that changed and has no real screenshot of the new version is removed (text stays) and reported as missing. Never draw UI.
-- Tab carousels (`client/src/lib/carousel.ts`, `CAROUSEL_VER` "carousel-11", source `/workspace/site-v113-src`, generator `/workspace/site-v113-work/gen/build113.py`):
+- Tab carousels (`client/src/lib/carousel.ts`, `CAROUSEL_VER` "carousel-11", source `/workspace/site-v113-src`, generator `/workspace/site-v113-work/gen/build113.py`; superseded by "1.13 FX shots" below):
   - Sound 5: `sound-fx` (Sound FX page 3/3 with FM knobs), `sound-fm` (ALGO picker with the FM knob explanation), `sound-scales` (Key window), `sound-frequencies` (Tune frequencies window), `sound-wave-panel`.
   - Mic 4: `mic-channels`, `mic-editor`, `mic-lyrics`, `mic-mastering`. Loop 4: `loop-looper`, `loop-editor`, `loop-page-name`, `loop-mixer`. Pad 1: `pad-live`. Drum 3: `drum-rows`, `drum-banks`, `drum-loaded`.
   - Removed (old interface, no 1.13 shot yet): `sound-keyboards`, `sound-presets`, `mic-fx`, `loop-fx`, `pad-keyboard`, `pad-targets`, `drum-main`, `drum-fx`, `drum-repeats`, and the home slide `home-sound-fx` (play112-2). The home carousel is now 7 slides with n/7 baked in and alts "n/7: ...".
@@ -282,3 +282,18 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Listed only what is in the app branch `feature/1.14` (head 8110a7a): PIANO option with (HOLD) and the sustain pedal fader (0701c89, 1adf92d), RIP/FUZZ/PHAZ intensity pedal (0701c89, 13b80e0), PAD SUB/WARM/VIBE INTENSITY with one keyboard (8110a7a), FADE IN / FADE OUT 0 to 8 s in the Looper/Mic editor (740dac3), COPY / PASTE Looper and Mic (b178a01), Mastering TRIM (6d556be), tablet layouts (397ac0d, b55b118, fba8b1c).
 - Images (real 1.14 screenshots, status and nav bars cropped, 720x1470, sizes in `STILL_SIZE`): `piano-pedal-114`, `pad-intensity-114-sub`, `pad-intensity-114-warm`, `loop-editor-114`, `mic-editor-114`.
 - When 1.14 reaches Google Play: set the item to `shipped`, change the title/ticker prefix to "On Google Play now", update hero/FAQ/Pro/SEO version and size, and replace the 1.13 images that changed.
+
+## 1.13 FX shots (2026-10-28)
+
+- Source: David's 4 real screenshots of 2026-10-28 (720x1640), `/workspace/new-imgs-fx/f1..f4.png`: f1 Drum FX (Tribal Bloom), f2 Looper FX (Indie Wash), f3 Sound with two keyboards, f4 Sound FX page 2/3 with the Iron Growl knobs over two keyboards. Carousel posters crop rows 68..1545 (status and navigation bar cut), same pipeline as the 1.13 set.
+- f3 was captured on a 1.14 build: its RIP, FUZZ, PHAZ and PIANO keys carry "(HOLD)" captions, which are new in 1.14 (app commit `0701c89`, testTag `sound-fx-$label-hold`, absent in `63be89f`). So f3 is used only as a crop below that row (rows 770..1545: VOICES, +, P, G, A and the two keyboards), which matches 1.13. Do not use the full f3 until 1.14 is on Google Play. f1, f2 and f4 show windows that did not change in 1.14.
+- Tab carousels: `CAROUSEL_VER` "carousel-12", source `/workspace/site-v113fx-src`, generator `/workspace/site-v113fx-work/gen/buildfx.py` (runs the build113 setup, then its own slide list and captions; captions exported to `captions.json` there).
+  - Sound 7: `sound-fx`, `sound-fx-knobs` (new, f4), `sound-fm`, `sound-scales`, `sound-frequencies`, `sound-wave-panel`, `sound-two-keyboards` (new, f3 crop).
+  - Loop 5: `loop-looper`, `loop-fx` (new, f2), `loop-editor`, `loop-page-name`, `loop-mixer`.
+  - Drum 4: `drum-rows`, `drum-fx` (new, f1), `drum-banks`, `drum-loaded`. Mic 4 and Pad 1 unchanged.
+- Guide crops (`assets/guide/c/`, `.jpg` and `.webp` in both asset roots, each step has its own `alt` in 4 languages):
+  - Sound main step "A tap on + opens a second keyboard": `kbd13-dual` (720x776, f3 crop) replaces the 1.12 `dual-kbd` there (`dual-kbd` is still used by the Pad group).
+  - Sound FX step "With two keyboards or the settings open, it holds 4": `sfx13-two-kbd` (720x1116, f4). Sound FX long-press knobs step: `sfx13-tone-knobs` (688x370, f4).
+  - Drum FX: preset list step `dfx13-grid` (680x543), knobs step `dfx13-knobs` (680x302, AMOUNT to REVERB, 0 semitones, Transpose).
+  - Looper FX: preset step `lfx13-grid`, knobs step `lfx13-knobs` (same sizes, from f2).
+- Still missing (no real 1.13 shot): Mic FX, Sound Presets, Pad with the second keyboard, Drum main screen with the keyboard, the Recording finished card with Delete, the 1.13 Google Play image set (home carousel still has the 1.12 images), replacements for the old update stills, and the feature graphic with "82 MB".
