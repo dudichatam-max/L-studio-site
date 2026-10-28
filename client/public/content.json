@@ -3286,6 +3286,59 @@
         },
         "items": [
           {
+            "id": "app-1-14-in-development",
+            "status": "in_progress",
+            "title": "בקרוב: גרסה 1.14, בפיתוח, עם פדל סוסטיין לפסנתר, פייד ו-COPY / PASTE",
+            "ticker": "בקרוב: גרסה 1.14, בפיתוח: פדל סוסטיין לפסנתר, FADE IN / FADE OUT, COPY / PASTE",
+            "summary": "גרסה 1.14 בפיתוח. היא עוד לא זמינה. כל מה שכתוב כאן עדיין בעבודה ויכול להשתנות לפני שהגרסה תצא.",
+            "images": [
+              "/assets/updates/piano-pedal-114.jpg",
+              "/assets/updates/pad-intensity-114-sub.jpg",
+              "/assets/updates/pad-intensity-114-warm.jpg",
+              "/assets/updates/loop-editor-114.jpg",
+              "/assets/updates/mic-editor-114.jpg"
+            ],
+            "imageAlts": [
+              "גרסה 1.14 בפיתוח: חלון הסאונד עם PIANO דלוק (HOLD) ופדל SUSTAIN פתוח על 88%.",
+              "גרסה 1.14 בפיתוח: חלון PAD עם פדל העוצמה של SUB פתוח על 63%, ו-X לסגירה.",
+              "גרסה 1.14 בפיתוח: חלון PAD עם פדל העוצמה של WARM פתוח על 55%.",
+              "גרסה 1.14 בפיתוח: LOOP EDITOR CH 1 עם COPY ו-PASTE, פסי TRIM ו-LOOP, וכפתורי FADE IN ו-FADE OUT.",
+              "גרסה 1.14 בפיתוח: MIC EDITOR VOCAL 1 עם COPY ו-PASTE, פסי TRIM ו-LOOP, וכפתורי FADE IN ו-FADE OUT."
+            ],
+            "sections": [
+              {
+                "title": "פסנתר ופדלים",
+                "bullets": [
+                  "אפשרות PIANO בחלון הסאונד, ליד RIP, FUZZ ו-PHAZ. לחיצה מדליקה ומכבה.",
+                  "לחיצה ארוכה פותחת פדל שמנגנים איתו בזמן אמת, כמו פדל סוסטיין של פסנתר. ב-RIP, FUZZ ו-PHAZ אותו פדל קובע כמה חזק האפקט.",
+                  "בחלון PAD עם מקלדת אחת, לחיצה ארוכה על SUB, WARM או VIBE פותחת פדל INTENSITY מ-0 עד 100%. לחיצה רגילה עדיין מדליקה ומכבה.",
+                  "הכיתוב (HOLD) מתחת לכפתורים האלה מראה שיש להם לחיצה ארוכה.",
+                  "ערכי הפדלים נשמרים בפריסטים ובסשנים."
+                ]
+              },
+              {
+                "title": "עורך הלופר והמיקרופון",
+                "bullets": [
+                  "כפתורי FADE IN ו-FADE OUT, מ-0 עד 8 שניות כל אחד, בכל סיבוב של הלופ. אפשר גם להקליד את הערך.",
+                  "COPY ו-PASTE של ערוץ בין ערוצי הלופר והמיקרופון: האודיו הנקי, כל ערכי הכפתורים בעורך (LOW, MID, HIGH, MID HZ, GAIN, SQUEEZE, FADE IN, FADE OUT) ואזור ה-LOOP. אפקטי הסאונד, המקצבים ושם הערוץ לא מועתקים.",
+                  "PASTE שואל לפני שהוא מחליף אודיו, וההקלטה הקודמת עוברת ל-UNDO."
+                ]
+              },
+              {
+                "title": "מאסטרינג",
+                "bullets": [
+                  "פס TRIM מתחת לגל בחלון המאסטרינג, אותו פקד כמו בלופר, במיקרופון ובתופים, עם הזמן בדקות ושניות."
+                ]
+              },
+              {
+                "title": "טאבלטים",
+                "bullets": [
+                  "מסכים שממלאים את מסך הטאבלט, למשל חלון הסאונד בשני חלקים בטאבלט לרוחב. בפלאפון הכול נשאר כמו שהיה."
+                ]
+              }
+            ]
+          },
+          {
             "id": "app-1-13-fm-sound-fx",
             "status": "shipped",
             "title": "עכשיו ב-Google Play: גרסה 1.13 עם אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB",
@@ -7039,6 +7092,59 @@
           "shipped": "Recently shipped"
         },
         "items": [
+          {
+            "id": "app-1-14-in-development",
+            "status": "in_progress",
+            "title": "Coming up: version 1.14, in development, with a piano sustain pedal, fades and COPY / PASTE",
+            "ticker": "Coming up: version 1.14, in development: piano sustain pedal, FADE IN / FADE OUT, COPY / PASTE",
+            "summary": "Version 1.14 is in development. It is not available yet. Everything here is still being built and may change before it is released.",
+            "images": [
+              "/assets/updates/piano-pedal-114.jpg",
+              "/assets/updates/pad-intensity-114-sub.jpg",
+              "/assets/updates/pad-intensity-114-warm.jpg",
+              "/assets/updates/loop-editor-114.jpg",
+              "/assets/updates/mic-editor-114.jpg"
+            ],
+            "imageAlts": [
+              "Version 1.14 in development: the Sound window with PIANO on (HOLD) and the SUSTAIN pedal fader open at 88%.",
+              "Version 1.14 in development: the PAD window with the SUB intensity fader open at 63%, with X to close it.",
+              "Version 1.14 in development: the PAD window with the WARM intensity fader open at 55%.",
+              "Version 1.14 in development: LOOP EDITOR CH 1 with COPY and PASTE, the TRIM and LOOP bars, and the FADE IN and FADE OUT knobs.",
+              "Version 1.14 in development: MIC EDITOR VOCAL 1 with COPY and PASTE, the TRIM and LOOP bars, and the FADE IN and FADE OUT knobs."
+            ],
+            "sections": [
+              {
+                "title": "Piano and pedals",
+                "bullets": [
+                  "A PIANO option in the Sound window, next to RIP, FUZZ and PHAZ. A tap turns it on or off.",
+                  "A long-press opens a pedal fader that you play in real time, like the sustain pedal of a piano. On RIP, FUZZ and PHAZ the same fader sets how strong the effect is.",
+                  "In the PAD window with one keyboard, a long-press on SUB, WARM or VIBE opens an INTENSITY fader from 0 to 100%. A tap still turns them on and off.",
+                  "(HOLD) under these buttons shows that they have a long-press.",
+                  "The pedal values are saved in presets and sessions."
+                ]
+              },
+              {
+                "title": "Looper and Mic editor",
+                "bullets": [
+                  "FADE IN and FADE OUT knobs, from 0 to 8 seconds each, applied on every pass of the loop. You can also type the value.",
+                  "COPY and PASTE a track between Looper and Mic channels: the clean audio, all the editor knob values (LOW, MID, HIGH, MID HZ, GAIN, SQUEEZE, FADE IN, FADE OUT) and the LOOP region. Sound FX, rhythms and the track name are not copied.",
+                  "PASTE asks before it replaces audio, and the old take goes to UNDO."
+                ]
+              },
+              {
+                "title": "Mastering",
+                "bullets": [
+                  "A TRIM bar under the wave in the Mastering window, the same control as in Looper, Mic and Drum, with the time in minutes and seconds."
+                ]
+              },
+              {
+                "title": "Tablets",
+                "bullets": [
+                  "Layouts that fill tablet screens, for example Sound in two panes on a tablet in landscape. Phones stay as they are."
+                ]
+              }
+            ]
+          },
           {
             "id": "app-1-13-fm-sound-fx",
             "status": "shipped",
@@ -10794,6 +10900,59 @@
         },
         "items": [
           {
+            "id": "app-1-14-in-development",
+            "status": "in_progress",
+            "title": "Скоро: версия 1.14, в разработке, с педалью сустейна для пианино, фейдами и COPY / PASTE",
+            "ticker": "Скоро: версия 1.14, в разработке: педаль сустейна, FADE IN / FADE OUT, COPY / PASTE",
+            "summary": "Версия 1.14 в разработке. Она пока недоступна. Всё описанное здесь ещё делается и может измениться до выхода.",
+            "images": [
+              "/assets/updates/piano-pedal-114.jpg",
+              "/assets/updates/pad-intensity-114-sub.jpg",
+              "/assets/updates/pad-intensity-114-warm.jpg",
+              "/assets/updates/loop-editor-114.jpg",
+              "/assets/updates/mic-editor-114.jpg"
+            ],
+            "imageAlts": [
+              "Версия 1.14 в разработке: окно Sound с включённым PIANO (HOLD) и открытой педалью SUSTAIN на 88%.",
+              "Версия 1.14 в разработке: окно PAD с открытым фейдером интенсивности SUB на 63% и кнопкой X для закрытия.",
+              "Версия 1.14 в разработке: окно PAD с открытым фейдером интенсивности WARM на 55%.",
+              "Версия 1.14 в разработке: LOOP EDITOR CH 1 с COPY и PASTE, полосами TRIM и LOOP и ручками FADE IN и FADE OUT.",
+              "Версия 1.14 в разработке: MIC EDITOR VOCAL 1 с COPY и PASTE, полосами TRIM и LOOP и ручками FADE IN и FADE OUT."
+            ],
+            "sections": [
+              {
+                "title": "Пианино и педали",
+                "bullets": [
+                  "Опция PIANO в окне Sound, рядом с RIP, FUZZ и PHAZ. Касание включает и выключает её.",
+                  "Долгое нажатие открывает педаль, которой играют в реальном времени, как педалью сустейна у пианино. Для RIP, FUZZ и PHAZ та же педаль задаёт силу эффекта.",
+                  "В окне PAD с одной клавиатурой долгое нажатие на SUB, WARM или VIBE открывает фейдер INTENSITY от 0 до 100%. Касание по-прежнему включает и выключает их.",
+                  "(HOLD) под этими кнопками показывает, что у них есть долгое нажатие.",
+                  "Значения педалей сохраняются в пресетах и сессиях."
+                ]
+              },
+              {
+                "title": "Редактор лупера и микрофона",
+                "bullets": [
+                  "Ручки FADE IN и FADE OUT, от 0 до 8 секунд каждая, на каждом проходе лупа. Значение можно и ввести вручную.",
+                  "COPY и PASTE дорожки между каналами лупера и микрофона: чистое аудио, все значения ручек редактора (LOW, MID, HIGH, MID HZ, GAIN, SQUEEZE, FADE IN, FADE OUT) и область LOOP. Sound FX, ритмы и имя дорожки не копируются.",
+                  "PASTE спрашивает, прежде чем заменить аудио, а старый дубль уходит в UNDO."
+                ]
+              },
+              {
+                "title": "Мастеринг",
+                "bullets": [
+                  "Полоса TRIM под волной в окне мастеринга, тот же элемент, что в лупере, микрофоне и барабанах, со временем в минутах и секундах."
+                ]
+              },
+              {
+                "title": "Планшеты",
+                "bullets": [
+                  "Раскладки, которые заполняют экран планшета, например Sound в две панели на планшете в альбомной ориентации. На телефонах всё остаётся как было."
+                ]
+              }
+            ]
+          },
+          {
             "id": "app-1-13-fm-sound-fx",
             "status": "shipped",
             "title": "Теперь в Google Play: версия 1.13 с настоящим эффектом FM, новым окном Sound FX и EQ в dB",
@@ -14547,6 +14706,59 @@
           "shipped": "صدر مؤخراً"
         },
         "items": [
+          {
+            "id": "app-1-14-in-development",
+            "status": "in_progress",
+            "title": "قريباً: الإصدار 1.14، قيد التطوير، مع دواسة استدامة للبيانو وتلاشٍ و COPY / PASTE",
+            "ticker": "قريباً: الإصدار 1.14، قيد التطوير: دواسة استدامة للبيانو، FADE IN / FADE OUT، COPY / PASTE",
+            "summary": "الإصدار 1.14 قيد التطوير. وهو غير متاح بعد. كل ما هنا ما زال قيد العمل وقد يتغير قبل صدوره.",
+            "images": [
+              "/assets/updates/piano-pedal-114.jpg",
+              "/assets/updates/pad-intensity-114-sub.jpg",
+              "/assets/updates/pad-intensity-114-warm.jpg",
+              "/assets/updates/loop-editor-114.jpg",
+              "/assets/updates/mic-editor-114.jpg"
+            ],
+            "imageAlts": [
+              "الإصدار 1.14 قيد التطوير: نافذة الصوت مع تشغيل PIANO (HOLD) ودواسة SUSTAIN مفتوحة على 88%.",
+              "الإصدار 1.14 قيد التطوير: نافذة PAD مع منزلق شدة SUB مفتوح على 63%، وزر X للإغلاق.",
+              "الإصدار 1.14 قيد التطوير: نافذة PAD مع منزلق شدة WARM مفتوح على 55%.",
+              "الإصدار 1.14 قيد التطوير: LOOP EDITOR CH 1 مع COPY و PASTE وشريطي TRIM و LOOP ومقبضي FADE IN و FADE OUT.",
+              "الإصدار 1.14 قيد التطوير: MIC EDITOR VOCAL 1 مع COPY و PASTE وشريطي TRIM و LOOP ومقبضي FADE IN و FADE OUT."
+            ],
+            "sections": [
+              {
+                "title": "البيانو والدواسات",
+                "bullets": [
+                  "خيار PIANO في نافذة الصوت، بجانب RIP و FUZZ و PHAZ. اللمسة تشغّله وتوقفه.",
+                  "الضغط المطوّل يفتح دواسة تعزف بها في الوقت الحقيقي، مثل دواسة الاستدامة في البيانو. في RIP و FUZZ و PHAZ تحدد الدواسة نفسها قوة المؤثر.",
+                  "في نافذة PAD بلوحة مفاتيح واحدة، الضغط المطوّل على SUB أو WARM أو VIBE يفتح منزلق INTENSITY من 0 إلى 100%. واللمسة ما زالت تشغّلها وتوقفها.",
+                  "عبارة (HOLD) تحت هذه الأزرار تبيّن أن لها ضغطاً مطوّلاً.",
+                  "قيم الدواسات تُحفظ في الإعدادات المسبقة والجلسات."
+                ]
+              },
+              {
+                "title": "محرر اللوبر والميكروفون",
+                "bullets": [
+                  "مقبضا FADE IN و FADE OUT، من 0 إلى 8 ثوانٍ لكل منهما، في كل دورة من اللوب. ويمكن أيضاً كتابة القيمة.",
+                  "COPY و PASTE لمسار بين قنوات اللوبر والميكروفون: الصوت النظيف، وكل قيم مقابض المحرر (LOW و MID و HIGH و MID HZ و GAIN و SQUEEZE و FADE IN و FADE OUT) ومنطقة LOOP. لا تُنسخ مؤثرات الصوت ولا الإيقاعات ولا اسم المسار.",
+                  "يسأل PASTE قبل أن يستبدل الصوت، وتنتقل التسجيلة القديمة إلى UNDO."
+                ]
+              },
+              {
+                "title": "الماسترينغ",
+                "bullets": [
+                  "شريط TRIM تحت الموجة في نافذة الماسترينغ، العنصر نفسه كما في اللوبر والميكروفون والطبول، مع الوقت بالدقائق والثواني."
+                ]
+              },
+              {
+                "title": "الأجهزة اللوحية",
+                "bullets": [
+                  "تخطيطات تملأ شاشة الجهاز اللوحي، مثل نافذة الصوت في جزأين على جهاز لوحي بالعرض. على الهواتف يبقى كل شيء كما كان."
+                ]
+              }
+            ]
+          },
           {
             "id": "app-1-13-fm-sound-fx",
             "status": "shipped",
