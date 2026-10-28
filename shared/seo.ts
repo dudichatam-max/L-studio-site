@@ -55,24 +55,24 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "L Studio: Android Music App with Looper, Drums and Mic",
       description:
-        "Make music on your Android phone. A looper with 8 pages and 4 channels per page, 8 drum kits, mic recording, a lyrics window that scrolls while you sing, and keys you tune to your own frequencies. Version 1.12.",
+        "Make music on your Android phone. A looper with 8 pages and 4 channels per page, 8 drum kits, mic recording, a lyrics window that scrolls while you sing, and keys you tune to your own frequencies. Version 1.13.",
       socialDescription:
         "Make music on your Android phone: looper, drums, mic, lyrics and keys you tune yourself.",
     },
     he: {
       title: "L Studio: אפליקציה ליצירת מוזיקה באנדרואיד, לופר ותופים",
       description:
-        "יוצרים מוזיקה בפלאפון האנדרואיד: לופר עם 8 עמודים ו-4 ערוצים בכל עמוד, 8 ערכות תופים, הקלטה במיקרופון, חלון מילים שגולל בזמן שאתם שרים, וקלידים שמכוונים לתדרים משלכם. גרסה 1.12.",
+        "יוצרים מוזיקה בפלאפון האנדרואיד: לופר עם 8 עמודים ו-4 ערוצים בכל עמוד, 8 ערכות תופים, הקלטה במיקרופון, חלון מילים שגולל בזמן שאתם שרים, וקלידים שמכוונים לתדרים משלכם. גרסה 1.13.",
     },
     ru: {
       title: "L Studio: приложение для создания музыки на Android, лупер и барабаны",
       description:
-        "Создавай музыку на телефоне с Android: лупер с 8 страницами и 4 каналами на каждой, 8 наборов барабанов, запись с микрофона, окно текста, которое прокручивается, пока ты поёшь, и клавиши, которые ты настраиваешь на свои частоты. Версия 1.12.",
+        "Создавай музыку на телефоне с Android: лупер с 8 страницами и 4 каналами на каждой, 8 наборов барабанов, запись с микрофона, окно текста, которое прокручивается, пока ты поёшь, и клавиши, которые ты настраиваешь на свои частоты. Версия 1.13.",
     },
     ar: {
       title: "L Studio: تطبيق لصنع الموسيقى على أندرويد، لوبر وطبول",
       description:
-        "اصنع الموسيقى على هاتف أندرويد: لوبر بـ8 صفحات و4 قنوات في كل صفحة، 8 مجموعات طبول، تسجيل بالميكروفون، نافذة كلمات تمرّ وأنت تغني، ومفاتيح تضبطها على تردداتك الخاصة. الإصدار 1.12.",
+        "اصنع الموسيقى على هاتف أندرويد: لوبر بـ8 صفحات و4 قنوات في كل صفحة، 8 مجموعات طبول، تسجيل بالميكروفون، نافذة كلمات تمرّ وأنت تغني، ومفاتيح تضبطها على تردداتك الخاصة. الإصدار 1.13.",
     },
   },
   privacy: {
@@ -207,20 +207,20 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.12, which brings the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved. Version 1.13 is in Google review and is not available yet.",
+        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.13, which brings a real FM effect, a new Sound FX window and EQ in dB, on top of the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש ב-L Studio לאנדרואיד. L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.12, שמביאה את המיקסר האנלוגי ואת חלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.13 בבדיקה של Google ועדיין לא זמינה.",
+      description: "מה חדש ב-L Studio לאנדרואיד. L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.13, שמביאה אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.12, в которой есть аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.13 на проверке в Google и пока недоступна.",
+        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.13, в которой есть настоящий эффект FM, новое окно Sound FX и EQ в dB, а также аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.12 الذي يضم الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.13 قيد مراجعة Google وغير متاح بعد.",
+      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.13 الذي يضم مؤثر FM حقيقياً ونافذة Sound FX جديدة وEQ بوحدة dB، إلى جانب الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
     },
   },
   buy: {
@@ -338,26 +338,27 @@ type SeoMobileApplication = {
 
 /**
  * App facts for structured data. Source: app repo dudichatam-max/L-studio,
- * branch feature/1.12-smoke @ 7d22926 (versionCode 12, smoke PASS by David 2026-10-22 05:11), minSdk 24 = Android 7.0.
- * Version 1.12 is live on Google Play (public listing checked 2026-10-25: version 1.12, "Updated on Oct 22, 2026"). 1.13 (versionCode 13) is in Google review and NOT available (team lead, 2026-10-25).
+ * release build 1.13 r4 @ 63be89f (versionCode 13, uploaded 2026-10-25), minSdk 24 = Android 7.0.
+ * Version 1.13 is live on Google Play since 2026-10-25 (David, 2026-10-28: "גירסה 1.13 עלתה לגוגל").
  * Size: see the fileSize line below.
  * Price: David, 2026-10-08, L Studio Pro on Google Play for $8.
  * No installUrl or Play link until the public Google Play listing is live.
  */
 export const APP_FACTS = {
   operatingSystem: "Android 7.0+",
-  softwareVersion: "1.12",
-  fileSize: "78.3MB", // 1.12 release APK L-Studio-1.12.apk (versionCode 12), 82,118,945 B = 78.3 MiB (1.11: 81,194,413 B = 77.4)
+  softwareVersion: "1.13",
+  fileSize: "75.7MB", // 1.13 release APK L-Studio-1.13-r4.apk (versionCode 13), 79,394,176 B = 75.7 MiB (1.12: 82,118,945 B = 78.3)
   price: "8",
   priceCurrency: "USD",
 } as const;
 
 const APP_SCREENSHOTS = [
-  "/assets/posters/en/p01-sound-w630.jpg",
-  "/assets/posters/en/p06-looper-w630.jpg",
-  "/assets/posters/en/p07-drums-w630.jpg",
-  "/assets/posters/en/p03-pad-w630.jpg",
-  "/assets/posters/en/p04-mic-w630.jpg",
+  "/assets/carousel/en/sound-fx-w630.jpg",
+  "/assets/carousel/en/sound-fm-w630.jpg",
+  "/assets/carousel/en/loop-looper-w630.jpg",
+  "/assets/carousel/en/drum-rows-w630.jpg",
+  "/assets/carousel/en/pad-live-w630.jpg",
+  "/assets/carousel/en/mic-editor-w630.jpg",
 ];
 
 export const SITEMAP_PAGES: Array<{

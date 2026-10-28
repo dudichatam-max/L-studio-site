@@ -9,7 +9,8 @@ export type CarouselId = PlayId | "update112" | "home112";
  * Home "Play with sound" carousels: one list per tab, in display order.
  * Every slide is a designed store poster (Google Play style) made per language, with its own counter n/N baked in
  * (N = slides of that tab). The site draws no counter. Files: assets/carousel/{lang}/{id}-w360|w630.{webp,jpg},
- * written by scripts/import-carousel-posters.py from /workspace/store-posters/carousel/{lang}/{designed}.png.
+ * written by scripts/import-carousel-posters.py from a source dir of {lang}/{designed}.png (1.13 set: /workspace/site-v113-src).
+ * Only real screens of the version on Google Play (1.13). No slide may show an older interface.
  * Slide titles and texts live in content.json under languages.*.carousel.slides[id].
  * To add or remove a slide the designer must rebake that tab's counters, then update this list.
  */
@@ -18,35 +19,31 @@ export type SlideDef = { id: string; designed: string };
 export const carouselSlides: Record<CarouselId, SlideDef[]> = {
   sound: [
     { id: "sound-fx", designed: "sound-1" },
-    { id: "sound-keyboards", designed: "sound-2" },
-    { id: "sound-presets", designed: "sound-3" },
-    { id: "sound-scales", designed: "sound-4" },
+    { id: "sound-fm", designed: "sound-2" },
+    { id: "sound-scales", designed: "sound-3" },
+    { id: "sound-frequencies", designed: "sound-4" },
     { id: "sound-wave-panel", designed: "sound-5" },
   ],
   mic: [
     { id: "mic-channels", designed: "mic-1" },
     { id: "mic-editor", designed: "mic-2" },
-    { id: "mic-fx", designed: "mic-3" },
-    { id: "mic-lyrics", designed: "mic-4" },
-    { id: "mic-mastering", designed: "mic-5" },
+    { id: "mic-lyrics", designed: "mic-3" },
+    { id: "mic-mastering", designed: "mic-4" },
   ],
   loop: [
     { id: "loop-looper", designed: "loop-1" },
     { id: "loop-editor", designed: "loop-2" },
-    { id: "loop-fx", designed: "loop-3" },
-    { id: "loop-page-name", designed: "loop-4" },
-    { id: "loop-mixer", designed: "loop-5" },
+    { id: "loop-page-name", designed: "loop-3" },
+    { id: "loop-mixer", designed: "loop-4" },
   ],
   pad: [
     { id: "pad-live", designed: "pad-1" },
-    { id: "pad-keyboard", designed: "pad-2" },
-    { id: "pad-targets", designed: "pad-3" },
   ],
-  // Home top carousel: the 8 Google Play 1.12 store images from David's Drive folder "נכסים 1.12" (counter n/8 baked in).
-  // he = the Hebrew set (עברית), en, ru, ar = the English set. Images used as delivered, only resized.
+  // Home top carousel: 7 of the 8 Google Play 1.12 store images from David's Drive folder "נכסים 1.12".
+  // play112-2 (the old Sound FX window) was dropped for 1.13; the counter pill was redrawn as n/7 (site 1.13, Oct 28 2026).
+  // he = the Hebrew set (עברית), en, ru, ar = the English set.
   home112: [
     { id: "home-sound", designed: "play112-1" },
-    { id: "home-sound-fx", designed: "play112-2" },
     { id: "home-looper", designed: "play112-3" },
     { id: "home-live-pad", designed: "play112-4" },
     { id: "home-drums", designed: "play112-5" },
@@ -70,11 +67,8 @@ export const carouselSlides: Record<CarouselId, SlideDef[]> = {
   ],
   drum: [
     { id: "drum-rows", designed: "drum-1" },
-    { id: "drum-main", designed: "drum-2" },
-    { id: "drum-banks", designed: "drum-3" },
-    { id: "drum-loaded", designed: "drum-4" },
-    { id: "drum-fx", designed: "drum-5" },
-    { id: "drum-repeats", designed: "drum-6" },
+    { id: "drum-banks", designed: "drum-2" },
+    { id: "drum-loaded", designed: "drum-3" },
   ],
 };
 
@@ -88,7 +82,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-10";
+export const CAROUSEL_VER = "carousel-11";
 const SMALL = 360;
 const LARGE = 630;
 

@@ -15,12 +15,12 @@
         "updates": "עדכונים"
       },
       "hero": {
-        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.12, עכשיו ב-Google Play",
+        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.13, עכשיו ב-Google Play",
         "title": "יוצרים מוזיקה בפלאפון.",
         "body": "L Studio היא אפליקציה ליצירת מוזיקה בפלאפון האנדרואיד. מקליטים לופים, מוסיפים תופים, שרים עם המילים מול העיניים, ואם בא לכם לצאת מהתווים הרגילים, מכוונים כל קליד לתדר משלו.",
         "ctaPrimary": "לצפייה בסרטון הקצר",
         "ctaSecondary": "איך זה התחיל",
-        "stat1": "78.3MB",
+        "stat1": "75.7MB",
         "stat2": "Android 7.0+",
         "stat3": "ללא פרסומות"
       },
@@ -147,7 +147,7 @@
           {
             "question": "האפליקציה כבר בגוגל פליי? וכמה היא עולה?",
             "answer": [
-              "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.12, שמביאה את המיקסר האנלוגי ואת חלון המאסטרינג. זה תשלום חד פעמי. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.13 בבדיקה של Google ועדיין לא זמינה.",
+              "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.13, שמביאה אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. זה תשלום חד פעמי. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
               "קונים אותה דרך Google Play. האתר הזה לא מוכר את האפליקציה ואין בו כפתור הורדה."
             ]
           },
@@ -163,7 +163,7 @@
           {
             "question": "על אילו מכשירים זה רץ, ובאילו שפות?",
             "answer": [
-              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה. הגודל של גרסה 1.12 הוא 78.3MB. בינתיים אין גרסה לאייפון.",
+              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה. הגודל של גרסה 1.13 הוא 75.7MB. בינתיים אין גרסה לאייפון.",
               "האפליקציה נבדקה על טלפוני אנדרואיד שונים. היא לא נבדקה על טאבלטים, ולכן אין הבטחה לתמיכה בטאבלט.",
               "בפלאפון האפליקציה נשארת זקופה, לאורך.",
               "האפליקציה בארבע שפות: עברית, אנגלית, רוסית וערבית. מחליפים ב-Settings, בשורה Language."
@@ -200,7 +200,7 @@
             "answer": [
               "המיקסר האנלוגי נפתח בהקשה על LIVE SCOPE בראש המסך. לתופים, ללופר ולמיק יש ערוץ עם Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S ופיידר. ערוץ ה-Master עובד על כל המיקס. SPECTRUM ו-MIX MAP מראים איפה הערוצים יושבים ואיפה הם מתנגשים. יש 8 פריסטים.",
               "חלון המאסטרינג מסיים הקלטת WAV או שיר מיובא לקראת שירותי הסטרימינג. בוחרים אחד מ-8 סגנונות, מאזינים ל-A (לפני) ול-B (הסגנון), ואז מקישים Start mastering ומייצאים. הוא נפתח אחרי הקלטת WAV ‏(Master this take) או מ-MASTERING ב-Settings.",
-              "גרסה 1.12 מביאה את שניהם, והיא כבר ב-Google Play."
+              "שניהם הגיעו בגרסה 1.12, והם גם בגרסה 1.13 שכבר ב-Google Play."
             ]
           },
           {
@@ -614,27 +614,30 @@
                 "title": "Sound FX",
                 "steps": [
                   {
-                    "text": "הקשה על FX פותחת את Sound FX. הקלידים ממשיכים לנגן כשהחלון פתוח.",
-                    "img": "assets/guide/c/sfx-title.jpg",
+                    "text": "הקשה על FX פותחת את Sound FX מעל המקלדות. הקלידים ממשיכים לנגן כשהחלון פתוח.",
+                    "img": "assets/guide/c/sfx13-title.jpg",
                     "size": [
                       680,
-                      170
+                      120
                     ]
                   },
                   {
-                    "text": "יש 8 אפקטים: Sub Forge, Depth Drop, Bass Clamp, Floor Pump, Iron Growl, Psy Orbit, Thick Vein, ו-Kick Bond.",
-                    "img": "assets/guide/c/sfx-grid.jpg",
+                    "text": "יש 12 אפקטים: Sub Forge, ‏Depth Drop, ‏Bass Clamp, ‏Floor Pump, ‏Iron Growl, ‏Psy Orbit, ‏Thick Vein, ‏Kick Bond, והחדשים סולם צעדים, רוטור קטיפה, סרט מראה ו-FM. הם מסודרים בעמודים. מחליקים ימינה ושמאלה, או מקישים על החיצים; המונה מראה את העמוד, למשל 3/3.",
+                    "img": "assets/guide/c/sfx13-pages.jpg",
                     "size": [
-                      680,
-                      420
+                      648,
+                      258
                     ]
+                  },
+                  {
+                    "text": "עם מקלדת אחת וההגדרות סגורות יש 8 אפקטים בעמוד. עם שתי מקלדות או כשההגדרות פתוחות יש 4. החלון יושב מעל המקלדות, כך שממשיכים לנגן."
                   },
                   {
                     "text": "הקשה מדליקה אפקט. הקשה על האפקט הדולק מכבה את ה-FX. רק אחד דולק בכל פעם.",
-                    "img": "assets/guide/c/sfx-on.jpg",
+                    "img": "assets/guide/c/sfx13-on.jpg",
                     "size": [
-                      190,
-                      180
+                      160,
+                      185
                     ]
                   },
                   {
@@ -654,38 +657,14 @@
                     ]
                   },
                   {
-                    "text": "אחרי שהתופים נעצרים, הם נשארים בטמפו האחרון של התופים. Depth Drop יורד מחדש כל 2 ביטים ובכל תו חדש.",
-                    "img": "assets/guide/c/sfx-grid.jpg",
-                    "size": [
-                      680,
-                      420
-                    ]
+                    "text": "אחרי שהתופים נעצרים, הם נשארים בטמפו האחרון של התופים. Depth Drop יורד מחדש כל 2 ביטים ובכל תו חדש."
                   },
                   {
-                    "text": "לחיצה ארוכה פותחת Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לאפקט הזה. כל אחד מ-8 האפקטים שומר את ההגדרות שלו כשמחליפים. Transpose רץ מ-12- עד 12 ומשנה את כל 8 האפקטים, כולל Sub Forge.",
-                    "img": "assets/guide/c/sfx-tone.jpg",
-                    "size": [
-                      720,
-                      510
-                    ]
-                  },
-                  {
-                    "text": "השלבים הבאים הם לגרסה 1.13, שנמצאת בבדיקה של Google ועדיין לא זמינה. גרסה 1.12 ב-Google Play עובדת כמו שמתואר למעלה."
-                  },
-                  {
-                    "text": "בגרסה 1.13 יש ב-Sound FX‏ 12 אפקטים בעמודים. סולם צעדים, רוטור קטיפה, סרט מראה ו-FM חדשים. מחליקים ימינה ושמאלה, או מקישים על החיצים; המונה מראה את העמוד, למשל 3/3.",
-                    "img": "assets/guide/c/sfx13-pages",
-                    "size": [
-                      648,
-                      258
-                    ]
-                  },
-                  {
-                    "text": "עם מקלדת אחת וההגדרות סגורות יש 8 אפקטים בעמוד. עם שתי מקלדות או כשההגדרות פתוחות יש 4. החלון יושב מעל המקלדות, כך שממשיכים לנגן."
+                    "text": "לחיצה ארוכה על אפקט פותחת את הכפתורים שלו: RATE, ‏AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, ומתחתם סרגל ה-Transpose. כל אפקט שומר את ההגדרות שלו כשמחליפים. ‏Transpose נע מ-12 חצאי טונים למטה עד 12 למעלה ומשנה כל אפקט."
                   },
                   {
                     "text": "FM הוא אפקט FM אמיתי עם 4 אופרטורים. לחיצה ארוכה על FM פותחת את הכפתורים שלו: RATE, ALGO, RATIO, INDEX, FEEDBK, DECAY ו-MIX.",
-                    "img": "assets/guide/c/sfx13-fm-knobs",
+                    "img": "assets/guide/c/sfx13-fm-knobs.jpg",
                     "size": [
                       648,
                       134
@@ -693,15 +672,18 @@
                   },
                   {
                     "text": "הקשה על ALGO פותחת בחירה של אחד מ-8 אלגוריתמים: A1 Stack, A2 Y, A3 Branch, A4 Twin mod, A5 2 Stacks, A6 1 to 3, A7 Stack+2 ו-A8 Organ. כל אריח מצייר איזה אופרטור מאפנן את מי.",
-                    "img": "assets/guide/c/sfx13-algos",
+                    "img": "assets/guide/c/sfx13-algos.jpg",
                     "size": [
                       648,
                       256
                     ]
                   },
                   {
+                    "text": "מה עושים כפתורי ה-FM: ‏RATIO קובע את גובה המאפנן ביחס לתו, בצעדים מ-0.5 עד 7. ‏INDEX קובע את עומק האפנון, וככל שהוא גבוה יותר הצליל בהיר יותר. ‏FEEDBK מחזיר את אופרטור 1 לתוך עצמו ומוסיף חספוס. ‏DECAY קובע כמה זמן ה-FM דועך, מ-1/16 של ביט עד 4 ביטים. ‏MIX מערבב בין הצליל הנקי ל-FM."
+                  },
+                  {
                     "text": "אפשר לסובב את RATE גם כשהתופים מנגנים, ו-SYNC נועל אותו שוב לתופים. ב-FM, ‏FM | EQ מחליף את הכפתורים בין FM ל-EQ.",
-                    "img": "assets/guide/c/sfx13-sync-eq",
+                    "img": "assets/guide/c/sfx13-sync-eq.jpg",
                     "size": [
                       648,
                       100
@@ -741,11 +723,11 @@
                     ]
                   },
                   {
-                    "text": "Save שומר גם את ההגדרות של כל 8 ה-Sound FX ואיזה אפקט דולק. Load מחזיר אותם בדיוק. פריסטים של Factory 64 ופריסטים ישנים נטענים בלי לשנות את ה-Sound FX.",
-                    "img": "assets/guide/c/sfx-on.jpg",
+                    "text": "Save שומר גם את ההגדרות של כל 12 ה-Sound FX ואיזה אפקט דולק. Load מחזיר אותם בדיוק. פריסטים של Factory 64 ופריסטים ישנים נטענים בלי לשנות את ה-Sound FX.",
+                    "img": "assets/guide/c/sfx13-on.jpg",
                     "size": [
-                      190,
-                      180
+                      160,
+                      185
                     ]
                   },
                   {
@@ -1291,20 +1273,10 @@
                     ]
                   },
                   {
-                    "text": "הפריסטים הם Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate, ו-Wire Glitch.",
-                    "img": "assets/guide/c/dfx-grid.jpg",
-                    "size": [
-                      680,
-                      545
-                    ]
+                    "text": "הפריסטים הם Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate, ו-Wire Glitch."
                   },
                   {
-                    "text": "לחיצה ארוכה פותחת Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לפריסט הזה. Transpose רץ מ-12- עד 12 חצאי טונים. הסליידרים נשארים רק כל עוד הפריסט נשאר נבחר.",
-                    "img": "assets/guide/c/dfx-sliders.jpg",
-                    "size": [
-                      680,
-                      495
-                    ]
+                    "text": "לחיצה ארוכה פותחת את הכפתורים של הפריסט: AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, ומתחתם סרגל ה-Transpose. ‏LOW, ‏MID ו-HIGH מוצגים ב-dB. ‏Transpose נע מ-12 חצאי טונים למטה עד 12 למעלה. ההגדרות נשארות רק כל עוד הפריסט נשאר נבחר."
                   }
                 ]
               },
@@ -1403,7 +1375,7 @@
                 ]
               },
               {
-                "text": "גרירה על Swing קובעת swing מ-0% עד 100%. גרירה על BPM קובעת את הטמפו מ-60 עד 200. BPM, Swing, והווליום של השורות פועלים בזמן אמת: שינוי שעושים בזמן שהתופים מנגנים נשאר גם כשהפטרן הבא מתחיל.",
+                "text": "גרירה על Swing קובעת swing מ-0% עד 100%. גרירה על BPM קובעת את הטמפו מ-1 עד 240. BPM, Swing, והווליום של השורות פועלים בזמן אמת: שינוי שעושים בזמן שהתופים מנגנים נשאר גם כשהפטרן הבא מתחיל.",
                 "img": "assets/guide/c/drum-swing-bpm.jpg",
                 "size": [
                   470,
@@ -1757,20 +1729,10 @@
                     ]
                   },
                   {
-                    "text": "הקשה על פריסט בוחרת אותו. הקשה על הפריסט שכבר נבחר מכבה אותו. הפריסטים הם Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate, ו-Dust Weave.",
-                    "img": "assets/guide/c/lfx-grid.jpg",
-                    "size": [
-                      680,
-                      540
-                    ]
+                    "text": "הקשה על פריסט בוחרת אותו. הקשה על הפריסט שכבר נבחר מכבה אותו. הפריסטים הם Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate, ו-Dust Weave."
                   },
                   {
-                    "text": "לחיצה ארוכה פותחת Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לפריסט הזה. Transpose רץ מ-12- עד 12 חצאי טונים. הסליידרים נשארים רק כל עוד הפריסט נשאר נבחר.",
-                    "img": "assets/guide/c/lfx-sliders.jpg",
-                    "size": [
-                      680,
-                      500
-                    ]
+                    "text": "לחיצה ארוכה פותחת את הכפתורים של הפריסט: AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, ומתחתם סרגל ה-Transpose. ‏LOW, ‏MID ו-HIGH מוצגים ב-dB. ‏Transpose נע מ-12 חצאי טונים למטה עד 12 למעלה. ההגדרות נשארות רק כל עוד הפריסט נשאר נבחר."
                   }
                 ]
               }
@@ -1839,20 +1801,10 @@
                     ]
                   },
                   {
-                    "text": "הקשה על פריסט בוחרת אותו. הקשה על הפריסט שכבר נבחר מכבה אותו. הפריסטים הם Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap, ו-Wire Grit.",
-                    "img": "assets/guide/c/mfx-grid.jpg",
-                    "size": [
-                      680,
-                      560
-                    ]
+                    "text": "הקשה על פריסט בוחרת אותו. הקשה על הפריסט שכבר נבחר מכבה אותו. הפריסטים הם Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap, ו-Wire Grit."
                   },
                   {
-                    "text": "לחיצה ארוכה פותחת Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, ו-Reverb לפריסט הזה. Transpose רץ מ-12- עד 12 חצאי טונים. הסליידרים נשארים רק כל עוד הפריסט נשאר נבחר.",
-                    "img": "assets/guide/c/mfx-sliders.jpg",
-                    "size": [
-                      680,
-                      510
-                    ]
+                    "text": "לחיצה ארוכה פותחת את הכפתורים של הפריסט: AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, ומתחתם סרגל ה-Transpose. ‏LOW, ‏MID ו-HIGH מוצגים ב-dB. ‏Transpose נע מ-12 חצאי טונים למטה עד 12 למעלה. ההגדרות נשארות רק כל עוד הפריסט נשאר נבחר."
                   }
                 ]
               },
@@ -2381,6 +2333,9 @@
                   720,
                   80
                 ]
+              },
+              {
+                "text": "בכרטיס Recording finished יש Master this take, ‏Save as-is ו-Delete. ‏Delete שואל קודם, ואז מוחק את ההקלטה לצמיתות."
               },
               {
                 "text": "Beginner ו-Advanced למעלה מחליפים תצוגה. Close mastering שואל קודם אם המאסטר עוד לא יוצא.",
@@ -3282,7 +3237,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.12, 78.3MB, שמביאה את המיקסר האנלוגי ואת חלון המאסטרינג. מי שקונה Pro מקבל את גרסה 1.12 דרך Google Play. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.13 בבדיקה של Google ועדיין לא זמינה. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
+        "body": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.13, 75.7MB, שמביאה אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. מי שקונה Pro מקבל את גרסה 1.13 דרך Google Play. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
           "L Studio Pro לאנדרואיד ב-Google Play, ‏24.90 ‏₪",
@@ -3317,7 +3272,7 @@
         "navLabel": "עדכונים",
         "pageTitle": "מה חדש ב-L Studio.",
         "pageKicker": "L-STUDIO / עדכונים",
-        "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.12, שמביאה את המיקסר האנלוגי ואת חלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.13 בבדיקה של Google ועדיין לא זמינה.",
+        "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.13, שמביאה אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
         "tickerLabel": "עדכונים",
         "statusLabels": {
           "in_progress": "בעבודה",
@@ -3332,10 +3287,10 @@
         "items": [
           {
             "id": "app-1-13-fm-sound-fx",
-            "status": "upcoming",
-            "title": "בבדיקה של Google, עדיין לא זמינה: גרסה 1.13 עם אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB",
-            "ticker": "בבדיקה של Google, עדיין לא זמינה: גרסה 1.13 עם אפקט FM של 4 אופרטורים, עמודים ב-Sound FX ו-EQ ב-dB",
-            "summary": "גרסה 1.13 בבדיקה של Google. היא עדיין לא ב-Google Play. היא מביאה אפקט FM אמיתי עם 4 אופרטורים ו-8 אלגוריתמים, חלון Sound FX חדש עם עמודים, כפתורים מסתובבים בכל חלונות האפקטים ו-EQ ב-dB.",
+            "status": "shipped",
+            "title": "עכשיו ב-Google Play: גרסה 1.13 עם אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB",
+            "ticker": "עכשיו ב-Google Play: גרסה 1.13 עם אפקט FM של 4 אופרטורים, עמודים ב-Sound FX ו-EQ ב-dB",
+            "summary": "גרסה 1.13 עכשיו ב-Google Play. היא מביאה אפקט FM אמיתי עם 4 אופרטורים ו-8 אלגוריתמים, חלון Sound FX חדש עם עמודים, כפתורים מסתובבים בכל חלונות האפקטים ו-EQ ב-dB.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -3400,7 +3355,7 @@
           {
             "id": "app-1-12-mixer-demo",
             "status": "shipped",
-            "title": "עכשיו ב-Google Play: גרסה 1.12 עם מיקסר אנלוגי וחלון מאסטרינג",
+            "title": "גרסה 1.12 עם מיקסר אנלוגי וחלון מאסטרינג",
             "summary": "",
             "videoId": "f6bLB0IP1ks",
             "videoTitle": "סרטון: מיקסר אנלוגי בגרסה 1.12",
@@ -3460,14 +3415,14 @@
                 }
               }
             },
-            "ticker": "עכשיו ב-Google Play: גרסה 1.12 עם מיקסר אנלוגי וחלון מאסטרינג"
+            "ticker": "גרסה 1.12 עם מיקסר אנלוגי וחלון מאסטרינג"
           },
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "shipped",
             "title": "מאז גרסה 1.11, עכשיו ב-Google Play: סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
             "ticker": "עכשיו ב-Google Play: עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך",
-            "summary": "מאז גרסה 1.11, עכשיו ב-Google Play עם גרסה 1.12: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
+            "summary": "מאז גרסה 1.11, עכשיו ב-Google Play עם גרסה 1.13: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -3541,15 +3496,9 @@
             "status": "shipped",
             "title": "מאז גרסה 1.10, עכשיו ב-Google Play: Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
             "ticker": "עכשיו ב-Google Play: עורך לופ חדש, גם לערוצי המיקרופון, עם חיתוך, אקולייזר ובחירה של איזה מקצב תופים מתנגן עם הלופ וכמה פעמים הוא חוזר",
-            "summary": "מאז גרסה 1.10, עכשיו ב-Google Play עם גרסה 1.12: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
+            "summary": "מאז גרסה 1.10, עכשיו ב-Google Play עם גרסה 1.13: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
-            "images": [
-              "/assets/posters/he/p05-loop-editor-w630.jpg"
-            ],
-            "imageAlts": [
-              "פוסטר: ערכו כל לולאה. עורך הלופ: חיתוך, חזרות, איזון וקשירה לקצב התופים."
-            ],
             "sections": [
               {
                 "title": "לופר",
@@ -3652,13 +3601,7 @@
             "ticker": "חדש ב-1.09: כמה גלים יחד ותופים בזמן אמת",
             "summary": "ב-Google Play, גרסה 1.09: על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
             "href": "/guide",
-            "cta": "לפתיחת המדריך",
-            "images": [
-              "/assets/updates/sound-109.jpg"
-            ],
-            "imageAlts": [
-              "מסך Sound בגרסה 1.09: אייקון על כל כפתור גל, Sine ו-Saw דולקים יחד."
-            ]
+            "cta": "לפתיחת המדריך"
           },
           {
             "id": "sound-fx-looper-pages",
@@ -3667,15 +3610,7 @@
             "ticker": "Sound FX וצבעים לעמודי הלופר",
             "summary": "מאז גרסה 1.08: 8 אפקטי Sound FX חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים שומרים את ההגדרות של כל ה-8. לכל עמוד בלופר יש שם ואחד מ-8 צבעים. הנובים מראים את הערך בטבעת זהב, והמדריך באפליקציה מלמד את כל זה.",
             "href": "/guide",
-            "cta": "למדריך",
-            "images": [
-              "/assets/updates/sound-fx.jpg",
-              "/assets/updates/looper-pages.jpg"
-            ],
-            "imageAlts": [
-              "חלון Sound FX עם Psy Orbit נבחר.",
-              "מסך Loop עם מספרי עמודים צבעוניים ושם עמוד."
-            ]
+            "cta": "למדריך"
           },
           {
             "id": "exclusive-packs-gallery",
@@ -3697,15 +3632,7 @@
             "status": "shipped",
             "title": "מצב Live, מילים, Mic FX ו-Drum FX",
             "ticker": "מצב Live, מילים, Mic FX ו-Drum FX",
-            "summary": "מאז גרסה 1.08: מצב LIVE נועל שמות, Clear וטעינת קבצים בזמן נגינה. חלון המילים גולל את הטקסט בזמן שאתם שרים. למיקרופון ולתופים יש 8 אפקטים לכל אחד, לכל ערוץ לופ יש Looper FX, וכפתור Back אחד מחזיר את ההקלטה האחרונה שנמחקה.",
-            "images": [
-              "/assets/updates/lyrics.jpg",
-              "/assets/updates/mic-fx.jpg"
-            ],
-            "imageAlts": [
-              "חלון המילים פתוח מעל האפליקציה.",
-              "לוח Mic FX. Phone Line נבחר."
-            ]
+            "summary": "מאז גרסה 1.08: מצב LIVE נועל שמות, Clear וטעינת קבצים בזמן נגינה. חלון המילים גולל את הטקסט בזמן שאתם שרים. למיקרופון ולתופים יש 8 אפקטים לכל אחד, לכל ערוץ לופ יש Looper FX, וכפתור Back אחד מחזיר את ההקלטה האחרונה שנמחקה."
           }
         ]
       },
@@ -3721,141 +3648,108 @@
         "next": "השקופית הבאה",
         "slide": "שקופית {n} מתוך {total}",
         "slides": {
-          "sound-presets": {
-            "title": "Presets: 8 מקומות, 8 עמודים",
-            "text": "פריסט שומר את הסאונד יחד עם Sound FX והגלים הדולקים. לחיצה ארוכה על Presets שומרת לפריסט שטעון."
-          },
           "sound-scales": {
-            "title": "Key וסקאלות",
-            "text": "בוחרים Major או Minor מכל תו שורש, מ-C עד B. סולם רק מסמן את הקלידים שלו ולא משנה את התדרים שלהם."
+            "title": "Key וסולמות",
+            "text": "בוחרים מז׳ור או מינור מכל אחד מ־12 תווי הבסיס, או SCALE OFF. נקודות מסמנות את תווי הסולם על הקלידים. התדרים לא משתנים."
           },
           "mic-channels": {
-            "title": "ערוצים עם סאונד משלהם",
-            "text": "שישה ערוצים בשני עמודים. לכל ערוץ HPF, Pres, FX, עוצמה ו-L/R משלו, ועוד השתקה וסולו."
-          },
-          "mic-fx": {
-            "title": "Mic FX לכל ערוץ",
-            "text": "שמונה פריסטים. הקשה בוחרת, הקשה נוספת מכבה, ולחיצה ארוכה פותחת את המחוונים, כולל Transpose מ-‎-12 עד 12."
+            "title": "הקלטת Mic",
+            "text": "שלושה ערוצי שירה בעמוד 1. גיטרה, בס וכלי נגינה בעמוד 2. כולל ניטור ובצע שוב."
           },
           "loop-looper": {
-            "title": "32 ערוצים, 8 עמודים",
-            "text": "ארבעה ערוצים בכל עמוד. הקלטה יכולה להימשך עד 30 דקות, ו-Redo מחזיר הקלטה שמחקתם."
+            "title": "Looper",
+            "text": "32 ערוצי לולאה ב־8 עמודים. מקליטים, מנגנים ומבצעים שוב."
           },
           "loop-editor": {
-            "title": "Loop Editor",
-            "text": "חותכים את ההקלטה, קובעים את נקודות הלופ ומעצבים עם EQ, Gain ו-Squeeze. שמונה תיבות קושרות את הלופ לקצב תופים."
-          },
-          "loop-fx": {
-            "title": "Looper FX",
-            "text": "שמונה פריסטים לערוץ. הקשה בוחרת, ולחיצה ארוכה פותחת Amount, EQ, Mid-sweep, Transpose ו-Reverb שלו."
+            "title": "עורך לולאות",
+            "text": "חיתוך, לולאה ואקולייזר. לחיצה ארוכה על קופסת קצב פותחת חזרות."
           },
           "loop-page-name": {
-            "title": "שם וצבע לעמוד",
-            "text": "לחיצה ארוכה על מספר עמוד פותחת את Page name. מקלידים שם ובוחרים אחד מ-8 צבעים. הצבע גם צובע את הגלים של העמוד."
+            "title": "שם לכל עמוד",
+            "text": "לחיצה ארוכה על מספר עמוד מאפשרת לתת לו שם ולבחור אחד מ־8 צבעים."
           },
           "sound-fx": {
-            "title": "Sound FX",
-            "text": "שמונה אפקטים שעוקבים אחרי קצב התופים, אחד פעיל בכל רגע. לחיצה ארוכה פותחת את המחוונים: Amount, EQ, Mid-sweep, Transpose ו-Reverb."
-          },
-          "sound-keyboards": {
-            "title": "שתי מקלדות",
-            "text": "לוחצים על + לפתיחת מקלדת שנייה, אוקטבה אחת גבוה יותר. היא נשארת פתוחה במעבר בין Sound ל-Pad."
+            "title": "אפקטי Sound",
+            "text": "12 אפקטים, 4 מהם חדשים. מחליקים או מקישים על החצים כדי לעבור עמוד. הקשה מפעילה אפקט, לחיצה ארוכה פותחת את הכפתורים שלו."
           },
           "mic-editor": {
-            "title": "Mic Editor",
-            "text": "הקשה על הוויזואלייזר של ערוץ פותחת אותו כשיש בערוץ הקלטה. חיתוך, לולאה, EQ, Gain ו-Squeeze, עם 8 תיבות קצב. Save שומר את השינויים בפרויקט המיקרופון."
+            "title": "עורך Mic",
+            "text": "חיתוך, לולאה, EQ, Gain ו־Squeeze. לחיצה ארוכה על קופסת קצב פותחת חזרות."
           },
           "mic-lyrics": {
-            "title": "טלפרומפטר למילים",
-            "text": "הקשה על Edit מאפשרת להקליד או להדביק מילים. Play גולל אותן ו-Pause עוצר. Speed נע בין 20 ל-150 וגודל הטקסט בין 14 ל-48. הכול נשמר בפלאפון."
+            "title": "מילים",
+            "text": "טלפרומפטר למילים שלכם. כותבים או מדביקים, לוחצים נגן כדי לגלול, וקובעים מהירות וגודל טקסט."
           },
           "pad-live": {
-            "title": "משטח חי",
-            "text": "מחזיקים צליל וגוררים על המשטח. הצליל עוקב אחרי האצבע כל עוד הצליל מנגן. WAH, OCT ו-Vibrato הם נובים מ-0 עד 100 אחוז שמעצבים רק את צליל המקלדת."
-          },
-          "pad-keyboard": {
-            "title": "מקלדת שנייה ב-Pad",
-            "text": "לוחצים על + ליד שורת VOICES לפתיחת מקלדת שנייה, אוקטבה אחת גבוה יותר. הנובים WAH, OCT ו-Vibrato מוסתרים כשהיא פתוחה."
-          },
-          "pad-targets": {
-            "title": "יעדי המשטח",
-            "text": "KEY, MIC, LOOP ו-DRUM קובעים מה המשטח מזיז, ואפשר להדליק כמה יחד. מחזיקים 1/4, 1/8, 1/16 או 1/32 כדי לחזור עליהם במהירות בקצב ה-BPM של התופים, ומחזיקים STOP כדי להחליש אותם בהדרגה."
+            "title": "משטח נגינה חי",
+            "text": "גוררים על המשטח והצליל עוקב אחרי האצבע. בוחרים KEY, MIC, LOOP או DRUM. מחזיקים 1/4 עד 1/32 לחזרה."
           },
           "drum-rows": {
             "title": "כל 8 השורות",
-            "text": "הקשה על +4 מציגה את FX 1, FX 2, FX 3 ו-Voice מתחת לארבע השורות הראשונות ומסתירה את המקלדת. המקש מתחלף ל-‎-4, והקשה נוספת מסתירה את השורות ומחזירה את המקלדת."
-          },
-          "drum-main": {
-            "title": "מסך Drum",
-            "text": "החצים מחליפים קיט וסאמפלים, והנובים קובעים Drum Vol, Swing ו-BPM. לכל אחד מ-8 המקצבים יש 16 צעדים בכל שורה. בכל שורה יש LOAD, חצים, סליידר ווליום ו-L/R. הקשה על +4 מציגה את FX 1, FX 2, FX 3 ו-Voice."
+            "text": "הקשה על הכפתור פלוס 4 מציגה את FX 1, FX 2, FX 3 ו־Voice. המקלדת מוסתרת והכפתור מתחלף למינוס 4. הקשה נוספת מחזירה את המקלדת."
           },
           "drum-banks": {
-            "title": "בנקי סאמפלים",
-            "text": "שמונה שורות, והקשה על שם שורה פותחת את רשימת הסאונדים שלה מהבנקים Factory ו-Exclusive. כל שורה מציגה רק סוג סאונד משלה."
+            "title": "בנקי דגימות",
+            "text": "שמונה שורות תופים, ולכל שורה בורר משלה. בוחרים מהבנקים Factory ו־Exclusive."
           },
           "drum-loaded": {
-            "title": "הסאמפלים שלכם (LOADED)",
-            "text": "בכל אחת מ-8 השורות יש בנק LOADED של עד 88 סאמפלים משלכם, עד 30 שניות כל אחד, שנשמר לבד. פסי ההתחלה והסוף חותכים את הסאמפל. SAVE שומר, RESET מחזיר לאורך מלא, RENAME נותן שם של עד 24 תווים ו-DELETE מוחק."
-          },
-          "drum-fx": {
-            "title": "Drum FX",
-            "text": "שמונה פריסטים לתופים. הקשה מדליקה, הקשה נוספת מכבה, ולחיצה ארוכה פותחת את המחוונים."
-          },
-          "drum-repeats": {
-            "title": "Pattern repeats",
-            "text": "לחיצה ארוכה על מספר קצב פותחת את החלון. בוחרים 1 עד 10, מקלידים מספר עד 88 בתיבה, או בוחרים אינסוף או DEFAULT. COPY ו-PASTE מעבירים קצב שלם למספר אחר."
+            "title": "הדגימות שלכם",
+            "text": "LOADED: עד 88 דגימות משלכם בכל שורה, נשמרות אוטומטית. חותכים עם פסי ההתחלה והסוף. SAVE, RESET, RENAME ו־DELETE."
           },
           "home-sound": {
             "title": "עצבו את הצליל שלכם",
             "text": "שלבו סוגי גל, התחילו מצליל מוכן וכוונו כל קליד לסולם שלכם.",
-            "alt": "1/8: עצבו את הצליל שלכם. שלבו סוגי גל, התחילו מצליל מוכן וכוונו כל קליד לסולם שלכם."
-          },
-          "home-sound-fx": {
-            "title": "צבעו כל צליל",
-            "text": "בחרו עולם אפקטים לקלידים ולתופים, וכווננו את הגוון שלו.",
-            "alt": "2/8: צבעו כל צליל. בחרו עולם אפקטים לקלידים ולתופים, וכווננו את הגוון שלו."
+            "alt": "1/7: עצבו את הצליל שלכם. שלבו סוגי גל, התחילו מצליל מוכן וכוונו כל קליד לסולם שלכם."
           },
           "home-looper": {
             "title": "בנו שכבות של לולאות",
             "text": "הקליטו לולאות ערוץ אחר ערוץ, חתכו אותן לפי הקצב ובנו מהן קטע שלם.",
-            "alt": "3/8: בנו שכבות של לולאות. הקליטו לולאות ערוץ אחר ערוץ, חתכו אותן לפי הקצב ובנו מהן קטע שלם."
+            "alt": "2/7: בנו שכבות של לולאות. הקליטו לולאות ערוץ אחר ערוץ, חתכו אותן לפי הקצב ובנו מהן קטע שלם."
           },
           "home-live-pad": {
             "title": "נגנו בזמן אמת",
             "text": "שנו את הצליל באצבע אחת והפעילו חזרות בקצב תוך כדי הופעה.",
-            "alt": "4/8: נגנו בזמן אמת. שנו את הצליל באצבע אחת והפעילו חזרות בקצב תוך כדי הופעה."
+            "alt": "3/7: נגנו בזמן אמת. שנו את הצליל באצבע אחת והפעילו חזרות בקצב תוך כדי הופעה."
           },
           "home-drums": {
             "title": "בנו את הקצב שלכם",
             "text": "תכנתו תבניות צעד אחר צעד, בחרו כל תוף מתוך ספריות דגימות ועצבו אותו.",
-            "alt": "5/8: בנו את הקצב שלכם. תכנתו תבניות צעד אחר צעד, בחרו כל תוף מתוך ספריות דגימות ועצבו אותו."
+            "alt": "4/7: בנו את הקצב שלכם. תכנתו תבניות צעד אחר צעד, בחרו כל תוף מתוך ספריות דגימות ועצבו אותו."
           },
           "home-mixer": {
             "title": "המיקסר האנלוגי שלכם",
             "text": "ראו היכן יושבים התופים, הלולאות והמיקרופון, ועצבו מהם מיקס אחד מאוזן.",
-            "alt": "6/8: המיקסר האנלוגי שלכם. ראו היכן יושבים התופים, הלולאות והמיקרופון, ועצבו מהם מיקס אחד מאוזן."
+            "alt": "5/7: המיקסר האנלוגי שלכם. ראו היכן יושבים התופים, הלולאות והמיקרופון, ועצבו מהם מיקס אחד מאוזן."
           },
           "home-mastering-style": {
             "title": "סיימו את השיר",
             "text": "בחרו סגנון צליל, השוו לפני ואחרי וייצאו את הקובץ הסופי.",
-            "alt": "7/8: סיימו את השיר. בחרו סגנון צליל, השוו לפני ואחרי וייצאו את הקובץ הסופי."
+            "alt": "6/7: סיימו את השיר. בחרו סגנון צליל, השוו לפני ואחרי וייצאו את הקובץ הסופי."
           },
           "home-mastering-measure": {
             "title": "מדדו כל פרט",
             "text": "מדידה מדויקת של עוצמה, דינמיקה וסטריאו מראה איך השיר שלכם נשמע באמת.",
-            "alt": "8/8: מדדו כל פרט. מדידה מדויקת של עוצמה, דינמיקה וסטריאו מראה איך השיר שלכם נשמע באמת."
+            "alt": "7/7: מדדו כל פרט. מדידה מדויקת של עוצמה, דינמיקה וסטריאו מראה איך השיר שלכם נשמע באמת."
           },
           "sound-wave-panel": {
-            "title": "לוח הגל: אוקטבה, גוון ודפים",
-            "text": "לחיצה ארוכה על מקש גל פותחת את הלוח שלו: מקשי האוקטבה -2, -1, 0, +1 ו-+2, הכפתורים LOW, MID, HIGH, HPF, LPF ו-GAIN, ו-4 דפים, כל דף עוד קול של אותו גל. כל שינוי נשמע מיד ונשמר."
+            "title": "לוח הגל",
+            "text": "לחיצה ארוכה על מקש גל: אוקטבה, גוון ו־4 דפים, כל דף עוד קול של אותו גל. כל שינוי נשמע מיד ונשמר."
           },
           "loop-mixer": {
             "title": "מיקסר אנלוגי",
-            "text": "הקשה על LIVE SCOPE פותחת אותו. לתופים, ללופר ולמיק יש Drive, HPF, EQ, Comp, Pan, Width ופיידר, ועוד ערוץ Master. SPECTRUM ו-MIX MAP מראים איפה הם מתנגשים. 8 פריסטים."
+            "text": "הקשה על LIVE SCOPE למעלה. לתופים, ללופר ולמיקרופון יש דרייב, מסנן, גוון, דחיסה, מיקום ועוצמה, ועוד ערוץ מאסטר. 8 פריסטים."
           },
           "mic-mastering": {
             "title": "מאסטרינג",
-            "text": "אחרי הקלטת WAV פותחים אותו ב-Master this take. בוחרים אחד מ-8 סגנונות, משווים בין A ל-B, ומייצאים ל-WAV, MP3 או FLAC. הקבצים נשארים בפלאפון."
+            "text": "אחרי הקלטת WAV מקישים Master this take. 8 סגנונות, A ו־B להשוואה, ואז ייצוא ל־WAV, MP3 או FLAC. הקבצים נשארים בפלאפון."
+          },
+          "sound-fm": {
+            "title": "FM אמיתי",
+            "text": "4 אופרטורים. ALGO בוחר 1 מ־8 חיבורים, RATIO את הגובה, INDEX את הבהירות, FEEDBK את החספוס, DECAY את הדעיכה ו־MIX את הכמות."
+          },
+          "sound-frequencies": {
+            "title": "כיוון תדרים",
+            "text": "מקלידים Hz לכל אחד מ־8 הקלידים, או טוענים סולם מוכן כמו חיג׳אז או כורד. שומרים עד 8 פריסטים משלכם."
           }
         }
       }
@@ -3875,12 +3769,12 @@
         "updates": "Updates"
       },
       "hero": {
-        "kicker": "Android music app · Version 1.12, on Google Play now",
+        "kicker": "Android music app · Version 1.13, on Google Play now",
         "title": "Make music on your phone.",
         "body": "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.",
         "ctaPrimary": "Watch the short",
         "ctaSecondary": "How it started",
-        "stat1": "78.3 MB",
+        "stat1": "75.7 MB",
         "stat2": "Android 7.0+",
         "stat3": "No ads"
       },
@@ -4007,8 +3901,8 @@
           {
             "question": "Is L Studio on Google Play yet, and how much is it?",
             "answer": [
-              "L Studio Pro for Android is available now on Google Play, for $8, with version 1.12, which brings the Analog Mixer and the Mastering window. It is a one-time payment. New versions arrive as automatic updates through Google Play once they are approved. Version 1.13 is in Google review and is not available yet.",
-              "Once it is released, you buy it through Google Play. This website does not sell the app and has no download button."
+              "L Studio Pro for Android is available now on Google Play, for $8, with version 1.13, which brings a real FM effect, a new Sound FX window and EQ in dB, on top of the Analog Mixer and the Mastering window. It is a one-time payment. New versions arrive as automatic updates through Google Play once they are approved.",
+              "You buy it through Google Play. This website does not sell the app and has no download button."
             ]
           },
           {
@@ -4023,7 +3917,7 @@
           {
             "question": "Which devices does it run on, and in which languages?",
             "answer": [
-              "L Studio is an Android app. It needs Android 7.0 or newer. Version 1.12 is 78.3 MB. There is no iPhone version for now.",
+              "L Studio is an Android app. It needs Android 7.0 or newer. Version 1.13 is 75.7 MB. There is no iPhone version for now.",
               "It was tested on various Android phones. It was not tested on tablets, so tablet support is not promised.",
               "On a phone the app stays upright, in portrait.",
               "The app comes in four languages: English, Hebrew, Russian, and Arabic. You switch in Settings, on the Language row."
@@ -4060,7 +3954,7 @@
             "answer": [
               "The Analog Mixer opens with a tap on LIVE SCOPE at the top of the screen. Drums, Looper, and Mic each have a strip with Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S, and a fader. The Master strip works on the whole mix. SPECTRUM and MIX MAP show where the channels sit and where they clash. There are 8 presets.",
               "The Mastering window finishes a WAV recording or an imported song for streaming. Pick one of 8 styles, listen to A (before) and B (the style), then tap Start mastering and export. It opens after a WAV recording (Master this take) or from MASTERING in Settings.",
-              "Version 1.12 brings both, and it is on Google Play now."
+              "Both came in version 1.12, and version 1.13 on Google Play now has them too."
             ]
           },
           {
@@ -4474,27 +4368,30 @@
                 "title": "Sound FX",
                 "steps": [
                   {
-                    "text": "A tap on FX opens Sound FX. The keys still play while it is open.",
-                    "img": "assets/guide/c/sfx-title.jpg",
+                    "text": "A tap on FX opens Sound FX above the keyboards. The keys still play while it is open.",
+                    "img": "assets/guide/c/sfx13-title.jpg",
                     "size": [
                       680,
-                      170
+                      120
                     ]
                   },
                   {
-                    "text": "There are 8 effects: Sub Forge, Depth Drop, Bass Clamp, Floor Pump, Iron Growl, Psy Orbit, Thick Vein, and Kick Bond.",
-                    "img": "assets/guide/c/sfx-grid.jpg",
+                    "text": "There are 12 effects: Sub Forge, Depth Drop, Bass Clamp, Floor Pump, Iron Growl, Psy Orbit, Thick Vein, Kick Bond, and the new Step Ladder, Velvet Rotor, Mirror Tape, and FM. They sit on pages. Swipe left and right, or tap the arrows; the counter shows the page, for example 3/3.",
+                    "img": "assets/guide/c/sfx13-pages.jpg",
                     "size": [
-                      680,
-                      420
+                      648,
+                      258
                     ]
+                  },
+                  {
+                    "text": "With one keyboard and the settings closed, a page holds 8 effects. With two keyboards or the settings open, it holds 4. The window sits above the keyboards, so you keep playing."
                   },
                   {
                     "text": "A tap turns one on. A tap on the one that is on turns FX off. Only one is on at a time.",
-                    "img": "assets/guide/c/sfx-on.jpg",
+                    "img": "assets/guide/c/sfx13-on.jpg",
                     "size": [
-                      190,
-                      180
+                      160,
+                      185
                     ]
                   },
                   {
@@ -4514,38 +4411,14 @@
                     ]
                   },
                   {
-                    "text": "After the drums stop, they keep the last drum tempo. Depth Drop drops again every 2 beats and on each new note.",
-                    "img": "assets/guide/c/sfx-grid.jpg",
-                    "size": [
-                      680,
-                      420
-                    ]
+                    "text": "After the drums stop, they keep the last drum tempo. Depth Drop drops again every 2 beats and on each new note."
                   },
                   {
-                    "text": "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that effect. Each of the 8 effects keeps its own settings when you switch. Transpose runs from -12 to 12 and changes all 8 effects, Sub Forge included.",
-                    "img": "assets/guide/c/sfx-tone.jpg",
-                    "size": [
-                      720,
-                      510
-                    ]
-                  },
-                  {
-                    "text": "The steps below are for version 1.13, which is in Google review and not available yet. Version 1.12 on Google Play works as described above."
-                  },
-                  {
-                    "text": "In 1.13, Sound FX has 12 effects on pages. Step Ladder, Velvet Rotor, Mirror Tape and FM are new. Swipe left and right, or tap the arrows; the counter shows the page, for example 3/3.",
-                    "img": "assets/guide/c/sfx13-pages",
-                    "size": [
-                      648,
-                      258
-                    ]
-                  },
-                  {
-                    "text": "With one keyboard and the settings closed, a page holds 8 effects. With two keyboards or the settings open, it holds 4. The window sits above the keyboards, so you keep playing."
+                    "text": "A long-press on an effect opens its knobs: RATE, AMOUNT, LOW, MID, HIGH, SWEEP, and REVERB, with the Transpose ruler below. Each effect keeps its own settings when you switch. Transpose runs from 12 semitones down to 12 up and changes every effect."
                   },
                   {
                     "text": "FM is a real FM effect with 4 operators. Long-press FM for its knobs: RATE, ALGO, RATIO, INDEX, FEEDBK, DECAY and MIX.",
-                    "img": "assets/guide/c/sfx13-fm-knobs",
+                    "img": "assets/guide/c/sfx13-fm-knobs.jpg",
                     "size": [
                       648,
                       134
@@ -4553,15 +4426,18 @@
                   },
                   {
                     "text": "Tap ALGO to choose one of 8 algorithms: A1 Stack, A2 Y, A3 Branch, A4 Twin mod, A5 2 Stacks, A6 1 to 3, A7 Stack+2 and A8 Organ. Each tile draws which operator modulates which.",
-                    "img": "assets/guide/c/sfx13-algos",
+                    "img": "assets/guide/c/sfx13-algos.jpg",
                     "size": [
                       648,
                       256
                     ]
                   },
                   {
+                    "text": "What the FM knobs do: RATIO sets the pitch of the modulator against the note, in steps from 0.5 to 7. INDEX sets how deep the modulation goes, so higher sounds brighter. FEEDBK feeds operator 1 back into itself for a rougher edge. DECAY sets how long the FM fades, from 1/16 of a beat to 4 beats. MIX blends the dry sound with the FM."
+                  },
+                  {
                     "text": "RATE can be turned even while the drums play, and SYNC locks it to the drums again. On FM, FM | EQ switches the knobs between FM and EQ.",
-                    "img": "assets/guide/c/sfx13-sync-eq",
+                    "img": "assets/guide/c/sfx13-sync-eq.jpg",
                     "size": [
                       648,
                       100
@@ -4601,11 +4477,11 @@
                     ]
                   },
                   {
-                    "text": "Save also stores the settings of all 8 Sound FX and which effect is on. Load brings them back exactly. Factory 64 presets and older presets load without changing the Sound FX.",
-                    "img": "assets/guide/c/sfx-on.jpg",
+                    "text": "Save also stores the settings of all 12 Sound FX and which effect is on. Load brings them back exactly. Factory 64 presets and older presets load without changing the Sound FX.",
+                    "img": "assets/guide/c/sfx13-on.jpg",
                     "size": [
-                      190,
-                      180
+                      160,
+                      185
                     ]
                   },
                   {
@@ -5151,20 +5027,10 @@
                     ]
                   },
                   {
-                    "text": "The presets are Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate, and Wire Glitch.",
-                    "img": "assets/guide/c/dfx-grid.jpg",
-                    "size": [
-                      680,
-                      545
-                    ]
+                    "text": "The presets are Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate, and Wire Glitch."
                   },
                   {
-                    "text": "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that preset. Transpose runs from -12 to 12 semitones. Those sliders stay only while that preset stays selected.",
-                    "img": "assets/guide/c/dfx-sliders.jpg",
-                    "size": [
-                      680,
-                      495
-                    ]
+                    "text": "A long-press opens the knobs of that preset: AMOUNT, LOW, MID, HIGH, SWEEP, and REVERB, with the Transpose ruler below. LOW, MID, and HIGH are in dB. Transpose runs from 12 semitones down to 12 up. The settings stay only while that preset stays selected."
                   }
                 ]
               },
@@ -5263,7 +5129,7 @@
                 ]
               },
               {
-                "text": "A drag on Swing sets swing from 0% to 100%. A drag on BPM sets the tempo from 60 to 200. BPM, Swing, and the row volumes are live: a change you make while the drums play stays when the next pattern starts.",
+                "text": "A drag on Swing sets swing from 0% to 100%. A drag on BPM sets the tempo from 1 to 240. BPM, Swing, and the row volumes are live: a change you make while the drums play stays when the next pattern starts.",
                 "img": "assets/guide/c/drum-swing-bpm.jpg",
                 "size": [
                   470,
@@ -5617,20 +5483,10 @@
                     ]
                   },
                   {
-                    "text": "A tap on a preset selects it. A tap on the selected preset turns it off. The presets are Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate, and Dust Weave.",
-                    "img": "assets/guide/c/lfx-grid.jpg",
-                    "size": [
-                      680,
-                      540
-                    ]
+                    "text": "A tap on a preset selects it. A tap on the selected preset turns it off. The presets are Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate, and Dust Weave."
                   },
                   {
-                    "text": "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that preset. Transpose runs from -12 to 12 semitones. Those sliders stay only while that preset stays selected.",
-                    "img": "assets/guide/c/lfx-sliders.jpg",
-                    "size": [
-                      680,
-                      500
-                    ]
+                    "text": "A long-press opens the knobs of that preset: AMOUNT, LOW, MID, HIGH, SWEEP, and REVERB, with the Transpose ruler below. LOW, MID, and HIGH are in dB. Transpose runs from 12 semitones down to 12 up. The settings stay only while that preset stays selected."
                   }
                 ]
               }
@@ -5699,20 +5555,10 @@
                     ]
                   },
                   {
-                    "text": "A tap on a preset selects it. A tap on the selected preset turns it off. The presets are Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap, and Wire Grit.",
-                    "img": "assets/guide/c/mfx-grid.jpg",
-                    "size": [
-                      680,
-                      560
-                    ]
+                    "text": "A tap on a preset selects it. A tap on the selected preset turns it off. The presets are Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap, and Wire Grit."
                   },
                   {
-                    "text": "A long-press opens Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose, and Reverb for that preset. Transpose runs from -12 to 12 semitones. Those sliders stay only while that preset stays selected.",
-                    "img": "assets/guide/c/mfx-sliders.jpg",
-                    "size": [
-                      680,
-                      510
-                    ]
+                    "text": "A long-press opens the knobs of that preset: AMOUNT, LOW, MID, HIGH, SWEEP, and REVERB, with the Transpose ruler below. LOW, MID, and HIGH are in dB. Transpose runs from 12 semitones down to 12 up. The settings stay only while that preset stays selected."
                   }
                 ]
               },
@@ -6241,6 +6087,9 @@
                   720,
                   80
                 ]
+              },
+              {
+                "text": "The Recording finished card offers Master this take, Save as-is, and Delete. Delete asks first, then deletes the recording for good."
               },
               {
                 "text": "Beginner and Advanced at the top switch the view. Close mastering asks first if the master is not exported yet.",
@@ -7142,7 +6991,7 @@
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro for Android is available now on Google Play, for $8. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android is available now on Google Play, for $8, with version 1.12, 78.3 MB, which brings the Analog Mixer and the Mastering window. Whoever buys Pro gets version 1.12 through Google Play. New versions arrive as automatic updates through Google Play once they are approved. Version 1.13 is in Google review and is not available yet. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
+        "body": "L Studio Pro for Android is available now on Google Play, for $8, with version 1.13, 75.7 MB, which brings a real FM effect, a new Sound FX window and EQ in dB, on top of the Analog Mixer and the Mastering window. Whoever buys Pro gets version 1.13 through Google Play. New versions arrive as automatic updates through Google Play once they are approved. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
           "L Studio Pro for Android on Google Play, $8",
@@ -7177,7 +7026,7 @@
         "navLabel": "Updates",
         "pageTitle": "What's new in L Studio.",
         "pageKicker": "L-STUDIO / UPDATES",
-        "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.12, which brings the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved. Version 1.13 is in Google review and is not available yet.",
+        "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.13, which brings a real FM effect, a new Sound FX window and EQ in dB, on top of the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved.",
         "tickerLabel": "Updates",
         "statusLabels": {
           "in_progress": "In progress",
@@ -7192,10 +7041,10 @@
         "items": [
           {
             "id": "app-1-13-fm-sound-fx",
-            "status": "upcoming",
-            "title": "In Google review, not available yet: version 1.13 with a real FM effect, a new Sound FX window and EQ in dB",
-            "ticker": "In Google review, not available yet: version 1.13 with a 4-operator FM effect, Sound FX pages and EQ in dB",
-            "summary": "Version 1.13 is in Google review. It is not on Google Play yet. It brings a real FM effect with 4 operators and 8 algorithms, a new Sound FX window with pages, knobs in every effect window, and EQ in dB.",
+            "status": "shipped",
+            "title": "On Google Play now: version 1.13 with a real FM effect, a new Sound FX window and EQ in dB",
+            "ticker": "On Google Play: version 1.13 with a 4-operator FM effect, Sound FX pages and EQ in dB",
+            "summary": "Version 1.13 is on Google Play now. It brings a real FM effect with 4 operators and 8 algorithms, a new Sound FX window with pages, knobs in every effect window, and EQ in dB.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
@@ -7260,7 +7109,7 @@
           {
             "id": "app-1-12-mixer-demo",
             "status": "shipped",
-            "title": "On Google Play now: version 1.12 with an analog mixer and a mastering window",
+            "title": "Version 1.12 with an analog mixer and a mastering window",
             "summary": "",
             "videoId": "f6bLB0IP1ks",
             "videoTitle": "Video: version 1.12 analog mixer",
@@ -7320,14 +7169,14 @@
                 }
               }
             },
-            "ticker": "On Google Play: version 1.12 with an analog mixer and a mastering window"
+            "ticker": "Version 1.12 with an analog mixer and a mastering window"
           },
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "shipped",
             "title": "Since version 1.11, now on Google Play: your own drum samples, Keep playing, and an octave for each wave",
             "ticker": "On Google Play: up to 88 of your own samples on every drum row, with trim",
-            "summary": "Since version 1.11, now on Google Play with version 1.12: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
+            "summary": "Since version 1.11, now on Google Play with version 1.13: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
@@ -7401,15 +7250,9 @@
             "status": "shipped",
             "title": "Since version 1.10, now on Google Play: Loop Editor, recordings up to 30 minutes and full session saving",
             "ticker": "On Google Play: a new Loop Editor, also for Mic, with trim, EQ, and a choice of which drum rhythm plays with the loop and how many times it repeats",
-            "summary": "Since version 1.10, now on Google Play with version 1.12: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
+            "summary": "Since version 1.10, now on Google Play with version 1.13: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
             "href": "/guide",
             "cta": "Open the guide",
-            "images": [
-              "/assets/posters/en/p05-loop-editor-w630.jpg"
-            ],
-            "imageAlts": [
-              "Poster: Edit Every Loop. The Loop Editor: trim, repeat, EQ, and lock it to the drum rhythm."
-            ],
             "sections": [
               {
                 "title": "Looper",
@@ -7512,13 +7355,7 @@
             "ticker": "New in 1.09: layered waves and live drums",
             "summary": "On Google Play, version 1.09: Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
             "href": "/guide",
-            "cta": "Open guide",
-            "images": [
-              "/assets/updates/sound-109.jpg"
-            ],
-            "imageAlts": [
-              "The Sound screen in 1.09: an icon on each wave button, Sine and Saw on together."
-            ]
+            "cta": "Open guide"
           },
           {
             "id": "sound-fx-looper-pages",
@@ -7527,15 +7364,7 @@
             "ticker": "Sound FX and looper page colors",
             "summary": "Since version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Each looper page gets a name and one of 8 colors. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
             "href": "/guide",
-            "cta": "Open guide",
-            "images": [
-              "/assets/updates/sound-fx.jpg",
-              "/assets/updates/looper-pages.jpg"
-            ],
-            "imageAlts": [
-              "Sound FX window with Psy Orbit selected.",
-              "Loop screen with colored page numbers and a page name."
-            ]
+            "cta": "Open guide"
           },
           {
             "id": "exclusive-packs-gallery",
@@ -7557,15 +7386,7 @@
             "status": "shipped",
             "title": "Live mode, lyrics, Mic FX, Drum FX",
             "ticker": "Live mode, lyrics, Mic FX and Drum FX",
-            "summary": "Since version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. The mic and the drums get 8 effects each, every loop channel has Looper FX, and one Back button brings back the last cleared take.",
-            "images": [
-              "/assets/updates/lyrics.jpg",
-              "/assets/updates/mic-fx.jpg"
-            ],
-            "imageAlts": [
-              "Lyrics window open over the app.",
-              "Mic FX panel with Phone Line selected."
-            ]
+            "summary": "Since version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. The mic and the drums get 8 effects each, every loop channel has Looper FX, and one Back button brings back the last cleared take."
           }
         ]
       },
@@ -7581,141 +7402,108 @@
         "next": "Next slide",
         "slide": "Slide {n} of {total}",
         "slides": {
-          "sound-presets": {
-            "title": "Presets: 8 slots, 8 pages",
-            "text": "A preset keeps the sound with its Sound FX and the waves that are on. A long-press on Presets saves into the preset that is loaded."
-          },
           "sound-scales": {
-            "title": "Key and scales",
-            "text": "Pick Major or Minor from any root, C to B. A scale only marks its keys. It never changes their frequencies."
+            "title": "Key and Scales",
+            "text": "Pick Major or Minor from any of 12 roots, or SCALE OFF. Dots mark the scale notes on the keys. The frequencies stay the same."
           },
           "mic-channels": {
-            "title": "Channels with their own sound",
-            "text": "Six channels on two pages. Each one has its own HPF, Pres, FX, volume and L/R, plus mute and solo."
-          },
-          "mic-fx": {
-            "title": "Mic FX for each channel",
-            "text": "Eight presets. A tap selects one, a second tap turns it off, and a long-press opens its sliders, with Transpose from -12 to 12."
+            "title": "Mic Recording",
+            "text": "Three vocal channels on page 1. Guitar, Bass and Instrumental on page 2. Monitor and Redo included."
           },
           "loop-looper": {
-            "title": "32 channels, 8 pages",
-            "text": "Four channels on each page. A take can run up to 30 minutes, and Redo brings back a take you cleared."
+            "title": "Looper",
+            "text": "32 loop channels on 8 pages. Record, play and redo."
           },
           "loop-editor": {
             "title": "Loop Editor",
-            "text": "Trim the take, set the loop points, and shape it with EQ, Gain and Squeeze. Eight boxes tie the loop to a drum rhythm."
-          },
-          "loop-fx": {
-            "title": "Looper FX",
-            "text": "Eight presets for a channel. A tap selects one, and a long-press opens Amount, EQ, Mid-sweep, Transpose and Reverb for it."
+            "text": "Trim, loop and shape the EQ. Long-press a rhythm box for repeats."
           },
           "loop-page-name": {
-            "title": "Name and color a page",
-            "text": "A long-press on a page number opens Page name. Type a name and pick one of 8 colors. The color also tints that page's waves."
+            "title": "Name your pages",
+            "text": "Long-press a page number to name it and pick one of 8 colors."
           },
           "sound-fx": {
             "title": "Sound FX",
-            "text": "Eight effects that follow the drum beat, one on at a time. A long-press opens its sliders: Amount, EQ, Mid-sweep, Transpose and Reverb."
-          },
-          "sound-keyboards": {
-            "title": "Two keyboards",
-            "text": "Tap + to open a second keyboard, one octave higher. It stays open when you switch between Sound and Pad."
+            "text": "12 effects, 4 of them new. Swipe or tap the arrows to change page. Tap one to turn it on, long-press it for its knobs."
           },
           "mic-editor": {
             "title": "Mic Editor",
-            "text": "A tap on a channel's visualizer opens it once the channel has a take. Trim, loop, EQ, Gain and Squeeze, with 8 rhythm boxes. Save keeps the changes with the mic project."
+            "text": "Trim, loop, EQ, Gain and Squeeze. Long-press a rhythm box for repeats."
           },
           "mic-lyrics": {
-            "title": "Lyrics teleprompter",
-            "text": "Tap Edit to type or paste your words. Play scrolls them and Pause stops. Speed runs from 20 to 150 and text size from 14 to 48. Everything is saved on the phone."
+            "title": "Lyrics",
+            "text": "A teleprompter for your lyrics. Type or paste, press Play to scroll, set the speed and text size."
           },
           "pad-live": {
             "title": "Live Pad",
-            "text": "Hold a note and drag on the pad. The sound follows your finger while the note plays. WAH, OCT and Vibrato are knobs from 0 to 100 percent that shape only the keyboard sound."
-          },
-          "pad-keyboard": {
-            "title": "Second keyboard on the Pad",
-            "text": "Tap + next to the VOICES row to open a second keyboard, one octave higher. The WAH, OCT and Vibrato knobs hide while it is open."
-          },
-          "pad-targets": {
-            "title": "Pad targets",
-            "text": "KEY, MIC, LOOP and DRUM choose what the pad moves, and several can be on. Hold 1/4, 1/8, 1/16 or 1/32 to stutter them at the drum BPM, and hold STOP to fade them out."
+            "text": "Drag on the pad and the sound follows your finger. Pick KEY, MIC, LOOP or DRUM. Hold 1/4 to 1/32 for a repeat."
           },
           "drum-rows": {
-            "title": "All 8 rows",
-            "text": "A tap on +4 shows FX 1, FX 2, FX 3 and Voice under the first four rows and hides the keyboard. The key then reads -4, and another tap hides those rows and brings the keyboard back."
-          },
-          "drum-main": {
-            "title": "The Drum screen",
-            "text": "The arrows switch the kit and the samples, and the knobs set Drum Vol, Swing and BPM. Each of the 8 rhythms has 16 steps on every row. Every row has LOAD, arrows, a volume slider and L/R. A tap on +4 shows FX 1, FX 2, FX 3 and Voice."
+            "title": "All 8 Rows",
+            "text": "Tap +4 to show FX 1, FX 2, FX 3 and Voice. The keyboard hides and the key reads -4. Tap it again to bring the keyboard back."
           },
           "drum-banks": {
-            "title": "Sample banks",
-            "text": "Eight rows, and a tap on a row name opens its sound list from the Factory and Exclusive banks. Each row lists only its own kind of sound."
+            "title": "Sample Banks",
+            "text": "Eight drum rows, each with its own picker. Choose from Factory and Exclusive banks."
           },
           "drum-loaded": {
-            "title": "Your own samples (LOADED)",
-            "text": "Each of the 8 rows has a LOADED bank of up to 88 of your own samples, up to 30 seconds each, saved by itself. The start and end bars trim a sample. SAVE keeps it, RESET goes back to full length, RENAME gives a name of up to 24 characters and DELETE removes it."
-          },
-          "drum-fx": {
-            "title": "Drum FX",
-            "text": "Eight presets for the drums. A tap turns one on, a second tap turns it off, and a long-press opens its sliders."
-          },
-          "drum-repeats": {
-            "title": "Pattern repeats",
-            "text": "A long-press on a rhythm number opens the window. Pick 1 to 10, type a number up to 88 in the box, or pick infinity or DEFAULT. COPY and PASTE move a whole rhythm to another number."
+            "title": "Your Own Samples",
+            "text": "LOADED: up to 88 of your samples on every row, saved automatically. Trim with the start and end bars. SAVE, RESET, RENAME, DELETE."
           },
           "home-sound": {
             "title": "Design your sound",
             "text": "Blend wave types, start from a preset and tune every key to your scale.",
-            "alt": "1/8: Design your sound. Blend wave types, start from a preset and tune every key to your scale."
-          },
-          "home-sound-fx": {
-            "title": "Color every sound",
-            "text": "Pick an effect world for your keys and drums, then fine-tune its tone.",
-            "alt": "2/8: Color every sound. Pick an effect world for your keys and drums, then fine-tune its tone."
+            "alt": "1/7: Design your sound. Blend wave types, start from a preset and tune every key to your scale."
           },
           "home-looper": {
             "title": "Layer your loops",
             "text": "Record loops channel by channel, trim them to the beat and stack them into a track.",
-            "alt": "3/8: Layer your loops. Record loops channel by channel, trim them to the beat and stack them into a track."
+            "alt": "2/7: Layer your loops. Record loops channel by channel, trim them to the beat and stack them into a track."
           },
           "home-live-pad": {
             "title": "Play it live",
             "text": "Bend the sound with one finger and fire beat-synced repeats while you perform.",
-            "alt": "4/8: Play it live. Bend the sound with one finger and fire beat-synced repeats while you perform."
+            "alt": "3/7: Play it live. Bend the sound with one finger and fire beat-synced repeats while you perform."
           },
           "home-drums": {
             "title": "Build your beat",
             "text": "Program patterns step by step, pick each drum from big sample banks and shape it.",
-            "alt": "5/8: Build your beat. Program patterns step by step, pick each drum from big sample banks and shape it."
+            "alt": "4/7: Build your beat. Program patterns step by step, pick each drum from big sample banks and shape it."
           },
           "home-mixer": {
             "title": "Your analog mixer",
             "text": "See where drums, loops and mic sit, and shape them into one balanced mix.",
-            "alt": "6/8: Your analog mixer. See where drums, loops and mic sit, and shape them into one balanced mix."
+            "alt": "5/7: Your analog mixer. See where drums, loops and mic sit, and shape them into one balanced mix."
           },
           "home-mastering-style": {
             "title": "Finish your track",
             "text": "Choose a sound style, compare before and after, and export the final file.",
-            "alt": "7/8: Finish your track. Choose a sound style, compare before and after, and export the final file."
+            "alt": "6/7: Finish your track. Choose a sound style, compare before and after, and export the final file."
           },
           "home-mastering-measure": {
             "title": "Measure every detail",
             "text": "Precise loudness, dynamics and stereo readings show how your track really sounds.",
-            "alt": "8/8: Measure every detail. Precise loudness, dynamics and stereo readings show how your track really sounds."
+            "alt": "7/7: Measure every detail. Precise loudness, dynamics and stereo readings show how your track really sounds."
           },
           "sound-wave-panel": {
-            "title": "Wave panel: octave, EQ and pages",
-            "text": "A long-press on a wave key opens its panel: octave keys -2 to +2, LOW, MID, HIGH, HPF, LPF and GAIN, and 4 pages, each one more voice of that wave. Every change is heard at once and saved."
+            "title": "Wave Panel",
+            "text": "Hold a wave key: octave, EQ and 4 pages, each one more voice of that wave. Every change is heard at once and saved."
           },
           "loop-mixer": {
             "title": "Analog Mixer",
-            "text": "A tap on LIVE SCOPE opens it. Drums, Looper and Mic each get Drive, HPF, EQ, Comp, Pan, Width and a fader, plus a Master strip. SPECTRUM and MIX MAP show where they clash. 8 presets."
+            "text": "Tap LIVE SCOPE on top. Drums, Looper and Mic get Drive, HPF, EQ, Comp, Pan and a fader, plus a Master strip. 8 presets."
           },
           "mic-mastering": {
             "title": "Mastering",
-            "text": "After a WAV recording, Master this take opens it. Pick one of 8 styles, compare A and B, then export WAV, MP3 or FLAC. The files stay on your phone."
+            "text": "After a WAV recording, tap Master this take. 8 styles, A and B to compare, then export WAV, MP3 or FLAC. Files stay on your phone."
+          },
+          "sound-fm": {
+            "title": "Real FM",
+            "text": "4 operators. ALGO picks 1 of 8 ways to link them, RATIO the pitch, INDEX the brightness, FEEDBK the edge, DECAY the fade, MIX the amount."
+          },
+          "sound-frequencies": {
+            "title": "Tune Frequencies",
+            "text": "Type the Hz of each of the 8 keys, or load a ready scale such as Hijaz or Kurd. Save up to 8 presets of your own."
           }
         }
       }
@@ -7735,12 +7523,12 @@
         "updates": "Обновления"
       },
       "hero": {
-        "kicker": "Музыкальное приложение для Android · версия 1.12, уже в Google Play",
+        "kicker": "Музыкальное приложение для Android · версия 1.13, уже в Google Play",
         "title": "Создавай музыку на телефоне.",
         "body": "L Studio это приложение для создания музыки на телефоне с Android. Записывай лупы, добавляй барабаны, пой, глядя на текст песни, а если хочется выйти за привычные ноты, настрой для каждой клавиши свою частоту.",
         "ctaPrimary": "Смотреть короткое видео",
         "ctaSecondary": "Как всё началось",
-        "stat1": "78.3 МБ",
+        "stat1": "75.7 МБ",
         "stat2": "Android 7.0+",
         "stat3": "Без рекламы"
       },
@@ -7867,7 +7655,7 @@
           {
             "question": "L Studio уже в Google Play? И сколько стоит?",
             "answer": [
-              "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.12, в которой есть аналоговый микшер и окно мастеринга. Это единоразовый платёж. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.13 на проверке в Google и пока недоступна.",
+              "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.13, в которой есть настоящий эффект FM, новое окно Sound FX и EQ в dB, а также аналоговый микшер и окно мастеринга. Это единоразовый платёж. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
               "Купить приложение можно через Google Play. Этот сайт не продаёт приложение, и кнопки скачивания здесь нет."
             ]
           },
@@ -7883,7 +7671,7 @@
           {
             "question": "На каких устройствах работает и на каких языках?",
             "answer": [
-              "L Studio это приложение для Android. Нужен Android 7.0 или новее. Размер версии 1.12: 78.3 МБ. Версии для iPhone пока нет.",
+              "L Studio это приложение для Android. Нужен Android 7.0 или новее. Размер версии 1.13: 75.7 МБ. Версии для iPhone пока нет.",
               "Приложение проверялось на разных телефонах с Android. На планшетах оно не проверялось, поэтому поддержка планшетов не обещается.",
               "На телефоне приложение остаётся вертикальным, в портретной ориентации.",
               "Приложение на четырёх языках: английском, иврите, русском и арабском. Язык меняется в Settings, в строке Language."
@@ -7920,7 +7708,7 @@
             "answer": [
               "Аналоговый микшер открывается нажатием на LIVE SCOPE вверху экрана. У Drums, Looper и Mic есть канал с Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S и фейдером. Канал Master работает со всем миксом. SPECTRUM и MIX MAP показывают, где звучат каналы и где они мешают друг другу. Есть 8 пресетов.",
               "Окно мастеринга доводит запись WAV или импортированную песню до стриминга. Выберите один из 8 стилей, послушайте A (до) и B (стиль), затем нажмите Start mastering и экспортируйте. Оно открывается после записи WAV (Master this take) или из MASTERING в Settings.",
-              "Обе функции есть в версии 1.12, которая уже в Google Play."
+              "Обе функции появились в версии 1.12 и есть в версии 1.13, которая уже в Google Play."
             ]
           },
           {
@@ -8334,27 +8122,30 @@
                 "title": "Sound FX",
                 "steps": [
                   {
-                    "text": "Нажатие на FX открывает Sound FX. Клавиши играют, пока окно открыто.",
-                    "img": "assets/guide/c/sfx-title.jpg",
+                    "text": "Нажатие на FX открывает Sound FX над клавиатурами. Клавиши играют, пока окно открыто.",
+                    "img": "assets/guide/c/sfx13-title.jpg",
                     "size": [
                       680,
-                      170
+                      120
                     ]
                   },
                   {
-                    "text": "Эффектов 8: Sub Forge, Depth Drop, Bass Clamp, Floor Pump, Iron Growl, Psy Orbit, Thick Vein и Kick Bond.",
-                    "img": "assets/guide/c/sfx-grid.jpg",
+                    "text": "Эффектов 12: Sub Forge, Depth Drop, Bass Clamp, Floor Pump, Iron Growl, Psy Orbit, Thick Vein, Kick Bond и новые Лестница шагов, Бархатный ротор, Зеркальная лента и FM. Они разложены по страницам. Листайте влево и вправо или нажимайте стрелки; счётчик показывает страницу, например 3/3.",
+                    "img": "assets/guide/c/sfx13-pages.jpg",
                     "size": [
-                      680,
-                      420
+                      648,
+                      258
                     ]
+                  },
+                  {
+                    "text": "С одной клавиатурой и закрытыми настройками на странице 8 эффектов. С двумя клавиатурами или открытыми настройками их 4. Окно стоит над клавиатурами, так что можно играть дальше."
                   },
                   {
                     "text": "Нажатие включает эффект. Нажатие на включённый эффект выключает FX. Включён только один за раз.",
-                    "img": "assets/guide/c/sfx-on.jpg",
+                    "img": "assets/guide/c/sfx13-on.jpg",
                     "size": [
-                      190,
-                      180
+                      160,
+                      185
                     ]
                   },
                   {
@@ -8374,38 +8165,14 @@
                     ]
                   },
                   {
-                    "text": "После остановки барабанов остаётся их последний темп. Depth Drop падает заново каждые 2 доли и на каждой новой ноте.",
-                    "img": "assets/guide/c/sfx-grid.jpg",
-                    "size": [
-                      680,
-                      420
-                    ]
+                    "text": "После остановки барабанов остаётся их последний темп. Depth Drop падает заново каждые 2 доли и на каждой новой ноте."
                   },
                   {
-                    "text": "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого эффекта. Каждый из 8 эффектов хранит свои настройки при переключении. Transpose идёт от -12 до 12 и меняет все 8 эффектов, включая Sub Forge.",
-                    "img": "assets/guide/c/sfx-tone.jpg",
-                    "size": [
-                      720,
-                      510
-                    ]
-                  },
-                  {
-                    "text": "Шаги ниже относятся к версии 1.13, которая на проверке в Google и пока недоступна. Версия 1.12 в Google Play работает, как описано выше."
-                  },
-                  {
-                    "text": "В версии 1.13 в Sound FX 12 эффектов на страницах. Лестница шагов, Бархатный ротор, Зеркальная лента и FM новые. Листайте влево и вправо или нажимайте стрелки; счётчик показывает страницу, например 3/3.",
-                    "img": "assets/guide/c/sfx13-pages",
-                    "size": [
-                      648,
-                      258
-                    ]
-                  },
-                  {
-                    "text": "С одной клавиатурой и закрытыми настройками на странице 8 эффектов. С двумя клавиатурами или открытыми настройками их 4. Окно стоит над клавиатурами, так что можно играть дальше."
+                    "text": "Долгое нажатие на эффект открывает его ручки: RATE, AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, а под ними линейку Transpose. Каждый эффект хранит свои настройки при переключении. Transpose идёт от 12 полутонов вниз до 12 вверх и меняет каждый эффект."
                   },
                   {
                     "text": "FM это настоящий эффект FM с 4 операторами. Долгое нажатие на FM открывает его ручки: RATE, ALGO, RATIO, INDEX, FEEDBK, DECAY и MIX.",
-                    "img": "assets/guide/c/sfx13-fm-knobs",
+                    "img": "assets/guide/c/sfx13-fm-knobs.jpg",
                     "size": [
                       648,
                       134
@@ -8413,15 +8180,18 @@
                   },
                   {
                     "text": "Нажмите ALGO, чтобы выбрать один из 8 алгоритмов: A1 Stack, A2 Y, A3 Branch, A4 Twin mod, A5 2 Stacks, A6 1 to 3, A7 Stack+2 и A8 Organ. Каждая плитка показывает, какой оператор какой модулирует.",
-                    "img": "assets/guide/c/sfx13-algos",
+                    "img": "assets/guide/c/sfx13-algos.jpg",
                     "size": [
                       648,
                       256
                     ]
                   },
                   {
+                    "text": "Что делают ручки FM: RATIO задаёт высоту модулятора относительно ноты, шагами от 0.5 до 7. INDEX задаёт глубину модуляции: чем выше, тем ярче звук. FEEDBK подаёт оператор 1 обратно на себя и добавляет жёсткости. DECAY задаёт, как долго затухает FM, от 1/16 доли до 4 долей. MIX смешивает чистый звук с FM."
+                  },
+                  {
                     "text": "RATE можно крутить, даже когда играют ударные, а SYNC снова привязывает его к ударным. У FM переключатель FM | EQ меняет ручки между FM и EQ.",
-                    "img": "assets/guide/c/sfx13-sync-eq",
+                    "img": "assets/guide/c/sfx13-sync-eq.jpg",
                     "size": [
                       648,
                       100
@@ -8461,11 +8231,11 @@
                     ]
                   },
                   {
-                    "text": "Save также сохраняет настройки всех 8 Sound FX и то, какой эффект включён. Load возвращает их точно. Пресеты Factory 64 и старые пресеты загружаются, не меняя Sound FX.",
-                    "img": "assets/guide/c/sfx-on.jpg",
+                    "text": "Save также сохраняет настройки всех 12 Sound FX и то, какой эффект включён. Load возвращает их точно. Пресеты Factory 64 и старые пресеты загружаются, не меняя Sound FX.",
+                    "img": "assets/guide/c/sfx13-on.jpg",
                     "size": [
-                      190,
-                      180
+                      160,
+                      185
                     ]
                   },
                   {
@@ -9011,20 +8781,10 @@
                     ]
                   },
                   {
-                    "text": "Пресеты: Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate и Wire Glitch.",
-                    "img": "assets/guide/c/dfx-grid.jpg",
-                    "size": [
-                      680,
-                      545
-                    ]
+                    "text": "Пресеты: Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate и Wire Glitch."
                   },
                   {
-                    "text": "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого пресета. Transpose идёт от -12 до 12 полутонов. Эти слайдеры остаются, только пока пресет остаётся выбранным.",
-                    "img": "assets/guide/c/dfx-sliders.jpg",
-                    "size": [
-                      680,
-                      495
-                    ]
+                    "text": "Долгое нажатие открывает ручки пресета: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, а под ними линейку Transpose. LOW, MID и HIGH в dB. Transpose идёт от 12 полутонов вниз до 12 вверх. Настройки остаются, только пока пресет остаётся выбранным."
                   }
                 ]
               },
@@ -9123,7 +8883,7 @@
                 ]
               },
               {
-                "text": "Перетаскивание Swing задаёт swing от 0% до 100%. Перетаскивание BPM задаёт темп от 60 до 200. BPM, Swing и громкость дорожек работают вживую: изменение во время игры сохраняется, когда начинается следующий паттерн.",
+                "text": "Перетаскивание Swing задаёт swing от 0% до 100%. Перетаскивание BPM задаёт темп от 1 до 240. BPM, Swing и громкость дорожек работают вживую: изменение во время игры сохраняется, когда начинается следующий паттерн.",
                 "img": "assets/guide/c/drum-swing-bpm.jpg",
                 "size": [
                   470,
@@ -9477,20 +9237,10 @@
                     ]
                   },
                   {
-                    "text": "Нажатие на пресет выбирает его. Нажатие на уже выбранный пресет выключает его. Пресеты: Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate и Dust Weave.",
-                    "img": "assets/guide/c/lfx-grid.jpg",
-                    "size": [
-                      680,
-                      540
-                    ]
+                    "text": "Нажатие на пресет выбирает его. Нажатие на уже выбранный пресет выключает его. Пресеты: Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate и Dust Weave."
                   },
                   {
-                    "text": "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого пресета. Transpose идёт от -12 до 12 полутонов. Эти слайдеры остаются, только пока пресет остаётся выбранным.",
-                    "img": "assets/guide/c/lfx-sliders.jpg",
-                    "size": [
-                      680,
-                      500
-                    ]
+                    "text": "Долгое нажатие открывает ручки пресета: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, а под ними линейку Transpose. LOW, MID и HIGH в dB. Transpose идёт от 12 полутонов вниз до 12 вверх. Настройки остаются, только пока пресет остаётся выбранным."
                   }
                 ]
               }
@@ -9559,20 +9309,10 @@
                     ]
                   },
                   {
-                    "text": "Нажатие на пресет выбирает его. Нажатие на уже выбранный пресет выключает его. Пресеты: Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap и Wire Grit.",
-                    "img": "assets/guide/c/mfx-grid.jpg",
-                    "size": [
-                      680,
-                      560
-                    ]
+                    "text": "Нажатие на пресет выбирает его. Нажатие на уже выбранный пресет выключает его. Пресеты: Street Punch, Phone Line, Talk Clarity, Neon Throw, Pulse Delay, Twin Voice, Garage Slap и Wire Grit."
                   },
                   {
-                    "text": "Долгое нажатие открывает Amount, EQ Low, EQ Mid, EQ High, Mid-sweep, Transpose и Reverb для этого пресета. Transpose идёт от -12 до 12 полутонов. Эти слайдеры остаются, только пока пресет остаётся выбранным.",
-                    "img": "assets/guide/c/mfx-sliders.jpg",
-                    "size": [
-                      680,
-                      510
-                    ]
+                    "text": "Долгое нажатие открывает ручки пресета: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, а под ними линейку Transpose. LOW, MID и HIGH в dB. Transpose идёт от 12 полутонов вниз до 12 вверх. Настройки остаются, только пока пресет остаётся выбранным."
                   }
                 ]
               },
@@ -10101,6 +9841,9 @@
                   720,
                   80
                 ]
+              },
+              {
+                "text": "В карточке Recording finished есть Master this take, Save as-is и Delete. Delete сначала спрашивает, а потом удаляет запись навсегда."
               },
               {
                 "text": "Beginner и Advanced вверху переключают вид. Close mastering сначала спрашивает, если мастер ещё не экспортирован.",
@@ -11002,7 +10745,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro для Android уже доступен в Google Play, за $8. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.12, 78.3 МБ, в которой есть аналоговый микшер и окно мастеринга. Кто покупает Pro, получает версию 1.12 через Google Play. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.13 на проверке в Google и пока недоступна. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
+        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.13, 75.7 МБ, в которой есть настоящий эффект FM, новое окно Sound FX и EQ в dB, а также аналоговый микшер и окно мастеринга. Кто покупает Pro, получает версию 1.13 через Google Play. Новые версии приходят как автоматические обновления через Google Play после одобрения. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
           "L Studio Pro для Android в Google Play, $8",
@@ -11037,7 +10780,7 @@
         "navLabel": "Обновления",
         "pageTitle": "Что нового в L Studio.",
         "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-        "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.12, в которой есть аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.13 на проверке в Google и пока недоступна.",
+        "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.13, в которой есть настоящий эффект FM, новое окно Sound FX и EQ в dB, а также аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
         "tickerLabel": "Обновления",
         "statusLabels": {
           "in_progress": "В работе",
@@ -11052,10 +10795,10 @@
         "items": [
           {
             "id": "app-1-13-fm-sound-fx",
-            "status": "upcoming",
-            "title": "На проверке в Google, пока недоступна: версия 1.13 с настоящим эффектом FM, новым окном Sound FX и EQ в dB",
-            "ticker": "На проверке в Google, пока недоступна: версия 1.13 с 4-операторным FM, страницами Sound FX и EQ в dB",
-            "summary": "Версия 1.13 на проверке в Google. В Google Play её пока нет. В ней настоящий эффект FM с 4 операторами и 8 алгоритмами, новое окно Sound FX со страницами, ручки во всех окнах эффектов и EQ в dB.",
+            "status": "shipped",
+            "title": "Теперь в Google Play: версия 1.13 с настоящим эффектом FM, новым окном Sound FX и EQ в dB",
+            "ticker": "Теперь в Google Play: версия 1.13 с 4-операторным FM, страницами Sound FX и EQ в dB",
+            "summary": "Версия 1.13 уже в Google Play. В ней настоящий эффект FM с 4 операторами и 8 алгоритмами, новое окно Sound FX со страницами, ручки во всех окнах эффектов и EQ в dB.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -11120,7 +10863,7 @@
           {
             "id": "app-1-12-mixer-demo",
             "status": "shipped",
-            "title": "Теперь в Google Play: версия 1.12 с аналоговым микшером и окном мастеринга",
+            "title": "Версия 1.12 с аналоговым микшером и окном мастеринга",
             "summary": "",
             "videoId": "f6bLB0IP1ks",
             "videoTitle": "Видео: аналоговый микшер в версии 1.12",
@@ -11180,14 +10923,14 @@
                 }
               }
             },
-            "ticker": "Теперь в Google Play: версия 1.12 с аналоговым микшером и окном мастеринга"
+            "ticker": "Версия 1.12 с аналоговым микшером и окном мастеринга"
           },
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "shipped",
             "title": "С версии 1.11, теперь в Google Play: свои сэмплы в ударных, Keep playing и октава для каждой волны",
             "ticker": "Теперь в Google Play: до 88 своих сэмплов в каждом ряду ударных, с обрезкой",
-            "summary": "С версии 1.11, теперь в Google Play с версией 1.12: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
+            "summary": "С версии 1.11, теперь в Google Play с версией 1.13: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -11261,15 +11004,9 @@
             "status": "shipped",
             "title": "С версии 1.10, теперь в Google Play: Loop Editor, запись до 30 минут и полное сохранение сессии",
             "ticker": "Теперь в Google Play: новый редактор лупов, в том числе для Mic, с обрезкой, EQ и выбором, какой ритм ударных играет вместе с лупом и сколько раз он повторяется",
-            "summary": "С версии 1.10, теперь в Google Play с версией 1.12: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
+            "summary": "С версии 1.10, теперь в Google Play с версией 1.13: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
             "href": "/guide",
             "cta": "Открыть руководство",
-            "images": [
-              "/assets/posters/en/p05-loop-editor-w630.jpg"
-            ],
-            "imageAlts": [
-              "Постер (на английском): Edit Every Loop. Редактор лупа: обрезка, повторы, EQ и привязка к ритму ударных."
-            ],
             "sections": [
               {
                 "title": "Лупер",
@@ -11372,13 +11109,7 @@
             "ticker": "Новое в 1.09: несколько волн сразу и живые ударные",
             "summary": "В Google Play, версия 1.09: На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
             "href": "/guide",
-            "cta": "Открыть руководство",
-            "images": [
-              "/assets/updates/sound-109.jpg"
-            ],
-            "imageAlts": [
-              "Экран Sound в 1.09: значок на каждой кнопке волны, Sine и Saw включены вместе."
-            ]
+            "cta": "Открыть руководство"
           },
           {
             "id": "sound-fx-looper-pages",
@@ -11387,15 +11118,7 @@
             "ticker": "Sound FX и цвета страниц лупера",
             "summary": "С версии 1.08: 8 новых Sound FX, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты сохраняют настройки всех 8. Каждой странице лупера можно дать имя и один из 8 цветов. Регуляторы показывают значение золотым кольцом, а тур в приложении показывает всё это.",
             "href": "/guide",
-            "cta": "Открыть гид",
-            "images": [
-              "/assets/updates/sound-fx.jpg",
-              "/assets/updates/looper-pages.jpg"
-            ],
-            "imageAlts": [
-              "Окно Sound FX, выбран Psy Orbit.",
-              "Экран Loop с цветными номерами страниц и именем страницы."
-            ]
+            "cta": "Открыть гид"
           },
           {
             "id": "exclusive-packs-gallery",
@@ -11417,15 +11140,7 @@
             "status": "shipped",
             "title": "Режим Live, текст, Mic FX, Drum FX",
             "ticker": "Режим Live, текст, Mic FX и Drum FX",
-            "summary": "С версии 1.08: режим LIVE блокирует имена, Clear и загрузку файлов во время игры. Окно текста прокручивает слова, пока вы поете. У микрофона и у ударных по 8 эффектов, на каждом канале лупера есть Looper FX, а одна кнопка Back возвращает последний стёртый дубль.",
-            "images": [
-              "/assets/updates/lyrics.jpg",
-              "/assets/updates/mic-fx.jpg"
-            ],
-            "imageAlts": [
-              "Окно текста открыто поверх приложения.",
-              "Панель Mic FX. Выбран Phone Line."
-            ]
+            "summary": "С версии 1.08: режим LIVE блокирует имена, Clear и загрузку файлов во время игры. Окно текста прокручивает слова, пока вы поете. У микрофона и у ударных по 8 эффектов, на каждом канале лупера есть Looper FX, а одна кнопка Back возвращает последний стёртый дубль."
           }
         ]
       },
@@ -11441,141 +11156,108 @@
         "next": "Следующий слайд",
         "slide": "Слайд {n} из {total}",
         "slides": {
-          "sound-presets": {
-            "title": "Presets: 8 мест, 8 страниц",
-            "text": "Пресет хранит звук вместе с Sound FX и включёнными волнами. Долгое нажатие на Presets сохраняет в загруженный пресет."
-          },
           "sound-scales": {
-            "title": "Key и гаммы",
-            "text": "Выберите Major или Minor от любого основного тона, от C до B. Лад только отмечает свои клавиши и никогда не меняет их частоты."
+            "title": "Тональность и лады",
+            "text": "Major или Minor от любой из 12 тоник, или SCALE OFF. Точки отмечают ноты лада на клавишах. Частоты не меняются."
           },
           "mic-channels": {
-            "title": "Каналы со своим звуком",
-            "text": "Шесть каналов на двух страницах. У каждого свои HPF, Pres, FX, громкость и L/R, а также mute и solo."
-          },
-          "mic-fx": {
-            "title": "Mic FX для каждого канала",
-            "text": "Восемь пресетов. Нажатие выбирает, второе нажатие выключает, а долгое открывает ползунки, включая Transpose от -12 до 12."
+            "title": "Запись Mic",
+            "text": "Три вокальных канала на странице 1. Гитара, бас и инструмент на странице 2. Есть монитор и повтор."
           },
           "loop-looper": {
-            "title": "32 канала, 8 страниц",
-            "text": "По четыре канала на странице. Запись может идти до 30 минут, а Redo возвращает стёртый дубль."
+            "title": "Looper",
+            "text": "32 канала лупов на 8 страницах. Записывайте, играйте и повторяйте."
           },
           "loop-editor": {
-            "title": "Loop Editor",
-            "text": "Обрежьте дубль, задайте точки петли и настройте звук через EQ, Gain и Squeeze. Восемь окошек привязывают луп к ритму ударных."
-          },
-          "loop-fx": {
-            "title": "Looper FX",
-            "text": "Восемь пресетов для канала. Нажатие выбирает, а долгое нажатие открывает для него Amount, EQ, Mid-sweep, Transpose и Reverb."
+            "title": "Редактор лупов",
+            "text": "Обрезка, луп и эквалайзер. Долгое нажатие на ритм открывает повторы."
           },
           "loop-page-name": {
-            "title": "Имя и цвет страницы",
-            "text": "Долгое нажатие на номер страницы открывает Page name. Введите имя и выберите один из 8 цветов. Цвет также окрашивает волны этой страницы."
+            "title": "Имя для страницы",
+            "text": "Долгое нажатие на номер страницы задаёт имя и один из 8 цветов."
           },
           "sound-fx": {
             "title": "Sound FX",
-            "text": "Восемь эффектов, которые следуют за ритмом ударных, включён один за раз. Долгое нажатие открывает ползунки: Amount, EQ, Mid-sweep, Transpose и Reverb."
-          },
-          "sound-keyboards": {
-            "title": "Две клавиатуры",
-            "text": "Нажмите +, чтобы открыть вторую клавиатуру на октаву выше. Она остаётся открытой при переходе между Sound и Pad."
+            "text": "12 эффектов, 4 из них новые. Листайте или нажимайте стрелки. Нажатие включает эффект, долгое нажатие открывает его ручки."
           },
           "mic-editor": {
-            "title": "Mic Editor",
-            "text": "Нажатие на визуализатор канала открывает его, когда в канале есть запись. Обрезка, луп, EQ, Gain и Squeeze, плюс 8 окошек ритма. Save сохраняет изменения в проекте Mic."
+            "title": "Редактор Mic",
+            "text": "Обрезка, луп, EQ, Gain и Squeeze. Долгое нажатие на ритм открывает повторы."
           },
           "mic-lyrics": {
-            "title": "Телесуфлёр для слов",
-            "text": "Нажмите Edit, чтобы ввести или вставить слова. Play прокручивает их, Pause останавливает. Speed от 20 до 150, размер текста от 14 до 48. Всё сохраняется в телефоне."
+            "title": "Текст",
+            "text": "Телесуфлёр для вашего текста. Введите или вставьте текст, нажмите Старт для прокрутки, задайте скорость и размер."
           },
           "pad-live": {
             "title": "Живой пэд",
-            "text": "Удерживайте ноту и ведите пальцем по паду. Звук следует за пальцем, пока играет нота. WAH, OCT и Vibrato это ручки от 0 до 100 процентов, они меняют только звук клавиатуры."
-          },
-          "pad-keyboard": {
-            "title": "Вторая клавиатура на Pad",
-            "text": "Нажмите + возле ряда VOICES, чтобы открыть вторую клавиатуру на октаву выше. Ручки WAH, OCT и Vibrato скрыты, пока она открыта."
-          },
-          "pad-targets": {
-            "title": "Цели пэда",
-            "text": "KEY, MIC, LOOP и DRUM выбирают, что двигает пад, и можно включить несколько. Удерживайте 1/4, 1/8, 1/16 или 1/32 для быстрых повторов в темпе барабанов, а STOP плавно приглушает цели, пока вы его держите."
+            "text": "Ведите по пэду, и звук следует за пальцем. Выберите KEY, MIC, LOOP или DRUM. Удерживайте от 1/4 до 1/32 для повтора."
           },
           "drum-rows": {
             "title": "Все 8 рядов",
-            "text": "Нажатие на +4 показывает FX 1, FX 2, FX 3 и Voice под первыми четырьмя рядами и скрывает клавиатуру. Клавиша становится -4, а следующее нажатие скрывает эти ряды и возвращает клавиатуру."
-          },
-          "drum-main": {
-            "title": "Экран Drum",
-            "text": "Стрелки переключают набор и сэмплы, а ручки задают Drum Vol, Swing и BPM. У каждого из 8 ритмов по 16 шагов в каждом ряду. В каждом ряду есть LOAD, стрелки, ползунок громкости и L/R. Нажатие на +4 показывает FX 1, FX 2, FX 3 и Voice."
+            "text": "Нажмите +4, чтобы показать FX 1, FX 2, FX 3 и Voice. Клавиатура скрывается, клавиша становится -4. Нажмите ещё раз, чтобы вернуть клавиатуру."
           },
           "drum-banks": {
             "title": "Банки сэмплов",
-            "text": "Восемь рядов, и нажатие на имя ряда открывает его список звуков из банков Factory и Exclusive. Каждый ряд показывает только свой тип звука."
+            "text": "Восемь рядов ударных, у каждого свой выбор. Банки Factory и Exclusive."
           },
           "drum-loaded": {
-            "title": "Свои сэмплы (LOADED)",
-            "text": "У каждого из 8 рядов есть банк LOADED до 88 своих сэмплов, до 30 секунд каждый, он сохраняется сам. Ползунки начала и конца обрезают сэмпл. SAVE сохраняет, RESET возвращает полную длину, RENAME задаёт имя до 24 символов, DELETE удаляет."
-          },
-          "drum-fx": {
-            "title": "Drum FX",
-            "text": "Восемь пресетов для ударных. Нажатие включает, второе нажатие выключает, а долгое открывает ползунки."
-          },
-          "drum-repeats": {
-            "title": "Pattern repeats",
-            "text": "Долгое нажатие на номер ритма открывает окно. Выберите от 1 до 10, введите число до 88 в поле или выберите бесконечность или DEFAULT. COPY и PASTE переносят ритм целиком на другой номер."
+            "title": "Свои сэмплы",
+            "text": "LOADED: до 88 своих сэмплов в каждом ряду, сохраняются сами. Обрезка ползунками начала и конца. SAVE, RESET, RENAME, DELETE."
           },
           "home-sound": {
             "title": "Создай свой звук",
             "text": "Смешивай типы волн, начинай с пресета и настраивай каждую клавишу под свою гамму.",
-            "alt": "1/8: Создай свой звук. Смешивай типы волн, начинай с пресета и настраивай каждую клавишу под свою гамму."
-          },
-          "home-sound-fx": {
-            "title": "Раскрась каждый звук",
-            "text": "Выбери мир эффектов для клавиш и ударных и точно настрой его тембр.",
-            "alt": "2/8: Раскрась каждый звук. Выбери мир эффектов для клавиш и ударных и точно настрой его тембр."
+            "alt": "1/7: Создай свой звук. Смешивай типы волн, начинай с пресета и настраивай каждую клавишу под свою гамму."
           },
           "home-looper": {
             "title": "Слои лупов",
             "text": "Записывай лупы канал за каналом, обрезай их по ритму и собирай в трек.",
-            "alt": "3/8: Слои лупов. Записывай лупы канал за каналом, обрезай их по ритму и собирай в трек."
+            "alt": "2/7: Слои лупов. Записывай лупы канал за каналом, обрезай их по ритму и собирай в трек."
           },
           "home-live-pad": {
             "title": "Играй вживую",
             "text": "Меняй звук одним пальцем и запускай повторы в ритм прямо во время выступления.",
-            "alt": "4/8: Играй вживую. Меняй звук одним пальцем и запускай повторы в ритм прямо во время выступления."
+            "alt": "3/7: Играй вживую. Меняй звук одним пальцем и запускай повторы в ритм прямо во время выступления."
           },
           "home-drums": {
             "title": "Собери свой бит",
             "text": "Программируй паттерны шаг за шагом, выбирай каждый барабан из больших банков сэмплов и настраивай его.",
-            "alt": "5/8: Собери свой бит. Программируй паттерны шаг за шагом, выбирай каждый барабан из больших банков сэмплов и настраивай его."
+            "alt": "4/7: Собери свой бит. Программируй паттерны шаг за шагом, выбирай каждый барабан из больших банков сэмплов и настраивай его."
           },
           "home-mixer": {
             "title": "Твой аналоговый микшер",
             "text": "Смотри, где звучат ударные, лупы и микрофон, и своди их в один сбалансированный микс.",
-            "alt": "6/8: Твой аналоговый микшер. Смотри, где звучат ударные, лупы и микрофон, и своди их в один сбалансированный микс."
+            "alt": "5/7: Твой аналоговый микшер. Смотри, где звучат ударные, лупы и микрофон, и своди их в один сбалансированный микс."
           },
           "home-mastering-style": {
             "title": "Закончи трек",
             "text": "Выбери стиль звучания, сравни до и после и экспортируй готовый файл.",
-            "alt": "7/8: Закончи трек. Выбери стиль звучания, сравни до и после и экспортируй готовый файл."
+            "alt": "6/7: Закончи трек. Выбери стиль звучания, сравни до и после и экспортируй готовый файл."
           },
           "home-mastering-measure": {
             "title": "Измеряй каждую деталь",
             "text": "Точные замеры громкости, динамики и стерео показывают, как на самом деле звучит трек.",
-            "alt": "8/8: Измеряй каждую деталь. Точные замеры громкости, динамики и стерео показывают, как на самом деле звучит трек."
+            "alt": "7/7: Измеряй каждую деталь. Точные замеры громкости, динамики и стерео показывают, как на самом деле звучит трек."
           },
           "sound-wave-panel": {
-            "title": "Панель волны: октава, EQ и страницы",
-            "text": "Долгое нажатие на клавишу волны открывает её панель: клавиши октавы от -2 до +2, LOW, MID, HIGH, HPF, LPF и GAIN, и 4 страницы, каждая добавляет голос этой волны. Изменения слышны сразу и сохраняются."
+            "title": "Панель волны",
+            "text": "Долгое нажатие на клавишу волны: октава, EQ и 4 страницы, каждая добавляет голос этой волны. Изменения слышны сразу и сохраняются."
           },
           "loop-mixer": {
             "title": "Аналоговый микшер",
-            "text": "Открывается нажатием на LIVE SCOPE. У Drums, Looper и Mic есть Drive, HPF, EQ, Comp, Pan, Width и фейдер, плюс канал Master. SPECTRUM и MIX MAP показывают, где они мешают друг другу. 8 пресетов."
+            "text": "Нажмите LIVE SCOPE сверху. У Drums, Looper и Mic есть Drive, HPF, EQ, Comp, Pan и фейдер, плюс канал Master. 8 пресетов."
           },
           "mic-mastering": {
             "title": "Мастеринг",
-            "text": "После записи WAV его открывает Master this take. Выберите один из 8 стилей, сравните A и B и экспортируйте в WAV, MP3 или FLAC. Файлы остаются в телефоне."
+            "text": "После записи WAV нажмите Master this take. 8 стилей, A и B для сравнения, затем экспорт в WAV, MP3 или FLAC. Файлы остаются в телефоне."
+          },
+          "sound-fm": {
+            "title": "Настоящий FM",
+            "text": "4 оператора. ALGO выбирает 1 из 8 схем, RATIO высоту, INDEX яркость, FEEDBK резкость, DECAY затухание, MIX долю FM."
+          },
+          "sound-frequencies": {
+            "title": "Настройка частот",
+            "text": "Введите Hz для каждой из 8 клавиш или загрузите готовый лад, например Hijaz или Kurd. До 8 своих пресетов."
           }
         }
       }
@@ -11595,12 +11277,12 @@
         "updates": "التحديثات"
       },
       "hero": {
-        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.12، متاح الآن على Google Play",
+        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.13، متاح الآن على Google Play",
         "title": "اصنع الموسيقى على هاتفك.",
         "body": "L Studio تطبيق لصنع الموسيقى على هاتف أندرويد. سجّل لوبات، أضف طبولاً، غنِّ وكلمات الأغنية أمام عينيك، وإن أردت الخروج عن النوتات المعتادة، اضبط لكل مفتاح تردده الخاص.",
         "ctaPrimary": "شاهد الفيديو القصير",
         "ctaSecondary": "كيف بدأ الأمر",
-        "stat1": "78.3 ميغابايت",
+        "stat1": "75.7 ميغابايت",
         "stat2": "Android 7.0+",
         "stat3": "بلا إعلانات"
       },
@@ -11727,7 +11409,7 @@
           {
             "question": "هل L Studio على Google Play الآن؟ وكم سعره؟",
             "answer": [
-              "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.12 الذي يضم الميكسر التناظري ونافذة الماسترنغ. وهي دفعة واحدة. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.13 قيد مراجعة Google وغير متاح بعد.",
+              "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.13 الذي يضم مؤثر FM حقيقياً ونافذة Sound FX جديدة وEQ بوحدة dB، إلى جانب الميكسر التناظري ونافذة الماسترنغ. وهي دفعة واحدة. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
               "تشتريه عبر Google Play. هذا الموقع لا يبيع التطبيق وليس فيه زر تنزيل."
             ]
           },
@@ -11743,7 +11425,7 @@
           {
             "question": "على أي أجهزة يعمل وبأي لغات؟",
             "answer": [
-              "L Studio تطبيق لأندرويد. يحتاج إلى Android 7.0 أو أحدث. حجم الإصدار 1.12 هو 78.3 ميغابايت. لا توجد نسخة للآيفون حالياً.",
+              "L Studio تطبيق لأندرويد. يحتاج إلى Android 7.0 أو أحدث. حجم الإصدار 1.13 هو 75.7 ميغابايت. لا توجد نسخة للآيفون حالياً.",
               "جُرّب التطبيق على هواتف أندرويد مختلفة. ولم يُجرَّب على التابلت، لذلك لا نَعِد بدعم التابلت.",
               "على الهاتف يبقى التطبيق قائماً، بوضع طولي.",
               "التطبيق بأربع لغات: الإنجليزية والعبرية والروسية والعربية. تبدّل اللغة من Settings، في صف Language."
@@ -11780,7 +11462,7 @@
             "answer": [
               "يُفتح الميكسر التناظري بالنقر على LIVE SCOPE في أعلى الشاشة. لكل من Drums وLooper وMic قناة فيها Drive وHPF وHigh وMid وLow وComp وPan وWidth وM وS ومنزلق. قناة Master تعمل على المزيج كله. يُظهر SPECTRUM وMIX MAP أين تقع القنوات وأين تتصادم. وفيه 8 إعدادات.",
               "تُنهي نافذة الماسترنغ تسجيل WAV أو أغنية مستوردة لخدمات البث. اختر أحد 8 أساليب، واستمع إلى A (قبل) وB (الأسلوب)، ثم المس Start mastering وصدّر. تُفتح بعد تسجيل WAV ‏(Master this take) أو من MASTERING في Settings.",
-              "يأتي الاثنان في الإصدار 1.12، المتاح الآن على Google Play."
+              "جاء الاثنان في الإصدار 1.12، وهما أيضاً في الإصدار 1.13 المتاح الآن على Google Play."
             ]
           },
           {
@@ -12194,27 +11876,30 @@
                 "title": "Sound FX",
                 "steps": [
                   {
-                    "text": "الضغط على FX يفتح Sound FX. المفاتيح تبقى تعزف والنافذة مفتوحة.",
-                    "img": "assets/guide/c/sfx-title.jpg",
+                    "text": "الضغط على FX يفتح Sound FX فوق لوحات المفاتيح. المفاتيح تبقى تعزف والنافذة مفتوحة.",
+                    "img": "assets/guide/c/sfx13-title.jpg",
                     "size": [
                       680,
-                      170
+                      120
                     ]
                   },
                   {
-                    "text": "هناك 8 مؤثرات: Sub Forge وDepth Drop وBass Clamp وFloor Pump وIron Growl وPsy Orbit وThick Vein وKick Bond.",
-                    "img": "assets/guide/c/sfx-grid.jpg",
+                    "text": "هناك 12 مؤثراً: Sub Forge وDepth Drop وBass Clamp وFloor Pump وIron Growl وPsy Orbit وThick Vein وKick Bond، والجديدة سلّم الخطوات ودوّار مخملي وشريط المرآة وFM. وهي موزعة على صفحات. اسحب يميناً ويساراً أو انقر على الأسهم؛ العداد يُظهر الصفحة، مثل 3/3.",
+                    "img": "assets/guide/c/sfx13-pages.jpg",
                     "size": [
-                      680,
-                      420
+                      648,
+                      258
                     ]
+                  },
+                  {
+                    "text": "مع لوحة مفاتيح واحدة والإعدادات مغلقة تضم الصفحة 8 مؤثرات. مع لوحتي مفاتيح أو والإعدادات مفتوحة تضم 4. تقع النافذة فوق لوحات المفاتيح، فتواصل العزف."
                   },
                   {
                     "text": "الضغط يشغّل مؤثراً. الضغط على المؤثر الذي يعمل يوقف FX. يعمل مؤثر واحد فقط في كل مرة.",
-                    "img": "assets/guide/c/sfx-on.jpg",
+                    "img": "assets/guide/c/sfx13-on.jpg",
                     "size": [
-                      190,
-                      180
+                      160,
+                      185
                     ]
                   },
                   {
@@ -12234,38 +11919,14 @@
                     ]
                   },
                   {
-                    "text": "بعد توقف الطبول تبقى على آخر سرعة للطبول. Depth Drop يهبط من جديد كل 2 نبضة ومع كل نغمة جديدة.",
-                    "img": "assets/guide/c/sfx-grid.jpg",
-                    "size": [
-                      680,
-                      420
-                    ]
+                    "text": "بعد توقف الطبول تبقى على آخر سرعة للطبول. Depth Drop يهبط من جديد كل 2 نبضة ومع كل نغمة جديدة."
                   },
                   {
-                    "text": "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لذلك المؤثر. كل مؤثر من الثمانية يحتفظ بإعداداته عند التبديل. Transpose يجري من -12 إلى 12 ويغيّر المؤثرات الثمانية كلها، ومنها Sub Forge.",
-                    "img": "assets/guide/c/sfx-tone.jpg",
-                    "size": [
-                      720,
-                      510
-                    ]
-                  },
-                  {
-                    "text": "الخطوات التالية للإصدار 1.13، وهو قيد مراجعة Google وغير متاح بعد. الإصدار 1.12 على Google Play يعمل كما هو موضح أعلاه."
-                  },
-                  {
-                    "text": "في الإصدار 1.13 يضم Sound FX‏ 12 مؤثراً في صفحات. سلّم الخطوات ودوّار مخملي وشريط المرآة وFM جديدة. اسحب يميناً ويساراً أو انقر على الأسهم؛ العداد يُظهر الصفحة، مثل 3/3.",
-                    "img": "assets/guide/c/sfx13-pages",
-                    "size": [
-                      648,
-                      258
-                    ]
-                  },
-                  {
-                    "text": "مع لوحة مفاتيح واحدة والإعدادات مغلقة تضم الصفحة 8 مؤثرات. مع لوحتي مفاتيح أو والإعدادات مفتوحة تضم 4. تقع النافذة فوق لوحات المفاتيح، فتواصل العزف."
+                    "text": "الضغط المطوّل على مؤثر يفتح مقابضه: RATE وAMOUNT وLOW وMID وHIGH وSWEEP وREVERB، وتحتها مسطرة Transpose. كل مؤثر يحتفظ بإعداداته عند التبديل. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى ويغيّر كل مؤثر."
                   },
                   {
                     "text": "FM مؤثر FM حقيقي بأربعة مشغلات. الضغط المطوّل على FM يفتح مقابضه: RATE وALGO وRATIO وINDEX وFEEDBK وDECAY وMIX.",
-                    "img": "assets/guide/c/sfx13-fm-knobs",
+                    "img": "assets/guide/c/sfx13-fm-knobs.jpg",
                     "size": [
                       648,
                       134
@@ -12273,15 +11934,18 @@
                   },
                   {
                     "text": "انقر على ALGO لتختار واحدة من 8 خوارزميات: A1 Stack وA2 Y وA3 Branch وA4 Twin mod وA5 2 Stacks وA6 1 to 3 وA7 Stack+2 وA8 Organ. كل مربع يرسم أي مشغل يعدّل أي مشغل.",
-                    "img": "assets/guide/c/sfx13-algos",
+                    "img": "assets/guide/c/sfx13-algos.jpg",
                     "size": [
                       648,
                       256
                     ]
                   },
                   {
+                    "text": "ماذا تفعل مقابض FM: يحدد RATIO طبقة المُعدِّل بالنسبة للنغمة، بخطوات من 0.5 إلى 7. ويحدد INDEX عمق التعديل، فكلما ارتفع صار الصوت أكثر سطوعاً. ويعيد FEEDBK المشغل 1 إلى نفسه فيضيف خشونة. ويحدد DECAY مدة خفوت FM، من 1/16 نبضة إلى 4 نبضات. ويمزج MIX الصوت الأصلي مع FM."
+                  },
+                  {
                     "text": "يمكن تدوير RATE حتى أثناء عزف الطبول، وSYNC يربطه مجدداً بالطبول. في FM، يبدّل FM | EQ المقابض بين FM وEQ.",
-                    "img": "assets/guide/c/sfx13-sync-eq",
+                    "img": "assets/guide/c/sfx13-sync-eq.jpg",
                     "size": [
                       648,
                       100
@@ -12321,11 +11985,11 @@
                     ]
                   },
                   {
-                    "text": "Save يحفظ أيضاً إعدادات مؤثرات Sound FX الثمانية وأي مؤثر يعمل. Load يعيدها كما هي. إعدادات Factory 64 والإعدادات القديمة تُحمَّل دون تغيير Sound FX.",
-                    "img": "assets/guide/c/sfx-on.jpg",
+                    "text": "Save يحفظ أيضاً إعدادات مؤثرات Sound FX الاثني عشر وأي مؤثر يعمل. Load يعيدها كما هي. إعدادات Factory 64 والإعدادات القديمة تُحمَّل دون تغيير Sound FX.",
+                    "img": "assets/guide/c/sfx13-on.jpg",
                     "size": [
-                      190,
-                      180
+                      160,
+                      185
                     ]
                   },
                   {
@@ -12871,20 +12535,10 @@
                     ]
                   },
                   {
-                    "text": "الإعدادات هي Street Boom وVinyl Dust وSoft Chamber وPsy Drive وTechno Crush وTribal Bloom وGoa Gate وWire Glitch.",
-                    "img": "assets/guide/c/dfx-grid.jpg",
-                    "size": [
-                      680,
-                      545
-                    ]
+                    "text": "الإعدادات هي Street Boom وVinyl Dust وSoft Chamber وPsy Drive وTechno Crush وTribal Bloom وGoa Gate وWire Glitch."
                   },
                   {
-                    "text": "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لذلك الإعداد. Transpose يجري من -12 إلى 12 نصف درجة. تبقى هذه المنزلقات فقط ما دام الإعداد مختاراً.",
-                    "img": "assets/guide/c/dfx-sliders.jpg",
-                    "size": [
-                      680,
-                      495
-                    ]
+                    "text": "الضغط المطوّل يفتح مقابض الإعداد: AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، وتحتها مسطرة Transpose. تظهر LOW وMID وHIGH بوحدة dB. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى. تبقى الإعدادات فقط ما دام الإعداد مختاراً."
                   }
                 ]
               },
@@ -12983,7 +12637,7 @@
                 ]
               },
               {
-                "text": "السحب على Swing يحدد swing من 0% إلى 100%. السحب على BPM يحدد الإيقاع من 60 إلى 200. BPM وSwing وحجم الصفوف تعمل مباشرة: التغيير أثناء العزف يبقى عندما يبدأ النمط التالي.",
+                "text": "السحب على Swing يحدد swing من 0% إلى 100%. السحب على BPM يحدد الإيقاع من 1 إلى 240. BPM وSwing وحجم الصفوف تعمل مباشرة: التغيير أثناء العزف يبقى عندما يبدأ النمط التالي.",
                 "img": "assets/guide/c/drum-swing-bpm.jpg",
                 "size": [
                   470,
@@ -13337,20 +12991,10 @@
                     ]
                   },
                   {
-                    "text": "الضغط على إعداد يختاره. الضغط على الإعداد المختار يوقفه. الإعدادات هي Hook Glue وSpoken Soft وIndie Wash وTrance Stack وPhrase Throw وDouble Lane وPulse Gate وDust Weave.",
-                    "img": "assets/guide/c/lfx-grid.jpg",
-                    "size": [
-                      680,
-                      540
-                    ]
+                    "text": "الضغط على إعداد يختاره. الضغط على الإعداد المختار يوقفه. الإعدادات هي Hook Glue وSpoken Soft وIndie Wash وTrance Stack وPhrase Throw وDouble Lane وPulse Gate وDust Weave."
                   },
                   {
-                    "text": "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لذلك الإعداد. Transpose يجري من -12 إلى 12 نصف درجة. تبقى هذه المنزلقات فقط ما دام الإعداد مختاراً.",
-                    "img": "assets/guide/c/lfx-sliders.jpg",
-                    "size": [
-                      680,
-                      500
-                    ]
+                    "text": "الضغط المطوّل يفتح مقابض الإعداد: AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، وتحتها مسطرة Transpose. تظهر LOW وMID وHIGH بوحدة dB. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى. تبقى الإعدادات فقط ما دام الإعداد مختاراً."
                   }
                 ]
               }
@@ -13419,20 +13063,10 @@
                     ]
                   },
                   {
-                    "text": "الضغط على إعداد يختاره. الضغط على الإعداد المختار يوقفه. الإعدادات هي Street Punch وPhone Line وTalk Clarity وNeon Throw وPulse Delay وTwin Voice وGarage Slap وWire Grit.",
-                    "img": "assets/guide/c/mfx-grid.jpg",
-                    "size": [
-                      680,
-                      560
-                    ]
+                    "text": "الضغط على إعداد يختاره. الضغط على الإعداد المختار يوقفه. الإعدادات هي Street Punch وPhone Line وTalk Clarity وNeon Throw وPulse Delay وTwin Voice وGarage Slap وWire Grit."
                   },
                   {
-                    "text": "الضغط المطوّل يفتح Amount وEQ Low وEQ Mid وEQ High وMid-sweep وTranspose وReverb لذلك الإعداد. Transpose يجري من -12 إلى 12 نصف درجة. تبقى هذه المنزلقات فقط ما دام الإعداد مختاراً.",
-                    "img": "assets/guide/c/mfx-sliders.jpg",
-                    "size": [
-                      680,
-                      510
-                    ]
+                    "text": "الضغط المطوّل يفتح مقابض الإعداد: AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، وتحتها مسطرة Transpose. تظهر LOW وMID وHIGH بوحدة dB. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى. تبقى الإعدادات فقط ما دام الإعداد مختاراً."
                   }
                 ]
               },
@@ -13961,6 +13595,9 @@
                   720,
                   80
                 ]
+              },
+              {
+                "text": "في بطاقة Recording finished توجد Master this take وSave as-is وDelete. يسأل Delete أولاً، ثم يحذف التسجيل نهائياً."
               },
               {
                 "text": "Beginner وAdvanced في الأعلى يبدّلان العرض. Close mastering يسأل أولاً إذا لم يُصدَّر الماستر بعد.",
@@ -14862,7 +14499,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.12، 78.3 ميغابايت، الذي يضم الميكسر التناظري ونافذة الماسترنغ. من يشتري Pro يحصل على الإصدار 1.12 عبر Google Play. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.13 قيد مراجعة Google وغير متاح بعد. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
+        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.13، 75.7 ميغابايت، الذي يضم مؤثر FM حقيقياً ونافذة Sound FX جديدة وEQ بوحدة dB، إلى جانب الميكسر التناظري ونافذة الماسترنغ. من يشتري Pro يحصل على الإصدار 1.13 عبر Google Play. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
           "L Studio Pro لأندرويد على Google Play، 8$",
@@ -14897,7 +14534,7 @@
         "navLabel": "التحديثات",
         "pageTitle": "ما الجديد في L Studio.",
         "pageKicker": "L-STUDIO / التحديثات",
-        "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.12 الذي يضم الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.13 قيد مراجعة Google وغير متاح بعد.",
+        "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.13 الذي يضم مؤثر FM حقيقياً ونافذة Sound FX جديدة وEQ بوحدة dB، إلى جانب الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
         "tickerLabel": "التحديثات",
         "statusLabels": {
           "in_progress": "قيد العمل",
@@ -14912,10 +14549,10 @@
         "items": [
           {
             "id": "app-1-13-fm-sound-fx",
-            "status": "upcoming",
-            "title": "قيد مراجعة Google، غير متاح بعد: الإصدار 1.13 مع مؤثر FM حقيقي، ونافذة Sound FX جديدة، وEQ بوحدة dB",
-            "ticker": "قيد مراجعة Google، غير متاح بعد: الإصدار 1.13 مع FM بأربعة مشغلات، وصفحات في Sound FX، وEQ بوحدة dB",
-            "summary": "الإصدار 1.13 قيد مراجعة Google. وهو غير موجود على Google Play بعد. يضم مؤثر FM حقيقياً بأربعة مشغلات و8 خوارزميات، ونافذة Sound FX جديدة بصفحات، ومقابض في كل نوافذ المؤثرات، وEQ بوحدة dB.",
+            "status": "shipped",
+            "title": "الآن على Google Play: الإصدار 1.13 مع مؤثر FM حقيقي، ونافذة Sound FX جديدة، وEQ بوحدة dB",
+            "ticker": "الآن على Google Play: الإصدار 1.13 مع FM بأربعة مشغلات، وصفحات في Sound FX، وEQ بوحدة dB",
+            "summary": "الإصدار 1.13 متاح الآن على Google Play. يضم مؤثر FM حقيقياً بأربعة مشغلات و8 خوارزميات، ونافذة Sound FX جديدة بصفحات، ومقابض في كل نوافذ المؤثرات، وEQ بوحدة dB.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -14980,7 +14617,7 @@
           {
             "id": "app-1-12-mixer-demo",
             "status": "shipped",
-            "title": "الآن على Google Play: الإصدار 1.12 مع مازج تناظري ونافذة ماسترينغ",
+            "title": "الإصدار 1.12 مع مازج تناظري ونافذة ماسترينغ",
             "summary": "",
             "videoId": "f6bLB0IP1ks",
             "videoTitle": "فيديو: مازج تناظري في الإصدار 1.12",
@@ -15040,14 +14677,14 @@
                 }
               }
             },
-            "ticker": "الآن على Google Play: الإصدار 1.12 مع مازج تناظري ونافذة ماسترينغ"
+            "ticker": "الإصدار 1.12 مع مازج تناظري ونافذة ماسترينغ"
           },
           {
             "id": "app-1-11-loaded-keep-playing",
             "status": "shipped",
             "title": "منذ الإصدار 1.11، الآن على Google Play: عيناتك الخاصة في الطبول وKeep playing وأوكتاف لكل موجة",
             "ticker": "الآن على Google Play: حتى 88 من عيناتك في كل صف طبول، مع القص",
-            "summary": "منذ الإصدار 1.11، الآن على Google Play مع الإصدار 1.12: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
+            "summary": "منذ الإصدار 1.11، الآن على Google Play مع الإصدار 1.13: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -15121,15 +14758,9 @@
             "status": "shipped",
             "title": "منذ الإصدار 1.10، الآن على Google Play: Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
             "ticker": "الآن على Google Play: محرر لوب جديد، ولقنوات Mic أيضاً، مع القص وEQ واختيار أي إيقاع طبول يعزف مع اللوب وكم مرة يتكرر",
-            "summary": "منذ الإصدار 1.10، الآن على Google Play مع الإصدار 1.12: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
+            "summary": "منذ الإصدار 1.10، الآن على Google Play مع الإصدار 1.13: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
             "href": "/guide",
             "cta": "افتح الدليل",
-            "images": [
-              "/assets/posters/en/p05-loop-editor-w630.jpg"
-            ],
-            "imageAlts": [
-              "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب: قص وتكرار وEQ وربط بإيقاع الطبول."
-            ],
             "sections": [
               {
                 "title": "اللوبر",
@@ -15232,13 +14863,7 @@
             "ticker": "جديد في 1.09: عدة موجات معاً وطبول مباشرة",
             "summary": "في Google Play، الإصدار 1.09: على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
             "href": "/guide",
-            "cta": "افتح الدليل",
-            "images": [
-              "/assets/updates/sound-109.jpg"
-            ],
-            "imageAlts": [
-              "شاشة Sound في 1.09: أيقونة على كل زر موجة، Sine وSaw مفعّلتان معاً."
-            ]
+            "cta": "افتح الدليل"
           },
           {
             "id": "sound-fx-looper-pages",
@@ -15247,15 +14872,7 @@
             "ticker": "Sound FX وألوان صفحات اللوبر",
             "summary": "منذ الإصدار 1.08: ثمانية مؤثرات Sound FX جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة تحفظ إعدادات المؤثرات الثمانية كلها. لكل صفحة في اللوبر اسم وواحد من 8 ألوان. المقابض تعرض القيمة بحلقة ذهبية، والجولة داخل التطبيق تشرح كل ذلك.",
             "href": "/guide",
-            "cta": "فتح الدليل",
-            "images": [
-              "/assets/updates/sound-fx.jpg",
-              "/assets/updates/looper-pages.jpg"
-            ],
-            "imageAlts": [
-              "نافذة Sound FX مع اختيار Psy Orbit.",
-              "شاشة Loop بأرقام صفحات ملوّنة واسم صفحة."
-            ]
+            "cta": "فتح الدليل"
           },
           {
             "id": "exclusive-packs-gallery",
@@ -15277,15 +14894,7 @@
             "status": "shipped",
             "title": "وضع Live والكلمات وMic FX وDrum FX",
             "ticker": "وضع Live والكلمات وMic FX وDrum FX",
-            "summary": "منذ الإصدار 1.08: وضع LIVE يقفل الأسماء وClear وتحميل الملفات أثناء العزف. نافذة الكلمات تمرّر النص وأنت تغني. للميكروفون وللطبول ثمانية مؤثرات لكل منهما، وفي كل قناة لوب يوجد Looper FX، وزر Back واحد يعيد آخر تسجيل تم مسحه.",
-            "images": [
-              "/assets/updates/lyrics.jpg",
-              "/assets/updates/mic-fx.jpg"
-            ],
-            "imageAlts": [
-              "نافذة الكلمات مفتوحة فوق التطبيق.",
-              "لوحة Mic FX. Phone Line محدد."
-            ]
+            "summary": "منذ الإصدار 1.08: وضع LIVE يقفل الأسماء وClear وتحميل الملفات أثناء العزف. نافذة الكلمات تمرّر النص وأنت تغني. للميكروفون وللطبول ثمانية مؤثرات لكل منهما، وفي كل قناة لوب يوجد Looper FX، وزر Back واحد يعيد آخر تسجيل تم مسحه."
           }
         ]
       },
@@ -15301,141 +14910,108 @@
         "next": "الشريحة التالية",
         "slide": "الشريحة {n} من {total}",
         "slides": {
-          "sound-presets": {
-            "title": "Presets: 8 خانات و8 صفحات",
-            "text": "الإعداد يحفظ الصوت مع Sound FX والموجات المفعّلة. الضغط المطوّل على Presets يحفظ في الإعداد المحمّل."
-          },
           "sound-scales": {
             "title": "Key والسلالم",
-            "text": "اختر Major أو Minor من أي نغمة أساس، من C إلى B. السلم يعلّم مفاتيحه فقط ولا يغيّر ترددها أبداً."
+            "text": "اختر Major أو Minor من أي من 12 نغمة أساس، أو SCALE OFF. تُعلّم النقاط نغمات السلم على المفاتيح. الترددات لا تتغير."
           },
           "mic-channels": {
-            "title": "قنوات لكل منها صوتها",
-            "text": "ست قنوات على صفحتين. لكل قناة HPF وPres وFX وحجم وL/R خاصة بها، مع كتم وسولو."
-          },
-          "mic-fx": {
-            "title": "Mic FX لكل قناة",
-            "text": "ثمانية إعدادات. الضغط يختار، والضغط الثاني يوقف، والضغط المطوّل يفتح المنزلقات، ومنها Transpose من -12 إلى 12."
+            "title": "تسجيل Mic",
+            "text": "ثلاث قنوات للغناء في الصفحة 1. غيتار وباس وآلة في الصفحة 2. مع المراقبة والإعادة."
           },
           "loop-looper": {
-            "title": "32 قناة و8 صفحات",
-            "text": "أربع قنوات في كل صفحة. يمكن للتسجيل أن يستمر حتى 30 دقيقة، وRedo يعيد أخذاً مسحته."
+            "title": "Looper",
+            "text": "32 قناة لوب في 8 صفحات. سجّل وشغّل وأعد."
           },
           "loop-editor": {
-            "title": "Loop Editor",
-            "text": "قص الأخذ، وحدد نقاط اللوب، وشكّله بـ EQ وGain وSqueeze. ثماني خانات تربط اللوب بإيقاع الطبول."
-          },
-          "loop-fx": {
-            "title": "Looper FX",
-            "text": "ثمانية إعدادات للقناة. الضغط يختار، والضغط المطوّل يفتح Amount وEQ وMid-sweep وTranspose وReverb له."
+            "title": "محرر اللوب",
+            "text": "قصّ وكرّر وشكّل الـ EQ. اضغط مطولًا على مربع الإيقاع لضبط التكرارات."
           },
           "loop-page-name": {
-            "title": "اسم ولون للصفحة",
-            "text": "الضغط المطوّل على رقم صفحة يفتح Page name. اكتب اسماً واختر لوناً من 8 ألوان. اللون يلوّن أيضاً موجات تلك الصفحة."
+            "title": "اسم لكل صفحة",
+            "text": "اضغط مطولًا على رقم الصفحة لتسميتها واختيار لون من 8 ألوان."
           },
           "sound-fx": {
-            "title": "Sound FX",
-            "text": "ثمانية مؤثرات تتبع إيقاع الطبول، ويعمل واحد منها في كل مرة. الضغط المطوّل يفتح المنزلقات: Amount وEQ وMid-sweep وTranspose وReverb."
-          },
-          "sound-keyboards": {
-            "title": "لوحتا مفاتيح",
-            "text": "اضغط + لفتح لوحة مفاتيح ثانية أعلى بأوكتاف واحد. تبقى مفتوحة عند التنقل بين Sound وPad."
+            "title": "مؤثرات Sound",
+            "text": "12 مؤثرًا، 4 منها جديدة. اسحب أو المس الأسهم لتغيير الصفحة. المس مؤثرًا لتشغيله، واضغط مطولًا لفتح مقابضه."
           },
           "mic-editor": {
-            "title": "Mic Editor",
-            "text": "الضغط على مؤشر القناة يفتحه عندما يكون في القناة أخذ مسجّل. قص وتكرار وEQ وGain وSqueeze، مع 8 خانات للإيقاع. Save يحفظ التغييرات مع مشروع الميكروفون."
+            "title": "محرر Mic",
+            "text": "قصّ وتكرار وEQ وGain وSqueeze. اضغط مطولًا على مربع الإيقاع لضبط التكرارات."
           },
           "mic-lyrics": {
-            "title": "شاشة تلقين للكلمات",
-            "text": "اضغط Edit لكتابة كلماتك أو لصقها. Play يمررها وPause يوقفها. Speed من 20 إلى 150 وحجم النص من 14 إلى 48. كل شيء يُحفظ في الهاتف."
+            "title": "كلمات",
+            "text": "جهاز تلقين لكلماتك. اكتب أو الصق، واضغط تشغيل ليبدأ التمرير، واضبط السرعة وحجم النص."
           },
           "pad-live": {
-            "title": "لوحة الأداء الحي",
-            "text": "أمسك نغمة واسحب على اللوحة. يتبع الصوت إصبعك أثناء عزف النغمة. WAH وOCT وVibrato مقابض من 0 إلى 100 بالمئة تشكّل صوت لوحة المفاتيح فقط."
-          },
-          "pad-keyboard": {
-            "title": "لوحة مفاتيح ثانية في Pad",
-            "text": "اضغط + بجانب صف VOICES لفتح لوحة مفاتيح ثانية أعلى بأوكتاف واحد. تختفي مقابض WAH وOCT وVibrato أثناء فتحها."
-          },
-          "pad-targets": {
-            "title": "أهداف اللوحة",
-            "text": "KEY وMIC وLOOP وDRUM تحدد ما تحرّكه اللوحة، ويمكن تشغيل عدة أهداف معاً. أمسك 1/4 أو 1/8 أو 1/16 أو 1/32 لتكرار سريع بإيقاع الطبول، وأمسك STOP لإخفاتها تدريجياً."
+            "title": "لوحة العزف الحي",
+            "text": "اسحب على اللوحة فيتبع الصوت إصبعك. اختر KEY أو MIC أو LOOP أو DRUM. اضغط مطولًا على 1/4 حتى 1/32 للتكرار."
           },
           "drum-rows": {
             "title": "الصفوف الثمانية",
-            "text": "الضغط على +4 يُظهر FX 1 وFX 2 وFX 3 وVoice تحت الصفوف الأربعة الأولى ويخفي لوحة المفاتيح. يصبح المفتاح ‎-4، والضغط مرة أخرى يخفي هذه الصفوف ويعيد لوحة المفاتيح."
-          },
-          "drum-main": {
-            "title": "شاشة Drum",
-            "text": "الأسهم تبدّل الطقم والعينات، والمقابض تضبط Drum Vol وSwing وBPM. لكل إيقاع من الإيقاعات الثمانية 16 خطوة في كل صف. في كل صف LOAD وأسهم ومنزلق لمستوى الصوت وL/R. الضغط على +4 يُظهر FX 1 وFX 2 وFX 3 وVoice."
+            "text": "المس زر زائد 4 لإظهار FX 1 وFX 2 وFX 3 وVoice. تختفي لوحة المفاتيح ويصبح الزر ناقص 4. المسه مرة أخرى لإعادتها."
           },
           "drum-banks": {
             "title": "بنوك العينات",
-            "text": "ثمانية صفوف، والضغط على اسم صف يفتح قائمة أصواته من بنكي Factory وExclusive. كل صف يعرض نوع صوته فقط."
+            "text": "ثمانية صفوف طبول، ولكل صف منتقيه الخاص. اختر من بنكي Factory وExclusive."
           },
           "drum-loaded": {
-            "title": "عيناتك الخاصة (LOADED)",
-            "text": "لكل صف من الصفوف الثمانية بنك LOADED يضم حتى 88 عينة خاصة بك، حتى 30 ثانية لكل منها، ويُحفظ تلقائياً. شريطا البداية والنهاية يقصّان العينة. SAVE يحفظ، وRESET يعيد الطول الكامل، وRENAME يعطي اسماً حتى 24 حرفاً، وDELETE يحذف."
-          },
-          "drum-fx": {
-            "title": "Drum FX",
-            "text": "ثمانية إعدادات للطبول. الضغط يشغّل، والضغط الثاني يطفئ، والضغط المطوّل يفتح المنزلقات."
-          },
-          "drum-repeats": {
-            "title": "Pattern repeats",
-            "text": "الضغط المطوّل على رقم الإيقاع يفتح النافذة. اختر من 1 إلى 10، أو اكتب رقماً حتى 88 في الخانة، أو اختر اللانهاية أو DEFAULT. COPY وPASTE ينقلان إيقاعاً كاملاً إلى رقم آخر."
+            "title": "عيناتك الخاصة",
+            "text": "LOADED: حتى 88 عينة خاصة بك في كل صف، تُحفظ تلقائيًا. قصّ بشريطي البداية والنهاية. SAVE وRESET وRENAME وDELETE."
           },
           "home-sound": {
             "title": "صمّم صوتك",
             "text": "امزج أنواع الموجات، وابدأ من إعداد جاهز، واضبط كل مفتاح على سلّمك.",
-            "alt": "1/8: صمّم صوتك. امزج أنواع الموجات، وابدأ من إعداد جاهز، واضبط كل مفتاح على سلّمك."
-          },
-          "home-sound-fx": {
-            "title": "لوّن كل صوت",
-            "text": "اختر عالم مؤثرات للمفاتيح والطبول، ثم اضبط نغمته بدقة.",
-            "alt": "2/8: لوّن كل صوت. اختر عالم مؤثرات للمفاتيح والطبول، ثم اضبط نغمته بدقة."
+            "alt": "1/7: صمّم صوتك. امزج أنواع الموجات، وابدأ من إعداد جاهز، واضبط كل مفتاح على سلّمك."
           },
           "home-looper": {
             "title": "طبقات من اللوب",
             "text": "سجّل اللوب قناة بعد قناة، وقصّه على الإيقاع، وابنِ منه مقطعًا كاملًا.",
-            "alt": "3/8: طبقات من اللوب. سجّل اللوب قناة بعد قناة، وقصّه على الإيقاع، وابنِ منه مقطعًا كاملًا."
+            "alt": "2/7: طبقات من اللوب. سجّل اللوب قناة بعد قناة، وقصّه على الإيقاع، وابنِ منه مقطعًا كاملًا."
           },
           "home-live-pad": {
             "title": "اعزف مباشرة",
             "text": "غيّر الصوت بإصبع واحد وأطلق تكرارات متزامنة مع الإيقاع أثناء العزف.",
-            "alt": "4/8: اعزف مباشرة. غيّر الصوت بإصبع واحد وأطلق تكرارات متزامنة مع الإيقاع أثناء العزف."
+            "alt": "3/7: اعزف مباشرة. غيّر الصوت بإصبع واحد وأطلق تكرارات متزامنة مع الإيقاع أثناء العزف."
           },
           "home-drums": {
             "title": "ابنِ إيقاعك",
             "text": "برمج الأنماط خطوة بخطوة، واختر كل طبلة من بنوك عينات كبيرة واضبطها.",
-            "alt": "5/8: ابنِ إيقاعك. برمج الأنماط خطوة بخطوة، واختر كل طبلة من بنوك عينات كبيرة واضبطها."
+            "alt": "4/7: ابنِ إيقاعك. برمج الأنماط خطوة بخطوة، واختر كل طبلة من بنوك عينات كبيرة واضبطها."
           },
           "home-mixer": {
             "title": "المكسر التناظري الخاص بك",
             "text": "شاهد أين تقع الطبول واللوب والميكروفون، وشكّلها في مزيج واحد متوازن.",
-            "alt": "6/8: المكسر التناظري الخاص بك. شاهد أين تقع الطبول واللوب والميكروفون، وشكّلها في مزيج واحد متوازن."
+            "alt": "5/7: المكسر التناظري الخاص بك. شاهد أين تقع الطبول واللوب والميكروفون، وشكّلها في مزيج واحد متوازن."
           },
           "home-mastering-style": {
             "title": "أنهِ أغنيتك",
             "text": "اختر نمط صوت، وقارن قبل وبعد، وصدّر الملف النهائي.",
-            "alt": "7/8: أنهِ أغنيتك. اختر نمط صوت، وقارن قبل وبعد، وصدّر الملف النهائي."
+            "alt": "6/7: أنهِ أغنيتك. اختر نمط صوت، وقارن قبل وبعد، وصدّر الملف النهائي."
           },
           "home-mastering-measure": {
             "title": "قِس كل التفاصيل",
             "text": "قراءات دقيقة لعلو الصوت والديناميكية والستيريو تُظهر كيف تبدو أغنيتك فعلًا.",
-            "alt": "8/8: قِس كل التفاصيل. قراءات دقيقة لعلو الصوت والديناميكية والستيريو تُظهر كيف تبدو أغنيتك فعلًا."
+            "alt": "7/7: قِس كل التفاصيل. قراءات دقيقة لعلو الصوت والديناميكية والستيريو تُظهر كيف تبدو أغنيتك فعلًا."
           },
           "sound-wave-panel": {
-            "title": "لوحة الموجة: الأوكتاف وEQ والصفحات",
-            "text": "الضغط المطول على مفتاح موجة يفتح لوحتها: مفاتيح الأوكتاف من ‎-2 إلى ‎+2، وLOW وMID وHIGH وHPF وLPF وGAIN، و4 صفحات، كل صفحة صوت إضافي من الموجة نفسها. كل تغيير يُسمع فوراً ويُحفظ."
+            "title": "لوحة الموجة",
+            "text": "اضغط مطولًا على مفتاح موجة: الأوكتاف وEQ و4 صفحات، كل صفحة صوت إضافي من الموجة نفسها. كل تغيير يُسمع فورًا ويُحفظ."
           },
           "loop-mixer": {
-            "title": "الميكسر التناظري",
-            "text": "يُفتح بالنقر على LIVE SCOPE. لكل من Drums وLooper وMic قناة فيها Drive وHPF وEQ وComp وPan وWidth ومنزلق، مع قناة Master. يُظهر SPECTRUM وMIX MAP أين تتصادم القنوات. 8 إعدادات."
+            "title": "ميكسر تناظري",
+            "text": "المس LIVE SCOPE في الأعلى. للطبول واللوبر والميكروفون Drive وHPF وEQ وComp وPan ومنزلق، مع قناة Master. 8 إعدادات."
           },
           "mic-mastering": {
             "title": "الماسترنغ",
-            "text": "بعد تسجيل WAV يفتحه Master this take. اختر أحد 8 أساليب، وقارن بين A وB، ثم صدّر إلى WAV أو MP3 أو FLAC. تبقى الملفات على هاتفك."
+            "text": "بعد تسجيل WAV المس Master this take. 8 أساليب، وA وB للمقارنة، ثم التصدير إلى WAV أو MP3 أو FLAC. تبقى الملفات على هاتفك."
+          },
+          "sound-fm": {
+            "title": "FM حقيقي",
+            "text": "4 مشغّلات. ALGO يختار 1 من 8 طرق لربطها، RATIO الطبقة، INDEX السطوع، FEEDBK الخشونة، DECAY الخفوت، وMIX الكمية."
+          },
+          "sound-frequencies": {
+            "title": "ضبط الترددات",
+            "text": "اكتب الـHz لكل مفتاح من المفاتيح الثمانية، أو حمّل سلمًا جاهزًا مثل الحجاز أو الكرد. احفظ حتى 8 إعدادات خاصة بك."
           }
         }
       }

@@ -3,7 +3,7 @@
     "navLabel": "Updates",
     "pageTitle": "What's new in L Studio.",
     "pageKicker": "L-STUDIO / UPDATES",
-    "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.12, which brings the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved. Version 1.13 is in Google review and is not available yet.",
+    "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.13, which brings a real FM effect, a new Sound FX window and EQ in dB, on top of the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved.",
     "tickerLabel": "Updates",
     "statusLabels": {
       "in_progress": "In progress",
@@ -18,10 +18,10 @@
     "items": [
       {
         "id": "app-1-13-fm-sound-fx",
-        "status": "upcoming",
-        "title": "In Google review, not available yet: version 1.13 with a real FM effect, a new Sound FX window and EQ in dB",
-        "ticker": "In Google review, not available yet: version 1.13 with a 4-operator FM effect, Sound FX pages and EQ in dB",
-        "summary": "Version 1.13 is in Google review. It is not on Google Play yet. It brings a real FM effect with 4 operators and 8 algorithms, a new Sound FX window with pages, knobs in every effect window, and EQ in dB.",
+        "status": "shipped",
+        "title": "On Google Play now: version 1.13 with a real FM effect, a new Sound FX window and EQ in dB",
+        "ticker": "On Google Play: version 1.13 with a 4-operator FM effect, Sound FX pages and EQ in dB",
+        "summary": "Version 1.13 is on Google Play now. It brings a real FM effect with 4 operators and 8 algorithms, a new Sound FX window with pages, knobs in every effect window, and EQ in dB.",
         "href": "/guide",
         "cta": "Open the guide",
         "images": [
@@ -86,7 +86,7 @@
       {
         "id": "app-1-12-mixer-demo",
         "status": "shipped",
-        "title": "On Google Play now: version 1.12 with an analog mixer and a mastering window",
+        "title": "Version 1.12 with an analog mixer and a mastering window",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "Video: version 1.12 analog mixer",
@@ -146,14 +146,14 @@
             }
           }
         },
-        "ticker": "On Google Play: version 1.12 with an analog mixer and a mastering window"
+        "ticker": "Version 1.12 with an analog mixer and a mastering window"
       },
       {
         "id": "app-1-11-loaded-keep-playing",
         "status": "shipped",
         "title": "Since version 1.11, now on Google Play: your own drum samples, Keep playing, and an octave for each wave",
         "ticker": "On Google Play: up to 88 of your own samples on every drum row, with trim",
-        "summary": "Since version 1.11, now on Google Play with version 1.12: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
+        "summary": "Since version 1.11, now on Google Play with version 1.13: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
         "href": "/guide",
         "cta": "Open the guide",
         "images": [
@@ -227,15 +227,9 @@
         "status": "shipped",
         "title": "Since version 1.10, now on Google Play: Loop Editor, recordings up to 30 minutes and full session saving",
         "ticker": "On Google Play: a new Loop Editor, also for Mic, with trim, EQ, and a choice of which drum rhythm plays with the loop and how many times it repeats",
-        "summary": "Since version 1.10, now on Google Play with version 1.12: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
+        "summary": "Since version 1.10, now on Google Play with version 1.13: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
         "href": "/guide",
         "cta": "Open the guide",
-        "images": [
-          "/assets/posters/en/p05-loop-editor-w630.jpg"
-        ],
-        "imageAlts": [
-          "Poster: Edit Every Loop. The Loop Editor: trim, repeat, EQ, and lock it to the drum rhythm."
-        ],
         "sections": [
           {
             "title": "Looper",
@@ -338,13 +332,7 @@
         "ticker": "New in 1.09: layered waves and live drums",
         "summary": "On Google Play, version 1.09: Each wave button shows an icon of its wave. A long-press adds or removes a wave, so one key can play several waves at once, and presets remember which waves are on. A long-press on Presets saves the loaded preset, and the window opens on its page. On Drum, BPM, Swing, and row volumes you change while playing carry into the next patterns.",
         "href": "/guide",
-        "cta": "Open guide",
-        "images": [
-          "/assets/updates/sound-109.jpg"
-        ],
-        "imageAlts": [
-          "The Sound screen in 1.09: an icon on each wave button, Sine and Saw on together."
-        ]
+        "cta": "Open guide"
       },
       {
         "id": "sound-fx-looper-pages",
@@ -353,15 +341,7 @@
         "ticker": "Sound FX and looper page colors",
         "summary": "Since version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Each looper page gets a name and one of 8 colors. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
         "href": "/guide",
-        "cta": "Open guide",
-        "images": [
-          "/assets/updates/sound-fx.jpg",
-          "/assets/updates/looper-pages.jpg"
-        ],
-        "imageAlts": [
-          "Sound FX window with Psy Orbit selected.",
-          "Loop screen with colored page numbers and a page name."
-        ]
+        "cta": "Open guide"
       },
       {
         "id": "exclusive-packs-gallery",
@@ -383,15 +363,7 @@
         "status": "shipped",
         "title": "Live mode, lyrics, Mic FX, Drum FX",
         "ticker": "Live mode, lyrics, Mic FX and Drum FX",
-        "summary": "Since version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. The mic and the drums get 8 effects each, every loop channel has Looper FX, and one Back button brings back the last cleared take.",
-        "images": [
-          "/assets/updates/lyrics.jpg",
-          "/assets/updates/mic-fx.jpg"
-        ],
-        "imageAlts": [
-          "Lyrics window open over the app.",
-          "Mic FX panel with Phone Line selected."
-        ]
+        "summary": "Since version 1.08: LIVE mode locks names, Clear, and file loading while you play. A lyrics window scrolls your words while you sing. The mic and the drums get 8 effects each, every loop channel has Looper FX, and one Back button brings back the last cleared take."
       }
     ]
   },
@@ -399,7 +371,7 @@
     "navLabel": "עדכונים",
     "pageTitle": "מה חדש ב-L Studio.",
     "pageKicker": "L-STUDIO / עדכונים",
-    "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.12, שמביאה את המיקסר האנלוגי ואת חלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. גרסה 1.13 בבדיקה של Google ועדיין לא זמינה.",
+    "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.13, שמביאה אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
     "tickerLabel": "עדכונים",
     "statusLabels": {
       "in_progress": "בעבודה",
@@ -414,10 +386,10 @@
     "items": [
       {
         "id": "app-1-13-fm-sound-fx",
-        "status": "upcoming",
-        "title": "בבדיקה של Google, עדיין לא זמינה: גרסה 1.13 עם אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB",
-        "ticker": "בבדיקה של Google, עדיין לא זמינה: גרסה 1.13 עם אפקט FM של 4 אופרטורים, עמודים ב-Sound FX ו-EQ ב-dB",
-        "summary": "גרסה 1.13 בבדיקה של Google. היא עדיין לא ב-Google Play. היא מביאה אפקט FM אמיתי עם 4 אופרטורים ו-8 אלגוריתמים, חלון Sound FX חדש עם עמודים, כפתורים מסתובבים בכל חלונות האפקטים ו-EQ ב-dB.",
+        "status": "shipped",
+        "title": "עכשיו ב-Google Play: גרסה 1.13 עם אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB",
+        "ticker": "עכשיו ב-Google Play: גרסה 1.13 עם אפקט FM של 4 אופרטורים, עמודים ב-Sound FX ו-EQ ב-dB",
+        "summary": "גרסה 1.13 עכשיו ב-Google Play. היא מביאה אפקט FM אמיתי עם 4 אופרטורים ו-8 אלגוריתמים, חלון Sound FX חדש עם עמודים, כפתורים מסתובבים בכל חלונות האפקטים ו-EQ ב-dB.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
         "images": [
@@ -482,7 +454,7 @@
       {
         "id": "app-1-12-mixer-demo",
         "status": "shipped",
-        "title": "עכשיו ב-Google Play: גרסה 1.12 עם מיקסר אנלוגי וחלון מאסטרינג",
+        "title": "גרסה 1.12 עם מיקסר אנלוגי וחלון מאסטרינג",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "סרטון: מיקסר אנלוגי בגרסה 1.12",
@@ -542,14 +514,14 @@
             }
           }
         },
-        "ticker": "עכשיו ב-Google Play: גרסה 1.12 עם מיקסר אנלוגי וחלון מאסטרינג"
+        "ticker": "גרסה 1.12 עם מיקסר אנלוגי וחלון מאסטרינג"
       },
       {
         "id": "app-1-11-loaded-keep-playing",
         "status": "shipped",
         "title": "מאז גרסה 1.11, עכשיו ב-Google Play: סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
         "ticker": "עכשיו ב-Google Play: עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך",
-        "summary": "מאז גרסה 1.11, עכשיו ב-Google Play עם גרסה 1.12: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
+        "summary": "מאז גרסה 1.11, עכשיו ב-Google Play עם גרסה 1.13: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
         "images": [
@@ -623,15 +595,9 @@
         "status": "shipped",
         "title": "מאז גרסה 1.10, עכשיו ב-Google Play: Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
         "ticker": "עכשיו ב-Google Play: עורך לופ חדש, גם לערוצי המיקרופון, עם חיתוך, אקולייזר ובחירה של איזה מקצב תופים מתנגן עם הלופ וכמה פעמים הוא חוזר",
-        "summary": "מאז גרסה 1.10, עכשיו ב-Google Play עם גרסה 1.12: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
+        "summary": "מאז גרסה 1.10, עכשיו ב-Google Play עם גרסה 1.13: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
         "href": "/guide",
         "cta": "לפתיחת המדריך",
-        "images": [
-          "/assets/posters/he/p05-loop-editor-w630.jpg"
-        ],
-        "imageAlts": [
-          "פוסטר: ערכו כל לולאה. עורך הלופ: חיתוך, חזרות, איזון וקשירה לקצב התופים."
-        ],
         "sections": [
           {
             "title": "לופר",
@@ -734,13 +700,7 @@
         "ticker": "חדש ב-1.09: כמה גלים יחד ותופים בזמן אמת",
         "summary": "ב-Google Play, גרסה 1.09: על כל כפתור גל יש אייקון של הגל. לחיצה ארוכה מוסיפה או מורידה גל, כך שקליד אחד מנגן כמה גלים יחד, והפריסטים זוכרים אילו גלים דולקים. לחיצה ארוכה על Presets שומרת את הפריסט הטעון, והחלון נפתח בעמוד שלו. במסך התופים, BPM, Swing והווליום של השורות שמשנים תוך כדי נגינה עוברים לפטרנים הבאים.",
         "href": "/guide",
-        "cta": "לפתיחת המדריך",
-        "images": [
-          "/assets/updates/sound-109.jpg"
-        ],
-        "imageAlts": [
-          "מסך Sound בגרסה 1.09: אייקון על כל כפתור גל, Sine ו-Saw דולקים יחד."
-        ]
+        "cta": "לפתיחת המדריך"
       },
       {
         "id": "sound-fx-looper-pages",
@@ -749,15 +709,7 @@
         "ticker": "Sound FX וצבעים לעמודי הלופר",
         "summary": "מאז גרסה 1.08: 8 אפקטי Sound FX חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים שומרים את ההגדרות של כל ה-8. לכל עמוד בלופר יש שם ואחד מ-8 צבעים. הנובים מראים את הערך בטבעת זהב, והמדריך באפליקציה מלמד את כל זה.",
         "href": "/guide",
-        "cta": "למדריך",
-        "images": [
-          "/assets/updates/sound-fx.jpg",
-          "/assets/updates/looper-pages.jpg"
-        ],
-        "imageAlts": [
-          "חלון Sound FX עם Psy Orbit נבחר.",
-          "מסך Loop עם מספרי עמודים צבעוניים ושם עמוד."
-        ]
+        "cta": "למדריך"
       },
       {
         "id": "exclusive-packs-gallery",
@@ -779,15 +731,7 @@
         "status": "shipped",
         "title": "מצב Live, מילים, Mic FX ו-Drum FX",
         "ticker": "מצב Live, מילים, Mic FX ו-Drum FX",
-        "summary": "מאז גרסה 1.08: מצב LIVE נועל שמות, Clear וטעינת קבצים בזמן נגינה. חלון המילים גולל את הטקסט בזמן שאתם שרים. למיקרופון ולתופים יש 8 אפקטים לכל אחד, לכל ערוץ לופ יש Looper FX, וכפתור Back אחד מחזיר את ההקלטה האחרונה שנמחקה.",
-        "images": [
-          "/assets/updates/lyrics.jpg",
-          "/assets/updates/mic-fx.jpg"
-        ],
-        "imageAlts": [
-          "חלון המילים פתוח מעל האפליקציה.",
-          "לוח Mic FX. Phone Line נבחר."
-        ]
+        "summary": "מאז גרסה 1.08: מצב LIVE נועל שמות, Clear וטעינת קבצים בזמן נגינה. חלון המילים גולל את הטקסט בזמן שאתם שרים. למיקרופון ולתופים יש 8 אפקטים לכל אחד, לכל ערוץ לופ יש Looper FX, וכפתור Back אחד מחזיר את ההקלטה האחרונה שנמחקה."
       }
     ]
   },
@@ -795,7 +739,7 @@
     "navLabel": "Обновления",
     "pageTitle": "Что нового в L Studio.",
     "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-    "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.12, в которой есть аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения. Версия 1.13 на проверке в Google и пока недоступна.",
+    "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.13, в которой есть настоящий эффект FM, новое окно Sound FX и EQ в dB, а также аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
     "tickerLabel": "Обновления",
     "statusLabels": {
       "in_progress": "В работе",
@@ -810,10 +754,10 @@
     "items": [
       {
         "id": "app-1-13-fm-sound-fx",
-        "status": "upcoming",
-        "title": "На проверке в Google, пока недоступна: версия 1.13 с настоящим эффектом FM, новым окном Sound FX и EQ в dB",
-        "ticker": "На проверке в Google, пока недоступна: версия 1.13 с 4-операторным FM, страницами Sound FX и EQ в dB",
-        "summary": "Версия 1.13 на проверке в Google. В Google Play её пока нет. В ней настоящий эффект FM с 4 операторами и 8 алгоритмами, новое окно Sound FX со страницами, ручки во всех окнах эффектов и EQ в dB.",
+        "status": "shipped",
+        "title": "Теперь в Google Play: версия 1.13 с настоящим эффектом FM, новым окном Sound FX и EQ в dB",
+        "ticker": "Теперь в Google Play: версия 1.13 с 4-операторным FM, страницами Sound FX и EQ в dB",
+        "summary": "Версия 1.13 уже в Google Play. В ней настоящий эффект FM с 4 операторами и 8 алгоритмами, новое окно Sound FX со страницами, ручки во всех окнах эффектов и EQ в dB.",
         "href": "/guide",
         "cta": "Открыть руководство",
         "images": [
@@ -878,7 +822,7 @@
       {
         "id": "app-1-12-mixer-demo",
         "status": "shipped",
-        "title": "Теперь в Google Play: версия 1.12 с аналоговым микшером и окном мастеринга",
+        "title": "Версия 1.12 с аналоговым микшером и окном мастеринга",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "Видео: аналоговый микшер в версии 1.12",
@@ -938,14 +882,14 @@
             }
           }
         },
-        "ticker": "Теперь в Google Play: версия 1.12 с аналоговым микшером и окном мастеринга"
+        "ticker": "Версия 1.12 с аналоговым микшером и окном мастеринга"
       },
       {
         "id": "app-1-11-loaded-keep-playing",
         "status": "shipped",
         "title": "С версии 1.11, теперь в Google Play: свои сэмплы в ударных, Keep playing и октава для каждой волны",
         "ticker": "Теперь в Google Play: до 88 своих сэмплов в каждом ряду ударных, с обрезкой",
-        "summary": "С версии 1.11, теперь в Google Play с версией 1.12: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
+        "summary": "С версии 1.11, теперь в Google Play с версией 1.13: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
         "href": "/guide",
         "cta": "Открыть руководство",
         "images": [
@@ -1019,15 +963,9 @@
         "status": "shipped",
         "title": "С версии 1.10, теперь в Google Play: Loop Editor, запись до 30 минут и полное сохранение сессии",
         "ticker": "Теперь в Google Play: новый редактор лупов, в том числе для Mic, с обрезкой, EQ и выбором, какой ритм ударных играет вместе с лупом и сколько раз он повторяется",
-        "summary": "С версии 1.10, теперь в Google Play с версией 1.12: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
+        "summary": "С версии 1.10, теперь в Google Play с версией 1.13: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
         "href": "/guide",
         "cta": "Открыть руководство",
-        "images": [
-          "/assets/posters/en/p05-loop-editor-w630.jpg"
-        ],
-        "imageAlts": [
-          "Постер (на английском): Edit Every Loop. Редактор лупа: обрезка, повторы, EQ и привязка к ритму ударных."
-        ],
         "sections": [
           {
             "title": "Лупер",
@@ -1130,13 +1068,7 @@
         "ticker": "Новое в 1.09: несколько волн сразу и живые ударные",
         "summary": "В Google Play, версия 1.09: На каждой кнопке волны есть значок этой волны. Долгое нажатие добавляет или убирает волну, так что одна клавиша играет несколько волн сразу, а пресеты помнят, какие волны включены. Долгое нажатие на Presets сохраняет загруженный пресет, а окно открывается на его странице. На экране Drum BPM, Swing и громкость дорожек, изменённые во время игры, переходят в следующие паттерны.",
         "href": "/guide",
-        "cta": "Открыть руководство",
-        "images": [
-          "/assets/updates/sound-109.jpg"
-        ],
-        "imageAlts": [
-          "Экран Sound в 1.09: значок на каждой кнопке волны, Sine и Saw включены вместе."
-        ]
+        "cta": "Открыть руководство"
       },
       {
         "id": "sound-fx-looper-pages",
@@ -1145,15 +1077,7 @@
         "ticker": "Sound FX и цвета страниц лупера",
         "summary": "С версии 1.08: 8 новых Sound FX, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты сохраняют настройки всех 8. Каждой странице лупера можно дать имя и один из 8 цветов. Регуляторы показывают значение золотым кольцом, а тур в приложении показывает всё это.",
         "href": "/guide",
-        "cta": "Открыть гид",
-        "images": [
-          "/assets/updates/sound-fx.jpg",
-          "/assets/updates/looper-pages.jpg"
-        ],
-        "imageAlts": [
-          "Окно Sound FX, выбран Psy Orbit.",
-          "Экран Loop с цветными номерами страниц и именем страницы."
-        ]
+        "cta": "Открыть гид"
       },
       {
         "id": "exclusive-packs-gallery",
@@ -1175,15 +1099,7 @@
         "status": "shipped",
         "title": "Режим Live, текст, Mic FX, Drum FX",
         "ticker": "Режим Live, текст, Mic FX и Drum FX",
-        "summary": "С версии 1.08: режим LIVE блокирует имена, Clear и загрузку файлов во время игры. Окно текста прокручивает слова, пока вы поете. У микрофона и у ударных по 8 эффектов, на каждом канале лупера есть Looper FX, а одна кнопка Back возвращает последний стёртый дубль.",
-        "images": [
-          "/assets/updates/lyrics.jpg",
-          "/assets/updates/mic-fx.jpg"
-        ],
-        "imageAlts": [
-          "Окно текста открыто поверх приложения.",
-          "Панель Mic FX. Выбран Phone Line."
-        ]
+        "summary": "С версии 1.08: режим LIVE блокирует имена, Clear и загрузку файлов во время игры. Окно текста прокручивает слова, пока вы поете. У микрофона и у ударных по 8 эффектов, на каждом канале лупера есть Looper FX, а одна кнопка Back возвращает последний стёртый дубль."
       }
     ]
   },
@@ -1191,7 +1107,7 @@
     "navLabel": "التحديثات",
     "pageTitle": "ما الجديد في L Studio.",
     "pageKicker": "L-STUDIO / التحديثات",
-    "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.12 الذي يضم الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. الإصدار 1.13 قيد مراجعة Google وغير متاح بعد.",
+    "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.13 الذي يضم مؤثر FM حقيقياً ونافذة Sound FX جديدة وEQ بوحدة dB، إلى جانب الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
     "tickerLabel": "التحديثات",
     "statusLabels": {
       "in_progress": "قيد العمل",
@@ -1206,10 +1122,10 @@
     "items": [
       {
         "id": "app-1-13-fm-sound-fx",
-        "status": "upcoming",
-        "title": "قيد مراجعة Google، غير متاح بعد: الإصدار 1.13 مع مؤثر FM حقيقي، ونافذة Sound FX جديدة، وEQ بوحدة dB",
-        "ticker": "قيد مراجعة Google، غير متاح بعد: الإصدار 1.13 مع FM بأربعة مشغلات، وصفحات في Sound FX، وEQ بوحدة dB",
-        "summary": "الإصدار 1.13 قيد مراجعة Google. وهو غير موجود على Google Play بعد. يضم مؤثر FM حقيقياً بأربعة مشغلات و8 خوارزميات، ونافذة Sound FX جديدة بصفحات، ومقابض في كل نوافذ المؤثرات، وEQ بوحدة dB.",
+        "status": "shipped",
+        "title": "الآن على Google Play: الإصدار 1.13 مع مؤثر FM حقيقي، ونافذة Sound FX جديدة، وEQ بوحدة dB",
+        "ticker": "الآن على Google Play: الإصدار 1.13 مع FM بأربعة مشغلات، وصفحات في Sound FX، وEQ بوحدة dB",
+        "summary": "الإصدار 1.13 متاح الآن على Google Play. يضم مؤثر FM حقيقياً بأربعة مشغلات و8 خوارزميات، ونافذة Sound FX جديدة بصفحات، ومقابض في كل نوافذ المؤثرات، وEQ بوحدة dB.",
         "href": "/guide",
         "cta": "افتح الدليل",
         "images": [
@@ -1274,7 +1190,7 @@
       {
         "id": "app-1-12-mixer-demo",
         "status": "shipped",
-        "title": "الآن على Google Play: الإصدار 1.12 مع مازج تناظري ونافذة ماسترينغ",
+        "title": "الإصدار 1.12 مع مازج تناظري ونافذة ماسترينغ",
         "summary": "",
         "videoId": "f6bLB0IP1ks",
         "videoTitle": "فيديو: مازج تناظري في الإصدار 1.12",
@@ -1334,14 +1250,14 @@
             }
           }
         },
-        "ticker": "الآن على Google Play: الإصدار 1.12 مع مازج تناظري ونافذة ماسترينغ"
+        "ticker": "الإصدار 1.12 مع مازج تناظري ونافذة ماسترينغ"
       },
       {
         "id": "app-1-11-loaded-keep-playing",
         "status": "shipped",
         "title": "منذ الإصدار 1.11، الآن على Google Play: عيناتك الخاصة في الطبول وKeep playing وأوكتاف لكل موجة",
         "ticker": "الآن على Google Play: حتى 88 من عيناتك في كل صف طبول، مع القص",
-        "summary": "منذ الإصدار 1.11، الآن على Google Play مع الإصدار 1.12: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
+        "summary": "منذ الإصدار 1.11، الآن على Google Play مع الإصدار 1.13: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
         "href": "/guide",
         "cta": "افتح الدليل",
         "images": [
@@ -1415,15 +1331,9 @@
         "status": "shipped",
         "title": "منذ الإصدار 1.10، الآن على Google Play: Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
         "ticker": "الآن على Google Play: محرر لوب جديد، ولقنوات Mic أيضاً، مع القص وEQ واختيار أي إيقاع طبول يعزف مع اللوب وكم مرة يتكرر",
-        "summary": "منذ الإصدار 1.10، الآن على Google Play مع الإصدار 1.12: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
+        "summary": "منذ الإصدار 1.10، الآن على Google Play مع الإصدار 1.13: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
         "href": "/guide",
         "cta": "افتح الدليل",
-        "images": [
-          "/assets/posters/en/p05-loop-editor-w630.jpg"
-        ],
-        "imageAlts": [
-          "ملصق (بالإنجليزية): Edit Every Loop. محرر اللوب: قص وتكرار وEQ وربط بإيقاع الطبول."
-        ],
         "sections": [
           {
             "title": "اللوبر",
@@ -1526,13 +1436,7 @@
         "ticker": "جديد في 1.09: عدة موجات معاً وطبول مباشرة",
         "summary": "في Google Play، الإصدار 1.09: على كل زر موجة أيقونة لتلك الموجة. الضغط المطوّل يضيف موجة أو يزيلها، فيعزف مفتاح واحد عدة موجات معاً، والإعدادات تتذكر أي الموجات مفعّلة. الضغط المطوّل على Presets يحفظ الإعداد المحمّل، والنافذة تفتح على صفحته. في شاشة Drum، تنتقل قيم BPM وSwing وحجم الصفوف التي تغيّرها أثناء العزف إلى الأنماط التالية.",
         "href": "/guide",
-        "cta": "افتح الدليل",
-        "images": [
-          "/assets/updates/sound-109.jpg"
-        ],
-        "imageAlts": [
-          "شاشة Sound في 1.09: أيقونة على كل زر موجة، Sine وSaw مفعّلتان معاً."
-        ]
+        "cta": "افتح الدليل"
       },
       {
         "id": "sound-fx-looper-pages",
@@ -1541,15 +1445,7 @@
         "ticker": "Sound FX وألوان صفحات اللوبر",
         "summary": "منذ الإصدار 1.08: ثمانية مؤثرات Sound FX جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة تحفظ إعدادات المؤثرات الثمانية كلها. لكل صفحة في اللوبر اسم وواحد من 8 ألوان. المقابض تعرض القيمة بحلقة ذهبية، والجولة داخل التطبيق تشرح كل ذلك.",
         "href": "/guide",
-        "cta": "فتح الدليل",
-        "images": [
-          "/assets/updates/sound-fx.jpg",
-          "/assets/updates/looper-pages.jpg"
-        ],
-        "imageAlts": [
-          "نافذة Sound FX مع اختيار Psy Orbit.",
-          "شاشة Loop بأرقام صفحات ملوّنة واسم صفحة."
-        ]
+        "cta": "فتح الدليل"
       },
       {
         "id": "exclusive-packs-gallery",
@@ -1571,15 +1467,7 @@
         "status": "shipped",
         "title": "وضع Live والكلمات وMic FX وDrum FX",
         "ticker": "وضع Live والكلمات وMic FX وDrum FX",
-        "summary": "منذ الإصدار 1.08: وضع LIVE يقفل الأسماء وClear وتحميل الملفات أثناء العزف. نافذة الكلمات تمرّر النص وأنت تغني. للميكروفون وللطبول ثمانية مؤثرات لكل منهما، وفي كل قناة لوب يوجد Looper FX، وزر Back واحد يعيد آخر تسجيل تم مسحه.",
-        "images": [
-          "/assets/updates/lyrics.jpg",
-          "/assets/updates/mic-fx.jpg"
-        ],
-        "imageAlts": [
-          "نافذة الكلمات مفتوحة فوق التطبيق.",
-          "لوحة Mic FX. Phone Line محدد."
-        ]
+        "summary": "منذ الإصدار 1.08: وضع LIVE يقفل الأسماء وClear وتحميل الملفات أثناء العزف. نافذة الكلمات تمرّر النص وأنت تغني. للميكروفون وللطبول ثمانية مؤثرات لكل منهما، وفي كل قناة لوب يوجد Looper FX، وزر Back واحد يعيد آخر تسجيل تم مسحه."
       }
     ]
   }
