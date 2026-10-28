@@ -630,7 +630,13 @@
                     ]
                   },
                   {
-                    "text": "עם מקלדת אחת וההגדרות סגורות יש 8 אפקטים בעמוד. עם שתי מקלדות או כשההגדרות פתוחות יש 4. החלון יושב מעל המקלדות, כך שממשיכים לנגן."
+                    "text": "עם מקלדת אחת וההגדרות סגורות יש 8 אפקטים בעמוד. עם שתי מקלדות או כשההגדרות פתוחות יש 4. החלון יושב מעל המקלדות, כך שממשיכים לנגן.",
+                    "img": "assets/guide/c/sfx13-two-kbd.jpg",
+                    "size": [
+                      720,
+                      1116
+                    ],
+                    "alt": "Sound FX פתוח מעל שתי מקלדות, 4 אפקטים בעמוד 2 מתוך 3, עם הכפתורים של Iron Growl"
                   },
                   {
                     "text": "הקשה מדליקה אפקט. הקשה על האפקט הדולק מכבה את ה-FX. רק אחד דולק בכל פעם.",
@@ -660,7 +666,13 @@
                     "text": "אחרי שהתופים נעצרים, הם נשארים בטמפו האחרון של התופים. Depth Drop יורד מחדש כל 2 ביטים ובכל תו חדש."
                   },
                   {
-                    "text": "לחיצה ארוכה על אפקט פותחת את הכפתורים שלו: RATE, ‏AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, ומתחתם סרגל ה-Transpose. כל אפקט שומר את ההגדרות שלו כשמחליפים. ‏Transpose נע מ-12 חצאי טונים למטה עד 12 למעלה ומשנה כל אפקט."
+                    "text": "לחיצה ארוכה על אפקט פותחת את הכפתורים שלו: RATE, ‏AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, ומתחתם סרגל ה-Transpose. כל אפקט שומר את ההגדרות שלו כשמחליפים. ‏Transpose נע מ-12 חצאי טונים למטה עד 12 למעלה ומשנה כל אפקט.",
+                    "img": "assets/guide/c/sfx13-tone-knobs.jpg",
+                    "size": [
+                      688,
+                      370
+                    ],
+                    "alt": "Iron Growl נבחר ב-Sound FX, עם הכפתורים RATE, ‏AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB"
                   },
                   {
                     "text": "FM הוא אפקט FM אמיתי עם 4 אופרטורים. לחיצה ארוכה על FM פותחת את הכפתורים שלו: RATE, ALGO, RATIO, INDEX, FEEDBK, DECAY ו-MIX.",
@@ -890,11 +902,12 @@
               },
               {
                 "text": "הקשה על + פותחת מקלדת שנייה מעל הראשונה, אוקטבה אחת גבוה יותר. אותו + נמצא גם במסך Pad, והמקלדת השנייה נשארת פתוחה כשעוברים בין Sound ל-Pad.",
-                "img": "assets/guide/c/dual-kbd.jpg",
+                "img": "assets/guide/c/kbd13-dual.jpg",
                 "size": [
                   720,
-                  735
-                ]
+                  776
+                ],
+                "alt": "מסך Sound עם שתי מקלדות פתוחות, והמקש + דולק ליד VOICES, ‏P, ‏G ו-A"
               },
               {
                 "text": "החצים ליד PRESET טוענים את הפריסט השמור הבא או הקודם. אם אין שמורים, הטלפון אומר No saved presets.",
@@ -1273,10 +1286,22 @@
                     ]
                   },
                   {
-                    "text": "הפריסטים הם Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate, ו-Wire Glitch."
+                    "text": "הפריסטים הם Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate, ו-Wire Glitch.",
+                    "img": "assets/guide/c/dfx13-grid.jpg",
+                    "size": [
+                      680,
+                      543
+                    ],
+                    "alt": "Drum FX עם 8 הפריסטים שלו, ו-Tribal Bloom נבחר"
                   },
                   {
-                    "text": "לחיצה ארוכה פותחת את הכפתורים של הפריסט: AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, ומתחתם סרגל ה-Transpose. ‏LOW, ‏MID ו-HIGH מוצגים ב-dB. ‏Transpose נע מ-12 חצאי טונים למטה עד 12 למעלה. ההגדרות נשארות רק כל עוד הפריסט נשאר נבחר."
+                    "text": "לחיצה ארוכה פותחת את הכפתורים של הפריסט: AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, ומתחתם סרגל ה-Transpose. ‏LOW, ‏MID ו-HIGH מוצגים ב-dB. ‏Transpose נע מ-12 חצאי טונים למטה עד 12 למעלה. ההגדרות נשארות רק כל עוד הפריסט נשאר נבחר.",
+                    "img": "assets/guide/c/dfx13-knobs.jpg",
+                    "size": [
+                      680,
+                      302
+                    ],
+                    "alt": "הכפתורים של Tribal Bloom: ‏AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, וסרגל Transpose על אפס חצאי טונים"
                   }
                 ]
               },
@@ -1729,10 +1754,22 @@
                     ]
                   },
                   {
-                    "text": "הקשה על פריסט בוחרת אותו. הקשה על הפריסט שכבר נבחר מכבה אותו. הפריסטים הם Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate, ו-Dust Weave."
+                    "text": "הקשה על פריסט בוחרת אותו. הקשה על הפריסט שכבר נבחר מכבה אותו. הפריסטים הם Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate, ו-Dust Weave.",
+                    "img": "assets/guide/c/lfx13-grid.jpg",
+                    "size": [
+                      680,
+                      543
+                    ],
+                    "alt": "Looper FX עם 8 הפריסטים שלו, ו-Indie Wash נבחר"
                   },
                   {
-                    "text": "לחיצה ארוכה פותחת את הכפתורים של הפריסט: AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, ומתחתם סרגל ה-Transpose. ‏LOW, ‏MID ו-HIGH מוצגים ב-dB. ‏Transpose נע מ-12 חצאי טונים למטה עד 12 למעלה. ההגדרות נשארות רק כל עוד הפריסט נשאר נבחר."
+                    "text": "לחיצה ארוכה פותחת את הכפתורים של הפריסט: AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, ומתחתם סרגל ה-Transpose. ‏LOW, ‏MID ו-HIGH מוצגים ב-dB. ‏Transpose נע מ-12 חצאי טונים למטה עד 12 למעלה. ההגדרות נשארות רק כל עוד הפריסט נשאר נבחר.",
+                    "img": "assets/guide/c/lfx13-knobs.jpg",
+                    "size": [
+                      680,
+                      302
+                    ],
+                    "alt": "הכפתורים של Indie Wash: ‏AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP ו-REVERB, וסרגל Transpose על אפס חצאי טונים"
                   }
                 ]
               }
@@ -3803,6 +3840,22 @@
           "sound-frequencies": {
             "title": "כיוון תדרים",
             "text": "מקלידים Hz לכל אחד מ־8 הקלידים, או טוענים סולם מוכן כמו חיג׳אז או כורד. שומרים עד 8 פריסטים משלכם."
+          },
+          "sound-fx-knobs": {
+            "title": "כפתורי האפקט",
+            "text": "לחיצה ארוכה על אפקט כמו Iron Growl פותחת RATE, AMOUNT, LOW, MID, HIGH, SWEEP ו־REVERB. שתי המקלדות נשארות פתוחות למטה."
+          },
+          "sound-two-keyboards": {
+            "title": "שתי מקלדות",
+            "text": "הקשה על + ליד VOICES פותחת מקלדת שנייה, אוקטבה אחת גבוהה יותר. היא נשארת פתוחה כשעוברים בין Sound ל־Pad."
+          },
+          "loop-fx": {
+            "title": "אפקטי Looper",
+            "text": "8 פריסטים כמו Indie Wash לערוץ לופ. הקשה מפעילה פריסט, לחיצה ארוכה פותחת את הכפתורים שלו ואת Transpose."
+          },
+          "drum-fx": {
+            "title": "אפקטי Drum",
+            "text": "8 פריסטים כמו Tribal Bloom. הקשה מפעילה פריסט, לחיצה ארוכה פותחת AMOUNT, LOW, MID, HIGH, SWEEP, REVERB ו־Transpose."
           }
         }
       }
@@ -4437,7 +4490,13 @@
                     ]
                   },
                   {
-                    "text": "With one keyboard and the settings closed, a page holds 8 effects. With two keyboards or the settings open, it holds 4. The window sits above the keyboards, so you keep playing."
+                    "text": "With one keyboard and the settings closed, a page holds 8 effects. With two keyboards or the settings open, it holds 4. The window sits above the keyboards, so you keep playing.",
+                    "img": "assets/guide/c/sfx13-two-kbd.jpg",
+                    "size": [
+                      720,
+                      1116
+                    ],
+                    "alt": "Sound FX open above two keyboards, 4 effects on page 2 of 3, with the Iron Growl knobs"
                   },
                   {
                     "text": "A tap turns one on. A tap on the one that is on turns FX off. Only one is on at a time.",
@@ -4467,7 +4526,13 @@
                     "text": "After the drums stop, they keep the last drum tempo. Depth Drop drops again every 2 beats and on each new note."
                   },
                   {
-                    "text": "A long-press on an effect opens its knobs: RATE, AMOUNT, LOW, MID, HIGH, SWEEP, and REVERB, with the Transpose ruler below. Each effect keeps its own settings when you switch. Transpose runs from 12 semitones down to 12 up and changes every effect."
+                    "text": "A long-press on an effect opens its knobs: RATE, AMOUNT, LOW, MID, HIGH, SWEEP, and REVERB, with the Transpose ruler below. Each effect keeps its own settings when you switch. Transpose runs from 12 semitones down to 12 up and changes every effect.",
+                    "img": "assets/guide/c/sfx13-tone-knobs.jpg",
+                    "size": [
+                      688,
+                      370
+                    ],
+                    "alt": "Iron Growl selected in Sound FX, with the RATE, AMOUNT, LOW, MID, HIGH, SWEEP and REVERB knobs"
                   },
                   {
                     "text": "FM is a real FM effect with 4 operators. Long-press FM for its knobs: RATE, ALGO, RATIO, INDEX, FEEDBK, DECAY and MIX.",
@@ -4697,11 +4762,12 @@
               },
               {
                 "text": "A tap on + opens a second keyboard above the first, one octave higher. The same + is on the Pad screen, and the second keyboard stays open when you switch between Sound and Pad.",
-                "img": "assets/guide/c/dual-kbd.jpg",
+                "img": "assets/guide/c/kbd13-dual.jpg",
                 "size": [
                   720,
-                  735
-                ]
+                  776
+                ],
+                "alt": "Sound screen with two keyboards open and the + key lit beside VOICES, P, G and A"
               },
               {
                 "text": "The arrows beside PRESET load the next or previous saved preset. If none are saved, the phone says No saved presets.",
@@ -5080,10 +5146,22 @@
                     ]
                   },
                   {
-                    "text": "The presets are Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate, and Wire Glitch."
+                    "text": "The presets are Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate, and Wire Glitch.",
+                    "img": "assets/guide/c/dfx13-grid.jpg",
+                    "size": [
+                      680,
+                      543
+                    ],
+                    "alt": "Drum FX with its 8 presets, Tribal Bloom selected"
                   },
                   {
-                    "text": "A long-press opens the knobs of that preset: AMOUNT, LOW, MID, HIGH, SWEEP, and REVERB, with the Transpose ruler below. LOW, MID, and HIGH are in dB. Transpose runs from 12 semitones down to 12 up. The settings stay only while that preset stays selected."
+                    "text": "A long-press opens the knobs of that preset: AMOUNT, LOW, MID, HIGH, SWEEP, and REVERB, with the Transpose ruler below. LOW, MID, and HIGH are in dB. Transpose runs from 12 semitones down to 12 up. The settings stay only while that preset stays selected.",
+                    "img": "assets/guide/c/dfx13-knobs.jpg",
+                    "size": [
+                      680,
+                      302
+                    ],
+                    "alt": "Tribal Bloom knobs: AMOUNT, LOW, MID, HIGH, SWEEP and REVERB, with the Transpose ruler at 0 semitones"
                   }
                 ]
               },
@@ -5536,10 +5614,22 @@
                     ]
                   },
                   {
-                    "text": "A tap on a preset selects it. A tap on the selected preset turns it off. The presets are Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate, and Dust Weave."
+                    "text": "A tap on a preset selects it. A tap on the selected preset turns it off. The presets are Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate, and Dust Weave.",
+                    "img": "assets/guide/c/lfx13-grid.jpg",
+                    "size": [
+                      680,
+                      543
+                    ],
+                    "alt": "Looper FX with its 8 presets, Indie Wash selected"
                   },
                   {
-                    "text": "A long-press opens the knobs of that preset: AMOUNT, LOW, MID, HIGH, SWEEP, and REVERB, with the Transpose ruler below. LOW, MID, and HIGH are in dB. Transpose runs from 12 semitones down to 12 up. The settings stay only while that preset stays selected."
+                    "text": "A long-press opens the knobs of that preset: AMOUNT, LOW, MID, HIGH, SWEEP, and REVERB, with the Transpose ruler below. LOW, MID, and HIGH are in dB. Transpose runs from 12 semitones down to 12 up. The settings stay only while that preset stays selected.",
+                    "img": "assets/guide/c/lfx13-knobs.jpg",
+                    "size": [
+                      680,
+                      302
+                    ],
+                    "alt": "Indie Wash knobs: AMOUNT, LOW, MID, HIGH, SWEEP and REVERB, with the Transpose ruler at 0 semitones"
                   }
                 ]
               }
@@ -7610,6 +7700,22 @@
           "sound-frequencies": {
             "title": "Tune Frequencies",
             "text": "Type the Hz of each of the 8 keys, or load a ready scale such as Hijaz or Kurd. Save up to 8 presets of your own."
+          },
+          "sound-fx-knobs": {
+            "title": "Effect Knobs",
+            "text": "Long-press an effect such as Iron Growl for RATE, AMOUNT, LOW, MID, HIGH, SWEEP and REVERB. Both keyboards stay open below."
+          },
+          "sound-two-keyboards": {
+            "title": "Two Keyboards",
+            "text": "Tap + beside VOICES for a second keyboard, one octave higher. It stays open when you switch between Sound and Pad."
+          },
+          "loop-fx": {
+            "title": "Looper FX",
+            "text": "8 presets such as Indie Wash for a loop channel. Tap one to turn it on. Long-press it for its knobs and Transpose."
+          },
+          "drum-fx": {
+            "title": "Drum FX",
+            "text": "8 presets such as Tribal Bloom. Tap one to turn it on. Long-press it for AMOUNT, LOW, MID, HIGH, SWEEP, REVERB and Transpose."
           }
         }
       }
@@ -8244,7 +8350,13 @@
                     ]
                   },
                   {
-                    "text": "С одной клавиатурой и закрытыми настройками на странице 8 эффектов. С двумя клавиатурами или открытыми настройками их 4. Окно стоит над клавиатурами, так что можно играть дальше."
+                    "text": "С одной клавиатурой и закрытыми настройками на странице 8 эффектов. С двумя клавиатурами или открытыми настройками их 4. Окно стоит над клавиатурами, так что можно играть дальше.",
+                    "img": "assets/guide/c/sfx13-two-kbd.jpg",
+                    "size": [
+                      720,
+                      1116
+                    ],
+                    "alt": "Sound FX открыт над двумя клавиатурами, 4 эффекта на странице 2 из 3 и ручки Iron Growl"
                   },
                   {
                     "text": "Нажатие включает эффект. Нажатие на включённый эффект выключает FX. Включён только один за раз.",
@@ -8274,7 +8386,13 @@
                     "text": "После остановки барабанов остаётся их последний темп. Depth Drop падает заново каждые 2 доли и на каждой новой ноте."
                   },
                   {
-                    "text": "Долгое нажатие на эффект открывает его ручки: RATE, AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, а под ними линейку Transpose. Каждый эффект хранит свои настройки при переключении. Transpose идёт от 12 полутонов вниз до 12 вверх и меняет каждый эффект."
+                    "text": "Долгое нажатие на эффект открывает его ручки: RATE, AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, а под ними линейку Transpose. Каждый эффект хранит свои настройки при переключении. Transpose идёт от 12 полутонов вниз до 12 вверх и меняет каждый эффект.",
+                    "img": "assets/guide/c/sfx13-tone-knobs.jpg",
+                    "size": [
+                      688,
+                      370
+                    ],
+                    "alt": "В Sound FX выбран Iron Growl, ручки RATE, AMOUNT, LOW, MID, HIGH, SWEEP и REVERB"
                   },
                   {
                     "text": "FM это настоящий эффект FM с 4 операторами. Долгое нажатие на FM открывает его ручки: RATE, ALGO, RATIO, INDEX, FEEDBK, DECAY и MIX.",
@@ -8504,11 +8622,12 @@
               },
               {
                 "text": "Нажатие на + открывает вторую клавиатуру над первой, на октаву выше. Тот же + есть на экране Pad, и вторая клавиатура остаётся открытой при переходе между Sound и Pad.",
-                "img": "assets/guide/c/dual-kbd.jpg",
+                "img": "assets/guide/c/kbd13-dual.jpg",
                 "size": [
                   720,
-                  735
-                ]
+                  776
+                ],
+                "alt": "Экран Sound с двумя открытыми клавиатурами, клавиша + горит рядом с VOICES, P, G и A"
               },
               {
                 "text": "Стрелки рядом с PRESET загружают следующий или предыдущий сохранённый пресет. Если сохранённых нет, телефон пишет No saved presets.",
@@ -8887,10 +9006,22 @@
                     ]
                   },
                   {
-                    "text": "Пресеты: Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate и Wire Glitch."
+                    "text": "Пресеты: Street Boom, Vinyl Dust, Soft Chamber, Psy Drive, Techno Crush, Tribal Bloom, Goa Gate и Wire Glitch.",
+                    "img": "assets/guide/c/dfx13-grid.jpg",
+                    "size": [
+                      680,
+                      543
+                    ],
+                    "alt": "Drum FX с 8 пресетами, выбран Tribal Bloom"
                   },
                   {
-                    "text": "Долгое нажатие открывает ручки пресета: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, а под ними линейку Transpose. LOW, MID и HIGH в dB. Transpose идёт от 12 полутонов вниз до 12 вверх. Настройки остаются, только пока пресет остаётся выбранным."
+                    "text": "Долгое нажатие открывает ручки пресета: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, а под ними линейку Transpose. LOW, MID и HIGH в dB. Transpose идёт от 12 полутонов вниз до 12 вверх. Настройки остаются, только пока пресет остаётся выбранным.",
+                    "img": "assets/guide/c/dfx13-knobs.jpg",
+                    "size": [
+                      680,
+                      302
+                    ],
+                    "alt": "Ручки Tribal Bloom: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, линейка Transpose на нуле полутонов"
                   }
                 ]
               },
@@ -9343,10 +9474,22 @@
                     ]
                   },
                   {
-                    "text": "Нажатие на пресет выбирает его. Нажатие на уже выбранный пресет выключает его. Пресеты: Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate и Dust Weave."
+                    "text": "Нажатие на пресет выбирает его. Нажатие на уже выбранный пресет выключает его. Пресеты: Hook Glue, Spoken Soft, Indie Wash, Trance Stack, Phrase Throw, Double Lane, Pulse Gate и Dust Weave.",
+                    "img": "assets/guide/c/lfx13-grid.jpg",
+                    "size": [
+                      680,
+                      543
+                    ],
+                    "alt": "Looper FX с 8 пресетами, выбран Indie Wash"
                   },
                   {
-                    "text": "Долгое нажатие открывает ручки пресета: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, а под ними линейку Transpose. LOW, MID и HIGH в dB. Transpose идёт от 12 полутонов вниз до 12 вверх. Настройки остаются, только пока пресет остаётся выбранным."
+                    "text": "Долгое нажатие открывает ручки пресета: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, а под ними линейку Transpose. LOW, MID и HIGH в dB. Transpose идёт от 12 полутонов вниз до 12 вверх. Настройки остаются, только пока пресет остаётся выбранным.",
+                    "img": "assets/guide/c/lfx13-knobs.jpg",
+                    "size": [
+                      680,
+                      302
+                    ],
+                    "alt": "Ручки Indie Wash: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, линейка Transpose на нуле полутонов"
                   }
                 ]
               }
@@ -11417,6 +11560,22 @@
           "sound-frequencies": {
             "title": "Настройка частот",
             "text": "Введите Hz для каждой из 8 клавиш или загрузите готовый лад, например Hijaz или Kurd. До 8 своих пресетов."
+          },
+          "sound-fx-knobs": {
+            "title": "Ручки эффекта",
+            "text": "Долгое нажатие на эффект, например Iron Growl, открывает RATE, AMOUNT, LOW, MID, HIGH, SWEEP и REVERB. Обе клавиатуры остаются открытыми."
+          },
+          "sound-two-keyboards": {
+            "title": "Две клавиатуры",
+            "text": "Нажмите + рядом с VOICES, и откроется вторая клавиатура на октаву выше. Она остаётся открытой при переходе между Sound и Pad."
+          },
+          "loop-fx": {
+            "title": "Looper FX",
+            "text": "8 пресетов, например Indie Wash, для канала лупа. Нажатие включает пресет, долгое нажатие открывает ручки и Transpose."
+          },
+          "drum-fx": {
+            "title": "Drum FX",
+            "text": "8 пресетов, например Tribal Bloom. Нажатие включает пресет, долгое нажатие открывает AMOUNT, LOW, MID, HIGH, SWEEP, REVERB и Transpose."
           }
         }
       }
@@ -12051,7 +12210,13 @@
                     ]
                   },
                   {
-                    "text": "مع لوحة مفاتيح واحدة والإعدادات مغلقة تضم الصفحة 8 مؤثرات. مع لوحتي مفاتيح أو والإعدادات مفتوحة تضم 4. تقع النافذة فوق لوحات المفاتيح، فتواصل العزف."
+                    "text": "مع لوحة مفاتيح واحدة والإعدادات مغلقة تضم الصفحة 8 مؤثرات. مع لوحتي مفاتيح أو والإعدادات مفتوحة تضم 4. تقع النافذة فوق لوحات المفاتيح، فتواصل العزف.",
+                    "img": "assets/guide/c/sfx13-two-kbd.jpg",
+                    "size": [
+                      720,
+                      1116
+                    ],
+                    "alt": "نافذة Sound FX مفتوحة فوق لوحتي المفاتيح، 4 مؤثرات في الصفحة 2 من 3 مع مقابض Iron Growl"
                   },
                   {
                     "text": "الضغط يشغّل مؤثراً. الضغط على المؤثر الذي يعمل يوقف FX. يعمل مؤثر واحد فقط في كل مرة.",
@@ -12081,7 +12246,13 @@
                     "text": "بعد توقف الطبول تبقى على آخر سرعة للطبول. Depth Drop يهبط من جديد كل 2 نبضة ومع كل نغمة جديدة."
                   },
                   {
-                    "text": "الضغط المطوّل على مؤثر يفتح مقابضه: RATE وAMOUNT وLOW وMID وHIGH وSWEEP وREVERB، وتحتها مسطرة Transpose. كل مؤثر يحتفظ بإعداداته عند التبديل. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى ويغيّر كل مؤثر."
+                    "text": "الضغط المطوّل على مؤثر يفتح مقابضه: RATE وAMOUNT وLOW وMID وHIGH وSWEEP وREVERB، وتحتها مسطرة Transpose. كل مؤثر يحتفظ بإعداداته عند التبديل. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى ويغيّر كل مؤثر.",
+                    "img": "assets/guide/c/sfx13-tone-knobs.jpg",
+                    "size": [
+                      688,
+                      370
+                    ],
+                    "alt": "Iron Growl محدد في Sound FX، مع مقابض RATE وAMOUNT وLOW وMID وHIGH وSWEEP وREVERB"
                   },
                   {
                     "text": "FM مؤثر FM حقيقي بأربعة مشغلات. الضغط المطوّل على FM يفتح مقابضه: RATE وALGO وRATIO وINDEX وFEEDBK وDECAY وMIX.",
@@ -12311,11 +12482,12 @@
               },
               {
                 "text": "الضغط على + يفتح لوحة مفاتيح ثانية فوق الأولى، أوكتافاً أعلى. نفس الـ + موجود على شاشة Pad، وتبقى لوحة المفاتيح الثانية مفتوحة عند التنقل بين Sound وPad.",
-                "img": "assets/guide/c/dual-kbd.jpg",
+                "img": "assets/guide/c/kbd13-dual.jpg",
                 "size": [
                   720,
-                  735
-                ]
+                  776
+                ],
+                "alt": "شاشة Sound مع لوحتي مفاتيح مفتوحتين، وزر + مضاء بجانب VOICES وP وG وA"
               },
               {
                 "text": "الأسهم بجانب PRESET تحمّل الإعداد المحفوظ التالي أو السابق. إذا لم يوجد محفوظ، يقول الهاتف No saved presets.",
@@ -12694,10 +12866,22 @@
                     ]
                   },
                   {
-                    "text": "الإعدادات هي Street Boom وVinyl Dust وSoft Chamber وPsy Drive وTechno Crush وTribal Bloom وGoa Gate وWire Glitch."
+                    "text": "الإعدادات هي Street Boom وVinyl Dust وSoft Chamber وPsy Drive وTechno Crush وTribal Bloom وGoa Gate وWire Glitch.",
+                    "img": "assets/guide/c/dfx13-grid.jpg",
+                    "size": [
+                      680,
+                      543
+                    ],
+                    "alt": "نافذة Drum FX بإعداداتها الثمانية، وTribal Bloom محدد"
                   },
                   {
-                    "text": "الضغط المطوّل يفتح مقابض الإعداد: AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، وتحتها مسطرة Transpose. تظهر LOW وMID وHIGH بوحدة dB. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى. تبقى الإعدادات فقط ما دام الإعداد مختاراً."
+                    "text": "الضغط المطوّل يفتح مقابض الإعداد: AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، وتحتها مسطرة Transpose. تظهر LOW وMID وHIGH بوحدة dB. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى. تبقى الإعدادات فقط ما دام الإعداد مختاراً.",
+                    "img": "assets/guide/c/dfx13-knobs.jpg",
+                    "size": [
+                      680,
+                      302
+                    ],
+                    "alt": "مقابض Tribal Bloom: ‏AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، ومسطرة Transpose على صفر نصف درجة"
                   }
                 ]
               },
@@ -13150,10 +13334,22 @@
                     ]
                   },
                   {
-                    "text": "الضغط على إعداد يختاره. الضغط على الإعداد المختار يوقفه. الإعدادات هي Hook Glue وSpoken Soft وIndie Wash وTrance Stack وPhrase Throw وDouble Lane وPulse Gate وDust Weave."
+                    "text": "الضغط على إعداد يختاره. الضغط على الإعداد المختار يوقفه. الإعدادات هي Hook Glue وSpoken Soft وIndie Wash وTrance Stack وPhrase Throw وDouble Lane وPulse Gate وDust Weave.",
+                    "img": "assets/guide/c/lfx13-grid.jpg",
+                    "size": [
+                      680,
+                      543
+                    ],
+                    "alt": "نافذة Looper FX بإعداداتها الثمانية، وIndie Wash محدد"
                   },
                   {
-                    "text": "الضغط المطوّل يفتح مقابض الإعداد: AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، وتحتها مسطرة Transpose. تظهر LOW وMID وHIGH بوحدة dB. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى. تبقى الإعدادات فقط ما دام الإعداد مختاراً."
+                    "text": "الضغط المطوّل يفتح مقابض الإعداد: AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، وتحتها مسطرة Transpose. تظهر LOW وMID وHIGH بوحدة dB. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى. تبقى الإعدادات فقط ما دام الإعداد مختاراً.",
+                    "img": "assets/guide/c/lfx13-knobs.jpg",
+                    "size": [
+                      680,
+                      302
+                    ],
+                    "alt": "مقابض Indie Wash: ‏AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، ومسطرة Transpose على صفر نصف درجة"
                   }
                 ]
               }
@@ -15224,6 +15420,22 @@
           "sound-frequencies": {
             "title": "ضبط الترددات",
             "text": "اكتب الـHz لكل مفتاح من المفاتيح الثمانية، أو حمّل سلمًا جاهزًا مثل الحجاز أو الكرد. احفظ حتى 8 إعدادات خاصة بك."
+          },
+          "sound-fx-knobs": {
+            "title": "مقابض المؤثر",
+            "text": "اضغط مطولًا على مؤثر مثل Iron Growl لضبط RATE وAMOUNT وLOW وMID وHIGH وSWEEP وREVERB. تبقى لوحتا المفاتيح مفتوحتين في الأسفل."
+          },
+          "sound-two-keyboards": {
+            "title": "لوحتا مفاتيح",
+            "text": "المس + بجانب VOICES لفتح لوحة مفاتيح ثانية أعلى بأوكتاف واحد. تبقى مفتوحة عند التنقل بين Sound وPad."
+          },
+          "loop-fx": {
+            "title": "مؤثرات Looper",
+            "text": "8 إعدادات مثل Indie Wash لقناة اللوب. المس واحدًا لتشغيله، واضغط مطولًا لفتح مقابضه وTranspose."
+          },
+          "drum-fx": {
+            "title": "مؤثرات Drum",
+            "text": "8 إعدادات مثل Tribal Bloom. المس واحدًا لتشغيله، واضغط مطولًا لفتح AMOUNT وLOW وMID وHIGH وSWEEP وREVERB وTranspose."
           }
         }
       }
