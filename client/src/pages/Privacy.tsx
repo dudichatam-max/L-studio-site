@@ -208,7 +208,7 @@ export default function Privacy() {
           <h1>{titleBlock(language)}</h1>
           <p>{text.hero}</p>
           <div className="privacy-date">
-            {text.date} <span>·</span> L Studio 1.11
+            {text.date} <span>·</span> L Studio 1.13
           </div>
         </section>
         <section className="privacy-intro container">
