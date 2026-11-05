@@ -276,7 +276,13 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - JSON-LD screenshots now point to the 1.13 carousel images (`/assets/carousel/en/*-w630.jpg`) instead of the old posters.
 - 1.14-only features (COPY/PASTE, FADE, TRIM in the editors) are not published until 1.14 is on Google Play.
 
-## Updates: 1.14 in development (2026-10-28)
+## Updates: 1.14 coming soon rewrite (2026-11-05)
+- Item `app-1-14-in-development` stays `in_progress`. Wording: coming soon to Google Play, no date. Available on Play remains 1.13 (hero kicker, pageIntro, 1.13 ticker). Do not claim 1.14 is available. Do not put 1.14 screens into the 1.13 home carousels or the guide.
+- New content: genre beats (4 genres, 16 styles, 33 samples per drum channel per style), Random by style (saves samples + BPM), Load tab replaces Loaded, Mastering Start/End trim, FADE IN / FADE OUT, piano sustain pedal (long-press) with Attack / Release shaping the note, RIP/FUZZ/PHAZ intensity, Resonance / WARM / Sound FX clearer, drum Voice samples per genre style. Kept from the Oct 28 item when still true in `feature/1.14`: COPY / PASTE, tablet layouts, PAD intensity pedals.
+- Stills (720x1478, crop y 68..1546 from David's 720x1640 shots in `/workspace/site-114-shots/`): `genre-random-114`, `genre-style-114`, `drum-main-114`, `genre-hihat-114`, `genre-snare-114`, `genre-bass-114`, `genre-voice-114`, `sound-piano-114`, plus the five earlier 1.14 stills. Files in `assets/updates/` and `client/public/assets/updates/` as `.jpg` + `.webp`. Sizes in `STILL_SIZE` in `Updates.tsx`.
+- `content.json` == `client/public/content.json`; `updatesFallback.json` mirrors `languages.*.updates`.
+
+## Updates: 1.14 in development (2026-10-28) (superseded by 2026-11-05 rewrite above)
 
 - New first item `app-1-14-in-development`, status `in_progress` ("In progress" / "בעבודה" / "В работе" / "قيد العمل"). Title and ticker start "Coming up: version 1.14, in development" (HE "בקרוב: גרסה 1.14, בפיתוח", RU "Скоро: версия 1.14, в разработке", AR "قريباً: الإصدار 1.14، قيد التطوير"). Never say it is on Google Play or in review. The hero, FAQ, Pro and SEO stay on 1.13 until 1.14 is live.
 - Listed only what is in the app branch `feature/1.14` (head 8110a7a): PIANO option with (HOLD) and the sustain pedal fader (0701c89, 1adf92d), RIP/FUZZ/PHAZ intensity pedal (0701c89, 13b80e0), PAD SUB/WARM/VIBE INTENSITY with one keyboard (8110a7a), FADE IN / FADE OUT 0 to 8 s in the Looper/Mic editor (740dac3), COPY / PASTE Looper and Mic (b178a01), Mastering TRIM (6d556be), tablet layouts (397ac0d, b55b118, fba8b1c).

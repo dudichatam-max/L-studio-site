@@ -19,10 +19,18 @@
       {
         "id": "app-1-14-in-development",
         "status": "in_progress",
-        "title": "Coming up: version 1.14, in development, with a piano sustain pedal, fades and COPY / PASTE",
-        "ticker": "Coming up: version 1.14, in development: piano sustain pedal, FADE IN / FADE OUT, COPY / PASTE",
-        "summary": "Version 1.14 is in development. It is not available yet. Everything here is still being built and may change before it is released.",
+        "title": "Coming soon to Google Play: version 1.14, with genre beats, fades and a piano pedal",
+        "ticker": "Coming soon to Google Play: version 1.14 (in progress): genre beats, FADE IN / FADE OUT, piano pedal",
+        "summary": "Version 1.14 is coming soon to Google Play. It is not available yet. The version on Google Play today is 1.13. Everything here is still being built and may change before it is released.",
         "images": [
+          "/assets/updates/genre-random-114.jpg",
+          "/assets/updates/genre-style-114.jpg",
+          "/assets/updates/drum-main-114.jpg",
+          "/assets/updates/genre-hihat-114.jpg",
+          "/assets/updates/genre-snare-114.jpg",
+          "/assets/updates/genre-bass-114.jpg",
+          "/assets/updates/genre-voice-114.jpg",
+          "/assets/updates/sound-piano-114.jpg",
           "/assets/updates/piano-pedal-114.jpg",
           "/assets/updates/pad-intensity-114-sub.jpg",
           "/assets/updates/pad-intensity-114-warm.jpg",
@@ -30,21 +38,37 @@
           "/assets/updates/mic-editor-114.jpg"
         ],
         "imageAlts": [
-          "Version 1.14 in development: the Sound window with PIANO on (HOLD) and the SUSTAIN pedal fader open at 88%.",
-          "Version 1.14 in development: the PAD window with the SUB intensity fader open at 63%, with X to close it.",
-          "Version 1.14 in development: the PAD window with the WARM intensity fader open at 55%.",
-          "Version 1.14 in development: LOOP EDITOR CH 1 with COPY and PASTE, the TRIM and LOOP bars, and the FADE IN and FADE OUT knobs.",
-          "Version 1.14 in development: MIC EDITOR VOCAL 1 with COPY and PASTE, the TRIM and LOOP bars, and the FADE IN and FADE OUT knobs."
+          "Version 1.14 coming soon: Random Genre with Rock, Trance, Rap and Techno, Drill selected under Rap.",
+          "Version 1.14 coming soon: Genre Style grid of 16 styles across 4 genres, Drill selected under Rap.",
+          "Version 1.14 coming soon: the Drum screen with Style 2-1, HOLD FOR GENRE on Drum Kits, and LOAD on every row.",
+          "Version 1.14 coming soon: Hi-Hat Genre tab with 33 Drill samples, page 2 of 4, and the Load tab.",
+          "Version 1.14 coming soon: Snare Genre tab with Snare 01 Drill selected and the Load tab.",
+          "Version 1.14 coming soon: Bass Genre tab with Bass 22 Trap selected and the Load tab.",
+          "Version 1.14 coming soon: Voice Genre tab with Voice 16 Drill selected and the Load tab.",
+          "Version 1.14 coming soon: the Sound screen with PIANO on and the Attack and Release knobs.",
+          "Version 1.14 coming soon: the Sound window with PIANO on (HOLD) and the SUSTAIN pedal fader open.",
+          "Version 1.14 coming soon: the PAD window with the SUB intensity fader open, with X to close it.",
+          "Version 1.14 coming soon: the PAD window with the WARM intensity fader open.",
+          "Version 1.14 coming soon: LOOP EDITOR with COPY and PASTE, the TRIM and LOOP bars, and the FADE IN and FADE OUT knobs.",
+          "Version 1.14 coming soon: MIC EDITOR with COPY and PASTE, the TRIM and LOOP bars, and the FADE IN and FADE OUT knobs."
         ],
         "sections": [
           {
+            "title": "Genre beats",
+            "bullets": [
+              "4 genres (Rock, Trance, Rap, Techno) and 16 styles, with 33 new samples for each drum channel in each style.",
+              "Random builds a beat that matches the style and saves the samples and the BPM.",
+              "The Load tab replaces Loaded."
+            ]
+          },
+          {
             "title": "Piano and pedals",
             "bullets": [
-              "A PIANO option in the Sound window, next to RIP, FUZZ and PHAZ. A tap turns it on or off.",
-              "A long-press opens a pedal fader that you play in real time, like the sustain pedal of a piano. On RIP, FUZZ and PHAZ the same fader sets how strong the effect is.",
+              "A long-press on PIANO opens the sustain pedal. Attack and Release shape the piano note.",
+              "On RIP, FUZZ and PHAZ the same long-press opens an intensity pedal.",
               "In the PAD window with one keyboard, a long-press on SUB, WARM or VIBE opens an INTENSITY fader from 0 to 100%. A tap still turns them on and off.",
-              "(HOLD) under these buttons shows that they have a long-press.",
-              "The pedal values are saved in presets and sessions."
+              "(HOLD) under these buttons shows that they have a long-press. Pedal values are saved in presets and sessions.",
+              "Resonance, WARM and Sound FX are now clearly audible."
             ]
           },
           {
@@ -58,13 +82,19 @@
           {
             "title": "Mastering",
             "bullets": [
-              "A TRIM bar under the wave in the Mastering window, the same control as in Looper, Mic and Drum, with the time in minutes and seconds."
+              "Start and End trim under the wave in the Mastering window, the same TRIM control as in Looper, Mic and Drum, with the time in minutes and seconds."
             ]
           },
           {
             "title": "Tablets",
             "bullets": [
               "Layouts that fill tablet screens, for example Sound in two panes on a tablet in landscape. Phones stay as they are."
+            ]
+          },
+          {
+            "title": "Drum voices",
+            "bullets": [
+              "Drum Voice samples match each genre style, so the Voice channel sits with the rest of the kit."
             ]
           }
         ]
@@ -440,10 +470,18 @@
       {
         "id": "app-1-14-in-development",
         "status": "in_progress",
-        "title": "בקרוב: גרסה 1.14, בפיתוח, עם פדל סוסטיין לפסנתר, פייד ו-COPY / PASTE",
-        "ticker": "בקרוב: גרסה 1.14, בפיתוח: פדל סוסטיין לפסנתר, FADE IN / FADE OUT, COPY / PASTE",
-        "summary": "גרסה 1.14 בפיתוח. היא עוד לא זמינה. כל מה שכתוב כאן עדיין בעבודה ויכול להשתנות לפני שהגרסה תצא.",
+        "title": "בקרוב ב-Google Play: גרסה 1.14, עם ביטים לפי ז'אנר, פייד ופדל לפסנתר",
+        "ticker": "בקרוב ב-Google Play: גרסה 1.14 (בעבודה): ביטים לפי ז'אנר, FADE IN / FADE OUT, פדל לפסנתר",
+        "summary": "גרסה 1.14 בקרוב ב-Google Play. היא עוד לא זמינה. הגרסה שזמינה עכשיו ב-Google Play היא 1.13. כל מה שכתוב כאן עדיין בעבודה ויכול להשתנות לפני שהגרסה תצא.",
         "images": [
+          "/assets/updates/genre-random-114.jpg",
+          "/assets/updates/genre-style-114.jpg",
+          "/assets/updates/drum-main-114.jpg",
+          "/assets/updates/genre-hihat-114.jpg",
+          "/assets/updates/genre-snare-114.jpg",
+          "/assets/updates/genre-bass-114.jpg",
+          "/assets/updates/genre-voice-114.jpg",
+          "/assets/updates/sound-piano-114.jpg",
           "/assets/updates/piano-pedal-114.jpg",
           "/assets/updates/pad-intensity-114-sub.jpg",
           "/assets/updates/pad-intensity-114-warm.jpg",
@@ -451,27 +489,43 @@
           "/assets/updates/mic-editor-114.jpg"
         ],
         "imageAlts": [
-          "גרסה 1.14 בפיתוח: חלון הסאונד עם PIANO דלוק (HOLD) ופדל SUSTAIN פתוח על 88%.",
-          "גרסה 1.14 בפיתוח: חלון PAD עם פדל העוצמה של SUB פתוח על 63%, ו-X לסגירה.",
-          "גרסה 1.14 בפיתוח: חלון PAD עם פדל העוצמה של WARM פתוח על 55%.",
-          "גרסה 1.14 בפיתוח: LOOP EDITOR CH 1 עם COPY ו-PASTE, פסי TRIM ו-LOOP, וכפתורי FADE IN ו-FADE OUT.",
-          "גרסה 1.14 בפיתוח: MIC EDITOR VOCAL 1 עם COPY ו-PASTE, פסי TRIM ו-LOOP, וכפתורי FADE IN ו-FADE OUT."
+          "גרסה 1.14 בקרוב: Random Genre עם Rock, Trance, Rap ו-Techno, ו-Drill נבחר תחת Rap.",
+          "גרסה 1.14 בקרוב: רשת Genre Style של 16 סגנונות ב-4 ז'אנרים, ו-Drill נבחר תחת Rap.",
+          "גרסה 1.14 בקרוב: מסך התופים עם Style 2-1, HOLD FOR GENRE על Drum Kits, ו-LOAD בכל שורה.",
+          "גרסה 1.14 בקרוב: לשונית Genre של Hi-Hat עם 33 סאמפלי Drill, עמוד 2 מתוך 4, ולשונית Load.",
+          "גרסה 1.14 בקרוב: לשונית Genre של Snare עם Snare 01 Drill נבחר ולשונית Load.",
+          "גרסה 1.14 בקרוב: לשונית Genre של Bass עם Bass 22 Trap נבחר ולשונית Load.",
+          "גרסה 1.14 בקרוב: לשונית Genre של Voice עם Voice 16 Drill נבחר ולשונית Load.",
+          "גרסה 1.14 בקרוב: מסך הסאונד עם PIANO דלוק וכפתורי Attack ו-Release.",
+          "גרסה 1.14 בקרוב: חלון הסאונד עם PIANO דלוק (HOLD) ופדל SUSTAIN פתוח.",
+          "גרסה 1.14 בקרוב: חלון PAD עם פדל העוצמה של SUB פתוח, ו-X לסגירה.",
+          "גרסה 1.14 בקרוב: חלון PAD עם פדל העוצמה של WARM פתוח.",
+          "גרסה 1.14 בקרוב: LOOP EDITOR עם COPY ו-PASTE, פסי TRIM ו-LOOP, וכפתורי FADE IN ו-FADE OUT.",
+          "גרסה 1.14 בקרוב: MIC EDITOR עם COPY ו-PASTE, פסי TRIM ו-LOOP, וכפתורי FADE IN ו-FADE OUT."
         ],
         "sections": [
           {
+            "title": "ביטים לפי ז'אנר",
+            "bullets": [
+              "4 ז'אנרים (Rock, Trance, Rap, Techno) ו-16 סגנונות, עם 33 סאמפלים חדשים לכל ערוץ תופים בכל סגנון.",
+              "Random בונה ביט לפי הסגנון ושומר את הסאמפלים ואת ה-BPM.",
+              "לשונית Load מחליפה את Loaded."
+            ]
+          },
+          {
             "title": "פסנתר ופדלים",
             "bullets": [
-              "אפשרות PIANO בחלון הסאונד, ליד RIP, FUZZ ו-PHAZ. לחיצה מדליקה ומכבה.",
-              "לחיצה ארוכה פותחת פדל שמנגנים איתו בזמן אמת, כמו פדל סוסטיין של פסנתר. ב-RIP, FUZZ ו-PHAZ אותו פדל קובע כמה חזק האפקט.",
-              "בחלון PAD עם מקלדת אחת, לחיצה ארוכה על SUB, WARM או VIBE פותחת פדל INTENSITY מ-0 עד 100%. לחיצה רגילה עדיין מדליקה ומכבה.",
-              "הכיתוב (HOLD) מתחת לכפתורים האלה מראה שיש להם לחיצה ארוכה.",
-              "ערכי הפדלים נשמרים בפריסטים ובסשנים."
+              "לחיצה ארוכה על PIANO פותחת את פדל הסוסטיין. Attack ו-Release מעצבים את תו הפסנתר.",
+              "ב-RIP, FUZZ ו-PHAZ אותה לחיצה ארוכה פותחת פדל עוצמה.",
+              "בחלון PAD עם מקלדת אחת, לחיצה ארוכה על SUB, WARM או VIBE פותחת פדל INTENSITY מאפס עד מאה אחוז. לחיצה רגילה עדיין מדליקה ומכבה.",
+              "הכיתוב (HOLD) מתחת לכפתורים האלה מראה שיש להם לחיצה ארוכה. ערכי הפדלים נשמרים בפריסטים ובסשנים.",
+              "Resonance, WARM ו-Sound FX נשמעים עכשיו בבירור."
             ]
           },
           {
             "title": "עורך הלופר והמיקרופון",
             "bullets": [
-              "כפתורי FADE IN ו-FADE OUT, מ-0 עד 8 שניות כל אחד, בכל סיבוב של הלופ. אפשר גם להקליד את הערך.",
+              "כפתורי FADE IN ו-FADE OUT, מאפס עד שמונה שניות כל אחד, בכל סיבוב של הלופ. אפשר גם להקליד את הערך.",
               "COPY ו-PASTE של ערוץ בין ערוצי הלופר והמיקרופון: האודיו הנקי, כל ערכי הכפתורים בעורך (LOW, MID, HIGH, MID HZ, GAIN, SQUEEZE, FADE IN, FADE OUT) ואזור ה-LOOP. אפקטי הסאונד, המקצבים ושם הערוץ לא מועתקים.",
               "PASTE שואל לפני שהוא מחליף אודיו, וההקלטה הקודמת עוברת ל-UNDO."
             ]
@@ -479,13 +533,19 @@
           {
             "title": "מאסטרינג",
             "bullets": [
-              "פס TRIM מתחת לגל בחלון המאסטרינג, אותו פקד כמו בלופר, במיקרופון ובתופים, עם הזמן בדקות ושניות."
+              "חיתוך Start ו-End מתחת לגל בחלון המאסטרינג, אותו פקד TRIM כמו בלופר, במיקרופון ובתופים, עם הזמן בדקות ושניות."
             ]
           },
           {
             "title": "טאבלטים",
             "bullets": [
               "מסכים שממלאים את מסך הטאבלט, למשל חלון הסאונד בשני חלקים בטאבלט לרוחב. בפלאפון הכול נשאר כמו שהיה."
+            ]
+          },
+          {
+            "title": "קולות התופים",
+            "bullets": [
+              "סאמפלי ה-Voice בתופים מתאימים לכל סגנון ז'אנר, כך שערוץ ה-Voice יושב עם שאר הקיט."
             ]
           }
         ]
@@ -861,10 +921,18 @@
       {
         "id": "app-1-14-in-development",
         "status": "in_progress",
-        "title": "Скоро: версия 1.14, в разработке, с педалью сустейна для пианино, фейдами и COPY / PASTE",
-        "ticker": "Скоро: версия 1.14, в разработке: педаль сустейна, FADE IN / FADE OUT, COPY / PASTE",
-        "summary": "Версия 1.14 в разработке. Она пока недоступна. Всё описанное здесь ещё делается и может измениться до выхода.",
+        "title": "Скоро в Google Play: версия 1.14, с битами по жанрам, фейдами и педалью для пианино",
+        "ticker": "Скоро в Google Play: версия 1.14 (в работе): биты по жанрам, FADE IN / FADE OUT, педаль для пианино",
+        "summary": "Версия 1.14 скоро появится в Google Play. Она пока недоступна. Сейчас в Google Play доступна версия 1.13. Всё описанное здесь ещё делается и может измениться до выхода.",
         "images": [
+          "/assets/updates/genre-random-114.jpg",
+          "/assets/updates/genre-style-114.jpg",
+          "/assets/updates/drum-main-114.jpg",
+          "/assets/updates/genre-hihat-114.jpg",
+          "/assets/updates/genre-snare-114.jpg",
+          "/assets/updates/genre-bass-114.jpg",
+          "/assets/updates/genre-voice-114.jpg",
+          "/assets/updates/sound-piano-114.jpg",
           "/assets/updates/piano-pedal-114.jpg",
           "/assets/updates/pad-intensity-114-sub.jpg",
           "/assets/updates/pad-intensity-114-warm.jpg",
@@ -872,27 +940,43 @@
           "/assets/updates/mic-editor-114.jpg"
         ],
         "imageAlts": [
-          "Версия 1.14 в разработке: окно Sound с включённым PIANO (HOLD) и открытой педалью SUSTAIN на 88%.",
-          "Версия 1.14 в разработке: окно PAD с открытым фейдером интенсивности SUB на 63% и кнопкой X для закрытия.",
-          "Версия 1.14 в разработке: окно PAD с открытым фейдером интенсивности WARM на 55%.",
-          "Версия 1.14 в разработке: LOOP EDITOR CH 1 с COPY и PASTE, полосами TRIM и LOOP и ручками FADE IN и FADE OUT.",
-          "Версия 1.14 в разработке: MIC EDITOR VOCAL 1 с COPY и PASTE, полосами TRIM и LOOP и ручками FADE IN и FADE OUT."
+          "Версия 1.14 скоро: Random Genre с Rock, Trance, Rap и Techno, Drill выбран в Rap.",
+          "Версия 1.14 скоро: сетка Genre Style из 16 стилей в 4 жанрах, Drill выбран в Rap.",
+          "Версия 1.14 скоро: экран Drum со Style 2-1, HOLD FOR GENRE на Drum Kits и LOAD в каждом ряду.",
+          "Версия 1.14 скоро: вкладка Genre для Hi-Hat с 33 сэмплами Drill, страница 2 из 4, и вкладка Load.",
+          "Версия 1.14 скоро: вкладка Genre для Snare с выбранным Snare 01 Drill и вкладкой Load.",
+          "Версия 1.14 скоро: вкладка Genre для Bass с выбранным Bass 22 Trap и вкладкой Load.",
+          "Версия 1.14 скоро: вкладка Genre для Voice с выбранным Voice 16 Drill и вкладкой Load.",
+          "Версия 1.14 скоро: экран Sound с включённым PIANO и ручками Attack и Release.",
+          "Версия 1.14 скоро: окно Sound с включённым PIANO (HOLD) и открытой педалью SUSTAIN.",
+          "Версия 1.14 скоро: окно PAD с открытым фейдером интенсивности SUB и кнопкой X для закрытия.",
+          "Версия 1.14 скоро: окно PAD с открытым фейдером интенсивности WARM.",
+          "Версия 1.14 скоро: LOOP EDITOR с COPY и PASTE, полосами TRIM и LOOP и ручками FADE IN и FADE OUT.",
+          "Версия 1.14 скоро: MIC EDITOR с COPY и PASTE, полосами TRIM и LOOP и ручками FADE IN и FADE OUT."
         ],
         "sections": [
           {
+            "title": "Биты по жанрам",
+            "bullets": [
+              "4 жанра (Rock, Trance, Rap, Techno) и 16 стилей, с 33 новыми сэмплами для каждого барабанного канала в каждом стиле.",
+              "Random собирает бит по стилю и сохраняет сэмплы и BPM.",
+              "Вкладка Load заменяет Loaded."
+            ]
+          },
+          {
             "title": "Пианино и педали",
             "bullets": [
-              "Опция PIANO в окне Sound, рядом с RIP, FUZZ и PHAZ. Касание включает и выключает её.",
-              "Долгое нажатие открывает педаль, которой играют в реальном времени, как педалью сустейна у пианино. Для RIP, FUZZ и PHAZ та же педаль задаёт силу эффекта.",
-              "В окне PAD с одной клавиатурой долгое нажатие на SUB, WARM или VIBE открывает фейдер INTENSITY от 0 до 100%. Касание по-прежнему включает и выключает их.",
-              "(HOLD) под этими кнопками показывает, что у них есть долгое нажатие.",
-              "Значения педалей сохраняются в пресетах и сессиях."
+              "Долгое нажатие на PIANO открывает педаль сустейна. Attack и Release формируют ноту пианино.",
+              "Для RIP, FUZZ и PHAZ то же долгое нажатие открывает педаль интенсивности.",
+              "В окне PAD с одной клавиатурой долгое нажатие на SUB, WARM или VIBE открывает фейдер INTENSITY от нуля до ста процентов. Касание по-прежнему включает и выключает их.",
+              "(HOLD) под этими кнопками показывает, что у них есть долгое нажатие. Значения педалей сохраняются в пресетах и сессиях.",
+              "Resonance, WARM и Sound FX теперь слышны ясно."
             ]
           },
           {
             "title": "Редактор лупера и микрофона",
             "bullets": [
-              "Ручки FADE IN и FADE OUT, от 0 до 8 секунд каждая, на каждом проходе лупа. Значение можно и ввести вручную.",
+              "Ручки FADE IN и FADE OUT, от нуля до восьми секунд каждая, на каждом проходе лупа. Значение можно и ввести вручную.",
               "COPY и PASTE дорожки между каналами лупера и микрофона: чистое аудио, все значения ручек редактора (LOW, MID, HIGH, MID HZ, GAIN, SQUEEZE, FADE IN, FADE OUT) и область LOOP. Sound FX, ритмы и имя дорожки не копируются.",
               "PASTE спрашивает, прежде чем заменить аудио, а старый дубль уходит в UNDO."
             ]
@@ -900,13 +984,19 @@
           {
             "title": "Мастеринг",
             "bullets": [
-              "Полоса TRIM под волной в окне мастеринга, тот же элемент, что в лупере, микрофоне и барабанах, со временем в минутах и секундах."
+              "Обрезка Start и End под волной в окне мастеринга, тот же элемент TRIM, что в лупере, микрофоне и барабанах, со временем в минутах и секундах."
             ]
           },
           {
             "title": "Планшеты",
             "bullets": [
               "Раскладки, которые заполняют экран планшета, например Sound в две панели на планшете в альбомной ориентации. На телефонах всё остаётся как было."
+            ]
+          },
+          {
+            "title": "Голоса барабанов",
+            "bullets": [
+              "Сэмплы Voice в барабанах соответствуют каждому жанровому стилю, так что канал Voice идёт вместе с остальным китом."
             ]
           }
         ]
@@ -1282,10 +1372,18 @@
       {
         "id": "app-1-14-in-development",
         "status": "in_progress",
-        "title": "قريباً: الإصدار 1.14، قيد التطوير، مع دواسة استدامة للبيانو وتلاشٍ و COPY / PASTE",
-        "ticker": "قريباً: الإصدار 1.14، قيد التطوير: دواسة استدامة للبيانو، FADE IN / FADE OUT، COPY / PASTE",
-        "summary": "الإصدار 1.14 قيد التطوير. وهو غير متاح بعد. كل ما هنا ما زال قيد العمل وقد يتغير قبل صدوره.",
+        "title": "قريباً على Google Play: الإصدار 1.14، مع إيقاعات حسب النوع، وتلاشٍ ودواسة للبيانو",
+        "ticker": "قريباً على Google Play: الإصدار 1.14 (قيد العمل): إيقاعات حسب النوع، FADE IN / FADE OUT، دواسة للبيانو",
+        "summary": "الإصدار 1.14 قادم قريباً إلى Google Play. وهو غير متاح بعد. الإصدار المتاح الآن على Google Play هو 1.13. كل ما هنا ما زال قيد العمل وقد يتغير قبل صدوره.",
         "images": [
+          "/assets/updates/genre-random-114.jpg",
+          "/assets/updates/genre-style-114.jpg",
+          "/assets/updates/drum-main-114.jpg",
+          "/assets/updates/genre-hihat-114.jpg",
+          "/assets/updates/genre-snare-114.jpg",
+          "/assets/updates/genre-bass-114.jpg",
+          "/assets/updates/genre-voice-114.jpg",
+          "/assets/updates/sound-piano-114.jpg",
           "/assets/updates/piano-pedal-114.jpg",
           "/assets/updates/pad-intensity-114-sub.jpg",
           "/assets/updates/pad-intensity-114-warm.jpg",
@@ -1293,41 +1391,63 @@
           "/assets/updates/mic-editor-114.jpg"
         ],
         "imageAlts": [
-          "الإصدار 1.14 قيد التطوير: نافذة الصوت مع تشغيل PIANO (HOLD) ودواسة SUSTAIN مفتوحة على 88%.",
-          "الإصدار 1.14 قيد التطوير: نافذة PAD مع منزلق شدة SUB مفتوح على 63%، وزر X للإغلاق.",
-          "الإصدار 1.14 قيد التطوير: نافذة PAD مع منزلق شدة WARM مفتوح على 55%.",
-          "الإصدار 1.14 قيد التطوير: LOOP EDITOR CH 1 مع COPY و PASTE وشريطي TRIM و LOOP ومقبضي FADE IN و FADE OUT.",
-          "الإصدار 1.14 قيد التطوير: MIC EDITOR VOCAL 1 مع COPY و PASTE وشريطي TRIM و LOOP ومقبضي FADE IN و FADE OUT."
+          "الإصدار 1.14 قريباً: Random Genre مع Rock وTrance وRap وTechno، وDrill محدد تحت Rap.",
+          "الإصدار 1.14 قريباً: شبكة Genre Style من 16 أسلوباً عبر 4 أنواع، وDrill محدد تحت Rap.",
+          "الإصدار 1.14 قريباً: شاشة Drum مع Style 2-1 وHOLD FOR GENRE على Drum Kits وLOAD في كل صف.",
+          "الإصدار 1.14 قريباً: تبويب Genre لـ Hi-Hat مع 33 عيّنة Drill، الصفحة 2 من 4، وتبويب Load.",
+          "الإصدار 1.14 قريباً: تبويب Genre لـ Snare مع تحديد Snare 01 Drill وتبويب Load.",
+          "الإصدار 1.14 قريباً: تبويب Genre لـ Bass مع تحديد Bass 22 Trap وتبويب Load.",
+          "الإصدار 1.14 قريباً: تبويب Genre لـ Voice مع تحديد Voice 16 Drill وتبويب Load.",
+          "الإصدار 1.14 قريباً: شاشة Sound مع تشغيل PIANO ومقبضي Attack وRelease.",
+          "الإصدار 1.14 قريباً: نافذة Sound مع تشغيل PIANO (HOLD) ودواسة SUSTAIN مفتوحة.",
+          "الإصدار 1.14 قريباً: نافذة PAD مع منزلق شدة SUB مفتوح وزر X للإغلاق.",
+          "الإصدار 1.14 قريباً: نافذة PAD مع منزلق شدة WARM مفتوح.",
+          "الإصدار 1.14 قريباً: LOOP EDITOR مع COPY وPASTE وشريطي TRIM وLOOP ومقبضي FADE IN وFADE OUT.",
+          "الإصدار 1.14 قريباً: MIC EDITOR مع COPY وPASTE وشريطي TRIM وLOOP ومقبضي FADE IN وFADE OUT."
         ],
         "sections": [
           {
+            "title": "إيقاعات حسب النوع",
+            "bullets": [
+              "4 أنواع (Rock وTrance وRap وTechno) و16 أسلوباً، مع 33 عيّنة جديدة لكل قناة طبول في كل أسلوب.",
+              "يبني Random إيقاعاً وفق الأسلوب ويحفظ العيّنات وBPM.",
+              "تبويب Load يحل محل Loaded."
+            ]
+          },
+          {
             "title": "البيانو والدواسات",
             "bullets": [
-              "خيار PIANO في نافذة الصوت، بجانب RIP و FUZZ و PHAZ. اللمسة تشغّله وتوقفه.",
-              "الضغط المطوّل يفتح دواسة تعزف بها في الوقت الحقيقي، مثل دواسة الاستدامة في البيانو. في RIP و FUZZ و PHAZ تحدد الدواسة نفسها قوة المؤثر.",
-              "في نافذة PAD بلوحة مفاتيح واحدة، الضغط المطوّل على SUB أو WARM أو VIBE يفتح منزلق INTENSITY من 0 إلى 100%. واللمسة ما زالت تشغّلها وتوقفها.",
-              "عبارة (HOLD) تحت هذه الأزرار تبيّن أن لها ضغطاً مطوّلاً.",
-              "قيم الدواسات تُحفظ في الإعدادات المسبقة والجلسات."
+              "الضغط المطوّل على PIANO يفتح دواسة الاستدامة. Attack وRelease يشكّلان نغمة البيانو.",
+              "في RIP وFUZZ وPHAZ يفتح الضغط المطوّل نفسه دواسة الشدة.",
+              "في نافذة PAD بلوحة مفاتيح واحدة، الضغط المطوّل على SUB أو WARM أو VIBE يفتح منزلق INTENSITY من صفر إلى مئة بالمئة. واللمسة ما زالت تشغّلها وتوقفها.",
+              "عبارة (HOLD) تحت هذه الأزرار تبيّن أن لها ضغطاً مطوّلاً. قيم الدواسات تُحفظ في الإعدادات المسبقة والجلسات.",
+              "Resonance وWARM وSound FX مسموعة الآن بوضوح."
             ]
           },
           {
             "title": "محرر اللوبر والميكروفون",
             "bullets": [
-              "مقبضا FADE IN و FADE OUT، من 0 إلى 8 ثوانٍ لكل منهما، في كل دورة من اللوب. ويمكن أيضاً كتابة القيمة.",
-              "COPY و PASTE لمسار بين قنوات اللوبر والميكروفون: الصوت النظيف، وكل قيم مقابض المحرر (LOW و MID و HIGH و MID HZ و GAIN و SQUEEZE و FADE IN و FADE OUT) ومنطقة LOOP. لا تُنسخ مؤثرات الصوت ولا الإيقاعات ولا اسم المسار.",
+              "مقبضا FADE IN وFADE OUT، من صفر إلى ثماني ثوانٍ لكل منهما، في كل دورة من اللوب. ويمكن أيضاً كتابة القيمة.",
+              "COPY وPASTE لمسار بين قنوات اللوبر والميكروفون: الصوت النظيف، وكل قيم مقابض المحرر (LOW وMID وHIGH وMID HZ وGAIN وSQUEEZE وFADE IN وFADE OUT) ومنطقة LOOP. لا تُنسخ مؤثرات الصوت ولا الإيقاعات ولا اسم المسار.",
               "يسأل PASTE قبل أن يستبدل الصوت، وتنتقل التسجيلة القديمة إلى UNDO."
             ]
           },
           {
             "title": "الماسترينغ",
             "bullets": [
-              "شريط TRIM تحت الموجة في نافذة الماسترينغ، العنصر نفسه كما في اللوبر والميكروفون والطبول، مع الوقت بالدقائق والثواني."
+              "قص Start وEnd تحت الموجة في نافذة الماسترينغ، عنصر TRIM نفسه كما في اللوبر والميكروفون والطبول، مع الوقت بالدقائق والثواني."
             ]
           },
           {
             "title": "الأجهزة اللوحية",
             "bullets": [
               "تخطيطات تملأ شاشة الجهاز اللوحي، مثل نافذة الصوت في جزأين على جهاز لوحي بالعرض. على الهواتف يبقى كل شيء كما كان."
+            ]
+          },
+          {
+            "title": "أصوات الطبول",
+            "bullets": [
+              "عيّنات Voice في الطبول تطابق كل أسلوب نوع، بحيث تبقى قناة Voice مع بقية الطقم."
             ]
           }
         ]
