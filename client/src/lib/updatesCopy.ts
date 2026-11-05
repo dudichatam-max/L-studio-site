@@ -36,6 +36,11 @@ export type UpdateItem = {
    * `slides[slideId]` holds the title, text and alt of each poster in this language (the caption is baked in).
    */
   carousel?: UpdateCarousel;
+  /**
+   * When true, `image` / `images` render as the shared play-carousel (swipe, arrows, dots, RTL)
+   * instead of a static grid. Used for the 1.14 coming-soon item only until 1.14 ships.
+   */
+  imagesCarousel?: boolean;
   /** Optional grouped bullets under the summary. Cards without it show only `summary`. */
   sections?: UpdateItemSection[];
 };

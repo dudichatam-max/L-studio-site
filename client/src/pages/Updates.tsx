@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import PlayCarousel from "@/components/PlayCarousel";
+import UpdateStillsCarousel from "@/components/UpdateStillsCarousel";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { POSTER_VER } from "@/lib/posters";
@@ -232,7 +233,23 @@ export default function Updates() {
                           ) : null}
                         </div>
                       ) : null}
-                      {shots.length ? (
+                      {shots.length && item.imagesCarousel ? (
+                        <div className="updates-card-shots">
+                          <div className="updates-carousel updates-carousel--stills">
+                            <UpdateStillsCarousel
+                              slides={shots.map((shot) => ({
+                                src: shot.src,
+                                alt: shot.alt,
+                                width: stillSize(shot.src).width,
+                                height: stillSize(shot.src).height,
+                              }))}
+                              language={language}
+                              isRtl={isRtl}
+                              label={item.title}
+                            />
+                          </div>
+                        </div>
+                      ) : shots.length ? (
                         <div className="updates-card-shots">
                           {shots.map((shot) => (
                             <figure className="updates-shot" key={shot.src}>

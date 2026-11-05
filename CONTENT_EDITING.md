@@ -276,6 +276,9 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - JSON-LD screenshots now point to the 1.13 carousel images (`/assets/carousel/en/*-w630.jpg`) instead of the old posters.
 - 1.14-only features (COPY/PASTE, FADE, TRIM in the editors) are not published until 1.14 is on Google Play.
 
+## Updates: 1.14 stills carousel (2026-11-05)
+- The 1.14 item sets `imagesCarousel: true`. Its stills render through `UpdateStillsCarousel` (same play-carousel swipe, arrows, dots, keyboard and RTL as the homepage), not as a static grid. Other update items keep their grids until David replaces them after 1.14 ships on Google Play.
+
 ## Updates: 1.14 coming soon rewrite (2026-11-05)
 - Item `app-1-14-in-development` stays `in_progress`. Wording: coming soon to Google Play, no date. Available on Play remains 1.13 (hero kicker, pageIntro, 1.13 ticker). Do not claim 1.14 is available. Do not put 1.14 screens into the 1.13 home carousels or the guide.
 - New content: genre beats (4 genres, 16 styles, 33 samples per drum channel per style), Random by style (saves samples + BPM), Load tab replaces Loaded, Mastering Start/End trim, FADE IN / FADE OUT, piano sustain pedal (long-press) with Attack / Release shaping the note, RIP/FUZZ/PHAZ intensity, Resonance / WARM / Sound FX clearer, drum Voice samples per genre style. Kept from the Oct 28 item when still true in `feature/1.14`: COPY / PASTE, tablet layouts, PAD intensity pedals.
