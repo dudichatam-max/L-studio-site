@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import SiteLogo from "@/components/SiteLogo";
 import PlayCarousel from "@/components/PlayCarousel";
+import UpdateStillsCarousel from "@/components/UpdateStillsCarousel";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { POSTER_VER } from "@/lib/posters";
@@ -39,6 +40,14 @@ const STILL_SIZE: Record<string, { width: number; height: number }> = {
   "/assets/guide/keep-playing-phone.jpg": { width: 720, height: 1472 },
   "/assets/updates/looper-back.jpg": { width: 720, height: 1468 },
   "/assets/updates/looper-fx.jpg": { width: 688, height: 1092 },
+  "/assets/updates/genre-random-114.jpg": { width: 720, height: 1478 },
+  "/assets/updates/genre-style-114.jpg": { width: 720, height: 1478 },
+  "/assets/updates/drum-main-114.jpg": { width: 720, height: 1478 },
+  "/assets/updates/genre-hihat-114.jpg": { width: 720, height: 1478 },
+  "/assets/updates/genre-snare-114.jpg": { width: 720, height: 1478 },
+  "/assets/updates/genre-bass-114.jpg": { width: 720, height: 1478 },
+  "/assets/updates/genre-voice-114.jpg": { width: 720, height: 1478 },
+  "/assets/updates/sound-piano-114.jpg": { width: 720, height: 1478 },
   "/assets/updates/piano-pedal-114.jpg": { width: 720, height: 1470 },
   "/assets/updates/pad-intensity-114-sub.jpg": { width: 720, height: 1470 },
   "/assets/updates/pad-intensity-114-warm.jpg": { width: 720, height: 1470 },
@@ -224,7 +233,23 @@ export default function Updates() {
                           ) : null}
                         </div>
                       ) : null}
-                      {shots.length ? (
+                      {shots.length && item.imagesCarousel ? (
+                        <div className="updates-card-shots">
+                          <div className="updates-carousel updates-carousel--stills">
+                            <UpdateStillsCarousel
+                              slides={shots.map((shot) => ({
+                                src: shot.src,
+                                alt: shot.alt,
+                                width: stillSize(shot.src).width,
+                                height: stillSize(shot.src).height,
+                              }))}
+                              language={language}
+                              isRtl={isRtl}
+                              label={item.title}
+                            />
+                          </div>
+                        </div>
+                      ) : shots.length ? (
                         <div className="updates-card-shots">
                           {shots.map((shot) => (
                             <figure className="updates-shot" key={shot.src}>
