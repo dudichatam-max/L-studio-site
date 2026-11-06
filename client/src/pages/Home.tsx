@@ -22,8 +22,8 @@ const factoryHero = {
 const factoryBoxJpg = `${import.meta.env.BASE_URL}assets/factory-pack-box.jpg?v=108-packs`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=108-packs`;
 const factoryBoxWebp800 = `${import.meta.env.BASE_URL}assets/factory-pack-box-800.webp?v=108-packs`;
-// 1.12 feature graphic (1024x500, designer, Oct 22). HE uses the Hebrew one, EN/RU/AR use the English one.
-const FEATURE_GRAPHIC_VER = "fg-112";
+// 1.14 feature graphic (1024x500). Same 1.12 designer card with size text set to 160.1 MB (David 2026-11-06). HE uses Hebrew; EN/RU/AR use English.
+const FEATURE_GRAPHIC_VER = "fg-114";
 function featureGraphicUrl(language: Language, width: 640 | 800 | 1024, ext: "jpg" | "webp") {
   return `${import.meta.env.BASE_URL}assets/feature-graphic-${language === "he" ? "he" : "en"}-${width}.${ext}?v=${FEATURE_GRAPHIC_VER}`;
 }

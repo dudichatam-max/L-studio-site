@@ -205,6 +205,11 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Drum (1.11, 6 slides; the sample shaping slide was removed at David's request): all 8 rows open after +4 with no keyboard (`drum-rows`, David's Oct 20 shot cropped y 68..1540), main Drum screen (`drum-tab`), sample banks, LOADED (`drum-loaded-trim` + `drum-loaded-rename`), Drum FX, Pattern repeats (`drum-repeats-phone`, the real 1.11 Drum window with the 1-88 box and COPY/PASTE). Cache key `CAROUSEL_VER` in `carousel.ts` (bump it whenever posters change).
 - Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
 
+## Feature graphic size 160.1 MB (2026-11-06)
+- David (site chat): upload only the new opening feature graphic for now, with the exact weight; next week update all other images.
+- Replaced `assets/feature-graphic-{en,he}-{640,800,1024}` (and the `client/public` twins) only. Edited the existing 1.12 designer card so the size line reads **160.1 MB** (EN "Size 160.1 MB", HE "160.1 MB גודל"). Logo, slogan, phone stills and layout unchanged. Cache key `FEATURE_GRAPHIC_VER` = `fg-114`.
+- No other screenshots, carousel, guide or copy changes in this flip.
+
 ## Updates: 1.14 available on Google Play (2026-11-06)
 - Play public listing for `com.microtonal.synth` shows version **1.14**, updated **Nov 5, 2026** (verified from the store page). David confirmed in the site chat (2026-11-06 ~18:55 IDT) that 1.14 is available; flip the site from "coming soon" to available.
 - Item `app-1-14-in-development` is now `shipped`. Title/ticker prefix "On Google Play now" / "On Google Play:" (HE "עכשיו ב-Google Play:", RU "Теперь в Google Play:", AR "الآن على Google Play:"). No "coming soon", "in progress", "in development", or "in review".
