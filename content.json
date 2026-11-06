@@ -15,12 +15,12 @@
         "updates": "עדכונים"
       },
       "hero": {
-        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.13, עכשיו ב-Google Play",
+        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.14, עכשיו ב-Google Play",
         "title": "יוצרים מוזיקה בפלאפון.",
         "body": "L Studio היא אפליקציה ליצירת מוזיקה בפלאפון האנדרואיד. מקליטים לופים, מוסיפים תופים, שרים עם המילים מול העיניים, ואם בא לכם לצאת מהתווים הרגילים, מכוונים כל קליד לתדר משלו.",
         "ctaPrimary": "לצפייה בסרטון הקצר",
         "ctaSecondary": "איך זה התחיל",
-        "stat1": "75.7MB",
+        "stat1": "160.1MB",
         "stat2": "Android 7.0+",
         "stat3": "ללא פרסומות"
       },
@@ -147,7 +147,7 @@
           {
             "question": "האפליקציה כבר בגוגל פליי? וכמה היא עולה?",
             "answer": [
-              "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.13, שמביאה אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. זה תשלום חד פעמי. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+              "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.14, שמביאה ביטים לפי ז'אנר, פייד, פדל לפסנתר ו-Sound FX ברורים יותר, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. מי שקונה Pro מקבל את גרסה 1.14 דרך Google Play. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
               "קונים אותה דרך Google Play. האתר הזה לא מוכר את האפליקציה ואין בו כפתור הורדה."
             ]
           },
@@ -163,7 +163,7 @@
           {
             "question": "על אילו מכשירים זה רץ, ובאילו שפות?",
             "answer": [
-              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה. הגודל של גרסה 1.13 הוא 75.7MB. בינתיים אין גרסה לאייפון.",
+              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה. גרסה 1.14 היא 160.1MB. אין כרגע גרסה לאייפון.",
               "האפליקציה נבדקה על טלפוני אנדרואיד שונים. היא לא נבדקה על טאבלטים, ולכן אין הבטחה לתמיכה בטאבלט.",
               "בפלאפון האפליקציה נשארת זקופה, לאורך.",
               "האפליקציה בארבע שפות: עברית, אנגלית, רוסית וערבית. מחליפים ב-Settings, בשורה Language."
@@ -200,7 +200,7 @@
             "answer": [
               "המיקסר האנלוגי נפתח בהקשה על LIVE SCOPE בראש המסך. לתופים, ללופר ולמיק יש ערוץ עם Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S ופיידר. ערוץ ה-Master עובד על כל המיקס. SPECTRUM ו-MIX MAP מראים איפה הערוצים יושבים ואיפה הם מתנגשים. יש 8 פריסטים.",
               "חלון המאסטרינג מסיים הקלטת WAV או שיר מיובא לקראת שירותי הסטרימינג. בוחרים אחד מ-8 סגנונות, מאזינים ל-A (לפני) ול-B (הסגנון), ואז מקישים Start mastering ומייצאים. הוא נפתח אחרי הקלטת WAV ‏(Master this take) או מ-MASTERING ב-Settings.",
-              "שניהם הגיעו בגרסה 1.12, והם גם בגרסה 1.13 שכבר ב-Google Play."
+              "שניהם הגיעו בגרסה 1.12, וגם גרסה 1.14 ב-Google Play כוללת אותם."
             ]
           },
           {
@@ -3274,7 +3274,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.13, 75.7MB, שמביאה אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. מי שקונה Pro מקבל את גרסה 1.13 דרך Google Play. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
+        "body": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.14, 160.1MB, שמביאה ביטים לפי ז'אנר, פייד, פדל לפסנתר ו-Sound FX ברורים יותר, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. מי שקונה Pro מקבל את גרסה 1.14 דרך Google Play. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
           "L Studio Pro לאנדרואיד ב-Google Play, ‏24.90 ‏₪",
@@ -3309,7 +3309,7 @@
         "navLabel": "עדכונים",
         "pageTitle": "מה חדש ב-L Studio.",
         "pageKicker": "L-STUDIO / עדכונים",
-        "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.13, שמביאה אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+        "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.14, שמביאה ביטים לפי ז'אנר, פייד, פדל לפסנתר ו-Sound FX ברורים יותר, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
         "tickerLabel": "עדכונים",
         "statusLabels": {
           "in_progress": "בעבודה",
@@ -3324,10 +3324,10 @@
         "items": [
           {
             "id": "app-1-14-in-development",
-            "status": "in_progress",
-            "title": "בקרוב ב-Google Play: גרסה 1.14, עם ביטים לפי ז'אנר, פייד ופדל לפסנתר",
-            "ticker": "בקרוב ב-Google Play: גרסה 1.14 (בעבודה): ביטים לפי ז'אנר, FADE IN / FADE OUT, פדל לפסנתר",
-            "summary": "גרסה 1.14 בקרוב ב-Google Play. היא עוד לא זמינה. הגרסה שזמינה עכשיו ב-Google Play היא 1.13. כל מה שכתוב כאן עדיין בעבודה ויכול להשתנות לפני שהגרסה תצא.",
+            "status": "shipped",
+            "title": "עכשיו ב-Google Play: גרסה 1.14 עם ביטים לפי ז'אנר, פייד ופדל לפסנתר",
+            "ticker": "עכשיו ב-Google Play: גרסה 1.14 עם ביטים לפי ז'אנר, FADE IN / FADE OUT, פדל לפסנתר",
+            "summary": "גרסה 1.14 עכשיו ב-Google Play (עודכנה ב-5 בנובמבר 2026). היא מביאה ביטים לפי ז'אנר (4 ז'אנרים, 16 סגנונות, 33 סאמפלים חדשים לכל ערוץ תופים בכל סגנון), Random שבונה ביט לפי הסגנון ושומר את הסאמפלים ואת ה-BPM, לשונית Load במקום Loaded, חיתוך Start/End במאסטרינג, FADE IN ו-FADE OUT בלופר ובמיקרופון, פדל סוסטיין לפסנתר בלחיצה ארוכה, ו-Resonance, WARM ו-Sound FX ברורים יותר. קולות התופים (Voice) תואמים לכל סגנון ז'אנר.",
             "images": [
               "/assets/updates/genre-random-114.jpg",
               "/assets/updates/genre-style-114.jpg",
@@ -3344,19 +3344,19 @@
               "/assets/updates/mic-editor-114.jpg"
             ],
             "imageAlts": [
-              "גרסה 1.14 בקרוב: Random Genre עם Rock, Trance, Rap ו-Techno, ו-Drill נבחר תחת Rap.",
-              "גרסה 1.14 בקרוב: רשת Genre Style של 16 סגנונות ב-4 ז'אנרים, ו-Drill נבחר תחת Rap.",
-              "גרסה 1.14 בקרוב: מסך התופים עם Style 2-1, HOLD FOR GENRE על Drum Kits, ו-LOAD בכל שורה.",
-              "גרסה 1.14 בקרוב: לשונית Genre של Hi-Hat עם 33 סאמפלי Drill, עמוד 2 מתוך 4, ולשונית Load.",
-              "גרסה 1.14 בקרוב: לשונית Genre של Snare עם Snare 01 Drill נבחר ולשונית Load.",
-              "גרסה 1.14 בקרוב: לשונית Genre של Bass עם Bass 22 Trap נבחר ולשונית Load.",
-              "גרסה 1.14 בקרוב: לשונית Genre של Voice עם Voice 16 Drill נבחר ולשונית Load.",
-              "גרסה 1.14 בקרוב: מסך הסאונד עם PIANO דלוק וכפתורי Attack ו-Release.",
-              "גרסה 1.14 בקרוב: חלון הסאונד עם PIANO דלוק (HOLD) ופדל SUSTAIN פתוח.",
-              "גרסה 1.14 בקרוב: חלון PAD עם פדל העוצמה של SUB פתוח, ו-X לסגירה.",
-              "גרסה 1.14 בקרוב: חלון PAD עם פדל העוצמה של WARM פתוח.",
-              "גרסה 1.14 בקרוב: LOOP EDITOR עם COPY ו-PASTE, פסי TRIM ו-LOOP, וכפתורי FADE IN ו-FADE OUT.",
-              "גרסה 1.14 בקרוב: MIC EDITOR עם COPY ו-PASTE, פסי TRIM ו-LOOP, וכפתורי FADE IN ו-FADE OUT."
+              "גרסה 1.14: Random Genre עם Rock, Trance, Rap ו-Techno, ו-Drill נבחר תחת Rap.",
+              "גרסה 1.14: רשת Genre Style של 16 סגנונות ב-4 ז'אנרים, ו-Drill נבחר תחת Rap.",
+              "גרסה 1.14: מסך התופים עם Style 2-1, HOLD FOR GENRE על Drum Kits, ו-LOAD בכל שורה.",
+              "גרסה 1.14: לשונית Genre של Hi-Hat עם 33 סאמפלי Drill, עמוד 2 מתוך 4, ולשונית Load.",
+              "גרסה 1.14: לשונית Genre של Snare עם Snare 01 Drill נבחר ולשונית Load.",
+              "גרסה 1.14: לשונית Genre של Bass עם Bass 22 Trap נבחר ולשונית Load.",
+              "גרסה 1.14: לשונית Genre של Voice עם Voice 16 Drill נבחר ולשונית Load.",
+              "גרסה 1.14: מסך הסאונד עם PIANO דלוק וכפתורי Attack ו-Release.",
+              "גרסה 1.14: חלון הסאונד עם PIANO דלוק (HOLD) ופדל SUSTAIN פתוח.",
+              "גרסה 1.14: חלון PAD עם פדל העוצמה של SUB פתוח, ו-X לסגירה.",
+              "גרסה 1.14: חלון PAD עם פדל העוצמה של WARM פתוח.",
+              "גרסה 1.14: LOOP EDITOR עם COPY ו-PASTE, פסי TRIM ו-LOOP, וכפתורי FADE IN ו-FADE OUT.",
+              "גרסה 1.14: MIC EDITOR עם COPY ו-PASTE, פסי TRIM ו-LOOP, וכפתורי FADE IN ו-FADE OUT."
             ],
             "sections": [
               {
@@ -3409,9 +3409,9 @@
           {
             "id": "app-1-13-fm-sound-fx",
             "status": "shipped",
-            "title": "עכשיו ב-Google Play: גרסה 1.13 עם אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB",
-            "ticker": "עכשיו ב-Google Play: גרסה 1.13 עם אפקט FM של 4 אופרטורים, עמודים ב-Sound FX ו-EQ ב-dB",
-            "summary": "גרסה 1.13 עכשיו ב-Google Play. היא מביאה אפקט FM אמיתי עם 4 אופרטורים ו-8 אלגוריתמים, חלון Sound FX חדש עם עמודים, כפתורים מסתובבים בכל חלונות האפקטים ו-EQ ב-dB.",
+            "title": "גרסה 1.13 עם אפקט FM אמיתי, חלון Sound FX חדש ו-EQ ב-dB",
+            "ticker": "גרסה 1.13 עם אפקט FM של 4 אופרטורים, עמודים ב-Sound FX ו-EQ ב-dB",
+            "summary": "גרסה 1.13 הביאה את השינויים האלה ב-Google Play. היא מביאה אפקט FM אמיתי עם 4 אופרטורים ו-8 אלגוריתמים, חלון Sound FX חדש עם עמודים, כפתורים מסתובבים בכל חלונות האפקטים ו-EQ ב-dB.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -3543,7 +3543,7 @@
             "status": "shipped",
             "title": "מאז גרסה 1.11, עכשיו ב-Google Play: סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
             "ticker": "עכשיו ב-Google Play: עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך",
-            "summary": "מאז גרסה 1.11, עכשיו ב-Google Play עם גרסה 1.13: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
+            "summary": "מאז גרסה 1.11, עכשיו ב-Google Play עם גרסה 1.14: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -3617,7 +3617,7 @@
             "status": "shipped",
             "title": "מאז גרסה 1.10, עכשיו ב-Google Play: Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
             "ticker": "עכשיו ב-Google Play: עורך לופ חדש, גם לערוצי המיקרופון, עם חיתוך, אקולייזר ובחירה של איזה מקצב תופים מתנגן עם הלופ וכמה פעמים הוא חוזר",
-            "summary": "מאז גרסה 1.10, עכשיו ב-Google Play עם גרסה 1.13: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
+            "summary": "מאז גרסה 1.10, עכשיו ב-Google Play עם גרסה 1.14: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "sections": [
@@ -3906,12 +3906,12 @@
         "updates": "Updates"
       },
       "hero": {
-        "kicker": "Android music app · Version 1.13, on Google Play now",
+        "kicker": "Android music app · Version 1.14, on Google Play now",
         "title": "Make music on your phone.",
         "body": "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.",
         "ctaPrimary": "Watch the short",
         "ctaSecondary": "How it started",
-        "stat1": "75.7 MB",
+        "stat1": "160.1 MB",
         "stat2": "Android 7.0+",
         "stat3": "No ads"
       },
@@ -4038,7 +4038,7 @@
           {
             "question": "Is L Studio on Google Play yet, and how much is it?",
             "answer": [
-              "L Studio Pro for Android is available now on Google Play, for $8, with version 1.13, which brings a real FM effect, a new Sound FX window and EQ in dB, on top of the Analog Mixer and the Mastering window. It is a one-time payment. New versions arrive as automatic updates through Google Play once they are approved.",
+              "L Studio Pro for Android is available now on Google Play, for $8, with version 1.14, which brings genre-based beats, fades, a piano pedal and clearer Sound FX, on top of the Analog Mixer and the Mastering window. Whoever buys Pro gets version 1.14 through Google Play. New versions arrive as automatic updates through Google Play once they are approved.",
               "You buy it through Google Play. This website does not sell the app and has no download button."
             ]
           },
@@ -4054,7 +4054,7 @@
           {
             "question": "Which devices does it run on, and in which languages?",
             "answer": [
-              "L Studio is an Android app. It needs Android 7.0 or newer. Version 1.13 is 75.7 MB. There is no iPhone version for now.",
+              "L Studio is an Android app. It needs Android 7.0 or newer. Version 1.14 is 160.1 MB. There is no iPhone version for now.",
               "It was tested on various Android phones. It was not tested on tablets, so tablet support is not promised.",
               "On a phone the app stays upright, in portrait.",
               "The app comes in four languages: English, Hebrew, Russian, and Arabic. You switch in Settings, on the Language row."
@@ -4091,7 +4091,7 @@
             "answer": [
               "The Analog Mixer opens with a tap on LIVE SCOPE at the top of the screen. Drums, Looper, and Mic each have a strip with Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S, and a fader. The Master strip works on the whole mix. SPECTRUM and MIX MAP show where the channels sit and where they clash. There are 8 presets.",
               "The Mastering window finishes a WAV recording or an imported song for streaming. Pick one of 8 styles, listen to A (before) and B (the style), then tap Start mastering and export. It opens after a WAV recording (Master this take) or from MASTERING in Settings.",
-              "Both came in version 1.12, and version 1.13 on Google Play now has them too."
+              "Both came in version 1.12, and version 1.14 on Google Play now has them too."
             ]
           },
           {
@@ -7165,7 +7165,7 @@
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro for Android is available now on Google Play, for $8. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android is available now on Google Play, for $8, with version 1.13, 75.7 MB, which brings a real FM effect, a new Sound FX window and EQ in dB, on top of the Analog Mixer and the Mastering window. Whoever buys Pro gets version 1.13 through Google Play. New versions arrive as automatic updates through Google Play once they are approved. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
+        "body": "L Studio Pro for Android is available now on Google Play, for $8, with version 1.14, 160.1 MB, which brings genre-based beats, fades, a piano pedal and clearer Sound FX, on top of the Analog Mixer and the Mastering window. Whoever buys Pro gets version 1.14 through Google Play. New versions arrive as automatic updates through Google Play once they are approved. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
           "L Studio Pro for Android on Google Play, $8",
@@ -7200,7 +7200,7 @@
         "navLabel": "Updates",
         "pageTitle": "What's new in L Studio.",
         "pageKicker": "L-STUDIO / UPDATES",
-        "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.13, which brings a real FM effect, a new Sound FX window and EQ in dB, on top of the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved.",
+        "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.14, which brings genre-based beats, fades, a piano pedal and clearer Sound FX, on top of the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved.",
         "tickerLabel": "Updates",
         "statusLabels": {
           "in_progress": "In progress",
@@ -7215,10 +7215,10 @@
         "items": [
           {
             "id": "app-1-14-in-development",
-            "status": "in_progress",
-            "title": "Coming soon to Google Play: version 1.14, with genre beats, fades and a piano pedal",
-            "ticker": "Coming soon to Google Play: version 1.14 (in progress): genre beats, FADE IN / FADE OUT, piano pedal",
-            "summary": "Version 1.14 is coming soon to Google Play. It is not available yet. The version on Google Play today is 1.13. Everything here is still being built and may change before it is released.",
+            "status": "shipped",
+            "title": "On Google Play now: version 1.14 with genre beats, fades and a piano pedal",
+            "ticker": "On Google Play: version 1.14 with genre beats, FADE IN / FADE OUT, piano pedal",
+            "summary": "Version 1.14 is on Google Play now (updated Nov 5, 2026). It brings genre-based beats (4 genres, 16 styles, 33 new samples for each drum channel in each style), Random that builds a beat for the style and saves the samples and the BPM, the Load tab in place of Loaded, Start/End trim in Mastering, FADE IN and FADE OUT in the Looper and Mic, a piano sustain pedal on long-press, and clearer Resonance, WARM and Sound FX. Drum Voice samples match each genre style.",
             "images": [
               "/assets/updates/genre-random-114.jpg",
               "/assets/updates/genre-style-114.jpg",
@@ -7235,19 +7235,19 @@
               "/assets/updates/mic-editor-114.jpg"
             ],
             "imageAlts": [
-              "Version 1.14 coming soon: Random Genre with Rock, Trance, Rap and Techno, Drill selected under Rap.",
-              "Version 1.14 coming soon: Genre Style grid of 16 styles across 4 genres, Drill selected under Rap.",
-              "Version 1.14 coming soon: the Drum screen with Style 2-1, HOLD FOR GENRE on Drum Kits, and LOAD on every row.",
-              "Version 1.14 coming soon: Hi-Hat Genre tab with 33 Drill samples, page 2 of 4, and the Load tab.",
-              "Version 1.14 coming soon: Snare Genre tab with Snare 01 Drill selected and the Load tab.",
-              "Version 1.14 coming soon: Bass Genre tab with Bass 22 Trap selected and the Load tab.",
-              "Version 1.14 coming soon: Voice Genre tab with Voice 16 Drill selected and the Load tab.",
-              "Version 1.14 coming soon: the Sound screen with PIANO on and the Attack and Release knobs.",
-              "Version 1.14 coming soon: the Sound window with PIANO on (HOLD) and the SUSTAIN pedal fader open.",
-              "Version 1.14 coming soon: the PAD window with the SUB intensity fader open, with X to close it.",
-              "Version 1.14 coming soon: the PAD window with the WARM intensity fader open.",
-              "Version 1.14 coming soon: LOOP EDITOR with COPY and PASTE, the TRIM and LOOP bars, and the FADE IN and FADE OUT knobs.",
-              "Version 1.14 coming soon: MIC EDITOR with COPY and PASTE, the TRIM and LOOP bars, and the FADE IN and FADE OUT knobs."
+              "Version 1.14: Random Genre with Rock, Trance, Rap and Techno, Drill selected under Rap.",
+              "Version 1.14: Genre Style grid of 16 styles across 4 genres, Drill selected under Rap.",
+              "Version 1.14: the Drum screen with Style 2-1, HOLD FOR GENRE on Drum Kits, and LOAD on every row.",
+              "Version 1.14: Hi-Hat Genre tab with 33 Drill samples, page 2 of 4, and the Load tab.",
+              "Version 1.14: Snare Genre tab with Snare 01 Drill selected and the Load tab.",
+              "Version 1.14: Bass Genre tab with Bass 22 Trap selected and the Load tab.",
+              "Version 1.14: Voice Genre tab with Voice 16 Drill selected and the Load tab.",
+              "Version 1.14: the Sound screen with PIANO on and the Attack and Release knobs.",
+              "Version 1.14: the Sound window with PIANO on (HOLD) and the SUSTAIN pedal fader open.",
+              "Version 1.14: the PAD window with the SUB intensity fader open, with X to close it.",
+              "Version 1.14: the PAD window with the WARM intensity fader open.",
+              "Version 1.14: LOOP EDITOR with COPY and PASTE, the TRIM and LOOP bars, and the FADE IN and FADE OUT knobs.",
+              "Version 1.14: MIC EDITOR with COPY and PASTE, the TRIM and LOOP bars, and the FADE IN and FADE OUT knobs."
             ],
             "sections": [
               {
@@ -7300,9 +7300,9 @@
           {
             "id": "app-1-13-fm-sound-fx",
             "status": "shipped",
-            "title": "On Google Play now: version 1.13 with a real FM effect, a new Sound FX window and EQ in dB",
-            "ticker": "On Google Play: version 1.13 with a 4-operator FM effect, Sound FX pages and EQ in dB",
-            "summary": "Version 1.13 is on Google Play now. It brings a real FM effect with 4 operators and 8 algorithms, a new Sound FX window with pages, knobs in every effect window, and EQ in dB.",
+            "title": "Version 1.13 with a real FM effect, a new Sound FX window and EQ in dB",
+            "ticker": "Version 1.13 with a 4-operator FM effect, Sound FX pages and EQ in dB",
+            "summary": "Version 1.13 brought these changes on Google Play. It brings a real FM effect with 4 operators and 8 algorithms, a new Sound FX window with pages, knobs in every effect window, and EQ in dB.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
@@ -7434,7 +7434,7 @@
             "status": "shipped",
             "title": "Since version 1.11, now on Google Play: your own drum samples, Keep playing, and an octave for each wave",
             "ticker": "On Google Play: up to 88 of your own samples on every drum row, with trim",
-            "summary": "Since version 1.11, now on Google Play with version 1.13: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
+            "summary": "Since version 1.11, now on Google Play with version 1.14: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
@@ -7508,7 +7508,7 @@
             "status": "shipped",
             "title": "Since version 1.10, now on Google Play: Loop Editor, recordings up to 30 minutes and full session saving",
             "ticker": "On Google Play: a new Loop Editor, also for Mic, with trim, EQ, and a choice of which drum rhythm plays with the loop and how many times it repeats",
-            "summary": "Since version 1.10, now on Google Play with version 1.13: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
+            "summary": "Since version 1.10, now on Google Play with version 1.14: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
             "href": "/guide",
             "cta": "Open the guide",
             "sections": [
@@ -7797,12 +7797,12 @@
         "updates": "Обновления"
       },
       "hero": {
-        "kicker": "Музыкальное приложение для Android · версия 1.13, уже в Google Play",
+        "kicker": "Музыкальное приложение для Android · Версия 1.14, уже в Google Play",
         "title": "Создавай музыку на телефоне.",
         "body": "L Studio это приложение для создания музыки на телефоне с Android. Записывай лупы, добавляй барабаны, пой, глядя на текст песни, а если хочется выйти за привычные ноты, настрой для каждой клавиши свою частоту.",
         "ctaPrimary": "Смотреть короткое видео",
         "ctaSecondary": "Как всё началось",
-        "stat1": "75.7 МБ",
+        "stat1": "160.1 МБ",
         "stat2": "Android 7.0+",
         "stat3": "Без рекламы"
       },
@@ -7929,7 +7929,7 @@
           {
             "question": "L Studio уже в Google Play? И сколько стоит?",
             "answer": [
-              "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.13, в которой есть настоящий эффект FM, новое окно Sound FX и EQ в dB, а также аналоговый микшер и окно мастеринга. Это единоразовый платёж. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
+              "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.14, в которой есть биты по жанрам, фейды, педаль для пианино и более слышимый Sound FX, а также аналоговый микшер и окно мастеринга. Кто покупает Pro, получает версию 1.14 через Google Play. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
               "Купить приложение можно через Google Play. Этот сайт не продаёт приложение, и кнопки скачивания здесь нет."
             ]
           },
@@ -7945,7 +7945,7 @@
           {
             "question": "На каких устройствах работает и на каких языках?",
             "answer": [
-              "L Studio это приложение для Android. Нужен Android 7.0 или новее. Размер версии 1.13: 75.7 МБ. Версии для iPhone пока нет.",
+              "L Studio это приложение для Android. Нужен Android 7.0 или новее. Версия 1.14 занимает 160.1 МБ. Версии для iPhone пока нет.",
               "Приложение проверялось на разных телефонах с Android. На планшетах оно не проверялось, поэтому поддержка планшетов не обещается.",
               "На телефоне приложение остаётся вертикальным, в портретной ориентации.",
               "Приложение на четырёх языках: английском, иврите, русском и арабском. Язык меняется в Settings, в строке Language."
@@ -7982,7 +7982,7 @@
             "answer": [
               "Аналоговый микшер открывается нажатием на LIVE SCOPE вверху экрана. У Drums, Looper и Mic есть канал с Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S и фейдером. Канал Master работает со всем миксом. SPECTRUM и MIX MAP показывают, где звучат каналы и где они мешают друг другу. Есть 8 пресетов.",
               "Окно мастеринга доводит запись WAV или импортированную песню до стриминга. Выберите один из 8 стилей, послушайте A (до) и B (стиль), затем нажмите Start mastering и экспортируйте. Оно открывается после записи WAV (Master this take) или из MASTERING в Settings.",
-              "Обе функции появились в версии 1.12 и есть в версии 1.13, которая уже в Google Play."
+              "Оба появились в версии 1.12, и версия 1.14 в Google Play тоже их включает."
             ]
           },
           {
@@ -11056,7 +11056,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro для Android уже доступен в Google Play, за $8. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.13, 75.7 МБ, в которой есть настоящий эффект FM, новое окно Sound FX и EQ в dB, а также аналоговый микшер и окно мастеринга. Кто покупает Pro, получает версию 1.13 через Google Play. Новые версии приходят как автоматические обновления через Google Play после одобрения. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
+        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.14, 160.1 МБ, в которой есть биты по жанрам, фейды, педаль для пианино и более слышимый Sound FX, а также аналоговый микшер и окно мастеринга. Кто покупает Pro, получает версию 1.14 через Google Play. Новые версии приходят как автоматические обновления через Google Play после одобрения. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
           "L Studio Pro для Android в Google Play, $8",
@@ -11091,7 +11091,7 @@
         "navLabel": "Обновления",
         "pageTitle": "Что нового в L Studio.",
         "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-        "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.13, в которой есть настоящий эффект FM, новое окно Sound FX и EQ в dB, а также аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
+        "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.14, в которой есть биты по жанрам, фейды, педаль для пианино и более слышимый Sound FX, а также аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
         "tickerLabel": "Обновления",
         "statusLabels": {
           "in_progress": "В работе",
@@ -11106,10 +11106,10 @@
         "items": [
           {
             "id": "app-1-14-in-development",
-            "status": "in_progress",
-            "title": "Скоро в Google Play: версия 1.14, с битами по жанрам, фейдами и педалью для пианино",
-            "ticker": "Скоро в Google Play: версия 1.14 (в работе): биты по жанрам, FADE IN / FADE OUT, педаль для пианино",
-            "summary": "Версия 1.14 скоро появится в Google Play. Она пока недоступна. Сейчас в Google Play доступна версия 1.13. Всё описанное здесь ещё делается и может измениться до выхода.",
+            "status": "shipped",
+            "title": "Теперь в Google Play: версия 1.14 с битами по жанрам, фейдами и педалью для пианино",
+            "ticker": "Теперь в Google Play: версия 1.14 с битами по жанрам, FADE IN / FADE OUT, педалью для пианино",
+            "summary": "Версия 1.14 уже в Google Play (обновлена 5 ноября 2026). В ней биты по жанрам (4 жанра, 16 стилей, 33 новых сэмпла на каждый барабанный канал в каждом стиле), Random, который собирает бит под стиль и сохраняет сэмплы и BPM, вкладка Load вместо Loaded, обрезка Start/End в Mastering, FADE IN и FADE OUT в Looper и Mic, педаль сустейна для пианино по долгому нажатию, а также более слышимые Resonance, WARM и Sound FX. Сэмплы Voice совпадают с каждым жанровым стилем.",
             "images": [
               "/assets/updates/genre-random-114.jpg",
               "/assets/updates/genre-style-114.jpg",
@@ -11126,19 +11126,19 @@
               "/assets/updates/mic-editor-114.jpg"
             ],
             "imageAlts": [
-              "Версия 1.14 скоро: Random Genre с Rock, Trance, Rap и Techno, Drill выбран в Rap.",
-              "Версия 1.14 скоро: сетка Genre Style из 16 стилей в 4 жанрах, Drill выбран в Rap.",
-              "Версия 1.14 скоро: экран Drum со Style 2-1, HOLD FOR GENRE на Drum Kits и LOAD в каждом ряду.",
-              "Версия 1.14 скоро: вкладка Genre для Hi-Hat с 33 сэмплами Drill, страница 2 из 4, и вкладка Load.",
-              "Версия 1.14 скоро: вкладка Genre для Snare с выбранным Snare 01 Drill и вкладкой Load.",
-              "Версия 1.14 скоро: вкладка Genre для Bass с выбранным Bass 22 Trap и вкладкой Load.",
-              "Версия 1.14 скоро: вкладка Genre для Voice с выбранным Voice 16 Drill и вкладкой Load.",
-              "Версия 1.14 скоро: экран Sound с включённым PIANO и ручками Attack и Release.",
-              "Версия 1.14 скоро: окно Sound с включённым PIANO (HOLD) и открытой педалью SUSTAIN.",
-              "Версия 1.14 скоро: окно PAD с открытым фейдером интенсивности SUB и кнопкой X для закрытия.",
-              "Версия 1.14 скоро: окно PAD с открытым фейдером интенсивности WARM.",
-              "Версия 1.14 скоро: LOOP EDITOR с COPY и PASTE, полосами TRIM и LOOP и ручками FADE IN и FADE OUT.",
-              "Версия 1.14 скоро: MIC EDITOR с COPY и PASTE, полосами TRIM и LOOP и ручками FADE IN и FADE OUT."
+              "Версия 1.14: Random Genre с Rock, Trance, Rap и Techno, Drill выбран в Rap.",
+              "Версия 1.14: сетка Genre Style из 16 стилей в 4 жанрах, Drill выбран в Rap.",
+              "Версия 1.14: экран Drum со Style 2-1, HOLD FOR GENRE на Drum Kits и LOAD в каждом ряду.",
+              "Версия 1.14: вкладка Genre для Hi-Hat с 33 сэмплами Drill, страница 2 из 4, и вкладка Load.",
+              "Версия 1.14: вкладка Genre для Snare с выбранным Snare 01 Drill и вкладкой Load.",
+              "Версия 1.14: вкладка Genre для Bass с выбранным Bass 22 Trap и вкладкой Load.",
+              "Версия 1.14: вкладка Genre для Voice с выбранным Voice 16 Drill и вкладкой Load.",
+              "Версия 1.14: экран Sound с включённым PIANO и ручками Attack и Release.",
+              "Версия 1.14: окно Sound с включённым PIANO (HOLD) и открытой педалью SUSTAIN.",
+              "Версия 1.14: окно PAD с открытым фейдером интенсивности SUB и кнопкой X для закрытия.",
+              "Версия 1.14: окно PAD с открытым фейдером интенсивности WARM.",
+              "Версия 1.14: LOOP EDITOR с COPY и PASTE, полосами TRIM и LOOP и ручками FADE IN и FADE OUT.",
+              "Версия 1.14: MIC EDITOR с COPY и PASTE, полосами TRIM и LOOP и ручками FADE IN и FADE OUT."
             ],
             "sections": [
               {
@@ -11191,9 +11191,9 @@
           {
             "id": "app-1-13-fm-sound-fx",
             "status": "shipped",
-            "title": "Теперь в Google Play: версия 1.13 с настоящим эффектом FM, новым окном Sound FX и EQ в dB",
-            "ticker": "Теперь в Google Play: версия 1.13 с 4-операторным FM, страницами Sound FX и EQ в dB",
-            "summary": "Версия 1.13 уже в Google Play. В ней настоящий эффект FM с 4 операторами и 8 алгоритмами, новое окно Sound FX со страницами, ручки во всех окнах эффектов и EQ в dB.",
+            "title": "Версия 1.13 с настоящим эффектом FM, новым окном Sound FX и EQ в dB",
+            "ticker": "Версия 1.13 с 4-операторным FM, страницами Sound FX и EQ в dB",
+            "summary": "Версия 1.13 принесла эти изменения в Google Play. В ней настоящий эффект FM с 4 операторами и 8 алгоритмами, новое окно Sound FX со страницами, ручки во всех окнах эффектов и EQ в dB.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -11325,7 +11325,7 @@
             "status": "shipped",
             "title": "С версии 1.11, теперь в Google Play: свои сэмплы в ударных, Keep playing и октава для каждой волны",
             "ticker": "Теперь в Google Play: до 88 своих сэмплов в каждом ряду ударных, с обрезкой",
-            "summary": "С версии 1.11, теперь в Google Play с версией 1.13: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
+            "summary": "С версии 1.11, теперь в Google Play с версией 1.14: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -11399,7 +11399,7 @@
             "status": "shipped",
             "title": "С версии 1.10, теперь в Google Play: Loop Editor, запись до 30 минут и полное сохранение сессии",
             "ticker": "Теперь в Google Play: новый редактор лупов, в том числе для Mic, с обрезкой, EQ и выбором, какой ритм ударных играет вместе с лупом и сколько раз он повторяется",
-            "summary": "С версии 1.10, теперь в Google Play с версией 1.13: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
+            "summary": "С версии 1.10, теперь в Google Play с версией 1.14: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "sections": [
@@ -11688,12 +11688,12 @@
         "updates": "التحديثات"
       },
       "hero": {
-        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.13، متاح الآن على Google Play",
+        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.14، الآن على Google Play",
         "title": "اصنع الموسيقى على هاتفك.",
         "body": "L Studio تطبيق لصنع الموسيقى على هاتف أندرويد. سجّل لوبات، أضف طبولاً، غنِّ وكلمات الأغنية أمام عينيك، وإن أردت الخروج عن النوتات المعتادة، اضبط لكل مفتاح تردده الخاص.",
         "ctaPrimary": "شاهد الفيديو القصير",
         "ctaSecondary": "كيف بدأ الأمر",
-        "stat1": "75.7 ميغابايت",
+        "stat1": "160.1 ميغابايت",
         "stat2": "Android 7.0+",
         "stat3": "بلا إعلانات"
       },
@@ -11820,7 +11820,7 @@
           {
             "question": "هل L Studio على Google Play الآن؟ وكم سعره؟",
             "answer": [
-              "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.13 الذي يضم مؤثر FM حقيقياً ونافذة Sound FX جديدة وEQ بوحدة dB، إلى جانب الميكسر التناظري ونافذة الماسترنغ. وهي دفعة واحدة. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+              "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.14 الذي يضم إيقاعات حسب النوع وتلاشياً ودواسة للبيانو وSound FX أوضح، إلى جانب الميكسر التناظري ونافذة الماسترنغ. من يشتري Pro يحصل على الإصدار 1.14 عبر Google Play. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
               "تشتريه عبر Google Play. هذا الموقع لا يبيع التطبيق وليس فيه زر تنزيل."
             ]
           },
@@ -11836,7 +11836,7 @@
           {
             "question": "على أي أجهزة يعمل وبأي لغات؟",
             "answer": [
-              "L Studio تطبيق لأندرويد. يحتاج إلى Android 7.0 أو أحدث. حجم الإصدار 1.13 هو 75.7 ميغابايت. لا توجد نسخة للآيفون حالياً.",
+              "L Studio تطبيق لأندرويد. يحتاج Android 7.0 أو أحدث. الإصدار 1.14 حجمه 160.1 ميغابايت. لا توجد نسخة لآيفون حالياً.",
               "جُرّب التطبيق على هواتف أندرويد مختلفة. ولم يُجرَّب على التابلت، لذلك لا نَعِد بدعم التابلت.",
               "على الهاتف يبقى التطبيق قائماً، بوضع طولي.",
               "التطبيق بأربع لغات: الإنجليزية والعبرية والروسية والعربية. تبدّل اللغة من Settings، في صف Language."
@@ -11873,7 +11873,7 @@
             "answer": [
               "يُفتح الميكسر التناظري بالنقر على LIVE SCOPE في أعلى الشاشة. لكل من Drums وLooper وMic قناة فيها Drive وHPF وHigh وMid وLow وComp وPan وWidth وM وS ومنزلق. قناة Master تعمل على المزيج كله. يُظهر SPECTRUM وMIX MAP أين تقع القنوات وأين تتصادم. وفيه 8 إعدادات.",
               "تُنهي نافذة الماسترنغ تسجيل WAV أو أغنية مستوردة لخدمات البث. اختر أحد 8 أساليب، واستمع إلى A (قبل) وB (الأسلوب)، ثم المس Start mastering وصدّر. تُفتح بعد تسجيل WAV ‏(Master this take) أو من MASTERING في Settings.",
-              "جاء الاثنان في الإصدار 1.12، وهما أيضاً في الإصدار 1.13 المتاح الآن على Google Play."
+              "كلاهما جاء في الإصدار 1.12، والإصدار 1.14 على Google Play يتضمنهما أيضاً."
             ]
           },
           {
@@ -14947,7 +14947,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.13، 75.7 ميغابايت، الذي يضم مؤثر FM حقيقياً ونافذة Sound FX جديدة وEQ بوحدة dB، إلى جانب الميكسر التناظري ونافذة الماسترنغ. من يشتري Pro يحصل على الإصدار 1.13 عبر Google Play. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
+        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.14، 160.1 ميغابايت، الذي يضم إيقاعات حسب النوع وتلاشياً ودواسة للبيانو وSound FX أوضح، إلى جانب الميكسر التناظري ونافذة الماسترنغ. من يشتري Pro يحصل على الإصدار 1.14 عبر Google Play. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
           "L Studio Pro لأندرويد على Google Play، 8$",
@@ -14982,7 +14982,7 @@
         "navLabel": "التحديثات",
         "pageTitle": "ما الجديد في L Studio.",
         "pageKicker": "L-STUDIO / التحديثات",
-        "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.13 الذي يضم مؤثر FM حقيقياً ونافذة Sound FX جديدة وEQ بوحدة dB، إلى جانب الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+        "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.14 الذي يضم إيقاعات حسب النوع وتلاشياً ودواسة للبيانو وSound FX أوضح، إلى جانب الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
         "tickerLabel": "التحديثات",
         "statusLabels": {
           "in_progress": "قيد العمل",
@@ -14997,10 +14997,10 @@
         "items": [
           {
             "id": "app-1-14-in-development",
-            "status": "in_progress",
-            "title": "قريباً على Google Play: الإصدار 1.14، مع إيقاعات حسب النوع، وتلاشٍ ودواسة للبيانو",
-            "ticker": "قريباً على Google Play: الإصدار 1.14 (قيد العمل): إيقاعات حسب النوع، FADE IN / FADE OUT، دواسة للبيانو",
-            "summary": "الإصدار 1.14 قادم قريباً إلى Google Play. وهو غير متاح بعد. الإصدار المتاح الآن على Google Play هو 1.13. كل ما هنا ما زال قيد العمل وقد يتغير قبل صدوره.",
+            "status": "shipped",
+            "title": "الآن على Google Play: الإصدار 1.14 مع إيقاعات حسب النوع، وتلاشٍ ودواسة للبيانو",
+            "ticker": "الآن على Google Play: الإصدار 1.14 مع إيقاعات حسب النوع، وFADE IN / FADE OUT، ودواسة للبيانو",
+            "summary": "الإصدار 1.14 متاح الآن على Google Play (حُدّث في 5 تشرين الثاني/نوفمبر 2026). يضم إيقاعات حسب النوع (4 أنواع، 16 أسلوباً، و33 عينة جديدة لكل قناة طبول في كل أسلوب)، وRandom الذي يبني إيقاعاً حسب الأسلوب ويحفظ العينات وBPM، وعلامة التبويب Load بدل Loaded، وقص Start/End في الماسترنغ، وFADE IN وFADE OUT في اللوبر والميكروفون، ودواسة استدامة للبيانو بالضغط الطويل، مع Resonance وWARM وSound FX أوضح. عينات Voice تطابق كل أسلوب نوع.",
             "images": [
               "/assets/updates/genre-random-114.jpg",
               "/assets/updates/genre-style-114.jpg",
@@ -15017,19 +15017,19 @@
               "/assets/updates/mic-editor-114.jpg"
             ],
             "imageAlts": [
-              "الإصدار 1.14 قريباً: Random Genre مع Rock وTrance وRap وTechno، وDrill محدد تحت Rap.",
-              "الإصدار 1.14 قريباً: شبكة Genre Style من 16 أسلوباً عبر 4 أنواع، وDrill محدد تحت Rap.",
-              "الإصدار 1.14 قريباً: شاشة Drum مع Style 2-1 وHOLD FOR GENRE على Drum Kits وLOAD في كل صف.",
-              "الإصدار 1.14 قريباً: تبويب Genre لـ Hi-Hat مع 33 عيّنة Drill، الصفحة 2 من 4، وتبويب Load.",
-              "الإصدار 1.14 قريباً: تبويب Genre لـ Snare مع تحديد Snare 01 Drill وتبويب Load.",
-              "الإصدار 1.14 قريباً: تبويب Genre لـ Bass مع تحديد Bass 22 Trap وتبويب Load.",
-              "الإصدار 1.14 قريباً: تبويب Genre لـ Voice مع تحديد Voice 16 Drill وتبويب Load.",
-              "الإصدار 1.14 قريباً: شاشة Sound مع تشغيل PIANO ومقبضي Attack وRelease.",
-              "الإصدار 1.14 قريباً: نافذة Sound مع تشغيل PIANO (HOLD) ودواسة SUSTAIN مفتوحة.",
-              "الإصدار 1.14 قريباً: نافذة PAD مع منزلق شدة SUB مفتوح وزر X للإغلاق.",
-              "الإصدار 1.14 قريباً: نافذة PAD مع منزلق شدة WARM مفتوح.",
-              "الإصدار 1.14 قريباً: LOOP EDITOR مع COPY وPASTE وشريطي TRIM وLOOP ومقبضي FADE IN وFADE OUT.",
-              "الإصدار 1.14 قريباً: MIC EDITOR مع COPY وPASTE وشريطي TRIM وLOOP ومقبضي FADE IN وFADE OUT."
+              "الإصدار 1.14: Random Genre مع Rock وTrance وRap وTechno، وDrill محدد تحت Rap.",
+              "الإصدار 1.14: شبكة Genre Style من 16 أسلوباً عبر 4 أنواع، وDrill محدد تحت Rap.",
+              "الإصدار 1.14: شاشة Drum مع Style 2-1 وHOLD FOR GENRE على Drum Kits وLOAD في كل صف.",
+              "الإصدار 1.14: تبويب Genre لـ Hi-Hat مع 33 عيّنة Drill، الصفحة 2 من 4، وتبويب Load.",
+              "الإصدار 1.14: تبويب Genre لـ Snare مع تحديد Snare 01 Drill وتبويب Load.",
+              "الإصدار 1.14: تبويب Genre لـ Bass مع تحديد Bass 22 Trap وتبويب Load.",
+              "الإصدار 1.14: تبويب Genre لـ Voice مع تحديد Voice 16 Drill وتبويب Load.",
+              "الإصدار 1.14: شاشة Sound مع تشغيل PIANO ومقبضي Attack وRelease.",
+              "الإصدار 1.14: نافذة Sound مع تشغيل PIANO (HOLD) ودواسة SUSTAIN مفتوحة.",
+              "الإصدار 1.14: نافذة PAD مع منزلق شدة SUB مفتوح وزر X للإغلاق.",
+              "الإصدار 1.14: نافذة PAD مع منزلق شدة WARM مفتوح.",
+              "الإصدار 1.14: LOOP EDITOR مع COPY وPASTE وشريطي TRIM وLOOP ومقبضي FADE IN وFADE OUT.",
+              "الإصدار 1.14: MIC EDITOR مع COPY وPASTE وشريطي TRIM وLOOP ومقبضي FADE IN وFADE OUT."
             ],
             "sections": [
               {
@@ -15082,9 +15082,9 @@
           {
             "id": "app-1-13-fm-sound-fx",
             "status": "shipped",
-            "title": "الآن على Google Play: الإصدار 1.13 مع مؤثر FM حقيقي، ونافذة Sound FX جديدة، وEQ بوحدة dB",
-            "ticker": "الآن على Google Play: الإصدار 1.13 مع FM بأربعة مشغلات، وصفحات في Sound FX، وEQ بوحدة dB",
-            "summary": "الإصدار 1.13 متاح الآن على Google Play. يضم مؤثر FM حقيقياً بأربعة مشغلات و8 خوارزميات، ونافذة Sound FX جديدة بصفحات، ومقابض في كل نوافذ المؤثرات، وEQ بوحدة dB.",
+            "title": "الإصدار 1.13 مع مؤثر FM حقيقي، ونافذة Sound FX جديدة، وEQ بوحدة dB",
+            "ticker": "الإصدار 1.13 مع FM بأربعة مشغلات، وصفحات في Sound FX، وEQ بوحدة dB",
+            "summary": "الإصدار 1.13 أضاف هذه التغييرات على Google Play. يضم مؤثر FM حقيقياً بأربعة مشغلات و8 خوارزميات، ونافذة Sound FX جديدة بصفحات، ومقابض في كل نوافذ المؤثرات، وEQ بوحدة dB.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -15216,7 +15216,7 @@
             "status": "shipped",
             "title": "منذ الإصدار 1.11، الآن على Google Play: عيناتك الخاصة في الطبول وKeep playing وأوكتاف لكل موجة",
             "ticker": "الآن على Google Play: حتى 88 من عيناتك في كل صف طبول، مع القص",
-            "summary": "منذ الإصدار 1.11، الآن على Google Play مع الإصدار 1.13: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
+            "summary": "منذ الإصدار 1.11، الآن على Google Play مع الإصدار 1.14: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -15290,7 +15290,7 @@
             "status": "shipped",
             "title": "منذ الإصدار 1.10، الآن على Google Play: Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
             "ticker": "الآن على Google Play: محرر لوب جديد، ولقنوات Mic أيضاً، مع القص وEQ واختيار أي إيقاع طبول يعزف مع اللوب وكم مرة يتكرر",
-            "summary": "منذ الإصدار 1.10، الآن على Google Play مع الإصدار 1.13: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
+            "summary": "منذ الإصدار 1.10، الآن على Google Play مع الإصدار 1.14: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "sections": [
