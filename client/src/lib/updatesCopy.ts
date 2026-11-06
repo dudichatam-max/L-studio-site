@@ -38,7 +38,7 @@ export type UpdateItem = {
   carousel?: UpdateCarousel;
   /**
    * When true, `image` / `images` render as the shared play-carousel (swipe, arrows, dots, RTL)
-   * instead of a static grid. Used for the 1.14 coming-soon item only until 1.14 ships.
+   * instead of a static grid. Used for the 1.14 updates item stills carousel.
    */
   imagesCarousel?: boolean;
   /** Optional grouped bullets under the summary. Cards without it show only `summary`. */

@@ -205,6 +205,13 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Drum (1.11, 6 slides; the sample shaping slide was removed at David's request): all 8 rows open after +4 with no keyboard (`drum-rows`, David's Oct 20 shot cropped y 68..1540), main Drum screen (`drum-tab`), sample banks, LOADED (`drum-loaded-trim` + `drum-loaded-rename`), Drum FX, Pattern repeats (`drum-repeats-phone`, the real 1.11 Drum window with the 1-88 box and COPY/PASTE). Cache key `CAROUSEL_VER` in `carousel.ts` (bump it whenever posters change).
 - Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
 
+## Updates: 1.14 available on Google Play (2026-11-06)
+- Play public listing for `com.microtonal.synth` shows version **1.14**, updated **Nov 5, 2026** (verified from the store page). David confirmed in the site chat (2026-11-06 ~18:55 IDT) that 1.14 is available; flip the site from "coming soon" to available.
+- Item `app-1-14-in-development` is now `shipped`. Title/ticker prefix "On Google Play now" / "On Google Play:" (HE "עכשיו ב-Google Play:", RU "Теперь в Google Play:", AR "الآن على Google Play:"). No "coming soon", "in progress", "in development", or "in review".
+- Hero kicker, FAQ, Pro (`content.json` and `shared/pro-copy.json`), `/updates` intro, SEO (`shared/seo.ts` APP_FACTS + page descriptions), Terms and Privacy labels, and Home fallbacks say **1.14**. Size **160.1 MB** from the signed Play APK `L-Studio-1.14-play-68b45e9.apk` (167,881,621 B = 160.1 MiB, sha256 matches team STATUS).
+- The 1.13 item stays `shipped` but no longer says "now"; older 1.10/1.11 summaries that pointed at "with version 1.13" now say 1.14.
+- **Images unchanged** this flip: home carousel / guide stills stay as they were (David: replace them only after 1.14 is on Play, as a separate change). The 13-shot carousel inside the 1.14 updates item stays.
+
 ## Updates: 1.12 screenshots carousel (Oct 21)
 
 - The 1.12 item `app-1-12-mixer-demo` on `/updates` shows a 10-slide poster carousel next to the YouTube video, with the same `PlayCarousel` component (swipe, arrows, dots, RTL-correct, lazy webp + jpg). Slide list: `update112` in `client/src/lib/carousel.ts`; files `assets/carousel/{lang}/upd-*-w360|w630.{webp,jpg}`.
@@ -279,7 +286,7 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 ## Updates: 1.14 stills carousel (2026-11-05)
 - The 1.14 item sets `imagesCarousel: true`. Its stills render through `UpdateStillsCarousel` (same play-carousel swipe, arrows, dots, keyboard and RTL as the homepage), not as a static grid. Other update items keep their grids until David replaces them after 1.14 ships on Google Play.
 
-## Updates: 1.14 coming soon rewrite (2026-11-05)
+## Updates: 1.14 coming soon rewrite (2026-11-05) (superseded by 2026-11-06 available flip)
 - Item `app-1-14-in-development` stays `in_progress`. Wording: coming soon to Google Play, no date. Available on Play remains 1.13 (hero kicker, pageIntro, 1.13 ticker). Do not claim 1.14 is available. Do not put 1.14 screens into the 1.13 home carousels or the guide.
 - New content: genre beats (4 genres, 16 styles, 33 samples per drum channel per style), Random by style (saves samples + BPM), Load tab replaces Loaded, Mastering Start/End trim, FADE IN / FADE OUT, piano sustain pedal (long-press) with Attack / Release shaping the note, RIP/FUZZ/PHAZ intensity, Resonance / WARM / Sound FX clearer, drum Voice samples per genre style. Kept from the Oct 28 item when still true in `feature/1.14`: COPY / PASTE, tablet layouts, PAD intensity pedals.
 - Stills (720x1478, crop y 68..1546 from David's 720x1640 shots in `/workspace/site-114-shots/`): `genre-random-114`, `genre-style-114`, `drum-main-114`, `genre-hihat-114`, `genre-snare-114`, `genre-bass-114`, `genre-voice-114`, `sound-piano-114`, plus the five earlier 1.14 stills. Files in `assets/updates/` and `client/public/assets/updates/` as `.jpg` + `.webp`. Sizes in `STILL_SIZE` in `Updates.tsx`.
