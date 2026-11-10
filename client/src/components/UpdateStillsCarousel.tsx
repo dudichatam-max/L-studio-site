@@ -98,9 +98,13 @@ export default function UpdateStillsCarousel({
   const dirAttr = isRtl ? "rtl" : "ltr";
   const leftStep = -sign;
   const rightStep = sign;
+  const ratios = slides.map((slide) => slide.width / Math.max(1, slide.height));
+  const mixed = Math.max(...ratios) - Math.min(...ratios) > 0.15;
+  const tallestRatio = Math.min(...ratios);
+  const wrapClass = `preview-image-wrap play-carousel updates-carousel__inner updates-stills-carousel${mixed ? " updates-stills-carousel--mixed" : ""}`;
   return (
-    <div className="preview-image-wrap play-carousel updates-carousel__inner updates-stills-carousel" dir={dirAttr}>
-      <div className="play-carousel__stage">
+    <div className={wrapClass} dir={dirAttr}>
+      <div className="play-carousel__stage" style={mixed ? { aspectRatio: `${tallestRatio}` } : undefined}>
         <div
           className="play-carousel__track"
           ref={trackRef}

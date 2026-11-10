@@ -60,6 +60,8 @@ const STILL_SIZE: Record<string, { width: number; height: number }> = {
 };
 
 function stillSizeFor(src: string) {
+  if (/\/assets\/updates\/115\/[^/]+\/00-feature\.jpg$/.test(src)) return { width: 1024, height: 500 };
+  if (/\/assets\/updates\/115\//.test(src)) return { width: 1080, height: 1920 };
   return /^\/?assets\/posters\//.test(src) ? { width: 630, height: 1120 } : STILL_SIZE[src] ?? { width: 720, height: 1348 };
 }
 
@@ -235,7 +237,7 @@ export default function Updates() {
                       ) : null}
                       {shots.length && item.imagesCarousel ? (
                         <div className="updates-card-shots">
-                          <div className="updates-carousel updates-carousel--stills">
+                          <div className={`updates-carousel updates-carousel--stills${item.id === "app-1-15-in-development" ? " updates-carousel--115" : ""}`}>
                             <UpdateStillsCarousel
                               slides={shots.map((shot) => ({
                                 src: shot.src,

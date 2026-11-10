@@ -205,6 +205,15 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Drum (1.11, 6 slides; the sample shaping slide was removed at David's request): all 8 rows open after +4 with no keyboard (`drum-rows`, David's Oct 20 shot cropped y 68..1540), main Drum screen (`drum-tab`), sample banks, LOADED (`drum-loaded-trim` + `drum-loaded-rename`), Drum FX, Pattern repeats (`drum-repeats-phone`, the real 1.11 Drum window with the 1-88 box and COPY/PASTE). Cache key `CAROUSEL_VER` in `carousel.ts` (bump it whenever posters change).
 - Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
 
+## Updates: 1.15 in development (2026-11-11)
+
+Version 1.15 is in development, with no date. Do not call it available or on Google Play. The version on Google Play today is 1.14. This change touches only `/updates` and the running ticker. Leave the hero, FAQ, Pro, guide, home carousels, SEO, and the 160.1 MB feature graphic on 1.14.
+
+- New first item `app-1-15-in-development`, status `in_progress`, `imagesCarousel: true`. Copy is based only on the 1.15 store posters (`store-assets-1.15/fig-set`, files 00 to 08). Skip the contact sheets.
+- Stills live in `assets/updates/115/he/` and `assets/updates/115/en/` (and the same files in `client/public/assets/updates/115/`), each as `.jpg` plus `.webp`. Hebrew uses the Hebrew set. English, Russian, and Arabic use the English set.
+- Slide 00 is the 1024x500 feature graphic header. Slides 01 to 08 are 1080x1920 (sound, sound-fx, pad, looper-live, drum, mic, mixer, mastering), shown in filename order. `UpdateStillsCarousel` reserves the tallest (9:16) frame and uses `object-fit: contain`, so the header is not cropped and the stage height does not jump.
+- Keep `content.json` identical to `client/public/content.json`. `updatesFallback.json` mirrors `languages.*.updates`. Do not use an em dash. L Studio is paid Pro only. Do not mention a demo, a free version, or a difference between Play and the website. LIVE in this item is a performance mode inside the app (the PRO/LIVE badge), not a separate product.
+
 ## Feature graphic size 160.1 MB (2026-11-06)
 - David (site chat): upload only the new opening feature graphic for now, with the exact weight; next week update all other images.
 - Replaced `assets/feature-graphic-{en,he}-{640,800,1024}` (and the `client/public` twins) only. Edited the existing 1.12 designer card so the size line reads **160.1 MB** (EN "Size 160.1 MB", HE "160.1 MB גודל"). Logo, slogan, phone stills and layout unchanged. Cache key `FEATURE_GRAPHIC_VER` = `fg-114`.
