@@ -41,6 +41,10 @@ export type UpdateItem = {
    * instead of a static grid. Used for the 1.14 updates item stills carousel.
    */
   imagesCarousel?: boolean;
+  /** Optional 1024x500 (or similar) banner shown full-width at the top of the card, above the copy and any carousel. */
+  banner?: string;
+  /** Alt for `banner`. */
+  bannerAlt?: string;
   /** Optional grouped bullets under the summary. Cards without it show only `summary`. */
   sections?: UpdateItemSection[];
 };
