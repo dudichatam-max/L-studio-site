@@ -19,8 +19,8 @@
       {
         "id": "app-1-15-in-development",
         "status": "in_progress",
-        "title": "בקרוב: גרסה 1.15 עם Humanize, Ratchet ומצב LIVE",
-        "ticker": "בקרוב: גרסה 1.15, בפיתוח: Humanize, Ratchet, מצב LIVE",
+        "title": "בקרוב: גרסה 1.15 עם Humanize, Ratchet וערכות תופים אישיות",
+        "ticker": "בקרוב: גרסה 1.15, בפיתוח: Humanize, Ratchet, ערכות תופים אישיות",
         "summary": "גרסה 1.15 בפיתוח ועדיין לא ב-Google Play, שם הגרסה הנוכחית היא 1.14.",
         "images": [
           "/assets/updates/115/he/01-sound.jpg",
@@ -37,7 +37,7 @@
           "חלון Sound: עורך הגל, פדאל ססטיין, Drive, והחזקה על PRESETS לשמירה.",
           "Sound FX: 12 עולמות אפקטים ב-3 עמודים, כולל FM, עם SYNC לתופים.",
           "פד הופעה חיה: מזיז KEY, MIC, LOOP או DRUM, ובנוסף SUB, WARM, VIBE ומקלדת שנייה.",
-          "מצב LIVE בלופר: בלי טעינות או מחיקות בטעות על הבמה, ועורך לופ עם חיתוך ו-EQ.",
+          "לופר על הבמה: בלי טעינות או מחיקות בטעות, ועורך לופ עם חיתוך ו-EQ.",
           "תופים ב-1.15: Humanize, Ratchet, 16 סגנונות Random Genre, וערכות Exclusive או Custom.",
           "Mic: שישה ערוצים, Gain, HPF, Gate ו-Comp, מילים, ו-8 פריסטים של Mic FX.",
           "מיקסר אנלוגי: ארבעה פסים ל-Drums, Looper, Mic ו-Master, עם Spectrum ו-Mix Map.",
@@ -516,8 +516,8 @@
       {
         "id": "app-1-15-in-development",
         "status": "in_progress",
-        "title": "Coming up: version 1.15 with Humanize, Ratchet and LIVE mode",
-        "ticker": "Coming up: version 1.15, in development: Humanize, Ratchet, LIVE mode",
+        "title": "Coming up: version 1.15 with Humanize, Ratchet and Custom drum kits",
+        "ticker": "Coming up: version 1.15, in development: Humanize, Ratchet, Custom drum kits",
         "summary": "Version 1.15 is in development and is not on Google Play yet, where the current version is 1.14.",
         "images": [
           "/assets/updates/115/en/01-sound.jpg",
@@ -534,7 +534,7 @@
           "Sound window: wave editor, sustain pedal, Drive, and hold PRESETS to save.",
           "Sound FX: 12 effect worlds on 3 pages, including FM, with SYNC to the drums.",
           "Live performance pad: move KEY, MIC, LOOP or DRUM, plus SUB, WARM, VIBE and a second keyboard.",
-          "LIVE mode in the Looper: no accidental loads or deletes on stage, and a Loop Editor with trim and EQ.",
+          "Looper on stage: no accidental loads or deletes, and a Loop Editor with trim and EQ.",
           "Drums in 1.15: Humanize, Ratchet, 16 Random Genre styles, and Exclusive or Custom kits.",
           "Mic: six channels, Gain, HPF, Gate and Comp, Lyrics, and 8 Mic FX presets.",
           "Analog Mixer: four strips for Drums, Looper, Mic and Master, with Spectrum and Mix Map.",
@@ -1013,8 +1013,8 @@
       {
         "id": "app-1-15-in-development",
         "status": "in_progress",
-        "title": "Скоро: версия 1.15 с Humanize, Ratchet и режимом LIVE",
-        "ticker": "Скоро: версия 1.15, в разработке: Humanize, Ratchet, режим LIVE",
+        "title": "Скоро: версия 1.15 с Humanize, Ratchet и пользовательскими наборами ударных",
+        "ticker": "Скоро: версия 1.15, в разработке: Humanize, Ratchet, пользовательские наборы ударных",
         "summary": "Версия 1.15 в разработке и её ещё нет в Google Play, где текущая версия это 1.14.",
         "images": [
           "/assets/updates/115/en/01-sound.jpg",
@@ -1031,7 +1031,7 @@
           "Окно Sound: редактор волны, педаль сустейна, Drive и удержание PRESETS для сохранения.",
           "Sound FX: 12 миров эффектов на 3 страницах, включая FM, с SYNC к ударным.",
           "Концертный пад: двигает KEY, MIC, LOOP или DRUM, плюс SUB, WARM, VIBE и вторая клавиатура.",
-          "Режим LIVE в лупере: без случайной загрузки или удаления на сцене, и редактор лупа с обрезкой и EQ.",
+          "Лупер на сцене: без случайной загрузки или удаления, и редактор лупа с обрезкой и EQ.",
           "Ударные в 1.15: Humanize, Ratchet, 16 стилей Random Genre, наборы Exclusive или Custom.",
           "Mic: шесть каналов, Gain, HPF, Gate и Comp, тексты и 8 пресетов Mic FX.",
           "Аналоговый микшер: четыре полосы Drums, Looper, Mic и Master, со Spectrum и Mix Map.",
@@ -1510,8 +1510,8 @@
       {
         "id": "app-1-15-in-development",
         "status": "in_progress",
-        "title": "قريباً: الإصدار 1.15 مع Humanize وRatchet ووضع LIVE",
-        "ticker": "قريباً: الإصدار 1.15، قيد التطوير: Humanize، Ratchet، ووضع LIVE",
+        "title": "قريباً: الإصدار 1.15 مع Humanize وRatchet وأطقم طبول مخصصة",
+        "ticker": "قريباً: الإصدار 1.15، قيد التطوير: Humanize، Ratchet، وأطقم طبول مخصصة",
         "summary": "الإصدار 1.15 قيد التطوير وهو ليس على Google Play بعد، حيث الإصدار الحالي هو 1.14.",
         "images": [
           "/assets/updates/115/en/01-sound.jpg",
@@ -1528,7 +1528,7 @@
           "نافذة Sound: محرر الموجة، بدّال الاستدامة، Drive، والضغط مطولاً على PRESETS للحفظ.",
           "Sound FX: 12 عالماً للتأثيرات في 3 صفحات، بما فيها FM، مع SYNC للطبول.",
           "لوحة الأداء الحي: تحرك KEY أو MIC أو LOOP أو DRUM، بالإضافة إلى SUB وWARM وVIBE ولوحة مفاتيح ثانية.",
-          "وضع LIVE في اللوبر: بلا تحميل أو حذف بالخطأ على المسرح، ومحرر لوب مع قص وEQ.",
+          "اللوبر على المسرح: بلا تحميل أو حذف بالخطأ، ومحرر لوب مع قص وEQ.",
           "الطبول في 1.15: Humanize وRatchet و16 أسلوباً من Random Genre، وطقم Exclusive أو Custom.",
           "Mic: ستة قنوات، Gain وHPF وGate وComp، كلمات، و8 إعدادات مسبقة لـ Mic FX.",
           "الميكسر التناظري: أربعة شرائط لـ Drums وLooper وMic وMaster، مع Spectrum وMix Map.",
