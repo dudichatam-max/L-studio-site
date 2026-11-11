@@ -205,6 +205,14 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Drum (1.11, 6 slides; the sample shaping slide was removed at David's request): all 8 rows open after +4 with no keyboard (`drum-rows`, David's Oct 20 shot cropped y 68..1540), main Drum screen (`drum-tab`), sample banks, LOADED (`drum-loaded-trim` + `drum-loaded-rename`), Drum FX, Pattern repeats (`drum-repeats-phone`, the real 1.11 Drum window with the 1-88 box and COPY/PASTE). Cache key `CAROUSEL_VER` in `carousel.ts` (bump it whenever posters change).
 - Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
 
+## Updates: 1.15 short "what's new" list (2026-11-11)
+
+Follow-up to the 1.15 in-development card (`app-1-15-in-development`). Replaces only the per-window sections on that card. Title, one-line intro, ticker, banner, and the 8-poster carousel stay as they are. Status stays `in_progress`. Do not call 1.15 available or on Google Play.
+
+- One short section, about 5 to 8 user-facing bullets, based on the 1.15 change list in team `CHANGE-INDEX`, `/workspace/plan-1.15/`, and the `feature/1.15` app code, not on the store posters.
+- Do not describe SOUND / PAD / MIC / MIXER / MASTERING windows that already exist on the site. LIVE mode is already in 1.14; do not list it as new.
+- The first-launch session name is the fixed English `Last Auto save 1.14` in every language (David, 2026-11-09).
+
 ## Updates: 1.15 banner and shorter intro (2026-11-11)
 
 Follow-up to the 1.15 in-development item (`app-1-15-in-development`). Touches only that card's code and copy. Ticker lines stay as they are. Hero, FAQ, Pro, guide, SEO, and other update items stay on 1.14.
