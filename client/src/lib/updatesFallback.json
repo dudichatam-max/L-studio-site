@@ -45,67 +45,16 @@
         ],
         "sections": [
           {
-            "title": "Sound",
+            "title": "בגרסה 1.15",
             "bullets": [
-              "החזיקו כפתור גל כדי לפתוח את עורך הגל: אוקטבה משלו, EQ, ועד 4 קולות ב-PAGES.",
-              "החזיקו PIANO כדי לפתוח את פדאל הססטיין. משכו אותו למעלה לצליל ארוך יותר.",
-              "Drive דוחף את הצליל חזק יותר. החזיקו PRESETS כדי לשמור על הפריסט שטעון כעת."
-            ]
-          },
-          {
-            "title": "Sound FX",
-            "bullets": [
-              "12 עולמות אפקטים ב-3 עמודים. הקשה מדליקה או מכבה עולם. לחיצה ארוכה פותחת את ההגדרות. החליקו ימינה ושמאלה בין העמודים.",
-              "FM הוא עולם 12, בעמוד 3. ALGO בוחר אחת מ-8 דרכים שבהן 4 אוסילטורי הסינוס שלו מבצעים מודולציה זה לזה. INDEX קובע את העומק.",
-              "כשהתופים מנגנים, 8 מתוך 12 העולמות עוקבים אחרי ה-BPM שלהם. סובבו את RATE כדי לשחרר אותם, הקישו על SYNC כדי לנעול שוב."
-            ]
-          },
-          {
-            "title": "Pad",
-            "bullets": [
-              "פד ההופעה החיה יכול להזיז את KEY, MIC, LOOP או DRUM. החזיקו תו, ואז גררו על הפד. הצליל עוקב אחרי האצבע.",
-              "SUB מוסיף בס באוקטבה למטה, WARM חמימות אנלוגית, VIBE ויברטו רך.",
-              "הקישו על + ליד C G F כדי להוסיף מקלדת שנייה."
-            ]
-          },
-          {
-            "title": "מצב LIVE והלופר",
-            "bullets": [
-              "LIVE הוא מצב הופעה בתוך האפליקציה. הקישו על תג PRO/LIVE בכותרת כדי לעבור. במצב LIVE אין טעינת קבצים או מחיקה בערוצי התופים, הלופר והמיק, ואין CLEAR על ערוצי הלופר או על מיקס המיק.",
-              "השמות נשארים נעולים. הכפתורים מסתובבים בגרירה בלבד, בלי חלון ערך. ערכות התופים עדיין מתחלפות.",
-              "הקישו על גל של ערוץ כדי לפתוח את עורך הלופ: חיתוך, לופ, תיבות קצב 1 עד 8, EQ, Gain ו-Squeeze."
-            ]
-          },
-          {
-            "title": "תופים",
-            "bullets": [
-              "Humanize משנה כמה חזק כל פגיעה נוחתת. כשמעלים אותו יותר, הפגיעות מתאחרות.",
-              "Ratchet הופך פגיעות שכבר הונחו לגלגולים מהירים. צעדים ריקים נשארים ריקים.",
-              "החזיקו DRUM KITS ל-16 סגנונות Random Genre ברוק, טראנס, ראפ וטכנו, לכל אחד טווח BPM וסווינג משלו. הקשה על DRUM KITS פותחת ערכות מוכנות, עם מעבר ל-Exclusive או ל-Custom."
-            ]
-          },
-          {
-            "title": "Mic",
-            "bullets": [
-              "שישה ערוצים בשני עמודים. עמוד 1 לשירה, עמוד 2 לגיטרה, בס וכלים.",
-              "הגדירו Gain, HPF, Gate ו-Comp לפני ההקלטה. LYRICS נמצא באותו חלון.",
-              "הקישו על FX בערוץ ל-8 פריסטים של Mic FX. הקשה מדליקה או מכבה אחד מהם. לחיצה ארוכה פותחת Amount, EQ, Transpose ו-Reverb. אחרי טייק, הקישו על גל הערוץ לחיתוך, לופ, EQ, Gain ו-Squeeze."
-            ]
-          },
-          {
-            "title": "מיקסר אנלוגי",
-            "bullets": [
-              "ארבעה פסים: Drums, Looper, Mic ו-Master.",
-              "בכל ערוץ יש DRIVE, HPF, HIGH, MID, LOW, COMP, PAN ו-WIDTH. M משתיק ערוץ. S מבודד אותו.",
-              "BUS OFF מדליק או מכבה את קומפרסור ה-bus. 4:1 הוא היחס שלו. SPECTRUM ו-MIX MAP מראים איפה יושבים התופים, הלופר והמיק."
-            ]
-          },
-          {
-            "title": "מאסטרינג",
-            "bullets": [
-              "LUFS I מראה כמה חזק כל המאסטר. dBTP max מראה את השיא הגבוה ביותר.",
-              "סגנונות כמו Rap Punch כוללים אינטנסיביות Light, Normal או Heavy. Correlation מראה כמה הסטריאו בטוח במונו. Width קובע כמה רחב הצליל.",
-              "Mono מנגן את המאסטר במונו. Phone check מנגן אותו במונו עם גוון של רמקול קטן. A ו-B משווים לפני ואחרי. Export שומר את המאסטר."
+              "כפתורי Humanize ו-Ratchet בחלון התופים. Humanize משנה כמה חזק כל פגיעה נוחתת, ויכול לגרום לפגיעות לאחר. Ratchet הופך פגיעות שכבר הונחו לגלגולים מהירים וישרים.",
+              "חלונות Drum, Sound ו-Pad מותאמים לטלפונים, לטלפונים גדולים ולטאבלטים, בלי חיתוך.",
+              "סגנונות Custom: 16 עמודים של ערכות משלכם. בחריץ ריק יש עכשיו כפתור New שפותח ערכה ריקה שאפשר לבנות ואז לשמור.",
+              "סאמפלי הז'אנר נוקו לפי סגנון וערוץ. צלילים שלא התאימו ל-Kick, Snare, Hi-Hat, Perc או Voice הוחלפו בסאמפל מהסוג הנכון.",
+              "אחרי שמחליפים פריסט, הקשה חוזרת על אותו תו מנגנת את הפריסט החדש. התו הקודם ממשיך לדעוך לבד.",
+              "בפעם הראשונה שפותחים את 1.15 אחרי 1.14, האפליקציה שומרת פעם אחת את העבודה הנוכחית כסשן בשם Last Auto save 1.14, באנגלית בכל השפות. אחר כך היא פותחת את הסשן השמור החדש ביותר כרגיל.",
+              "החלפת ערכות תופים עם החצים שומרת את הערכה שערכתם, ושוב לא קופאת בזמן טעינת הערכה הבאה.",
+              "כפתור חזרה במסך הראשי שואל אם לשמור או לצאת, כדי שלא תצאו בטעות."
             ]
           }
         ],
@@ -593,67 +542,16 @@
         ],
         "sections": [
           {
-            "title": "Sound",
+            "title": "In version 1.15",
             "bullets": [
-              "Hold a wave button to open the wave editor: its own octave, EQ, and up to 4 voices on PAGES.",
-              "Hold PIANO to open the sustain pedal. Drag it up for a longer ring.",
-              "Drive pushes the sound harder. Hold PRESETS to save over the preset that is loaded now."
-            ]
-          },
-          {
-            "title": "Sound FX",
-            "bullets": [
-              "12 effect worlds on 3 pages. Tap a world to turn it on or off. Long-press it for its settings. Swipe left and right between pages.",
-              "FM is world 12, on page 3. ALGO picks one of 8 ways its 4 sine operators modulate each other. INDEX sets the depth.",
-              "While the drums play, 8 of the 12 worlds follow their BPM. Turn RATE to free them, tap SYNC to relock."
-            ]
-          },
-          {
-            "title": "Pad",
-            "bullets": [
-              "The live performance pad can move KEY, MIC, LOOP or DRUM. Hold a key, then drag on the pad. The sound follows your finger.",
-              "SUB adds bass one octave down, WARM analog warmth, VIBE a soft vibrato.",
-              "Tap + next to C G F for a second keyboard."
-            ]
-          },
-          {
-            "title": "LIVE mode and the Looper",
-            "bullets": [
-              "LIVE is a performance mode in the app. Tap the PRO/LIVE badge in the header to switch. In LIVE, no file loads or deletes on drum, looper and mic channels, and no CLEAR on looper tracks or the mic mix.",
-              "Names stay locked. Knobs turn by drag only, with no value dialog. Drum kits still switch.",
-              "Tap a channel wave to open the Loop Editor: trim, loop, rhythm boxes 1 to 8, EQ, Gain and Squeeze."
-            ]
-          },
-          {
-            "title": "Drums",
-            "bullets": [
-              "Humanize varies how hard each hit lands. Turn it up more and hits drift late.",
-              "Ratchet turns hits you already placed into fast rolls. Empty steps stay empty.",
-              "Hold DRUM KITS for 16 Random Genre styles in Rock, Trance, Rap and Techno, each with its own BPM range and swing. Tap DRUM KITS for ready kits, and switch to Exclusive or Custom."
-            ]
-          },
-          {
-            "title": "Mic",
-            "bullets": [
-              "Six channels on two pages. Page 1 for vocals, page 2 for guitar, bass and instruments.",
-              "Set Gain, HPF, Gate and Comp before you record. LYRICS is in the same window.",
-              "Tap FX on a channel for 8 Mic FX presets. Tap one to turn it on or off. Long-press it for Amount, EQ, Transpose and Reverb. After a take, tap a channel wave for trim, loop, EQ, Gain and Squeeze."
-            ]
-          },
-          {
-            "title": "Analog Mixer",
-            "bullets": [
-              "Four strips: Drums, Looper, Mic and Master.",
-              "Each channel has DRIVE, HPF, HIGH, MID, LOW, COMP, PAN and WIDTH. M mutes a channel. S solos it.",
-              "BUS OFF turns the bus compressor on or off. 4:1 is its ratio. SPECTRUM and MIX MAP show where the drums, looper and mic sit."
-            ]
-          },
-          {
-            "title": "Mastering",
-            "bullets": [
-              "LUFS I shows how loud the whole master is. dBTP max shows its highest peak.",
-              "Styles such as Rap Punch have Light, Normal or Heavy intensity. Correlation shows how mono safe the stereo is. Width sets how wide it sounds.",
-              "Mono plays the master in mono. Phone check plays it mono with a small speaker tone. A and B compare before and after. Export saves the master."
+              "Humanize and Ratchet knobs on the drum window. Humanize varies how hard each hit lands, and can make hits drift late. Ratchet turns hits you already placed into fast, straight rolls.",
+              "The Drum, Sound and Pad windows are laid out to fit phones, large phones and tablets, without clipping.",
+              "Custom drum styles: 16 pages of your own kits. An empty slot now has a New button that opens an empty kit you can build and then Save.",
+              "Genre drum samples are cleaned up per style and channel. Sounds that did not fit Kick, Snare, Hi-Hat, Perc or Voice were replaced with the right kind of sample.",
+              "After you change a preset, pressing the same key again plays the new preset. The previous note keeps fading on its own.",
+              "The first time you open 1.15 after 1.14, the app saves your current work once as a session named Last Auto save 1.14, in English in every language. It then opens your newest saved session as usual.",
+              "Switching drum kits with the arrows keeps the kit you just edited, and no longer freezes the app while the next kit loads.",
+              "Back on the main screen asks you to save or exit, so you do not leave by accident."
             ]
           }
         ],
@@ -1141,67 +1039,16 @@
         ],
         "sections": [
           {
-            "title": "Sound",
+            "title": "В версии 1.15",
             "bullets": [
-              "Удерживайте кнопку волны, чтобы открыть редактор волны: своя октава, EQ и до 4 голосов на PAGES.",
-              "Удерживайте PIANO, чтобы открыть педаль сустейна. Поднимите её выше для более длинного затухания.",
-              "Drive делает звук плотнее. Удерживайте PRESETS, чтобы сохранить поверх загруженного сейчас пресета."
-            ]
-          },
-          {
-            "title": "Sound FX",
-            "bullets": [
-              "12 миров эффектов на 3 страницах. Нажатие включает или выключает мир. Долгое нажатие открывает настройки. Листайте страницы влево и вправо.",
-              "FM это мир 12 на странице 3. ALGO выбирает один из 8 способов, которыми его 4 синус-оператора модулируют друг друга. INDEX задаёт глубину.",
-              "Пока играют ударные, 8 из 12 миров следуют их BPM. Поверните RATE, чтобы освободить их, нажмите SYNC, чтобы снова синхронизировать."
-            ]
-          },
-          {
-            "title": "Pad",
-            "bullets": [
-              "Концертный пад может двигать KEY, MIC, LOOP или DRUM. Удерживайте клавишу и ведите палец по паду. Звук следует за пальцем.",
-              "SUB добавляет бас на октаву ниже, WARM аналоговую теплоту, VIBE мягкое вибрато.",
-              "Нажмите + рядом с C G F, чтобы добавить вторую клавиатуру."
-            ]
-          },
-          {
-            "title": "Режим LIVE и лупер",
-            "bullets": [
-              "LIVE это концертный режим в приложении. Нажмите значок PRO/LIVE в заголовке, чтобы переключиться. В LIVE нельзя загружать или удалять файлы на каналах ударных, лупера и микрофона, и нет CLEAR на дорожках лупера или на миксе микрофона.",
-              "Имена остаются заблокированы. Ручки крутятся только перетаскиванием, без диалога значения. Наборы ударных по-прежнему переключаются.",
-              "Нажмите волну канала, чтобы открыть редактор лупа: обрезка, петля, ритм-боксы 1-8, EQ, Gain и Squeeze."
-            ]
-          },
-          {
-            "title": "Ударные",
-            "bullets": [
-              "Humanize меняет силу каждого удара. Если поднять его выше, удары начинают запаздывать.",
-              "Ratchet превращает уже поставленные удары в быстрые дроби. Пустые шаги остаются пустыми.",
-              "Удерживайте DRUM KITS, чтобы выбрать 16 стилей Random Genre в Rock, Trance, Rap и Techno, у каждого свой диапазон BPM и свинг. Нажатие на DRUM KITS открывает готовые наборы, с переключением на Exclusive или Custom."
-            ]
-          },
-          {
-            "title": "Mic",
-            "bullets": [
-              "Шесть каналов на двух страницах. Страница 1 для вокала, страница 2 для гитары, баса и инструментов.",
-              "Перед записью настройте Gain, HPF, Gate и Comp. LYRICS находится в том же окне.",
-              "Нажмите FX на канале, чтобы открыть 8 пресетов Mic FX. Нажатие включает или выключает пресет. Долгое нажатие открывает Amount, EQ, Transpose и Reverb. После дубля нажмите волну канала для обрезки, петли, EQ, Gain и Squeeze."
-            ]
-          },
-          {
-            "title": "Аналоговый микшер",
-            "bullets": [
-              "Четыре полосы: Drums, Looper, Mic и Master.",
-              "На каждом канале есть DRIVE, HPF, HIGH, MID, LOW, COMP, PAN и WIDTH. M выключает канал. S включает соло.",
-              "BUS OFF включает или выключает компрессор шины. 4:1 это его степень сжатия. SPECTRUM и MIX MAP показывают, где находятся ударные, лупер и микрофон."
-            ]
-          },
-          {
-            "title": "Мастеринг",
-            "bullets": [
-              "LUFS I показывает, насколько громкий весь мастер. dBTP max показывает его пик.",
-              "Стили вроде Rap Punch имеют интенсивность Light, Normal или Heavy. Correlation показывает, насколько стерео безопасно в моно. Width задаёт ширину звука.",
-              "Mono воспроизводит мастер в моно. Phone check воспроизводит его в моно с тембром маленького динамика. A и B сравнивают до и после. Export сохраняет мастер."
+              "Ручки Humanize и Ratchet в окне ударных. Humanize меняет силу каждого удара и может слегка задерживать удары. Ratchet превращает уже поставленные удары в быстрые ровные дроби.",
+              "Окна Drum, Sound и Pad умещаются на телефонах, больших телефонах и планшетах без обрезки.",
+              "Стили Custom: 16 страниц ваших собственных наборов. В пустом слоте теперь есть кнопка New, которая открывает пустой набор, который можно собрать и сохранить.",
+              "Сэмплы жанров приведены в порядок по стилю и каналу. Звуки, которые не подходили Kick, Snare, Hi-Hat, Perc или Voice, заменены на подходящие.",
+              "После смены пресета повторное нажатие той же клавиши играет новый пресет. Предыдущая нота продолжает затухать сама.",
+              "При первом запуске 1.15 после 1.14 приложение один раз сохраняет текущую работу как сессию с именем Last Auto save 1.14, на английском во всех языках. Затем оно открывает вашу самую новую сохранённую сессию как обычно.",
+              "Переключение наборов ударных стрелками сохраняет набор, который вы только что редактировали, и больше не зависает, пока загружается следующий набор.",
+              "Кнопка Назад на главном экране спрашивает, сохранить или выйти, чтобы не выйти случайно."
             ]
           }
         ],
@@ -1689,67 +1536,16 @@
         ],
         "sections": [
           {
-            "title": "Sound",
+            "title": "في الإصدار 1.15",
             "bullets": [
-              "اضغط مطولاً على زر الموجة لفتح محرر الموجة: أوكتاف خاص به، وEQ، وحتى 4 أصوات في PAGES.",
-              "اضغط مطولاً على PIANO لفتح بدّال الاستدامة. اسحبه للأعلى لصوت أطول.",
-              "Drive يدفع الصوت بقوة أكبر. اضغط مطولاً على PRESETS للحفظ فوق الإعداد المسبق المحمّل الآن."
-            ]
-          },
-          {
-            "title": "Sound FX",
-            "bullets": [
-              "12 عالماً للتأثيرات في 3 صفحات. اضغط على عالم لتشغيله أو إيقافه. اضغط مطولاً لفتح إعداداته. اسحب يميناً ويساراً بين الصفحات.",
-              "FM هو العالم 12 في الصفحة 3. ALGO يختار واحدة من 8 طرق تعدّل بها موجات الجيب الأربع بعضها بعضاً. INDEX يضبط العمق.",
-              "بينما تعزف الطبول، يتبع 8 من أصل 12 عالماً سرعة BPM الخاصة بها. أدر RATE لتحريرها، واضغط SYNC لإعادة القفل."
-            ]
-          },
-          {
-            "title": "Pad",
-            "bullets": [
-              "لوحة الأداء الحي يمكنها تحريك KEY أو MIC أو LOOP أو DRUM. اضغط مفتاحاً ثم اسحب على اللوحة. الصوت يتبع إصبعك.",
-              "SUB يضيف باساً أوكتافاً للأسفل، وWARM دفئاً تناظرياً، وVIBE اهتزازاً ناعماً.",
-              "اضغط + بجانب C G F لإضافة لوحة مفاتيح ثانية."
-            ]
-          },
-          {
-            "title": "وضع LIVE واللوبر",
-            "bullets": [
-              "LIVE هو وضع أداء داخل التطبيق. اضغط شارة PRO/LIVE في الرأس للتبديل. في وضع LIVE لا يتم تحميل ملفات أو حذفها على قنوات الطبول واللوبر والميكروفون، ولا يوجد CLEAR على مسارات اللوبر أو مزيج الميكروفون.",
-              "الأسماء تبقى مقفلة. المقابض تدور بالسحب فقط، بلا نافذة قيمة. أطقم الطبول ما زالت تتبدل.",
-              "اضغط موجة القناة لفتح محرر اللوب: قص، لوب، مربعات إيقاع من 1 إلى 8، وEQ وGain وSqueeze."
-            ]
-          },
-          {
-            "title": "الطبول",
-            "bullets": [
-              "Humanize يغيّر قوة كل ضربة. ارفعه أكثر فتتأخر الضربات.",
-              "Ratchet يحوّل الضربات التي وضعتها مسبقاً إلى لفّات سريعة. الخطوات الفارغة تبقى فارغة.",
-              "اضغط مطولاً على DRUM KITS لاختيار 16 أسلوباً من Random Genre في الروك والترانس والراب والتكنو، ولكل منها نطاق BPM وسوينغ خاص. اضغط على DRUM KITS للأطقم الجاهزة، مع التبديل إلى Exclusive أو Custom."
-            ]
-          },
-          {
-            "title": "Mic",
-            "bullets": [
-              "ست قنوات في صفحتين. الصفحة 1 للغناء، والصفحة 2 للغيتار والباس والآلات.",
-              "اضبط Gain وHPF وGate وComp قبل التسجيل. LYRICS في النافذة نفسها.",
-              "اضغط FX على قناة لفتح 8 إعدادات مسبقة لـ Mic FX. اضغط واحداً لتشغيله أو إيقافه. اضغط مطولاً لفتح Amount وEQ وTranspose وReverb. بعد المقطع، اضغط موجة القناة للقص واللوب وEQ وGain وSqueeze."
-            ]
-          },
-          {
-            "title": "الميكسر التناظري",
-            "bullets": [
-              "أربعة شرائط: Drums وLooper وMic وMaster.",
-              "لكل قناة DRIVE وHPF وHIGH وMID وLOW وCOMP وPAN وWIDTH. M يكتم القناة. S يعزلها.",
-              "BUS OFF يشغّل ضاغط الباس أو يوقفه. 4:1 هو نسبته. SPECTRUM وMIX MAP يعرضان موضع الطبول واللوبر والميكروفون."
-            ]
-          },
-          {
-            "title": "الماسترنغ",
-            "bullets": [
-              "LUFS I يعرض ارتفاع الماستر بالكامل. dBTP max يعرض أعلى ذروة.",
-              "أساليب مثل Rap Punch تتضمّن شدة Light أو Normal أو Heavy. Correlation يعرض مدى أمان الستيريو في المونو. Width يضبط عرض الصوت.",
-              "Mono يشغّل الماستر في المونو. Phone check يشغّله في المونو بنبرة سماعة صغيرة. A وB يقارنان قبل وبعد. Export يحفظ الماستر."
+              "مقابض Humanize وRatchet في نافذة الطبول. Humanize يغيّر قوة كل ضربة، ويمكن أن يؤخّر الضربات قليلاً. Ratchet يحوّل الضربات التي وضعتها مسبقاً إلى لفّات سريعة ومستقيمة.",
+              "نوافذ Drum وSound وPad مُرتّبة لتناسب الهواتف والهواتف الكبيرة والأجهزة اللوحية، بلا قص.",
+              "أساليب Custom: 16 صفحة من أطقمك الخاصة. في الخانة الفارغة يوجد الآن زر New يفتح طقماً فارغاً يمكنك بناءه ثم حفظه.",
+              "عينات الإيقاع حسب الأسلوب والقناة أصبحت أنظف. الأصوات التي لا تناسب Kick أو Snare أو Hi-Hat أو Perc أو Voice استُبدلت بعينة من النوع الصحيح.",
+              "بعد تغيير إعداد مسبق، الضغط مجدداً على المفتاح نفسه يعزف الإعداد الجديد. النغمة السابقة تواصل التضاؤل وحدها.",
+              "في أول مرة تفتح فيها 1.15 بعد 1.14، يحفظ التطبيق عملك الحالي مرة واحدة كجلسة اسمها Last Auto save 1.14، بالإنجليزية في كل اللغات. ثم يفتح أحدث جلسة محفوظة لديك كالمعتاد.",
+              "التبديل بين أطقم الطبول بالأسهم يحفظ الطقم الذي كنت تعدّله، ولم يعد التطبيق يتجمّد أثناء تحميل الطقم التالي.",
+              "زر الرجوع في الشاشة الرئيسية يسألك إن كنت تريد الحفظ أو الخروج، حتى لا تغادر بالخطأ."
             ]
           }
         ],
