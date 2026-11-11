@@ -855,6 +855,42 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
 .updates-card { scroll-margin-top: 28px; padding: 22px 24px; border: 1px solid rgba(242,241,235,.12); background: #101012; }
 .updates-card:target { border-color: rgba(227,197,101,.55); background: rgba(227,197,101,.06); }
 .updates-card--media { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 18px 28px; }
+
+.updates-card--banner {
+  grid-template-areas:
+    "banner banner"
+    "copy shots";
+}
+.updates-card-banner {
+  grid-area: banner;
+  margin: 0;
+  width: 100%;
+  border: 1px solid rgba(227,197,101,.35);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e8e8e4;
+}
+.updates-card--banner .updates-card-copy { grid-area: copy; }
+.updates-card--banner .updates-card-shots { grid-area: shots; }
+.updates-card-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  aspect-ratio: 1024 / 500;
+  background: #e8e8e4;
+}
+@media (max-width: 720px) {
+  .updates-card--media.updates-card--banner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "banner"
+      "copy"
+      "shots";
+  }
+  .updates-card-banner { margin-bottom: 2px; }
+}
 .updates-card-copy { min-width: 0; }
 .updates-card-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; }
 .updates-card h3 { margin: 0; color: var(--paper); font: 600 clamp(22px, 2.4vw, 28px)/1.25 var(--display); letter-spacing: -.03em; }

@@ -174,8 +174,30 @@ export default function Updates() {
               <div className="updates-list">
                 {group.items.map((item) => {
                   const shots = updateScreenshots(item);
+                  const hasMedia = Boolean(shots.length || item.videoId || item.carousel || item.banner);
+                  const cardClass = [
+                    "updates-card",
+                    hasMedia ? "updates-card--media" : "",
+                    item.banner ? "updates-card--banner" : "",
+                  ].filter(Boolean).join(" ");
+                  const bannerSize = item.banner ? stillSize(item.banner) : null;
                   return (
-                    <article className={shots.length || item.videoId || item.carousel ? "updates-card updates-card--media" : "updates-card"} id={item.id} key={item.id}>
+                    <article className={cardClass} id={item.id} key={item.id}>
+                      {item.banner && bannerSize ? (
+                        <figure className="updates-card-banner">
+                          <picture>
+                            {/\.jpe?g$/i.test(item.banner) ? <source srcSet={webpUrl(item.banner)} type="image/webp" /> : null}
+                            <img
+                              src={assetUrl(item.banner)}
+                              alt={item.bannerAlt || item.title}
+                              width={bannerSize.width}
+                              height={bannerSize.height}
+                              loading="eager"
+                              decoding="async"
+                            />
+                          </picture>
+                        </figure>
+                      ) : null}
                       <div className="updates-card-copy">
                         <div className="updates-card-head">
                           <h3>{item.title}</h3>

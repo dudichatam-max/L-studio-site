@@ -3325,11 +3325,10 @@
           {
             "id": "app-1-15-in-development",
             "status": "in_progress",
-            "title": "בקרוב: גרסה 1.15, בפיתוח, עם Humanize, Ratchet ומצב LIVE",
+            "title": "בקרוב: גרסה 1.15 עם Humanize, Ratchet ומצב LIVE",
             "ticker": "בקרוב: גרסה 1.15, בפיתוח: Humanize, Ratchet, מצב LIVE",
-            "summary": "גרסה 1.15 בפיתוח. היא עדיין לא זמינה. הגרסה ב-Google Play כיום היא 1.14. כל מה שמוצג כאן עדיין נבנה ועשוי להשתנות לפני הפרסום.",
+            "summary": "גרסה 1.15 בפיתוח ועדיין לא ב-Google Play, שם הגרסה הנוכחית היא 1.14.",
             "images": [
-              "/assets/updates/115/he/00-feature.jpg",
               "/assets/updates/115/he/01-sound.jpg",
               "/assets/updates/115/he/02-sound-fx.jpg",
               "/assets/updates/115/he/03-pad.jpg",
@@ -3341,7 +3340,6 @@
             ],
             "imagesCarousel": true,
             "imageAlts": [
-              "גרסה 1.15 בקרוב: סקירה של Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer ו-Mastering.",
               "חלון Sound: עורך הגל, פדאל ססטיין, Drive, והחזקה על PRESETS לשמירה.",
               "Sound FX: 12 עולמות אפקטים ב-3 עמודים, כולל FM, עם SYNC לתופים.",
               "פד הופעה חיה: מזיז KEY, MIC, LOOP או DRUM, ובנוסף SUB, WARM, VIBE ומקלדת שנייה.",
@@ -3352,14 +3350,6 @@
               "מאסטרינג: עוצמת LUFS, אינטנסיביות, רוחב סטריאו, Mono, Phone check, A/B וייצוא."
             ],
             "sections": [
-              {
-                "title": "בקרוב",
-                "bullets": [
-                  "גרסה 1.15 בפיתוח, בלי תאריך. היא עדיין לא ב-Google Play.",
-                  "הגרסה ב-Google Play כיום היא 1.14.",
-                  "הפוסטרים מציגים את Sound, Sound FX, Pad, Looper, Mic, Drums, את המיקסר האנלוגי ואת המאסטרינג."
-                ]
-              },
               {
                 "title": "Sound",
                 "bullets": [
@@ -3424,7 +3414,9 @@
                   "Mono מנגן את המאסטר במונו. Phone check מנגן אותו במונו עם גוון של רמקול קטן. A ו-B משווים לפני ואחרי. Export שומר את המאסטר."
                 ]
               }
-            ]
+            ],
+            "banner": "/assets/updates/115/he/00-feature.jpg",
+            "bannerAlt": "גרסה 1.15 בקרוב: סקירה של Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer ו-Mastering."
           },
           {
             "id": "app-1-14-in-development",
@@ -7320,11 +7312,10 @@
           {
             "id": "app-1-15-in-development",
             "status": "in_progress",
-            "title": "Coming up: version 1.15, in development, with Humanize, Ratchet and LIVE mode",
+            "title": "Coming up: version 1.15 with Humanize, Ratchet and LIVE mode",
             "ticker": "Coming up: version 1.15, in development: Humanize, Ratchet, LIVE mode",
-            "summary": "Version 1.15 is in development. It is not available yet. The version on Google Play today is 1.14. Everything here is still being built and may change before it is released.",
+            "summary": "Version 1.15 is in development and is not on Google Play yet, where the current version is 1.14.",
             "images": [
-              "/assets/updates/115/en/00-feature.jpg",
               "/assets/updates/115/en/01-sound.jpg",
               "/assets/updates/115/en/02-sound-fx.jpg",
               "/assets/updates/115/en/03-pad.jpg",
@@ -7336,7 +7327,6 @@
             ],
             "imagesCarousel": true,
             "imageAlts": [
-              "Version 1.15 coming soon: overview of Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer and Mastering.",
               "Sound window: wave editor, sustain pedal, Drive, and hold PRESETS to save.",
               "Sound FX: 12 effect worlds on 3 pages, including FM, with SYNC to the drums.",
               "Live performance pad: move KEY, MIC, LOOP or DRUM, plus SUB, WARM, VIBE and a second keyboard.",
@@ -7347,14 +7337,6 @@
               "Mastering: LUFS loudness, intensity, stereo width, Mono, Phone check, A/B and Export."
             ],
             "sections": [
-              {
-                "title": "Coming soon",
-                "bullets": [
-                  "Version 1.15 is in development, with no date. It is not on Google Play yet.",
-                  "The version on Google Play today is 1.14.",
-                  "The posters show Sound, Sound FX, Pad, Looper, Mic, Drums, the Analog Mixer and Mastering."
-                ]
-              },
               {
                 "title": "Sound",
                 "bullets": [
@@ -7419,7 +7401,9 @@
                   "Mono plays the master in mono. Phone check plays it mono with a small speaker tone. A and B compare before and after. Export saves the master."
                 ]
               }
-            ]
+            ],
+            "banner": "/assets/updates/115/en/00-feature.jpg",
+            "bannerAlt": "Version 1.15 coming soon: overview of Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer and Mastering."
           },
           {
             "id": "app-1-14-in-development",
@@ -11315,11 +11299,10 @@
           {
             "id": "app-1-15-in-development",
             "status": "in_progress",
-            "title": "Скоро: версия 1.15, в разработке, с Humanize, Ratchet и режимом LIVE",
+            "title": "Скоро: версия 1.15 с Humanize, Ratchet и режимом LIVE",
             "ticker": "Скоро: версия 1.15, в разработке: Humanize, Ratchet, режим LIVE",
-            "summary": "Версия 1.15 находится в разработке. Она ещё не доступна. Текущая версия в Google Play это 1.14. Всё, что показано здесь, ещё собирается и может измениться до выхода.",
+            "summary": "Версия 1.15 в разработке и её ещё нет в Google Play, где текущая версия это 1.14.",
             "images": [
-              "/assets/updates/115/en/00-feature.jpg",
               "/assets/updates/115/en/01-sound.jpg",
               "/assets/updates/115/en/02-sound-fx.jpg",
               "/assets/updates/115/en/03-pad.jpg",
@@ -11331,7 +11314,6 @@
             ],
             "imagesCarousel": true,
             "imageAlts": [
-              "Версия 1.15 скоро: обзор Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer и Mastering.",
               "Окно Sound: редактор волны, педаль сустейна, Drive и удержание PRESETS для сохранения.",
               "Sound FX: 12 миров эффектов на 3 страницах, включая FM, с SYNC к ударным.",
               "Концертный пад: двигает KEY, MIC, LOOP или DRUM, плюс SUB, WARM, VIBE и вторая клавиатура.",
@@ -11342,14 +11324,6 @@
               "Мастеринг: громкость LUFS, интенсивность, ширина стерео, Mono, Phone check, A/B и Export."
             ],
             "sections": [
-              {
-                "title": "Скоро",
-                "bullets": [
-                  "Версия 1.15 в разработке, без даты. Её ещё нет в Google Play.",
-                  "Текущая версия в Google Play это 1.14.",
-                  "Постеры показывают Sound, Sound FX, Pad, Looper, Mic, Drums, аналоговый микшер и мастеринг."
-                ]
-              },
               {
                 "title": "Sound",
                 "bullets": [
@@ -11414,7 +11388,9 @@
                   "Mono воспроизводит мастер в моно. Phone check воспроизводит его в моно с тембром маленького динамика. A и B сравнивают до и после. Export сохраняет мастер."
                 ]
               }
-            ]
+            ],
+            "banner": "/assets/updates/115/en/00-feature.jpg",
+            "bannerAlt": "Версия 1.15 скоро: обзор Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer и Mastering."
           },
           {
             "id": "app-1-14-in-development",
@@ -15310,11 +15286,10 @@
           {
             "id": "app-1-15-in-development",
             "status": "in_progress",
-            "title": "قريباً: الإصدار 1.15، قيد التطوير، مع Humanize وRatchet ووضع LIVE",
+            "title": "قريباً: الإصدار 1.15 مع Humanize وRatchet ووضع LIVE",
             "ticker": "قريباً: الإصدار 1.15، قيد التطوير: Humanize، Ratchet، ووضع LIVE",
-            "summary": "الإصدار 1.15 قيد التطوير. وهو غير متاح بعد. الإصدار الحالي على Google Play هو 1.14. كل ما يظهر هنا ما زال قيد البناء وقد يتغيّر قبل الإطلاق.",
+            "summary": "الإصدار 1.15 قيد التطوير وهو ليس على Google Play بعد، حيث الإصدار الحالي هو 1.14.",
             "images": [
-              "/assets/updates/115/en/00-feature.jpg",
               "/assets/updates/115/en/01-sound.jpg",
               "/assets/updates/115/en/02-sound-fx.jpg",
               "/assets/updates/115/en/03-pad.jpg",
@@ -15326,7 +15301,6 @@
             ],
             "imagesCarousel": true,
             "imageAlts": [
-              "الإصدار 1.15 قريباً: نظرة عامة على Sound وSound FX وPad وLooper وMic وDrums وMixer وMastering.",
               "نافذة Sound: محرر الموجة، بدّال الاستدامة، Drive، والضغط مطولاً على PRESETS للحفظ.",
               "Sound FX: 12 عالماً للتأثيرات في 3 صفحات، بما فيها FM، مع SYNC للطبول.",
               "لوحة الأداء الحي: تحرك KEY أو MIC أو LOOP أو DRUM، بالإضافة إلى SUB وWARM وVIBE ولوحة مفاتيح ثانية.",
@@ -15337,14 +15311,6 @@
               "الماسترنغ: ارتفاع LUFS، والشدة، وعرض الستيريو، وMono، وPhone check، وA/B، والتصدير."
             ],
             "sections": [
-              {
-                "title": "قريباً",
-                "bullets": [
-                  "الإصدار 1.15 قيد التطوير، بلا تاريخ. وهو ليس على Google Play بعد.",
-                  "الإصدار الحالي على Google Play هو 1.14.",
-                  "الملصقات تعرض Sound وSound FX وPad وLooper وMic وDrums والميكسر التناظري والماسترنغ."
-                ]
-              },
               {
                 "title": "Sound",
                 "bullets": [
@@ -15409,7 +15375,9 @@
                   "Mono يشغّل الماستر في المونو. Phone check يشغّله في المونو بنبرة سماعة صغيرة. A وB يقارنان قبل وبعد. Export يحفظ الماستر."
                 ]
               }
-            ]
+            ],
+            "banner": "/assets/updates/115/en/00-feature.jpg",
+            "bannerAlt": "الإصدار 1.15 قريباً: نظرة عامة على Sound وSound FX وPad وLooper وMic وDrums وMixer وMastering."
           },
           {
             "id": "app-1-14-in-development",

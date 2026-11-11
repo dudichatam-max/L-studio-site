@@ -205,6 +205,14 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Drum (1.11, 6 slides; the sample shaping slide was removed at David's request): all 8 rows open after +4 with no keyboard (`drum-rows`, David's Oct 20 shot cropped y 68..1540), main Drum screen (`drum-tab`), sample banks, LOADED (`drum-loaded-trim` + `drum-loaded-rename`), Drum FX, Pattern repeats (`drum-repeats-phone`, the real 1.11 Drum window with the 1-88 box and COPY/PASTE). Cache key `CAROUSEL_VER` in `carousel.ts` (bump it whenever posters change).
 - Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
 
+## Updates: 1.15 banner and shorter intro (2026-11-11)
+
+Follow-up to the 1.15 in-development item (`app-1-15-in-development`). Touches only that card's code and copy. Ticker lines stay as they are. Hero, FAQ, Pro, guide, SEO, and other update items stay on 1.14.
+
+- The 1024x500 header (`00-feature`) is no longer a carousel slide. It is a full-width banner at the top of the card (`banner` / `bannerAlt` on the item). Hebrew uses `assets/updates/115/he/00-feature`; English, Russian, and Arabic use the English file. `object-fit: contain`, nothing cropped. On a narrow screen the order is banner, then the text, then the carousel.
+- The carousel is slides 01 to 08 only (1080x1920), still `imagesCarousel: true`, with dots and the slide counter for those eight posters.
+- Say once, in `summary`, that 1.15 is in development and is not on Google Play yet, and that the current version there is 1.14. Do not repeat that in the title or in a "Coming soon" section. Do not add a "The posters show..." line. The per-window sections stay.
+
 ## Updates: 1.15 in development (2026-11-11)
 
 Version 1.15 is in development, with no date. Do not call it available or on Google Play. The version on Google Play today is 1.14. This change touches only `/updates` and the running ticker. Leave the hero, FAQ, Pro, guide, home carousels, SEO, and the 160.1 MB feature graphic on 1.14.
