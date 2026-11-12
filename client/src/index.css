@@ -1111,3 +1111,56 @@ html[dir="rtl"] .gtips-list { padding: 0 20px 0 0; }
   .studio-features h3 { font-size: 20px; }
   .studio-features p { font-size: 15px; }
 }
+
+.drums-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+.drums-copy p { margin: 0; }
+.preview-copy .drums-copy { max-width: 370px; }
+.drums-style-groups {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.drums-style-groups li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 8px;
+  min-width: 0;
+}
+.drums-style-groups li > b {
+  color: var(--acid);
+  font: 600 10px var(--mono);
+  letter-spacing: .08em;
+  flex: 0 0 auto;
+}
+.drums-style-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 0;
+}
+.drums-style-chips span {
+  padding: 5px 8px;
+  border: 1px solid rgba(227, 197, 101, 0.35);
+  color: #d7d4cc;
+  font: 11px var(--mono);
+  letter-spacing: .04em;
+  background: rgba(11, 11, 12, 0.38);
+  direction: ltr;
+  unicode-bidi: isolate;
+  white-space: nowrap;
+}
+bdi[dir="ltr"] {
+  unicode-bidi: isolate;
+  overflow-wrap: anywhere;
+}
+

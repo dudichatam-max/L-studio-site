@@ -205,9 +205,17 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Drum (1.11, 6 slides; the sample shaping slide was removed at David's request): all 8 rows open after +4 with no keyboard (`drum-rows`, David's Oct 20 shot cropped y 68..1540), main Drum screen (`drum-tab`), sample banks, LOADED (`drum-loaded-trim` + `drum-loaded-rename`), Drum FX, Pattern repeats (`drum-repeats-phone`, the real 1.11 Drum window with the 1-88 box and COPY/PASTE). Cache key `CAROUSEL_VER` in `carousel.ts` (bump it whenever posters change).
 - Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
 
+## Drums layout and RTL bidi (2026-11-12)
+
+Follow-up to the Drums 1.14 copy. The verified numbers and style names stay the same; only the layout and bidi rendering change. Do not mention Humanize, Ratchet, the New button, or the 1.15 sample cleanup. The 1.15 card and ticker stay unchanged.
+
+The Drums block is no longer one dense paragraph. In `languages.*.underHood.features` id `drums`, keep the original official `body` and also store the split fields: `lead` (8 channels, 16 steps, 8 kits per pack), `stylesLead` plus `styleGroups` (the four groups Rock, Trance, Rap, Techno, each with its four English style names), `channels` (8 channels, 33 per cell, FX 1 and FX 2 sharing a cell, 3,696 unique Genre samples), and `packs` (8 Factory + 11 Exclusive, 152 kits, stored on the phone and available offline). The architecture Drums card and the DRUM tab both render this structured copy. The prerendered snapshot uses `h2`/`h3`/`p`/`ul` from the same fields, so curl of the initial HTML stays crawlable.
+
+Latin product names and English lists inside Hebrew and Arabic copy are marked at render time, not in the content strings. Helper: `shared/bidi.ts` (`splitLatinRuns`, `bidiHtml`). The designed UI wraps those runs in `<bdi dir="ltr">` via `BidiText`. The same helper runs on the official #104 feature copy (titles and bodies of the nine architecture blocks, including Performance Pad, mixer strips, mastering WAV/FLAC/MP3, LUFS/LRA, FM, Sound FX, Free Tuning scales), on the SOUND/MIC/LOOP/PAD/DRUM tab text, and in the prerendered snapshot for Hebrew and Arabic.
+
 ## Drums: Random styles, Genre bank and packs (2026-11-12)
 
-Expand only the Drums copy (`languages.*.underHood.features` id `drums`, and the DRUM tab in `Home.tsx`). The prerendered snapshot reads the same `underHood` body. Verified against app tag `v1.14-smoke-passed` (`68b45e9`): 16 Random styles (English names in every language), Genre bank 3,696 unique Ogg files (16 styles x 7 cells x 33; FX 1 and FX 2 share a cell), 8 Factory packs and 11 Exclusive packs (8 kits each, 152 kits). Do not treat 3,696 as the total of every drum file in the app (the pack ZIPs and vocal folders are separate). Do not mention Humanize, Ratchet, the New button, or the 1.15 sample cleanup. The 1.15 card and ticker stay unchanged.
+Expand only the Drums copy (`languages.*.underHood.features` id `drums`, and the DRUM tab in `Home.tsx`). The prerendered snapshot reads the same `underHood` fields. Verified against app tag `v1.14-smoke-passed` (`68b45e9`): 16 Random styles (English names in every language), Genre bank 3,696 unique Ogg files (16 styles x 7 cells x 33; FX 1 and FX 2 share a cell), 8 Factory packs and 11 Exclusive packs (8 kits each, 152 kits). Do not treat 3,696 as the total of every drum file in the app (the pack ZIPs and vocal folders are separate). Do not mention Humanize, Ratchet, the New button, or the 1.15 sample cleanup. The 1.15 card and ticker stay unchanged.
 
 ## SEO, crawlable sections, and official 1.14 feature set (2026-11-12)
 

@@ -6,11 +6,28 @@
  * Official homepage feature copy is read from content.json (underHood.features
  * and underHood.identity) so the prerendered headings stay in sync with the
  * visible architecture section.
+ *
+ * Latin product names inside Hebrew and Arabic copy are wrapped in
+ * <bdi dir="ltr"> at render time; the content strings stay plain.
  */
 import type { Language, SeoPageId } from "./seo";
 import { seoDocument } from "./seo";
+import { bidiHtml, escapeHtml, shouldIsolateLatin } from "./bidi";
 
-type FeatureBlock = { id: string; title: string; body: string };
+export { escapeHtml };
+
+export type StyleGroup = { genre: string; styles: string[] };
+
+export type FeatureBlock = {
+  id: string;
+  title: string;
+  body: string;
+  lead?: string;
+  stylesLead?: string;
+  styleGroups?: StyleGroup[];
+  channels?: string;
+  packs?: string;
+};
 
 type LangCopy = {
   underHood?: { identity?: string; features?: FeatureBlock[] };
@@ -34,12 +51,28 @@ const REQUIRED_HOME_HEADING_IDS = [
   "mastering",
 ] as const;
 
-export function escapeHtml(value: string): string {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+export function isStructuredDrums(
+  block: FeatureBlock | undefined | null
+): block is FeatureBlock & {
+  lead: string;
+  stylesLead: string;
+  styleGroups: StyleGroup[];
+  channels: string;
+  packs: string;
+} {
+  return Boolean(
+    block &&
+      block.id === "drums" &&
+      block.lead &&
+      block.stylesLead &&
+      Array.isArray(block.styleGroups) &&
+      block.styleGroups.length === 4 &&
+      block.styleGroups.every(
+        group => group.genre && Array.isArray(group.styles) && group.styles.length === 4
+      ) &&
+      block.channels &&
+      block.packs
+  );
 }
 
 function langCopy(content: SiteContent, language: Language): LangCopy {
@@ -56,25 +89,68 @@ export function homeFeatureBlocks(
     if (!block?.title || !block.body) {
       throw new Error(`Missing underHood.features[${id}] for ${language}`);
     }
-    return { id, title: block.title, body: block.body };
+    if (id === "drums" && !isStructuredDrums(block)) {
+      throw new Error(`Missing structured drums fields for ${language}`);
+    }
+    return {
+      id,
+      title: block.title,
+      body: block.body,
+      lead: block.lead,
+      stylesLead: block.stylesLead,
+      styleGroups: block.styleGroups,
+      channels: block.channels,
+      packs: block.packs,
+    };
   });
+}
+
+function rtlMark(language: Language, text: string): string {
+  return bidiHtml(text, shouldIsolateLatin(language));
+}
+
+function renderDrumsArticle(feature: FeatureBlock, language: Language): string {
+  if (!isStructuredDrums(feature)) {
+    throw new Error(`Cannot prerender unstructured drums for ${language}`);
+  }
+  const items = feature.styleGroups
+    .map(group => {
+      const styles = group.styles.join(", ");
+      return `        <li>${rtlMark(language, group.genre)}: ${rtlMark(language, styles)}</li>`;
+    })
+    .join("\n");
+  return [
+    `      <article id="${escapeHtml(feature.id)}">`,
+    `        <h2>${rtlMark(language, feature.title)}</h2>`,
+    `        <p>${rtlMark(language, feature.lead)}</p>`,
+    `        <h3>${rtlMark(language, feature.stylesLead)}</h3>`,
+    `        <ul>`,
+    items,
+    `        </ul>`,
+    `        <p>${rtlMark(language, feature.channels)}</p>`,
+    `        <p>${rtlMark(language, feature.packs)}</p>`,
+    `      </article>`,
+  ].join("\n");
+}
+
+function renderFeatureArticle(feature: FeatureBlock, language: Language): string {
+  if (feature.id === "drums") return renderDrumsArticle(feature, language);
+  return `      <article id="${escapeHtml(feature.id)}">\n        <h2>${rtlMark(language, feature.title)}</h2>\n        <p>${rtlMark(language, feature.body)}</p>\n      </article>`;
 }
 
 function renderHome(content: SiteContent, language: Language): string {
   const doc = seoDocument("/", language);
+  const isolate = shouldIsolateLatin(language);
   const identity = langCopy(content, language).underHood?.identity ?? "";
   const features = homeFeatureBlocks(content, language);
   const articles = features
-    .map(
-      feature =>
-        `      <article id="${escapeHtml(feature.id)}">\n        <h2>${escapeHtml(feature.title)}</h2>\n        <p>${escapeHtml(feature.body)}</p>\n      </article>`
-    )
+    .map(feature => renderFeatureArticle(feature, language))
     .join("\n");
   return [
     `    <main class="seo-prerender" hidden>`,
     `      <h1>${escapeHtml(doc.title)}</h1>`,
-    identity ? `      <p>${escapeHtml(identity)}</p>` : "",
-    `      <p>${escapeHtml(doc.description)}</p>`,
+    identity ? `      <p>${bidiHtml(identity, isolate)}</p>` : "",
+    `      <p>${bidiHtml(doc.description, isolate)}</p>`,
     articles,
     `    </main>`,
   ]
@@ -84,16 +160,17 @@ function renderHome(content: SiteContent, language: Language): string {
 
 function renderUpdates(content: SiteContent, language: Language): string {
   const doc = seoDocument("/updates/", language);
+  const isolate = shouldIsolateLatin(language);
   const updates = langCopy(content, language).updates;
   const intro = updates?.pageIntro ?? doc.description;
   const items = (updates?.items ?? [])
     .filter(item => item.title)
-    .map(item => `      <h2>${escapeHtml(item.title as string)}</h2>`)
+    .map(item => `      <h2>${bidiHtml(item.title as string, isolate)}</h2>`)
     .join("\n");
   return [
     `    <main class="seo-prerender" hidden>`,
-    `      <h1>${escapeHtml(doc.title)}</h1>`,
-    `      <p>${escapeHtml(intro)}</p>`,
+    `      <h1>${bidiHtml(doc.title, isolate)}</h1>`,
+    `      <p>${bidiHtml(intro, isolate)}</p>`,
     items,
     `    </main>`,
   ].join("\n");
@@ -101,14 +178,15 @@ function renderUpdates(content: SiteContent, language: Language): string {
 
 function renderGuide(content: SiteContent, language: Language): string {
   const doc = seoDocument("/guide/", language);
+  const isolate = shouldIsolateLatin(language);
   const groups = (langCopy(content, language).guide?.groups ?? [])
     .filter(group => group.title)
-    .map(group => `      <h2>${escapeHtml(group.title as string)}</h2>`)
+    .map(group => `      <h2>${bidiHtml(group.title as string, isolate)}</h2>`)
     .join("\n");
   return [
     `    <main class="seo-prerender" hidden>`,
-    `      <h1>${escapeHtml(doc.title)}</h1>`,
-    `      <p>${escapeHtml(doc.description)}</p>`,
+    `      <h1>${bidiHtml(doc.title, isolate)}</h1>`,
+    `      <p>${bidiHtml(doc.description, isolate)}</p>`,
     groups,
     `    </main>`,
   ].join("\n");
@@ -116,10 +194,11 @@ function renderGuide(content: SiteContent, language: Language): string {
 
 function renderGeneric(pathname: string, language: Language): string {
   const doc = seoDocument(pathname, language);
+  const isolate = shouldIsolateLatin(language);
   return [
     `    <main class="seo-prerender" hidden>`,
-    `      <h1>${escapeHtml(doc.title)}</h1>`,
-    `      <p>${escapeHtml(doc.description)}</p>`,
+    `      <h1>${bidiHtml(doc.title, isolate)}</h1>`,
+    `      <p>${bidiHtml(doc.description, isolate)}</p>`,
     `    </main>`,
   ].join("\n");
 }
