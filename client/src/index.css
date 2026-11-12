@@ -1117,6 +1117,8 @@ html[dir="rtl"] .gtips-list { padding: 0 20px 0 0; }
   flex-direction: column;
   gap: 10px;
   min-width: 0;
+  container-type: inline-size;
+  container-name: drums;
 }
 .drums-copy p { margin: 0; }
 .preview-copy .drums-copy { max-width: 370px; }
@@ -1129,35 +1131,61 @@ html[dir="rtl"] .gtips-list { padding: 0 20px 0 0; }
   gap: 8px;
   min-width: 0;
 }
-.drums-style-groups li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 6px 8px;
+/* Narrow: genre labels sit consistently above a 4-column chip grid.
+   Wide enough (desktop article): a fixed-width label column beside
+   the chips, aligned across all four rows. */
+.drums-style-groups:not(.drums-channel-names) li {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  align-items: start;
   min-width: 0;
 }
 .drums-style-groups li > b {
   color: var(--acid);
   font: 600 10px var(--mono);
   letter-spacing: .08em;
-  flex: 0 0 auto;
+  justify-self: start;
 }
 .drums-style-chips {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 6px;
+  width: 100%;
   min-width: 0;
 }
 .drums-style-chips span {
-  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 3px;
   border: 1px solid rgba(227, 197, 101, 0.35);
   color: #d7d4cc;
-  font: 11px var(--mono);
-  letter-spacing: .04em;
+  font: 10px/1.2 var(--mono);
+  letter-spacing: 0;
+  text-align: center;
   background: rgba(11, 11, 12, 0.38);
   direction: ltr;
   unicode-bidi: isolate;
   white-space: nowrap;
+}
+.drums-channel-names li {
+  display: block;
+  width: 100%;
+}
+@container drums (min-width: 380px) {
+  .drums-style-groups:not(.drums-channel-names) li {
+    grid-template-columns: 3.4rem 1fr;
+    column-gap: 8px;
+    align-items: center;
+  }
+}
+/* The DRUM tab preview is tighter than the architecture card. */
+@container drums (max-width: 309px) {
+  .drums-style-chips span {
+    font-size: 8.5px;
+    padding: 4px 2px;
+  }
 }
 bdi[dir="ltr"] {
   unicode-bidi: isolate;
@@ -1174,18 +1202,6 @@ bdi[dir="ltr"].bdi-list {
   display: inline-block;
   max-width: 100%;
   overflow-wrap: anywhere;
-}
-.drums-style-groups li {
-  direction: ltr;
-  justify-content: flex-start;
-}
-.site-shell[dir="rtl"] .drums-style-groups li,
-[dir="rtl"] .drums-style-groups li {
-  justify-content: flex-end;
-}
-.site-shell[dir="rtl"] .drums-channel-names .drums-style-chips,
-[dir="rtl"] .drums-channel-names .drums-style-chips {
-  justify-content: flex-end;
 }
 
 
