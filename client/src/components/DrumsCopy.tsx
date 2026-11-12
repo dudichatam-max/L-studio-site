@@ -44,9 +44,31 @@ export function DrumsCopy({ feature, language, rtl }: Props) {
           <BidiText text={feature.body} language={language} rtl={rtl} />
         </p>
       ) : null}
-      {feature.channels ? (
+      {feature.channelsLead ? (
+        <p>
+          <BidiText text={feature.channelsLead} language={language} rtl={rtl} />
+        </p>
+      ) : feature.channels ? (
         <p>
           <BidiText text={feature.channels} language={language} rtl={rtl} />
+        </p>
+      ) : null}
+      {feature.channelNames && feature.channelNames.length > 0 ? (
+        <ul className="drums-style-groups drums-channel-names">
+          <li>
+            <span className="drums-style-chips">
+              {feature.channelNames.map(name => (
+                <span key={name}>
+                  <bdi dir="ltr">{name}</bdi>
+                </span>
+              ))}
+            </span>
+          </li>
+        </ul>
+      ) : null}
+      {feature.channelsNote ? (
+        <p>
+          <BidiText text={feature.channelsNote} language={language} rtl={rtl} />
         </p>
       ) : null}
       {feature.packs ? (

@@ -124,6 +124,9 @@
               { "genre": "Techno", "styles": ["Detroit", "Minimal", "Melodic", "Hard Techno"] }
             ],
             "channels": "בכל סגנון אפשר לבחור סאמפלי Genre לכל ערוץ: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 ו-Voice, 33 סאמפלים בכל תא. FX 1 ו-FX 2 חולקים תא Genre אחד, כך שבנק ה-Genre מחזיק 3,696 סאמפלים ייחודיים.",
+            "channelsLead": "בכל סגנון אפשר לבחור סאמפלי Genre לכל ערוץ:",
+            "channelNames": ["Kick", "Snare", "Hi-Hat", "Perc", "Bass", "FX 1", "FX 2", "Voice"],
+            "channelsNote": "33 סאמפלים בכל תא. FX 1 ו-FX 2 חולקים תא Genre אחד, כך שבנק ה-Genre מחזיק 3,696 סאמפלים ייחודיים.",
             "packs": "ב-Pro כלולות גם 8 חבילות Factory ו-11 חבילות Exclusive, 152 ערכות בסך הכול, שמורות בפלאפון וזמינות אופליין."
           },
           {
@@ -4118,6 +4121,9 @@
               { "genre": "Techno", "styles": ["Detroit", "Minimal", "Melodic", "Hard Techno"] }
             ],
             "channels": "For each style you can choose Genre samples per channel: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 and Voice, 33 samples in each cell. FX 1 and FX 2 share one Genre cell, so the Genre bank holds 3,696 unique samples.",
+            "channelsLead": "For each style you can choose Genre samples per channel:",
+            "channelNames": ["Kick", "Snare", "Hi-Hat", "Perc", "Bass", "FX 1", "FX 2", "Voice"],
+            "channelsNote": "33 samples in each cell. FX 1 and FX 2 share one Genre cell, so the Genre bank holds 3,696 unique samples.",
             "packs": "Pro also includes 8 Factory drum packs and 11 Exclusive drum packs, 152 kits in all, stored on the phone and available offline."
           },
           {
@@ -8112,6 +8118,9 @@
               { "genre": "Techno", "styles": ["Detroit", "Minimal", "Melodic", "Hard Techno"] }
             ],
             "channels": "В каждом стиле можно выбрать семплы Genre для каналов: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 и Voice, по 33 семпла в ячейке. FX 1 и FX 2 делят одну ячейку Genre, поэтому банк Genre содержит 3696 уникальных семплов.",
+            "channelsLead": "В каждом стиле можно выбрать семплы Genre для каналов:",
+            "channelNames": ["Kick", "Snare", "Hi-Hat", "Perc", "Bass", "FX 1", "FX 2", "Voice"],
+            "channelsNote": "По 33 семпла в ячейке. FX 1 и FX 2 делят одну ячейку Genre, поэтому банк Genre содержит 3696 уникальных семплов.",
             "packs": "В Pro также входят 8 паков Factory и 11 паков Exclusive, всего 152 набора, они хранятся в телефоне и доступны офлайн."
           },
           {
@@ -12106,6 +12115,9 @@
               { "genre": "Techno", "styles": ["Detroit", "Minimal", "Melodic", "Hard Techno"] }
             ],
             "channels": "في كل أسلوب يمكن اختيار عيّنات Genre لكل قناة: Kick وSnare وHi-Hat وPerc وBass وFX 1 وFX 2 وVoice، و33 عيّنة في كل خلية. يشترك FX 1 وFX 2 في خلية Genre واحدة، لذلك يضم بنك Genre 3696 عيّنة فريدة.",
+            "channelsLead": "في كل أسلوب يمكن اختيار عيّنات Genre لكل قناة:",
+            "channelNames": ["Kick", "Snare", "Hi-Hat", "Perc", "Bass", "FX 1", "FX 2", "Voice"],
+            "channelsNote": "33 عيّنة في كل خلية. يشترك FX 1 وFX 2 في خلية Genre واحدة، لذلك يضم بنك Genre 3696 عيّنة فريدة.",
             "packs": "يشمل Pro أيضاً 8 حزم Factory و11 حزمة Exclusive، أي 152 مجموعة إجمالاً، محفوظة على الهاتف ومتاحة دون اتصال."
           },
           {

@@ -337,7 +337,11 @@ for (const language of LANGUAGES) {
       assert(article.includes("<ul>"), `${language} drums prerender has ul`);
       assert(Boolean(block.lead) && visible(article).includes(block.lead as string), `${language} drums lead`);
       assert(Boolean(block.stylesLead) && visible(article).includes(block.stylesLead as string), `${language} drums styles lead`);
-      assert(Boolean(block.channels) && visible(article).includes(block.channels as string), `${language} drums channels`);
+      assert(Boolean(block.channelsLead) && visible(article).includes(block.channelsLead as string), `${language} drums channels lead`);
+      assert(Boolean(block.channelsNote) && visible(article).includes(block.channelsNote as string), `${language} drums channels note`);
+      for (const name of block.channelNames ?? []) {
+        assert(visible(article).includes(name), `${language} drums channel ${name}`);
+      }
       assert(Boolean(block.packs) && visible(article).includes(block.packs as string), `${language} drums packs`);
       for (const group of block.styleGroups ?? []) {
         assert(visible(article).includes(group.genre), `${language} drums genre ${group.genre}`);
