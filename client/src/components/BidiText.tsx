@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { shouldIsolateLatin, splitLatinRuns } from "@shared/bidi";
+import { isLatinList, shouldIsolateLatin, splitLatinRuns } from "@shared/bidi";
 import type { Language } from "@shared/seo";
 
 type Props = {
@@ -13,15 +13,23 @@ export function BidiText({ text, language, rtl }: Props) {
   if (!isolate) return <>{text}</>;
   return (
     <>
-      {splitLatinRuns(text).map((part, index) =>
-        part.ltr ? (
-          <bdi dir="ltr" key={index}>
+      {splitLatinRuns(text).map((part, index) => {
+        if (!part.ltr) {
+          return <Fragment key={index}>{part.text}</Fragment>;
+        }
+        const bdi = (
+          <bdi dir="ltr" className={isLatinList(part.text) ? "bdi-list" : undefined}>
             {part.text}
           </bdi>
-        ) : (
-          <Fragment key={index}>{part.text}</Fragment>
-        )
-      )}
+        );
+        if (!part.trailing) return <Fragment key={index}>{bdi}</Fragment>;
+        return (
+          <span className="bdi-attach" key={index}>
+            {bdi}
+            {part.trailing}
+          </span>
+        );
+      })}
     </>
   );
 }

@@ -1161,10 +1161,19 @@ html[dir="rtl"] .gtips-list { padding: 0 20px 0 0; }
 }
 bdi[dir="ltr"] {
   unicode-bidi: isolate;
+  vertical-align: baseline;
+}
+/* Keep a comma or period next to Exclusive or DRUM; punctuation stays
+   outside the LTR bdi so it still follows RTL placement rules. */
+.bdi-attach {
+  white-space: nowrap;
+}
+/* Only long English lists wrap as a unit. Short names stay inline so a
+   following comma is not left behind on the next line. */
+bdi[dir="ltr"].bdi-list {
   display: inline-block;
   max-width: 100%;
   overflow-wrap: anywhere;
-  vertical-align: baseline;
 }
 .drums-style-groups li {
   direction: ltr;

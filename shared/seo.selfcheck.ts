@@ -388,7 +388,8 @@ const heHome = renderPrerenderInner("home", "/", "he", siteContent) ?? "";
 assert(heHome.includes('<bdi dir="ltr">'), "Hebrew prerender isolates Latin runs");
 assert(heHome.includes('<bdi dir="ltr">Random</bdi>'), "Hebrew prerender isolates Random");
 assert(heHome.includes('<bdi dir="ltr">FX 1</bdi>'), "Hebrew prerender isolates FX 1");
-assert(heHome.includes('<bdi dir="ltr">Performance Pad</bdi>'), "Hebrew prerender isolates Performance Pad");
+assert(heHome.includes("Performance Pad"), "Hebrew prerender isolates Performance Pad");
+assert(heHome.includes('class="bdi-list"'), "Hebrew prerender marks Latin lists");
 assert(heHome.includes('<bdi dir="ltr">3,696</bdi>'), "Hebrew prerender isolates 3,696");
 assert(
   !heHome.includes("Rap Techno"),
@@ -402,8 +403,26 @@ assert(
   "FX 1 and FX 2 stay as separate LTR runs in Hebrew"
 );
 assert(
-  bidiHtml("ל-WAV, FLAC ו-MP3", true).includes('<bdi dir="ltr">WAV, FLAC</bdi>'),
-  "mastering export formats are isolated as LTR"
+  bidiHtml("ל-WAV, FLAC ו-MP3", true).includes('<bdi dir="ltr" class="bdi-list">WAV, FLAC</bdi>'),
+  "mastering export formats are isolated as an LTR list"
+);
+const exclusiveHtml = bidiHtml("חבילות Exclusive, 152 ערכות.", true);
+assert(
+  exclusiveHtml.includes('<span class="bdi-attach"><bdi dir="ltr">Exclusive</bdi>,</span>'),
+  "comma after Exclusive stays in a nowrap wrapper outside the LTR bdi"
+);
+assert(
+  !exclusiveHtml.includes('<bdi dir="ltr">Exclusive,</bdi>'),
+  "comma after Exclusive is not inside the LTR bdi"
+);
+const drumEnd = bidiHtml("ו-DRUM.", true);
+assert(
+  drumEnd.includes('<span class="bdi-attach"><bdi dir="ltr">DRUM</bdi>.</span>'),
+  "period after DRUM stays in a nowrap wrapper"
+);
+assert(
+  bidiHtml("حزمة Exclusive، أي", true).includes('<span class="bdi-attach"><bdi dir="ltr">Exclusive</bdi>،</span>'),
+  "Arabic comma after Exclusive stays attached"
 );
 
 if (failures.length) {

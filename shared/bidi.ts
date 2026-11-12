@@ -4,8 +4,11 @@
  * do not get visually reordered by the Unicode bidi algorithm.
  *
  * Content strings stay plain. The helper marks Latin runs at render time.
+ * Trailing punctuation after a Latin run stays in a nowrap wrapper with the
+ * run (it is not put inside the LTR bdi), so a comma after Exclusive cannot
+ * wrap alone to the other end of the next line.
  */
-export type LatinRunPart = { text: string; ltr: boolean };
+export type LatinRunPart = { text: string; ltr: boolean; trailing?: string };
 
 const ATOM =
   "(?:\\d{1,3}(?:,\\d{3})+(?:\\.\\d+)?|\\d+[xX]|[A-Za-z][A-Za-z0-9]*(?:[/'’\\-][A-Za-z][A-Za-z0-9]*)*)";
@@ -23,10 +26,21 @@ const LATIN_RUN = new RegExp(
   `${ATOM}(?:${CONTINUE}|${AFTER_COMMA}${PAREN}|[ \\u00A0]*${PAREN})*`,
   "g"
 );
+// Comma, period, and the Arabic comma/semicolon/question mark, kept with the
+// preceding Latin run but left outside the LTR bdi so they follow RTL rules.
+const TRAILING_PUNCT = /^[.,:;!?…،؛؟]+/;
 
 export function shouldIsolateLatin(language: string, isRtl?: boolean): boolean {
   if (isRtl === true) return true;
   return language === "he" || language === "ar";
+}
+
+/** Multi-word or multi-item Latin lists wrap as a unit; short names stay inline. */
+export function isLatinList(text: string): boolean {
+  return (
+    /[A-Za-z][A-Za-z0-9]*\s+[A-Za-z]/.test(text) ||
+    /[A-Za-z].*,\s*[A-Za-z]/.test(text)
+  );
 }
 
 export function splitLatinRuns(text: string): LatinRunPart[] {
@@ -39,8 +53,16 @@ export function splitLatinRuns(text: string): LatinRunPart[] {
     if (match.index > last) {
       parts.push({ text: text.slice(last, match.index), ltr: false });
     }
-    parts.push({ text: match[0], ltr: true });
-    last = match.index + match[0].length;
+    const afterIndex = match.index + match[0].length;
+    const punct = text.slice(afterIndex).match(TRAILING_PUNCT);
+    const trailing = punct ? punct[0] : undefined;
+    parts.push(
+      trailing
+        ? { text: match[0], ltr: true, trailing }
+        : { text: match[0], ltr: true }
+    );
+    last = afterIndex + (trailing ? trailing.length : 0);
+    LATIN_RUN.lastIndex = last;
   }
   if (last < text.length) {
     parts.push({ text: text.slice(last), ltr: false });
@@ -56,14 +78,19 @@ export function escapeHtml(value: string): string {
     .replace(/"/g, "&quot;");
 }
 
+function latinRunHtml(part: LatinRunPart): string {
+  const listClass = isLatinList(part.text) ? ' class="bdi-list"' : "";
+  const bdi = `<bdi dir="ltr"${listClass}>${escapeHtml(part.text)}</bdi>`;
+  if (part.trailing) {
+    return `<span class="bdi-attach">${bdi}${escapeHtml(part.trailing)}</span>`;
+  }
+  return bdi;
+}
+
 /** Escaped HTML, with Latin runs wrapped in <bdi dir="ltr"> when isolate is on. */
 export function bidiHtml(text: string, isolate: boolean): string {
   if (!isolate) return escapeHtml(text);
   return splitLatinRuns(text)
-    .map(part =>
-      part.ltr
-        ? `<bdi dir="ltr">${escapeHtml(part.text)}</bdi>`
-        : escapeHtml(part.text)
-    )
+    .map(part => (part.ltr ? latinRunHtml(part) : escapeHtml(part.text)))
     .join("");
 }
