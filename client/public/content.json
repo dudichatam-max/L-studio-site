@@ -114,7 +114,7 @@
           {
             "id": "drums",
             "title": "תופים",
-            "body": "8 ערכות תופים, עם 8 ערוצים ו-16 צעדים."
+            "body": "התופים עובדים ב-8 ערוצים ו-16 צעדים, עם 8 ערכות בכל חבילה. כפתור Random בונה מקצב באחד מ-16 סגנונות, בארבע קבוצות: Rock (Classic, Hard, Punk, Indie), Trance (Psytrance, Goa, Hi-Tech, Progressive), Rap (Boom Bap, Trap, Drill, Lo-fi) ו-Techno (Detroit, Minimal, Melodic, Hard Techno). בכל סגנון אפשר לבחור סאמפלי Genre לכל ערוץ: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 ו-Voice, 33 סאמפלים בכל תא. FX 1 ו-FX 2 חולקים תא Genre אחד, כך שבנק ה-Genre מחזיק 3,696 סאמפלים ייחודיים. ב-Pro כלולות גם 8 חבילות Factory ו-11 חבילות Exclusive, 152 ערכות בסך הכול, שמורות בפלאפון וזמינות אופליין."
           },
           {
             "id": "mic-studio",
@@ -4098,7 +4098,7 @@
           {
             "id": "drums",
             "title": "Drums",
-            "body": "8 drum kits, with 8 channels and 16 steps."
+            "body": "Drums run on 8 channels and 16 steps, with 8 kits in every pack. The Random button writes a rhythm in one of 16 styles, grouped as Rock (Classic, Hard, Punk, Indie), Trance (Psytrance, Goa, Hi-Tech, Progressive), Rap (Boom Bap, Trap, Drill, Lo-fi) and Techno (Detroit, Minimal, Melodic, Hard Techno). For each style you can choose Genre samples per channel: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 and Voice, 33 samples in each cell. FX 1 and FX 2 share one Genre cell, so the Genre bank holds 3,696 unique samples. Pro also includes 8 Factory drum packs and 11 Exclusive drum packs, 152 kits in all, stored on the phone and available offline."
           },
           {
             "id": "mic-studio",
@@ -8082,7 +8082,7 @@
           {
             "id": "drums",
             "title": "Ударные",
-            "body": "8 ударных наборов, с 8 каналами и 16 шагами."
+            "body": "Ударные работают на 8 каналах и 16 шагах, по 8 наборов в каждом паке. Кнопка Random строит ритм в одном из 16 стилей, в четырёх группах: Rock (Classic, Hard, Punk, Indie), Trance (Psytrance, Goa, Hi-Tech, Progressive), Rap (Boom Bap, Trap, Drill, Lo-fi) и Techno (Detroit, Minimal, Melodic, Hard Techno). В каждом стиле можно выбрать семплы Genre для каналов: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 и Voice, по 33 семпла в ячейке. FX 1 и FX 2 делят одну ячейку Genre, поэтому банк Genre содержит 3696 уникальных семплов. В Pro также входят 8 паков Factory и 11 паков Exclusive, всего 152 набора, они хранятся в телефоне и доступны офлайн."
           },
           {
             "id": "mic-studio",
@@ -12066,7 +12066,7 @@
           {
             "id": "drums",
             "title": "الطبول",
-            "body": "8 مجموعات طبول، مع 8 قنوات و16 خطوة."
+            "body": "تعمل الطبول على 8 قنوات و16 خطوة، مع 8 مجموعات في كل حزمة. زر Random يبني إيقاعاً من أحد 16 أسلوباً، في أربع مجموعات: Rock (Classic, Hard, Punk, Indie)، وTrance (Psytrance, Goa, Hi-Tech, Progressive)، وRap (Boom Bap, Trap, Drill, Lo-fi)، وTechno (Detroit, Minimal, Melodic, Hard Techno). في كل أسلوب يمكن اختيار عيّنات Genre لكل قناة: Kick وSnare وHi-Hat وPerc وBass وFX 1 وFX 2 وVoice، و33 عيّنة في كل خلية. يشترك FX 1 وFX 2 في خلية Genre واحدة، لذلك يضم بنك Genre 3696 عيّنة فريدة. يشمل Pro أيضاً 8 حزم Factory و11 حزمة Exclusive، أي 152 مجموعة إجمالاً، محفوظة على الهاتف ومتاحة دون اتصال."
           },
           {
             "id": "mic-studio",

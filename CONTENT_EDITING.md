@@ -205,6 +205,10 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Drum (1.11, 6 slides; the sample shaping slide was removed at David's request): all 8 rows open after +4 with no keyboard (`drum-rows`, David's Oct 20 shot cropped y 68..1540), main Drum screen (`drum-tab`), sample banks, LOADED (`drum-loaded-trim` + `drum-loaded-rename`), Drum FX, Pattern repeats (`drum-repeats-phone`, the real 1.11 Drum window with the 1-88 box and COPY/PASTE). Cache key `CAROUSEL_VER` in `carousel.ts` (bump it whenever posters change).
 - Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
 
+## Drums: Random styles, Genre bank and packs (2026-11-12)
+
+Expand only the Drums copy (`languages.*.underHood.features` id `drums`, and the DRUM tab in `Home.tsx`). The prerendered snapshot reads the same `underHood` body. Verified against app tag `v1.14-smoke-passed` (`68b45e9`): 16 Random styles (English names in every language), Genre bank 3,696 unique Ogg files (16 styles x 7 cells x 33; FX 1 and FX 2 share a cell), 8 Factory packs and 11 Exclusive packs (8 kits each, 152 kits). Do not treat 3,696 as the total of every drum file in the app (the pack ZIPs and vocal folders are separate). Do not mention Humanize, Ratchet, the New button, or the 1.15 sample cleanup. The 1.15 card and ticker stay unchanged.
+
 ## SEO, crawlable sections, and official 1.14 feature set (2026-11-12)
 
 Head titles, meta descriptions, og/twitter and JSON-LD descriptions now follow David's homepage wording, in all four languages. The English title is his exact text, including the typographic dash and "A Full Studio in Your Phone". Body copy has no em-dashes and does not call L Studio a DAW.
