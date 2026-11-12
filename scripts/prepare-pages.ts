@@ -2,15 +2,19 @@
  * Prepare GitHub Pages SPA deep-link fallbacks.
  * Writes dist/public/index.html, 404.html, and route folders so each public
  * path returns HTTP 200 with the right canonical, title, and hreflang.
+ * Homepage, /guide and /updates (all languages) also get a hidden semantic
+ * HTML snapshot in #root so section headings are present before JavaScript.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { LANGUAGES, applySeoToHtml, localizedPath, renderSitemapXml, seoDocument } from "../shared/seo";
+import { injectPrerender, type SiteContent } from "../shared/prerender";
+import { LANGUAGES, applySeoToHtml, localizedPath, pageIdFromPath, renderSitemapXml, seoDocument } from "../shared/seo";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = join(root, "dist", "public");
 const indexPath = join(publicDir, "index.html");
+const siteContent = JSON.parse(readFileSync(join(root, "content.json"), "utf8")) as SiteContent;
 
 if (!existsSync(indexPath)) {
   console.error(`Missing ${indexPath}. Run pnpm build first.`);
@@ -33,6 +37,16 @@ const targets: Array<{ file: string; path: string }> = [
   { file: "buy/success/index.html", path: "/buy/success/" },
 ];
 
+function writePage(file: string, path: string, language: typeof LANGUAGES[number]) {
+  const dest = join(publicDir, file);
+  mkdirSync(dirname(dest), { recursive: true });
+  const doc = seoDocument(path, language);
+  let html = applySeoToHtml(template, doc);
+  html = injectPrerender(html, pageIdFromPath(path), path, language, siteContent);
+  writeFileSync(dest, html);
+  console.log(`Prepared ${dest}`);
+}
+
 // English at the root, then /he/, /ru/ and /ar/ copies with their own lang, dir,
 // title, description, canonical and hreflang in the static HTML.
 for (const language of LANGUAGES) {
@@ -40,10 +54,7 @@ for (const language of LANGUAGES) {
     if (language !== "en" && target.path === "/404") continue;
     const path = localizedPath(target.path, language);
     const file = language === "en" ? target.file : `${language}/${target.file}`;
-    const dest = join(publicDir, file);
-    mkdirSync(dirname(dest), { recursive: true });
-    writeFileSync(dest, applySeoToHtml(template, seoDocument(path, language)));
-    console.log(`Prepared ${dest}`);
+    writePage(file, path, language);
   }
 }
 

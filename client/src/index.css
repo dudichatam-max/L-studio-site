@@ -1062,3 +1062,52 @@ html[dir="rtl"] .gtips-list { padding: 0 20px 0 0; }
   .gsub h3 { font-size: 19px; }
   .gtips { margin-top: 28px; }
 }
+
+/* Official 1.14 feature list, inside the existing architecture section. */
+.architecture-identity {
+  max-width: 670px;
+  margin: 0 0 22px;
+  color: #d7d4cc;
+  font-size: 17px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.architecture-section[dir="rtl"] .architecture-identity { margin-left: 0; margin-right: auto; }
+.studio-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px 28px;
+  max-width: 1280px;
+  margin: 56px auto 0;
+  padding-top: 28px;
+  border-top: 1px solid rgba(227, 197, 101, 0.28);
+}
+.studio-features article { min-width: 0; }
+.studio-features h3 {
+  margin: 0 0 10px;
+  color: var(--paper);
+  font: 600 22px/1.25 var(--display);
+  letter-spacing: -0.03em;
+  overflow-wrap: anywhere;
+}
+.studio-features p {
+  margin: 0;
+  color: #b7b4ad;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1000px) {
+  .studio-features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .architecture-identity { font-size: 15px; }
+  .studio-features {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+    padding-top: 24px;
+  }
+  .studio-features h3 { font-size: 20px; }
+  .studio-features p { font-size: 15px; }
+}

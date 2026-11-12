@@ -5,6 +5,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel } from "@/lib/updatesCopy";
+import { APP_FACTS } from "@shared/seo";
 
 const SUPPORT_EMAIL = "dudichatam@gmail.com";
 
@@ -343,7 +344,7 @@ export default function Terms() {
           <h1>{titleBlock(language)}</h1>
           <p>{text.hero}</p>
           <div className="privacy-date">
-            {text.date} <span>·</span> L Studio 1.14
+            {text.date} <span>·</span> L Studio {APP_FACTS.softwareVersion}
           </div>
         </section>
         <section className="privacy-intro container">
