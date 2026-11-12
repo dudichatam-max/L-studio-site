@@ -11,6 +11,7 @@ import {
   renderPrerenderInner,
   type SiteContent,
 } from "./prerender";
+import { bidiHtml, splitLatinRuns } from "./bidi";
 import {
   APP_FACTS,
   LANGUAGES,
@@ -320,19 +321,40 @@ for (const language of LANGUAGES) {
   assert(blocks.length === 9, `${language} has 9 official feature blocks`);
   const inner = renderPrerenderInner("home", "/", language, siteContent) ?? "";
   assert(inner.includes("<h2>"), `${language} home prerender has h2`);
+  const visible = (html: string) => html.replace(/<[^>]+>/g, "");
+  const articleOf = (id: string) => {
+    const match = inner.match(new RegExp(`<article id="${id}">([\\s\\S]*?)</article>`));
+    return match?.[1] ?? "";
+  };
   for (const block of blocks) {
+    const article = articleOf(block.id);
     assert(
-      inner.includes(`<h2>${block.title}</h2>`),
+      visible(article).includes(block.title),
       `${language} prerender heading ${block.id}`
     );
-    assert(
-      inner.includes(`<p>${block.body}</p>`),
-      `${language} prerender body ${block.id}`
-    );
+    if (block.id === "drums") {
+      assert(article.includes("<h3>"), `${language} drums prerender has h3`);
+      assert(article.includes("<ul>"), `${language} drums prerender has ul`);
+      assert(Boolean(block.lead) && visible(article).includes(block.lead as string), `${language} drums lead`);
+      assert(Boolean(block.stylesLead) && visible(article).includes(block.stylesLead as string), `${language} drums styles lead`);
+      assert(Boolean(block.channels) && visible(article).includes(block.channels as string), `${language} drums channels`);
+      assert(Boolean(block.packs) && visible(article).includes(block.packs as string), `${language} drums packs`);
+      for (const group of block.styleGroups ?? []) {
+        assert(visible(article).includes(group.genre), `${language} drums genre ${group.genre}`);
+        for (const style of group.styles) {
+          assert(visible(article).includes(style), `${language} drums style ${style}`);
+        }
+      }
+    } else {
+      assert(
+        visible(article).includes(block.body),
+        `${language} prerender body ${block.id}`
+      );
+    }
   }
   const identity = siteContent.languages?.[language]?.underHood?.identity ?? "";
   assert(Boolean(identity), `${language} identity`);
-  assert(inner.includes(identity), `${language} prerender identity`);
+  assert(visible(inner).includes(identity), `${language} prerender identity`);
   const injected = injectPrerender(
     '<html><body><div id="root"></div></body></html>',
     "home",
@@ -356,6 +378,28 @@ assert(
 assert(
   (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("<h2>Sound FX / 8 Bass Worlds</h2>"),
   "English prerender uses Sound FX / 8 Bass Worlds"
+);
+
+const heHome = renderPrerenderInner("home", "/", "he", siteContent) ?? "";
+assert(heHome.includes('<bdi dir="ltr">'), "Hebrew prerender isolates Latin runs");
+assert(heHome.includes('<bdi dir="ltr">Random</bdi>'), "Hebrew prerender isolates Random");
+assert(heHome.includes('<bdi dir="ltr">FX 1</bdi>'), "Hebrew prerender isolates FX 1");
+assert(heHome.includes('<bdi dir="ltr">Performance Pad</bdi>'), "Hebrew prerender isolates Performance Pad");
+assert(heHome.includes('<bdi dir="ltr">3,696</bdi>'), "Hebrew prerender isolates 3,696");
+assert(
+  !heHome.includes("Rap Techno"),
+  "Hebrew prerender does not glue Rap and Techno together"
+);
+const arHome = renderPrerenderInner("home", "/", "ar", siteContent) ?? "";
+assert(arHome.includes('<bdi dir="ltr">Random</bdi>'), "Arabic prerender isolates Random");
+assert(arHome.includes('<bdi dir="ltr">FX 2</bdi>'), "Arabic prerender isolates FX 2");
+assert(
+  splitLatinRuns("FX 1 ו-FX 2").map(part => part.text).join("|") === "FX 1| ו-|FX 2",
+  "FX 1 and FX 2 stay as separate LTR runs in Hebrew"
+);
+assert(
+  bidiHtml("ל-WAV, FLAC ו-MP3", true).includes('<bdi dir="ltr">WAV, FLAC</bdi>'),
+  "mastering export formats are isolated as LTR"
 );
 
 if (failures.length) {

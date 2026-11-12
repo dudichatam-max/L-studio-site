@@ -14,6 +14,9 @@ import { mergeUpdates, updatesNavLabel } from "@/lib/updatesCopy";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import YouTubeFacade from "@/components/YouTubeFacade";
 import { APP_FACTS } from "@shared/seo";
+import { isStructuredDrums, type FeatureBlock } from "@shared/prerender";
+import { BidiText } from "@/components/BidiText";
+import { DrumsCopy } from "@/components/DrumsCopy";
 
 const factoryHero = {
   webp800: `${import.meta.env.BASE_URL}assets/factory-pack-hero-v4-800.webp`,
@@ -320,6 +323,7 @@ export default function Home() {
   const chrome = chromeUi[language];
 
   const features = featureData[language];
+  const drumsFeature = (hood.features as FeatureBlock[] | undefined)?.find(item => item.id === "drums");
   const [mobileOpen, setMobileOpen] = useState(false);
   // First feature open so a real screenshot shows without a click.
   const [activeFeature, setActiveFeature] = useState("sound");
@@ -496,12 +500,16 @@ export default function Home() {
                           {(caption) => (
                             <div className="preview-copy">
                               <span className="kicker">{feature.meta}</span>
-                              <h3>{feature.title}</h3>
-                              <p>{feature.description}</p>
+                              <h3><BidiText text={feature.title} language={language} rtl={isRtl} /></h3>
+                              {feature.id === "drum" && drumsFeature && isStructuredDrums(drumsFeature) ? (
+                                <DrumsCopy feature={drumsFeature} language={language} rtl={isRtl} />
+                              ) : (
+                                <p><BidiText text={feature.description} language={language} rtl={isRtl} /></p>
+                              )}
                               {caption?.title && (
                                 <div className="play-caption" aria-live="polite">
-                                  <h4>{caption.title}</h4>
-                                  {caption.text && <p>{caption.text}</p>}
+                                  <h4><BidiText text={caption.title} language={language} rtl={isRtl} /></h4>
+                                  {caption.text && <p><BidiText text={caption.text} language={language} rtl={isRtl} /></p>}
                                 </div>
                               )}
                             </div>
@@ -523,8 +531,8 @@ export default function Home() {
               <div className="architecture-brand"><SiteLogo compact /></div>
               <span className="kicker">{hood.kicker}</span>
               <h2><Headline text={hood.title} /></h2>
-              <p>{hood.body}</p>
-              {hood.identity ? <p className="architecture-identity">{hood.identity}</p> : null}
+              <p><BidiText text={hood.body} language={language} rtl={isRtl} /></p>
+              {hood.identity ? <p className="architecture-identity"><BidiText text={hood.identity} language={language} rtl={isRtl} /></p> : null}
               <p className="lead-line">{hood.closing}</p>
               <div className="pipeline">{hood.pipeline.map((item: string, index: number) => <span key={item}>{index > 0 && <i>→</i>}{item}</span>)}</div>
               <div className="engine-specs">
@@ -539,10 +547,14 @@ export default function Home() {
           </div>
           {Array.isArray(hood.features) && hood.features.length > 0 ? (
             <div className="container studio-features">
-              {hood.features.map((feature: { id: string; title: string; body: string }) => (
+              {hood.features.map((feature: FeatureBlock) => (
                 <article key={feature.id} id={`studio-${feature.id}`}>
-                  <h3>{feature.title}</h3>
-                  <p>{feature.body}</p>
+                  <h3><BidiText text={feature.title} language={language} rtl={isRtl} /></h3>
+                  {isStructuredDrums(feature) ? (
+                    <DrumsCopy feature={feature} language={language} rtl={isRtl} />
+                  ) : (
+                    <p><BidiText text={feature.body} language={language} rtl={isRtl} /></p>
+                  )}
                 </article>
               ))}
             </div>
