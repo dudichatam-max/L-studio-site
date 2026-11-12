@@ -1161,6 +1161,22 @@ html[dir="rtl"] .gtips-list { padding: 0 20px 0 0; }
 }
 bdi[dir="ltr"] {
   unicode-bidi: isolate;
+  display: inline-block;
+  max-width: 100%;
   overflow-wrap: anywhere;
+  vertical-align: baseline;
 }
+.drums-style-groups li {
+  direction: ltr;
+  justify-content: flex-start;
+}
+.site-shell[dir="rtl"] .drums-style-groups li,
+[dir="rtl"] .drums-style-groups li {
+  justify-content: flex-end;
+}
+.site-shell[dir="rtl"] .drums-channel-names .drums-style-chips,
+[dir="rtl"] .drums-channel-names .drums-style-chips {
+  justify-content: flex-end;
+}
+
 

@@ -26,6 +26,9 @@ export type FeatureBlock = {
   stylesLead?: string;
   styleGroups?: StyleGroup[];
   channels?: string;
+  channelsLead?: string;
+  channelNames?: string[];
+  channelsNote?: string;
   packs?: string;
 };
 
@@ -58,6 +61,9 @@ export function isStructuredDrums(
   stylesLead: string;
   styleGroups: StyleGroup[];
   channels: string;
+  channelsLead: string;
+  channelNames: string[];
+  channelsNote: string;
   packs: string;
 } {
   return Boolean(
@@ -71,6 +77,10 @@ export function isStructuredDrums(
         group => group.genre && Array.isArray(group.styles) && group.styles.length === 4
       ) &&
       block.channels &&
+      block.channelsLead &&
+      Array.isArray(block.channelNames) &&
+      block.channelNames.length === 8 &&
+      block.channelsNote &&
       block.packs
   );
 }
@@ -100,6 +110,9 @@ export function homeFeatureBlocks(
       stylesLead: block.stylesLead,
       styleGroups: block.styleGroups,
       channels: block.channels,
+      channelsLead: block.channelsLead,
+      channelNames: block.channelNames,
+      channelsNote: block.channelsNote,
       packs: block.packs,
     };
   });
@@ -127,7 +140,13 @@ function renderDrumsArticle(feature: FeatureBlock, language: Language): string {
     `        <ul>`,
     items,
     `        </ul>`,
-    `        <p>${rtlMark(language, feature.channels)}</p>`,
+    `        <p>${rtlMark(language, feature.channelsLead)}</p>`,
+    `        <ul>`,
+    ...feature.channelNames.map(
+      name => `          <li>${rtlMark(language, name)}</li>`
+    ),
+    `        </ul>`,
+    `        <p>${rtlMark(language, feature.channelsNote)}</p>`,
     `        <p>${rtlMark(language, feature.packs)}</p>`,
     `      </article>`,
   ].join("\n");
