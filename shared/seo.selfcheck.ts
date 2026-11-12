@@ -6,6 +6,12 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  homeFeatureBlocks,
+  injectPrerender,
+  renderPrerenderInner,
+  type SiteContent,
+} from "./prerender";
+import {
   APP_FACTS,
   LANGUAGES,
   languageFromPath,
@@ -27,6 +33,13 @@ const failures: string[] = [];
 function assert(condition: boolean, message: string) {
   if (!condition) failures.push(message);
 }
+
+const APPROVED_HOME_TITLES: Record<Language, string> = {
+  en: "L Studio: Microtonal Synth, Looper, Drums, Mic & Mastering — A Full Studio in Your Phone",
+  he: "L Studio: סינתיסייזר מיקרוטונאלי, לופר, תופים, מיקרופון ומאסטרינג — אולפן מלא בפלאפון",
+  ru: "L Studio: микротональный синтезатор, лупер, ударные, микрофон и мастеринг — полная студия в вашем телефоне",
+  ar: "L Studio: سنث مايكروتونال، لوبر، طبول، ميكروفون وماسترنغ — استوديو كامل في هاتفك",
+};
 
 const pages: SeoPageId[] = [
   "home",
@@ -73,12 +86,23 @@ for (const page of pages) {
       doc.description.trim().length > 0,
       `${page}/${language} description`
     );
+    // David's exact home title (and its localized equivalents) may keep the
+    // typographic dash and the phrase "A Full Studio in Your Phone".
+    const titleForDash = doc.title === APPROVED_HOME_TITLES[language] ? "L Studio" : doc.title;
+    const studioText = `${titleForDash} ${doc.description}`
+      .replace(/L Studio/g, "")
+      .replace(/A Full Studio in Your Phone/gi, "")
+      .replace(/אולפן מלא בפלאפון/g, "")
+      .replace(/полная студия в вашем телефоне/gi, "")
+      .replace(/استوديو كامل في هاتفك/g, "")
+      .replace(/mic studio/gi, "")
+      .replace(/סטודיו מיקרופון/g, "");
     assert(
-      !doc.title.includes("—") && !doc.description.includes("—"),
+      !titleForDash.includes("—") && !doc.description.includes("—"),
       `${page}/${language} has an em dash`
     );
     assert(
-      !doc.title.includes("–") && !doc.description.includes("–"),
+      !titleForDash.includes("–") && !doc.description.includes("–"),
       `${page}/${language} has an en dash`
     );
     assert(
@@ -86,7 +110,7 @@ for (const page of pages) {
       `${page}/${language} calls the product a DAW`
     );
     assert(
-      !/workstation|תחנת עבודה|рабочая станция|محطة عمل|studio(?! *L)|סטודיו/i.test(`${doc.title} ${doc.description}`.replace(/L Studio/g, "")),
+      !/workstation|תחנת עבודה|рабочая станция|محطة عمل|studio(?! *L)|סטודיו/i.test(studioText),
       `${page}/${language} uses workstation or studio wording`
     );
     const app = doc.jsonLd["@graph"][1];
@@ -96,7 +120,7 @@ for (const page of pages) {
       "applicationCategory"
     );
     assert(app.operatingSystem === "Android 7.0+", "operatingSystem (minSdk 24)");
-    assert(app.softwareVersion === "1.14", "softwareVersion");
+    assert(app.softwareVersion === APP_FACTS.softwareVersion, "softwareVersion");
     assert(app.name === "L Studio", "app name");
     // Price set by David for the public Google Play launch: $8. Do not change without him.
     assert(
@@ -199,7 +223,7 @@ assert(
   "MobileApplication node"
 );
 assert(homeHe["@graph"][1].url === "https://l-studio.studio/he/", "Hebrew app url");
-assert(APP_FACTS.softwareVersion === "1.14", "app facts version");
+assert(Boolean(APP_FACTS.softwareVersion), "app facts version is set");
 assert(homeHe["@graph"][0].inLanguage === "he", "Hebrew inLanguage");
 assert(
   homeEn["@graph"][0].description !== homeHe["@graph"][0].description,
@@ -237,7 +261,7 @@ assert(
   "Hebrew hreflang injection"
 );
 assert(
-  hebrewHome.includes("אפליקציה ליצירת מוזיקה באנדרואיד"),
+  hebrewHome.includes("סינתיסייזר מיקרוטונאלי"),
   "Hebrew title injection"
 );
 
@@ -280,6 +304,58 @@ const languages: Language[] = ["en", "he", "ru", "ar"];
 assert(
   languages.every(language => seoDocument("/", language).ogLocale.length > 0),
   "og:locale"
+);
+
+
+const siteContent = JSON.parse(
+  readFileSync(join(root, "content.json"), "utf8")
+) as SiteContent;
+for (const language of LANGUAGES) {
+  const homeTitle = seoDocument("/", language).title;
+  assert(
+    homeTitle === APPROVED_HOME_TITLES[language],
+    `${language} home title matches the approved wording`
+  );
+  const blocks = homeFeatureBlocks(siteContent, language);
+  assert(blocks.length === 9, `${language} has 9 official feature blocks`);
+  const inner = renderPrerenderInner("home", "/", language, siteContent) ?? "";
+  assert(inner.includes("<h2>"), `${language} home prerender has h2`);
+  for (const block of blocks) {
+    assert(
+      inner.includes(`<h2>${block.title}</h2>`),
+      `${language} prerender heading ${block.id}`
+    );
+    assert(
+      inner.includes(`<p>${block.body}</p>`),
+      `${language} prerender body ${block.id}`
+    );
+  }
+  const identity = siteContent.languages?.[language]?.underHood?.identity ?? "";
+  assert(Boolean(identity), `${language} identity`);
+  assert(inner.includes(identity), `${language} prerender identity`);
+  const injected = injectPrerender(
+    '<html><body><div id="root"></div></body></html>',
+    "home",
+    "/",
+    language,
+    siteContent
+  );
+  assert(
+    injected.includes('<main class="seo-prerender" hidden>'),
+    `${language} prerender is in #root`
+  );
+  const updatesInner = renderPrerenderInner("updates", "/updates/", language, siteContent) ?? "";
+  assert(updatesInner.includes("<h1>"), `${language} updates prerender h1`);
+  const guideInner = renderPrerenderInner("guide", "/guide/", language, siteContent) ?? "";
+  assert(guideInner.includes("<h1>"), `${language} guide prerender h1`);
+}
+assert(
+  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("<h2>Free Tuning</h2>"),
+  "English prerender uses Free Tuning"
+);
+assert(
+  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("<h2>Sound FX / 8 Bass Worlds</h2>"),
+  "English prerender uses Sound FX / 8 Bass Worlds"
 );
 
 if (failures.length) {

@@ -205,6 +205,16 @@ Under the feature graphic, a "Demo video" tab (`demoCopy` in `client/src/pages/H
 - Drum (1.11, 6 slides; the sample shaping slide was removed at David's request): all 8 rows open after +4 with no keyboard (`drum-rows`, David's Oct 20 shot cropped y 68..1540), main Drum screen (`drum-tab`), sample banks, LOADED (`drum-loaded-trim` + `drum-loaded-rename`), Drum FX, Pattern repeats (`drum-repeats-phone`, the real 1.11 Drum window with the 1-88 box and COPY/PASTE). Cache key `CAROUSEL_VER` in `carousel.ts` (bump it whenever posters change).
 - Slide titles and texts (and the optional `alt`) are in `languages.*.carousel.slides`. Short, what the screen does, verified against the app code, no em-dashes, no DAW, pro or studio wording.
 
+## SEO, crawlable sections, and official 1.14 feature set (2026-11-12)
+
+Head titles, meta descriptions, og/twitter and JSON-LD descriptions now follow David's homepage wording, in all four languages. The English title is his exact text, including the typographic dash and "A Full Studio in Your Phone". Body copy has no em-dashes and does not call L Studio a DAW.
+
+The Play version on badges is `APP_FACTS.softwareVersion` in `shared/seo.ts` (currently 1.14). Privacy, Terms, the hero fallback kicker, and JSON-LD `softwareVersion` read that one constant. To switch the badges to 1.15 later, change that value and then the matching sentences in `content.json` / `shared/pro-copy.json`.
+
+Homepage, `/guide` and `/updates` (and the other language roots) get a hidden semantic HTML snapshot in `#root` at prepare-pages time, so `curl` and crawlers see `h2`/`h3`/`p` before JavaScript. React replaces `#root` on boot, so the designed UI is unchanged. Official feature copy lives in `languages.*.underHood.identity` and `languages.*.underHood.features` (nine blocks: Free Tuning, Sound Design, Sound FX / 8 Bass Worlds, Looper, Drums, Mic Studio, Performance Pad, Analog Mixer, Mastering). It is also rendered visibly in the existing architecture section. The 1.15 in-development card and ticker were not changed.
+
+Verified against app tag `v1.14-smoke-passed` (`68b45e9`). One wording change from the brief: not all 8 Bass Worlds follow drum tempo (four clockless worlds follow Rate only); the published line says clocked worlds can follow the drum tempo when SYNC is on.
+
 ## Updates: 1.15 title drops LIVE mode (2026-11-11)
 
 LIVE mode has been in the app since 1.09. Do not present it as new in 1.15. On `app-1-15-in-development`, the title and ticker (and the matching lines in `updatesFallback.json`) name Custom drum kits instead: EN "Custom drum kits", HE "ערכות תופים אישיות", RU "пользовательские наборы ударных", AR "أطقم طبول مخصصة". The looper still-alt describes the poster without calling LIVE a 1.15 feature. Intro, bullets, banner and carousel stay as they are. Status stays `in_progress`.

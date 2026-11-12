@@ -53,26 +53,24 @@ const CANONICAL_PATH: Record<Exclude<SeoPageId, "not-found">, string> = {
 const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
   home: {
     en: {
-      title: "L Studio: Android Music App with Looper, Drums and Mic",
+      title: "L Studio: Microtonal Synth, Looper, Drums, Mic & Mastering — A Full Studio in Your Phone",
       description:
-        "Make music on your Android phone. A looper with 8 pages and 4 channels per page, 8 drum kits, mic recording, a lyrics window that scrolls while you sing, and keys you tune to your own frequencies. Version 1.14.",
-      socialDescription:
-        "Make music on your Android phone: looper, drums, mic, lyrics and keys you tune yourself.",
+        "Make music on your Android phone. Free tuning in Hz & microtonal scales, 4-operator FM synth, a 32-channel looper (8 pages × 4), 8 drum kits, 6-track mic studio with a lyrics window that scrolls while you sing, analog mixer and LUFS mastering. No ads, no account, fully offline.",
     },
     he: {
-      title: "L Studio: אפליקציה ליצירת מוזיקה באנדרואיד, לופר ותופים",
+      title: "L Studio: סינתיסייזר מיקרוטונאלי, לופר, תופים, מיקרופון ומאסטרינג — אולפן מלא בפלאפון",
       description:
-        "יוצרים מוזיקה בפלאפון האנדרואיד: לופר עם 8 עמודים ו-4 ערוצים בכל עמוד, 8 ערכות תופים, הקלטה במיקרופון, חלון מילים שגולל בזמן שאתם שרים, וקלידים שמכוונים לתדרים משלכם. גרסה 1.14.",
+        "יוצרים מוזיקה בפלאפון האנדרואיד. כוונון חופשי בהרץ וסולמות מיקרוטונאליים, סינתיסייזר FM ב-4 אופרטורים, לופר ב-32 ערוצים (8 עמודים × 4), 8 ערכות תופים, סטודיו מיקרופון ב-6 ערוצים עם חלון מילים שגולל בזמן שאתם שרים, מיקסר אנלוגי ומאסטרינג ב-LUFS. בלי פרסומות, בלי חשבון, אופליין מלא.",
     },
     ru: {
-      title: "L Studio: приложение для создания музыки на Android, лупер и барабаны",
+      title: "L Studio: микротональный синтезатор, лупер, ударные, микрофон и мастеринг — полная студия в вашем телефоне",
       description:
-        "Создавай музыку на телефоне с Android: лупер с 8 страницами и 4 каналами на каждой, 8 наборов барабанов, запись с микрофона, окно текста, которое прокручивается, пока ты поёшь, и клавиши, которые ты настраиваешь на свои частоты. Версия 1.14.",
+        "Создавай музыку на телефоне с Android. Свободная настройка в Гц и микротональные гаммы, 4-операторный FM-синтезатор, 32-канальный лупер (8 страниц × 4), 8 ударных наборов, микрофонная студия на 6 дорожках с окном текста, которое прокручивается, пока ты поёшь, аналоговый микшер и мастеринг по LUFS. Без рекламы, без аккаунта, полностью офлайн.",
     },
     ar: {
-      title: "L Studio: تطبيق لصنع الموسيقى على أندرويد، لوبر وطبول",
+      title: "L Studio: سنث مايكروتونال، لوبر، طبول، ميكروفون وماسترنغ — استوديو كامل في هاتفك",
       description:
-        "اصنع الموسيقى على هاتف أندرويد: لوبر بـ8 صفحات و4 قنوات في كل صفحة، 8 مجموعات طبول، تسجيل بالميكروفون، نافذة كلمات تمرّ وأنت تغني، ومفاتيح تضبطها على تردداتك الخاصة. الإصدار 1.14.",
+        "اصنع الموسيقى على هاتف أندرويد. ضبط حر بالهرتز وسلالم مايكروتونالية، سنث FM بأربعة مشغلات، لوبر بـ32 قناة (8 صفحات × 4)، 8 مجموعات طبول، استوديو ميكروفون بـ6 مسارات مع نافذة كلمات تمرّ وأنت تغني، مكسر تناظري وماسترنغ بـLUFS. بلا إعلانات، بلا حساب، ويعمل دون اتصال بالكامل.",
     },
   },
   privacy: {
@@ -337,12 +335,13 @@ type SeoMobileApplication = {
 };
 
 /**
- * App facts for structured data. Source: app repo dudichatam-max/L-studio,
- * release build 1.14 @ 68b45e9 (versionCode 14, Play listing updated 2026-11-05), minSdk 24 = Android 7.0.
- * Version 1.14 is live on Google Play (updated Nov 5, 2026; David confirmed in site chat 2026-11-06).
- * Size: see the fileSize line below.
+ * App facts for structured data, and the ONE Play-version constant for site badges.
+ * Change softwareVersion here when the current Google Play version changes (then
+ * update Privacy/Terms/hero fallbacks automatically, and the matching sentences
+ * in content.json). Source: app repo dudichatam-max/L-studio, release build 1.14
+ * @ 68b45e9 / tag v1.14-smoke-passed (versionCode 14, Play listing updated 2026-11-05),
+ * minSdk 24 = Android 7.0. Size: see the fileSize line below.
  * Price: David, 2026-10-08, L Studio Pro on Google Play for $8.
- * No installUrl or Play link until the public Google Play listing is live.
  */
 export const APP_FACTS = {
   operatingSystem: "Android 7.0+",

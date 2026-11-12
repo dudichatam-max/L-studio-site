@@ -88,7 +88,55 @@
           "WAV"
         ],
         "specsTitle": "מפת נתיב האודיו",
-        "specsBody": "מבט מעשי על הדרך שעוברת בין נגיעה לצליל."
+        "specsBody": "מבט מעשי על הדרך שעוברת בין נגיעה לצליל.",
+        "identity": "לאנשים אנלוגיים בעולם דיגיטלי. בלי פרסומות, בלי חשבון, אופליין מלא. כל צליל מעובד במנוע האודיו של L Studio, בזמן אמת.",
+        "features": [
+          {
+            "id": "free-tuning",
+            "title": "כוונון חופשי",
+            "body": "8 קלידים, לכל אחד תדר משלו בהרץ, ניתן לעריכה עד שתי ספרות אחרי הנקודה. סולמות מוכנים: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd ו-Pentatonic. ייצוא MIDI שומר את הפיץ' המיקרוטונאלי באמצעות Pitch Bend."
+          },
+          {
+            "id": "sound-design",
+            "title": "עיצוב סאונד",
+            "body": "גלי Sine, Square, Triangle, Saw ו-Noise, עם 4 עמודי גל לכל גל, 64 פריסטים של Factory 64, ו-FM אמיתי ב-4 אופרטורים עם 8 אלגוריתמים לבחירה."
+          },
+          {
+            "id": "sound-fx",
+            "title": "Sound FX / 8 עולמות בס",
+            "body": "8 עולמות בס ב-Sound FX. עולמות שעובדים עם שעון יכולים לעקוב אחרי טמפו התופים כש-SYNC דולק."
+          },
+          {
+            "id": "looper",
+            "title": "לופר",
+            "body": "לופר אודיו אמיתי ב-32 ערוצים, ב-8 עמודים של 4."
+          },
+          {
+            "id": "drums",
+            "title": "תופים",
+            "body": "8 ערכות תופים, עם 8 ערוצים ו-16 צעדים."
+          },
+          {
+            "id": "mic-studio",
+            "title": "סטודיו מיקרופון",
+            "body": "הקלטה במיקרופון ב-6 ערוצים, עם חלון מילים שגולל בזמן שאתם שרים."
+          },
+          {
+            "id": "performance-pad",
+            "title": "Performance Pad",
+            "body": "פד הופעה לניגון ולעיצוב הסאונד בזמן אמת, כולל KEY, MIC, LOOP ו-DRUM."
+          },
+          {
+            "id": "analog-mixer",
+            "title": "מיקסר אנלוגי",
+            "body": "פסים אנלוגיים ל-DRUMS, LOOPER ו-MIC, ועוד מקטע MASTER."
+          },
+          {
+            "id": "mastering",
+            "title": "מאסטרינג",
+            "body": "מאסטרינג במכשיר עם 8 סגנונות, תצוגת A/B חיה, LUFS, LRA, true peak ב-4x, וייצוא ל-WAV, FLAC ו-MP3."
+          }
+        ]
       },
       "justStart": {
         "kicker": "04 / JUST START",
@@ -4024,7 +4072,55 @@
           "WAV"
         ],
         "specsTitle": "Technical signal map",
-        "specsBody": "A practical view of what happens between touch and sound."
+        "specsBody": "A practical view of what happens between touch and sound.",
+        "identity": "For analog people in a digital world. No ads, no account, fully offline. Every sound is rendered by L Studio's own audio engine, in real time.",
+        "features": [
+          {
+            "id": "free-tuning",
+            "title": "Free Tuning",
+            "body": "8 keys, each with its own frequency in Hz, editable to two decimals. Ready scales: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd and Pentatonic. MIDI export keeps microtonal pitch via Pitch Bend."
+          },
+          {
+            "id": "sound-design",
+            "title": "Sound Design",
+            "body": "Waves: Sine, Square, Triangle, Saw and Noise, with 4 wave pages per wave, Factory 64 presets, and real 4-operator FM with 8 selectable algorithms."
+          },
+          {
+            "id": "sound-fx",
+            "title": "Sound FX / 8 Bass Worlds",
+            "body": "8 Bass Worlds in Sound FX. Worlds that use a clock can follow the drum tempo when SYNC is on."
+          },
+          {
+            "id": "looper",
+            "title": "Looper",
+            "body": "A 32-channel real-audio looper, in 8 pages of 4."
+          },
+          {
+            "id": "drums",
+            "title": "Drums",
+            "body": "8 drum kits, with 8 channels and 16 steps."
+          },
+          {
+            "id": "mic-studio",
+            "title": "Mic Studio",
+            "body": "6-track mic recording, with a lyrics teleprompter that scrolls while you sing."
+          },
+          {
+            "id": "performance-pad",
+            "title": "Performance Pad",
+            "body": "A Performance Pad for playing and shaping the sound live, including KEY, MIC, LOOP and DRUM."
+          },
+          {
+            "id": "analog-mixer",
+            "title": "Analog Mixer",
+            "body": "Analog mixer strips for DRUMS, LOOPER and MIC, plus a MASTER section."
+          },
+          {
+            "id": "mastering",
+            "title": "Mastering",
+            "body": "On-device Mastering with 8 styles, A/B live preview, LUFS, LRA, 4x true peak, and export to WAV, FLAC and MP3."
+          }
+        ]
       },
       "justStart": {
         "kicker": "04 / JUST START",
@@ -7960,7 +8056,55 @@
           "WAV"
         ],
         "specsTitle": "Карта аудиосигнала",
-        "specsBody": "Практический взгляд на путь от касания до звука."
+        "specsBody": "Практический взгляд на путь от касания до звука.",
+        "identity": "Для аналоговых людей в цифровом мире. Без рекламы, без аккаунта, полностью офлайн. Каждый звук рендерится собственным аудиодвижком L Studio, в реальном времени.",
+        "features": [
+          {
+            "id": "free-tuning",
+            "title": "Свободная настройка",
+            "body": "8 клавиш, у каждой своя частота в Гц, с правкой до двух знаков после запятой. Готовые гаммы: Major, Minor, Harmonic, Dorian, Mixolydian, Hijaz, Kurd и Pentatonic. Экспорт MIDI сохраняет микротональную высоту через Pitch Bend."
+          },
+          {
+            "id": "sound-design",
+            "title": "Саунд-дизайн",
+            "body": "Волны Sine, Square, Triangle, Saw и Noise, по 4 страницы волны на каждый тип, пресеты Factory 64 и настоящий 4-операторный FM с 8 выбираемыми алгоритмами."
+          },
+          {
+            "id": "sound-fx",
+            "title": "Sound FX / 8 басовых миров",
+            "body": "8 басовых миров в Sound FX. Миры с часами могут следовать темпу ударных, когда включён SYNC."
+          },
+          {
+            "id": "looper",
+            "title": "Лупер",
+            "body": "32-канальный лупер реального аудио, 8 страниц по 4 канала."
+          },
+          {
+            "id": "drums",
+            "title": "Ударные",
+            "body": "8 ударных наборов, с 8 каналами и 16 шагами."
+          },
+          {
+            "id": "mic-studio",
+            "title": "Микрофонная студия",
+            "body": "Запись с микрофона на 6 дорожках, с телесуфлёром текста, который прокручивается, пока ты поёшь."
+          },
+          {
+            "id": "performance-pad",
+            "title": "Performance Pad",
+            "body": "Performance Pad, чтобы играть и формировать звук вживую, включая KEY, MIC, LOOP и DRUM."
+          },
+          {
+            "id": "analog-mixer",
+            "title": "Аналоговый микшер",
+            "body": "Аналоговые полосы DRUMS, LOOPER и MIC, плюс секция MASTER."
+          },
+          {
+            "id": "mastering",
+            "title": "Мастеринг",
+            "body": "Мастеринг на устройстве: 8 стилей, живой предпросмотр A/B, LUFS, LRA, true peak с передискретизацией 4x, экспорт в WAV, FLAC и MP3."
+          }
+        ]
       },
       "justStart": {
         "kicker": "04 / JUST START",
@@ -11896,7 +12040,55 @@
           "WAV"
         ],
         "specsTitle": "خريطة مسار الصوت",
-        "specsBody": "نظرة عملية على الطريق بين اللمسة والصوت."
+        "specsBody": "نظرة عملية على الطريق بين اللمسة والصوت.",
+        "identity": "للأشخاص التناظريين في عالم رقمي. بلا إعلانات، بلا حساب، ويعمل دون اتصال بالكامل. كل صوت يُنتج بواسطة محرك الصوت الخاص بـ L Studio، في الوقت الفعلي.",
+        "features": [
+          {
+            "id": "free-tuning",
+            "title": "ضبط حر",
+            "body": "8 مفاتيح، لكل منها تردده الخاص بالهرتز، قابل للتعديل حتى منزلتين عشريتين. سلالم جاهزة: Major وMinor وHarmonic وDorian وMixolydian وHijaz وKurd وPentatonic. تصدير MIDI يحفظ الطبقة المايكروتونالية عبر Pitch Bend."
+          },
+          {
+            "id": "sound-design",
+            "title": "تصميم الصوت",
+            "body": "موجات Sine وSquare وTriangle وSaw وNoise، مع 4 صفحات موجة لكل نوع، وإعدادات Factory 64 الجاهزة، وFM حقيقي بأربعة مشغلات و8 خوارزميات قابلة للاختيار."
+          },
+          {
+            "id": "sound-fx",
+            "title": "Sound FX / 8 عوالم باس",
+            "body": "8 عوالم باس في Sound FX. العوالم التي تستخدم ساعة يمكن أن تتبع إيقاع الطبول عندما يكون SYNC مفعّلاً."
+          },
+          {
+            "id": "looper",
+            "title": "اللوبر",
+            "body": "لوبر صوت حقيقي بـ32 قناة، في 8 صفحات من 4."
+          },
+          {
+            "id": "drums",
+            "title": "الطبول",
+            "body": "8 مجموعات طبول، مع 8 قنوات و16 خطوة."
+          },
+          {
+            "id": "mic-studio",
+            "title": "استوديو الميكروفون",
+            "body": "تسجيل بالميكروفون على 6 مسارات، مع نافذة كلمات تمرّ وأنت تغني."
+          },
+          {
+            "id": "performance-pad",
+            "title": "Performance Pad",
+            "body": "لوحة أداء لعزف الصوت وتشكيله مباشرة، بما في ذلك KEY وMIC وLOOP وDRUM."
+          },
+          {
+            "id": "analog-mixer",
+            "title": "المكسر التناظري",
+            "body": "شرائط مكسر تناظرية لـ DRUMS وLOOPER وMIC، إضافة إلى قسم MASTER."
+          },
+          {
+            "id": "mastering",
+            "title": "الماسترنغ",
+            "body": "ماسترنغ على الجهاز مع 8 أساليب، ومعاينة A/B مباشرة، وLUFS وLRA وtrue peak بـ4x، وتصدير إلى WAV وFLAC وMP3."
+          }
+        ]
       },
       "justStart": {
         "kicker": "04 / JUST START",
