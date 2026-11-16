@@ -15,7 +15,7 @@
         "updates": "עדכונים"
       },
       "hero": {
-        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.14, עכשיו ב-Google Play",
+        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.15, עכשיו ב-Google Play",
         "title": "יוצרים מוזיקה בפלאפון.",
         "body": "L Studio היא אפליקציה ליצירת מוזיקה בפלאפון האנדרואיד. מקליטים לופים, מוסיפים תופים, שרים עם המילים מול העיניים, ואם בא לכם לצאת מהתווים הרגילים, מכוונים כל קליד לתדר משלו.",
         "ctaPrimary": "לצפייה בסרטון הקצר",
@@ -112,20 +112,61 @@
             "body": "לופר אודיו אמיתי ב-32 ערוצים, ב-8 עמודים של 4."
           },
           {
-                        "id": "drums",
+            "id": "drums",
             "title": "תופים",
             "body": "התופים עובדים ב-8 ערוצים ו-16 צעדים, עם 8 ערכות בכל חבילה. כפתור Random בונה מקצב באחד מ-16 סגנונות, בארבע קבוצות: Rock (Classic, Hard, Punk, Indie), Trance (Psytrance, Goa, Hi-Tech, Progressive), Rap (Boom Bap, Trap, Drill, Lo-fi) ו-Techno (Detroit, Minimal, Melodic, Hard Techno). בכל סגנון אפשר לבחור סאמפלי Genre לכל ערוץ: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 ו-Voice, 33 סאמפלים בכל תא. FX 1 ו-FX 2 חולקים תא Genre אחד, כך שבנק ה-Genre מחזיק 3,696 סאמפלים ייחודיים. ב-Pro כלולות גם 8 חבילות Factory ו-11 חבילות Exclusive, 152 ערכות בסך הכול, שמורות בפלאפון וזמינות אופליין.",
             "lead": "התופים עובדים ב-8 ערוצים ו-16 צעדים, עם 8 ערכות בכל חבילה.",
             "stylesLead": "כפתור Random בונה מקצב באחד מ-16 סגנונות, בארבע קבוצות:",
             "styleGroups": [
-              { "genre": "Rock", "styles": ["Classic", "Hard", "Punk", "Indie"] },
-              { "genre": "Trance", "styles": ["Psytrance", "Goa", "Hi-Tech", "Progressive"] },
-              { "genre": "Rap", "styles": ["Boom Bap", "Trap", "Drill", "Lo-fi"] },
-              { "genre": "Techno", "styles": ["Detroit", "Minimal", "Melodic", "Hard Techno"] }
+              {
+                "genre": "Rock",
+                "styles": [
+                  "Classic",
+                  "Hard",
+                  "Punk",
+                  "Indie"
+                ]
+              },
+              {
+                "genre": "Trance",
+                "styles": [
+                  "Psytrance",
+                  "Goa",
+                  "Hi-Tech",
+                  "Progressive"
+                ]
+              },
+              {
+                "genre": "Rap",
+                "styles": [
+                  "Boom Bap",
+                  "Trap",
+                  "Drill",
+                  "Lo-fi"
+                ]
+              },
+              {
+                "genre": "Techno",
+                "styles": [
+                  "Detroit",
+                  "Minimal",
+                  "Melodic",
+                  "Hard Techno"
+                ]
+              }
             ],
             "channels": "בכל סגנון אפשר לבחור סאמפלי Genre לכל ערוץ: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 ו-Voice, 33 סאמפלים בכל תא. FX 1 ו-FX 2 חולקים תא Genre אחד, כך שבנק ה-Genre מחזיק 3,696 סאמפלים ייחודיים.",
             "channelsLead": "בכל סגנון אפשר לבחור סאמפלי Genre לכל ערוץ:",
-            "channelNames": ["Kick", "Snare", "Hi-Hat", "Perc", "Bass", "FX 1", "FX 2", "Voice"],
+            "channelNames": [
+              "Kick",
+              "Snare",
+              "Hi-Hat",
+              "Perc",
+              "Bass",
+              "FX 1",
+              "FX 2",
+              "Voice"
+            ],
             "channelsNote": "33 סאמפלים בכל תא. FX 1 ו-FX 2 חולקים תא Genre אחד, כך שבנק ה-Genre מחזיק 3,696 סאמפלים ייחודיים.",
             "packs": "ב-Pro כלולות גם 8 חבילות Factory ו-11 חבילות Exclusive, 152 ערכות בסך הכול, שמורות בפלאפון וזמינות אופליין."
           },
@@ -208,7 +249,7 @@
           {
             "question": "האפליקציה כבר בגוגל פליי? וכמה היא עולה?",
             "answer": [
-              "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.14, שמביאה ביטים לפי ז'אנר, פייד, פדל לפסנתר ו-Sound FX ברורים יותר, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. מי שקונה Pro מקבל את גרסה 1.14 דרך Google Play. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+              "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.15, שמביאה Humanize, Ratchet וערכות תופים אישיות, בנוסף לביטים לפי ז'אנר, למיקסר האנלוגי ולחלון המאסטרינג. מי שקונה Pro מקבל את גרסה 1.15 דרך Google Play. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
               "קונים אותה דרך Google Play. האתר הזה לא מוכר את האפליקציה ואין בו כפתור הורדה."
             ]
           },
@@ -224,7 +265,7 @@
           {
             "question": "על אילו מכשירים זה רץ, ובאילו שפות?",
             "answer": [
-              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה. גרסה 1.14 היא 160.1MB. אין כרגע גרסה לאייפון.",
+              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה. גרסה 1.15 היא 160.1MB. אין כרגע גרסה לאייפון.",
               "האפליקציה נבדקה על טלפוני אנדרואיד שונים. היא לא נבדקה על טאבלטים, ולכן אין הבטחה לתמיכה בטאבלט.",
               "בפלאפון האפליקציה נשארת זקופה, לאורך.",
               "האפליקציה בארבע שפות: עברית, אנגלית, רוסית וערבית. מחליפים ב-Settings, בשורה Language."
@@ -261,7 +302,7 @@
             "answer": [
               "המיקסר האנלוגי נפתח בהקשה על LIVE SCOPE בראש המסך. לתופים, ללופר ולמיק יש ערוץ עם Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S ופיידר. ערוץ ה-Master עובד על כל המיקס. SPECTRUM ו-MIX MAP מראים איפה הערוצים יושבים ואיפה הם מתנגשים. יש 8 פריסטים.",
               "חלון המאסטרינג מסיים הקלטת WAV או שיר מיובא לקראת שירותי הסטרימינג. בוחרים אחד מ-8 סגנונות, מאזינים ל-A (לפני) ול-B (הסגנון), ואז מקישים Start mastering ומייצאים. הוא נפתח אחרי הקלטת WAV ‏(Master this take) או מ-MASTERING ב-Settings.",
-              "שניהם הגיעו בגרסה 1.12, וגם גרסה 1.14 ב-Google Play כוללת אותם."
+              "שניהם הגיעו בגרסה 1.12, וגם גרסה 1.15 ב-Google Play כוללת אותם."
             ]
           },
           {
@@ -3335,7 +3376,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.14, 160.1MB, שמביאה ביטים לפי ז'אנר, פייד, פדל לפסנתר ו-Sound FX ברורים יותר, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. מי שקונה Pro מקבל את גרסה 1.14 דרך Google Play. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
+        "body": "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.15, 160.1MB, שמביאה Humanize, Ratchet וערכות תופים אישיות, בנוסף לביטים לפי ז'אנר, למיקסר האנלוגי ולחלון המאסטרינג. מי שקונה Pro מקבל את גרסה 1.15 דרך Google Play. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. מי שקונה Pro מקבל גם את חבילת Exclusive בחינם, בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
           "L Studio Pro לאנדרואיד ב-Google Play, ‏24.90 ‏₪",
@@ -3370,7 +3411,7 @@
         "navLabel": "עדכונים",
         "pageTitle": "מה חדש ב-L Studio.",
         "pageKicker": "L-STUDIO / עדכונים",
-        "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.14, שמביאה ביטים לפי ז'אנר, פייד, פדל לפסנתר ו-Sound FX ברורים יותר, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+        "pageIntro": "L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.15, שמביאה Humanize, Ratchet וערכות תופים אישיות, בנוסף לביטים לפי ז'אנר, למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
         "tickerLabel": "עדכונים",
         "statusLabels": {
           "in_progress": "בעבודה",
@@ -3385,10 +3426,10 @@
         "items": [
           {
             "id": "app-1-15-in-development",
-            "status": "in_progress",
-            "title": "בקרוב: גרסה 1.15 עם Humanize, Ratchet וערכות תופים אישיות",
-            "ticker": "בקרוב: גרסה 1.15, בפיתוח: Humanize, Ratchet, ערכות תופים אישיות",
-            "summary": "גרסה 1.15 בפיתוח ועדיין לא ב-Google Play, שם הגרסה הנוכחית היא 1.14.",
+            "status": "shipped",
+            "title": "עכשיו ב-Google Play: גרסה 1.15 עם Humanize, Ratchet וערכות תופים אישיות",
+            "ticker": "עכשיו ב-Google Play: גרסה 1.15 עם Humanize, Ratchet וערכות תופים אישיות",
+            "summary": "גרסה 1.15 עכשיו ב-Google Play (עודכנה ב-16 בנובמבר 2026). היא מביאה כפתורי Humanize ו-Ratchet בחלון התופים, סגנונות Custom עם כפתור New, חלונות מותאמים לטלפונים ולטאבלטים, ניקוי סאמפלי הז'אנר, שמירה חד פעמית בשם Last Auto save 1.14 בעדכון מ-1.14, והחלפת ערכות תופים יציבה יותר.",
             "images": [
               "/assets/updates/115/he/01-sound.jpg",
               "/assets/updates/115/he/02-sound-fx.jpg",
@@ -3426,14 +3467,14 @@
               }
             ],
             "banner": "/assets/updates/115/he/00-feature.jpg",
-            "bannerAlt": "גרסה 1.15 בקרוב: סקירה של Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer ו-Mastering."
+            "bannerAlt": "גרסה 1.15 ב-Google Play: סקירה של Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer ו-Mastering."
           },
           {
             "id": "app-1-14-in-development",
             "status": "shipped",
-            "title": "עכשיו ב-Google Play: גרסה 1.14 עם ביטים לפי ז'אנר, פייד ופדל לפסנתר",
-            "ticker": "עכשיו ב-Google Play: גרסה 1.14 עם ביטים לפי ז'אנר, FADE IN / FADE OUT, פדל לפסנתר",
-            "summary": "גרסה 1.14 עכשיו ב-Google Play (עודכנה ב-5 בנובמבר 2026). היא מביאה ביטים לפי ז'אנר (4 ז'אנרים, 16 סגנונות, 33 סאמפלים חדשים לכל ערוץ תופים בכל סגנון), Random שבונה ביט לפי הסגנון ושומר את הסאמפלים ואת ה-BPM, לשונית Load במקום Loaded, חיתוך Start/End במאסטרינג, FADE IN ו-FADE OUT בלופר ובמיקרופון, פדל סוסטיין לפסנתר בלחיצה ארוכה, ו-Resonance, WARM ו-Sound FX ברורים יותר. קולות התופים (Voice) תואמים לכל סגנון ז'אנר.",
+            "title": "גרסה 1.14 עם ביטים לפי ז'אנר, פייד ופדל לפסנתר",
+            "ticker": "גרסה 1.14 עם ביטים לפי ז'אנר, FADE IN / FADE OUT, פדל לפסנתר",
+            "summary": "גרסה 1.14 ב-Google Play (עודכנה ב-5 בנובמבר 2026). היא מביאה ביטים לפי ז'אנר (4 ז'אנרים, 16 סגנונות, 33 סאמפלים חדשים לכל ערוץ תופים בכל סגנון), Random שבונה ביט לפי הסגנון ושומר את הסאמפלים ואת ה-BPM, לשונית Load במקום Loaded, חיתוך Start/End במאסטרינג, FADE IN ו-FADE OUT בלופר ובמיקרופון, פדל סוסטיין לפסנתר בלחיצה ארוכה, ו-Resonance, WARM ו-Sound FX ברורים יותר. קולות התופים (Voice) תואמים לכל סגנון ז'אנר.",
             "images": [
               "/assets/updates/genre-random-114.jpg",
               "/assets/updates/genre-style-114.jpg",
@@ -3649,7 +3690,7 @@
             "status": "shipped",
             "title": "מאז גרסה 1.11, עכשיו ב-Google Play: סאמפלים משלכם בתופים, Keep playing ואוקטבה לכל גל",
             "ticker": "עכשיו ב-Google Play: עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך",
-            "summary": "מאז גרסה 1.11, עכשיו ב-Google Play עם גרסה 1.14: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
+            "summary": "מאז גרסה 1.11, עכשיו ב-Google Play עם גרסה 1.15: בנק LOADED של עד 88 סאמפלים משלכם בכל שורת תופים, עם חיתוך וכפתורים שמורים לכל סאמפל. וגם Keep playing בעורכי Loop ו-Mic, חזרות פטרן עד 88, אוקטבה לכל גל, והחלפת קיט תופים ב-LIVE. סשנים מעבירים את הסאמפלים הטעונים לטלפון אחר.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "images": [
@@ -3723,7 +3764,7 @@
             "status": "shipped",
             "title": "מאז גרסה 1.10, עכשיו ב-Google Play: Loop Editor, הקלטה של עד 30 דקות ושמירת סשן מלאה",
             "ticker": "עכשיו ב-Google Play: עורך לופ חדש, גם לערוצי המיקרופון, עם חיתוך, אקולייזר ובחירה של איזה מקצב תופים מתנגן עם הלופ וכמה פעמים הוא חוזר",
-            "summary": "מאז גרסה 1.10, עכשיו ב-Google Play עם גרסה 1.14: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
+            "summary": "מאז גרסה 1.10, עכשיו ב-Google Play עם גרסה 1.15: עורך לופים חדש ואותו Mic Editor, הקלטה של עד 30 דקות, שמירת סשן מלאה עם New session, פריסטים בחלון Custom Frequency, בוחר סאמפלים לתופים עם Factory, Exclusive ו-Authentic ל-Voice, וסאמפלים לכל מקצב עם שמירה אוטומטית. וגם שישה כפתורי סאונד בכל שורת תופים, העתקה והדבקה של קצבים, Clear ו-Redo בתופים, ומקשים וחלונות חדשים בסגנון חומרה. וגם השתקה וסולו בערוצי Looper ו-Mic, Load Console עם LOAD, SAVE, EDIT ומחיקה לכל סשן, והתקדמות אמיתית בשמירה ובטעינה. וגם שימוש הרבה פחות בזיכרון.",
             "href": "/guide",
             "cta": "לפתיחת המדריך",
             "sections": [
@@ -3924,39 +3965,24 @@
             "text": "LOADED: עד 88 דגימות משלכם בכל שורה, נשמרות אוטומטית. חותכים עם פסי ההתחלה והסוף. SAVE, RESET, RENAME ו־DELETE."
           },
           "home-sound": {
-            "title": "עצבו את הצליל שלכם",
-            "text": "שלבו סוגי גל, התחילו מצליל מוכן וכוונו כל קליד לסולם שלכם.",
-            "alt": "1/7: עצבו את הצליל שלכם. שלבו סוגי גל, התחילו מצליל מוכן וכוונו כל קליד לסולם שלכם."
+            "title": "עצבו את הסאונד",
+            "text": "עורך הגל, פדאל ססטיין, Drive, והחזקה על PRESETS לשמירה.",
+            "alt": "1/8: עצבו את הסאונד. עורך הגל, פדאל ססטיין, Drive, והחזקה על PRESETS לשמירה."
           },
           "home-looper": {
-            "title": "בנו שכבות של לולאות",
-            "text": "הקליטו לולאות ערוץ אחר ערוץ, חתכו אותן לפי הקצב ובנו מהן קטע שלם.",
-            "alt": "2/7: בנו שכבות של לולאות. הקליטו לולאות ערוץ אחר ערוץ, חתכו אותן לפי הקצב ובנו מהן קטע שלם."
-          },
-          "home-live-pad": {
-            "title": "נגנו בזמן אמת",
-            "text": "שנו את הצליל באצבע אחת והפעילו חזרות בקצב תוך כדי הופעה.",
-            "alt": "3/7: נגנו בזמן אמת. שנו את הצליל באצבע אחת והפעילו חזרות בקצב תוך כדי הופעה."
+            "title": "שכבו לופים",
+            "text": "לופר לבמה ועורך לופ עם חיתוך ו-EQ.",
+            "alt": "4/8: שכבו לופים. לופר לבמה ועורך לופ עם חיתוך ו-EQ."
           },
           "home-drums": {
-            "title": "בנו את הקצב שלכם",
-            "text": "תכנתו תבניות צעד אחר צעד, בחרו כל תוף מתוך ספריות דגימות ועצבו אותו.",
-            "alt": "4/7: בנו את הקצב שלכם. תכנתו תבניות צעד אחר צעד, בחרו כל תוף מתוך ספריות דגימות ועצבו אותו."
+            "title": "בנו את הביט",
+            "text": "Humanize, Ratchet, 16 סגנונות Random Genre, וערכות Exclusive או Custom.",
+            "alt": "5/8: בנו את הביט. Humanize, Ratchet, 16 סגנונות Random Genre, וערכות Exclusive או Custom."
           },
           "home-mixer": {
             "title": "המיקסר האנלוגי שלכם",
-            "text": "ראו היכן יושבים התופים, הלולאות והמיקרופון, ועצבו מהם מיקס אחד מאוזן.",
-            "alt": "5/7: המיקסר האנלוגי שלכם. ראו היכן יושבים התופים, הלולאות והמיקרופון, ועצבו מהם מיקס אחד מאוזן."
-          },
-          "home-mastering-style": {
-            "title": "סיימו את השיר",
-            "text": "בחרו סגנון צליל, השוו לפני ואחרי וייצאו את הקובץ הסופי.",
-            "alt": "6/7: סיימו את השיר. בחרו סגנון צליל, השוו לפני ואחרי וייצאו את הקובץ הסופי."
-          },
-          "home-mastering-measure": {
-            "title": "מדדו כל פרט",
-            "text": "מדידה מדויקת של עוצמה, דינמיקה וסטריאו מראה איך השיר שלכם נשמע באמת.",
-            "alt": "7/7: מדדו כל פרט. מדידה מדויקת של עוצמה, דינמיקה וסטריאו מראה איך השיר שלכם נשמע באמת."
+            "text": "ארבעה פסים ל-Drums, Looper, Mic ו-Master, עם Spectrum ו-Mix Map.",
+            "alt": "7/8: המיקסר האנלוגי שלכם. ארבעה פסים ל-Drums, Looper, Mic ו-Master, עם Spectrum ו-Mix Map."
           },
           "sound-wave-panel": {
             "title": "לוח הגל",
@@ -3993,6 +4019,26 @@
           "drum-fx": {
             "title": "אפקטי Drum",
             "text": "8 פריסטים כמו Tribal Bloom. הקשה מפעילה פריסט, לחיצה ארוכה פותחת AMOUNT, LOW, MID, HIGH, SWEEP, REVERB ו־Transpose."
+          },
+          "home-sound-fx": {
+            "title": "שנים עשר עולמות FX",
+            "text": "12 עולמות אפקטים ב-3 עמודים, כולל FM, עם SYNC לתופים.",
+            "alt": "2/8: שנים עשר עולמות FX. 12 עולמות אפקטים ב-3 עמודים, כולל FM, עם SYNC לתופים."
+          },
+          "home-pad": {
+            "title": "נגנו בלייב",
+            "text": "מזיז KEY, MIC, LOOP או DRUM, ובנוסף SUB, WARM, VIBE ומקלדת שנייה.",
+            "alt": "3/8: נגנו בלייב. מזיז KEY, MIC, LOOP או DRUM, ובנוסף SUB, WARM, VIBE ומקלדת שנייה."
+          },
+          "home-mic": {
+            "title": "שירו והקליטו",
+            "text": "שישה ערוצים, Gain, HPF, Gate ו-Comp, מילים, ו-8 פריסטים של Mic FX.",
+            "alt": "6/8: שירו והקליטו. שישה ערוצים, Gain, HPF, Gate ו-Comp, מילים, ו-8 פריסטים של Mic FX."
+          },
+          "home-mastering": {
+            "title": "סיימו את הטראק",
+            "text": "עוצמת LUFS, אינטנסיביות, רוחב סטריאו, Mono, Phone check, A/B וייצוא.",
+            "alt": "8/8: סיימו את הטראק. עוצמת LUFS, אינטנסיביות, רוחב סטריאו, Mono, Phone check, A/B וייצוא."
           }
         }
       }
@@ -4012,7 +4058,7 @@
         "updates": "Updates"
       },
       "hero": {
-        "kicker": "Android music app · Version 1.14, on Google Play now",
+        "kicker": "Android music app · Version 1.15, on Google Play now",
         "title": "Make music on your phone.",
         "body": "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.",
         "ctaPrimary": "Watch the short",
@@ -4109,20 +4155,61 @@
             "body": "A 32-channel real-audio looper, in 8 pages of 4."
           },
           {
-                        "id": "drums",
+            "id": "drums",
             "title": "Drums",
             "body": "Drums run on 8 channels and 16 steps, with 8 kits in every pack. The Random button writes a rhythm in one of 16 styles, grouped as Rock (Classic, Hard, Punk, Indie), Trance (Psytrance, Goa, Hi-Tech, Progressive), Rap (Boom Bap, Trap, Drill, Lo-fi) and Techno (Detroit, Minimal, Melodic, Hard Techno). For each style you can choose Genre samples per channel: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 and Voice, 33 samples in each cell. FX 1 and FX 2 share one Genre cell, so the Genre bank holds 3,696 unique samples. Pro also includes 8 Factory drum packs and 11 Exclusive drum packs, 152 kits in all, stored on the phone and available offline.",
             "lead": "Drums run on 8 channels and 16 steps, with 8 kits in every pack.",
             "stylesLead": "The Random button writes a rhythm in one of 16 styles, grouped as:",
             "styleGroups": [
-              { "genre": "Rock", "styles": ["Classic", "Hard", "Punk", "Indie"] },
-              { "genre": "Trance", "styles": ["Psytrance", "Goa", "Hi-Tech", "Progressive"] },
-              { "genre": "Rap", "styles": ["Boom Bap", "Trap", "Drill", "Lo-fi"] },
-              { "genre": "Techno", "styles": ["Detroit", "Minimal", "Melodic", "Hard Techno"] }
+              {
+                "genre": "Rock",
+                "styles": [
+                  "Classic",
+                  "Hard",
+                  "Punk",
+                  "Indie"
+                ]
+              },
+              {
+                "genre": "Trance",
+                "styles": [
+                  "Psytrance",
+                  "Goa",
+                  "Hi-Tech",
+                  "Progressive"
+                ]
+              },
+              {
+                "genre": "Rap",
+                "styles": [
+                  "Boom Bap",
+                  "Trap",
+                  "Drill",
+                  "Lo-fi"
+                ]
+              },
+              {
+                "genre": "Techno",
+                "styles": [
+                  "Detroit",
+                  "Minimal",
+                  "Melodic",
+                  "Hard Techno"
+                ]
+              }
             ],
             "channels": "For each style you can choose Genre samples per channel: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 and Voice, 33 samples in each cell. FX 1 and FX 2 share one Genre cell, so the Genre bank holds 3,696 unique samples.",
             "channelsLead": "For each style you can choose Genre samples per channel:",
-            "channelNames": ["Kick", "Snare", "Hi-Hat", "Perc", "Bass", "FX 1", "FX 2", "Voice"],
+            "channelNames": [
+              "Kick",
+              "Snare",
+              "Hi-Hat",
+              "Perc",
+              "Bass",
+              "FX 1",
+              "FX 2",
+              "Voice"
+            ],
             "channelsNote": "33 samples in each cell. FX 1 and FX 2 share one Genre cell, so the Genre bank holds 3,696 unique samples.",
             "packs": "Pro also includes 8 Factory drum packs and 11 Exclusive drum packs, 152 kits in all, stored on the phone and available offline."
           },
@@ -4205,7 +4292,7 @@
           {
             "question": "Is L Studio on Google Play yet, and how much is it?",
             "answer": [
-              "L Studio Pro for Android is available now on Google Play, for $8, with version 1.14, which brings genre-based beats, fades, a piano pedal and clearer Sound FX, on top of the Analog Mixer and the Mastering window. Whoever buys Pro gets version 1.14 through Google Play. New versions arrive as automatic updates through Google Play once they are approved.",
+              "L Studio Pro for Android is available now on Google Play, for $8, with version 1.15, which brings Humanize, Ratchet and Custom drum kits, on top of genre-based beats, the Analog Mixer and the Mastering window. Whoever buys Pro gets version 1.15 through Google Play. New versions arrive as automatic updates through Google Play once they are approved.",
               "You buy it through Google Play. This website does not sell the app and has no download button."
             ]
           },
@@ -4221,7 +4308,7 @@
           {
             "question": "Which devices does it run on, and in which languages?",
             "answer": [
-              "L Studio is an Android app. It needs Android 7.0 or newer. Version 1.14 is 160.1 MB. There is no iPhone version for now.",
+              "L Studio is an Android app. It needs Android 7.0 or newer. Version 1.15 is 160.1 MB. There is no iPhone version for now.",
               "It was tested on various Android phones. It was not tested on tablets, so tablet support is not promised.",
               "On a phone the app stays upright, in portrait.",
               "The app comes in four languages: English, Hebrew, Russian, and Arabic. You switch in Settings, on the Language row."
@@ -4258,7 +4345,7 @@
             "answer": [
               "The Analog Mixer opens with a tap on LIVE SCOPE at the top of the screen. Drums, Looper, and Mic each have a strip with Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S, and a fader. The Master strip works on the whole mix. SPECTRUM and MIX MAP show where the channels sit and where they clash. There are 8 presets.",
               "The Mastering window finishes a WAV recording or an imported song for streaming. Pick one of 8 styles, listen to A (before) and B (the style), then tap Start mastering and export. It opens after a WAV recording (Master this take) or from MASTERING in Settings.",
-              "Both came in version 1.12, and version 1.14 on Google Play now has them too."
+              "Both came in version 1.12, and version 1.15 on Google Play now has them too."
             ]
           },
           {
@@ -7332,7 +7419,7 @@
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro for Android is available now on Google Play, for $8. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android is available now on Google Play, for $8, with version 1.14, 160.1 MB, which brings genre-based beats, fades, a piano pedal and clearer Sound FX, on top of the Analog Mixer and the Mastering window. Whoever buys Pro gets version 1.14 through Google Play. New versions arrive as automatic updates through Google Play once they are approved. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
+        "body": "L Studio Pro for Android is available now on Google Play, for $8, with version 1.15, 160.1 MB, which brings Humanize, Ratchet and Custom drum kits, on top of genre-based beats, the Analog Mixer and the Mastering window. Whoever buys Pro gets version 1.15 through Google Play. New versions arrive as automatic updates through Google Play once they are approved. Whoever buys Pro also gets the Exclusive pack free, at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
           "L Studio Pro for Android on Google Play, $8",
@@ -7367,7 +7454,7 @@
         "navLabel": "Updates",
         "pageTitle": "What's new in L Studio.",
         "pageKicker": "L-STUDIO / UPDATES",
-        "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.14, which brings genre-based beats, fades, a piano pedal and clearer Sound FX, on top of the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved.",
+        "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.15, which brings Humanize, Ratchet and Custom drum kits, on top of genre-based beats, the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved.",
         "tickerLabel": "Updates",
         "statusLabels": {
           "in_progress": "In progress",
@@ -7382,10 +7469,10 @@
         "items": [
           {
             "id": "app-1-15-in-development",
-            "status": "in_progress",
-            "title": "Coming up: version 1.15 with Humanize, Ratchet and Custom drum kits",
-            "ticker": "Coming up: version 1.15, in development: Humanize, Ratchet, Custom drum kits",
-            "summary": "Version 1.15 is in development and is not on Google Play yet, where the current version is 1.14.",
+            "status": "shipped",
+            "title": "On Google Play now: version 1.15 with Humanize, Ratchet and Custom drum kits",
+            "ticker": "On Google Play: version 1.15 with Humanize, Ratchet, Custom drum kits",
+            "summary": "Version 1.15 is on Google Play now (updated Nov 16, 2026). It brings Humanize and Ratchet knobs in the drum window, Custom styles with a New button, phone and tablet layouts that fit without clipping, cleaned genre samples, a one-time Last Auto save 1.14 session when updating from 1.14, and steadier drum kit switching.",
             "images": [
               "/assets/updates/115/en/01-sound.jpg",
               "/assets/updates/115/en/02-sound-fx.jpg",
@@ -7423,14 +7510,14 @@
               }
             ],
             "banner": "/assets/updates/115/en/00-feature.jpg",
-            "bannerAlt": "Version 1.15 coming soon: overview of Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer and Mastering."
+            "bannerAlt": "Version 1.15 on Google Play: overview of Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer and Mastering."
           },
           {
             "id": "app-1-14-in-development",
             "status": "shipped",
-            "title": "On Google Play now: version 1.14 with genre beats, fades and a piano pedal",
-            "ticker": "On Google Play: version 1.14 with genre beats, FADE IN / FADE OUT, piano pedal",
-            "summary": "Version 1.14 is on Google Play now (updated Nov 5, 2026). It brings genre-based beats (4 genres, 16 styles, 33 new samples for each drum channel in each style), Random that builds a beat for the style and saves the samples and the BPM, the Load tab in place of Loaded, Start/End trim in Mastering, FADE IN and FADE OUT in the Looper and Mic, a piano sustain pedal on long-press, and clearer Resonance, WARM and Sound FX. Drum Voice samples match each genre style.",
+            "title": "Version 1.14 with genre beats, fades and a piano pedal",
+            "ticker": "Version 1.14 with genre beats, FADE IN / FADE OUT, piano pedal",
+            "summary": "Version 1.14 is on Google Play (updated Nov 5, 2026). It brings genre-based beats (4 genres, 16 styles, 33 new samples for each drum channel in each style), Random that builds a beat for the style and saves the samples and the BPM, the Load tab in place of Loaded, Start/End trim in Mastering, FADE IN and FADE OUT in the Looper and Mic, a piano sustain pedal on long-press, and clearer Resonance, WARM and Sound FX. Drum Voice samples match each genre style.",
             "images": [
               "/assets/updates/genre-random-114.jpg",
               "/assets/updates/genre-style-114.jpg",
@@ -7646,7 +7733,7 @@
             "status": "shipped",
             "title": "Since version 1.11, now on Google Play: your own drum samples, Keep playing, and an octave for each wave",
             "ticker": "On Google Play: up to 88 of your own samples on every drum row, with trim",
-            "summary": "Since version 1.11, now on Google Play with version 1.14: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
+            "summary": "Since version 1.11, now on Google Play with version 1.15: a LOADED bank of up to 88 of your own samples on every drum row, with trim and saved knobs for every sample. Also Keep playing in the Loop and Mic editors, pattern repeats up to 88, an octave for each wave, and switching drum kits in LIVE. Sessions carry the loaded samples to another phone.",
             "href": "/guide",
             "cta": "Open the guide",
             "images": [
@@ -7720,7 +7807,7 @@
             "status": "shipped",
             "title": "Since version 1.10, now on Google Play: Loop Editor, recordings up to 30 minutes and full session saving",
             "ticker": "On Google Play: a new Loop Editor, also for Mic, with trim, EQ, and a choice of which drum rhythm plays with the loop and how many times it repeats",
-            "summary": "Since version 1.10, now on Google Play with version 1.14: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
+            "summary": "Since version 1.10, now on Google Play with version 1.15: a new loop editor and the same Mic Editor, recordings up to 30 minutes, full session saving with New session, presets in the Custom Frequency window, a drum sample picker with Factory, Exclusive and Authentic for Voice, and per-rhythm drum samples with auto-save. Also six sound knobs on every drum row, Copy and Paste of rhythms, Clear and Redo on the drums, and new hardware-style keys and windows. Also Mute and Solo on Looper and Mic channels, Load Console with LOAD, SAVE, EDIT and delete for each session, and real progress when saving and loading. Also much lower memory use.",
             "href": "/guide",
             "cta": "Open the guide",
             "sections": [
@@ -7921,39 +8008,24 @@
             "text": "LOADED: up to 88 of your samples on every row, saved automatically. Trim with the start and end bars. SAVE, RESET, RENAME, DELETE."
           },
           "home-sound": {
-            "title": "Design your sound",
-            "text": "Blend wave types, start from a preset and tune every key to your scale.",
-            "alt": "1/7: Design your sound. Blend wave types, start from a preset and tune every key to your scale."
+            "title": "Shape your sound",
+            "text": "Wave editor, sustain pedal, Drive, and hold PRESETS to save.",
+            "alt": "1/8: Shape your sound. Wave editor, sustain pedal, Drive, and hold PRESETS to save."
           },
           "home-looper": {
             "title": "Layer your loops",
-            "text": "Record loops channel by channel, trim them to the beat and stack them into a track.",
-            "alt": "2/7: Layer your loops. Record loops channel by channel, trim them to the beat and stack them into a track."
-          },
-          "home-live-pad": {
-            "title": "Play it live",
-            "text": "Bend the sound with one finger and fire beat-synced repeats while you perform.",
-            "alt": "3/7: Play it live. Bend the sound with one finger and fire beat-synced repeats while you perform."
+            "text": "Stage-safe looper and a Loop Editor with trim and EQ.",
+            "alt": "4/8: Layer your loops. Stage-safe looper and a Loop Editor with trim and EQ."
           },
           "home-drums": {
             "title": "Build your beat",
-            "text": "Program patterns step by step, pick each drum from big sample banks and shape it.",
-            "alt": "4/7: Build your beat. Program patterns step by step, pick each drum from big sample banks and shape it."
+            "text": "Humanize, Ratchet, 16 Random Genre styles, and Exclusive or Custom kits.",
+            "alt": "5/8: Build your beat. Humanize, Ratchet, 16 Random Genre styles, and Exclusive or Custom kits."
           },
           "home-mixer": {
             "title": "Your analog mixer",
-            "text": "See where drums, loops and mic sit, and shape them into one balanced mix.",
-            "alt": "5/7: Your analog mixer. See where drums, loops and mic sit, and shape them into one balanced mix."
-          },
-          "home-mastering-style": {
-            "title": "Finish your track",
-            "text": "Choose a sound style, compare before and after, and export the final file.",
-            "alt": "6/7: Finish your track. Choose a sound style, compare before and after, and export the final file."
-          },
-          "home-mastering-measure": {
-            "title": "Measure every detail",
-            "text": "Precise loudness, dynamics and stereo readings show how your track really sounds.",
-            "alt": "7/7: Measure every detail. Precise loudness, dynamics and stereo readings show how your track really sounds."
+            "text": "Four strips for Drums, Looper, Mic and Master, with Spectrum and Mix Map.",
+            "alt": "7/8: Your analog mixer. Four strips for Drums, Looper, Mic and Master, with Spectrum and Mix Map."
           },
           "sound-wave-panel": {
             "title": "Wave Panel",
@@ -7990,6 +8062,26 @@
           "drum-fx": {
             "title": "Drum FX",
             "text": "8 presets such as Tribal Bloom. Tap one to turn it on. Long-press it for AMOUNT, LOW, MID, HIGH, SWEEP, REVERB and Transpose."
+          },
+          "home-sound-fx": {
+            "title": "Twelve FX worlds",
+            "text": "12 effect worlds on 3 pages, including FM, with SYNC to the drums.",
+            "alt": "2/8: Twelve FX worlds. 12 effect worlds on 3 pages, including FM, with SYNC to the drums."
+          },
+          "home-pad": {
+            "title": "Play it live",
+            "text": "Move KEY, MIC, LOOP or DRUM, plus SUB, WARM, VIBE and a second keyboard.",
+            "alt": "3/8: Play it live. Move KEY, MIC, LOOP or DRUM, plus SUB, WARM, VIBE and a second keyboard."
+          },
+          "home-mic": {
+            "title": "Sing and record",
+            "text": "Six channels, Gain, HPF, Gate and Comp, Lyrics, and 8 Mic FX presets.",
+            "alt": "6/8: Sing and record. Six channels, Gain, HPF, Gate and Comp, Lyrics, and 8 Mic FX presets."
+          },
+          "home-mastering": {
+            "title": "Finish your track",
+            "text": "LUFS loudness, intensity, stereo width, Mono, Phone check, A/B and Export.",
+            "alt": "8/8: Finish your track. LUFS loudness, intensity, stereo width, Mono, Phone check, A/B and Export."
           }
         }
       }
@@ -8009,7 +8101,7 @@
         "updates": "Обновления"
       },
       "hero": {
-        "kicker": "Музыкальное приложение для Android · Версия 1.14, уже в Google Play",
+        "kicker": "Музыкальное приложение для Android · Версия 1.15, уже в Google Play",
         "title": "Создавай музыку на телефоне.",
         "body": "L Studio это приложение для создания музыки на телефоне с Android. Записывай лупы, добавляй барабаны, пой, глядя на текст песни, а если хочется выйти за привычные ноты, настрой для каждой клавиши свою частоту.",
         "ctaPrimary": "Смотреть короткое видео",
@@ -8106,20 +8198,61 @@
             "body": "32-канальный лупер реального аудио, 8 страниц по 4 канала."
           },
           {
-                        "id": "drums",
+            "id": "drums",
             "title": "Ударные",
             "body": "Ударные работают на 8 каналах и 16 шагах, по 8 наборов в каждом паке. Кнопка Random строит ритм в одном из 16 стилей, в четырёх группах: Rock (Classic, Hard, Punk, Indie), Trance (Psytrance, Goa, Hi-Tech, Progressive), Rap (Boom Bap, Trap, Drill, Lo-fi) и Techno (Detroit, Minimal, Melodic, Hard Techno). В каждом стиле можно выбрать семплы Genre для каналов: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 и Voice, по 33 семпла в ячейке. FX 1 и FX 2 делят одну ячейку Genre, поэтому банк Genre содержит 3696 уникальных семплов. В Pro также входят 8 паков Factory и 11 паков Exclusive, всего 152 набора, они хранятся в телефоне и доступны офлайн.",
             "lead": "Ударные работают на 8 каналах и 16 шагах, по 8 наборов в каждом паке.",
             "stylesLead": "Кнопка Random строит ритм в одном из 16 стилей, в четырёх группах:",
             "styleGroups": [
-              { "genre": "Rock", "styles": ["Classic", "Hard", "Punk", "Indie"] },
-              { "genre": "Trance", "styles": ["Psytrance", "Goa", "Hi-Tech", "Progressive"] },
-              { "genre": "Rap", "styles": ["Boom Bap", "Trap", "Drill", "Lo-fi"] },
-              { "genre": "Techno", "styles": ["Detroit", "Minimal", "Melodic", "Hard Techno"] }
+              {
+                "genre": "Rock",
+                "styles": [
+                  "Classic",
+                  "Hard",
+                  "Punk",
+                  "Indie"
+                ]
+              },
+              {
+                "genre": "Trance",
+                "styles": [
+                  "Psytrance",
+                  "Goa",
+                  "Hi-Tech",
+                  "Progressive"
+                ]
+              },
+              {
+                "genre": "Rap",
+                "styles": [
+                  "Boom Bap",
+                  "Trap",
+                  "Drill",
+                  "Lo-fi"
+                ]
+              },
+              {
+                "genre": "Techno",
+                "styles": [
+                  "Detroit",
+                  "Minimal",
+                  "Melodic",
+                  "Hard Techno"
+                ]
+              }
             ],
             "channels": "В каждом стиле можно выбрать семплы Genre для каналов: Kick, Snare, Hi-Hat, Perc, Bass, FX 1, FX 2 и Voice, по 33 семпла в ячейке. FX 1 и FX 2 делят одну ячейку Genre, поэтому банк Genre содержит 3696 уникальных семплов.",
             "channelsLead": "В каждом стиле можно выбрать семплы Genre для каналов:",
-            "channelNames": ["Kick", "Snare", "Hi-Hat", "Perc", "Bass", "FX 1", "FX 2", "Voice"],
+            "channelNames": [
+              "Kick",
+              "Snare",
+              "Hi-Hat",
+              "Perc",
+              "Bass",
+              "FX 1",
+              "FX 2",
+              "Voice"
+            ],
             "channelsNote": "По 33 семпла в ячейке. FX 1 и FX 2 делят одну ячейку Genre, поэтому банк Genre содержит 3696 уникальных семплов.",
             "packs": "В Pro также входят 8 паков Factory и 11 паков Exclusive, всего 152 набора, они хранятся в телефоне и доступны офлайн."
           },
@@ -8202,7 +8335,7 @@
           {
             "question": "L Studio уже в Google Play? И сколько стоит?",
             "answer": [
-              "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.14, в которой есть биты по жанрам, фейды, педаль для пианино и более слышимый Sound FX, а также аналоговый микшер и окно мастеринга. Кто покупает Pro, получает версию 1.14 через Google Play. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
+              "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.15, в которой есть Humanize, Ratchet и пользовательские наборы ударных, а также биты по жанрам, аналоговый микшер и окно мастеринга. Кто покупает Pro, получает версию 1.15 через Google Play. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
               "Купить приложение можно через Google Play. Этот сайт не продаёт приложение, и кнопки скачивания здесь нет."
             ]
           },
@@ -8218,7 +8351,7 @@
           {
             "question": "На каких устройствах работает и на каких языках?",
             "answer": [
-              "L Studio это приложение для Android. Нужен Android 7.0 или новее. Версия 1.14 занимает 160.1 МБ. Версии для iPhone пока нет.",
+              "L Studio это приложение для Android. Нужен Android 7.0 или новее. Версия 1.15 занимает 160.1 МБ. Версии для iPhone пока нет.",
               "Приложение проверялось на разных телефонах с Android. На планшетах оно не проверялось, поэтому поддержка планшетов не обещается.",
               "На телефоне приложение остаётся вертикальным, в портретной ориентации.",
               "Приложение на четырёх языках: английском, иврите, русском и арабском. Язык меняется в Settings, в строке Language."
@@ -8255,7 +8388,7 @@
             "answer": [
               "Аналоговый микшер открывается нажатием на LIVE SCOPE вверху экрана. У Drums, Looper и Mic есть канал с Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S и фейдером. Канал Master работает со всем миксом. SPECTRUM и MIX MAP показывают, где звучат каналы и где они мешают друг другу. Есть 8 пресетов.",
               "Окно мастеринга доводит запись WAV или импортированную песню до стриминга. Выберите один из 8 стилей, послушайте A (до) и B (стиль), затем нажмите Start mastering и экспортируйте. Оно открывается после записи WAV (Master this take) или из MASTERING в Settings.",
-              "Оба появились в версии 1.12, и версия 1.14 в Google Play тоже их включает."
+              "Оба появились в версии 1.12, и версия 1.15 в Google Play тоже их включает."
             ]
           },
           {
@@ -11329,7 +11462,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro для Android уже доступен в Google Play, за $8. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.14, 160.1 МБ, в которой есть биты по жанрам, фейды, педаль для пианино и более слышимый Sound FX, а также аналоговый микшер и окно мастеринга. Кто покупает Pro, получает версию 1.14 через Google Play. Новые версии приходят как автоматические обновления через Google Play после одобрения. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
+        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, с версией 1.15, 160.1 МБ, в которой есть Humanize, Ratchet и пользовательские наборы ударных, а также биты по жанрам, аналоговый микшер и окно мастеринга. Кто покупает Pro, получает версию 1.15 через Google Play. Новые версии приходят как автоматические обновления через Google Play после одобрения. Кто покупает Pro, получает пак Exclusive бесплатно, без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает за него оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
           "L Studio Pro для Android в Google Play, $8",
@@ -11364,7 +11497,7 @@
         "navLabel": "Обновления",
         "pageTitle": "Что нового в L Studio.",
         "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-        "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.14, в которой есть биты по жанрам, фейды, педаль для пианино и более слышимый Sound FX, а также аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
+        "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.15, в которой есть Humanize, Ratchet и пользовательские наборы ударных, а также биты по жанрам, аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
         "tickerLabel": "Обновления",
         "statusLabels": {
           "in_progress": "В работе",
@@ -11379,10 +11512,10 @@
         "items": [
           {
             "id": "app-1-15-in-development",
-            "status": "in_progress",
-            "title": "Скоро: версия 1.15 с Humanize, Ratchet и пользовательскими наборами ударных",
-            "ticker": "Скоро: версия 1.15, в разработке: Humanize, Ratchet, пользовательские наборы ударных",
-            "summary": "Версия 1.15 в разработке и её ещё нет в Google Play, где текущая версия это 1.14.",
+            "status": "shipped",
+            "title": "Теперь в Google Play: версия 1.15 с Humanize, Ratchet и пользовательскими наборами ударных",
+            "ticker": "Теперь в Google Play: версия 1.15 с Humanize, Ratchet, пользовательскими наборами ударных",
+            "summary": "Версия 1.15 уже в Google Play (обновлена 16 ноября 2026). В ней ручки Humanize и Ratchet в окне ударных, стили Custom с кнопкой New, вёрстка под телефоны и планшеты без обрезки, очищенные жанровые сэмплы, одноразовое сохранение сессии Last Auto save 1.14 при обновлении с 1.14 и более стабильная смена наборов ударных.",
             "images": [
               "/assets/updates/115/en/01-sound.jpg",
               "/assets/updates/115/en/02-sound-fx.jpg",
@@ -11420,14 +11553,14 @@
               }
             ],
             "banner": "/assets/updates/115/en/00-feature.jpg",
-            "bannerAlt": "Версия 1.15 скоро: обзор Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer и Mastering."
+            "bannerAlt": "Версия 1.15 в Google Play: обзор Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer и Mastering."
           },
           {
             "id": "app-1-14-in-development",
             "status": "shipped",
-            "title": "Теперь в Google Play: версия 1.14 с битами по жанрам, фейдами и педалью для пианино",
-            "ticker": "Теперь в Google Play: версия 1.14 с битами по жанрам, FADE IN / FADE OUT, педалью для пианино",
-            "summary": "Версия 1.14 уже в Google Play (обновлена 5 ноября 2026). В ней биты по жанрам (4 жанра, 16 стилей, 33 новых сэмпла на каждый барабанный канал в каждом стиле), Random, который собирает бит под стиль и сохраняет сэмплы и BPM, вкладка Load вместо Loaded, обрезка Start/End в Mastering, FADE IN и FADE OUT в Looper и Mic, педаль сустейна для пианино по долгому нажатию, а также более слышимые Resonance, WARM и Sound FX. Сэмплы Voice совпадают с каждым жанровым стилем.",
+            "title": "Версия 1.14 с битами по жанрам, фейдами и педалью для пианино",
+            "ticker": "Версия 1.14 с битами по жанрам, FADE IN / FADE OUT, педалью для пианино",
+            "summary": "Версия 1.14 в Google Play (обновлена 5 ноября 2026). В ней биты по жанрам (4 жанра, 16 стилей, 33 новых сэмпла на каждый барабанный канал в каждом стиле), Random, который собирает бит под стиль и сохраняет сэмплы и BPM, вкладка Load вместо Loaded, обрезка Start/End в Mastering, FADE IN и FADE OUT в Looper и Mic, педаль сустейна для пианино по долгому нажатию, а также более слышимые Resonance, WARM и Sound FX. Сэмплы Voice совпадают с каждым жанровым стилем.",
             "images": [
               "/assets/updates/genre-random-114.jpg",
               "/assets/updates/genre-style-114.jpg",
@@ -11643,7 +11776,7 @@
             "status": "shipped",
             "title": "С версии 1.11, теперь в Google Play: свои сэмплы в ударных, Keep playing и октава для каждой волны",
             "ticker": "Теперь в Google Play: до 88 своих сэмплов в каждом ряду ударных, с обрезкой",
-            "summary": "С версии 1.11, теперь в Google Play с версией 1.14: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
+            "summary": "С версии 1.11, теперь в Google Play с версией 1.15: банк LOADED до 88 своих сэмплов в каждом ряду ударных, с обрезкой и сохранёнными регуляторами для каждого сэмпла. А также Keep playing в редакторах Loop и Mic, повторы паттерна до 88, своя октава для каждой волны и смена наборов ударных в LIVE. Сессии переносят загруженные сэмплы на другой телефон.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "images": [
@@ -11717,7 +11850,7 @@
             "status": "shipped",
             "title": "С версии 1.10, теперь в Google Play: Loop Editor, запись до 30 минут и полное сохранение сессии",
             "ticker": "Теперь в Google Play: новый редактор лупов, в том числе для Mic, с обрезкой, EQ и выбором, какой ритм ударных играет вместе с лупом и сколько раз он повторяется",
-            "summary": "С версии 1.10, теперь в Google Play с версией 1.14: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
+            "summary": "С версии 1.10, теперь в Google Play с версией 1.15: новый редактор лупов и тот же Mic Editor, запись до 30 минут, полное сохранение сессии с New session, пресеты в окне Custom Frequency, выбор сэмплов ударных с Factory, Exclusive и Authentic для Voice, и сэмплы на каждый ритм с автосохранением. А также шесть ручек звука на каждом ряду ударных, копирование и вставка ритмов, Clear и Redo на ударных и новые клавиши и окна в аппаратном стиле. А также Mute и Solo в каналах Looper и Mic, Load Console с LOAD, SAVE, EDIT и удалением для каждой сессии и реальный прогресс при сохранении и загрузке. Также заметно меньше памяти.",
             "href": "/guide",
             "cta": "Открыть руководство",
             "sections": [
@@ -11918,39 +12051,24 @@
             "text": "LOADED: до 88 своих сэмплов в каждом ряду, сохраняются сами. Обрезка ползунками начала и конца. SAVE, RESET, RENAME, DELETE."
           },
           "home-sound": {
-            "title": "Создай свой звук",
-            "text": "Смешивай типы волн, начинай с пресета и настраивай каждую клавишу под свою гамму.",
-            "alt": "1/7: Создай свой звук. Смешивай типы волн, начинай с пресета и настраивай каждую клавишу под свою гамму."
+            "title": "Собери свой звук",
+            "text": "Редактор волны, педаль сустейна, Drive и удержание PRESETS для сохранения.",
+            "alt": "1/8: Собери свой звук. Редактор волны, педаль сустейна, Drive и удержание PRESETS для сохранения."
           },
           "home-looper": {
             "title": "Слои лупов",
-            "text": "Записывай лупы канал за каналом, обрезай их по ритму и собирай в трек.",
-            "alt": "2/7: Слои лупов. Записывай лупы канал за каналом, обрезай их по ритму и собирай в трек."
-          },
-          "home-live-pad": {
-            "title": "Играй вживую",
-            "text": "Меняй звук одним пальцем и запускай повторы в ритм прямо во время выступления.",
-            "alt": "3/7: Играй вживую. Меняй звук одним пальцем и запускай повторы в ритм прямо во время выступления."
+            "text": "Лупер для сцены и редактор лупа с обрезкой и EQ.",
+            "alt": "4/8: Слои лупов. Лупер для сцены и редактор лупа с обрезкой и EQ."
           },
           "home-drums": {
-            "title": "Собери свой бит",
-            "text": "Программируй паттерны шаг за шагом, выбирай каждый барабан из больших банков сэмплов и настраивай его.",
-            "alt": "4/7: Собери свой бит. Программируй паттерны шаг за шагом, выбирай каждый барабан из больших банков сэмплов и настраивай его."
+            "title": "Собери бит",
+            "text": "Humanize, Ratchet, 16 стилей Random Genre и наборы Exclusive или Custom.",
+            "alt": "5/8: Собери бит. Humanize, Ratchet, 16 стилей Random Genre и наборы Exclusive или Custom."
           },
           "home-mixer": {
             "title": "Твой аналоговый микшер",
-            "text": "Смотри, где звучат ударные, лупы и микрофон, и своди их в один сбалансированный микс.",
-            "alt": "5/7: Твой аналоговый микшер. Смотри, где звучат ударные, лупы и микрофон, и своди их в один сбалансированный микс."
-          },
-          "home-mastering-style": {
-            "title": "Закончи трек",
-            "text": "Выбери стиль звучания, сравни до и после и экспортируй готовый файл.",
-            "alt": "6/7: Закончи трек. Выбери стиль звучания, сравни до и после и экспортируй готовый файл."
-          },
-          "home-mastering-measure": {
-            "title": "Измеряй каждую деталь",
-            "text": "Точные замеры громкости, динамики и стерео показывают, как на самом деле звучит трек.",
-            "alt": "7/7: Измеряй каждую деталь. Точные замеры громкости, динамики и стерео показывают, как на самом деле звучит трек."
+            "text": "Четыре полосы для Drums, Looper, Mic и Master, со Spectrum и Mix Map.",
+            "alt": "7/8: Твой аналоговый микшер. Четыре полосы для Drums, Looper, Mic и Master, со Spectrum и Mix Map."
           },
           "sound-wave-panel": {
             "title": "Панель волны",
@@ -11987,6 +12105,26 @@
           "drum-fx": {
             "title": "Drum FX",
             "text": "8 пресетов, например Tribal Bloom. Нажатие включает пресет, долгое нажатие открывает AMOUNT, LOW, MID, HIGH, SWEEP, REVERB и Transpose."
+          },
+          "home-sound-fx": {
+            "title": "Двенадцать миров FX",
+            "text": "12 миров эффектов на 3 страницах, включая FM, с SYNC к ударным.",
+            "alt": "2/8: Двенадцать миров FX. 12 миров эффектов на 3 страницах, включая FM, с SYNC к ударным."
+          },
+          "home-pad": {
+            "title": "Играй вживую",
+            "text": "Двигай KEY, MIC, LOOP или DRUM, плюс SUB, WARM, VIBE и вторая клавиатура.",
+            "alt": "3/8: Играй вживую. Двигай KEY, MIC, LOOP или DRUM, плюс SUB, WARM, VIBE и вторая клавиатура."
+          },
+          "home-mic": {
+            "title": "Пой и пиши",
+            "text": "Шесть каналов, Gain, HPF, Gate и Comp, текст и 8 пресетов Mic FX.",
+            "alt": "6/8: Пой и пиши. Шесть каналов, Gain, HPF, Gate и Comp, текст и 8 пресетов Mic FX."
+          },
+          "home-mastering": {
+            "title": "Доведи трек",
+            "text": "Громкость LUFS, интенсивность, ширина стерео, Mono, Phone check, A/B и экспорт.",
+            "alt": "8/8: Доведи трек. Громкость LUFS, интенсивность, ширина стерео, Mono, Phone check, A/B и экспорт."
           }
         }
       }
@@ -12006,7 +12144,7 @@
         "updates": "التحديثات"
       },
       "hero": {
-        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.14، الآن على Google Play",
+        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.15، متاح الآن على Google Play",
         "title": "اصنع الموسيقى على هاتفك.",
         "body": "L Studio تطبيق لصنع الموسيقى على هاتف أندرويد. سجّل لوبات، أضف طبولاً، غنِّ وكلمات الأغنية أمام عينيك، وإن أردت الخروج عن النوتات المعتادة، اضبط لكل مفتاح تردده الخاص.",
         "ctaPrimary": "شاهد الفيديو القصير",
@@ -12103,20 +12241,61 @@
             "body": "لوبر صوت حقيقي بـ32 قناة، في 8 صفحات من 4."
           },
           {
-                        "id": "drums",
+            "id": "drums",
             "title": "الطبول",
             "body": "تعمل الطبول على 8 قنوات و16 خطوة، مع 8 مجموعات في كل حزمة. زر Random يبني إيقاعاً من أحد 16 أسلوباً، في أربع مجموعات: Rock (Classic, Hard, Punk, Indie)، وTrance (Psytrance, Goa, Hi-Tech, Progressive)، وRap (Boom Bap, Trap, Drill, Lo-fi)، وTechno (Detroit, Minimal, Melodic, Hard Techno). في كل أسلوب يمكن اختيار عيّنات Genre لكل قناة: Kick وSnare وHi-Hat وPerc وBass وFX 1 وFX 2 وVoice، و33 عيّنة في كل خلية. يشترك FX 1 وFX 2 في خلية Genre واحدة، لذلك يضم بنك Genre 3696 عيّنة فريدة. يشمل Pro أيضاً 8 حزم Factory و11 حزمة Exclusive، أي 152 مجموعة إجمالاً، محفوظة على الهاتف ومتاحة دون اتصال.",
             "lead": "تعمل الطبول على 8 قنوات و16 خطوة، مع 8 مجموعات في كل حزمة.",
             "stylesLead": "زر Random يبني إيقاعاً من أحد 16 أسلوباً، في أربع مجموعات:",
             "styleGroups": [
-              { "genre": "Rock", "styles": ["Classic", "Hard", "Punk", "Indie"] },
-              { "genre": "Trance", "styles": ["Psytrance", "Goa", "Hi-Tech", "Progressive"] },
-              { "genre": "Rap", "styles": ["Boom Bap", "Trap", "Drill", "Lo-fi"] },
-              { "genre": "Techno", "styles": ["Detroit", "Minimal", "Melodic", "Hard Techno"] }
+              {
+                "genre": "Rock",
+                "styles": [
+                  "Classic",
+                  "Hard",
+                  "Punk",
+                  "Indie"
+                ]
+              },
+              {
+                "genre": "Trance",
+                "styles": [
+                  "Psytrance",
+                  "Goa",
+                  "Hi-Tech",
+                  "Progressive"
+                ]
+              },
+              {
+                "genre": "Rap",
+                "styles": [
+                  "Boom Bap",
+                  "Trap",
+                  "Drill",
+                  "Lo-fi"
+                ]
+              },
+              {
+                "genre": "Techno",
+                "styles": [
+                  "Detroit",
+                  "Minimal",
+                  "Melodic",
+                  "Hard Techno"
+                ]
+              }
             ],
             "channels": "في كل أسلوب يمكن اختيار عيّنات Genre لكل قناة: Kick وSnare وHi-Hat وPerc وBass وFX 1 وFX 2 وVoice، و33 عيّنة في كل خلية. يشترك FX 1 وFX 2 في خلية Genre واحدة، لذلك يضم بنك Genre 3696 عيّنة فريدة.",
             "channelsLead": "في كل أسلوب يمكن اختيار عيّنات Genre لكل قناة:",
-            "channelNames": ["Kick", "Snare", "Hi-Hat", "Perc", "Bass", "FX 1", "FX 2", "Voice"],
+            "channelNames": [
+              "Kick",
+              "Snare",
+              "Hi-Hat",
+              "Perc",
+              "Bass",
+              "FX 1",
+              "FX 2",
+              "Voice"
+            ],
             "channelsNote": "33 عيّنة في كل خلية. يشترك FX 1 وFX 2 في خلية Genre واحدة، لذلك يضم بنك Genre 3696 عيّنة فريدة.",
             "packs": "يشمل Pro أيضاً 8 حزم Factory و11 حزمة Exclusive، أي 152 مجموعة إجمالاً، محفوظة على الهاتف ومتاحة دون اتصال."
           },
@@ -12199,7 +12378,7 @@
           {
             "question": "هل L Studio على Google Play الآن؟ وكم سعره؟",
             "answer": [
-              "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.14 الذي يضم إيقاعات حسب النوع وتلاشياً ودواسة للبيانو وSound FX أوضح، إلى جانب الميكسر التناظري ونافذة الماسترنغ. من يشتري Pro يحصل على الإصدار 1.14 عبر Google Play. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+              "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.15 الذي يضم Humanize وRatchet وأطقم طبول مخصصة، إلى جانب إيقاعات حسب النوع والميكسر التناظري ونافذة الماسترنغ. من يشتري Pro يحصل على الإصدار 1.15 عبر Google Play. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
               "تشتريه عبر Google Play. هذا الموقع لا يبيع التطبيق وليس فيه زر تنزيل."
             ]
           },
@@ -12215,7 +12394,7 @@
           {
             "question": "على أي أجهزة يعمل وبأي لغات؟",
             "answer": [
-              "L Studio تطبيق لأندرويد. يحتاج Android 7.0 أو أحدث. الإصدار 1.14 حجمه 160.1 ميغابايت. لا توجد نسخة لآيفون حالياً.",
+              "L Studio تطبيق لأندرويد. يحتاج Android 7.0 أو أحدث. الإصدار 1.15 حجمه 160.1 ميغابايت. لا توجد حالياً نسخة لآيفون.",
               "جُرّب التطبيق على هواتف أندرويد مختلفة. ولم يُجرَّب على التابلت، لذلك لا نَعِد بدعم التابلت.",
               "على الهاتف يبقى التطبيق قائماً، بوضع طولي.",
               "التطبيق بأربع لغات: الإنجليزية والعبرية والروسية والعربية. تبدّل اللغة من Settings، في صف Language."
@@ -12252,7 +12431,7 @@
             "answer": [
               "يُفتح الميكسر التناظري بالنقر على LIVE SCOPE في أعلى الشاشة. لكل من Drums وLooper وMic قناة فيها Drive وHPF وHigh وMid وLow وComp وPan وWidth وM وS ومنزلق. قناة Master تعمل على المزيج كله. يُظهر SPECTRUM وMIX MAP أين تقع القنوات وأين تتصادم. وفيه 8 إعدادات.",
               "تُنهي نافذة الماسترنغ تسجيل WAV أو أغنية مستوردة لخدمات البث. اختر أحد 8 أساليب، واستمع إلى A (قبل) وB (الأسلوب)، ثم المس Start mastering وصدّر. تُفتح بعد تسجيل WAV ‏(Master this take) أو من MASTERING في Settings.",
-              "كلاهما جاء في الإصدار 1.12، والإصدار 1.14 على Google Play يتضمنهما أيضاً."
+              "كلاهما وصل في الإصدار 1.12، والإصدار 1.15 على Google Play يتضمنهما أيضاً."
             ]
           },
           {
@@ -15326,7 +15505,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.14، 160.1 ميغابايت، الذي يضم إيقاعات حسب النوع وتلاشياً ودواسة للبيانو وSound FX أوضح، إلى جانب الميكسر التناظري ونافذة الماسترنغ. من يشتري Pro يحصل على الإصدار 1.14 عبر Google Play. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
+        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.15، 160.1 ميغابايت، الذي يضم Humanize وRatchet وأطقم طبول مخصصة، إلى جانب إيقاعات حسب النوع والميكسر التناظري ونافذة الماسترنغ. من يشتري Pro يحصل على الإصدار 1.15 عبر Google Play. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. من يشتري Pro يحصل أيضاً على حزمة Exclusive مجاناً، بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
           "L Studio Pro لأندرويد على Google Play، 8$",
@@ -15361,7 +15540,7 @@
         "navLabel": "التحديثات",
         "pageTitle": "ما الجديد في L Studio.",
         "pageKicker": "L-STUDIO / التحديثات",
-        "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.14 الذي يضم إيقاعات حسب النوع وتلاشياً ودواسة للبيانو وSound FX أوضح، إلى جانب الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+        "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.15 الذي يضم Humanize وRatchet وأطقم طبول مخصصة، إلى جانب إيقاعات حسب النوع والميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
         "tickerLabel": "التحديثات",
         "statusLabels": {
           "in_progress": "قيد العمل",
@@ -15376,10 +15555,10 @@
         "items": [
           {
             "id": "app-1-15-in-development",
-            "status": "in_progress",
-            "title": "قريباً: الإصدار 1.15 مع Humanize وRatchet وأطقم طبول مخصصة",
-            "ticker": "قريباً: الإصدار 1.15، قيد التطوير: Humanize، Ratchet، وأطقم طبول مخصصة",
-            "summary": "الإصدار 1.15 قيد التطوير وهو ليس على Google Play بعد، حيث الإصدار الحالي هو 1.14.",
+            "status": "shipped",
+            "title": "الآن على Google Play: الإصدار 1.15 مع Humanize وRatchet وأطقم طبول مخصصة",
+            "ticker": "الآن على Google Play: الإصدار 1.15 مع Humanize وRatchet وأطقم طبول مخصصة",
+            "summary": "الإصدار 1.15 متاح الآن على Google Play (حُدّث في 16 نوفمبر 2026). يضم مقبضي Humanize وRatchet في نافذة الطبول، وأنماط Custom مع زر New، وتخطيطات تناسب الهواتف والأجهزة اللوحية بلا قص، وعينات أنواع منظّفة، وحفظاً لمرة واحدة باسم Last Auto save 1.14 عند التحديث من 1.14، وتبديلاً أكثر ثباتاً لأطقم الطبول.",
             "images": [
               "/assets/updates/115/en/01-sound.jpg",
               "/assets/updates/115/en/02-sound-fx.jpg",
@@ -15417,14 +15596,14 @@
               }
             ],
             "banner": "/assets/updates/115/en/00-feature.jpg",
-            "bannerAlt": "الإصدار 1.15 قريباً: نظرة عامة على Sound وSound FX وPad وLooper وMic وDrums وMixer وMastering."
+            "bannerAlt": "الإصدار 1.15 على Google Play: نظرة على Sound وSound FX وPad وLooper وMic وDrums وMixer وMastering."
           },
           {
             "id": "app-1-14-in-development",
             "status": "shipped",
-            "title": "الآن على Google Play: الإصدار 1.14 مع إيقاعات حسب النوع، وتلاشٍ ودواسة للبيانو",
-            "ticker": "الآن على Google Play: الإصدار 1.14 مع إيقاعات حسب النوع، وFADE IN / FADE OUT، ودواسة للبيانو",
-            "summary": "الإصدار 1.14 متاح الآن على Google Play (حُدّث في 5 تشرين الثاني/نوفمبر 2026). يضم إيقاعات حسب النوع (4 أنواع، 16 أسلوباً، و33 عينة جديدة لكل قناة طبول في كل أسلوب)، وRandom الذي يبني إيقاعاً حسب الأسلوب ويحفظ العينات وBPM، وعلامة التبويب Load بدل Loaded، وقص Start/End في الماسترنغ، وFADE IN وFADE OUT في اللوبر والميكروفون، ودواسة استدامة للبيانو بالضغط الطويل، مع Resonance وWARM وSound FX أوضح. عينات Voice تطابق كل أسلوب نوع.",
+            "title": "الإصدار 1.14 مع إيقاعات حسب النوع وتلاشٍ ودواسة للبيانو",
+            "ticker": "الإصدار 1.14 مع إيقاعات حسب النوع وFADE IN / FADE OUT ودواسة للبيانو",
+            "summary": "الإصدار 1.14 على Google Play (حُدّث في 5 تشرين الثاني/نوفمبر 2026). يضم إيقاعات حسب النوع (4 أنواع، 16 أسلوباً، و33 عينة جديدة لكل قناة طبول في كل أسلوب)، وRandom الذي يبني إيقاعاً حسب الأسلوب ويحفظ العينات وBPM، وعلامة التبويب Load بدل Loaded، وقص Start/End في الماسترنغ، وFADE IN وFADE OUT في اللوبر والميكروفون، ودواسة استدامة للبيانو بالضغط الطويل، مع Resonance وWARM وSound FX أوضح. عينات Voice تطابق كل أسلوب نوع.",
             "images": [
               "/assets/updates/genre-random-114.jpg",
               "/assets/updates/genre-style-114.jpg",
@@ -15640,7 +15819,7 @@
             "status": "shipped",
             "title": "منذ الإصدار 1.11، الآن على Google Play: عيناتك الخاصة في الطبول وKeep playing وأوكتاف لكل موجة",
             "ticker": "الآن على Google Play: حتى 88 من عيناتك في كل صف طبول، مع القص",
-            "summary": "منذ الإصدار 1.11، الآن على Google Play مع الإصدار 1.14: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
+            "summary": "منذ الإصدار 1.11، الآن على Google Play مع الإصدار 1.15: بنك LOADED يصل إلى 88 من عيناتك في كل صف طبول، مع القص ومقابض محفوظة لكل عينة. وأيضاً Keep playing في محرري Loop وMic، وتكرار النمط حتى 88، وأوكتاف لكل موجة، وتبديل أطقم الطبول في LIVE. والجلسات تنقل العينات المحمّلة إلى هاتف آخر.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "images": [
@@ -15714,7 +15893,7 @@
             "status": "shipped",
             "title": "منذ الإصدار 1.10، الآن على Google Play: Loop Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة",
             "ticker": "الآن على Google Play: محرر لوب جديد، ولقنوات Mic أيضاً، مع القص وEQ واختيار أي إيقاع طبول يعزف مع اللوب وكم مرة يتكرر",
-            "summary": "منذ الإصدار 1.10، الآن على Google Play مع الإصدار 1.14: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
+            "summary": "منذ الإصدار 1.10، الآن على Google Play مع الإصدار 1.15: محرر لوب جديد ونفس Mic Editor، وتسجيل حتى 30 دقيقة، وحفظ كامل للجلسة مع New session، وإعدادات في نافذة Custom Frequency، ومنتقي عينات للطبول مع Factory وExclusive وAuthentic لـ Voice، وعيّنات لكل إيقاع مع حفظ تلقائي. وأيضًا ستة مقابض صوت في كل صف طبول، ونسخ ولصق الإيقاعات، وClear وRedo في الطبول، ومفاتيح ونوافذ جديدة بنمط الأجهزة. وأيضاً كتم وانفراد في قنوات Looper وMic، وLoad Console مع LOAD وSAVE وEDIT وحذف لكل جلسة، وتقدّم حقيقي عند الحفظ والتحميل. كما أن استهلاك الذاكرة أقل بكثير.",
             "href": "/guide",
             "cta": "افتح الدليل",
             "sections": [
@@ -15915,39 +16094,24 @@
             "text": "LOADED: حتى 88 عينة خاصة بك في كل صف، تُحفظ تلقائيًا. قصّ بشريطي البداية والنهاية. SAVE وRESET وRENAME وDELETE."
           },
           "home-sound": {
-            "title": "صمّم صوتك",
-            "text": "امزج أنواع الموجات، وابدأ من إعداد جاهز، واضبط كل مفتاح على سلّمك.",
-            "alt": "1/7: صمّم صوتك. امزج أنواع الموجات، وابدأ من إعداد جاهز، واضبط كل مفتاح على سلّمك."
+            "title": "شكّل الصوت",
+            "text": "محرر الموجة ودواسة الاستدامة وDrive والضغط المطوّل على PRESETS للحفظ.",
+            "alt": "1/8: شكّل الصوت. محرر الموجة ودواسة الاستدامة وDrive والضغط المطوّل على PRESETS للحفظ."
           },
           "home-looper": {
-            "title": "طبقات من اللوب",
-            "text": "سجّل اللوب قناة بعد قناة، وقصّه على الإيقاع، وابنِ منه مقطعًا كاملًا.",
-            "alt": "2/7: طبقات من اللوب. سجّل اللوب قناة بعد قناة، وقصّه على الإيقاع، وابنِ منه مقطعًا كاملًا."
-          },
-          "home-live-pad": {
-            "title": "اعزف مباشرة",
-            "text": "غيّر الصوت بإصبع واحد وأطلق تكرارات متزامنة مع الإيقاع أثناء العزف.",
-            "alt": "3/7: اعزف مباشرة. غيّر الصوت بإصبع واحد وأطلق تكرارات متزامنة مع الإيقاع أثناء العزف."
+            "title": "ركّب اللوبات",
+            "text": "لوبر للخشبة ومحرر لوب مع قص وEQ.",
+            "alt": "4/8: ركّب اللوبات. لوبر للخشبة ومحرر لوب مع قص وEQ."
           },
           "home-drums": {
-            "title": "ابنِ إيقاعك",
-            "text": "برمج الأنماط خطوة بخطوة، واختر كل طبلة من بنوك عينات كبيرة واضبطها.",
-            "alt": "4/7: ابنِ إيقاعك. برمج الأنماط خطوة بخطوة، واختر كل طبلة من بنوك عينات كبيرة واضبطها."
+            "title": "ابنِ الإيقاع",
+            "text": "Humanize وRatchet و16 نمطاً من Random Genre وأطقم Exclusive أو Custom.",
+            "alt": "5/8: ابنِ الإيقاع. Humanize وRatchet و16 نمطاً من Random Genre وأطقم Exclusive أو Custom."
           },
           "home-mixer": {
-            "title": "المكسر التناظري الخاص بك",
-            "text": "شاهد أين تقع الطبول واللوب والميكروفون، وشكّلها في مزيج واحد متوازن.",
-            "alt": "5/7: المكسر التناظري الخاص بك. شاهد أين تقع الطبول واللوب والميكروفون، وشكّلها في مزيج واحد متوازن."
-          },
-          "home-mastering-style": {
-            "title": "أنهِ أغنيتك",
-            "text": "اختر نمط صوت، وقارن قبل وبعد، وصدّر الملف النهائي.",
-            "alt": "6/7: أنهِ أغنيتك. اختر نمط صوت، وقارن قبل وبعد، وصدّر الملف النهائي."
-          },
-          "home-mastering-measure": {
-            "title": "قِس كل التفاصيل",
-            "text": "قراءات دقيقة لعلو الصوت والديناميكية والستيريو تُظهر كيف تبدو أغنيتك فعلًا.",
-            "alt": "7/7: قِس كل التفاصيل. قراءات دقيقة لعلو الصوت والديناميكية والستيريو تُظهر كيف تبدو أغنيتك فعلًا."
+            "title": "الميكسر التناظري لديك",
+            "text": "أربعة مسارات لـ Drums وLooper وMic وMaster مع Spectrum وMix Map.",
+            "alt": "7/8: الميكسر التناظري لديك. أربعة مسارات لـ Drums وLooper وMic وMaster مع Spectrum وMix Map."
           },
           "sound-wave-panel": {
             "title": "لوحة الموجة",
@@ -15984,6 +16148,26 @@
           "drum-fx": {
             "title": "مؤثرات Drum",
             "text": "8 إعدادات مثل Tribal Bloom. المس واحدًا لتشغيله، واضغط مطولًا لفتح AMOUNT وLOW وMID وHIGH وSWEEP وREVERB وTranspose."
+          },
+          "home-sound-fx": {
+            "title": "اثنا عشر عالماً من FX",
+            "text": "12 عالماً من المؤثرات في 3 صفحات، بما فيها FM، مع SYNC للطبول.",
+            "alt": "2/8: اثنا عشر عالماً من FX. 12 عالماً من المؤثرات في 3 صفحات، بما فيها FM، مع SYNC للطبول."
+          },
+          "home-pad": {
+            "title": "اعزف مباشرة",
+            "text": "حرّك KEY أو MIC أو LOOP أو DRUM، إضافة إلى SUB وWARM وVIBE ولوحة مفاتيح ثانية.",
+            "alt": "3/8: اعزف مباشرة. حرّك KEY أو MIC أو LOOP أو DRUM، إضافة إلى SUB وWARM وVIBE ولوحة مفاتيح ثانية."
+          },
+          "home-mic": {
+            "title": "غنِّ وسجّل",
+            "text": "ست قنوات وGain وHPF وGate وComp والكلمات و8 إعدادات Mic FX.",
+            "alt": "6/8: غنِّ وسجّل. ست قنوات وGain وHPF وGate وComp والكلمات و8 إعدادات Mic FX."
+          },
+          "home-mastering": {
+            "title": "أنهِ المقطوعة",
+            "text": "علو LUFS والكثافة وعرض الستيريو وMono وPhone check وA/B والتصدير.",
+            "alt": "8/8: أنهِ المقطوعة. علو LUFS والكثافة وعرض الستيريو وMono وPhone check وA/B والتصدير."
           }
         }
       }

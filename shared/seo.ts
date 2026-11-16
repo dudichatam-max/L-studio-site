@@ -205,20 +205,20 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.14, which brings genre-based beats, fades, a piano pedal and clearer Sound FX, on top of the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved.",
+        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.15, which brings Humanize, Ratchet and Custom drum kits, on top of genre-based beats, the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש ב-L Studio לאנדרואיד. L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.14, שמביאה ביטים לפי ז'אנר, פייד, פדל לפסנתר ו-Sound FX ברורים יותר, בנוסף למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+      description: "מה חדש ב-L Studio לאנדרואיד. L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.15, שמביאה Humanize, Ratchet וערכות תופים אישיות, בנוסף לביטים לפי ז'אנר, למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.14, в которой есть биты по жанрам, фейды, педаль для пианино и более слышимый Sound FX, а также аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
+        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.15, в которой есть Humanize, Ratchet и пользовательские наборы ударных, а также биты по жанрам, аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.14 الذي يضم إيقاعات حسب النوع وتلاشياً ودواسة للبيانو وSound FX أوضح، إلى جانب الميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.15 الذي يضم Humanize وRatchet وأطقم طبول مخصصة، إلى جانب إيقاعات حسب النوع والميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
     },
   },
   buy: {
@@ -338,15 +338,15 @@ type SeoMobileApplication = {
  * App facts for structured data, and the ONE Play-version constant for site badges.
  * Change softwareVersion here when the current Google Play version changes (then
  * update Privacy/Terms/hero fallbacks automatically, and the matching sentences
- * in content.json). Source: app repo dudichatam-max/L-studio, release build 1.14
- * @ 68b45e9 / tag v1.14-smoke-passed (versionCode 14, Play listing updated 2026-11-05),
+ * in content.json). Source: app repo dudichatam-max/L-studio, release build 1.15
+ * (versionName 1.15; David confirmed available on Google Play 2026-11-16),
  * minSdk 24 = Android 7.0. Size: see the fileSize line below.
  * Price: David, 2026-10-08, L Studio Pro on Google Play for $8.
  */
 export const APP_FACTS = {
   operatingSystem: "Android 7.0+",
-  softwareVersion: "1.14",
-  fileSize: "160.1MB", // 1.14 Play APK L-Studio-1.14-play-68b45e9.apk (versionCode 14), 167,881,621 B = 160.1 MiB; Play listing updated Nov 5, 2026
+  softwareVersion: "1.15",
+  fileSize: "160.1MB", // keep 1.14 measured Play APK size until a signed 1.15 Play APK byte count is recorded; listing flip 2026-11-16
   price: "8",
   priceCurrency: "USD",
 } as const;

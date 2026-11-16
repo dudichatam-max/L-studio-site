@@ -2,15 +2,15 @@ import type { Language } from "@/contexts/LanguageContext";
 
 export type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 /** "update112" = the 1.12 screenshots (analog mixer, wave EQ, Mastering) on /updates, in the 1.12 item.
- * "home112" = the homepage top carousel under the hero title: David's 8 Google Play 1.12 store images (Drive "נכסים 1.12"). */
+ * "home112" = the homepage top carousel under the hero title: Google Play 1.15 store images (Drive folder, HE+EN). */
 export type CarouselId = PlayId | "update112" | "home112";
 
 /**
  * Home "Play with sound" carousels: one list per tab, in display order.
  * Every slide is a designed store poster (Google Play style) made per language, with its own counter n/N baked in
  * (N = slides of that tab). The site draws no counter. Files: assets/carousel/{lang}/{id}-w360|w630.{webp,jpg},
- * written by scripts/import-carousel-posters.py from a source dir of {lang}/{designed}.png (1.13 set: /workspace/site-v113fx-src).
- * Only real screens of the version on Google Play (1.13). No slide may show an older interface.
+ * written by scripts/import-carousel-posters.py from a source dir of {lang}/{designed}.png.
+ * Home top carousel uses the live Google Play version stills (1.15). Feature tabs keep their earlier sets until replaced.
  * Slide titles and texts live in content.json under languages.*.carousel.slides[id].
  * To add or remove a slide the designer must rebake that tab's counters, then update this list.
  */
@@ -42,17 +42,17 @@ export const carouselSlides: Record<CarouselId, SlideDef[]> = {
   pad: [
     { id: "pad-live", designed: "pad-1" },
   ],
-  // Home top carousel: 7 of the 8 Google Play 1.12 store images from David's Drive folder "נכסים 1.12".
-  // play112-2 (the old Sound FX window) was dropped for 1.13; the counter pill was redrawn as n/7 (site 1.13, Oct 28 2026).
-  // he = the Hebrew set (עברית), en, ru, ar = the English set.
+  // Home top carousel: Google Play 1.15 store images (Drive 1LG_xYfYzuIjzMyKoSsNZeYWqNadu0HBZ).
+  // he = Hebrew set; en, ru, ar = English set. Feature graphic header is separate (assets/feature-graphic-*).
   home112: [
-    { id: "home-sound", designed: "play112-1" },
-    { id: "home-looper", designed: "play112-3" },
-    { id: "home-live-pad", designed: "play112-4" },
-    { id: "home-drums", designed: "play112-5" },
-    { id: "home-mixer", designed: "play112-6" },
-    { id: "home-mastering-style", designed: "play112-7" },
-    { id: "home-mastering-measure", designed: "play112-8" },
+    { id: "home-sound", designed: "01-sound" },
+    { id: "home-sound-fx", designed: "02-sound-fx" },
+    { id: "home-pad", designed: "03-pad" },
+    { id: "home-looper", designed: "04-looper-live" },
+    { id: "home-drums", designed: "05-drum" },
+    { id: "home-mic", designed: "06-mic" },
+    { id: "home-mixer", designed: "07-mixer" },
+    { id: "home-mastering", designed: "08-mastering" },
   ],
   // /updates, 1.12 item (counter n/10 baked in): mixer first, then Mastering. Real 1.12 smoke captures (David, Oct 21).
   // he and en have their own captions; ru and ar use the English posters for now (TODO in CONTENT_EDITING.md).
@@ -86,7 +86,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-12";
+export const CAROUSEL_VER = "carousel-115";
 const SMALL = 360;
 const LARGE = 630;
 

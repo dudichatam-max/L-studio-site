@@ -217,11 +217,20 @@ Latin product names and English lists inside Hebrew and Arabic copy are marked a
 
 Expand only the Drums copy (`languages.*.underHood.features` id `drums`, and the DRUM tab in `Home.tsx`). The prerendered snapshot reads the same `underHood` fields. Verified against app tag `v1.14-smoke-passed` (`68b45e9`): 16 Random styles (English names in every language), Genre bank 3,696 unique Ogg files (16 styles x 7 cells x 33; FX 1 and FX 2 share a cell), 8 Factory packs and 11 Exclusive packs (8 kits each, 152 kits). Do not treat 3,696 as the total of every drum file in the app (the pack ZIPs and vocal folders are separate). Do not mention Humanize, Ratchet, the New button, or the 1.15 sample cleanup. The 1.15 card and ticker stay unchanged.
 
+## Updates: 1.15 available on Google Play + homepage store assets (2026-11-16)
+
+- David confirmed 1.15 is available on Google Play and pointed at Drive folder `1LG_xYfYzuIjzMyKoSsNZeYWqNadu0HBZ` (HE+EN feature graphic and phone stills 01-08).
+- Item `app-1-15-in-development` is now `shipped`. Title/ticker use "On Google Play now" / "On Google Play:" (HE "עכשיו ב-Google Play:", RU "Теперь в Google Play:", AR "الآن على Google Play:"). Summary says updated Nov 16, 2026. Banner alt says on Google Play.
+- Hero kicker, FAQ, Pro (`content.json` and `shared/pro-copy.json`), `/updates` intro, SEO (`shared/seo.ts` APP_FACTS + updates descriptions), and JSON-LD say **1.15**. Size stays **160.1 MB** until a signed 1.15 Play APK byte count is recorded.
+- The 1.14 item stays `shipped` but no longer uses the "now" prefix. Older 1.10/1.11 summaries that pointed at "with version 1.14" now say 1.15.
+- Homepage header: replaced `assets/feature-graphic-{en,he}-{640,800,1024}` from Drive `*-00-feature-graphic-1024x500.png`. Cache key `FEATURE_GRAPHIC_VER` = `fg-115`. Alts match the new two-phone overview art.
+- Homepage top carousel (`home112`): eight Play stills 01-08 (sound, sound-fx, pad, looper-live, drum, mic, mixer, mastering). HE uses Hebrew files; EN/RU/AR use English. Cache `CAROUSEL_VER` = `carousel-115`. `/updates` 1.15 stills under `assets/updates/115/` were refreshed from the same Drive set.
+
 ## SEO, crawlable sections, and official 1.14 feature set (2026-11-12)
 
 Head titles, meta descriptions, og/twitter and JSON-LD descriptions now follow David's homepage wording, in all four languages. The English title is his exact text, including the typographic dash and "A Full Studio in Your Phone". Body copy has no em-dashes and does not call L Studio a DAW.
 
-The Play version on badges is `APP_FACTS.softwareVersion` in `shared/seo.ts` (currently 1.14). Privacy, Terms, the hero fallback kicker, and JSON-LD `softwareVersion` read that one constant. To switch the badges to 1.15 later, change that value and then the matching sentences in `content.json` / `shared/pro-copy.json`.
+The Play version on badges is `APP_FACTS.softwareVersion` in `shared/seo.ts` (currently 1.15). Privacy, Terms, the hero fallback kicker, and JSON-LD `softwareVersion` read that one constant. When the Google Play version changes, update that value and the matching sentences in `content.json` / `shared/pro-copy.json`.
 
 Homepage, `/guide` and `/updates` (and the other language roots) get a hidden semantic HTML snapshot in `#root` at prepare-pages time, so `curl` and crawlers see `h2`/`h3`/`p` before JavaScript. React replaces `#root` on boot, so the designed UI is unchanged. Official feature copy lives in `languages.*.underHood.identity` and `languages.*.underHood.features` (nine blocks: Free Tuning, Sound Design, Sound FX / 8 Bass Worlds, Looper, Drums, Mic Studio, Performance Pad, Analog Mixer, Mastering). It is also rendered visibly in the existing architecture section. The 1.15 in-development card and ticker were not changed.
 
