@@ -538,12 +538,7 @@
                     ]
                   },
                   {
-                    "text": "הקלדת מספר על נוב, וגרירה עדיין עובדת. שמות ערוצי Looper ו-Mic, שם עמוד ה-Looper, והלחיצה הארוכה שפותחת את Page name.",
-                    "img": "assets/guide/c/loop-head.jpg",
-                    "size": [
-                      720,
-                      55
-                    ]
+                    "text": "הקלדת מספר על נוב, וגרירה עדיין עובדת. שמות ערוצי Looper ו-Mic."
                   },
                   {
                     "text": "במיקסר האנלוגי, LIVE נועל את הלחיצה הארוכה שמשנה שם של פריסט.",
@@ -585,7 +580,7 @@
               "הקשת הזהובה של נוב מתחילה למטה משמאל, ו-12 בשעון הוא אמצע הטווח שלו. בנובים של L/R הקשת מתחילה ב-12, במרכז.",
               "בפלאפון האפליקציה נשארת זקופה, לאורך. בטאבלט היא יכולה להסתובב."
             ],
-            "tipAdvanced": "לחלק מהפעולות אין כפתור משלהן, רק לחיצה ארוכה: מקש גל (לוח הגל), מספר מקצב (חזרות), משבצת Sound FX (גוון), מספר עמוד בלופ (שם וצבע), Presets (שמירה מהירה), Drum Kits ‏(Random genre), סשן שמור (שינוי שם) ומספר פריסט במיקסר (שינוי שם).",
+            "tipAdvanced": "לחלק מהפעולות אין כפתור משלהן, רק לחיצה ארוכה: מקש גל (לוח הגל), מספר מקצב (חזרות), משבצת Sound FX (גוון), Presets (שמירה מהירה), Drum Kits ‏(Random genre), סשן שמור (שינוי שם) ומספר פריסט במיקסר (שינוי שם).",
             "steps": [
               {
                 "text": "ב-L Studio יש חמישה מסכים: Sound, Pad, Drum, Loop ו-Mic. הלשוניות מתחת לסקופים מחליפות ביניהם.",
@@ -1576,36 +1571,7 @@
                 "title": "עמודים וערוצים",
                 "steps": [
                   {
-                    "text": "הקשה על מספר עמוד, 1 עד 8, מראה את העמוד. לחיצה ארוכה פותחת את Page name.",
-                    "img": "assets/guide/c/loop-pages-nums.jpg",
-                    "size": [
-                      408,
-                      55
-                    ]
-                  },
-                  {
-                    "text": "מקלידים שם, בוחרים אחד מ-8 צבעים (כתום, אדום, זהב, חום, ירוק, כחול, סגול, ורוד), ומקישים OK. Reset מוריד את הצבע. Cancel משאיר את השם והצבע הקודמים.",
-                    "img": "assets/guide/c/page-name.jpg",
-                    "size": [
-                      680,
-                      630
-                    ]
-                  },
-                  {
-                    "text": "צבע העמוד ממלא את מספר העמוד וצובע את גלי הערוצים בעמוד הזה.",
-                    "img": "assets/guide/c/loop-ch-wave.jpg",
-                    "size": [
-                      310,
-                      115
-                    ]
-                  },
-                  {
-                    "text": "שדה השם ליד Redo מראה את שם העמוד שאתם עליו. הקשה בשדה נותנת להקליד שם. השמות והצבעים נשמרים עם פרויקט הלופ וב-Export.",
-                    "img": "assets/guide/c/loop-head-left.jpg",
-                    "size": [
-                      312,
-                      55
-                    ]
+                    "text": "הקשה על מספר עמוד, 1 עד 8, מראה את העמוד."
                   },
                   {
                     "text": "שם כל ערוץ מתחיל כ-Ch ומספר. הקשה בשם משנה אותו.",
@@ -1884,12 +1850,7 @@
             "tipAdvanced": "כשלפחות תיבת מקצב אחת דולקת, הערוץ מנגן רק כשהתופים על אחד המקצבים האלה, ושותק בשאר. תיבה שמוגדרת ל-3 מנגנת את הלופ 3 פעמים כשהתופים נכנסים למקצב הזה. אינסוף ממשיך כל עוד התופים נשארים שם. עם KEEP PLAYING דולק, ההקלטה תמיד מתנגנת עד הסוף, גם כשהתופים ממשיכים הלאה.",
             "steps": [
               {
-                "text": "יש 32 ערוצי לופר: 8 עמודים, 1 עד 8, ובכל עמוד 4 ערוצים. הקלטה יכולה להימשך עד 30 דקות. ב-30:00 ההקלטה נעצרת לבד.",
-                "img": "assets/guide/c/loop-head.jpg",
-                "size": [
-                  720,
-                  55
-                ]
+                "text": "יש 32 ערוצי לופר: 8 עמודים, 1 עד 8, ובכל עמוד 4 ערוצים. הקלטה יכולה להימשך עד 30 דקות. ב-30:00 ההקלטה נעצרת לבד."
               }
             ]
           },
@@ -2522,7 +2483,7 @@
                     ]
                   },
                   {
-                    "text": "הקשה על Save as פותחת את Save Console. סשן שמור שומר את ה-Sound FX, השמות והצבעים של עמודי הלופ, פריסטי התדרים והמילים.",
+                    "text": "הקשה על Save as פותחת את Save Console. סשן שמור שומר את ה-Sound FX, פריסטי התדרים והמילים.",
                     "img": "assets/guide/c/set-saveas.jpg",
                     "size": [
                       660,
@@ -4609,12 +4570,7 @@
                     ]
                   },
                   {
-                    "text": "Typing a number on a knob, while a drag still works. The names of Looper and Mic channels, the Looper page name, and the long-press that opens Page name.",
-                    "img": "assets/guide/c/loop-head.jpg",
-                    "size": [
-                      720,
-                      55
-                    ]
+                    "text": "Typing a number on a knob, while a drag still works. The names of Looper and Mic channels."
                   },
                   {
                     "text": "In the Analog Mixer, LIVE locks the long-press that renames a preset.",
@@ -4656,7 +4612,7 @@
               "A knob's gold arc starts at the lower left, and 12 o'clock is the middle of its range. On L/R knobs the arc starts at 12 o'clock, the center.",
               "On a phone the app stays upright, in portrait. On a tablet it can rotate."
             ],
-            "tipAdvanced": "Some actions have no button of their own, only a long-press: a wave key (wave panel), a rhythm number (repeats), a Sound FX slot (tone), a Loop page number (name and color), Presets (quick save), Drum Kits (Random genre), a saved session (rename), and a mixer preset number (rename).",
+            "tipAdvanced": "Some actions have no button of their own, only a long-press: a wave key (wave panel), a rhythm number (repeats), a Sound FX slot (tone), Presets (quick save), Drum Kits (Random genre), a saved session (rename), and a mixer preset number (rename).",
             "steps": [
               {
                 "text": "L Studio has five screens: Sound, Pad, Drum, Loop, and Mic. The tabs under the scopes switch between them.",
@@ -5647,36 +5603,7 @@
                 "title": "Pages and channels",
                 "steps": [
                   {
-                    "text": "A tap on a page number, 1 through 8, shows that page. A long-press opens Page name.",
-                    "img": "assets/guide/c/loop-pages-nums.jpg",
-                    "size": [
-                      408,
-                      55
-                    ]
-                  },
-                  {
-                    "text": "Type a name, pick one of 8 colors (orange, red, gold, brown, green, blue, purple, pink), and tap OK. Reset removes the color. Cancel keeps the old name and color.",
-                    "img": "assets/guide/c/page-name.jpg",
-                    "size": [
-                      680,
-                      630
-                    ]
-                  },
-                  {
-                    "text": "The page color fills that page number and colors the channel waves on that page.",
-                    "img": "assets/guide/c/loop-ch-wave.jpg",
-                    "size": [
-                      310,
-                      115
-                    ]
-                  },
-                  {
-                    "text": "The name field next to Redo shows the name of the page you are on. A tap in it lets you type the name. Names and colors are saved with the loop project and in Export.",
-                    "img": "assets/guide/c/loop-head-left.jpg",
-                    "size": [
-                      312,
-                      55
-                    ]
+                    "text": "A tap on a page number, 1 through 8, shows that page."
                   },
                   {
                     "text": "Each channel name starts as Ch and a number. A tap in the name changes it.",
@@ -5955,12 +5882,7 @@
             "tipAdvanced": "With at least one rhythm box on, the channel plays only while the drums are on one of those rhythms, and stays silent on the others. A box set to 3 plays the loop 3 times when the drums enter that rhythm. Infinity keeps it going as long as the drums stay there. With KEEP PLAYING on, the take always plays to its end, even when the drums move on.",
             "steps": [
               {
-                "text": "There are 32 looper channels: 8 pages, 1 to 8, with 4 channels on each page. A recording can run up to 30 minutes. At 30:00 it stops by itself.",
-                "img": "assets/guide/c/loop-head.jpg",
-                "size": [
-                  720,
-                  55
-                ]
+                "text": "There are 32 looper channels: 8 pages, 1 to 8, with 4 channels on each page. A recording can run up to 30 minutes. At 30:00 it stops by itself."
               }
             ]
           },
@@ -6593,7 +6515,7 @@
                     ]
                   },
                   {
-                    "text": "A tap on Save as opens Save Console. A saved session keeps the Sound FX, the loop page names and colors, the frequency presets, and the lyrics.",
+                    "text": "A tap on Save as opens Save Console. A saved session keeps the Sound FX, the frequency presets, and the lyrics.",
                     "img": "assets/guide/c/set-saveas.jpg",
                     "size": [
                       660,
@@ -8680,12 +8602,7 @@
                     ]
                   },
                   {
-                    "text": "Ввод числа на регуляторе, при этом перетаскивание работает. Имена каналов Looper и Mic, имя страницы Looper и долгое нажатие, открывающее Page name.",
-                    "img": "assets/guide/c/loop-head.jpg",
-                    "size": [
-                      720,
-                      55
-                    ]
+                    "text": "Ввод числа на регуляторе, при этом перетаскивание работает. Имена каналов Looper и Mic."
                   },
                   {
                     "text": "В аналоговом микшере LIVE блокирует долгое нажатие, которое переименовывает пресет.",
@@ -8727,7 +8644,7 @@
               "Золотая дуга регулятора начинается внизу слева, а 12 часов это середина его диапазона. У регуляторов L/R дуга начинается с 12 часов, то есть из центра.",
               "На телефоне приложение остаётся в портретной ориентации. На планшете оно может поворачиваться."
             ],
-            "tipAdvanced": "У некоторых действий нет своей кнопки, только долгое нажатие: клавиша волны (панель волны), номер ритма (повторы), ячейка Sound FX (тон), номер страницы Loop (имя и цвет), Presets (быстрое сохранение), Drum Kits (Random genre), сохранённая сессия (переименование) и номер пресета микшера (переименование).",
+            "tipAdvanced": "У некоторых действий нет своей кнопки, только долгое нажатие: клавиша волны (панель волны), номер ритма (повторы), ячейка Sound FX (тон), Presets (быстрое сохранение), Drum Kits (Random genre), сохранённая сессия (переименование) и номер пресета микшера (переименование).",
             "steps": [
               {
                 "text": "В L Studio пять экранов: Sound, Pad, Drum, Loop и Mic. Вкладки под осциллографами переключают их.",
@@ -9718,36 +9635,7 @@
                 "title": "Страницы и каналы",
                 "steps": [
                   {
-                    "text": "Нажатие на номер страницы, от 1 до 8, показывает страницу. Долгое нажатие открывает Page name.",
-                    "img": "assets/guide/c/loop-pages-nums.jpg",
-                    "size": [
-                      408,
-                      55
-                    ]
-                  },
-                  {
-                    "text": "Введите имя, выберите один из 8 цветов (оранжевый, красный, золотой, коричневый, зелёный, синий, фиолетовый, розовый) и нажмите OK. Reset убирает цвет. Cancel оставляет прежние имя и цвет.",
-                    "img": "assets/guide/c/page-name.jpg",
-                    "size": [
-                      680,
-                      630
-                    ]
-                  },
-                  {
-                    "text": "Цвет страницы заполняет её номер и окрашивает волны каналов на этой странице.",
-                    "img": "assets/guide/c/loop-ch-wave.jpg",
-                    "size": [
-                      310,
-                      115
-                    ]
-                  },
-                  {
-                    "text": "Поле имени рядом с Redo показывает имя текущей страницы. Нажатие в поле позволяет ввести имя. Имена и цвета сохраняются вместе с проектом лупера и в Export.",
-                    "img": "assets/guide/c/loop-head-left.jpg",
-                    "size": [
-                      312,
-                      55
-                    ]
+                    "text": "Нажатие на номер страницы, от 1 до 8, показывает страницу."
                   },
                   {
                     "text": "Имя каждого канала начинает как Ch и число. Нажатие в имени меняет его.",
@@ -10026,12 +9914,7 @@
             "tipAdvanced": "Если включена хотя бы одна ячейка ритма, канал играет только пока ударные на одном из этих ритмов, а на остальных молчит. Ячейка со значением 3 играет луп 3 раза, когда ударные входят в этот ритм. Бесконечность продолжает, пока ударные остаются на нём. С включённым KEEP PLAYING запись всегда доигрывает до конца, даже когда ударные идут дальше.",
             "steps": [
               {
-                "text": "Здесь 32 канала лупера: 8 страниц, от 1 до 8, по 4 канала на каждой. Запись может длиться до 30 минут. На 30:00 она останавливается сама.",
-                "img": "assets/guide/c/loop-head.jpg",
-                "size": [
-                  720,
-                  55
-                ]
+                "text": "Здесь 32 канала лупера: 8 страниц, от 1 до 8, по 4 канала на каждой. Запись может длиться до 30 минут. На 30:00 она останавливается сама."
               }
             ]
           },
@@ -10664,7 +10547,7 @@
                     ]
                   },
                   {
-                    "text": "Нажатие на Save as открывает Save Console. Сохранённая сессия хранит Sound FX, имена и цвета страниц Loop, пресеты частот и текст песни.",
+                    "text": "Нажатие на Save as открывает Save Console. Сохранённая сессия хранит Sound FX, пресеты частот и текст песни.",
                     "img": "assets/guide/c/set-saveas.jpg",
                     "size": [
                       660,
@@ -12751,12 +12634,7 @@
                     ]
                   },
                   {
-                    "text": "كتابة رقم على مقبض، بينما يبقى السحب يعمل. أسماء قنوات Looper وMic، واسم صفحة Looper، والضغط المطول الذي يفتح Page name.",
-                    "img": "assets/guide/c/loop-head.jpg",
-                    "size": [
-                      720,
-                      55
-                    ]
+                    "text": "كتابة رقم على مقبض، بينما يبقى السحب يعمل. أسماء قنوات Looper وMic."
                   },
                   {
                     "text": "في الميكسر التناظري، يقفل LIVE الضغط المطول الذي يعيد تسمية الإعداد.",
@@ -12798,7 +12676,7 @@
               "القوس الذهبي للمقبض يبدأ من أسفل اليسار، والساعة 12 هي منتصف مداه. في مقابض L/R يبدأ القوس من الساعة 12، أي من المنتصف.",
               "على الهاتف يبقى التطبيق عمودياً. على الجهاز اللوحي يمكنه أن يدور."
             ],
-            "tipAdvanced": "بعض الإجراءات ليس لها زر خاص، بل ضغط مطول فقط: مفتاح موجة (لوحة الموجة)، ورقم إيقاع (التكرار)، وخانة Sound FX (النغمة)، ورقم صفحة Loop (الاسم واللون)، وPresets (حفظ سريع)، وDrum Kits ‏(Random genre)، وجلسة محفوظة (إعادة التسمية)، ورقم إعداد في الميكسر (إعادة التسمية).",
+            "tipAdvanced": "بعض الإجراءات ليس لها زر خاص، بل ضغط مطول فقط: مفتاح موجة (لوحة الموجة)، ورقم إيقاع (التكرار)، وخانة Sound FX (النغمة)، وPresets (حفظ سريع)، وDrum Kits ‏(Random genre)، وجلسة محفوظة (إعادة التسمية)، ورقم إعداد في الميكسر (إعادة التسمية).",
             "steps": [
               {
                 "text": "في L Studio خمس شاشات: Sound وPad وDrum وLoop وMic. تبدّل علامات التبويب تحت شاشات الموجة بينها.",
@@ -13789,36 +13667,7 @@
                 "title": "الصفحات والقنوات",
                 "steps": [
                   {
-                    "text": "الضغط على رقم صفحة، من 1 إلى 8، يعرض الصفحة. الضغط المطوّل يفتح Page name.",
-                    "img": "assets/guide/c/loop-pages-nums.jpg",
-                    "size": [
-                      408,
-                      55
-                    ]
-                  },
-                  {
-                    "text": "اكتب اسماً، واختر لوناً من 8 ألوان (برتقالي، أحمر، ذهبي، بني، أخضر، أزرق، بنفسجي، وردي)، ثم اضغط OK. Reset يزيل اللون. Cancel يُبقي الاسم واللون السابقين.",
-                    "img": "assets/guide/c/page-name.jpg",
-                    "size": [
-                      680,
-                      630
-                    ]
-                  },
-                  {
-                    "text": "لون الصفحة يملأ رقمها ويلوّن موجات القنوات في تلك الصفحة.",
-                    "img": "assets/guide/c/loop-ch-wave.jpg",
-                    "size": [
-                      310,
-                      115
-                    ]
-                  },
-                  {
-                    "text": "حقل الاسم بجانب Redo يعرض اسم الصفحة التي أنت عليها. الضغط في الحقل يتيح كتابة الاسم. الأسماء والألوان تُحفظ مع مشروع اللوب وفي Export.",
-                    "img": "assets/guide/c/loop-head-left.jpg",
-                    "size": [
-                      312,
-                      55
-                    ]
+                    "text": "الضغط على رقم صفحة، من 1 إلى 8، يعرض الصفحة."
                   },
                   {
                     "text": "اسم كل قناة يبدأ Ch ورقماً. الضغط في الاسم يغيّره.",
@@ -14097,12 +13946,7 @@
             "tipAdvanced": "عندما يكون مربع إيقاع واحد على الأقل مشغّلاً، تعزف القناة فقط أثناء وجود الطبول على أحد تلك الإيقاعات، وتصمت في البقية. مربع مضبوط على 3 يعزف اللوب 3 مرات عند دخول الطبول ذلك الإيقاع. اللانهاية تواصل ما دامت الطبول باقية فيه. ومع تشغيل KEEP PLAYING، يُعزف التسجيل دائماً حتى نهايته، حتى عندما تنتقل الطبول.",
             "steps": [
               {
-                "text": "فيها 32 قناة لوبر: 8 صفحات، من 1 إلى 8، و4 قنوات في كل صفحة. يمكن أن يستمر التسجيل حتى 30 دقيقة. عند 30:00 يتوقف وحده.",
-                "img": "assets/guide/c/loop-head.jpg",
-                "size": [
-                  720,
-                  55
-                ]
+                "text": "فيها 32 قناة لوبر: 8 صفحات، من 1 إلى 8، و4 قنوات في كل صفحة. يمكن أن يستمر التسجيل حتى 30 دقيقة. عند 30:00 يتوقف وحده."
               }
             ]
           },
@@ -14735,7 +14579,7 @@
                     ]
                   },
                   {
-                    "text": "النقر على Save as يفتح Save Console. تحفظ الجلسة Sound FX وأسماء صفحات Loop وألوانها وإعدادات الترددات وكلمات الأغنية.",
+                    "text": "النقر على Save as يفتح Save Console. تحفظ الجلسة Sound FX وإعدادات الترددات وكلمات الأغنية.",
                     "img": "assets/guide/c/set-saveas.jpg",
                     "size": [
                       660,
