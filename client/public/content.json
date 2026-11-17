@@ -323,7 +323,7 @@
             "question": "מה ההבדל בין Preset לבין סשן?",
             "answer": [
               "Preset שומר סאונד אחד, כולל אילו גלים דולקים, ולכל גל את האוקטבה, הגוון (EQ) והדפים 2 עד 4 שלו. הוא שומר גם את הגדרות ה-Sound FX. לחיצה ארוכה על Presets שומרת מהר את הסאונד הנוכחי בפריסט שנטען.",
-              "סשן שומר את כל הפרויקט: הלופים, ערוצי המיק, התופים, הפריסטים, ה-Sound FX, השמות והצבעים של עמודי הלופ, פריסטי התדרים, בחירות הסמפלים בתופים, סאמפלי LOADED שהקצבים משתמשים בהם, יעדי הפד, המילים, והמיקסר האנלוגי עם 8 הפריסטים שלו. המאסטרינג שייך להקלטה אחת ולא נשמר בסשן.",
+              "סשן שומר את כל הפרויקט: הלופים, ערוצי המיק, התופים, הפריסטים, ה-Sound FX, פריסטי התדרים, בחירות הסמפלים בתופים, סאמפלי LOADED שהקצבים משתמשים בהם, יעדי הפד, המילים, והמיקסר האנלוגי עם 8 הפריסטים שלו. המאסטרינג שייך להקלטה אחת ולא נשמר בסשן.",
               "New session מרוקן את ערוצי הלופר והמיק. הקיטים, המקצבים והפריסטים נשארים."
             ]
           },
@@ -351,7 +351,6 @@
               "מקש גל במסך Sound: לחיצה ארוכה פותחת את לוח הגל, עם האוקטבה, הגוון (EQ) ודפים 1 עד 4.",
               "מספר מקצב במסך Drum (1 עד 8): לחיצה ארוכה פותחת Pattern repeats, עם COPY ו-PASTE.",
               "Drum Kits (מסך Drum): החזקה פותחת Random genre, ובו בוחרים את הז'אנר ש-RANDOM משתמש בו.",
-              "מספר עמוד בלופר: לחיצה ארוכה פותחת שם וצבע לעמוד, מתוך 8 צבעים.",
               "פריסט ב-Sound FX, ב-Drum FX, ב-Looper FX או ב-Mic FX: לחיצה ארוכה פותחת Amount, EQ, Transpose ו-Reverb לפריסט הזה.",
               "שורת סשן ב-Load Console: לחיצה ארוכה משנה שם.",
               "תיבת מקצב ב-Loop Editor או ב-Mic Editor: לחיצה ארוכה בוחרת כמה פעמים המקצב הזה חוזר, עד 88, ו-KEEP PLAYING.",
@@ -374,7 +373,7 @@
             "question": "מה זה PRO ו-LIVE בשורה העליונה?",
             "answer": [
               "PRO הוא המצב הרגיל, עם הכול פתוח. LIVE נועל כמה כפתורים כדי שתוכלו להתרכז בנגינה, וכדי שהקשה בטעות לא תמחק הקלטה ולא תטען קובץ.",
-              "LIVE נועל Clear בערוצי הלופר והמיק, Load בשורות התופים ובערוצי הלופר, טעינה, שינוי שם ומחיקה של סאמפלי LOADED בתופים, שמות של ערוצים ועמודים, Import והקלדת מספר על נוב. במיקסר האנלוגי הוא נועל שינוי שם של פריסט.",
+              "LIVE נועל Clear בערוצי הלופר והמיק, Load בשורות התופים ובערוצי הלופר, טעינה, שינוי שם ומחיקה של סאמפלי LOADED בתופים, שמות של ערוצים, Import והקלדת מספר על נוב. במיקסר האנלוגי הוא נועל שינוי שם של פריסט.",
               "הוא משאיר פתוחים Rec, Play, Stop, השתקה וסולו, Save, Export, מעבר בין עמודים, פריסטים, החלפת קיט תופים וכל מה שמנגנים. הקשה נוספת על הכפתור מחזירה ל-PRO."
             ]
           },
@@ -4355,7 +4354,7 @@
             "question": "What's the difference between a Preset and a Session?",
             "answer": [
               "A Preset saves one sound, including which waves are on and, for each wave, its octave, its EQ, and its pages 2 to 4. It also keeps the Sound FX settings. A long-press on Presets quick-saves the current sound into the preset that is loaded.",
-              "A Session saves the whole project: the loops, the Mic channels, the drums, the presets, the Sound FX, the Loop page names and colors, the frequency presets, the drum sample picks, the LOADED drum samples your rhythms use, the Pad targets, the lyrics, and the Analog Mixer with its 8 presets. Mastering is per take and is not saved in the session.",
+              "A Session saves the whole project: the loops, the Mic channels, the drums, the presets, the Sound FX, the frequency presets, the drum sample picks, the LOADED drum samples your rhythms use, the Pad targets, the lyrics, and the Analog Mixer with its 8 presets. Mastering is per take and is not saved in the session.",
               "New session empties the Looper and Mic channels. Kits, rhythms, and presets stay."
             ]
           },
@@ -4383,7 +4382,6 @@
               "A wave key on the Sound screen: a long-press opens its wave panel, with the octave, the EQ, and pages 1 to 4.",
               "A rhythm number on the Drum screen (1 to 8): a long-press opens Pattern repeats, with COPY and PASTE.",
               "Drum Kits (Drum screen): hold it to open Random genre, where you pick the genre that RANDOM uses.",
-              "A page number in the Looper: a long-press opens the page name and a color, from 8 colors.",
               "A preset in Sound FX, Drum FX, Looper FX, or Mic FX: a long-press opens Amount, EQ, Transpose, and Reverb for that preset.",
               "A session row in the Load Console: a long-press renames it.",
               "A rhythm box in Loop Editor or Mic Editor: a long-press picks how many times that rhythm repeats, up to 88, and KEEP PLAYING.",
@@ -4406,7 +4404,7 @@
             "question": "What are PRO and LIVE in the top bar?",
             "answer": [
               "PRO is the normal mode, with everything open. LIVE locks some buttons so you can focus on playing, and a stray tap can't clear a take or load a file.",
-              "LIVE locks Clear on Looper and Mic channels, Load on the drum rows and on Looper channels, loading, renaming, and deleting LOADED drum samples, channel and page names, Import, and typing a number on a knob. In the Analog Mixer it locks renaming a preset.",
+              "LIVE locks Clear on Looper and Mic channels, Load on the drum rows and on Looper channels, loading, renaming, and deleting LOADED drum samples, channel names, Import, and typing a number on a knob. In the Analog Mixer it locks renaming a preset.",
               "It leaves open Rec, Play, Stop, mute and solo, Save, Export, switching pages, presets, switching drum kits, and everything you play. Another tap on the chip goes back to PRO."
             ]
           },
@@ -8387,7 +8385,7 @@
             "question": "В чём разница между Preset и сессией?",
             "answer": [
               "Preset сохраняет один звук: какие волны включены, а для каждой волны её октаву, EQ и страницы 2–4. Он также хранит настройки Sound FX. Долгое нажатие на Presets быстро сохраняет текущий звук в загруженный пресет.",
-              "Сессия сохраняет весь проект: лупы, каналы Mic, ударные, пресеты, Sound FX, имена и цвета страниц Loop, пресеты частот, выбор сэмплов в ударных, сэмплы LOADED, которые используют ритмы, цели Pad, текст песни и аналоговый микшер с его 8 пресетами. Мастеринг относится к одной записи и в сессии не сохраняется.",
+              "Сессия сохраняет весь проект: лупы, каналы Mic, ударные, пресеты, Sound FX, пресеты частот, выбор сэмплов в ударных, сэмплы LOADED, которые используют ритмы, цели Pad, текст песни и аналоговый микшер с его 8 пресетами. Мастеринг относится к одной записи и в сессии не сохраняется.",
               "New session очищает каналы Looper и Mic. Наборы, ритмы и пресеты остаются."
             ]
           },
@@ -8415,7 +8413,6 @@
               "Клавиша волны на экране Sound: долгое нажатие открывает панель волны с октавой, EQ и страницами 1–4.",
               "Номер ритма на экране Drum (от 1 до 8): долгое нажатие открывает Pattern repeats, с COPY и PASTE.",
               "Drum Kits (экран Drum): удержание открывает Random genre, где выбирается жанр для RANDOM.",
-              "Номер страницы в Looper: долгое нажатие открывает имя и цвет страницы, из 8 цветов.",
               "Пресет в Sound FX, Drum FX, Looper FX или Mic FX: долгое нажатие открывает Amount, EQ, Transpose и Reverb для этого пресета.",
               "Строка сессии в Load Console: долгое нажатие переименовывает.",
               "Ячейка ритма в Loop Editor или Mic Editor: долгое нажатие выбирает, сколько раз этот ритм повторяется, до 88, и KEEP PLAYING.",
@@ -8438,7 +8435,7 @@
             "question": "Что такое PRO и LIVE в верхней строке?",
             "answer": [
               "PRO обычный режим, где всё открыто. LIVE блокирует некоторые кнопки, чтобы вы могли сосредоточиться на игре, а случайное нажатие не стёрло запись и не загрузило файл.",
-              "LIVE блокирует Clear в каналах Looper и Mic, Load в рядах ударных и в каналах Looper, загрузку, переименование и удаление сэмплов LOADED, имена каналов и страниц, Import и ввод числа на ручке. В аналоговом микшере он блокирует переименование пресета.",
+              "LIVE блокирует Clear в каналах Looper и Mic, Load в рядах ударных и в каналах Looper, загрузку, переименование и удаление сэмплов LOADED, имена каналов, Import и ввод числа на ручке. В аналоговом микшере он блокирует переименование пресета.",
               "Открытыми остаются Rec, Play, Stop, mute и solo, Save, Export, переключение страниц, пресеты, смена наборов ударных и всё, что вы играете. Ещё одно нажатие на значок возвращает PRO."
             ]
           },
@@ -12419,7 +12416,7 @@
             "question": "ما الفرق بين Preset وجلسة؟",
             "answer": [
               "يحفظ Preset صوتاً واحداً، بما في ذلك الموجات المشغّلة، ولكل موجة الأوكتاف وEQ والصفحات من 2 إلى 4. ويحفظ أيضاً إعدادات Sound FX. الضغط المطول على Presets يحفظ الصوت الحالي بسرعة في الإعداد المسبق المحمّل.",
-              "تحفظ الجلسة المشروع كله: اللوبات وقنوات Mic والطبول والإعدادات المسبقة وSound FX وأسماء صفحات Loop وألوانها وإعدادات الترددات واختيارات عينات الطبول وعينات LOADED التي تستخدمها الإيقاعات وأهداف Pad وكلمات الأغنية، والميكسر التناظري مع إعداداته الثمانية. الماسترنغ خاص بتسجيل واحد ولا يُحفظ في الجلسة.",
+              "تحفظ الجلسة المشروع كله: اللوبات وقنوات Mic والطبول والإعدادات المسبقة وSound FX وإعدادات الترددات واختيارات عينات الطبول وعينات LOADED التي تستخدمها الإيقاعات وأهداف Pad وكلمات الأغنية، والميكسر التناظري مع إعداداته الثمانية. الماسترنغ خاص بتسجيل واحد ولا يُحفظ في الجلسة.",
               "New session تفرغ قنوات Looper وMic. تبقى المجموعات والإيقاعات والـ Presets."
             ]
           },
@@ -12447,7 +12444,6 @@
               "مفتاح موجة في شاشة Sound: الضغط المطول يفتح لوحة الموجة، مع الأوكتاف وEQ والصفحات من 1 إلى 4.",
               "رقم إيقاع في شاشة Drum (من 1 إلى 8): الضغط المطوّل يفتح Pattern repeats، مع COPY وPASTE.",
               "Drum Kits (شاشة Drum): الإمساك يفتح Random genre، حيث تختار النوع الذي يستخدمه RANDOM.",
-              "رقم صفحة في Looper: الضغط المطوّل يفتح اسم الصفحة ولوناً من 8 ألوان.",
               "Preset في Sound FX أو Drum FX أو Looper FX أو Mic FX: الضغط المطوّل يفتح Amount وEQ وTranspose وReverb لذلك الـ Preset.",
               "صف جلسة في Load Console: الضغط المطوّل يغيّر الاسم.",
               "مربع إيقاع في Loop Editor أو Mic Editor: الضغط المطوّل يختار عدد مرات تكرار ذلك الإيقاع، حتى 88، وKEEP PLAYING.",
@@ -12470,7 +12466,7 @@
             "question": "ما هما PRO وLIVE في الشريط العلوي؟",
             "answer": [
               "PRO هو الوضع العادي، وكل شيء فيه مفتوح. LIVE يقفل بعض الأزرار لتركّز على العزف، فلا تمسح نقرة بالخطأ تسجيلاً ولا تحمّل ملفاً.",
-              "LIVE يقفل Clear في قنوات Looper وMic، وLoad في صفوف الطبول وفي قنوات Looper، وتحميل عينات LOADED وتغيير أسمائها وحذفها، وأسماء القنوات والصفحات، وImport، وكتابة رقم على مقبض. وفي الميكسر التناظري يقفل إعادة تسمية الإعداد.",
+              "LIVE يقفل Clear في قنوات Looper وMic، وLoad في صفوف الطبول وفي قنوات Looper، وتحميل عينات LOADED وتغيير أسمائها وحذفها، وأسماء القنوات، وImport، وكتابة رقم على مقبض. وفي الميكسر التناظري يقفل إعادة تسمية الإعداد.",
               "ويترك مفتوحاً Rec وPlay وStop وكتم الصوت والعزل وSave وExport والتبديل بين الصفحات والـ Presets وتبديل أطقم الطبول وكل ما تعزفه. نقرة أخرى على الشارة تعيدك إلى PRO."
             ]
           },
