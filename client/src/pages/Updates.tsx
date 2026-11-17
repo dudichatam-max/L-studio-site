@@ -62,6 +62,8 @@ const STILL_SIZE: Record<string, { width: number; height: number }> = {
 function stillSizeFor(src: string) {
   if (/\/assets\/updates\/115\/[^/]+\/00-feature\.jpg$/.test(src)) return { width: 1024, height: 500 };
   if (/\/assets\/updates\/115\//.test(src)) return { width: 1080, height: 1920 };
+  // 1.16 Sound FX posters, full 4:5 frame resized to the -w630 variant (630 x 788).
+  if (/\/assets\/updates\/116\//.test(src)) return { width: 630, height: 788 };
   return /^\/?assets\/posters\//.test(src) ? { width: 630, height: 1120 } : STILL_SIZE[src] ?? { width: 720, height: 1348 };
 }
 
@@ -259,7 +261,7 @@ export default function Updates() {
                       ) : null}
                       {shots.length && item.imagesCarousel ? (
                         <div className="updates-card-shots">
-                          <div className={`updates-carousel updates-carousel--stills${item.id === "app-1-15-in-development" ? " updates-carousel--115" : ""}`}>
+                          <div className={`updates-carousel updates-carousel--stills${item.id === "app-1-15-in-development" ? " updates-carousel--115" : ""}${item.id === "app-1-16-sfx" ? " updates-carousel--45" : ""}`}>
                             <UpdateStillsCarousel
                               slides={shots.map((shot) => ({
                                 src: shot.src,

@@ -922,6 +922,15 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
 .updates-stills-carousel__dots { flex-wrap: wrap; justify-content: center; max-width: 100%; }
 
 .updates-carousel--115 { flex: 0 0 380px; width: 380px; max-width: 100%; }
+/* 1.16 Sound FX posters are 4:5. The stage follows the file, object-fit: contain, nothing cropped. */
+.updates-carousel--45 { flex: 0 0 420px; width: 420px; max-width: 100%; }
+.updates-carousel--45 .play-carousel__slide img.preview-media {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
 .updates-stills-carousel--mixed .play-carousel__stage {
   width: 100%;
   background: #e8e8e4;
@@ -951,6 +960,7 @@ html[dir="rtl"] .faq-heading, html[dir="rtl"] .faq-trigger, html[dir="rtl"] .faq
 }
 @media (max-width: 720px) {
   .updates-carousel--115 { flex: 0 1 auto; width: min(100%, 380px); margin-inline: auto; }
+  .updates-carousel.updates-carousel--45 { flex: 0 1 auto; width: 100%; max-width: 420px; margin-inline: auto; }
 }
 .updates-stills-carousel__caption {
   margin: 0;
