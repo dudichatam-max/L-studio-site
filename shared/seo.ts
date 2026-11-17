@@ -352,12 +352,14 @@ export const APP_FACTS = {
 } as const;
 
 const APP_SCREENSHOTS = [
-  "/assets/carousel/en/sound-fx-w630.jpg",
-  "/assets/carousel/en/sound-fm-w630.jpg",
-  "/assets/carousel/en/loop-looper-w630.jpg",
-  "/assets/carousel/en/drum-rows-w630.jpg",
-  "/assets/carousel/en/pad-live-w630.jpg",
-  "/assets/carousel/en/mic-editor-w630.jpg",
+  "/assets/carousel/en/home-sound-w630.jpg",
+  "/assets/carousel/en/home-sound-fx-w630.jpg",
+  "/assets/carousel/en/home-pad-w630.jpg",
+  "/assets/carousel/en/home-looper-w630.jpg",
+  "/assets/carousel/en/home-drums-w630.jpg",
+  "/assets/carousel/en/home-mic-w630.jpg",
+  "/assets/carousel/en/home-mixer-w630.jpg",
+  "/assets/carousel/en/home-mastering-w630.jpg",
 ];
 
 export const SITEMAP_PAGES: Array<{

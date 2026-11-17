@@ -6,53 +6,53 @@ export type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 export type CarouselId = PlayId | "update112" | "home112";
 
 /**
- * Home "Play with sound" carousels: one list per tab, in display order.
- * Every slide is a designed store poster (Google Play style) made per language, with its own counter n/N baked in
- * (N = slides of that tab). The site draws no counter. Files: assets/carousel/{lang}/{id}-w360|w630.{webp,jpg},
- * written by scripts/import-carousel-posters.py from a source dir of {lang}/{designed}.png.
- * Home top carousel uses the live Google Play version stills (1.15). Feature tabs keep their earlier sets until replaced.
+ * Home carousels.
+ *
+ * `play115` is the official 1.15 Google Play set already on disk
+ * (`assets/carousel/{lang}/home-*-w360|w630.{webp,jpg}`). Hebrew uses the Hebrew
+ * files. English, Russian, and Arabic use the English files. Do not draw or
+ * generate new slides here. A designer is making extra 1.15-style slides; add
+ * one later by appending `{ id, designed }` to a tab array, adding
+ * `languages.*.carousel.slides[id]` in he, en, ru, and ar, and dropping in the
+ * four files per language. Mixer and mastering stay on `home112` until a tab
+ * is the right place for them.
+ *
+ * Files are written by scripts/import-carousel-posters.py only when the source
+ * PNG for that `designed` name exists. Do not run that script against this set
+ * without those sources: it deletes files it does not reimport.
+ *
  * Slide titles and texts live in content.json under languages.*.carousel.slides[id].
- * To add or remove a slide the designer must rebake that tab's counters, then update this list.
  */
 export type SlideDef = { id: string; designed: string };
 
+/** Official 1.15 Google Play stills, in store order (the n/8 counter is baked into each file). */
+export const play115: Record<string, SlideDef> = {
+  sound: { id: "home-sound", designed: "01-sound" },
+  soundFx: { id: "home-sound-fx", designed: "02-sound-fx" },
+  pad: { id: "home-pad", designed: "03-pad" },
+  looper: { id: "home-looper", designed: "04-looper-live" },
+  drums: { id: "home-drums", designed: "05-drum" },
+  mic: { id: "home-mic", designed: "06-mic" },
+  mixer: { id: "home-mixer", designed: "07-mixer" },
+  mastering: { id: "home-mastering", designed: "08-mastering" },
+};
+
 export const carouselSlides: Record<CarouselId, SlideDef[]> = {
-  sound: [
-    { id: "sound-fx", designed: "sound-1" },
-    { id: "sound-fx-knobs", designed: "sound-2" },
-    { id: "sound-fm", designed: "sound-3" },
-    { id: "sound-scales", designed: "sound-4" },
-    { id: "sound-frequencies", designed: "sound-5" },
-    { id: "sound-wave-panel", designed: "sound-6" },
-    { id: "sound-two-keyboards", designed: "sound-7" },
-  ],
-  mic: [
-    { id: "mic-channels", designed: "mic-1" },
-    { id: "mic-editor", designed: "mic-2" },
-    { id: "mic-lyrics", designed: "mic-3" },
-    { id: "mic-mastering", designed: "mic-4" },
-  ],
-  loop: [
-    { id: "loop-looper", designed: "loop-1" },
-    { id: "loop-fx", designed: "loop-2" },
-    { id: "loop-editor", designed: "loop-3" },
-    { id: "loop-page-name", designed: "loop-4" },
-    { id: "loop-mixer", designed: "loop-5" },
-  ],
-  pad: [
-    { id: "pad-live", designed: "pad-1" },
-  ],
-  // Home top carousel: Google Play 1.15 store images (Drive 1LG_xYfYzuIjzMyKoSsNZeYWqNadu0HBZ).
-  // he = Hebrew set; en, ru, ar = English set. Feature graphic header is separate (assets/feature-graphic-*).
+  // One or two existing 1.15 stills per tab. Append a later designer slide to the array.
+  sound: [play115.sound, play115.soundFx],
+  mic: [play115.mic],
+  loop: [play115.looper],
+  pad: [play115.pad],
+  drum: [play115.drums],
   home112: [
-    { id: "home-sound", designed: "01-sound" },
-    { id: "home-sound-fx", designed: "02-sound-fx" },
-    { id: "home-pad", designed: "03-pad" },
-    { id: "home-looper", designed: "04-looper-live" },
-    { id: "home-drums", designed: "05-drum" },
-    { id: "home-mic", designed: "06-mic" },
-    { id: "home-mixer", designed: "07-mixer" },
-    { id: "home-mastering", designed: "08-mastering" },
+    play115.sound,
+    play115.soundFx,
+    play115.pad,
+    play115.looper,
+    play115.drums,
+    play115.mic,
+    play115.mixer,
+    play115.mastering,
   ],
   // /updates, 1.12 item (counter n/10 baked in): mixer first, then Mastering. Real 1.12 smoke captures (David, Oct 21).
   // he and en have their own captions; ru and ar use the English posters for now (TODO in CONTENT_EDITING.md).
@@ -67,12 +67,6 @@ export const carouselSlides: Record<CarouselId, SlideDef[]> = {
     { id: "upd-master-tone", designed: "upd112-8" },
     { id: "upd-master-stereo", designed: "upd112-9" },
     { id: "upd-master-saved", designed: "upd112-10" },
-  ],
-  drum: [
-    { id: "drum-rows", designed: "drum-1" },
-    { id: "drum-fx", designed: "drum-2" },
-    { id: "drum-banks", designed: "drum-3" },
-    { id: "drum-loaded", designed: "drum-4" },
   ],
 };
 

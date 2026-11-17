@@ -28,6 +28,21 @@ function webpUrl(path: string) {
   return assetUrl(path.replace(/\.jpe?g$/i, ".webp"));
 }
 
+/** `-w630.jpg` stills also have a `-w360` twin. Other stills stay a single file. */
+function sizedSet(src: string) {
+  const jpg = assetUrl(src);
+  const webp = webpUrl(src);
+  const match = /^(.*)-w630\.jpe?g$/i.exec(src);
+  if (!match) return { jpg, webp, jpgSet: undefined as string | undefined, webpSet: undefined as string | undefined };
+  const small = match[1];
+  return {
+    jpg,
+    webp,
+    jpgSet: `${assetUrl(`${small}-w360.jpg`)} 360w, ${jpg} 630w`,
+    webpSet: `${assetUrl(`${small}-w360.webp`)} 360w, ${webp} 630w`,
+  };
+}
+
 /**
  * Same play-carousel chrome as the homepage (swipe, arrows, dots, keyboard, RTL),
  * fed by update stills instead of the designed poster packs.
@@ -115,7 +130,10 @@ export default function UpdateStillsCarousel({
           aria-roledescription="carousel"
           aria-label={chrome.region}
         >
-          {slides.map((slide, i) => (
+          {slides.map((slide, i) => {
+            const pic = sizedSet(slide.src);
+            const sizes = pic.jpgSet ? "(max-width: 720px) 92vw, 420px" : undefined;
+            return (
             <figure
               className="play-carousel__slide"
               key={slide.src}
@@ -125,10 +143,14 @@ export default function UpdateStillsCarousel({
               aria-hidden={i === index ? undefined : true}
             >
               <picture>
-                {/\.jpe?g$/i.test(slide.src) ? <source srcSet={webpUrl(slide.src)} type="image/webp" /> : null}
+                {/\.jpe?g$/i.test(slide.src) ? (
+                  <source srcSet={pic.webpSet ?? pic.webp} sizes={sizes} type="image/webp" />
+                ) : null}
                 <img
                   className="preview-media"
-                  src={assetUrl(slide.src)}
+                  src={pic.jpg}
+                  srcSet={pic.jpgSet}
+                  sizes={sizes}
                   alt={slide.alt}
                   width={slide.width}
                   height={slide.height}
@@ -138,7 +160,8 @@ export default function UpdateStillsCarousel({
                 />
               </picture>
             </figure>
-          ))}
+            );
+          })}
         </div>
         {total > 1 && (
           <>

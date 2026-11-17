@@ -3425,6 +3425,38 @@
         },
         "items": [
           {
+            "id": "app-1-16-sfx",
+            "status": "upcoming",
+            "title": "בקרוב ב-Google Play: גרסה 1.16 עם ארבעה עולמות Sound FX חדשים",
+            "ticker": "בקרוב ב-Google Play: גרסה 1.16, Analog Delay, Bitcrusher, Ring Mod ו-Granular, ושרשרת של עד 4 אפקטים",
+            "summary": "גרסה 1.16 בקרוב ב-Google Play. היא מוסיפה ארבעה עולמות Sound FX: Analog Delay, Bitcrusher, Ring Mod ו-Granular. אפשר לשרשר אפקטים, עד 4 ברצף. הגרסה הזמינה עכשיו ב-Google Play היא 1.15.",
+            "images": [
+              "/assets/updates/116/analog-delay-w630.jpg",
+              "/assets/updates/116/bitcrusher-w630.jpg",
+              "/assets/updates/116/ring-mod-w630.jpg",
+              "/assets/updates/116/granular-w630.jpg"
+            ],
+            "imagesCarousel": true,
+            "imageAlts": [
+              "Analog Delay, עולם Sound FX 13, בקרוב ב-1.16. הד BBD חם. שרשרת: Iron Growl ואז Analog Delay.",
+              "Bitcrusher, עולם Sound FX 14, בקרוב ב-1.16. הורדת ביטים, לא פאז. שרשרת: Bitcrusher ואז Analog Delay.",
+              "Ring Mod, עולם Sound FX 15, בקרוב ב-1.16. פעמונים מתכתיים וטרמולו. שרשרת: FM, Ring Mod, ואז Analog Delay.",
+              "Granular, עולם Sound FX 16, בקרוב ב-1.16. ענן גרגרים עם FREEZE. שרשרת: Granular ואז Analog Delay."
+            ],
+            "sections": [
+              {
+                "title": "עולמות חדשים",
+                "bullets": [
+                  "Analog Delay: הד חם בסגנון BBD. כל חזרה נעשית כהה יותר, והצליל היבש נשאר נקי.",
+                  "Bitcrusher: הורדת ביטים אמיתית ומדרגות של דגימה והחזקה, לא פאז. מ-16 ביט נקי עד 2 ביט מחוספס.",
+                  "Ring Mod: גל נושא שמוכפל בצליל. פעמונים מתכתיים, קולות רובוטיים, וטרמולו כש-FREQ נמוך.",
+                  "Granular: תו אחד הופך לענן חי של גרגרים, ו-FREEZE מקפיא את הענן.",
+                  "דוגמאות לשרשרת: Iron Growl ואז Analog Delay, Bitcrusher ואז Analog Delay, FM ואז Ring Mod ואז Analog Delay, Granular ואז Analog Delay."
+                ]
+              }
+            ]
+          },
+          {
             "id": "app-1-15-in-development",
             "status": "shipped",
             "title": "עכשיו ב-Google Play: גרסה 1.15 עם Humanize, Ratchet וערכות תופים אישיות",
@@ -3874,9 +3906,9 @@
           {
             "id": "sound-fx-looper-pages",
             "status": "shipped",
-            "title": "Sound FX + צבעים לעמודי הלופר",
-            "ticker": "Sound FX וצבעים לעמודי הלופר",
-            "summary": "מאז גרסה 1.08: 8 אפקטי Sound FX חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים שומרים את ההגדרות של כל ה-8. לכל עמוד בלופר יש שם ואחד מ-8 צבעים. הנובים מראים את הערך בטבעת זהב, והמדריך באפליקציה מלמד את כל זה.",
+            "title": "Sound FX מאז גרסה 1.08",
+            "ticker": "Sound FX מאז גרסה 1.08",
+            "summary": "מאז גרסה 1.08: 8 אפקטי Sound FX חדשים שהולכים לפי הביט של התופים, ואפשר להחליף ביניהם תוך כדי נגינה. פריסטים שומרים את ההגדרות של כל ה-8. הנובים מראים את הערך בטבעת זהב, והמדריך באפליקציה מלמד את כל זה.",
             "href": "/guide",
             "cta": "למדריך"
           },
@@ -3931,10 +3963,6 @@
           "loop-editor": {
             "title": "עורך לולאות",
             "text": "חיתוך, לולאה ואקולייזר. לחיצה ארוכה על קופסת קצב פותחת חזרות."
-          },
-          "loop-page-name": {
-            "title": "שם לכל עמוד",
-            "text": "לחיצה ארוכה על מספר עמוד מאפשרת לתת לו שם ולבחור אחד מ־8 צבעים."
           },
           "sound-fx": {
             "title": "אפקטי Sound",
@@ -7468,6 +7496,38 @@
         },
         "items": [
           {
+            "id": "app-1-16-sfx",
+            "status": "upcoming",
+            "title": "Coming soon to Google Play: version 1.16 with four new Sound FX worlds",
+            "ticker": "Coming soon to Google Play: version 1.16, Analog Delay, Bitcrusher, Ring Mod and Granular, in a chain of up to 4 effects",
+            "summary": "Version 1.16 is coming soon to Google Play. It adds four Sound FX worlds: Analog Delay, Bitcrusher, Ring Mod and Granular. Effects can be chained, up to 4 in a row. The version on Google Play now is 1.15.",
+            "images": [
+              "/assets/updates/116/analog-delay-w630.jpg",
+              "/assets/updates/116/bitcrusher-w630.jpg",
+              "/assets/updates/116/ring-mod-w630.jpg",
+              "/assets/updates/116/granular-w630.jpg"
+            ],
+            "imagesCarousel": true,
+            "imageAlts": [
+              "Analog Delay, Sound FX world 13, coming soon in 1.16. A warm BBD echo. Chain: Iron Growl then Analog Delay.",
+              "Bitcrusher, Sound FX world 14, coming soon in 1.16. Bit reduction and sample hold, not fuzz. Chain: Bitcrusher then Analog Delay.",
+              "Ring Mod, Sound FX world 15, coming soon in 1.16. Metallic bells and tremolo. Chain: FM, then Ring Mod, then Analog Delay.",
+              "Granular, Sound FX world 16, coming soon in 1.16. A grain cloud with FREEZE. Chain: Granular then Analog Delay."
+            ],
+            "sections": [
+              {
+                "title": "New worlds",
+                "bullets": [
+                  "Analog Delay: a warm BBD style echo. Each repeat gets darker, and the dry sound stays clear.",
+                  "Bitcrusher: real bit reduction and sample hold stair steps, not fuzz. From 16-bit clean down to 2-bit grit.",
+                  "Ring Mod: carrier times input. Metallic bells, robotic voices, and tremolo at a low FREQ.",
+                  "Granular: one note becomes a living cloud of grains, and FREEZE holds that cloud.",
+                  "Chain examples: Iron Growl then Analog Delay, Bitcrusher then Analog Delay, FM then Ring Mod then Analog Delay, Granular then Analog Delay."
+                ]
+              }
+            ]
+          },
+          {
             "id": "app-1-15-in-development",
             "status": "shipped",
             "title": "On Google Play now: version 1.15 with Humanize, Ratchet and Custom drum kits",
@@ -7917,9 +7977,9 @@
           {
             "id": "sound-fx-looper-pages",
             "status": "shipped",
-            "title": "Sound FX + looper page colors",
-            "ticker": "Sound FX and looper page colors",
-            "summary": "Since version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Each looper page gets a name and one of 8 colors. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
+            "title": "Sound FX since version 1.08",
+            "ticker": "Sound FX since version 1.08",
+            "summary": "Since version 1.08: 8 new Sound FX that follow the drum beat, and you can switch them while you play. Presets keep the settings of all 8. Knobs show their value with a gold ring, and the in-app tutorial covers all of it.",
             "href": "/guide",
             "cta": "Open guide"
           },
@@ -7974,10 +8034,6 @@
           "loop-editor": {
             "title": "Loop Editor",
             "text": "Trim, loop and shape the EQ. Long-press a rhythm box for repeats."
-          },
-          "loop-page-name": {
-            "title": "Name your pages",
-            "text": "Long-press a page number to name it and pick one of 8 colors."
           },
           "sound-fx": {
             "title": "Sound FX",
@@ -11511,6 +11567,38 @@
         },
         "items": [
           {
+            "id": "app-1-16-sfx",
+            "status": "upcoming",
+            "title": "Скоро в Google Play: версия 1.16 с четырьмя новыми мирами Sound FX",
+            "ticker": "Скоро в Google Play: версия 1.16, Analog Delay, Bitcrusher, Ring Mod и Granular, цепочка до 4 эффектов",
+            "summary": "Версия 1.16 скоро появится в Google Play. Она добавляет четыре мира Sound FX: Analog Delay, Bitcrusher, Ring Mod и Granular. Эффекты можно соединять в цепочку, до 4 подряд. Сейчас в Google Play доступна версия 1.15.",
+            "images": [
+              "/assets/updates/116/analog-delay-w630.jpg",
+              "/assets/updates/116/bitcrusher-w630.jpg",
+              "/assets/updates/116/ring-mod-w630.jpg",
+              "/assets/updates/116/granular-w630.jpg"
+            ],
+            "imagesCarousel": true,
+            "imageAlts": [
+              "Analog Delay, мир Sound FX 13, скоро в 1.16. Тёплое эхо BBD. Цепочка: Iron Growl, затем Analog Delay.",
+              "Bitcrusher, мир Sound FX 14, скоро в 1.16. Снижение битности и sample hold, не fuzz. Цепочка: Bitcrusher, затем Analog Delay.",
+              "Ring Mod, мир Sound FX 15, скоро в 1.16. Металлические колокола и тремоло. Цепочка: FM, затем Ring Mod, затем Analog Delay.",
+              "Granular, мир Sound FX 16, скоро в 1.16. Облако зёрен с FREEZE. Цепочка: Granular, затем Analog Delay."
+            ],
+            "sections": [
+              {
+                "title": "Новые миры",
+                "bullets": [
+                  "Analog Delay: тёплое эхо в стиле BBD. Каждый повтор темнеет, сухой звук остаётся чистым.",
+                  "Bitcrusher: настоящее снижение битности и ступени sample hold, не fuzz. От чистых 16 бит до зернистых 2 бит.",
+                  "Ring Mod: несущая, умноженная на звук. Металлические колокола, роботизированные голоса и тремоло при низком FREQ.",
+                  "Granular: одна нота становится живым облаком зёрен, FREEZE замораживает это облако.",
+                  "Примеры цепочки: Iron Growl, затем Analog Delay; Bitcrusher, затем Analog Delay; FM, затем Ring Mod, затем Analog Delay; Granular, затем Analog Delay."
+                ]
+              }
+            ]
+          },
+          {
             "id": "app-1-15-in-development",
             "status": "shipped",
             "title": "Теперь в Google Play: версия 1.15 с Humanize, Ratchet и пользовательскими наборами ударных",
@@ -11960,9 +12048,9 @@
           {
             "id": "sound-fx-looper-pages",
             "status": "shipped",
-            "title": "Sound FX + цвета страниц лупера",
-            "ticker": "Sound FX и цвета страниц лупера",
-            "summary": "С версии 1.08: 8 новых Sound FX, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты сохраняют настройки всех 8. Каждой странице лупера можно дать имя и один из 8 цветов. Регуляторы показывают значение золотым кольцом, а тур в приложении показывает всё это.",
+            "title": "Sound FX с версии 1.08",
+            "ticker": "Sound FX с версии 1.08",
+            "summary": "С версии 1.08: 8 новых Sound FX, которые идут в такт барабанам, и их можно переключать прямо во время игры. Пресеты сохраняют настройки всех 8. Регуляторы показывают значение золотым кольцом, а тур в приложении показывает всё это.",
             "href": "/guide",
             "cta": "Открыть гид"
           },
@@ -12017,10 +12105,6 @@
           "loop-editor": {
             "title": "Редактор лупов",
             "text": "Обрезка, луп и эквалайзер. Долгое нажатие на ритм открывает повторы."
-          },
-          "loop-page-name": {
-            "title": "Имя для страницы",
-            "text": "Долгое нажатие на номер страницы задаёт имя и один из 8 цветов."
           },
           "sound-fx": {
             "title": "Sound FX",
@@ -15554,6 +15638,38 @@
         },
         "items": [
           {
+            "id": "app-1-16-sfx",
+            "status": "upcoming",
+            "title": "قريباً على Google Play: الإصدار 1.16 مع أربعة عوالم Sound FX جديدة",
+            "ticker": "قريباً على Google Play: الإصدار 1.16، Analog Delay وBitcrusher وRing Mod وGranular، وسلسلة حتى 4 تأثيرات",
+            "summary": "الإصدار 1.16 قريباً على Google Play. يضيف أربعة عوالم Sound FX: Analog Delay وBitcrusher وRing Mod وGranular. يمكن ربط التأثيرات في سلسلة حتى 4 متتالية. الإصدار المتاح الآن على Google Play هو 1.15.",
+            "images": [
+              "/assets/updates/116/analog-delay-w630.jpg",
+              "/assets/updates/116/bitcrusher-w630.jpg",
+              "/assets/updates/116/ring-mod-w630.jpg",
+              "/assets/updates/116/granular-w630.jpg"
+            ],
+            "imagesCarousel": true,
+            "imageAlts": [
+              "Analog Delay، عالم Sound FX رقم 13، قريباً في 1.16. صدى BBD دافئ. السلسلة: Iron Growl ثم Analog Delay.",
+              "Bitcrusher، عالم Sound FX رقم 14، قريباً في 1.16. خفض البتات وsample hold، وليس fuzz. السلسلة: Bitcrusher ثم Analog Delay.",
+              "Ring Mod، عالم Sound FX رقم 15، قريباً في 1.16. أجراس معدنية وتريمولو. السلسلة: FM ثم Ring Mod ثم Analog Delay.",
+              "Granular، عالم Sound FX رقم 16، قريباً في 1.16. سحابة حبيبات مع FREEZE. السلسلة: Granular ثم Analog Delay."
+            ],
+            "sections": [
+              {
+                "title": "عوالم جديدة",
+                "bullets": [
+                  "Analog Delay: صدى دافئ بأسلوب BBD. كل تكرار يصبح أغمق، والصوت الجاف يبقى نقياً.",
+                  "Bitcrusher: خفض بتات حقيقي ودرجات sample hold، وليس fuzz. من 16 بت نظيف حتى 2 بت خشن.",
+                  "Ring Mod: موجة حاملة مضروبة في الصوت. أجراس معدنية، وأصوات آلية، وتريمولو عندما يكون FREQ منخفضاً.",
+                  "Granular: نغمة واحدة تصبح سحابة حية من الحبيبات، وFREEZE يجمد تلك السحابة.",
+                  "أمثلة على السلسلة: Iron Growl ثم Analog Delay، وBitcrusher ثم Analog Delay، وFM ثم Ring Mod ثم Analog Delay، وGranular ثم Analog Delay."
+                ]
+              }
+            ]
+          },
+          {
             "id": "app-1-15-in-development",
             "status": "shipped",
             "title": "الآن على Google Play: الإصدار 1.15 مع Humanize وRatchet وأطقم طبول مخصصة",
@@ -16003,9 +16119,9 @@
           {
             "id": "sound-fx-looper-pages",
             "status": "shipped",
-            "title": "Sound FX + ألوان صفحات اللوبر",
-            "ticker": "Sound FX وألوان صفحات اللوبر",
-            "summary": "منذ الإصدار 1.08: ثمانية مؤثرات Sound FX جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة تحفظ إعدادات المؤثرات الثمانية كلها. لكل صفحة في اللوبر اسم وواحد من 8 ألوان. المقابض تعرض القيمة بحلقة ذهبية، والجولة داخل التطبيق تشرح كل ذلك.",
+            "title": "Sound FX منذ الإصدار 1.08",
+            "ticker": "Sound FX منذ الإصدار 1.08",
+            "summary": "منذ الإصدار 1.08: ثمانية مؤثرات Sound FX جديدة تتبع إيقاع الطبول، ويمكنك التبديل بينها أثناء العزف. الإعدادات المحفوظة تحفظ إعدادات المؤثرات الثمانية كلها. المقابض تعرض القيمة بحلقة ذهبية، والجولة داخل التطبيق تشرح كل ذلك.",
             "href": "/guide",
             "cta": "فتح الدليل"
           },
@@ -16060,10 +16176,6 @@
           "loop-editor": {
             "title": "محرر اللوب",
             "text": "قصّ وكرّر وشكّل الـ EQ. اضغط مطولًا على مربع الإيقاع لضبط التكرارات."
-          },
-          "loop-page-name": {
-            "title": "اسم لكل صفحة",
-            "text": "اضغط مطولًا على رقم الصفحة لتسميتها واختيار لون من 8 ألوان."
           },
           "sound-fx": {
             "title": "مؤثرات Sound",
