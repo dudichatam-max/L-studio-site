@@ -8,7 +8,15 @@
  * run (it is not put inside the LTR bdi), so a comma after Exclusive cannot
  * wrap alone to the other end of the next line.
  */
-export type LatinRunPart = { text: string; ltr: boolean; trailing?: string };
+export type LatinRunPart = {
+  text: string;
+  ltr: boolean;
+  trailing?: string;
+  /** Set when several Latin runs were joined across a Hebrew ו- or Arabic و. */
+  segments?: LatinSegment[];
+};
+
+export type LatinSegment = { text: string; isolate: boolean };
 
 const ATOM =
   "(?:\\d{1,3}(?:,\\d{3})+(?:\\.\\d+)?|\\d+[xX]|[A-Za-z][A-Za-z0-9]*(?:[/'’\\-][A-Za-z][A-Za-z0-9]*)*)";
@@ -41,6 +49,68 @@ export function isLatinList(text: string): boolean {
     /[A-Za-z][A-Za-z0-9]*\s+[A-Za-z]/.test(text) ||
     /[A-Za-z].*,\s*[A-Za-z]/.test(text)
   );
+}
+
+// Hebrew vav+hyphen, or Arabic waw, with nothing else in the gap. A longer
+// Hebrew or Arabic phrase must stay outside the LTR list.
+const CONJUNCTION_GAP = /^\s*(?:ו-|و)\s*$/;
+
+/**
+ * "Reverb ו-Rate" and "Amount وLow" are one English list. Leaving the
+ * conjunction outside the isolate lets the hyphen stick to the next Latin
+ * word and the bidi algorithm flips the list.
+ * The conjunction is its own LTR isolate so ו- stays in memory order.
+ */
+export function groupLatinConjunctions(parts: LatinRunPart[]): LatinRunPart[] {
+  const out: LatinRunPart[] = [];
+  let index = 0;
+  while (index < parts.length) {
+    const part = parts[index];
+    if (!part.ltr) {
+      out.push(part);
+      index += 1;
+      continue;
+    }
+    const segments: LatinSegment[] = [{ text: part.text, isolate: false }];
+    let trailing = part.trailing;
+    let cursor = index + 1;
+    let merged = false;
+    while (
+      cursor + 1 < parts.length &&
+      !parts[cursor].ltr &&
+      CONJUNCTION_GAP.test(parts[cursor].text) &&
+      parts[cursor + 1].ltr
+    ) {
+      if (trailing) {
+        segments.push({ text: trailing, isolate: false });
+        trailing = undefined;
+      }
+      const gap = parts[cursor].text;
+      const core = gap.trim();
+      const lead = gap.slice(0, gap.indexOf(core));
+      const trail = gap.slice(lead.length + core.length);
+      if (lead) segments.push({ text: lead, isolate: false });
+      segments.push({ text: core, isolate: true });
+      if (trail) segments.push({ text: trail, isolate: false });
+      segments.push({ text: parts[cursor + 1].text, isolate: false });
+      trailing = parts[cursor + 1].trailing;
+      cursor += 2;
+      merged = true;
+    }
+    if (!merged) {
+      out.push(part);
+      index += 1;
+      continue;
+    }
+    out.push({
+      text: segments.map(segment => segment.text).join(""),
+      ltr: true,
+      trailing,
+      segments,
+    });
+    index = cursor;
+  }
+  return out;
 }
 
 export function splitLatinRuns(text: string): LatinRunPart[] {
@@ -78,19 +148,32 @@ export function escapeHtml(value: string): string {
     .replace(/"/g, "&quot;");
 }
 
+function latinRunInner(part: LatinRunPart): string {
+  if (!part.segments) return escapeHtml(part.text);
+  return part.segments
+    .map(segment =>
+      segment.isolate
+        ? `<bdi dir="ltr">${escapeHtml(segment.text)}</bdi>`
+        : escapeHtml(segment.text)
+    )
+    .join("");
+}
+
 function latinRunHtml(part: LatinRunPart): string {
-  const listClass = isLatinList(part.text) ? ' class="bdi-list"' : "";
-  const bdi = `<bdi dir="ltr"${listClass}>${escapeHtml(part.text)}</bdi>`;
-  if (part.trailing) {
-    return `<span class="bdi-attach">${bdi}${escapeHtml(part.trailing)}</span>`;
-  }
-  return bdi;
+  const list = part.segments || isLatinList(part.text);
+  const listClass = list ? ' class="bdi-list"' : "";
+  const bdi = `<bdi dir="ltr"${listClass}>${latinRunInner(part)}</bdi>`;
+  if (!part.trailing) return bdi;
+  // A long list has to wrap inside the card. nowrap is only for a short
+  // name, so its comma or period cannot land alone on the next line.
+  if (list) return `${bdi}${escapeHtml(part.trailing)}`;
+  return `<span class="bdi-attach">${bdi}${escapeHtml(part.trailing)}</span>`;
 }
 
 /** Escaped HTML, with Latin runs wrapped in <bdi dir="ltr"> when isolate is on. */
 export function bidiHtml(text: string, isolate: boolean): string {
   if (!isolate) return escapeHtml(text);
-  return splitLatinRuns(text)
+  return groupLatinConjunctions(splitLatinRuns(text))
     .map(part => (part.ltr ? latinRunHtml(part) : escapeHtml(part.text)))
     .join("");
 }

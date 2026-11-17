@@ -290,6 +290,51 @@ function Headline({ text }: { text: string }) {
   );
 }
 
+function FeatureLineList({
+  lines,
+  language,
+  rtl,
+}: {
+  lines: { name: string; text: string }[];
+  language: Language;
+  rtl: boolean;
+}) {
+  return (
+    <ul className="fx-lines">
+      {lines.map(line => (
+        <li key={line.name}>
+          <b><BidiText text={line.name} language={language} rtl={rtl} /></b>
+          {" "}
+          <BidiText text={line.text} language={language} rtl={rtl} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function FeatureLines({
+  feature,
+  language,
+  rtl,
+}: {
+  feature: FeatureBlock;
+  language: Language;
+  rtl: boolean;
+}) {
+  return (
+    <>
+      <p><BidiText text={feature.body} language={language} rtl={rtl} /></p>
+      {feature.lines?.length ? <FeatureLineList lines={feature.lines} language={language} rtl={rtl} /> : null}
+      {feature.soonLabel && feature.soonLines?.length ? (
+        <>
+          <p className="fx-soon"><BidiText text={feature.soonLabel} language={language} rtl={rtl} /></p>
+          <FeatureLineList lines={feature.soonLines} language={language} rtl={rtl} />
+        </>
+      ) : null}
+    </>
+  );
+}
+
 export default function Home() {
   const { language, isRtl } = useLanguage();
   const [editableContent, setEditableContent] = useState<any>(null);
@@ -553,7 +598,7 @@ export default function Home() {
                   {isStructuredDrums(feature) ? (
                     <DrumsCopy feature={feature} language={language} rtl={isRtl} />
                   ) : (
-                    <p><BidiText text={feature.body} language={language} rtl={isRtl} /></p>
+                    <FeatureLines feature={feature} language={language} rtl={isRtl} />
                   )}
                 </article>
               ))}

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { isLatinList, shouldIsolateLatin, splitLatinRuns } from "@shared/bidi";
+import { groupLatinConjunctions, isLatinList, shouldIsolateLatin, splitLatinRuns } from "@shared/bidi";
 import type { Language } from "@shared/seo";
 
 type Props = {
@@ -13,16 +13,35 @@ export function BidiText({ text, language, rtl }: Props) {
   if (!isolate) return <>{text}</>;
   return (
     <>
-      {splitLatinRuns(text).map((part, index) => {
+      {groupLatinConjunctions(splitLatinRuns(text)).map((part, index) => {
         if (!part.ltr) {
           return <Fragment key={index}>{part.text}</Fragment>;
         }
         const bdi = (
-          <bdi dir="ltr" className={isLatinList(part.text) ? "bdi-list" : undefined}>
-            {part.text}
+          <bdi dir="ltr" className={part.segments || isLatinList(part.text) ? "bdi-list" : undefined}>
+            {part.segments
+              ? part.segments.map((segment, segmentIndex) =>
+                  segment.isolate ? (
+                    <bdi dir="ltr" key={segmentIndex}>
+                      {segment.text}
+                    </bdi>
+                  ) : (
+                    <Fragment key={segmentIndex}>{segment.text}</Fragment>
+                  )
+                )
+              : part.text}
           </bdi>
         );
         if (!part.trailing) return <Fragment key={index}>{bdi}</Fragment>;
+        const list = Boolean(part.segments) || isLatinList(part.text);
+        if (list) {
+          return (
+            <Fragment key={index}>
+              {bdi}
+              {part.trailing}
+            </Fragment>
+          );
+        }
         return (
           <span className="bdi-attach" key={index}>
             {bdi}

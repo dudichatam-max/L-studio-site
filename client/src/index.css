@@ -1107,6 +1107,31 @@ html[dir="rtl"] .gtips-list { padding: 0 20px 0 0; }
   line-height: 1.7;
   overflow-wrap: anywhere;
 }
+.fx-lines {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.fx-lines li {
+  color: #b7b4ad;
+  font-size: 14px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.fx-lines b {
+  color: var(--paper);
+  font-weight: 600;
+}
+.fx-soon {
+  margin: 16px 0 0;
+  color: var(--acid);
+  font: 600 11px var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
 @media (max-width: 1000px) {
   .studio-features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

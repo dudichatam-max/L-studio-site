@@ -103,13 +103,120 @@
           },
           {
             "id": "sound-fx",
-            "title": "Sound FX / 8 עולמות בס",
-            "body": "8 עולמות בס ב-Sound FX. עולמות שעובדים עם שעון יכולים לעקוב אחרי טמפו התופים כש-SYNC דולק."
+            "title": "Sound FX / 12 עולמות",
+            "body": "12 עולמות Sound FX. הקשה על עולם מדליקה אותו, והקשה נוספת מכבה. לחיצה ארוכה פותחת Tone: Amount, Low, Mid, High, Sweep, Transpose, Reverb ו-Rate. Sub Forge, Bass Clamp, Iron Growl ו-Thick Vein עוקבים רק אחרי Rate. שמונת האחרים עוקבים אחרי טמפו התופים כש-SYNC דולק. סיבוב Rate משחרר את השעון, גם בזמן שהתופים מנגנים. SYNC, או התחלת התופים, נועל שוב את השעון ל-BPM של התופים ולדאון ביט. כשהתופים עצורים, השעון רץ חופשי על Rate, 120 עד שמשנים.",
+            "lines": [
+              {
+                "name": "Sub Forge",
+                "text": "מוריד את התו באוקטבה, ועוד אוקטבה כש-Transpose יורד מתחת ל-0, ואז מעביר אותו דרך טייפ. בס נמוך מתחת לאקורד. עוקב רק אחרי Rate."
+              },
+              {
+                "name": "Depth Drop",
+                "text": "צלילה בגובה שמתחילה מחדש כל פעימה שנייה של השעון. בס נופל על הדאון ביט."
+              },
+              {
+                "name": "Bass Clamp",
+                "text": "מרים תווים שקטים ומחזיק את הפסגות, עם קליפ רך שרמקול של טלפון שומע. בס יציב. עוקב רק אחרי Rate."
+              },
+              {
+                "name": "Floor Pump",
+                "text": "מנמיך את הסאונד על הביט, ואז פותח מקום בהיר בפער. Transpose קובע את האורך: חצי כש-Transpose על מינוס 12, רבע על 0, ושש עשרה על פלוס 12. הוא ממשיך לפמפם ב-120 גם כשהתופים כבויים."
+              },
+              {
+                "name": "Iron Growl",
+                "text": "מקפל את הגל לתוך תנועה, מ-oo לכיוון ee כש-Transpose עולה, דרך קבינה של 4 kHz, ומשאיר סאב נקי מתחת. ליד או בס נוהם. עוקב רק אחרי Rate."
+              },
+              {
+                "name": "Psy Orbit",
+                "text": "סוחף לואו פס תהודה מ-100 Hz עד 1.5 kHz, ומוסיף הד באורך שלושת רבעי פעימה. טון פסיטרנס זז."
+              },
+              {
+                "name": "Thick Vein",
+                "text": "שישה דילייז קצרים ושימר גבוה יותר, בערך 70 אחוז רטוב. Transpose קובע כמה רחב הדטון. אקורד רחב. עוקב רק אחרי Rate."
+              },
+              {
+                "name": "Kick Bond",
+                "text": "פגיעה קצרה ועוד קיק שמכוון מהתו הנמוך שאתם מחזיקים, על כל פעימה. בס שבועט עם השעון."
+              },
+              {
+                "name": "Step Ladder",
+                "text": "פילטר של 16 צעדים, צעד לכל שש עשרה. Transpose בוחר תבנית דלילה, שש עשרה ישרות, או גלגול צפוף. פלאק טראנס שיושב מעל הבס."
+              },
+              {
+                "name": "Velvet Rotor",
+                "text": "רמקול לסלי. Transpose בוחר כוראל איטי, החלפה כל תיבה, או טרמולו מהיר. אורגן ופסנתר חשמלי."
+              },
+              {
+                "name": "Mirror Tape",
+                "text": "הד הפוך של 2 פעימות, פעימה אחת, או חצי פעימה, נעול לביט, עם טון טייפ חם. זריקה פסיכדלית."
+              },
+              {
+                "name": "FM",
+                "text": "ארבעה אופרטורים של סינוס ושמונה אלגוריתמים. Ratio, Index ופידבק, ודעיכה שנמדדת בפעימות. Mix מערבב עם הסאונד היבש. פעמונים, בראס ופסנתר חשמלי על התווים שאתם מנגנים."
+              }
+            ],
+            "soonLabel": "בקרוב ב-1.16, כולל שרשרת של עד 4 אפקטים",
+            "soonLines": [
+              {
+                "name": "Analog Delay",
+                "text": "הד חם בסגנון BBD. כל חזרה נעשית כהה יותר, והצליל היבש נשאר נקי. זריקות דאב ולידים."
+              },
+              {
+                "name": "Bitcrusher",
+                "text": "הורדת ביטים אמיתית ומדרגות של דגימה והחזקה, מ-16 ביט נקי עד 2 ביט מחוספס. לא פאז. לו פיי וצ'יפטיון."
+              },
+              {
+                "name": "Ring Mod",
+                "text": "גל נושא שמוכפל בצליל: פעמונים מתכתיים, קול רובוטי, וטרמולו כש-FREQ נמוך. TRACK שומר את הפעמונים בסולם."
+              },
+              {
+                "name": "Granular",
+                "text": "הופך תו אחד לענן של גרגרים. FREEZE מחזיק את הענן כדי לנגן מעליו. פדים של אמביינט וקולנוע."
+              }
+            ]
           },
           {
             "id": "looper",
             "title": "לופר",
-            "body": "לופר אודיו אמיתי ב-32 ערוצים, ב-8 עמודים של 4."
+            "body": "לופר אודיו אמיתי: 32 ערוצים, 8 עמודים של 4. טייק גדל תוך כדי הקלטה, עד תקרת בטיחות של 30 דקות. לכל ערוץ יש ווליום, פאן, השתקה וסולו. הקשה על צורת הגל פותחת את העורך: חיתוך, אזור לופ, Low, Mid, High ו-Mid Hz, Gain (50 הוא הווליום המקורי), Squeeze, ו-Fade in ו-Fade out מ-0 עד 8 שניות. Copy ו-Paste מעבירים טייק, עם הכפתורים ואזור הלופ, לערוץ Looper או Mic אחר. לכל Looper FX יש Amount, EQ, Transpose ו-Reverb. Transpose לא משנה את אורך הלופ. Off משאיר את הערוץ יבש.",
+            "lines": [
+              {
+                "name": "Hook Glue",
+                "text": "גלו דחוס: גוף, קצת פאנץ', ורוויה רכה."
+              },
+              {
+                "name": "Spoken Soft",
+                "text": "קרוב וכהה, כמו שורה מדוברת בחדר שקט."
+              },
+              {
+                "name": "Indie Wash",
+                "text": "שטיפה איטית משני דילייז זזים, לא סלפ ישר."
+              },
+              {
+                "name": "Trance Stack",
+                "text": "הדים בהירים מוערמים, בערך 110, 220 ו-330 ms. החזרות דועכות."
+              },
+              {
+                "name": "Phrase Throw",
+                "text": "הד אחד ארוך, בערך 280 ms."
+              },
+              {
+                "name": "Double Lane",
+                "text": "שני דילייז קרובים, כמו שורה כפולה."
+              },
+              {
+                "name": "Pulse Gate",
+                "text": "גייט קשה, בערך 8 חיתוכים בשנייה."
+              },
+              {
+                "name": "Dust Weave",
+                "text": "גריט, קצת רעש שעוקב אחרי המשפט, וסלפ קצר."
+              },
+              {
+                "name": "תיבות מקצב",
+                "text": "שמונה תיבות. הקשה מדליקה תיבה לסיבוב אחד, או מכבה. לחיצה ארוכה קובעת את הסיבובים, מ-1 עד 88, או אינסוף כל עוד התופים נשארים על המקצב. בלי תיבה דולקת הערוץ הוא לופ חופשי. עם תיבה דולקת הוא עוקב אחרי drum Play: הטייק מתחיל כשהתופים נכנסים למקצב, מנגן את מספר הסיבובים, ועוצר כשהתופים עוברים הלאה או נעצרים. עצירה רגילה מנמיכה ודועכת. Keep playing משאיר את הטייק לנגן עד הסוף גם אחרי שהתופים זזים."
+              }
+            ]
           },
           {
             "id": "drums",
@@ -4134,13 +4241,120 @@
           },
           {
             "id": "sound-fx",
-            "title": "Sound FX / 8 Bass Worlds",
-            "body": "8 Bass Worlds in Sound FX. Worlds that use a clock can follow the drum tempo when SYNC is on."
+            "title": "Sound FX / 12 worlds",
+            "body": "Twelve Sound FX worlds. Tap a world to turn it on, and tap it again for Off. A long-press opens Tone: Amount, Low, Mid, High, Sweep, Transpose, Reverb, and Rate. Sub Forge, Bass Clamp, Iron Growl, and Thick Vein follow Rate only. The other eight follow the drum tempo while SYNC is on. Turning Rate lets the clock run free, even while the drums play. SYNC, or the drums starting, locks the clock to the drum BPM and the downbeat again. With the drums stopped, the clock free-runs at Rate, 120 until you change it.",
+            "lines": [
+              {
+                "name": "Sub Forge",
+                "text": "Drops the note an octave, and a second octave as Transpose goes below 0, then runs it through tape. A low bass under a chord. Follows Rate only."
+              },
+              {
+                "name": "Depth Drop",
+                "text": "A pitch dive that starts again every second beat of the clock. A falling bass on the downbeat."
+              },
+              {
+                "name": "Bass Clamp",
+                "text": "Lifts quiet notes and holds the peaks, with a soft clip a phone speaker can hear. A steady bass. Follows Rate only."
+              },
+              {
+                "name": "Floor Pump",
+                "text": "Ducks the sound on the beat, then opens a bright space in the gap. Transpose sets the length: a half note at minus 12, a quarter at 0, a sixteenth at plus 12. It still pumps at 120 if the drums are off."
+              },
+              {
+                "name": "Iron Growl",
+                "text": "Folds the wave into a vowel, from oo toward ee as Transpose rises, through a 4 kHz cab, and leaves a clean sub under it. A growling lead or bass. Follows Rate only."
+              },
+              {
+                "name": "Psy Orbit",
+                "text": "Sweeps a resonant lowpass from 100 Hz to 1.5 kHz and adds an echo three quarters of a beat long. A moving psytrance tone."
+              },
+              {
+                "name": "Thick Vein",
+                "text": "Six short delays and a higher shimmer, about 70 percent wet. Transpose sets how wide the detune is. A wide chord. Follows Rate only."
+              },
+              {
+                "name": "Kick Bond",
+                "text": "A short plucked hit plus a kick tuned from the lowest note you hold, fired on every beat. A bass that kicks with the clock."
+              },
+              {
+                "name": "Step Ladder",
+                "text": "A 16-step filter, one step per 16th note. Transpose picks a sparse pattern, straight sixteenths, or a dense roll. A trance pluck that sits above the bass."
+              },
+              {
+                "name": "Velvet Rotor",
+                "text": "A Leslie speaker. Transpose picks a slow chorale, a switch every bar, or a fast tremolo. Organ and electric piano."
+              },
+              {
+                "name": "Mirror Tape",
+                "text": "A reverse echo of 2 beats, 1 beat, or half a beat, locked to the beat, with a warm tape tone. A psychedelic throw."
+              },
+              {
+                "name": "FM",
+                "text": "Four sine operators and eight algorithms. Ratio, Index, feedback, and a decay counted in beats. Mix blends it with the dry sound. Bells, brass, and electric piano on the notes you play."
+              }
+            ],
+            "soonLabel": "Coming soon in 1.16, including chains of up to 4",
+            "soonLines": [
+              {
+                "name": "Analog Delay",
+                "text": "A warm BBD echo. Each repeat gets darker, and the dry sound stays clear. Dub throws and leads."
+              },
+              {
+                "name": "Bitcrusher",
+                "text": "Real bit reduction and sample-hold steps, from 16-bit clean down to 2-bit grit. Not fuzz. Lo-fi and chiptune."
+              },
+              {
+                "name": "Ring Mod",
+                "text": "The carrier times your sound: metallic bells, a robotic voice, and tremolo when FREQ is low. TRACK keeps the bells in key."
+              },
+              {
+                "name": "Granular",
+                "text": "Turns one note into a cloud of grains. FREEZE holds that cloud so you can play over it. Ambient and cinematic pads."
+              }
+            ]
           },
           {
             "id": "looper",
             "title": "Looper",
-            "body": "A 32-channel real-audio looper, in 8 pages of 4."
+            "body": "A real-audio looper: 32 channels, 8 pages of 4. A take grows as you record, up to a 30 minute safety ceiling. Each channel has volume, pan, mute, and solo. Tap the waveform to open the editor: trim, a loop region, Low, Mid, High, and Mid Hz, Gain (50 is the original level), Squeeze, and Fade in and Fade out from 0 to 8 seconds. Copy and Paste move a take, with its knobs and loop region, to another Looper or Mic channel. Each Looper FX has Amount, EQ, Transpose, and Reverb. Transpose does not change the loop length. Off leaves the channel dry.",
+            "lines": [
+              {
+                "name": "Hook Glue",
+                "text": "Tight glue: body, a little punch, and soft saturation."
+              },
+              {
+                "name": "Spoken Soft",
+                "text": "Close and dark, the way a spoken line sits in a quiet room."
+              },
+              {
+                "name": "Indie Wash",
+                "text": "A slow wash from two moving delays, not a straight slap."
+              },
+              {
+                "name": "Trance Stack",
+                "text": "Bright stacked echoes at about 110, 220, and 330 ms. The repeats decay."
+              },
+              {
+                "name": "Phrase Throw",
+                "text": "One long echo, about 280 ms."
+              },
+              {
+                "name": "Double Lane",
+                "text": "Two close delays, like a doubled line."
+              },
+              {
+                "name": "Pulse Gate",
+                "text": "A hard gate, about 8 chops a second."
+              },
+              {
+                "name": "Dust Weave",
+                "text": "Grit, a little noise that follows the phrase, and a short slap."
+              },
+              {
+                "name": "Rhythm boxes",
+                "text": "Eight boxes. A tap turns a box on for one pass, or off. A long-press sets the passes, from 1 to 88, or infinity for as long as the drums stay on that rhythm. With no box on, the channel is a free loop. With a box on, it follows drum Play: the take starts when the drums enter that rhythm, plays its count, and stops when the drums move on or stop. A plain stop fades out. Keep playing lets that take finish even after the drums move on."
+              }
+            ]
           },
           {
             "id": "drums",
@@ -8165,13 +8379,120 @@
           },
           {
             "id": "sound-fx",
-            "title": "Sound FX / 8 басовых миров",
-            "body": "8 басовых миров в Sound FX. Миры с часами могут следовать темпу ударных, когда включён SYNC."
+            "title": "Sound FX / 12 миров",
+            "body": "Двенадцать миров Sound FX. Нажатие включает мир, повторное нажатие выключает. Долгое нажатие открывает Tone: Amount, Low, Mid, High, Sweep, Transpose, Reverb и Rate. Sub Forge, Bass Clamp, Iron Growl и Thick Vein следуют только за Rate. Остальные восемь следуют темпу ударных, пока включён SYNC. Поворот Rate отпускает часы, даже пока играют ударные. SYNC или старт ударных снова запирает часы на BPM ударных и на сильную долю. Когда ударные остановлены, часы идут свободно на Rate, 120, пока вы его не измените.",
+            "lines": [
+              {
+                "name": "Sub Forge",
+                "text": "Опускает ноту на октаву, и ещё на октаву, когда Transpose ниже 0, затем проводит через ленту. Низкий бас под аккордом. Только Rate."
+              },
+              {
+                "name": "Depth Drop",
+                "text": "Нырок по высоте, который начинается заново на каждой второй доле часов. Падающий бас на сильную долю."
+              },
+              {
+                "name": "Bass Clamp",
+                "text": "Поднимает тихие ноты и держит пики, с мягким клипом, который слышен на динамике телефона. Ровный бас. Только Rate."
+              },
+              {
+                "name": "Floor Pump",
+                "text": "Прижимает звук на долю, затем открывает яркое место в паузе. Transpose задаёт длину: половинная на минус 12, четверть на 0, шестнадцатая на плюс 12. Качает и на 120, если ударные выключены."
+              },
+              {
+                "name": "Iron Growl",
+                "text": "Складывает волну в гласную, от oo к ee по мере роста Transpose, через кабинет 4 kHz, и оставляет чистый саб. Рычащий лид или бас. Только Rate."
+              },
+              {
+                "name": "Psy Orbit",
+                "text": "Ведёт резонансный лоупасс от 100 Hz до 1.5 kHz и добавляет эхо в три четверти доли. Движущийся тон псайтранса."
+              },
+              {
+                "name": "Thick Vein",
+                "text": "Шесть коротких задержек и более высокий шиммер, около 70 процентов wet. Transpose задаёт ширину детюна. Широкий аккорд. Только Rate."
+              },
+              {
+                "name": "Kick Bond",
+                "text": "Короткий щипок плюс кик, настроенный от самой низкой ноты, которую вы держите, на каждую долю. Бас, который бьёт вместе с часами."
+              },
+              {
+                "name": "Step Ladder",
+                "text": "Фильтр на 16 шагов, шаг на каждую шестнадцатую. Transpose выбирает редкий рисунок, ровные шестнадцатые или плотную дробь. Трансовый плак над басом."
+              },
+              {
+                "name": "Velvet Rotor",
+                "text": "Динамик Лесли. Transpose выбирает медленный хорал, переключение каждый такт или быстрое тремоло. Орган и электропиано."
+              },
+              {
+                "name": "Mirror Tape",
+                "text": "Обратное эхо на 2 доли, 1 долю или полдоли, привязанное к биту, с тёплым ленточным тоном. Психоделический бросок."
+              },
+              {
+                "name": "FM",
+                "text": "Четыре синус-оператора и восемь алгоритмов. Ratio, Index, обратная связь и спад в долях. Mix смешивает с сухим звуком. Колокола, медные и электропиано на нотах, которые вы играете."
+              }
+            ],
+            "soonLabel": "Скоро в 1.16, включая цепочки до 4 эффектов",
+            "soonLines": [
+              {
+                "name": "Analog Delay",
+                "text": "Тёплое эхо BBD. Каждый повтор темнеет, сухой звук остаётся чистым. Даб и лиды."
+              },
+              {
+                "name": "Bitcrusher",
+                "text": "Настоящее снижение битности и ступени sample hold, от чистых 16 бит до зернистых 2 бит. Не fuzz. Лоу-фай и чиптюн."
+              },
+              {
+                "name": "Ring Mod",
+                "text": "Несущая, умноженная на звук: металлические колокола, роботизированный голос и тремоло при низком FREQ. TRACK держит колокола в тональности."
+              },
+              {
+                "name": "Granular",
+                "text": "Превращает одну ноту в облако зёрен. FREEZE держит облако, чтобы играть поверх него. Эмбиент и кинематографические пэды."
+              }
+            ]
           },
           {
             "id": "looper",
             "title": "Лупер",
-            "body": "32-канальный лупер реального аудио, 8 страниц по 4 канала."
+            "body": "Лупер реального аудио: 32 канала, 8 страниц по 4. Запись растёт вместе с тейком, до технического потолка в 30 минут. У каждого канала громкость, панорама, mute и solo. Нажатие на волну открывает редактор: обрезка, область лупа, Low, Mid, High и Mid Hz, Gain (50 это исходный уровень), Squeeze, и Fade in и Fade out от 0 до 8 секунд. Copy и Paste переносят тейк, с ручками и областью лупа, на другой канал Looper или Mic. У каждого Looper FX есть Amount, EQ, Transpose и Reverb. Transpose не меняет длину лупа. Off оставляет канал сухим.",
+            "lines": [
+              {
+                "name": "Hook Glue",
+                "text": "Плотная склейка: тело, немного удара и мягкое насыщение."
+              },
+              {
+                "name": "Spoken Soft",
+                "text": "Близко и темно, как spoken-фраза в тихой комнате."
+              },
+              {
+                "name": "Indie Wash",
+                "text": "Медленная волна из двух движущихся задержек, не прямой слэп."
+              },
+              {
+                "name": "Trance Stack",
+                "text": "Яркие эхо стопкой, около 110, 220 и 330 ms. Повторы затухают."
+              },
+              {
+                "name": "Phrase Throw",
+                "text": "Одно длинное эхо, около 280 ms."
+              },
+              {
+                "name": "Double Lane",
+                "text": "Две близкие задержки, как удвоенная фраза."
+              },
+              {
+                "name": "Pulse Gate",
+                "text": "Жёсткий гейт, около 8 нарезок в секунду."
+              },
+              {
+                "name": "Dust Weave",
+                "text": "Зерно, немного шума вслед за фразой и короткий слэп."
+              },
+              {
+                "name": "Ячейки ритма",
+                "text": "Восемь ячеек. Нажатие включает ячейку на один проход или выключает. Долгое нажатие задаёт проходы, от 1 до 88, или бесконечность, пока ударные остаются на этом ритме. Без включённой ячейки канал это свободный луп. С включённой ячейкой он следует за drum Play: тейк стартует, когда ударные входят в ритм, играет свой счёт и останавливается, когда ударные уходят или останавливаются. Обычный стоп затухает. Keep playing даёт тейку доиграть до конца, даже когда ударные ушли."
+              }
+            ]
           },
           {
             "id": "drums",
@@ -12196,13 +12517,120 @@
           },
           {
             "id": "sound-fx",
-            "title": "Sound FX / 8 عوالم باس",
-            "body": "8 عوالم باس في Sound FX. العوالم التي تستخدم ساعة يمكن أن تتبع إيقاع الطبول عندما يكون SYNC مفعّلاً."
+            "title": "Sound FX / 12 عوالم",
+            "body": "اثنا عشر عالماً في Sound FX. الضغط يشغّل العالم، والضغط مرة أخرى يطفئه. الضغط المطول يفتح Tone: Amount وLow وMid وHigh وSweep وTranspose وReverb وRate. يتبع Sub Forge وBass Clamp وIron Growl وThick Vein معدل Rate فقط. تتبع الثمانية الأخرى إيقاع الطبول عندما يكون SYNC مشغّلاً. تدوير Rate يحرر الساعة حتى أثناء عزف الطبول. SYNC، أو بدء الطبول، يقفل الساعة من جديد على BPM الطبول وعلى الضربة القوية. عندما تتوقف الطبول، تجري الساعة بحرية على Rate، 120 حتى تغيّره.",
+            "lines": [
+              {
+                "name": "Sub Forge",
+                "text": "ينزل النغمة أوكتافاً، وأوكتافاً ثانياً عندما ينزل Transpose تحت 0، ثم يمررها عبر شريط. باس منخفض تحت أكورد. يتبع Rate فقط."
+              },
+              {
+                "name": "Depth Drop",
+                "text": "هبوط في الطبقة يبدأ من جديد كل ضربة ثانية من الساعة. باس هابط على الضربة القوية."
+              },
+              {
+                "name": "Bass Clamp",
+                "text": "يرفع النغمات الهادئة ويمسك القمم، مع قص ناعم يسمعه سماعة الهاتف. باس ثابت. يتبع Rate فقط."
+              },
+              {
+                "name": "Floor Pump",
+                "text": "يخفت الصوت على الضربة، ثم يفتح مكاناً لامعاً في الفجوة. Transpose يحدد الطول: نصف عندما يكون Transpose على ناقص 12، وربع على 0، وسدس عشر على زائد 12. ويواصل الضخ على 120 حتى لو كانت الطبول مطفأة."
+              },
+              {
+                "name": "Iron Growl",
+                "text": "يطوي الموجة إلى حركة فم، من oo نحو ee كلما ارتفع Transpose، عبر كابينة 4 kHz، ويترك ساباً نظيفاً تحته. ليد أو باس زمجرة. يتبع Rate فقط."
+              },
+              {
+                "name": "Psy Orbit",
+                "text": "يمسح لوبّاس رنينياً من 100 Hz إلى 1.5 kHz ويضيف صدى بطول ثلاثة أرباع ضربة. نغمة سايترانس متحركة."
+              },
+              {
+                "name": "Thick Vein",
+                "text": "ست تأخيرات قصيرة ولمعان أعلى، حوالي 70 بالمئة رطب. Transpose يحدد عرض الديتون. أكورد عريض. يتبع Rate فقط."
+              },
+              {
+                "name": "Kick Bond",
+                "text": "ضربة قصيرة مع كيك مضبوط من أخفض نغمة تمسكها، على كل ضربة. باس يركل مع الساعة."
+              },
+              {
+                "name": "Step Ladder",
+                "text": "فلتر من 16 خطوة، خطوة لكل سدس عشر. Transpose يختار نمطاً متفرقاً أو أسداس عشر مستقيمة أو لفّة كثيفة. بلَك ترانس يجلس فوق الباس."
+              },
+              {
+                "name": "Velvet Rotor",
+                "text": "سماعة ليزلي. Transpose يختار كورالاً بطيئاً، أو تبديلاً كل مازورة، أو تريمولو سريعاً. أورغن وبيانو كهربائي."
+              },
+              {
+                "name": "Mirror Tape",
+                "text": "صدى معكوس من ضربتين أو ضربة أو نصف ضربة، مقفل على الإيقاع، بنغمة شريط دافئة. رمية سايكدلية."
+              },
+              {
+                "name": "FM",
+                "text": "أربعة مشغلات جيب وثماني خوارزميات. Ratio وIndex وتغذية راجعة وخفوت يُحسب بالضربات. Mix يمزجه مع الصوت الجاف. أجراس ونحاس وبيانو كهربائي على النغمات التي تعزفها."
+              }
+            ],
+            "soonLabel": "قريباً في 1.16، مع سلاسل حتى 4 تأثيرات",
+            "soonLines": [
+              {
+                "name": "Analog Delay",
+                "text": "صدى BBD دافئ. كل تكرار يصبح أغمق، والصوت الجاف يبقى نقياً. رميات داب وليدات."
+              },
+              {
+                "name": "Bitcrusher",
+                "text": "خفض بتات حقيقي ودرجات sample hold، من 16 بت نظيف حتى 2 بت خشن. ليس fuzz. لو-فاي وتشيبتون."
+              },
+              {
+                "name": "Ring Mod",
+                "text": "موجة حاملة مضروبة في الصوت: أجراس معدنية، وصوت آلي، وتريمولو عندما يكون FREQ منخفضاً. TRACK يُبقي الأجراس في السلم."
+              },
+              {
+                "name": "Granular",
+                "text": "يحوّل نغمة واحدة إلى سحابة حبيبات. FREEZE يمسك السحابة لتعزف فوقها. بادز أمبيانت وسينما."
+              }
+            ]
           },
           {
             "id": "looper",
             "title": "اللوبر",
-            "body": "لوبر صوت حقيقي بـ32 قناة، في 8 صفحات من 4."
+            "body": "لوبر صوت حقيقي: 32 قناة، 8 صفحات من 4. ينمو التسجيل مع المقطع، حتى سقف أمان من 30 دقيقة. لكل قناة مستوى وبان وكتم وعزل. الضغط على الموجة يفتح المحرر: قص، ومنطقة لوب، وLow وMid وHigh وMid Hz، وGain (50 هو المستوى الأصلي)، وSqueeze، وFade in وFade out من 0 إلى 8 ثوان. Copy وPaste ينقلان مقطعاً، مع المقابض ومنطقة اللوب، إلى قناة Looper أو Mic أخرى. لكل Looper FX هناك Amount وEQ وTranspose وReverb. Transpose لا يغيّر طول اللوب. Off يترك القناة جافة.",
+            "lines": [
+              {
+                "name": "Hook Glue",
+                "text": "لصق محكم: جسم، وقليل من اللكمة، وتشبع ناعم."
+              },
+              {
+                "name": "Spoken Soft",
+                "text": "قريب ومظلم، كجملة محكية في غرفة هادئة."
+              },
+              {
+                "name": "Indie Wash",
+                "text": "غسيل بطيء من تأخيرين متحركين، وليس صفعة مستقيمة."
+              },
+              {
+                "name": "Trance Stack",
+                "text": "أصداء لامعة مكدسة، حوالي 110 و220 و330 ms. التكرارات تخفت."
+              },
+              {
+                "name": "Phrase Throw",
+                "text": "صدى واحد طويل، حوالي 280 ms."
+              },
+              {
+                "name": "Double Lane",
+                "text": "تأخيران قريبان، كجملة مزدوجة."
+              },
+              {
+                "name": "Pulse Gate",
+                "text": "بوابة قاسية، حوالي 8 قطع في الثانية."
+              },
+              {
+                "name": "Dust Weave",
+                "text": "خشونة، وقليل من الضجيج يتبع الجملة، وصفعة قصيرة."
+              },
+              {
+                "name": "مربعات الإيقاع",
+                "text": "ثمانية مربعات. الضغط يشغّل مربعاً لمرور واحد أو يطفئه. الضغط المطول يحدد عدد المرور، من 1 إلى 88، أو ما لا نهاية ما دامت الطبول على ذلك الإيقاع. بلا مربع مضاء تكون القناة لوباً حراً. مع مربع مضاء تتبع drum Play: يبدأ المقطع عندما تدخل الطبول الإيقاع، ويعزف عدده، ويتوقف عندما تنتقل الطبول أو تتوقف. التوقف العادي يخفت. Keep playing يترك المقطع يعزف حتى نهايته حتى بعد أن تتحرك الطبول."
+              }
+            ]
           },
           {
             "id": "drums",
