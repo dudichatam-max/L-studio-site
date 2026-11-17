@@ -390,3 +390,9 @@ Version 1.15 is in development, with no date. Do not call it available or on Goo
 ## Guide: looper page name and 8 colors removed
 
 The looper page-name dialog and the 8 page colors are gone from the app. In `languages.*.guide` only: the Loop section `loop-pages` keeps the tap on page numbers 1 to 8 and the channel-name step. It no longer describes a long-press, a page name, or a page color. The colored number strips `assets/guide/c/loop-pages-nums` and `assets/guide/c/loop-head`, and the Page name dialog `assets/guide/c/page-name` and `assets/guide/page-name-phone`, are removed. The getting-started advanced tip, the LIVE lock list, the session Save as sentence, and the FAQ drop the same looper page name and color. Preset pages and drum-style pages still have Edit page name. That is a different control. Do not put the looper page name or the 8 colors back.
+
+## Home: Sound FX worlds and Looper detail (verified on v1.15-smoke-passed)
+
+`languages.*.underHood.features` id `sound-fx` is "Sound FX / 12 worlds" (not 8 bass worlds). `body` is the shared clock rule. `lines` is one line per world 1-12. `soonLabel` and `soonLines` are Analog Delay, Bitcrusher, Ring Mod, and Granular, plus chains of up to 4, marked coming soon in 1.16. They are not in the 1.15 app (`SoundFx.COUNT` is 12).
+
+Id `looper` lists the eight Looper FX by name and the rhythm boxes (1 to 88 or infinity, free loop, follows drum Play, Keep playing). Do not write looper page names or page colors. Do not describe behavior that is only on `cursor/1.16-fixes-af7b`.

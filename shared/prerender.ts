@@ -18,6 +18,9 @@ export { escapeHtml };
 
 export type StyleGroup = { genre: string; styles: string[] };
 
+/** One named line under a home feature. `soon` lines sit under `soonLabel`. */
+export type FeatureLine = { name: string; text: string };
+
 export type FeatureBlock = {
   id: string;
   title: string;
@@ -30,6 +33,11 @@ export type FeatureBlock = {
   channelNames?: string[];
   channelsNote?: string;
   packs?: string;
+  /** Named lines after `body` (Sound FX worlds, Looper FX, rhythm options). */
+  lines?: FeatureLine[];
+  /** Heading above `soonLines`. */
+  soonLabel?: string;
+  soonLines?: FeatureLine[];
 };
 
 type LangCopy = {
@@ -114,6 +122,9 @@ export function homeFeatureBlocks(
       channelNames: block.channelNames,
       channelsNote: block.channelsNote,
       packs: block.packs,
+      lines: block.lines,
+      soonLabel: block.soonLabel,
+      soonLines: block.soonLines,
     };
   });
 }
@@ -152,9 +163,28 @@ function renderDrumsArticle(feature: FeatureBlock, language: Language): string {
   ].join("\n");
 }
 
+function renderLineItems(lines: { name: string; text: string }[], language: Language): string {
+  return lines
+    .map(line => `          <li><b>${rtlMark(language, line.name)}</b> ${rtlMark(language, line.text)}</li>`)
+    .join("\n");
+}
+
 function renderFeatureArticle(feature: FeatureBlock, language: Language): string {
   if (feature.id === "drums") return renderDrumsArticle(feature, language);
-  return `      <article id="${escapeHtml(feature.id)}">\n        <h2>${rtlMark(language, feature.title)}</h2>\n        <p>${rtlMark(language, feature.body)}</p>\n      </article>`;
+  const parts = [
+    `      <article id="${escapeHtml(feature.id)}">`,
+    `        <h2>${rtlMark(language, feature.title)}</h2>`,
+    `        <p>${rtlMark(language, feature.body)}</p>`,
+  ];
+  if (feature.lines?.length) {
+    parts.push(`        <ul>`, renderLineItems(feature.lines, language), `        </ul>`);
+  }
+  if (feature.soonLabel && feature.soonLines?.length) {
+    parts.push(`        <h3>${rtlMark(language, feature.soonLabel)}</h3>`);
+    parts.push(`        <ul>`, renderLineItems(feature.soonLines, language), `        </ul>`);
+  }
+  parts.push(`      </article>`);
+  return parts.join("\n");
 }
 
 function renderHome(content: SiteContent, language: Language): string {

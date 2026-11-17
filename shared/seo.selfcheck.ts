@@ -380,8 +380,20 @@ assert(
   "English prerender uses Free Tuning"
 );
 assert(
-  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("<h2>Sound FX / 8 Bass Worlds</h2>"),
-  "English prerender uses Sound FX / 8 Bass Worlds"
+  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("<h2>Sound FX / 12 worlds</h2>"),
+  "English prerender uses Sound FX / 12 worlds"
+);
+assert(
+  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("Sub Forge"),
+  "English prerender lists Sub Forge"
+);
+assert(
+  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("Coming soon in 1.16"),
+  "English prerender marks 1.16 Sound FX as coming soon"
+);
+assert(
+  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("Hook Glue"),
+  "English prerender lists Hook Glue"
 );
 
 const heHome = renderPrerenderInner("home", "/", "he", siteContent) ?? "";
