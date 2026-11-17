@@ -400,6 +400,10 @@ const heHome = renderPrerenderInner("home", "/", "he", siteContent) ?? "";
 assert(heHome.includes('<bdi dir="ltr">'), "Hebrew prerender isolates Latin runs");
 assert(heHome.includes('<bdi dir="ltr">Random</bdi>'), "Hebrew prerender isolates Random");
 assert(heHome.includes('<bdi dir="ltr">FX 1</bdi>'), "Hebrew prerender isolates FX 1");
+assert(
+  heHome.includes('FX 1 <bdi dir="ltr">ו-</bdi>FX 2'),
+  "Hebrew prerender keeps FX 1 ו-FX 2 in one LTR list"
+);
 assert(heHome.includes("Performance Pad"), "Hebrew prerender isolates Performance Pad");
 assert(heHome.includes('class="bdi-list"'), "Hebrew prerender marks Latin lists");
 assert(heHome.includes('<bdi dir="ltr">3,696</bdi>'), "Hebrew prerender isolates 3,696");
@@ -409,14 +413,31 @@ assert(
 );
 const arHome = renderPrerenderInner("home", "/", "ar", siteContent) ?? "";
 assert(arHome.includes('<bdi dir="ltr">Random</bdi>'), "Arabic prerender isolates Random");
-assert(arHome.includes('<bdi dir="ltr">FX 2</bdi>'), "Arabic prerender isolates FX 2");
+assert(
+  arHome.includes('FX 1 <bdi dir="ltr">و</bdi>FX 2'),
+  "Arabic prerender keeps FX 1 and FX 2 in one LTR list"
+);
 assert(
   splitLatinRuns("FX 1 ו-FX 2").map(part => part.text).join("|") === "FX 1| ו-|FX 2",
   "FX 1 and FX 2 stay as separate LTR runs in Hebrew"
 );
 assert(
-  bidiHtml("ל-WAV, FLAC ו-MP3", true).includes('<bdi dir="ltr" class="bdi-list">WAV, FLAC</bdi>'),
-  "mastering export formats are isolated as an LTR list"
+  bidiHtml("ל-WAV, FLAC ו-MP3", true).includes(
+    '<bdi dir="ltr" class="bdi-list">WAV, FLAC <bdi dir="ltr">ו-</bdi>MP3</bdi>'
+  ),
+  "mastering export formats stay one LTR list across ו-"
+);
+assert(
+  bidiHtml("Amount, Low, Mid, High, Sweep, Transpose, Reverb ו-Rate.", true).includes(
+    '<bdi dir="ltr" class="bdi-list">Amount, Low, Mid, High, Sweep, Transpose, Reverb <bdi dir="ltr">ו-</bdi>Rate</bdi>'
+  ),
+  "a Hebrew ו- inside an English list does not split the list"
+);
+assert(
+  bidiHtml("Amount وLow وRate.", true).includes(
+    '<bdi dir="ltr" class="bdi-list">Amount <bdi dir="ltr">و</bdi>Low <bdi dir="ltr">و</bdi>Rate</bdi>'
+  ),
+  "an Arabic waw inside an English list does not split the list"
 );
 const exclusiveHtml = bidiHtml("חבילות Exclusive, 152 ערכות.", true);
 assert(
