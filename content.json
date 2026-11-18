@@ -4015,49 +4015,105 @@
         "next": "השקופית הבאה",
         "slide": "שקופית {n} מתוך {total}",
         "slides": {
-          "sound-scales": {
-            "title": "Key וסולמות",
-            "text": "בוחרים מז׳ור או מינור מכל אחד מ־12 תווי הבסיס, או SCALE OFF. נקודות מסמנות את תווי הסולם על הקלידים. התדרים לא משתנים."
+          "sound-01": {
+            "title": "שנים עשר עולמות",
+            "text": "הפעילו עולם",
+            "alt": "שנים עשר עולמות. הפעילו עולם."
           },
-          "mic-channels": {
+          "sound-02": {
+            "title": "כפתורי האפקט",
+            "text": "לחצו ארוכות על עולם",
+            "alt": "כפתורי האפקט. לחצו ארוכות על עולם."
+          },
+          "sound-03": {
+            "title": "FM אמיתי",
+            "text": "ארבעה אופרטורים",
+            "alt": "FM אמיתי. ארבעה אופרטורים."
+          },
+          "sound-04": {
+            "title": "בחרו סולם,",
+            "text": "הקישו על סולם ירוק",
+            "alt": "בחרו סולם, הקישו על סולם ירוק."
+          },
+          "sound-05": {
+            "title": "הקלידו הרץ משלכם,",
+            "text": "או בחרו סולם מוכן",
+            "alt": "הקלידו הרץ משלכם, או בחרו סולם מוכן."
+          },
+          "sound-06": {
+            "title": "לוח הגל",
+            "text": "לחצו ארוכות על גל",
+            "alt": "לוח הגל. לחצו ארוכות על גל."
+          },
+          "sound-07": {
+            "title": "שתי מקלדות",
+            "text": "הקישו על הפלוס",
+            "alt": "שתי מקלדות. הקישו על הפלוס."
+          },
+          "mic-01": {
             "title": "הקלטת Mic",
-            "text": "שלושה ערוצי שירה בעמוד 1. גיטרה, בס וכלי נגינה בעמוד 2. כולל ניטור ובצע שוב."
+            "text": "שני עמודי ערוצים",
+            "alt": "הקלטת Mic. שני עמודי ערוצים."
           },
-          "loop-looper": {
-            "title": "Looper",
-            "text": "32 ערוצי לולאה ב־8 עמודים. מקליטים, מנגנים ומבצעים שוב."
-          },
-          "loop-editor": {
-            "title": "עורך לולאות",
-            "text": "חיתוך, לולאה ואקולייזר. לחיצה ארוכה על קופסת קצב פותחת חזרות."
-          },
-          "sound-fx": {
-            "title": "אפקטי Sound",
-            "text": "12 אפקטים, 4 מהם חדשים. מחליקים או מקישים על החצים כדי לעבור עמוד. הקשה מפעילה אפקט, לחיצה ארוכה פותחת את הכפתורים שלו."
-          },
-          "mic-editor": {
+          "mic-02": {
             "title": "עורך Mic",
-            "text": "חיתוך, לולאה, EQ, Gain ו־Squeeze. לחיצה ארוכה על קופסת קצב פותחת חזרות."
+            "text": "חיתוך ולולאה",
+            "alt": "עורך Mic. חיתוך ולולאה."
           },
-          "mic-lyrics": {
+          "mic-03": {
             "title": "מילים",
-            "text": "טלפרומפטר למילים שלכם. כותבים או מדביקים, לוחצים נגן כדי לגלול, וקובעים מהירות וגודל טקסט."
+            "text": "גללו את המילים",
+            "alt": "מילים. גללו את המילים."
           },
-          "pad-live": {
+          "mic-04": {
+            "title": "מאסטרינג",
+            "text": "סגנון, ואז ייצוא",
+            "alt": "מאסטרינג. סגנון, ואז ייצוא."
+          },
+          "loop-01": {
+            "title": "Looper",
+            "text": "שמונה עמודים",
+            "alt": "Looper. שמונה עמודים."
+          },
+          "loop-02": {
+            "title": "אפקטי Looper",
+            "text": "שמונה פריסטים",
+            "alt": "אפקטי Looper. שמונה פריסטים."
+          },
+          "loop-03": {
+            "title": "עורך לולאות",
+            "text": "חיתוך ולולאה",
+            "alt": "עורך לולאות. חיתוך ולולאה."
+          },
+          "loop-04": {
+            "title": "מיקסר אנלוגי",
+            "text": "ערוצים ומאסטר",
+            "alt": "מיקסר אנלוגי. ערוצים ומאסטר."
+          },
+          "pad-01": {
             "title": "משטח נגינה חי",
-            "text": "גוררים על המשטח והצליל עוקב אחרי האצבע. בוחרים KEY, MIC, LOOP או DRUM. מחזיקים 1/4 עד 1/32 לחזרה."
+            "text": "גוררים והצליל עוקב",
+            "alt": "משטח נגינה חי. גוררים והצליל עוקב."
           },
-          "drum-rows": {
-            "title": "כל 8 השורות",
-            "text": "הקשה על הכפתור פלוס 4 מציגה את FX 1, FX 2, FX 3 ו־Voice. המקלדת מוסתרת והכפתור מתחלף למינוס 4. הקשה נוספת מחזירה את המקלדת."
+          "drum-01": {
+            "title": "כל שמונה השורות",
+            "text": "פלוס ומינוס",
+            "alt": "כל שמונה השורות. פלוס ומינוס."
           },
-          "drum-banks": {
+          "drum-02": {
+            "title": "אפקטי Drum",
+            "text": "שמונה פריסטים",
+            "alt": "אפקטי Drum. שמונה פריסטים."
+          },
+          "drum-03": {
             "title": "בנקי דגימות",
-            "text": "שמונה שורות תופים, ולכל שורה בורר משלה. בוחרים מהבנקים Factory ו־Exclusive."
+            "text": "בורר לכל שורת תופים",
+            "alt": "בנקי דגימות. בורר לכל שורת תופים."
           },
-          "drum-loaded": {
+          "drum-04": {
             "title": "הדגימות שלכם",
-            "text": "LOADED: עד 88 דגימות משלכם בכל שורה, נשמרות אוטומטית. חותכים עם פסי ההתחלה והסוף. SAVE, RESET, RENAME ו־DELETE."
+            "text": "חותכים ושומרים",
+            "alt": "הדגימות שלכם. חותכים ושומרים."
           },
           "home-sound": {
             "title": "עצבו את הסאונד",
@@ -4078,42 +4134,6 @@
             "title": "המיקסר האנלוגי שלכם",
             "text": "ארבעה פסים ל-Drums, Looper, Mic ו-Master, עם Spectrum ו-Mix Map.",
             "alt": "7/8: המיקסר האנלוגי שלכם. ארבעה פסים ל-Drums, Looper, Mic ו-Master, עם Spectrum ו-Mix Map."
-          },
-          "sound-wave-panel": {
-            "title": "לוח הגל",
-            "text": "לחיצה ארוכה על מקש גל: אוקטבה, גוון ו־4 דפים, כל דף עוד קול של אותו גל. כל שינוי נשמע מיד ונשמר."
-          },
-          "loop-mixer": {
-            "title": "מיקסר אנלוגי",
-            "text": "הקשה על LIVE SCOPE למעלה. לתופים, ללופר ולמיקרופון יש דרייב, מסנן, גוון, דחיסה, מיקום ועוצמה, ועוד ערוץ מאסטר. 8 פריסטים."
-          },
-          "mic-mastering": {
-            "title": "מאסטרינג",
-            "text": "אחרי הקלטת WAV מקישים Master this take. 8 סגנונות, A ו־B להשוואה, ואז ייצוא ל־WAV, MP3 או FLAC. הקבצים נשארים בפלאפון."
-          },
-          "sound-fm": {
-            "title": "FM אמיתי",
-            "text": "4 אופרטורים. ALGO בוחר 1 מ־8 חיבורים, RATIO את הגובה, INDEX את הבהירות, FEEDBK את החספוס, DECAY את הדעיכה ו־MIX את הכמות."
-          },
-          "sound-frequencies": {
-            "title": "כיוון תדרים",
-            "text": "מקלידים Hz לכל אחד מ־8 הקלידים, או טוענים סולם מוכן כמו חיג׳אז או כורד. שומרים עד 8 פריסטים משלכם."
-          },
-          "sound-fx-knobs": {
-            "title": "כפתורי האפקט",
-            "text": "לחיצה ארוכה על אפקט כמו Iron Growl פותחת RATE, AMOUNT, LOW, MID, HIGH, SWEEP ו־REVERB. שתי המקלדות נשארות פתוחות למטה."
-          },
-          "sound-two-keyboards": {
-            "title": "שתי מקלדות",
-            "text": "הקשה על + ליד VOICES פותחת מקלדת שנייה, אוקטבה אחת גבוהה יותר. היא נשארת פתוחה כשעוברים בין Sound ל־Pad."
-          },
-          "loop-fx": {
-            "title": "אפקטי Looper",
-            "text": "8 פריסטים כמו Indie Wash לערוץ לופ. הקשה מפעילה פריסט, לחיצה ארוכה פותחת את הכפתורים שלו ואת Transpose."
-          },
-          "drum-fx": {
-            "title": "אפקטי Drum",
-            "text": "8 פריסטים כמו Tribal Bloom. הקשה מפעילה פריסט, לחיצה ארוכה פותחת AMOUNT, LOW, MID, HIGH, SWEEP, REVERB ו־Transpose."
           },
           "home-sound-fx": {
             "title": "שנים עשר עולמות FX",
@@ -8153,49 +8173,105 @@
         "next": "Next slide",
         "slide": "Slide {n} of {total}",
         "slides": {
-          "sound-scales": {
-            "title": "Key and Scales",
-            "text": "Pick Major or Minor from any of 12 roots, or SCALE OFF. Dots mark the scale notes on the keys. The frequencies stay the same."
+          "sound-01": {
+            "title": "Twelve worlds.",
+            "text": "Turn a world on.",
+            "alt": "Twelve worlds. Turn a world on."
           },
-          "mic-channels": {
-            "title": "Mic Recording",
-            "text": "Three vocal channels on page 1. Guitar, Bass and Instrumental on page 2. Monitor and Redo included."
+          "sound-02": {
+            "title": "Effect knobs.",
+            "text": "Long press a world.",
+            "alt": "Effect knobs. Long press a world."
           },
-          "loop-looper": {
-            "title": "Looper",
-            "text": "32 loop channels on 8 pages. Record, play and redo."
+          "sound-03": {
+            "title": "Real FM.",
+            "text": "Four operators.",
+            "alt": "Real FM. Four operators."
           },
-          "loop-editor": {
-            "title": "Loop Editor",
-            "text": "Trim, loop and shape the EQ. Long-press a rhythm box for repeats."
+          "sound-04": {
+            "title": "Pick a scale.",
+            "text": "Tap a green scale.",
+            "alt": "Pick a scale. Tap a green scale."
           },
-          "sound-fx": {
-            "title": "Sound FX",
-            "text": "12 effects, 4 of them new. Swipe or tap the arrows to change page. Tap one to turn it on, long-press it for its knobs."
+          "sound-05": {
+            "title": "Type your own Hz.",
+            "text": "Pick a ready scale.",
+            "alt": "Type your own Hz. Pick a ready scale."
           },
-          "mic-editor": {
-            "title": "Mic Editor",
-            "text": "Trim, loop, EQ, Gain and Squeeze. Long-press a rhythm box for repeats."
+          "sound-06": {
+            "title": "Wave panel.",
+            "text": "Hold a wave key.",
+            "alt": "Wave panel. Hold a wave key."
           },
-          "mic-lyrics": {
-            "title": "Lyrics",
-            "text": "A teleprompter for your lyrics. Type or paste, press Play to scroll, set the speed and text size."
+          "sound-07": {
+            "title": "Two keyboards.",
+            "text": "Tap the plus.",
+            "alt": "Two keyboards. Tap the plus."
           },
-          "pad-live": {
-            "title": "Live Pad",
-            "text": "Drag on the pad and the sound follows your finger. Pick KEY, MIC, LOOP or DRUM. Hold 1/4 to 1/32 for a repeat."
+          "mic-01": {
+            "title": "Mic recording.",
+            "text": "Two input pages.",
+            "alt": "Mic recording. Two input pages."
           },
-          "drum-rows": {
-            "title": "All 8 Rows",
-            "text": "Tap +4 to show FX 1, FX 2, FX 3 and Voice. The keyboard hides and the key reads -4. Tap it again to bring the keyboard back."
+          "mic-02": {
+            "title": "Mic editor.",
+            "text": "Trim a take.",
+            "alt": "Mic editor. Trim a take."
           },
-          "drum-banks": {
-            "title": "Sample Banks",
-            "text": "Eight drum rows, each with its own picker. Choose from Factory and Exclusive banks."
+          "mic-03": {
+            "title": "Lyrics.",
+            "text": "Scroll your words.",
+            "alt": "Lyrics. Scroll your words."
           },
-          "drum-loaded": {
-            "title": "Your Own Samples",
-            "text": "LOADED: up to 88 of your samples on every row, saved automatically. Trim with the start and end bars. SAVE, RESET, RENAME, DELETE."
+          "mic-04": {
+            "title": "Mastering.",
+            "text": "Style, then export.",
+            "alt": "Mastering. Style, then export."
+          },
+          "loop-01": {
+            "title": "Looper.",
+            "text": "Eight pages.",
+            "alt": "Looper. Eight pages."
+          },
+          "loop-02": {
+            "title": "Looper FX.",
+            "text": "Eight FX presets.",
+            "alt": "Looper FX. Eight FX presets."
+          },
+          "loop-03": {
+            "title": "Loop editor.",
+            "text": "Trim, loop, EQ.",
+            "alt": "Loop editor. Trim, loop, EQ."
+          },
+          "loop-04": {
+            "title": "Analog mixer.",
+            "text": "Drive, EQ, a fader.",
+            "alt": "Analog mixer. Drive, EQ, a fader."
+          },
+          "pad-01": {
+            "title": "Live pad.",
+            "text": "The sound follows.",
+            "alt": "Live pad. The sound follows."
+          },
+          "drum-01": {
+            "title": "All eight rows.",
+            "text": "Tap plus or minus.",
+            "alt": "All eight rows. Tap plus or minus."
+          },
+          "drum-02": {
+            "title": "Drum FX.",
+            "text": "Eight drum presets.",
+            "alt": "Drum FX. Eight drum presets."
+          },
+          "drum-03": {
+            "title": "Sample banks.",
+            "text": "One picker per row.",
+            "alt": "Sample banks. One picker per row."
+          },
+          "drum-04": {
+            "title": "Your own samples.",
+            "text": "Trim, save, rename.",
+            "alt": "Your own samples. Trim, save, rename."
           },
           "home-sound": {
             "title": "Shape your sound",
@@ -8216,42 +8292,6 @@
             "title": "Your analog mixer",
             "text": "Four strips for Drums, Looper, Mic and Master, with Spectrum and Mix Map.",
             "alt": "7/8: Your analog mixer. Four strips for Drums, Looper, Mic and Master, with Spectrum and Mix Map."
-          },
-          "sound-wave-panel": {
-            "title": "Wave Panel",
-            "text": "Hold a wave key: octave, EQ and 4 pages, each one more voice of that wave. Every change is heard at once and saved."
-          },
-          "loop-mixer": {
-            "title": "Analog Mixer",
-            "text": "Tap LIVE SCOPE on top. Drums, Looper and Mic get Drive, HPF, EQ, Comp, Pan and a fader, plus a Master strip. 8 presets."
-          },
-          "mic-mastering": {
-            "title": "Mastering",
-            "text": "After a WAV recording, tap Master this take. 8 styles, A and B to compare, then export WAV, MP3 or FLAC. Files stay on your phone."
-          },
-          "sound-fm": {
-            "title": "Real FM",
-            "text": "4 operators. ALGO picks 1 of 8 ways to link them, RATIO the pitch, INDEX the brightness, FEEDBK the edge, DECAY the fade, MIX the amount."
-          },
-          "sound-frequencies": {
-            "title": "Tune Frequencies",
-            "text": "Type the Hz of each of the 8 keys, or load a ready scale such as Hijaz or Kurd. Save up to 8 presets of your own."
-          },
-          "sound-fx-knobs": {
-            "title": "Effect Knobs",
-            "text": "Long-press an effect such as Iron Growl for RATE, AMOUNT, LOW, MID, HIGH, SWEEP and REVERB. Both keyboards stay open below."
-          },
-          "sound-two-keyboards": {
-            "title": "Two Keyboards",
-            "text": "Tap + beside VOICES for a second keyboard, one octave higher. It stays open when you switch between Sound and Pad."
-          },
-          "loop-fx": {
-            "title": "Looper FX",
-            "text": "8 presets such as Indie Wash for a loop channel. Tap one to turn it on. Long-press it for its knobs and Transpose."
-          },
-          "drum-fx": {
-            "title": "Drum FX",
-            "text": "8 presets such as Tribal Bloom. Tap one to turn it on. Long-press it for AMOUNT, LOW, MID, HIGH, SWEEP, REVERB and Transpose."
           },
           "home-sound-fx": {
             "title": "Twelve FX worlds",
@@ -12291,49 +12331,105 @@
         "next": "Следующий слайд",
         "slide": "Слайд {n} из {total}",
         "slides": {
-          "sound-scales": {
-            "title": "Тональность и лады",
-            "text": "Major или Minor от любой из 12 тоник, или SCALE OFF. Точки отмечают ноты лада на клавишах. Частоты не меняются."
+          "sound-01": {
+            "title": "Двенадцать миров.",
+            "text": "Включите мир.",
+            "alt": "Двенадцать миров. Включите мир."
           },
-          "mic-channels": {
-            "title": "Запись Mic",
-            "text": "Три вокальных канала на странице 1. Гитара, бас и инструмент на странице 2. Есть монитор и повтор."
+          "sound-02": {
+            "title": "Ручки эффекта.",
+            "text": "Долгое нажатие на мир.",
+            "alt": "Ручки эффекта. Долгое нажатие на мир."
           },
-          "loop-looper": {
-            "title": "Looper",
-            "text": "32 канала лупов на 8 страницах. Записывайте, играйте и повторяйте."
+          "sound-03": {
+            "title": "Настоящий FM.",
+            "text": "Четыре оператора.",
+            "alt": "Настоящий FM. Четыре оператора."
           },
-          "loop-editor": {
-            "title": "Редактор лупов",
-            "text": "Обрезка, луп и эквалайзер. Долгое нажатие на ритм открывает повторы."
+          "sound-04": {
+            "title": "Выберите гамму.",
+            "text": "Нажмите зелёную гамму.",
+            "alt": "Выберите гамму. Нажмите зелёную гамму."
           },
-          "sound-fx": {
-            "title": "Sound FX",
-            "text": "12 эффектов, 4 из них новые. Листайте или нажимайте стрелки. Нажатие включает эффект, долгое нажатие открывает его ручки."
+          "sound-05": {
+            "title": "Введите свои Гц.",
+            "text": "Или выберите готовую гамму.",
+            "alt": "Введите свои Гц. Или выберите готовую гамму."
           },
-          "mic-editor": {
-            "title": "Редактор Mic",
-            "text": "Обрезка, луп, EQ, Gain и Squeeze. Долгое нажатие на ритм открывает повторы."
+          "sound-06": {
+            "title": "Панель волны.",
+            "text": "Удерживайте клавишу волны.",
+            "alt": "Панель волны. Удерживайте клавишу волны."
           },
-          "mic-lyrics": {
-            "title": "Текст",
-            "text": "Телесуфлёр для вашего текста. Введите или вставьте текст, нажмите Старт для прокрутки, задайте скорость и размер."
+          "sound-07": {
+            "title": "Две клавиатуры.",
+            "text": "Нажмите плюс.",
+            "alt": "Две клавиатуры. Нажмите плюс."
           },
-          "pad-live": {
-            "title": "Живой пэд",
-            "text": "Ведите по пэду, и звук следует за пальцем. Выберите KEY, MIC, LOOP или DRUM. Удерживайте от 1/4 до 1/32 для повтора."
+          "mic-01": {
+            "title": "Запись Mic.",
+            "text": "Две страницы входов.",
+            "alt": "Запись Mic. Две страницы входов."
           },
-          "drum-rows": {
-            "title": "Все 8 рядов",
-            "text": "Нажмите +4, чтобы показать FX 1, FX 2, FX 3 и Voice. Клавиатура скрывается, клавиша становится -4. Нажмите ещё раз, чтобы вернуть клавиатуру."
+          "mic-02": {
+            "title": "Редактор Mic.",
+            "text": "Обрежьте дубль.",
+            "alt": "Редактор Mic. Обрежьте дубль."
           },
-          "drum-banks": {
-            "title": "Банки сэмплов",
-            "text": "Восемь рядов ударных, у каждого свой выбор. Банки Factory и Exclusive."
+          "mic-03": {
+            "title": "Текст.",
+            "text": "Прокрутите свои слова.",
+            "alt": "Текст. Прокрутите свои слова."
           },
-          "drum-loaded": {
-            "title": "Свои сэмплы",
-            "text": "LOADED: до 88 своих сэмплов в каждом ряду, сохраняются сами. Обрезка ползунками начала и конца. SAVE, RESET, RENAME, DELETE."
+          "mic-04": {
+            "title": "Мастеринг.",
+            "text": "Стиль, затем экспорт.",
+            "alt": "Мастеринг. Стиль, затем экспорт."
+          },
+          "loop-01": {
+            "title": "Looper.",
+            "text": "Восемь страниц.",
+            "alt": "Looper. Восемь страниц."
+          },
+          "loop-02": {
+            "title": "Looper FX.",
+            "text": "Восемь пресетов FX.",
+            "alt": "Looper FX. Восемь пресетов FX."
+          },
+          "loop-03": {
+            "title": "Редактор лупа.",
+            "text": "Обрезка, луп, EQ.",
+            "alt": "Редактор лупа. Обрезка, луп, EQ."
+          },
+          "loop-04": {
+            "title": "Аналоговый микшер.",
+            "text": "Drive, EQ и фейдер.",
+            "alt": "Аналоговый микшер. Drive, EQ и фейдер."
+          },
+          "pad-01": {
+            "title": "Живой пэд.",
+            "text": "Звук следует за вами.",
+            "alt": "Живой пэд. Звук следует за вами."
+          },
+          "drum-01": {
+            "title": "Все восемь рядов.",
+            "text": "Нажмите плюс или минус.",
+            "alt": "Все восемь рядов. Нажмите плюс или минус."
+          },
+          "drum-02": {
+            "title": "Drum FX.",
+            "text": "Восемь пресетов ударных.",
+            "alt": "Drum FX. Восемь пресетов ударных."
+          },
+          "drum-03": {
+            "title": "Банки сэмплов.",
+            "text": "Свой выбор в каждом ряду.",
+            "alt": "Банки сэмплов. Свой выбор в каждом ряду."
+          },
+          "drum-04": {
+            "title": "Свои сэмплы.",
+            "text": "Обрезка, сохранение, переименование.",
+            "alt": "Свои сэмплы. Обрезка, сохранение, переименование."
           },
           "home-sound": {
             "title": "Собери свой звук",
@@ -12354,42 +12450,6 @@
             "title": "Твой аналоговый микшер",
             "text": "Четыре полосы для Drums, Looper, Mic и Master, со Spectrum и Mix Map.",
             "alt": "7/8: Твой аналоговый микшер. Четыре полосы для Drums, Looper, Mic и Master, со Spectrum и Mix Map."
-          },
-          "sound-wave-panel": {
-            "title": "Панель волны",
-            "text": "Долгое нажатие на клавишу волны: октава, EQ и 4 страницы, каждая добавляет голос этой волны. Изменения слышны сразу и сохраняются."
-          },
-          "loop-mixer": {
-            "title": "Аналоговый микшер",
-            "text": "Нажмите LIVE SCOPE сверху. У Drums, Looper и Mic есть Drive, HPF, EQ, Comp, Pan и фейдер, плюс канал Master. 8 пресетов."
-          },
-          "mic-mastering": {
-            "title": "Мастеринг",
-            "text": "После записи WAV нажмите Master this take. 8 стилей, A и B для сравнения, затем экспорт в WAV, MP3 или FLAC. Файлы остаются в телефоне."
-          },
-          "sound-fm": {
-            "title": "Настоящий FM",
-            "text": "4 оператора. ALGO выбирает 1 из 8 схем, RATIO высоту, INDEX яркость, FEEDBK резкость, DECAY затухание, MIX долю FM."
-          },
-          "sound-frequencies": {
-            "title": "Настройка частот",
-            "text": "Введите Hz для каждой из 8 клавиш или загрузите готовый лад, например Hijaz или Kurd. До 8 своих пресетов."
-          },
-          "sound-fx-knobs": {
-            "title": "Ручки эффекта",
-            "text": "Долгое нажатие на эффект, например Iron Growl, открывает RATE, AMOUNT, LOW, MID, HIGH, SWEEP и REVERB. Обе клавиатуры остаются открытыми."
-          },
-          "sound-two-keyboards": {
-            "title": "Две клавиатуры",
-            "text": "Нажмите + рядом с VOICES, и откроется вторая клавиатура на октаву выше. Она остаётся открытой при переходе между Sound и Pad."
-          },
-          "loop-fx": {
-            "title": "Looper FX",
-            "text": "8 пресетов, например Indie Wash, для канала лупа. Нажатие включает пресет, долгое нажатие открывает ручки и Transpose."
-          },
-          "drum-fx": {
-            "title": "Drum FX",
-            "text": "8 пресетов, например Tribal Bloom. Нажатие включает пресет, долгое нажатие открывает AMOUNT, LOW, MID, HIGH, SWEEP, REVERB и Transpose."
           },
           "home-sound-fx": {
             "title": "Двенадцать миров FX",
@@ -16429,49 +16489,105 @@
         "next": "الشريحة التالية",
         "slide": "الشريحة {n} من {total}",
         "slides": {
-          "sound-scales": {
-            "title": "Key والسلالم",
-            "text": "اختر Major أو Minor من أي من 12 نغمة أساس، أو SCALE OFF. تُعلّم النقاط نغمات السلم على المفاتيح. الترددات لا تتغير."
+          "sound-01": {
+            "title": "اثنا عشر عالماً.",
+            "text": "شغّل عالماً.",
+            "alt": "اثنا عشر عالماً. شغّل عالماً."
           },
-          "mic-channels": {
-            "title": "تسجيل Mic",
-            "text": "ثلاث قنوات للغناء في الصفحة 1. غيتار وباس وآلة في الصفحة 2. مع المراقبة والإعادة."
+          "sound-02": {
+            "title": "مقابض المؤثر.",
+            "text": "اضغط مطولاً على عالم.",
+            "alt": "مقابض المؤثر. اضغط مطولاً على عالم."
           },
-          "loop-looper": {
-            "title": "Looper",
-            "text": "32 قناة لوب في 8 صفحات. سجّل وشغّل وأعد."
+          "sound-03": {
+            "title": "FM حقيقي.",
+            "text": "أربعة مشغّلات.",
+            "alt": "FM حقيقي. أربعة مشغّلات."
           },
-          "loop-editor": {
-            "title": "محرر اللوب",
-            "text": "قصّ وكرّر وشكّل الـ EQ. اضغط مطولًا على مربع الإيقاع لضبط التكرارات."
+          "sound-04": {
+            "title": "اختر سلماً.",
+            "text": "المس سلماً أخضر.",
+            "alt": "اختر سلماً. المس سلماً أخضر."
           },
-          "sound-fx": {
-            "title": "مؤثرات Sound",
-            "text": "12 مؤثرًا، 4 منها جديدة. اسحب أو المس الأسهم لتغيير الصفحة. المس مؤثرًا لتشغيله، واضغط مطولًا لفتح مقابضه."
+          "sound-05": {
+            "title": "اكتب الـHz الخاص بك.",
+            "text": "أو اختر سلماً جاهزاً.",
+            "alt": "اكتب الـHz الخاص بك. أو اختر سلماً جاهزاً."
           },
-          "mic-editor": {
-            "title": "محرر Mic",
-            "text": "قصّ وتكرار وEQ وGain وSqueeze. اضغط مطولًا على مربع الإيقاع لضبط التكرارات."
+          "sound-06": {
+            "title": "لوحة الموجة.",
+            "text": "اضغط مطولاً على مفتاح موجة.",
+            "alt": "لوحة الموجة. اضغط مطولاً على مفتاح موجة."
           },
-          "mic-lyrics": {
-            "title": "كلمات",
-            "text": "جهاز تلقين لكلماتك. اكتب أو الصق، واضغط تشغيل ليبدأ التمرير، واضبط السرعة وحجم النص."
+          "sound-07": {
+            "title": "لوحتا مفاتيح.",
+            "text": "المس علامة الزائد.",
+            "alt": "لوحتا مفاتيح. المس علامة الزائد."
           },
-          "pad-live": {
-            "title": "لوحة العزف الحي",
-            "text": "اسحب على اللوحة فيتبع الصوت إصبعك. اختر KEY أو MIC أو LOOP أو DRUM. اضغط مطولًا على 1/4 حتى 1/32 للتكرار."
+          "mic-01": {
+            "title": "تسجيل Mic.",
+            "text": "صفحتان للمدخلات.",
+            "alt": "تسجيل Mic. صفحتان للمدخلات."
           },
-          "drum-rows": {
-            "title": "الصفوف الثمانية",
-            "text": "المس زر زائد 4 لإظهار FX 1 وFX 2 وFX 3 وVoice. تختفي لوحة المفاتيح ويصبح الزر ناقص 4. المسه مرة أخرى لإعادتها."
+          "mic-02": {
+            "title": "محرر Mic.",
+            "text": "قصّ التسجيل.",
+            "alt": "محرر Mic. قصّ التسجيل."
           },
-          "drum-banks": {
-            "title": "بنوك العينات",
-            "text": "ثمانية صفوف طبول، ولكل صف منتقيه الخاص. اختر من بنكي Factory وExclusive."
+          "mic-03": {
+            "title": "كلمات.",
+            "text": "مرّر كلماتك.",
+            "alt": "كلمات. مرّر كلماتك."
           },
-          "drum-loaded": {
-            "title": "عيناتك الخاصة",
-            "text": "LOADED: حتى 88 عينة خاصة بك في كل صف، تُحفظ تلقائيًا. قصّ بشريطي البداية والنهاية. SAVE وRESET وRENAME وDELETE."
+          "mic-04": {
+            "title": "الماسترنغ.",
+            "text": "أسلوب، ثم التصدير.",
+            "alt": "الماسترنغ. أسلوب، ثم التصدير."
+          },
+          "loop-01": {
+            "title": "Looper.",
+            "text": "ثماني صفحات.",
+            "alt": "Looper. ثماني صفحات."
+          },
+          "loop-02": {
+            "title": "مؤثرات Looper.",
+            "text": "ثمانية إعدادات FX.",
+            "alt": "مؤثرات Looper. ثمانية إعدادات FX."
+          },
+          "loop-03": {
+            "title": "محرر اللوب.",
+            "text": "قصّ، لوب، وEQ.",
+            "alt": "محرر اللوب. قصّ، لوب، وEQ."
+          },
+          "loop-04": {
+            "title": "ميكسر تناظري.",
+            "text": "Drive وEQ ومنزلق.",
+            "alt": "ميكسر تناظري. Drive وEQ ومنزلق."
+          },
+          "pad-01": {
+            "title": "لوحة العزف الحي.",
+            "text": "الصوت يتبع.",
+            "alt": "لوحة العزف الحي. الصوت يتبع."
+          },
+          "drum-01": {
+            "title": "كل الصفوف الثمانية.",
+            "text": "المس زائد أو ناقص.",
+            "alt": "كل الصفوف الثمانية. المس زائد أو ناقص."
+          },
+          "drum-02": {
+            "title": "مؤثرات Drum.",
+            "text": "ثمانية إعدادات للطبول.",
+            "alt": "مؤثرات Drum. ثمانية إعدادات للطبول."
+          },
+          "drum-03": {
+            "title": "بنوك العينات.",
+            "text": "منتقي لكل صف.",
+            "alt": "بنوك العينات. منتقي لكل صف."
+          },
+          "drum-04": {
+            "title": "عيناتك.",
+            "text": "قصّ، احفظ، أعد التسمية.",
+            "alt": "عيناتك. قصّ، احفظ، أعد التسمية."
           },
           "home-sound": {
             "title": "شكّل الصوت",
@@ -16492,42 +16608,6 @@
             "title": "الميكسر التناظري لديك",
             "text": "أربعة مسارات لـ Drums وLooper وMic وMaster مع Spectrum وMix Map.",
             "alt": "7/8: الميكسر التناظري لديك. أربعة مسارات لـ Drums وLooper وMic وMaster مع Spectrum وMix Map."
-          },
-          "sound-wave-panel": {
-            "title": "لوحة الموجة",
-            "text": "اضغط مطولًا على مفتاح موجة: الأوكتاف وEQ و4 صفحات، كل صفحة صوت إضافي من الموجة نفسها. كل تغيير يُسمع فورًا ويُحفظ."
-          },
-          "loop-mixer": {
-            "title": "ميكسر تناظري",
-            "text": "المس LIVE SCOPE في الأعلى. للطبول واللوبر والميكروفون Drive وHPF وEQ وComp وPan ومنزلق، مع قناة Master. 8 إعدادات."
-          },
-          "mic-mastering": {
-            "title": "الماسترنغ",
-            "text": "بعد تسجيل WAV المس Master this take. 8 أساليب، وA وB للمقارنة، ثم التصدير إلى WAV أو MP3 أو FLAC. تبقى الملفات على هاتفك."
-          },
-          "sound-fm": {
-            "title": "FM حقيقي",
-            "text": "4 مشغّلات. ALGO يختار 1 من 8 طرق لربطها، RATIO الطبقة، INDEX السطوع، FEEDBK الخشونة، DECAY الخفوت، وMIX الكمية."
-          },
-          "sound-frequencies": {
-            "title": "ضبط الترددات",
-            "text": "اكتب الـHz لكل مفتاح من المفاتيح الثمانية، أو حمّل سلمًا جاهزًا مثل الحجاز أو الكرد. احفظ حتى 8 إعدادات خاصة بك."
-          },
-          "sound-fx-knobs": {
-            "title": "مقابض المؤثر",
-            "text": "اضغط مطولًا على مؤثر مثل Iron Growl لضبط RATE وAMOUNT وLOW وMID وHIGH وSWEEP وREVERB. تبقى لوحتا المفاتيح مفتوحتين في الأسفل."
-          },
-          "sound-two-keyboards": {
-            "title": "لوحتا مفاتيح",
-            "text": "المس + بجانب VOICES لفتح لوحة مفاتيح ثانية أعلى بأوكتاف واحد. تبقى مفتوحة عند التنقل بين Sound وPad."
-          },
-          "loop-fx": {
-            "title": "مؤثرات Looper",
-            "text": "8 إعدادات مثل Indie Wash لقناة اللوب. المس واحدًا لتشغيله، واضغط مطولًا لفتح مقابضه وTranspose."
-          },
-          "drum-fx": {
-            "title": "مؤثرات Drum",
-            "text": "8 إعدادات مثل Tribal Bloom. المس واحدًا لتشغيله، واضغط مطولًا لفتح AMOUNT وLOW وMID وHIGH وSWEEP وREVERB وTranspose."
           },
           "home-sound-fx": {
             "title": "اثنا عشر عالماً من FX",
