@@ -11,8 +11,7 @@ export type CarouselId = PlayId | "update112" | "home112";
  * Round-2 designer slides, in NN order. Each id replaces one previous poster
  * (named in the comment). `loop-page-name` was removed and has no replacement.
  * Append a later slide by adding `{ id, designed }` to the tab array and
- * `languages.*.carousel.slides[id]` in he, en, ru, and ar. `pad-02` and
- * `drum-05` are the next two and are not in this set yet.
+ * `languages.*.carousel.slides[id]` in he, en, ru, and ar.
  *
  * Hebrew uses `assets/carousel/he/`. English, Russian, and Arabic use the
  * English artwork: the ru and ar folders are copies of en (the site has no
@@ -65,14 +64,14 @@ export const carouselSlides: Record<CarouselId, SlideDef[]> = {
   ],
   pad: [
     slide("pad-01"), // replaces pad-live
-    // pad-02 arrives in a later set; append it here
+    slide("pad-02"),
   ],
   drum: [
     slide("drum-01"), // replaces drum-rows
     slide("drum-02"), // replaces drum-fx
     slide("drum-03"), // replaces drum-banks
     slide("drum-04"), // replaces drum-loaded
-    // drum-05 arrives in a later set; append it here
+    slide("drum-05"),
   ],
   home112: [
     play115.sound,
