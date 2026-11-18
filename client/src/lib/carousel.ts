@@ -6,20 +6,21 @@ export type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 export type CarouselId = PlayId | "update112" | "home112";
 
 /**
- * Home carousels.
+ * Home feature tabs (Sound, Mic, Loop, Pad, Drum).
  *
- * `play115` is the official 1.15 Google Play set already on disk
- * (`assets/carousel/{lang}/home-*-w360|w630.{webp,jpg}`). Hebrew uses the Hebrew
- * files. English, Russian, and Arabic use the English files. Do not draw or
- * generate new slides here. A designer is making extra 1.15-style slides; add
- * one later by appending `{ id, designed }` to a tab array, adding
- * `languages.*.carousel.slides[id]` in he, en, ru, and ar, and dropping in the
- * four files per language. Mixer and mastering stay on `home112` until a tab
- * is the right place for them.
+ * Round-2 designer slides, in NN order. Each id replaces one previous poster
+ * (named in the comment). `loop-page-name` was removed and has no replacement.
+ * Append a later slide by adding `{ id, designed }` to the tab array and
+ * `languages.*.carousel.slides[id]` in he, en, ru, and ar. `pad-02` and
+ * `drum-05` are the next two and are not in this set yet.
  *
- * Files are written by scripts/import-carousel-posters.py only when the source
- * PNG for that `designed` name exists. Do not run that script against this set
- * without those sources: it deletes files it does not reimport.
+ * Hebrew uses `assets/carousel/he/`. English, Russian, and Arabic use the
+ * English artwork: the ru and ar folders are copies of en (the site has no
+ * separate Russian or Arabic posters).
+ *
+ * The hero carousel (`home112`) and the 1.12 updates carousel stay on their
+ * existing sets. Do not run scripts/import-carousel-posters.py against this
+ * tree without every source PNG: it deletes files it does not reimport.
  *
  * Slide titles and texts live in content.json under languages.*.carousel.slides[id].
  */
@@ -37,13 +38,42 @@ export const play115: Record<string, SlideDef> = {
   mastering: { id: "home-mastering", designed: "08-mastering" },
 };
 
+const slide = (id: string): SlideDef => ({ id, designed: id });
+
 export const carouselSlides: Record<CarouselId, SlideDef[]> = {
-  // One or two existing 1.15 stills per tab. Append a later designer slide to the array.
-  sound: [play115.sound, play115.soundFx],
-  mic: [play115.mic],
-  loop: [play115.looper],
-  pad: [play115.pad],
-  drum: [play115.drums],
+  sound: [
+    slide("sound-01"), // replaces sound-fx
+    slide("sound-02"), // replaces sound-fx-knobs
+    slide("sound-03"), // replaces sound-fm
+    slide("sound-04"), // replaces sound-scales
+    slide("sound-05"), // replaces sound-frequencies
+    slide("sound-06"), // replaces sound-wave-panel
+    slide("sound-07"), // replaces sound-two-keyboards
+  ],
+  mic: [
+    slide("mic-01"), // replaces mic-channels
+    slide("mic-02"), // replaces mic-editor
+    slide("mic-03"), // replaces mic-lyrics
+    slide("mic-04"), // replaces mic-mastering
+  ],
+  loop: [
+    slide("loop-01"), // replaces loop-looper
+    slide("loop-02"), // replaces loop-fx
+    slide("loop-03"), // replaces loop-editor
+    // loop-page-name removed (feature gone in 1.15), no replacement
+    slide("loop-04"), // replaces loop-mixer
+  ],
+  pad: [
+    slide("pad-01"), // replaces pad-live
+    // pad-02 arrives in a later set; append it here
+  ],
+  drum: [
+    slide("drum-01"), // replaces drum-rows
+    slide("drum-02"), // replaces drum-fx
+    slide("drum-03"), // replaces drum-banks
+    slide("drum-04"), // replaces drum-loaded
+    // drum-05 arrives in a later set; append it here
+  ],
   home112: [
     play115.sound,
     play115.soundFx,
@@ -80,7 +110,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-115";
+export const CAROUSEL_VER = "carousel-r2";
 const SMALL = 360;
 const LARGE = 630;
 
