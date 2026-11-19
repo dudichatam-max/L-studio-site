@@ -33,7 +33,7 @@ function TickerGroup({
       ref={groupRef}
     >
       {items.flatMap((item) => {
-        const status = copy.statusLabels?.[item.status] ?? item.status;
+        const status = item.badge ?? copy.statusLabels?.[item.status] ?? item.status;
         const lines = [item.ticker || item.title, ...(item.tickerMore ?? [])].filter(Boolean);
         return lines.map((line, i) => (
           <span className="updates-ticker__slot" key={`${item.id}-${i}`}>
