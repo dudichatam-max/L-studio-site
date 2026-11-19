@@ -10,6 +10,7 @@ import { POSTER_VER } from "@/lib/posters";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { groupUpdates, mergeUpdates, updateScreenshots, type UpdatesCopy } from "@/lib/updatesCopy";
+import { BidiText } from "@/components/BidiText";
 
 type ChromeCopy = {
   back: string;
@@ -155,8 +156,8 @@ export default function Updates() {
           <div className="eyebrow">
             <span className="eyebrow-dot" /> {copy.pageKicker}
           </div>
-          <h1>{copy.pageTitle}</h1>
-          {copy.pageIntro ? <p>{copy.pageIntro}</p> : null}
+          <h1><BidiText text={copy.pageTitle} language={language} rtl={isRtl} /></h1>
+          {copy.pageIntro ? <p><BidiText text={copy.pageIntro} language={language} rtl={isRtl} /></p> : null}
           <nav className="updates-jump" aria-label={chrome.onThisPage}>
             {groups.map((group) => (
               <a key={group.status} href={`#updates-${group.status}`}>
@@ -202,20 +203,20 @@ export default function Updates() {
                       ) : null}
                       <div className="updates-card-copy">
                         <div className="updates-card-head">
-                          <h3>{item.title}</h3>
+                          <h3><BidiText text={item.title} language={language} rtl={isRtl} /></h3>
                           <span className="exclusive-badge">{copy.statusLabels?.[item.status] ?? group.title}</span>
                         </div>
-                        {item.summary ? <p>{item.summary}</p> : null}
-                        {item.detail ? <p className="updates-detail">{item.detail}</p> : null}
+                        {item.summary ? <p><BidiText text={item.summary} language={language} rtl={isRtl} /></p> : null}
+                        {item.detail ? <p className="updates-detail"><BidiText text={item.detail} language={language} rtl={isRtl} /></p> : null}
                         {Array.isArray(item.sections) && item.sections.length ? (
                           <div className="updates-sections">
                             {item.sections.map((section) =>
                               section && section.title && Array.isArray(section.bullets) && section.bullets.length ? (
                                 <section className="updates-section" key={section.title}>
-                                  <h4>{section.title}</h4>
+                                  <h4><BidiText text={section.title} language={language} rtl={isRtl} /></h4>
                                   <ul>
                                     {section.bullets.map((bullet) => (
-                                      <li key={bullet}>{bullet}</li>
+                                      <li key={bullet}><BidiText text={bullet} language={language} rtl={isRtl} /></li>
                                     ))}
                                   </ul>
                                 </section>

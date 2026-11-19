@@ -396,3 +396,13 @@ The looper page-name dialog and the 8 page colors are gone from the app. In `lan
 `languages.*.underHood.features` id `sound-fx` is "Sound FX / 12 worlds" (not 8 bass worlds). `body` is the shared clock rule. `lines` is one line per world 1-12. `soonLabel` and `soonLines` are Analog Delay, Bitcrusher, Ring Mod, and Granular, plus chains of up to 4, marked coming soon in 1.16. They are not in the 1.15 app (`SoundFx.COUNT` is 12).
 
 Id `looper` lists the eight Looper FX by name and the rhythm boxes (1 to 88 or infinity, free loop, follows drum Play, Keep playing). Do not write looper page names or page colors. Do not describe behavior that is only on `cursor/1.16-fixes-af7b`.
+
+
+## Updates: 1.16 live on Google Play, 1.17 restore preview (2026-11-19)
+
+- Version on Google Play is **1.16** (David, 2026-11-19, Asia/Jerusalem). Item `app-1-16-sfx` is `shipped`. Title and ticker start "On Google Play now: version 1.16" (HE "עכשיו ב-Google Play:", RU "Теперь в Google Play:", AR "الآن على Google Play:"). The card is the full 1.16 What's New in all four languages, from the approved Play what's-new text plus facts in the Play full description and `docs/1.16/README-1.16.md`. Status is live, not "in review" and not "coming soon".
+- The `/updates` intro (`pageIntro`) now names 1.16 as the version on Google Play. The 1.15 item stays `shipped` but its title, ticker and summary no longer say "on Google Play now", same pattern as 1.14 after 1.15 shipped.
+- New second item `app-1-17-restore`, status `upcoming`. It only states the confirmed 1.17 Factory restore change: in Settings the Factory restore button opens two tick options, drum kits and presets, so you can restore one or both, and Custom folders are always kept. No stills.
+- Do not change the hero, FAQ, Pro, SEO or Home tabs in this pass; those pages may still mention 1.15 or mark the four new worlds as coming soon until a follow-up.
+- `/updates` now renders titles, intros, summaries and bullets with `BidiText`, same helper as Home, so Latin names in Hebrew and Arabic stay together when the line wraps.
+- The 1.16 stills are unchanged: `assets/updates/116/{analog-delay,bitcrusher,ring-mod,granular}-w360|w630.{jpg,webp}`.
