@@ -204,7 +204,7 @@ export default function Updates() {
                       <div className="updates-card-copy">
                         <div className="updates-card-head">
                           <h3><BidiText text={item.title} language={language} rtl={isRtl} /></h3>
-                          <span className="exclusive-badge">{copy.statusLabels?.[item.status] ?? group.title}</span>
+                          <span className="exclusive-badge">{item.badge ?? copy.statusLabels?.[item.status] ?? group.title}</span>
                         </div>
                         {item.summary ? <p><BidiText text={item.summary} language={language} rtl={isRtl} /></p> : null}
                         {item.detail ? <p className="updates-detail"><BidiText text={item.detail} language={language} rtl={isRtl} /></p> : null}

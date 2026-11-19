@@ -41,6 +41,8 @@ export type UpdateItem = {
    * instead of a static grid. Used for the 1.14 updates item stills carousel.
    */
   imagesCarousel?: boolean;
+  /** Optional badge text that overrides the shared status label on the card and ticker. */
+  badge?: string;
   /** Optional 1024x500 (or similar) banner shown full-width at the top of the card, above the copy and any carousel. */
   banner?: string;
   /** Alt for `banner`. */
