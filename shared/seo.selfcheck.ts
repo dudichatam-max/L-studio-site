@@ -376,20 +376,21 @@ for (const language of LANGUAGES) {
   assert(guideInner.includes("<h1>"), `${language} guide prerender h1`);
 }
 assert(
-  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("<h2>Free Tuning</h2>"),
-  "English prerender uses Free Tuning"
+  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("<h2>Exact Frequency Tuning</h2>"),
+  "English prerender uses Exact Frequency Tuning"
 );
 assert(
-  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("<h2>Sound FX / 12 worlds</h2>"),
-  "English prerender uses Sound FX / 12 worlds"
+  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("<h2>Sound FX / 16 worlds</h2>"),
+  "English prerender uses Sound FX / 16 worlds"
 );
 assert(
   (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("Sub Forge"),
   "English prerender lists Sub Forge"
 );
 assert(
-  (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("Coming soon in 1.16"),
-  "English prerender marks 1.16 Sound FX as coming soon"
+  !(renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("Coming soon") &&
+    (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("Granular"),
+  "English prerender lists the 1.16 Sound FX worlds as shipped"
 );
 assert(
   (renderPrerenderInner("home", "/", "en", siteContent) ?? "").includes("Hook Glue"),
@@ -397,12 +398,13 @@ assert(
 );
 
 const heHome = renderPrerenderInner("home", "/", "he", siteContent) ?? "";
+const visibleHe = (html: string) => html.replace(/<[^>]+>/g, "");
 assert(heHome.includes('<bdi dir="ltr">'), "Hebrew prerender isolates Latin runs");
 assert(heHome.includes('<bdi dir="ltr">Random</bdi>'), "Hebrew prerender isolates Random");
 assert(heHome.includes('<bdi dir="ltr">FX 1</bdi>'), "Hebrew prerender isolates FX 1");
 assert(
-  heHome.includes('FX 1 <bdi dir="ltr">ו-</bdi>FX 2'),
-  "Hebrew prerender keeps FX 1 ו-FX 2 in one LTR list"
+  heHome.includes('<bdi dir="ltr">FX 1</bdi> וגם <bdi dir="ltr">FX 2</bdi>') && !/[\u05d0-\u05ea]-/.test(visibleHe(heHome)),
+  "Hebrew prerender writes FX 1 וגם FX 2 with no Hebrew hyphen"
 );
 assert(heHome.includes("Performance Pad"), "Hebrew prerender isolates Performance Pad");
 assert(heHome.includes('class="bdi-list"'), "Hebrew prerender marks Latin lists");
