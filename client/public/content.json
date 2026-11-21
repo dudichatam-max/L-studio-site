@@ -1854,8 +1854,9 @@
                     "img": "assets/guide/c/le-rhythms.jpg",
                     "size": [
                       680,
-                      90
-                    ]
+                      128
+                    ],
+                    "alt": "שורת המקצבים בעורך הלולאות: עד 33 תיבות, עם הצצה לתיבה הבאה ורמז לגלילה."
                   },
                   {
                     "text": "לחיצה ארוכה פותחת את Pattern repeats לתיבה: 1 עד 10, שדה שמקלידים בו 1 עד 88, אינסוף, או Default שמכבה את התיבה. כשהתופים מנגנים, הערוץ הולך אחרי התיבות הדולקות. בלי תיבות דולקות, הערוץ ממשיך בלופ לבד.",
@@ -1878,8 +1879,9 @@
                     "img": "assets/guide/c/le-rhythms.jpg",
                     "size": [
                       680,
-                      90
-                    ]
+                      128
+                    ],
+                    "alt": "שורת המקצבים בעורך הלולאות: עד 33 תיבות, עם הצצה לתיבה הבאה ורמז לגלילה."
                   },
                   {
                     "text": "הדלקת KEEP PLAYING בתיבה כבויה מדליקה את התיבה עם המספר 1. בלי KEEP PLAYING, עצירת התופים ב STOP מנמיכה את הערוץ בעדינות במקום לקטוע אותו.",
@@ -1989,8 +1991,9 @@
                     "img": "assets/guide/c/me-all.jpg",
                     "size": [
                       680,
-                      870
-                    ]
+                      918
+                    ],
+                    "alt": "עורך Mic ב 1.16: חיתוך, לולאה, תיבות מקצב (עד 33, עם הצצה ורמז לגלילה), EQ, Gain וגם Squeeze."
                   },
                   {
                     "text": "Save שומר את השינויים עם פרויקט המיק. Redo יכול להחזיר הקלטה מלפני חיתוך.",
@@ -6075,8 +6078,9 @@
                     "img": "assets/guide/c/le-rhythms.jpg",
                     "size": [
                       680,
-                      90
-                    ]
+                      128
+                    ],
+                    "alt": "Loop editor rhythm row: up to 33 boxes, with a peek of the next box and a scroll hint."
                   },
                   {
                     "text": "A long press opens Pattern repeats for that box: 1 to 10, a field where you type 1 to 88, infinity, or Default, which turns the box off. When the drums play, the channel follows the boxes that are on. With no boxes on, the channel keeps looping on its own.",
@@ -6099,8 +6103,9 @@
                     "img": "assets/guide/c/le-rhythms.jpg",
                     "size": [
                       680,
-                      90
-                    ]
+                      128
+                    ],
+                    "alt": "Loop editor rhythm row: up to 33 boxes, with a peek of the next box and a scroll hint."
                   },
                   {
                     "text": "Turning KEEP PLAYING on for a box that is off lights the box with a count of 1. Without it, a drum STOP fades the channel out gently instead of cutting it.",
@@ -6210,8 +6215,9 @@
                     "img": "assets/guide/c/me-all.jpg",
                     "size": [
                       680,
-                      870
-                    ]
+                      918
+                    ],
+                    "alt": "Mic editor in 1.16: trim, loop, rhythm boxes (up to 33, with a peek and a scroll hint), EQ, Gain and Squeeze."
                   },
                   {
                     "text": "Save keeps the changes with the mic project. Redo can bring back a take from before a trim.",
@@ -10296,8 +10302,9 @@
                     "img": "assets/guide/c/le-rhythms.jpg",
                     "size": [
                       680,
-                      90
-                    ]
+                      128
+                    ],
+                    "alt": "Ряд ритмов в редакторе лупа: до 33 ячеек, виден край следующей и подсказка прокрутки."
                   },
                   {
                     "text": "Долгое нажатие открывает Pattern repeats для этой ячейки: от 1 до 10, поле, куда вводится число от 1 до 88, бесконечность или Default, который выключает ячейку. Пока играют ударные, канал следует включённым ячейкам. Без включённых ячеек канал сам продолжает луп.",
@@ -10320,8 +10327,9 @@
                     "img": "assets/guide/c/le-rhythms.jpg",
                     "size": [
                       680,
-                      90
-                    ]
+                      128
+                    ],
+                    "alt": "Ряд ритмов в редакторе лупа: до 33 ячеек, виден край следующей и подсказка прокрутки."
                   },
                   {
                     "text": "Если включить KEEP PLAYING у выключенной ячейки, она загорается с числом 1. Без него STOP ударных плавно гасит канал, а не обрывает его.",
@@ -10431,8 +10439,9 @@
                     "img": "assets/guide/c/me-all.jpg",
                     "size": [
                       680,
-                      870
-                    ]
+                      918
+                    ],
+                    "alt": "Редактор Mic в 1.16: обрезка, луп, ячейки ритма (до 33, с краем следующей и подсказкой прокрутки), EQ, Gain и Squeeze."
                   },
                   {
                     "text": "Save сохраняет изменения с проектом микрофона. Redo может вернуть запись до обрезки.",
@@ -14517,8 +14526,9 @@
                     "img": "assets/guide/c/le-rhythms.jpg",
                     "size": [
                       680,
-                      90
-                    ]
+                      128
+                    ],
+                    "alt": "صف إيقاعات محرر اللوب: حتى 33 مربعاً، مع لمحة من المربع التالي وتلميح للتمرير."
                   },
                   {
                     "text": "الضغط المطوّل يفتح Pattern repeats لذلك المربع: من 1 إلى 10، أو خانة تكتب فيها من 1 إلى 88، أو اللانهاية، أو Default الذي يوقف المربع. أثناء عزف الطبول، تتبع القناة المربعات المشغّلة. بلا مربعات مشغّلة، تواصل القناة اللوب وحدها.",
@@ -14541,8 +14551,9 @@
                     "img": "assets/guide/c/le-rhythms.jpg",
                     "size": [
                       680,
-                      90
-                    ]
+                      128
+                    ],
+                    "alt": "صف إيقاعات محرر اللوب: حتى 33 مربعاً، مع لمحة من المربع التالي وتلميح للتمرير."
                   },
                   {
                     "text": "وتشغيل KEEP PLAYING لمربع متوقف يضيء المربع بالعدد 1. ومن دونه، يخفت STOP الطبول القناة بلطف بدلاً من قطعها.",
@@ -14652,8 +14663,9 @@
                     "img": "assets/guide/c/me-all.jpg",
                     "size": [
                       680,
-                      870
-                    ]
+                      918
+                    ],
+                    "alt": "محرر Mic في 1.16: قصّ، لوب، مربعات إيقاع (حتى 33، مع لمحة وتلميح للتمرير)، وEQ وGain وSqueeze."
                   },
                   {
                     "text": "Save يحفظ التغييرات مع مشروع الميكروفون. يمكن لـ Redo أن يعيد أخذاً من قبل القص.",
