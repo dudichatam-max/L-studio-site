@@ -1507,12 +1507,12 @@
                   },
                   {
                     "text": "לחיצה ארוכה פותחת את הכפתורים של הפריסט: AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏TILT וגם REVERB, ומתחתם סרגל Transpose. ‏LOW, ‏MID וגם HIGH מוצגים ב dB. ‏Transpose נע מ 12 חצאי טונים למטה עד 12 למעלה. ההגדרות נשארות רק כל עוד הפריסט נשאר נבחר.",
-                    "img": "assets/guide/c/dfx13-knobs.jpg",
+                    "img": "assets/guide/c/dfx16-knobs.jpg",
                     "size": [
                       680,
                       302
                     ],
-                    "alt": "הכפתורים של Tribal Bloom: ‏AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP וגם REVERB, וסרגל Transpose על אפס חצאי טונים"
+                    "alt": "הכפתורים של Street Boom: ‏AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏TILT וגם REVERB, וסרגל Transpose על אפס חצאי טונים"
                   }
                 ]
               },
@@ -1946,12 +1946,12 @@
                   },
                   {
                     "text": "לחיצה ארוכה פותחת את הכפתורים של הפריסט: AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏TILT וגם REVERB, ומתחתם סרגל Transpose. ‏LOW, ‏MID וגם HIGH מוצגים ב dB. ‏Transpose נע מ 12 חצאי טונים למטה עד 12 למעלה. ההגדרות נשארות רק כל עוד הפריסט נשאר נבחר.",
-                    "img": "assets/guide/c/lfx13-knobs.jpg",
+                    "img": "assets/guide/c/lfx16-knobs.jpg",
                     "size": [
                       680,
                       302
                     ],
-                    "alt": "הכפתורים של Indie Wash: ‏AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏SWEEP וגם REVERB, וסרגל Transpose על אפס חצאי טונים"
+                    "alt": "הכפתורים של Hook Glue: ‏AMOUNT, ‏LOW, ‏MID, ‏HIGH, ‏TILT וגם REVERB, וסרגל Transpose על אפס חצאי טונים"
                   }
                 ]
               }
@@ -5728,12 +5728,12 @@
                   },
                   {
                     "text": "A long-press opens the knobs of that preset: AMOUNT, LOW, MID, HIGH, TILT, and REVERB, with the Transpose ruler below. LOW, MID, and HIGH are in dB. Transpose runs from 12 semitones down to 12 up. The settings stay only while that preset stays selected.",
-                    "img": "assets/guide/c/dfx13-knobs.jpg",
+                    "img": "assets/guide/c/dfx16-knobs.jpg",
                     "size": [
                       680,
                       302
                     ],
-                    "alt": "Tribal Bloom knobs: AMOUNT, LOW, MID, HIGH, SWEEP and REVERB, with the Transpose ruler at 0 semitones"
+                    "alt": "Street Boom knobs: AMOUNT, LOW, MID, HIGH, TILT and REVERB, with the Transpose ruler at 0 semitones"
                   }
                 ]
               },
@@ -6167,12 +6167,12 @@
                   },
                   {
                     "text": "A long-press opens the knobs of that preset: AMOUNT, LOW, MID, HIGH, TILT, and REVERB, with the Transpose ruler below. LOW, MID, and HIGH are in dB. Transpose runs from 12 semitones down to 12 up. The settings stay only while that preset stays selected.",
-                    "img": "assets/guide/c/lfx13-knobs.jpg",
+                    "img": "assets/guide/c/lfx16-knobs.jpg",
                     "size": [
                       680,
                       302
                     ],
-                    "alt": "Indie Wash knobs: AMOUNT, LOW, MID, HIGH, SWEEP and REVERB, with the Transpose ruler at 0 semitones"
+                    "alt": "Hook Glue knobs: AMOUNT, LOW, MID, HIGH, TILT and REVERB, with the Transpose ruler at 0 semitones"
                   }
                 ]
               }
@@ -9949,12 +9949,12 @@
                   },
                   {
                     "text": "Долгое нажатие открывает ручки пресета: AMOUNT, LOW, MID, HIGH, TILT и REVERB, а под ними линейку Transpose. LOW, MID и HIGH в dB. Transpose идёт от 12 полутонов вниз до 12 вверх. Настройки остаются, только пока пресет остаётся выбранным.",
-                    "img": "assets/guide/c/dfx13-knobs.jpg",
+                    "img": "assets/guide/c/dfx16-knobs.jpg",
                     "size": [
                       680,
                       302
                     ],
-                    "alt": "Ручки Tribal Bloom: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, линейка Transpose на нуле полутонов"
+                    "alt": "Ручки Street Boom: AMOUNT, LOW, MID, HIGH, TILT и REVERB, линейка Transpose на нуле полутонов"
                   }
                 ]
               },
@@ -10388,12 +10388,12 @@
                   },
                   {
                     "text": "Долгое нажатие открывает ручки пресета: AMOUNT, LOW, MID, HIGH, TILT и REVERB, а под ними линейку Transpose. LOW, MID и HIGH в dB. Transpose идёт от 12 полутонов вниз до 12 вверх. Настройки остаются, только пока пресет остаётся выбранным.",
-                    "img": "assets/guide/c/lfx13-knobs.jpg",
+                    "img": "assets/guide/c/lfx16-knobs.jpg",
                     "size": [
                       680,
                       302
                     ],
-                    "alt": "Ручки Indie Wash: AMOUNT, LOW, MID, HIGH, SWEEP и REVERB, линейка Transpose на нуле полутонов"
+                    "alt": "Ручки Hook Glue: AMOUNT, LOW, MID, HIGH, TILT и REVERB, линейка Transpose на нуле полутонов"
                   }
                 ]
               }
@@ -14170,12 +14170,12 @@
                   },
                   {
                     "text": "الضغط المطوّل يفتح مقابض الإعداد: AMOUNT وLOW وMID وHIGH وTILT وREVERB، وتحتها مسطرة Transpose. تظهر LOW وMID وHIGH بوحدة dB. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى. تبقى الإعدادات فقط ما دام الإعداد مختاراً.",
-                    "img": "assets/guide/c/dfx13-knobs.jpg",
+                    "img": "assets/guide/c/dfx16-knobs.jpg",
                     "size": [
                       680,
                       302
                     ],
-                    "alt": "مقابض Tribal Bloom: ‏AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، ومسطرة Transpose على صفر نصف درجة"
+                    "alt": "مقابض Street Boom: ‏AMOUNT وLOW وMID وHIGH وTILT وREVERB، ومسطرة Transpose على صفر نصف درجة"
                   }
                 ]
               },
@@ -14609,12 +14609,12 @@
                   },
                   {
                     "text": "الضغط المطوّل يفتح مقابض الإعداد: AMOUNT وLOW وMID وHIGH وTILT وREVERB، وتحتها مسطرة Transpose. تظهر LOW وMID وHIGH بوحدة dB. يجري Transpose من 12 نصف درجة إلى الأسفل حتى 12 إلى الأعلى. تبقى الإعدادات فقط ما دام الإعداد مختاراً.",
-                    "img": "assets/guide/c/lfx13-knobs.jpg",
+                    "img": "assets/guide/c/lfx16-knobs.jpg",
                     "size": [
                       680,
                       302
                     ],
-                    "alt": "مقابض Indie Wash: ‏AMOUNT وLOW وMID وHIGH وSWEEP وREVERB، ومسطرة Transpose على صفر نصف درجة"
+                    "alt": "مقابض Hook Glue: ‏AMOUNT وLOW وMID وHIGH وTILT وREVERB، ومسطرة Transpose على صفر نصف درجة"
                   }
                 ]
               }
