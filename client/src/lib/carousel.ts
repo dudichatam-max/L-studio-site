@@ -25,7 +25,7 @@ export type CarouselId = PlayId | "update112" | "home112";
  */
 export type SlideDef = { id: string; designed: string };
 
-/** Official 1.15 Google Play stills, in store order (the n/8 counter is baked into each file). */
+/** Official Google Play stills, in store order (the n/8 counter is baked into each file). home-sound-fx is the 1.16 store shot #2. */
 export const play115: Record<string, SlideDef> = {
   sound: { id: "home-sound", designed: "01-sound" },
   soundFx: { id: "home-sound-fx", designed: "02-sound-fx" },
@@ -48,6 +48,10 @@ export const carouselSlides: Record<CarouselId, SlideDef[]> = {
     slide("sound-05"), // replaces sound-frequencies
     slide("sound-06"), // replaces sound-wave-panel
     slide("sound-07"), // replaces sound-two-keyboards
+    slide("sound-08"), // Analog Delay
+    slide("sound-09"), // Bitcrusher
+    slide("sound-10"), // Ring Mod
+    slide("sound-11"), // Granular
   ],
   mic: [
     slide("mic-01"), // replaces mic-channels
@@ -109,7 +113,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-r2";
+export const CAROUSEL_VER = "carousel-r5";
 const SMALL = 360;
 const LARGE = 630;
 

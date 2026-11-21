@@ -55,22 +55,22 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "L Studio: Microtonal Synth, Looper, Drums, Mic & Mastering — A Full Studio in Your Phone",
       description:
-        "Make music on your Android phone. Free tuning in Hz & microtonal scales, 4-operator FM synth, a 32-channel looper (8 pages × 4), 8 drum kits, 6-track mic studio with a lyrics window that scrolls while you sing, analog mixer and LUFS mastering. No ads, no account, fully offline.",
+        "Make music on your Android phone. Exact tuning in Hz & microtonal scales, 16 Sound FX worlds in chains of up to four, 4-operator FM synth, a 32-channel looper (8 pages × 4), drums in 16 styles, 6-track mic studio with a lyrics window that scrolls while you sing, analog mixer and LUFS mastering. One time purchase, no ads, no account, fully offline.",
     },
     he: {
       title: "L Studio: סינתיסייזר מיקרוטונאלי, לופר, תופים, מיקרופון ומאסטרינג — אולפן מלא בפלאפון",
       description:
-        "יוצרים מוזיקה בפלאפון האנדרואיד. כוונון חופשי בהרץ וסולמות מיקרוטונאליים, סינתיסייזר FM ב-4 אופרטורים, לופר ב-32 ערוצים (8 עמודים × 4), 8 ערכות תופים, סטודיו מיקרופון ב-6 ערוצים עם חלון מילים שגולל בזמן שאתם שרים, מיקסר אנלוגי ומאסטרינג ב-LUFS. בלי פרסומות, בלי חשבון, אופליין מלא.",
+        "יוצרים מוזיקה בטלפון האנדרואיד. כוונון מדויק בהרץ וסולמות מיקרוטונאליים, 16 עולמות Sound FX בשרשרת של עד ארבעה, סינתיסייזר FM עם ארבעה אופרטורים, לופר עם 32 ערוצים (8 עמודים × 4), תופים בשישה עשר סגנונות, סטודיו מיקרופון עם שישה ערוצים וחלון מילים שנגלל בזמן שאתם שרים, מיקסר אנלוגי ומאסטרינג לפי LUFS. רכישה אחת, בלי פרסומות, בלי חשבון, ועובד בלי אינטרנט.",
     },
     ru: {
       title: "L Studio: микротональный синтезатор, лупер, ударные, микрофон и мастеринг — полная студия в вашем телефоне",
       description:
-        "Создавай музыку на телефоне с Android. Свободная настройка в Гц и микротональные гаммы, 4-операторный FM-синтезатор, 32-канальный лупер (8 страниц × 4), 8 ударных наборов, микрофонная студия на 6 дорожках с окном текста, которое прокручивается, пока ты поёшь, аналоговый микшер и мастеринг по LUFS. Без рекламы, без аккаунта, полностью офлайн.",
+        "Создавай музыку на телефоне с Android. Точная настройка в Гц и микротональные гаммы, 16 миров Sound FX в цепочках до четырёх, 4-операторный FM-синтезатор, 32-канальный лупер (8 страниц × 4), ударные в 16 стилях, микрофонная студия на 6 дорожках с окном текста, которое прокручивается, пока ты поёшь, аналоговый микшер и мастеринг по LUFS. Одна покупка, без рекламы, без аккаунта, полностью офлайн.",
     },
     ar: {
       title: "L Studio: سنث مايكروتونال، لوبر، طبول، ميكروفون وماسترنغ — استوديو كامل في هاتفك",
       description:
-        "اصنع الموسيقى على هاتف أندرويد. ضبط حر بالهرتز وسلالم مايكروتونالية، سنث FM بأربعة مشغلات، لوبر بـ32 قناة (8 صفحات × 4)، 8 مجموعات طبول، استوديو ميكروفون بـ6 مسارات مع نافذة كلمات تمرّ وأنت تغني، مكسر تناظري وماسترنغ بـLUFS. بلا إعلانات، بلا حساب، ويعمل دون اتصال بالكامل.",
+        "اصنع الموسيقى على هاتف أندرويد. ضبط دقيق بالهرتز وسلالم مايكروتونالية، 16 عالماً في Sound FX بسلاسل حتى أربعة، سنث FM بأربعة مشغلات، لوبر بـ32 قناة (8 صفحات × 4)، طبول بـ16 أسلوباً، استوديو ميكروفون بـ6 مسارات مع نافذة كلمات تمرّ وأنت تغني، مكسر تناظري وماسترنغ بـLUFS. شراء لمرة واحدة، بلا إعلانات، بلا حساب، ويعمل دون اتصال بالكامل.",
     },
   },
   privacy: {
@@ -118,21 +118,21 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "User guide | L Studio",
       description:
-        "User guide for L Studio on Android: SOUND, LOOP, DRUM, and MIC.",
+        "User guide for L Studio on Android: SOUND, PAD, LOOP, DRUM, MIC, the Analog Mixer, and Mastering.",
     },
     he: {
       title: "מדריך למשתמש | L Studio",
       description:
-        "מדריך למשתמש של L Studio באנדרואיד: SOUND, LOOP, DRUM ו-MIC.",
+        "מדריך למשתמש של L Studio באנדרואיד: SOUND, PAD, LOOP, DRUM, MIC, מיקסר ומאסטרינג.",
     },
     ru: {
       title: "Руководство | L Studio",
       description:
-        "Руководство по L Studio на Android: SOUND, LOOP, DRUM и MIC.",
+        "Руководство по L Studio на Android: SOUND, PAD, LOOP, DRUM, MIC, микшер и мастеринг.",
     },
     ar: {
       title: "دليل المستخدم | L Studio",
-      description: "دليل مستخدم L Studio على أندرويد: SOUND وLOOP وDRUM وMIC.",
+      description: "دليل مستخدم L Studio على أندرويد: SOUND وPAD وLOOP وDRUM وMIC والميكسر والماسترنغ.",
     },
   },
   "factory-64": {
@@ -144,7 +144,7 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     he: {
       title: "Factory Pack | L Studio",
       description:
-        "שמונה עמודי פריסטים ושישים וארבעה קולות ב-Factory Pack של L Studio לאנדרואיד.",
+        "שמונה עמודי פריסטים ושישים וארבעה קולות ב Factory Pack של L Studio לאנדרואיד.",
     },
     ru: {
       title: "Factory Pack | L Studio",
@@ -166,7 +166,7 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     he: {
       title: "ערכות תופים | L Studio",
       description:
-        "שמונה ערכות תופים של Factory ל-L Studio באנדרואיד, עם שמונה סגנונות בכל ערכה.",
+        "שמונה ערכות תופים של Factory ל L Studio באנדרואיד, עם שמונה סגנונות בכל ערכה.",
     },
     ru: {
       title: "Барабаны | L Studio",
@@ -188,7 +188,7 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     he: {
       title: "בלעדי | L Studio",
       description:
-        "אחת עשרה חבילות תופים בלעדיות ל-L Studio, מחוץ לערכות Factory Drums. כלולות ב-Pro בלי עלות נוספת.",
+        "אחת עשרה חבילות תופים בלעדיות ל L Studio, מחוץ לערכות Factory Drums. כלולות ב Pro בלי עלות נוספת.",
     },
     ru: {
       title: "Эксклюзив | L Studio",
@@ -205,20 +205,20 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.15, which brings Humanize, Ratchet and Custom drum kits, on top of genre-based beats, the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved.",
+        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.16, which brings four new Sound FX worlds (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 and up to 33 rhythms per drum kit. New versions arrive as automatic updates through Google Play once they are approved.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש ב-L Studio לאנדרואיד. L Studio Pro זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪, עם גרסה 1.15, שמביאה Humanize, Ratchet וערכות תופים אישיות, בנוסף לביטים לפי ז'אנר, למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+      description: "מה חדש בתוכנת L Studio לאנדרואיד. L Studio Pro זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, עם גרסה 1.16, שמביאה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, את Factory 64 המחודש ועד 33 מקצבים בכל ערכת תופים. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.15, в которой есть Humanize, Ratchet и пользовательские наборы ударных, а также биты по жанрам, аналоговый микшер и окно мастеринга. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
+        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.16, в которой четыре новых мира Sound FX (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённый Factory 64 и до 33 ритмов в наборе ударных. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.15 الذي يضم Humanize وRatchet وأطقم طبول مخصصة، إلى جانب إيقاعات حسب النوع والميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.16 الذي يضم أربعة عوالم جديدة في Sound FX ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وFactory 64 المجدد، وحتى 33 إيقاعاً في مجموعة الطبول. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
     },
   },
   buy: {
@@ -229,7 +229,7 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     },
     he: {
       title: "L Studio Pro",
-      description: "L Studio Pro לאנדרואיד זמין עכשיו ב-Google Play, ב-‏24.90 ‏₪. רכישה באתר אינה זמינה כרגע.",
+      description: "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪. רכישה באתר אינה זמינה כרגע.",
     },
     ru: {
       title: "L Studio Pro",
@@ -338,15 +338,15 @@ type SeoMobileApplication = {
  * App facts for structured data, and the ONE Play-version constant for site badges.
  * Change softwareVersion here when the current Google Play version changes (then
  * update Privacy/Terms/hero fallbacks automatically, and the matching sentences
- * in content.json). Source: app repo dudichatam-max/L-studio, release build 1.15
- * (versionName 1.15; David confirmed available on Google Play 2026-11-16),
+ * in content.json). Source: app repo dudichatam-max/L-studio, release build 1.16
+ * (versionName 1.16, build c865bf08; live on Google Play 2026-11-19),
  * minSdk 24 = Android 7.0. Size: see the fileSize line below.
  * Price: David, 2026-10-08, L Studio Pro on Google Play for $8.
  */
 export const APP_FACTS = {
   operatingSystem: "Android 7.0+",
-  softwareVersion: "1.15",
-  fileSize: "160.1MB", // keep 1.14 measured Play APK size until a signed 1.15 Play APK byte count is recorded; listing flip 2026-11-16
+  softwareVersion: "1.16",
+  fileSize: "161.7MB", // signed 1.16 Play APK c865bf08: 169,602,498 bytes = 161.7 MiB; listing live 2026-11-19
   price: "8",
   priceCurrency: "USD",
 } as const;
