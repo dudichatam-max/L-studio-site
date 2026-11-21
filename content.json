@@ -831,12 +831,12 @@
                   },
                   {
                     "text": "עם מקלדת אחת וההגדרות סגורות יש 8 אפקטים בעמוד. עם שתי מקלדות או כשההגדרות פתוחות יש 4. החלון יושב מעל המקלדות, כך שממשיכים לנגן.",
-                    "img": "assets/guide/c/sfx13-two-kbd.jpg",
+                    "img": "assets/guide/c/sfx16-two-kbd.jpg",
                     "size": [
                       720,
-                      1116
+                      1145
                     ],
-                    "alt": "Sound FX פתוח מעל שתי מקלדות, 4 אפקטים בעמוד 2 מתוך 3, עם הכפתורים של Iron Growl"
+                    "alt": "Sound FX פתוח מעל שתי מקלדות, 4 אפקטים בעמוד 2 מתוך 4, ו Psy Orbit דולק"
                   },
                   {
                     "text": "הקשה מדליקה עולם, והקשה נוספת מכבה אותו. עד ארבעה יכולים לפעול יחד כשרשרת אחת, לפי סדר ההדלקה, ולכל אחד נשאר EQ משלו. צמדים שמתנגשים, כמו Floor Pump עם Kick Bond, או Sub Forge עם Depth Drop, או FM עם Sub Forge, לא משתלבים, והודעה קצרה מסבירה למה. אפשר להפעיל לכל היותר שני אפקטים של זמן בבת אחת.",
@@ -1115,7 +1115,7 @@
                 "img": "assets/guide/c/kbd16-dual.jpg",
                 "size": [
                   720,
-                  640
+                  785
                 ],
                 "alt": "מסך Sound עם שתי מקלדות פתוחות, והמקש + דולק ליד VOICES, ‏C, ‏G וגם F"
               },
@@ -1224,7 +1224,7 @@
                 "img": "assets/guide/c/pad16-dual.jpg",
                 "size": [
                   720,
-                  640
+                  699
                 ]
               }
             ]
@@ -5052,12 +5052,12 @@
                   },
                   {
                     "text": "With one keyboard and the settings closed, a page holds 8 effects. With two keyboards or the settings open, it holds 4. The window sits above the keyboards, so you keep playing.",
-                    "img": "assets/guide/c/sfx13-two-kbd.jpg",
+                    "img": "assets/guide/c/sfx16-two-kbd.jpg",
                     "size": [
                       720,
-                      1116
+                      1145
                     ],
-                    "alt": "Sound FX open above two keyboards, 4 effects on page 2 of 3, with the Iron Growl knobs"
+                    "alt": "Sound FX open above two keyboards, 4 effects on page 2 of 4, with Psy Orbit on"
                   },
                   {
                     "text": "A tap turns a world on, and another tap turns it off. Up to four can be on at once, as one chain, in the order you turned them on, and each keeps its own EQ. Pairs that clash, such as Floor Pump with Kick Bond, Sub Forge with Depth Drop, or FM with Sub Forge, are not combined, and a short note says why. Two time effects at once is the limit.",
@@ -5336,7 +5336,7 @@
                 "img": "assets/guide/c/kbd16-dual.jpg",
                 "size": [
                   720,
-                  640
+                  785
                 ],
                 "alt": "Sound screen with two keyboards open and the + key lit beside VOICES, C, G and F"
               },
@@ -5445,7 +5445,7 @@
                 "img": "assets/guide/c/pad16-dual.jpg",
                 "size": [
                   720,
-                  640
+                  699
                 ]
               }
             ]
@@ -9273,12 +9273,12 @@
                   },
                   {
                     "text": "С одной клавиатурой и закрытыми настройками на странице 8 эффектов. С двумя клавиатурами или открытыми настройками их 4. Окно стоит над клавиатурами, так что можно играть дальше.",
-                    "img": "assets/guide/c/sfx13-two-kbd.jpg",
+                    "img": "assets/guide/c/sfx16-two-kbd.jpg",
                     "size": [
                       720,
-                      1116
+                      1145
                     ],
-                    "alt": "Sound FX открыт над двумя клавиатурами, 4 эффекта на странице 2 из 3 и ручки Iron Growl"
+                    "alt": "Sound FX открыт над двумя клавиатурами, 4 эффекта на странице 2 из 4, Psy Orbit включён"
                   },
                   {
                     "text": "Нажатие включает мир, повторное нажатие выключает. Одновременно можно включить до четырёх, одной цепочкой, в порядке включения, и у каждого остаётся свой EQ. Конфликтующие пары, например Floor Pump и Kick Bond, Sub Forge и Depth Drop или FM и Sub Forge, не сочетаются, и короткая подсказка объясняет почему. Больше двух эффектов времени сразу нельзя.",
@@ -9557,7 +9557,7 @@
                 "img": "assets/guide/c/kbd16-dual.jpg",
                 "size": [
                   720,
-                  640
+                  785
                 ],
                 "alt": "Экран Sound с двумя открытыми клавиатурами, клавиша + горит рядом с VOICES, C, G и F"
               },
@@ -9666,7 +9666,7 @@
                 "img": "assets/guide/c/pad16-dual.jpg",
                 "size": [
                   720,
-                  640
+                  699
                 ]
               }
             ]
@@ -13494,12 +13494,12 @@
                   },
                   {
                     "text": "مع لوحة مفاتيح واحدة والإعدادات مغلقة تضم الصفحة 8 مؤثرات. مع لوحتي مفاتيح أو والإعدادات مفتوحة تضم 4. تقع النافذة فوق لوحات المفاتيح، فتواصل العزف.",
-                    "img": "assets/guide/c/sfx13-two-kbd.jpg",
+                    "img": "assets/guide/c/sfx16-two-kbd.jpg",
                     "size": [
                       720,
-                      1116
+                      1145
                     ],
-                    "alt": "نافذة Sound FX مفتوحة فوق لوحتي المفاتيح، 4 مؤثرات في الصفحة 2 من 3 مع مقابض Iron Growl"
+                    "alt": "نافذة Sound FX مفتوحة فوق لوحتي المفاتيح، 4 مؤثرات في الصفحة 2 من 4 مع تشغيل Psy Orbit"
                   },
                   {
                     "text": "الضغط يشغّل العالم، والضغط مرة أخرى يطفئه. يمكن تشغيل حتى أربعة معاً كسلسلة واحدة، بترتيب تشغيلها، ويحتفظ كل منها بـ EQ خاص. الأزواج المتعارضة، مثل Floor Pump مع Kick Bond، أو Sub Forge مع Depth Drop، أو FM مع Sub Forge، لا تُجمع، وتشرح رسالة قصيرة السبب. الحد الأقصى مؤثران زمنيان في الوقت نفسه.",
@@ -13778,7 +13778,7 @@
                 "img": "assets/guide/c/kbd16-dual.jpg",
                 "size": [
                   720,
-                  640
+                  785
                 ],
                 "alt": "شاشة Sound مع لوحتي مفاتيح مفتوحتين، وزر + مضاء بجانب VOICES وC وG وF"
               },
@@ -13887,7 +13887,7 @@
                 "img": "assets/guide/c/pad16-dual.jpg",
                 "size": [
                   720,
-                  640
+                  699
                 ]
               }
             ]
