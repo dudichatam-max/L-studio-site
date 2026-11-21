@@ -109,7 +109,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-r2";
+export const CAROUSEL_VER = "carousel-r3";
 const SMALL = 360;
 const LARGE = 630;
 
