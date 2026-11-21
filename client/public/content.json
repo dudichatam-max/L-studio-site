@@ -1112,12 +1112,12 @@
               },
               {
                 "text": "הקשה על + פותחת מקלדת שנייה מעל הראשונה, אוקטבה אחת גבוה יותר. אותו + נמצא גם במסך Pad, והמקלדת השנייה נשארת פתוחה כשעוברים בין Sound ל Pad.",
-                "img": "assets/guide/c/kbd13-dual.jpg",
+                "img": "assets/guide/c/kbd16-dual.jpg",
                 "size": [
                   720,
-                  776
+                  640
                 ],
-                "alt": "מסך Sound עם שתי מקלדות פתוחות, והמקש + דולק ליד VOICES, ‏P, ‏G וגם A"
+                "alt": "מסך Sound עם שתי מקלדות פתוחות, והמקש + דולק ליד VOICES, ‏C, ‏G וגם F"
               },
               {
                 "text": "החצים ליד PRESET טוענים את הפריסט השמור הבא או הקודם. אם אין שמורים, הטלפון אומר No saved presets.",
@@ -1221,10 +1221,10 @@
               },
               {
                 "text": "הקשה על +, ליד שורת הקולות, פותחת מקלדת שנייה מעל הראשונה, אוקטבה אחת גבוה יותר. אותו + נמצא גם במסך Sound, והמקלדת השנייה נשארת פתוחה כשעוברים בין Pad ל Sound. הקשה נוספת סוגרת אותה.",
-                "img": "assets/guide/c/dual-kbd.jpg",
+                "img": "assets/guide/c/pad16-dual.jpg",
                 "size": [
                   720,
-                  735
+                  640
                 ]
               }
             ]
@@ -5333,12 +5333,12 @@
               },
               {
                 "text": "A tap on + opens a second keyboard above the first, one octave higher. The same + is on the Pad screen, and the second keyboard stays open when you switch between Sound and Pad.",
-                "img": "assets/guide/c/kbd13-dual.jpg",
+                "img": "assets/guide/c/kbd16-dual.jpg",
                 "size": [
                   720,
-                  776
+                  640
                 ],
-                "alt": "Sound screen with two keyboards open and the + key lit beside VOICES, P, G and A"
+                "alt": "Sound screen with two keyboards open and the + key lit beside VOICES, C, G and F"
               },
               {
                 "text": "The arrows beside PRESET load the next or previous saved preset. If none are saved, the phone says No saved presets.",
@@ -5442,10 +5442,10 @@
               },
               {
                 "text": "A tap on +, next to the voice row, opens a second keyboard above the first, one octave higher. The same + is on the Sound screen, and the second keyboard stays open when you switch between Pad and Sound. Another tap closes it.",
-                "img": "assets/guide/c/dual-kbd.jpg",
+                "img": "assets/guide/c/pad16-dual.jpg",
                 "size": [
                   720,
-                  735
+                  640
                 ]
               }
             ]
@@ -9554,12 +9554,12 @@
               },
               {
                 "text": "Нажатие на + открывает вторую клавиатуру над первой, на октаву выше. Тот же + есть на экране Pad, и вторая клавиатура остаётся открытой при переходе между Sound и Pad.",
-                "img": "assets/guide/c/kbd13-dual.jpg",
+                "img": "assets/guide/c/kbd16-dual.jpg",
                 "size": [
                   720,
-                  776
+                  640
                 ],
-                "alt": "Экран Sound с двумя открытыми клавиатурами, клавиша + горит рядом с VOICES, P, G и A"
+                "alt": "Экран Sound с двумя открытыми клавиатурами, клавиша + горит рядом с VOICES, C, G и F"
               },
               {
                 "text": "Стрелки рядом с PRESET загружают следующий или предыдущий сохранённый пресет. Если сохранённых нет, телефон пишет No saved presets.",
@@ -9663,10 +9663,10 @@
               },
               {
                 "text": "Нажатие на +, рядом с рядом голосов, открывает вторую клавиатуру над первой, на октаву выше. Тот же + есть на экране Sound, и вторая клавиатура остаётся открытой при переходе между Pad и Sound. Ещё одно нажатие закрывает её.",
-                "img": "assets/guide/c/dual-kbd.jpg",
+                "img": "assets/guide/c/pad16-dual.jpg",
                 "size": [
                   720,
-                  735
+                  640
                 ]
               }
             ]
@@ -13775,12 +13775,12 @@
               },
               {
                 "text": "الضغط على + يفتح لوحة مفاتيح ثانية فوق الأولى، أوكتافاً أعلى. نفس الـ + موجود على شاشة Pad، وتبقى لوحة المفاتيح الثانية مفتوحة عند التنقل بين Sound وPad.",
-                "img": "assets/guide/c/kbd13-dual.jpg",
+                "img": "assets/guide/c/kbd16-dual.jpg",
                 "size": [
                   720,
-                  776
+                  640
                 ],
-                "alt": "شاشة Sound مع لوحتي مفاتيح مفتوحتين، وزر + مضاء بجانب VOICES وP وG وA"
+                "alt": "شاشة Sound مع لوحتي مفاتيح مفتوحتين، وزر + مضاء بجانب VOICES وC وG وF"
               },
               {
                 "text": "الأسهم بجانب PRESET تحمّل الإعداد المحفوظ التالي أو السابق. إذا لم يوجد محفوظ، يقول الهاتف No saved presets.",
@@ -13884,10 +13884,10 @@
               },
               {
                 "text": "الضغط على +، بجانب صف الأصوات، يفتح لوحة مفاتيح ثانية فوق الأولى، أوكتافاً أعلى. نفس الـ + موجود على شاشة Sound، وتبقى لوحة المفاتيح الثانية مفتوحة عند التنقل بين Pad وSound. ضغط آخر يغلقها.",
-                "img": "assets/guide/c/dual-kbd.jpg",
+                "img": "assets/guide/c/pad16-dual.jpg",
                 "size": [
                   720,
-                  735
+                  640
                 ]
               }
             ]
