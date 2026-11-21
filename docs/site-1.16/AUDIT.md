@@ -25,16 +25,237 @@ Line numbers refer to the file after the change (`?` = path moved/removed). `con
 
 ## Image TODOs
 
-### A. Home carousel, Sound tab (other task, `/workspace/site-assets-1.16/slides/`)
+- Carousel slides marked OUTDATED in the inventory are recaptured from the 1.16 APK (c865bf08) on AVD redmi14 and re-rendered in the locked template, one group per commit. Anything still listed as OUTDATED at the end of the PR was not recaptured yet.
+- sound-08..11 (per-effect slides): another task, awaiting David's approval. Do not wire yet.
+- Hero slide 2 (`home-sound-fx`): swap to store-02 once David approves it for Google Play.
+- Guide crops marked OUTDATED: recapture with the same crops and update their alts.
 
-- Sound tab slides `sound-01`..`sound-07` (`client/src/lib/carousel.ts` `carouselSlides.sound` and `play115.soundFx`; files `assets/carousel/{lang}/{id}-w360/630.{jpg,webp}`). `sound-01`/`sound-02` show 12 worlds. Drop the new files under the same ids (or add ids), update `carousel.slides.sound-*` title/text/alt in all 4 languages, and bump `CAROUSEL_VER`.
-- Hero carousel `home-sound-fx` (Play still 2/8, "Twelve FX worlds", 3 pages). Replace with the 1.16 store still when available and update `carousel.slides.home-sound-fx` in all 4 languages.
+## Image inventory
 
-### B. Guide images (`client/public/assets/guide/c/` and `assets/guide/c/`)
+All four languages share the same image files (HE carousel slides have their own HE text renders; RU and AR use the EN renders).
 
-See the capture section below for which ones were recaptured on AVD a36 from the c865bf08 APK in this PR.
+### Carousel, hero, pages
 
-@@GUIDEIMG@@
+| image | page | status | reason |
+|---|---|---|---|
+| sound-01 | Home, Sound tab | OK (new) | Approved 1.16 slide (16 worlds, chain of four), wired in round 2 |
+| sound-02 | Home, Sound tab | OUTDATED | 1.15 Sound FX: 1/3 pages, SWEEP knob |
+| sound-03 | Home, Sound tab | OUTDATED | FM slide shows 3/3 page dots (1.16: 2 pages) |
+| sound-04..07 | Home, Sound tab | OK | Scales, frequencies, wave panel, two keyboards (no FX row in view): same in 1.16 |
+| mic-01, mic-03, mic-04 | Home, Mic tab | OK | Channels, lyrics, mastering: same in 1.16 |
+| mic-02 | Home, Mic tab | OUTDATED | Mic editor with 8 fixed rhythm boxes (1.16: up to 33, peek, hint) |
+| loop-01, loop-04 | Home, Loop tab | OK | Looper and mixer: same in 1.16 |
+| loop-02 | Home, Loop tab | OUTDATED | Looper FX tone panel with SWEEP (1.16: TILT) |
+| loop-03 | Home, Loop tab | OUTDATED | Loop editor with 8 fixed rhythm boxes |
+| pad-01, pad-02 | Home, Pad tab | OK | Voice row already C G F |
+| drum-01 | Home, Drum tab | OUTDATED | Old rhythm row (8 boxes, no peek or hint) |
+| drum-02 | Home, Drum tab | OUTDATED | Drum FX with SWEEP (slide text too) |
+| drum-03 | Home, Drum tab | OUTDATED | Sample picker with 3 knobs per row (1.16: 2 × 4 incl. Pan, Pitch) |
+| drum-04 | Home, Drum tab | OUTDATED | Loaded sample trim with 3 knobs per row |
+| drum-05 | Home, Drum tab | OUTDATED | Random genre without AUTO |
+| sound-08..11 | Home, Sound tab | TODO | Four per-effect slides from another task, awaiting David. Not wired. |
+| home112 #1, #3..#8 (play115) | Home hero | OK | Same stills as the live Google Play listing |
+| home112 #2 home-sound-fx | Home hero | OUTDATED (TODO) | 1.15 still, 12 worlds on 3 pages. Replacement /workspace/play-listing/1.16/store-shot-02/store-02-{en,he}.png awaits David. Caption already 1.16. |
+| update112 upd112-1..10, /assets/updates/* | Updates | OK (historical) | Per-version history images |
+| posters.ts | none | OK (unused) | posterUrl() is never called |
+| Factory 64 page banners, factory-pack-*, factory-64-cover | Factory 64 / Buy | OK | Marketing art; page names match 1.16 |
+| drums/*, exclusive/* | Factory Drums / Exclusive | OK | Kit art and video posters; no app UI |
+| feature-graphic-{en,he}-* | Home / Buy | OK | Marketing art, no version or UI detail |
+| og-image.jpg | All pages (social) | OK | Logo art, no version |
+| Developer-720 | About | OK | Photo |
+| demo-short-poster, meet-short-poster | Home | OK | Video posters (label now "Video") |
+| mic-window.jpg | none | OK (unused) | Not referenced by any page |
+
+### Guide (186 images)
+
+| image | page | status | reason |
+|---|---|---|---|
+| `assets/guide/c/top-keys.jpg` | Guide G[0].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-head.jpg` | Guide G[0].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/live-clock.jpg` | Guide G[0].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/top-chip.jpg` | Guide G[0].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/loop-ch.jpg` | Guide G[0].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pick-btns.jpg` | Guide G[0].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-presets.jpg` | Guide G[0].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-ch.jpg` | Guide G[0].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum-kit-row.jpg` | Guide G[0].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/tabs.jpg` | Guide G[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/top-bar.jpg` | Guide G[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/scopes.jpg` | Guide G[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sound-head-waves.jpg` | Guide G[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/wave-title.jpg` | Guide G[1].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/wave-panel.jpg` | Guide G[1].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/wave-keys.jpg` | Guide G[1].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/wave-oct.jpg` | Guide G[1].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/wave-default.jpg` | Guide G[1].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/wave-knobs.jpg` | Guide G[1].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/wave-curve.jpg` | Guide G[1].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/wave-pages.jpg` | Guide G[1].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/wave-badges.jpg` | Guide G[1].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sfx16-title.jpg` | Guide G[1].sections[1] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/sfx16-pages.jpg` | Guide G[1].sections[1] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/sfx13-two-kbd.jpg` | Guide G[1].sections[1] | OUTDATED | Sound FX with two keyboards: page dots 2/3 and SWEEP knob (1.16: 4 pages in this view, TILT) |
+| `assets/guide/c/sfx13-on.jpg` | Guide G[1].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sfx-kbd.jpg` | Guide G[1].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum16-knobs.jpg` | Guide G[1].sections[1] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/sfx16-tone-knobs.jpg` | Guide G[1].sections[1] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/sfx16-new-knobs.jpg` | Guide G[1].sections[1] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/sfx13-fm-knobs.jpg` | Guide G[1].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sfx13-algos.jpg` | Guide G[1].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sfx13-sync-eq.jpg` | Guide G[1].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pre-pages.jpg` | Guide G[1].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sound-presets-key.jpg` | Guide G[1].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pre-rows.jpg` | Guide G[1].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sound-waves.jpg` | Guide G[1].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pre-name.jpg` | Guide G[1].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/scales.jpg` | Guide G[1].sections[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/set-freq.jpg` | Guide G[1].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/freq-keys.jpg` | Guide G[1].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/freq-ready.jpg` | Guide G[1].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/freq-my.jpg` | Guide G[1].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/freq-save.jpg` | Guide G[1].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/freq-title.jpg` | Guide G[1].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/freq-bottom.jpg` | Guide G[1].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/keyboard.jpg` | Guide G[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sound-knobs.jpg` | Guide G[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sound-drive.jpg` | Guide G[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sound-tones.jpg` | Guide G[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sound-head.jpg` | Guide G[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/keyboard-labels.jpg` | Guide G[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/kbd13-dual.jpg` | Guide G[1] | OUTDATED | Sound dual keyboard: voice row shows P G A (1.16: C G F) |
+| `assets/guide/c/sound-preset.jpg` | Guide G[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/sound-kit.jpg` | Guide G[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pad-targets.jpg` | Guide G[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pad-xy.jpg` | Guide G[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pad-knobs.jpg` | Guide G[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pad-sub.jpg` | Guide G[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pad-warm.jpg` | Guide G[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pad-vibe.jpg` | Guide G[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pad16-voices.jpg` | Guide G[2] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/pad16-cgf.jpg` | Guide G[2] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/pad-stutter.jpg` | Guide G[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/dual-kbd.jpg` | Guide G[2] | OUTDATED | Pad dual keyboard: voice row shows P G A (1.16: C G F) |
+| `assets/guide/c/drum-rows.jpg` | Guide G[3].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pick-head.jpg` | Guide G[3].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pick-grid.jpg` | Guide G[3].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum-rowload.jpg` | Guide G[3].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum-rowslider.jpg` | Guide G[3].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum-samples.jpg` | Guide G[3].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pick-wave.jpg` | Guide G[3].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pick16-knobs-a.jpg` | Guide G[3].sections[0] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/pick16-knobs-b.jpg` | Guide G[3].sections[0] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/drum16-rhythms.jpg` | Guide G[3].sections[0] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/loaded-tab.jpg` | Guide G[3].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/pick-close.jpg` | Guide G[3].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/loaded-rename.jpg` | Guide G[3].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/styles-name.jpg` | Guide G[3].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum-kits-key.jpg` | Guide G[3].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/random16-genre.jpg` | Guide G[3].sections[2] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/styles16-switch.jpg` | Guide G[3].sections[2] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/styles-pages.jpg` | Guide G[3].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/styles-rows.jpg` | Guide G[3].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/styles-row1.jpg` | Guide G[3].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum-head.jpg` | Guide G[3].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum-fx-key.jpg` | Guide G[3].sections[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/dfx13-grid.jpg` | Guide G[3].sections[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/dfx13-knobs.jpg` | Guide G[3].sections[3] | OUTDATED | Drum FX tone knobs: SWEEP (1.16: TILT) |
+| `assets/guide/c/rep-title.jpg` | Guide G[3].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/rep-nums.jpg` | Guide G[3].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/kp-field.jpg` | Guide G[3].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/rep-infdef.jpg` | Guide G[3].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/rep-rhythm.jpg` | Guide G[3].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum-stop.jpg` | Guide G[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum16-fxrows.jpg` | Guide G[3] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/drum-vol.jpg` | Guide G[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum-stutter.jpg` | Guide G[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/drum-clear.jpg` | Guide G[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/loop-rec.jpg` | Guide G[4].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/loop-ms.jpg` | Guide G[4].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/loop-ms-all.jpg` | Guide G[4].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/set-saveas.jpg` | Guide G[4].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/loop-ch-wave.jpg` | Guide G[4].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/loop-head-left.jpg` | Guide G[4].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/loop-vol.jpg` | Guide G[4].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/loop-btns.jpg` | Guide G[4].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/loop-ie.jpg` | Guide G[4].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/le-title-wave.jpg` | Guide G[4].sections[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/le-trim.jpg` | Guide G[4].sections[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/le-rhythms.jpg` | Guide G[4].sections[3] | OUTDATED | Loop editor rhythm row: 8 fixed boxes (1.16: up to 33, peek of next box, scroll hint) |
+| `assets/guide/c/kp-keep.jpg` | Guide G[4].sections[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/le-knobs.jpg` | Guide G[4].sections[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/le-btns.jpg` | Guide G[4].sections[3] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lfx13-grid.jpg` | Guide G[4].sections[4] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lfx13-knobs.jpg` | Guide G[4].sections[4] | OUTDATED | Looper FX tone knobs: SWEEP (1.16: TILT) |
+| `assets/guide/c/mic-wave.jpg` | Guide G[5].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/me-all.jpg` | Guide G[5].sections[0] | OUTDATED | Mic editor: 8 fixed rhythm boxes (1.16: up to 33, peek, scroll hint) |
+| `assets/guide/c/me-btns.jpg` | Guide G[5].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-sm.jpg` | Guide G[5].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-lyrics.jpg` | Guide G[5].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lyr-bar.jpg` | Guide G[5].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lyr-az.jpg` | Guide G[5].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lyr-speed.jpg` | Guide G[5].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lyr-close.jpg` | Guide G[5].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-head.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-monitor.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-knobs.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-hpf.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-rec.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-ch2.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-stop.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-clear-save.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-ch-knobs.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-vol.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mic-ie.jpg` | Guide G[5] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-view.jpg` | Guide G[6].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-map.jpg` | Guide G[6].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-title.jpg` | Guide G[6].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-default.jpg` | Guide G[6].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-heads.jpg` | Guide G[6] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-drive.jpg` | Guide G[6] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-eq.jpg` | Guide G[6] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-comp.jpg` | Guide G[6] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-faders.jpg` | Guide G[6] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-master.jpg` | Guide G[6] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/mx-bus.jpg` | Guide G[6] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-ab.jpg` | Guide G[7].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-styles.jpg` | Guide G[7].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-choose.jpg` | Guide G[7].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-intensity.jpg` | Guide G[7].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-mystyle.jpg` | Guide G[7].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-start.jpg` | Guide G[7].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-render.jpg` | Guide G[7].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-adv-head.jpg` | Guide G[7].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-adv-wave.jpg` | Guide G[7].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-meters.jpg` | Guide G[7].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-style-row.jpg` | Guide G[7].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-tone.jpg` | Guide G[7].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-dyn.jpg` | Guide G[7].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-stereo.jpg` | Guide G[7].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-loud.jpg` | Guide G[7].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-limiter.jpg` | Guide G[7].sections[1] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-bar.jpg` | Guide G[7].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-saved-head.jpg` | Guide G[7].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-saved-table.jpg` | Guide G[7].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-saved-btns.jpg` | Guide G[7].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-saved-note.jpg` | Guide G[7].sections[2] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-mode.jpg` | Guide G[7] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/ms-take.jpg` | Guide G[7] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/set16-new.jpg` | Guide G[8].sections[0] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `assets/guide/c/lc-rows.jpg` | Guide G[8].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lc-load.jpg` | Guide G[8].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lc-save.jpg` | Guide G[8].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lc-edit.jpg` | Guide G[8].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lc-x.jpg` | Guide G[8].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lc-export.jpg` | Guide G[8].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/lc-bottom.jpg` | Guide G[8].sections[0] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/set-lang.jpg` | Guide G[8] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/set-tour.jpg` | Guide G[8] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/set-f64.jpg` | Guide G[8] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/set-bench.jpg` | Guide G[8] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/set-master.jpg` | Guide G[8] | OK | English UI crop; same in 1.16 |
+| `assets/guide/c/set16-panic.jpg` | Guide G[8] | OK (new) | Captured from 1.16 (c865bf08) on redmi14 |
+| `/assets/guide/drum-loaded-trim-phone.jpg` | Updates | OK (historical) | Used in /updates history item |
+| `/assets/guide/keep-playing-phone.jpg` | Updates | OK (historical) | Used in /updates history item |
 
 ## Code and config files
 
