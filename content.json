@@ -4108,6 +4108,26 @@
             "text": "הקישו על הפלוס",
             "alt": "שתי מקלדות. הקישו על הפלוס."
           },
+          "sound-08": {
+            "title": "Analog Delay",
+            "text": "הדים חמים שמתכהים בכל חזרה",
+            "alt": "Analog Delay. הדים חמים שמתכהים בכל חזרה."
+          },
+          "sound-09": {
+            "title": "Bitcrusher",
+            "text": "פחות ביטים לצליל מחוספס",
+            "alt": "Bitcrusher. פחות ביטים לצליל מחוספס."
+          },
+          "sound-10": {
+            "title": "Ring Mod",
+            "text": "צלצול מתכתי כמו פעמון",
+            "alt": "Ring Mod. צלצול מתכתי כמו פעמון."
+          },
+          "sound-11": {
+            "title": "Granular",
+            "text": "ענני גרגרים עם FREEZE",
+            "alt": "Granular. ענני גרגרים עם FREEZE."
+          },
           "mic-01": {
             "title": "הקלטת Mic",
             "text": "שני עמודי ערוצים",
@@ -8331,6 +8351,26 @@
             "title": "Two keyboards.",
             "text": "Tap the plus.",
             "alt": "Two keyboards. Tap the plus."
+          },
+          "sound-08": {
+            "title": "Analog Delay",
+            "text": "Warm echoes, darker each repeat.",
+            "alt": "Analog Delay. Warm echoes, darker each repeat."
+          },
+          "sound-09": {
+            "title": "Bitcrusher",
+            "text": "Fewer bits, gritty lo-fi.",
+            "alt": "Bitcrusher. Fewer bits, gritty lo-fi."
+          },
+          "sound-10": {
+            "title": "Ring Mod",
+            "text": "Metallic, bell-like ring.",
+            "alt": "Ring Mod. Metallic, bell-like ring."
+          },
+          "sound-11": {
+            "title": "Granular",
+            "text": "Grain clouds with FREEZE.",
+            "alt": "Granular. Grain clouds with FREEZE."
           },
           "mic-01": {
             "title": "Mic recording.",
@@ -12556,6 +12596,26 @@
             "text": "Нажмите плюс.",
             "alt": "Две клавиатуры. Нажмите плюс."
           },
+          "sound-08": {
+            "title": "Analog Delay",
+            "text": "Тёплое эхо, темнеющее с каждым повтором.",
+            "alt": "Analog Delay. Тёплое эхо, темнеющее с каждым повтором."
+          },
+          "sound-09": {
+            "title": "Bitcrusher",
+            "text": "Меньше бит, шероховатый lo-fi.",
+            "alt": "Bitcrusher. Меньше бит, шероховатый lo-fi."
+          },
+          "sound-10": {
+            "title": "Ring Mod",
+            "text": "Металлический звон, как колокол.",
+            "alt": "Ring Mod. Металлический звон, как колокол."
+          },
+          "sound-11": {
+            "title": "Granular",
+            "text": "Облака зёрен с FREEZE.",
+            "alt": "Granular. Облака зёрен с FREEZE."
+          },
           "mic-01": {
             "title": "Запись Mic.",
             "text": "Две страницы входов.",
@@ -16779,6 +16839,26 @@
             "title": "لوحتا مفاتيح.",
             "text": "المس علامة الزائد.",
             "alt": "لوحتا مفاتيح. المس علامة الزائد."
+          },
+          "sound-08": {
+            "title": "Analog Delay",
+            "text": "أصداء دافئة تزداد عتمة مع كل تكرار.",
+            "alt": "Analog Delay. أصداء دافئة تزداد عتمة مع كل تكرار."
+          },
+          "sound-09": {
+            "title": "Bitcrusher",
+            "text": "بتات أقل لصوت خشن lo-fi.",
+            "alt": "Bitcrusher. بتات أقل لصوت خشن lo-fi."
+          },
+          "sound-10": {
+            "title": "Ring Mod",
+            "text": "رنين معدني يشبه الجرس.",
+            "alt": "Ring Mod. رنين معدني يشبه الجرس."
+          },
+          "sound-11": {
+            "title": "Granular",
+            "text": "سحب حبيبات مع FREEZE.",
+            "alt": "Granular. سحب حبيبات مع FREEZE."
           },
           "mic-01": {
             "title": "تسجيل Mic.",
