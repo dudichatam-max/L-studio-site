@@ -346,7 +346,7 @@ type SeoMobileApplication = {
 export const APP_FACTS = {
   operatingSystem: "Android 7.0+",
   softwareVersion: "1.17",
-  fileSize: "161.7MB", // still the signed 1.16 Play APK c865bf08 (169,602,498 bytes = 161.7 MiB); replace with the 1.17 size once verified
+  fileSize: "161.9MB", // signed 1.17 Play APK 2801740d (vc18): 169,729,998 bytes = 161.9 MiB (same method as 1.14-1.16: universal APK bytes / 2^20)
   price: "8",
   priceCurrency: "USD",
 } as const;

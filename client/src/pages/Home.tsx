@@ -26,8 +26,8 @@ const factoryHero = {
 const factoryBoxJpg = `${import.meta.env.BASE_URL}assets/factory-pack-box.jpg?v=108-packs`;
 const factoryBoxWebp = `${import.meta.env.BASE_URL}assets/factory-pack-box.webp?v=108-packs`;
 const factoryBoxWebp800 = `${import.meta.env.BASE_URL}assets/factory-pack-box-800.webp?v=108-packs`;
-// Feature graphic (1024x500, same artwork on the 1.16 listing) from Google Play store assets (Drive, HE+EN). HE uses Hebrew; EN/RU/AR use English.
-const FEATURE_GRAPHIC_VER = "fg-115";
+// Feature graphic (1024x500, the Google Play 1.17 header "00-header-1024x500.png", Drive "1.17 Smoked") from Google Play store assets (Drive, HE+EN). HE uses Hebrew; EN/RU/AR use English.
+const FEATURE_GRAPHIC_VER = "fg-117";
 function featureGraphicUrl(language: Language, width: 640 | 800 | 1024, ext: "jpg" | "webp") {
   return `${import.meta.env.BASE_URL}assets/feature-graphic-${language === "he" ? "he" : "en"}-${width}.${ext}?v=${FEATURE_GRAPHIC_VER}`;
 }
@@ -44,10 +44,10 @@ const demoCopy = {
   ar: { label: "فيديو", title: "L Studio لأندرويد" },
 } satisfies Record<Language, { label: string; title: string }>;
 const featureGraphicAlt = {
-  he: "L Studio, לאנשים אנלוגיים בעולם דיגיטלי. שני מסכי טלפון: תופים (Humanize, Ratchet וגם BPM) וסאונד (עורך גל, מקלדת וגם EQ). Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer וגם Mastering. l-studio.studio",
-  en: "L Studio, for analog people in a digital world. Two phone screens: Drums (Humanize, Ratchet and BPM) and Sound (wave editor, keyboard and EQ). Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer and Mastering. l-studio.studio",
-  ru: "L Studio, для аналоговых людей в цифровом мире. Два экрана телефона: ударные (Humanize, Ratchet и BPM) и Sound (редактор волны, клавиатура и EQ). Sound, Sound FX, Pad, Looper, Mic, Drums, Mixer и Mastering. l-studio.studio",
-  ar: "L Studio، للأشخاص التناظريين في عالم رقمي. شاشتا هاتف: الطبول (Humanize وRatchet وBPM) وSound (محرر الموجة ولوحة المفاتيح وEQ). Sound وSound FX وPad وLooper وMic وDrums وMixer وMastering. l-studio.studio",
+  he: "L Studio, לאנשים אנלוגיים בעולם דיגיטלי. סינתיסייזר מיקרוטונאלי: עיצוב סאונד, אפקטים, לופר, פאד, תופים, הקלטה, מיקסר אנלוגי ומאסטרינג. שלושה מסכי טלפון: Sound, Pad וגם Drums. l-studio.studio",
+  en: "L Studio, for analog people in a digital world. Microtonal synthesizer: sound design, effects, looper, drum pad, drums, recording, analog mixer and mastering. Three phone screens: Sound, Pad and Drums. l-studio.studio",
+  ru: "L Studio, для аналоговых людей в цифровом мире. Микротональный синтезатор: дизайн звука, эффекты, лупер, драм пэд, ударные, запись, аналоговый микшер и мастеринг. Три экрана телефона: Sound, Pad и Drums. l-studio.studio",
+  ar: "L Studio، للأشخاص التناظريين في عالم رقمي. مُركِّب صوت ميكروتوني: تصميم الصوت، المؤثرات، اللوبر، باد الطبول، الطبول، التسجيل، المكسر التناظري والماسترينغ. ثلاث شاشات هاتف: Sound وPad وDrums. l-studio.studio",
 } satisfies Record<Language, string>;
 const developerImage = {
   webp: `${import.meta.env.BASE_URL}assets/Developer-720.webp`,
@@ -157,7 +157,7 @@ const PLAY_ALT: Record<Language, string> = {
   ar: "احصل عليه من Google Play",
 };
 
-const heroDefault = { kicker: `Android music app · Version ${APP_FACTS.softwareVersion}, on Google Play now`, title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "160.1 MB", stat2: "Android 7.0+", stat3: "No ads" };
+const heroDefault = { kicker: `Android music app · Version ${APP_FACTS.softwareVersion}, on Google Play now`, title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "161.9 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const launchDefaults: Record<Language, { headline: string; price: string; note: string }> = {
   he: {headline: "זמין עכשיו בחנות Google Play.", price: "L Studio Pro, ‏24.90 ‏₪.", note: "זמין עכשיו בחנות Google Play. L Studio Pro, ‏24.90 ‏₪."},
   en: {headline: "Available now on Google Play.", price: "L Studio Pro, $8.", note: "Available now on Google Play. L Studio Pro, $8."},
@@ -418,6 +418,42 @@ export default function Home() {
 
       <UpdatesTicker copy={updates} isRtl={isRtl} />
 
+      {/* Feature graphic under the ticker (David, 2026-10-10). Image used as is. */}
+      <div className="container feature-graphic-wrap">
+      <figure className="feature-graphic">
+        <picture>
+          <source srcSet={`${featureGraphicUrl(language, 640, "webp")} 640w, ${featureGraphicUrl(language, 800, "webp")} 800w, ${featureGraphicUrl(language, 1024, "webp")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" />
+          <img src={featureGraphicUrl(language, 1024, "jpg")} srcSet={`${featureGraphicUrl(language, 640, "jpg")} 640w, ${featureGraphicUrl(language, 1024, "jpg")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
+        </picture>
+      </figure>
+      </div>
+      {/* Demo video toggle (David, 2026-10-11): same tab style as the windows menu, starts closed. */}
+      <div className="container demo-video-wrap" dir={dir}>
+        <div className="interface-feature-list demo-video-list">
+          <div className={`interface-feature-item ${demoOpen ? "is-active" : ""}`}>
+            <button
+              type="button"
+              aria-expanded={demoOpen}
+              aria-controls="demo-video-panel"
+              className="interface-feature"
+              onClick={() => setDemoOpen((open) => !open)}
+            >
+              <span className="feature-index">▶</span>
+              <span className="feature-icon"><PlayCircle size={20} /></span>
+              <span className="feature-label">{demoCopy[language].label}</span>
+              <ChevronRight size={16} />
+            </button>
+            {demoOpen && (
+              <div className="demo-video-panel" id="demo-video-panel">
+                <div className="demo-video-frame">
+                  <YouTubeFacade videoId={DEMO_SHORT_ID} title={demoCopy[language].title} poster={demoPoster} />
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
       <main>
         {/* 1. The vision: first on the page (David, 2026-11-25) */}
         <section className="vision-section" id="vision" dir={dir}>
@@ -483,42 +519,6 @@ export default function Home() {
             </picture>
           </figure>}
         </section>
-
-        {/* Feature graphic, now under the hero (David, 2026-10-10; moved 2026-11-25). Image used as is. */}
-        <div className="container feature-graphic-wrap">
-        <figure className="feature-graphic">
-          <picture>
-            <source srcSet={`${featureGraphicUrl(language, 640, "webp")} 640w, ${featureGraphicUrl(language, 800, "webp")} 800w, ${featureGraphicUrl(language, 1024, "webp")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" />
-            <img src={featureGraphicUrl(language, 1024, "jpg")} srcSet={`${featureGraphicUrl(language, 640, "jpg")} 640w, ${featureGraphicUrl(language, 1024, "jpg")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
-          </picture>
-        </figure>
-        </div>
-        {/* Demo video toggle (David, 2026-10-11): same tab style as the windows menu, starts closed. */}
-        <div className="container demo-video-wrap" dir={dir}>
-          <div className="interface-feature-list demo-video-list">
-            <div className={`interface-feature-item ${demoOpen ? "is-active" : ""}`}>
-              <button
-                type="button"
-                aria-expanded={demoOpen}
-                aria-controls="demo-video-panel"
-                className="interface-feature"
-                onClick={() => setDemoOpen((open) => !open)}
-              >
-                <span className="feature-index">▶</span>
-                <span className="feature-icon"><PlayCircle size={20} /></span>
-                <span className="feature-label">{demoCopy[language].label}</span>
-                <ChevronRight size={16} />
-              </button>
-              {demoOpen && (
-                <div className="demo-video-panel" id="demo-video-panel">
-                  <div className="demo-video-frame">
-                    <YouTubeFacade videoId={DEMO_SHORT_ID} title={demoCopy[language].title} poster={demoPoster} />
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
 
         {SHOW_MEET_VIDEO && <section className="meet-section container" id="meet" dir={dir} aria-labelledby="meet-title">
           <div className="meet-copy">

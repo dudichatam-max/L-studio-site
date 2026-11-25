@@ -20,7 +20,7 @@
         "body": "L Studio היא אפליקציה ליצירת מוזיקה בפלאפון האנדרואיד. מקליטים לופים, מוסיפים תופים, שרים עם המילים מול העיניים, ואם בא לכם לצאת מהתווים הרגילים, מכוונים כל קליד לתדר משלו.",
         "ctaPrimary": "לצפייה בסרטון הקצר",
         "ctaSecondary": "איך זה התחיל",
-        "stat1": "161.7MB",
+        "stat1": "161.9MB",
         "stat2": "Android 7.0+",
         "stat3": "ללא פרסומות"
       },
@@ -368,7 +368,7 @@
           {
             "question": "על אילו מכשירים זה רץ, ובאילו שפות?",
             "answer": [
-              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה. אין כרגע גרסה לאייפון.",
+              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה. גרסה 1.17 שוקלת 161.9MB. אין כרגע גרסה לאייפון.",
               "האפליקציה נבדקה על טלפוני אנדרואיד שונים. היא לא נבדקה על טאבלטים, ולכן אין הבטחה לתמיכה בטאבלט.",
               "בפלאפון האפליקציה נשארת זקופה, לאורך.",
               "האפליקציה בארבע שפות: עברית, אנגלית, רוסית וערבית. מחליפים ב Settings, בשורה Language."
@@ -3462,7 +3462,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, בתשלום אחד, עם גרסה 1.17, שיש בה עיצוב חדש עם כפתורים ריאליסטיים ולוחות מתכת מוברשת. יש בה גם ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, פריסטים מחודשים של Factory 64 עם בנק Custom, ועד 33 מקצבים בכל ערכת תופים, בנוסף לביטים לפי ז'אנר, לכפתורים Humanize וגם Ratchet, למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. מי שקונה Pro מקבל גם את חבילת Exclusive בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
+        "body": "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, בתשלום אחד, עם גרסה 1.17 שגודלה 161.9MB, ויש בה עיצוב חדש עם כפתורים ריאליסטיים ולוחות מתכת מוברשת. יש בה גם ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, פריסטים מחודשים של Factory 64 עם בנק Custom, ועד 33 מקצבים בכל ערכת תופים, בנוסף לביטים לפי ז'אנר, לכפתורים Humanize וגם Ratchet, למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. מי שקונה Pro מקבל גם את חבילת Exclusive בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
           "L Studio Pro לאנדרואיד ב Google Play, ‏24.90 ‏₪",
@@ -4186,13 +4186,13 @@
           },
           "home-mic": {
             "title": "הקליטו שירה וכלי נגינה.",
-            "text": "טלפרומפטר, כיוון Eq ואפקטים",
-            "alt": "3/8: הקליטו שירה וכלי נגינה. טלפרומפטר, כיוון Eq ואפקטים"
+            "text": "טלפרומפטר, כיוון EQ ואפקטים",
+            "alt": "3/8: הקליטו שירה וכלי נגינה. טלפרומפטר, כיוון EQ ואפקטים"
           },
           "home-looper": {
             "title": "לופר 32 ערוצים.",
-            "text": "כיוון Eq, עריכה ואפקטים.",
-            "alt": "4/8: לופר 32 ערוצים. כיוון Eq, עריכה ואפקטים."
+            "text": "כיוון EQ, עריכה ואפקטים.",
+            "alt": "4/8: לופר 32 ערוצים. כיוון EQ, עריכה ואפקטים."
           },
           "home-pad": {
             "title": "פאד שליטה ועיצוב סאונד.",
@@ -4237,7 +4237,7 @@
         "body": "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.",
         "ctaPrimary": "Watch the short",
         "ctaSecondary": "How it started",
-        "stat1": "161.7 MB",
+        "stat1": "161.9 MB",
         "stat2": "Android 7.0+",
         "stat3": "No ads"
       },
@@ -4585,7 +4585,7 @@
           {
             "question": "Which devices does it run on, and in which languages?",
             "answer": [
-              "L Studio is an Android app. It needs Android 7.0 or newer. There is no iPhone version for now.",
+              "L Studio is an Android app. It needs Android 7.0 or newer. Version 1.17 is 161.9 MB. There is no iPhone version for now.",
               "It was tested on various Android phones. It was not tested on tablets, so tablet support is not promised.",
               "On a phone the app stays upright, in portrait.",
               "The app comes in four languages: English, Hebrew, Russian, and Arabic. You switch in Settings, on the Language row."
@@ -7679,7 +7679,7 @@
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro for Android is available now on Google Play, for $8. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android is available now on Google Play, for $8, one time, with version 1.17, which has a new look with realistic knobs and brushed metal panels. It also has four new Sound FX worlds (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 presets with a Custom bank, and up to 33 rhythms in every drum kit, on top of genre-based beats, Humanize, Ratchet, the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved. Whoever buys Pro also gets the Exclusive pack at no extra cost, and there is no download button. This website is not taking payment for it right now.",
+        "body": "L Studio Pro for Android is available now on Google Play, for $8, one time, with version 1.17, 161.9 MB, which has a new look with realistic knobs and brushed metal panels. It also has four new Sound FX worlds (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 presets with a Custom bank, and up to 33 rhythms in every drum kit, on top of genre-based beats, Humanize, Ratchet, the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved. Whoever buys Pro also gets the Exclusive pack at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
           "L Studio Pro for Android on Google Play, $8",
@@ -8454,7 +8454,7 @@
         "body": "L Studio это приложение для создания музыки на телефоне с Android. Записывай лупы, добавляй барабаны, пой, глядя на текст песни, а если хочется выйти за привычные ноты, настрой для каждой клавиши свою частоту.",
         "ctaPrimary": "Смотреть короткое видео",
         "ctaSecondary": "Как всё началось",
-        "stat1": "161.7 МБ",
+        "stat1": "161.9 МБ",
         "stat2": "Android 7.0+",
         "stat3": "Без рекламы"
       },
@@ -8802,7 +8802,7 @@
           {
             "question": "На каких устройствах работает и на каких языках?",
             "answer": [
-              "L Studio это приложение для Android. Нужен Android 7.0 или новее. Версии для iPhone пока нет.",
+              "L Studio это приложение для Android. Нужен Android 7.0 или новее. Версия 1.17 весит 161.9 МБ. Версии для iPhone пока нет.",
               "Приложение проверялось на разных телефонах с Android. На планшетах оно не проверялось, поэтому поддержка планшетов не обещается.",
               "На телефоне приложение остаётся вертикальным, в портретной ориентации.",
               "Приложение на четырёх языках: английском, иврите, русском и арабском. Язык меняется в Settings, в строке Language."
@@ -11896,7 +11896,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro для Android уже доступен в Google Play, за $8. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, одной покупкой, с версией 1.17, в которой новый вид с реалистичными ручками и панелями из шлифованного металла. В ней также четыре мира Sound FX (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённые пресеты Factory 64 с банком Custom и до 33 ритмов в каждом наборе ударных, в дополнение к битам по жанрам, Humanize, Ratchet, Analog Mixer и окну мастеринга. Новые версии приходят автоматическими обновлениями через Google Play после одобрения. Кто покупает Pro, получает и пак Exclusive без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает оплату.",
+        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, одной покупкой, с версией 1.17, 161.9 МБ, в которой новый вид с реалистичными ручками и панелями из шлифованного металла. В ней также четыре мира Sound FX (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённые пресеты Factory 64 с банком Custom и до 33 ритмов в каждом наборе ударных, в дополнение к битам по жанрам, Humanize, Ratchet, Analog Mixer и окну мастеринга. Новые версии приходят автоматическими обновлениями через Google Play после одобрения. Кто покупает Pro, получает и пак Exclusive без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
           "L Studio Pro для Android в Google Play, $8",
@@ -12671,7 +12671,7 @@
         "body": "L Studio تطبيق لصنع الموسيقى على هاتف أندرويد. سجّل لوبات، أضف طبولاً، غنِّ وكلمات الأغنية أمام عينيك، وإن أردت الخروج عن النوتات المعتادة، اضبط لكل مفتاح تردده الخاص.",
         "ctaPrimary": "شاهد الفيديو القصير",
         "ctaSecondary": "كيف بدأ الأمر",
-        "stat1": "161.7 ميغابايت",
+        "stat1": "161.9 ميغابايت",
         "stat2": "Android 7.0+",
         "stat3": "بلا إعلانات"
       },
@@ -13019,7 +13019,7 @@
           {
             "question": "على أي أجهزة يعمل وبأي لغات؟",
             "answer": [
-              "L Studio تطبيق لأندرويد. يحتاج Android 7.0 أو أحدث. لا توجد حالياً نسخة لآيفون.",
+              "L Studio تطبيق لأندرويد. يحتاج Android 7.0 أو أحدث. الإصدار 1.17 حجمه 161.9 ميغابايت. لا توجد حالياً نسخة لآيفون.",
               "جُرّب التطبيق على هواتف أندرويد مختلفة. ولم يُجرَّب على التابلت، لذلك لا نَعِد بدعم التابلت.",
               "على الهاتف يبقى التطبيق قائماً، بوضع طولي.",
               "التطبيق بأربع لغات: الإنجليزية والعبرية والروسية والعربية. تبدّل اللغة من Settings، في صف Language."
@@ -16113,7 +16113,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، بدفعة واحدة، مع الإصدار 1.17 الذي يأتي بمظهر جديد مع مقابض واقعية وألواح من المعدن المصقول. ويضم أيضاً أربعة عوالم في Sound FX ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وإعدادات Factory 64 المجددة مع بنك Custom، وحتى 33 إيقاعاً في كل مجموعة طبول، إلى جانب الإيقاعات حسب النوع وHumanize وRatchet والميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. من يشتري Pro يحصل أيضاً على حزمة Exclusive بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
+        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، بدفعة واحدة، مع الإصدار 1.17، 161.9 ميغابايت، الذي يأتي بمظهر جديد مع مقابض واقعية وألواح من المعدن المصقول. ويضم أيضاً أربعة عوالم في Sound FX ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وإعدادات Factory 64 المجددة مع بنك Custom، وحتى 33 إيقاعاً في كل مجموعة طبول، إلى جانب الإيقاعات حسب النوع وHumanize وRatchet والميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. من يشتري Pro يحصل أيضاً على حزمة Exclusive بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
           "L Studio Pro لأندرويد على Google Play، 8$",
