@@ -2,15 +2,14 @@ import type { Language } from "@/contexts/LanguageContext";
 
 export type PlayId = "sound" | "mic" | "loop" | "pad" | "drum";
 /** "update112" = the 1.12 screenshots (analog mixer, wave EQ, Mastering) on /updates, in the 1.12 item.
- * "home112" = the homepage top carousel under the hero title: Google Play 1.15 store images (Drive folder, HE+EN). */
+ * "home112" = the homepage top carousel: Google Play 1.17 store images 01-08 (Drive "1.17 Smoked", HE+EN). */
 export type CarouselId = PlayId | "update112" | "home112";
 
 /**
  * Home feature tabs (Sound, Mic, Loop, Pad, Drum).
  *
- * Round-2 designer slides, in NN order. Each id replaces one previous poster
- * (named in the comment). `loop-page-name` was removed and has no replacement.
- * Append a later slide by adding `{ id, designed }` to the tab array and
+ * 1.17 slides, four per tab (two for Pad), in NN order. The FIG. number baked
+ * into each poster matches its NN slot. Append a later slide by adding `{ id, designed }` to the tab array and
  * `languages.*.carousel.slides[id]` in he, en, ru, and ar.
  *
  * Hebrew uses `assets/carousel/he/`. English, Russian, and Arabic use the
@@ -25,67 +24,58 @@ export type CarouselId = PlayId | "update112" | "home112";
  */
 export type SlideDef = { id: string; designed: string };
 
-/** Official Google Play stills, in store order (the n/8 counter is baked into each file). home-sound-fx is the 1.16 store shot #2. */
-export const play115: Record<string, SlideDef> = {
+/** Official Google Play 1.17 stills 01-08, in store order (FIG. 01-08 is baked into each file). */
+export const play117: Record<string, SlideDef> = {
   sound: { id: "home-sound", designed: "01-sound" },
   soundFx: { id: "home-sound-fx", designed: "02-sound-fx" },
-  pad: { id: "home-pad", designed: "03-pad" },
-  looper: { id: "home-looper", designed: "04-looper-live" },
-  drums: { id: "home-drums", designed: "05-drum" },
-  mic: { id: "home-mic", designed: "06-mic" },
-  mixer: { id: "home-mixer", designed: "07-mixer" },
-  mastering: { id: "home-mastering", designed: "08-mastering" },
+  mic: { id: "home-mic", designed: "03-mic" },
+  looper: { id: "home-looper", designed: "04-looper" },
+  pad: { id: "home-pad", designed: "05-pad" },
+  drums: { id: "home-drums", designed: "06-drums" },
+  samples: { id: "home-samples", designed: "07-samples" },
+  mixMastering: { id: "home-mix-mastering", designed: "08-mix-mastering" },
 };
 
 const slide = (id: string): SlideDef => ({ id, designed: id });
 
 export const carouselSlides: Record<CarouselId, SlideDef[]> = {
   sound: [
-    slide("sound-01"), // replaces sound-fx
-    slide("sound-02"), // replaces sound-fx-knobs
-    slide("sound-03"), // replaces sound-fm
-    slide("sound-04"), // replaces sound-scales
-    slide("sound-05"), // replaces sound-frequencies
-    slide("sound-06"), // replaces sound-wave-panel
-    slide("sound-07"), // replaces sound-two-keyboards
-    slide("sound-08"), // Analog Delay
-    slide("sound-09"), // Bitcrusher
-    slide("sound-10"), // Ring Mod
-    slide("sound-11"), // Granular
+    slide("sound-01"), // effect knobs on long press
+    slide("sound-02"), // scales
+    slide("sound-03"), // two keyboards
+    slide("sound-04"), // Sound FX: 16 worlds, chain up to four
   ],
   mic: [
-    slide("mic-01"), // replaces mic-channels
-    slide("mic-02"), // replaces mic-editor
-    slide("mic-03"), // replaces mic-lyrics
-    slide("mic-04"), // replaces mic-mastering
+    slide("mic-01"),
+    slide("mic-02"),
+    slide("mic-03"),
+    slide("mic-04"),
   ],
   loop: [
-    slide("loop-01"), // replaces loop-looper
-    slide("loop-02"), // replaces loop-fx
-    slide("loop-03"), // replaces loop-editor
-    // loop-page-name removed (feature gone in 1.15), no replacement
-    slide("loop-04"), // replaces loop-mixer
+    slide("loop-01"),
+    slide("loop-02"),
+    slide("loop-03"),
+    slide("loop-04"),
   ],
   pad: [
-    slide("pad-01"), // replaces pad-live
+    slide("pad-01"),
     slide("pad-02"),
   ],
   drum: [
-    slide("drum-01"), // replaces drum-rows
-    slide("drum-02"), // replaces drum-fx
-    slide("drum-03"), // replaces drum-banks
-    slide("drum-04"), // replaces drum-loaded
-    slide("drum-05"),
+    slide("drum-01"),
+    slide("drum-02"),
+    slide("drum-03"),
+    slide("drum-04"),
   ],
   home112: [
-    play115.sound,
-    play115.soundFx,
-    play115.pad,
-    play115.looper,
-    play115.drums,
-    play115.mic,
-    play115.mixer,
-    play115.mastering,
+    play117.sound,
+    play117.soundFx,
+    play117.mic,
+    play117.looper,
+    play117.pad,
+    play117.drums,
+    play117.samples,
+    play117.mixMastering,
   ],
   // /updates, 1.12 item (counter n/10 baked in): mixer first, then Mastering. Real 1.12 smoke captures (David, Oct 21).
   // he and en have their own captions; ru and ar use the English posters for now (TODO in CONTENT_EDITING.md).
@@ -113,7 +103,7 @@ export type SlideImage = {
   height: number;
 };
 
-export const CAROUSEL_VER = "carousel-r5";
+export const CAROUSEL_VER = "carousel-r6";
 const SMALL = 360;
 const LARGE = 630;
 

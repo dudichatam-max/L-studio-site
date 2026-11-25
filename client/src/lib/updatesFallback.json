@@ -3,7 +3,7 @@
     "navLabel": "עדכונים",
     "pageTitle": "מה חדש בתוכנת L Studio?",
     "pageKicker": "L-STUDIO / עדכונים",
-    "pageIntro": "L Studio Pro זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, עם גרסה 1.16, שמביאה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, ושרשרת של עד ארבעה אפקטים. יש גם את Factory 64 המחודש, 33 מקצבים בערכה, Humanize, Ratchet וערכות תופים אישיות. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+    "pageIntro": "L Studio Pro זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, עם גרסה 1.17, שמביאה עיצוב חדש עם כפתורים ריאליסטיים ולוחות מתכת מוברשת, ושחזור יצרן לערכות תופים, לפריסטים או לשניהם. יש גם את ארבעת העולמות של Sound FX מגרסה 1.16, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, Factory 64 המחודש, 33 מקצבים בערכה, Humanize, Ratchet וערכות תופים אישיות. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
     "tickerLabel": "עדכונים",
     "statusLabels": {
       "in_progress": "בעבודה",
@@ -17,11 +17,32 @@
     },
     "items": [
       {
+        "id": "app-1-17",
+        "status": "shipped",
+        "title": "גרסה 1.17 זמינה עכשיו בחנות Google Play, עם עיצוב חדש",
+        "ticker": "גרסה 1.17 זמינה עכשיו בחנות Google Play, עם כפתורים ריאליסטיים, לוחות מתכת מוברשת, ושחזור יצרן לערכות תופים, לפריסטים או לשניהם",
+        "summary": "גרסה 1.17 זמינה עכשיו בחנות Google Play, ועודכנה ביום 24 בנובמבר 2026.",
+        "sections": [
+          {
+            "title": "מה חדש ב 1.17",
+            "bullets": [
+              "עיצוב חדש: כפתורים ריאליסטיים, לוחות מתכת מוברשת, וכפתורי Sound גדולים יותר. כפתורי המיקסר בצבע של כל ערוץ.",
+              "ב Looper וב Mic, הכפתורים S, M ו FX הם כובעי קונסולה, ו FX בזהב כשהוא פעיל.",
+              "שחזור יצרן: Drum kits, Presets או את שניהם. הבנק Custom נשמר תמיד.",
+              "עורך הגל יושב מתחת לשורת PRESET. סגרו אותו כדי לפתוח מקלדת שנייה.",
+              "ב Bitcrusher, SMOOTH מחליק יותר כשמעלים אותו. סשנים ישנים נשמעים אותו דבר.",
+              "לכל אפקט ב Sound FX נשמרים Rate ו SYNC משלו.",
+              "תיקוני תצוגה ויציבות."
+            ]
+          }
+        ]
+      },
+      {
         "id": "app-1-16-sfx",
         "status": "shipped",
-        "title": "גרסה 1.16 זמינה עכשיו בחנות Google Play, עם ארבעה עולמות חדשים ב Sound FX",
-        "ticker": "גרסה 1.16 זמינה עכשיו בחנות Google Play, עם Analog Delay, Bitcrusher, Ring Mod וגם Granular, ושרשרת של עד ארבעה אפקטים",
-        "summary": "גרסה 1.16 זמינה עכשיו בחנות Google Play, ועודכנה ביום 19 בנובמבר 2026. היא מוסיפה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, ואפשר לשרשר עד ארבעה יחד. פריסטי Factory 64 עוצבו מחדש סביב האפקטים החדשים, ונוסף בנק Custom. בתופים יש עד 33 מקצבים בכל ערכה, עם Pan וגם Pitch בכל ערוץ, ואפשר להחליף ערכה תוך כדי נגינה. Auto בבחירת הסגנון קובע את BPM, Swing, Ratchet וגם Humanize. שורת הכניסה של המיקרופון מעצבת את ההקלטה, וערוץ לופר או מיקרופון נשמר כמו שהוא נשמע. בהגדרות יש עצירת חירום בשם Panic, וגם תיקוני תצוגה ויציבות.",
+        "title": "גרסה 1.16 עם ארבעה עולמות חדשים ב Sound FX",
+        "ticker": "גרסה 1.16 עם Analog Delay, Bitcrusher, Ring Mod וגם Granular, ושרשרת של עד ארבעה אפקטים",
+        "summary": "גרסה 1.16 עלתה לחנות Google Play ביום 19 בנובמבר 2026. היא מוסיפה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, ואפשר לשרשר עד ארבעה יחד. פריסטי Factory 64 עוצבו מחדש סביב האפקטים החדשים, ונוסף בנק Custom. בתופים יש עד 33 מקצבים בכל ערכה, עם Pan וגם Pitch בכל ערוץ, ואפשר להחליף ערכה תוך כדי נגינה. Auto בבחירת הסגנון קובע את BPM, Swing, Ratchet וגם Humanize. שורת הכניסה של המיקרופון מעצבת את ההקלטה, וערוץ לופר או מיקרופון נשמר כמו שהוא נשמע. בהגדרות יש עצירת חירום בשם Panic, וגם תיקוני תצוגה ויציבות.",
         "images": [
           "/assets/updates/116/analog-delay-w630.jpg",
           "/assets/updates/116/bitcrusher-w630.jpg",
@@ -77,15 +98,7 @@
               "בתיקוני התצוגה והיציבות, חלון Sound וחלון Pad לא מתרוקנים כשהמקלדת העליונה פתוחה, מסכים קטנים גוללים במקום להיחתך, חלונות צרים לא קורסים, תוויות הקלידים נשארות בשורה אחת, וחלון הפתיחה כהה בלי הבזק לבן."
             ]
           }
-        ],
-        "badge": "זמין בחנות"
-      },
-      {
-        "id": "app-1-17-restore",
-        "status": "upcoming",
-        "title": "בעדכון הבא, גרסה 1.17, שחזור נפרד לערכות תופים ולפריסטים",
-        "ticker": "בעדכון הבא, גרסה 1.17, בהגדרות שחזור Factory יאפשר לבחור ערכות תופים, פריסטים, או את שניהם. תיקיות Custom נשארות",
-        "summary": "בגרסה 1.17, לחיצה על כפתור השחזור של Factory בהגדרות תפתח שתי אפשרויות לסימון, ערכות תופים ופריסטים, כדי שאפשר יהיה לשחזר אחד מהם או את שניהם. תיקיות Custom נשמרות תמיד."
+        ]
       },
       {
         "id": "app-1-15-in-development",
@@ -306,8 +319,8 @@
             },
             "upd-wave-pages": {
               "title": "4 דפים לכל גל",
-              "text": "כל דף מוסיף עוד קול של אותו גל. דף 1 תמיד פועל, ודפים 2 עד 4 נדלקים ונכבים ב־ON ו־OFF. הכפתור DEFAULT מאפס את הדף שעל המסך.",
-              "alt": "4 דפים לכל גל. כל דף מוסיף עוד קול של אותו גל. דף 1 תמיד פועל, ודפים 2 עד 4 נדלקים ונכבים ב־ON ו־OFF. הכפתור DEFAULT מאפס את הדף שעל המסך."
+              "text": "כל דף מוסיף עוד קול של אותו גל. דף 1 תמיד פועל, ודפים 2 עד 4 נדלקים ונכבים ב ON ו OFF. הכפתור DEFAULT מאפס את הדף שעל המסך.",
+              "alt": "4 דפים לכל גל. כל דף מוסיף עוד קול של אותו גל. דף 1 תמיד פועל, ודפים 2 עד 4 נדלקים ונכבים ב ON ו OFF. הכפתור DEFAULT מאפס את הדף שעל המסך."
             },
             "upd-wave-octave": {
               "title": "אוקטבה לכל דף",
@@ -316,13 +329,13 @@
             },
             "upd-master-beginner": {
               "title": "מאסטרינג למתחילים",
-              "text": "בוחרים סגנון ולוחצים נגן כדי לשמוע מיד. A זה לפני, B זה הסגנון, ו־Match משווה את העוצמה. ואז Start mastering.",
-              "alt": "מאסטרינג למתחילים. בוחרים סגנון ולוחצים נגן כדי לשמוע מיד. A זה לפני, B זה הסגנון, ו־Match משווה את העוצמה. ואז Start mastering."
+              "text": "בוחרים סגנון ולוחצים נגן כדי לשמוע מיד. A זה לפני, B זה הסגנון, ו Match משווה את העוצמה. ואז Start mastering.",
+              "alt": "מאסטרינג למתחילים. בוחרים סגנון ולוחצים נגן כדי לשמוע מיד. A זה לפני, B זה הסגנון, ו Match משווה את העוצמה. ואז Start mastering."
             },
             "upd-master-styles": {
               "title": "8 סגנונות",
-              "text": "מ־Sub Vault ועד Stream Peak, לכל סגנון צליל ויעד עוצמה משלו. האפליקציה מסמנת את הסגנון שהכי מתאים להקלטה. אפשר לשמור סגנון משלכם.",
-              "alt": "8 סגנונות. מ־Sub Vault ועד Stream Peak, לכל סגנון צליל ויעד עוצמה משלו. האפליקציה מסמנת את הסגנון שהכי מתאים להקלטה. אפשר לשמור סגנון משלכם."
+              "text": "מ Sub Vault ועד Stream Peak, לכל סגנון צליל ויעד עוצמה משלו. האפליקציה מסמנת את הסגנון שהכי מתאים להקלטה. אפשר לשמור סגנון משלכם.",
+              "alt": "8 סגנונות. מ Sub Vault ועד Stream Peak, לכל סגנון צליל ויעד עוצמה משלו. האפליקציה מסמנת את הסגנון שהכי מתאים להקלטה. אפשר לשמור סגנון משלכם."
             },
             "upd-master-advanced": {
               "title": "מצב מתקדם",
@@ -336,8 +349,8 @@
             },
             "upd-master-stereo": {
               "title": "בדיקת סטריאו",
-              "text": "רוחב ומתאם לכל השיר. Mono ו־Phone check משמיעים איך השיר יישמע ברמקול של טלפון.",
-              "alt": "בדיקת סטריאו. רוחב ומתאם לכל השיר. Mono ו־Phone check משמיעים איך השיר יישמע ברמקול של טלפון."
+              "text": "רוחב ומתאם לכל השיר. Mono ו Phone check משמיעים איך השיר יישמע ברמקול של טלפון.",
+              "alt": "בדיקת סטריאו. רוחב ומתאם לכל השיר. Mono ו Phone check משמיעים איך השיר יישמע ברמקול של טלפון."
             },
             "upd-master-saved": {
               "title": "המאסטר נשמר",
@@ -571,7 +584,7 @@
     "navLabel": "Updates",
     "pageTitle": "What's new in L Studio?",
     "pageKicker": "L-STUDIO / UPDATES",
-    "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.16, which brings four new Sound FX worlds, Analog Delay, Bitcrusher, Ring Mod and Granular, and a chain of up to four effects, on top of the redesigned Factory 64, 33 rhythms per kit, Humanize, Ratchet and Custom drum kits. New versions arrive as automatic updates through Google Play once they are approved.",
+    "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.17, which brings a new look with realistic knobs and brushed metal panels, and a Factory restore for drum kits, presets, or both, on top of the four Sound FX worlds from 1.16, Analog Delay, Bitcrusher, Ring Mod and Granular, a chain of up to four effects, the redesigned Factory 64, 33 rhythms per kit, Humanize, Ratchet and Custom drum kits. New versions arrive as automatic updates through Google Play once they are approved.",
     "tickerLabel": "Updates",
     "statusLabels": {
       "in_progress": "In progress",
@@ -585,11 +598,32 @@
     },
     "items": [
       {
+        "id": "app-1-17",
+        "status": "shipped",
+        "title": "On Google Play now: version 1.17 with a new look",
+        "ticker": "On Google Play now: version 1.17, realistic knobs, brushed metal panels, and Factory restore for drum kits, presets, or both",
+        "summary": "Version 1.17 is on Google Play now (updated Nov 24, 2026).",
+        "sections": [
+          {
+            "title": "What's new in 1.17",
+            "bullets": [
+              "New look: realistic knobs, brushed metal panels, larger Sound knobs. Mixer knobs use each channel's color.",
+              "Looper and Mic S, M and FX are console caps; FX is gold when on.",
+              "Factory restore: Drum kits, Presets, or both. Your Custom bank is always kept.",
+              "Wave editor sits under the preset row. Close it to open a second keyboard.",
+              "Bitcrusher SMOOTH gets smoother as you raise it. Older sessions sound the same.",
+              "Each Sound FX effect keeps its own Rate and SYNC.",
+              "Display and stability fixes."
+            ]
+          }
+        ]
+      },
+      {
         "id": "app-1-16-sfx",
         "status": "shipped",
-        "title": "On Google Play now: version 1.16 with four new Sound FX worlds",
-        "ticker": "On Google Play now: version 1.16, Analog Delay, Bitcrusher, Ring Mod and Granular, in a chain of up to four effects",
-        "summary": "Version 1.16 is on Google Play now (updated Nov 19, 2026). It adds four Sound FX worlds: Analog Delay, Bitcrusher, Ring Mod and Granular, and you can chain up to four at once. Factory 64 presets were redesigned for the new effects, and a Custom bank was added. Drums now have up to 33 rhythms per kit, Pan and Pitch on every channel, and kit switching while playing. Auto in the genre picker sets BPM, Swing, Ratchet and Humanize. The mic input row now shapes the recording, and a loop or mic channel can be saved as you hear it. Panic is in Settings, along with display and stability fixes.",
+        "title": "Version 1.16 with four new Sound FX worlds",
+        "ticker": "Version 1.16: Analog Delay, Bitcrusher, Ring Mod and Granular, in a chain of up to four effects",
+        "summary": "Version 1.16 came to Google Play on Nov 19, 2026. It adds four Sound FX worlds: Analog Delay, Bitcrusher, Ring Mod and Granular, and you can chain up to four at once. Factory 64 presets were redesigned for the new effects, and a Custom bank was added. Drums now have up to 33 rhythms per kit, Pan and Pitch on every channel, and kit switching while playing. Auto in the genre picker sets BPM, Swing, Ratchet and Humanize. The mic input row now shapes the recording, and a loop or mic channel can be saved as you hear it. Panic is in Settings, along with display and stability fixes.",
         "images": [
           "/assets/updates/116/analog-delay-w630.jpg",
           "/assets/updates/116/bitcrusher-w630.jpg",
@@ -645,15 +679,7 @@
               "Display and stability fixes: Sound and Pad no longer go empty with the upper keyboard open, small screens scroll instead of clipping, narrow windows no longer crash, key labels stay on one line, and the startup window is dark with no white flash."
             ]
           }
-        ],
-        "badge": "Available on Google Play"
-      },
-      {
-        "id": "app-1-17-restore",
-        "status": "upcoming",
-        "title": "In the next update, version 1.17: restore drum kits and presets separately",
-        "ticker": "Next update, version 1.17: in Settings, Factory restore lets you choose drum kits, presets, or both. Custom folders are kept",
-        "summary": "In version 1.17, the Factory restore button in Settings will open two options you can tick, drum kits and presets, so you can restore one or both. Your Custom folders are always kept."
+        ]
       },
       {
         "id": "app-1-15-in-development",
@@ -1139,7 +1165,7 @@
     "navLabel": "Обновления",
     "pageTitle": "Что нового в L Studio?",
     "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-    "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.16, в которой есть четыре новых мира Sound FX: Analog Delay, Bitcrusher, Ring Mod и Granular, и цепочка до четырёх эффектов, а также обновлённый Factory 64, 33 ритма в наборе, Humanize, Ratchet и пользовательские наборы ударных. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
+    "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.17, в которой новый вид с реалистичными ручками и панелями из шлифованного металла и восстановление Factory для наборов ударных, пресетов или обоих, а также четыре мира Sound FX из версии 1.16: Analog Delay, Bitcrusher, Ring Mod и Granular, цепочка до четырёх эффектов, обновлённый Factory 64, 33 ритма в наборе, Humanize, Ratchet и пользовательские наборы ударных. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
     "tickerLabel": "Обновления",
     "statusLabels": {
       "in_progress": "В работе",
@@ -1153,11 +1179,32 @@
     },
     "items": [
       {
+        "id": "app-1-17",
+        "status": "shipped",
+        "title": "Теперь в Google Play: версия 1.17 с новым видом",
+        "ticker": "Теперь в Google Play: версия 1.17, реалистичные ручки, панели из шлифованного металла и восстановление Factory для наборов ударных, пресетов или обоих",
+        "summary": "Версия 1.17 уже в Google Play (обновлена 24 ноября 2026).",
+        "sections": [
+          {
+            "title": "Что нового в 1.17",
+            "bullets": [
+              "Новый вид: реалистичные ручки, панели из шлифованного металла, ручки Sound крупнее. Ручки микшера окрашены в цвет своего канала.",
+              "В Looper и Mic кнопки S, M и FX сделаны как колпачки пульта; FX горит золотым, когда включён.",
+              "Восстановление Factory: Drum kits, Presets или оба. Ваш банк Custom всегда сохраняется.",
+              "Редактор волны находится под строкой пресетов. Закройте его, чтобы открыть вторую клавиатуру.",
+              "SMOOTH в Bitcrusher сглаживает сильнее, чем выше вы его поднимаете. Старые сессии звучат как прежде.",
+              "Каждый эффект Sound FX хранит свои Rate и SYNC.",
+              "Исправления отображения и стабильности."
+            ]
+          }
+        ]
+      },
+      {
         "id": "app-1-16-sfx",
         "status": "shipped",
-        "title": "Теперь в Google Play: версия 1.16 с четырьмя новыми мирами Sound FX",
-        "ticker": "Теперь в Google Play: версия 1.16, Analog Delay, Bitcrusher, Ring Mod и Granular, цепочка до четырёх эффектов",
-        "summary": "Версия 1.16 уже в Google Play (обновлена 19 ноября 2026). В ней четыре новых мира Sound FX: Analog Delay, Bitcrusher, Ring Mod и Granular, и их можно собирать в цепочку до четырёх сразу. Пресеты Factory 64 пересобраны под новые эффекты, добавлен банк Custom. В ударных до 33 ритмов в каждом наборе, Pan и Pitch на каждом канале, и смена набора прямо во время игры. Auto в выборе стиля задаёт BPM, Swing, Ratchet и Humanize. Входная строка микрофона теперь формирует запись, а канал лупера или микрофона можно сохранить так, как он звучит. В Настройках есть Panic, а также исправления отображения и стабильности.",
+        "title": "Версия 1.16 с четырьмя новыми мирами Sound FX",
+        "ticker": "Версия 1.16: Analog Delay, Bitcrusher, Ring Mod и Granular, цепочка до четырёх эффектов",
+        "summary": "Версия 1.16 вышла в Google Play 19 ноября 2026. В ней четыре новых мира Sound FX: Analog Delay, Bitcrusher, Ring Mod и Granular, и их можно собирать в цепочку до четырёх сразу. Пресеты Factory 64 пересобраны под новые эффекты, добавлен банк Custom. В ударных до 33 ритмов в каждом наборе, Pan и Pitch на каждом канале, и смена набора прямо во время игры. Auto в выборе стиля задаёт BPM, Swing, Ratchet и Humanize. Входная строка микрофона теперь формирует запись, а канал лупера или микрофона можно сохранить так, как он звучит. В Настройках есть Panic, а также исправления отображения и стабильности.",
         "images": [
           "/assets/updates/116/analog-delay-w630.jpg",
           "/assets/updates/116/bitcrusher-w630.jpg",
@@ -1213,15 +1260,7 @@
               "Исправления отображения и стабильности: окна Sound и Pad больше не пустеют при открытой верхней клавиатуре, на маленьких экранах появляется прокрутка вместо обрезки, узкие окна больше не закрываются с ошибкой, подписи клавиш остаются в одну строку, а стартовое окно тёмное, без белой вспышки."
             ]
           }
-        ],
-        "badge": "Доступно в Google Play"
-      },
-      {
-        "id": "app-1-17-restore",
-        "status": "upcoming",
-        "title": "В следующем обновлении, версия 1.17: восстановление наборов ударных и пресетов по отдельности",
-        "ticker": "Следующее обновление, версия 1.17: в Настройках восстановление Factory даст выбрать наборы ударных, пресеты или оба. Папки Custom сохраняются",
-        "summary": "В версии 1.17 нажатие кнопки восстановления Factory в Настройках откроет два пункта, которые можно отметить: наборы ударных и пресеты, чтобы восстановить одно из них или оба. Папки Custom всегда сохраняются."
+        ]
       },
       {
         "id": "app-1-15-in-development",
@@ -1707,7 +1746,7 @@
     "navLabel": "التحديثات",
     "pageTitle": "ما الجديد في L Studio؟",
     "pageKicker": "L-STUDIO / التحديثات",
-    "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.16 الذي يضم أربعة عوالم Sound FX جديدة: Analog Delay وBitcrusher وRing Mod وGranular، وسلسلة حتى أربعة تأثيرات، إلى جانب Factory 64 المحدّث و33 إيقاعاً في الطقم وHumanize وRatchet وأطقم طبول مخصصة. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+    "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.17 الذي يأتي بمظهر جديد مع مقابض واقعية وألواح من المعدن المصقول، واستعادة Factory لأطقم الطبول أو الإعدادات المسبقة أو كليهما، إلى جانب أربعة عوالم Sound FX من الإصدار 1.16: Analog Delay وBitcrusher وRing Mod وGranular، وسلسلة حتى أربعة تأثيرات، وFactory 64 المحدّث و33 إيقاعاً في الطقم وHumanize وRatchet وأطقم طبول مخصصة. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
     "tickerLabel": "التحديثات",
     "statusLabels": {
       "in_progress": "قيد العمل",
@@ -1721,11 +1760,32 @@
     },
     "items": [
       {
+        "id": "app-1-17",
+        "status": "shipped",
+        "title": "الآن على Google Play: الإصدار 1.17 بمظهر جديد",
+        "ticker": "الآن على Google Play: الإصدار 1.17، مقابض واقعية، وألواح من المعدن المصقول، واستعادة Factory لأطقم الطبول أو الإعدادات المسبقة أو كليهما",
+        "summary": "الإصدار 1.17 متاح الآن على Google Play (حُدّث في 24 نوفمبر 2026).",
+        "sections": [
+          {
+            "title": "ما الجديد في 1.17",
+            "bullets": [
+              "مظهر جديد: مقابض واقعية، وألواح من المعدن المصقول، ومقابض Sound أكبر. مقابض الميكسر بلون كل قناة.",
+              "في Looper وMic، أزرار S وM وFX على شكل أغطية أزرار طاولة المزج، وFX ذهبي عند تشغيله.",
+              "استعادة Factory: ‏Drum kits أو Presets أو كلاهما. بنك Custom الخاص بك يُحفظ دائماً.",
+              "محرر الموجة تحت صف الإعدادات المسبقة. أغلقه لفتح لوحة مفاتيح ثانية.",
+              "في Bitcrusher، يصبح SMOOTH أنعم كلما رفعته. الجلسات القديمة تبدو كما كانت.",
+              "كل مؤثر في Sound FX يحتفظ بـ Rate وSYNC الخاصين به.",
+              "إصلاحات في العرض والثبات."
+            ]
+          }
+        ]
+      },
+      {
         "id": "app-1-16-sfx",
         "status": "shipped",
-        "title": "الآن على Google Play: الإصدار 1.16 مع أربعة عوالم Sound FX جديدة",
-        "ticker": "الآن على Google Play: الإصدار 1.16، Analog Delay وBitcrusher وRing Mod وGranular، وسلسلة حتى أربعة تأثيرات",
-        "summary": "الإصدار 1.16 متاح الآن على Google Play (حُدّث في 19 نوفمبر 2026). يضيف أربعة عوالم Sound FX: Analog Delay وBitcrusher وRing Mod وGranular، ويمكن جمع حتى أربعة معاً في سلسلة واحدة. أُعيد تصميم إعدادات Factory 64 المسبقة حول التأثيرات الجديدة، وأُضيف بنك Custom. في الطبول حتى 33 إيقاعاً في كل طقم، وPan وPitch في كل قناة، وتبديل الطقم أثناء العزف. Auto في اختيار النمط يضبط BPM وSwing وRatchet وHumanize. صف إدخال الميكروفون يشكّل التسجيل الآن، ويمكن حفظ قناة لوبر أو ميكروفون كما تُسمع. في الإعدادات توجد Panic، مع إصلاحات للعرض والاستقرار.",
+        "title": "الإصدار 1.16 مع أربعة عوالم Sound FX جديدة",
+        "ticker": "الإصدار 1.16: Analog Delay وBitcrusher وRing Mod وGranular، وسلسلة حتى أربعة تأثيرات",
+        "summary": "صدر الإصدار 1.16 على Google Play في 19 نوفمبر 2026. يضيف أربعة عوالم Sound FX: Analog Delay وBitcrusher وRing Mod وGranular، ويمكن جمع حتى أربعة معاً في سلسلة واحدة. أُعيد تصميم إعدادات Factory 64 المسبقة حول التأثيرات الجديدة، وأُضيف بنك Custom. في الطبول حتى 33 إيقاعاً في كل طقم، وPan وPitch في كل قناة، وتبديل الطقم أثناء العزف. Auto في اختيار النمط يضبط BPM وSwing وRatchet وHumanize. صف إدخال الميكروفون يشكّل التسجيل الآن، ويمكن حفظ قناة لوبر أو ميكروفون كما تُسمع. في الإعدادات توجد Panic، مع إصلاحات للعرض والاستقرار.",
         "images": [
           "/assets/updates/116/analog-delay-w630.jpg",
           "/assets/updates/116/bitcrusher-w630.jpg",
@@ -1781,15 +1841,7 @@
               "إصلاحات للعرض والاستقرار: نافذتا Sound وPad لم تعودا تفرغان عند فتح لوحة المفاتيح العليا، والشاشات الصغيرة تمرّر بدلاً من القص، والنوافذ الضيقة لم تعد تتوقف، وتسميات المفاتيح تبقى في سطر واحد، ونافذة البدء داكنة بلا ومضة بيضاء."
             ]
           }
-        ],
-        "badge": "متاح على Google Play"
-      },
-      {
-        "id": "app-1-17-restore",
-        "status": "upcoming",
-        "title": "في التحديث القادم، الإصدار 1.17: استعادة أطقم الطبول والإعدادات المسبقة بشكل منفصل",
-        "ticker": "التحديث القادم، الإصدار 1.17: في الإعدادات، استعادة Factory تتيح اختيار أطقم الطبول أو الإعدادات المسبقة أو كليهما. مجلدات Custom تبقى",
-        "summary": "في الإصدار 1.17، زر استعادة Factory في الإعدادات سيفتح خيارين يمكن التأشير عليهما، أطقم الطبول والإعدادات المسبقة، لاستعادة أحدهما أو كليهما. مجلدات Custom تُحفظ دائماً."
+        ]
       },
       {
         "id": "app-1-15-in-development",

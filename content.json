@@ -15,7 +15,7 @@
         "updates": "עדכונים"
       },
       "hero": {
-        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.16, זמינה עכשיו בחנות Google Play",
+        "kicker": "אפליקציית מוזיקה לאנדרואיד · גרסה 1.17, זמינה עכשיו בחנות Google Play",
         "title": "יוצרים מוזיקה בפלאפון.",
         "body": "L Studio היא אפליקציה ליצירת מוזיקה בפלאפון האנדרואיד. מקליטים לופים, מוסיפים תופים, שרים עם המילים מול העיניים, ואם בא לכם לצאת מהתווים הרגילים, מכוונים כל קליד לתדר משלו.",
         "ctaPrimary": "לצפייה בסרטון הקצר",
@@ -35,7 +35,7 @@
         "note": "הכול בתוך L-Studio"
       },
       "story": {
-        "kicker": "01 / THE EIGHTH NOTE",
+        "kicker": "02 / THE EIGHTH NOTE",
         "title": "הכול התחיל מתו שלא היה שם.",
         "body": [
           "יש דו, רה, מי, פה, סול, לה וסי.",
@@ -50,12 +50,12 @@
         "closing": "מה שהתחיל בחיפוש אחר התו השמיני הפך ל L-Studio."
       },
       "featuresIntro": {
-        "kicker": "02 / PLAY WITH SOUND",
+        "kicker": "03 / PLAY WITH SOUND",
         "title": "פשוט לפתוח ולשחק.",
         "body": "לא צריך לדעת מוזיקה כדי להתחיל. פותחים, נוגעים, משנים, מקשיבים ורואים מה קורה."
       },
       "underHood": {
-        "kicker": "03 / מתחת למכסה המנוע",
+        "kicker": "04 / מתחת למכסה המנוע",
         "title": "יש הרבה מאחורי הקלעים.",
         "body": "L-Studio נבנתה כדי לתת שליטה על הסאונד בלי לחייב את המשתמש ללמוד מערכת ענקית. הקלידים, הסאונד, האפקטים, המיקרופון, הלופר, הפאד והתופים עובדים בתוך אותה אפליקציה. אפשר גם לכוון ידנית את התדר של כל קליד ולבנות את המקלדת בדרך שלך.",
         "closing": "המורכבות נמצאת במנוע. לא בדרך שבה אתה צריך להשתמש בו.",
@@ -297,7 +297,7 @@
         ]
       },
       "justStart": {
-        "kicker": "04 / JUST START",
+        "kicker": "05 / JUST START",
         "title": "יש הרבה מה לעשות. לא צריך לדעת הכול.",
         "body": [
           "כשפותחים תוכנת מוזיקה בפעם הראשונה, לפעמים הדבר הראשון שמרגישים הוא שיש יותר מדי דברים.",
@@ -318,7 +318,7 @@
         "drumsCta": "ערכות התופים"
       },
       "vision": {
-        "kicker": "05 / החזון",
+        "kicker": "01 / החזון",
         "title": "בניתי את האפליקציה שהייתי צריך.",
         "author": "דוד חתם, מפתח L-Studio",
         "body": [
@@ -353,7 +353,7 @@
           {
             "question": "האפליקציה כבר בגוגל פליי? וכמה היא עולה?",
             "answer": [
-              "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, בתשלום אחד, בלי מנוי ובלי רכישות בתוך האפליקציה. הגרסה הנוכחית היא 1.16. היא מביאה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, פריסטים מחודשים של Factory 64 עם בנק Custom, ועד 33 מקצבים בכל ערכת תופים. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+              "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, בתשלום אחד, בלי מנוי ובלי רכישות בתוך האפליקציה. הגרסה הנוכחית היא 1.17. יש בה עיצוב חדש עם כפתורים ריאליסטיים ולוחות מתכת מוברשת, והיא ממשיכה את גרסה 1.16, שהביאה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, פריסטים מחודשים של Factory 64 עם בנק Custom, ועד 33 מקצבים בכל ערכת תופים. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
               "קונים אותה דרך Google Play. האתר הזה לא מוכר את האפליקציה ואין בו כפתור הורדה."
             ]
           },
@@ -368,7 +368,7 @@
           {
             "question": "על אילו מכשירים זה רץ, ובאילו שפות?",
             "answer": [
-              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה. גרסה 1.16 שוקלת 161.7MB. אין כרגע גרסה לאייפון.",
+              "L Studio היא אפליקציה לאנדרואיד. היא דורשת Android 7.0 ומעלה. אין כרגע גרסה לאייפון.",
               "האפליקציה נבדקה על טלפוני אנדרואיד שונים. היא לא נבדקה על טאבלטים, ולכן אין הבטחה לתמיכה בטאבלט.",
               "בפלאפון האפליקציה נשארת זקופה, לאורך.",
               "האפליקציה בארבע שפות: עברית, אנגלית, רוסית וערבית. מחליפים ב Settings, בשורה Language."
@@ -405,7 +405,7 @@
             "answer": [
               "המיקסר האנלוגי נפתח בהקשה על LIVE SCOPE בראש המסך. לתופים, ללופר ולמיק יש ערוץ עם Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S ופיידר. ערוץ Master עובד על כל המיקס. SPECTRUM וגם MIX MAP מראים איפה הערוצים יושבים ואיפה הם מתנגשים. יש 8 פריסטים.",
               "חלון המאסטרינג מסיים הקלטת WAV או שיר מיובא לקראת שירותי הסטרימינג. במצב Beginner בוחרים אחד משמונה סגנונות, מאזינים לגרסה A (לפני) ולגרסה B (הסגנון), ואז מקישים Start mastering ומייצאים. מצב Advanced פותח את Tone, Dynamics, Stereo וגם Loudness, עם יעד LUFS משלכם. החלון נפתח אחרי הקלטת WAV, עם Master this take, או מהשורה MASTERING בהגדרות.",
-              "שניהם חלק מגרסה 1.16 שנמצאת בחנות Google Play."
+              "שניהם חלק מגרסה 1.17 שנמצאת בחנות Google Play."
             ]
           },
           {
@@ -3462,7 +3462,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪. רכישה באתר אינה זמינה כרגע.",
-        "body": "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, בתשלום אחד, עם גרסה 1.16 שגודלה 161.7MB. היא מביאה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, פריסטים מחודשים של Factory 64 עם בנק Custom, ועד 33 מקצבים בכל ערכת תופים, בנוסף לביטים לפי ז'אנר, לכפתורים Humanize וגם Ratchet, למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. מי שקונה Pro מקבל גם את חבילת Exclusive בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
+        "body": "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, בתשלום אחד, עם גרסה 1.17, שיש בה עיצוב חדש עם כפתורים ריאליסטיים ולוחות מתכת מוברשת. יש בה גם ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, פריסטים מחודשים של Factory 64 עם בנק Custom, ועד 33 מקצבים בכל ערכת תופים, בנוסף לביטים לפי ז'אנר, לכפתורים Humanize וגם Ratchet, למיקסר האנלוגי ולחלון המאסטרינג. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות. מי שקונה Pro מקבל גם את חבילת Exclusive בלי עלות נוספת, ואין כפתור הורדה. האתר הזה אינו גובה תשלום עבורו כרגע.",
         "priceNote": "אין רכישה באתר כרגע",
         "includes": [
           "L Studio Pro לאנדרואיד ב Google Play, ‏24.90 ‏₪",
@@ -3497,7 +3497,7 @@
         "navLabel": "עדכונים",
         "pageTitle": "מה חדש בתוכנת L Studio?",
         "pageKicker": "L-STUDIO / עדכונים",
-        "pageIntro": "L Studio Pro זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, עם גרסה 1.16, שמביאה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, ושרשרת של עד ארבעה אפקטים. יש גם את Factory 64 המחודש, 33 מקצבים בערכה, Humanize, Ratchet וערכות תופים אישיות. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+        "pageIntro": "L Studio Pro זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, עם גרסה 1.17, שמביאה עיצוב חדש עם כפתורים ריאליסטיים ולוחות מתכת מוברשת, ושחזור יצרן לערכות תופים, לפריסטים או לשניהם. יש גם את ארבעת העולמות של Sound FX מגרסה 1.16, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, Factory 64 המחודש, 33 מקצבים בערכה, Humanize, Ratchet וערכות תופים אישיות. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
         "tickerLabel": "עדכונים",
         "statusLabels": {
           "in_progress": "בעבודה",
@@ -3511,11 +3511,32 @@
         },
         "items": [
           {
+            "id": "app-1-17",
+            "status": "shipped",
+            "title": "גרסה 1.17 זמינה עכשיו בחנות Google Play, עם עיצוב חדש",
+            "ticker": "גרסה 1.17 זמינה עכשיו בחנות Google Play, עם כפתורים ריאליסטיים, לוחות מתכת מוברשת, ושחזור יצרן לערכות תופים, לפריסטים או לשניהם",
+            "summary": "גרסה 1.17 זמינה עכשיו בחנות Google Play, ועודכנה ביום 24 בנובמבר 2026.",
+            "sections": [
+              {
+                "title": "מה חדש ב 1.17",
+                "bullets": [
+                  "עיצוב חדש: כפתורים ריאליסטיים, לוחות מתכת מוברשת, וכפתורי Sound גדולים יותר. כפתורי המיקסר בצבע של כל ערוץ.",
+                  "ב Looper וב Mic, הכפתורים S, M ו FX הם כובעי קונסולה, ו FX בזהב כשהוא פעיל.",
+                  "שחזור יצרן: Drum kits, Presets או את שניהם. הבנק Custom נשמר תמיד.",
+                  "עורך הגל יושב מתחת לשורת PRESET. סגרו אותו כדי לפתוח מקלדת שנייה.",
+                  "ב Bitcrusher, SMOOTH מחליק יותר כשמעלים אותו. סשנים ישנים נשמעים אותו דבר.",
+                  "לכל אפקט ב Sound FX נשמרים Rate ו SYNC משלו.",
+                  "תיקוני תצוגה ויציבות."
+                ]
+              }
+            ]
+          },
+          {
             "id": "app-1-16-sfx",
             "status": "shipped",
-            "title": "גרסה 1.16 זמינה עכשיו בחנות Google Play, עם ארבעה עולמות חדשים ב Sound FX",
-            "ticker": "גרסה 1.16 זמינה עכשיו בחנות Google Play, עם Analog Delay, Bitcrusher, Ring Mod וגם Granular, ושרשרת של עד ארבעה אפקטים",
-            "summary": "גרסה 1.16 זמינה עכשיו בחנות Google Play, ועודכנה ביום 19 בנובמבר 2026. היא מוסיפה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, ואפשר לשרשר עד ארבעה יחד. פריסטי Factory 64 עוצבו מחדש סביב האפקטים החדשים, ונוסף בנק Custom. בתופים יש עד 33 מקצבים בכל ערכה, עם Pan וגם Pitch בכל ערוץ, ואפשר להחליף ערכה תוך כדי נגינה. Auto בבחירת הסגנון קובע את BPM, Swing, Ratchet וגם Humanize. שורת הכניסה של המיקרופון מעצבת את ההקלטה, וערוץ לופר או מיקרופון נשמר כמו שהוא נשמע. בהגדרות יש עצירת חירום בשם Panic, וגם תיקוני תצוגה ויציבות.",
+            "title": "גרסה 1.16 עם ארבעה עולמות חדשים ב Sound FX",
+            "ticker": "גרסה 1.16 עם Analog Delay, Bitcrusher, Ring Mod וגם Granular, ושרשרת של עד ארבעה אפקטים",
+            "summary": "גרסה 1.16 עלתה לחנות Google Play ביום 19 בנובמבר 2026. היא מוסיפה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, ואפשר לשרשר עד ארבעה יחד. פריסטי Factory 64 עוצבו מחדש סביב האפקטים החדשים, ונוסף בנק Custom. בתופים יש עד 33 מקצבים בכל ערכה, עם Pan וגם Pitch בכל ערוץ, ואפשר להחליף ערכה תוך כדי נגינה. Auto בבחירת הסגנון קובע את BPM, Swing, Ratchet וגם Humanize. שורת הכניסה של המיקרופון מעצבת את ההקלטה, וערוץ לופר או מיקרופון נשמר כמו שהוא נשמע. בהגדרות יש עצירת חירום בשם Panic, וגם תיקוני תצוגה ויציבות.",
             "images": [
               "/assets/updates/116/analog-delay-w630.jpg",
               "/assets/updates/116/bitcrusher-w630.jpg",
@@ -3571,15 +3592,7 @@
                   "בתיקוני התצוגה והיציבות, חלון Sound וחלון Pad לא מתרוקנים כשהמקלדת העליונה פתוחה, מסכים קטנים גוללים במקום להיחתך, חלונות צרים לא קורסים, תוויות הקלידים נשארות בשורה אחת, וחלון הפתיחה כהה בלי הבזק לבן."
                 ]
               }
-            ],
-            "badge": "זמין בחנות"
-          },
-          {
-            "id": "app-1-17-restore",
-            "status": "upcoming",
-            "title": "בעדכון הבא, גרסה 1.17, שחזור נפרד לערכות תופים ולפריסטים",
-            "ticker": "בעדכון הבא, גרסה 1.17, בהגדרות שחזור Factory יאפשר לבחור ערכות תופים, פריסטים, או את שניהם. תיקיות Custom נשארות",
-            "summary": "בגרסה 1.17, לחיצה על כפתור השחזור של Factory בהגדרות תפתח שתי אפשרויות לסימון, ערכות תופים ופריסטים, כדי שאפשר יהיה לשחזר אחד מהם או את שניהם. תיקיות Custom נשמרות תמיד."
+            ]
           },
           {
             "id": "app-1-15-in-development",
@@ -3800,8 +3813,8 @@
                 },
                 "upd-wave-pages": {
                   "title": "4 דפים לכל גל",
-                  "text": "כל דף מוסיף עוד קול של אותו גל. דף 1 תמיד פועל, ודפים 2 עד 4 נדלקים ונכבים ב־ON ו־OFF. הכפתור DEFAULT מאפס את הדף שעל המסך.",
-                  "alt": "4 דפים לכל גל. כל דף מוסיף עוד קול של אותו גל. דף 1 תמיד פועל, ודפים 2 עד 4 נדלקים ונכבים ב־ON ו־OFF. הכפתור DEFAULT מאפס את הדף שעל המסך."
+                  "text": "כל דף מוסיף עוד קול של אותו גל. דף 1 תמיד פועל, ודפים 2 עד 4 נדלקים ונכבים ב ON ו OFF. הכפתור DEFAULT מאפס את הדף שעל המסך.",
+                  "alt": "4 דפים לכל גל. כל דף מוסיף עוד קול של אותו גל. דף 1 תמיד פועל, ודפים 2 עד 4 נדלקים ונכבים ב ON ו OFF. הכפתור DEFAULT מאפס את הדף שעל המסך."
                 },
                 "upd-wave-octave": {
                   "title": "אוקטבה לכל דף",
@@ -3810,13 +3823,13 @@
                 },
                 "upd-master-beginner": {
                   "title": "מאסטרינג למתחילים",
-                  "text": "בוחרים סגנון ולוחצים נגן כדי לשמוע מיד. A זה לפני, B זה הסגנון, ו־Match משווה את העוצמה. ואז Start mastering.",
-                  "alt": "מאסטרינג למתחילים. בוחרים סגנון ולוחצים נגן כדי לשמוע מיד. A זה לפני, B זה הסגנון, ו־Match משווה את העוצמה. ואז Start mastering."
+                  "text": "בוחרים סגנון ולוחצים נגן כדי לשמוע מיד. A זה לפני, B זה הסגנון, ו Match משווה את העוצמה. ואז Start mastering.",
+                  "alt": "מאסטרינג למתחילים. בוחרים סגנון ולוחצים נגן כדי לשמוע מיד. A זה לפני, B זה הסגנון, ו Match משווה את העוצמה. ואז Start mastering."
                 },
                 "upd-master-styles": {
                   "title": "8 סגנונות",
-                  "text": "מ־Sub Vault ועד Stream Peak, לכל סגנון צליל ויעד עוצמה משלו. האפליקציה מסמנת את הסגנון שהכי מתאים להקלטה. אפשר לשמור סגנון משלכם.",
-                  "alt": "8 סגנונות. מ־Sub Vault ועד Stream Peak, לכל סגנון צליל ויעד עוצמה משלו. האפליקציה מסמנת את הסגנון שהכי מתאים להקלטה. אפשר לשמור סגנון משלכם."
+                  "text": "מ Sub Vault ועד Stream Peak, לכל סגנון צליל ויעד עוצמה משלו. האפליקציה מסמנת את הסגנון שהכי מתאים להקלטה. אפשר לשמור סגנון משלכם.",
+                  "alt": "8 סגנונות. מ Sub Vault ועד Stream Peak, לכל סגנון צליל ויעד עוצמה משלו. האפליקציה מסמנת את הסגנון שהכי מתאים להקלטה. אפשר לשמור סגנון משלכם."
                 },
                 "upd-master-advanced": {
                   "title": "מצב מתקדם",
@@ -3830,8 +3843,8 @@
                 },
                 "upd-master-stereo": {
                   "title": "בדיקת סטריאו",
-                  "text": "רוחב ומתאם לכל השיר. Mono ו־Phone check משמיעים איך השיר יישמע ברמקול של טלפון.",
-                  "alt": "בדיקת סטריאו. רוחב ומתאם לכל השיר. Mono ו־Phone check משמיעים איך השיר יישמע ברמקול של טלפון."
+                  "text": "רוחב ומתאם לכל השיר. Mono ו Phone check משמיעים איך השיר יישמע ברמקול של טלפון.",
+                  "alt": "בדיקת סטריאו. רוחב ומתאם לכל השיר. Mono ו Phone check משמיעים איך השיר יישמע ברמקול של טלפון."
                 },
                 "upd-master-saved": {
                   "title": "המאסטר נשמר",
@@ -4074,59 +4087,24 @@
         "slide": "שקופית {n} מתוך {total}",
         "slides": {
           "sound-01": {
-            "title": "שישה עשר עולמות",
-            "text": "עד ארבעה בשרשרת",
-            "alt": "שישה עשר עולמות. עד ארבעה בשרשרת."
-          },
-          "sound-02": {
             "title": "כפתורי האפקט",
             "text": "לחצו ארוכות על עולם",
             "alt": "כפתורי האפקט. לחצו ארוכות על עולם."
           },
-          "sound-03": {
-            "title": "FM אמיתי",
-            "text": "ארבעה אופרטורים",
-            "alt": "FM אמיתי. ארבעה אופרטורים."
-          },
-          "sound-04": {
+          "sound-02": {
             "title": "בחרו סולם,",
             "text": "הקישו על סולם ירוק",
             "alt": "בחרו סולם, הקישו על סולם ירוק."
           },
-          "sound-05": {
-            "title": "הקלידו הרץ משלכם,",
-            "text": "או בחרו סולם מוכן",
-            "alt": "הקלידו הרץ משלכם, או בחרו סולם מוכן."
-          },
-          "sound-06": {
-            "title": "לוח הגל",
-            "text": "לחצו ארוכות על גל",
-            "alt": "לוח הגל. לחצו ארוכות על גל."
-          },
-          "sound-07": {
+          "sound-03": {
             "title": "שתי מקלדות",
             "text": "הקישו על הפלוס",
             "alt": "שתי מקלדות. הקישו על הפלוס."
           },
-          "sound-08": {
-            "title": "Analog Delay",
-            "text": "הדים חמים שמתכהים בכל חזרה",
-            "alt": "Analog Delay. הדים חמים שמתכהים בכל חזרה."
-          },
-          "sound-09": {
-            "title": "Bitcrusher",
-            "text": "פחות ביטים לצליל מחוספס",
-            "alt": "Bitcrusher. פחות ביטים לצליל מחוספס."
-          },
-          "sound-10": {
-            "title": "Ring Mod",
-            "text": "צלצול מתכתי כמו פעמון",
-            "alt": "Ring Mod. צלצול מתכתי כמו פעמון."
-          },
-          "sound-11": {
-            "title": "Granular",
-            "text": "ענני גרגרים עם FREEZE",
-            "alt": "Granular. ענני גרגרים עם FREEZE."
+          "sound-04": {
+            "title": "שישה עשר עולמות",
+            "text": "עד ארבעה בשרשרת",
+            "alt": "שישה עשר עולמות. עד ארבעה בשרשרת."
           },
           "mic-01": {
             "title": "הקלטת Mic",
@@ -4154,24 +4132,28 @@
             "alt": "Looper. שמונה עמודים."
           },
           "loop-02": {
-            "title": "אפקטי Looper",
-            "text": "שמונה פריסטים",
-            "alt": "אפקטי Looper. שמונה פריסטים."
-          },
-          "loop-03": {
             "title": "עורך לולאות",
             "text": "חיתוך ולולאה",
             "alt": "עורך לולאות. חיתוך ולולאה."
           },
-          "loop-04": {
+          "loop-03": {
             "title": "מיקסר אנלוגי",
             "text": "ערוצים ומאסטר",
             "alt": "מיקסר אנלוגי. ערוצים ומאסטר."
+          },
+          "loop-04": {
+            "title": "אפקטי Looper",
+            "text": "שמונה פריסטים",
+            "alt": "אפקטי Looper. שמונה פריסטים."
           },
           "pad-01": {
             "title": "משטח נגינה חי",
             "text": "גוררים והצליל עוקב",
             "alt": "משטח נגינה חי. גוררים והצליל עוקב."
+          },
+          "pad-02": {
+            "title": "פדלי המשטח",
+            "alt": "פדלי המשטח."
           },
           "drum-01": {
             "title": "כל שמונה השורות",
@@ -4179,9 +4161,8 @@
             "alt": "כל שמונה השורות. פלוס ומינוס."
           },
           "drum-02": {
-            "title": "אפקטי Drum",
-            "text": "שמונה פריסטים",
-            "alt": "אפקטי Drum. שמונה פריסטים."
+            "title": "קצבים לפי ז׳אנר",
+            "alt": "קצבים לפי ז׳אנר."
           },
           "drum-03": {
             "title": "בנקי דגימות",
@@ -4193,53 +4174,45 @@
             "text": "חותכים ושומרים",
             "alt": "הדגימות שלכם. חותכים ושומרים."
           },
-          "drum-05": {
-            "title": "קצבים לפי ז׳אנר",
-            "alt": "קצבים לפי ז׳אנר."
-          },
-          "pad-02": {
-            "title": "פדלי המשטח",
-            "alt": "פדלי המשטח."
-          },
           "home-sound": {
-            "title": "עצבו את הסאונד",
-            "text": "עורך הגל, פדאל ססטיין, Drive, והחזקה על PRESETS לשמירה.",
-            "alt": "1/8: עצבו את הסאונד. עורך הגל, פדאל ססטיין, Drive, והחזקה על PRESETS לשמירה."
-          },
-          "home-looper": {
-            "title": "שכבו לופים",
-            "text": "לופר לבמה ועורך לופ עם חיתוך וגם EQ.",
-            "alt": "4/8: שכבו לופים. לופר לבמה ועורך לופ עם חיתוך וגם EQ."
-          },
-          "home-drums": {
-            "title": "בנו את הביט",
-            "text": "Humanize, Ratchet, 16 סגנונות Random Genre, וערכות Exclusive או Custom.",
-            "alt": "5/8: בנו את הביט. Humanize, Ratchet, 16 סגנונות Random Genre, וערכות Exclusive או Custom."
-          },
-          "home-mixer": {
-            "title": "המיקסר האנלוגי שלכם",
-            "text": "ארבעה פסים ל Drums, Looper, Mic וגם Master, עם Spectrum וגם Mix Map.",
-            "alt": "7/8: המיקסר האנלוגי שלכם. ארבעה פסים ל Drums, Looper, Mic וגם Master, עם Spectrum וגם Mix Map."
+            "title": "עיצוב סאונד.",
+            "text": "שתי מקלדות, המלצה על סולם מתאים.",
+            "alt": "1/8: עיצוב סאונד. שתי מקלדות, המלצה על סולם מתאים."
           },
           "home-sound-fx": {
-            "title": "שישה עשר עולמות FX",
-            "text": "16 עולמות אפקטים בשני עמודים, עד ארבעה בשרשרת, עם SYNC לתופים.",
-            "alt": "2/8: שישה עשר עולמות FX. 16 עולמות אפקטים בשני עמודים, עד ארבעה בשרשרת, עם SYNC לתופים."
-          },
-          "home-pad": {
-            "title": "נגנו בלייב",
-            "text": "מזיז KEY, MIC, LOOP או DRUM, ובנוסף SUB, WARM, VIBE ומקלדת שנייה.",
-            "alt": "3/8: נגנו בלייב. מזיז KEY, MIC, LOOP או DRUM, ובנוסף SUB, WARM, VIBE ומקלדת שנייה."
+            "title": "16 עולמות אפקטים. עד ארבעה במקביל.",
+            "text": "הקשה מוסיפה לשרשרת. לחיצה ארוכה פותחת כפתורים וגם EQ",
+            "alt": "2/8: 16 עולמות אפקטים. עד ארבעה במקביל. הקשה מוסיפה לשרשרת. לחיצה ארוכה פותחת כפתורים וגם EQ"
           },
           "home-mic": {
-            "title": "שירו והקליטו",
-            "text": "שישה ערוצים, Gain, HPF, Gate וגם Comp, מילים, וגם 8 פריסטים של Mic FX.",
-            "alt": "6/8: שירו והקליטו. שישה ערוצים, Gain, HPF, Gate וגם Comp, מילים, וגם 8 פריסטים של Mic FX."
+            "title": "הקליטו שירה וכלי נגינה.",
+            "text": "טלפרומפטר, כיוון Eq ואפקטים",
+            "alt": "3/8: הקליטו שירה וכלי נגינה. טלפרומפטר, כיוון Eq ואפקטים"
           },
-          "home-mastering": {
-            "title": "סיימו את הטראק",
-            "text": "עוצמת LUFS, אינטנסיביות, רוחב סטריאו, Mono, Phone check, A/B וייצוא.",
-            "alt": "8/8: סיימו את הטראק. עוצמת LUFS, אינטנסיביות, רוחב סטריאו, Mono, Phone check, A/B וייצוא."
+          "home-looper": {
+            "title": "לופר 32 ערוצים.",
+            "text": "כיוון Eq, עריכה ואפקטים.",
+            "alt": "4/8: לופר 32 ערוצים. כיוון Eq, עריכה ואפקטים."
+          },
+          "home-pad": {
+            "title": "פאד שליטה ועיצוב סאונד.",
+            "text": "שליטה בתופים, לופר, מיק, והמקלדת בחלון אחד.",
+            "alt": "5/8: פאד שליטה ועיצוב סאונד. שליטה בתופים, לופר, מיק, והמקלדת בחלון אחד."
+          },
+          "home-drums": {
+            "title": "מערכת תופים חכמה.",
+            "text": "16 סגנונות וכפתור רנדומלי שבונה מקצבים לפי הז'אנר",
+            "alt": "6/8: מערכת תופים חכמה. 16 סגנונות וכפתור רנדומלי שבונה מקצבים לפי הז'אנר"
+          },
+          "home-samples": {
+            "title": "3696 סמפלים אופליין.",
+            "text": "דגימות לפי סגנונות לכל ערוץ, כולל חבילות תופים מוכנות מראש.",
+            "alt": "7/8: 3696 סמפלים אופליין. דגימות לפי סגנונות לכל ערוץ, כולל חבילות תופים מוכנות מראש."
+          },
+          "home-mix-mastering": {
+            "title": "מיקס ומאסטרינג.",
+            "text": "מיקסר אנלוגי ומאסטרינג למתחילים ומתקדמים",
+            "alt": "8/8: מיקס ומאסטרינג. מיקסר אנלוגי ומאסטרינג למתחילים ומתקדמים"
           }
         }
       }
@@ -4259,7 +4232,7 @@
         "updates": "Updates"
       },
       "hero": {
-        "kicker": "Android music app · Version 1.16, on Google Play now",
+        "kicker": "Android music app · Version 1.17, on Google Play now",
         "title": "Make music on your phone.",
         "body": "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.",
         "ctaPrimary": "Watch the short",
@@ -4279,7 +4252,7 @@
         "note": "All inside L-Studio"
       },
       "story": {
-        "kicker": "01 / THE EIGHTH NOTE",
+        "kicker": "02 / THE EIGHTH NOTE",
         "title": "It all started with a note that wasn't there.",
         "body": [
           "There's do, re, mi, fa, sol, la and si.",
@@ -4294,12 +4267,12 @@
         "closing": "What started as a search for the eighth note became L-Studio."
       },
       "featuresIntro": {
-        "kicker": "02 / PLAY WITH SOUND",
+        "kicker": "03 / PLAY WITH SOUND",
         "title": "Just open it and play.",
         "body": "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens."
       },
       "underHood": {
-        "kicker": "03 / UNDER THE HOOD",
+        "kicker": "04 / UNDER THE HOOD",
         "title": "There's a lot going on behind the scenes.",
         "body": "L-Studio was built to give you control over sound without forcing you to learn a giant system. The keys, the sound, the effects, the microphone, the looper, the pad and the drums all work inside the same app. You can also manually tune the frequency of every key and build your keyboard your way.",
         "closing": "The complexity lives in the engine. Not in the way you have to use it.",
@@ -4541,7 +4514,7 @@
         ]
       },
       "justStart": {
-        "kicker": "04 / JUST START",
+        "kicker": "05 / JUST START",
         "title": "There's a lot to do. You don't need to know it all.",
         "body": [
           "When you open music software for the first time, the first thing you might feel is that there's too much going on.",
@@ -4562,7 +4535,7 @@
         "drumsCta": "Drum kits"
       },
       "vision": {
-        "kicker": "05 / THE VISION",
+        "kicker": "01 / THE VISION",
         "title": "I built the app I needed.",
         "author": "David Chatam, L-Studio developer",
         "body": [
@@ -4597,7 +4570,7 @@
           {
             "question": "Is L Studio on Google Play yet, and how much is it?",
             "answer": [
-              "L Studio Pro for Android is available now on Google Play, for $8, one time, with no subscription and no in-app purchases. The current version is 1.16. It brings four new Sound FX worlds (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 presets with a Custom bank, and up to 33 rhythms in every drum kit. New versions arrive as automatic updates through Google Play once they are approved.",
+              "L Studio Pro for Android is available now on Google Play, for $8, one time, with no subscription and no in-app purchases. The current version is 1.17. It has a new look with realistic knobs and brushed metal panels, and builds on 1.16, which brought four new Sound FX worlds (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 presets with a Custom bank, and up to 33 rhythms in every drum kit. New versions arrive as automatic updates through Google Play once they are approved.",
               "You buy it through Google Play. This website does not sell the app and has no download button."
             ]
           },
@@ -4612,7 +4585,7 @@
           {
             "question": "Which devices does it run on, and in which languages?",
             "answer": [
-              "L Studio is an Android app. It needs Android 7.0 or newer. Version 1.16 is 161.7 MB. There is no iPhone version for now.",
+              "L Studio is an Android app. It needs Android 7.0 or newer. There is no iPhone version for now.",
               "It was tested on various Android phones. It was not tested on tablets, so tablet support is not promised.",
               "On a phone the app stays upright, in portrait.",
               "The app comes in four languages: English, Hebrew, Russian, and Arabic. You switch in Settings, on the Language row."
@@ -4649,7 +4622,7 @@
             "answer": [
               "The Analog Mixer opens with a tap on LIVE SCOPE at the top of the screen. Drums, Looper, and Mic each have a strip with Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S, and a fader. The Master strip works on the whole mix. SPECTRUM and MIX MAP show where the channels sit and where they clash. There are 8 presets.",
               "The Mastering window finishes a WAV recording or an imported song for streaming. In Beginner, pick one of 8 styles, listen to A (before) and B (the style), then tap Start mastering and export. Advanced opens Tone, Dynamics, Stereo and Loudness, with your own LUFS target. It opens after a WAV recording (Master this take) or from MASTERING in Settings.",
-              "Both are part of version 1.16 on Google Play."
+              "Both are part of version 1.17 on Google Play."
             ]
           },
           {
@@ -7706,7 +7679,7 @@
         "titleLead": "Get L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro for Android is available now on Google Play, for $8. Purchases are not available on this website right now.",
-        "body": "L Studio Pro for Android is available now on Google Play, for $8, one time, with version 1.16, 161.7 MB. It brings four new Sound FX worlds (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 presets with a Custom bank, and up to 33 rhythms in every drum kit, on top of genre-based beats, Humanize, Ratchet, the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved. Whoever buys Pro also gets the Exclusive pack at no extra cost, and there is no download button. This website is not taking payment for it right now.",
+        "body": "L Studio Pro for Android is available now on Google Play, for $8, one time, with version 1.17, which has a new look with realistic knobs and brushed metal panels. It also has four new Sound FX worlds (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 presets with a Custom bank, and up to 33 rhythms in every drum kit, on top of genre-based beats, Humanize, Ratchet, the Analog Mixer and the Mastering window. New versions arrive as automatic updates through Google Play once they are approved. Whoever buys Pro also gets the Exclusive pack at no extra cost, and there is no download button. This website is not taking payment for it right now.",
         "priceNote": "Not for sale on this site",
         "includes": [
           "L Studio Pro for Android on Google Play, $8",
@@ -7741,7 +7714,7 @@
         "navLabel": "Updates",
         "pageTitle": "What's new in L Studio?",
         "pageKicker": "L-STUDIO / UPDATES",
-        "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.16, which brings four new Sound FX worlds, Analog Delay, Bitcrusher, Ring Mod and Granular, and a chain of up to four effects, on top of the redesigned Factory 64, 33 rhythms per kit, Humanize, Ratchet and Custom drum kits. New versions arrive as automatic updates through Google Play once they are approved.",
+        "pageIntro": "L Studio Pro is available now on Google Play, for $8, with version 1.17, which brings a new look with realistic knobs and brushed metal panels, and a Factory restore for drum kits, presets, or both, on top of the four Sound FX worlds from 1.16, Analog Delay, Bitcrusher, Ring Mod and Granular, a chain of up to four effects, the redesigned Factory 64, 33 rhythms per kit, Humanize, Ratchet and Custom drum kits. New versions arrive as automatic updates through Google Play once they are approved.",
         "tickerLabel": "Updates",
         "statusLabels": {
           "in_progress": "In progress",
@@ -7755,11 +7728,32 @@
         },
         "items": [
           {
+            "id": "app-1-17",
+            "status": "shipped",
+            "title": "On Google Play now: version 1.17 with a new look",
+            "ticker": "On Google Play now: version 1.17, realistic knobs, brushed metal panels, and Factory restore for drum kits, presets, or both",
+            "summary": "Version 1.17 is on Google Play now (updated Nov 24, 2026).",
+            "sections": [
+              {
+                "title": "What's new in 1.17",
+                "bullets": [
+                  "New look: realistic knobs, brushed metal panels, larger Sound knobs. Mixer knobs use each channel's color.",
+                  "Looper and Mic S, M and FX are console caps; FX is gold when on.",
+                  "Factory restore: Drum kits, Presets, or both. Your Custom bank is always kept.",
+                  "Wave editor sits under the preset row. Close it to open a second keyboard.",
+                  "Bitcrusher SMOOTH gets smoother as you raise it. Older sessions sound the same.",
+                  "Each Sound FX effect keeps its own Rate and SYNC.",
+                  "Display and stability fixes."
+                ]
+              }
+            ]
+          },
+          {
             "id": "app-1-16-sfx",
             "status": "shipped",
-            "title": "On Google Play now: version 1.16 with four new Sound FX worlds",
-            "ticker": "On Google Play now: version 1.16, Analog Delay, Bitcrusher, Ring Mod and Granular, in a chain of up to four effects",
-            "summary": "Version 1.16 is on Google Play now (updated Nov 19, 2026). It adds four Sound FX worlds: Analog Delay, Bitcrusher, Ring Mod and Granular, and you can chain up to four at once. Factory 64 presets were redesigned for the new effects, and a Custom bank was added. Drums now have up to 33 rhythms per kit, Pan and Pitch on every channel, and kit switching while playing. Auto in the genre picker sets BPM, Swing, Ratchet and Humanize. The mic input row now shapes the recording, and a loop or mic channel can be saved as you hear it. Panic is in Settings, along with display and stability fixes.",
+            "title": "Version 1.16 with four new Sound FX worlds",
+            "ticker": "Version 1.16: Analog Delay, Bitcrusher, Ring Mod and Granular, in a chain of up to four effects",
+            "summary": "Version 1.16 came to Google Play on Nov 19, 2026. It adds four Sound FX worlds: Analog Delay, Bitcrusher, Ring Mod and Granular, and you can chain up to four at once. Factory 64 presets were redesigned for the new effects, and a Custom bank was added. Drums now have up to 33 rhythms per kit, Pan and Pitch on every channel, and kit switching while playing. Auto in the genre picker sets BPM, Swing, Ratchet and Humanize. The mic input row now shapes the recording, and a loop or mic channel can be saved as you hear it. Panic is in Settings, along with display and stability fixes.",
             "images": [
               "/assets/updates/116/analog-delay-w630.jpg",
               "/assets/updates/116/bitcrusher-w630.jpg",
@@ -7815,15 +7809,7 @@
                   "Display and stability fixes: Sound and Pad no longer go empty with the upper keyboard open, small screens scroll instead of clipping, narrow windows no longer crash, key labels stay on one line, and the startup window is dark with no white flash."
                 ]
               }
-            ],
-            "badge": "Available on Google Play"
-          },
-          {
-            "id": "app-1-17-restore",
-            "status": "upcoming",
-            "title": "In the next update, version 1.17: restore drum kits and presets separately",
-            "ticker": "Next update, version 1.17: in Settings, Factory restore lets you choose drum kits, presets, or both. Custom folders are kept",
-            "summary": "In version 1.17, the Factory restore button in Settings will open two options you can tick, drum kits and presets, so you can restore one or both. Your Custom folders are always kept."
+            ]
           },
           {
             "id": "app-1-15-in-development",
@@ -8318,59 +8304,24 @@
         "slide": "Slide {n} of {total}",
         "slides": {
           "sound-01": {
-            "title": "Sixteen worlds.",
-            "text": "Chain up to four.",
-            "alt": "Sixteen worlds. Chain up to four."
-          },
-          "sound-02": {
             "title": "Effect knobs.",
             "text": "Long press a world.",
             "alt": "Effect knobs. Long press a world."
           },
-          "sound-03": {
-            "title": "Real FM.",
-            "text": "Four operators.",
-            "alt": "Real FM. Four operators."
-          },
-          "sound-04": {
+          "sound-02": {
             "title": "Pick a scale.",
             "text": "Tap a green scale.",
             "alt": "Pick a scale. Tap a green scale."
           },
-          "sound-05": {
-            "title": "Type your own Hz.",
-            "text": "Pick a ready scale.",
-            "alt": "Type your own Hz. Pick a ready scale."
-          },
-          "sound-06": {
-            "title": "Wave panel.",
-            "text": "Hold a wave key.",
-            "alt": "Wave panel. Hold a wave key."
-          },
-          "sound-07": {
+          "sound-03": {
             "title": "Two keyboards.",
             "text": "Tap the plus.",
             "alt": "Two keyboards. Tap the plus."
           },
-          "sound-08": {
-            "title": "Analog Delay",
-            "text": "Warm echoes, darker each repeat.",
-            "alt": "Analog Delay. Warm echoes, darker each repeat."
-          },
-          "sound-09": {
-            "title": "Bitcrusher",
-            "text": "Fewer bits, gritty lo-fi.",
-            "alt": "Bitcrusher. Fewer bits, gritty lo-fi."
-          },
-          "sound-10": {
-            "title": "Ring Mod",
-            "text": "Metallic, bell-like ring.",
-            "alt": "Ring Mod. Metallic, bell-like ring."
-          },
-          "sound-11": {
-            "title": "Granular",
-            "text": "Grain clouds with FREEZE.",
-            "alt": "Granular. Grain clouds with FREEZE."
+          "sound-04": {
+            "title": "Sixteen worlds.",
+            "text": "Chain up to four.",
+            "alt": "Sixteen worlds. Chain up to four."
           },
           "mic-01": {
             "title": "Mic recording.",
@@ -8398,24 +8349,28 @@
             "alt": "Looper. Eight pages."
           },
           "loop-02": {
-            "title": "Looper FX.",
-            "text": "Eight FX presets.",
-            "alt": "Looper FX. Eight FX presets."
-          },
-          "loop-03": {
             "title": "Loop editor.",
             "text": "Trim, loop, EQ.",
             "alt": "Loop editor. Trim, loop, EQ."
           },
-          "loop-04": {
+          "loop-03": {
             "title": "Analog mixer.",
             "text": "Drive, EQ, a fader.",
             "alt": "Analog mixer. Drive, EQ, a fader."
+          },
+          "loop-04": {
+            "title": "Looper FX.",
+            "text": "Eight FX presets.",
+            "alt": "Looper FX. Eight FX presets."
           },
           "pad-01": {
             "title": "Live pad.",
             "text": "The sound follows.",
             "alt": "Live pad. The sound follows."
+          },
+          "pad-02": {
+            "title": "Pad pedals.",
+            "alt": "Pad pedals."
           },
           "drum-01": {
             "title": "All eight rows.",
@@ -8423,9 +8378,8 @@
             "alt": "All eight rows. Tap plus or minus."
           },
           "drum-02": {
-            "title": "Drum FX.",
-            "text": "Eight drum presets.",
-            "alt": "Drum FX. Eight drum presets."
+            "title": "Rhythms by genre.",
+            "alt": "Rhythms by genre."
           },
           "drum-03": {
             "title": "Sample banks.",
@@ -8437,53 +8391,45 @@
             "text": "Trim, save, rename.",
             "alt": "Your own samples. Trim, save, rename."
           },
-          "drum-05": {
-            "title": "Rhythms by genre.",
-            "alt": "Rhythms by genre."
-          },
-          "pad-02": {
-            "title": "Pad pedals.",
-            "alt": "Pad pedals."
-          },
           "home-sound": {
-            "title": "Shape your sound",
-            "text": "Wave editor, sustain pedal, Drive, and hold PRESETS to save.",
-            "alt": "1/8: Shape your sound. Wave editor, sustain pedal, Drive, and hold PRESETS to save."
-          },
-          "home-looper": {
-            "title": "Layer your loops",
-            "text": "Stage-safe looper and a Loop Editor with trim and EQ.",
-            "alt": "4/8: Layer your loops. Stage-safe looper and a Loop Editor with trim and EQ."
-          },
-          "home-drums": {
-            "title": "Build your beat",
-            "text": "Humanize, Ratchet, 16 Random Genre styles, and Exclusive or Custom kits.",
-            "alt": "5/8: Build your beat. Humanize, Ratchet, 16 Random Genre styles, and Exclusive or Custom kits."
-          },
-          "home-mixer": {
-            "title": "Your analog mixer",
-            "text": "Four strips for Drums, Looper, Mic and Master, with Spectrum and Mix Map.",
-            "alt": "7/8: Your analog mixer. Four strips for Drums, Looper, Mic and Master, with Spectrum and Mix Map."
+            "title": "Design your sound.",
+            "text": "Two keyboards and a matching scale suggestion.",
+            "alt": "1/8: Design your sound. Two keyboards and a matching scale suggestion."
           },
           "home-sound-fx": {
-            "title": "Sixteen FX worlds",
-            "text": "16 effect worlds on 2 pages. Chain up to four, with SYNC to the drums.",
-            "alt": "2/8: Sixteen FX worlds. 16 effect worlds on 2 pages. Chain up to four, with SYNC to the drums."
-          },
-          "home-pad": {
-            "title": "Play it live",
-            "text": "Move KEY, MIC, LOOP or DRUM, plus SUB, WARM, VIBE and a second keyboard.",
-            "alt": "3/8: Play it live. Move KEY, MIC, LOOP or DRUM, plus SUB, WARM, VIBE and a second keyboard."
+            "title": "16 effect worlds. Up to four at once.",
+            "text": "Sound FX: tap to chain, long-press for knobs and EQ.",
+            "alt": "2/8: 16 effect worlds. Up to four at once. Sound FX: tap to chain, long-press for knobs and EQ."
           },
           "home-mic": {
-            "title": "Sing and record",
-            "text": "Six channels, Gain, HPF, Gate and Comp, Lyrics, and 8 Mic FX presets.",
-            "alt": "6/8: Sing and record. Six channels, Gain, HPF, Gate and Comp, Lyrics, and 8 Mic FX presets."
+            "title": "Sing, play and record.",
+            "text": "Teleprompter, EQ adjustment and effects.",
+            "alt": "3/8: Sing, play and record. Teleprompter, EQ adjustment and effects."
           },
-          "home-mastering": {
-            "title": "Finish your track",
-            "text": "LUFS loudness, intensity, stereo width, Mono, Phone check, A/B and Export.",
-            "alt": "8/8: Finish your track. LUFS loudness, intensity, stereo width, Mono, Phone check, A/B and Export."
+          "home-looper": {
+            "title": "Looper with 32 channels.",
+            "text": "EQ adjustment, editing and effects.",
+            "alt": "4/8: Looper with 32 channels. EQ adjustment, editing and effects."
+          },
+          "home-pad": {
+            "title": "Pad and sound design.",
+            "text": "Control drums, looper, mic and the keyboard in one window.",
+            "alt": "5/8: Pad and sound design. Control drums, looper, mic and the keyboard in one window."
+          },
+          "home-drums": {
+            "title": "A smart drum system.",
+            "text": "16 styles and a RANDOM button that builds beats by genre.",
+            "alt": "6/8: A smart drum system. 16 styles and a RANDOM button that builds beats by genre."
+          },
+          "home-samples": {
+            "title": "3696 samples, offline.",
+            "text": "Samples by style for every channel, including prebuilt drum packs.",
+            "alt": "7/8: 3696 samples, offline. Samples by style for every channel, including prebuilt drum packs."
+          },
+          "home-mix-mastering": {
+            "title": "Mixing and mastering.",
+            "text": "An analog mixer and mastering for beginners and advanced users.",
+            "alt": "8/8: Mixing and mastering. An analog mixer and mastering for beginners and advanced users."
           }
         }
       }
@@ -8503,7 +8449,7 @@
         "updates": "Обновления"
       },
       "hero": {
-        "kicker": "Музыкальное приложение для Android · Версия 1.16, уже в Google Play",
+        "kicker": "Музыкальное приложение для Android · Версия 1.17, уже в Google Play",
         "title": "Создавай музыку на телефоне.",
         "body": "L Studio это приложение для создания музыки на телефоне с Android. Записывай лупы, добавляй барабаны, пой, глядя на текст песни, а если хочется выйти за привычные ноты, настрой для каждой клавиши свою частоту.",
         "ctaPrimary": "Смотреть короткое видео",
@@ -8523,7 +8469,7 @@
         "note": "Всё внутри L-Studio"
       },
       "story": {
-        "kicker": "01 / THE EIGHTH NOTE",
+        "kicker": "02 / THE EIGHTH NOTE",
         "title": "Всё началось с ноты, которой не было.",
         "body": [
           "Есть до, ре, ми, фа, соль, ля и си.",
@@ -8538,12 +8484,12 @@
         "closing": "То, что началось с поиска восьмой ноты, стало L-Studio."
       },
       "featuresIntro": {
-        "kicker": "02 / PLAY WITH SOUND",
+        "kicker": "03 / PLAY WITH SOUND",
         "title": "Просто открыть и играть.",
         "body": "Не нужно знать музыку, чтобы начать. Открываешь, трогаешь, меняешь, слушаешь и смотришь, что получится."
       },
       "underHood": {
-        "kicker": "03 / ПОД КАПОТОМ",
+        "kicker": "04 / ПОД КАПОТОМ",
         "title": "За кулисами происходит многое.",
         "body": "L-Studio создана, чтобы дать контроль над звуком, не заставляя изучать огромную систему. Клавиши, звук, эффекты, микрофон, лупер, пэд и барабаны работают внутри одного приложения. Можно также вручную настроить частоту каждой клавиши и построить клавиатуру по-своему.",
         "closing": "Сложность живёт в движке. Не в том, как им пользоваться.",
@@ -8785,7 +8731,7 @@
         ]
       },
       "justStart": {
-        "kicker": "04 / JUST START",
+        "kicker": "05 / JUST START",
         "title": "Здесь есть чем заняться. Не нужно знать всё сразу.",
         "body": [
           "Когда впервые открываешь музыкальную программу, первое, что чувствуешь, это слишком много всего.",
@@ -8806,7 +8752,7 @@
         "drumsCta": "Барабаны"
       },
       "vision": {
-        "kicker": "05 / ВИДЕНИЕ",
+        "kicker": "01 / ВИДЕНИЕ",
         "title": "Я сделал приложение, которое было нужно мне самому.",
         "author": "Давид Хатам, разработчик L-Studio",
         "body": [
@@ -8841,7 +8787,7 @@
           {
             "question": "L Studio уже в Google Play? И сколько стоит?",
             "answer": [
-              "L Studio Pro для Android уже доступен в Google Play, за $8, одной покупкой, без подписки и без встроенных покупок. Текущая версия 1.16. В ней четыре новых мира Sound FX (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённые пресеты Factory 64 с банком Custom и до 33 ритмов в каждом наборе ударных. Новые версии приходят автоматическими обновлениями через Google Play после одобрения.",
+              "L Studio Pro для Android уже доступен в Google Play, за $8, одной покупкой, без подписки и без встроенных покупок. Текущая версия 1.17. В ней новый вид с реалистичными ручками и панелями из шлифованного металла, а из версии 1.16 в ней четыре мира Sound FX (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённые пресеты Factory 64 с банком Custom и до 33 ритмов в каждом наборе ударных. Новые версии приходят автоматическими обновлениями через Google Play после одобрения.",
               "Купить приложение можно через Google Play. Этот сайт не продаёт приложение, и кнопки скачивания здесь нет."
             ]
           },
@@ -8856,7 +8802,7 @@
           {
             "question": "На каких устройствах работает и на каких языках?",
             "answer": [
-              "L Studio это приложение для Android. Нужен Android 7.0 или новее. Версия 1.16 весит 161.7 МБ. Версии для iPhone пока нет.",
+              "L Studio это приложение для Android. Нужен Android 7.0 или новее. Версии для iPhone пока нет.",
               "Приложение проверялось на разных телефонах с Android. На планшетах оно не проверялось, поэтому поддержка планшетов не обещается.",
               "На телефоне приложение остаётся вертикальным, в портретной ориентации.",
               "Приложение на четырёх языках: английском, иврите, русском и арабском. Язык меняется в Settings, в строке Language."
@@ -8893,7 +8839,7 @@
             "answer": [
               "Аналоговый микшер открывается нажатием на LIVE SCOPE вверху экрана. У Drums, Looper и Mic есть канал с Drive, HPF, High, Mid, Low, Comp, Pan, Width, M, S и фейдером. Канал Master работает со всем миксом. SPECTRUM и MIX MAP показывают, где звучат каналы и где они мешают друг другу. Есть 8 пресетов.",
               "Окно мастеринга доводит запись WAV или импортированную песню до стриминга. В Beginner выберите один из 8 стилей, послушайте A (до) и B (стиль), затем нажмите Start mastering и экспортируйте. Advanced открывает Tone, Dynamics, Stereo и Loudness со своей целью LUFS. Окно открывается после записи WAV (Master this take) или из MASTERING в Settings.",
-              "Оба входят в версию 1.16 в Google Play."
+              "Оба входят в версию 1.17 в Google Play."
             ]
           },
           {
@@ -11950,7 +11896,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro для Android уже доступен в Google Play, за $8. Покупки на этом сайте сейчас недоступны.",
-        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, одной покупкой, с версией 1.16, 161.7 МБ. В ней четыре новых мира Sound FX (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённые пресеты Factory 64 с банком Custom и до 33 ритмов в каждом наборе ударных, в дополнение к битам по жанрам, Humanize, Ratchet, Analog Mixer и окну мастеринга. Новые версии приходят автоматическими обновлениями через Google Play после одобрения. Кто покупает Pro, получает и пак Exclusive без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает оплату.",
+        "body": "L Studio Pro для Android уже доступен в Google Play, за $8, одной покупкой, с версией 1.17, в которой новый вид с реалистичными ручками и панелями из шлифованного металла. В ней также четыре мира Sound FX (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённые пресеты Factory 64 с банком Custom и до 33 ритмов в каждом наборе ударных, в дополнение к битам по жанрам, Humanize, Ratchet, Analog Mixer и окну мастеринга. Новые версии приходят автоматическими обновлениями через Google Play после одобрения. Кто покупает Pro, получает и пак Exclusive без доплаты, и кнопки скачивания нет. Этот сайт сейчас не принимает оплату.",
         "priceNote": "На сайте сейчас не продаётся",
         "includes": [
           "L Studio Pro для Android в Google Play, $8",
@@ -11985,7 +11931,7 @@
         "navLabel": "Обновления",
         "pageTitle": "Что нового в L Studio?",
         "pageKicker": "L-STUDIO / ОБНОВЛЕНИЯ",
-        "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.16, в которой есть четыре новых мира Sound FX: Analog Delay, Bitcrusher, Ring Mod и Granular, и цепочка до четырёх эффектов, а также обновлённый Factory 64, 33 ритма в наборе, Humanize, Ratchet и пользовательские наборы ударных. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
+        "pageIntro": "L Studio Pro уже доступен в Google Play, за $8, с версией 1.17, в которой новый вид с реалистичными ручками и панелями из шлифованного металла и восстановление Factory для наборов ударных, пресетов или обоих, а также четыре мира Sound FX из версии 1.16: Analog Delay, Bitcrusher, Ring Mod и Granular, цепочка до четырёх эффектов, обновлённый Factory 64, 33 ритма в наборе, Humanize, Ratchet и пользовательские наборы ударных. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
         "tickerLabel": "Обновления",
         "statusLabels": {
           "in_progress": "В работе",
@@ -11999,11 +11945,32 @@
         },
         "items": [
           {
+            "id": "app-1-17",
+            "status": "shipped",
+            "title": "Теперь в Google Play: версия 1.17 с новым видом",
+            "ticker": "Теперь в Google Play: версия 1.17, реалистичные ручки, панели из шлифованного металла и восстановление Factory для наборов ударных, пресетов или обоих",
+            "summary": "Версия 1.17 уже в Google Play (обновлена 24 ноября 2026).",
+            "sections": [
+              {
+                "title": "Что нового в 1.17",
+                "bullets": [
+                  "Новый вид: реалистичные ручки, панели из шлифованного металла, ручки Sound крупнее. Ручки микшера окрашены в цвет своего канала.",
+                  "В Looper и Mic кнопки S, M и FX сделаны как колпачки пульта; FX горит золотым, когда включён.",
+                  "Восстановление Factory: Drum kits, Presets или оба. Ваш банк Custom всегда сохраняется.",
+                  "Редактор волны находится под строкой пресетов. Закройте его, чтобы открыть вторую клавиатуру.",
+                  "SMOOTH в Bitcrusher сглаживает сильнее, чем выше вы его поднимаете. Старые сессии звучат как прежде.",
+                  "Каждый эффект Sound FX хранит свои Rate и SYNC.",
+                  "Исправления отображения и стабильности."
+                ]
+              }
+            ]
+          },
+          {
             "id": "app-1-16-sfx",
             "status": "shipped",
-            "title": "Теперь в Google Play: версия 1.16 с четырьмя новыми мирами Sound FX",
-            "ticker": "Теперь в Google Play: версия 1.16, Analog Delay, Bitcrusher, Ring Mod и Granular, цепочка до четырёх эффектов",
-            "summary": "Версия 1.16 уже в Google Play (обновлена 19 ноября 2026). В ней четыре новых мира Sound FX: Analog Delay, Bitcrusher, Ring Mod и Granular, и их можно собирать в цепочку до четырёх сразу. Пресеты Factory 64 пересобраны под новые эффекты, добавлен банк Custom. В ударных до 33 ритмов в каждом наборе, Pan и Pitch на каждом канале, и смена набора прямо во время игры. Auto в выборе стиля задаёт BPM, Swing, Ratchet и Humanize. Входная строка микрофона теперь формирует запись, а канал лупера или микрофона можно сохранить так, как он звучит. В Настройках есть Panic, а также исправления отображения и стабильности.",
+            "title": "Версия 1.16 с четырьмя новыми мирами Sound FX",
+            "ticker": "Версия 1.16: Analog Delay, Bitcrusher, Ring Mod и Granular, цепочка до четырёх эффектов",
+            "summary": "Версия 1.16 вышла в Google Play 19 ноября 2026. В ней четыре новых мира Sound FX: Analog Delay, Bitcrusher, Ring Mod и Granular, и их можно собирать в цепочку до четырёх сразу. Пресеты Factory 64 пересобраны под новые эффекты, добавлен банк Custom. В ударных до 33 ритмов в каждом наборе, Pan и Pitch на каждом канале, и смена набора прямо во время игры. Auto в выборе стиля задаёт BPM, Swing, Ratchet и Humanize. Входная строка микрофона теперь формирует запись, а канал лупера или микрофона можно сохранить так, как он звучит. В Настройках есть Panic, а также исправления отображения и стабильности.",
             "images": [
               "/assets/updates/116/analog-delay-w630.jpg",
               "/assets/updates/116/bitcrusher-w630.jpg",
@@ -12059,15 +12026,7 @@
                   "Исправления отображения и стабильности: окна Sound и Pad больше не пустеют при открытой верхней клавиатуре, на маленьких экранах появляется прокрутка вместо обрезки, узкие окна больше не закрываются с ошибкой, подписи клавиш остаются в одну строку, а стартовое окно тёмное, без белой вспышки."
                 ]
               }
-            ],
-            "badge": "Доступно в Google Play"
-          },
-          {
-            "id": "app-1-17-restore",
-            "status": "upcoming",
-            "title": "В следующем обновлении, версия 1.17: восстановление наборов ударных и пресетов по отдельности",
-            "ticker": "Следующее обновление, версия 1.17: в Настройках восстановление Factory даст выбрать наборы ударных, пресеты или оба. Папки Custom сохраняются",
-            "summary": "В версии 1.17 нажатие кнопки восстановления Factory в Настройках откроет два пункта, которые можно отметить: наборы ударных и пресеты, чтобы восстановить одно из них или оба. Папки Custom всегда сохраняются."
+            ]
           },
           {
             "id": "app-1-15-in-development",
@@ -12562,59 +12521,24 @@
         "slide": "Слайд {n} из {total}",
         "slides": {
           "sound-01": {
-            "title": "Шестнадцать миров.",
-            "text": "До четырёх в цепочке.",
-            "alt": "Шестнадцать миров. До четырёх в цепочке."
-          },
-          "sound-02": {
             "title": "Ручки эффекта.",
             "text": "Долгое нажатие на мир.",
             "alt": "Ручки эффекта. Долгое нажатие на мир."
           },
-          "sound-03": {
-            "title": "Настоящий FM.",
-            "text": "Четыре оператора.",
-            "alt": "Настоящий FM. Четыре оператора."
-          },
-          "sound-04": {
+          "sound-02": {
             "title": "Выберите гамму.",
             "text": "Нажмите зелёную гамму.",
             "alt": "Выберите гамму. Нажмите зелёную гамму."
           },
-          "sound-05": {
-            "title": "Введите свои Гц.",
-            "text": "Или выберите готовую гамму.",
-            "alt": "Введите свои Гц. Или выберите готовую гамму."
-          },
-          "sound-06": {
-            "title": "Панель волны.",
-            "text": "Удерживайте клавишу волны.",
-            "alt": "Панель волны. Удерживайте клавишу волны."
-          },
-          "sound-07": {
+          "sound-03": {
             "title": "Две клавиатуры.",
             "text": "Нажмите плюс.",
             "alt": "Две клавиатуры. Нажмите плюс."
           },
-          "sound-08": {
-            "title": "Analog Delay",
-            "text": "Тёплое эхо, темнеющее с каждым повтором.",
-            "alt": "Analog Delay. Тёплое эхо, темнеющее с каждым повтором."
-          },
-          "sound-09": {
-            "title": "Bitcrusher",
-            "text": "Меньше бит, шероховатый lo-fi.",
-            "alt": "Bitcrusher. Меньше бит, шероховатый lo-fi."
-          },
-          "sound-10": {
-            "title": "Ring Mod",
-            "text": "Металлический звон, как колокол.",
-            "alt": "Ring Mod. Металлический звон, как колокол."
-          },
-          "sound-11": {
-            "title": "Granular",
-            "text": "Облака зёрен с FREEZE.",
-            "alt": "Granular. Облака зёрен с FREEZE."
+          "sound-04": {
+            "title": "Шестнадцать миров.",
+            "text": "До четырёх в цепочке.",
+            "alt": "Шестнадцать миров. До четырёх в цепочке."
           },
           "mic-01": {
             "title": "Запись Mic.",
@@ -12642,24 +12566,28 @@
             "alt": "Looper. Восемь страниц."
           },
           "loop-02": {
-            "title": "Looper FX.",
-            "text": "Восемь пресетов FX.",
-            "alt": "Looper FX. Восемь пресетов FX."
-          },
-          "loop-03": {
             "title": "Редактор лупа.",
             "text": "Обрезка, луп, EQ.",
             "alt": "Редактор лупа. Обрезка, луп, EQ."
           },
-          "loop-04": {
+          "loop-03": {
             "title": "Аналоговый микшер.",
             "text": "Drive, EQ и фейдер.",
             "alt": "Аналоговый микшер. Drive, EQ и фейдер."
+          },
+          "loop-04": {
+            "title": "Looper FX.",
+            "text": "Восемь пресетов FX.",
+            "alt": "Looper FX. Восемь пресетов FX."
           },
           "pad-01": {
             "title": "Живой пэд.",
             "text": "Звук следует за вами.",
             "alt": "Живой пэд. Звук следует за вами."
+          },
+          "pad-02": {
+            "title": "Педали пэда.",
+            "alt": "Педали пэда."
           },
           "drum-01": {
             "title": "Все восемь рядов.",
@@ -12667,9 +12595,8 @@
             "alt": "Все восемь рядов. Нажмите плюс или минус."
           },
           "drum-02": {
-            "title": "Drum FX.",
-            "text": "Восемь пресетов ударных.",
-            "alt": "Drum FX. Восемь пресетов ударных."
+            "title": "Ритмы по жанрам.",
+            "alt": "Ритмы по жанрам."
           },
           "drum-03": {
             "title": "Банки сэмплов.",
@@ -12681,53 +12608,45 @@
             "text": "Обрезка, сохранение, переименование.",
             "alt": "Свои сэмплы. Обрезка, сохранение, переименование."
           },
-          "drum-05": {
-            "title": "Ритмы по жанрам.",
-            "alt": "Ритмы по жанрам."
-          },
-          "pad-02": {
-            "title": "Педали пэда.",
-            "alt": "Педали пэда."
-          },
           "home-sound": {
-            "title": "Собери свой звук",
-            "text": "Редактор волны, педаль сустейна, Drive и удержание PRESETS для сохранения.",
-            "alt": "1/8: Собери свой звук. Редактор волны, педаль сустейна, Drive и удержание PRESETS для сохранения."
-          },
-          "home-looper": {
-            "title": "Слои лупов",
-            "text": "Лупер для сцены и редактор лупа с обрезкой и EQ.",
-            "alt": "4/8: Слои лупов. Лупер для сцены и редактор лупа с обрезкой и EQ."
-          },
-          "home-drums": {
-            "title": "Собери бит",
-            "text": "Humanize, Ratchet, 16 стилей Random Genre и наборы Exclusive или Custom.",
-            "alt": "5/8: Собери бит. Humanize, Ratchet, 16 стилей Random Genre и наборы Exclusive или Custom."
-          },
-          "home-mixer": {
-            "title": "Твой аналоговый микшер",
-            "text": "Четыре полосы для Drums, Looper, Mic и Master, со Spectrum и Mix Map.",
-            "alt": "7/8: Твой аналоговый микшер. Четыре полосы для Drums, Looper, Mic и Master, со Spectrum и Mix Map."
+            "title": "Создайте свой звук.",
+            "text": "Две клавиатуры и подсказка подходящей гаммы.",
+            "alt": "1/8: Создайте свой звук. Две клавиатуры и подсказка подходящей гаммы."
           },
           "home-sound-fx": {
-            "title": "Шестнадцать миров FX",
-            "text": "16 миров эффектов на 2 страницах. До четырёх в цепочке, с SYNC к ударным.",
-            "alt": "2/8: Шестнадцать миров FX. 16 миров эффектов на 2 страницах. До четырёх в цепочке, с SYNC к ударным."
-          },
-          "home-pad": {
-            "title": "Играй вживую",
-            "text": "Двигай KEY, MIC, LOOP или DRUM, плюс SUB, WARM, VIBE и вторая клавиатура.",
-            "alt": "3/8: Играй вживую. Двигай KEY, MIC, LOOP или DRUM, плюс SUB, WARM, VIBE и вторая клавиатура."
+            "title": "16 миров эффектов. До четырёх сразу.",
+            "text": "Sound FX: касание добавляет в цепочку, долгое нажатие открывает ручки и EQ.",
+            "alt": "2/8: 16 миров эффектов. До четырёх сразу. Sound FX: касание добавляет в цепочку, долгое нажатие открывает ручки и EQ."
           },
           "home-mic": {
-            "title": "Пой и пиши",
-            "text": "Шесть каналов, Gain, HPF, Gate и Comp, текст и 8 пресетов Mic FX.",
-            "alt": "6/8: Пой и пиши. Шесть каналов, Gain, HPF, Gate и Comp, текст и 8 пресетов Mic FX."
+            "title": "Пойте, играйте и записывайте.",
+            "text": "Телесуфлёр, настройка EQ и эффекты.",
+            "alt": "3/8: Пойте, играйте и записывайте. Телесуфлёр, настройка EQ и эффекты."
           },
-          "home-mastering": {
-            "title": "Доведи трек",
-            "text": "Громкость LUFS, интенсивность, ширина стерео, Mono, Phone check, A/B и экспорт.",
-            "alt": "8/8: Доведи трек. Громкость LUFS, интенсивность, ширина стерео, Mono, Phone check, A/B и экспорт."
+          "home-looper": {
+            "title": "Лупер на 32 канала.",
+            "text": "Настройка EQ, редактирование и эффекты.",
+            "alt": "4/8: Лупер на 32 канала. Настройка EQ, редактирование и эффекты."
+          },
+          "home-pad": {
+            "title": "Пэд и дизайн звука.",
+            "text": "Управляйте ударными, лупером, микрофоном и клавиатурой в одном окне.",
+            "alt": "5/8: Пэд и дизайн звука. Управляйте ударными, лупером, микрофоном и клавиатурой в одном окне."
+          },
+          "home-drums": {
+            "title": "Умная система ударных.",
+            "text": "16 стилей и кнопка RANDOM, которая собирает биты по жанру.",
+            "alt": "6/8: Умная система ударных. 16 стилей и кнопка RANDOM, которая собирает биты по жанру."
+          },
+          "home-samples": {
+            "title": "3696 сэмплов, офлайн.",
+            "text": "Сэмплы по стилям для каждого канала, включая готовые наборы ударных.",
+            "alt": "7/8: 3696 сэмплов, офлайн. Сэмплы по стилям для каждого канала, включая готовые наборы ударных."
+          },
+          "home-mix-mastering": {
+            "title": "Сведение и мастеринг.",
+            "text": "Аналоговый микшер и мастеринг для новичков и опытных.",
+            "alt": "8/8: Сведение и мастеринг. Аналоговый микшер и мастеринг для новичков и опытных."
           }
         }
       }
@@ -12747,7 +12666,7 @@
         "updates": "التحديثات"
       },
       "hero": {
-        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.16، متاح الآن على Google Play",
+        "kicker": "تطبيق موسيقى لأندرويد · الإصدار 1.17، متاح الآن على Google Play",
         "title": "اصنع الموسيقى على هاتفك.",
         "body": "L Studio تطبيق لصنع الموسيقى على هاتف أندرويد. سجّل لوبات، أضف طبولاً، غنِّ وكلمات الأغنية أمام عينيك، وإن أردت الخروج عن النوتات المعتادة، اضبط لكل مفتاح تردده الخاص.",
         "ctaPrimary": "شاهد الفيديو القصير",
@@ -12767,7 +12686,7 @@
         "note": "كل ذلك داخل L-Studio"
       },
       "story": {
-        "kicker": "01 / THE EIGHTH NOTE",
+        "kicker": "02 / THE EIGHTH NOTE",
         "title": "كل شيء بدأ من نغمة لم تكن موجودة.",
         "body": [
           "هناك دو، ري، مي، فا، صول، لا وسي.",
@@ -12782,12 +12701,12 @@
         "closing": "ما بدأ كبحث عن النغمة الثامنة أصبح L-Studio."
       },
       "featuresIntro": {
-        "kicker": "02 / PLAY WITH SOUND",
+        "kicker": "03 / PLAY WITH SOUND",
         "title": "فقط افتح والعب.",
         "body": "لا تحتاج لمعرفة الموسيقى لتبدأ. تفتح، تلمس، تغيّر، تستمع، وترى ما يحدث."
       },
       "underHood": {
-        "kicker": "03 / تحت الغطاء",
+        "kicker": "04 / تحت الغطاء",
         "title": "هناك الكثير خلف الكواليس.",
         "body": "بُنيت L-Studio لتمنحك تحكماً بالصوت من دون إجبارك على تعلم نظام ضخم. المفاتيح والصوت والمؤثرات والميكروفون واللوبر والـPad والإيقاعات تعمل جميعها داخل نفس التطبيق. يمكنك أيضاً ضبط تردد كل مفتاح يدوياً وبناء لوحة المفاتيح بطريقتك.",
         "closing": "التعقيد موجود في المحرك. وليس في طريقة استخدامك له.",
@@ -13029,7 +12948,7 @@
         ]
       },
       "justStart": {
-        "kicker": "04 / JUST START",
+        "kicker": "05 / JUST START",
         "title": "هناك الكثير لفعله. لا تحتاج لمعرفة كل شيء.",
         "body": [
           "عندما تفتح برنامج موسيقى لأول مرة، أول ما قد تشعر به هو أن هناك الكثير جداً.",
@@ -13050,7 +12969,7 @@
         "drumsCta": "حزم الطبول"
       },
       "vision": {
-        "kicker": "05 / الرؤية",
+        "kicker": "01 / الرؤية",
         "title": "بنيت التطبيق الذي كنت بحاجة إليه.",
         "author": "دافيد حاتام، مطوّر L-Studio",
         "body": [
@@ -13085,7 +13004,7 @@
           {
             "question": "هل L Studio على Google Play الآن؟ وكم سعره؟",
             "answer": [
-              "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، بدفعة واحدة، بلا اشتراك وبلا مشتريات داخل التطبيق. الإصدار الحالي هو 1.16. يضم أربعة عوالم جديدة في Sound FX ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وإعدادات Factory 64 المجددة مع بنك Custom، وحتى 33 إيقاعاً في كل مجموعة طبول. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+              "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، بدفعة واحدة، بلا اشتراك وبلا مشتريات داخل التطبيق. الإصدار الحالي هو 1.17. يأتي بمظهر جديد مع مقابض واقعية وألواح من المعدن المصقول، ويضم من الإصدار 1.16 أربعة عوالم في Sound FX ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وإعدادات Factory 64 المجددة مع بنك Custom، وحتى 33 إيقاعاً في كل مجموعة طبول. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
               "تشتريه عبر Google Play. هذا الموقع لا يبيع التطبيق وليس فيه زر تنزيل."
             ]
           },
@@ -13100,7 +13019,7 @@
           {
             "question": "على أي أجهزة يعمل وبأي لغات؟",
             "answer": [
-              "L Studio تطبيق لأندرويد. يحتاج Android 7.0 أو أحدث. الإصدار 1.16 حجمه 161.7 ميغابايت. لا توجد حالياً نسخة لآيفون.",
+              "L Studio تطبيق لأندرويد. يحتاج Android 7.0 أو أحدث. لا توجد حالياً نسخة لآيفون.",
               "جُرّب التطبيق على هواتف أندرويد مختلفة. ولم يُجرَّب على التابلت، لذلك لا نَعِد بدعم التابلت.",
               "على الهاتف يبقى التطبيق قائماً، بوضع طولي.",
               "التطبيق بأربع لغات: الإنجليزية والعبرية والروسية والعربية. تبدّل اللغة من Settings، في صف Language."
@@ -13137,7 +13056,7 @@
             "answer": [
               "يُفتح الميكسر التناظري بالنقر على LIVE SCOPE في أعلى الشاشة. لكل من Drums وLooper وMic قناة فيها Drive وHPF وHigh وMid وLow وComp وPan وWidth وM وS ومنزلق. قناة Master تعمل على المزيج كله. يُظهر SPECTRUM وMIX MAP أين تقع القنوات وأين تتصادم. وفيه 8 إعدادات.",
               "تُنهي نافذة الماسترنغ تسجيل WAV أو أغنية مستوردة لخدمات البث. في Beginner اختر أحد 8 أساليب، واستمع إلى A (قبل) وB (الأسلوب)، ثم المس Start mastering وصدّر. يفتح Advanced كلاً من Tone وDynamics وStereo وLoudness مع هدف LUFS خاص بك. تُفتح النافذة بعد تسجيل WAV ‏(Master this take) أو من MASTERING في Settings.",
-              "كلاهما جزء من الإصدار 1.16 على Google Play."
+              "كلاهما جزء من الإصدار 1.17 على Google Play."
             ]
           },
           {
@@ -16194,7 +16113,7 @@
         "titleLead": "L Studio",
         "titleEm": "Pro.",
         "lede": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$. المشتريات غير متاحة على هذا الموقع حالياً.",
-        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، بدفعة واحدة، مع الإصدار 1.16، 161.7 ميغابايت. يضم أربعة عوالم جديدة في Sound FX ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وإعدادات Factory 64 المجددة مع بنك Custom، وحتى 33 إيقاعاً في كل مجموعة طبول، إلى جانب الإيقاعات حسب النوع وHumanize وRatchet والميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. من يشتري Pro يحصل أيضاً على حزمة Exclusive بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
+        "body": "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$، بدفعة واحدة، مع الإصدار 1.17 الذي يأتي بمظهر جديد مع مقابض واقعية وألواح من المعدن المصقول. ويضم أيضاً أربعة عوالم في Sound FX ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وإعدادات Factory 64 المجددة مع بنك Custom، وحتى 33 إيقاعاً في كل مجموعة طبول، إلى جانب الإيقاعات حسب النوع وHumanize وRatchet والميكسر التناظري ونافذة الماسترنغ. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها. من يشتري Pro يحصل أيضاً على حزمة Exclusive بلا تكلفة إضافية، ولا يوجد زر تنزيل. هذا الموقع لا يقبض مقابله حالياً.",
         "priceNote": "غير معروض للبيع على هذا الموقع",
         "includes": [
           "L Studio Pro لأندرويد على Google Play، 8$",
@@ -16229,7 +16148,7 @@
         "navLabel": "التحديثات",
         "pageTitle": "ما الجديد في L Studio؟",
         "pageKicker": "L-STUDIO / التحديثات",
-        "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.16 الذي يضم أربعة عوالم Sound FX جديدة: Analog Delay وBitcrusher وRing Mod وGranular، وسلسلة حتى أربعة تأثيرات، إلى جانب Factory 64 المحدّث و33 إيقاعاً في الطقم وHumanize وRatchet وأطقم طبول مخصصة. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+        "pageIntro": "L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.17 الذي يأتي بمظهر جديد مع مقابض واقعية وألواح من المعدن المصقول، واستعادة Factory لأطقم الطبول أو الإعدادات المسبقة أو كليهما، إلى جانب أربعة عوالم Sound FX من الإصدار 1.16: Analog Delay وBitcrusher وRing Mod وGranular، وسلسلة حتى أربعة تأثيرات، وFactory 64 المحدّث و33 إيقاعاً في الطقم وHumanize وRatchet وأطقم طبول مخصصة. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
         "tickerLabel": "التحديثات",
         "statusLabels": {
           "in_progress": "قيد العمل",
@@ -16243,11 +16162,32 @@
         },
         "items": [
           {
+            "id": "app-1-17",
+            "status": "shipped",
+            "title": "الآن على Google Play: الإصدار 1.17 بمظهر جديد",
+            "ticker": "الآن على Google Play: الإصدار 1.17، مقابض واقعية، وألواح من المعدن المصقول، واستعادة Factory لأطقم الطبول أو الإعدادات المسبقة أو كليهما",
+            "summary": "الإصدار 1.17 متاح الآن على Google Play (حُدّث في 24 نوفمبر 2026).",
+            "sections": [
+              {
+                "title": "ما الجديد في 1.17",
+                "bullets": [
+                  "مظهر جديد: مقابض واقعية، وألواح من المعدن المصقول، ومقابض Sound أكبر. مقابض الميكسر بلون كل قناة.",
+                  "في Looper وMic، أزرار S وM وFX على شكل أغطية أزرار طاولة المزج، وFX ذهبي عند تشغيله.",
+                  "استعادة Factory: ‏Drum kits أو Presets أو كلاهما. بنك Custom الخاص بك يُحفظ دائماً.",
+                  "محرر الموجة تحت صف الإعدادات المسبقة. أغلقه لفتح لوحة مفاتيح ثانية.",
+                  "في Bitcrusher، يصبح SMOOTH أنعم كلما رفعته. الجلسات القديمة تبدو كما كانت.",
+                  "كل مؤثر في Sound FX يحتفظ بـ Rate وSYNC الخاصين به.",
+                  "إصلاحات في العرض والثبات."
+                ]
+              }
+            ]
+          },
+          {
             "id": "app-1-16-sfx",
             "status": "shipped",
-            "title": "الآن على Google Play: الإصدار 1.16 مع أربعة عوالم Sound FX جديدة",
-            "ticker": "الآن على Google Play: الإصدار 1.16، Analog Delay وBitcrusher وRing Mod وGranular، وسلسلة حتى أربعة تأثيرات",
-            "summary": "الإصدار 1.16 متاح الآن على Google Play (حُدّث في 19 نوفمبر 2026). يضيف أربعة عوالم Sound FX: Analog Delay وBitcrusher وRing Mod وGranular، ويمكن جمع حتى أربعة معاً في سلسلة واحدة. أُعيد تصميم إعدادات Factory 64 المسبقة حول التأثيرات الجديدة، وأُضيف بنك Custom. في الطبول حتى 33 إيقاعاً في كل طقم، وPan وPitch في كل قناة، وتبديل الطقم أثناء العزف. Auto في اختيار النمط يضبط BPM وSwing وRatchet وHumanize. صف إدخال الميكروفون يشكّل التسجيل الآن، ويمكن حفظ قناة لوبر أو ميكروفون كما تُسمع. في الإعدادات توجد Panic، مع إصلاحات للعرض والاستقرار.",
+            "title": "الإصدار 1.16 مع أربعة عوالم Sound FX جديدة",
+            "ticker": "الإصدار 1.16: Analog Delay وBitcrusher وRing Mod وGranular، وسلسلة حتى أربعة تأثيرات",
+            "summary": "صدر الإصدار 1.16 على Google Play في 19 نوفمبر 2026. يضيف أربعة عوالم Sound FX: Analog Delay وBitcrusher وRing Mod وGranular، ويمكن جمع حتى أربعة معاً في سلسلة واحدة. أُعيد تصميم إعدادات Factory 64 المسبقة حول التأثيرات الجديدة، وأُضيف بنك Custom. في الطبول حتى 33 إيقاعاً في كل طقم، وPan وPitch في كل قناة، وتبديل الطقم أثناء العزف. Auto في اختيار النمط يضبط BPM وSwing وRatchet وHumanize. صف إدخال الميكروفون يشكّل التسجيل الآن، ويمكن حفظ قناة لوبر أو ميكروفون كما تُسمع. في الإعدادات توجد Panic، مع إصلاحات للعرض والاستقرار.",
             "images": [
               "/assets/updates/116/analog-delay-w630.jpg",
               "/assets/updates/116/bitcrusher-w630.jpg",
@@ -16303,15 +16243,7 @@
                   "إصلاحات للعرض والاستقرار: نافذتا Sound وPad لم تعودا تفرغان عند فتح لوحة المفاتيح العليا، والشاشات الصغيرة تمرّر بدلاً من القص، والنوافذ الضيقة لم تعد تتوقف، وتسميات المفاتيح تبقى في سطر واحد، ونافذة البدء داكنة بلا ومضة بيضاء."
                 ]
               }
-            ],
-            "badge": "متاح على Google Play"
-          },
-          {
-            "id": "app-1-17-restore",
-            "status": "upcoming",
-            "title": "في التحديث القادم، الإصدار 1.17: استعادة أطقم الطبول والإعدادات المسبقة بشكل منفصل",
-            "ticker": "التحديث القادم، الإصدار 1.17: في الإعدادات، استعادة Factory تتيح اختيار أطقم الطبول أو الإعدادات المسبقة أو كليهما. مجلدات Custom تبقى",
-            "summary": "في الإصدار 1.17، زر استعادة Factory في الإعدادات سيفتح خيارين يمكن التأشير عليهما، أطقم الطبول والإعدادات المسبقة، لاستعادة أحدهما أو كليهما. مجلدات Custom تُحفظ دائماً."
+            ]
           },
           {
             "id": "app-1-15-in-development",
@@ -16806,59 +16738,24 @@
         "slide": "الشريحة {n} من {total}",
         "slides": {
           "sound-01": {
-            "title": "ستة عشر عالماً.",
-            "text": "حتى أربعة في سلسلة.",
-            "alt": "ستة عشر عالماً. حتى أربعة في سلسلة."
-          },
-          "sound-02": {
             "title": "مقابض المؤثر.",
             "text": "اضغط مطولاً على عالم.",
             "alt": "مقابض المؤثر. اضغط مطولاً على عالم."
           },
-          "sound-03": {
-            "title": "FM حقيقي.",
-            "text": "أربعة مشغّلات.",
-            "alt": "FM حقيقي. أربعة مشغّلات."
-          },
-          "sound-04": {
+          "sound-02": {
             "title": "اختر سلماً.",
             "text": "المس سلماً أخضر.",
             "alt": "اختر سلماً. المس سلماً أخضر."
           },
-          "sound-05": {
-            "title": "اكتب الـHz الخاص بك.",
-            "text": "أو اختر سلماً جاهزاً.",
-            "alt": "اكتب الـHz الخاص بك. أو اختر سلماً جاهزاً."
-          },
-          "sound-06": {
-            "title": "لوحة الموجة.",
-            "text": "اضغط مطولاً على مفتاح موجة.",
-            "alt": "لوحة الموجة. اضغط مطولاً على مفتاح موجة."
-          },
-          "sound-07": {
+          "sound-03": {
             "title": "لوحتا مفاتيح.",
             "text": "المس علامة الزائد.",
             "alt": "لوحتا مفاتيح. المس علامة الزائد."
           },
-          "sound-08": {
-            "title": "Analog Delay",
-            "text": "أصداء دافئة تزداد عتمة مع كل تكرار.",
-            "alt": "Analog Delay. أصداء دافئة تزداد عتمة مع كل تكرار."
-          },
-          "sound-09": {
-            "title": "Bitcrusher",
-            "text": "بتات أقل لصوت خشن lo-fi.",
-            "alt": "Bitcrusher. بتات أقل لصوت خشن lo-fi."
-          },
-          "sound-10": {
-            "title": "Ring Mod",
-            "text": "رنين معدني يشبه الجرس.",
-            "alt": "Ring Mod. رنين معدني يشبه الجرس."
-          },
-          "sound-11": {
-            "title": "Granular",
-            "text": "سحب حبيبات مع FREEZE.",
-            "alt": "Granular. سحب حبيبات مع FREEZE."
+          "sound-04": {
+            "title": "ستة عشر عالماً.",
+            "text": "حتى أربعة في سلسلة.",
+            "alt": "ستة عشر عالماً. حتى أربعة في سلسلة."
           },
           "mic-01": {
             "title": "تسجيل Mic.",
@@ -16886,24 +16783,28 @@
             "alt": "Looper. ثماني صفحات."
           },
           "loop-02": {
-            "title": "مؤثرات Looper.",
-            "text": "ثمانية إعدادات FX.",
-            "alt": "مؤثرات Looper. ثمانية إعدادات FX."
-          },
-          "loop-03": {
             "title": "محرر اللوب.",
             "text": "قصّ، لوب، وEQ.",
             "alt": "محرر اللوب. قصّ، لوب، وEQ."
           },
-          "loop-04": {
+          "loop-03": {
             "title": "ميكسر تناظري.",
             "text": "Drive وEQ ومنزلق.",
             "alt": "ميكسر تناظري. Drive وEQ ومنزلق."
+          },
+          "loop-04": {
+            "title": "مؤثرات Looper.",
+            "text": "ثمانية إعدادات FX.",
+            "alt": "مؤثرات Looper. ثمانية إعدادات FX."
           },
           "pad-01": {
             "title": "لوحة العزف الحي.",
             "text": "الصوت يتبع.",
             "alt": "لوحة العزف الحي. الصوت يتبع."
+          },
+          "pad-02": {
+            "title": "دواسات Pad.",
+            "alt": "دواسات Pad."
           },
           "drum-01": {
             "title": "كل الصفوف الثمانية.",
@@ -16911,9 +16812,8 @@
             "alt": "كل الصفوف الثمانية. المس زائد أو ناقص."
           },
           "drum-02": {
-            "title": "مؤثرات Drum.",
-            "text": "ثمانية إعدادات للطبول.",
-            "alt": "مؤثرات Drum. ثمانية إعدادات للطبول."
+            "title": "إيقاعات حسب النوع.",
+            "alt": "إيقاعات حسب النوع."
           },
           "drum-03": {
             "title": "بنوك العينات.",
@@ -16925,53 +16825,45 @@
             "text": "قصّ، احفظ، أعد التسمية.",
             "alt": "عيناتك. قصّ، احفظ، أعد التسمية."
           },
-          "drum-05": {
-            "title": "إيقاعات حسب النوع.",
-            "alt": "إيقاعات حسب النوع."
-          },
-          "pad-02": {
-            "title": "دواسات Pad.",
-            "alt": "دواسات Pad."
-          },
           "home-sound": {
-            "title": "شكّل الصوت",
-            "text": "محرر الموجة ودواسة الاستدامة وDrive والضغط المطوّل على PRESETS للحفظ.",
-            "alt": "1/8: شكّل الصوت. محرر الموجة ودواسة الاستدامة وDrive والضغط المطوّل على PRESETS للحفظ."
-          },
-          "home-looper": {
-            "title": "ركّب اللوبات",
-            "text": "لوبر للخشبة ومحرر لوب مع قص وEQ.",
-            "alt": "4/8: ركّب اللوبات. لوبر للخشبة ومحرر لوب مع قص وEQ."
-          },
-          "home-drums": {
-            "title": "ابنِ الإيقاع",
-            "text": "Humanize وRatchet و16 نمطاً من Random Genre وأطقم Exclusive أو Custom.",
-            "alt": "5/8: ابنِ الإيقاع. Humanize وRatchet و16 نمطاً من Random Genre وأطقم Exclusive أو Custom."
-          },
-          "home-mixer": {
-            "title": "الميكسر التناظري لديك",
-            "text": "أربعة مسارات لـ Drums وLooper وMic وMaster مع Spectrum وMix Map.",
-            "alt": "7/8: الميكسر التناظري لديك. أربعة مسارات لـ Drums وLooper وMic وMaster مع Spectrum وMix Map."
+            "title": "صمّم صوتك.",
+            "text": "لوحتا مفاتيح واقتراح سلّم موسيقي مناسب.",
+            "alt": "1/8: صمّم صوتك. لوحتا مفاتيح واقتراح سلّم موسيقي مناسب."
           },
           "home-sound-fx": {
-            "title": "ستة عشر عالماً من FX",
-            "text": "16 عالماً من المؤثرات في صفحتين. حتى أربعة في سلسلة، مع SYNC للطبول.",
-            "alt": "2/8: ستة عشر عالماً من FX. 16 عالماً من المؤثرات في صفحتين. حتى أربعة في سلسلة، مع SYNC للطبول."
-          },
-          "home-pad": {
-            "title": "اعزف مباشرة",
-            "text": "حرّك KEY أو MIC أو LOOP أو DRUM، إضافة إلى SUB وWARM وVIBE ولوحة مفاتيح ثانية.",
-            "alt": "3/8: اعزف مباشرة. حرّك KEY أو MIC أو LOOP أو DRUM، إضافة إلى SUB وWARM وVIBE ولوحة مفاتيح ثانية."
+            "title": "16 عالماً من المؤثرات. حتى أربعة معاً.",
+            "text": "Sound FX: نقرة تضيف إلى السلسلة، والضغط المطوّل يفتح المقابض وEQ.",
+            "alt": "2/8: 16 عالماً من المؤثرات. حتى أربعة معاً. Sound FX: نقرة تضيف إلى السلسلة، والضغط المطوّل يفتح المقابض وEQ."
           },
           "home-mic": {
-            "title": "غنِّ وسجّل",
-            "text": "ست قنوات وGain وHPF وGate وComp والكلمات و8 إعدادات Mic FX.",
-            "alt": "6/8: غنِّ وسجّل. ست قنوات وGain وHPF وGate وComp والكلمات و8 إعدادات Mic FX."
+            "title": "غنِّ واعزف وسجّل.",
+            "text": "ملقّن نصوص، وضبط EQ، ومؤثرات.",
+            "alt": "3/8: غنِّ واعزف وسجّل. ملقّن نصوص، وضبط EQ، ومؤثرات."
           },
-          "home-mastering": {
-            "title": "أنهِ المقطوعة",
-            "text": "علو LUFS والكثافة وعرض الستيريو وMono وPhone check وA/B والتصدير.",
-            "alt": "8/8: أنهِ المقطوعة. علو LUFS والكثافة وعرض الستيريو وMono وPhone check وA/B والتصدير."
+          "home-looper": {
+            "title": "لوبر بـ 32 قناة.",
+            "text": "ضبط EQ، وتحرير، ومؤثرات.",
+            "alt": "4/8: لوبر بـ 32 قناة. ضبط EQ، وتحرير، ومؤثرات."
+          },
+          "home-pad": {
+            "title": "باد وتصميم الصوت.",
+            "text": "تحكّم بالطبول واللوبر والميكروفون ولوحة المفاتيح في نافذة واحدة.",
+            "alt": "5/8: باد وتصميم الصوت. تحكّم بالطبول واللوبر والميكروفون ولوحة المفاتيح في نافذة واحدة."
+          },
+          "home-drums": {
+            "title": "نظام طبول ذكي.",
+            "text": "16 أسلوباً وزر RANDOM يبني الإيقاعات حسب النوع الموسيقي.",
+            "alt": "6/8: نظام طبول ذكي. 16 أسلوباً وزر RANDOM يبني الإيقاعات حسب النوع الموسيقي."
+          },
+          "home-samples": {
+            "title": "3696 عيّنة، بدون إنترنت.",
+            "text": "عيّنات حسب الأسلوب لكل قناة، بما فيها حزم طبول جاهزة.",
+            "alt": "7/8: 3696 عيّنة، بدون إنترنت. عيّنات حسب الأسلوب لكل قناة، بما فيها حزم طبول جاهزة."
+          },
+          "home-mix-mastering": {
+            "title": "مكساج وماسترينغ.",
+            "text": "مكسر تناظري وماسترينغ للمبتدئين والمتقدمين.",
+            "alt": "8/8: مكساج وماسترينغ. مكسر تناظري وماسترينغ للمبتدئين والمتقدمين."
           }
         }
       }

@@ -192,10 +192,10 @@ const meetDefaults = {
     videoTitle: "تعرّف على L-studio",
   },
 } satisfies Record<Language, { kicker: string; title: string; body: string; videoTitle: string }>;
-const storyDefault = { kicker: "01 / THE EIGHTH NOTE", title: "It all started with a note that wasn't there.", body: ["I wanted to build a keyboard where I could set which frequency belongs to each key myself.", "From there it grew into recording, a looper, drums, a microphone and more."], closing: "What started as a search for the eighth note became L-Studio." };
-const featuresIntroDefault = { kicker: "02 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
-const hoodDefault = { kicker: "03 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", identity: "", features: [] as Array<{ id: string; title: string; body: string }>, closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYS", "SOUND", "FX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
-const justStartDefault = { kicker: "04 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
+const storyDefault = { kicker: "02 / THE EIGHTH NOTE", title: "It all started with a note that wasn't there.", body: ["I wanted to build a keyboard where I could set which frequency belongs to each key myself.", "From there it grew into recording, a looper, drums, a microphone and more."], closing: "What started as a search for the eighth note became L-Studio." };
+const featuresIntroDefault = { kicker: "03 / PLAY WITH SOUND", title: "Just open it and play.", body: "You don't need to know music to start. Open it, touch it, change it, listen, and see what happens." };
+const hoodDefault = { kicker: "04 / UNDER THE HOOD", title: "There's a lot going on behind the scenes.", body: "A local signal path for sound, performance and capture.", identity: "", features: [] as Array<{ id: string; title: string; body: string }>, closing: "The complexity lives in the engine. Not in the way you have to use it.", details: [] as Array<{ label: string; value: string }>, pipeline: ["KEYS", "SOUND", "FX", "WAV"], specsTitle: "Technical signal map", specsBody: "A practical view of what happens between touch and sound." };
+const justStartDefault = { kicker: "05 / JUST START", title: "There's a lot to do. You don't need to know it all.", body: ["L-Studio was built differently. There's a lot here, but you can start without taking a course."], closing: "Start playing. The rest will come." };
 const factoryDefault = { kicker: "L-STUDIO / FACTORY PACK", lede: "The sound is already waiting for you.", shortText: "8 preset pages. 8 drum kits. Ready to play.", description: "L Studio Pro comes with the full Factory Pack: 8 synth preset pages (64 voices), then 8 drum kits with 8 styles in each kit (64 styles in all, not 64 kits).", detailCta: "Explore Factory 64", drumsCta: "Drum kits", coverAlt: "L Studio Pro pack covers side by side: Factory 64 with 64 presets on 8 pages, Drum Kits with 8 kits and 8 styles, and Exclusive with 11 drum packs" };
 const exclusiveFan = {
   jpg: `${import.meta.env.BASE_URL}assets/exclusive/exclusive-hero-homepage-fan.jpg`,
@@ -208,7 +208,7 @@ const exclusiveDefaults: Record<Language, { navLabel: string; comingSoon: string
   ru: { navLabel: "Эксклюзив", comingSoon: "Входит в Pro", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "Одиннадцать особых паков. Входит в Pro.", homeBody: "Одиннадцать эксклюзивных ударных паков стоят вне набора Factory Drums. Восемь каналов и восемь стилей в каждом паке. Кто покупает Pro, получает пак Exclusive без доплаты, и кнопки скачивания нет.", homeCta: "Смотреть эксклюзив", homeImageAlt: "Веер из девяти постеров эксклюзивных ударных паков L Studio" },
   ar: { navLabel: "حصري", comingSoon: "مع Pro", homeKicker: "L-STUDIO / EXCLUSIVE", homeTitle: "إحدى عشرة حزمة خاصة. مع Pro.", homeBody: "إحدى عشرة حزمة طبول حصرية خارج مجموعة Factory Drums. ثماني قنوات وثمانية أساليب في كل حزمة. من يشتري Pro يحصل أيضاً على حزمة Exclusive بلا تكلفة إضافية، ولا يوجد زر تنزيل.", homeCta: "شاهد الحصري", homeImageAlt: "مروحة من تسعة ملصقات لحزم طبول حصرية من L Studio" },
 };
-const visionDefault = { kicker: "05 / THE VISION", title: "I built the app I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take your music with you", body: "Creating shouldn't have to wait for a computer." }] };
+const visionDefault = { kicker: "01 / THE VISION", title: "I built the app I needed.", author: "David Chatam, L-Studio developer", body: ["I just love music and wanted to control sound in a way that felt natural to me."], mainLine: "It's for analog people in a digital world.", cards: [{ no: "01", title: "Just start", body: "Open the app and start creating." }, { no: "02", title: "Play with sound", body: "Touch the sound, change it, and discover things you didn't plan." }, { no: "03", title: "Take your music with you", body: "Creating shouldn't have to wait for a computer." }] };
 const faqDefault = { kicker: "06 / FAQ", title: "Questions and answers", items: [] as Array<{ question: string; answer: string[] }> };
 const finalCtaDefault = { kicker: "07 / YOUR SOUND", title: "Maybe it's time to find your sound.", body: "You can start from one sound, a beat, a loop, or a small idea." };
 type TesterCopy = {
@@ -418,50 +418,46 @@ export default function Home() {
 
       <UpdatesTicker copy={updates} isRtl={isRtl} />
 
-      {/* Feature graphic under the ticker (David, 2026-10-10). Image used as is. */}
-      <div className="container feature-graphic-wrap">
-      <figure className="feature-graphic">
-        <picture>
-          <source srcSet={`${featureGraphicUrl(language, 640, "webp")} 640w, ${featureGraphicUrl(language, 800, "webp")} 800w, ${featureGraphicUrl(language, 1024, "webp")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" />
-          <img src={featureGraphicUrl(language, 1024, "jpg")} srcSet={`${featureGraphicUrl(language, 640, "jpg")} 640w, ${featureGraphicUrl(language, 1024, "jpg")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
-        </picture>
-      </figure>
-      </div>
-      {/* Demo video toggle (David, 2026-10-11): same tab style as the windows menu, starts closed. */}
-      <div className="container demo-video-wrap" dir={dir}>
-        <div className="interface-feature-list demo-video-list">
-          <div className={`interface-feature-item ${demoOpen ? "is-active" : ""}`}>
-            <button
-              type="button"
-              aria-expanded={demoOpen}
-              aria-controls="demo-video-panel"
-              className="interface-feature"
-              onClick={() => setDemoOpen((open) => !open)}
-            >
-              <span className="feature-index">▶</span>
-              <span className="feature-icon"><PlayCircle size={20} /></span>
-              <span className="feature-label">{demoCopy[language].label}</span>
-              <ChevronRight size={16} />
-            </button>
-            {demoOpen && (
-              <div className="demo-video-panel" id="demo-video-panel">
-                <div className="demo-video-frame">
-                  <YouTubeFacade videoId={DEMO_SHORT_ID} title={demoCopy[language].title} poster={demoPoster} />
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-
       <main>
-        {/* 1. Hero */}
+        {/* 1. The vision: first on the page (David, 2026-11-25) */}
+        <section className="vision-section" id="vision" dir={dir}>
+          <div className="container vision-grid">
+            <div className="vision-copy">
+              <div className="vision-portrait"><picture><source srcSet={developerImage.webp} type="image/webp" /><img src={developerImage.jpg} alt={developerAlt[language]} loading="eager" decoding="async" /></picture></div>
+              <span className="kicker">{vision.kicker}</span>
+              <h2><Headline text={vision.title} /></h2>
+              <span className="vision-author">{vision.author}</span>
+              {vision.body.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}
+              <p className="lead-line">{vision.mainLine}</p>
+              <div className="social-links">
+                <a className="instagram-link" href="https://www.instagram.com/lstudio.app?stkn=MTJ2Ym1vdHBpMTA5Nw==" target="_blank" rel="noreferrer"><Instagram size={17} /> {instagramLabel[language]} <ArrowUpRight size={15} /></a>
+                <a className="instagram-link" href="https://www.facebook.com/share/1C6rrsvgem/" target="_blank" rel="noreferrer"><Facebook size={17} /> {facebookLabel[language]} <ArrowUpRight size={15} /></a>
+              </div>
+            </div>
+            <div className="vision-cards">
+              {vision.cards.map((card: { no: string; title: string; body: string }, index: number) => {
+                const Icon = visionIcons[index] ?? Sparkles;
+                return (
+                  <div className="vision-card" key={card.no}>
+                    <span className="vision-card-no">{card.no}</span>
+                    <Icon size={21} />
+                    <h3>{card.title}</h3>
+                    <p>{card.body}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+
+        {/* 2. Hero: title "Make music on your phone", then the Google Play 1.17 slides 01-08, directly under the vision */}
         <section className={`hero container${SHOW_HERO_SHOT ? "" : " hero--solo"}`} aria-labelledby="hero-title">
           <div className="hero-copy">
-            <div className="eyebrow"><span className="eyebrow-dot" /> {hero.kicker}</div>
             <h1 id="hero-title"><Headline text={hero.title} /></h1>
-            {/* Google Play 1.12 store images (Drive "נכסים 1.12") minus the old Sound FX one (1.13), n/7 baked into each image (no site counter). */}
+            {/* Google Play 1.17 store images 01-08 (Drive "1.17 Smoked"), FIG. 01-08 baked into each image. */}
             <PlayCarousel tab="home112" language={language} isRtl={isRtl} copy={copy.carousel} className="hero-store-carousel" />
+            <div className="eyebrow"><span className="eyebrow-dot" /> {hero.kicker}</div>
             <div className="hero-offer hero-offer--static">
               <strong>{launch.headline}</strong>
               <span>{launch.price}</span>
@@ -487,6 +483,42 @@ export default function Home() {
             </picture>
           </figure>}
         </section>
+
+        {/* Feature graphic, now under the hero (David, 2026-10-10; moved 2026-11-25). Image used as is. */}
+        <div className="container feature-graphic-wrap">
+        <figure className="feature-graphic">
+          <picture>
+            <source srcSet={`${featureGraphicUrl(language, 640, "webp")} 640w, ${featureGraphicUrl(language, 800, "webp")} 800w, ${featureGraphicUrl(language, 1024, "webp")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp" />
+            <img src={featureGraphicUrl(language, 1024, "jpg")} srcSet={`${featureGraphicUrl(language, 640, "jpg")} 640w, ${featureGraphicUrl(language, 1024, "jpg")} 1024w`} sizes="(max-width: 1024px) 100vw, 1024px" alt={featureGraphicAlt[language]} width={1024} height={500} loading="eager" decoding="async" />
+          </picture>
+        </figure>
+        </div>
+        {/* Demo video toggle (David, 2026-10-11): same tab style as the windows menu, starts closed. */}
+        <div className="container demo-video-wrap" dir={dir}>
+          <div className="interface-feature-list demo-video-list">
+            <div className={`interface-feature-item ${demoOpen ? "is-active" : ""}`}>
+              <button
+                type="button"
+                aria-expanded={demoOpen}
+                aria-controls="demo-video-panel"
+                className="interface-feature"
+                onClick={() => setDemoOpen((open) => !open)}
+              >
+                <span className="feature-index">▶</span>
+                <span className="feature-icon"><PlayCircle size={20} /></span>
+                <span className="feature-label">{demoCopy[language].label}</span>
+                <ChevronRight size={16} />
+              </button>
+              {demoOpen && (
+                <div className="demo-video-panel" id="demo-video-panel">
+                  <div className="demo-video-frame">
+                    <YouTubeFacade videoId={DEMO_SHORT_ID} title={demoCopy[language].title} poster={demoPoster} />
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
 
         {SHOW_MEET_VIDEO && <section className="meet-section container" id="meet" dir={dir} aria-labelledby="meet-title">
           <div className="meet-copy">
@@ -660,38 +692,6 @@ export default function Home() {
             </picture>
           </Link>
         </section>
-
-        {/* 7. The vision */}
-        <section className="vision-section" id="vision" dir={dir}>
-          <div className="container vision-grid">
-            <div className="vision-copy">
-              <div className="vision-portrait"><picture><source srcSet={developerImage.webp} type="image/webp" /><img src={developerImage.jpg} alt={developerAlt[language]} loading="lazy" decoding="async" /></picture></div>
-              <span className="kicker">{vision.kicker}</span>
-              <h2><Headline text={vision.title} /></h2>
-              <span className="vision-author">{vision.author}</span>
-              {vision.body.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}
-              <p className="lead-line">{vision.mainLine}</p>
-              <div className="social-links">
-                <a className="instagram-link" href="https://www.instagram.com/lstudio.app?stkn=MTJ2Ym1vdHBpMTA5Nw==" target="_blank" rel="noreferrer"><Instagram size={17} /> {instagramLabel[language]} <ArrowUpRight size={15} /></a>
-                <a className="instagram-link" href="https://www.facebook.com/share/1C6rrsvgem/" target="_blank" rel="noreferrer"><Facebook size={17} /> {facebookLabel[language]} <ArrowUpRight size={15} /></a>
-              </div>
-            </div>
-            <div className="vision-cards">
-              {vision.cards.map((card: { no: string; title: string; body: string }, index: number) => {
-                const Icon = visionIcons[index] ?? Sparkles;
-                return (
-                  <div className="vision-card" key={card.no}>
-                    <span className="vision-card-no">{card.no}</span>
-                    <Icon size={21} />
-                    <h3>{card.title}</h3>
-                    <p>{card.body}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
 
         {/* 7b. FAQ */}
         <section className="faq-section container" id="faq" dir={dir}>

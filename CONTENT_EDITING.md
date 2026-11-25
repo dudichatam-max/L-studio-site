@@ -230,7 +230,7 @@ Expand only the Drums copy (`languages.*.underHood.features` id `drums`, and the
 
 Head titles, meta descriptions, og/twitter and JSON-LD descriptions now follow David's homepage wording, in all four languages. The English title is his exact text, including the typographic dash and "A Full Studio in Your Phone". Body copy has no em-dashes and does not call L Studio a DAW.
 
-The Play version on badges is `APP_FACTS.softwareVersion` in `shared/seo.ts` (currently 1.16). Privacy, Terms, the hero fallback kicker, and JSON-LD `softwareVersion` read that one constant. When the Google Play version changes, update that value and the matching sentences in `content.json` / `shared/pro-copy.json`.
+The Play version on badges is `APP_FACTS.softwareVersion` in `shared/seo.ts` (currently 1.17). Privacy, Terms, the hero fallback kicker, and JSON-LD `softwareVersion` read that one constant. When the Google Play version changes, update that value and the matching sentences in `content.json` / `shared/pro-copy.json`.
 
 Homepage, `/guide` and `/updates` (and the other language roots) get a hidden semantic HTML snapshot in `#root` at prepare-pages time, so `curl` and crawlers see `h2`/`h3`/`p` before JavaScript. React replaces `#root` on boot, so the designed UI is unchanged. Official feature copy lives in `languages.*.underHood.identity` and `languages.*.underHood.features` (nine blocks: Free Tuning, Sound Design, Sound FX / 8 Bass Worlds, Looper, Drums, Mic Studio, Performance Pad, Analog Mixer, Mastering). It is also rendered visibly in the existing architecture section. The 1.15 in-development card and ticker were not changed.
 
@@ -423,3 +423,13 @@ David (2026-11-19): the whole site follows 1.16 as it went live on Google Play: 
 - Home feature tabs (`featureData` in `Home.tsx`) follow the same 1.16 facts as `underHood`.
 - Left as is on purpose: Terms and Privacy history paragraphs (closed early access), and "Demo video" labels on style videos (they label a video, not an app demo).
 - Image TODOs live in the PR (`AUDIT.md`): Sound tab slides and the hero `home-sound-fx` still show 12 worlds; several guide captures still show FX 3, 8 rhythms, SWEEP or Settings without Panic.
+
+## Site on 1.17 (2026-11-25)
+
+David (2026-11-25): 1.17 is live on Google Play for everyone (listing: version 1.17, updated Nov 24, 2026). The site follows it.
+
+- Homepage order: the Vision section is first (kicker `01`), then the hero title ("Make music on your phone" / "יוצרים מוזיקה בפלאפון") with the top carousel right under it, then the feature graphic and the demo toggle. Kickers: 01 Vision, 02 story, 03 featuresIntro, 04 underHood, 05 justStart, 06 FAQ, 07 finalCta.
+- Top carousel (`home112`, `play117` in `carousel.ts`): Google Play 1.17 slides 01-08 from Drive "1.17 Smoked", unchanged, in store order: home-sound, home-sound-fx, home-mic, home-looper, home-pad, home-drums, home-samples, home-mix-mastering. ru and ar use the English files. Captions are the headline and subline printed on each slide; alt starts with `n/8:`. home-mixer and home-mastering were removed.
+- Feature tabs: 18 slides, sound-01..04, mic-01..04, loop-01..04, pad-01..02, drum-01..04, with the baked FIG number equal to the NN slot. sound-05..11 and drum-05 were removed. `CAROUSEL_VER` is `carousel-r6`.
+- Updates: new first item `app-1-17` (`shipped`) with the 1.17 Play "What's new" lines (en-US and iw-IL as published; ru and ar translated from en). `app-1-17-restore` was removed because Factory restore shipped in 1.17. `app-1-16-sfx` no longer says "On Google Play now".
+- Version 1.17 in `APP_FACTS.softwareVersion`, hero kicker, FAQ, Pro body, /updates intro and SEO. The 1.17 download size is not verified yet: FAQ and Pro no longer give a size, and `fileSize` / hero `stat1` still show the 1.16 size (161.7 MB) until David confirms the 1.17 number.

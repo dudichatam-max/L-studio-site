@@ -205,20 +205,20 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.16, which brings four new Sound FX worlds (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 and up to 33 rhythms per drum kit. New versions arrive as automatic updates through Google Play once they are approved.",
+        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.17, which brings a new look with realistic knobs and brushed metal panels and a Factory restore for drum kits, presets, or both, on top of the four Sound FX worlds from 1.16 (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 and up to 33 rhythms per drum kit. New versions arrive as automatic updates through Google Play once they are approved.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש בתוכנת L Studio לאנדרואיד. L Studio Pro זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, עם גרסה 1.16, שמביאה ארבעה עולמות חדשים ל Sound FX, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, את Factory 64 המחודש ועד 33 מקצבים בכל ערכת תופים. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+      description: "מה חדש בתוכנת L Studio לאנדרואיד. L Studio Pro זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, עם גרסה 1.17, שמביאה עיצוב חדש עם כפתורים ריאליסטיים ולוחות מתכת מוברשת, ושחזור יצרן לערכות תופים, לפריסטים או לשניהם. יש גם את ארבעת העולמות של Sound FX מגרסה 1.16, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, את Factory 64 המחודש ועד 33 מקצבים בכל ערכת תופים. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.16, в которой четыре новых мира Sound FX (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённый Factory 64 и до 33 ритмов в наборе ударных. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
+        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.17, в которой новый вид с реалистичными ручками и панелями из шлифованного металла и восстановление Factory для наборов ударных, пресетов или обоих, а также четыре мира Sound FX из версии 1.16 (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённый Factory 64 и до 33 ритмов в наборе ударных. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.16 الذي يضم أربعة عوالم جديدة في Sound FX ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وFactory 64 المجدد، وحتى 33 إيقاعاً في مجموعة الطبول. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.17 الذي يأتي بمظهر جديد مع مقابض واقعية وألواح من المعدن المصقول، واستعادة Factory لأطقم الطبول أو الإعدادات المسبقة أو كليهما، إلى جانب أربعة عوالم في Sound FX من الإصدار 1.16 ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وFactory 64 المجدد، وحتى 33 إيقاعاً في مجموعة الطبول. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
     },
   },
   buy: {
@@ -338,15 +338,15 @@ type SeoMobileApplication = {
  * App facts for structured data, and the ONE Play-version constant for site badges.
  * Change softwareVersion here when the current Google Play version changes (then
  * update Privacy/Terms/hero fallbacks automatically, and the matching sentences
- * in content.json). Source: app repo dudichatam-max/L-studio, release build 1.16
- * (versionName 1.16, build c865bf08; live on Google Play 2026-11-19),
+ * in content.json). Source: Google Play listing, version 1.17, updated 2026-11-24
+ * (checked 2026-11-25; previous: 1.16, build c865bf08, live 2026-11-19),
  * minSdk 24 = Android 7.0. Size: see the fileSize line below.
  * Price: David, 2026-10-08, L Studio Pro on Google Play for $8.
  */
 export const APP_FACTS = {
   operatingSystem: "Android 7.0+",
-  softwareVersion: "1.16",
-  fileSize: "161.7MB", // signed 1.16 Play APK c865bf08: 169,602,498 bytes = 161.7 MiB; listing live 2026-11-19
+  softwareVersion: "1.17",
+  fileSize: "161.7MB", // still the signed 1.16 Play APK c865bf08 (169,602,498 bytes = 161.7 MiB); replace with the 1.17 size once verified
   price: "8",
   priceCurrency: "USD",
 } as const;
@@ -354,12 +354,12 @@ export const APP_FACTS = {
 const APP_SCREENSHOTS = [
   "/assets/carousel/en/home-sound-w630.jpg",
   "/assets/carousel/en/home-sound-fx-w630.jpg",
-  "/assets/carousel/en/home-pad-w630.jpg",
-  "/assets/carousel/en/home-looper-w630.jpg",
-  "/assets/carousel/en/home-drums-w630.jpg",
   "/assets/carousel/en/home-mic-w630.jpg",
-  "/assets/carousel/en/home-mixer-w630.jpg",
-  "/assets/carousel/en/home-mastering-w630.jpg",
+  "/assets/carousel/en/home-looper-w630.jpg",
+  "/assets/carousel/en/home-pad-w630.jpg",
+  "/assets/carousel/en/home-drums-w630.jpg",
+  "/assets/carousel/en/home-samples-w630.jpg",
+  "/assets/carousel/en/home-mix-mastering-w630.jpg",
 ];
 
 export const SITEMAP_PAGES: Array<{
