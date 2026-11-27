@@ -17,6 +17,7 @@ import { APP_FACTS } from "@shared/seo";
 import { isStructuredDrums, type FeatureBlock } from "@shared/prerender";
 import { BidiText } from "@/components/BidiText";
 import { DrumsCopy } from "@/components/DrumsCopy";
+import PlayStoreBadge from "@/components/PlayStoreBadge";
 
 const factoryHero = {
   webp800: `${import.meta.env.BASE_URL}assets/factory-pack-hero-v4-800.webp`,
@@ -159,10 +160,10 @@ const PLAY_ALT: Record<Language, string> = {
 
 const heroDefault = { kicker: `Android music app · Version ${APP_FACTS.softwareVersion}, on Google Play now`, title: "Make music on your phone.", body: "L Studio is a music-making app for your Android phone. Record loops, add drums, sing with the lyrics in front of you, and if you want to go beyond the usual notes, tune every key to its own frequency.", ctaPrimary: "Watch the short", ctaSecondary: "How it started", stat1: "161.9 MB", stat2: "Android 7.0+", stat3: "No ads" };
 const launchDefaults: Record<Language, { headline: string; price: string; note: string }> = {
-  he: {headline: "זמין עכשיו בחנות Google Play.", price: "L Studio Pro, ‏24.90 ‏₪.", note: "זמין עכשיו בחנות Google Play. L Studio Pro, ‏24.90 ‏₪."},
-  en: {headline: "Available now on Google Play.", price: "L Studio Pro, $8.", note: "Available now on Google Play. L Studio Pro, $8."},
-  ru: {headline: "Уже в Google Play.", price: "L Studio Pro, $8.", note: "Уже в Google Play. L Studio Pro, $8."},
-  ar: {headline: "متاح الآن على Google Play.", price: "L Studio Pro، 8$.", note: "متاح الآن على Google Play. L Studio Pro، 8$."},
+  he: {headline: "זמין עכשיו בחנות Google Play.", price: "L Studio Pro.", note: "זמין עכשיו בחנות Google Play. L Studio Pro."},
+  en: {headline: "Available now on Google Play.", price: "L Studio Pro.", note: "Available now on Google Play. L Studio Pro."},
+  ru: {headline: "Уже в Google Play.", price: "L Studio Pro.", note: "Уже в Google Play. L Studio Pro."},
+  ar: {headline: "متاح الآن على Google Play.", price: "L Studio Pro.", note: "متاح الآن على Google Play. L Studio Pro."},
 };
 const signalDefault = { text: "From key to sound to loop to recording", note: "All inside L-Studio" };
 const INTRO_SHORT_ID = "a2CGFDQkZ80";
@@ -227,7 +228,7 @@ const testerDefaults = {
   he: {
     kicker: "EARLY ACCESS",
     title: "ההרשמה לבודקים נסגרה.",
-    body: "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב Google Play. L Studio Pro זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪.",
+    body: "כל 44 המקומות נתפסו. תודה לכל מי שהצטרף לבדיקה ב Google Play. L Studio Pro זמין עכשיו בחנות Google Play.",
     status: "ההרשמה לבודקים נסגרה. כל 44 המקומות נתפסו.",
     spotsLabel: "נתפסו",
     spotsStatus: "ההרשמה נסגרה",
@@ -238,7 +239,7 @@ const testerDefaults = {
   en: {
     kicker: "EARLY ACCESS",
     title: "Tester signup is closed.",
-    body: "All 44 spots are taken. Thank you to everyone who joined the Google Play test. L Studio Pro is available now on Google Play, for $8.",
+    body: "All 44 spots are taken. Thank you to everyone who joined the Google Play test. L Studio Pro is available now on Google Play.",
     status: "Tester signup is closed. All 44 spots are taken.",
     spotsLabel: "taken",
     spotsStatus: "Signup closed",
@@ -249,7 +250,7 @@ const testerDefaults = {
   ru: {
     kicker: "РАННИЙ ДОСТУП",
     title: "Запись в тестеры закрыта.",
-    body: "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. L Studio Pro уже доступен в Google Play, за $8.",
+    body: "Все 44 места заняты. Спасибо всем, кто присоединился к тесту в Google Play. L Studio Pro уже доступен в Google Play.",
     status: "Запись в тестеры закрыта. Все 44 места заняты.",
     spotsLabel: "занято",
     spotsStatus: "Запись закрыта",
@@ -260,7 +261,7 @@ const testerDefaults = {
   ar: {
     kicker: "وصول مبكر",
     title: "التسجيل للمختبرين مغلق.",
-    body: "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. L Studio Pro متاح الآن على Google Play، بسعر 8$.",
+    body: "جميع الأماكن الـ44 محجوزة. شكراً لكل من انضم إلى الاختبار على Google Play. L Studio Pro متاح الآن على Google Play.",
     status: "التسجيل للمختبرين مغلق. جميع الأماكن الـ44 محجوزة.",
     spotsLabel: "محجوزة",
     spotsStatus: "التسجيل مغلق",
@@ -727,6 +728,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
+          <PlayStoreBadge language={language} className="footer-play-badge" />
           <div className="footer-links"><a href="#features">{nav.features}</a><a href="#vision">{nav.vision}</a><a href="#faq">{nav.faq}</a><Link href="/guide">{nav.guide ?? "User guide"}</Link><Link href="/updates">{nav.updates ?? updates.navLabel ?? updatesNavLabel[language]}</Link><Link className="nav-exclusive" href="/exclusive">{nav.exclusive ?? exclusiveNavLabel[language]}</Link><Link href="/privacy">{nav.privacy}</Link><Link href="/terms">{nav.terms ?? "Terms"}</Link></div>
           <span className="footer-tagline">{footer.tagline}</span>
           <span className="footer-copy">© 2026 L Studio</span>

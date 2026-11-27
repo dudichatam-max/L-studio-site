@@ -6,6 +6,7 @@ import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel } from "@/lib/updatesCopy";
 import { APP_FACTS } from "@shared/seo";
+import PlayStoreBadge from "@/components/PlayStoreBadge";
 
 const SUPPORT_EMAIL = "dudichatam@gmail.com";
 
@@ -285,6 +286,7 @@ export default function Privacy() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
+          <PlayStoreBadge language={language} className="footer-play-badge" />
           <div className="footer-links">
             <Link href="/">{text.home}</Link>
             <a href="/#features">{text.features}</a>

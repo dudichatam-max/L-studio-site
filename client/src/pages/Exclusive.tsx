@@ -7,6 +7,7 @@ import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel, updatesNavLabelFrom } from "@/lib/updatesCopy";
+import PlayStoreBadge from "@/components/PlayStoreBadge";
 
 type ExclusivePack = {
   id: string;
@@ -406,6 +407,7 @@ export default function Exclusive() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
+          <PlayStoreBadge language={language} className="footer-play-badge" />
           <div className="footer-links">
             <Link href="/">{chrome.home}</Link>
             <a href="/#features">{chrome.features}</a>

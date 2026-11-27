@@ -205,41 +205,41 @@ const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
     en: {
       title: "Updates | L Studio",
       description:
-        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, for $8, with version 1.17, which brings a new look with realistic knobs and brushed metal panels and a Factory restore for drum kits, presets, or both, on top of the four Sound FX worlds from 1.16 (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 and up to 33 rhythms per drum kit. New versions arrive as automatic updates through Google Play once they are approved.",
+        "What's new in L Studio for Android. L Studio Pro is available now on Google Play, with version 1.17, which brings a new look with realistic knobs and brushed metal panels and a Factory restore for drum kits, presets, or both, on top of the four Sound FX worlds from 1.16 (Analog Delay, Bitcrusher, Ring Mod and Granular), chains of up to four effects, the redesigned Factory 64 and up to 33 rhythms per drum kit. New versions arrive as automatic updates through Google Play once they are approved.",
     },
     he: {
       title: "עדכונים | L Studio",
-      description: "מה חדש בתוכנת L Studio לאנדרואיד. L Studio Pro זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪, עם גרסה 1.17, שמביאה עיצוב חדש עם כפתורים ריאליסטיים ולוחות מתכת מוברשת, ושחזור יצרן לערכות תופים, לפריסטים או לשניהם. יש גם את ארבעת העולמות של Sound FX מגרסה 1.16, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, את Factory 64 המחודש ועד 33 מקצבים בכל ערכת תופים. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
+      description: "מה חדש בתוכנת L Studio לאנדרואיד. L Studio Pro זמין עכשיו בחנות Google Play, עם גרסה 1.17, שמביאה עיצוב חדש עם כפתורים ריאליסטיים ולוחות מתכת מוברשת, ושחזור יצרן לערכות תופים, לפריסטים או לשניהם. יש גם את ארבעת העולמות של Sound FX מגרסה 1.16, בשם Analog Delay, Bitcrusher, Ring Mod וגם Granular, שרשרת של עד ארבעה אפקטים, את Factory 64 המחודש ועד 33 מקצבים בכל ערכת תופים. גרסאות חדשות מגיעות כעדכון אוטומטי דרך Google Play אחרי שהן מאושרות.",
     },
     ru: {
       title: "Обновления | L Studio",
       description:
-        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, за $8, с версией 1.17, в которой новый вид с реалистичными ручками и панелями из шлифованного металла и восстановление Factory для наборов ударных, пресетов или обоих, а также четыре мира Sound FX из версии 1.16 (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённый Factory 64 и до 33 ритмов в наборе ударных. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
+        "Что нового в L Studio для Android. L Studio Pro уже доступен в Google Play, с версией 1.17, в которой новый вид с реалистичными ручками и панелями из шлифованного металла и восстановление Factory для наборов ударных, пресетов или обоих, а также четыре мира Sound FX из версии 1.16 (Analog Delay, Bitcrusher, Ring Mod и Granular), цепочки до четырёх эффектов, обновлённый Factory 64 и до 33 ритмов в наборе ударных. Новые версии приходят как автоматические обновления через Google Play после одобрения.",
     },
     ar: {
       title: "التحديثات | L Studio",
-      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، بسعر 8$، مع الإصدار 1.17 الذي يأتي بمظهر جديد مع مقابض واقعية وألواح من المعدن المصقول، واستعادة Factory لأطقم الطبول أو الإعدادات المسبقة أو كليهما، إلى جانب أربعة عوالم في Sound FX من الإصدار 1.16 ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وFactory 64 المجدد، وحتى 33 إيقاعاً في مجموعة الطبول. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
+      description: "ما الجديد في L Studio لأندرويد. L Studio Pro متاح الآن على Google Play، مع الإصدار 1.17 الذي يأتي بمظهر جديد مع مقابض واقعية وألواح من المعدن المصقول، واستعادة Factory لأطقم الطبول أو الإعدادات المسبقة أو كليهما، إلى جانب أربعة عوالم في Sound FX من الإصدار 1.16 ‏(Analog Delay وBitcrusher وRing Mod وGranular)، وسلاسل حتى أربعة مؤثرات، وFactory 64 المجدد، وحتى 33 إيقاعاً في مجموعة الطبول. تصل الإصدارات الجديدة كتحديثات تلقائية عبر Google Play بعد الموافقة عليها.",
     },
   },
   buy: {
     en: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro for Android is available now on Google Play, for $8. Purchases are not available on this website right now.",
+        "L Studio Pro for Android is available now on Google Play. Purchases are not available on this website right now.",
     },
     he: {
       title: "L Studio Pro",
-      description: "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play, במחיר ‏24.90 ‏₪. רכישה באתר אינה זמינה כרגע.",
+      description: "L Studio Pro לאנדרואיד זמין עכשיו בחנות Google Play. רכישה באתר אינה זמינה כרגע.",
     },
     ru: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro для Android уже доступен в Google Play, за $8. Покупка на этом сайте сейчас недоступна.",
+        "L Studio Pro для Android уже доступен в Google Play. Покупка на этом сайте сейчас недоступна.",
     },
     ar: {
       title: "L Studio Pro",
       description:
-        "L Studio Pro لأندرويد متاح الآن على Google Play، بسعر 8$. الشراء غير متاح على هذا الموقع حالياً.",
+        "L Studio Pro لأندرويد متاح الآن على Google Play. الشراء غير متاح على هذا الموقع حالياً.",
     },
   },
   "buy-success": {
@@ -326,11 +326,6 @@ type SeoMobileApplication = {
   description: string;
   image: string;
   screenshot: string[];
-  offers: {
-    "@type": "Offer";
-    price: typeof APP_FACTS.price;
-    priceCurrency: typeof APP_FACTS.priceCurrency;
-  };
   author: { "@type": "Person"; name: "David Chatam" };
 };
 
@@ -341,14 +336,12 @@ type SeoMobileApplication = {
  * in content.json). Source: Google Play listing, version 1.17, updated 2026-11-24
  * (checked 2026-11-25; previous: 1.16, build c865bf08, live 2026-11-19),
  * minSdk 24 = Android 7.0. Size: see the fileSize line below.
- * Price: David, 2026-10-08, L Studio Pro on Google Play for $8.
+ * No price on the site or in JSON-LD (David, 2026-11-27): the price lives on Google Play only.
  */
 export const APP_FACTS = {
   operatingSystem: "Android 7.0+",
   softwareVersion: "1.17",
   fileSize: "161.9MB", // signed 1.17 Play APK 2801740d (vc18): 169,729,998 bytes = 161.9 MiB (same method as 1.14-1.16: universal APK bytes / 2^20)
-  price: "8",
-  priceCurrency: "USD",
 } as const;
 
 const APP_SCREENSHOTS = [
@@ -539,11 +532,6 @@ export function buildJsonLd(language: Language): SeoJsonLd {
         description,
         image: `${SITE_ORIGIN}/icon-512.png`,
         screenshot: APP_SCREENSHOTS.map(path => `${SITE_ORIGIN}${path}`),
-        offers: {
-          "@type": "Offer",
-          price: APP_FACTS.price,
-          priceCurrency: APP_FACTS.priceCurrency,
-        },
         author: {
           "@type": "Person",
           name: "David Chatam",

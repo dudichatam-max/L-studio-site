@@ -11,6 +11,7 @@ import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { groupUpdates, mergeUpdates, updateScreenshots, type UpdatesCopy } from "@/lib/updatesCopy";
 import { BidiText } from "@/components/BidiText";
+import PlayStoreBadge from "@/components/PlayStoreBadge";
 
 type ChromeCopy = {
   back: string;
@@ -300,6 +301,7 @@ export default function Updates() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
+          <PlayStoreBadge language={language} className="footer-play-badge" />
           <div className="footer-links">
             <Link href="/">{chrome.home}</Link>
             <a href="/#features">{chrome.features}</a>

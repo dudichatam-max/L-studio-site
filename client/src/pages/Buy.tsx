@@ -8,6 +8,7 @@ import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel } from "@/lib/updatesCopy";
 import proCopyJson from "@shared/pro-copy.json";
+import PlayStoreBadge from "@/components/PlayStoreBadge";
 
 const SUPPORT_EMAIL = "dudichatam@gmail.com";
 const SESSION_KEY = "l-studio-pro-checkout";
@@ -203,6 +204,7 @@ export default function Buy({ mode }: { mode: "checkout" | "success" }) {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
+          <PlayStoreBadge language={language} className="footer-play-badge" />
           <div className="footer-links">
             <Link href="/">{copy.home}</Link>
             <Link href="/guide">{copy.guide}</Link>

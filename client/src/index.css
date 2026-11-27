@@ -1240,3 +1240,8 @@ bdi[dir="ltr"].bdi-list {
 }
 
 
+/* Google Play badge in every footer (David, 2026-11-27). Same official badge as the hero, smaller. */
+.footer-play-badge { display: inline-block; line-height: 0; border-radius: 6px; }
+.footer-play-badge img { display: block; width: 135px; height: auto; }
+.footer-play-badge:focus-visible { outline: 2px solid var(--acid); outline-offset: 3px; }
+@media (max-width: 720px) { .footer-play-badge { order: 1; } }

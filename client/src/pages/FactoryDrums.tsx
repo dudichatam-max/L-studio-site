@@ -7,6 +7,7 @@ import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel, updatesNavLabelFrom } from "@/lib/updatesCopy";
+import PlayStoreBadge from "@/components/PlayStoreBadge";
 
 type DrumKit = {
   id: string;
@@ -106,7 +107,7 @@ const emptyChrome = (language: Language): ChromeCopy => ({
   privacy: language === "he" ? "פרטיות" : language === "ru" ? "Приватность" : language === "ar" ? "الخصوصية" : "Privacy",
   terms: language === "he" ? "תנאי שימוש" : language === "ru" ? "Условия" : language === "ar" ? "الشروط" : "Terms",
   presetsLabel: "Factory 64",
-  launchNote: language === "he" ? "זמין עכשיו בחנות Google Play. L Studio Pro, ‏24.90 ‏₪." : language === "ru" ? "Уже в Google Play. L Studio Pro, $8." : language === "ar" ? "متاح الآن على Google Play. L Studio Pro، 8$." : "Available now on Google Play. L Studio Pro, $8.",
+  launchNote: language === "he" ? "זמין עכשיו בחנות Google Play. L Studio Pro." : language === "ru" ? "Уже в Google Play. L Studio Pro." : language === "ar" ? "متاح الآن على Google Play. L Studio Pro." : "Available now on Google Play. L Studio Pro.",
   onThisPage: language === "he" ? "בעמוד הזה" : language === "ru" ? "На этой странице" : language === "ar" ? "في هذه الصفحة" : "On this page",
 });
 
@@ -333,6 +334,7 @@ export default function FactoryDrums() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
+          <PlayStoreBadge language={language} className="footer-play-badge" />
           <div className="footer-links">
             <Link href="/">{chrome.home}</Link>
             <a href="/#features">{chrome.features}</a>

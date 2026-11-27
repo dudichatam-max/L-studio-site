@@ -8,6 +8,7 @@ import { POSTER_LARGE, POSTER_VER } from "@/lib/posters";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel } from "@/lib/updatesCopy";
+import PlayStoreBadge from "@/components/PlayStoreBadge";
 
 /** One short step: 1 to 3 sentences, then a crop of the exact part of the screen they describe. */
 type GuideStep = {
@@ -394,6 +395,7 @@ export default function Guide() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
+          <PlayStoreBadge language={language} className="footer-play-badge" />
           <div className="footer-links">
             <Link href="/">{text.home}</Link>
             <a href="/#features">{text.features}</a>

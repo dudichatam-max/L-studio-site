@@ -7,6 +7,7 @@ import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import { fetchSiteContent } from "@/lib/siteContent";
 import { exclusiveNavLabel } from "@/lib/exclusiveNav";
 import { updatesNavLabel, updatesNavLabelFrom } from "@/lib/updatesCopy";
+import PlayStoreBadge from "@/components/PlayStoreBadge";
 
 type FactoryPreset = { name: string; blurb: string };
 type FactoryPage = {
@@ -85,7 +86,7 @@ const emptyCopy = (language: Language): Factory64Copy => ({
   presetsHeading: language === "he" ? "פריסטים" : language === "ru" ? "Пресеты" : language === "ar" ? "إعدادات مسبقة" : "Presets",
   oneLineList: "",
   storeBlurb: "",
-  launchNote: language === "he" ? "זמין עכשיו בחנות Google Play. L Studio Pro, ‏24.90 ‏₪." : language === "ru" ? "Уже в Google Play. L Studio Pro, $8." : language === "ar" ? "متاح الآن على Google Play. L Studio Pro، 8$." : "Available now on Google Play. L Studio Pro, $8.",
+  launchNote: language === "he" ? "זמין עכשיו בחנות Google Play. L Studio Pro." : language === "ru" ? "Уже в Google Play. L Studio Pro." : language === "ar" ? "متاح الآن على Google Play. L Studio Pro." : "Available now on Google Play. L Studio Pro.",
   pages: [],
 });
 
@@ -337,6 +338,7 @@ export default function Factory64() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <SiteLogo compact />
+          <PlayStoreBadge language={language} className="footer-play-badge" />
           <div className="footer-links">
             <Link href="/">{text.home}</Link>
             <a href="/#features">{text.features}</a>

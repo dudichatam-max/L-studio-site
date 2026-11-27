@@ -124,10 +124,15 @@ for (const page of pages) {
     assert(app.operatingSystem === "Android 7.0+", "operatingSystem (minSdk 24)");
     assert(app.softwareVersion === APP_FACTS.softwareVersion, "softwareVersion");
     assert(app.name === "L Studio", "app name");
-    // Price set by David for the public Google Play launch: $8. Do not change without him.
+    // No price on the site (David, 2026-11-27): no offers block and no price text in JSON-LD.
+    assert(!("offers" in app), `${page}/${language} JSON-LD must not have offers`);
     assert(
-      app.offers.price === "8" && app.offers.priceCurrency === "USD",
-      `${page}/${language} offer must be 8 USD`
+      !/"price|priceCurrency|\$ ?8\b|\b8 ?\$|US\$|₪|24\.90/.test(JSON.stringify(doc.jsonLd)),
+      `${page}/${language} JSON-LD must not mention a price`
+    );
+    assert(
+      !/\$ ?8\b|\b8 ?\$|US\$|₪|24\.90/.test(`${doc.title} ${doc.description} ${doc.socialDescription}`),
+      `${page}/${language} title or description mentions a price`
     );
     const json = JSON.stringify(doc.jsonLd);
     assert(!/installUrl|play\.google|\.apk/i.test(json), `${page}/${language} has a store or APK link`);
