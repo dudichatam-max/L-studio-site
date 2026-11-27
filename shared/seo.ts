@@ -53,24 +53,24 @@ const CANONICAL_PATH: Record<Exclude<SeoPageId, "not-found">, string> = {
 const COPY: Record<SeoPageId, Record<Language, SeoCopy>> = {
   home: {
     en: {
-      title: "L Studio: Microtonal Synth, Looper, Drums, Mic & Mastering — A Full Studio in Your Phone",
+      title: "L Studio: Microtonal Synth, Looper, Drums, Mic & Mastering | A Full Studio in Your Phone",
       description:
-        "Make music on your Android phone. Exact tuning in Hz & microtonal scales, 16 Sound FX worlds in chains of up to four, 4-operator FM synth, a 32-channel looper (8 pages × 4), drums in 16 styles, 6-track mic studio with a lyrics window that scrolls while you sing, analog mixer and LUFS mastering. One time purchase, no ads, no account, fully offline.",
+        "For analog people in a digital world. L Studio is a boutique Android studio for recording and live playing: Microtonal Synth, Looper, Drums, Mic, Mixing & Mastering.",
     },
     he: {
-      title: "L Studio: סינתיסייזר מיקרוטונאלי, לופר, תופים, מיקרופון ומאסטרינג — אולפן מלא בפלאפון",
+      title: "L Studio: סינתיסייזר מיקרוטונאלי, לופר, תופים, מיקרופון ומאסטרינג | אולפן מלא בפלאפון",
       description:
-        "יוצרים מוזיקה בטלפון האנדרואיד. כוונון מדויק בהרץ וסולמות מיקרוטונאליים, 16 עולמות Sound FX בשרשרת של עד ארבעה, סינתיסייזר FM עם ארבעה אופרטורים, לופר עם 32 ערוצים (8 עמודים × 4), תופים בשישה עשר סגנונות, סטודיו מיקרופון עם שישה ערוצים וחלון מילים שנגלל בזמן שאתם שרים, מיקסר אנלוגי ומאסטרינג לפי LUFS. רכישה אחת, בלי פרסומות, בלי חשבון, ועובד בלי אינטרנט.",
+        "לאנשים אנלוגיים בעולם דיגיטלי. L Studio היא סביבת אולפן ייחודית לאנדרואיד, להקלטה ולנגינה חיה: סינתיסייזר מיקרוטונלי, לופר, תופים, מיקרופון, מיקס ומאסטרינג.",
     },
     ru: {
-      title: "L Studio: микротональный синтезатор, лупер, ударные, микрофон и мастеринг — полная студия в вашем телефоне",
+      title: "L Studio: микротональный синтезатор, лупер, ударные, микрофон и мастеринг | полная студия в вашем телефоне",
       description:
-        "Создавай музыку на телефоне с Android. Точная настройка в Гц и микротональные гаммы, 16 миров Sound FX в цепочках до четырёх, 4-операторный FM-синтезатор, 32-канальный лупер (8 страниц × 4), ударные в 16 стилях, микрофонная студия на 6 дорожках с окном текста, которое прокручивается, пока ты поёшь, аналоговый микшер и мастеринг по LUFS. Одна покупка, без рекламы, без аккаунта, полностью офлайн.",
+        "Для аналоговых людей в цифровом мире. L Studio, авторская студия на Android для записи и живой игры: микротональный синтезатор, лупер, ударные, микрофон, сведение и мастеринг.",
     },
     ar: {
-      title: "L Studio: سنث مايكروتونال، لوبر، طبول، ميكروفون وماسترنغ — استوديو كامل في هاتفك",
+      title: "L Studio: سنث مايكروتونال، لوبر، طبول، ميكروفون وماسترنغ | استوديو كامل في هاتفك",
       description:
-        "اصنع الموسيقى على هاتف أندرويد. ضبط دقيق بالهرتز وسلالم مايكروتونالية، 16 عالماً في Sound FX بسلاسل حتى أربعة، سنث FM بأربعة مشغلات، لوبر بـ32 قناة (8 صفحات × 4)، طبول بـ16 أسلوباً، استوديو ميكروفون بـ6 مسارات مع نافذة كلمات تمرّ وأنت تغني، مكسر تناظري وماسترنغ بـLUFS. شراء لمرة واحدة، بلا إعلانات، بلا حساب، ويعمل دون اتصال بالكامل.",
+        "للأشخاص التناظريين في عالم رقمي. L Studio استوديو أندرويد مميّز للتسجيل والعزف الحي: سنث مايكروتونال، لوبر، طبول، ميكروفون، مكساج وماسترنغ.",
     },
   },
   privacy: {

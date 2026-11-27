@@ -36,10 +36,10 @@ function assert(condition: boolean, message: string) {
 }
 
 const APPROVED_HOME_TITLES: Record<Language, string> = {
-  en: "L Studio: Microtonal Synth, Looper, Drums, Mic & Mastering — A Full Studio in Your Phone",
-  he: "L Studio: סינתיסייזר מיקרוטונאלי, לופר, תופים, מיקרופון ומאסטרינג — אולפן מלא בפלאפון",
-  ru: "L Studio: микротональный синтезатор, лупер, ударные, микрофон и мастеринг — полная студия в вашем телефоне",
-  ar: "L Studio: سنث مايكروتونال، لوبر، طبول، ميكروفون وماسترنغ — استوديو كامل في هاتفك",
+  en: "L Studio: Microtonal Synth, Looper, Drums, Mic & Mastering | A Full Studio in Your Phone",
+  he: "L Studio: סינתיסייזר מיקרוטונאלי, לופר, תופים, מיקרופון ומאסטרינג | אולפן מלא בפלאפון",
+  ru: "L Studio: микротональный синтезатор, лупер, ударные, микрофон и мастеринг | полная студия в вашем телефоне",
+  ar: "L Studio: سنث مايكروتونال، لوبر، طبول، ميكروفون وماسترنغ | استوديو كامل في هاتفك",
 };
 
 const pages: SeoPageId[] = [
@@ -88,11 +88,12 @@ for (const page of pages) {
       `${page}/${language} description`
     );
     // David's exact home title (and its localized equivalents) may keep the
-    // typographic dash and the phrase "A Full Studio in Your Phone".
+    // phrase "A Full Studio in Your Phone" (no dash since 2026-11-27).
     const titleForDash = doc.title === APPROVED_HOME_TITLES[language] ? "L Studio" : doc.title;
     const studioText = `${titleForDash} ${doc.description}`
       .replace(/L Studio/g, "")
       .replace(/A Full Studio in Your Phone/gi, "")
+      .replace(/boutique Android studio/gi, "") // Google Play listing wording (David, 2026-11-27)
       .replace(/אולפן מלא בפלאפון/g, "")
       .replace(/полная студия в вашем телефоне/gi, "")
       .replace(/استوديو كامل في هاتفك/g, "")
